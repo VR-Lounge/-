@@ -54,20 +54,23 @@
       background: transparent;
     }
     .phone-input {
-      position: relative;
+  position: relative;
     }
     .phone-input::before {
-      content: "+7 (";
-      position: absolute;
-      left: 15px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #6b7280;
-      pointer-events: none;
+  content: "+7 (";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  pointer-events: none;
+  line-height: 1;
+  padding-top: 1px;
     }
     .phone-input input {
-      padding-left: 50px;
-    }
+  padding-left: 50px;
+  height: 48px; /* Добавлено для единообразия с другими полями */
+  }
   </style>
 </head>
 <body>
