@@ -60,18 +60,21 @@
     content: "+7 (";
     position: absolute;
     left: 16px;
-    top: 13px; /* Точное выравнивание с текстом в поле */
-    color: #9ca3af; /* Такой же цвет как у плейсхолдера */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af; /* Цвет как у плейсхолдера */
     pointer-events: none;
     font-size: 16px;
-    font-family: inherit; /* Такой же шрифт как в поле */
     line-height: 1.5;
+    height: 24px;
+    display: flex;
+    align-items: center;
   }
   .phone-input input {
     padding-left: 50px;
     height: 48px;
     font-size: 16px;
-    font-family: inherit;
+    padding-top: 0;
   }
   </style>
 </head>
