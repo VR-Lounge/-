@@ -304,8 +304,19 @@
 
     // Маска для телефона (простая версия)
     clientPhoneInput.addEventListener('input', function(e) {
-    let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
-    e.target.value = !x[1] ? '' : '+7 (' + (x[2] ? x[2] : '') + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+    let numbers = e.target.value.replace(/\D/g, '');
+    // Если номер начинается с 7 или 8, заменяем на +7
+    if (numbers.startsWith('7') || numbers.startsWith('8')) {
+    numbers = '7' + numbers.substring(1);
+    }
+    // Форматируем только если есть цифры
+    if (numbers.length > 0) {
+    const match = numbers.match(/^7(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})$/);
+    e.target.value = '+7' + (match[1] ? ' (' + match[1] : '') + 
+                      (match[2] ? ') ' + match[2] : '') + 
+                      (match[3] ? '-' + match[3] : '') + 
+                      (match[4] ? '-' + match[4] : '');
+    }
     });
 
     // ================== АУТЕНТИФИКАЦИЯ ==================
@@ -530,9 +541,13 @@
         rightDiv.innerHTML = `<div class="font-semibold mb-1">${serviceLabel}</div>`;
         
         // Добавляем кликабельный номер телефона
+        // Внутри функции renderBookingsList, где формируется rightDiv:
         if (b.clientPhone) {
-          const phoneNumber = '+7' + b.clientPhone.replace(/\D/g, '');
-          rightDiv.innerHTML += `<div class="mt-1"><a href="tel:${phoneNumber}" class="text-blue-600 hover:text-blue-800 hover:underline">+7 (${b.clientPhone}</a></div>`;
+        // Удаляем возможные дублирования +7
+        let cleanPhone = b.clientPhone.replace(/^\+7\s*\+\s*7/, '+7');
+        cleanPhone = cleanPhone.replace(/[^0-9+() -]/g, '');
+        const telNumber = cleanPhone.replace(/\D/g, '');
+        rightDiv.innerHTML += `<div class="mt-1"><a href="tel:${telNumber}" class="text-blue-600 hover:text-blue-800 hover:underline">${cleanPhone}</a></div>`;
         }
         
         if (b.notes) {
@@ -670,7 +685,7 @@
       const id = bookingIdInput.value;
       const newBooking = {
         clientName: bookingForm.clientName.value.trim(),
-        clientPhone: bookingForm.clientPhone.value.trim(),
+        clientPhone: bookingForm.clientPhone.value.replace(/^\+7\s*\+\s*7/, '+7'),
         bookingDate: bookingForm.bookingDate.value,
         startTime: bookingForm.startTime.value,
         duration: parseFloat(bookingForm.duration.value),
