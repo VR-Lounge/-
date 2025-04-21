@@ -54,22 +54,22 @@
       background: transparent;
     }
     .phone-input {
-  position: relative;
-    }
-    .phone-input::before {
-  content: "+7 (";
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #6b7280;
-  pointer-events: none;
-  line-height: 1;
-  padding-top: 1px;
-    }
-    .phone-input input {
-  padding-left: 50px;
-  height: 48px; /* Добавлено для единообразия с другими полями */
+    position: relative;
+  }
+  .phone-input::before {
+    content: "+7 (";
+    position: absolute;
+    left: 15px;
+    top: 19px; /* Фиксированная позиция вместо transform */
+    color: #6b7280;
+    pointer-events: none;
+    font-size: 16px; /* Совпадает с размером шрифта в input */
+    line-height: 1.5;
+  }
+  .phone-input input {
+    padding-left: 50px;
+    height: 48px; /* Фиксированная высота как у других полей */
+    font-size: 16px; /* Явно задаем размер шрифта */
   }
   </style>
 </head>
@@ -217,8 +217,10 @@
           <input type="text" id="clientName" name="clientName" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="Введите имя клиента" />
         </div>
         <div class="phone-input">
-          <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
-          <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="XXX) XXX-XX-XX" />
+        <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
+        <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off" 
+         class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" 
+         placeholder="XXX) XXX-XX-XX" />
         </div>
         <div>
           <label for="bookingDate" class="block text-gray-900 font-semibold mb-2">Дата</label>
