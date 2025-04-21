@@ -223,448 +223,390 @@
     </div>
   </div>
 
-  <script>
-    (() => {
-      const calendarEl = document.getElementById('calendar');
-      const monthYearEl = document.getElementById('monthYear');
-      const prevMonthBtn = document.getElementById('prevMonth');
-      const nextMonthBtn = document.getElementById('nextMonth');
-      const addBookingBtn = document.getElementById('addBookingBtn');
-      const bookingModal = document.getElementById('bookingModal');
-      const closeModalBtn = document.getElementById('closeModal');
-      const bookingForm = document.getElementById('bookingForm');
-      const bookingsListEl = document.getElementById('bookingsList');
-      const noBookingsText = document.getElementById('noBookingsText');
-      const modalTitle = document.getElementById('modalTitle');
-      const bookingIdInput = document.getElementById('bookingId');
-      const deleteBookingBtn = document.getElementById('deleteBookingBtn');
-      const bookingsListTitle = document.getElementById('bookingsListTitle');
-
-      let currentDate = new Date();
-      currentDate.setDate(1);
-
-      // Store bookings in localStorage
-      let bookings = JSON.parse(localStorage.getItem('vrLoungeBookings') || '[]');
-
-      // Selected date for filtering bookings list; null means show all month
-      let selectedDate = null;
-
-      function isWeekend(date) {
-        const day = date.getDay();
-        return day === 0 || day === 6;
-      }
-
-      function renderCalendar() {
-        // Clear previous days (except first 7 for weekdays)
-        while (calendarEl.children.length > 7) {
-          calendarEl.removeChild(calendarEl.lastChild);
-        }
-
-        const year = currentDate.getFullYear();
-        const month = currentDate.getMonth();
-
-        monthYearEl.textContent = currentDate.toLocaleDateString('ru-RU', {
-          year: 'numeric',
-          month: 'long',
-        });
-
-        // First day of month (0=Sun, 1=Mon,...)
-        const firstDay = new Date(year, month, 1);
-        let startDay = firstDay.getDay();
-        // Adjust so Monday=0 ... Sunday=6 for grid start
-        startDay = startDay === 0 ? 6 : startDay - 1;
-
-        const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-        // Fill empty slots before first day
-        for (let i = 0; i < startDay; i++) {
-          const emptyCell = document.createElement('div');
-          emptyCell.className = 'border border-gray-200 bg-gray-50 h-24 rounded-3xl';
-          calendarEl.appendChild(emptyCell);
-        }
-
-        for (let day = 1; day <= daysInMonth; day++) {
-          const date = new Date(year, month, day);
-          const dayCell = document.createElement('div');
-          dayCell.className = 'border border-gray-300 rounded-3xl h-24 p-3 flex flex-col justify-start cursor-pointer hover:bg-blue-50 transition relative select-text';
-
-          // Highlight weekends
-          if (isWeekend(date)) {
-            dayCell.classList.add('bg-blue-50');
-          }
-
-          // Highlight today
-          const today = new Date();
-          if (
-            day === today.getDate() &&
-            month === today.getMonth() &&
-            year === today.getFullYear()
-          ) {
-            dayCell.classList.add('ring-2', 'ring-blue-600');
-          }
-
-          // Highlight selected date
-          if (
-            selectedDate &&
-            date.getFullYear() === selectedDate.getFullYear() &&
-            date.getMonth() === selectedDate.getMonth() &&
-            date.getDate() === selectedDate.getDate()
-          ) {
-            dayCell.classList.add('bg-blue-200', 'ring-4', 'ring-blue-500');
-          }
-
-          // Day number top-left
-          const dayNumber = document.createElement('div');
-          dayNumber.textContent = day;
-          dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 select-none';
-          dayCell.appendChild(dayNumber);
-
-          // Show bookings for this day
-          const dayBookings = bookings.filter((b) => {
-            const bDate = new Date(b.bookingDate);
-            return (
-              bDate.getFullYear() === year &&
-              bDate.getMonth() === month &&
-              bDate.getDate() === day
-            );
-          });
-
-          if (dayBookings.length > 0) {
-            const bookingsList = document.createElement('ul');
-            bookingsList.className = 'bookings-list mt-0.5 overflow-y-auto max-h-16 text-xs text-gray-800 space-y-0.5';
-
-            dayBookings.forEach((b) => {
-              const li = document.createElement('li');
-              li.className = 'truncate rounded-2xl px-2 py-0.5';
-
-              // Color by service type
-              let bgColor = 'bg-gray-100 text-gray-700';
-              if (b.serviceType === 'weekday_vr') bgColor = 'bg-blue-100 text-blue-800';
-              else if (b.serviceType === 'weekday_ps') bgColor = 'bg-blue-200 text-blue-900';
-              else if (b.serviceType === 'weekend_vr') bgColor = 'bg-indigo-100 text-indigo-900';
-              else if (b.serviceType === 'weekend_ps') bgColor = 'bg-indigo-200 text-indigo-900';
-              else if (b.serviceType === 'birthday') bgColor = 'bg-pink-200 text-pink-900 font-semibold';
-
-              li.classList.add(...bgColor.split(' '));
-
-              const startTime = b.startTime;
-              const duration = b.duration;
-              const clientName = b.clientName;
-
-              li.textContent = `${startTime} (${duration}ч) - ${clientName}`;
-              bookingsList.appendChild(li);
-            });
-
-            dayCell.appendChild(bookingsList);
-          }
-
-          dayCell.addEventListener('click', () => {
-            selectedDate = date;
-            renderCalendar();
-            renderBookingsList();
-          });
-
-          calendarEl.appendChild(dayCell);
-        }
-        renderBookingsList();
-      }
-
-      function renderBookingsList() {
-        bookingsListEl.innerHTML = '';
-        const year = currentDate.getFullYear();
-        const month = currentDate.getMonth();
-
-        let filteredBookings;
-        if (selectedDate) {
-          bookingsListTitle.textContent = `Список записей на ${selectedDate.toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric' })}`;
-          filteredBookings = bookings.filter((b) => {
-            const bDate = new Date(b.bookingDate);
-            return (
-              bDate.getFullYear() === selectedDate.getFullYear() &&
-              bDate.getMonth() === selectedDate.getMonth() &&
-              bDate.getDate() === selectedDate.getDate()
-            );
-          });
-        } else {
-          bookingsListTitle.textContent = `Список записей на ${currentDate.toLocaleDateString('ru-RU', { month: 'long', year: 'numeric' })}`;
-          filteredBookings = bookings.filter((b) => {
-            const bDate = new Date(b.bookingDate);
-            return bDate.getFullYear() === year && bDate.getMonth() === month;
-          });
-        }
-
-        if (filteredBookings.length === 0) {
-          noBookingsText.classList.remove('hidden');
-          return;
-        } else {
-          noBookingsText.classList.add('hidden');
-        }
-
-        // Sort by date and time ascending
-        filteredBookings.sort((a, b) => {
-          const dateA = new Date(a.bookingDate + 'T' + a.startTime);
-          const dateB = new Date(b.bookingDate + 'T' + b.startTime);
-          return dateA - dateB;
-        });
-
-        filteredBookings.forEach((b) => {
-          const li = document.createElement('li');
-          li.className = 'border border-gray-300 rounded-3xl p-4 shadow-sm flex flex-col md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0';
-
-          // Left side: date and time
-          const dateObj = new Date(b.bookingDate);
-          const dateStr = dateObj.toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric' });
-          const timeStr = b.startTime + ' (' + b.duration + 'ч)';
-
-          const leftDiv = document.createElement('div');
-          leftDiv.className = 'text-gray-700 font-semibold text-base';
-          leftDiv.textContent = `${dateStr}, ${timeStr}`;
-
-          // Middle: client name and service type
-          const middleDiv = document.createElement('div');
-          middleDiv.className = 'text-gray-900 font-semibold text-base truncate max-w-xs';
-          middleDiv.textContent = b.clientName;
-
-          // Right side: service type label and notes
-          const rightDiv = document.createElement('div');
-          rightDiv.className = 'text-sm text-gray-600 text-right max-w-xs';
-
-          let serviceLabel = '';
-          switch (b.serviceType) {
-            case 'weekday_vr': serviceLabel = 'Будние дни - VR очки'; break;
-            case 'weekday_ps': serviceLabel = 'Будние дни - PS (1 джойстик)'; break;
-            case 'weekend_vr': serviceLabel = 'Выходные дни - VR очки'; break;
-            case 'weekend_ps': serviceLabel = 'Выходные дни - PS (1 джойстик)'; break;
-            case 'birthday': serviceLabel = 'День рождения (аренда помещения)'; break;
-          }
-
-          rightDiv.innerHTML = `<div class="font-semibold mb-1">${serviceLabel}</div>`;
-          if (b.notes) {
-            rightDiv.innerHTML += `<div class="italic whitespace-pre-wrap">${b.notes}</div>`;
-          }
-
-          // Edit and Delete buttons container
-          const actionsDiv = document.createElement('div');
-          actionsDiv.className = 'flex space-x-3 ml-4';
-
-          // Edit button
-          const editBtn = document.createElement('button');
-          editBtn.type = 'button';
-          editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
-          editBtn.title = 'Редактировать запись';
-          editBtn.innerHTML = '<i class="fas fa-edit fa-lg"></i>';
-          editBtn.addEventListener('click', () => {
-            openEditModal(b.id);
-          });
-
-          // Delete button
-          const deleteBtn = document.createElement('button');
-          deleteBtn.type = 'button';
-          deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
-          deleteBtn.title = 'Удалить запись';
-          deleteBtn.innerHTML = '<i class="fas fa-trash-alt fa-lg"></i>';
-          deleteBtn.addEventListener('click', () => {
-            if (confirm('Вы уверены, что хотите удалить эту запись?')) {
-              deleteBooking(b.id);
-            }
-          });
-
-          actionsDiv.appendChild(editBtn);
-          actionsDiv.appendChild(deleteBtn);
-
-          li.appendChild(leftDiv);
-          li.appendChild(middleDiv);
-          li.appendChild(rightDiv);
-          li.appendChild(actionsDiv);
-
-          bookingsListEl.appendChild(li);
-        });
-      }
-
-      function openModalWithDate(year, month, day) {
-        bookingIdInput.value = '';
-        modalTitle.textContent = 'Добавить запись';
-        deleteBookingBtn.classList.add('hidden');
-        bookingModal.classList.remove('hidden');
-        const dateStr = new Date(year, month, day).toISOString().slice(0, 10);
-        bookingForm.bookingDate.value = dateStr;
-        bookingForm.clientName.value = '';
-        bookingForm.startTime.value = '';
-        bookingForm.duration.value = '1';
-        bookingForm.serviceType.value = 'weekday_vr';
-        bookingForm.notes.value = '';
-        bookingForm.clientName.focus();
-        selectedDate = new Date(year, month, day);
-        renderCalendar();
-        renderBookingsList();
-      }
-
-      function openEditModal(id) {
-        const booking = bookings.find(b => b.id === id);
-        if (!booking) return;
-
-        bookingIdInput.value = booking.id;
-        modalTitle.textContent = 'Редактировать запись';
-        deleteBookingBtn.classList.remove('hidden');
-        bookingModal.classList.remove('hidden');
-
-        bookingForm.clientName.value = booking.clientName;
-        bookingForm.bookingDate.value = booking.bookingDate;
-        bookingForm.startTime.value = booking.startTime;
-        bookingForm.duration.value = booking.duration.toString();
-        bookingForm.serviceType.value = booking.serviceType;
-        bookingForm.notes.value = booking.notes || '';
-        bookingForm.clientName.focus();
-
-        selectedDate = new Date(booking.bookingDate);
-        renderCalendar();
-        renderBookingsList();
-      }
-
-      function deleteBooking(id) {
-        bookings = bookings.filter(b => b.id !== id);
-        localStorage.setItem('vrLoungeBookings', JSON.stringify(bookings));
-        bookingModal.classList.add('hidden');
-        // If after deletion no bookings on selectedDate, clear selection
-        if (selectedDate) {
-          const hasBookingsOnSelectedDate = bookings.some(b => {
-            const bDate = new Date(b.bookingDate);
-            return (
-              bDate.getFullYear() === selectedDate.getFullYear() &&
-              bDate.getMonth() === selectedDate.getMonth() &&
-              bDate.getDate() === selectedDate.getDate()
-            );
-          });
-          if (!hasBookingsOnSelectedDate) {
-            selectedDate = null;
-          }
-        }
-        renderCalendar();
-        renderBookingsList();
-      }
-
-      prevMonthBtn.addEventListener('click', () => {
-        currentDate.setMonth(currentDate.getMonth() - 1);
-        selectedDate = null;
-        renderCalendar();
-      });
-
-      nextMonthBtn.addEventListener('click', () => {
-        currentDate.setMonth(currentDate.getMonth() + 1);
-        selectedDate = null;
-        renderCalendar();
-      });
-
-      addBookingBtn.addEventListener('click', () => {
-        bookingIdInput.value = '';
-        modalTitle.textContent = 'Добавить запись';
-        deleteBookingBtn.classList.add('hidden');
-        bookingModal.classList.remove('hidden');
-        const todayStr = new Date().toISOString().slice(0, 10);
-        bookingForm.bookingDate.value = todayStr;
-        bookingForm.clientName.value = '';
-        bookingForm.startTime.value = '';
-        bookingForm.duration.value = '1';
-        bookingForm.serviceType.value = 'weekday_vr';
-        bookingForm.notes.value = '';
-        bookingForm.clientName.focus();
-        selectedDate = null;
-        renderCalendar();
-        renderBookingsList();
-      });
-
-      closeModalBtn.addEventListener('click', () => {
-        bookingModal.classList.add('hidden');
-      });
-
-      bookingModal.addEventListener('click', (e) => {
-        if (e.target === bookingModal) {
-          bookingModal.classList.add('hidden');
-        }
-      });
-
-      deleteBookingBtn.addEventListener('click', () => {
-        const id = parseInt(bookingIdInput.value, 10);
-        if (!id) return;
-        if (confirm('Вы уверены, что хотите удалить эту запись?')) {
-          deleteBooking(id);
-        }
-      });
-
-      bookingForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const id = bookingIdInput.value ? parseInt(bookingIdInput.value, 10) : null;
-        const newBooking = {
-          id: id || Date.now(),
-          clientName: bookingForm.clientName.value.trim(),
-          bookingDate: bookingForm.bookingDate.value,
-          startTime: bookingForm.startTime.value,
-          duration: parseFloat(bookingForm.duration.value),
-          serviceType: bookingForm.serviceType.value,
-          notes: bookingForm.notes.value.trim(),
-        };
-
-        if (!newBooking.clientName) {
-          alert('Пожалуйста, введите имя клиента.');
-          return;
-        }
-        if (!newBooking.bookingDate) {
-          alert('Пожалуйста, выберите дату.');
-          return;
-        }
-        if (!newBooking.startTime) {
-          alert('Пожалуйста, выберите время начала.');
-          return;
-        }
-
-        // Simple validation: check for overlapping bookings on same date/time and serviceType
-        const newStart = parseTime(newBooking.startTime);
-        const newEnd = newStart + newBooking.duration * 60;
-
-        const overlapping = bookings.some((b) => {
-          if (b.bookingDate !== newBooking.bookingDate) return false;
-          if (b.serviceType !== newBooking.serviceType) return false;
-          if (id && b.id === id) return false; // exclude self when editing
-
-          const bStart = parseTime(b.startTime);
-          const bEnd = bStart + b.duration * 60;
-
-          return newStart < bEnd && newEnd > bStart;
-        });
-
-        if (overlapping) {
-          alert('Ошибка: Время записи пересекается с уже существующей записью для выбранного типа услуги.');
-          return;
-        }
-
-        if (id) {
-          // Update existing
-          const index = bookings.findIndex(b => b.id === id);
-          if (index !== -1) {
-            bookings[index] = newBooking;
-          }
-        } else {
-          // Add new
-          bookings.push(newBooking);
-        }
-
-        localStorage.setItem('vrLoungeBookings', JSON.stringify(bookings));
-        bookingModal.classList.add('hidden');
-        selectedDate = new Date(newBooking.bookingDate);
-        currentDate = new Date(newBooking.bookingDate);
-        currentDate.setDate(1);
-        renderCalendar();
-        renderBookingsList();
-      });
-
-      function parseTime(timeStr) {
-        const [h, m] = timeStr.split(':').map(Number);
-        return h * 60 + m;
-      }
-
+  <!-- Добавляем Firebase SDK -->
+  <script type="module">
+    // Импорт Firebase
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { 
+      getFirestore, 
+      collection, 
+      addDoc, 
+      getDocs,
+      onSnapshot,
+      deleteDoc,
+      doc,
+      updateDoc
+    } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+    // Конфигурация Firebase (замените на свою!)
+    const firebaseConfig = {
+      apiKey: "AIzaSyBaq_faWwfE_TXn4Xh_2U3GYSAsUzGJ1bk",
+      authDomain: "vr-lounge33.firebaseapp.com",
+      projectId: "vr-lounge33",
+      storageBucket: "vr-lounge33.appspot.com",
+      messagingSenderId: "825655988090",
+      appId: "1:825655988090:web:76d8e0554b8601f8bd10c3"
+    };
+
+    // Инициализация Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Основные переменные
+    const calendarEl = document.getElementById('calendar');
+    const monthYearEl = document.getElementById('monthYear');
+    const prevMonthBtn = document.getElementById('prevMonth');
+    const nextMonthBtn = document.getElementById('nextMonth');
+    const addBookingBtn = document.getElementById('addBookingBtn');
+    const bookingModal = document.getElementById('bookingModal');
+    const closeModalBtn = document.getElementById('closeModal');
+    const bookingForm = document.getElementById('bookingForm');
+    const bookingsListEl = document.getElementById('bookingsList');
+    const noBookingsText = document.getElementById('noBookingsText');
+    const modalTitle = document.getElementById('modalTitle');
+    const bookingIdInput = document.getElementById('bookingId');
+    const deleteBookingBtn = document.getElementById('deleteBookingBtn');
+    const bookingsListTitle = document.getElementById('bookingsListTitle');
+
+    let currentDate = new Date();
+    currentDate.setDate(1);
+    let selectedDate = null;
+    let bookings = [];
+
+    // Реальная синхронизация с Firebase
+    onSnapshot(collection(db, "bookings"), (snapshot) => {
+      bookings = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      }));
       renderCalendar();
-    })();
+      renderBookingsList();
+    });
+
+    function isWeekend(date) {
+      const day = date.getDay();
+      return day === 0 || day === 6;
+    }
+
+    function renderCalendar() {
+      while (calendarEl.children.length > 7) {
+        calendarEl.removeChild(calendarEl.lastChild);
+      }
+
+      const year = currentDate.getFullYear();
+      const month = currentDate.getMonth();
+
+      monthYearEl.textContent = currentDate.toLocaleDateString('ru-RU', {
+        year: 'numeric',
+        month: 'long',
+      });
+
+      const firstDay = new Date(year, month, 1);
+      let startDay = firstDay.getDay();
+      startDay = startDay === 0 ? 6 : startDay - 1;
+
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      for (let i = 0; i < startDay; i++) {
+        const emptyCell = document.createElement('div');
+        emptyCell.className = 'border border-gray-200 bg-gray-50 h-24 rounded-3xl';
+        calendarEl.appendChild(emptyCell);
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const date = new Date(year, month, day);
+        const dayCell = document.createElement('div');
+        dayCell.className = 'border border-gray-300 rounded-3xl h-24 p-3 flex flex-col justify-start cursor-pointer hover:bg-blue-50 transition relative select-text';
+
+        if (isWeekend(date)) {
+          dayCell.classList.add('bg-blue-50');
+        }
+
+        const today = new Date();
+        if (
+          day === today.getDate() &&
+          month === today.getMonth() &&
+          year === today.getFullYear()
+        ) {
+          dayCell.classList.add('ring-2', 'ring-blue-600');
+        }
+
+        if (
+          selectedDate &&
+          date.getFullYear() === selectedDate.getFullYear() &&
+          date.getMonth() === selectedDate.getMonth() &&
+          date.getDate() === selectedDate.getDate()
+        ) {
+          dayCell.classList.add('bg-blue-200', 'ring-4', 'ring-blue-500');
+        }
+
+        const dayNumber = document.createElement('div');
+        dayNumber.textContent = day;
+        dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 select-none';
+        dayCell.appendChild(dayNumber);
+
+        const dayBookings = bookings.filter((b) => {
+          const bDate = new Date(b.bookingDate);
+          return (
+            bDate.getFullYear() === year &&
+            bDate.getMonth() === month &&
+            bDate.getDate() === day
+          );
+        });
+
+        if (dayBookings.length > 0) {
+          const bookingsList = document.createElement('ul');
+          bookingsList.className = 'bookings-list mt-0.5 overflow-y-auto max-h-16 text-xs text-gray-800 space-y-0.5';
+
+          dayBookings.forEach((b) => {
+            const li = document.createElement('li');
+            li.className = 'truncate rounded-2xl px-2 py-0.5';
+
+            let bgColor = 'bg-gray-100 text-gray-700';
+            if (b.serviceType === 'weekday_vr') bgColor = 'bg-blue-100 text-blue-800';
+            else if (b.serviceType === 'weekday_ps') bgColor = 'bg-blue-200 text-blue-900';
+            else if (b.serviceType === 'weekend_vr') bgColor = 'bg-indigo-100 text-indigo-900';
+            else if (b.serviceType === 'weekend_ps') bgColor = 'bg-indigo-200 text-indigo-900';
+            else if (b.serviceType === 'birthday') bgColor = 'bg-pink-200 text-pink-900 font-semibold';
+
+            li.classList.add(...bgColor.split(' '));
+            li.textContent = `${b.startTime} (${b.duration}ч) - ${b.clientName}`;
+            bookingsList.appendChild(li);
+          });
+
+          dayCell.appendChild(bookingsList);
+        }
+
+        dayCell.addEventListener('click', () => {
+          selectedDate = date;
+          renderCalendar();
+        });
+
+        calendarEl.appendChild(dayCell);
+      }
+    }
+
+    function renderBookingsList() {
+      bookingsListEl.innerHTML = '';
+      const year = currentDate.getFullYear();
+      const month = currentDate.getMonth();
+
+      let filteredBookings;
+      if (selectedDate) {
+        bookingsListTitle.textContent = `Список записей на ${selectedDate.toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric' })}`;
+        filteredBookings = bookings.filter((b) => {
+          const bDate = new Date(b.bookingDate);
+          return (
+            bDate.getFullYear() === selectedDate.getFullYear() &&
+            bDate.getMonth() === selectedDate.getMonth() &&
+            bDate.getDate() === selectedDate.getDate()
+          );
+        });
+      } else {
+        bookingsListTitle.textContent = `Список записей на ${currentDate.toLocaleDateString('ru-RU', { month: 'long', year: 'numeric' })}`;
+        filteredBookings = bookings.filter((b) => {
+          const bDate = new Date(b.bookingDate);
+          return bDate.getFullYear() === year && bDate.getMonth() === month;
+        });
+      }
+
+      if (filteredBookings.length === 0) {
+        noBookingsText.classList.remove('hidden');
+        return;
+      } else {
+        noBookingsText.classList.add('hidden');
+      }
+
+      filteredBookings.sort((a, b) => {
+        const dateA = new Date(a.bookingDate + 'T' + a.startTime);
+        const dateB = new Date(b.bookingDate + 'T' + b.startTime);
+        return dateA - dateB;
+      });
+
+      filteredBookings.forEach((b) => {
+        const li = document.createElement('li');
+        li.className = 'border border-gray-300 rounded-3xl p-4 shadow-sm flex flex-col md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0';
+
+        const dateObj = new Date(b.bookingDate);
+        const dateStr = dateObj.toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric' });
+        const timeStr = b.startTime + ' (' + b.duration + 'ч)';
+
+        const leftDiv = document.createElement('div');
+        leftDiv.className = 'text-gray-700 font-semibold text-base';
+        leftDiv.textContent = `${dateStr}, ${timeStr}`;
+
+        const middleDiv = document.createElement('div');
+        middleDiv.className = 'text-gray-900 font-semibold text-base truncate max-w-xs';
+        middleDiv.textContent = b.clientName;
+
+        const rightDiv = document.createElement('div');
+        rightDiv.className = 'text-sm text-gray-600 text-right max-w-xs';
+
+        let serviceLabel = '';
+        switch (b.serviceType) {
+          case 'weekday_vr': serviceLabel = 'Будние дни - VR очки'; break;
+          case 'weekday_ps': serviceLabel = 'Будние дни - PS (1 джойстик)'; break;
+          case 'weekend_vr': serviceLabel = 'Выходные дни - VR очки'; break;
+          case 'weekend_ps': serviceLabel = 'Выходные дни - PS (1 джойстик)'; break;
+          case 'birthday': serviceLabel = 'День рождения (аренда помещения)'; break;
+        }
+
+        rightDiv.innerHTML = `<div class="font-semibold mb-1">${serviceLabel}</div>`;
+        if (b.notes) {
+          rightDiv.innerHTML += `<div class="italic whitespace-pre-wrap">${b.notes}</div>`;
+        }
+
+        const actionsDiv = document.createElement('div');
+        actionsDiv.className = 'flex space-x-3 ml-4';
+
+        const editBtn = document.createElement('button');
+        editBtn.type = 'button';
+        editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
+        editBtn.title = 'Редактировать запись';
+        editBtn.innerHTML = '<i class="fas fa-edit fa-lg"></i>';
+        editBtn.addEventListener('click', () => openEditModal(b.id));
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.type = 'button';
+        deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
+        deleteBtn.title = 'Удалить запись';
+        deleteBtn.innerHTML = '<i class="fas fa-trash-alt fa-lg"></i>';
+        deleteBtn.addEventListener('click', () => {
+          if (confirm('Вы уверены, что хотите удалить эту запись?')) {
+            deleteBooking(b.id);
+          }
+        });
+
+        actionsDiv.appendChild(editBtn);
+        actionsDiv.appendChild(deleteBtn);
+
+        li.appendChild(leftDiv);
+        li.appendChild(middleDiv);
+        li.appendChild(rightDiv);
+        li.appendChild(actionsDiv);
+
+        bookingsListEl.appendChild(li);
+      });
+    }
+
+    async function deleteBooking(id) {
+      try {
+        await deleteDoc(doc(db, "bookings", id));
+      } catch (error) {
+        console.error("Ошибка удаления:", error);
+        alert("Не удалось удалить запись");
+      }
+    }
+
+    function openEditModal(id) {
+      const booking = bookings.find(b => b.id === id);
+      if (!booking) return;
+
+      bookingIdInput.value = booking.id;
+      modalTitle.textContent = 'Редактировать запись';
+      deleteBookingBtn.classList.remove('hidden');
+      bookingModal.classList.remove('hidden');
+
+      bookingForm.clientName.value = booking.clientName;
+      bookingForm.bookingDate.value = booking.bookingDate;
+      bookingForm.startTime.value = booking.startTime;
+      bookingForm.duration.value = booking.duration.toString();
+      bookingForm.serviceType.value = booking.serviceType;
+      bookingForm.notes.value = booking.notes || '';
+      bookingForm.clientName.focus();
+
+      selectedDate = new Date(booking.bookingDate);
+      renderCalendar();
+    }
+
+    // Остальные функции (openModalWithDate, parseTime и обработчики событий)
+    // ... (остальной ваш код обработчиков событий без изменений)
+    // Только замените localStorage на вызовы Firebase
+
+    bookingForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const id = bookingIdInput.value;
+      const newBooking = {
+        clientName: bookingForm.clientName.value.trim(),
+        bookingDate: bookingForm.bookingDate.value,
+        startTime: bookingForm.startTime.value,
+        duration: parseFloat(bookingForm.duration.value),
+        serviceType: bookingForm.serviceType.value,
+        notes: bookingForm.notes.value.trim(),
+      };
+
+      // Валидация (оставьте вашу текущую валидацию)
+
+      try {
+        if (id) {
+          // Обновление существующей записи
+          await updateDoc(doc(db, "bookings", id), newBooking);
+        } else {
+          // Добавление новой записи
+          await addDoc(collection(db, "bookings"), newBooking);
+        }
+        bookingModal.classList.add('hidden');
+      } catch (error) {
+        console.error("Ошибка сохранения:", error);
+        alert("Не удалось сохранить запись");
+      }
+    });
+
+    // Инициализация календаря
+    renderCalendar();
+
+    // Остальные обработчики событий (без изменений)
+    prevMonthBtn.addEventListener('click', () => {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      selectedDate = null;
+      renderCalendar();
+    });
+
+    nextMonthBtn.addEventListener('click', () => {
+      currentDate.setMonth(currentDate.getMonth() + 1);
+      selectedDate = null;
+      renderCalendar();
+    });
+
+    addBookingBtn.addEventListener('click', () => {
+      bookingIdInput.value = '';
+      modalTitle.textContent = 'Добавить запись';
+      deleteBookingBtn.classList.add('hidden');
+      bookingModal.classList.remove('hidden');
+      const todayStr = new Date().toISOString().slice(0, 10);
+      bookingForm.bookingDate.value = todayStr;
+      bookingForm.clientName.value = '';
+      bookingForm.startTime.value = '';
+      bookingForm.duration.value = '1';
+      bookingForm.serviceType.value = 'weekday_vr';
+      bookingForm.notes.value = '';
+      bookingForm.clientName.focus();
+      selectedDate = null;
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+      bookingModal.classList.add('hidden');
+    });
+
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) {
+        bookingModal.classList.add('hidden');
+      }
+    });
+
+    deleteBookingBtn.addEventListener('click', () => {
+      const id = bookingIdInput.value;
+      if (!id) return;
+      if (confirm('Вы уверены, что хотите удалить эту запись?')) {
+        deleteBooking(id);
+      }
+    });
+
+    function parseTime(timeStr) {
+      const [h, m] = timeStr.split(':').map(Number);
+      return h * 60 + m;
+    }
   </script>
 </body>
 </html>
