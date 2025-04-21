@@ -65,18 +65,8 @@
       color: #6b7280;
       pointer-events: none;
     }
-    .phone-input::after {
-      content: ")";
-      position: absolute;
-      left: 85px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #6b7280;
-      pointer-events: none;
-    }
     .phone-input input {
       padding-left: 50px;
-      padding-right: 15px;
     }
   </style>
 </head>
@@ -225,7 +215,7 @@
         </div>
         <div class="phone-input">
           <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
-          <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="   ) XXX-XX-XX" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" value="+7 (" />
+          <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="XXX) XXX-XX-XX" />
         </div>
         <div>
           <label for="bookingDate" class="block text-gray-900 font-semibold mb-2">Дата</label>
@@ -328,7 +318,8 @@
     // Маска для телефона
     clientPhoneInput.addEventListener('input', function(e) {
       let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
-      e.target.value = '+7 (' + (x[1] ? x[1] : '') + (x[2] ? ') ' + x[2] : '') + (x[3] ? '-' + x[3] : '') + (x[4] ? '-' + x[4] : '');
+      let formatted = !x[1] ? '' : x[1] + (x[2] ? ') ' + x[2] : '') + (x[3] ? '-' + x[3] : '') + (x[4] ? '-' + x[4] : '');
+      e.target.value = formatted;
     });
 
     // ================== АУТЕНТИФИКАЦИЯ ==================
@@ -554,8 +545,8 @@
         
         // Добавляем кликабельный номер телефона
         if (b.clientPhone) {
-          const phoneNumber = b.clientPhone.replace(/[^0-9+]/g, '');
-          rightDiv.innerHTML += `<div class="mt-1"><a href="tel:${phoneNumber}" class="text-blue-600 hover:text-blue-800 hover:underline">${b.clientPhone}</a></div>`;
+          const phoneNumber = '+7' + b.clientPhone.replace(/\D/g, '');
+          rightDiv.innerHTML += `<div class="mt-1"><a href="tel:${phoneNumber}" class="text-blue-600 hover:text-blue-800 hover:underline">+7 (${b.clientPhone}</a></div>`;
         }
         
         if (b.notes) {
@@ -624,7 +615,7 @@
       bookingModal.classList.remove('hidden');
 
       bookingForm.clientName.value = booking.clientName;
-      bookingForm.clientPhone.value = booking.clientPhone || '+7 (';
+      bookingForm.clientPhone.value = booking.clientPhone || '';
       bookingForm.bookingDate.value = booking.bookingDate;
       bookingForm.startTime.value = booking.startTime;
       bookingForm.duration.value = booking.duration.toString();
@@ -662,7 +653,7 @@
       const todayStr = new Date().toISOString().slice(0, 10);
       bookingForm.bookingDate.value = todayStr;
       bookingForm.clientName.value = '';
-      bookingForm.clientPhone.value = '+7 (';
+      bookingForm.clientPhone.value = '';
       bookingForm.startTime.value = '';
       bookingForm.duration.value = '1';
       bookingForm.serviceType.value = 'weekday_vr';
@@ -706,7 +697,7 @@
         alert('Пожалуйста, введите имя клиента.');
         return;
       }
-      if (!newBooking.clientPhone || newBooking.clientPhone.length < 10) {
+      if (!newBooking.clientPhone || newBooking.clientPhone.replace(/\D/g, '').length < 10) {
         alert('Пожалуйста, введите корректный номер телефона.');
         return;
       }
