@@ -83,6 +83,7 @@
       <div class="flex items-center space-x-4">
         <p class="mt-1 md:mt-0 text-gray-500 text-sm select-none">Календарь записи клиентов</p>
         <button id="logoutBtn" class="hidden text-sm text-blue-600 hover:text-blue-800">Выйти</button>
+        <button id="loginBtn" class="text-sm text-blue-600 hover:text-blue-800">Вход для администратора</button>
       </div>
     </div>
   </header>
@@ -285,12 +286,14 @@
     const authContainer = document.getElementById('authContainer');
     const loginForm = document.getElementById('loginForm');
     const logoutBtn = document.getElementById('logoutBtn');
+    const loginBtn = document.getElementById('loginBtn');
 
     // Состояние приложения
     let currentDate = new Date();
     currentDate.setDate(1);
     let selectedDate = null;
     let bookings = [];
+    let isAdmin = false;
 
     // ================== АУТЕНТИФИКАЦИЯ ==================
     // Обработчик формы входа
@@ -301,6 +304,7 @@
       
       try {
         await signInWithEmailAndPassword(auth, email, password);
+        authContainer.classList.add('hidden');
       } catch (error) {
         alert('Ошибка входа: ' + error.message);
       }
@@ -311,15 +315,22 @@
       signOut(auth);
     });
 
+    // Кнопка входа
+    loginBtn.addEventListener('click', () => {
+      authContainer.classList.remove('hidden');
+    });
+
     // Отслеживание состояния авторизации
     onAuthStateChanged(auth, (user) => {
       if (user) {
-        authContainer.classList.add('hidden');
+        isAdmin = true;
         logoutBtn.classList.remove('hidden');
+        loginBtn.classList.add('hidden');
         addBookingBtn.classList.remove('hidden');
       } else {
-        authContainer.classList.remove('hidden');
+        isAdmin = false;
         logoutBtn.classList.add('hidden');
+        loginBtn.classList.remove('hidden');
         addBookingBtn.classList.add('hidden');
       }
     });
@@ -511,31 +522,36 @@
         const actionsDiv = document.createElement('div');
         actionsDiv.className = 'flex space-x-3 ml-4';
 
-        const editBtn = document.createElement('button');
-        editBtn.type = 'button';
-        editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
-        editBtn.title = 'Редактировать запись';
-        editBtn.innerHTML = '<i class="fas fa-edit fa-lg"></i>';
-        editBtn.addEventListener('click', () => openEditModal(b.id));
+        if (isAdmin) {
+          const editBtn = document.createElement('button');
+          editBtn.type = 'button';
+          editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
+          editBtn.title = 'Редактировать запись';
+          editBtn.innerHTML = '<i class="fas fa-edit fa-lg"></i>';
+          editBtn.addEventListener('click', () => openEditModal(b.id));
 
-        const deleteBtn = document.createElement('button');
-        deleteBtn.type = 'button';
-        deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
-        deleteBtn.title = 'Удалить запись';
-        deleteBtn.innerHTML = '<i class="fas fa-trash-alt fa-lg"></i>';
-        deleteBtn.addEventListener('click', () => {
-          if (confirm('Вы уверены, что хотите удалить эту запись?')) {
-            deleteBooking(b.id);
-          }
-        });
+          const deleteBtn = document.createElement('button');
+          deleteBtn.type = 'button';
+          deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
+          deleteBtn.title = 'Удалить запись';
+          deleteBtn.innerHTML = '<i class="fas fa-trash-alt fa-lg"></i>';
+          deleteBtn.addEventListener('click', () => {
+            if (confirm('Вы уверены, что хотите удалить эту запись?')) {
+              deleteBooking(b.id);
+            }
+          });
 
-        actionsDiv.appendChild(editBtn);
-        actionsDiv.appendChild(deleteBtn);
+          actionsDiv.appendChild(editBtn);
+          actionsDiv.appendChild(deleteBtn);
+        }
 
         li.appendChild(leftDiv);
         li.appendChild(middleDiv);
         li.appendChild(rightDiv);
-        li.appendChild(actionsDiv);
+        
+        if (isAdmin) {
+          li.appendChild(actionsDiv);
+        }
 
         bookingsListEl.appendChild(li);
       });
@@ -551,6 +567,11 @@
     }
 
     function openEditModal(id) {
+      if (!isAdmin) {
+        authContainer.classList.remove('hidden');
+        return;
+      }
+
       const booking = bookings.find(b => b.id === id);
       if (!booking) return;
 
@@ -585,7 +606,7 @@
     });
 
     addBookingBtn.addEventListener('click', () => {
-      if (!auth.currentUser) {
+      if (!isAdmin) {
         authContainer.classList.remove('hidden');
         return;
       }
@@ -618,7 +639,7 @@
     bookingForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      if (!auth.currentUser) {
+      if (!isAdmin) {
         alert("Требуется авторизация!");
         authContainer.classList.remove('hidden');
         return;
