@@ -53,23 +53,27 @@
     .bookings-list::-webkit-scrollbar-track {
       background: transparent;
     }
-    .phone-input {
+   .phone-input {
     position: relative;
   }
   .phone-input::before {
     content: "+7 (";
     position: absolute;
-    left: 15px;
-    top: 19px; /* Фиксированная позиция вместо transform */
+    left: 16px;
+    top: 16px; /* Точная подгонка под высоту поля */
     color: #6b7280;
     pointer-events: none;
-    font-size: 16px; /* Совпадает с размером шрифта в input */
+    font-size: 16px;
     line-height: 1.5;
+    height: 24px;
+    display: flex;
+    align-items: center;
   }
   .phone-input input {
     padding-left: 50px;
-    height: 48px; /* Фиксированная высота как у других полей */
-    font-size: 16px; /* Явно задаем размер шрифта */
+    height: 48px;
+    font-size: 16px;
+    padding-top: 1px; /* Дополнительная корректировка */
   }
   </style>
 </head>
