@@ -53,6 +53,31 @@
     .bookings-list::-webkit-scrollbar-track {
       background: transparent;
     }
+    .phone-input {
+      position: relative;
+    }
+    .phone-input::before {
+      content: "+7 (";
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6b7280;
+      pointer-events: none;
+    }
+    .phone-input::after {
+      content: ")";
+      position: absolute;
+      left: 85px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #6b7280;
+      pointer-events: none;
+    }
+    .phone-input input {
+      padding-left: 50px;
+      padding-right: 15px;
+    }
   </style>
 </head>
 <body>
@@ -198,6 +223,10 @@
           <label for="clientName" class="block text-gray-900 font-semibold mb-2">Имя клиента</label>
           <input type="text" id="clientName" name="clientName" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="Введите имя клиента" />
         </div>
+        <div class="phone-input">
+          <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
+          <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="   ) XXX-XX-XX" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" value="+7 (" />
+        </div>
         <div>
           <label for="bookingDate" class="block text-gray-900 font-semibold mb-2">Дата</label>
           <input type="date" id="bookingDate" name="bookingDate" required class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" />
@@ -287,6 +316,7 @@
     const loginForm = document.getElementById('loginForm');
     const logoutBtn = document.getElementById('logoutBtn');
     const loginBtn = document.getElementById('loginBtn');
+    const clientPhoneInput = document.getElementById('clientPhone');
 
     // Состояние приложения
     let currentDate = new Date();
@@ -294,6 +324,12 @@
     let selectedDate = null;
     let bookings = [];
     let isAdmin = false;
+
+    // Маска для телефона
+    clientPhoneInput.addEventListener('input', function(e) {
+      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+      e.target.value = '+7 (' + (x[1] ? x[1] : '') + (x[2] ? ') ' + x[2] : '') + (x[3] ? '-' + x[3] : '') + (x[4] ? '-' + x[4] : '');
+    });
 
     // ================== АУТЕНТИФИКАЦИЯ ==================
     // Обработчик формы входа
@@ -515,6 +551,13 @@
         }
 
         rightDiv.innerHTML = `<div class="font-semibold mb-1">${serviceLabel}</div>`;
+        
+        // Добавляем кликабельный номер телефона
+        if (b.clientPhone) {
+          const phoneNumber = b.clientPhone.replace(/[^0-9+]/g, '');
+          rightDiv.innerHTML += `<div class="mt-1"><a href="tel:${phoneNumber}" class="text-blue-600 hover:text-blue-800 hover:underline">${b.clientPhone}</a></div>`;
+        }
+        
         if (b.notes) {
           rightDiv.innerHTML += `<div class="italic whitespace-pre-wrap">${b.notes}</div>`;
         }
@@ -581,6 +624,7 @@
       bookingModal.classList.remove('hidden');
 
       bookingForm.clientName.value = booking.clientName;
+      bookingForm.clientPhone.value = booking.clientPhone || '+7 (';
       bookingForm.bookingDate.value = booking.bookingDate;
       bookingForm.startTime.value = booking.startTime;
       bookingForm.duration.value = booking.duration.toString();
@@ -618,6 +662,7 @@
       const todayStr = new Date().toISOString().slice(0, 10);
       bookingForm.bookingDate.value = todayStr;
       bookingForm.clientName.value = '';
+      bookingForm.clientPhone.value = '+7 (';
       bookingForm.startTime.value = '';
       bookingForm.duration.value = '1';
       bookingForm.serviceType.value = 'weekday_vr';
@@ -648,6 +693,7 @@
       const id = bookingIdInput.value;
       const newBooking = {
         clientName: bookingForm.clientName.value.trim(),
+        clientPhone: bookingForm.clientPhone.value.trim(),
         bookingDate: bookingForm.bookingDate.value,
         startTime: bookingForm.startTime.value,
         duration: parseFloat(bookingForm.duration.value),
@@ -658,6 +704,10 @@
       // Валидация
       if (!newBooking.clientName) {
         alert('Пожалуйста, введите имя клиента.');
+        return;
+      }
+      if (!newBooking.clientPhone || newBooking.clientPhone.length < 10) {
+        alert('Пожалуйста, введите корректный номер телефона.');
         return;
       }
       if (!newBooking.bookingDate) {
