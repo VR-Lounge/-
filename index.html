@@ -542,12 +542,27 @@
         
         // Добавляем кликабельный номер телефона
         // Внутри функции renderBookingsList, где формируется rightDiv:
-        if (b.clientPhone) {
-        // Удаляем возможные дублирования +7
-        let cleanPhone = b.clientPhone.replace(/^\+7\s*\+\s*7/, '+7');
-        cleanPhone = cleanPhone.replace(/[^0-9+() -]/g, '');
-        const telNumber = cleanPhone.replace(/\D/g, '');
-        rightDiv.innerHTML += `<div class="mt-1"><a href="tel:${telNumber}" class="text-blue-600 hover:text-blue-800 hover:underline">${cleanPhone}</a></div>`;
+        // Очищаем номер от всего, кроме цифр и +
+        let cleanPhone = b.clientPhone.replace(/[^0-9+]/g, '');
+        // Удаляем дублирование +7 если есть
+        cleanPhone = cleanPhone.replace(/^\+7\+7/, '+7');
+        // Если номер начинается с 7 или 8, добавляем +
+        if (/^[78]/.test(cleanPhone)) {
+        cleanPhone = '+7' + cleanPhone.substring(1);
+        }
+        // Форматируем для отображения (если нужно)
+        const displayPhone = formatPhoneForDisplay(cleanPhone);
+  
+        rightDiv.innerHTML += `<div class="mt-1"><a href="tel:${cleanPhone}" class="text-blue-600 hover:text-blue-800 hover:underline">${displayPhone}</a></div>`;
+        }
+
+        // Вспомогательная функция для форматирования отображаемого номера
+        function formatPhoneForDisplay(phone) {
+        const numbers = phone.replace(/\D/g, '');
+        if (numbers.length >= 11) {
+        return `+7 (${numbers.substring(1, 4)}) ${numbers.substring(4, 7)}-${numbers.substring(7, 9)}-${numbers.substring(9, 11)}`;
+        }
+        return phone; // Возвращаем как есть, если не хватает цифр
         }
         
         if (b.notes) {
