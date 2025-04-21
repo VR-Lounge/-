@@ -53,29 +53,6 @@
     .bookings-list::-webkit-scrollbar-track {
       background: transparent;
     }
-   .phone-input {
-    position: relative;
-  }
-  .phone-input::before {
-    content: "+7 (";
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #9ca3af; /* Цвет как у плейсхолдера */
-    pointer-events: none;
-    font-size: 16px;
-    line-height: 1.5;
-    height: 24px;
-    display: flex;
-    align-items: center;
-  }
-  .phone-input input {
-    padding-left: 50px;
-    height: 48px;
-    font-size: 16px;
-    padding-top: 0;
-  }
   </style>
 </head>
 <body>
@@ -221,11 +198,11 @@
           <label for="clientName" class="block text-gray-900 font-semibold mb-2">Имя клиента</label>
           <input type="text" id="clientName" name="clientName" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="Введите имя клиента" />
         </div>
-        <div class="phone-input">
-      <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
-      <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off"
+        <div>
+          <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
+          <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off"
          class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
-         placeholder="XXX) XXX-XX-XX" />
+         placeholder="+7 (XXX) XXX-XX-XX" />
         </div>
         <div>
           <label for="bookingDate" class="block text-gray-900 font-semibold mb-2">Дата</label>
@@ -325,11 +302,10 @@
     let bookings = [];
     let isAdmin = false;
 
-    // Маска для телефона
+    // Маска для телефона (простая версия)
     clientPhoneInput.addEventListener('input', function(e) {
-      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
-      let formatted = !x[1] ? '' : x[1] + (x[2] ? ') ' + x[2] : '') + (x[3] ? '-' + x[3] : '') + (x[4] ? '-' + x[4] : '');
-      e.target.value = formatted;
+    let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+    e.target.value = !x[1] ? '' : '+7 (' + (x[2] ? x[2] : '') + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
     });
 
     // ================== АУТЕНТИФИКАЦИЯ ==================
