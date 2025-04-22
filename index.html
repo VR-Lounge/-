@@ -57,24 +57,25 @@
 </head>
 <body>
   <!-- Форма входа (изначально скрыта) -->
-  <div id="authContainer" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center z-50 hidden">
-    <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8">
-      <h3 class="text-2xl font-semibold mb-6 text-center">Доступ для администратора</h3>
-      <form id="loginForm" class="space-y-4">
-        <div>
-          <label for="loginEmail" class="block mb-2 font-medium">Email</label>
-          <input type="email" id="loginEmail" required class="w-full rounded-3xl border border-gray-300 px-4 py-3">
-        </div>
-        <div>
-          <label for="loginPassword" class="block mb-2 font-medium">Пароль</label>
-          <input type="password" id="loginPassword" required class="w-full rounded-3xl border border-gray-300 px-4 py-3">
-        </div>
-        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-3xl">
-          Войти
-        </button>
-      </form>
-    </div>
+  <div id="authContainer" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center z-50 hidden" onclick="event.target === this && this.classList.add('hidden')">
+  <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8" onclick="event.stopPropagation()">
+    <button id="closeAuthBtn" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+    <h3 class="text-2xl font-semibold mb-6 text-center">Доступ для администратора</h3>
+    <form id="loginForm" class="space-y-4">
+      <div>
+        <label for="loginEmail" class="block mb-2 font-medium">Email</label>
+        <input type="email" id="loginEmail" required class="w-full rounded-3xl border border-gray-300 px-4 py-3">
+      </div>
+      <div>
+        <label for="loginPassword" class="block mb-2 font-medium">Пароль</label>
+        <input type="password" id="loginPassword" required class="w-full rounded-3xl border border-gray-300 px-4 py-3">
+      </div>
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-3xl">
+        Войти
+      </button>
+    </form>
   </div>
+</div>
 
   <!-- Основной интерфейс -->
   <header class="bg-white shadow-md sticky top-0 z-30">
@@ -331,6 +332,17 @@
       }
     });
 
+    // Обработчики для модального окна авторизации
+    document.getElementById('closeAuthBtn').addEventListener('click', () => {
+    document.getElementById('authContainer').classList.add('hidden');
+    });
+
+    document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !document.getElementById('authContainer').classList.contains('hidden')) {
+      document.getElementById('authContainer').classList.add('hidden');
+    }
+    });
+
     // Кнопка выхода
     logoutBtn.addEventListener('click', () => {
       signOut(auth);
@@ -338,7 +350,9 @@
 
     // Кнопка входа
     loginBtn.addEventListener('click', () => {
-      authContainer.classList.remove('hidden');
+    if (authContainer.classList.contains('hidden')) {
+    authContainer.classList.remove('hidden');
+    }
     });
 
     // Отслеживание состояния авторизации
