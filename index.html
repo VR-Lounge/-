@@ -299,6 +299,8 @@
     const logoutBtn = document.getElementById('logoutBtn');
     const loginBtn = document.getElementById('loginBtn');
     const clientPhoneInput = document.getElementById('clientPhone');
+    const prevMonthBookingsBtn = document.getElementById('prevMonthBookings');
+    const nextMonthBookingsBtn = document.getElementById('nextMonthBookings');
 
     // Состояние приложения
     let currentDate = new Date();
@@ -306,22 +308,12 @@
     let selectedDate = null;
     let bookings = [];
     let isAdmin = false;
+    let bookingsViewMonth = new Date(); // Отдельная дата для просмотра записей
 
-    // Маска для телефона (простая версия)
+    // Маска для телефона
     clientPhoneInput.addEventListener('input', function(e) {
-    let numbers = e.target.value.replace(/\D/g, '');
-    // Если номер начинается с 7 или 8, заменяем на +7
-    if (numbers.startsWith('7') || numbers.startsWith('8')) {
-    numbers = '7' + numbers.substring(1);
-    }
-    // Форматируем только если есть цифры
-    if (numbers.length > 0) {
-    const match = numbers.match(/^7(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})$/);
-    e.target.value = '+7' + (match[1] ? ' (' + match[1] : '') + 
-                      (match[2] ? ') ' + match[2] : '') + 
-                      (match[3] ? '-' + match[3] : '') + 
-                      (match[4] ? '-' + match[4] : '');
-    }
+      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+      e.target.value = !x[1] ? '' : '+7 (' + (x[2] ? x[2] : '') + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
     });
 
     // ================== АУТЕНТИФИКАЦИЯ ==================
@@ -472,6 +464,7 @@
         dayCell.addEventListener('click', () => {
           selectedDate = date;
           renderCalendar();
+          renderBookingsList();
         });
 
         calendarEl.appendChild(dayCell);
@@ -480,27 +473,16 @@
 
     function renderBookingsList() {
       bookingsListEl.innerHTML = '';
-      const year = currentDate.getFullYear();
-      const month = currentDate.getMonth();
+      const year = bookingsViewMonth.getFullYear();
+      const month = bookingsViewMonth.getMonth();
 
-      let filteredBookings;
-      if (selectedDate) {
-        bookingsListTitle.textContent = `Список записей на ${selectedDate.toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric' })}`;
-        filteredBookings = bookings.filter((b) => {
-          const bDate = new Date(b.bookingDate);
-          return (
-            bDate.getFullYear() === selectedDate.getFullYear() &&
-            bDate.getMonth() === selectedDate.getMonth() &&
-            bDate.getDate() === selectedDate.getDate()
-          );
-        });
-      } else {
-        bookingsListTitle.textContent = `Список записей на ${currentDate.toLocaleDateString('ru-RU', { month: 'long', year: 'numeric' })}`;
-        filteredBookings = bookings.filter((b) => {
-          const bDate = new Date(b.bookingDate);
-          return bDate.getFullYear() === year && bDate.getMonth() === month;
-        });
-      }
+      // Обновляем заголовок
+      bookingsListTitle.textContent = `Список записей на ${bookingsViewMonth.toLocaleDateString('ru-RU', { month: 'long', year: 'numeric' })}`;
+
+      let filteredBookings = bookings.filter((b) => {
+        const bDate = new Date(b.bookingDate);
+        return bDate.getFullYear() === year && bDate.getMonth() === month;
+      });
 
       if (filteredBookings.length === 0) {
         noBookingsText.classList.remove('hidden');
@@ -545,14 +527,12 @@
 
         rightDiv.innerHTML = `<div class="font-semibold mb-1">${serviceLabel}</div>`;
         
-        // Добавляем кликабельный номер телефона
-        // Внутри функции renderBookingsList, где формируется rightDiv:
         if (b.clientPhone) {
-        // Удаляем возможные дублирования +7
-        let cleanPhone = b.clientPhone.replace(/^\+7\s*\+\s*7/, '+7');
-        cleanPhone = cleanPhone.replace(/[^0-9+() -]/g, '');
-        const telNumber = cleanPhone.replace(/\D/g, '');
-        rightDiv.innerHTML += `<div class="mt-1"><a href="tel:${telNumber}" class="text-blue-600 hover:text-blue-800 hover:underline">${cleanPhone}</a></div>`;
+          // Очищаем номер от возможных дублирований +7
+          let cleanPhone = b.clientPhone.replace(/^\+7\s*\+\s*7/, '+7');
+          cleanPhone = cleanPhone.replace(/[^0-9+() -]/g, '');
+          const telNumber = cleanPhone.replace(/\D/g, '');
+          rightDiv.innerHTML += `<div class="mt-1"><a href="tel:+${telNumber}" class="text-blue-600 hover:text-blue-800 hover:underline">${cleanPhone}</a></div>`;
         }
         
         if (b.notes) {
@@ -621,7 +601,7 @@
       bookingModal.classList.remove('hidden');
 
       bookingForm.clientName.value = booking.clientName;
-      bookingForm.clientPhone.value = booking.clientPhone || '';
+      bookingForm.clientPhone.value = booking.clientPhone || '+7 (';
       bookingForm.bookingDate.value = booking.bookingDate;
       bookingForm.startTime.value = booking.startTime;
       bookingForm.duration.value = booking.duration.toString();
@@ -646,6 +626,16 @@
       renderCalendar();
     });
 
+    prevMonthBookingsBtn.addEventListener('click', () => {
+      bookingsViewMonth.setMonth(bookingsViewMonth.getMonth() - 1);
+      renderBookingsList();
+    });
+
+    nextMonthBookingsBtn.addEventListener('click', () => {
+      bookingsViewMonth.setMonth(bookingsViewMonth.getMonth() + 1);
+      renderBookingsList();
+    });
+
     addBookingBtn.addEventListener('click', () => {
       if (!isAdmin) {
         authContainer.classList.remove('hidden');
@@ -659,7 +649,7 @@
       const todayStr = new Date().toISOString().slice(0, 10);
       bookingForm.bookingDate.value = todayStr;
       bookingForm.clientName.value = '';
-      bookingForm.clientPhone.value = '';
+      bookingForm.clientPhone.value = '+7 (';
       bookingForm.startTime.value = '';
       bookingForm.duration.value = '1';
       bookingForm.serviceType.value = 'weekday_vr';
@@ -690,7 +680,7 @@
       const id = bookingIdInput.value;
       const newBooking = {
         clientName: bookingForm.clientName.value.trim(),
-        clientPhone: bookingForm.clientPhone.value.replace(/^\+7\s*\+\s*7/, '+7'),
+        clientPhone: bookingForm.clientPhone.value.trim(),
         bookingDate: bookingForm.bookingDate.value,
         startTime: bookingForm.startTime.value,
         duration: parseFloat(bookingForm.duration.value),
@@ -703,8 +693,8 @@
         alert('Пожалуйста, введите имя клиента.');
         return;
       }
-      if (!newBooking.clientPhone || newBooking.clientPhone.replace(/\D/g, '').length < 10) {
-        alert('Пожалуйста, введите корректный номер телефона.');
+      if (!newBooking.clientPhone || newBooking.clientPhone.replace(/\D/g, '').length < 11) {
+        alert('Пожалуйста, введите корректный номер телефона (11 цифр).');
         return;
       }
       if (!newBooking.bookingDate) {
@@ -731,8 +721,9 @@
       }
     });
 
-    // Инициализация календаря
+    // Инициализация
     renderCalendar();
+    renderBookingsList();
   </script>
 </body>
 </html>
