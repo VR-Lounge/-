@@ -123,7 +123,15 @@
 
     <!-- Список записей -->
     <section>
-      <h2 id="bookingsListTitle" class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Список записей</h2>
+      <div class="flex items-center justify-center space-x-4 mb-6">
+        <button id="prevMonthBookings" aria-label="Предыдущий месяц" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          <i class="fas fa-chevron-left text-lg"></i>
+        </button>
+        <h2 id="bookingsListTitle" class="text-2xl font-semibold text-center text-gray-900 tracking-tight">Список записей на апрель 2025 г.</h2>
+        <button id="nextMonthBookings" aria-label="Следующий месяц" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          <i class="fas fa-chevron-right text-lg"></i>
+        </button>
+      </div>
       <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200 min-h-[200px]">
         <ul id="bookingsList" class="space-y-4 max-h-[400px] overflow-y-auto text-gray-900 text-base leading-relaxed">
           <!-- Записи будут добавлены сюда -->
@@ -186,7 +194,6 @@
     </section>
   </main>
 
-
   <!-- Модальное окно бронирования -->
   <div id="bookingModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50">
     <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200">
@@ -200,9 +207,7 @@
         </div>
         <div>
           <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
-          <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off"
-         class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
-         placeholder="+7 (XXX) XXX-XX-XX" />
+          <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="+7 (XXX) XXX-XX-XX" />
         </div>
         <div>
           <label for="bookingDate" class="block text-gray-900 font-semibold mb-2">Дата</label>
@@ -237,7 +242,7 @@
         </div>
         <div>
           <label for="notes" class="block text-gray-900 font-semibold mb-2">Примечания</label>
-          <textarea id="notes" name="notes" rows="3" placeholder="Например, общее кол-во человек и др. важная инфа" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition resize-none"></textarea>
+          <textarea id="notes" name="notes" rows="3" placeholder="Введите дополнительные сведения" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition resize-none"></textarea>
         </div>
         <div class="flex space-x-4">
           <button type="submit" class="flex-grow bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-blue-300 focus:outline-none">Сохранить запись</button>
