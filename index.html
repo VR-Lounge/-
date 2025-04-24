@@ -471,8 +471,14 @@
       return day === 0 || day === 6; // 0 = Воскресенье, 6 = Суббота
     }
 
-    function formatDate(date) {
-        return date.toISOString().split('T')[0];
+    // БЕЗОПАСНАЯ функция форматирования даты в 'YYYY-MM-DD' без учета часовых поясов
+    function formatDateSafe(date) {
+      const year = date.getFullYear();
+      // getMonth() возвращает 0-11, добавляем 1 и дополняем нулем если нужно
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      // getDate() возвращает 1-31, дополняем нулем если нужно
+      const day = date.getDate().toString().padStart(2, '0');
+      return `${year}-${month}-${day}`;
     }
 
     // Маска для телефона
@@ -568,7 +574,8 @@
       // Ячейки дней месяца
       for (let day = 1; day <= daysInMonth; day++) {
         const date = new Date(year, month, day);
-        const dateStr = formatDate(date);
+        // Используем безопасное форматирование
+        const dateStr = formatDateSafe(date);
 
         const dayCell = document.createElement('div');
         dayCell.className = 'border border-gray-300 rounded-3xl h-24 p-3 flex flex-col justify-start cursor-pointer hover:bg-blue-50 transition relative select-text';
@@ -579,12 +586,14 @@
 
         // Подсветка сегодняшнего дня
         const today = new Date();
-        if (formatDate(date) === formatDate(today)) {
+        // Используем безопасное форматирование
+        if (formatDateSafe(date) === formatDateSafe(today)) {
           dayCell.classList.add('ring-2', 'ring-blue-600');
         }
 
         // Подсветка выбранного дня
-        if (selectedDate && formatDate(date) === formatDate(selectedDate)) {
+        // Используем безопасное форматирование
+        if (selectedDate && formatDateSafe(date) === formatDateSafe(selectedDate)) {
             dayCell.classList.add('bg-blue-200', 'ring-4', 'ring-blue-500');
         }
 
@@ -594,6 +603,7 @@
         dayCell.appendChild(dayNumber);
 
         // Отображение бронирований на этот день
+        // Сравнение идет со строкой dateStr, которая теперь формируется безопасно
         const dayBookings = bookings.filter(b => b.bookingDate === dateStr)
                                   .sort((a, b) => a.startTime.localeCompare(b.startTime)); // Сортировка по времени
 
@@ -773,17 +783,20 @@
       clientPhoneInput.value = '+7 ('; // Установить маску по умолчанию
 
       // Установить дату по умолчанию (сегодня или выбранная дата)
-      const defaultDate = date ? formatDate(date) : formatDate(new Date());
+      // Используем безопасное форматирование
+      const defaultDate = date ? formatDateSafe(date) : formatDateSafe(new Date());
       bookingForm.bookingDate.value = defaultDate;
 
       // Установить тип услуги по умолчанию в зависимости от дня недели
-      const bookingDateObj = new Date(defaultDate);
+      // Создаем объект Date из строки 'YYYY-MM-DD', добавляя время чтобы избежать UTC сдвига при парсинге
+      const bookingDateObj = new Date(defaultDate + 'T00:00:00');
       bookingForm.serviceType.value = isWeekend(bookingDateObj) ? 'weekend_vr' : 'weekday_vr';
 
 
       bookingModal.classList.remove('hidden');
       bookingForm.clientName.focus(); // Фокус на имени клиента
-      selectedDate = date ? new Date(date) : null; // Обновить selectedDate для подсветки
+      // Создаем новый объект Date для selectedDate, чтобы избежать изменения исходного объекта date
+      selectedDate = date ? new Date(date.getFullYear(), date.getMonth(), date.getDate()) : null;
       renderCalendar(); // Перерисовать календарь
     }
 
@@ -939,7 +952,8 @@
       // Ячейки дней
       for (let day = 1; day <= daysInMonth; day++) {
         const date = new Date(year, month, day);
-        const dateStr = formatDate(date);
+        // Используем безопасное форматирование
+        const dateStr = formatDateSafe(date);
 
         const dayCell = document.createElement('div');
         // Добавляем классы для стилизации и управления высотой
@@ -947,7 +961,8 @@
 
         // Выделение сегодняшнего дня
         const today = new Date();
-        if (formatDate(date) === formatDate(today)) {
+        // Используем безопасное форматирование
+        if (formatDateSafe(date) === formatDateSafe(today)) {
           dayCell.classList.add('ring-2', 'ring-blue-600');
         }
 
@@ -958,7 +973,8 @@
         dayCell.appendChild(dayNumber);
 
         // Отображение назначенных администраторов
-        const assignment = adminAssignments.find(a => a.date === dateStr); // Используем date как id
+        // Сравнение идет со строкой dateStr, которая теперь формируется безопасно
+        const assignment = adminAssignments.find(a => a.date === dateStr);
         const assignmentDetails = document.createElement('div');
         assignmentDetails.className = 'flex-grow flex flex-col justify-start space-y-1 mt-1 text-xs'; // Выравнивание контента
 
@@ -999,7 +1015,8 @@
             showLoginModal();
             return;
           }
-          openAssignModal(date, dateStr); // Передаем объект Date и строку
+          // Передаем dateStr, который был сформирован безопасно
+          openAssignModal(date, dateStr);
         });
 
         adminsCalendar.appendChild(dayCell);
