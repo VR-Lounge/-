@@ -254,10 +254,11 @@
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (3 шт.) — 1500 руб./час</li>
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (4 шт.) — 2000 руб./час</li>
             <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (1 джойстик) — 150 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (2 джойстика) — 300 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (3 джойстика) — 450 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (4 джойстика) — 600 руб./час</li>
+            <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (1 джойстик) — 150 руб./час</li>
+            <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (2 джойстика) — 300 руб./час</li>
+            <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (3 джойстика) — 450 руб./час</li>
+            <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (4 джойстика) — 600 руб./час</li>
+            <li><i class="fas fa-running text-purple-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
             <li><i class="fas fa-microphone-alt text-pink-500 mr-2"></i>Караоке — 300 руб./час</li>
             <li><i class="fas fa-chess-board text-yellow-600 mr-2"></i>Настольные игры — 200 руб./час</li>
           </ul>
@@ -272,10 +273,11 @@
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (3 шт.) — 2250 руб./час</li>
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (4 шт.) — 3000 руб./час</li>
             <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (1 джойстик) — 150 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (2 джойстика) — 300 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (3 джойстика) — 450 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (4 джойстика) — 600 руб./час</li>
+            <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (1 джойстик) — 150 руб./час</li>
+            <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (2 джойстика) — 300 руб./час</li>
+            <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (3 джойстика) — 450 руб./час</li>
+            <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (4 джойстика) — 600 руб./час</li>
+            <li><i class="fas fa-running text-purple-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
             <li><i class="fas fa-microphone-alt text-pink-500 mr-2"></i>Караоке — 300 руб./час</li>
             <li><i class="fas fa-chess-board text-yellow-600 mr-2"></i>Настольные игры — 200 руб./час</li>
           </ul>
@@ -784,9 +786,9 @@
         }
 
         // Обработчик клика на ячейку дня
-        dayCell.addEventListener('click', () => {
-          selectedDate = date;
-          renderCalendar();
+        dayCell.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openDayDetailsModal(dateStr, dayBookings);
         });
 
         calendarEl.appendChild(dayCell);
@@ -1676,15 +1678,25 @@
       // --- Календарь клиентов ---
       prevMonthBtn.addEventListener('click', () => {
         currentDate.setMonth(currentDate.getMonth() - 1);
-        selectedDate = null; // Сброс выбранной даты при смене месяца
+        selectedDate = null;
+        bookingsViewMonth = new Date(currentDate);
         renderCalendar();
+        renderBookingsList();
       });
       nextMonthBtn.addEventListener('click', () => {
         currentDate.setMonth(currentDate.getMonth() + 1);
         selectedDate = null;
+        bookingsViewMonth = new Date(currentDate);
         renderCalendar();
+        renderBookingsList();
       });
-      addBookingBtn.addEventListener('click', () => openBookingModal(selectedDate || new Date())); // Передаем выбранную дату или сегодня
+      addBookingBtn.addEventListener('click', () => {
+        if (!isAdmin) {
+          showLoginModal();
+          return;
+        }
+        openBookingModal(selectedDate || new Date());
+      });
 
 
       // --- Список записей клиентов ---
