@@ -112,98 +112,49 @@
       color: white;
     }
 
-    /* Стили для контейнера тегов услуг */
+    /* Стили для контейнера тегов */
     #servicesContainer {
-        display: flex; /* По умолчанию для мобильных - flex в строку */
-        overflow-x: auto; /* Горизонтальная прокрутка */
-        white-space: nowrap; /* Запрет переноса тегов на новую строку */
-        padding-bottom: 10px; /* Отступ для полосы прокрутки */
-        gap: 10px; /* Промежуток между тегами */
+      /* Стили по умолчанию (десктоп) */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px; /* Промежуток между тегами */
+      justify-content: center; /* Центрируем ряды тегов */
     }
 
-    /* Стили для тегов-кнопок услуг (базовые + мобильные) */
-    .service-tag {
-      /* display: inline-flex; */ /* Убрано */
-      display: inline-block; /* Чтобы теги шли в строку, но контент внутри мог быть блочным */
-      flex-direction: column;
-      /* align-items: center; */ /* Убрано, текст выровняем по центру */
-      /* padding: 8px 16px; */
-      padding: 12px 10px; /* Немного изменил отступы */
-      border-radius: 14px; /* Чуть менее круглые */
-      background-color: #f5f5f7;
-      color: #1d1d1f;
-      font-weight: 500;
-      border: 1px solid #e5e5e5;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      user-select: none;
-      text-align: center; /* Выравнивание текста по центру */
-      /* min-width: 110px; */ /* Убрано, используем фиксированную ширину */
-      width: 120px; /* Фиксированная ширина для мобильных */
-      min-height: 70px; /* Минимальная высота для единообразия */
-      vertical-align: top; /* Выравнивание тегов по верху, если они разной высоты */
-    }
+    /* Стили для контейнера тегов на мобильных */
+    @media (max-width: 768px) {
+      #servicesContainer {
+        display: block; /* Каждый тег на новой строке */
+        max-height: 350px; /* Ограничение высоты для скролла */
+        overflow-y: auto; /* Включаем вертикальный скролл */
+        padding: 5px; /* Небольшие отступы внутри блока скролла */
+        border: 1px solid #e5e5e5; /* Граница для области скролла */
+        border-radius: 14px; /* Скругление как у тегов */
+        gap: 0; /* Убираем gap для блочного макета */
+      }
 
-    /* Убираем лишние стили для иконки внутри тега */
-    .service-tag i {
-       /* font-size: 14px; */ /* Удалено */
-       margin-bottom: 0; /* Удалено */
-       margin-right: 0; /* Удалено */
-    }
+      /* Кастомизация скроллбара для мобильного контейнера */
+      #servicesContainer::-webkit-scrollbar {
+        width: 5px;
+      }
+      #servicesContainer::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+      }
+      #servicesContainer::-webkit-scrollbar-track {
+        background: transparent;
+      }
 
-    /* Стили для первой строки (иконка + название) */
-    .service-tag-line1 {
-        display: flex;        /* Иконка и текст в строку */
-        align-items: center;  /* Выравнивание по вертикали */
-        justify-content: center; /* Выравнивание по горизонтали */
-        margin-bottom: 4px;   /* Отступ снизу до цены */
-        font-size: 13px;      /* Размер шрифта названия */
-    }
-    .service-tag-line1 i {
-        font-size: 16px;    /* Размер иконки */
-        margin-right: 6px;  /* Отступ иконки справа */
-    }
-
-    /* Стили для строки с ценой */
-    .service-tag-price {
-      font-size: 12px;
-      color: #6e6e73; /* Вторичный цвет текста Apple */
-    }
-
-    .service-tag:hover {
-      background-color: #e5e5e5;
-    }
-
-    .service-tag.selected {
-      background-color: #007aff;
-      color: white;
-      border-color: #007aff;
-    }
-
-    .service-tag.selected:hover {
-      background-color: #0062cc;
-    }
-
-    .service-tag.selected .service-tag-price {
-      /* color: rgba(255, 255, 255, 0.8); */ /* Делаем цену такой же, как основной текст */
-      color: white;
-    }
-
-    /* Адаптивные стили для десктопа (ширина > 768px) */
-    @media (min-width: 768px) {
-        #servicesContainer {
-            flex-wrap: wrap; /* Разрешаем перенос тегов */
-            overflow-x: visible; /* Убираем горизонтальную прокрутку */
-            white-space: normal; /* Возвращаем нормальный перенос */
-            padding-bottom: 0; /* Убираем отступ для прокрутки */
-            gap: 15px; /* Можно увеличить промежуток */
-        }
-
-        .service-tag {
-             width: auto; /* Ширина определяется контентом и flex-wrap */
-             min-width: 130px; /* Минимальная ширина на десктопе */
-             min-height: auto; /* Высота по контенту */
-        }
+      .service-tag {
+        display: block; /* Каждый тег на новой строке */
+        width: 100%;    /* На всю ширину контейнера */
+        min-width: 0;   /* Сбрасываем минимальную ширину */
+        margin-bottom: 8px; /* Отступ между тегами */
+        text-align: center; /* Выравнивание остается по центру */
+      }
+      .service-tag:last-child {
+        margin-bottom: 0; /* Убираем отступ у последнего тега */
+      }
     }
   </style>
 </head>
@@ -562,7 +513,7 @@
                <div class="service-tag-line1"><i class="fas fa-birthday-cake"></i> <span>Аренда всего (День Рождения)</span></div>
                <div class="service-tag-price">от 3000 ₽/час</div> <!-- Цена для ДР динамическая -->
             </button>
-          </div>
+        </div>
           <input type="hidden" id="selectedServices" name="selectedServices">
         </div>
 
