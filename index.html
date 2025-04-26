@@ -115,6 +115,10 @@
       color: white;
     }
 
+    .service-tag.selected i {
+        color: white !important; /* Переопределяем цвет иконки на белый при выборе */
+    }
+
     /* Стили для контейнера тегов */
     #servicesContainer {
       /* Общие стили для контейнера (десктоп + мобильные) */
@@ -453,75 +457,75 @@
           <label class="block text-gray-900 font-semibold mb-2">Услуги</label>
           <div id="servicesContainer" class="flex flex-wrap gap-3">
             <button type="button" class="service-tag" data-service="weekday_ps1" data-price="150">
-              <div class="service-tag-line1"><i class="fas fa-gamepad"></i> <span>PS5 (1 джойстик)</span></div>
+              <div class="service-tag-line1"><i class="fas fa-gamepad text-indigo-600"></i> <span>PS5 (1 джойстик)</span></div>
               <div class="service-tag-price">150 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="weekday_ps2" data-price="300">
-              <div class="service-tag-line1"><i class="fas fa-gamepad"></i> <span>PS5 (2 джойстика)</span></div>
+              <div class="service-tag-line1"><i class="fas fa-gamepad text-indigo-600"></i> <span>PS5 (2 джойстика)</span></div>
               <div class="service-tag-price">300 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="weekday_vr1" data-price="500">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard"></i> <span>VR очки (1 шт.) | Будни</span></div>
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (1 шт.) | Будни</span></div>
                <div class="service-tag-price">500 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="weekday_vr2" data-price="1000">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard"></i> <span>VR очки (2 шт.) | Будни</span></div>
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (2 шт.) | Будни</span></div>
                <div class="service-tag-price">1000 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="weekday_vr3" data-price="1500">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard"></i> <span>VR очки (3 шт.) | Будни</span></div>
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (3 шт.) | Будни</span></div>
                <div class="service-tag-price">1500 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="weekday_vr4" data-price="2000">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard"></i> <span>VR очки (4 шт.) | Будни</span></div>
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (4 шт.) | Будни</span></div>
                <div class="service-tag-price">2000 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="weekend_vr1" data-price="750">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard"></i> <span>VR очки (1 шт.) | Выходные</span></div>
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (1 шт.) | Выходные</span></div>
                <div class="service-tag-price">750 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="weekend_vr2" data-price="1500">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard"></i> <span>VR очки (2 шт.) | Выходные</span></div>
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (2 шт.) | Выходные</span></div>
                <div class="service-tag-price">1500 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="weekend_vr3" data-price="2250">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard"></i> <span>VR очки (3 шт.) | Выходные</span></div>
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (3 шт.) | Выходные</span></div>
                <div class="service-tag-price">2250 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="weekend_vr4" data-price="3000">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard"></i> <span>VR очки (4 шт.) | Выходные</span></div>
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (4 шт.) | Выходные</span></div>
                <div class="service-tag-price">3000 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="xbox_kinnect" data-price="500">
-               <div class="service-tag-line1"><i class="fas fa-gamepad"></i> <span>X-Box Kinnect (до 8 чел.)</span></div>
+               <div class="service-tag-line1"><i class="fas fa-child text-orange-600"></i> <span>X-Box Kinnect (до 8 чел.)</span></div>
                <div class="service-tag-price">500 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="xbox1" data-price="250">
-               <div class="service-tag-line1"><i class="fas fa-gamepad"></i> <span>X-Box (1 джойстик)</span></div>
+               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600"></i> <span>X-Box (1 джойстик)</span></div>
                <div class="service-tag-price">250 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="xbox2" data-price="500">
-               <div class="service-tag-line1"><i class="fas fa-gamepad"></i> <span>X-Box (2 джойстика)</span></div>
+               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600"></i> <span>X-Box (2 джойстика)</span></div>
                <div class="service-tag-price">500 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="xbox3" data-price="750">
-               <div class="service-tag-line1"><i class="fas fa-gamepad"></i> <span>X-Box (3 джойстика)</span></div>
+               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600"></i> <span>X-Box (3 джойстика)</span></div>
                <div class="service-tag-price">750 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="xbox4" data-price="1000">
-               <div class="service-tag-line1"><i class="fas fa-gamepad"></i> <span>X-Box (4 джойстика)</span></div>
+               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600"></i> <span>X-Box (4 джойстика)</span></div>
                <div class="service-tag-price">1000 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="karaoke" data-price="1000">
-               <div class="service-tag-line1"><i class="fas fa-microphone"></i> <span>Караоке</span></div>
+               <div class="service-tag-line1"><i class="fas fa-microphone text-pink-600"></i> <span>Караоке</span></div>
                <div class="service-tag-price">1000 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="board_games" data-price="500">
-               <div class="service-tag-line1"><i class="fas fa-chess"></i> <span>Настольные игры</span></div>
+               <div class="service-tag-line1"><i class="fas fa-dice-d6 text-purple-600"></i> <span>Настольные игры</span></div>
                <div class="service-tag-price">500 ₽/час</div>
             </button>
             <button type="button" class="service-tag" data-service="birthday" data-price="4000">
-               <div class="service-tag-line1"><i class="fas fa-birthday-cake"></i> <span>Аренда всего (День Рождения)</span></div>
+               <div class="service-tag-line1"><i class="fas fa-birthday-cake text-red-600"></i> <span>Аренда всего (День Рождения)</span></div>
                <div class="service-tag-price">от 3000 ₽/час</div> <!-- Цена для ДР динамическая -->
             </button>
         </div>
