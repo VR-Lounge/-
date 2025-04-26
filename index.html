@@ -80,16 +80,19 @@
         align-items: center;  /* Выравнивание по вертикали */
         justify-content: center; /* Выравнивание по горизонтали */
         margin-bottom: 4px;   /* Отступ снизу до цены */
-        font-size: 13px;      /* Размер шрифта названия */
+        font-size: 14px;      /* Увеличено */
     }
     .service-tag-line1 i {
         font-size: 16px;    /* Размер иконки */
         margin-right: 6px;  /* Отступ иконки справа */
     }
+    .service-tag-line1 span { /* Чтобы текст мог переноситься, если нужно */
+        display: inline-block;
+    }
 
     /* Стили для строки с ценой */
     .service-tag-price {
-      font-size: 12px;
+      font-size: 13px; /* Увеличено */
       color: #6e6e73; /* Вторичный цвет текста Apple */
     }
 
@@ -114,36 +117,39 @@
 
     /* Стили для контейнера тегов */
     #servicesContainer {
-      /* Стили по умолчанию (десктоп) */
-      display: flex;
+      /* Общие стили для контейнера (десктоп + мобильные) */
+      display: flex;       /* По умолчанию flex для рядов на десктопе */
       flex-wrap: wrap;
-      gap: 12px; /* Промежуток между тегами */
-      justify-content: center; /* Центрируем ряды тегов */
+      gap: 12px;
+      justify-content: center;
+      max-height: 220px;  /* Ограничение высоты (примерно под 2 ряда) */
+      overflow-y: auto;   /* Включаем вертикальный скролл */
+      padding: 10px 5px; /* Отступы внутри блока скролла (верх/низ больше) */
+      border: 1px solid #e5e5e5;
+      border-radius: 14px;
+      /* Стили для скроллбара (применяются ко всем) */
     }
-
-    /* Стили для контейнера тегов на мобильных */
-    @media (max-width: 768px) {
-      #servicesContainer {
-        display: block; /* Каждый тег на новой строке */
-        max-height: 350px; /* Ограничение высоты для скролла */
-        overflow-y: auto; /* Включаем вертикальный скролл */
-        padding: 5px; /* Небольшие отступы внутри блока скролла */
-        border: 1px solid #e5e5e5; /* Граница для области скролла */
-        border-radius: 14px; /* Скругление как у тегов */
-        gap: 0; /* Убираем gap для блочного макета */
-      }
-
-      /* Кастомизация скроллбара для мобильного контейнера */
-      #servicesContainer::-webkit-scrollbar {
+    #servicesContainer::-webkit-scrollbar {
         width: 5px;
-      }
-      #servicesContainer::-webkit-scrollbar-thumb {
+    }
+    #servicesContainer::-webkit-scrollbar-thumb {
         background-color: rgba(0, 0, 0, 0.15);
         border-radius: 3px;
-      }
-      #servicesContainer::-webkit-scrollbar-track {
+    }
+    #servicesContainer::-webkit-scrollbar-track {
         background: transparent;
+    }
+
+    /* Стили для контейнера тегов на мобильных (переопределение) */
+    @media (max-width: 768px) {
+      #servicesContainer {
+        display: block; /* Переключаем на блочный макет (1 колонка) */
+        max-height: 350px; /* Можно сделать выше на мобильных */
+        /* Остальные стили (border, padding, scrollbar) наследуются */
       }
+
+      /* Кастомизация скроллбара для мобильного контейнера (уже есть общие) */
+      /* #servicesContainer::-webkit-scrollbar { ... } */
 
       .service-tag {
         display: block; /* Каждый тег на новой строке */
