@@ -173,7 +173,7 @@
   <!-- Форма входа -->
   <div id="authContainer" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center z-50 hidden" onclick="event.target === this && this.classList.add('hidden')">
     <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 relative" onclick="event.stopPropagation()">
-    <button id="closeAuthBtn" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+    <button id="closeAuthBtn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
     <h3 class="text-2xl font-semibold mb-6 text-center">Доступ для администратора</h3>
     <form id="loginForm" class="space-y-4">
       <div>
@@ -406,8 +406,8 @@
   <!-- Модальное окно бронирования клиента -->
   <div id="bookingModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50">
     <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200">
-      <button id="closeModal" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
-      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="modalTitle">Карточка клиента</h3>
+      <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="modalTitle">Добавить запись клиента</h3>
       <form id="bookingForm" class="space-y-6">
         <input type="hidden" id="bookingId" name="bookingId" />
         <div>
@@ -569,7 +569,7 @@
   <!-- Модальное окно для назначения администратора -->
   <div id="assignAdminModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && this.classList.add('hidden')">
     <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200" onclick="event.stopPropagation()">
-      <button id="closeAssignModal" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <button id="closeAssignModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
       <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="assignModalTitle">Назначить администратора</h3>
       <form id="assignAdminForm" class="space-y-6">
         <input type="hidden" id="assignDate" name="assignDate">
@@ -1188,7 +1188,7 @@
       }
 
       bookingIdInput.value = ''; // Сброс ID для нового бронирования
-      modalTitle.textContent = 'Карточка клиента';
+      modalTitle.textContent = 'Карточка клиента'; // Изменено
       deleteBookingBtn.classList.add('hidden'); // Скрыть кнопку удаления
       bookingForm.reset(); // Сбросить форму
       clientPhoneInput.value = '+7 ('; // Установить маску по умолчанию
@@ -1224,7 +1224,7 @@
       }
 
       bookingIdInput.value = booking.id;
-      modalTitle.textContent = 'Редактировать запись клиента';
+      modalTitle.textContent = 'Карточка клиента'; // Изменено
       deleteBookingBtn.classList.remove('hidden'); // Показать кнопку удаления
       bookingModal.classList.remove('hidden');
 
