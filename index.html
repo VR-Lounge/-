@@ -45,6 +45,40 @@
     .calendar-day-cell { /* Добавлен класс для ячеек календаря админов */
        min-height: 100px; /* Минимальная высота ячейки */
     }
+
+    /* Стили для тегов-кнопок услуг */
+    .service-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      background-color: #f5f5f7;
+      color: #1d1d1f;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid #e5e5e5;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+
+    .service-tag:hover {
+      background-color: #e5e5e5;
+    }
+
+    .service-tag.selected {
+      background-color: #007aff;
+      color: white;
+      border-color: #007aff;
+    }
+
+    .service-tag.selected:hover {
+      background-color: #0062cc;
+    }
+
+    .service-tag i {
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
@@ -315,7 +349,6 @@
             <option value="3">3</option>
             <option value="3.5">3.5</option>
             <option value="4">4</option>
-             <!-- Добавим больше опций для дня рождения -->
             <option value="5">5</option>
             <option value="6">6</option>
             <option value="7">7</option>
@@ -326,16 +359,56 @@
             <option value="12">12</option>
           </select>
         </div>
+
+        <!-- Услуги -->
         <div>
-          <label for="serviceType" class="block text-gray-900 font-semibold mb-2">Тип услуги</label>
-          <select id="serviceType" name="serviceType" required class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
-            <option value="weekday_vr">Будние дни - VR очки</option>
-            <option value="weekday_ps">Будние дни - PS (1 джойстик)</option>
-            <option value="weekend_vr">Выходные дни - VR очки</option>
-            <option value="weekend_ps">Выходные дни - PS (1 джойстик)</option>
-            <option value="birthday">День рождения (аренда помещения)</option>
-          </select>
+          <label class="block text-gray-900 font-semibold mb-2">Услуги</label>
+          <div id="servicesContainer" class="flex flex-wrap gap-2">
+            <button type="button" class="service-tag" data-service="vr" data-price="500">
+              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки
+            </button>
+            <button type="button" class="service-tag" data-service="ps" data-price="150">
+              <i class="fas fa-gamepad mr-1.5"></i>PS (1 джойстик)
+            </button>
+            <button type="button" class="service-tag" data-service="xbox" data-price="250">
+              <i class="fas fa-gamepad mr-1.5"></i>XBOX (1 джойстик)
+            </button>
+            <button type="button" class="service-tag" data-service="karaoke" data-price="1000">
+              <i class="fas fa-microphone mr-1.5"></i>Караоке
+            </button>
+            <button type="button" class="service-tag" data-service="board_games" data-price="500">
+              <i class="fas fa-chess mr-1.5"></i>Настольные игры
+            </button>
+          </div>
+          <input type="hidden" id="selectedServices" name="selectedServices">
         </div>
+
+        <!-- Сумма и скидка -->
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Сумма</label>
+            <div class="flex items-center">
+              <input type="text" id="totalAmount" readonly class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 bg-gray-50" value="0 ₽">
+            </div>
+          </div>
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Скидка</label>
+            <div class="flex items-center space-x-2">
+              <input type="number" id="discountPercent" min="0" max="100" class="w-1/2 rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="%">
+              <span class="text-gray-500">или</span>
+              <input type="number" id="discountAmount" min="0" class="w-1/2 rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="₽">
+            </div>
+          </div>
+        </div>
+
+        <!-- Итоговая стоимость -->
+        <div>
+          <label class="block text-gray-900 font-semibold mb-2">Итоговая стоимость</label>
+          <div class="flex items-center">
+            <input type="text" id="finalAmount" readonly class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 bg-gray-50 font-semibold" value="0 ₽">
+          </div>
+        </div>
+
         <div>
           <label for="notes" class="block text-gray-900 font-semibold mb-2">Примечания</label>
           <textarea id="notes" name="notes" rows="3" placeholder="Введите дополнительные сведения" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition resize-none"></textarea>
@@ -489,37 +562,15 @@
     salaryViewMonth.setDate(1);
     let admins = []; // Список администраторов
     let adminAssignments = []; // Список назначений
+    let selectedServices = new Set(); // Множество выбранных услуг
 
     // === Цены услуг ===
     const servicePrices = {
-        // PS5
-        weekday_ps1: 150, // Будни PS 1 джойстик
-        weekday_ps2: 300, // Будни PS 2 джойстика
-        // VR очки будни
-        weekday_vr1: 500, // Будни VR 1 очки
-        weekday_vr2: 1000, // Будни VR 2 очки
-        weekday_vr3: 1500, // Будни VR 3 очки
-        weekday_vr4: 2000, // Будни VR 4 очки
-        // VR очки выходные
-        weekend_vr1: 750, // Выходные VR 1 очки
-        weekend_vr2: 1500, // Выходные VR 2 очки
-        weekend_vr3: 2250, // Выходные VR 3 очки
-        weekend_vr4: 3000, // Выходные VR 4 очки
-        // X-Box
-        xbox_kinnect: 500, // X-Box Kinnect
-        xbox1: 250, // X-Box 1 джойстик
-        xbox2: 500, // X-Box 2 джойстика
-        xbox3: 750, // X-Box 3 джойстика
-        xbox4: 1000, // X-Box 4 джойстика
-        // Другие услуги
-        karaoke: 1000, // Караоке
-        board_games: 500, // Настольные игры
-        // День рождения
-        birthday: {
-            1: 4000, 2: 3500, 3: 3000, 4: 3000, 5: 3000,
-            6: 3000, 7: 3000, 8: 3000, 9: 3000, 10: 3000,
-            11: 3000, 12: 3000
-        }
+        vr: 500,
+        ps: 150,
+        xbox: 250,
+        karaoke: 1000,
+        board_games: 500
     };
     const servicePriceHalfHour = { // Цены за полчаса
         weekday_vr: 250,
@@ -1614,9 +1665,40 @@
           alert('Ошибка входа: ' + error.message); // Показать сообщение об ошибке
         }
       });
-      logoutBtn.addEventListener('click', () => signOut(auth));
-      loginBtn.addEventListener('click', showLoginModal);
-      closeAuthBtn.addEventListener('click', () => authContainer.classList.add('hidden'));
+
+      // --- Обработчики для услуг и скидок ---
+      document.querySelectorAll('.service-tag').forEach(tag => {
+        tag.addEventListener('click', () => {
+          const service = tag.getAttribute('data-service');
+          tag.classList.toggle('selected');
+          
+          if (tag.classList.contains('selected')) {
+            selectedServices.add(service);
+          } else {
+            selectedServices.delete(service);
+          }
+          
+          document.getElementById('selectedServices').value = Array.from(selectedServices).join(',');
+          calculateTotal();
+        });
+      });
+
+      const discountPercentInput = document.getElementById('discountPercent');
+      const discountAmountInput = document.getElementById('discountAmount');
+
+      discountPercentInput.addEventListener('input', () => {
+        if (discountPercentInput.value) {
+          discountAmountInput.value = '';
+        }
+        calculateTotal();
+      });
+
+      discountAmountInput.addEventListener('input', () => {
+        if (discountAmountInput.value) {
+          discountPercentInput.value = '';
+        }
+        calculateTotal();
+      });
 
       // --- Календарь клиентов ---
       prevMonthBtn.addEventListener('click', () => {
@@ -1750,6 +1832,33 @@
         return phoneStr;
     }
 
+
+    // === Вспомогательные функции для расчета стоимости ===
+    function calculateTotal() {
+      const duration = parseFloat(document.getElementById('duration').value) || 0;
+      let total = 0;
+
+      // Суммируем стоимость выбранных услуг
+      selectedServices.forEach(service => {
+        const price = servicePrices[service] || 0;
+        total += price * duration;
+      });
+
+      // Применяем скидку
+      const discountPercent = parseFloat(document.getElementById('discountPercent').value) || 0;
+      const discountAmount = parseFloat(document.getElementById('discountAmount').value) || 0;
+      
+      let finalAmount = total;
+      if (discountPercent > 0) {
+        finalAmount = total * (1 - discountPercent / 100);
+      } else if (discountAmount > 0) {
+        finalAmount = Math.max(0, total - discountAmount);
+      }
+
+      // Обновляем отображение
+      document.getElementById('totalAmount').value = `${total.toLocaleString('ru-RU')} ₽`;
+      document.getElementById('finalAmount').value = `${finalAmount.toLocaleString('ru-RU')} ₽`;
+    }
 
     // === Инициализация приложения ===
     function init() {
