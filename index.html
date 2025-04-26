@@ -153,13 +153,13 @@
       <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200">
         <div class="flex justify-between mb-6">
           <button id="prevMonthAdmins" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            <i class="fas fa-chevron-left text-lg"></i>
-          </button>
+          <i class="fas fa-chevron-left text-lg"></i>
+        </button>
           <h3 id="currentMonthAdmins" class="text-xl font-semibold text-gray-900 tracking-tight select-none"></h3>
           <button id="nextMonthAdmins" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            <i class="fas fa-chevron-right text-lg"></i>
-          </button>
-        </div>
+          <i class="fas fa-chevron-right text-lg"></i>
+        </button>
+      </div>
         <div id="adminsCalendar" class="grid grid-cols-7 gap-1 text-center text-sm select-none">
           <!-- Дни недели -->
           <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Пн</div>
@@ -227,7 +227,7 @@
             <li>Бонус <strong>15%</strong> от выручки за смену (или <strong>8%</strong>, если на смене был помощник).</li>
             <li>Помощнику начисляется <strong>150₽/час</strong> + бонус <strong>7%</strong> от выручки за смену.</li>
             <li>Расчет и выдача зарплаты производятся по понедельникам.</li>
-          </ul>
+        </ul>
         </div>
         <!-- КОНЕЦ ИНФОРМАЦИОННОГО БЛОКА -->
 
@@ -253,12 +253,11 @@
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (2 шт.) — 1000 руб./час</li>
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (3 шт.) — 1500 руб./час</li>
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (4 шт.) — 2000 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
+            <li><i class="fas fa-users text-purple-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
             <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (1 джойстик) — 150 руб./час</li>
             <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (2 джойстика) — 300 руб./час</li>
             <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (3 джойстика) — 450 руб./час</li>
             <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (4 джойстика) — 600 руб./час</li>
-            <li><i class="fas fa-running text-purple-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
             <li><i class="fas fa-microphone-alt text-pink-500 mr-2"></i>Караоке — 300 руб./час</li>
             <li><i class="fas fa-chess-board text-yellow-600 mr-2"></i>Настольные игры — 200 руб./час</li>
           </ul>
@@ -272,12 +271,11 @@
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (2 шт.) — 1500 руб./час</li>
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (3 шт.) — 2250 руб./час</li>
             <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (4 шт.) — 3000 руб./час</li>
-            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
+            <li><i class="fas fa-users text-purple-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
             <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (1 джойстик) — 150 руб./час</li>
             <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (2 джойстика) — 300 руб./час</li>
             <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (3 джойстика) — 450 руб./час</li>
             <li><i class="fas fa-gamepad text-green-700 mr-2"></i>X-Box (4 джойстика) — 600 руб./час</li>
-            <li><i class="fas fa-running text-purple-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
             <li><i class="fas fa-microphone-alt text-pink-500 mr-2"></i>Караоке — 300 руб./час</li>
             <li><i class="fas fa-chess-board text-yellow-600 mr-2"></i>Настольные игры — 200 руб./час</li>
           </ul>
@@ -395,7 +393,7 @@
           </select>
         </div>
         <div class="flex space-x-2">
-          <div>
+        <div>
             <label for="discountType" class="block text-gray-900 font-semibold mb-2">Тип скидки</label>
             <select id="discountType" name="discountType" class="rounded-3xl border border-gray-300 px-3 py-2">
               <option value="percent">%</option>
@@ -1001,7 +999,7 @@
         // --- Валидация ---
         if (!bookingData.clientName) {
         alert('Пожалуйста, введите имя клиента.');
-            bookingForm.clientName.focus();
+      bookingForm.clientName.focus();
         return;
       }
         // Валидация номера телефона (должно быть 11 цифр после +7)
@@ -1652,7 +1650,7 @@
         loadData(); // Загрузить только публичные данные (бронирования)
       }
       // Перерисовать календарь и список записей, чтобы применить/убрать админские кнопки
-    renderCalendar();
+      renderCalendar();
     renderBookingsList();
     });
 
@@ -1676,18 +1674,18 @@
       closeAuthBtn.addEventListener('click', () => authContainer.classList.add('hidden'));
 
       // --- Календарь клиентов ---
-      prevMonthBtn.addEventListener('click', () => {
-        currentDate.setMonth(currentDate.getMonth() - 1);
-        selectedDate = null;
+    prevMonthBtn.addEventListener('click', () => {
+      currentDate.setMonth(currentDate.getMonth() - 1);
+      selectedDate = null;
         bookingsViewMonth = new Date(currentDate);
-        renderCalendar();
+      renderCalendar();
         renderBookingsList();
-      });
-      nextMonthBtn.addEventListener('click', () => {
-        currentDate.setMonth(currentDate.getMonth() + 1);
-        selectedDate = null;
+    });
+    nextMonthBtn.addEventListener('click', () => {
+      currentDate.setMonth(currentDate.getMonth() + 1);
+      selectedDate = null;
         bookingsViewMonth = new Date(currentDate);
-        renderCalendar();
+      renderCalendar();
         renderBookingsList();
       });
       addBookingBtn.addEventListener('click', () => {
@@ -1700,15 +1698,15 @@
 
 
       // --- Список записей клиентов ---
-      prevMonthBookingsBtn.addEventListener('click', () => {
+    prevMonthBookingsBtn.addEventListener('click', () => {
         console.log('Prev month bookings clicked. Old month:', bookingsViewMonth.toLocaleDateString()); // DEBUG
-        bookingsViewMonth.setMonth(bookingsViewMonth.getMonth() - 1);
+      bookingsViewMonth.setMonth(bookingsViewMonth.getMonth() - 1);
          console.log('New month:', bookingsViewMonth.toLocaleDateString()); // DEBUG
         renderBookingsList(); // Убедимся, что вызывается
-      });
-      nextMonthBookingsBtn.addEventListener('click', () => {
+    });
+    nextMonthBookingsBtn.addEventListener('click', () => {
          console.log('Next month bookings clicked. Old month:', bookingsViewMonth.toLocaleDateString()); // DEBUG
-        bookingsViewMonth.setMonth(bookingsViewMonth.getMonth() + 1);
+      bookingsViewMonth.setMonth(bookingsViewMonth.getMonth() + 1);
         console.log('New month:', bookingsViewMonth.toLocaleDateString()); // DEBUG
         renderBookingsList(); // Убедимся, что вызывается
       });
@@ -1785,7 +1783,7 @@
                    authContainer.classList.add('hidden');
                }
                if (!bookingModal.classList.contains('hidden')) {
-                   bookingModal.classList.add('hidden');
+        bookingModal.classList.add('hidden');
                }
                if (!assignAdminModal.classList.contains('hidden')) {
                    assignAdminModal.classList.add('hidden');
@@ -1978,8 +1976,8 @@
         if (!weekRange) {
              weeklyPayrollPeriodEl.textContent = 'Расчет периода...';
              weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет данных</p>';
-             return;
-        }
+        return;
+      }
 
         const options = { day: '2-digit', month: 'short' };
         weeklyPayrollPeriodEl.textContent = `(с ${weekRange.start.toLocaleDateString('ru-RU', options)} по ${weekRange.end.toLocaleDateString('ru-RU', options)})`;
