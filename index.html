@@ -45,6 +45,26 @@
     .calendar-day-cell { /* Добавлен класс для ячеек календаря админов */
        min-height: 100px; /* Минимальная высота ячейки */
     }
+    .service-tag {
+      border-radius: 9999px;
+      padding: 0.5rem 1.25rem;
+      background: #f3f4f6;
+      color: #1d1d1f;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      transition: all 0.15s;
+      margin-bottom: 0.25rem;
+    }
+    .service-tag.selected {
+      background: #2563eb;
+      color: #fff;
+      box-shadow: 0 2px 8px 0 rgba(37,99,235,0.10);
+    }
+    .service-tag:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #60a5fa;
+    }
   </style>
 </head>
 <body>
@@ -234,36 +254,46 @@
         <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
           <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Будние дни</h3>
           <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
-            <li class="flex items-center space-x-3">
-              <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
-              <span>VR очки — 500 руб./час (половина часа 250 руб)</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <i class="fas fa-gamepad text-blue-600 text-lg flex-shrink-0"></i>
-              <span>PS за 1 джойстик — 150 руб./час</span>
-            </li>
+            <li>PS5 (1 джойстик) — 150 руб./час</li>
+            <li>PS5 (2 джойстика) — 300 руб./час</li>
+            <li>VR очки (1 шт.) — 500 руб./час (0.5 ч — 250 руб.)</li>
+            <li>VR очки (2 шт.) — 1000 руб./час</li>
+            <li>VR очки (3 шт.) — 1500 руб./час</li>
+            <li>VR очки (4 шт.) — 2000 руб./час</li>
+            <li>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
+            <li>X-Box (1 джойстик) — 150 руб./час</li>
+            <li>X-Box (2 джойстика) — 300 руб./час</li>
+            <li>X-Box (3 джойстика) — 450 руб./час</li>
+            <li>X-Box (4 джойстика) — 600 руб./час</li>
+            <li>Караоке — 300 руб./час</li>
+            <li>Настольные игры — 200 руб./час</li>
           </ul>
         </div>
         <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
           <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Выходные дни</h3>
           <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
-            <li class="flex items-center space-x-3">
-              <i class="fas fa-vr-cardboard text-indigo-600 text-lg flex-shrink-0"></i>
-              <span>VR очки — 750 руб./час (половина часа 350 руб)</span>
-            </li>
-            <li class="flex items-center space-x-3">
-              <i class="fas fa-gamepad text-indigo-600 text-lg flex-shrink-0"></i>
-              <span>PS за 1 джойстик — 250 руб./час</span>
-            </li>
+            <li>PS5 (1 джойстик) — 250 руб./час</li>
+            <li>PS5 (2 джойстика) — 500 руб./час</li>
+            <li>VR очки (1 шт.) — 750 руб./час (0.5 ч — 350 руб.)</li>
+            <li>VR очки (2 шт.) — 1500 руб./час</li>
+            <li>VR очки (3 шт.) — 2250 руб./час</li>
+            <li>VR очки (4 шт.) — 3000 руб./час</li>
+            <li>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
+            <li>X-Box (1 джойстик) — 150 руб./час</li>
+            <li>X-Box (2 джойстика) — 300 руб./час</li>
+            <li>X-Box (3 джойстика) — 450 руб./час</li>
+            <li>X-Box (4 джойстика) — 600 руб./час</li>
+            <li>Караоке — 300 руб./час</li>
+            <li>Настольные игры — 200 руб./час</li>
           </ul>
         </div>
         <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
-          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">День рождения</h3>
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Аренда всего помещения (День рождения)</h3>
           <ul class="space-y-3 text-gray-700 text-base leading-relaxed">
-            <li>Первый час — 4000 руб.</li>
-            <li>Второй час — 3500 руб.</li>
-            <li>Третий час — 3000 руб.</li>
-            <li>Четвертый и далее — 3000 руб./час</li>
+            <li>1-й час — 4000 руб.</li>
+            <li>2-й час — 3500 руб.</li>
+            <li>3-й час — 3000 руб.</li>
+            <li>4-й и далее — 3000 руб./час</li>
           </ul>
           <p class="mt-5 font-semibold text-gray-900 tracking-tight">В стоимость входит аренда всего помещения:</p>
           <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2 text-base leading-relaxed">
@@ -327,37 +357,39 @@
           </select>
         </div>
         <div>
-          <label for="serviceType" class="block text-gray-900 font-semibold mb-2">Тип услуги</label>
-          <select id="serviceType" name="serviceType" required class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
-            <option value="weekday_vr">Будние дни - VR очки</option>
-            <option value="weekday_ps">Будние дни - PS (1 джойстик)</option>
-            <option value="weekend_vr">Выходные дни - VR очки</option>
-            <option value="weekend_ps">Выходные дни - PS (1 джойстик)</option>
-            <option value="birthday">День рождения (аренда помещения)</option>
-          </select>
-        </div>
-        <div>
           <label for="notes" class="block text-gray-900 font-semibold mb-2">Примечания</label>
           <textarea id="notes" name="notes" rows="3" placeholder="Введите дополнительные сведения" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition resize-none"></textarea>
         </div>
         <!-- В форме добавления записи клиента -->
         <div>
-          <label for="services" class="block text-gray-900 font-semibold mb-2">Услуги</label>
-          <div id="servicesList" class="space-y-2">
-            <label><input type="checkbox" name="services" value="ps5"> PS5 (1 джойстик)</label>
-            <label><input type="checkbox" name="services" value="ps5_2"> PS5 (2 джойстика)</label>
-            <label><input type="checkbox" name="services" value="vr"> VR очки (1 шт.)</label>
-            <label><input type="checkbox" name="services" value="vr_2"> VR очки (2 шт.)</label>
-            <label><input type="checkbox" name="services" value="vr_3"> VR очки (3 шт.)</label>
-            <label><input type="checkbox" name="services" value="vr_4"> VR очки (4 шт.)</label>
-            <label><input type="checkbox" name="services" value="xbox"> X-Box Kinnect (до 8 чел.)</label>
-            <label><input type="checkbox" name="services" value="xbox_1"> X-Box (1 джойстик)</label>
-            <label><input type="checkbox" name="services" value="xbox_2"> X-Box (2 джойстика)</label>
-            <label><input type="checkbox" name="services" value="xbox_3"> X-Box (3 джойстика)</label>
-            <label><input type="checkbox" name="services" value="xbox_4"> X-Box (4 джойстика)</label>
-            <label><input type="checkbox" name="services" value="karaoke"> Караоке</label>
-            <label><input type="checkbox" name="services" value="boardgames"> Настольные игры</label>
+          <label class="block text-gray-900 font-semibold mb-2">Услуги</label>
+          <div id="servicesTags" class="flex flex-wrap gap-2">
+            <button type="button" class="service-tag" data-service="ps5_1">PS5 (1 джойстик)</button>
+            <button type="button" class="service-tag" data-service="ps5_2">PS5 (2 джойстика)</button>
+            <button type="button" class="service-tag" data-service="vr_1">VR очки (1 шт., будни)</button>
+            <button type="button" class="service-tag" data-service="vr_2">VR очки (2 шт., будни)</button>
+            <button type="button" class="service-tag" data-service="vr_3">VR очки (3 шт., будни)</button>
+            <button type="button" class="service-tag" data-service="vr_4">VR очки (4 шт., будни)</button>
+            <button type="button" class="service-tag" data-service="vr_1w">VR очки (1 шт., выходные)</button>
+            <button type="button" class="service-tag" data-service="vr_2w">VR очки (2 шт., выходные)</button>
+            <button type="button" class="service-tag" data-service="vr_3w">VR очки (3 шт., выходные)</button>
+            <button type="button" class="service-tag" data-service="vr_4w">VR очки (4 шт., выходные)</button>
+            <button type="button" class="service-tag" data-service="xbox_kinnect">X-Box Kinnect (до 8 чел.)</button>
+            <button type="button" class="service-tag" data-service="xbox_1">X-Box (1 джойстик)</button>
+            <button type="button" class="service-tag" data-service="xbox_2">X-Box (2 джойстика)</button>
+            <button type="button" class="service-tag" data-service="xbox_3">X-Box (3 джойстика)</button>
+            <button type="button" class="service-tag" data-service="xbox_4">X-Box (4 джойстика)</button>
+            <button type="button" class="service-tag" data-service="karaoke">Караоке</button>
+            <button type="button" class="service-tag" data-service="boardgames">Настольные игры</button>
+            <button type="button" class="service-tag" data-service="rent_1h">Аренда всего (1-й час)</button>
+            <button type="button" class="service-tag" data-service="rent_2h">Аренда всего (2-й час)</button>
+            <button type="button" class="service-tag" data-service="rent_3h">Аренда всего (3-й час)</button>
+            <button type="button" class="service-tag" data-service="rent_4h">Аренда всего (4-й и далее)</button>
           </div>
+        </div>
+        <div>
+          <label class="block text-gray-900 font-semibold mb-2">Сумма</label>
+          <div id="totalAmount" class="font-bold text-xl">0 ₽</div>
         </div>
         <div>
           <label for="paymentMethod" class="block text-gray-900 font-semibold mb-2">Способ оплаты</label>
@@ -379,10 +411,6 @@
             <label for="discountValue" class="block text-gray-900 font-semibold mb-2">Скидка</label>
             <input type="number" id="discountValue" name="discountValue" class="rounded-3xl border border-gray-300 px-3 py-2" value="0">
           </div>
-        </div>
-        <div>
-          <label class="block text-gray-900 font-semibold mb-2">Итоговая сумма</label>
-          <div id="totalAmount" class="font-bold text-xl">0 ₽</div>
         </div>
         <div class="flex space-x-4">
           <button type="submit" class="flex-grow bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-blue-300 focus:outline-none">Сохранить запись</button>
@@ -1962,6 +1990,62 @@
         }
     }
 
+    // === Apple-style теги для услуг и расчет суммы ===
+
+    // Список услуг и их цены (с учётом будни/выходные и аренды)
+    const servicesData = {
+      ps5_1: { label: "PS5 (1 джойстик)", price: 150 },
+      ps5_2: { label: "PS5 (2 джойстика)", price: 300 },
+      vr_1: { label: "VR очки (1 шт., будни)", price: 500 },
+      vr_2: { label: "VR очки (2 шт., будни)", price: 1000 },
+      vr_3: { label: "VR очки (3 шт., будни)", price: 1500 },
+      vr_4: { label: "VR очки (4 шт., будни)", price: 2000 },
+      vr_1w: { label: "VR очки (1 шт., выходные)", price: 750 },
+      vr_2w: { label: "VR очки (2 шт., выходные)", price: 1500 },
+      vr_3w: { label: "VR очки (3 шт., выходные)", price: 2250 },
+      vr_4w: { label: "VR очки (4 шт., выходные)", price: 3000 },
+      xbox_kinnect: { label: "X-Box Kinnect (до 8 чел.)", price: 500 },
+      xbox_1: { label: "X-Box (1 джойстик)", price: 150 },
+      xbox_2: { label: "X-Box (2 джойстика)", price: 300 },
+      xbox_3: { label: "X-Box (3 джойстика)", price: 450 },
+      xbox_4: { label: "X-Box (4 джойстика)", price: 600 },
+      karaoke: { label: "Караоке", price: 300 },
+      boardgames: { label: "Настольные игры", price: 200 },
+      rent_1h: { label: "Аренда всего (1-й час)", price: 4000 },
+      rent_2h: { label: "Аренда всего (2-й час)", price: 3500 },
+      rent_3h: { label: "Аренда всего (3-й час)", price: 3000 },
+      rent_4h: { label: "Аренда всего (4-й и далее)", price: 3000 }
+    };
+
+    const selectedServices = new Set();
+    const servicesTags = document.getElementById('servicesTags');
+    const totalAmountDiv = document.getElementById('totalAmount');
+
+    // Обработчик клика по тегу-услуге
+    servicesTags.addEventListener('click', function(e) {
+      if (e.target.classList.contains('service-tag')) {
+        const key = e.target.dataset.service;
+        if (selectedServices.has(key)) {
+          selectedServices.delete(key);
+          e.target.classList.remove('selected');
+        } else {
+          selectedServices.add(key);
+          e.target.classList.add('selected');
+        }
+        updateTotalAmount();
+      }
+    });
+
+    // Функция расчёта суммы
+    function updateTotalAmount() {
+      let sum = 0;
+      selectedServices.forEach(key => {
+        if (servicesData[key]) sum += servicesData[key].price;
+      });
+      totalAmountDiv.textContent = sum + " ₽";
+    }
+
+    // Если нужно сбрасывать выбор при открытии модалки — добавь вызов selectedServices.clear() и убери класс selected у всех .service-tag
   </script>
 </body>
 </html>
