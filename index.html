@@ -1727,6 +1727,7 @@
           alert('Ошибка входа: ' + error.message); // Показать сообщение об ошибке
         }
       });
+      loginBtn.addEventListener('click', showLoginModal);
 
       // --- Обработчики для услуг и скидок ---
       document.querySelectorAll('.service-tag').forEach(tag => {
