@@ -2243,6 +2243,16 @@
         }
     }
 
+    // БЕЗОПАСНАЯ функция форматирования даты в 'YYYY-MM-DD' без учета часовых поясов
+    function formatDateSafe(date) {
+      const year = date.getFullYear();
+      // getMonth() возвращает 0-11, добавляем 1 и дополняем нулем если нужно
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      // getDate() возвращает 1-31, дополняем нулем если нужно
+      const day = date.getDate().toString().padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    }
+
   </script>
 </body>
 </html>
