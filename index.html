@@ -79,6 +79,22 @@
     .service-tag i {
       font-size: 14px;
     }
+
+    /* Стили для строк услуг */
+    .service-row.selected {
+      background-color: #e9f5ff; /* Светло-голубой фон */
+      /* ring: 2px; */ /* Убрал кольцо, т.к. фон достаточно заметен */
+      /* ring-blue-500; */
+    }
+    .service-row.selected span,
+    .service-row.selected div {
+       color: #0056b3; /* Темно-синий текст для лучшего контраста */
+       font-weight: 600; /* Сделать текст жирнее при выборе */
+    }
+     .service-row.selected i {
+       color: #0056b3; /* Иконка тоже темно-синяя */
+    }
+
   </style>
 </head>
 <body>
@@ -1849,12 +1865,12 @@
       closeAuthBtn.addEventListener('click', () => authContainer.classList.add('hidden'));
 
       // --- Обработчики для услуг и скидок ---
-      document.querySelectorAll('.service-tag').forEach(tag => {
-        tag.addEventListener('click', () => {
-          const service = tag.getAttribute('data-service');
-          tag.classList.toggle('selected');
+      document.querySelectorAll('.service-row').forEach(row => {
+        row.addEventListener('click', () => {
+          const service = row.getAttribute('data-service');
+          row.classList.toggle('selected');
           
-          if (tag.classList.contains('selected')) {
+          if (row.classList.contains('selected')) {
             selectedServices.add(service);
           } else {
             selectedServices.delete(service);
