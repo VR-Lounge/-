@@ -1958,15 +1958,30 @@
       // Суммируем стоимость выбранных услуг
       selectedServices.forEach(service => {
         if (service === 'birthday') {
-          // Для аренды всего (День Рождения) — НАКОПИТЕЛЬНЫЙ расчет по часам
-          const totalHours = Math.ceil(duration); // Округляем длительность вверх до целого часа
+          // Для аренды всего (День Рождения) — расчет с учетом получасовых интервалов
+          const fullHours = Math.floor(duration);
+          const hasHalfHour = duration % 1 !== 0;
           let birthdayTotal = 0;
-          for (let hour = 1; hour <= totalHours; hour++) {
-            // Берем цену для текущего часа (1-й, 2-й, 3-й и т.д.)
-            // Если часа нет в прайсе (больше 12), используем цену для 4+ часа
-            const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000; // Цена для 4+ или 3000 по умолчанию
+
+          // Суммируем стоимость полных часов
+          for (let hour = 1; hour <= fullHours; hour++) {
+            const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
             birthdayTotal += hourPrice;
           }
+
+          // Добавляем стоимость за полчаса, если есть
+          if (hasHalfHour) {
+            if (fullHours === 0) { // Если выбрано 0.5 часа
+               birthdayTotal += 2000; // По аналогии с 1.5ч? Или цена первого часа? Уточнить, пока берем 2000
+            } else if (fullHours === 1) { // Длительность 1.5 часа
+              birthdayTotal += 2000; // Особая цена за +0.5 часа после первого
+            } else { // Длительность 2.5, 3.5, 4.5 и т.д.
+              // Берем цену 3-го или последующего часа (3000) и делим пополам
+              const halfHourPrice = (servicePrices.birthday[3] || 3000) / 2;
+              birthdayTotal += halfHourPrice; // 1500
+            }
+          }
+
           total += birthdayTotal;
         } else {
           // Обычный расчет для других услуг (цена * длительность)
