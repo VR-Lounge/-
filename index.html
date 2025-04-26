@@ -1924,6 +1924,9 @@
                }
            }
        });
+
+      const durationSelect = document.getElementById('duration'); // Получаем элемент выбора длительности
+      durationSelect.addEventListener('input', calculateTotal); // Добавляем слушатель для пересчета
     }
 
     // === Вспомогательные функции для отображения ===
