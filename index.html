@@ -1024,7 +1024,6 @@
       bookingForm.bookingDate.value = booking.bookingDate;
       bookingForm.startTime.value = booking.startTime;
       bookingForm.duration.value = booking.duration.toString();
-      bookingForm.serviceType.value = booking.serviceType;
       bookingForm.notes.value = booking.notes || '';
 
       bookingForm.clientName.focus(); // Фокус на имени клиента
@@ -1050,7 +1049,7 @@
         bookingDate: bookingForm.bookingDate.value,
         startTime: bookingForm.startTime.value,
         duration: parseFloat(bookingForm.duration.value),
-        serviceType: bookingForm.serviceType.value,
+        selectedServices: Array.from(selectedServices), // Сохраняем выбранные услуги
         notes: bookingForm.notes.value.trim(),
       };
 
