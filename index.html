@@ -528,25 +528,25 @@
           <input type="hidden" id="selectedServices" name="selectedServices">
         </div>
 
-        <!-- Сумма и скидка -->
-        <div class="grid grid-cols-2 gap-4">
-          <div>
+        <!-- Сумма (было в grid) -->
+        <div>
             <label class="block text-gray-900 font-semibold mb-2">Сумма</label>
             <div class="flex items-center">
               <input type="text" id="totalAmount" readonly class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 bg-gray-50" value="0 ₽">
             </div>
-          </div>
-          <div>
+        </div>
+        
+        <!-- Скидка (было в grid) -->
+        <div>
             <label class="block text-gray-900 font-semibold mb-2">Скидка</label>
             <div class="flex items-center space-x-2">
               <input type="number" id="discountPercent" min="0" max="100" class="w-1/2 rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="%">
               <span class="text-gray-500">или</span>
               <input type="number" id="discountAmount" min="0" class="w-1/2 rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="₽">
             </div>
-          </div>
         </div>
 
-        <!-- Итоговая стоимость -->
+        <!-- Итоговая стоимость (остается ниже) -->
         <div>
           <label class="block text-gray-900 font-semibold mb-2">Итоговая стоимость</label>
           <div class="flex items-center">
