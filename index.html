@@ -700,6 +700,17 @@
     </div>
   </div>
 
+  <!-- Модальное окно с деталями записей за день -->
+  <div id="dayDetailsModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && this.classList.add('hidden')">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200" onclick="event.stopPropagation()">
+      <button id="closeDayDetailsModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="dayDetailsTitle">Записи на день</h3>
+      <div id="dayDetailsContent" class="space-y-4">
+        <!-- Детали бронирований будут добавлены сюда -->
+      </div>
+    </div>
+  </div>
+
 
   <!-- Firebase и основная логика приложения -->
   <script type="module">
@@ -778,6 +789,12 @@
     const helperHoursInput = document.getElementById('helperHours');
     const closeAssignModal = document.getElementById('closeAssignModal');
     const deleteAssignmentBtn = document.getElementById('deleteAssignmentBtn'); // Кнопка удаления назначения
+
+    // --- Модальное окно деталей дня ---
+    const dayDetailsModal = document.getElementById('dayDetailsModal');
+    const dayDetailsTitle = document.getElementById('dayDetailsTitle');
+    const dayDetailsContent = document.getElementById('dayDetailsContent');
+    const closeDayDetailsModalBtn = document.getElementById('closeDayDetailsModal');
 
     // --- Расчет зарплаты ---
     const salarySection = document.getElementById('salarySection'); // Секция ЗП
@@ -1155,8 +1172,19 @@
 
         // Обработчик клика на ячейку дня
         dayCell.addEventListener('click', () => {
-          selectedDate = date;
-          renderCalendar();
+          // Находим бронирования для этого дня
+          const dayBookings = bookings.filter(b => b.bookingDate === dateStr)
+                                    .sort((a, b) => a.startTime.localeCompare(b.startTime));
+
+          if (dayBookings.length > 0) {
+            // Если есть бронирования, показываем модальное окно с деталями
+            showDayDetailsModal(dayBookings, date);
+          } else {
+            // Иначе, просто выделяем день (как раньше)
+            // Можно добавить открытие окна добавления, если нужно
+             selectedDate = date;
+             renderCalendar();
+          }
         });
 
         calendarEl.appendChild(dayCell);
@@ -2183,7 +2211,7 @@
 
        // --- Закрытие модальных окон ---
        // Клик вне окна
-       [authContainer, bookingModal, assignAdminModal].forEach(modal => {
+       [authContainer, bookingModal, assignAdminModal, dayDetailsModal].forEach(modal => { // Добавлено dayDetailsModal
            modal.addEventListener('click', function(e) {
                 if (e.target === this) {
                     this.classList.add('hidden');
@@ -2201,6 +2229,9 @@
                }
                if (!assignAdminModal.classList.contains('hidden')) {
                    assignAdminModal.classList.add('hidden');
+               }
+               if (!dayDetailsModal.classList.contains('hidden')) { // Добавлено
+                   dayDetailsModal.classList.add('hidden');
                }
            }
        });
@@ -2487,6 +2518,57 @@
         if (!hasData) {
             weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет начислений за прошлую неделю.</p>';
         }
+    }
+
+    // === Логика Модального Окна Деталей Дня ===
+    function showDayDetailsModal(dayBookings, date) {
+        const dateStr = date.toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric', weekday: 'long' });
+        dayDetailsTitle.textContent = `Записи на ${dateStr}`;
+        dayDetailsContent.innerHTML = ''; // Очищаем содержимое
+
+        if (dayBookings.length === 0) {
+            dayDetailsContent.innerHTML = '<p class="text-center text-gray-500 italic">На этот день нет записей.</p>';
+        } else {
+            dayBookings.forEach(b => {
+                const bookingCard = document.createElement('div');
+                bookingCard.className = 'border border-gray-200 rounded-xl p-4 shadow-sm';
+
+                // Формируем блок информации о клиенте
+                let clientHTML = `<div class="font-semibold text-lg mb-1">${b.clientName}</div>`;
+                if (b.clientPhone) {
+                    let cleanPhone = b.clientPhone.replace(/\D/g, '');
+                    if (cleanPhone.startsWith('7') || cleanPhone.startsWith('8')) {
+                        cleanPhone = cleanPhone.substring(1);
+                    }
+                    const formattedPhone = formatPhoneNumber(b.clientPhone);
+                    clientHTML += `<div class="text-sm mb-2"><a href="tel:+7${cleanPhone}" class="text-blue-600 hover:text-blue-800 hover:underline">${formattedPhone}</a></div>`;
+                }
+
+                // Формируем блок времени и длительности
+                const timeHTML = `<div class="text-sm text-gray-700 mb-2"><span class="font-medium">Время:</span> ${b.startTime} (${b.duration} ч)</div>`;
+
+                // Формируем блок услуг
+                 let serviceLabels = 'Не указаны';
+                 if (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.length > 0) {
+                     serviceLabels = b.selectedServices.map(serviceKey => getServiceLabel(serviceKey)).join(', ');
+                 } else if (b.serviceType) { // Обратная совместимость
+                     serviceLabels = getServiceLabel(b.serviceType);
+                 }
+                const servicesHTML = `<div class="text-sm text-gray-700 mb-2"><span class="font-medium">Услуги:</span> ${serviceLabels}</div>`;
+
+                // Формируем блок примечаний
+                let notesHTML = '';
+                if (b.notes) {
+                    notesHTML = `<div class="text-sm text-gray-500 italic whitespace-pre-wrap break-words border-t border-gray-100 pt-2 mt-2"><span class="font-medium text-gray-700 not-italic">Примечания:</span> ${b.notes}</div>`;
+                }
+
+                // Собираем карточку
+                bookingCard.innerHTML = clientHTML + timeHTML + servicesHTML + notesHTML;
+                dayDetailsContent.appendChild(bookingCard);
+            });
+        }
+
+        dayDetailsModal.classList.remove('hidden');
     }
 
   </script>
