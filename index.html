@@ -364,20 +364,59 @@
         <div>
           <label class="block text-gray-900 font-semibold mb-2">Услуги</label>
           <div id="servicesContainer" class="flex flex-wrap gap-2">
-            <button type="button" class="service-tag" data-service="vr" data-price="500">
-              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки
+            <button type="button" class="service-tag" data-service="weekday_ps1" data-price="150">
+              <i class="fas fa-gamepad mr-1.5"></i>PS5 (1 джойстик) — 150 ₽/час
             </button>
-            <button type="button" class="service-tag" data-service="ps" data-price="150">
-              <i class="fas fa-gamepad mr-1.5"></i>PS (1 джойстик)
+            <button type="button" class="service-tag" data-service="weekday_ps2" data-price="300">
+              <i class="fas fa-gamepad mr-1.5"></i>PS5 (2 джойстика) — 300 ₽/час
             </button>
-            <button type="button" class="service-tag" data-service="xbox" data-price="250">
-              <i class="fas fa-gamepad mr-1.5"></i>XBOX (1 джойстик)
+            <button type="button" class="service-tag" data-service="weekday_vr1" data-price="500">
+              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки (1 шт.) | Будни — 500 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="weekday_vr2" data-price="1000">
+              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки (2 шт.) | Будни — 1000 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="weekday_vr3" data-price="1500">
+              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки (3 шт.) | Будни — 1500 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="weekday_vr4" data-price="2000">
+              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки (4 шт.) | Будни — 2000 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="weekend_vr1" data-price="750">
+              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки (1 шт.) | Выходные — 750 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="weekend_vr2" data-price="1500">
+              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки (2 шт.) | Выходные — 1500 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="weekend_vr3" data-price="2250">
+              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки (3 шт.) | Выходные — 2250 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="weekend_vr4" data-price="3000">
+              <i class="fas fa-vr-cardboard mr-1.5"></i>VR очки (4 шт.) | Выходные — 3000 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="xbox_kinnect" data-price="500">
+              <i class="fas fa-gamepad mr-1.5"></i>X-Box Kinnect (до 8 чел.) — 500 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="xbox1" data-price="250">
+              <i class="fas fa-gamepad mr-1.5"></i>X-Box (1 джойстик) — 250 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="xbox2" data-price="500">
+              <i class="fas fa-gamepad mr-1.5"></i>X-Box (2 джойстика) — 500 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="xbox3" data-price="750">
+              <i class="fas fa-gamepad mr-1.5"></i>X-Box (3 джойстика) — 750 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="xbox4" data-price="1000">
+              <i class="fas fa-gamepad mr-1.5"></i>X-Box (4 джойстика) — 1000 ₽/час
             </button>
             <button type="button" class="service-tag" data-service="karaoke" data-price="1000">
-              <i class="fas fa-microphone mr-1.5"></i>Караоке
+              <i class="fas fa-microphone mr-1.5"></i>Караоке — 1000 ₽/час
             </button>
             <button type="button" class="service-tag" data-service="board_games" data-price="500">
-              <i class="fas fa-chess mr-1.5"></i>Настольные игры
+              <i class="fas fa-chess mr-1.5"></i>Настольные игры — 500 ₽/час
+            </button>
+            <button type="button" class="service-tag" data-service="birthday" data-price="4000">
+              <i class="fas fa-birthday-cake mr-1.5"></i>Аренда всего (День Рождения)
             </button>
           </div>
           <input type="hidden" id="selectedServices" name="selectedServices">
@@ -566,11 +605,34 @@
 
     // === Цены услуг ===
     const servicePrices = {
-        vr: 500,
-        ps: 150,
-        xbox: 250,
-        karaoke: 1000,
-        board_games: 500
+        // PS5
+        weekday_ps1: 150, // Будни PS 1 джойстик
+        weekday_ps2: 300, // Будни PS 2 джойстика
+        // VR очки будни
+        weekday_vr1: 500, // Будни VR 1 очки
+        weekday_vr2: 1000, // Будни VR 2 очки
+        weekday_vr3: 1500, // Будни VR 3 очки
+        weekday_vr4: 2000, // Будни VR 4 очки
+        // VR очки выходные
+        weekend_vr1: 750, // Выходные VR 1 очки
+        weekend_vr2: 1500, // Выходные VR 2 очки
+        weekend_vr3: 2250, // Выходные VR 3 очки
+        weekend_vr4: 3000, // Выходные VR 4 очки
+        // X-Box
+        xbox_kinnect: 500, // X-Box Kinnect
+        xbox1: 250, // X-Box 1 джойстик
+        xbox2: 500, // X-Box 2 джойстика
+        xbox3: 750, // X-Box 3 джойстика
+        xbox4: 1000, // X-Box 4 джойстика
+        // Другие услуги
+        karaoke: 1000, // Караоке
+        board_games: 500, // Настольные игры
+        // День рождения
+        birthday: {
+            1: 4000, 2: 3500, 3: 3000, 4: 3000, 5: 3000,
+            6: 3000, 7: 3000, 8: 3000, 9: 3000, 10: 3000,
+            11: 3000, 12: 3000
+        }
     };
     const servicePriceHalfHour = { // Цены за полчаса
         weekday_vr: 250,
@@ -1840,8 +1902,14 @@
 
       // Суммируем стоимость выбранных услуг
       selectedServices.forEach(service => {
-        const price = servicePrices[service] || 0;
-        total += price * duration;
+        if (service === 'birthday') {
+          // Для аренды всего (День Рождения) — особый расчет по часам
+          const hours = Math.min(Math.max(Math.ceil(duration), 1), 12); // от 1 до 12
+          total += servicePrices.birthday[hours] || servicePrices.birthday[4];
+        } else {
+          const price = servicePrices[service] || 0;
+          total += price * duration;
+        }
       });
 
       // Применяем скидку
