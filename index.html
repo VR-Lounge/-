@@ -65,6 +65,11 @@
       outline: none;
       box-shadow: 0 0 0 2px #60a5fa;
     }
+    .modal-bg {
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
   </style>
 </head>
 <body>
@@ -116,7 +121,7 @@
               <i class="fas fa-chevron-right text-lg"></i>
             </button>
           </div>
-          <button id="addBookingBtn" class="hidden inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold rounded-3xl px-5 py-3 shadow-md transition focus:ring-4 focus:ring-blue-300 focus:outline-none">
+          <button id="addBookingBtn" class="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold rounded-3xl px-5 py-3 shadow-md transition focus:ring-4 focus:ring-blue-300 focus:outline-none">
             <i class="fas fa-plus text-base"></i>
             <span>Добавить запись клиента</span>
           </button>
@@ -132,6 +137,13 @@
           <div class="font-semibold text-indigo-600 py-3 border-b border-gray-200">Вс</div>
           <!-- Дни календаря будут добавлены сюда -->
         </div>
+      </div>
+      <!-- Список записей клиентов ПОД календарём -->
+      <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200 min-h-[200px] mt-8">
+        <ul id="bookingsList" class="space-y-4 max-h-[400px] overflow-y-auto text-gray-900 text-base leading-relaxed bookings-list">
+          <!-- Записи клиентов будут добавлены сюда -->
+        </ul>
+        <p id="noBookingsText" class="text-center text-gray-500 italic select-none">Нет записей на выбранный месяц</p>
       </div>
     </section>
 
@@ -159,25 +171,6 @@
           <div class="font-semibold text-indigo-600 py-3 border-b border-gray-200">Вс</div>
           <!-- Календарь админов будет добавлен сюда -->
         </div>
-      </div>
-    </section>
-
-    <!-- Список записей клиентов -->
-    <section>
-      <div class="flex items-center justify-center space-x-4 mb-6">
-        <button id="prevMonthBookings" aria-label="Предыдущий месяц записей" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-          <i class="fas fa-chevron-left text-lg"></i>
-        </button>
-        <h2 id="bookingsListTitle" class="text-2xl font-semibold text-center text-gray-900 tracking-tight">Список записей клиентов</h2>
-        <button id="nextMonthBookings" aria-label="Следующий месяц записей" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-          <i class="fas fa-chevron-right text-lg"></i>
-        </button>
-      </div>
-      <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200 min-h-[200px]">
-        <ul id="bookingsList" class="space-y-4 max-h-[400px] overflow-y-auto text-gray-900 text-base leading-relaxed bookings-list">
-          <!-- Записи клиентов будут добавлены сюда -->
-        </ul>
-        <p id="noBookingsText" class="text-center text-gray-500 italic select-none">Нет записей на выбранный месяц</p>
       </div>
     </section>
 
@@ -254,46 +247,46 @@
         <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
           <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Будние дни</h3>
           <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
-            <li>PS5 (1 джойстик) — 150 руб./час</li>
-            <li>PS5 (2 джойстика) — 300 руб./час</li>
-            <li>VR очки (1 шт.) — 500 руб./час (0.5 ч — 250 руб.)</li>
-            <li>VR очки (2 шт.) — 1000 руб./час</li>
-            <li>VR очки (3 шт.) — 1500 руб./час</li>
-            <li>VR очки (4 шт.) — 2000 руб./час</li>
-            <li>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
-            <li>X-Box (1 джойстик) — 150 руб./час</li>
-            <li>X-Box (2 джойстика) — 300 руб./час</li>
-            <li>X-Box (3 джойстика) — 450 руб./час</li>
-            <li>X-Box (4 джойстика) — 600 руб./час</li>
-            <li>Караоке — 300 руб./час</li>
-            <li>Настольные игры — 200 руб./час</li>
+            <li><i class="fas fa-gamepad text-blue-500 mr-2"></i>PS5 (1 джойстик) — 150 руб./час</li>
+            <li><i class="fas fa-gamepad text-blue-500 mr-2"></i>PS5 (2 джойстика) — 300 руб./час</li>
+            <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (1 шт.) — 500 руб./час (0.5 ч — 250 руб.)</li>
+            <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (2 шт.) — 1000 руб./час</li>
+            <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (3 шт.) — 1500 руб./час</li>
+            <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (4 шт.) — 2000 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (1 джойстик) — 150 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (2 джойстика) — 300 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (3 джойстика) — 450 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (4 джойстика) — 600 руб./час</li>
+            <li><i class="fas fa-microphone-alt text-pink-500 mr-2"></i>Караоке — 300 руб./час</li>
+            <li><i class="fas fa-chess-board text-yellow-600 mr-2"></i>Настольные игры — 200 руб./час</li>
           </ul>
         </div>
         <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
           <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Выходные дни</h3>
           <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
-            <li>PS5 (1 джойстик) — 250 руб./час</li>
-            <li>PS5 (2 джойстика) — 500 руб./час</li>
-            <li>VR очки (1 шт.) — 750 руб./час (0.5 ч — 350 руб.)</li>
-            <li>VR очки (2 шт.) — 1500 руб./час</li>
-            <li>VR очки (3 шт.) — 2250 руб./час</li>
-            <li>VR очки (4 шт.) — 3000 руб./час</li>
-            <li>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
-            <li>X-Box (1 джойстик) — 150 руб./час</li>
-            <li>X-Box (2 джойстика) — 300 руб./час</li>
-            <li>X-Box (3 джойстика) — 450 руб./час</li>
-            <li>X-Box (4 джойстика) — 600 руб./час</li>
-            <li>Караоке — 300 руб./час</li>
-            <li>Настольные игры — 200 руб./час</li>
+            <li><i class="fas fa-gamepad text-blue-500 mr-2"></i>PS5 (1 джойстик) — 250 руб./час</li>
+            <li><i class="fas fa-gamepad text-blue-500 mr-2"></i>PS5 (2 джойстика) — 500 руб./час</li>
+            <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (1 шт.) — 750 руб./час (0.5 ч — 350 руб.)</li>
+            <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (2 шт.) — 1500 руб./час</li>
+            <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (3 шт.) — 2250 руб./час</li>
+            <li><i class="fas fa-vr-cardboard text-indigo-500 mr-2"></i>VR очки (4 шт.) — 3000 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box Kinnect (до 8 чел.) — 500 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (1 джойстик) — 150 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (2 джойстика) — 300 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (3 джойстика) — 450 руб./час</li>
+            <li><i class="fas fa-xbox text-green-600 mr-2"></i>X-Box (4 джойстика) — 600 руб./час</li>
+            <li><i class="fas fa-microphone-alt text-pink-500 mr-2"></i>Караоке — 300 руб./час</li>
+            <li><i class="fas fa-chess-board text-yellow-600 mr-2"></i>Настольные игры — 200 руб./час</li>
           </ul>
         </div>
         <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
           <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Аренда всего помещения (День рождения)</h3>
           <ul class="space-y-3 text-gray-700 text-base leading-relaxed">
-            <li>1-й час — 4000 руб.</li>
-            <li>2-й час — 3500 руб.</li>
-            <li>3-й час — 3000 руб.</li>
-            <li>4-й и далее — 3000 руб./час</li>
+            <li><i class="fas fa-birthday-cake text-pink-400 mr-2"></i>1-й час — 4000 руб.</li>
+            <li><i class="fas fa-birthday-cake text-pink-400 mr-2"></i>2-й час — 3500 руб.</li>
+            <li><i class="fas fa-birthday-cake text-pink-400 mr-2"></i>3-й час — 3000 руб.</li>
+            <li><i class="fas fa-birthday-cake text-pink-400 mr-2"></i>4-й и далее — 3000 руб./час</li>
           </ul>
           <p class="mt-5 font-semibold text-gray-900 tracking-tight">В стоимость входит аренда всего помещения:</p>
           <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2 text-base leading-relaxed">
@@ -453,6 +446,15 @@
     </div>
   </div>
 
+  <!-- Модальное окно детализации дня -->
+  <div id="dayDetailsModal" class="fixed inset-0 z-50 hidden modal-bg flex items-center justify-center">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200">
+      <button id="closeDayDetailsBtn" class="absolute top-5 right-5 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="dayDetailsTitle">Детализация дня</h3>
+      <ul id="dayDetailsList" class="space-y-4"></ul>
+      <p id="dayDetailsEmpty" class="text-center text-gray-500 italic select-none hidden">Нет записей на этот день</p>
+    </div>
+  </div>
 
   <!-- Firebase и основная логика приложения -->
   <script type="module">
