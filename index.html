@@ -1143,8 +1143,16 @@
             // Правая часть: Услуга и примечания
             const serviceNotesDiv = document.createElement('div');
             serviceNotesDiv.className = 'flex-shrink-0 w-full md:w-56 text-sm text-gray-600 text-left md:text-right'; // Ширина и выравнивание
-            const serviceLabel = getServiceLabel(b.serviceType);
-            serviceNotesDiv.innerHTML = `<div class="font-medium mb-1">${serviceLabel}</div>`;
+            
+            // Получаем названия для выбранных услуг
+            let serviceLabels = 'Не указаны'; // По умолчанию
+            if (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.length > 0) {
+                serviceLabels = b.selectedServices.map(serviceKey => getServiceLabel(serviceKey)).join(', ');
+            } else if (b.serviceType) { // Обратная совместимость со старым полем
+                 serviceLabels = getServiceLabel(b.serviceType);
+            }
+
+            serviceNotesDiv.innerHTML = `<div class="font-medium mb-1">${serviceLabels}</div>`;
         if (b.notes) {
                 serviceNotesDiv.innerHTML += `<div class="italic text-gray-500 whitespace-pre-wrap break-words">${b.notes}</div>`;
         }
@@ -2112,13 +2120,27 @@
 
     // === Вспомогательные функции для отображения ===
     function getServiceLabel(serviceType) {
+      // Обновлено для всех новых ключей услуг
       switch (serviceType) {
-        case 'weekday_vr': return 'Будни - VR';
-        case 'weekday_ps': return 'Будни - PS';
-        case 'weekend_vr': return 'Выходные - VR';
-        case 'weekend_ps': return 'Выходные - PS';
-        case 'birthday': return 'День рождения';
-        default: return 'Неизвестная услуга';
+        case 'weekday_ps1': return 'PS5 (1 дж.)';
+        case 'weekday_ps2': return 'PS5 (2 дж.)';
+        case 'weekday_vr1': return 'VR (1) | Будни';
+        case 'weekday_vr2': return 'VR (2) | Будни';
+        case 'weekday_vr3': return 'VR (3) | Будни';
+        case 'weekday_vr4': return 'VR (4) | Будни';
+        case 'weekend_vr1': return 'VR (1) | Выходные';
+        case 'weekend_vr2': return 'VR (2) | Выходные';
+        case 'weekend_vr3': return 'VR (3) | Выходные';
+        case 'weekend_vr4': return 'VR (4) | Выходные';
+        case 'xbox_kinnect': return 'X-Box Kinnect';
+        case 'xbox1': return 'X-Box (1 дж.)';
+        case 'xbox2': return 'X-Box (2 дж.)';
+        case 'xbox3': return 'X-Box (3 дж.)';
+        case 'xbox4': return 'X-Box (4 дж.)';
+        case 'karaoke': return 'Караоке';
+        case 'board_games': return 'Наст. игры';
+        case 'birthday': return 'Аренда (ДР)';
+        default: return 'Неизв. услуга'; // Сокращено
       }
     }
 
