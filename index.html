@@ -650,20 +650,68 @@
       return day === 0 || day === 6; // 0 = Воскресенье, 6 = Суббота
     }
 
-    // БЕЗОПАСНАЯ функция форматирования даты в 'YYYY-MM-DD' без учета часовых поясов
-    function formatDateSafe(date) {
-      const year = date.getFullYear();
-      // getMonth() возвращает 0-11, добавляем 1 и дополняем нулем если нужно
-      const month = (date.getMonth() + 1).toString().padStart(2, '0');
-      // getDate() возвращает 1-31, дополняем нулем если нужно
-      const day = date.getDate().toString().padStart(2, '0');
-      return `${year}-${month}-${day}`;
+    // === Форматирование и обработка номера телефона ===
+    function formatPhoneNumberOnInput(inputElement) {
+        const digits = inputElement.value.replace(/\D/g, ''); // Оставляем только цифры
+        let formattedValue = '';
+
+        // Убираем лидирующую 8, если есть, заменяем на 7
+        // Или если начинается не с 7, но есть цифры - добавляем 7
+        let cleanDigits = digits;
+        if (digits.startsWith('8')) {
+            cleanDigits = '7' + digits.substring(1);
+        } else if (digits.length > 0 && !digits.startsWith('7')) {
+            // Если введено что-то, но не 7 или 8 - возможно, просто код оператора? Добавляем 7
+            // Либо если вставлен номер без кода страны
+            cleanDigits = '7' + digits;
+        }
+
+        // Обрезаем до 11 цифр (7 + 10 для номера)
+        cleanDigits = cleanDigits.substring(0, 11);
+
+        const match = cleanDigits.match(/(\d{1})?(\d{0,3})?(\d{0,3})?(\d{0,2})?(\d{0,2})?/);
+
+        if (match) {
+            formattedValue = '+7 (';
+            if (match[2]) {
+                formattedValue += match[2];
+            }
+            if (match[3]) {
+                formattedValue += ') ' + match[3];
+            }
+            if (match[4]) {
+                formattedValue += '-' + match[4];
+            }
+            if (match[5]) {
+                formattedValue += '-' + match[5];
+            }
+        }
+
+        // Предотвращаем установку пустого "+7 (" без цифр, кроме как при blur
+        if (digits.length > 0) {
+             inputElement.value = formattedValue;
+        } else {
+             // Если все цифры удалены, очищаем поле (placeholder вернется на blur)
+             inputElement.value = '';
+        }
     }
 
-    // Маска для телефона
-    clientPhoneInput.addEventListener('input', function(e) {
-      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
-      e.target.value = !x[1] ? '' : '+7 (' + (x[2] ? x[2] : '') + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+    // Обработчики focus и blur для поля телефона
+    clientPhoneInput.addEventListener('focus', (e) => {
+        if (e.target.value === '+7 (') {
+            e.target.value = '';
+        }
+    });
+
+    clientPhoneInput.addEventListener('blur', (e) => {
+        if (e.target.value === '' || e.target.value === '+') {
+            e.target.value = '+7 (';
+        }
+    });
+
+    // Обновленный обработчик input для телефона
+    clientPhoneInput.addEventListener('input', (e) => {
+        formatPhoneNumberOnInput(e.target);
     });
 
     // Получить дату понедельника и воскресенья для недели, содержащей date
@@ -2021,8 +2069,8 @@
       setupEventListeners(); // Настраиваем все обработчики
       // Первичная загрузка данных будет инициирована через onAuthStateChanged
       // Но можно вызвать renderCalendar и renderBookingsList для начального отображения пустых состояний
-      renderCalendar();
-      renderBookingsList();
+    renderCalendar();
+    renderBookingsList();
       renderAdminsCalendar(); // Покажет пустой календарь админов или скроет секцию
       calculateSalaries(); // Покажет пустую ЗП или скроет секцию
       renderRevenueStats(0, 0, 0); // Инициализируем нулями
