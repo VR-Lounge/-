@@ -751,8 +751,8 @@
             console.log('AdminAssignments snapshot received:', snapshot.docs.length); // DEBUG
             adminAssignments = snapshot.docs.map(doc => ({
               id: doc.id, // Используем дату как ID
-              ...doc.data()
-            }));
+        ...doc.data()
+      }));
             renderAdminsCalendar(); // Обновляем календарь админов
              // Пересчитываем зарплаты, т.к. назначения могли обновиться
             calculateWeeklyPayroll();
@@ -1766,7 +1766,21 @@
         }
       });
       loginBtn.addEventListener('click', showLoginModal);
-      logoutBtn.addEventListener('click', () => signOut(auth));
+      logoutBtn.addEventListener('click', () => {
+        // Отписываемся от админских слушателей ПЕРЕД выходом
+        if (unsubscribeAdmins) {
+            unsubscribeAdmins();
+            unsubscribeAdmins = null;
+            console.log('Unsubscribing from admins before logout'); // DEBUG
+        }
+        if (unsubscribeAdminAssignments) {
+            unsubscribeAdminAssignments();
+            unsubscribeAdminAssignments = null;
+            console.log('Unsubscribing from adminAssignments before logout'); // DEBUG
+        }
+        // Выполняем выход
+        signOut(auth);
+      });
       closeAuthBtn.addEventListener('click', () => authContainer.classList.add('hidden'));
 
       // --- Обработчики для услуг и скидок ---
