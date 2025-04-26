@@ -987,10 +987,9 @@
       const defaultDate = date ? formatDateSafe(date) : formatDateSafe(new Date());
       bookingForm.bookingDate.value = defaultDate;
 
-      // Установить тип услуги по умолчанию в зависимости от дня недели
       // Создаем объект Date из строки 'YYYY-MM-DD', добавляя время чтобы избежать UTC сдвига при парсинге
       const bookingDateObj = new Date(defaultDate + 'T00:00:00');
-      bookingForm.serviceType.value = isWeekend(bookingDateObj) ? 'weekend_vr' : 'weekday_vr';
+      // bookingForm.serviceType.value = isWeekend(bookingDateObj) ? 'weekend_vr' : 'weekday_vr'; // Удалено, так как элемент больше не существует
 
 
       bookingModal.classList.remove('hidden');
