@@ -1,10 +1,9 @@
-<!-- Тестовое обновление для GitHub Pages -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VR Lounge - Игровой Рай</title>
+  <title>VR Lounge - Управление Записями и Администраторами</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
@@ -341,6 +340,50 @@
           <label for="notes" class="block text-gray-900 font-semibold mb-2">Примечания</label>
           <textarea id="notes" name="notes" rows="3" placeholder="Введите дополнительные сведения" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition resize-none"></textarea>
         </div>
+        <!-- В форме добавления записи клиента -->
+        <div>
+          <label for="services" class="block text-gray-900 font-semibold mb-2">Услуги</label>
+          <div id="servicesList" class="space-y-2">
+            <label><input type="checkbox" name="services" value="ps5"> PS5 (1 джойстик)</label>
+            <label><input type="checkbox" name="services" value="ps5_2"> PS5 (2 джойстика)</label>
+            <label><input type="checkbox" name="services" value="vr"> VR очки (1 шт.)</label>
+            <label><input type="checkbox" name="services" value="vr_2"> VR очки (2 шт.)</label>
+            <label><input type="checkbox" name="services" value="vr_3"> VR очки (3 шт.)</label>
+            <label><input type="checkbox" name="services" value="vr_4"> VR очки (4 шт.)</label>
+            <label><input type="checkbox" name="services" value="xbox"> X-Box Kinnect (до 8 чел.)</label>
+            <label><input type="checkbox" name="services" value="xbox_1"> X-Box (1 джойстик)</label>
+            <label><input type="checkbox" name="services" value="xbox_2"> X-Box (2 джойстика)</label>
+            <label><input type="checkbox" name="services" value="xbox_3"> X-Box (3 джойстика)</label>
+            <label><input type="checkbox" name="services" value="xbox_4"> X-Box (4 джойстика)</label>
+            <label><input type="checkbox" name="services" value="karaoke"> Караоке</label>
+            <label><input type="checkbox" name="services" value="boardgames"> Настольные игры</label>
+          </div>
+        </div>
+        <div>
+          <label for="paymentMethod" class="block text-gray-900 font-semibold mb-2">Способ оплаты</label>
+          <select id="paymentMethod" name="paymentMethod" class="w-full rounded-3xl border border-gray-300 px-5 py-3">
+            <option value="cash">Наличные</option>
+            <option value="card">Перевод</option>
+            <option value="other">Другое</option>
+          </select>
+        </div>
+        <div class="flex space-x-2">
+          <div>
+            <label for="discountType" class="block text-gray-900 font-semibold mb-2">Тип скидки</label>
+            <select id="discountType" name="discountType" class="rounded-3xl border border-gray-300 px-3 py-2">
+              <option value="percent">%</option>
+              <option value="fixed">₽</option>
+            </select>
+          </div>
+          <div>
+            <label for="discountValue" class="block text-gray-900 font-semibold mb-2">Скидка</label>
+            <input type="number" id="discountValue" name="discountValue" class="rounded-3xl border border-gray-300 px-3 py-2" value="0">
+          </div>
+        </div>
+        <div>
+          <label class="block text-gray-900 font-semibold mb-2">Итоговая сумма</label>
+          <div id="totalAmount" class="font-bold text-xl">0 ₽</div>
+        </div>
         <div class="flex space-x-4">
           <button type="submit" class="flex-grow bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-blue-300 focus:outline-none">Сохранить запись</button>
           <button type="button" id="deleteBookingBtn" class="hidden flex-grow bg-red-600 hover:bg-red-700 active:bg-red-800 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-red-300 focus:outline-none">Удалить запись</button>
@@ -555,12 +598,12 @@
     function loadData() {
       console.log('loadData called. isAdmin:', isAdmin); // DEBUG
       // Загрузка бронирований клиентов
-      onSnapshot(collection(db, "bookings"), (snapshot) => {
+    onSnapshot(collection(db, "bookings"), (snapshot) => {
         console.log('Bookings snapshot received:', snapshot.docs.length); // DEBUG
-        bookings = snapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        }));
+      bookings = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      }));
         renderCalendar(); // Обновляем календарь клиентов
         renderBookingsList(); // Обновляем список записей
         if (isAdmin) {
