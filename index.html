@@ -16,11 +16,6 @@
       -moz-osx-font-smoothing: grayscale;
       color: #1d1d1f;
     }
-    /* Добавляем стили для темной темы */
-    .dark body {
-      background-color: #1c1c1e; /* Немного светлее черного для лучшего контраста */
-      color: #f5f5f7;
-    }
     ul::-webkit-scrollbar, .bookings-list::-webkit-scrollbar {
       width: 6px;
       height: 6px;
@@ -29,10 +24,6 @@
       background-color: rgba(0,0,0,0.1);
       border-radius: 3px;
     }
-    /* Добавляем стили для темной темы */
-    .dark ul::-webkit-scrollbar-thumb, .dark .bookings-list::-webkit-scrollbar-thumb {
-      background-color: rgba(255, 255, 255, 0.15);
-    }
     ul::-webkit-scrollbar-track, .bookings-list::-webkit-scrollbar-track {
       background: transparent;
     }
@@ -40,18 +31,10 @@
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
-    /* Добавляем стили для темной темы */
-    .dark #bookingModal, .dark #assignAdminModal, .dark #authContainer {
-       background-color: rgba(30, 30, 30, 0.75); /* Полупрозрачный темный фон */
-    }
     button:focus {
       outline: none;
       box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.4);
       border-radius: 12px;
-    }
-    /* Добавляем стили для темной темы */
-    .dark button:focus {
-      box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.5); /* Немного ярче для темного фона */
     }
     input:focus, select:focus, textarea:focus {
       outline: none;
@@ -59,18 +42,8 @@
       border-radius: 12px;
       border-color: #007aff;
     }
-    /* Добавляем стили для темной темы */
-    .dark input:focus, .dark select:focus, .dark textarea:focus {
-      box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.5);
-      border-color: #0a84ff;
-    }
     .calendar-day-cell { /* Добавлен класс для ячеек календаря админов */
        min-height: 100px; /* Минимальная высота ячейки */
-       /* Добавляем стили для темной темы */
-       border-color: #3a3a3c; /* Темный разделитель */
-    }
-    .dark .calendar-day-cell {
-        border-color: #3a3a3c; /* Убедимся, что граница темная */
     }
 
     /* Стили для тегов-кнопок услуг */
@@ -93,25 +66,13 @@
       min-width: 110px; /* Минимальная ширина для единообразия */
       vertical-align: top; /* Выравнивание тегов по верху, если они разной высоты */
     }
-    /* Добавляем стили для темной темы */
-    .dark .service-tag {
-        background-color: #2c2c2e; /* Темный фон для тегов */
-        color: #f5f5f7;           /* Светлый текст */
-        border-color: #3a3a3c;     /* Темная граница */
-    }
 
     /* Убираем лишние стили для иконки внутри тега */
     .service-tag i {
        /* font-size: 14px; */ /* Удалено */
        margin-bottom: 0; /* Удалено */
        margin-right: 0; /* Удалено */
-       color: #8e8e93; /* Цвет иконки по умолчанию (светлая тема) */
     }
-    /* Добавляем стили для темной темы */
-    .dark .service-tag i {
-       color: #8e8e93; /* Можно оставить тот же цвет или сделать светлее */
-    }
-
 
     /* Стили для первой строки (иконка + название) */
     .service-tag-line1 {
@@ -135,58 +96,29 @@
       font-size: 13px; /* Увеличено */
       color: #6e6e73; /* Вторичный цвет текста Apple */
     }
-    /* Добавляем стили для темной темы */
-    .dark .service-tag-price {
-      color: #8e8e93; /* Светло-серый для цены в темной теме */
-    }
 
     .service-tag:hover {
       background-color: #e5e5e5;
     }
-    /* Добавляем стили для темной темы */
-    .dark .service-tag:hover {
-      background-color: #3a3a3c; /* Темный фон при наведении */
-    }
-
 
     .service-tag.selected {
       background-color: #007aff;
       color: white;
       border-color: #007aff;
     }
-    /* Добавляем стили для темной темы */
-    .dark .service-tag.selected {
-      background-color: #0a84ff; /* Более яркий синий для темной темы */
-      color: white;
-      border-color: #0a84ff;
-    }
 
     .service-tag.selected:hover {
       background-color: #0062cc;
     }
-    /* Добавляем стили для темной темы */
-    .dark .service-tag.selected:hover {
-      background-color: #007aff; /* Немного светлее при наведении */
-    }
-
 
     .service-tag.selected .service-tag-price {
       /* color: rgba(255, 255, 255, 0.8); */ /* Делаем цену такой же, как основной текст */
       color: white;
     }
-    /* Добавляем стили для темной темы */
-    .dark .service-tag.selected .service-tag-price {
-        color: white; /* Цена остается белой при выборе */
-    }
 
     .service-tag.selected i {
         color: white !important; /* Переопределяем цвет иконки на белый при выборе */
     }
-    /* Добавляем стили для темной темы */
-    .dark .service-tag.selected i {
-        color: white !important; /* Иконка остается белой при выборе */
-    }
-
 
     /* Стили для контейнера тегов */
     #servicesContainer {
@@ -202,20 +134,12 @@
       border-radius: 14px;
       /* Стили для скроллбара (применяются ко всем) */
     }
-    /* Добавляем стили для темной темы */
-    .dark #servicesContainer {
-        border-color: #3a3a3c; /* Темная граница контейнера */
-    }
     #servicesContainer::-webkit-scrollbar {
       width: 5px;
     }
     #servicesContainer::-webkit-scrollbar-thumb {
         background-color: rgba(0, 0, 0, 0.15);
         border-radius: 3px;
-    }
-    /* Добавляем стили для темной темы */
-    .dark #servicesContainer::-webkit-scrollbar-thumb {
-        background-color: rgba(255, 255, 255, 0.2); /* Бегунок скролла светлее */
     }
     #servicesContainer::-webkit-scrollbar-track {
       background: transparent;
@@ -253,82 +177,24 @@
           justify-content: center;
       }
     }
-
-    /* Стили для информационных блоков в темной теме */
-    .dark #salarySection .bg-green-50 {
-        background-color: #1a3c2d; /* Темно-зеленый фон */
-        border-color: #2a5a44;    /* Зеленая граница */
-    }
-    .dark #salarySection .text-green-700 {
-        color: #6ee7b7; /* Светло-зеленый текст */
-    }
-    .dark #salarySection .text-green-600 {
-        color: #a7f3d0; /* Еще светлее зеленый текст */
-    }
-
-    .dark #salarySection .bg-yellow-50 {
-        background-color: #4a3a1a; /* Темно-желтый фон */
-        border-color: #7a5c1f;    /* Желтая граница */
-    }
-    .dark #salarySection .text-yellow-900 {
-        color: #fcd34d; /* Светло-желтый текст */
-    }
-    .dark #salarySection .text-yellow-700 {
-        color: #fde68a; /* Еще светлее желтый текст */
-    }
-     .dark #salarySection .text-yellow-600 {
-        color: #fef08a; /* Самый светлый желтый */
-    }
-
-    .dark #salarySection .bg-blue-50 {
-        background-color: #1e3a5f; /* Темно-синий фон */
-        border-color: #2a5180;    /* Синяя граница */
-    }
-    .dark #salarySection .text-blue-900 {
-        color: #93c5fd; /* Светло-синий текст */
-    }
-    .dark #salarySection .text-blue-800 {
-        color: #bfdbfe; /* Еще светлее синий текст */
-    }
   </style>
-  <script>
-    // Логика переключения темы ДО загрузки DOM, чтобы избежать мерцания
-    const theme = (() => {
-      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-        return localStorage.getItem('theme');
-      }
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        return 'dark';
-      }
-      return 'light';
-    })();
-
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-
-    // Сохраняем тему в localStorage, чтобы скрипт ниже мог ее использовать
-    window.localStorage.setItem('theme', theme);
-  </script>
 </head>
-<body class="bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+<body>
   <!-- Форма входа -->
-  <div id="authContainer" class="fixed inset-0 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md flex items-center justify-center z-50 hidden" onclick="event.target === this && this.classList.add('hidden')"> <!-- Обновлен фон и блюр -->
-    <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-md w-full p-8 relative border border-gray-200 dark:border-pink-500" onclick="event.stopPropagation()"> <!-- Добавлены dark: классы -->
-    <button id="closeAuthBtn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
-    <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 dark:text-gray-100">Доступ для администратора</h3>
+  <div id="authContainer" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center z-50 hidden" onclick="event.target === this && this.classList.add('hidden')">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 relative" onclick="event.stopPropagation()">
+    <button id="closeAuthBtn" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+    <h3 class="text-2xl font-semibold mb-6 text-center">Доступ для администратора</h3>
     <form id="loginForm" class="space-y-4">
       <div>
-        <label for="loginEmail" class="block mb-2 font-medium text-gray-700 dark:text-gray-300">Email</label>
-        <input type="email" id="loginEmail" required class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-3 text-gray-900 dark:text-gray-100 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-600 dark:focus:border-blue-600">
+        <label for="loginEmail" class="block mb-2 font-medium">Email</label>
+        <input type="email" id="loginEmail" required class="w-full rounded-3xl border border-gray-300 px-4 py-3">
       </div>
       <div>
-        <label for="loginPassword" class="block mb-2 font-medium text-gray-700 dark:text-gray-300">Пароль</label>
-        <input type="password" id="loginPassword" required class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-3 text-gray-900 dark:text-gray-100 focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-600 dark:focus:border-blue-600">
+        <label for="loginPassword" class="block mb-2 font-medium">Пароль</label>
+        <input type="password" id="loginPassword" required class="w-full rounded-3xl border border-gray-300 px-4 py-3">
       </div>
-      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold py-3 rounded-3xl focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 transition-colors duration-200">
+      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-3xl">
         Войти
       </button>
     </form>
@@ -336,16 +202,13 @@
 </div>
 
   <!-- Основной интерфейс -->
-  <header class="bg-white dark:bg-gray-900 shadow-md dark:shadow-lg dark:shadow-gray-800/30 sticky top-0 z-30 border-b border-gray-200 dark:border-gray-700"> <!-- Добавлены dark: классы -->
+  <header class="bg-white shadow-md sticky top-0 z-30">
     <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row md:items-center md:justify-between">
-      <h1 class="text-3xl font-semibold tracking-tight text-gray-900 dark:text-gray-100 select-none" style="font-weight: 600;">VR Lounge - Управление</h1>
+      <h1 class="text-3xl font-semibold tracking-tight text-gray-900 select-none" style="font-weight: 600;">VR Lounge - Управление</h1>
       <div class="flex items-center space-x-4 mt-2 md:mt-0">
-        <p class="text-gray-500 dark:text-gray-400 text-sm select-none">Записи и Администраторы</p>
-        <button id="themeToggleBtn" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 rounded-full w-8 h-8 flex items-center justify-center" aria-label="Переключить тему">
-          <i class="fas fa-sun"></i> <!-- Иконка по умолчанию (светлая тема) -->
-        </button>
-        <button id="logoutBtn" class="hidden text-sm text-blue-600 hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-400">Выйти</button>
-        <button id="loginBtn" class="text-sm text-blue-600 hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-400">Вход для администратора</button>
+        <p class="text-gray-500 text-sm select-none">Записи и Администраторы</p>
+        <button id="logoutBtn" class="hidden text-sm text-blue-600 hover:text-blue-800">Выйти</button>
+        <button id="loginBtn" class="text-sm text-blue-600 hover:text-blue-800">Вход для администратора</button>
       </div>
     </div>
   </header>
@@ -353,32 +216,32 @@
   <main class="flex-grow max-w-7xl mx-auto px-6 py-8 flex flex-col space-y-10">
     <!-- Календарь записи клиентов -->
     <section>
-      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 dark:text-gray-100 tracking-tight">Календарь записи клиентов</h2>
-      <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200 dark:border-pink-500"> <!-- Добавлены dark: классы -->
+      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Календарь записи клиентов</h2>
+      <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 space-y-5 md:space-y-0">
           <div id="client-month-nav" class="flex items-center space-x-3">
-            <button id="prevMonth" aria-label="Предыдущий месяц" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none">
+            <button id="prevMonth" aria-label="Предыдущий месяц" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
               <i class="fas fa-chevron-left text-lg"></i>
             </button>
-            <h3 id="monthYear" class="text-xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight select-none"></h3>
-            <button id="nextMonth" aria-label="Следующий месяц" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none">
+            <h3 id="monthYear" class="text-xl font-semibold text-gray-900 tracking-tight select-none"></h3>
+            <button id="nextMonth" aria-label="Следующий месяц" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
               <i class="fas fa-chevron-right text-lg"></i>
             </button>
           </div>
-          <button id="addBookingBtn" class="hidden inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 dark:bg-blue-700 dark:hover:bg-blue-600 text-white font-semibold rounded-3xl px-5 py-3 shadow-md transition focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 focus:outline-none">
+          <button id="addBookingBtn" class="hidden inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold rounded-3xl px-5 py-3 shadow-md transition focus:ring-4 focus:ring-blue-300 focus:outline-none">
             <i class="fas fa-plus text-base"></i>
             <span>Добавить запись клиента</span>
           </button>
         </div>
 
         <div id="calendar" class="grid grid-cols-7 gap-1 text-center text-sm select-none user-select-none">
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Пн</div>
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Вт</div>
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Ср</div>
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Чт</div>
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Пт</div>
-          <div class="font-semibold text-indigo-600 dark:text-indigo-400 py-3 border-b border-gray-200 dark:border-gray-700">Сб</div>
-          <div class="font-semibold text-indigo-600 dark:text-indigo-400 py-3 border-b border-gray-200 dark:border-gray-700">Вс</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Пн</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Вт</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Ср</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Чт</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Пт</div>
+          <div class="font-semibold text-indigo-600 py-3 border-b border-gray-200">Сб</div>
+          <div class="font-semibold text-indigo-600 py-3 border-b border-gray-200">Вс</div>
           <!-- Дни календаря будут добавлены сюда -->
         </div>
       </div>
@@ -386,26 +249,26 @@
 
     <!-- График администраторов -->
     <section id="adminScheduleSection" class="hidden">
-      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 dark:text-gray-100 tracking-tight">График администраторов</h2>
-      <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200 dark:border-pink-500"> <!-- Добавлены dark: классы -->
+      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">График администраторов</h2>
+      <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200">
         <div class="flex justify-between mb-6">
-          <button id="prevMonthAdmins" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none">
+          <button id="prevMonthAdmins" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
             <i class="fas fa-chevron-left text-lg"></i>
           </button>
-          <h3 id="currentMonthAdmins" class="text-xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight select-none"></h3>
-          <button id="nextMonthAdmins" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none">
+          <h3 id="currentMonthAdmins" class="text-xl font-semibold text-gray-900 tracking-tight select-none"></h3>
+          <button id="nextMonthAdmins" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
             <i class="fas fa-chevron-right text-lg"></i>
           </button>
         </div>
         <div id="adminsCalendar" class="grid grid-cols-7 gap-1 text-center text-sm select-none">
           <!-- Дни недели -->
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Пн</div>
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Вт</div>
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Ср</div>
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Чт</div>
-          <div class="font-semibold text-gray-500 dark:text-gray-400 py-3 border-b border-gray-200 dark:border-gray-700">Пт</div>
-          <div class="font-semibold text-indigo-600 dark:text-indigo-400 py-3 border-b border-gray-200 dark:border-gray-700">Сб</div>
-          <div class="font-semibold text-indigo-600 dark:text-indigo-400 py-3 border-b border-gray-200 dark:border-gray-700">Вс</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Пн</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Вт</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Ср</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Чт</div>
+          <div class="font-semibold text-gray-500 py-3 border-b border-gray-200">Пт</div>
+          <div class="font-semibold text-indigo-600 py-3 border-b border-gray-200">Сб</div>
+          <div class="font-semibold text-indigo-600 py-3 border-b border-gray-200">Вс</div>
           <!-- Календарь админов будет добавлен сюда -->
         </div>
       </div>
@@ -414,33 +277,33 @@
     <!-- Список записей клиентов -->
     <section>
       <div class="flex items-center justify-center space-x-4 mb-6">
-        <button id="prevMonthBookings" aria-label="Предыдущий месяц записей" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none">
+        <button id="prevMonthBookings" aria-label="Предыдущий месяц записей" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
           <i class="fas fa-chevron-left text-lg"></i>
         </button>
-        <h2 id="bookingsListTitle" class="text-2xl font-semibold text-center text-gray-900 dark:text-gray-100 tracking-tight">Список записей клиентов</h2>
-        <button id="nextMonthBookings" aria-label="Следующий месяц записей" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none">
+        <h2 id="bookingsListTitle" class="text-2xl font-semibold text-center text-gray-900 tracking-tight">Список записей клиентов</h2>
+        <button id="nextMonthBookings" aria-label="Следующий месяц записей" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
           <i class="fas fa-chevron-right text-lg"></i>
         </button>
       </div>
-      <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200 dark:border-pink-500 min-h-[200px]"> <!-- Добавлены dark: классы -->
-        <ul id="bookingsList" class="space-y-4 max-h-[400px] overflow-y-auto text-gray-900 dark:text-gray-100 text-base leading-relaxed bookings-list">
+      <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200 min-h-[200px]">
+        <ul id="bookingsList" class="space-y-4 max-h-[400px] overflow-y-auto text-gray-900 text-base leading-relaxed bookings-list">
           <!-- Записи клиентов будут добавлены сюда -->
         </ul>
-        <p id="noBookingsText" class="text-center text-gray-500 dark:text-gray-400 italic select-none">Нет записей на выбранный месяц</p>
+        <p id="noBookingsText" class="text-center text-gray-500 italic select-none">Нет записей на выбранный месяц</p>
       </div>
     </section>
 
     <!-- Расчет зарплаты -->
     <section id="salarySection" class="hidden">
-      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 dark:text-gray-100 tracking-tight">Финансы и Расчет зарплаты</h2>
-      <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200 dark:border-pink-500"> <!-- Добавлены dark: классы -->
+      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Финансы и Расчет зарплаты</h2>
+      <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200">
         <!-- Навигация по месяцам (остается для месячного отчета) -->
         <div class="flex justify-between mb-6">
-          <button id="prevMonthSalary" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none">
+          <button id="prevMonthSalary" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
             <i class="fas fa-chevron-left text-lg"></i>
           </button>
-          <h3 id="currentMonthSalary" class="text-xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight select-none"></h3>
-          <button id="nextMonthSalary" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none">
+          <h3 id="currentMonthSalary" class="text-xl font-semibold text-gray-900 tracking-tight select-none"></h3>
+          <button id="nextMonthSalary" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-100 transition text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none">
             <i class="fas fa-chevron-right text-lg"></i>
           </button>
         </div>
@@ -498,11 +361,11 @@
 
     <!-- Стоимость услуг -->
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 dark:text-gray-100 tracking-tight">Стоимость услуг</h2>
+      <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Стоимость услуг</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-        <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-lg p-8 border border-gray-200 dark:border-pink-500"> <!-- Добавлены dark: классы -->
-          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 dark:border-gray-700 pb-3 text-gray-900 dark:text-gray-100 tracking-tight">Будние дни</h3>
-          <ul class="space-y-4 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
+        <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Будние дни</h3>
+          <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
             <li class="flex items-center space-x-3">
               <i class="fas fa-gamepad text-indigo-600 text-lg flex-shrink-0"></i>
               <span>PS5 (1 джойстик) — 150 ₽/час</span>
@@ -557,9 +420,9 @@
             </li>
           </ul>
         </div>
-        <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-lg p-8 border border-gray-200 dark:border-pink-500"> <!-- Добавлены dark: классы -->
-          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 dark:border-gray-700 pb-3 text-gray-900 dark:text-gray-100 tracking-tight">Выходные дни</h3>
-          <ul class="space-y-4 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
+        <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Выходные дни</h3>
+          <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
             <li class="flex items-center space-x-3">
               <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
               <span>VR очки (1 шт.) — 750 ₽/час</span>
@@ -614,19 +477,19 @@
             </li>
           </ul>
         </div>
-        <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-lg p-8 border border-gray-200 dark:border-pink-500"> <!-- Добавлены dark: классы -->
-          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 dark:border-gray-700 pb-3 text-gray-900 dark:text-gray-100 flex items-center">
+        <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight flex items-center">
              <i class="fas fa-birthday-cake text-red-600 text-lg mr-2 flex-shrink-0"></i>
              <span>Аренда всего (День Рождения)</span>
            </h3>
-          <ul class="space-y-3 text-gray-700 dark:text-gray-300 text-base leading-relaxed">
+          <ul class="space-y-3 text-gray-700 text-base leading-relaxed">
             <li>Первый час — 4000 руб.</li>
             <li>Второй час — 3500 руб.</li>
             <li>Третий час — 3000 руб.</li>
             <li>Четвертый и далее — 3000 руб./час</li>
           </ul>
-          <p class="mt-5 font-semibold text-gray-900 dark:text-gray-100 tracking-tight">В стоимость входит аренда всего помещения:</p>
-          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 mt-2 text-base leading-relaxed">
+          <p class="mt-5 font-semibold text-gray-900 tracking-tight">В стоимость входит аренда всего помещения:</p>
+          <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2 text-base leading-relaxed">
             <li>VR очки</li>
             <li>PS комната</li>
             <li>Караоке</li>
@@ -635,38 +498,38 @@
             <li>Танцы в XBOX</li>
             <li>Игры на ПК</li>
           </ul>
-          <p class="mt-4 text-gray-500 dark:text-gray-400 italic text-sm">Можно заказать свою еду и напитки</p>
+          <p class="mt-4 text-gray-500 italic text-sm">Можно заказать свою еду и напитки</p>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Модальное окно бронирования клиента -->
-  <div id="bookingModal" class="fixed inset-0 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md flex items-center justify-center p-6 hidden z-50"> <!-- Обновлен фон и блюр -->
-    <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-8 relative border border-gray-200 dark:border-pink-500"> <!-- Добавлены dark: классы -->
-      <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
-      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 dark:text-gray-100 tracking-tight" id="modalTitle">Добавить запись клиента</h3>
+  <div id="bookingModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200">
+      <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="modalTitle">Добавить запись клиента</h3>
       <form id="bookingForm" class="space-y-6">
         <input type="hidden" id="bookingId" name="bookingId" />
         <div>
-          <label for="clientName" class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Имя клиента</label>
-          <input type="text" id="clientName" name="clientName" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none transition" placeholder="Введите имя клиента" />
+          <label for="clientName" class="block text-gray-900 font-semibold mb-2">Имя клиента</label>
+          <input type="text" id="clientName" name="clientName" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="Введите имя клиента" />
         </div>
         <div>
-          <label for="clientPhone" class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Номер телефона</label>
-          <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none transition" placeholder="+7 (XXX) XXX-XX-XX" />
+          <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
+          <input type="tel" id="clientPhone" name="clientPhone" required autocomplete="off" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="+7 (XXX) XXX-XX-XX" />
         </div>
         <div>
-          <label for="bookingDate" class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Дата</label>
-          <input type="date" id="bookingDate" name="bookingDate" required class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none transition" />
+          <label for="bookingDate" class="block text-gray-900 font-semibold mb-2">Дата</label>
+          <input type="date" id="bookingDate" name="bookingDate" required class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" />
         </div>
         <div>
-          <label for="startTime" class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Время начала</label>
-          <input type="time" id="startTime" name="startTime" required class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none transition" />
+          <label for="startTime" class="block text-gray-900 font-semibold mb-2">Время начала</label>
+          <input type="time" id="startTime" name="startTime" required class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" />
         </div>
         <div>
-          <label for="duration" class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Длительность (часы)</label>
-          <select id="duration" name="duration" required class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none transition">
+          <label for="duration" class="block text-gray-900 font-semibold mb-2">Длительность (часы)</label>
+          <select id="duration" name="duration" required class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
             <option value="0.5">0.5</option>
             <option value="1" selected>1</option>
             <option value="1.5">1.5</option>
@@ -688,79 +551,79 @@
 
         <!-- Услуги -->
         <div>
-          <label class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Услуги</label>
-          <div id="servicesContainer" class="flex flex-wrap gap-3 border border-gray-300 dark:border-gray-600 rounded-xl p-4 bg-white dark:bg-gray-800"> <!-- Добавлены dark: классы для фона и рамки -->
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekday_ps1" data-price="150">
-              <div class="service-tag-line1"><i class="fas fa-gamepad text-indigo-600 dark:text-indigo-400"></i> <span>PS5 (1 джойстик)</span></div>
-              <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">150 ₽/час</div>
+          <label class="block text-gray-900 font-semibold mb-2">Услуги</label>
+          <div id="servicesContainer" class="flex flex-wrap gap-3">
+            <button type="button" class="service-tag" data-service="weekday_ps1" data-price="150">
+              <div class="service-tag-line1"><i class="fas fa-gamepad text-indigo-600"></i> <span>PS5 (1 джойстик)</span></div>
+              <div class="service-tag-price">150 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekday_ps2" data-price="300">
-              <div class="service-tag-line1"><i class="fas fa-gamepad text-indigo-600 dark:text-indigo-400"></i> <span>PS5 (2 джойстика)</span></div>
-              <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">300 ₽/час</div>
+            <button type="button" class="service-tag" data-service="weekday_ps2" data-price="300">
+              <div class="service-tag-line1"><i class="fas fa-gamepad text-indigo-600"></i> <span>PS5 (2 джойстика)</span></div>
+              <div class="service-tag-price">300 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekday_vr1" data-price="500">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600 dark:text-blue-400"></i> <span>VR очки (1 шт.) | Будни</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">500 ₽/час</div>
+            <button type="button" class="service-tag" data-service="weekday_vr1" data-price="500">
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (1 шт.) | Будни</span></div>
+               <div class="service-tag-price">500 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekday_vr2" data-price="1000">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600 dark:text-blue-400"></i> <span>VR очки (2 шт.) | Будни</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">1000 ₽/час</div>
+            <button type="button" class="service-tag" data-service="weekday_vr2" data-price="1000">
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (2 шт.) | Будни</span></div>
+               <div class="service-tag-price">1000 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekday_vr3" data-price="1500">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600 dark:text-blue-400"></i> <span>VR очки (3 шт.) | Будни</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">1500 ₽/час</div>
+            <button type="button" class="service-tag" data-service="weekday_vr3" data-price="1500">
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (3 шт.) | Будни</span></div>
+               <div class="service-tag-price">1500 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekday_vr4" data-price="2000">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600 dark:text-blue-400"></i> <span>VR очки (4 шт.) | Будни</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">2000 ₽/час</div>
+            <button type="button" class="service-tag" data-service="weekday_vr4" data-price="2000">
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (4 шт.) | Будни</span></div>
+               <div class="service-tag-price">2000 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekend_vr1" data-price="750">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600 dark:text-blue-400"></i> <span>VR очки (1 шт.) | Выходные</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">750 ₽/час</div>
+            <button type="button" class="service-tag" data-service="weekend_vr1" data-price="750">
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (1 шт.) | Выходные</span></div>
+               <div class="service-tag-price">750 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekend_vr2" data-price="1500">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600 dark:text-blue-400"></i> <span>VR очки (2 шт.) | Выходные</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">1500 ₽/час</div>
+            <button type="button" class="service-tag" data-service="weekend_vr2" data-price="1500">
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (2 шт.) | Выходные</span></div>
+               <div class="service-tag-price">1500 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekend_vr3" data-price="2250">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600 dark:text-blue-400"></i> <span>VR очки (3 шт.) | Выходные</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">2250 ₽/час</div>
+            <button type="button" class="service-tag" data-service="weekend_vr3" data-price="2250">
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (3 шт.) | Выходные</span></div>
+               <div class="service-tag-price">2250 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="weekend_vr4" data-price="3000">
-               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600 dark:text-blue-400"></i> <span>VR очки (4 шт.) | Выходные</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">3000 ₽/час</div>
+            <button type="button" class="service-tag" data-service="weekend_vr4" data-price="3000">
+               <div class="service-tag-line1"><i class="fas fa-vr-cardboard text-blue-600"></i> <span>VR очки (4 шт.) | Выходные</span></div>
+               <div class="service-tag-price">3000 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="xbox_kinnect" data-price="500">
-               <div class="service-tag-line1"><i class="fas fa-child text-orange-600 dark:text-orange-400"></i> <span>X-Box Kinnect (до 8 чел.)</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">500 ₽/час</div>
+            <button type="button" class="service-tag" data-service="xbox_kinnect" data-price="500">
+               <div class="service-tag-line1"><i class="fas fa-child text-orange-600"></i> <span>X-Box Kinnect (до 8 чел.)</span></div>
+               <div class="service-tag-price">500 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="xbox1" data-price="250">
-               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600 dark:text-green-400"></i> <span>X-Box (1 джойстик)</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">250 ₽/час</div>
+            <button type="button" class="service-tag" data-service="xbox1" data-price="250">
+               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600"></i> <span>X-Box (1 джойстик)</span></div>
+               <div class="service-tag-price">250 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="xbox2" data-price="500">
-               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600 dark:text-green-400"></i> <span>X-Box (2 джойстика)</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">500 ₽/час</div>
+            <button type="button" class="service-tag" data-service="xbox2" data-price="500">
+               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600"></i> <span>X-Box (2 джойстика)</span></div>
+               <div class="service-tag-price">500 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="xbox3" data-price="750">
-               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600 dark:text-green-400"></i> <span>X-Box (3 джойстика)</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">750 ₽/час</div>
+            <button type="button" class="service-tag" data-service="xbox3" data-price="750">
+               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600"></i> <span>X-Box (3 джойстика)</span></div>
+               <div class="service-tag-price">750 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="xbox4" data-price="1000">
-               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600 dark:text-green-400"></i> <span>X-Box (4 джойстика)</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">1000 ₽/час</div>
+            <button type="button" class="service-tag" data-service="xbox4" data-price="1000">
+               <div class="service-tag-line1"><i class="fas fa-gamepad text-green-600"></i> <span>X-Box (4 джойстика)</span></div>
+               <div class="service-tag-price">1000 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="karaoke" data-price="1000">
-               <div class="service-tag-line1"><i class="fas fa-microphone text-pink-600 dark:text-pink-400"></i> <span>Караоке</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">1000 ₽/час</div>
+            <button type="button" class="service-tag" data-service="karaoke" data-price="1000">
+               <div class="service-tag-line1"><i class="fas fa-microphone text-pink-600"></i> <span>Караоке</span></div>
+               <div class="service-tag-price">1000 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="board_games" data-price="500">
-               <div class="service-tag-line1"><i class="fas fa-dice-d6 text-purple-600 dark:text-purple-400"></i> <span>Настольные игры</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">500 ₽/час</div>
+            <button type="button" class="service-tag" data-service="board_games" data-price="500">
+               <div class="service-tag-line1"><i class="fas fa-dice-d6 text-purple-600"></i> <span>Настольные игры</span></div>
+               <div class="service-tag-price">500 ₽/час</div>
             </button>
-            <button type="button" class="service-tag bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 selected:bg-blue-600 dark:selected:bg-blue-700 selected:text-white selected:border-blue-600 dark:selected:border-blue-700" data-service="birthday" data-price="4000">
-               <div class="service-tag-line1"><i class="fas fa-birthday-cake text-red-600 dark:text-red-400"></i> <span>Аренда всего (День Рождения)</span></div>
-               <div class="service-tag-price text-gray-600 dark:text-gray-400 selected:text-white">от 3000 ₽/час</div> <!-- Цена для ДР динамическая -->
+            <button type="button" class="service-tag" data-service="birthday" data-price="4000">
+               <div class="service-tag-line1"><i class="fas fa-birthday-cake text-red-600"></i> <span>Аренда всего (День Рождения)</span></div>
+               <div class="service-tag-price">от 3000 ₽/час</div> <!-- Цена для ДР динамическая -->
             </button>
         </div>
           <input type="hidden" id="selectedServices" name="selectedServices">
@@ -768,78 +631,76 @@
 
         <!-- Сумма (было в grid) -->
         <div>
-            <label class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Сумма</label>
+            <label class="block text-gray-900 font-semibold mb-2">Сумма</label>
             <div class="flex items-center">
-              <input type="text" id="totalAmount" readonly class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 px-5 py-3 text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800" value="0 ₽">
+              <input type="text" id="totalAmount" readonly class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 bg-gray-50" value="0 ₽">
             </div>
         </div>
-
+        
         <!-- Скидка (было в grid) -->
         <div>
-            <label class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Скидка</label>
+            <label class="block text-gray-900 font-semibold mb-2">Скидка</label>
             <div class="flex items-center space-x-2">
-              <input type="number" id="discountPercent" min="0" max="100" class="w-1/2 rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100" placeholder="%">
-              <span class="text-gray-500 dark:text-gray-400">или</span>
-              <input type="number" id="discountAmount" min="0" class="w-1/2 rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100" placeholder="₽">
+              <input type="number" id="discountPercent" min="0" max="100" class="w-1/2 rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="%">
+              <span class="text-gray-500">или</span>
+              <input type="number" id="discountAmount" min="0" class="w-1/2 rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="₽">
             </div>
         </div>
 
         <!-- Итоговая стоимость (остается ниже) -->
         <div>
-          <label class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Итоговая стоимость</label>
+          <label class="block text-gray-900 font-semibold mb-2">Итоговая стоимость</label>
           <div class="flex items-center">
-            <input type="text" id="finalAmount" readonly class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 px-5 py-3 text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 font-semibold" value="0 ₽">
+            <input type="text" id="finalAmount" readonly class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 bg-gray-50 font-semibold" value="0 ₽">
           </div>
         </div>
 
         <div>
-          <label for="notes" class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Примечания</label>
-          <textarea id="notes" name="notes" rows="3" placeholder="Введите дополнительные сведения" class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none transition resize-none"></textarea>
+          <label for="notes" class="block text-gray-900 font-semibold mb-2">Примечания</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Введите дополнительные сведения" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition resize-none"></textarea>
         </div>
         <div class="flex space-x-4">
-          <button type="submit" class="flex-grow bg-blue-600 hover:bg-blue-700 active:bg-blue-800 dark:bg-blue-700 dark:hover:bg-blue-600 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 focus:outline-none">Сохранить запись</button>
-          <button type="button" id="deleteBookingBtn" class="hidden flex-grow bg-red-600 hover:bg-red-700 active:bg-red-800 dark:bg-red-700 dark:hover:bg-red-600 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-red-300 dark:focus:ring-red-800 focus:outline-none">Удалить запись</button>
+          <button type="submit" class="flex-grow bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-blue-300 focus:outline-none">Сохранить запись</button>
+          <button type="button" id="deleteBookingBtn" class="hidden flex-grow bg-red-600 hover:bg-red-700 active:bg-red-800 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-red-300 focus:outline-none">Удалить запись</button>
         </div>
       </form>
     </div>
   </div>
 
   <!-- Модальное окно для назначения администратора -->
-  <div id="assignAdminModal" class="fixed inset-0 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && this.classList.add('hidden')"> <!-- Обновлен фон и блюр -->
-    <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-8 relative border border-gray-200 dark:border-pink-500" onclick="event.stopPropagation()"> <!-- Добавлены dark: классы -->
-      <button id="closeAssignModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
-      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 dark:text-gray-100 tracking-tight" id="assignModalTitle">Назначить администратора</h3>
+  <div id="assignAdminModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && this.classList.add('hidden')">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200" onclick="event.stopPropagation()">
+      <button id="closeAssignModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="assignModalTitle">Назначить администратора</h3>
       <form id="assignAdminForm" class="space-y-6">
         <input type="hidden" id="assignDate" name="assignDate">
         <div>
-          <label class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Основной администратор</label>
-          <select id="mainAdmin" name="mainAdmin" required class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none transition">
+          <label class="block text-gray-900 font-semibold mb-2">Основной администратор</label>
+          <select id="mainAdmin" name="mainAdmin" required class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
             <option value="">Выберите администратора</option>
             <!-- Опции будут заполнены динамически -->
           </select>
         </div>
         <div id="helperAdminSection" class="space-y-4"> <!-- Убран 'hidden' по умолчанию, т.к. теперь логика показа в JS -->
-          <label class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Помощник администратора</label>
-          <select id="helperAdmin" name="helperAdmin" class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none transition">
+          <label class="block text-gray-900 font-semibold mb-2">Помощник администратора</label>
+          <select id="helperAdmin" name="helperAdmin" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
             <option value="">Нет помощника</option>
             <!-- Опции будут заполнены динамически -->
           </select>
           <div id="helperHoursSection" class="hidden"> <!-- Секция часов скрыта, пока не выбран помощник -->
-            <label class="block text-gray-900 dark:text-gray-300 font-semibold mb-2">Часы работы помощника</label>
-            <input type="number" id="helperHours" name="helperHours" min="1" max="24" class="w-full rounded-3xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-3 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 dark:focus:ring-pink-500 focus:outline-none transition" placeholder="Количество часов">
+            <label class="block text-gray-900 font-semibold mb-2">Часы работы помощника</label>
+            <input type="number" id="helperHours" name="helperHours" min="1" max="24" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="Количество часов">
           </div>
         </div>
         <div class="flex space-x-4">
-          <button type="submit" class="flex-grow bg-blue-600 hover:bg-blue-700 active:bg-blue-800 dark:bg-blue-700 dark:hover:bg-blue-600 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 focus:outline-none">Сохранить назначение</button>
-          <button type="button" id="deleteAssignmentBtn" class="hidden flex-grow bg-gray-500 hover:bg-gray-600 active:bg-gray-700 dark:bg-gray-600 dark:hover:bg-gray-500 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 focus:outline-none">Удалить назначение</button>
+          <button type="submit" class="flex-grow bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-blue-300 focus:outline-none">Сохранить назначение</button>
+          <button type="button" id="deleteAssignmentBtn" class="hidden flex-grow bg-gray-500 hover:bg-gray-600 active:bg-gray-700 text-white py-3 rounded-3xl font-semibold transition focus:ring-4 focus:ring-gray-300 focus:outline-none">Удалить назначение</button>
         </div>
       </form>
     </div>
   </div>
 
   <!-- Модальное окно с деталями записей за день -->
-  <div id="dayDetailsModal" class="fixed inset-0 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && this.classList.add('hidden')"> <!-- Обновлен фон и блюр -->
-    <div class="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative border border-gray-200 dark:border-pink-500" onclick="event.stopPropagation()"> <!-- Добавлены dark: классы -->
   <div id="dayDetailsModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && this.classList.add('hidden')">
     <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200" onclick="event.stopPropagation()">
       <button id="closeDayDetailsModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
@@ -1235,7 +1096,7 @@
       // Пустые ячейки до начала месяца
       for (let i = 0; i < startDayOfWeek; i++) {
         const emptyCell = document.createElement('div');
-        emptyCell.className = 'border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 h-24 rounded-3xl'; // Добавлены dark: классы
+        emptyCell.className = 'border border-gray-200 bg-gray-50 h-24 rounded-3xl'; // Используем h-24 как в index.html
         calendarEl.appendChild(emptyCell);
       }
 
@@ -1246,30 +1107,28 @@
         const dateStr = formatDateSafe(date);
 
         const dayCell = document.createElement('div');
-        // Обновлены классы для темной темы
-        dayCell.className = 'border border-gray-300 dark:border-gray-600 rounded-3xl h-24 p-3 flex flex-col justify-start cursor-pointer hover:bg-blue-50 dark:hover:bg-gray-800 transition relative select-text';
+        dayCell.className = 'border border-gray-300 rounded-3xl h-24 p-3 flex flex-col justify-start cursor-pointer hover:bg-blue-50 transition relative select-text';
 
         if (isWeekend(date)) {
-          dayCell.classList.add('bg-blue-50', 'dark:bg-gray-800'); // Обновлено для темной темы
+          dayCell.classList.add('bg-blue-50'); // Подсветка выходных
         }
 
         // Подсветка сегодняшнего дня
         const today = new Date();
         // Используем безопасное форматирование
         if (formatDateSafe(date) === formatDateSafe(today)) {
-          dayCell.classList.add('ring-2', 'ring-blue-600', 'dark:ring-pink-500'); // Обновлено для темной темы
+          dayCell.classList.add('ring-2', 'ring-blue-600');
         }
 
         // Подсветка выбранного дня
         // Используем безопасное форматирование
         if (selectedDate && formatDateSafe(date) === formatDateSafe(selectedDate)) {
-          // Обновлено для темной темы (используем согласованные цвета)
-          dayCell.classList.add('bg-blue-200', 'dark:bg-blue-900', 'ring-4', 'ring-blue-500', 'dark:ring-blue-600'); 
+          dayCell.classList.add('bg-blue-200', 'ring-4', 'ring-blue-500');
         }
 
         const dayNumber = document.createElement('div');
         dayNumber.textContent = day;
-        dayNumber.className = 'font-semibold text-sm text-gray-900 dark:text-gray-100 mb-1 select-none'; // Добавлен dark:text-gray-100
+        dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 select-none';
         dayCell.appendChild(dayNumber);
 
         // Отображение бронирований на этот день
@@ -1279,19 +1138,18 @@
 
         if (dayBookings.length > 0) {
           const bookingsList = document.createElement('ul');
-          bookingsList.className = 'bookings-list mt-0.5 overflow-y-auto max-h-16 text-xs text-gray-800 dark:text-gray-200 space-y-0.5'; // Добавлен dark:text-gray-200
+          bookingsList.className = 'bookings-list mt-0.5 overflow-y-auto max-h-16 text-xs text-gray-800 space-y-0.5';
 
           dayBookings.forEach((b) => {
             const li = document.createElement('li');
             li.className = 'truncate rounded-2xl px-2 py-0.5';
 
-            // Обновлены цвета для темной темы
-            let bgColor = 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200';
-            if (b.serviceType === 'weekday_vr') bgColor = 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200';
-            else if (b.serviceType === 'weekday_ps') bgColor = 'bg-sky-100 dark:bg-sky-900 text-sky-800 dark:text-sky-200';
-            else if (b.serviceType === 'weekend_vr') bgColor = 'bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200';
-            else if (b.serviceType === 'weekend_ps') bgColor = 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200';
-            else if (b.serviceType === 'birthday') bgColor = 'bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 font-semibold';
+            let bgColor = 'bg-gray-100 text-gray-700';
+            if (b.serviceType === 'weekday_vr') bgColor = 'bg-blue-100 text-blue-800';
+            else if (b.serviceType === 'weekday_ps') bgColor = 'bg-sky-100 text-sky-800'; // Изменен цвет для PS
+            else if (b.serviceType === 'weekend_vr') bgColor = 'bg-indigo-100 text-indigo-800';
+            else if (b.serviceType === 'weekend_ps') bgColor = 'bg-purple-100 text-purple-800'; // Изменен цвет для PS выходные
+            else if (b.serviceType === 'birthday') bgColor = 'bg-pink-100 text-pink-800 font-semibold'; // Изменен цвет ДР
 
             li.classList.add(...bgColor.split(' '));
             li.textContent = `${b.startTime} (${b.duration}ч) - ${b.clientName}`;
@@ -1299,8 +1157,7 @@
 
             // Добавляем обработчик для редактирования по клику на запись (только для админа)
              if (isAdmin) {
-                // Обновлены классы для темной темы
-                li.classList.add('cursor-pointer', 'hover:ring-1', 'hover:ring-black', 'dark:hover:ring-gray-400'); 
+                li.classList.add('cursor-pointer', 'hover:ring-1', 'hover:ring-black');
                 li.addEventListener('click', (e) => {
                    e.stopPropagation(); // Предотвращаем срабатывание клика на ячейке дня
                    openEditModal(b.id);
@@ -1377,8 +1234,7 @@
 
       filteredBookings.forEach((b) => {
         const li = document.createElement('li');
-            // Обновлены классы для темной темы
-            li.className = 'border border-gray-200 dark:border-gray-700 rounded-xl p-4 shadow-sm flex flex-col md:flex-row md:items-start md:justify-between space-y-3 md:space-y-0 md:space-x-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition'; 
+            li.className = 'border border-gray-200 rounded-xl p-4 shadow-sm flex flex-col md:flex-row md:items-start md:justify-between space-y-3 md:space-y-0 md:space-x-4 hover:bg-gray-50 transition'; // Улучшен стиль
 
         const dateObj = new Date(b.bookingDate);
             // Форматируем дату с добавлением дня недели
@@ -1387,14 +1243,12 @@
 
             // Левая часть: Дата и время
             const dateTimeDiv = document.createElement('div');
-            // Добавлен dark: класс
-            dateTimeDiv.className = 'flex-shrink-0 w-full md:w-40 text-gray-700 dark:text-gray-300'; 
+            dateTimeDiv.className = 'flex-shrink-0 w-full md:w-40 text-gray-700'; // Ширина для выравнивания
             dateTimeDiv.innerHTML = `<div class="font-semibold">${dateStr}</div><div class="text-sm">${timeStr}</div>`;
 
             // Центральная часть: Имя и телефон
             const clientInfoDiv = document.createElement('div');
-            // Добавлен dark: класс
-            clientInfoDiv.className = 'flex-grow text-gray-900 dark:text-gray-100'; 
+            clientInfoDiv.className = 'flex-grow text-gray-900';
             clientInfoDiv.innerHTML = `<div class="font-semibold text-base truncate" title="${b.clientName}">${b.clientName}</div>`;
         if (b.clientPhone) {
                  let cleanPhone = b.clientPhone.replace(/\D/g, '');
@@ -1402,14 +1256,12 @@
                     cleanPhone = cleanPhone.substring(1); // Убираем 7 или 8 в начале для ссылки
                  }
                  const formattedPhone = formatPhoneNumber(b.clientPhone); // Используем функцию форматирования
-                 // Обновлены классы для ссылки
-                clientInfoDiv.innerHTML += `<div class="text-sm mt-1"><a href="tel:+7${cleanPhone}" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 hover:underline">${formattedPhone}</a></div>`;
+                clientInfoDiv.innerHTML += `<div class="text-sm mt-1"><a href="tel:+7${cleanPhone}" class="text-blue-600 hover:text-blue-800 hover:underline">${formattedPhone}</a></div>`;
             }
 
             // Правая часть: Услуга и примечания
             const serviceNotesDiv = document.createElement('div');
-            // Добавлен dark: класс
-            serviceNotesDiv.className = 'flex-shrink-0 w-full md:w-56 text-sm text-gray-600 dark:text-gray-400 text-left md:text-right'; 
+            serviceNotesDiv.className = 'flex-shrink-0 w-full md:w-56 text-sm text-gray-600 text-left md:text-right'; // Ширина и выравнивание
             
             // Получаем названия для выбранных услуг
             let serviceLabels = 'Не указаны'; // По умолчанию
@@ -1421,8 +1273,7 @@
 
             serviceNotesDiv.innerHTML = `<div class="font-medium mb-1">${serviceLabels}</div>`;
         if (b.notes) {
-                // Добавлен dark: класс
-                serviceNotesDiv.innerHTML += `<div class="italic text-gray-500 dark:text-gray-500 whitespace-pre-wrap break-words">${b.notes}</div>`;
+                serviceNotesDiv.innerHTML += `<div class="italic text-gray-500 whitespace-pre-wrap break-words">${b.notes}</div>`;
         }
 
             li.appendChild(dateTimeDiv);
@@ -1436,8 +1287,7 @@
 
           const editBtn = document.createElement('button');
           editBtn.type = 'button';
-          // Обновлены классы для темной темы
-          editBtn.className = 'text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-pink-500 rounded p-1';
+          editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
           editBtn.title = 'Редактировать запись';
                 editBtn.innerHTML = '<i class="fas fa-edit fa-fw"></i>'; // Иконка побольше
                 editBtn.addEventListener('click', (e) => {
@@ -1447,8 +1297,7 @@
 
           const deleteBtn = document.createElement('button');
           deleteBtn.type = 'button';
-           // Обновлены классы для темной темы
-          deleteBtn.className = 'text-red-600 hover:text-red-800 dark:text-red-500 dark:hover:text-red-400 focus:outline-none focus:ring-2 focus:ring-red-400 dark:focus:ring-pink-500 rounded p-1';
+          deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
           deleteBtn.title = 'Удалить запись';
                 deleteBtn.innerHTML = '<i class="fas fa-trash-alt fa-fw"></i>'; // Иконка побольше
                 deleteBtn.addEventListener('click', (e) => {
@@ -1644,7 +1493,7 @@
       // Пустые ячейки
       for (let i = 0; i < startDayOfWeek; i++) {
         const emptyCell = document.createElement('div');
-        emptyCell.className = 'border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 rounded-xl calendar-day-cell'; // Добавлены dark: классы
+        emptyCell.className = 'border border-gray-200 bg-gray-50 rounded-xl calendar-day-cell'; // Используем новый класс и стиль
         adminsCalendar.appendChild(emptyCell);
       }
 
@@ -1655,20 +1504,20 @@
         const dateStr = formatDateSafe(date);
 
         const dayCell = document.createElement('div');
-        // Добавляем классы для стилизации и управления высотой + dark:
-        dayCell.className = 'calendar-day-cell border border-gray-300 dark:border-gray-600 rounded-xl p-2 flex flex-col cursor-pointer hover:bg-blue-50 dark:hover:bg-gray-800 transition relative';
+        // Добавляем классы для стилизации и управления высотой
+        dayCell.className = 'calendar-day-cell border border-gray-300 rounded-xl p-2 flex flex-col cursor-pointer hover:bg-blue-50 transition relative';
 
         // Выделение сегодняшнего дня
         const today = new Date();
         // Используем безопасное форматирование
         if (formatDateSafe(date) === formatDateSafe(today)) {
-          dayCell.classList.add('ring-2', 'ring-blue-600', 'dark:ring-pink-500'); // Добавлен dark: класс
+          dayCell.classList.add('ring-2', 'ring-blue-600');
         }
 
         // Номер дня
         const dayNumber = document.createElement('div');
         dayNumber.textContent = day;
-        dayNumber.className = 'font-semibold text-sm text-gray-900 dark:text-gray-100 mb-1 text-left'; // Добавлен dark:text-gray-100
+        dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 text-left'; // Выравнивание по левому краю
         dayCell.appendChild(dayNumber);
 
         // Отображение назначенных администраторов
@@ -1681,8 +1530,7 @@
           const mainAdmin = admins.find(a => a.id === assignment.mainAdminId);
           if (mainAdmin) {
             const adminDiv = document.createElement('div');
-            // Добавлены dark: классы
-            adminDiv.className = 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded px-1.5 py-0.5 truncate text-left'; 
+            adminDiv.className = 'bg-blue-100 text-blue-800 rounded px-1.5 py-0.5 truncate text-left';
             adminDiv.textContent = `👑 ${mainAdmin.name}`;
             adminDiv.title = `Основной: ${mainAdmin.name}`;
             assignmentDetails.appendChild(adminDiv);
@@ -1692,8 +1540,7 @@
             const helperAdmin = admins.find(a => a.id === assignment.helperAdminId);
             if (helperAdmin) {
               const helperDiv = document.createElement('div');
-              // Добавлены dark: классы
-              helperDiv.className = 'bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded px-1.5 py-0.5 truncate text-left'; 
+              helperDiv.className = 'bg-indigo-100 text-indigo-800 rounded px-1.5 py-0.5 truncate text-left';
               const hoursText = assignment.helperHours ? ` (${assignment.helperHours}ч)` : '';
               helperDiv.textContent = `🛠️ ${helperAdmin.name}${hoursText}`; // Иконка помощи
               helperDiv.title = `Помощник: ${helperAdmin.name}${hoursText}`;
@@ -1703,7 +1550,7 @@
         } else {
             // Можно добавить плейсхолдер или оставить пустым
              const noAdminDiv = document.createElement('div');
-             noAdminDiv.className = 'text-gray-400 dark:text-gray-500 italic text-xs text-center mt-2'; // Добавлен dark:text-gray-500
+             noAdminDiv.className = 'text-gray-400 italic text-xs text-center mt-2';
              noAdminDiv.textContent = 'Нет смены';
              assignmentDetails.appendChild(noAdminDiv);
         }
@@ -2096,11 +1943,10 @@
 
       // Карточка общей выручки
       const revenueCard = document.createElement('div');
-      // Обновлены классы для темной темы
-      revenueCard.className = 'bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900 dark:to-emerald-900 rounded-2xl shadow-md p-6 border border-green-200 dark:border-green-700'; 
+      revenueCard.className = 'bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl shadow-md p-6 border border-green-200'; // Градиент
       revenueCard.innerHTML = `
-        <h3 class="text-lg font-semibold mb-2 text-green-800 dark:text-green-200">Общая выручка за месяц</h3>
-        <p class="text-3xl font-bold text-green-600 dark:text-green-300">${totalRevenue.toLocaleString('ru-RU')} ₽</p>
+        <h3 class="text-lg font-semibold mb-2 text-green-800">Общая выручка за месяц</h3>
+        <p class="text-3xl font-bold text-green-600">${totalRevenue.toLocaleString('ru-RU')} ₽</p>
       `;
       salaryResults.appendChild(revenueCard);
 
@@ -2110,37 +1956,36 @@
         // Отображаем только если есть данные и ЗП > 0
         if (data && data.totalSalary > 0) {
           const adminCard = document.createElement('div');
-          // Обновлены классы для темной темы
-          adminCard.className = 'bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 border border-gray-200 dark:border-gray-700 transition hover:shadow-lg dark:hover:shadow-gray-700/50'; 
+          adminCard.className = 'bg-white rounded-2xl shadow-md p-6 border border-gray-200 transition hover:shadow-lg'; // Эффект при наведении
 
           adminCard.innerHTML = `
-            <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">${admin.name}</h3>
+            <h3 class="text-xl font-semibold mb-4 text-gray-800">${admin.name}</h3>
             <div class="grid grid-cols-2 gap-x-6 gap-y-3 mb-5">
               <div>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Смен (основной)</p>
-                <p class="font-medium text-lg dark:text-gray-100">${data.daysWorked}</p>
+                <p class="text-sm text-gray-500">Смен (основной)</p>
+                <p class="font-medium text-lg">${data.daysWorked}</p>
               </div>
               <div>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Часов (помощник)</p>
-                <p class="font-medium text-lg dark:text-gray-100">${data.hoursWorked}</p>
+                <p class="text-sm text-gray-500">Часов (помощник)</p>
+                <p class="font-medium text-lg">${data.hoursWorked}</p>
               </div>
               <div>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Ставка + Почасовая</p>
-                <p class="font-medium text-lg dark:text-gray-100">${data.baseSalary.toLocaleString('ru-RU')} ₽</p>
+                <p class="text-sm text-gray-500">Ставка + Почасовая</p>
+                <p class="font-medium text-lg">${data.baseSalary.toLocaleString('ru-RU')} ₽</p>
               </div>
               <div>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Бонус от выручки</p>
-                <p class="font-medium text-lg dark:text-gray-100">${data.bonusSalary.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p> <!-- Округление бонуса -->
+                <p class="text-sm text-gray-500">Бонус от выручки</p>
+                <p class="font-medium text-lg">${data.bonusSalary.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p> <!-- Округление бонуса -->
               </div>
             </div>
-            <div class="border-t border-gray-200 dark:border-gray-700 pt-4 mt-4">
-              <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Итого зарплата</p>
-              <p class="text-2xl font-bold text-blue-600 dark:text-blue-400 mt-1">${data.totalSalary.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p> <!-- Округление итоговой -->
+            <div class="border-t border-gray-200 pt-4 mt-4">
+              <p class="text-sm font-medium text-gray-600">Итого зарплата</p>
+              <p class="text-2xl font-bold text-blue-600 mt-1">${data.totalSalary.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p> <!-- Округление итоговой -->
             </div>
-            <button class="mt-5 text-sm text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 view-details flex items-center" data-admin="${admin.id}">
+            <button class="mt-5 text-sm text-blue-600 hover:text-blue-800 view-details flex items-center" data-admin="${admin.id}">
               <i class="fas fa-list mr-1.5"></i> Показать детализацию
             </button>
-            <div id="details-${admin.id}" class="hidden mt-4 space-y-3 border-t border-gray-100 dark:border-gray-700 pt-4">
+            <div id="details-${admin.id}" class="hidden mt-4 space-y-3 border-t border-gray-100 pt-4">
               <!-- Детализация будет здесь -->
             </div>
           `;
@@ -2151,7 +1996,7 @@
         // Если нет данных по зарплате ни у одного админа
         if (salaryResults.children.length <= 1) { // Только карточка выручки
              const noSalaryText = document.createElement('p');
-             noSalaryText.className = 'text-center text-gray-500 dark:text-gray-400 italic mt-6'; // Добавлен dark: класс
+             noSalaryText.className = 'text-center text-gray-500 italic mt-6';
              noSalaryText.textContent = 'Нет данных о зарплате за выбранный месяц.';
              salaryResults.appendChild(noSalaryText);
         }
@@ -2174,17 +2019,16 @@
 
                  data.details.forEach(detail => {
                   const detailItem = document.createElement('div');
-                  // Обновлены классы для темной темы
-                  detailItem.className = 'text-sm border-b border-gray-100 dark:border-gray-700 pb-2 mb-2 last:border-b-0 last:pb-0 last:mb-0'; 
+                  detailItem.className = 'text-sm border-b border-gray-100 pb-2 mb-2 last:border-b-0 last:pb-0 last:mb-0'; // Стили для элементов списка
                   const detailDate = new Date(detail.date + 'T00:00:00');
                   const formattedDate = detailDate.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short'});
 
                   detailItem.innerHTML = `
                     <div class="flex justify-between items-center mb-1">
-                      <p class="font-medium text-gray-700 dark:text-gray-300">${formattedDate} - ${detail.type}</p>
-                      <p class="font-semibold text-blue-700 dark:text-blue-300">${(detail.base + detail.bonus).toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p>
+                      <p class="font-medium text-gray-700">${formattedDate} - ${detail.type}</p>
+                      <p class="font-semibold text-blue-700">${(detail.base + detail.bonus).toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p>
                     </div>
-                    <div class="grid grid-cols-3 gap-x-2 text-xs text-gray-500 dark:text-gray-400">
+                    <div class="grid grid-cols-3 gap-x-2 text-xs text-gray-500">
                       <span>${detail.hours > 0 ? `${detail.hours}ч` : 'Ставка'}: ${detail.base.toLocaleString('ru-RU')} ₽</span>
                       <span>Бонус: ${detail.bonus.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
                       <span>Выручка дня: ${detail.revenue.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
@@ -2193,7 +2037,7 @@
                   detailsDiv.appendChild(detailItem);
                 });
              } else {
-                  detailsDiv.innerHTML = '<p class="text-xs text-gray-400 dark:text-gray-500 italic">Нет детальной информации.</p>'; // Добавлен dark: класс
+                  detailsDiv.innerHTML = '<p class="text-xs text-gray-400 italic">Нет детальной информации.</p>';
              }
 
             detailsDiv.classList.remove('hidden');
@@ -2728,7 +2572,7 @@
 
         if (!weekRange) {
              weeklyPayrollPeriodEl.textContent = 'Расчет периода...';
-             weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600 dark:text-yellow-400">Нет данных</p>'; // Добавлен dark: класс
+             weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет данных</p>';
              return;
         }
 
@@ -2744,14 +2588,14 @@
                 div.className = 'flex justify-between items-center';
                 div.innerHTML = `
                     <span>${data.name}:</span>
-                    <span class="font-semibold text-yellow-800 dark:text-yellow-300">${data.total.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span> 
+                    <span class="font-semibold text-yellow-800">${data.total.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
                 `;
                 weeklyPayrollResultsEl.appendChild(div);
             }
         });
 
         if (!hasData) {
-            weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600 dark:text-yellow-500">Нет начислений за прошлую неделю.</p>'; // Добавлен dark: класс
+            weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет начислений за прошлую неделю.</p>';
         }
     }
 
@@ -2762,28 +2606,25 @@
         dayDetailsContent.innerHTML = ''; // Очищаем содержимое
 
         if (dayBookings.length === 0) {
-            dayDetailsContent.innerHTML = '<p class="text-center text-gray-500 dark:text-gray-400 italic">На этот день нет записей.</p>'; // Добавлен dark: класс
+            dayDetailsContent.innerHTML = '<p class="text-center text-gray-500 italic">На этот день нет записей.</p>';
         } else {
             dayBookings.forEach(b => {
                 const bookingCard = document.createElement('div');
-                // Обновлены классы для темной темы
-                bookingCard.className = 'border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 rounded-xl p-4 shadow-sm'; 
+                bookingCard.className = 'border border-gray-200 rounded-xl p-4 shadow-sm';
 
                 // Формируем блок информации о клиенте
-                let clientHTML = `<div class="font-semibold text-lg mb-1 dark:text-gray-100">${b.clientName}</div>`; // Добавлен dark: класс
+                let clientHTML = `<div class="font-semibold text-lg mb-1">${b.clientName}</div>`;
                 if (b.clientPhone) {
                     let cleanPhone = b.clientPhone.replace(/\D/g, '');
                     if (cleanPhone.startsWith('7') || cleanPhone.startsWith('8')) {
                         cleanPhone = cleanPhone.substring(1);
                     }
                     const formattedPhone = formatPhoneNumber(b.clientPhone);
-                     // Обновлены классы для ссылки
-                    clientHTML += `<div class="text-sm mb-2"><a href="tel:+7${cleanPhone}" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 hover:underline">${formattedPhone}</a></div>`;
+                    clientHTML += `<div class="text-sm mb-2"><a href="tel:+7${cleanPhone}" class="text-blue-600 hover:text-blue-800 hover:underline">${formattedPhone}</a></div>`;
                 }
 
                 // Формируем блок времени и длительности
-                 // Добавлены dark: классы
-                const timeHTML = `<div class="text-sm text-gray-700 dark:text-gray-300 mb-2"><span class="font-medium">Время:</span> ${b.startTime} (${b.duration} ч)</div>`;
+                const timeHTML = `<div class="text-sm text-gray-700 mb-2"><span class="font-medium">Время:</span> ${b.startTime} (${b.duration} ч)</div>`;
 
                 // Формируем блок услуг
                  let serviceLabels = 'Не указаны';
@@ -2792,7 +2633,7 @@
                  } else if (b.serviceType) { // Обратная совместимость
                      serviceLabels = getServiceLabel(b.serviceType);
                  }
-                const servicesHTML = `<div class="text-sm text-gray-700 dark:text-gray-300 mb-2"><span class="font-medium">Услуги:</span> ${serviceLabels}</div>`;
+                const servicesHTML = `<div class="text-sm text-gray-700 mb-2"><span class="font-medium">Услуги:</span> ${serviceLabels}</div>`;
 
                 // --- Добавляем Финансовую информацию ---
                 let financialHTML = '';
@@ -2836,10 +2677,10 @@
                 }
 
                 financialHTML = `
-                  <div class="grid grid-cols-3 gap-x-4 text-sm mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
-                    <div class="dark:text-gray-300"><span class="font-medium">Сумма:</span> ${totalAmount.toLocaleString('ru-RU')} ₽</div>
-                    <div class="dark:text-gray-300"><span class="font-medium">Скидка:</span> ${discountText}</div>
-                    <div class="dark:text-gray-300"><span class="font-medium">Итого:</span> ${finalAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
+                  <div class="grid grid-cols-3 gap-x-4 text-sm mt-3 pt-3 border-t border-gray-100">
+                    <div><span class="font-medium">Сумма:</span> ${totalAmount.toLocaleString('ru-RU')} ₽</div>
+                    <div><span class="font-medium">Скидка:</span> ${discountText}</div>
+                    <div><span class="font-medium">Итого:</span> ${finalAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
                   </div>
                 `;
                 // --- Конец Финансовой информации ---
@@ -2847,8 +2688,7 @@
                 // Формируем блок примечаний
                 let notesHTML = '';
                 if (b.notes) {
-                    // Обновлены классы для темной темы
-                    notesHTML = `<div class="text-sm text-gray-500 dark:text-gray-400 italic whitespace-pre-wrap break-words border-t border-gray-100 dark:border-gray-700 pt-2 mt-2"><span class="font-medium text-gray-700 dark:text-gray-300 not-italic">Примечания:</span> ${b.notes}</div>`;
+                    notesHTML = `<div class="text-sm text-gray-500 italic whitespace-pre-wrap break-words border-t border-gray-100 pt-2 mt-2"><span class="font-medium text-gray-700 not-italic">Примечания:</span> ${b.notes}</div>`;
                 }
 
                 // Находим назначение на этот день ОДИН РАЗ
@@ -2858,8 +2698,7 @@
                 if (assignment) {
                     const mainAdmin = admins.find(a => a.id === assignment.mainAdminId);
                     const helperAdmin = assignment.helperAdminId ? admins.find(a => a.id === assignment.helperAdminId) : null;
-                     // Добавлены dark: классы
-                    assignmentHTML = '<div class="text-xs text-gray-500 dark:text-gray-400 mt-1">Смена: ';
+                    assignmentHTML = '<div class="text-xs text-gray-500 mt-1">Смена: ';
                     if (mainAdmin) assignmentHTML += `👑 ${mainAdmin.name}`;
                     if (helperAdmin) assignmentHTML += ` / 🛠️ ${helperAdmin.name}${assignment.helperHours ? ' (' + assignment.helperHours + 'ч)' : ''}`;
                     assignmentHTML += '</div>';
@@ -2871,13 +2710,10 @@
                 // --- Добавляем Кнопки действий (только для админа) ---
                 if (isAdmin) {
                     const actionsDiv = document.createElement('div');
-                     // Обновлены классы для темной темы
-                    actionsDiv.className = 'flex items-center space-x-3 mt-3 pt-3 border-t border-gray-100 dark:border-gray-700';
+                    actionsDiv.className = 'flex items-center space-x-3 mt-3 pt-3 border-t border-gray-100';
 
                     const editBtn = document.createElement('button');
                     editBtn.type = 'button';
-                     // Обновлены классы для темной темы
-                    editBtn.className = 'text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:focus:ring-pink-500 rounded p-1 text-sm inline-flex items-center';
                     editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1 text-sm inline-flex items-center';
                     editBtn.innerHTML = '<i class="fas fa-edit fa-fw mr-1"></i> Редакт.';
                     editBtn.addEventListener('click', (e) => {
