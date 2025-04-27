@@ -2457,8 +2457,21 @@
                  let bookingRevenue = 0;
                  const duration = parseFloat(booking.duration) || 0;
                  if (booking.serviceType === 'birthday') {
-                     const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
-                     bookingRevenue = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                     // --- ПРАВИЛЬНЫЙ РАСЧЕТ ДЛЯ ДР (как в showDayDetailsModal) ---
+                      const fullHours = Math.floor(duration);
+                      const hasHalfHour = duration % 1 !== 0;
+                      let birthdayTotal = 0;
+                      for (let hour = 1; hour <= fullHours; hour++) {
+                          const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                          birthdayTotal += hourPrice;
+                      }
+                      if (hasHalfHour) {
+                          if (fullHours === 0) { birthdayTotal += 2000; } // 0.5ч
+                          else if (fullHours === 1) { birthdayTotal += 2000; } // 1.5ч
+                          else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; } // 2.5ч и далее
+                      }
+                      bookingRevenue = birthdayTotal;
+                      // ----------------------------------------------------------
                  } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
                      bookingRevenue = servicePriceHalfHour[booking.serviceType] || 0;
                  } else {
