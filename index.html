@@ -1825,17 +1825,42 @@
                           let bookingRevenue = 0;
                           const duration = parseFloat(booking.duration) || 0;
 
-                          if (booking.serviceType === 'birthday') {
-                              // Расчет для дней рождения по часам
-                              const hours = Math.min(Math.max(Math.ceil(duration), 1), 12); // Округляем вверх, минимум 1 час, максимум 12
-                              bookingRevenue = servicePrices.birthday[hours] || servicePrices.birthday[4]; // Цена за час * кол-во часов
-                          } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
-                              // Расчет для получасовых бронирований (если есть цена)
-                              bookingRevenue = servicePriceHalfHour[booking.serviceType] || 0;
-                          } else {
-                              // Расчет для других услуг (почасовой)
-                              const pricePerHour = servicePrices[booking.serviceType] || 0;
-                              bookingRevenue = pricePerHour * duration;
+                          // Используем selectedServices для расчета выручки
+                          if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+                              booking.selectedServices.forEach(service => {
+                                  if (service === 'birthday') {
+                                      // Накопительный расчет для ДР
+                                      const fullHours = Math.floor(duration);
+                                      const hasHalfHour = duration % 1 !== 0;
+                                      let birthdayTotal = 0;
+                                      for (let hour = 1; hour <= fullHours; hour++) {
+                                          const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                                          birthdayTotal += hourPrice;
+                                      }
+                                      if (hasHalfHour) {
+                                          if (fullHours === 0) { birthdayTotal += 2000; }
+                                          else if (fullHours === 1) { birthdayTotal += 2000; }
+                                          else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                                      }
+                                      bookingRevenue += birthdayTotal; // Добавляем к общей выручке (на случай если выбрано ДР + что-то еще)
+                                  } else {
+                                      // Обычный расчет для других услуг
+                                      const price = servicePrices[service] || 0;
+                                      bookingRevenue += price * duration; // Добавляем к общей выручке
+                                  }
+                              });
+                          } else if (booking.serviceType) { // Обратная совместимость со старым полем
+                               // Логика расчета выручки по старому полю serviceType (если нужно поддерживать)
+                               console.warn('Using legacy serviceType for revenue calculation', booking);
+                               if (booking.serviceType === 'birthday') {
+                                   const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                                   bookingRevenue = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                               } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+                                   bookingRevenue = servicePriceHalfHour[booking.serviceType] || 0;
+                               } else {
+                                   const pricePerHour = servicePrices[booking.serviceType] || 0;
+                                   bookingRevenue = pricePerHour * duration;
+                               }
                           }
                           dayRevenue += bookingRevenue;
                       });
@@ -2456,27 +2481,43 @@
             dayBookings.forEach(booking => {
                  let bookingRevenue = 0;
                  const duration = parseFloat(booking.duration) || 0;
-                 if (booking.serviceType === 'birthday') {
-                     // --- ПРАВИЛЬНЫЙ РАСЧЕТ ДЛЯ ДР (как в showDayDetailsModal) ---
-                      const fullHours = Math.floor(duration);
-                      const hasHalfHour = duration % 1 !== 0;
-                      let birthdayTotal = 0;
-                      for (let hour = 1; hour <= fullHours; hour++) {
-                          const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
-                          birthdayTotal += hourPrice;
-                      }
-                      if (hasHalfHour) {
-                          if (fullHours === 0) { birthdayTotal += 2000; } // 0.5ч
-                          else if (fullHours === 1) { birthdayTotal += 2000; } // 1.5ч
-                          else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; } // 2.5ч и далее
-                      }
-                      bookingRevenue = birthdayTotal;
-                      // ----------------------------------------------------------
-                 } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
-                     bookingRevenue = servicePriceHalfHour[booking.serviceType] || 0;
-                 } else {
-                     const pricePerHour = servicePrices[booking.serviceType] || 0;
-                     bookingRevenue = pricePerHour * duration;
+
+                 // Используем selectedServices для расчета выручки
+                 if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+                     booking.selectedServices.forEach(service => {
+                         if (service === 'birthday') {
+                             // Накопительный расчет для ДР
+                             const fullHours = Math.floor(duration);
+                             const hasHalfHour = duration % 1 !== 0;
+                             let birthdayTotal = 0;
+                             for (let hour = 1; hour <= fullHours; hour++) {
+                                 const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                                 birthdayTotal += hourPrice;
+                             }
+                             if (hasHalfHour) {
+                                 if (fullHours === 0) { birthdayTotal += 2000; }
+                                 else if (fullHours === 1) { birthdayTotal += 2000; }
+                                 else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                             }
+                             bookingRevenue += birthdayTotal;
+                         } else {
+                             // Обычный расчет для других услуг
+                             const price = servicePrices[service] || 0;
+                             bookingRevenue += price * duration;
+                         }
+                     });
+                 } else if (booking.serviceType) { // Обратная совместимость со старым полем
+                      // Логика расчета выручки по старому полю serviceType (если нужно поддерживать)
+                      console.warn('Using legacy serviceType for weekly payroll calculation', booking);
+                      if (booking.serviceType === 'birthday') {
+                           const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                           bookingRevenue = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                       } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+                           bookingRevenue = servicePriceHalfHour[booking.serviceType] || 0;
+                       } else {
+                           const pricePerHour = servicePrices[booking.serviceType] || 0;
+                           bookingRevenue = pricePerHour * duration;
+                       }
                  }
                  dayRevenue += bookingRevenue;
             });
