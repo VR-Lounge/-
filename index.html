@@ -1226,7 +1226,7 @@
             topDiv.className = 'flex flex-col md:flex-row md:items-start md:justify-between space-y-3 md:space-y-0 md:space-x-4 mb-3'; // Добавлен mb-3
 
             const dateObj = new Date(b.bookingDate);
-            const dateStr = dateObj.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short\', year: \'numeric\', weekday: \'short\' });
+            const dateStr = dateObj.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short', year: 'numeric', weekday: 'short' }); // Исправлено: убран \ перед ' в month: 'short'
             const timeStr = `${b.startTime} (${b.duration}ч)`;
 
             const dateTimeDiv = document.createElement('div');
