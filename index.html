@@ -1946,7 +1946,13 @@
       revenueCard.className = 'bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl shadow-md p-6 border border-green-200'; // Градиент
       revenueCard.innerHTML = `
         <h3 class="text-lg font-semibold mb-2 text-green-800">Общая выручка за месяц</h3>
-        <p class="text-3xl font-bold text-green-600">${totalRevenue.toLocaleString('ru-RU')} ₽</p>
+        <p class="text-3xl font-bold text-green-600">${totalRevenue.toLocaleString('ru-RU')} ₽</p> <!-- Округление -->
+        <button class="mt-3 text-sm text-green-700 hover:text-green-900 view-revenue-details flex items-center">
+            <i class="fas fa-list mr-1.5"></i> Показать детализацию
+        </button>
+        <div id="revenue-details" class="hidden mt-4 space-y-2 border-t border-green-100 pt-3">
+          <!-- Детализация выручки будет здесь -->
+        </div>
       `;
       salaryResults.appendChild(revenueCard);
 
@@ -2049,6 +2055,68 @@
           }
         });
       });
+
+       // Обработчик для кнопки детализации общей выручки
+       const revenueDetailsBtn = document.querySelector('.view-revenue-details');
+       if (revenueDetailsBtn) {
+           revenueDetailsBtn.addEventListener('click', () => {
+               const detailsDiv = document.getElementById('revenue-details');
+               const icon = revenueDetailsBtn.querySelector('i');
+
+               if (detailsDiv.classList.contains('hidden')) {
+                   // Показать детализацию выручки
+                   detailsDiv.innerHTML = ''; // Очистить
+                   const revenueByDay = {}; // { 'YYYY-MM-DD': amount }
+
+                   // Собираем выручку по дням (используем уже посчитанные детали ЗП, т.к. там есть revenue)
+                   Object.values(salaryData).forEach(adminData => {
+                       adminData.details.forEach(detail => {
+                           if (!revenueByDay[detail.date]) {
+                               revenueByDay[detail.date] = 0;
+                           }
+                           // Суммируем только если это основной админ, чтобы не дублировать выручку
+                           // Или если у этого дня не было основного админа (но был помощник? Спорный кейс, но пока так)
+                           const assignment = adminAssignments.find(a => a.date === detail.date);
+                           if (assignment && assignment.mainAdminId === adminData.id) {
+                               revenueByDay[detail.date] += detail.revenue;
+                           } else if (assignment && !assignment.mainAdminId && assignment.helperAdminId === adminData.id) {
+                               // Если нет основного, но есть помощник - добавим его выручку
+                               revenueByDay[detail.date] += detail.revenue;
+                           }
+                            // Альтернативно, можно пересчитать выручку заново из bookings, если salaryData неполный
+                       });
+                   });
+
+                   const sortedDays = Object.keys(revenueByDay).sort();
+
+                   if (sortedDays.length > 0) {
+                       sortedDays.forEach(dateStr => {
+                           const amount = revenueByDay[dateStr];
+                           if (amount > 0) { // Показываем только дни с выручкой
+                               const detailItem = document.createElement('div');
+                               detailItem.className = 'text-sm flex justify-between items-center text-green-800';
+                               const detailDate = new Date(dateStr + 'T00:00:00');
+                               const formattedDate = detailDate.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short'});
+                               detailItem.innerHTML = `
+                                   <span>${formattedDate}:</span>
+                                   <span class="font-medium">${amount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
+                               `;
+                               detailsDiv.appendChild(detailItem);
+                           }
+                       });
+                   } else {
+                       detailsDiv.innerHTML = '<p class="text-xs text-gray-400 italic">Нет данных о выручке по дням.</p>';
+                   }
+
+                   detailsDiv.classList.remove('hidden');
+                   revenueDetailsBtn.innerHTML = '<i class="fas fa-chevron-up mr-1.5"></i> Скрыть детализацию';
+               } else {
+                   // Скрыть детализацию выручки
+                   detailsDiv.classList.add('hidden');
+                   revenueDetailsBtn.innerHTML = '<i class="fas fa-list mr-1.5"></i> Показать детализацию';
+               }
+           });
+       }
     }
 
     // === Аутентификация и Авторизация ===
@@ -2414,27 +2482,62 @@
             if (typeof booking.bookingDate !== 'string') return;
 
             const duration = parseFloat(booking.duration) || 0;
-            let bookingRevenue = 0;
+            let bookingTotalAmount = 0; // Сумма ДО скидки
 
-             if (booking.serviceType === 'birthday') {
-                const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
-                bookingRevenue = servicePrices.birthday[hours] || servicePrices.birthday[4];
-            } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
-                bookingRevenue = servicePriceHalfHour[booking.serviceType] || 0;
-        } else {
-                const pricePerHour = servicePrices[booking.serviceType] || 0;
-                bookingRevenue = pricePerHour * duration;
+            // Расчет суммы ДО скидки (аналогично calculateSalaries)
+            if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+                 booking.selectedServices.forEach(service => {
+                     if (service === 'birthday') {
+                         const fullHours = Math.floor(duration);
+                         const hasHalfHour = duration % 1 !== 0;
+                         let birthdayTotal = 0;
+                         for (let hour = 1; hour <= fullHours; hour++) {
+                             const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                             birthdayTotal += hourPrice;
+                         }
+                         if (hasHalfHour) {
+                             if (fullHours === 0) { birthdayTotal += 2000; }
+                             else if (fullHours === 1) { birthdayTotal += 2000; }
+                             else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                         }
+                         bookingTotalAmount += birthdayTotal;
+                     } else {
+                         const price = servicePrices[service] || 0;
+                         bookingTotalAmount += price * duration;
+                     }
+                 });
+            } else if (booking.serviceType) { // Обратная совместимость
+                 console.warn('Using legacy serviceType for revenue stats calculation (calculating pre-discount amount)', booking);
+                 if (booking.serviceType === 'birthday') {
+                     const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                     bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                 } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+                     bookingTotalAmount = servicePriceHalfHour[booking.serviceType] || 0;
+                 } else {
+                     const pricePerHour = servicePrices[booking.serviceType] || 0;
+                     bookingTotalAmount = pricePerHour * duration;
+                 }
             }
 
-            // Суммируем выручку
+            // Рассчитываем итоговую стоимость бронирования ПОСЛЕ скидки
+            const discountPercent = booking.discountPercent || 0;
+            const discountAmount = booking.discountAmount || 0;
+            let finalBookingAmount = bookingTotalAmount; // Итоговая стоимость этого бронирования
+            if (discountPercent > 0) {
+              finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+            } else if (discountAmount > 0) {
+              finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+            }
+
+            // Суммируем итоговую выручку
             if (booking.bookingDate === todayStr) {
-                revenueToday += bookingRevenue;
+                revenueToday += finalBookingAmount;
             }
             if (booking.bookingDate >= currentWeekStartStr && booking.bookingDate <= currentWeekEndStr) {
-                revenueCurrentWeek += bookingRevenue;
+                revenueCurrentWeek += finalBookingAmount;
             }
             if (booking.bookingDate.startsWith(monthYearStr)) {
-                revenueSelectedMonth += bookingRevenue;
+                revenueSelectedMonth += finalBookingAmount;
             }
         });
 
