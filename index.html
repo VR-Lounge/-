@@ -2164,7 +2164,7 @@
                                 // Формат даты с днем недели
                                 const formattedDate = detailDate.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short', weekday: 'short' });
                                 detailItem.innerHTML = `
-                                    <span>${formattedDate}:</span>
+                                    <span>${formattedDate}</span> <!-- Убрано двоеточие -->
                                     <span class="font-medium">${dayData.amount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
                                 `;
                                 detailsDiv.appendChild(detailItem);
