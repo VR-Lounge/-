@@ -2624,33 +2624,35 @@
         const monthStartStr = selectedMonthStart.toLocaleDateString('ru-RU', dateOptionsWeekday);
         const monthEndStr = selectedMonthEnd.toLocaleDateString('ru-RU', dateOptionsWeekday);
 
-        // Обновляем HTML с новым цветом для дат
-        const todayCard = revenueTodayEl.closest('div');
-        if (todayCard) {
-            todayCard.innerHTML = `
-                <p class="text-sm font-medium text-green-700">Выручка сегодня</p>
-                <p class="text-xs -mt-0.5 mb-1" style="color: rgb(16, 146, 175);">${todayStr}</p> <!-- Дата с новым цветом -->
-                <p id="revenueToday" class="text-xl font-bold text-green-600">${today.toLocaleString('ru-RU')} ₽</p>
-            `;
-        }
+        // Обновляем суммы в существующих элементах
+        const revenueTodayEl = document.getElementById('revenueToday');
+        const revenueCurrentWeekEl = document.getElementById('revenueCurrentWeek');
+        const revenueSelectedMonthEl = document.getElementById('revenueSelectedMonth');
 
-        const weekCard = revenueCurrentWeekEl.closest('div');
-        if (weekCard) {
-             weekCard.innerHTML = `
-                <p class="text-sm font-medium text-green-700">Выручка за неделю</p>
-                <p class="text-xs -mt-0.5 mb-1" style="color: rgb(16, 146, 175);">с ${weekStartStr} по ${weekEndStr}</p> <!-- Период с новым цветом -->
-                <p id="revenueCurrentWeek" class="text-xl font-bold text-green-600">${week.toLocaleString('ru-RU')} ₽</p>
-            `;
-        }
-        
-        const monthCard = revenueSelectedMonthEl.closest('div');
-        if (monthCard) {
-             monthCard.innerHTML = `
-                <p class="text-sm font-medium text-green-700">Выручка за месяц</p>
-                <p class="text-xs -mt-0.5 mb-1" style="color: rgb(16, 146, 175);">с ${monthStartStr} по ${monthEndStr}</p> <!-- Период с новым цветом -->
-                <p id="revenueSelectedMonth" class="text-xl font-bold text-green-600">${month.toLocaleString('ru-RU')} ₽</p>
-            `;
-        }
+        if (revenueTodayEl) revenueTodayEl.textContent = `${today.toLocaleString('ru-RU')} ₽`;
+        if (revenueCurrentWeekEl) revenueCurrentWeekEl.textContent = `${week.toLocaleString('ru-RU')} ₽`;
+        if (revenueSelectedMonthEl) revenueSelectedMonthEl.textContent = `${month.toLocaleString('ru-RU')} ₽`;
+
+        // Функция для добавления/обновления параграфа с датой/периодом
+        const upsertDateParagraph = (parentElement, dateString, elementId) => {
+            if (!parentElement) return;
+            let dateP = parentElement.querySelector('.stat-date'); // Ищем по классу
+            if (!dateP) { // Если не найден, создаем
+                dateP = document.createElement('p');
+                dateP.className = 'stat-date text-xs -mt-0.5 mb-1'; // Добавляем класс
+                dateP.style.color = 'rgb(16, 146, 175)';
+                const targetElement = document.getElementById(elementId);
+                if (targetElement) {
+                    parentElement.insertBefore(dateP, targetElement); // Вставляем перед суммой
+                }
+            }
+            dateP.textContent = dateString; // Обновляем текст
+        };
+
+        // Вставляем/обновляем даты/периоды
+        upsertDateParagraph(revenueTodayEl?.closest('div'), todayStr, 'revenueToday');
+        upsertDateParagraph(revenueCurrentWeekEl?.closest('div'), `с ${weekStartStr} по ${weekEndStr}`, 'revenueCurrentWeek');
+        upsertDateParagraph(revenueSelectedMonthEl?.closest('div'), `с ${monthStartStr} по ${monthEndStr}`, 'revenueSelectedMonth');
     }
 
 
