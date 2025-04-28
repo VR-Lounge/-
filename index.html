@@ -2624,12 +2624,12 @@
         const monthStartStr = selectedMonthStart.toLocaleDateString('ru-RU', dateOptionsWeekday);
         const monthEndStr = selectedMonthEnd.toLocaleDateString('ru-RU', dateOptionsWeekday);
 
-        // Обновляем HTML
-        const todayCard = revenueTodayEl.closest('div'); // Находим родительский div
+        // Обновляем HTML с новым цветом для дат
+        const todayCard = revenueTodayEl.closest('div');
         if (todayCard) {
             todayCard.innerHTML = `
                 <p class="text-sm font-medium text-green-700">Выручка сегодня</p>
-                <p class="text-xs text-green-500 -mt-0.5 mb-1">${todayStr}</p> <!-- Дата -->
+                <p class="text-xs -mt-0.5 mb-1" style="color: rgb(16, 146, 175);">${todayStr}</p> <!-- Дата с новым цветом -->
                 <p id="revenueToday" class="text-xl font-bold text-green-600">${today.toLocaleString('ru-RU')} ₽</p>
             `;
         }
@@ -2638,7 +2638,7 @@
         if (weekCard) {
              weekCard.innerHTML = `
                 <p class="text-sm font-medium text-green-700">Выручка за неделю</p>
-                <p class="text-xs text-green-500 -mt-0.5 mb-1">с ${weekStartStr} по ${weekEndStr}</p> <!-- Период -->
+                <p class="text-xs -mt-0.5 mb-1" style="color: rgb(16, 146, 175);">с ${weekStartStr} по ${weekEndStr}</p> <!-- Период с новым цветом -->
                 <p id="revenueCurrentWeek" class="text-xl font-bold text-green-600">${week.toLocaleString('ru-RU')} ₽</p>
             `;
         }
@@ -2647,7 +2647,7 @@
         if (monthCard) {
              monthCard.innerHTML = `
                 <p class="text-sm font-medium text-green-700">Выручка за месяц</p>
-                <p class="text-xs text-green-500 -mt-0.5 mb-1">с ${monthStartStr} по ${monthEndStr}</p> <!-- Период -->
+                <p class="text-xs -mt-0.5 mb-1" style="color: rgb(16, 146, 175);">с ${monthStartStr} по ${monthEndStr}</p> <!-- Период с новым цветом -->
                 <p id="revenueSelectedMonth" class="text-xl font-bold text-green-600">${month.toLocaleString('ru-RU')} ₽</p>
             `;
         }
