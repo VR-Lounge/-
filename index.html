@@ -1007,6 +1007,7 @@
              console.log('Admins loaded:', admins); // DEBUG
             updateAdminSelects(); // Обновляем списки в модалке
             renderAdminsCalendar(); // Обновляем календарь админов
+            renderBookingsList(); // <-- ДОБАВЛЕНО: Перерисовываем список записей
             // Пересчитываем зарплаты, т.к. список админов мог обновиться
             calculateWeeklyPayroll();
             calculateSalaries();
@@ -1029,6 +1030,7 @@
         ...doc.data()
       }));
             renderAdminsCalendar(); // Обновляем календарь админов
+            renderBookingsList(); // <-- ДОБАВЛЕНО: Перерисовываем список записей
              // Пересчитываем зарплаты, т.к. назначения могли обновиться
             calculateWeeklyPayroll();
             calculateSalaries();
