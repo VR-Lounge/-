@@ -890,22 +890,21 @@
     clientPhoneInput.addEventListener('input', function(e) {
         const input = e.target;
         const value = input.value;
-        const cursorPosition = input.selectionStart;
+        // Сохраняем текущую позицию курсора ДО изменения
+        const initialCursorPos = input.selectionStart;
+        const initialValueLength = value.length;
 
-        // Удаляем все нецифровые символы
+        // 1. Удаляем все НЕцифры
         let digits = value.replace(/\D/g, '');
 
-        // Обработка префикса +7 или 8 при вставке или быстром наборе
-        if ((value.startsWith('+7') || value.startsWith('8')) && digits.length > 10) {
-            if (digits.startsWith('7') || digits.startsWith('8')) {
-                 digits = digits.substring(1);
-            }
+        // 2. Обрабатываем код страны (оставляем только 10 цифр после 7)
+        if (digits.startsWith('7') || digits.startsWith('8')) {
+            digits = digits.substring(1);
         }
-        
-        // Обрезаем до 10 цифр (после кода страны)
-        digits = digits.substring(0, 10);
+        digits = digits.substring(0, 10); // Ограничиваем 10 цифрами
 
-        let formattedValue = phonePlaceholder;
+        // 3. Применяем маску
+        let formattedValue = '+7 (';
         if (digits.length > 0) {
             formattedValue += digits.substring(0, 3);
         }
@@ -918,29 +917,16 @@
         if (digits.length >= 9) {
             formattedValue += '-' + digits.substring(8, 10);
         }
-
+        
+        // 4. Устанавливаем отформатированное значение
         input.value = formattedValue;
-
-        // Восстанавливаем позицию курсора (с поправкой на добавленные символы маски)
-        // Это примерная логика, точное восстановление курсора сложно
-        if (cursorPosition !== null) {
-            // Пытаемся угадать новую позицию, это может быть неточно
-            let newCursorPosition = cursorPosition;
-            if (value.length < formattedValue.length) {
-                // Если символы были добавлены маской, сдвигаем курсор
-                 if (cursorPosition > 4 && digits.length >= 3) newCursorPosition++; // после ')'
-                 if (cursorPosition > 5 && digits.length >= 3) newCursorPosition++; // после ' '
-                 if (cursorPosition > 9 && digits.length >= 6) newCursorPosition++; // после '-'
-                 if (cursorPosition > 12 && digits.length >= 8) newCursorPosition++; // после '-'
-            }
-            // Ограничиваем позицию длиной строки
-            newCursorPosition = Math.min(newCursorPosition, formattedValue.length);
-             // Ставим курсор в предсказанное место (может требовать доработки)
-            // requestAnimationFrame чтобы установка сработала после обновления value браузером
-             requestAnimationFrame(() => {
-                 input.setSelectionRange(newCursorPosition, newCursorPosition);
-            });
-        }
+        
+        // 5. Просто устанавливаем курсор в конец после форматирования
+        // Это наиболее предсказуемое поведение для маски
+        requestAnimationFrame(() => {
+           const finalPos = input.value.length;
+           input.setSelectionRange(finalPos, finalPos);
+        });
     });
 
     clientPhoneInput.addEventListener('focus', function(e) {
