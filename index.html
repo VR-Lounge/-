@@ -2609,9 +2609,48 @@
 
     // === Отображение Статистики Выручки ===
     function renderRevenueStats(today, week, month) {
-        revenueTodayEl.textContent = `${today.toLocaleString('ru-RU')} ₽`;
-        revenueCurrentWeekEl.textContent = `${week.toLocaleString('ru-RU')} ₽`;
-        revenueSelectedMonthEl.textContent = `${month.toLocaleString('ru-RU')} ₽`; // Обновляем и месячную здесь
+        const todayDate = new Date();
+        const currentWeekRange = getWeekRange(todayDate);
+        const selectedMonthStart = new Date(salaryViewMonth.getFullYear(), salaryViewMonth.getMonth(), 1);
+        const selectedMonthEnd = new Date(salaryViewMonth.getFullYear(), salaryViewMonth.getMonth() + 1, 0);
+        
+        const dateOptions = { day: '2-digit', month: 'short' };
+        const dateOptionsWeekday = { weekday: 'short', day: '2-digit', month: 'short' };
+
+        // Форматируем даты
+        const todayStr = todayDate.toLocaleDateString('ru-RU', dateOptions);
+        const weekStartStr = currentWeekRange.start.toLocaleDateString('ru-RU', dateOptionsWeekday);
+        const weekEndStr = currentWeekRange.end.toLocaleDateString('ru-RU', dateOptionsWeekday);
+        const monthStartStr = selectedMonthStart.toLocaleDateString('ru-RU', dateOptionsWeekday);
+        const monthEndStr = selectedMonthEnd.toLocaleDateString('ru-RU', dateOptionsWeekday);
+
+        // Обновляем HTML
+        const todayCard = revenueTodayEl.closest('div'); // Находим родительский div
+        if (todayCard) {
+            todayCard.innerHTML = `
+                <p class="text-sm font-medium text-green-700">Выручка сегодня</p>
+                <p class="text-xs text-green-500 -mt-0.5 mb-1">${todayStr}</p> <!-- Дата -->
+                <p id="revenueToday" class="text-xl font-bold text-green-600">${today.toLocaleString('ru-RU')} ₽</p>
+            `;
+        }
+
+        const weekCard = revenueCurrentWeekEl.closest('div');
+        if (weekCard) {
+             weekCard.innerHTML = `
+                <p class="text-sm font-medium text-green-700">Выручка за неделю</p>
+                <p class="text-xs text-green-500 -mt-0.5 mb-1">с ${weekStartStr} по ${weekEndStr}</p> <!-- Период -->
+                <p id="revenueCurrentWeek" class="text-xl font-bold text-green-600">${week.toLocaleString('ru-RU')} ₽</p>
+            `;
+        }
+        
+        const monthCard = revenueSelectedMonthEl.closest('div');
+        if (monthCard) {
+             monthCard.innerHTML = `
+                <p class="text-sm font-medium text-green-700">Выручка за месяц</p>
+                <p class="text-xs text-green-500 -mt-0.5 mb-1">с ${monthStartStr} по ${monthEndStr}</p> <!-- Период -->
+                <p id="revenueSelectedMonth" class="text-xl font-bold text-green-600">${month.toLocaleString('ru-RU')} ₽</p>
+            `;
+        }
     }
 
 
