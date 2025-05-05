@@ -344,7 +344,8 @@
           <ul class="list-disc list-inside space-y-1.5">
             <li>Фиксированная ставка <strong>500₽</strong> за смену для основного администратора.</li>
             <li>Бонус <strong>15%</strong> от выручки за смену (или <strong>8%</strong>, если на смене был помощник).</li>
-            <li>Помощнику начисляется <strong>150₽/час</strong> + бонус <strong>7%</strong> от выручки за смену.</li>
+            <li>Помощнику начисляется <strong>150₽/час</strong> + бонус <strong>7%</strong> <span class="bg-yellow-100 px-1.5 py-0.5 rounded">только от выручки за услуги "Аренда (День Рождения)"</span>.</li>
+            <li>Помощник вызывается только на мероприятия "Аренда (День Рождения)".</li>
             <li>Расчет и выдача зарплаты производятся по понедельникам.</li>
           </ul>
         </div>
@@ -1959,8 +1960,61 @@
                                 helperData.hoursWorked += hours;
                                 const basePay = hours * 150; // 150₽ в час
                                 helperData.baseSalary += basePay;
+                                
+                                // Рассчитываем выручку только от услуг "Аренда ДР"
+                                let birthdayRevenue = 0;
+                                dayBookings.forEach(booking => {
+                                    // Проверяем, является ли услуга "Арендой ДР"
+                                    const isBirthdayService = 
+                                        (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                                         booking.selectedServices.includes('birthday')) || 
+                                        booking.serviceType === 'birthday';
+                                    
+                                    if (isBirthdayService) {
+                                        // Расчет итоговой суммы с учетом скидки
+                                        let bookingTotalAmount = 0;
+                                        const duration = parseFloat(booking.duration) || 0;
+                                        
+                                        // Рассчитываем сумму до скидки
+                                        if (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                                            booking.selectedServices.includes('birthday')) {
+                                            // Накопительный расчет для ДР
+                                            const fullHours = Math.floor(duration);
+                                            const hasHalfHour = duration % 1 !== 0;
+                                            let birthdayTotal = 0;
+                                            for (let hour = 1; hour <= fullHours; hour++) {
+                                                const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                                                birthdayTotal += hourPrice;
+                                            }
+                                            if (hasHalfHour) {
+                                                if (fullHours === 0) { birthdayTotal += 2000; }
+                                                else if (fullHours === 1) { birthdayTotal += 2000; }
+                                                else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                                            }
+                                            bookingTotalAmount = birthdayTotal;
+                                        } else if (booking.serviceType === 'birthday') {
+                                            // Обратная совместимость
+                                            const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                                            bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                                        }
+                                        
+                                        // Применяем скидку
+                                        const discountPercent = booking.discountPercent || 0;
+                                        const discountAmount = booking.discountAmount || 0;
+                                        let finalBookingAmount = bookingTotalAmount;
+                                        
+                                        if (discountPercent > 0) {
+                                            finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+                                        } else if (discountAmount > 0) {
+                                            finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+                                        }
+                                        
+                                        birthdayRevenue += finalBookingAmount;
+                                    }
+                                });
+                                
                                 const bonusPercent = 0.07;
-                                const bonus = dayRevenue * bonusPercent; // <- Считается от dayRevenue после скидок
+                                const bonus = birthdayRevenue * bonusPercent; // Считаем бонус только от выручки за ДР
                                 helperData.bonusSalary += bonus;
                                 helperData.totalSalary += basePay + bonus;
 
@@ -1969,7 +2023,7 @@
                                     type: 'Помощь на смене',
                                     base: basePay,
                                     bonus: bonus, // Сохраняем бонус, посчитанный от правильной выручки
-                                    revenue: dayRevenue, // Сохраняем выручку дня после скидок
+                                    revenue: birthdayRevenue, // Сохраняем выручку только от ДР
                                     hours: hours
                                 });
                           }
@@ -2828,7 +2882,60 @@
                 if (hours > 0) {
                     const basePay = hours * 150;
                     const bonusPercent = 0.07;
-                    const bonus = dayRevenue * bonusPercent;
+                    
+                    // Рассчитываем выручку только от услуг "День Рождения" (Аренда ДР)
+                    let birthdayRevenue = 0;
+                    (dayBookings || []).forEach(booking => {
+                        // Проверяем, является ли услуга "Арендой ДР"
+                        const isBirthdayService = 
+                            (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                             booking.selectedServices.includes('birthday')) || 
+                            booking.serviceType === 'birthday';
+                        
+                        if (isBirthdayService) {
+                            // Расчет итоговой суммы с учетом скидки
+                            let bookingTotalAmount = 0;
+                            const duration = parseFloat(booking.duration) || 0;
+                            
+                            // Рассчитываем сумму до скидки
+                            if (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                                booking.selectedServices.includes('birthday')) {
+                                // Накопительный расчет для ДР
+                                const fullHours = Math.floor(duration);
+                                const hasHalfHour = duration % 1 !== 0;
+                                let birthdayTotal = 0;
+                                for (let hour = 1; hour <= fullHours; hour++) {
+                                    const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                                    birthdayTotal += hourPrice;
+                                }
+                                if (hasHalfHour) {
+                                    if (fullHours === 0) { birthdayTotal += 2000; }
+                                    else if (fullHours === 1) { birthdayTotal += 2000; }
+                                    else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                                }
+                                bookingTotalAmount = birthdayTotal;
+                            } else if (booking.serviceType === 'birthday') {
+                                // Обратная совместимость
+                                const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                                bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                            }
+                            
+                            // Применяем скидку
+                            const discountPercent = booking.discountPercent || 0;
+                            const discountAmount = booking.discountAmount || 0;
+                            let finalBookingAmount = bookingTotalAmount;
+                            
+                            if (discountPercent > 0) {
+                                finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+                            } else if (discountAmount > 0) {
+                                finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+                            }
+                            
+                            birthdayRevenue += finalBookingAmount;
+                        }
+                    });
+                    
+                    const bonus = birthdayRevenue * bonusPercent; // Считаем бонус только от выручки за ДР
                     weeklyPayrollData[assignment.helperAdminId].total += basePay + bonus;
                 }
             }
