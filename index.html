@@ -1345,7 +1345,13 @@
                 if (mainAdmin) shiftText += `👑 ${mainAdmin.name}`;
                 else shiftText += '<span class="italic text-red-500">! Осн. не назначен</span>';
 
-                if (helperAdmin) {
+                // Проверяем, является ли услуга "Арендой ДР" - только для них показываем помощника
+                const isBirthdayService = 
+                    (b.selectedServices && Array.isArray(b.selectedServices) && 
+                     b.selectedServices.includes('birthday')) || 
+                    b.serviceType === 'birthday';
+                
+                if (helperAdmin && isBirthdayService) {
                     shiftText += ` / 🛠️ ${helperAdmin.name}`;
                     if (assignment.helperHours) shiftText += ` (${assignment.helperHours}ч)`;
                 }
@@ -3079,7 +3085,17 @@
                     const helperAdmin = assignment.helperAdminId ? admins.find(a => a.id === assignment.helperAdminId) : null;
                     assignmentHTML = '<div class="text-xs text-gray-500 mt-1">Смена: ';
                     if (mainAdmin) assignmentHTML += `👑 ${mainAdmin.name}`;
-                    if (helperAdmin) assignmentHTML += ` / 🛠️ ${helperAdmin.name}${assignment.helperHours ? ' (' + assignment.helperHours + 'ч)' : ''}`;
+                    
+                    // Проверяем, является ли услуга "Арендой ДР" - только для них показываем помощника
+                    const isBirthdayService = 
+                        (b.selectedServices && Array.isArray(b.selectedServices) && 
+                         b.selectedServices.includes('birthday')) || 
+                        b.serviceType === 'birthday';
+                    
+                    if (helperAdmin && isBirthdayService) {
+                        assignmentHTML += ` / 🛠️ ${helperAdmin.name}${assignment.helperHours ? ' (' + assignment.helperHours + 'ч)' : ''}`;
+                    }
+                    
                     assignmentHTML += '</div>';
                 }
 
