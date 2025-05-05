@@ -689,9 +689,21 @@
             <option value="">Нет помощника</option>
             <!-- Опции будут заполнены динамически -->
           </select>
+          
+          <!-- Новая секция для выбора конкретного Дня Рождения -->
+          <div id="birthdayBookingSection" class="hidden"> 
+            <label class="block text-gray-900 font-semibold mb-2">День Рождения (Аренда ДР)</label>
+            <select id="birthdayBookingSelect" name="birthdayBooking" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
+              <option value="">Выберите День Рождения</option>
+              <!-- Опции будут заполнены динамически -->
+            </select>
+            <p class="text-sm text-gray-500 mt-1">Помощник назначается только на мероприятия "Аренда (ДР)"</p>
+          </div>
+          
           <div id="helperHoursSection" class="hidden"> <!-- Секция часов скрыта, пока не выбран помощник -->
             <label class="block text-gray-900 font-semibold mb-2">Часы работы помощника</label>
             <input type="number" id="helperHours" name="helperHours" min="1" max="24" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none transition" placeholder="Количество часов">
+            <p id="maxHelperHoursNote" class="text-sm text-gray-500 mt-1 hidden">Максимум часов для этого мероприятия: <span id="maxHelperHours">0</span></p>
           </div>
         </div>
         <div class="flex space-x-4">
@@ -802,6 +814,11 @@
     const helperHoursInput = document.getElementById('helperHours');
     const closeAssignModal = document.getElementById('closeAssignModal');
     const deleteAssignmentBtn = document.getElementById('deleteAssignmentBtn'); // Кнопка удаления назначения
+    // Новые элементы для выбора Дня Рождения
+    const birthdayBookingSection = document.getElementById('birthdayBookingSection');
+    const birthdayBookingSelect = document.getElementById('birthdayBookingSelect');
+    const maxHelperHoursNote = document.getElementById('maxHelperHoursNote');
+    const maxHelperHoursSpan = document.getElementById('maxHelperHours');
 
     // --- Модальное окно деталей дня ---
     const dayDetailsModal = document.getElementById('dayDetailsModal');
@@ -1736,14 +1753,63 @@
       // Поиск существующего назначения
       const assignment = adminAssignments.find(a => a.id === dateStr); // Ищем по ID (дате)
       
-      // Рассчитываем фактические часы для помощника на записях "Аренда ДР"
+      // Получаем все записи на выбранную дату
       const dayBookings = bookings.filter(b => b.bookingDate === dateStr);
+      
+      // Находим все записи "Аренда ДР" на эту дату
+      const birthdayBookings = dayBookings.filter(b => {
+        return (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.includes('birthday')) || 
+               b.serviceType === 'birthday';
+      });
+      
+      // Обновляем выпадающий список Дней Рождений
+      birthdayBookingSelect.innerHTML = '<option value="">Выберите День Рождения</option>';
+      
+      if (birthdayBookings.length > 0) {
+        birthdayBookings.forEach(booking => {
+          const time = booking.bookingTime || '00:00';
+          const duration = parseFloat(booking.duration) || 0;
+          const clientName = booking.clientName || 'Клиент';
+          const option = document.createElement('option');
+          option.value = booking.id;
+          option.dataset.duration = duration;
+          option.textContent = `${time} - ${clientName} (${duration} ч)`;
+          birthdayBookingSelect.appendChild(option);
+        });
+      } else {
+        const option = document.createElement('option');
+        option.value = "";
+        option.disabled = true;
+        option.textContent = 'Нет записей "Аренда ДР" на эту дату';
+        birthdayBookingSelect.appendChild(option);
+      }
+      
+      // Рассчитываем фактические часы для помощника на записях "Аренда ДР"
       const birthdayRentalHours = calculateBirthdayRentalHours(dayBookings);
 
       if (assignment) {
         // Заполняем форму из существующего назначения
         mainAdminSelect.value = assignment.mainAdminId || '';
         helperAdminSelect.value = assignment.helperAdminId || '';
+        
+        // Если назначен помощник и у нас есть ID связанной записи ДР
+        if (assignment.helperAdminId && assignment.birthdayBookingId) {
+          // Выбираем соответствующую запись ДР
+          birthdayBookingSelect.value = assignment.birthdayBookingId;
+          // Показываем секцию выбора ДР
+          birthdayBookingSection.classList.remove('hidden');
+          
+          // Находим выбранную запись ДР
+          const selectedBooking = birthdayBookings.find(b => b.id === assignment.birthdayBookingId);
+          if (selectedBooking) {
+            const duration = parseFloat(selectedBooking.duration) || 0;
+            // Обновляем информацию о максимальных часах
+            maxHelperHoursSpan.textContent = duration;
+            maxHelperHoursNote.classList.remove('hidden');
+            // Ограничиваем максимальное значение в поле ввода часов
+            helperHoursInput.max = duration;
+          }
+        }
         
         // Если у нас есть данные о часах Аренды ДР и назначены часы помощника,
         // и они не совпадают, предлагаем скорректировать
@@ -1766,6 +1832,9 @@
         mainAdminSelect.value = '';
         helperAdminSelect.value = '';
         helperHoursInput.value = '';
+        birthdayBookingSelect.value = '';
+        birthdayBookingSection.classList.add('hidden');
+        maxHelperHoursNote.classList.add('hidden');
         deleteAssignmentBtn.classList.add('hidden'); // Скрыть кнопку удаления
       }
 
@@ -1804,6 +1873,7 @@
       const mainAdminId = mainAdminSelect.value;
       const helperAdminId = helperAdminSelect.value;
       const helperHours = helperHoursInput.value ? parseInt(helperHoursInput.value) : null;
+      const birthdayBookingId = birthdayBookingSelect.value || null;
 
       // Валидация: основной админ должен быть выбран
       if (!mainAdminId) {
@@ -1812,11 +1882,31 @@
         return;
       }
 
-      // Валидация: если выбран помощник, часы должны быть указаны и быть > 0
-      if (helperAdminId && (!helperHours || helperHours <= 0)) {
-        alert('Пожалуйста, укажите корректное количество часов для помощника.');
-        helperHoursInput.focus();
-        return;
+      // Валидация: если выбран помощник, должна быть выбрана запись ДР и часы должны быть указаны
+      if (helperAdminId) {
+        if (!birthdayBookingId) {
+          alert('Пожалуйста, выберите День Рождения, на который назначается помощник.');
+          birthdayBookingSelect.focus();
+          return;
+        }
+        
+        if (!helperHours || helperHours <= 0) {
+          alert('Пожалуйста, укажите корректное количество часов для помощника.');
+          helperHoursInput.focus();
+          return;
+        }
+        
+        // Проверка, что часы не превышают продолжительность выбранного ДР
+        const selectedOption = birthdayBookingSelect.options[birthdayBookingSelect.selectedIndex];
+        if (selectedOption) {
+          const maxDuration = parseFloat(selectedOption.dataset.duration) || 0;
+          if (helperHours > maxDuration) {
+            alert(`Количество часов работы помощника не может превышать продолжительность мероприятия (${maxDuration} ч).`);
+            helperHoursInput.value = maxDuration;
+            helperHoursInput.focus();
+            return;
+          }
+        }
       }
 
       // Валидация: основной и помощник не могут быть одним и тем же человеком
@@ -1826,31 +1916,12 @@
         return;
       }
 
-      // Проверка на соответствие часов записям "Аренда ДР"
-      if (helperAdminId && helperHours) {
-        const dayBookings = bookings.filter(b => b.bookingDate === date);
-        const birthdayRentalHours = calculateBirthdayRentalHours(dayBookings);
-        
-        if (birthdayRentalHours === 0) {
-          if (!confirm('Внимание! На выбранную дату нет записей "Аренда (ДР)".\nПомощник должен назначаться только на услуги "Аренда (ДР)".\n\nПродолжить сохранение?')) {
-            return; // Отменяем сохранение
-          }
-        } else if (birthdayRentalHours !== helperHours) {
-          if (!confirm(`Указанные для помощника часы (${helperHours} ч) не соответствуют фактическим часам записей "Аренда ДР" (${birthdayRentalHours} ч).\n\nСкорректировать на ${birthdayRentalHours} ч?`)) {
-            // Если пользователь отказался скорректировать, продолжаем с введенными часами
-          } else {
-            // Корректируем часы
-            helperHoursInput.value = birthdayRentalHours;
-            helperHours = birthdayRentalHours;
-          }
-        }
-      }
-
       const assignmentData = {
         date: date, // Сохраняем дату для возможности фильтрации (хотя ID уже дата)
         mainAdminId: mainAdminId,
         helperAdminId: helperAdminId || null, // Сохраняем null, если не выбран
-        helperHours: helperHours // Сохраняем null, если не указаны
+        helperHours: helperHours, // Сохраняем null, если не указаны
+        birthdayBookingId: birthdayBookingId // Сохраняем ID связанной записи ДР
       };
 
       try {
@@ -2593,12 +2664,24 @@
       mainAdminSelect.addEventListener('change', updateHelperAdminOptions);
        // Показ/скрытие поля часов при выборе помощника
       helperAdminSelect.addEventListener('change', () => {
-          toggleHelperHours(helperAdminSelect.value !== "");
+          const isHelperSelected = helperAdminSelect.value !== "";
+          toggleHelperHours(isHelperSelected);
+          
+          // Показываем или скрываем секцию выбора Дня Рождения
+          if (isHelperSelected) {
+            birthdayBookingSection.classList.remove('hidden');
+          } else {
+            birthdayBookingSection.classList.add('hidden');
+            birthdayBookingSelect.value = '';
+            maxHelperHoursNote.classList.add('hidden');
+          }
+          
           // Дополнительно проверим, не выбран ли тот же, что и основной
           if (mainAdminSelect.value && helperAdminSelect.value && mainAdminSelect.value === helperAdminSelect.value) {
                alert('Основной администратор и помощник не могут быть одним и тем же человеком.');
                helperAdminSelect.value = ""; // Сбрасываем помощника
                toggleHelperHours(false); // Скрываем часы
+               birthdayBookingSection.classList.add('hidden'); // Скрываем выбор ДР
           }
       });
 
@@ -3670,6 +3753,30 @@
           alert('Внимание! На выбранную дату нет записей "Аренда (ДР)".\nПомощник должен назначаться только на услуги "Аренда (ДР)".');
           helperHoursInput.value = ''; // Очищаем поле часов
         }
+      }
+    });
+    
+    // Обработчик изменения выбора Дня Рождения
+    birthdayBookingSelect.addEventListener('change', function() {
+      const selectedOption = this.options[this.selectedIndex];
+      
+      if (this.value && selectedOption) {
+        // Получаем продолжительность выбранного ДР
+        const duration = parseFloat(selectedOption.dataset.duration) || 0;
+        
+        // Обновляем информацию о максимальных часах
+        maxHelperHoursSpan.textContent = duration;
+        maxHelperHoursNote.classList.remove('hidden');
+        
+        // Ограничиваем максимальное значение в поле ввода часов
+        helperHoursInput.max = duration;
+        
+        // Если текущее значение больше максимума, корректируем
+        if (parseFloat(helperHoursInput.value) > duration) {
+          helperHoursInput.value = duration;
+        }
+      } else {
+        maxHelperHoursNote.classList.add('hidden');
       }
     });
   </script>
