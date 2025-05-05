@@ -3482,6 +3482,11 @@
       
       // Показываем модальное окно
       adminDayDetailsModal.classList.remove('hidden');
+      
+      // Добавляем обработчик для кнопки закрытия непосредственно в этой функции
+      document.getElementById('closeAdminDayDetailsModal').onclick = function() {
+        adminDayDetailsModal.classList.add('hidden');
+      };
     }
 
     // === Логика Модального Окна Назначения Админа ===
