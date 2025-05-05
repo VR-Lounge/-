@@ -712,6 +712,17 @@
     </div>
   </div>
 
+  <!-- Модальное окно с деталями администраторов за день -->
+  <div id="adminDayDetailsModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && this.classList.add('hidden')">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200" onclick="event.stopPropagation()">
+      <button id="closeAdminDayDetailsModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="adminDayDetailsTitle">Информация о смене</h3>
+      <div id="adminDayDetailsContent" class="space-y-4">
+        <!-- Детали о смене и зарплате будут добавлены сюда -->
+      </div>
+    </div>
+  </div>
+
 
   <!-- Firebase и основная логика приложения -->
   <script type="module">
@@ -1228,7 +1239,7 @@
             const topDiv = document.createElement('div');
             topDiv.className = 'flex flex-col md:flex-row md:items-start md:justify-between space-y-3 md:space-y-0 md:space-x-4 mb-3'; // Добавлен mb-3
 
-            const dateObj = new Date(b.bookingDate);
+        const dateObj = new Date(b.bookingDate);
             const dateStr = dateObj.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short', year: 'numeric', weekday: 'short' }); // Исправлено: убран \ перед ' в month: 'short'
             const timeStr = `${b.startTime} (${b.duration}ч)`;
 
@@ -1259,37 +1270,37 @@
             }
 
             serviceNotesDiv.innerHTML = `<div class="font-medium mb-1">${serviceLabels}</div>`;
-            if (b.notes) {
+        if (b.notes) {
                 serviceNotesDiv.innerHTML += `<div class="italic text-gray-500 whitespace-pre-wrap break-words">${b.notes}</div>`;
-            }
+        }
 
             topDiv.appendChild(dateTimeDiv);
             topDiv.appendChild(clientInfoDiv);
             topDiv.appendChild(serviceNotesDiv);
 
-            if (isAdmin) {
+        if (isAdmin) {
                 const actionsDiv = document.createElement('div');
                 actionsDiv.className = 'flex-shrink-0 flex items-center space-x-2 ml-0 md:ml-4 mt-2 md:mt-0';
 
-                const editBtn = document.createElement('button');
-                editBtn.type = 'button';
-                editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
-                editBtn.title = 'Редактировать запись';
+          const editBtn = document.createElement('button');
+          editBtn.type = 'button';
+          editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
+          editBtn.title = 'Редактировать запись';
                 editBtn.innerHTML = '<i class="fas fa-edit fa-fw"></i>';
                 editBtn.addEventListener('click', (e) => { e.stopPropagation(); openEditModal(b.id); });
 
-                const deleteBtn = document.createElement('button');
-                deleteBtn.type = 'button';
-                deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
-                deleteBtn.title = 'Удалить запись';
+          const deleteBtn = document.createElement('button');
+          deleteBtn.type = 'button';
+          deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
+          deleteBtn.title = 'Удалить запись';
                 deleteBtn.innerHTML = '<i class="fas fa-trash-alt fa-fw"></i>';
                 deleteBtn.addEventListener('click', (e) => {
                     e.stopPropagation();
                     if (confirm(`Вы уверены, что хотите удалить запись для "${b.clientName}"?`)) { deleteBooking(b.id); }
-                });
+          });
 
-                actionsDiv.appendChild(editBtn);
-                actionsDiv.appendChild(deleteBtn);
+          actionsDiv.appendChild(editBtn);
+          actionsDiv.appendChild(deleteBtn);
                 topDiv.appendChild(actionsDiv);
             }
             li.appendChild(topDiv); // Добавляем верхнюю часть в li
@@ -1621,8 +1632,17 @@
             showLoginModal();
             return;
           }
-          // Передаем dateStr, который был сформирован безопасно
-          openAssignModal(date, dateStr);
+          
+          // Проверяем, существует ли назначение на этот день
+          const assignment = adminAssignments.find(a => a.date === dateStr);
+          
+          if (assignment && assignment.mainAdminId) {
+            // Если есть назначение - показываем детали
+            showAdminDayDetailsModal(date, dateStr, assignment);
+          } else {
+            // Если нет назначения - открываем окно для назначения администратора
+            openAssignModal(date, dateStr);
+          }
         });
 
         adminsCalendar.appendChild(dayCell);
@@ -2502,7 +2522,7 @@
 
        // --- Закрытие модальных окон ---
        // Клик вне окна
-       [authContainer, bookingModal, assignAdminModal, dayDetailsModal].forEach(modal => { // Добавлено dayDetailsModal
+       [authContainer, bookingModal, assignAdminModal, dayDetailsModal, adminDayDetailsModal].forEach(modal => { // Добавлено adminDayDetailsModal
            modal.addEventListener('click', function(e) {
                 if (e.target === this) {
                     this.classList.add('hidden');
@@ -2524,6 +2544,9 @@
                if (!dayDetailsModal.classList.contains('hidden')) { // Добавлено
                    dayDetailsModal.classList.add('hidden');
                }
+               if (!adminDayDetailsModal.classList.contains('hidden')) { // Добавлено для нового модального окна
+                   adminDayDetailsModal.classList.add('hidden');
+               }
            }
        });
 
@@ -2532,6 +2555,9 @@
 
       // --- Модальное окно деталей дня ---
       closeDayDetailsModalBtn.addEventListener('click', () => dayDetailsModal.classList.add('hidden'));
+      
+      // --- Модальное окно деталей администраторов ---
+      closeAdminDayDetailsModalBtn.addEventListener('click', () => adminDayDetailsModal.classList.add('hidden'));
     }
 
     // === Вспомогательные функции для отображения ===
@@ -3142,6 +3168,324 @@
         dayDetailsModal.classList.remove('hidden');
     }
 
+    // === Логика Модального Окна Деталей Администраторов ===
+    function showAdminDayDetailsModal(date, dateStr, assignment) {
+      const formattedDate = date.toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric', weekday: 'long' });
+      adminDayDetailsTitle.textContent = `Информация о смене на ${formattedDate}`;
+      adminDayDetailsContent.innerHTML = ''; // Очищаем содержимое
+
+      // Получаем информацию об администраторах
+      const mainAdmin = assignment.mainAdminId ? admins.find(a => a.id === assignment.mainAdminId) : null;
+      const helperAdmin = assignment.helperAdminId ? admins.find(a => a.id === assignment.helperAdminId) : null;
+
+      // Получаем бронирования на этот день для расчета зарплаты
+      const dayBookings = bookings.filter(b => b.bookingDate === dateStr)
+                                .sort((a, b) => a.startTime.localeCompare(b.startTime));
+
+      // Рассчитываем выручку дня
+      let dayRevenue = 0;
+      let birthdayRevenue = 0;
+
+      dayBookings.forEach(booking => {
+        let bookingTotalAmount = 0;
+        const duration = parseFloat(booking.duration) || 0;
+        
+        // Определяем, является ли запись услугой "День рождения"
+        const isBirthdayService = 
+          (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+           booking.selectedServices.includes('birthday')) || 
+          booking.serviceType === 'birthday';
+        
+        // Рассчитываем сумму до скидки
+        if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+          booking.selectedServices.forEach(service => {
+            if (service === 'birthday') {
+              const fullHours = Math.floor(duration);
+              const hasHalfHour = duration % 1 !== 0;
+              let birthdayTotal = 0;
+              for (let hour = 1; hour <= fullHours; hour++) {
+                const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                birthdayTotal += hourPrice;
+              }
+              if (hasHalfHour) {
+                if (fullHours === 0) { birthdayTotal += 2000; }
+                else if (fullHours === 1) { birthdayTotal += 2000; }
+                else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+              }
+              bookingTotalAmount += birthdayTotal;
+            } else {
+              const price = servicePrices[service] || 0;
+              bookingTotalAmount += price * duration;
+            }
+          });
+        } else if (booking.serviceType) {
+          if (booking.serviceType === 'birthday') {
+            const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+            bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+          } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+            bookingTotalAmount = servicePriceHalfHour[booking.serviceType] || 0;
+          } else {
+            const pricePerHour = servicePrices[booking.serviceType] || 0;
+            bookingTotalAmount = pricePerHour * duration;
+          }
+        }
+        
+        // Применяем скидку
+        const discountPercent = booking.discountPercent || 0;
+        const discountAmount = booking.discountAmount || 0;
+        let finalBookingAmount = bookingTotalAmount;
+        
+        if (discountPercent > 0) {
+          finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+        } else if (discountAmount > 0) {
+          finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+        }
+        
+        // Добавляем в общую выручку
+        dayRevenue += finalBookingAmount;
+        
+        // Если услуга "День рождения", добавляем в выручку по ДР
+        if (isBirthdayService) {
+          birthdayRevenue += finalBookingAmount;
+        }
+      });
+
+      // Создаем карточку информации об администраторах
+      const adminInfoCard = document.createElement('div');
+      adminInfoCard.className = 'bg-white rounded-xl p-5 border border-gray-200 shadow-sm';
+      
+      let adminInfoHTML = '<div class="space-y-4">';
+      
+      // Основной администратор
+      if (mainAdmin) {
+        adminInfoHTML += `
+          <div>
+            <h4 class="font-semibold text-lg text-blue-800 mb-2">👑 Основной администратор</h4>
+            <p class="text-lg font-medium">${mainAdmin.name}</p>
+            <div class="mt-2 space-y-1">
+              <div class="flex justify-between">
+                <span>Фиксированная ставка:</span>
+                <span class="font-medium">500 ₽</span>
+              </div>
+        `;
+        
+        // Расчет бонуса основного администратора
+        const bonusPercent = helperAdmin ? 8 : 15;
+        const bonus = (dayRevenue * bonusPercent / 100).toFixed(0);
+        const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
+        
+        adminInfoHTML += `
+              <div class="flex justify-between">
+                <span>Бонус (${bonusPercent}% от выручки):</span>
+                <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
+                <span class="font-medium">Итого за день:</span>
+                <span class="font-semibold text-blue-700">${parseInt(totalSalary).toLocaleString('ru-RU')} ₽</span>
+              </div>
+            </div>
+          </div>
+        `;
+      } else {
+        adminInfoHTML += `
+          <div>
+            <h4 class="font-semibold text-lg text-red-500 mb-2">❗ Основной администратор не назначен</h4>
+          </div>
+        `;
+      }
+      
+      // Помощник
+      if (helperAdmin && assignment.helperHours) {
+        const hours = parseInt(assignment.helperHours) || 0;
+        const basePay = hours * 150;
+        const bonusPercent = 7;
+        const bonus = (birthdayRevenue * bonusPercent / 100).toFixed(0);
+        const totalHelperSalary = (basePay + parseFloat(bonus)).toFixed(0);
+        
+        adminInfoHTML += `
+          <div class="border-t border-gray-200 pt-4 mt-2">
+            <h4 class="font-semibold text-lg text-indigo-800 mb-2">🛠️ Помощник администратора</h4>
+            <p class="text-lg font-medium">${helperAdmin.name} (${hours} ч)</p>
+            <div class="mt-2 space-y-1">
+              <div class="flex justify-between">
+                <span>Почасовая оплата (150 ₽/ч):</span>
+                <span class="font-medium">${basePay.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Бонус (7% от выручки ДР):</span>
+                <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Выручка за ДР:</span>
+                <span>${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
+                <span class="font-medium">Итого за день:</span>
+                <span class="font-semibold text-indigo-700">${parseInt(totalHelperSalary).toLocaleString('ru-RU')} ₽</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+      
+      adminInfoHTML += '</div>';
+      adminInfoCard.innerHTML = adminInfoHTML;
+      
+      // Создаем карточку информации о записях
+      const bookingsCard = document.createElement('div');
+      bookingsCard.className = 'bg-white rounded-xl p-5 border border-gray-200 shadow-sm mt-4';
+      
+      let bookingsHTML = '<h4 class="font-semibold text-lg text-gray-800 mb-3">Записи на этот день</h4>';
+      
+      if (dayBookings.length > 0) {
+        bookingsHTML += '<div class="space-y-3">';
+        
+        dayBookings.forEach(booking => {
+          const services = booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.length > 0 
+            ? booking.selectedServices.map(s => getServiceLabel(s)).join(', ') 
+            : getServiceLabel(booking.serviceType);
+            
+          const discountPercent = booking.discountPercent || 0;
+          const discountAmount = booking.discountAmount || 0;
+          let finalAmount = 0;
+          
+          // Расчет итоговой суммы бронирования
+          if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+            const duration = parseFloat(booking.duration) || 0;
+            let total = 0;
+            
+            booking.selectedServices.forEach(service => {
+              if (service === 'birthday') {
+                const fullHours = Math.floor(duration);
+                const hasHalfHour = duration % 1 !== 0;
+                let birthdayTotal = 0;
+                for (let hour = 1; hour <= fullHours; hour++) {
+                  const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                  birthdayTotal += hourPrice;
+                }
+                if (hasHalfHour) {
+                  if (fullHours === 0) { birthdayTotal += 2000; }
+                  else if (fullHours === 1) { birthdayTotal += 2000; }
+                  else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                }
+                total += birthdayTotal;
+              } else {
+                const price = servicePrices[service] || 0;
+                total += price * duration;
+              }
+            });
+            
+            if (discountPercent > 0) {
+              finalAmount = total * (1 - discountPercent / 100);
+            } else if (discountAmount > 0) {
+              finalAmount = Math.max(0, total - discountAmount);
+            } else {
+              finalAmount = total;
+            }
+          }
+          
+          const isBirthdayService = 
+            (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+             booking.selectedServices.includes('birthday')) || 
+            booking.serviceType === 'birthday';
+            
+          // Создаем HTML для записи
+          bookingsHTML += `
+            <div class="p-3 ${isBirthdayService ? 'bg-pink-50 border-pink-200' : 'bg-gray-50 border-gray-200'} border rounded-lg">
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">${booking.clientName}</span>
+                <span>${booking.startTime} (${booking.duration}ч)</span>
+              </div>
+              <div class="text-sm text-gray-700">
+                <div>Услуги: ${services}</div>
+                <div>Сумма: ${finalAmount.toLocaleString('ru-RU')} ₽</div>
+              </div>
+            </div>
+          `;
+        });
+        
+        bookingsHTML += '</div>';
+      } else {
+        bookingsHTML += '<p class="text-gray-500 italic">Нет записей на этот день</p>';
+      }
+      
+      bookingsCard.innerHTML = bookingsHTML;
+      
+      // Создаем карточку финансовой информации
+      const financeCard = document.createElement('div');
+      financeCard.className = 'bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border border-green-200 shadow-sm mt-4';
+      
+      const financeHTML = `
+        <h4 class="font-semibold text-lg text-green-800 mb-3">Финансовая сводка</h4>
+        <div class="space-y-2">
+          <div class="flex justify-between">
+            <span>Общая выручка за день:</span>
+            <span class="font-semibold text-green-700">${dayRevenue.toLocaleString('ru-RU')} ₽</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Выручка за "Аренду ДР":</span>
+            <span class="font-semibold text-green-700">${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Кол-во записей:</span>
+            <span class="font-semibold">${dayBookings.length}</span>
+          </div>
+          <div class="flex justify-between border-t border-green-200 pt-2 mt-1">
+            <span class="font-medium">Всего заработная плата:</span>
+            <span class="font-bold text-green-800 text-lg">
+              ${(
+                // Зарплата основного: ставка + бонус
+                (mainAdmin ? 500 + (dayRevenue * (helperAdmin ? 0.08 : 0.15)) : 0) + 
+                // Зарплата помощника: почасовая + бонус от ДР
+                (helperAdmin && assignment.helperHours ? 
+                  (parseInt(assignment.helperHours) * 150) + (birthdayRevenue * 0.07) : 0)
+              ).toFixed(0).toLocaleString('ru-RU')} ₽
+            </span>
+          </div>
+        </div>
+      `;
+      
+      financeCard.innerHTML = financeHTML;
+      
+      // Добавляем кнопки редактирования и создания записей
+      const actionButtons = document.createElement('div');
+      actionButtons.className = 'flex space-x-4 mt-5';
+      
+      // Кнопка редактирования назначения
+      const editAssignmentBtn = document.createElement('button');
+      editAssignmentBtn.type = 'button';
+      editAssignmentBtn.className = 'flex-1 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-blue-300 focus:outline-none';
+      editAssignmentBtn.innerHTML = '<i class="fas fa-edit mr-2"></i> Редактировать назначение';
+      editAssignmentBtn.addEventListener('click', () => {
+        adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
+        openAssignModal(date, dateStr); // Открываем окно назначения
+      });
+      
+      // Кнопка добавления записи
+      const addBookingBtn = document.createElement('button');
+      addBookingBtn.type = 'button';
+      addBookingBtn.className = 'flex-1 bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-green-300 focus:outline-none';
+      addBookingBtn.innerHTML = '<i class="fas fa-plus mr-2"></i> Добавить запись';
+      addBookingBtn.addEventListener('click', () => {
+        adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
+        openBookingModal(date); // Открываем окно добавления записи
+      });
+      
+      actionButtons.appendChild(editAssignmentBtn);
+      actionButtons.appendChild(addBookingBtn);
+      
+      // Добавляем все элементы в модальное окно
+      adminDayDetailsContent.appendChild(adminInfoCard);
+      adminDayDetailsContent.appendChild(bookingsCard);
+      adminDayDetailsContent.appendChild(financeCard);
+      adminDayDetailsContent.appendChild(actionButtons);
+      
+      // Показываем модальное окно
+      adminDayDetailsModal.classList.remove('hidden');
+    }
+
+    // === Логика Модального Окна Назначения Админа ===
+    // ... existing code ...
   </script>
 </body>
 </html>
