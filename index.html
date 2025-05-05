@@ -347,6 +347,7 @@
             <li>Помощнику начисляется <strong>150₽/час</strong> + бонус <strong>7%</strong> <span class="bg-yellow-100 px-1.5 py-0.5 rounded">только от выручки за услуги "Аренда (День Рождения)"</span>.</li>
             <li>Помощник вызывается только на мероприятия "Аренда (День Рождения)".</li>
             <li>Расчет и выдача зарплаты производятся по понедельникам.</li>
+            <li class="bg-blue-100 p-2 rounded mt-2">В расчете используются <strong>фактические часы</strong> помощника из записей с услугой "Аренда (ДР)", а не указанные вручную при назначении. Система предупреждает, если назначенные часы не соответствуют фактическим.</li>
           </ul>
         </div>
         <!-- КОНЕЦ ИНФОРМАЦИОННОГО БЛОКА -->
@@ -2144,21 +2145,7 @@
 
     function renderSalaryResults(salaryData, totalRevenue) {
       salaryResults.innerHTML = ''; // Очищаем предыдущие результаты
-
-      // Информационный блок об условиях начисления зарплаты
-      const infoCard = document.createElement('div');
-      infoCard.className = 'mb-8 p-6 bg-blue-50 border border-blue-200 rounded-2xl text-sm text-blue-800';
-      infoCard.innerHTML = `
-        <h4 class="font-semibold text-base mb-3 text-blue-900">Условия начисления зарплаты (для месячного отчета):</h4>
-        <ul class="list-disc list-inside space-y-1.5">
-          <li>Фиксированная ставка <strong>500₽</strong> за смену для основного администратора.</li>
-          <li>Бонус <strong>15%</strong> от выручки за смену (или <strong>8%</strong>, если на смене был помощник).</li>
-          <li>Помощнику начисляется <strong>150₽/час</strong> + бонус <strong>7%</strong> <span class="bg-yellow-100 px-1.5 py-0.5 rounded">только от выручки за услуги "Аренда (День Рождения)"</span>.</li>
-          <li class="pl-5 border-l-2 border-blue-200 bg-blue-100 p-2 rounded-r-lg">В расчете используются <strong>фактические часы</strong> помощника из записей с услугой "Аренда (ДР)", а не указанные вручную при назначении. Система предупреждает, если назначенные часы не соответствуют фактическим.</li>
-        </ul>
-      `;
-      salaryResults.appendChild(infoCard);
-
+      
       // Карточка общей выручки
       const revenueCard = document.createElement('div');
       revenueCard.className = 'bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl shadow-md p-6 border border-green-200'; // Градиент
