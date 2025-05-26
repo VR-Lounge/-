@@ -77,11 +77,66 @@
       updateShareLinks(url, type);
       
       // Принудительно показываем все элементы
-      if (whatsapp) whatsapp.style.display = 'flex';
-      if (telegram) telegram.style.display = 'flex';
-      if (vk) vk.style.display = 'flex';
-      if (email) email.style.display = 'flex';
-      if (copy) copy.style.display = 'flex';
+      if (whatsapp) {
+        whatsapp.style.display = 'flex';
+        whatsapp.style.visibility = 'visible';
+        whatsapp.style.opacity = '1';
+        whatsapp.style.height = 'auto';
+        whatsapp.style.minHeight = '48px';
+        whatsapp.style.width = '100%';
+        whatsapp.style.background = '#f8f9fa';
+        whatsapp.style.border = '1px solid #e9ecef';
+        whatsapp.style.padding = '12px 16px';
+        whatsapp.style.margin = '5px 0';
+      }
+      if (telegram) {
+        telegram.style.display = 'flex';
+        telegram.style.visibility = 'visible';
+        telegram.style.opacity = '1';
+        telegram.style.height = 'auto';
+        telegram.style.minHeight = '48px';
+        telegram.style.width = '100%';
+        telegram.style.background = '#f8f9fa';
+        telegram.style.border = '1px solid #e9ecef';
+        telegram.style.padding = '12px 16px';
+        telegram.style.margin = '5px 0';
+      }
+      if (vk) {
+        vk.style.display = 'flex';
+        vk.style.visibility = 'visible';
+        vk.style.opacity = '1';
+        vk.style.height = 'auto';
+        vk.style.minHeight = '48px';
+        vk.style.width = '100%';
+        vk.style.background = '#f8f9fa';
+        vk.style.border = '1px solid #e9ecef';
+        vk.style.padding = '12px 16px';
+        vk.style.margin = '5px 0';
+      }
+      if (email) {
+        email.style.display = 'flex';
+        email.style.visibility = 'visible';
+        email.style.opacity = '1';
+        email.style.height = 'auto';
+        email.style.minHeight = '48px';
+        email.style.width = '100%';
+        email.style.background = '#f8f9fa';
+        email.style.border = '1px solid #e9ecef';
+        email.style.padding = '12px 16px';
+        email.style.margin = '5px 0';
+      }
+      if (copy) {
+        copy.style.display = 'flex';
+        copy.style.visibility = 'visible';
+        copy.style.opacity = '1';
+        copy.style.height = 'auto';
+        copy.style.minHeight = '48px';
+        copy.style.width = '100%';
+        copy.style.background = '#f8f9fa';
+        copy.style.border = '1px solid #e9ecef';
+        copy.style.padding = '12px 16px';
+        copy.style.margin = '5px 0';
+      }
       
       modal.classList.remove('hidden');
       console.log('Modal should be visible now'); // Отладка
@@ -564,17 +619,23 @@
     }
 
     .share-option {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 12px 16px;
-      border-radius: 12px;
-      background: #f8f9fa;
-      border: 1px solid #e9ecef;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      text-decoration: none;
-      color: #1d1d1f;
+      display: flex !important;
+      align-items: center !important;
+      gap: 12px !important;
+      padding: 12px 16px !important;
+      border-radius: 12px !important;
+      background: #f8f9fa !important;
+      border: 1px solid #e9ecef !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+      text-decoration: none !important;
+      color: #1d1d1f !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      height: auto !important;
+      width: 100% !important;
+      min-height: 48px !important;
+      box-sizing: border-box !important;
     }
 
     .share-option:hover {
@@ -584,9 +645,49 @@
     }
 
     .share-option i {
-      font-size: 20px;
-      width: 24px;
-      text-align: center;
+      font-size: 20px !important;
+      width: 24px !important;
+      text-align: center !important;
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+
+    /* Принудительные стили для элементов поделиться */
+    #shareWhatsApp, #shareTelegram, #shareVK, #shareEmail, #copyLink {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      height: auto !important;
+      min-height: 48px !important;
+      width: 100% !important;
+      background: #f8f9fa !important;
+      border: 1px solid #e9ecef !important;
+      padding: 12px 16px !important;
+      margin: 5px 0 !important;
+      align-items: center !important;
+      gap: 12px !important;
+      border-radius: 12px !important;
+      cursor: pointer !important;
+      text-decoration: none !important;
+      color: #1d1d1f !important;
+      box-sizing: border-box !important;
+    }
+
+    #shareWhatsApp i, #shareTelegram i, #shareVK i, #shareEmail i, #copyLink i {
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      font-size: 20px !important;
+      width: 24px !important;
+      text-align: center !important;
+    }
+
+    #shareWhatsApp span, #shareTelegram span, #shareVK span, #shareEmail span, #copyLink span {
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      color: #1d1d1f !important;
     }
   </style>
 </head>
@@ -1002,33 +1103,33 @@
       
       <div class="space-y-3">
         <!-- WhatsApp -->
-        <a id="shareWhatsApp" class="share-option" target="_blank" style="display: flex !important;">
-          <i class="fab fa-whatsapp text-green-500"></i>
-          <span>WhatsApp</span>
+        <a id="shareWhatsApp" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
+          <i class="fab fa-whatsapp text-green-500" style="color: #25D366 !important; font-size: 20px !important;"></i>
+          <span style="color: #1d1d1f !important;">WhatsApp</span>
         </a>
         
         <!-- Telegram -->
-        <a id="shareTelegram" class="share-option" target="_blank" style="display: flex !important;">
-          <i class="fab fa-telegram text-blue-500"></i>
-          <span>Telegram</span>
+        <a id="shareTelegram" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
+          <i class="fab fa-telegram text-blue-500" style="color: #0088cc !important; font-size: 20px !important;"></i>
+          <span style="color: #1d1d1f !important;">Telegram</span>
         </a>
         
         <!-- ВКонтакте -->
-        <a id="shareVK" class="share-option" target="_blank" style="display: flex !important;">
-          <i class="fab fa-vk text-blue-600"></i>
-          <span>ВКонтакте</span>
+        <a id="shareVK" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
+          <i class="fab fa-vk text-blue-600" style="color: #4c75a3 !important; font-size: 20px !important;"></i>
+          <span style="color: #1d1d1f !important;">ВКонтакте</span>
         </a>
         
         <!-- Копировать ссылку -->
-        <button id="copyLink" class="share-option w-full border-0 bg-transparent" style="display: flex !important;">
-          <i class="fas fa-copy text-gray-600"></i>
-          <span>Копировать ссылку</span>
+        <button id="copyLink" class="share-option w-full border-0 bg-transparent" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
+          <i class="fas fa-copy text-gray-600" style="color: #6c757d !important; font-size: 20px !important;"></i>
+          <span style="color: #1d1d1f !important;">Копировать ссылку</span>
         </button>
         
         <!-- Email -->
-        <a id="shareEmail" class="share-option" target="_blank" style="display: flex !important;">
-          <i class="fas fa-envelope text-red-500"></i>
-          <span>Email</span>
+        <a id="shareEmail" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
+          <i class="fas fa-envelope text-red-500" style="color: #dc3545 !important; font-size: 20px !important;"></i>
+          <span style="color: #1d1d1f !important;">Email</span>
         </a>
       </div>
     </div>
