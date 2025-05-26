@@ -178,6 +178,11 @@
       console.log('Original text:', shareText);
       console.log('Encoded text:', encodedShareText);
       
+      // Для мобильного Telegram отправляем только URL - пользователь сам добавит комментарий
+      if (isMobile && type === 'reviews') {
+        console.log('Мобильный Telegram: отправляем только URL, текст пользователь добавит сам');
+      }
+      
       // WhatsApp
       const whatsappEl = document.getElementById('shareWhatsApp');
       if (whatsappEl) {
@@ -192,7 +197,8 @@
       const telegramEl = document.getElementById('shareTelegram');
       if (telegramEl) {
         if (isMobile) {
-          telegramEl.href = `https://t.me/share/url?url=${url}&text=${shareText}`;
+          // Для мобильных Telegram - только URL без текста (избегаем проблем с кодированием)
+          telegramEl.href = `https://t.me/share/url?url=${url}`;
         } else {
           telegramEl.href = `https://t.me/share/url?url=${encodedUrl}&text=${encodedShareText}`;
         }
