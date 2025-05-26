@@ -213,6 +213,30 @@
       }
     }
 
+    /* Стили для десктопа - возвращаем нормальное отображение */
+    @media (min-width: 769px) {
+      .share-button {
+        font-size: 14px !important;
+        padding: 10px 20px !important;
+        gap: 8px !important;
+      }
+
+      .widget-container .flex.items-center.justify-between {
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 0 !important;
+      }
+
+      .widget-container .flex.items-center.justify-between .flex.items-center {
+        width: auto !important;
+      }
+
+      .widget-container .share-button {
+        width: auto !important;
+        justify-content: flex-start !important;
+      }
+    }
+
     /* Стили для виджетов */
     .widget-container {
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -240,10 +264,12 @@
       font-weight: 600;
       cursor: pointer;
       transition: all 0.2s ease;
-      display: inline-flex;
+      display: inline-flex !important;
       align-items: center;
       gap: 8px;
       box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
+      visibility: visible !important;
+      opacity: 1 !important;
     }
 
     .share-button:hover {
@@ -695,9 +721,9 @@
   </main>
 
   <!-- Модальное окно "Поделиться" -->
-  <div id="shareModal" class="share-modal fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && closeShareModal()">
-    <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 relative ring-1 ring-gray-200" onclick="event.stopPropagation()">
-      <button id="closeShareModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно" onclick="closeShareModal()">&times;</button>
+  <div id="shareModal" class="share-modal fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 relative ring-1 ring-gray-200">
+      <button id="closeShareModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
       <h3 id="shareModalTitle" class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Поделиться</h3>
       
       <div class="space-y-3">
@@ -4026,9 +4052,32 @@
       const shareModal = document.getElementById('shareModal');
       if (shareModal) {
         console.log('Share modal found and ready');
-      } else {
-        console.error('Share modal not found!');
-      }
+        
+        // Добавляем обработчики событий для модального окна поделиться
+        const closeShareModalBtn = document.getElementById('closeShareModal');
+        if (closeShareModalBtn) {
+          closeShareModalBtn.addEventListener('click', function() {
+            window.closeShareModal();
+          });
+        }
+        
+        // Закрытие по клику вне модального окна
+        shareModal.addEventListener('click', function(event) {
+          if (event.target === shareModal) {
+            window.closeShareModal();
+          }
+        });
+        
+              } else {
+          console.error('Share modal not found!');
+        }
+
+        // Проверяем видимость кнопок поделиться
+        const shareButtons = document.querySelectorAll('.share-button');
+        console.log('Found share buttons:', shareButtons.length);
+        shareButtons.forEach((btn, index) => {
+          console.log(`Share button ${index}:`, btn, 'Visible:', btn.offsetWidth > 0 && btn.offsetHeight > 0);
+        });
     });
 
     // === Функции для модального окна "Поделиться" ===
@@ -4045,6 +4094,9 @@
       
       const modal = document.getElementById('shareModal');
       const title = document.getElementById('shareModalTitle');
+      
+      console.log('Modal element:', modal); // Отладка
+      console.log('Title element:', title); // Отладка
       
       if (!modal) {
         console.error('Modal shareModal not found!');
