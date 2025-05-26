@@ -151,43 +151,71 @@
 
     function updateShareLinks(url, type) {
       const encodedUrl = encodeURIComponent(url);
+      
+      // Определяем, мобильное ли это устройство
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
       let shareText = '';
+      let encodedShareText = '';
       
       // Определяем текст для поделиться в зависимости от типа
       switch(type) {
         case 'vk':
-          shareText = encodeURIComponent('Присоединяйтесь к нашему сообществу VR Lounge! 🎮');
+          shareText = 'Присоединяйтесь к нашему сообществу VR Lounge! 🎮';
           break;
         case 'maps':
-          shareText = encodeURIComponent('Наша локация VR Lounge - приходите к нам! 📍');
+          shareText = 'Наша локация VR Lounge - приходите к нам! 📍';
           break;
         case 'reviews':
-          shareText = encodeURIComponent('Посмотрите отзывы о VR Lounge! ⭐');
+          shareText = 'Посмотрите отзывы о VR Lounge! ⭐';
           break;
       }
+      
+      // Для мобильных устройств не кодируем текст, для десктопа кодируем
+      encodedShareText = isMobile ? shareText : encodeURIComponent(shareText);
+      
+      console.log('Device type:', isMobile ? 'Mobile' : 'Desktop');
+      console.log('Original text:', shareText);
+      console.log('Encoded text:', encodedShareText);
       
       // WhatsApp
       const whatsappEl = document.getElementById('shareWhatsApp');
       if (whatsappEl) {
-        whatsappEl.href = `https://wa.me/?text=${shareText}%20${encodedUrl}`;
+        if (isMobile) {
+          whatsappEl.href = `https://wa.me/?text=${shareText} ${url}`;
+        } else {
+          whatsappEl.href = `https://wa.me/?text=${encodedShareText}%20${encodedUrl}`;
+        }
       }
       
       // Telegram
       const telegramEl = document.getElementById('shareTelegram');
       if (telegramEl) {
-        telegramEl.href = `https://t.me/share/url?url=${encodedUrl}&text=${shareText}`;
+        if (isMobile) {
+          telegramEl.href = `https://t.me/share/url?url=${url}&text=${shareText}`;
+        } else {
+          telegramEl.href = `https://t.me/share/url?url=${encodedUrl}&text=${encodedShareText}`;
+        }
       }
       
       // ВКонтакте
       const vkEl = document.getElementById('shareVK');
       if (vkEl) {
-        vkEl.href = `https://vk.com/share.php?url=${encodedUrl}&title=${shareText}`;
+        if (isMobile) {
+          vkEl.href = `https://vk.com/share.php?url=${url}&title=${shareText}`;
+        } else {
+          vkEl.href = `https://vk.com/share.php?url=${encodedUrl}&title=${encodedShareText}`;
+        }
       }
       
       // Email
       const emailEl = document.getElementById('shareEmail');
       if (emailEl) {
-        emailEl.href = `mailto:?subject=${shareText}&body=${shareText}%20${encodedUrl}`;
+        if (isMobile) {
+          emailEl.href = `mailto:?subject=${shareText}&body=${shareText} ${url}`;
+        } else {
+          emailEl.href = `mailto:?subject=${encodedShareText}&body=${encodedShareText}%20${encodedUrl}`;
+        }
       }
       
       // Копировать ссылку
