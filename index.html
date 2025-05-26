@@ -40,6 +40,26 @@
         return;
       }
       
+      // Отладка: проверяем все элементы модального окна
+      const whatsapp = document.getElementById('shareWhatsApp');
+      const telegram = document.getElementById('shareTelegram');
+      const vk = document.getElementById('shareVK');
+      const email = document.getElementById('shareEmail');
+      const copy = document.getElementById('copyLink');
+      
+      console.log('WhatsApp element:', whatsapp);
+      console.log('Telegram element:', telegram);
+      console.log('VK element:', vk);
+      console.log('Email element:', email);
+      console.log('Copy element:', copy);
+      
+      // Проверяем видимость элементов
+      if (whatsapp) console.log('WhatsApp visible:', window.getComputedStyle(whatsapp).display !== 'none');
+      if (telegram) console.log('Telegram visible:', window.getComputedStyle(telegram).display !== 'none');
+      if (vk) console.log('VK visible:', window.getComputedStyle(vk).display !== 'none');
+      if (email) console.log('Email visible:', window.getComputedStyle(email).display !== 'none');
+      if (copy) console.log('Copy visible:', window.getComputedStyle(copy).display !== 'none');
+      
       // Устанавливаем заголовок в зависимости от типа
       switch(type) {
         case 'vk':
@@ -55,6 +75,13 @@
       
       // Обновляем ссылки для всех способов поделиться
       updateShareLinks(url, type);
+      
+      // Принудительно показываем все элементы
+      if (whatsapp) whatsapp.style.display = 'flex';
+      if (telegram) telegram.style.display = 'flex';
+      if (vk) vk.style.display = 'flex';
+      if (email) email.style.display = 'flex';
+      if (copy) copy.style.display = 'flex';
       
       modal.classList.remove('hidden');
       console.log('Modal should be visible now'); // Отладка
@@ -975,31 +1002,31 @@
       
       <div class="space-y-3">
         <!-- WhatsApp -->
-        <a id="shareWhatsApp" class="share-option" target="_blank">
+        <a id="shareWhatsApp" class="share-option" target="_blank" style="display: flex !important;">
           <i class="fab fa-whatsapp text-green-500"></i>
           <span>WhatsApp</span>
         </a>
         
         <!-- Telegram -->
-        <a id="shareTelegram" class="share-option" target="_blank">
+        <a id="shareTelegram" class="share-option" target="_blank" style="display: flex !important;">
           <i class="fab fa-telegram text-blue-500"></i>
           <span>Telegram</span>
         </a>
         
         <!-- ВКонтакте -->
-        <a id="shareVK" class="share-option" target="_blank">
+        <a id="shareVK" class="share-option" target="_blank" style="display: flex !important;">
           <i class="fab fa-vk text-blue-600"></i>
           <span>ВКонтакте</span>
         </a>
         
         <!-- Копировать ссылку -->
-        <button id="copyLink" class="share-option w-full border-0 bg-transparent">
+        <button id="copyLink" class="share-option w-full border-0 bg-transparent" style="display: flex !important;">
           <i class="fas fa-copy text-gray-600"></i>
           <span>Копировать ссылку</span>
         </button>
         
         <!-- Email -->
-        <a id="shareEmail" class="share-option" target="_blank">
+        <a id="shareEmail" class="share-option" target="_blank" style="display: flex !important;">
           <i class="fas fa-envelope text-red-500"></i>
           <span>Email</span>
         </a>
