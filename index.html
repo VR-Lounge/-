@@ -9,6 +9,253 @@
   <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <!-- VK Widget Script -->
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+  
+  <!-- Функции для модального окна "Поделиться" - объявляем в отдельном скрипте -->
+  <script>
+    // === Функции для модального окна "Поделиться" ===
+    // Объявляем переменные в глобальной области
+    var currentShareUrl = '';
+    var currentShareType = '';
+
+    // Объявляем функции в глобальной области
+    function openShareModal(type, url) {
+      console.log('openShareModal called with:', type, url); // Отладка
+      
+      currentShareUrl = url;
+      currentShareType = type;
+      
+      const modal = document.getElementById('shareModal');
+      const title = document.getElementById('shareModalTitle');
+      
+      console.log('Modal element:', modal); // Отладка
+      console.log('Title element:', title); // Отладка
+      
+      if (!modal) {
+        console.error('Modal shareModal not found!');
+        return;
+      }
+      
+      if (!title) {
+        console.error('Title shareModalTitle not found!');
+        return;
+      }
+      
+      // Устанавливаем заголовок в зависимости от типа
+      switch(type) {
+        case 'vk':
+          title.textContent = 'Поделиться группой ВКонтакте';
+          break;
+        case 'maps':
+          title.textContent = 'Отправить нашу локацию';
+          break;
+        case 'reviews':
+          title.textContent = 'Поделиться отзывами';
+          break;
+      }
+      
+      // Обновляем ссылки для всех способов поделиться
+      updateShareLinks(url, type);
+      
+      modal.classList.remove('hidden');
+      console.log('Modal should be visible now'); // Отладка
+    }
+
+    function closeShareModal() {
+      const modal = document.getElementById('shareModal');
+      if (modal) {
+        modal.classList.add('hidden');
+      }
+    }
+
+    function updateShareLinks(url, type) {
+      const encodedUrl = encodeURIComponent(url);
+      let shareText = '';
+      
+      // Определяем текст для поделиться в зависимости от типа
+      switch(type) {
+        case 'vk':
+          shareText = encodeURIComponent('Присоединяйтесь к нашему сообществу VR Lounge! 🎮');
+          break;
+        case 'maps':
+          shareText = encodeURIComponent('Наша локация VR Lounge - приходите к нам! 📍');
+          break;
+        case 'reviews':
+          shareText = encodeURIComponent('Посмотрите отзывы о VR Lounge! ⭐');
+          break;
+      }
+      
+      // WhatsApp
+      const whatsappEl = document.getElementById('shareWhatsApp');
+      if (whatsappEl) {
+        whatsappEl.href = `https://wa.me/?text=${shareText}%20${encodedUrl}`;
+      }
+      
+      // Telegram
+      const telegramEl = document.getElementById('shareTelegram');
+      if (telegramEl) {
+        telegramEl.href = `https://t.me/share/url?url=${encodedUrl}&text=${shareText}`;
+      }
+      
+      // ВКонтакте
+      const vkEl = document.getElementById('shareVK');
+      if (vkEl) {
+        vkEl.href = `https://vk.com/share.php?url=${encodedUrl}&title=${shareText}`;
+      }
+      
+      // Email
+      const emailEl = document.getElementById('shareEmail');
+      if (emailEl) {
+        emailEl.href = `mailto:?subject=${shareText}&body=${shareText}%20${encodedUrl}`;
+      }
+      
+      // Копировать ссылку
+      const copyEl = document.getElementById('copyLink');
+      if (copyEl) {
+        copyEl.onclick = function() {
+          copyToClipboard(url);
+        };
+      }
+    }
+
+    function copyToClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        // Современный способ
+        navigator.clipboard.writeText(text).then(function() {
+          showCopySuccess();
+        }).catch(function(err) {
+          fallbackCopyTextToClipboard(text);
+        });
+      } else {
+        // Fallback для старых браузеров
+        fallbackCopyTextToClipboard(text);
+      }
+    }
+
+    function fallbackCopyTextToClipboard(text) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.top = "0";
+      textArea.style.left = "0";
+      textArea.style.position = "fixed";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showCopySuccess();
+        } else {
+          showCopyError();
+        }
+      } catch (err) {
+        showCopyError();
+      }
+      
+      document.body.removeChild(textArea);
+    }
+
+    function showCopySuccess() {
+      const copyButton = document.getElementById('copyLink');
+      if (copyButton) {
+        const originalText = copyButton.innerHTML;
+        copyButton.innerHTML = '<i class="fas fa-check text-green-500"></i><span>Скопировано!</span>';
+        copyButton.style.background = '#d4edda';
+        
+        setTimeout(() => {
+          copyButton.innerHTML = originalText;
+          copyButton.style.background = '#f8f9fa';
+        }, 2000);
+      }
+    }
+
+    function showCopyError() {
+      const copyButton = document.getElementById('copyLink');
+      if (copyButton) {
+        const originalText = copyButton.innerHTML;
+        copyButton.innerHTML = '<i class="fas fa-times text-red-500"></i><span>Ошибка копирования</span>';
+        copyButton.style.background = '#f8d7da';
+        
+        setTimeout(() => {
+          copyButton.innerHTML = originalText;
+          copyButton.style.background = '#f8f9fa';
+        }, 2000);
+      }
+    }
+
+    // Тестовая функция для проверки
+    function testShareFunctions() {
+      console.log('Share functions loaded successfully!');
+      console.log('openShareModal function:', typeof openShareModal);
+      console.log('closeShareModal function:', typeof closeShareModal);
+      console.log('updateShareLinks function:', typeof updateShareLinks);
+      console.log('copyToClipboard function:', typeof copyToClipboard);
+      
+      // Проверяем, что функции доступны в глобальной области
+      console.log('window.openShareModal:', typeof window.openShareModal);
+      
+      // Добавляем функции в window для гарантии
+      window.openShareModal = openShareModal;
+      window.closeShareModal = closeShareModal;
+      window.updateShareLinks = updateShareLinks;
+      window.copyToClipboard = copyToClipboard;
+      
+      console.log('Functions added to window object');
+    }
+
+    // Вызываем тестовую функцию
+    testShareFunctions();
+    
+    // Дополнительная проверка после загрузки DOM
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('DOM loaded, checking functions again...');
+      console.log('openShareModal available:', typeof openShareModal);
+      console.log('window.openShareModal available:', typeof window.openShareModal);
+      
+      // Проверяем кнопки поделиться
+      const shareButtons = document.querySelectorAll('.share-button');
+      console.log('Found share buttons:', shareButtons.length);
+      
+      shareButtons.forEach((button, index) => {
+        console.log(`Button ${index + 1}:`, button.onclick);
+        console.log(`Button ${index + 1} onclick attribute:`, button.getAttribute('onclick'));
+      });
+      
+      // Проверяем модальное окно
+      const modal = document.getElementById('shareModal');
+      console.log('Share modal found:', !!modal);
+      
+             if (modal) {
+         console.log('Modal classes:', modal.className);
+         console.log('Modal hidden:', modal.classList.contains('hidden'));
+       }
+       
+       // Альтернативный способ привязки событий
+       shareButtons.forEach((button, index) => {
+         button.addEventListener('click', function(e) {
+           console.log(`Alternative click handler for button ${index + 1}`);
+           const onclickAttr = this.getAttribute('onclick');
+           console.log('Onclick attribute:', onclickAttr);
+           
+           // Если onclick не работает, выполняем вручную
+           if (onclickAttr && typeof window.openShareModal === 'function') {
+             try {
+               // Извлекаем параметры из onclick
+               const match = onclickAttr.match(/openShareModal\('([^']+)',\s*'([^']+)'\)/);
+               if (match) {
+                 const [, type, url] = match;
+                 console.log('Extracted params:', type, url);
+                 window.openShareModal(type, url);
+               }
+             } catch (error) {
+               console.error('Error in alternative click handler:', error);
+             }
+           }
+         });
+       });
+     });
+  </script>
+  
   <style>
     body {
       font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -723,7 +970,7 @@
   <!-- Модальное окно "Поделиться" -->
   <div id="shareModal" class="share-modal fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50">
     <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 relative ring-1 ring-gray-200">
-      <button id="closeShareModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <button id="closeShareModal" onclick="closeShareModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
       <h3 id="shareModalTitle" class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Поделиться</h3>
       
       <div class="space-y-3">
@@ -1017,177 +1264,6 @@
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
     const auth = getAuth(app);
-
-    // === Функции для модального окна "Поделиться" ===
-    // Объявляем переменные в глобальной области
-    var currentShareUrl = '';
-    var currentShareType = '';
-
-    // Объявляем функции в глобальной области
-    function openShareModal(type, url) {
-      console.log('openShareModal called with:', type, url); // Отладка
-      
-      currentShareUrl = url;
-      currentShareType = type;
-      
-      const modal = document.getElementById('shareModal');
-      const title = document.getElementById('shareModalTitle');
-      
-      console.log('Modal element:', modal); // Отладка
-      console.log('Title element:', title); // Отладка
-      
-      if (!modal) {
-        console.error('Modal shareModal not found!');
-        return;
-      }
-      
-      if (!title) {
-        console.error('Title shareModalTitle not found!');
-        return;
-      }
-      
-      // Устанавливаем заголовок в зависимости от типа
-      switch(type) {
-        case 'vk':
-          title.textContent = 'Поделиться группой ВКонтакте';
-          break;
-        case 'maps':
-          title.textContent = 'Отправить нашу локацию';
-          break;
-        case 'reviews':
-          title.textContent = 'Поделиться отзывами';
-          break;
-      }
-      
-      // Обновляем ссылки для всех способов поделиться
-      updateShareLinks(url, type);
-      
-      modal.classList.remove('hidden');
-      console.log('Modal should be visible now'); // Отладка
-    }
-
-    function closeShareModal() {
-      const modal = document.getElementById('shareModal');
-      if (modal) {
-        modal.classList.add('hidden');
-      }
-    }
-
-    function updateShareLinks(url, type) {
-      const encodedUrl = encodeURIComponent(url);
-      let shareText = '';
-      
-      // Определяем текст для поделиться в зависимости от типа
-      switch(type) {
-        case 'vk':
-          shareText = encodeURIComponent('Присоединяйтесь к нашему сообществу VR Lounge! 🎮');
-          break;
-        case 'maps':
-          shareText = encodeURIComponent('Наша локация VR Lounge - приходите к нам! 📍');
-          break;
-        case 'reviews':
-          shareText = encodeURIComponent('Посмотрите отзывы о VR Lounge! ⭐');
-          break;
-      }
-      
-      // WhatsApp
-      const whatsappEl = document.getElementById('shareWhatsApp');
-      if (whatsappEl) {
-        whatsappEl.href = `https://wa.me/?text=${shareText}%20${encodedUrl}`;
-      }
-      
-      // Telegram
-      const telegramEl = document.getElementById('shareTelegram');
-      if (telegramEl) {
-        telegramEl.href = `https://t.me/share/url?url=${encodedUrl}&text=${shareText}`;
-      }
-      
-      // ВКонтакте
-      const vkEl = document.getElementById('shareVK');
-      if (vkEl) {
-        vkEl.href = `https://vk.com/share.php?url=${encodedUrl}&title=${shareText}`;
-      }
-      
-      // Email
-      const emailEl = document.getElementById('shareEmail');
-      if (emailEl) {
-        emailEl.href = `mailto:?subject=${shareText}&body=${shareText}%20${encodedUrl}`;
-      }
-      
-      // Копировать ссылку
-      const copyEl = document.getElementById('copyLink');
-      if (copyEl) {
-        copyEl.onclick = function() {
-          copyToClipboard(url);
-        };
-      }
-    }
-
-    function copyToClipboard(text) {
-      if (navigator.clipboard && window.isSecureContext) {
-        // Современный способ
-        navigator.clipboard.writeText(text).then(function() {
-          showCopySuccess();
-        }).catch(function(err) {
-          fallbackCopyTextToClipboard(text);
-        });
-      } else {
-        // Fallback для старых браузеров
-        fallbackCopyTextToClipboard(text);
-      }
-    }
-
-    function fallbackCopyTextToClipboard(text) {
-      const textArea = document.createElement("textarea");
-      textArea.value = text;
-      textArea.style.top = "0";
-      textArea.style.left = "0";
-      textArea.style.position = "fixed";
-      document.body.appendChild(textArea);
-      textArea.focus();
-      textArea.select();
-      
-      try {
-        const successful = document.execCommand('copy');
-        if (successful) {
-          showCopySuccess();
-        } else {
-          showCopyError();
-        }
-      } catch (err) {
-        showCopyError();
-      }
-      
-      document.body.removeChild(textArea);
-    }
-
-    function showCopySuccess() {
-      const copyButton = document.getElementById('copyLink');
-      if (copyButton) {
-        const originalText = copyButton.innerHTML;
-        copyButton.innerHTML = '<i class="fas fa-check text-green-500"></i><span>Скопировано!</span>';
-        copyButton.style.background = '#d4edda';
-        
-        setTimeout(() => {
-          copyButton.innerHTML = originalText;
-          copyButton.style.background = '#f8f9fa';
-        }, 2000);
-      }
-    }
-
-    function showCopyError() {
-      const copyButton = document.getElementById('copyLink');
-      if (copyButton) {
-        const originalText = copyButton.innerHTML;
-        copyButton.innerHTML = '<i class="fas fa-times text-red-500"></i><span>Ошибка копирования</span>';
-        copyButton.style.background = '#f8d7da';
-        
-        setTimeout(() => {
-          copyButton.innerHTML = originalText;
-          copyButton.style.background = '#f8f9fa';
-        }, 2000);
-      }
-    }
 
     // === Элементы интерфейса ===
     // --- Общие ---
