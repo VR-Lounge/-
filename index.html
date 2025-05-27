@@ -1046,6 +1046,10 @@
             <li>Танцы в XBOX</li>
             <li>Игры на ПК</li>
           </ul>
+          <p class="mt-4 font-semibold text-gray-900 tracking-tight">Дополнительные услуги:</p>
+          <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2 text-base leading-relaxed">
+            <li><span class="font-medium">Ведущая:</span> 1000 ₽ (фиксированная стоимость на весь период мероприятия)</li>
+          </ul>
           <p class="mt-4 text-gray-500 italic text-sm">Можно заказать свою еду и напитки</p>
         </div>
       </div>
@@ -1292,7 +1296,7 @@
             </button>
             <button type="button" class="service-tag" data-service="hostess" data-price="1000">
                <div class="service-tag-line1"><i class="fas fa-user-tie text-pink-600"></i> <span>Ведущая</span></div>
-               <div class="service-tag-price">1000 ₽/час</div>
+               <div class="service-tag-price">1000 ₽</div>
             </button>
         </div>
           <input type="hidden" id="selectedServices" name="selectedServices">
@@ -1335,22 +1339,21 @@
           </div>
         </div>
 
-        <!-- Доплата -->
-        <div class="grid grid-cols-3 gap-3 mt-4">
+        <!-- Доплата (Разделение на Наличные и Перевод) -->
+        <div class="space-y-4 mt-4">
           <div>
-            <label class="block text-gray-900 font-semibold mb-2">Доплата (₽)</label>
-            <input type="number" id="finalPayAmount" min="0" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="0">
+            <label class="block text-gray-900 font-semibold mb-2">Доплата наличными (₽)</label>
+            <div class="grid grid-cols-2 gap-3">
+              <input type="number" id="finalPayAmountCash" min="0" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="0">
+              <input type="date" id="finalPayDateCash" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900">
+            </div>
           </div>
           <div>
-            <label class="block text-gray-900 font-semibold mb-2">Метод</label>
-            <select id="finalPayMethod" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900">
-              <option value="cash">Наличные</option>
-              <option value="transfer">Перевод</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-gray-900 font-semibold mb-2">Дата</label>
-            <input type="date" id="finalPayDate" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900">
+            <label class="block text-gray-900 font-semibold mb-2">Доплата переводом (₽)</label>
+            <div class="grid grid-cols-2 gap-3">
+              <input type="number" id="finalPayAmountTransfer" min="0" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="0">
+              <input type="date" id="finalPayDateTransfer" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900">
+            </div>
           </div>
         </div>
 
@@ -2102,9 +2105,10 @@
                   <div><span class="font-medium">Скидка:</span> ${discountText}</div>
                   <div><span class="font-medium">Итого:</span> ${finalBookingAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
                 </div>
-                <div class="grid grid-cols-2 gap-x-4 text-xs text-gray-600">
-                  <div><span class="font-medium">Предоплата:</span> ${b.prepayment && b.prepayment.amount ? `${b.prepayment.amount.toLocaleString('ru-RU')} ₽ (${b.prepayment.method === 'cash' ? 'нал' : 'перевод'})` : '-'}</div>
-                  <div><span class="font-medium">Доплата:</span> ${b.finalPayment && b.finalPayment.amount ? `${b.finalPayment.amount.toLocaleString('ru-RU')} ₽ (${b.finalPayment.method === 'cash' ? 'нал' : 'перевод'})` : '-'}</div>
+                <div class="text-xs text-gray-600 space-y-1 mt-1">
+                  <div><span class="font-medium">Предоплата:</span> ${b.prepayment && b.prepayment.amount ? `${b.prepayment.amount.toLocaleString('ru-RU')} ₽ (${b.prepayment.method === 'cash' ? 'нал' : 'перевод'})${b.prepayment.date ? ' от ' + new Date(b.prepayment.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
+                  <div><span class="font-medium">Доплата нал:</span> ${b.finalPaymentCash && b.finalPaymentCash.amount ? `${b.finalPaymentCash.amount.toLocaleString('ru-RU')} ₽${b.finalPaymentCash.date ? ' от ' + new Date(b.finalPaymentCash.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
+                  <div><span class="font-medium">Доплата пер:</span> ${b.finalPaymentTransfer && b.finalPaymentTransfer.amount ? `${b.finalPaymentTransfer.amount.toLocaleString('ru-RU')} ₽${b.finalPaymentTransfer.date ? ' от ' + new Date(b.finalPaymentTransfer.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
                 </div>
                 <div><span class="font-medium">Смена:</span> ${shiftText}</div>
             `;
@@ -2189,13 +2193,21 @@
         document.getElementById('prepayDate').value = '';
       }
 
-      if (booking.finalPayment) {
-        document.getElementById('finalPayAmount').value = booking.finalPayment.amount || '';
-        document.getElementById('finalPayMethod').value = booking.finalPayment.method || 'cash';
-        document.getElementById('finalPayDate').value = booking.finalPayment.date || '';
+      // Заполняем данные доплаты наличными и переводом
+      if (booking.finalPaymentCash) {
+        document.getElementById('finalPayAmountCash').value = booking.finalPaymentCash.amount || '';
+        document.getElementById('finalPayDateCash').value = booking.finalPaymentCash.date || '';
       } else {
-        document.getElementById('finalPayAmount').value = '';
-        document.getElementById('finalPayDate').value = '';
+        document.getElementById('finalPayAmountCash').value = '';
+        document.getElementById('finalPayDateCash').value = '';
+      }
+
+      if (booking.finalPaymentTransfer) {
+        document.getElementById('finalPayAmountTransfer').value = booking.finalPaymentTransfer.amount || '';
+        document.getElementById('finalPayDateTransfer').value = booking.finalPaymentTransfer.date || '';
+      } else {
+        document.getElementById('finalPayAmountTransfer').value = '';
+        document.getElementById('finalPayDateTransfer').value = '';
       }
     }
 
@@ -2224,10 +2236,13 @@
           method: document.getElementById('prepayMethod').value || '',
           date: document.getElementById('prepayDate').value || ''
         },
-        finalPayment: {
-          amount: parseFloat(document.getElementById('finalPayAmount').value) || 0,
-          method: document.getElementById('finalPayMethod').value || '',
-          date: document.getElementById('finalPayDate').value || ''
+        finalPaymentCash: { // Доплата наличными
+          amount: parseFloat(document.getElementById('finalPayAmountCash').value) || 0,
+          date: document.getElementById('finalPayDateCash').value || ''
+        },
+        finalPaymentTransfer: { // Доплата переводом
+          amount: parseFloat(document.getElementById('finalPayAmountTransfer').value) || 0,
+          date: document.getElementById('finalPayDateTransfer').value || ''
         }
       };
 
@@ -4052,9 +4067,10 @@
                     <div><span class="font-medium">Скидка:</span> ${discountText}</div>
                     <div><span class="font-medium">Итоговая:</span> ${finalAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
                   </div>
-                  <div class="grid grid-cols-2 gap-x-4 text-xs text-gray-600 mt-1">
-                    <div><span class="font-medium">Предоплата:</span> ${b.prepayment && b.prepayment.amount ? `${b.prepayment.amount.toLocaleString('ru-RU')} ₽ (${b.prepayment.method === 'cash' ? 'нал' : 'перевод'})` : '-'}</div>
-                    <div><span class="font-medium">Доплата:</span> ${b.finalPayment && b.finalPayment.amount ? `${b.finalPayment.amount.toLocaleString('ru-RU')} ₽ (${b.finalPayment.method === 'cash' ? 'нал' : 'перевод'})` : '-'}</div>
+                  <div class="text-xs text-gray-600 space-y-1 mt-1">
+                    <div><span class="font-medium">Предоплата:</span> ${b.prepayment && b.prepayment.amount ? `${b.prepayment.amount.toLocaleString('ru-RU')} ₽ (${b.prepayment.method === 'cash' ? 'нал' : 'перевод'})${b.prepayment.date ? ' от ' + new Date(b.prepayment.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
+                    <div><span class="font-medium">Доплата нал:</span> ${b.finalPaymentCash && b.finalPaymentCash.amount ? `${b.finalPaymentCash.amount.toLocaleString('ru-RU')} ₽${b.finalPaymentCash.date ? ' от ' + new Date(b.finalPaymentCash.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
+                    <div><span class="font-medium">Доплата пер:</span> ${b.finalPaymentTransfer && b.finalPaymentTransfer.amount ? `${b.finalPaymentTransfer.amount.toLocaleString('ru-RU')} ₽${b.finalPaymentTransfer.date ? ' от ' + new Date(b.finalPaymentTransfer.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
                   </div>
                 `;
                 // --- Конец Финансовой информации ---
