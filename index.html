@@ -1290,6 +1290,10 @@
                <div class="service-tag-line1"><i class="fas fa-birthday-cake text-red-600"></i> <span>Аренда всего (День Рождения)</span></div>
                <div class="service-tag-price">от 3000 ₽/час</div> <!-- Цена для ДР динамическая -->
             </button>
+            <button type="button" class="service-tag" data-service="hostess" data-price="1000">
+               <div class="service-tag-line1"><i class="fas fa-user-tie text-pink-600"></i> <span>Ведущая</span></div>
+               <div class="service-tag-price">1000 ₽/час</div>
+            </button>
         </div>
           <input type="hidden" id="selectedServices" name="selectedServices">
         </div>
@@ -1310,6 +1314,44 @@
               <span class="text-gray-500">или</span>
               <input type="number" id="discountAmount" min="0" class="w-1/2 rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="₽">
             </div>
+        </div>
+
+        <!-- Предоплата -->
+        <div class="grid grid-cols-3 gap-3">
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Предоплата (₽)</label>
+            <input type="number" id="prepayAmount" min="0" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="0">
+          </div>
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Метод</label>
+            <select id="prepayMethod" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900">
+              <option value="cash">Наличные</option>
+              <option value="transfer">Перевод</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Дата</label>
+            <input type="date" id="prepayDate" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900">
+          </div>
+        </div>
+
+        <!-- Доплата -->
+        <div class="grid grid-cols-3 gap-3 mt-4">
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Доплата (₽)</label>
+            <input type="number" id="finalPayAmount" min="0" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900" placeholder="0">
+          </div>
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Метод</label>
+            <select id="finalPayMethod" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900">
+              <option value="cash">Наличные</option>
+              <option value="transfer">Перевод</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Дата</label>
+            <input type="date" id="finalPayDate" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900">
+          </div>
         </div>
 
         <!-- Итоговая стоимость (остается ниже) -->
@@ -1549,6 +1591,7 @@
         // Другие услуги
         karaoke: 1000, // Караоке
         board_games: 500, // Настольные игры
+        hostess: 1000, // Ведущая (фикс. стоимость)
         // День рождения
         birthday: {
             1: 4000, 2: 3500, 3: 3000, 4: 3000, 5: 3000,
@@ -2009,6 +2052,9 @@
                         else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
                      }
                      bookingTotalAmount += birthdayTotal;
+                   } else if (service === 'hostess') {
+                     // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                     bookingTotalAmount += servicePrices.hostess;
                    } else {
                      const price = servicePrices[service] || 0;
                      bookingTotalAmount += price * duration;
@@ -2055,6 +2101,10 @@
                   <div><span class="font-medium">Сумма:</span> ${bookingTotalAmount.toLocaleString('ru-RU')} ₽</div>
                   <div><span class="font-medium">Скидка:</span> ${discountText}</div>
                   <div><span class="font-medium">Итого:</span> ${finalBookingAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
+                </div>
+                <div class="grid grid-cols-2 gap-x-4 text-xs text-gray-600">
+                  <div><span class="font-medium">Предоплата:</span> ${b.prepayment && b.prepayment.amount ? `${b.prepayment.amount.toLocaleString('ru-RU')} ₽ (${b.prepayment.method === 'cash' ? 'нал' : 'перевод'})` : '-'}</div>
+                  <div><span class="font-medium">Доплата:</span> ${b.finalPayment && b.finalPayment.amount ? `${b.finalPayment.amount.toLocaleString('ru-RU')} ₽ (${b.finalPayment.method === 'cash' ? 'нал' : 'перевод'})` : '-'}</div>
                 </div>
                 <div><span class="font-medium">Смена:</span> ${shiftText}</div>
             `;
@@ -2128,6 +2178,25 @@
       // Выделить день в календаре
       selectedDate = new Date(booking.bookingDate + 'T00:00:00'); // Установка времени на начало дня для корректной даты
       renderCalendar();
+
+      // Заполняем данные предоплаты / доплаты, если есть
+      if (booking.prepayment) {
+        document.getElementById('prepayAmount').value = booking.prepayment.amount || '';
+        document.getElementById('prepayMethod').value = booking.prepayment.method || 'cash';
+        document.getElementById('prepayDate').value = booking.prepayment.date || '';
+      } else {
+        document.getElementById('prepayAmount').value = '';
+        document.getElementById('prepayDate').value = '';
+      }
+
+      if (booking.finalPayment) {
+        document.getElementById('finalPayAmount').value = booking.finalPayment.amount || '';
+        document.getElementById('finalPayMethod').value = booking.finalPayment.method || 'cash';
+        document.getElementById('finalPayDate').value = booking.finalPayment.date || '';
+      } else {
+        document.getElementById('finalPayAmount').value = '';
+        document.getElementById('finalPayDate').value = '';
+      }
     }
 
     async function handleBookingFormSubmit(e) {
@@ -2150,6 +2219,16 @@
         notes: bookingForm.notes.value.trim(),
         discountPercent: parseFloat(bookingForm.discountPercent.value) || 0, // Сохраняем скидку %
         discountAmount: parseFloat(bookingForm.discountAmount.value) || 0, // Сохраняем скидку ₽
+        prepayment: {
+          amount: parseFloat(document.getElementById('prepayAmount').value) || 0,
+          method: document.getElementById('prepayMethod').value || '',
+          date: document.getElementById('prepayDate').value || ''
+        },
+        finalPayment: {
+          amount: parseFloat(document.getElementById('finalPayAmount').value) || 0,
+          method: document.getElementById('finalPayMethod').value || '',
+          date: document.getElementById('finalPayDate').value || ''
+        }
       };
 
         // --- Валидация ---
@@ -2713,8 +2792,10 @@
                         else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
                      }
                      bookingTotalAmount += birthdayTotal;
-                   } else { 
-                                      // Обычный расчет для других услуг
+                   } else if (service === 'hostess') {
+                     // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                     bookingTotalAmount += servicePrices.hostess;
+                   } else {
                      const price = servicePrices[service] || 0;
                      bookingTotalAmount += price * duration;
                    }
@@ -3063,6 +3144,9 @@
                                         else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
                                      }
                                      bookingTotalAmount += birthdayTotal;
+                                   } else if (service === 'hostess') {
+                                     // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                                     bookingTotalAmount += servicePrices.hostess;
                                    } else {
                                      const price = servicePrices[service] || 0;
                                      bookingTotalAmount += price * duration;
@@ -3427,6 +3511,7 @@
         case 'karaoke': return 'Караоке';
         case 'board_games': return 'Наст. игры';
         case 'birthday': return 'Аренда (ДР)';
+        case 'hostess': return 'Ведущая (фикс. стоимость)';
         default: return 'Неизв. услуга'; // Сокращено
       }
     }
@@ -3476,6 +3561,9 @@
           }
 
           total += birthdayTotal;
+        } else if (service === 'hostess') {
+          // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+          total += servicePrices.hostess;
         } else {
           // Обычный расчет для других услуг (цена * длительность)
           const price = servicePrices[service] || 0;
@@ -3560,7 +3648,10 @@
                         else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
                      }
                      bookingTotalAmount += birthdayTotal;
-                   } else { 
+                   } else if (service === 'hostess') {
+                     // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                     bookingTotalAmount += servicePrices.hostess;
+                   } else {
                      const price = servicePrices[service] || 0;
                      bookingTotalAmount += price * duration;
                    }
@@ -3711,8 +3802,10 @@
                                  else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
                              }
                              bookingTotalAmount += birthdayTotal;
+                         } else if (service === 'hostess') {
+                           // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                           bookingTotalAmount += servicePrices.hostess;
                          } else {
-                             // Обычный расчет для других услуг
                              const price = servicePrices[service] || 0;
                              bookingTotalAmount += price * duration;
                          }
@@ -3930,6 +4023,9 @@
                             else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
                          }
                          totalAmount += birthdayTotal;
+                       } else if (service === 'hostess') {
+                         // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                         totalAmount += servicePrices.hostess;
                        } else {
                          const price = servicePrices[service] || 0;
                          totalAmount += price * duration;
@@ -3954,7 +4050,11 @@
                   <div class="grid grid-cols-3 gap-x-4 text-sm mt-3 pt-3 border-t border-gray-100">
                     <div><span class="font-medium">Сумма:</span> ${totalAmount.toLocaleString('ru-RU')} ₽</div>
                     <div><span class="font-medium">Скидка:</span> ${discountText}</div>
-                    <div><span class="font-medium">Итого:</span> ${finalAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
+                    <div><span class="font-medium">Итоговая:</span> ${finalAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
+                  </div>
+                  <div class="grid grid-cols-2 gap-x-4 text-xs text-gray-600 mt-1">
+                    <div><span class="font-medium">Предоплата:</span> ${b.prepayment && b.prepayment.amount ? `${b.prepayment.amount.toLocaleString('ru-RU')} ₽ (${b.prepayment.method === 'cash' ? 'нал' : 'перевод'})` : '-'}</div>
+                    <div><span class="font-medium">Доплата:</span> ${b.finalPayment && b.finalPayment.amount ? `${b.finalPayment.amount.toLocaleString('ru-RU')} ₽ (${b.finalPayment.method === 'cash' ? 'нал' : 'перевод'})` : '-'}</div>
                   </div>
                 `;
                 // --- Конец Финансовой информации ---
@@ -3998,7 +4098,7 @@
 
                     const editBtn = document.createElement('button');
                     editBtn.type = 'button';
-                    editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1 text-sm inline-flex items-center';
+                    editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
                     editBtn.innerHTML = '<i class="fas fa-edit fa-fw mr-1"></i> Редакт.';
                     editBtn.addEventListener('click', (e) => {
                         e.stopPropagation();
@@ -4008,7 +4108,7 @@
 
                     const deleteBtn = document.createElement('button');
                     deleteBtn.type = 'button';
-                    deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1 text-sm inline-flex items-center';
+                    deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
                     deleteBtn.innerHTML = '<i class="fas fa-trash-alt fa-fw mr-1"></i> Удалить';
                     deleteBtn.addEventListener('click', (e) => {
                         e.stopPropagation();
@@ -4076,6 +4176,9 @@
                 else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
               }
               bookingTotalAmount += birthdayTotal;
+            } else if (service === 'hostess') {
+              // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+              bookingTotalAmount += servicePrices.hostess;
             } else {
               const price = servicePrices[service] || 0;
               bookingTotalAmount += price * duration;
@@ -4257,6 +4360,9 @@
                   else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
                 }
                 total += birthdayTotal;
+              } else if (service === 'hostess') {
+                // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                total += servicePrices.hostess;
               } else {
                 const price = servicePrices[service] || 0;
                 total += price * duration;
