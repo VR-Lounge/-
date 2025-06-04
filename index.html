@@ -2852,8 +2852,7 @@
                           const basePay = 500; // Фиксированная ставка за смену
                           adminData.baseSalary += basePay;
                           const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-                          const revenueForBonus = Math.max(0, dayRevenue - servicePrices.hostess);
-                          const bonus = revenueForBonus * bonusPercent; // исключаем ведущую
+                          const bonus = dayRevenue * bonusPercent; // <- Считается от dayRevenue после скидок
                           adminData.bonusSalary += bonus;
                           adminData.totalSalary += basePay + bonus;
 
@@ -4165,7 +4164,6 @@
       // Рассчитываем выручку дня
       let dayRevenue = 0;
       let birthdayRevenue = 0;
-      let hostessRevenue = 0; // Суммарная фикс. стоимость ведущей за день (используется для корректировки бонуса)
 
       dayBookings.forEach(booking => {
         let bookingTotalAmount = 0;
@@ -4197,7 +4195,6 @@
             } else if (service === 'hostess') {
               // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
               bookingTotalAmount += servicePrices.hostess;
-              hostessRevenue += servicePrices.hostess;
             } else {
               const price = servicePrices[service] || 0;
               bookingTotalAmount += price * duration;
@@ -4256,8 +4253,7 @@
         
         // Расчет бонуса основного администратора
         const bonusPercent = helperAdmin ? 8 : 15;
-        const revenueForBonusMain = Math.max(0, dayRevenue - hostessRevenue);
-        const bonus = (revenueForBonusMain * bonusPercent / 100).toFixed(0);
+        const bonus = (dayRevenue * bonusPercent / 100).toFixed(0);
         const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
         
         adminInfoHTML += `
@@ -4302,8 +4298,7 @@
         const hours = actualHelperHours > 0 ? actualHelperHours : assignedHours;
         const basePay = hours * 150;
         const bonusPercent = 7;
-        const revenueForBonusHelper = Math.max(0, birthdayRevenue - hostessRevenue);
-        const bonus = revenueForBonusHelper * bonusPercent; // бонус без ведущей
+        const bonus = (birthdayRevenue * bonusPercent / 100).toFixed(0);
         const totalHelperSalary = (basePay + parseFloat(bonus)).toFixed(0);
         
         let hoursWarning = '';
@@ -4446,12 +4441,6 @@
         actualHelperHours = Math.round(actualHelperHours);
       }
       
-      // Итоговая сумма зарплаты за день (с учётом выручки без ведущей)
-      const totalPayroll = (
-        (mainAdmin ? 500 + (revenueForBonusMain * (helperAdmin ? 0.08 : 0.15)) : 0) +
-        (helperAdmin && actualHelperHours > 0 ? (actualHelperHours * 150) + (revenueForBonusHelper * 0.07) : 0)
-      );
-      
       const financeHTML = `
         <h4 class="font-semibold text-lg text-green-800 mb-3">Финансовая сводка</h4>
         <div class="space-y-2">
@@ -4470,7 +4459,13 @@
           <div class="flex justify-between border-t border-green-200 pt-2 mt-1">
             <span class="font-medium">Всего заработная плата:</span>
             <span class="font-bold text-green-800 text-lg">
-              ${totalPayroll.toFixed(0).toLocaleString('ru-RU')} ₽
+              ${(
+                // Зарплата основного: ставка + бонус
+                (mainAdmin ? 500 + (dayRevenue * (helperAdmin ? 0.08 : 0.15)) : 0) + 
+                // Зарплата помощника: почасовая + бонус от ДР
+                (helperAdmin && actualHelperHours > 0 ? 
+                  (actualHelperHours * 150) + (birthdayRevenue * 0.07) : 0)
+              ).toFixed(0).toLocaleString('ru-RU')} ₽
             </span>
           </div>
         </div>
