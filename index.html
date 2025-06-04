@@ -3518,6 +3518,37 @@
       
       // --- Модальное окно деталей администраторов ---
       closeAdminDayDetailsModalBtn.addEventListener('click', () => adminDayDetailsModal.classList.add('hidden'));
+
+      // Закрытие модальных окон по клику вне их области
+      document.addEventListener('click', function(event) {
+           if (event.target.classList.contains('fixed')) {
+               if (!authContainer.classList.contains('hidden')) {
+                   authContainer.classList.add('hidden');
+               }
+               if (!bookingModal.classList.contains('hidden')) {
+                   bookingModal.classList.add('hidden');
+               }
+               if (!assignAdminModal.classList.contains('hidden')) {
+                   assignAdminModal.classList.add('hidden');
+               }
+               if (!dayDetailsModal.classList.contains('hidden')) {
+                   dayDetailsModal.classList.add('hidden');
+               }
+               if (!adminDayDetailsModal.classList.contains('hidden')) {
+                   adminDayDetailsModal.classList.add('hidden');
+               }
+           }
+      });
+
+      // Закрытие модальных окон по кнопкам
+      closeModalBtn.addEventListener('click', () => bookingModal.classList.add('hidden'));
+      closeAssignModal.addEventListener('click', () => assignAdminModal.classList.add('hidden'));
+      closeDayDetailsModalBtn.addEventListener('click', () => dayDetailsModal.classList.add('hidden'));
+      
+      // Обработчик для закрытия модального окна деталей администраторов
+      document.getElementById('closeAdminDayDetailsModal').addEventListener('click', function() {
+        document.getElementById('adminDayDetailsModal').classList.add('hidden');
+      });
     }
 
     // === Вспомогательные функции для отображения ===
@@ -4237,7 +4268,7 @@
         }
         
         // Добавляем в общую выручку за день
-        dayRevenue += parseFloat(booking.amount || 0);
+        dayRevenue += parseFloat(booking.amount.replace(/[^\d.-]/g, '')) || 0;
       });
 
       // Создаем HTML для отображения информации
