@@ -2851,6 +2851,17 @@
                           }
                       });
 
+                      // Вычитаем фиксированную стоимость "Ведущей" из дневной выручки перед расчетом бонуса администратора.
+                      // Это нужно сделать ОДИН раз за день, если услуга "Ведущая" была хоть в одном бронировании дня.
+                      const hasHostessService = dayBookings.some(booking => 
+                          (booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.includes('hostess')) || 
+                          booking.serviceType === 'hostess' // Обратная совместимость
+                      );
+
+                      if (hasHostessService) {
+                          dayRevenue -= 1000; // Фиксированная стоимость Ведущей
+                      }
+
                       totalMonthRevenue += dayRevenue; // Добавляем к общей выручке месяца (уже с учетом скидок)
 
                       // Начисление зарплаты основному администратору (используем dayRevenue ПОСЛЕ скидок и вычета Ведущей)
