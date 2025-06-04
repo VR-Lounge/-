@@ -4441,6 +4441,9 @@
         actualHelperHours = Math.round(actualHelperHours);
       }
       
+      // Рассчитываем выручку для бонуса, исключая стоимость ведущей
+      const revenueForBonus = birthdayRevenue - 1000;
+      
       const financeHTML = `
         <h4 class="font-semibold text-lg text-green-800 mb-3">Финансовая сводка</h4>
         <div class="space-y-2">
@@ -4461,10 +4464,10 @@
             <span class="font-bold text-green-800 text-lg">
               ${(
                 // Зарплата основного: ставка + бонус
-                (mainAdmin ? 500 + (dayRevenue * (helperAdmin ? 0.08 : 0.15)) : 0) + 
+                (mainAdmin ? 500 + (revenueForBonus * (helperAdmin ? 0.08 : 0.15)) : 0) + 
                 // Зарплата помощника: почасовая + бонус от ДР
                 (helperAdmin && actualHelperHours > 0 ? 
-                  (actualHelperHours * 150) + (birthdayRevenue * 0.07) : 0)
+                  (actualHelperHours * 150) + (revenueForBonus * 0.07) : 0)
               ).toFixed(0).toLocaleString('ru-RU')} ₽
             </span>
           </div>
