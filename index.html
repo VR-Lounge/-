@@ -2783,7 +2783,6 @@
                       const dateStr = assignment.date; // Строка даты 'YYYY-MM-DD'
                       const dayBookings = bookingsByDate[dateStr] || [];
                       let dayRevenue = 0; // Выручка дня ПОСЛЕ скидок
-                      let hostessTotal = 0; // Сумма ведущей за день
 
                       // Расчет выручки за день
                       dayBookings.forEach(booking => {
@@ -2811,7 +2810,6 @@
                    } else if (service === 'hostess') {
                      // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
                      bookingTotalAmount += servicePrices.hostess;
-                     hostessTotal += servicePrices.hostess; // <--- накапливаем сумму ведущей
                    } else {
                      const price = servicePrices[service] || 0;
                      bookingTotalAmount += price * duration;
@@ -2843,19 +2841,26 @@
                           }
 
                           dayRevenue += finalBookingAmount; // Добавляем к выручке дня ИТОГОВУЮ сумму бронирования
+
+                          // Вычитаем фиксированную стоимость "Ведущей" из выручки для расчета бонуса админам
+                          // Стоимость Ведущей не должна входить в базу для расчета бонуса
+                          if (booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.includes('hostess')) {
+                              dayRevenue -= 1000; // Фиксированная стоимость Ведущей
+                          } else if (booking.serviceType === 'hostess') { // Обратная совместимость
+                              dayRevenue -= 1000; // Фиксированная стоимость Ведущей
+                          }
                       });
 
                       totalMonthRevenue += dayRevenue; // Добавляем к общей выручке месяца (уже с учетом скидок)
 
-                      // Начисление зарплаты основному администратору (используем dayRevenue ПОСЛЕ скидок)
+                      // Начисление зарплаты основному администратору (используем dayRevenue ПОСЛЕ скидок и вычета Ведущей)
                       if (assignment.mainAdminId && salaryData[assignment.mainAdminId]) {
                           const adminData = salaryData[assignment.mainAdminId];
                           adminData.daysWorked++;
                           const basePay = 500; // Фиксированная ставка за смену
                           adminData.baseSalary += basePay;
                           const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-                          const bonusBase = Math.max(0, dayRevenue - hostessTotal); // <--- вычитаем hostess
-                          const bonus = bonusBase * bonusPercent; // <--- считаем бонус от скорректированной суммы
+                          const bonus = dayRevenue * bonusPercent; // <- Считается от dayRevenue после скидок
                           adminData.bonusSalary += bonus;
                           adminData.totalSalary += basePay + bonus;
 
@@ -2865,7 +2870,6 @@
                               base: basePay,
                               bonus: bonus, // Сохраняем бонус, посчитанный от правильной выручки
                               revenue: dayRevenue, // Сохраняем выручку дня после скидок
-                              hostess: hostessTotal, // Новое поле для детализации
                               hours: 0
                           });
                       }
