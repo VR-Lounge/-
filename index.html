@@ -2237,6 +2237,7 @@
         notes: bookingForm.notes.value.trim(),
         discountPercent: parseFloat(bookingForm.discountPercent.value) || 0, // Сохраняем скидку %
         discountAmount: parseFloat(bookingForm.discountAmount.value) || 0, // Сохраняем скидку ₽
+        amount: parseFloat(document.getElementById('finalAmount').value.replace(/[^\d.-]/g, '')) || 0,
         prepayment: {
           amount: parseFloat(document.getElementById('prepayAmount').value) || 0,
           method: document.getElementById('prepayMethod').value || '',
@@ -4268,7 +4269,11 @@
         }
         
         // Добавляем в общую выручку за день
-        dayRevenue += parseFloat(booking.amount.replace(/[^\d.-]/g, '')) || 0;
+        if (booking.amount !== undefined && booking.amount !== null) {
+          dayRevenue += parseFloat(String(booking.amount).replace(/[^\d.-]/g, '')) || 0;
+        } else {
+          dayRevenue += finalBookingAmount || 0;
+        }
       });
 
       // Создаем HTML для отображения информации
