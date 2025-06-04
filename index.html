@@ -10,6 +10,10 @@
   <!-- VK Widget Script -->
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
   
+  <!-- Наши скрипты -->
+  <script src="calculations.js"></script>
+  <script src="modal_handlers.js"></script>
+  
   <!-- Функции для модального окна "Поделиться" - объявляем в отдельном скрипте -->
   <script>
     // === Функции для модального окна "Поделиться" ===
@@ -724,8 +728,6 @@
       color: #1d1d1f !important;
     }
   </style>
-  <script src="calculations.js"></script>
-  <script src="modal_handlers.js"></script>
 </head>
 <body>
   <!-- Форма входа -->
@@ -2417,7 +2419,8 @@
           
           if (assignment && assignment.mainAdminId) {
             // Если есть назначение - показываем детали
-            showAdminDayDetailsModal(date, dateStr, assignment);
+            const dateObj = new Date(dateStr + 'T00:00:00');
+            showAdminDayDetailsModal(dateObj, dateStr, assignment);
           } else {
             // Если нет назначения - открываем окно для назначения администратора
             openAssignModal(date, dateStr);
