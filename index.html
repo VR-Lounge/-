@@ -2846,37 +2846,26 @@
                       totalMonthRevenue += dayRevenue; // Добавляем к общей выручке месяца (уже с учетом скидок)
 
                       // Начисление зарплаты основному администратору (используем dayRevenue ПОСЛЕ скидок)
-                      // === Вычитаем стоимость ведущей из dayRevenue для расчёта бонуса ===
-let hostessAmountDay = 0;
-dayBookings.forEach(b => {
-    if (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.includes("hostess")) {
-        hostessAmountDay += servicePrices.hostess || 0;
-    } else if (b.serviceType === "hostess") {
-        hostessAmountDay += servicePrices.hostess || 0;
-    }
-});
+                      if (assignment.mainAdminId && salaryData[assignment.mainAdminId]) {
+                          const adminData = salaryData[assignment.mainAdminId];
+                          adminData.daysWorked++;
+                          const basePay = 500; // Фиксированная ставка за смену
+                          adminData.baseSalary += basePay;
+                          const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
+                          const revenueForBonus = Math.max(0, dayRevenue - servicePrices.hostess);
+                          const bonus = revenueForBonus * bonusPercent; // исключаем ведущую
+                          adminData.bonusSalary += bonus;
+                          adminData.totalSalary += basePay + bonus;
 
-if (assignment.mainAdminId && salaryData[assignment.mainAdminId]) {
-    const adminData = salaryData[assignment.mainAdminId];
-    adminData.daysWorked++;
-    const basePay = 500; // Фиксированная ставка за смену
-    adminData.baseSalary += basePay;
-    const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-    // Вычитаем ведущую из dayRevenue для бонуса
-    const revenueForBonus = Math.max(0, dayRevenue - hostessAmountDay);
-    const bonus = revenueForBonus * bonusPercent;
-    adminData.bonusSalary += bonus;
-    adminData.totalSalary += basePay + bonus;
-
-    adminData.details.push({
-        date: dateStr,
-        type: 'Основная смена',
-        base: basePay,
-        bonus: bonus, // Сохраняем бонус, посчитанный от правильной выручки
-        revenue: dayRevenue, // Сохраняем выручку дня после скидок
-        hours: 0
-    });
-}
+                          adminData.details.push({
+                              date: dateStr,
+                              type: 'Основная смена',
+                              base: basePay,
+                              bonus: bonus, // Сохраняем бонус, посчитанный от правильной выручки
+                              revenue: dayRevenue, // Сохраняем выручку дня после скидок
+                              hours: 0
+                          });
+                      }
 
                       // Начисление зарплаты помощнику (используем dayRevenue ПОСЛЕ скидок)
                       if (assignment.helperAdminId && salaryData[assignment.helperAdminId] && assignment.helperHours) {
@@ -3866,56 +3855,12 @@ if (assignment.mainAdminId && salaryData[assignment.mainAdminId]) {
             });
 
             // Начисление основному (используем dayRevenue, которая теперь УЧИТЫВАЕТ скидки)
-            // === Корректный расчет бонуса для недельной детализации (выручка минус ведущая) ===
-// === Корректный расчет бонуса: только от "Аренда (ДР)" минус ведущая ===
-let birthdayRevenue = 0;
-let hostessAmountDay = 0;
-dayBookings.forEach(b => {
-    const isBirthday = (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.includes('birthday')) || b.serviceType === 'birthday';
-    if (isBirthday) {
-        // Итоговая сумма за бронирование с учетом скидки
-        let bookingTotalAmount = 0;
-        const duration = parseFloat(b.duration) || 0;
-        if (b.selectedServices && Array.isArray(b.selectedServices)) {
-            b.selectedServices.forEach(service => {
-                if (service === 'birthday') {
-                    const fullHours = Math.floor(duration);
-                    const hasHalfHour = duration % 1 !== 0;
-                    let birthdayTotal = 0;
-                    for (let hour = 1; hour <= fullHours; hour++) {
-                        const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
-                        birthdayTotal += hourPrice;
-                    }
-                    if (hasHalfHour) {
-                        if (fullHours === 0) { birthdayTotal += 2000; }
-                        else if (fullHours === 1) { birthdayTotal += 2000; }
-                        else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
-                    }
-                    bookingTotalAmount += birthdayTotal;
-                } else if (service === 'hostess') {
-                    hostessAmountDay += servicePrices.hostess || 0;
-                } else {
-                    const price = servicePrices[service] || 0;
-                    bookingTotalAmount += price * duration;
-                }
-            });
-        }
-        // Применяем скидку
-        const discountPercent = b.discountPercent || 0;
-        const discountAmount = b.discountAmount || 0;
-        let finalBookingAmount = bookingTotalAmount;
-        if (discountPercent > 0) {
-            finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
-        } else if (discountAmount > 0) {
-            finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
-        }
-        birthdayRevenue += finalBookingAmount;
-    }
-});
-const revenueForBonus = Math.max(0, birthdayRevenue - hostessAmountDay);
-const bonus = revenueForBonus * bonusPercent;
-    weeklyPayrollData[assignment.mainAdminId].total += basePay + bonus;
-}
+            if (assignment.mainAdminId && weeklyPayrollData[assignment.mainAdminId]) {
+                const basePay = 500;
+                const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
+                const bonus = dayRevenue * bonusPercent;
+                weeklyPayrollData[assignment.mainAdminId].total += basePay + bonus;
+            }
 
              // Начисление помощнику (используем dayRevenue, которая теперь УЧИТЫВАЕТ скидки)
             if (assignment.helperAdminId && weeklyPayrollData[assignment.helperAdminId] && assignment.helperHours) {
@@ -4220,6 +4165,7 @@ const bonus = revenueForBonus * bonusPercent;
       // Рассчитываем выручку дня
       let dayRevenue = 0;
       let birthdayRevenue = 0;
+      let hostessRevenue = 0; // Суммарная фикс. стоимость ведущей за день (используется для корректировки бонуса)
 
       dayBookings.forEach(booking => {
         let bookingTotalAmount = 0;
@@ -4251,6 +4197,7 @@ const bonus = revenueForBonus * bonusPercent;
             } else if (service === 'hostess') {
               // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
               bookingTotalAmount += servicePrices.hostess;
+              hostessRevenue += servicePrices.hostess;
             } else {
               const price = servicePrices[service] || 0;
               bookingTotalAmount += price * duration;
@@ -4308,72 +4255,23 @@ const bonus = revenueForBonus * bonusPercent;
         `;
         
         // Расчет бонуса основного администратора
-        // === Корректный расчет бонуса для отображения (только "Аренда ДР" минус ведущая) ===
-const bonusPercent = helperAdmin ? 8 : 15;
-let birthdayRevenueInfo = 0;
-let hostessAmountDayInfo = 0;
-dayBookings.forEach(b => {
-    const isBirthday = (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.includes('birthday')) || b.serviceType === 'birthday';
-    if (isBirthday) {
-        // Итоговая сумма за бронирование с учетом скидки
-        let bookingTotalAmount = 0;
-        const duration = parseFloat(b.duration) || 0;
-        if (b.selectedServices && Array.isArray(b.selectedServices)) {
-            b.selectedServices.forEach(service => {
-                if (service === 'birthday') {
-                    const fullHours = Math.floor(duration);
-                    const hasHalfHour = duration % 1 !== 0;
-                    let birthdayTotal = 0;
-                    for (let hour = 1; hour <= fullHours; hour++) {
-                        const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
-                        birthdayTotal += hourPrice;
-                    }
-                    if (hasHalfHour) {
-                        if (fullHours === 0) { birthdayTotal += 2000; }
-                        else if (fullHours === 1) { birthdayTotal += 2000; }
-                        else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
-                    }
-                    bookingTotalAmount += birthdayTotal;
-                } else if (service === 'hostess') {
-                    hostessAmountDayInfo += servicePrices.hostess || 0;
-                } else {
-                    const price = servicePrices[service] || 0;
-                    bookingTotalAmount += price * duration;
-                }
-            });
-        }
-        // Применяем скидку
-        const discountPercent = b.discountPercent || 0;
-        const discountAmount = b.discountAmount || 0;
-        let finalBookingAmount = bookingTotalAmount;
-        if (discountPercent > 0) {
-            finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
-        } else if (discountAmount > 0) {
-            finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
-        }
-        birthdayRevenueInfo += finalBookingAmount;
-    }
-});
-const revenueForBonusInfo = Math.max(0, birthdayRevenueInfo - hostessAmountDayInfo);
-const bonus = (revenueForBonusInfo * bonusPercent / 100).toFixed(0);
-const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
-let bonusLabel = `Бонус (${bonusPercent}% от выручки)`;
-if (hostessAmountDayInfo > 0) {
-    bonusLabel = `Бонус (${bonusPercent}% от выручки минус ведущая)`;
-}
-
-adminInfoHTML += `
-      <div class="flex justify-between">
-        <span>${bonusLabel}:</span>
-        <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
-      </div>
-      <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
-        <span class="font-medium">Итого за день:</span>
-        <span class="font-semibold text-blue-700">${parseInt(totalSalary).toLocaleString('ru-RU')} ₽</span>
-      </div>
-    </div>
-  </div>
-`;
+        const bonusPercent = helperAdmin ? 8 : 15;
+        const revenueForBonusMain = Math.max(0, dayRevenue - hostessRevenue);
+        const bonus = (revenueForBonusMain * bonusPercent / 100).toFixed(0);
+        const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
+        
+        adminInfoHTML += `
+              <div class="flex justify-between">
+                <span>Бонус (${bonusPercent}% от выручки):</span>
+                <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
+                <span class="font-medium">Итого за день:</span>
+                <span class="font-semibold text-blue-700">${parseInt(totalSalary).toLocaleString('ru-RU')} ₽</span>
+              </div>
+            </div>
+          </div>
+        `;
       } else {
         adminInfoHTML += `
           <div>
@@ -4404,7 +4302,8 @@ adminInfoHTML += `
         const hours = actualHelperHours > 0 ? actualHelperHours : assignedHours;
         const basePay = hours * 150;
         const bonusPercent = 7;
-        const bonus = (birthdayRevenue * bonusPercent / 100).toFixed(0);
+        const revenueForBonusHelper = Math.max(0, birthdayRevenue - hostessRevenue);
+        const bonus = revenueForBonusHelper * bonusPercent; // бонус без ведущей
         const totalHelperSalary = (basePay + parseFloat(bonus)).toFixed(0);
         
         let hoursWarning = '';
@@ -4547,6 +4446,12 @@ adminInfoHTML += `
         actualHelperHours = Math.round(actualHelperHours);
       }
       
+      // Итоговая сумма зарплаты за день (с учётом выручки без ведущей)
+      const totalPayroll = (
+        (mainAdmin ? 500 + (revenueForBonusMain * (helperAdmin ? 0.08 : 0.15)) : 0) +
+        (helperAdmin && actualHelperHours > 0 ? (actualHelperHours * 150) + (revenueForBonusHelper * 0.07) : 0)
+      );
+      
       const financeHTML = `
         <h4 class="font-semibold text-lg text-green-800 mb-3">Финансовая сводка</h4>
         <div class="space-y-2">
@@ -4565,13 +4470,7 @@ adminInfoHTML += `
           <div class="flex justify-between border-t border-green-200 pt-2 mt-1">
             <span class="font-medium">Всего заработная плата:</span>
             <span class="font-bold text-green-800 text-lg">
-              ${(
-                // Зарплата основного: ставка + бонус
-                (mainAdmin ? 500 + (dayRevenue * (helperAdmin ? 0.08 : 0.15)) : 0) + 
-                // Зарплата помощника: почасовая + бонус от ДР
-                (helperAdmin && actualHelperHours > 0 ? 
-                  (actualHelperHours * 150) + (birthdayRevenue * 0.07) : 0)
-              ).toFixed(0).toLocaleString('ru-RU')} ₽
+              ${totalPayroll.toFixed(0).toLocaleString('ru-RU')} ₽
             </span>
           </div>
         </div>
