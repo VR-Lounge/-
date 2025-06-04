@@ -4253,7 +4253,7 @@
         
         // Расчет бонуса основного администратора
         const bonusPercent = helperAdmin ? 8 : 15;
-        const bonus = (dayRevenue * bonusPercent / 100).toFixed(0);
+        const bonus = (revenueForBonus * bonusPercent / 100).toFixed(0);
         const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
         
         adminInfoHTML += `
