@@ -4442,7 +4442,7 @@
       }
       
       // Рассчитываем выручку для бонуса, исключая стоимость ведущей
-      const revenueForBonus = birthdayRevenue - 1000;
+      const revenueForBonus = Math.max(birthdayRevenue - 1000, 0);
       
       const financeHTML = `
         <h4 class="font-semibold text-lg text-green-800 mb-3">Финансовая сводка</h4>
