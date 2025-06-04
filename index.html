@@ -2816,7 +2816,7 @@
                    }
                  });
                           } else if (booking.serviceType) { // Обратная совместимость со старым полем
-                               // Логика расчета суммы ДО скидки по старому полю serviceType
+                               // Логика расчета суммы ДО скидки по старому полю
                                // ... (логика расчета bookingRevenue по serviceType остается той же, но присваиваем в bookingTotalAmount) ...
                                console.warn('Using legacy serviceType for monthly salary calculation (calculating pre-discount amount)', booking);
                                if (booking.serviceType === 'birthday') {
@@ -2852,7 +2852,16 @@
                           const basePay = 500; // Фиксированная ставка за смену
                           adminData.baseSalary += basePay;
                           const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-                          const bonus = dayRevenue * bonusPercent; // <- Считается от dayRevenue после скидок
+                          
+                          // Вычитаем стоимость ведущей из выручки дня, если была услуга 'Ведущая' в записях ДР
+                          let revenueForBonus = dayRevenue;
+                          dayBookings.forEach(booking => {
+                              if (booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.includes('hostess')) {
+                                  revenueForBonus -= servicePrices.hostess || 1000; // Вычитаем стоимость ведущей (используем 1000 как запасное значение)
+                              }
+                          });
+
+                          const bonus = revenueForBonus * bonusPercent; // <- Считается от скорректированной выручки
                           adminData.bonusSalary += bonus;
                           adminData.totalSalary += basePay + bonus;
 
@@ -3826,7 +3835,7 @@
                          }
                      });
                  } else if (booking.serviceType) { // Обратная совместимость со старым полем
-                      // Логика расчета суммы ДО скидки по старому полю serviceType
+                      // Логика расчета суммы ДО скидки по старому полю
                       // ... (логика расчета bookingRevenue по serviceType остается той же, но присваиваем в bookingTotalAmount) ...
                        console.warn('Using legacy serviceType for weekly payroll calculation (calculating pre-discount amount)', booking);
                        if (booking.serviceType === 'birthday') {
@@ -3857,7 +3866,16 @@
             if (assignment.mainAdminId && weeklyPayrollData[assignment.mainAdminId]) {
                 const basePay = 500;
                 const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-                const bonus = dayRevenue * bonusPercent;
+                
+                // Вычитаем стоимость ведущей из выручки дня, если была услуга 'Ведущая' в записях ДР
+                let revenueForBonus = dayRevenue;
+                dayBookings.forEach(booking => {
+                    if (booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.includes('hostess')) {
+                        revenueForBonus -= servicePrices.hostess || 1000; // Вычитаем стоимость ведущей (используем 1000 как запасное значение)
+                    }
+                });
+
+                const bonus = revenueForBonus * bonusPercent; // <- Считается от скорректированной выручки
                 weeklyPayrollData[assignment.mainAdminId].total += basePay + bonus;
             }
 
@@ -4253,6 +4271,15 @@
         
         // Расчет бонуса основного администратора
         const bonusPercent = helperAdmin ? 8 : 15;
+        
+        // Вычитаем стоимость ведущей из выручки дня, если была услуга 'Ведущая' в записях ДР
+        let revenueForBonus = dayRevenue;
+        dayBookings.forEach(booking => {
+            if (booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.includes('hostess')) {
+                revenueForBonus -= servicePrices.hostess || 1000; // Вычитаем стоимость ведущей (используем 1000 как запасное значение)
+            }
+        });
+        
         const bonus = (revenueForBonus * bonusPercent / 100).toFixed(0);
         const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
         
@@ -4441,9 +4468,6 @@
         actualHelperHours = Math.round(actualHelperHours);
       }
       
-      // Рассчитываем выручку для бонуса, исключая стоимость ведущей
-      const revenueForBonus = Math.max(birthdayRevenue - 1000, 0);
-      
       const financeHTML = `
         <h4 class="font-semibold text-lg text-green-800 mb-3">Финансовая сводка</h4>
         <div class="space-y-2">
@@ -4467,7 +4491,7 @@
                 (mainAdmin ? 500 + (revenueForBonus * (helperAdmin ? 0.08 : 0.15)) : 0) + 
                 // Зарплата помощника: почасовая + бонус от ДР
                 (helperAdmin && actualHelperHours > 0 ? 
-                  (actualHelperHours * 150) + (revenueForBonus * 0.07) : 0)
+                  (actualHelperHours * 150) + (birthdayRevenue * 0.07) : 0)
               ).toFixed(0).toLocaleString('ru-RU')} ₽
             </span>
           </div>
