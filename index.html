@@ -4237,7 +4237,7 @@
         }
         
         // Добавляем в общую выручку за день
-        dayRevenue += booking.totalAmount || 0;
+        dayRevenue += parseFloat(booking.amount || 0);
       });
 
       // Создаем HTML для отображения информации
