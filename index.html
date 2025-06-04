@@ -2783,6 +2783,7 @@
                       const dateStr = assignment.date; // Строка даты 'YYYY-MM-DD'
                       const dayBookings = bookingsByDate[dateStr] || [];
                       let dayRevenue = 0; // Выручка дня ПОСЛЕ скидок
+                      let hostessTotal = 0; // Сумма ведущей за день
 
                       // Расчет выручки за день
                       dayBookings.forEach(booking => {
@@ -2810,6 +2811,7 @@
                    } else if (service === 'hostess') {
                      // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
                      bookingTotalAmount += servicePrices.hostess;
+                     hostessTotal += servicePrices.hostess; // <--- накапливаем сумму ведущей
                    } else {
                      const price = servicePrices[service] || 0;
                      bookingTotalAmount += price * duration;
@@ -2852,7 +2854,8 @@
                           const basePay = 500; // Фиксированная ставка за смену
                           adminData.baseSalary += basePay;
                           const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-                          const bonus = dayRevenue * bonusPercent; // <- Считается от dayRevenue после скидок
+                          const bonusBase = Math.max(0, dayRevenue - hostessTotal); // <--- вычитаем hostess
+                          const bonus = bonusBase * bonusPercent; // <--- считаем бонус от скорректированной суммы
                           adminData.bonusSalary += bonus;
                           adminData.totalSalary += basePay + bonus;
 
@@ -2862,6 +2865,7 @@
                               base: basePay,
                               bonus: bonus, // Сохраняем бонус, посчитанный от правильной выручки
                               revenue: dayRevenue, // Сохраняем выручку дня после скидок
+                              hostess: hostessTotal, // Новое поле для детализации
                               hours: 0
                           });
                       }
