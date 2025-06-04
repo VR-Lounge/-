@@ -1510,7 +1510,7 @@
     const clientPhoneInput = document.getElementById('clientPhone');
 
     // --- График администраторов ---
-    const adminScheduleSection = document.getElementById('adminScheduleSection'); // Секция графика
+    const adminScheduleSection = document.getElementById('adminScheduleSection');
     const adminsCalendar = document.getElementById('adminsCalendar');
     const currentMonthAdmins = document.getElementById('currentMonthAdmins');
     const prevMonthAdminsBtn = document.getElementById('prevMonthAdmins');
@@ -1523,12 +1523,11 @@
     const assignDateInput = document.getElementById('assignDate');
     const mainAdminSelect = document.getElementById('mainAdmin');
     const helperAdminSelect = document.getElementById('helperAdmin');
-    const helperAdminSection = document.getElementById('helperAdminSection'); // Контейнер для помощника
-    const helperHoursSection = document.getElementById('helperHoursSection'); // Контейнер для часов помощника
+    const helperAdminSection = document.getElementById('helperAdminSection');
+    const helperHoursSection = document.getElementById('helperHoursSection');
     const helperHoursInput = document.getElementById('helperHours');
     const closeAssignModal = document.getElementById('closeAssignModal');
-    const deleteAssignmentBtn = document.getElementById('deleteAssignmentBtn'); // Кнопка удаления назначения
-    // Новые элементы для выбора Дня Рождения
+    const deleteAssignmentBtn = document.getElementById('deleteAssignmentBtn');
     const birthdayBookingSection = document.getElementById('birthdayBookingSection');
     const birthdayBookingSelect = document.getElementById('birthdayBookingSelect');
     const maxHelperHoursNote = document.getElementById('maxHelperHoursNote');
@@ -1540,20 +1539,11 @@
     const dayDetailsContent = document.getElementById('dayDetailsContent');
     const closeDayDetailsModalBtn = document.getElementById('closeDayDetailsModal');
 
-    // --- Расчет зарплаты ---
-    const salarySection = document.getElementById('salarySection'); // Секция ЗП
-    const salaryResults = document.getElementById('salaryResults');
-    const currentMonthSalary = document.getElementById('currentMonthSalary');
-    const prevMonthSalaryBtn = document.getElementById('prevMonthSalary');
-    const nextMonthSalaryBtn = document.getElementById('nextMonthSalary');
-
-    // --- Статистика Выручки ---
-    const revenueTodayEl = document.getElementById('revenueToday');
-    const revenueCurrentWeekEl = document.getElementById('revenueCurrentWeek');
-    const revenueSelectedMonthEl = document.getElementById('revenueSelectedMonth');
-    // --- Еженедельная ЗП ---
-    const weeklyPayrollPeriodEl = document.getElementById('weeklyPayrollPeriod');
-    const weeklyPayrollResultsEl = document.getElementById('weeklyPayrollResults');
+    // --- Модальное окно деталей администраторов ---
+    const adminDayDetailsModal = document.getElementById('adminDayDetailsModal');
+    const adminDayDetailsTitle = document.getElementById('adminDayDetailsTitle');
+    const adminDayDetailsContent = document.getElementById('adminDayDetailsContent');
+    const closeAdminDayDetailsModalBtn = document.getElementById('closeAdminDayDetailsModal');
 
     // === Состояние приложения ===
     let currentDate = new Date(); // Для календаря клиентов
