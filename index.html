@@ -3867,20 +3867,53 @@ if (assignment.mainAdminId && salaryData[assignment.mainAdminId]) {
 
             // Начисление основному (используем dayRevenue, которая теперь УЧИТЫВАЕТ скидки)
             // === Корректный расчет бонуса для недельной детализации (выручка минус ведущая) ===
+// === Корректный расчет бонуса: только от "Аренда (ДР)" минус ведущая ===
+let birthdayRevenue = 0;
 let hostessAmountDay = 0;
-(dayBookings || []).forEach(b => {
-    if (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.includes('hostess')) {
-        hostessAmountDay += servicePrices.hostess || 0;
-    } else if (b.serviceType === 'hostess') {
-        hostessAmountDay += servicePrices.hostess || 0;
+dayBookings.forEach(b => {
+    const isBirthday = (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.includes('birthday')) || b.serviceType === 'birthday';
+    if (isBirthday) {
+        // Итоговая сумма за бронирование с учетом скидки
+        let bookingTotalAmount = 0;
+        const duration = parseFloat(b.duration) || 0;
+        if (b.selectedServices && Array.isArray(b.selectedServices)) {
+            b.selectedServices.forEach(service => {
+                if (service === 'birthday') {
+                    const fullHours = Math.floor(duration);
+                    const hasHalfHour = duration % 1 !== 0;
+                    let birthdayTotal = 0;
+                    for (let hour = 1; hour <= fullHours; hour++) {
+                        const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                        birthdayTotal += hourPrice;
+                    }
+                    if (hasHalfHour) {
+                        if (fullHours === 0) { birthdayTotal += 2000; }
+                        else if (fullHours === 1) { birthdayTotal += 2000; }
+                        else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                    }
+                    bookingTotalAmount += birthdayTotal;
+                } else if (service === 'hostess') {
+                    hostessAmountDay += servicePrices.hostess || 0;
+                } else {
+                    const price = servicePrices[service] || 0;
+                    bookingTotalAmount += price * duration;
+                }
+            });
+        }
+        // Применяем скидку
+        const discountPercent = b.discountPercent || 0;
+        const discountAmount = b.discountAmount || 0;
+        let finalBookingAmount = bookingTotalAmount;
+        if (discountPercent > 0) {
+            finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+        } else if (discountAmount > 0) {
+            finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+        }
+        birthdayRevenue += finalBookingAmount;
     }
 });
-
-if (assignment.mainAdminId && weeklyPayrollData[assignment.mainAdminId]) {
-    const basePay = 500;
-    const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-    const revenueForBonus = Math.max(0, dayRevenue - hostessAmountDay);
-    const bonus = revenueForBonus * bonusPercent;
+const revenueForBonus = Math.max(0, birthdayRevenue - hostessAmountDay);
+const bonus = revenueForBonus * bonusPercent;
     weeklyPayrollData[assignment.mainAdminId].total += basePay + bonus;
 }
 
@@ -4275,17 +4308,53 @@ if (assignment.mainAdminId && weeklyPayrollData[assignment.mainAdminId]) {
         `;
         
         // Расчет бонуса основного администратора
-        // === Корректный расчет бонуса для отображения (выручка минус ведущая) ===
+        // === Корректный расчет бонуса для отображения (только "Аренда ДР" минус ведущая) ===
 const bonusPercent = helperAdmin ? 8 : 15;
+let birthdayRevenueInfo = 0;
 let hostessAmountDayInfo = 0;
 dayBookings.forEach(b => {
-    if (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.includes('hostess')) {
-        hostessAmountDayInfo += servicePrices.hostess || 0;
-    } else if (b.serviceType === 'hostess') {
-        hostessAmountDayInfo += servicePrices.hostess || 0;
+    const isBirthday = (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.includes('birthday')) || b.serviceType === 'birthday';
+    if (isBirthday) {
+        // Итоговая сумма за бронирование с учетом скидки
+        let bookingTotalAmount = 0;
+        const duration = parseFloat(b.duration) || 0;
+        if (b.selectedServices && Array.isArray(b.selectedServices)) {
+            b.selectedServices.forEach(service => {
+                if (service === 'birthday') {
+                    const fullHours = Math.floor(duration);
+                    const hasHalfHour = duration % 1 !== 0;
+                    let birthdayTotal = 0;
+                    for (let hour = 1; hour <= fullHours; hour++) {
+                        const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                        birthdayTotal += hourPrice;
+                    }
+                    if (hasHalfHour) {
+                        if (fullHours === 0) { birthdayTotal += 2000; }
+                        else if (fullHours === 1) { birthdayTotal += 2000; }
+                        else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                    }
+                    bookingTotalAmount += birthdayTotal;
+                } else if (service === 'hostess') {
+                    hostessAmountDayInfo += servicePrices.hostess || 0;
+                } else {
+                    const price = servicePrices[service] || 0;
+                    bookingTotalAmount += price * duration;
+                }
+            });
+        }
+        // Применяем скидку
+        const discountPercent = b.discountPercent || 0;
+        const discountAmount = b.discountAmount || 0;
+        let finalBookingAmount = bookingTotalAmount;
+        if (discountPercent > 0) {
+            finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+        } else if (discountAmount > 0) {
+            finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+        }
+        birthdayRevenueInfo += finalBookingAmount;
     }
 });
-const revenueForBonusInfo = Math.max(0, dayRevenue - hostessAmountDayInfo);
+const revenueForBonusInfo = Math.max(0, birthdayRevenueInfo - hostessAmountDayInfo);
 const bonus = (revenueForBonusInfo * bonusPercent / 100).toFixed(0);
 const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
 let bonusLabel = `Бонус (${bonusPercent}% от выручки)`;
