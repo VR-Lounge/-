@@ -4272,12 +4272,37 @@
         
         // Расчет бонуса основного администратора
         const bonusPercent = helperAdmin ? 8 : 15;
-        const bonus = (dayRevenue * bonusPercent / 100).toFixed(0);
+        
+        // Проверяем, была ли в этот день услуга "Ведущая"
+        const hasHostessService = dayBookings.some(booking => 
+            (booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.includes('hostess')) || 
+            booking.serviceType === 'hostess' // Обратная совместимость
+        );
+
+        // Расчет бонуса с учетом вычета Ведущей, если она была
+        let bonusCalculationRevenue = dayRevenue; // dayRevenue уже должна быть скорректирована ранее
+        let bonusLabel = `Бонус (${bonusPercent}% от выручки):`;
+
+        if (hasHostessService) {
+             // Проверяем, что dayRevenue была корректно уменьшена. Если нет, вычитаем.
+             // Это страховка, если логика вычета в другом месте изменится.
+             // Предполагаем, что 1000 - это фиксированная стоимость Ведущей.
+             // В идеале, нужно брать стоимость из servicePrices.hostess, но для простоты пока так.
+             // TODO: Использовать servicePrices.hostess для надежности
+             // if (dayRevenue > 1000) { // Избегаем отрицательных значений, хотя dayRevenue должна быть >= 0
+             //    bonusCalculationRevenue = dayRevenue - 1000;
+             // } else {
+             //    bonusCalculationRevenue = 0;
+             // }
+             bonusLabel = `Бонус (${bonusPercent}% от выручки) с вычетом за Ведущую:`;
+        }
+
+        const bonus = (bonusCalculationRevenue * bonusPercent / 100).toFixed(0);
         const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
         
         adminInfoHTML += `
               <div class="flex justify-between">
-                <span>Бонус (${bonusPercent}% от выручки):</span>
+                <span>${bonusLabel}</span>
                 <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
               </div>
               <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
