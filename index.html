@@ -3049,6 +3049,7 @@
         }
       });
 
+      const totalRevenue = actualRevenue + plannedRevenue;
       revenueCard.innerHTML = `
         <h3 class="text-lg font-semibold mb-4 text-green-800">Общая выручка за месяц</h3>
         <div class="space-y-3">
@@ -3755,6 +3756,8 @@
         let revenueToday = 0;
         let revenueCurrentWeek = { actual: 0, planned: 0 };
         let revenueSelectedMonth = { actual: 0, planned: 0 };
+        let actualRevenue = 0;
+        let plannedRevenue = 0;
 
         bookings.forEach(booking => {
             if (typeof booking.bookingDate !== 'string') return;
@@ -3828,8 +3831,10 @@
             if (booking.bookingDate.startsWith(monthYearStr)) {
                 if (isPlanned) {
                     revenueSelectedMonth.planned += finalBookingAmount;
+                    plannedRevenue += finalBookingAmount;
                 } else {
                     revenueSelectedMonth.actual += finalBookingAmount;
+                    actualRevenue += finalBookingAmount;
                 }
             }
         });
@@ -3880,6 +3885,9 @@
                         <span class="font-medium">Включая планируемую: ${month.planned.toLocaleString('ru-RU')} ₽</span>
                     </div>
                 ` : ''}
+                <div class="text-xs text-gray-600 mt-1">
+                    <span>Фактическая: ${month.actual.toLocaleString('ru-RU')} ₽</span>
+                </div>
             `;
         }
 
