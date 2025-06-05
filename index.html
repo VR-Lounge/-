@@ -2867,7 +2867,13 @@
                           const basePay = 500; // Фиксированная ставка за смену
                           adminData.baseSalary += basePay;
                           const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-                          const bonusRevenue = birthdayRevenue - hostessRevenue;
+                          
+                          // Если есть день рождения, считаем от (выручка ДР - ведущая + другие услуги)
+                          // Если нет дня рождения, считаем от общей выручки
+                          const bonusRevenue = birthdayRevenue > 0 ? 
+                            (birthdayRevenue - hostessRevenue + (dayRevenue - birthdayRevenue)) : 
+                            dayRevenue;
+                            
                           const bonus = bonusRevenue * bonusPercent;
                           adminData.bonusSalary += bonus;
                           adminData.totalSalary += basePay + bonus;
@@ -2876,8 +2882,8 @@
                               date: dateStr,
                               type: 'Основная смена',
                               base: basePay,
-                              bonus: bonus, // Сохраняем бонус, посчитанный от правильной выручки
-                              revenue: dayRevenue, // Сохраняем выручку дня после скидок
+                              bonus: bonus,
+                              revenue: dayRevenue,
                               hours: 0
                           });
                       }
