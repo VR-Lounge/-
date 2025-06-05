@@ -3747,12 +3747,14 @@
         const currentWeek = getWeekRange(new Date());
         const currentWeekStartStr = formatDateSafe(currentWeek.start);
         const currentWeekEndStr = formatDateSafe(currentWeek.end);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
 
         const monthYearStr = `${salaryViewMonth.getFullYear()}-${(salaryViewMonth.getMonth() + 1).toString().padStart(2, '0')}`;
 
         let revenueToday = 0;
-        let revenueCurrentWeek = 0;
-        let revenueSelectedMonth = 0;
+        let revenueCurrentWeek = { actual: 0, planned: 0 };
+        let revenueSelectedMonth = { actual: 0, planned: 0 };
 
         bookings.forEach(booking => {
             if (typeof booking.bookingDate !== 'string') return;
@@ -3808,15 +3810,27 @@
               finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
             }
 
+            // Определяем, планируемая это выручка или фактическая
+            const bookingDate = new Date(booking.bookingDate + 'T00:00:00');
+            const isPlanned = bookingDate > today;
+
             // Суммируем итоговую выручку
             if (booking.bookingDate === todayStr) {
                 revenueToday += finalBookingAmount;
             }
             if (booking.bookingDate >= currentWeekStartStr && booking.bookingDate <= currentWeekEndStr) {
-                revenueCurrentWeek += finalBookingAmount;
+                if (isPlanned) {
+                    revenueCurrentWeek.planned += finalBookingAmount;
+                } else {
+                    revenueCurrentWeek.actual += finalBookingAmount;
+                }
             }
             if (booking.bookingDate.startsWith(monthYearStr)) {
-                revenueSelectedMonth += finalBookingAmount;
+                if (isPlanned) {
+                    revenueSelectedMonth.planned += finalBookingAmount;
+                } else {
+                    revenueSelectedMonth.actual += finalBookingAmount;
+                }
             }
         });
 
@@ -3846,8 +3860,28 @@
         const revenueSelectedMonthEl = document.getElementById('revenueSelectedMonth');
 
         if (revenueTodayEl) revenueTodayEl.textContent = `${today.toLocaleString('ru-RU')} ₽`;
-        if (revenueCurrentWeekEl) revenueCurrentWeekEl.textContent = `${week.toLocaleString('ru-RU')} ₽`;
-        if (revenueSelectedMonthEl) revenueSelectedMonthEl.textContent = `${month.toLocaleString('ru-RU')} ₽`;
+        if (revenueCurrentWeekEl) {
+            const totalWeekRevenue = week.actual + week.planned;
+            revenueCurrentWeekEl.innerHTML = `
+                ${totalWeekRevenue.toLocaleString('ru-RU')} ₽
+                ${week.planned > 0 ? `
+                    <div class="text-xs text-blue-600 mt-1">
+                        <span class="font-medium">Включая планируемую: ${week.planned.toLocaleString('ru-RU')} ₽</span>
+                    </div>
+                ` : ''}
+            `;
+        }
+        if (revenueSelectedMonthEl) {
+            const totalMonthRevenue = month.actual + month.planned;
+            revenueSelectedMonthEl.innerHTML = `
+                ${totalMonthRevenue.toLocaleString('ru-RU')} ₽
+                ${month.planned > 0 ? `
+                    <div class="text-xs text-blue-600 mt-1">
+                        <span class="font-medium">Включая планируемую: ${month.planned.toLocaleString('ru-RU')} ₽</span>
+                    </div>
+                ` : ''}
+            `;
+        }
 
         // Функция для добавления/обновления параграфа с датой/периодом
         const upsertDateParagraph = (parentElement, dateString, elementId) => {
