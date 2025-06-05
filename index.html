@@ -748,7 +748,7 @@
 </div>
 
   <!-- Основной интерфейс -->
-  <header class="bg-white/60 shadow-md sticky top-0 z-30 backdrop-blur-md">
+  <header class="bg-white/50 shadow-md sticky top-0 z-30 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row md:items-center md:justify-between">
       <h1 class="text-3xl font-semibold tracking-tight text-gray-900 select-none" style="font-weight: 600;">VR Lounge - Управление</h1>
       <div class="flex items-center space-x-4 mt-2 md:mt-0">
@@ -872,7 +872,7 @@
         <!-- КОНЕЦ СТАТИСТИКИ ВЫРУЧКИ -->
 
 
-        <!-- СЕГОДНЯ К ВЫПЛАТЕ (показывается только в понедельник) -->
+        <!-- БЛОК СЕГОДНЯШНИХ ВЫПЛАТ (показывается только в понедельник) -->
         <div id="todayPayrollBlock" class="mb-8 p-6 bg-green-50 border border-green-200 rounded-2xl hidden">
             <h4 class="font-semibold text-base mb-3 text-green-900">Сегодня к выплате:</h4>
             <p id="todayPayrollPeriod" class="text-xs text-green-700 mb-3"></p>
@@ -880,7 +880,6 @@
                 <!-- Результаты сегодняшних выплат -->
             </div>
         </div>
-        <!-- КОНЕЦ БЛОКА СЕГОДНЯШНИХ ВЫПЛАТ -->
 
         <!-- ЕЖЕНЕДЕЛЬНЫЙ РАСЧЕТ К ВЫПЛАТЕ -->
         <div class="mb-8 p-6 bg-yellow-50 border border-yellow-200 rounded-2xl">
@@ -2836,7 +2835,7 @@
                    }
                  });
                           } else if (booking.serviceType) { // Обратная совместимость со старым полем
-                               // Логика расчета суммы ДО скидки по старому полю
+                               // Логика расчета суммы ДО скидки по старому полю serviceType
                                // ... (логика расчета bookingRevenue по serviceType остается той же, но присваиваем в bookingTotalAmount) ...
                                console.warn('Using legacy serviceType for monthly salary calculation (calculating pre-discount amount)', booking);
                                if (booking.serviceType === 'birthday') {
@@ -2865,8 +2864,6 @@
                            // Если это День Рождения, добавляем в birthdayRevenue
                            if (isBirthdayService) {
                                birthdayRevenue += finalBookingAmount;
-                           } else {
-                               otherServicesRevenue += finalBookingAmount;
                            }
                       });
 
@@ -2883,7 +2880,7 @@
                           // Если есть день рождения, считаем от (выручка ДР - ведущая + другие услуги)
                           // Если нет дня рождения, считаем от общей выручки
                           const bonusRevenue = birthdayRevenue > 0 ? 
-                            (birthdayRevenue - hostessRevenue + otherServicesRevenue) : 
+                            (birthdayRevenue - hostessRevenue + (dayRevenue - birthdayRevenue)) : 
                             dayRevenue;
                             
                           const bonus = bonusRevenue * bonusPercent;
@@ -2896,9 +2893,6 @@
                               base: basePay,
                               bonus: bonus,
                               revenue: dayRevenue,
-                              birthdayRevenue: birthdayRevenue,
-                              hostessRevenue: hostessRevenue,
-                              otherServicesRevenue: otherServicesRevenue,
                               hours: 0
                           });
                       }
@@ -3921,45 +3915,70 @@
     }
 
 
-    // === Расчет Зарплаты за Прошлую Неделю ===
+    // === Расчет Зарплаты за Текущую и Прошлую Неделю ===
     function calculateWeeklyPayroll() {
         const today = new Date();
+        const isMonday = today.getDay() === 1;
         const currentWeek = getWeekRange(today);
+        
+        // Получаем диапазон для текущей недели
         const weekStartStr = formatDateSafe(currentWeek.start);
         const weekEndStr = formatDateSafe(currentWeek.end);
 
-        // Если сегодня понедельник, показываем выплаты за прошлую неделю
-        if (isMonday(today)) {
-            const prevWeek = getPreviousWeekRange(today);
-            const prevWeekStartStr = formatDateSafe(prevWeek.start);
-            const prevWeekEndStr = formatDateSafe(prevWeek.end);
-            calculateTodayPayroll(prevWeekStartStr, prevWeekEndStr);
-        } else {
-            // Скрываем блок выплат за прошлую неделю
-            document.getElementById('todayPayrollBlock').classList.add('hidden');
-        }
+        // Получаем диапазон для прошлой недели
+        const previousWeek = {
+            start: new Date(currentWeek.start),
+            end: new Date(currentWeek.start)
+        };
+        previousWeek.start.setDate(previousWeek.start.getDate() - 7);
+        previousWeek.end.setDate(previousWeek.end.getDate() - 1);
+        const prevWeekStartStr = formatDateSafe(previousWeek.start);
+        const prevWeekEndStr = formatDateSafe(previousWeek.end);
 
-        const weeklyPayrollData = {}; // { adminId: { name: 'Name', total: 0 } }
+        // Создаем объект для хранения данных по зарплате
+        const weeklyPayrollData = {}; // { adminId: { name: 'Name', total: 0, previousWeekTotal: 0 } }
 
         // 1. Инициализация данных
         admins.forEach(admin => {
-            weeklyPayrollData[admin.id] = { name: admin.name, total: 0 };
+            weeklyPayrollData[admin.id] = { 
+                name: admin.name, 
+                total: 0,
+                previousWeekTotal: 0
+            };
         });
 
-        // 2. Фильтруем назначения и бронирования за текущую неделю
+        // 2. Фильтруем назначения и бронирования за текущую и прошлую недели
         const weekAssignments = adminAssignments.filter(a =>
             typeof a.date === 'string' && a.date >= weekStartStr && a.date <= weekEndStr
         );
 
+        const prevWeekAssignments = isMonday ? adminAssignments.filter(a =>
+            typeof a.date === 'string' && a.date >= prevWeekStartStr && a.date <= prevWeekEndStr
+        ) : [];
+
         const weekBookingsByDate = {};
+        const prevWeekBookingsByDate = {};
+        
         bookings.forEach(booking => {
-             if (typeof booking.bookingDate === 'string' && booking.bookingDate >= weekStartStr && booking.bookingDate <= weekEndStr) {
-                const dateStr = booking.bookingDate;
-                if (!weekBookingsByDate[dateStr]) {
-                    weekBookingsByDate[dateStr] = [];
+            if (typeof booking.bookingDate === 'string') {
+                // Для текущей недели
+                if (booking.bookingDate >= weekStartStr && booking.bookingDate <= weekEndStr) {
+                    const dateStr = booking.bookingDate;
+                    if (!weekBookingsByDate[dateStr]) {
+                        weekBookingsByDate[dateStr] = [];
+                    }
+                    weekBookingsByDate[dateStr].push(booking);
                 }
-                weekBookingsByDate[dateStr].push(booking);
-             }
+                
+                // Для прошлой недели (только если сегодня понедельник)
+                if (isMonday && booking.bookingDate >= prevWeekStartStr && booking.bookingDate <= prevWeekEndStr) {
+                    const dateStr = booking.bookingDate;
+                    if (!prevWeekBookingsByDate[dateStr]) {
+                        prevWeekBookingsByDate[dateStr] = [];
+                    }
+                    prevWeekBookingsByDate[dateStr].push(booking);
+                }
+            }
         });
 
          // 3. Расчет ЗП за текущую неделю
@@ -4054,12 +4073,13 @@
                     // Если был День Рождения, считаем бонус от (выручки ДР минус ведущая) + выручка от других услуг
                     const birthdayBonusRevenue = birthdayRevenue - hostessRevenue;
                     bonus = (birthdayBonusRevenue + otherServicesRevenue) * bonusPercent;
-              } else {
+                } else {
                     // Если не было Дня Рождения, считаем бонус от всей выручки за день
                     bonus = dayRevenue * bonusPercent;
                 }
                 
-                weeklyPayrollData[assignment.mainAdminId].total += basePay + bonus;
+                const total = basePay + bonus;
+                weeklyPayrollData[assignment.mainAdminId].total += total;
             }
 
             // Начисление помощнику
@@ -4091,6 +4111,121 @@
             }
          });
 
+         // 4. Расчет ЗП за прошлую неделю (если сегодня понедельник)
+         if (isMonday) {
+             prevWeekAssignments.forEach(assignment => {
+                 const dateStr = assignment.date;
+                 const dayBookings = prevWeekBookingsByDate[dateStr] || [];
+                 let dayRevenue = 0;
+                 let birthdayRevenue = 0;
+                 let hostessRevenue = 0;
+                 let otherServicesRevenue = 0;
+
+                 // Расчет выручки дня
+                 dayBookings.forEach(booking => {
+                     let bookingTotalAmount = 0;
+                     const duration = parseFloat(booking.duration) || 0;
+                     const isBirthdayService = 
+                         (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                          booking.selectedServices.includes('birthday')) || 
+                         booking.serviceType === 'birthday';
+
+                     if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+                         booking.selectedServices.forEach(service => {
+                             if (service === 'birthday') {
+                                 const fullHours = Math.floor(duration);
+                                 const hasHalfHour = duration % 1 !== 0;
+                                 let birthdayTotal = 0;
+                                 for (let hour = 1; hour <= fullHours; hour++) {
+                                     const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                                     birthdayTotal += hourPrice;
+                                 }
+                                 if (hasHalfHour) {
+                                     if (fullHours === 0) { birthdayTotal += 2000; }
+                                     else if (fullHours === 1) { birthdayTotal += 2000; }
+                                     else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                                 }
+                                 bookingTotalAmount += birthdayTotal;
+                             } else if (service === 'hostess') {
+                                 bookingTotalAmount += servicePrices.hostess;
+                                 hostessRevenue += servicePrices.hostess;
+                             } else {
+                                 const price = servicePrices[service] || 0;
+                                 bookingTotalAmount += price * duration;
+                             }
+                         });
+                     } else if (booking.serviceType) {
+                         if (booking.serviceType === 'birthday') {
+                             const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                             bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                         } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+                             bookingTotalAmount = servicePriceHalfHour[booking.serviceType] || 0;
+                         } else {
+                             const pricePerHour = servicePrices[booking.serviceType] || 0;
+                             bookingTotalAmount = pricePerHour * duration;
+                         }
+                     }
+
+                     // Применяем скидки
+                     const discountPercent = booking.discountPercent || 0;
+                     const discountAmount = booking.discountAmount || 0;
+                     let finalBookingAmount = bookingTotalAmount;
+                     if (discountPercent > 0) {
+                         finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+                     } else if (discountAmount > 0) {
+                         finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+                     }
+
+                     dayRevenue += finalBookingAmount;
+                     if (isBirthdayService) {
+                         birthdayRevenue += finalBookingAmount;
+                     } else {
+                         otherServicesRevenue += finalBookingAmount;
+                     }
+                 });
+
+                 // Начисление основному администратору за прошлую неделю
+                 if (assignment.mainAdminId && weeklyPayrollData[assignment.mainAdminId]) {
+                     const basePay = 500;
+                     const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
+                     let bonus;
+                     
+                     if (birthdayRevenue > 0) {
+                         const birthdayBonusRevenue = birthdayRevenue - hostessRevenue;
+                         bonus = (birthdayBonusRevenue + otherServicesRevenue) * bonusPercent;
+                     } else {
+                         bonus = dayRevenue * bonusPercent;
+                     }
+                     
+                     weeklyPayrollData[assignment.mainAdminId].previousWeekTotal += basePay + bonus;
+                 }
+
+                 // Начисление помощнику за прошлую неделю
+                 if (assignment.helperAdminId && weeklyPayrollData[assignment.helperAdminId] && assignment.helperHours) {
+                     let actualHelperHours = 0;
+                     dayBookings.forEach(booking => {
+                         const isBirthdayService = 
+                             (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                              booking.selectedServices.includes('birthday')) || 
+                             booking.serviceType === 'birthday';
+                         
+                         if (isBirthdayService) {
+                             const duration = parseFloat(booking.duration) || 0;
+                             actualHelperHours += duration;
+                         }
+                     });
+                     
+                     actualHelperHours = Math.round(actualHelperHours);
+                     const hours = actualHelperHours > 0 ? actualHelperHours : parseInt(assignment.helperHours);
+                     const basePay = hours * 150;
+                     const bonusPercent = 0.07;
+                     const bonusRevenue = birthdayRevenue - hostessRevenue;
+                     const bonus = bonusRevenue * bonusPercent;
+                     weeklyPayrollData[assignment.helperAdminId].previousWeekTotal += basePay + bonus;
+                 }
+             });
+         }
+
         renderWeeklyPayroll(weeklyPayrollData, currentWeek);
     }
 
@@ -4102,35 +4237,20 @@
         return nextMonday;
     }
 
-    // Функция для получения даты предыдущего понедельника
-    function getPreviousMonday(date) {
-        const prevMonday = new Date(date);
-        prevMonday.setDate(prevMonday.getDate() - ((prevMonday.getDay() + 6) % 7));
-        return prevMonday;
-    }
-
-    // Функция для получения диапазона предыдущей недели
-    function getPreviousWeekRange(date) {
-        const prevMonday = getPreviousMonday(date);
-        const prevSunday = new Date(prevMonday);
-        prevSunday.setDate(prevMonday.getDate() + 6);
-        return { start: prevMonday, end: prevSunday };
-    }
-
-    // Функция проверки, является ли сегодня понедельником
-    function isMonday(date) {
-        return date.getDay() === 1;
-    }
-
     // === Отображение Зарплаты за Текущую Неделю ===
     function renderWeeklyPayroll(payrollData, weekRange) {
+        const today = new Date();
+        const isMonday = today.getDay() === 1;
+        const todayPayrollBlock = document.getElementById('todayPayrollBlock');
+        const todayPayrollResults = document.getElementById('todayPayrollResults');
+        const todayPayrollPeriod = document.getElementById('todayPayrollPeriod');
         weeklyPayrollResultsEl.innerHTML = ''; // Очистка
 
         if (!weekRange) {
-             weeklyPayrollPeriodEl.textContent = 'Расчет периода...';
-             weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет данных</p>';
-        return;
-      }
+            weeklyPayrollPeriodEl.textContent = 'Расчет периода...';
+            weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет данных</p>';
+            return;
+        }
 
         const nextMonday = getNextMonday(weekRange.end);
         const dateOptions = { 
@@ -4149,6 +4269,103 @@
         // Обновляем период
         weeklyPayrollPeriodEl.textContent = `(с ${weekRange.start.toLocaleDateString('ru-RU', weekOptions)} по ${weekRange.end.toLocaleDateString('ru-RU', weekOptions)})`;
 
+        // Если сегодня понедельник, показываем блок с выплатами за прошлую неделю
+        if (isMonday) {
+            const previousWeek = {
+                start: new Date(weekRange.start),
+                end: new Date(weekRange.start)
+            };
+            previousWeek.start.setDate(previousWeek.start.getDate() - 7);
+            previousWeek.end.setDate(previousWeek.end.getDate() - 1);
+
+            // Показываем блок с выплатами за прошлую неделю
+            todayPayrollBlock.classList.remove('hidden');
+            todayPayrollPeriod.textContent = `(с ${previousWeek.start.toLocaleDateString('ru-RU', weekOptions)} по ${previousWeek.end.toLocaleDateString('ru-RU', weekOptions)})`;
+            
+            // Очищаем и заполняем результаты за прошлую неделю
+            todayPayrollResults.innerHTML = '';
+            let hasTodayData = false;
+
+            // Получаем данные о выплатах за прошлую неделю
+            const previousWeekPayrollData = {};
+            admins.forEach(admin => {
+                previousWeekPayrollData[admin.id] = {
+                    name: admin.name,
+                    total: 0
+                };
+            });
+
+            // Рассчитываем выплаты за прошлую неделю
+            const prevWeekAssignments = adminAssignments.filter(a =>
+                typeof a.date === 'string' && 
+                a.date >= previousWeek.start.toISOString().split('T')[0] && 
+                a.date <= previousWeek.end.toISOString().split('T')[0]
+            );
+
+            prevWeekAssignments.forEach(assignment => {
+                const dateStr = assignment.date;
+                const dayBookings = bookings.filter(b => b.bookingDate === dateStr);
+                
+                let dayRevenue = 0;
+                let birthdayRevenue = 0;
+                let otherServicesRevenue = 0;
+                let hostessRevenue = 0;
+
+                dayBookings.forEach(booking => {
+                    // Расчет выручки за день (код расчета остается тем же)
+                    // ... существующий код расчета выручки ...
+
+                    // Начисление основному администратору
+                    if (assignment.mainAdminId && previousWeekPayrollData[assignment.mainAdminId]) {
+                        const basePay = 500;
+                        const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
+                        let bonus;
+                        
+                        if (birthdayRevenue > 0) {
+                            const birthdayBonusRevenue = birthdayRevenue - hostessRevenue;
+                            bonus = (birthdayBonusRevenue + otherServicesRevenue) * bonusPercent;
+                        } else {
+                            bonus = dayRevenue * bonusPercent;
+                        }
+                        
+                        previousWeekPayrollData[assignment.mainAdminId].total += basePay + bonus;
+                    }
+
+                    // Начисление помощнику
+                    if (assignment.helperAdminId && previousWeekPayrollData[assignment.helperAdminId] && assignment.helperHours) {
+                        const hours = parseInt(assignment.helperHours);
+                        const basePay = hours * 150;
+                        const bonusPercent = 0.07;
+                        const bonusRevenue = birthdayRevenue - hostessRevenue;
+                        const bonus = bonusRevenue * bonusPercent;
+                        previousWeekPayrollData[assignment.helperAdminId].total += basePay + bonus;
+                    }
+                });
+            });
+
+            // Отображаем результаты за прошлую неделю
+            admins.forEach(admin => {
+                const data = previousWeekPayrollData[admin.id];
+                if (data && data.total > 0) {
+                    hasTodayData = true;
+                    const div = document.createElement('div');
+                    div.className = 'flex justify-between items-center';
+                    div.innerHTML = `
+                        <span>${data.name}:</span>
+                        <span class="font-semibold text-green-800">${data.total.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
+                    `;
+                    todayPayrollResults.appendChild(div);
+                }
+            });
+
+            if (!hasTodayData) {
+                todayPayrollResults.innerHTML = '<p class="italic text-green-600">Нет выплат за прошлую неделю</p>';
+            }
+        } else {
+            todayPayrollBlock.classList.add('hidden');
+        }
+
+        // Отображаем прогноз на следующую неделю
         let hasData = false;
         admins.forEach(admin => {
             const data = payrollData[admin.id];
@@ -4165,7 +4382,7 @@
         });
 
         if (!hasData) {
-            weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет начислений за прошлую неделю.</p>';
+            weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет начислений за текущую неделю.</p>';
         }
     }
 
