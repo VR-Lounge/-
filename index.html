@@ -874,7 +874,7 @@
 
         <!-- ЕЖЕНЕДЕЛЬНЫЙ РАСЧЕТ К ВЫПЛАТЕ -->
         <div class="mb-8 p-6 bg-yellow-50 border border-yellow-200 rounded-2xl">
-            <h4 class="font-semibold text-base mb-3 text-yellow-900">К выплате в следующий понедельник (за текущую неделю):</h4>
+            <h4 class="font-semibold text-base mb-3 text-yellow-900" id="weeklyPayrollTitle">К выплате в следующий понедельник (за текущую неделю):</h4>
             <p id="weeklyPayrollPeriod" class="text-xs text-yellow-700 mb-3"></p>
             <div id="weeklyPayrollResults" class="space-y-2 text-sm">
                 <p class="italic text-yellow-600">Расчет...</p>
@@ -4069,7 +4069,14 @@
     }
 
 
-    // === Отображение Зарплаты за Прошлую Неделю ===
+    // Функция для получения даты следующего понедельника
+    function getNextMonday(date) {
+        const nextMonday = new Date(date);
+        nextMonday.setDate(nextMonday.getDate() + (8 - nextMonday.getDay()) % 7);
+        return nextMonday;
+    }
+
+    // === Отображение Зарплаты за Текущую Неделю ===
     function renderWeeklyPayroll(payrollData, weekRange) {
         weeklyPayrollResultsEl.innerHTML = ''; // Очистка
 
@@ -4079,8 +4086,22 @@
         return;
       }
 
-        const options = { day: '2-digit', month: 'short' };
-        weeklyPayrollPeriodEl.textContent = `(с ${weekRange.start.toLocaleDateString('ru-RU', options)} по ${weekRange.end.toLocaleDateString('ru-RU', options)})`;
+        const nextMonday = getNextMonday(weekRange.end);
+        const dateOptions = { 
+            day: '2-digit', 
+            month: 'long'
+        };
+        const weekOptions = { 
+            day: '2-digit', 
+            month: 'short' 
+        };
+
+        // Обновляем заголовок с датой следующего понедельника
+        const weeklyPayrollTitleEl = document.getElementById('weeklyPayrollTitle');
+        weeklyPayrollTitleEl.textContent = `К выплате в следующий понедельник, ${nextMonday.toLocaleDateString('ru-RU', dateOptions)} (за текущую неделю):`;
+
+        // Обновляем период
+        weeklyPayrollPeriodEl.textContent = `(с ${weekRange.start.toLocaleDateString('ru-RU', weekOptions)} по ${weekRange.end.toLocaleDateString('ru-RU', weekOptions)})`;
 
         let hasData = false;
         admins.forEach(admin => {
