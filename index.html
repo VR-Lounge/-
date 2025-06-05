@@ -4475,10 +4475,17 @@
             <span class="font-bold text-green-800 text-lg">
               ${(
                 // Зарплата основного: ставка + бонус
-                (mainAdmin ? 500 + (birthdayRevenue * (helperAdmin ? 0.08 : 0.15)) : 0) + 
+                (mainAdmin ? 500 + (
+                  // Если есть день рождения, считаем от (выручка ДР - ведущая + другие услуги)
+                  // Если нет дня рождения, считаем от общей выручки
+                  (birthdayRevenue > 0 ? 
+                    ((birthdayRevenue - (hostessRevenue || 0) + (otherServicesRevenue || 0)) * (helperAdmin ? 0.08 : 0.15)) :
+                    (dayRevenue * (helperAdmin ? 0.08 : 0.15))
+                  )
+                ) : 0) + 
                 // Зарплата помощника: почасовая + бонус от ДР
                 (helperAdmin && actualHelperHours > 0 ? 
-                  (actualHelperHours * 150) + (birthdayRevenue * 0.07) : 0)
+                  (actualHelperHours * 150) + ((birthdayRevenue - (hostessRevenue || 0)) * 0.07) : 0)
               ).toFixed(0).toLocaleString('ru-RU')} ₽
             </span>
           </div>
