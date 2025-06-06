@@ -805,25 +805,57 @@
 
   <script>
     // Функции для переключения разделов
-    function showBookingsSection() {
+    window.showBookingsSection = function() {
       document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
       document.getElementById('bookingsSection').classList.remove('hidden');
       document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
       document.querySelector('.nav-link[onclick*="showBookingsSection"]').classList.add('active');
+      return false;
     }
 
-    function showAdminScheduleSection() {
+    window.showAdminScheduleSection = function() {
       document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
       document.getElementById('adminScheduleSection').classList.remove('hidden');
       document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
       document.querySelector('.nav-link[onclick*="showAdminScheduleSection"]').classList.add('active');
+      return false;
     }
 
-    function showSalarySection() {
+    window.showSalarySection = function() {
       document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
       document.getElementById('salarySection').classList.remove('hidden');
       document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
       document.querySelector('.nav-link[onclick*="showSalarySection"]').classList.add('active');
+      return false;
+    }
+
+    window.showServicesSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('servicesSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showServicesSection"]').classList.add('active');
+      return false;
+    }
+
+    window.showWidgetsSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('widgetsSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showWidgetsSection"]').classList.add('active');
+      initWidgets();
+      return false;
+    }
+
+    window.showExpensesSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('expensesSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      const expensesLink = document.getElementById('expensesNavLink');
+      if (expensesLink) {
+        expensesLink.classList.add('active');
+      }
+      loadExpenses();
+      return false;
     }
 
     // Инициализация активного раздела при загрузке страницы
@@ -5392,7 +5424,7 @@ function showExpensesSection() {
   }
 }
 
-async function loadExpenses() {
+window.loadExpenses = async function() {
   try {
     expenses = [];
     const expensesCollection = collection(db, 'expenses');
