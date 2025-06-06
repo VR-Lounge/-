@@ -4,7 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VR Lounge - Управление Записями и Администраторами</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .top-header-block {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+      .header-scrolled .top-header-block {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"</script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <!-- VK Widget Script -->
@@ -748,30 +760,38 @@
 </div>
 
   <!-- Основной интерфейс -->
-  <header class="bg-white/50 shadow-md sticky top-0 z-30 backdrop-blur-md transition-all duration-300" id="mainHeader">
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-2 md:py-5">
-      <!-- Верхняя часть шапки (скрывается при скролле на мобильных) -->
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between" id="headerTop">
-        <h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-gray-900 select-none text-center md:text-left" style="font-weight: 600;">VR Lounge - Управление</h1>
-        <div class="flex items-center justify-end space-x-4 mt-2 md:mt-0">
-          <p class="text-gray-500 text-sm select-none hidden md:block">Записи и Администраторы</p>
-          <button id="logoutBtn" class="hidden text-sm text-blue-600 hover:text-blue-800 px-3 py-1 rounded-full hover:bg-blue-50">Выйти</button>
-          <button id="loginBtn" class="text-sm text-blue-600 hover:text-blue-800 px-3 py-1 rounded-full hover:bg-blue-50">Вход для администратора</button>
+  <header class="bg-white/50 shadow-md sticky top-0 z-30 backdrop-blur-md" id="mainHeader">
+    <!-- Верхний блок шапки (скрывается при скролле) -->
+    <div class="top-header-block transition-all duration-300" id="headerTop">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 py-3">
+        <div class="flex flex-row items-center justify-between">
+          <h1 class="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 select-none">VR Lounge - Управление</h1>
+          <div class="flex items-center space-x-4">
+            <button id="logoutBtn" class="hidden text-sm text-blue-600 hover:text-blue-800 px-3 py-1 rounded-full hover:bg-blue-50">Выйти</button>
+            <button id="loginBtn" class="text-sm text-blue-600 hover:text-blue-800 px-3 py-1 rounded-full hover:bg-blue-50">Вход для администратора</button>
+          </div>
         </div>
       </div>
-      
-      <!-- Навигация (всегда видима) -->
-      <nav class="nav-links flex items-center justify-center md:justify-start space-x-2 md:space-x-6 mt-2 md:mt-4 overflow-x-auto py-1" style="scrollbar-width: none; -ms-overflow-style: none;">
-        <a href="#" class="nav-link active whitespace-nowrap" onclick="return showBookingsSection()">
-          <i class="fas fa-calendar-alt mr-2"></i>Записи
-        </a>
-        <a href="#" class="nav-link whitespace-nowrap" onclick="return showAdminScheduleSection()">
-          <i class="fas fa-user-clock mr-2"></i>График
-        </a>
-        <a href="#" class="nav-link whitespace-nowrap" onclick="return showSalarySection()">
-          <i class="fas fa-money-bill-wave mr-2"></i>Финансы
-        </a>
-      </nav>
+    </div>
+    
+    <!-- Нижний блок с навигацией (всегда виден) -->
+    <div class="bottom-header-block bg-white/80 border-t border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <nav class="nav-links flex items-center justify-between md:justify-start space-x-2 md:space-x-6 py-2 overflow-x-auto" style="scrollbar-width: none; -ms-overflow-style: none;">
+          <a href="#" class="nav-link active whitespace-nowrap" onclick="return showBookingsSection()">
+            <i class="fas fa-calendar-alt mr-2"></i>Записи
+          </a>
+          <a href="#" class="nav-link whitespace-nowrap" onclick="return showAdminScheduleSection()">
+            <i class="fas fa-user-clock mr-2"></i>График
+          </a>
+          <a href="#" class="nav-link whitespace-nowrap" onclick="return showSalarySection()">
+            <i class="fas fa-money-bill-wave mr-2"></i>Финансы
+          </a>
+          <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink" onclick="return showExpensesSection()" style="display: none;">
+            <i class="fas fa-receipt mr-2"></i>Расходы
+          </a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -5537,24 +5557,20 @@ onAuthStateChanged(auth, async (user) => {
       // Любой авторизованный пользователь считается админом
       isAdmin = true;
       
-      // Добавляем ссылку на расходы, если её еще нет
-      const navLinks = document.querySelector('.nav-links');
-      if (!document.getElementById('expensesNavLink')) {
-        const expensesLink = document.createElement('a');
-        expensesLink.href = '#';
-        expensesLink.id = 'expensesNavLink';
-        expensesLink.className = 'nav-link whitespace-nowrap';
-        expensesLink.innerHTML = '<i class="fas fa-receipt mr-2"></i>Расходы';
-        expensesLink.onclick = () => {
-          showExpensesSection();
-          return false;
-        };
-        navLinks.appendChild(expensesLink);
+      // Показываем и активируем ссылку на расходы
+      const expensesLink = document.getElementById('expensesNavLink');
+      if (expensesLink) {
+        expensesLink.style.display = '';
+        expensesLink.classList.remove('disabled');
       }
       
       // Показываем кнопку выхода и скрываем кнопку входа
       document.getElementById('logoutBtn').classList.remove('hidden');
       document.getElementById('loginBtn').classList.add('hidden');
+      
+      // Инициализируем обработчики для расходов
+      initExpensesHandlers();
+      
     } catch (error) {
       console.error('Ошибка при авторизации:', error);
     }
@@ -5564,10 +5580,11 @@ onAuthStateChanged(auth, async (user) => {
     document.getElementById('logoutBtn').classList.add('hidden');
     document.getElementById('loginBtn').classList.remove('hidden');
     
-    // Удаляем ссылку на расходы, если она есть
+    // Скрываем ссылку на расходы
     const expensesLink = document.getElementById('expensesNavLink');
     if (expensesLink) {
-      expensesLink.remove();
+      expensesLink.style.display = 'none';
+      expensesLink.classList.add('disabled');
     }
   }
 });
