@@ -5618,15 +5618,24 @@ window.showExpensesSection = function() {
   if (expensesLink) {
     expensesLink.classList.add('active');
   }
+  loadExpenses(); // Добавляем загрузку расходов при переключении на раздел
   return false;
 }
 
-// === Функции навигации для новых разделов ===
 window.showServicesSection = function() {
   document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
   document.getElementById('servicesSection').classList.remove('hidden');
   document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
   document.querySelector('.nav-link[onclick*="showServicesSection"]').classList.add('active');
+  return false;
+}
+
+window.showWidgetsSection = function() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('widgetsSection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick*="showWidgetsSection"]').classList.add('active');
+  initWidgets();
   return false;
 }
 
@@ -5664,15 +5673,6 @@ function initWidgets() {
       map.behaviors.disable('scrollZoom');
     });
   }
-}
-
-window.showWidgetsSection = function() {
-  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
-  document.getElementById('widgetsSection').classList.remove('hidden');
-  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-  document.querySelector('.nav-link[onclick*="showWidgetsSection"]').classList.add('active');
-  initWidgets();
-  return false;
 }
 
 // Управление шапкой при скролле
