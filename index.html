@@ -1948,6 +1948,74 @@
 
   <!-- Firebase и основная логика приложения -->
   <script type="module">
+    // Импорты Firebase
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+    import { getFirestore, collection, addDoc, query, where, orderBy, getDocs, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+    // Глобальные переменные
+    let expenses = [];
+    let isAdmin = false;
+    const auth = getAuth();
+    const db = getFirestore();
+
+    // Функция для показа модального окна добавления расхода
+    window.showAddExpenseModal = function() {
+      if (!auth.currentUser) {
+        alert('Для добавления расходов необходимо авторизоваться');
+        document.getElementById('loginBtn').click();
+        return;
+      }
+      const modal = document.getElementById('addExpenseModal');
+      const form = document.getElementById('addExpenseForm');
+      if (modal && form) {
+        modal.classList.remove('hidden');
+        form.reset();
+        // Устанавливаем текущую дату
+        const dateInput = form.querySelector('input[name="date"]');
+        if (dateInput) {
+          const today = new Date();
+          dateInput.valueAsDate = today;
+        }
+      }
+    };
+
+    // Функция инициализации обработчиков для расходов
+    function initExpensesHandlers() {
+      console.log('Инициализация обработчиков расходов');
+      
+      const categoryFilter = document.getElementById('categoryFilter');
+      const addExpenseForm = document.getElementById('addExpenseForm');
+      
+      if (categoryFilter) {
+        categoryFilter.addEventListener('change', () => {
+          if (typeof window.loadExpenses === 'function') {
+            window.loadExpenses();
+          }
+        });
+      }
+      
+      if (addExpenseForm) {
+        addExpenseForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          if (!auth.currentUser) {
+            alert('Для добавления расходов необходимо авторизоваться');
+            return;
+          }
+          await handleAddExpense(e);
+        });
+      }
+
+      // Добавляем обработчик закрытия модального окна
+      const closeButtons = document.querySelectorAll('[onclick*="addExpenseModal.classList.add(\'hidden\')"]');
+      closeButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          document.getElementById('addExpenseModal').classList.add('hidden');
+        });
+      });
+    };
+
     // Функция обработки добавления расхода
     async function handleAddExpense(event) {
       event.preventDefault();
@@ -6030,53 +6098,76 @@ window.addEventListener('scroll', () => {
 
 // Обработка авторизации
 onAuthStateChanged(auth, async (user) => {
-  if (user && user.email) {
-    try {
-      // Любой авторизованный пользователь считается админом
+  try {
+    console.log('Изменение состояния авторизации:', user ? 'авторизован' : 'не авторизован');
+    
+    if (user && user.email) {
       isAdmin = true;
       
-      // Показываем кнопку выхода и скрываем кнопку входа
+      // Показываем элементы для авторизованных пользователей
       document.getElementById('logoutBtn').classList.remove('hidden');
       document.getElementById('loginBtn').classList.add('hidden');
       
-      // Показываем и активируем ссылку на расходы
       const expensesLink = document.getElementById('expensesNavLink');
-      if (expensesLink) {
+      const expensesSection = document.getElementById('expensesSection');
+      const adminScheduleSection = document.getElementById('adminScheduleSection');
+      const salarySection = document.getElementById('salarySection');
+      
+      if (expensesLink && expensesSection) {
         expensesLink.style.display = '';
         expensesLink.classList.remove('disabled');
+        expensesSection.classList.remove('hidden');
       }
       
-      // Показываем секции для админов
-      document.getElementById('adminScheduleSection').classList.remove('hidden');
-      document.getElementById('salarySection').classList.remove('hidden');
-      document.getElementById('expensesSection').classList.remove('hidden');
+      if (adminScheduleSection) adminScheduleSection.classList.remove('hidden');
+      if (salarySection) salarySection.classList.remove('hidden');
       
-      // Инициализируем обработчики для расходов
+      // Инициализируем обработчики
       initExpensesHandlers();
       
-      // Загружаем данные расходов
-      loadExpenses();
+      // Загружаем расходы
+      if (typeof window.loadExpenses === 'function') {
+        console.log('Загрузка расходов после авторизации');
+        await window.loadExpenses();
+      } else {
+        console.error('Функция loadExpenses не определена');
+      }
+    } else {
+      isAdmin = false;
       
-    } catch (error) {
-      console.error('Ошибка при авторизации:', error);
+      // Скрываем элементы для неавторизованных пользователей
+      document.getElementById('logoutBtn').classList.add('hidden');
+      document.getElementById('loginBtn').classList.remove('hidden');
+      
+      const expensesLink = document.getElementById('expensesNavLink');
+      const expensesSection = document.getElementById('expensesSection');
+      const adminScheduleSection = document.getElementById('adminScheduleSection');
+      const salarySection = document.getElementById('salarySection');
+      
+      if (expensesLink && expensesSection) {
+        expensesLink.style.display = 'none';
+        expensesLink.classList.add('disabled');
+        expensesSection.classList.add('hidden');
+      }
+      
+      if (adminScheduleSection) adminScheduleSection.classList.add('hidden');
+      if (salarySection) salarySection.classList.add('hidden');
+      
+      // Закрываем модальное окно расходов если открыто
+      const modal = document.getElementById('addExpenseModal');
+      if (modal) {
+        modal.classList.add('hidden');
+      }
+      
+      // Очищаем список расходов
+      expenses = [];
+      const expensesList = document.getElementById('expensesList');
+      if (expensesList) {
+        expensesList.innerHTML = '';
+      }
     }
-  } else {
-    isAdmin = false;
-    // Скрываем кнопку выхода и показываем кнопку входа
-    document.getElementById('logoutBtn').classList.add('hidden');
-    document.getElementById('loginBtn').classList.remove('hidden');
-    
-    // Скрываем ссылку на расходы и секцию расходов
-    const expensesLink = document.getElementById('expensesNavLink');
-    if (expensesLink) {
-      expensesLink.style.display = 'none';
-      expensesLink.classList.add('disabled');
-    }
-    document.getElementById('expensesSection').classList.add('hidden');
-    
-    // Скрываем другие админские секции
-    document.getElementById('adminScheduleSection').classList.add('hidden');
-    document.getElementById('salarySection').classList.add('hidden');
+  } catch (error) {
+    console.error('Ошибка при обработке изменения состояния авторизации:', error);
   }
 });
 
