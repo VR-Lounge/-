@@ -1653,7 +1653,70 @@
 </div>
 
   <!-- Подключаем файл с логикой авторизации -->
-  <script src="auth.js"></script>
+  <script>
+    // Функция для инициализации кнопки расходов
+    function initExpensesButton() {
+      const navLinks = document.querySelector('.nav-links');
+      if (!navLinks) {
+        console.error('Не найден элемент nav-links');
+        return;
+      }
+
+      // Удаляем существующую кнопку, если есть
+      const existingButton = document.getElementById('expensesNavLink');
+      if (existingButton) {
+        existingButton.remove();
+      }
+
+      // Создаем новую кнопку
+      const expensesLink = document.createElement('a');
+      expensesLink.href = '#';
+      expensesLink.id = 'expensesNavLink';
+      expensesLink.className = 'nav-link flex-1 md:flex-auto text-center';
+      expensesLink.innerHTML = '<i class="fas fa-receipt mr-2"></i>Расходы';
+      expensesLink.onclick = function() {
+        showExpensesSection();
+        return false;
+      };
+      navLinks.appendChild(expensesLink);
+      console.log('Кнопка расходов добавлена');
+    }
+
+    // Функция для обработки состояния авторизации
+    function handleAuthStateChange(user) {
+      console.log('Состояние авторизации изменилось:', user?.email);
+      
+      if (user && user.email) {
+        // Пользователь авторизован
+        console.log('Пользователь авторизован:', user.email);
+        window.isAdmin = true;
+        window.currentUser = user;
+        
+        // Показываем элементы для авторизованного пользователя
+        document.getElementById('logoutBtn')?.classList.remove('hidden');
+        document.getElementById('loginBtn')?.classList.add('hidden');
+        
+        // Инициализируем кнопку расходов
+        initExpensesButton();
+        
+      } else {
+        // Пользователь не авторизован
+        console.log('Пользователь не авторизован');
+        window.isAdmin = false;
+        window.currentUser = null;
+        
+        // Скрываем элементы для неавторизованного пользователя
+        document.getElementById('logoutBtn')?.classList.add('hidden');
+        document.getElementById('loginBtn')?.classList.remove('hidden');
+        
+        // Удаляем кнопку расходов
+        const expensesLink = document.getElementById('expensesNavLink');
+        if (expensesLink) {
+          expensesLink.remove();
+        }
+      }
+    }
+  </script>
   
   <!-- Firebase и основная логика приложения -->
   <script type="module">
@@ -3825,7 +3888,12 @@
       closeDayDetailsModalBtn.addEventListener('click', () => dayDetailsModal.classList.add('hidden'));
       
       // --- Модальное окно деталей администраторов ---
-      closeAdminDayDetailsModalBtn.addEventListener('click', () => adminDayDetailsModal.classList.add('hidden'));
+      const closeAdminDayDetailsModal = () => {
+  const modal = document.getElementById('adminDayDetailsModal');
+  if (modal) modal.classList.add('hidden');
+};
+
+closeAdminDayDetailsModalBtn.addEventListener('click', closeAdminDayDetailsModal);
     }
 
     // === Вспомогательные функции для отображения ===
