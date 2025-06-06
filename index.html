@@ -21,6 +21,8 @@
   <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <!-- VK Widget Script -->
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+  <!-- Yandex Maps -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API_ключ&lang=ru_RU"></script>
   
   <!-- Функции для модального окна "Поделиться" - объявляем в отдельном скрипте -->
   <script>
@@ -774,23 +776,29 @@
       </div>
     </div>
     
-    <!-- Нижний блок с навигацией (всегда виден) -->
-    <div class="bottom-header-block bg-white/80 border-t border-gray-100">
-      <div class="max-w-7xl mx-auto px-4 md:px-6">
-        <nav class="nav-links flex items-center justify-between md:justify-start space-x-2 md:space-x-6 py-2 overflow-x-auto" style="scrollbar-width: none; -ms-overflow-style: none;">
-          <a href="#" class="nav-link active whitespace-nowrap" onclick="return showBookingsSection()">
-            <i class="fas fa-calendar-alt mr-2"></i>Записи
-          </a>
-          <a href="#" class="nav-link whitespace-nowrap" onclick="return showAdminScheduleSection()">
-            <i class="fas fa-user-clock mr-2"></i>График
-          </a>
-          <a href="#" class="nav-link whitespace-nowrap" onclick="return showSalarySection()">
-            <i class="fas fa-money-bill-wave mr-2"></i>Финансы
-          </a>
-          <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink" onclick="return showExpensesSection()" style="display: none;">
-            <i class="fas fa-receipt mr-2"></i>Расходы
-          </a>
-        </nav>
+          <!-- Нижний блок с навигацией (всегда виден) -->
+      <div class="bottom-header-block bg-white/80 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+          <nav class="nav-links flex items-center space-x-2 md:space-x-6 py-2 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none;">
+            <a href="#" class="nav-link active whitespace-nowrap" onclick="return showBookingsSection()">
+              <i class="fas fa-calendar-alt mr-2"></i>Записи
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showAdminScheduleSection()">
+              <i class="fas fa-user-clock mr-2"></i>График
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showSalarySection()">
+              <i class="fas fa-money-bill-wave mr-2"></i>Финансы
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showServicesSection()">
+              <i class="fas fa-list-alt mr-2"></i>Услуги
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showWidgetsSection()">
+              <i class="fas fa-share-alt mr-2"></i>Виджеты
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink" onclick="return showExpensesSection()">
+              <i class="fas fa-receipt mr-2"></i>Расходы
+            </a>
+          </nav>
       </div>
     </div>
   </header>
@@ -1574,8 +1582,89 @@
     </div>
   </div>
 
+  <!-- === СЕКЦИЯ УСЛУГ === -->
+  <section id="servicesSection" class="hidden max-w-3xl mx-auto my-8 bg-white rounded-2xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+      <i class="fas fa-list-alt mr-2 text-blue-500"></i>Стоимость услуг
+    </h2>
+    <div class="space-y-6">
+      <!-- VR Игры -->
+      <div class="bg-white rounded-xl p-4 border border-gray-200">
+        <h3 class="text-xl font-semibold mb-4">VR Игры</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+            <span>30 минут</span>
+            <span class="font-medium">500 ₽</span>
+          </div>
+          <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+            <span>60 минут</span>
+            <span class="font-medium">900 ₽</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- День рождения -->
+      <div class="bg-white rounded-xl p-4 border border-gray-200">
+        <h3 class="text-xl font-semibold mb-4">День рождения в VR</h3>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+            <span>До 8 человек (2 часа)</span>
+            <span class="font-medium">6000 ₽</span>
+          </div>
+          <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+            <span>Ведущая</span>
+            <span class="font-medium">2000 ₽</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Дополнительные услуги -->
+      <div class="bg-white rounded-xl p-4 border border-gray-200">
+        <h3 class="text-xl font-semibold mb-4">Дополнительные услуги</h3>
+        <div class="space-y-2">
+          <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+            <span>Дополнительный час</span>
+            <span class="font-medium">2000 ₽</span>
+          </div>
+          <div class="flex justify-between items-center p-2 bg-gray-50 rounded">
+            <span>Дополнительный гость</span>
+            <span class="font-medium">500 ₽</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === СЕКЦИЯ ВИДЖЕТОВ === -->
+  <section id="widgetsSection" class="hidden max-w-3xl mx-auto my-8 bg-white rounded-2xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+      <i class="fas fa-share-alt mr-2 text-blue-500"></i>Виджеты
+    </h2>
+    <div class="space-y-6">
+      <!-- ВКонтакте -->
+      <div class="bg-white rounded-xl p-4 border border-gray-200">
+        <h3 class="text-xl font-semibold mb-4">Группа ВКонтакте</h3>
+        <div id="vk_groups"></div>
+      </div>
+      
+      <!-- Яндекс Карты -->
+      <div class="bg-white rounded-xl p-4 border border-gray-200">
+        <h3 class="text-xl font-semibold mb-4">Как нас найти</h3>
+        <div id="map" style="width:100%; height:400px;"></div>
+      </div>
+      
+      <!-- Отзывы -->
+      <div class="bg-white rounded-xl p-4 border border-gray-200">
+        <h3 class="text-xl font-semibold mb-4">Отзывы</h3>
+        <div id="reviews" class="space-y-4">
+          <!-- Отзывы будут загружены динамически -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- === СЕКЦИЯ УЧЁТА РАСХОДОВ (только для админов) === -->
-<section id="expensesSection" class="hidden max-w-3xl mx-auto my-8 bg-white rounded-2xl shadow-lg p-6">
+  <section id="expensesSection" class="hidden max-w-3xl mx-auto my-8 bg-white rounded-2xl shadow-lg p-6">
   <div class="flex items-center justify-between mb-4">
     <h2 class="text-2xl font-bold text-gray-900 flex items-center">
       <i class="fas fa-receipt mr-2 text-blue-500"></i>Учёт расходов
@@ -5532,6 +5621,60 @@ window.showExpensesSection = function() {
   return false;
 }
 
+// === Функции навигации для новых разделов ===
+window.showServicesSection = function() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('servicesSection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick*="showServicesSection"]').classList.add('active');
+  return false;
+}
+
+// === Инициализация виджетов ===
+function initWidgets() {
+  // Инициализация виджета ВКонтакте
+  if (typeof VK !== 'undefined' && VK.Widgets) {
+    VK.Widgets.Group("vk_groups", {
+      mode: 4,
+      wide: 1,
+      height: 600,
+      color1: "FFFFFF",
+      color2: "363636",
+      color3: "b457a6"
+    }, 227237589);
+  }
+
+  // Инициализация Яндекс Карт
+  if (typeof ymaps !== 'undefined') {
+    ymaps.ready(() => {
+      const map = new ymaps.Map('map', {
+        center: [56.129057, 40.406635],
+        zoom: 16,
+        controls: ['zoomControl', 'fullscreenControl']
+      });
+
+      const placemark = new ymaps.Placemark([56.129057, 40.406635], {
+        balloonContent: 'VR Lounge<br>ул. Большая Московская, 19А, Владимир',
+        hintContent: 'VR Lounge'
+      }, {
+        preset: 'islands#blueCircleDotIcon'
+      });
+
+      map.geoObjects.add(placemark);
+      map.behaviors.disable('scrollZoom');
+    });
+  }
+}
+
+window.showWidgetsSection = function() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('widgetsSection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick*="showWidgetsSection"]').classList.add('active');
+  initWidgets();
+  return false;
+}
+
 // Управление шапкой при скролле
 let lastScrollTop = 0;
 window.addEventListener('scroll', () => {
@@ -5550,12 +5693,16 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Показываем раздел расходов для всех авторизованных пользователей
+// Обработка авторизации
 onAuthStateChanged(auth, async (user) => {
   if (user && user.email) {
     try {
       // Любой авторизованный пользователь считается админом
       isAdmin = true;
+      
+      // Показываем кнопку выхода и скрываем кнопку входа
+      document.getElementById('logoutBtn').classList.remove('hidden');
+      document.getElementById('loginBtn').classList.add('hidden');
       
       // Показываем и активируем ссылку на расходы
       const expensesLink = document.getElementById('expensesNavLink');
@@ -5564,12 +5711,16 @@ onAuthStateChanged(auth, async (user) => {
         expensesLink.classList.remove('disabled');
       }
       
-      // Показываем кнопку выхода и скрываем кнопку входа
-      document.getElementById('logoutBtn').classList.remove('hidden');
-      document.getElementById('loginBtn').classList.add('hidden');
+      // Показываем секции для админов
+      document.getElementById('adminScheduleSection').classList.remove('hidden');
+      document.getElementById('salarySection').classList.remove('hidden');
+      document.getElementById('expensesSection').classList.remove('hidden');
       
       // Инициализируем обработчики для расходов
       initExpensesHandlers();
+      
+      // Загружаем данные расходов
+      loadExpenses();
       
     } catch (error) {
       console.error('Ошибка при авторизации:', error);
@@ -5580,12 +5731,17 @@ onAuthStateChanged(auth, async (user) => {
     document.getElementById('logoutBtn').classList.add('hidden');
     document.getElementById('loginBtn').classList.remove('hidden');
     
-    // Скрываем ссылку на расходы
+    // Скрываем ссылку на расходы и секцию расходов
     const expensesLink = document.getElementById('expensesNavLink');
     if (expensesLink) {
       expensesLink.style.display = 'none';
       expensesLink.classList.add('disabled');
     }
+    document.getElementById('expensesSection').classList.add('hidden');
+    
+    // Скрываем другие админские секции
+    document.getElementById('adminScheduleSection').classList.add('hidden');
+    document.getElementById('salarySection').classList.add('hidden');
   }
 });
 
