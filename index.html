@@ -1453,6 +1453,75 @@
     </div>
   </div>
 
+  <!-- === СЕКЦИЯ УЧЁТА РАСХОДОВ (только для админов) === -->
+<section id="expensesSection" class="hidden max-w-3xl mx-auto my-8 bg-white rounded-2xl shadow-lg p-6">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-2xl font-bold text-gray-900 flex items-center">
+      <i class="fas fa-receipt mr-2 text-blue-500"></i>Учёт расходов
+    </h2>
+    <button id="addExpenseBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold flex items-center">
+      <i class="fas fa-plus mr-2"></i>Добавить расход
+    </button>
+  </div>
+  <div class="flex flex-wrap gap-4 mb-4">
+    <div>
+      <label for="categoryFilter" class="block text-sm text-gray-600 mb-1">Категория</label>
+      <select id="categoryFilter" class="border rounded-lg px-3 py-2 w-48">
+        <option value="">Все категории</option>
+        <option value="utilities">Коммунальные услуги</option>
+        <option value="consumables">Расходные материалы</option>
+        <option value="equipment">Оборудование</option>
+        <option value="food">Продукты</option>
+        <option value="other">Прочее</option>
+      </select>
+    </div>
+    <div class="flex flex-col justify-end">
+      <span class="text-gray-600 text-sm">За месяц:</span>
+      <span id="monthlyExpenses" class="text-xl font-bold text-blue-700">0 ₽</span>
+    </div>
+    <div class="flex flex-col justify-end">
+      <span class="text-gray-600 text-sm">Всего расходов:</span>
+      <span id="totalExpenses" class="text-xl font-bold text-blue-700">0</span>
+    </div>
+  </div>
+  <div id="expensesList" class="space-y-3"></div>
+</section>
+
+<!-- === МОДАЛЬНОЕ ОКНО ДОБАВЛЕНИЯ РАСХОДА === -->
+<div id="addExpenseModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md relative">
+    <button onclick="document.getElementById('addExpenseModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+    <h3 class="text-xl font-bold mb-4 text-gray-900 flex items-center"><i class="fas fa-plus mr-2 text-blue-500"></i>Добавить расход</h3>
+    <form id="addExpenseForm" class="space-y-4">
+      <div>
+        <label class="block text-sm mb-1 text-gray-700">Категория</label>
+        <select name="category" required class="border rounded-lg px-3 py-2 w-full">
+          <option value="utilities">Коммунальные услуги</option>
+          <option value="consumables">Расходные материалы</option>
+          <option value="equipment">Оборудование</option>
+          <option value="food">Продукты</option>
+          <option value="other">Прочее</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm mb-1 text-gray-700">Описание</label>
+        <input name="description" required maxlength="100" class="border rounded-lg px-3 py-2 w-full" placeholder="Что купили?" />
+      </div>
+      <div>
+        <label class="block text-sm mb-1 text-gray-700">Сумма (₽)</label>
+        <input name="amount" type="number" min="1" required class="border rounded-lg px-3 py-2 w-full" placeholder="0" />
+      </div>
+      <div>
+        <label class="block text-sm mb-1 text-gray-700">Дата</label>
+        <input name="date" type="date" required class="border rounded-lg px-3 py-2 w-full" />
+      </div>
+      <div class="flex justify-end gap-2 mt-4">
+        <button type="button" onclick="document.getElementById('addExpenseModal').classList.add('hidden')" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700">Отмена</button>
+        <button type="submit" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold">Сохранить</button>
+      </div>
+    </form>
+  </div>
+</div>
 
   <!-- Firebase и основная логика приложения -->
   <script type="module">
@@ -5091,6 +5160,132 @@
         });
     });
 
+    
+    // === Учёт расходов (только для админов) ===
+import { collection, addDoc, getDocs, deleteDoc, doc, query, where, orderBy } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+let expenses = [];
+
+function showExpensesSection() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('expensesSection').classList.remove('hidden');
+  loadExpenses();
+}
+
+async function loadExpenses() {
+  expenses = [];
+  let q = query(collection(db, 'expenses'), orderBy('date', 'desc'));
+  const category = document.getElementById('categoryFilter').value;
+  if (category) {
+    q = query(collection(db, 'expenses'), where('category', '==', category), orderBy('date', 'desc'));
+  }
+  const snap = await getDocs(q);
+  snap.forEach(doc => expenses.push({ id: doc.id, ...doc.data() }));
+  renderExpenses();
+  updateStatistics();
+}
+
+document.getElementById('categoryFilter').addEventListener('change', loadExpenses);
+
+document.getElementById('addExpenseBtn').addEventListener('click', () => {
+  document.getElementById('addExpenseModal').classList.remove('hidden');
+  document.getElementById('addExpenseForm').reset();
+  document.querySelector('#addExpenseForm [name="date"]').valueAsDate = new Date();
+});
+
+document.getElementById('addExpenseForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const expenseData = {
+    category: form.category.value,
+    description: form.description.value,
+    amount: Number(form.amount.value),
+    date: form.date.value,
+    createdAt: new Date(),
+    createdBy: auth.currentUser ? auth.currentUser.uid : 'unknown'
+  };
+  await addDoc(collection(db, 'expenses'), expenseData);
+  document.getElementById('addExpenseModal').classList.add('hidden');
+  loadExpenses();
+});
+
+function renderExpenses() {
+  const expensesList = document.getElementById('expensesList');
+  expensesList.innerHTML = '';
+  const categoryColors = {
+    utilities: 'bg-blue-100 text-blue-800',
+    consumables: 'bg-green-100 text-green-800',
+    equipment: 'bg-purple-100 text-purple-800',
+    food: 'bg-yellow-100 text-yellow-800',
+    other: 'bg-gray-100 text-gray-800'
+  };
+  const categoryNames = {
+    utilities: 'Коммунальные услуги',
+    consumables: 'Расходные материалы',
+    equipment: 'Оборудование',
+    food: 'Продукты',
+    other: 'Прочее'
+  };
+  expenses.forEach(expense => {
+    const card = document.createElement('div');
+    card.className = 'expense-card bg-white border rounded-lg p-4 flex justify-between items-center';
+    card.innerHTML = `
+      <div class="flex-1">
+        <div class="flex items-center mb-2">
+          <span class="category-badge ${categoryColors[expense.category] || ''} px-2 py-1 rounded-full text-sm font-medium">
+            ${categoryNames[expense.category] || expense.category}
+          </span>
+          <span class="text-gray-500 text-sm ml-2">${new Date(expense.date).toLocaleDateString('ru-RU')}</span>
+        </div>
+        <p class="text-gray-800">${expense.description}</p>
+      </div>
+      <div class="flex items-center">
+        <span class="text-lg font-semibold mr-4">${expense.amount.toLocaleString('ru-RU')} ₽</span>
+        <button onclick="deleteExpense('${expense.id}')" class="text-red-600 hover:text-red-800"><i class="fas fa-trash"></i></button>
+      </div>
+    `;
+    expensesList.appendChild(card);
+  });
+}
+
+function updateStatistics() {
+  const now = new Date();
+  const firstDayOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+  const monthlyExpenses = expenses.filter(e => new Date(e.date) >= firstDayOfMonth).reduce((sum, e) => sum + e.amount, 0);
+  document.getElementById('monthlyExpenses').textContent = `${monthlyExpenses.toLocaleString('ru-RU')} ₽`;
+  document.getElementById('totalExpenses').textContent = expenses.length;
+}
+
+window.deleteExpense = async function(id) {
+  if (confirm('Вы уверены, что хотите удалить этот расход?')) {
+    await deleteDoc(doc(db, 'expenses', id));
+    loadExpenses();
+  }
+}
+
+// Добавляем пункт меню "Расходы" только для админов после авторизации
+function addExpensesNavLink() {
+  const navLinks = document.querySelector('.nav-links');
+  if (navLinks && !document.getElementById('expensesNavLink')) {
+    const expensesLink = document.createElement('a');
+    expensesLink.href = '#';
+    expensesLink.id = 'expensesNavLink';
+    expensesLink.className = 'nav-link';
+    expensesLink.innerHTML = '<i class="fas fa-receipt mr-2"></i>Расходы';
+    expensesLink.onclick = showExpensesSection;
+    navLinks.appendChild(expensesLink);
+  }
+}
+
+// Показываем раздел расходов только для админов после входа
+onAuthStateChanged(auth, (user) => {
+  if (user && user.email) {
+    // Проверка на админа (можно доработать по claims)
+    isAdmin = true;
+    addExpensesNavLink();
+  }
+});
 
   </script>
 </body>
