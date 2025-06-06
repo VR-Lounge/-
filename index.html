@@ -1652,13 +1652,16 @@
   </div>
 </div>
 
+  <!-- Подключаем файл с логикой авторизации -->
+  <script src="auth.js"></script>
+  
   <!-- Firebase и основная логика приложения -->
   <script type="module">
     // Инициализация Firebase
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { 
       getFirestore, collection, addDoc, getDocs, onSnapshot, 
-      deleteDoc, doc, updateDoc, query, where, getDoc, setDoc // Добавлен setDoc
+      deleteDoc, doc, updateDoc, query, where, getDoc, setDoc
     } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
     import { 
       getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged 
@@ -5547,53 +5550,7 @@ window.showSalarySection = function() {
 let currentUser = null;
 
 // Обработчик состояния авторизации
-onAuthStateChanged(auth, async (user) => {
-  console.log('Состояние авторизации изменилось:', user?.email);
-  currentUser = user;
-  
-  if (user && user.email) {
-    try {
-      // Любой авторизованный пользователь получает доступ
-      isAdmin = true;
-      
-      // Показываем элементы для авторизованного пользователя
-      document.getElementById('logoutBtn').classList.remove('hidden');
-      document.getElementById('loginBtn').classList.add('hidden');
-      
-      // Добавляем кнопку расходов
-      const navLinks = document.querySelector('.nav-links');
-      if (navLinks && !document.getElementById('expensesNavLink')) {
-        const expensesLink = document.createElement('a');
-        expensesLink.href = '#';
-        expensesLink.id = 'expensesNavLink';
-        expensesLink.className = 'nav-link flex-1 md:flex-auto text-center';
-        expensesLink.innerHTML = '<i class="fas fa-receipt mr-2"></i>Расходы';
-        expensesLink.onclick = function() {
-          showExpensesSection();
-          return false;
-        };
-        navLinks.appendChild(expensesLink);
-        console.log('Кнопка расходов добавлена');
-      }
-    } catch (error) {
-      console.error('Ошибка при авторизации:', error);
-    }
-  } else {
-    console.log('Пользователь не авторизован');
-    isAdmin = false;
-    currentUser = null;
-    
-    // Скрываем элементы для неавторизованного пользователя
-    document.getElementById('logoutBtn').classList.add('hidden');
-    document.getElementById('loginBtn').classList.remove('hidden');
-    
-    // Удаляем кнопку расходов
-    const expensesLink = document.getElementById('expensesNavLink');
-    if (expensesLink) {
-      expensesLink.remove();
-    }
-  }
-});
+onAuthStateChanged(auth, handleAuthStateChange);
 
 // Инициализация активного раздела при загрузке страницы
   document.addEventListener('DOMContentLoaded', () => {
@@ -5602,23 +5559,24 @@ onAuthStateChanged(auth, async (user) => {
     // Инициализация обработчика скролла
     let lastScrollTop = 0;
     const header = document.getElementById('mainHeader');
-    const headerContent = document.getElementById('headerContent');
-    const title = header?.querySelector('h1');
     
     window.addEventListener('scroll', () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       
-      if (scrollTop > 100) { // Если прокрутили больше 100px
-        if (scrollTop > lastScrollTop) { // Скролл вниз
-          header.classList.add('compact-header');
-        } else { // Скролл вверх
-          header.classList.remove('compact-header');
-        }
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Скролл вниз - скрываем шапку
+        header.style.transform = 'translateY(-100%)';
       } else {
-        header.classList.remove('compact-header');
+        // Скролл вверх или в начале страницы - показываем шапку
+        header.style.transform = 'translateY(0)';
       }
       
       lastScrollTop = scrollTop;
+    });
+    
+    // Показываем шапку при наведении
+    header.addEventListener('mouseenter', () => {
+      header.style.transform = 'translateY(0)';
     });
   });
 
