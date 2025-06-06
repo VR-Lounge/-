@@ -1311,33 +1311,33 @@
       
       <div class="space-y-3">
         <!-- WhatsApp -->
-        <a id="shareWhatsApp" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fab fa-whatsapp text-green-500" style="color: #25D366 !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">WhatsApp</span>
+        <a id="shareWhatsApp" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors" target="_blank">
+          <i class="fab fa-whatsapp text-2xl" style="color: #25D366;"></i>
+          <span class="text-gray-900">WhatsApp</span>
         </a>
         
         <!-- Telegram -->
-        <a id="shareTelegram" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fab fa-telegram text-blue-500" style="color: #0088cc !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">Telegram</span>
+        <a id="shareTelegram" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors" target="_blank">
+          <i class="fab fa-telegram text-2xl" style="color: #0088cc;"></i>
+          <span class="text-gray-900">Telegram</span>
         </a>
         
         <!-- ВКонтакте -->
-        <a id="shareVK" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fab fa-vk text-blue-600" style="color: #4c75a3 !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">ВКонтакте</span>
+        <a id="shareVK" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors" target="_blank">
+          <i class="fab fa-vk text-2xl" style="color: #4c75a3;"></i>
+          <span class="text-gray-900">ВКонтакте</span>
         </a>
         
         <!-- Копировать ссылку -->
-        <button id="copyLink" class="share-option w-full border-0 bg-transparent" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fas fa-copy text-gray-600" style="color: #6c757d !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">Копировать ссылку</span>
+        <button id="copyLink" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors w-full">
+          <i class="fas fa-copy text-2xl text-gray-600"></i>
+          <span class="text-gray-900">Копировать ссылку</span>
         </button>
         
         <!-- Email -->
-        <a id="shareEmail" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fas fa-envelope text-red-500" style="color: #dc3545 !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">Email</span>
+        <a id="shareEmail" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors" target="_blank">
+          <i class="fas fa-envelope text-2xl" style="color: #dc3545;"></i>
+          <span class="text-gray-900">Email</span>
         </a>
       </div>
     </div>
@@ -1617,149 +1617,188 @@
   <!-- === СЕКЦИЯ УСЛУГ === -->
   <section id="servicesSection" class="hidden max-w-7xl mx-auto my-8">
     <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Стоимость услуг</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
-        <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Будние дни</h3>
-        <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-indigo-600 text-lg flex-shrink-0"></i>
-            <span>PS5 (1 джойстик) — 150 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-indigo-600 text-lg flex-shrink-0"></i>
-            <span>PS5 (2 джойстика) — 300 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
-            <span>VR очки (1 шт.) — 500 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
-            <span>VR очки (2 шт.) — 1000 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
-            <span>VR очки (3 шт.) — 1500 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
-            <span>VR очки (4 шт.) — 2000 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-child text-orange-600 text-lg flex-shrink-0"></i>
-            <span>X-Box Kinnect (до 8 чел.) — 500 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-green-600 text-lg flex-shrink-0"></i>
-            <span>X-Box (1 джойстик) — 250 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-green-600 text-lg flex-shrink-0"></i>
-            <span>X-Box (2 джойстика) — 500 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-green-600 text-lg flex-shrink-0"></i>
-            <span>X-Box (3 джойстика) — 750 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-green-600 text-lg flex-shrink-0"></i>
-            <span>X-Box (4 джойстика) — 1000 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-microphone text-pink-600 text-lg flex-shrink-0"></i>
-            <span>Караоке — 1000 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-dice-d6 text-purple-600 text-lg flex-shrink-0"></i>
-            <span>Настольные игры — 500 ₽/час</span>
-          </li>
-        </ul>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Будние дни</h3>
+          <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS5 (1 джойстик) — 150 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS5 (2 джойстика) — 300 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (1 шт.) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (2 шт.) — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (3 шт.) — 1500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (4 шт.) — 2000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-child text-2xl" style="color: #f97316;"></i>
+              <span>X-Box Kinnect (до 8 чел.) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (1 джойстик) — 250 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (2 джойстика) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (3 джойстика) — 750 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (4 джойстика) — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-microphone text-2xl" style="color: #ec4899;"></i>
+              <span>Караоке — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-dice-d6 text-2xl" style="color: #9333ea;"></i>
+              <span>Настольные игры — 500 ₽/час</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Выходные дни</h3>
+          <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (1 шт.) — 750 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (2 шт.) — 1500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (3 шт.) — 2250 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (4 шт.) — 3000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS5 (1 джойстик) — 150 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS5 (2 джойстика) — 300 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-child text-2xl" style="color: #f97316;"></i>
+              <span>X-Box Kinnect (до 8 чел.) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (1 джойстик) — 250 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (2 джойстика) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (3 джойстика) — 750 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (4 джойстика) — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-microphone text-2xl" style="color: #ec4899;"></i>
+              <span>Караоке — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-dice-d6 text-2xl" style="color: #9333ea;"></i>
+              <span>Настольные игры — 500 ₽/час</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight flex items-center">
+            <i class="fas fa-birthday-cake text-2xl mr-2" style="color: #ef4444;"></i>
+            <span>Аренда всего (День Рождения)</span>
+          </h3>
+          <ul class="space-y-3 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-clock text-2xl" style="color: #3b82f6;"></i>
+              <span>Первый час — 4000 руб.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-clock text-2xl" style="color: #3b82f6;"></i>
+              <span>Второй час — 3500 руб.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-clock text-2xl" style="color: #3b82f6;"></i>
+              <span>Третий час — 3000 руб.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-clock text-2xl" style="color: #3b82f6;"></i>
+              <span>Четвертый и далее — 3000 руб./час</span>
+            </li>
+          </ul>
+          <p class="mt-5 font-semibold text-gray-900 tracking-tight">В стоимость входит аренда всего помещения:</p>
+          <ul class="space-y-2 mt-2 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS комната</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-microphone text-2xl" style="color: #ec4899;"></i>
+              <span>Караоке</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-film text-2xl" style="color: #64748b;"></i>
+              <span>Кино</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>XBOX 360</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-child text-2xl" style="color: #f97316;"></i>
+              <span>Танцы в XBOX</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-desktop text-2xl" style="color: #0ea5e9;"></i>
+              <span>Игры на ПК</span>
+            </li>
+          </ul>
+          <p class="mt-4 font-semibold text-gray-900 tracking-tight">Дополнительные услуги:</p>
+          <ul class="space-y-2 mt-2 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fas fa-user-friends text-2xl" style="color: #8b5cf6;"></i>
+              <span><span class="font-medium">Ведущая:</span> 1000 ₽ (фиксированная стоимость на весь период мероприятия)</span>
+            </li>
+          </ul>
+          <p class="mt-4 text-gray-500 italic text-sm flex items-center space-x-2">
+            <i class="fas fa-utensils text-gray-400"></i>
+            <span>Можно заказать свою еду и напитки</span>
+          </p>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
-        <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Выходные дни</h3>
-        <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
-            <span>VR очки (1 шт.) — 750 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
-            <span>VR очки (2 шт.) — 1500 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
-            <span>VR очки (3 шт.) — 2250 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-vr-cardboard text-blue-600 text-lg flex-shrink-0"></i>
-            <span>VR очки (4 шт.) — 3000 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-indigo-600 text-lg flex-shrink-0"></i>
-            <span>PS5 (1 джойстик) — 150 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-indigo-600 text-lg flex-shrink-0"></i>
-            <span>PS5 (2 джойстика) — 300 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-child text-orange-600 text-lg flex-shrink-0"></i>
-            <span>X-Box Kinnect (до 8 чел.) — 500 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-green-600 text-lg flex-shrink-0"></i>
-            <span>X-Box (1 джойстик) — 250 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-green-600 text-lg flex-shrink-0"></i>
-            <span>X-Box (2 джойстика) — 500 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-green-600 text-lg flex-shrink-0"></i>
-            <span>X-Box (3 джойстика) — 750 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-gamepad text-green-600 text-lg flex-shrink-0"></i>
-            <span>X-Box (4 джойстика) — 1000 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-microphone text-pink-600 text-lg flex-shrink-0"></i>
-            <span>Караоке — 1000 ₽/час</span>
-          </li>
-          <li class="flex items-center space-x-3">
-            <i class="fas fa-dice-d6 text-purple-600 text-lg flex-shrink-0"></i>
-            <span>Настольные игры — 500 ₽/час</span>
-          </li>
-        </ul>
-      </div>
-      <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
-        <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight flex items-center">
-          <i class="fas fa-birthday-cake text-red-600 text-lg mr-2 flex-shrink-0"></i>
-          <span>Аренда всего (День Рождения)</span>
-        </h3>
-        <ul class="space-y-3 text-gray-700 text-base leading-relaxed">
-          <li>Первый час — 4000 руб.</li>
-          <li>Второй час — 3500 руб.</li>
-          <li>Третий час — 3000 руб.</li>
-          <li>Четвертый и далее — 3000 руб./час</li>
-        </ul>
-        <p class="mt-5 font-semibold text-gray-900 tracking-tight">В стоимость входит аренда всего помещения:</p>
-        <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2 text-base leading-relaxed">
-          <li>VR очки</li>
-          <li>PS комната</li>
-          <li>Караоке</li>
-          <li>Кино</li>
-          <li>XBOX 360</li>
-          <li>Танцы в XBOX</li>
-          <li>Игры на ПК</li>
-        </ul>
-        <p class="mt-4 font-semibold text-gray-900 tracking-tight">Дополнительные услуги:</p>
-        <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2 text-base leading-relaxed">
-          <li><span class="font-medium">Ведущая:</span> 1000 ₽ (фиксированная стоимость на весь период мероприятия)</li>
-        </ul>
-        <p class="mt-4 text-gray-500 italic text-sm">Можно заказать свою еду и напитки</p>
-      </div>
-    </div>
   </section>
 
   <!-- === СЕКЦИЯ ВИДЖЕТОВ === -->
