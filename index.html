@@ -3079,7 +3079,7 @@
           </div>
         </div>
         <button class="mt-4 text-sm text-green-700 hover:text-green-900 view-revenue-details flex items-center">
-          <i class="fas fa-list mr-1.5"></i> Показать детализацию
+            <i class="fas fa-list mr-1.5"></i> Показать детализацию
         </button>
         <div id="revenue-details" class="hidden mt-4 space-y-2 border-t border-green-100 pt-3">
           ${Object.entries(revenueByDay).sort().map(([date, data]) => `
@@ -3110,7 +3110,7 @@
               <span class="text-gray-600">Будущие записи</span>
             </div>
           </div>
-        </div>
+                </div>
       `;
       salaryResults.appendChild(revenueCard);
 
@@ -3256,7 +3256,7 @@
                    const month = salaryViewMonth.getMonth();
                    const yearMonthStr = `${year}-${(month + 1).toString().padStart(2, '0')}`;
 
-      bookings.forEach(booking => {
+                   bookings.forEach(booking => {
                        if (typeof booking.bookingDate === 'string' && booking.bookingDate.startsWith(yearMonthStr)) {
                             const dateStr = booking.bookingDate;
                             if (!revenueByDay[dateStr]) {
@@ -3772,7 +3772,7 @@
             let bookingTotalAmount = 0; // Сумма ДО скидки
 
             // Расчет суммы ДО скидки (аналогично calculateSalaries)
-              if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+            if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
                  booking.selectedServices.forEach(service => {
                      if (service === 'birthday') {
                          const fullHours = Math.floor(duration);
@@ -3972,13 +3972,13 @@
                 
                 // Для прошлой недели (только если сегодня понедельник)
                 if (isMonday && booking.bookingDate >= prevWeekStartStr && booking.bookingDate <= prevWeekEndStr) {
-                    const dateStr = booking.bookingDate;
-                    if (!prevWeekBookingsByDate[dateStr]) {
-                        prevWeekBookingsByDate[dateStr] = [];
-                    }
-                    prevWeekBookingsByDate[dateStr].push(booking);
+                const dateStr = booking.bookingDate;
+                if (!prevWeekBookingsByDate[dateStr]) {
+                    prevWeekBookingsByDate[dateStr] = [];
                 }
-            }
+                prevWeekBookingsByDate[dateStr].push(booking);
+                }
+             }
         });
 
          // 3. Расчет ЗП за текущую неделю
@@ -3993,7 +3993,7 @@
             // Расчет выручки дня
             dayBookings.forEach(booking => {
                  let bookingTotalAmount = 0; // Сумма до скидки
-                const duration = parseFloat(booking.duration) || 0;
+                 const duration = parseFloat(booking.duration) || 0;
 
                  // Определяем, является ли услуга "Арендой ДР"
                  const isBirthdayService = 
@@ -4003,28 +4003,28 @@
 
                  // Используем selectedServices для расчета суммы ДО скидки
                  if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
-                booking.selectedServices.forEach(service => {
-                  if (service === 'birthday') {
+                     booking.selectedServices.forEach(service => {
+                         if (service === 'birthday') {
                              // Накопительный расчет для ДР
-                    const fullHours = Math.floor(duration);
-                    const hasHalfHour = duration % 1 !== 0;
-                    let birthdayTotal = 0;
-                    for (let hour = 1; hour <= fullHours; hour++) {
-                      const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
-                      birthdayTotal += hourPrice;
-                    }
-                    if (hasHalfHour) {
-                      if (fullHours === 0) { birthdayTotal += 2000; }
-                      else if (fullHours === 1) { birthdayTotal += 2000; }
-                      else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
-                    }
+                             const fullHours = Math.floor(duration);
+                             const hasHalfHour = duration % 1 !== 0;
+                             let birthdayTotal = 0;
+                             for (let hour = 1; hour <= fullHours; hour++) {
+                                 const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                                 birthdayTotal += hourPrice;
+                             }
+                             if (hasHalfHour) {
+                                 if (fullHours === 0) { birthdayTotal += 2000; }
+                                 else if (fullHours === 1) { birthdayTotal += 2000; }
+                                 else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                             }
                              bookingTotalAmount += birthdayTotal;
-                  } else if (service === 'hostess') {
+                         } else if (service === 'hostess') {
                            // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
                            bookingTotalAmount += servicePrices.hostess;
                            hostessRevenue += servicePrices.hostess;
-                  } else {
-                    const price = servicePrices[service] || 0;
+                         } else {
+                             const price = servicePrices[service] || 0;
                              bookingTotalAmount += price * duration;
                          }
                      });
@@ -4032,13 +4032,13 @@
                       // Логика расчета суммы ДО скидки по старому полю serviceType
                       // ... (логика расчета bookingRevenue по serviceType остается той же, но присваиваем в bookingTotalAmount) ...
                        console.warn('Using legacy serviceType for weekly payroll calculation (calculating pre-discount amount)', booking);
-                if (booking.serviceType === 'birthday') {
-                  const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                       if (booking.serviceType === 'birthday') {
+                           const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
                            bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
-                } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+                       } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
                            bookingTotalAmount = servicePriceHalfHour[booking.serviceType] || 0;
-                } else {
-                  const pricePerHour = servicePrices[booking.serviceType] || 0;
+                       } else {
+                           const pricePerHour = servicePrices[booking.serviceType] || 0;
                            bookingTotalAmount = pricePerHour * duration;
                        }
                  }
@@ -4123,7 +4123,7 @@
 
                  // Расчет выручки дня
                  dayBookings.forEach(booking => {
-                     let bookingTotalAmount = 0;
+                        let bookingTotalAmount = 0;
                      const duration = parseFloat(booking.duration) || 0;
                      const isBirthdayService = 
                          (booking.selectedServices && Array.isArray(booking.selectedServices) && 
@@ -4133,18 +4133,18 @@
                      if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
                          booking.selectedServices.forEach(service => {
                              if (service === 'birthday') {
-                                 const fullHours = Math.floor(duration);
-                                 const hasHalfHour = duration % 1 !== 0;
-                                 let birthdayTotal = 0;
-                                 for (let hour = 1; hour <= fullHours; hour++) {
-                                     const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
-                                     birthdayTotal += hourPrice;
-                                 }
-                                 if (hasHalfHour) {
-                                     if (fullHours === 0) { birthdayTotal += 2000; }
-                                     else if (fullHours === 1) { birthdayTotal += 2000; }
-                                     else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
-                                 }
+                            const fullHours = Math.floor(duration);
+                            const hasHalfHour = duration % 1 !== 0;
+                            let birthdayTotal = 0;
+                            for (let hour = 1; hour <= fullHours; hour++) {
+                                const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                                birthdayTotal += hourPrice;
+                            }
+                            if (hasHalfHour) {
+                                if (fullHours === 0) { birthdayTotal += 2000; }
+                                else if (fullHours === 1) { birthdayTotal += 2000; }
+                                else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                            }
                                  bookingTotalAmount += birthdayTotal;
                              } else if (service === 'hostess') {
                                  bookingTotalAmount += servicePrices.hostess;
@@ -4156,8 +4156,8 @@
                          });
                      } else if (booking.serviceType) {
                          if (booking.serviceType === 'birthday') {
-                             const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
-                             bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                            const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                            bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
                          } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
                              bookingTotalAmount = servicePriceHalfHour[booking.serviceType] || 0;
                          } else {
@@ -4167,18 +4167,18 @@
                      }
 
                      // Применяем скидки
-                     const discountPercent = booking.discountPercent || 0;
-                     const discountAmount = booking.discountAmount || 0;
-                     let finalBookingAmount = bookingTotalAmount;
-                     if (discountPercent > 0) {
-                         finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
-                     } else if (discountAmount > 0) {
-                         finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
-                     }
-
+                        const discountPercent = booking.discountPercent || 0;
+                        const discountAmount = booking.discountAmount || 0;
+                        let finalBookingAmount = bookingTotalAmount;
+                        if (discountPercent > 0) {
+                            finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+                        } else if (discountAmount > 0) {
+                            finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+                        }
+                        
                      dayRevenue += finalBookingAmount;
                      if (isBirthdayService) {
-                         birthdayRevenue += finalBookingAmount;
+                        birthdayRevenue += finalBookingAmount;
                      } else {
                          otherServicesRevenue += finalBookingAmount;
                      }
@@ -4247,10 +4247,10 @@
         weeklyPayrollResultsEl.innerHTML = ''; // Очистка
 
         if (!weekRange) {
-            weeklyPayrollPeriodEl.textContent = 'Расчет периода...';
-            weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет данных</p>';
-            return;
-        }
+             weeklyPayrollPeriodEl.textContent = 'Расчет периода...';
+             weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет данных</p>';
+        return;
+      }
 
         const nextMonday = getNextMonday(weekRange.end);
         const dateOptions = { 
@@ -4471,7 +4471,7 @@
                     <div><span class="font-medium">Сумма:</span> ${totalAmount.toLocaleString('ru-RU')} ₽</div>
                     <div><span class="font-medium">Скидка:</span> ${discountText}</div>
                     <div><span class="font-medium">Итоговая:</span> ${finalAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
-          </div>
+                  </div>
                   <div class="text-xs text-gray-600 space-y-1 mt-1">
                     <div><span class="font-medium">Предоплата:</span> ${b.prepayment && b.prepayment.amount ? `${b.prepayment.amount.toLocaleString('ru-RU')} ₽ (${b.prepayment.method === 'cash' ? 'нал' : 'перевод'})${b.prepayment.date ? ' от ' + new Date(b.prepayment.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
                     <div><span class="font-medium">Доплата нал:</span> ${b.finalPaymentCash && b.finalPaymentCash.amount ? `${b.finalPaymentCash.amount.toLocaleString('ru-RU')} ₽${b.finalPaymentCash.date ? ' от ' + new Date(b.finalPaymentCash.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
@@ -4656,14 +4656,14 @@
       // Основной администратор
       if (mainAdmin) {
         adminInfoHTML += `
-            <div>
+          <div>
             <h4 class="font-semibold text-lg text-blue-800 mb-2">👑 Основной администратор</h4>
             <p class="text-lg font-medium">${mainAdmin.name}</p>
             <div class="mt-2 space-y-1">
               <div class="flex justify-between">
                 <span>Фиксированная ставка:</span>
                 <span class="font-medium">500 ₽</span>
-            </div>
+              </div>
         `;
         
         // Расчет бонуса основного администратора
@@ -4709,10 +4709,10 @@
           `;
         } else {
           // Если не было Дня Рождения, считаем бонус от всей выручки за день
-          const bonus = (dayRevenue * bonusPercent / 100).toFixed(0);
-          const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
-          
-          adminInfoHTML += `
+        const bonus = (dayRevenue * bonusPercent / 100).toFixed(0);
+        const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
+        
+        adminInfoHTML += `
               <div class="flex justify-between">
                 <span>Бонус (${bonusPercent}% от выручки):</span>
                 <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
@@ -4727,11 +4727,11 @@
               </div>
             </div>
           </div>
-          `;
+        `;
         }
       } else {
         adminInfoHTML += `
-            <div>
+          <div>
             <h4 class="font-semibold text-lg text-red-500 mb-2">❗ Основной администратор не назначен</h4>
           </div>
         `;
