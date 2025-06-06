@@ -373,6 +373,28 @@
   </script>
   
   <style>
+    /* Стили для сворачивающейся шапки */
+    .compact-header {
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+    }
+    
+    .compact-header:hover {
+      transform: translateY(0);
+    }
+    
+    .compact-header .header-main {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      .compact-header .header-main {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+      }
+    }
+    
     body {
       font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -783,11 +805,12 @@
 </div>
 
   <!-- Основной интерфейс -->
-  <header class="bg-white/50 shadow-md sticky top-0 z-30 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row md:items-center md:justify-between">
-      <h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-gray-900 select-none text-center md:text-left" style="font-weight: 600;">VR Lounge - Управление</h1>
-      <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mt-4 md:mt-0">
-        <nav class="nav-links flex flex-wrap justify-center items-center gap-2 md:gap-4 w-full md:w-auto">
+  <header class="bg-white/50 shadow-md sticky top-0 z-30 backdrop-blur-md transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 transition-all duration-300" id="headerContent">
+      <div class="py-3 flex flex-col md:flex-row md:items-center md:justify-between header-main">
+        <h1 class="text-2xl md:text-3xl font-semibold tracking-tight text-gray-900 select-none text-center md:text-left transition-all duration-300" style="font-weight: 600;">VR Lounge - Управление</h1>
+        <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mt-4 md:mt-0">
+          <nav class="nav-links flex flex-wrap justify-center items-center gap-2 md:gap-4 w-full md:w-auto">
           <a href="#" class="nav-link active flex-1 md:flex-auto text-center" onclick="return showBookingsSection()">
             <i class="fas fa-calendar-alt mr-2"></i>Записи
           </a>
@@ -5520,27 +5543,51 @@ window.showSalarySection = function() {
   return false;
 }
 
-// Показываем раздел расходов для всех авторизованных пользователей
+// Инициализация Firebase Auth
+let currentUser = null;
+
+// Обработчик состояния авторизации
 onAuthStateChanged(auth, async (user) => {
+  console.log('Состояние авторизации изменилось:', user?.email);
+  currentUser = user;
+  
   if (user && user.email) {
     try {
-      // Любой авторизованный пользователь считается админом
+      // Любой авторизованный пользователь получает доступ
       isAdmin = true;
-      addExpensesNavLink();
       
-      // Показываем кнопку выхода и скрываем кнопку входа
+      // Показываем элементы для авторизованного пользователя
       document.getElementById('logoutBtn').classList.remove('hidden');
       document.getElementById('loginBtn').classList.add('hidden');
+      
+      // Добавляем кнопку расходов
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks && !document.getElementById('expensesNavLink')) {
+        const expensesLink = document.createElement('a');
+        expensesLink.href = '#';
+        expensesLink.id = 'expensesNavLink';
+        expensesLink.className = 'nav-link flex-1 md:flex-auto text-center';
+        expensesLink.innerHTML = '<i class="fas fa-receipt mr-2"></i>Расходы';
+        expensesLink.onclick = function() {
+          showExpensesSection();
+          return false;
+        };
+        navLinks.appendChild(expensesLink);
+        console.log('Кнопка расходов добавлена');
+      }
     } catch (error) {
       console.error('Ошибка при авторизации:', error);
     }
   } else {
+    console.log('Пользователь не авторизован');
     isAdmin = false;
-    // Скрываем кнопку выхода и показываем кнопку входа
+    currentUser = null;
+    
+    // Скрываем элементы для неавторизованного пользователя
     document.getElementById('logoutBtn').classList.add('hidden');
     document.getElementById('loginBtn').classList.remove('hidden');
     
-    // Удаляем ссылку на расходы, если она есть
+    // Удаляем кнопку расходов
     const expensesLink = document.getElementById('expensesNavLink');
     if (expensesLink) {
       expensesLink.remove();
@@ -5549,9 +5596,31 @@ onAuthStateChanged(auth, async (user) => {
 });
 
 // Инициализация активного раздела при загрузке страницы
-document.addEventListener('DOMContentLoaded', () => {
-  showBookingsSection();
-});
+  document.addEventListener('DOMContentLoaded', () => {
+    showBookingsSection();
+    
+    // Инициализация обработчика скролла
+    let lastScrollTop = 0;
+    const header = document.getElementById('mainHeader');
+    const headerContent = document.getElementById('headerContent');
+    const title = header?.querySelector('h1');
+    
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > 100) { // Если прокрутили больше 100px
+        if (scrollTop > lastScrollTop) { // Скролл вниз
+          header.classList.add('compact-header');
+        } else { // Скролл вверх
+          header.classList.remove('compact-header');
+        }
+      } else {
+        header.classList.remove('compact-header');
+      }
+      
+      lastScrollTop = scrollTop;
+    });
+  });
 
   </script>
 </body>
