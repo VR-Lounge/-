@@ -1882,8 +1882,8 @@
     <h2 class="text-2xl font-bold text-gray-900 flex items-center">
       <i class="fas fa-receipt mr-2 text-blue-500"></i>Учёт расходов
     </h2>
-    <button id="addExpenseBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold flex items-center">
-      <i class="fas fa-plus mr-2"></i>Добавить расход
+    <button id="addExpenseBtn" onclick="document.getElementById('addExpenseModal').classList.remove('hidden')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold flex items-center">
+      <i class="fa-solid fa-plus mr-2"></i>Добавить расход
     </button>
   </div>
   <div class="flex flex-wrap gap-4 mb-4">
@@ -1915,7 +1915,7 @@
   <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md relative">
     <button onclick="document.getElementById('addExpenseModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
     <h3 class="text-xl font-bold mb-4 text-gray-900 flex items-center"><i class="fas fa-plus mr-2 text-blue-500"></i>Добавить расход</h3>
-    <form id="addExpenseForm" class="space-y-4">
+    <form id="addExpenseForm" class="space-y-4" onsubmit="return false;">
       <div>
         <label class="block text-sm mb-1 text-gray-700">Категория</label>
         <select name="category" required class="border rounded-lg px-3 py-2 w-full">
@@ -1940,7 +1940,7 @@
       </div>
       <div class="flex justify-end gap-2 mt-4">
         <button type="button" onclick="document.getElementById('addExpenseModal').classList.add('hidden')" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700">Отмена</button>
-        <button type="submit" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold">Сохранить</button>
+        <button type="submit" onclick="handleAddExpense(event)" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold">Сохранить</button>
       </div>
     </form>
   </div>
@@ -1948,6 +1948,38 @@
 
   <!-- Firebase и основная логика приложения -->
   <script type="module">
+    // Функция обработки добавления расхода
+    async function handleAddExpense(event) {
+      event.preventDefault();
+      try {
+        const form = document.getElementById('addExpenseForm');
+        const modal = document.getElementById('addExpenseModal');
+        
+        if (!auth.currentUser) {
+          throw new Error('Пользователь не авторизован');
+        }
+        
+        const expenseData = {
+          category: form.category.value,
+          description: form.description.value,
+          amount: Number(form.amount.value),
+          date: new Date(form.date.value),
+          createdAt: new Date(),
+          createdBy: auth.currentUser.uid
+        };
+        
+        await addDoc(collection(db, 'expenses'), expenseData);
+        modal.classList.add('hidden');
+        form.reset();
+        await loadExpenses();
+      } catch (error) {
+        console.error('Ошибка при добавлении расхода:', error);
+        alert('Произошла ошибка при сохранении расхода. Пожалуйста, попробуйте позже.');
+      }
+    }
+
+    window.handleAddExpense = handleAddExpense;
+
     // Инициализация Firebase
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { 
