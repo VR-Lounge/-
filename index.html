@@ -753,13 +753,13 @@
       <h1 class="text-3xl font-semibold tracking-tight text-gray-900 select-none" style="font-weight: 600;">VR Lounge - Управление</h1>
       <div class="flex items-center space-x-4 mt-2 md:mt-0">
         <nav class="nav-links flex items-center space-x-6 mr-4">
-          <a href="#" class="nav-link" onclick="showBookingsSection()">
+          <a href="#" class="nav-link active" onclick="return showBookingsSection()">
             <i class="fas fa-calendar-alt mr-2"></i>Записи
           </a>
-          <a href="#" class="nav-link" onclick="showAdminScheduleSection()">
+          <a href="#" class="nav-link" onclick="return showAdminScheduleSection()">
             <i class="fas fa-user-clock mr-2"></i>График
           </a>
-          <a href="#" class="nav-link" onclick="showSalarySection()">
+          <a href="#" class="nav-link" onclick="return showSalarySection()">
             <i class="fas fa-money-bill-wave mr-2"></i>Финансы
           </a>
         </nav>
@@ -769,6 +769,35 @@
       </div>
     </div>
   </header>
+
+  <script>
+    // Функции для переключения разделов
+    function showBookingsSection() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('bookingsSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showBookingsSection"]').classList.add('active');
+    }
+
+    function showAdminScheduleSection() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('adminScheduleSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showAdminScheduleSection"]').classList.add('active');
+    }
+
+    function showSalarySection() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('salarySection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showSalarySection"]').classList.add('active');
+    }
+
+    // Инициализация активного раздела при загрузке страницы
+    document.addEventListener('DOMContentLoaded', () => {
+      showBookingsSection();
+    });
+  </script>
 
   <style>
     .nav-link {
@@ -803,7 +832,7 @@
 
   <main class="flex-grow max-w-7xl mx-auto px-6 py-8 flex flex-col space-y-10">
     <!-- Календарь записи клиентов -->
-    <section>
+    <section id="bookingsSection">
       <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Календарь записи клиентов</h2>
       <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 space-y-5 md:space-y-0">
@@ -4221,7 +4250,7 @@
                 weeklyPayrollData[assignment.helperAdminId].total += basePay + bonus;
             }
          });
-
+                        
          // 4. Расчет ЗП за прошлую неделю (если сегодня понедельник)
          if (isMonday) {
              prevWeekAssignments.forEach(assignment => {
@@ -4275,8 +4304,8 @@
                              const pricePerHour = servicePrices[booking.serviceType] || 0;
                              bookingTotalAmount = pricePerHour * duration;
                          }
-                     }
-
+                        }
+                        
                      // Применяем скидки
                         const discountPercent = booking.discountPercent || 0;
                         const discountAmount = booking.discountAmount || 0;
@@ -4294,7 +4323,7 @@
                          otherServicesRevenue += finalBookingAmount;
                      }
                  });
-
+                
                  // Начисление основному администратору за прошлую неделю
                  if (assignment.mainAdminId && weeklyPayrollData[assignment.mainAdminId]) {
                      const basePay = 500;
@@ -4333,8 +4362,8 @@
                      const bonusRevenue = birthdayRevenue - hostessRevenue;
                      const bonus = bonusRevenue * bonusPercent;
                      weeklyPayrollData[assignment.helperAdminId].previousWeekTotal += basePay + bonus;
-                 }
-             });
+            }
+         });
          }
 
         renderWeeklyPayroll(weeklyPayrollData, currentWeek);
@@ -5418,37 +5447,44 @@ function addExpensesNavLink() {
 }
 
 // === Функции навигации ===
-function showBookingsSection() {
+window.showBookingsSection = function() {
   document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
-  document.querySelector('section').classList.remove('hidden');
+  document.querySelector('section:first-of-type').classList.remove('hidden');
   document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-  document.querySelector('.nav-link[onclick="showBookingsSection()"]').classList.add('active');
+  document.querySelector('.nav-link[onclick*="showBookingsSection"]').classList.add('active');
+  return false;
 }
 
-function showAdminScheduleSection() {
+window.showAdminScheduleSection = function() {
   document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
   document.getElementById('adminScheduleSection').classList.remove('hidden');
   document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-  document.querySelector('.nav-link[onclick="showAdminScheduleSection()"]').classList.add('active');
+  document.querySelector('.nav-link[onclick*="showAdminScheduleSection"]').classList.add('active');
+  return false;
 }
 
-function showSalarySection() {
+window.showSalarySection = function() {
   document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
   document.getElementById('salarySection').classList.remove('hidden');
   document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
-  document.querySelector('.nav-link[onclick="showSalarySection()"]').classList.add('active');
+  document.querySelector('.nav-link[onclick*="showSalarySection"]').classList.add('active');
+  return false;
 }
 
-// Показываем раздел расходов только для админов после входа
-onAuthStateChanged(auth, (user) => {
+// Показываем раздел расходов для всех авторизованных пользователей
+onAuthStateChanged(auth, async (user) => {
   if (user && user.email) {
-    // В будущем здесь можно добавить более сложную проверку на админа через claims
-    isAdmin = true;
-    addExpensesNavLink();
-    
-    // Показываем кнопку выхода и скрываем кнопку входа
-    document.getElementById('logoutBtn').classList.remove('hidden');
-    document.getElementById('loginBtn').classList.add('hidden');
+    try {
+      // Любой авторизованный пользователь считается админом
+      isAdmin = true;
+      addExpensesNavLink();
+      
+      // Показываем кнопку выхода и скрываем кнопку входа
+      document.getElementById('logoutBtn').classList.remove('hidden');
+      document.getElementById('loginBtn').classList.add('hidden');
+    } catch (error) {
+      console.error('Ошибка при авторизации:', error);
+    }
   } else {
     isAdmin = false;
     // Скрываем кнопку выхода и показываем кнопку входа
