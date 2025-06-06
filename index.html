@@ -1951,10 +1951,10 @@
     // Функция обработки добавления расхода
     async function handleAddExpense(event) {
       event.preventDefault();
+      const form = document.getElementById('addExpenseForm');
+      const modal = document.getElementById('addExpenseModal');
+      
       try {
-        const form = document.getElementById('addExpenseForm');
-        const modal = document.getElementById('addExpenseModal');
-        
         if (!auth.currentUser) {
           throw new Error('Пользователь не авторизован');
         }
@@ -1963,7 +1963,7 @@
           category: form.category.value,
           description: form.description.value,
           amount: Number(form.amount.value),
-          date: new Date(form.date.value),
+          date: new Date(form.date.value + 'T00:00:00'),
           createdAt: new Date(),
           createdBy: auth.currentUser.uid
         };
@@ -1971,7 +1971,8 @@
         await addDoc(collection(db, 'expenses'), expenseData);
         modal.classList.add('hidden');
         form.reset();
-        await loadExpenses();
+        await loadExpenses(); // Перезагружаем список расходов
+        return false;
       } catch (error) {
         console.error('Ошибка при добавлении расхода:', error);
         alert('Произошла ошибка при сохранении расхода. Пожалуйста, попробуйте позже.');
@@ -5652,17 +5653,25 @@ window.loadExpenses = async function() {
     }
     
     const snap = await getDocs(q);
-    snap.forEach(doc => expenses.push({ 
-      id: doc.id, 
-      ...doc.data(),
-      date: doc.data().date instanceof Date ? doc.data().date : new Date(doc.data().date)
-    }));
+    snap.forEach(doc => {
+      const data = doc.data();
+      // Преобразуем timestamp в Date
+      const date = data.date instanceof Date ? data.date : 
+                  data.date?.toDate ? data.date.toDate() : 
+                  new Date(data.date);
+      
+      expenses.push({ 
+        id: doc.id, 
+        ...data,
+        date: date
+      });
+    });
     
     renderExpenses();
     updateStatistics();
   } catch (error) {
     console.error('Ошибка при загрузке расходов:', error);
-    alert('Произошла ошибка при загрузке расходов. Пожалуйста, попробуйте позже.');
+    console.error('Детали ошибки:', error.message);
   }
 }
 
@@ -5727,8 +5736,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderExpenses() {
   const expensesList = document.getElementById('expensesList');
-  if (!expensesList) return;
+  if (!expensesList) {
+    console.error('Элемент expensesList не найден');
+    return;
+  }
   
+  console.log('Рендеринг расходов:', expenses.length, 'записей');
   expensesList.innerHTML = '';
   
   const categoryColors = {
@@ -5748,32 +5761,44 @@ function renderExpenses() {
   };
   
   expenses.forEach(expense => {
-    const card = document.createElement('div');
-    card.className = 'expense-card bg-white border rounded-lg p-4 flex justify-between items-center mb-3 hover:shadow-md transition-shadow';
-    
-    const date = expense.date instanceof Date ? expense.date : new Date(expense.date);
-    
-    card.innerHTML = `
-      <div class="flex-1">
-        <div class="flex items-center mb-2">
-          <span class="category-badge ${categoryColors[expense.category] || 'bg-gray-100 text-gray-800'} px-2 py-1 rounded-full text-sm font-medium">
-            ${categoryNames[expense.category] || expense.category}
-          </span>
-          <span class="text-gray-500 text-sm ml-2">${date.toLocaleDateString('ru-RU')}</span>
+    try {
+      const card = document.createElement('div');
+      card.className = 'expense-card bg-white border rounded-lg p-4 flex justify-between items-center mb-3 hover:shadow-md transition-shadow';
+      
+      // Проверяем и форматируем дату
+      let formattedDate = '';
+      try {
+        const date = expense.date instanceof Date ? expense.date : new Date(expense.date);
+        formattedDate = date.toLocaleDateString('ru-RU');
+      } catch (dateError) {
+        console.error('Ошибка форматирования даты:', dateError);
+        formattedDate = 'Дата не указана';
+      }
+      
+      card.innerHTML = `
+        <div class="flex-1">
+          <div class="flex items-center mb-2">
+            <span class="category-badge ${categoryColors[expense.category] || 'bg-gray-100 text-gray-800'} px-2 py-1 rounded-full text-sm font-medium">
+              ${categoryNames[expense.category] || expense.category}
+            </span>
+            <span class="text-gray-500 text-sm ml-2">${formattedDate}</span>
+          </div>
+          <p class="text-gray-800">${expense.description || 'Без описания'}</p>
         </div>
-        <p class="text-gray-800">${expense.description}</p>
-      </div>
-      <div class="flex items-center">
-        <span class="text-lg font-semibold mr-4">${expense.amount.toLocaleString('ru-RU')} ₽</span>
-        <button 
-          onclick="deleteExpense('${expense.id}')" 
-          class="text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
-        >
-          <i class="fas fa-trash"></i>
-        </button>
-      </div>
-    `;
-    expensesList.appendChild(card);
+        <div class="flex items-center">
+          <span class="text-lg font-semibold mr-4">${(expense.amount || 0).toLocaleString('ru-RU')} ₽</span>
+          <button 
+            onclick="deleteExpense('${expense.id}')" 
+            class="text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
+          >
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      `;
+      expensesList.appendChild(card);
+    } catch (cardError) {
+      console.error('Ошибка при создании карточки расхода:', cardError);
+    }
   });
 }
 
