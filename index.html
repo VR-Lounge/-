@@ -752,12 +752,54 @@
     <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row md:items-center md:justify-between">
       <h1 class="text-3xl font-semibold tracking-tight text-gray-900 select-none" style="font-weight: 600;">VR Lounge - Управление</h1>
       <div class="flex items-center space-x-4 mt-2 md:mt-0">
+        <nav class="nav-links flex items-center space-x-6 mr-4">
+          <a href="#" class="nav-link" onclick="showBookingsSection()">
+            <i class="fas fa-calendar-alt mr-2"></i>Записи
+          </a>
+          <a href="#" class="nav-link" onclick="showAdminScheduleSection()">
+            <i class="fas fa-user-clock mr-2"></i>График
+          </a>
+          <a href="#" class="nav-link" onclick="showSalarySection()">
+            <i class="fas fa-money-bill-wave mr-2"></i>Финансы
+          </a>
+        </nav>
         <p class="text-gray-500 text-sm select-none">Записи и Администраторы</p>
         <button id="logoutBtn" class="hidden text-sm text-blue-600 hover:text-blue-800">Выйти</button>
         <button id="loginBtn" class="text-sm text-blue-600 hover:text-blue-800">Вход для администратора</button>
       </div>
     </div>
   </header>
+
+  <style>
+    .nav-link {
+      color: #4a5568;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-link:hover {
+      color: #2d3748;
+      background-color: #f7fafc;
+    }
+    
+    .nav-link.active {
+      color: #3182ce;
+      background-color: #ebf8ff;
+    }
+    
+    @media (max-width: 768px) {
+      .nav-links {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
 
   <main class="flex-grow max-w-7xl mx-auto px-6 py-8 flex flex-col space-y-10">
     <!-- Календарь записи клиентов -->
@@ -5375,13 +5417,55 @@ function addExpensesNavLink() {
   }
 }
 
+// === Функции навигации ===
+function showBookingsSection() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.querySelector('section').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick="showBookingsSection()"]').classList.add('active');
+}
+
+function showAdminScheduleSection() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('adminScheduleSection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick="showAdminScheduleSection()"]').classList.add('active');
+}
+
+function showSalarySection() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('salarySection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick="showSalarySection()"]').classList.add('active');
+}
+
 // Показываем раздел расходов только для админов после входа
 onAuthStateChanged(auth, (user) => {
   if (user && user.email) {
-    // Проверка на админа (можно доработать по claims)
+    // В будущем здесь можно добавить более сложную проверку на админа через claims
     isAdmin = true;
     addExpensesNavLink();
+    
+    // Показываем кнопку выхода и скрываем кнопку входа
+    document.getElementById('logoutBtn').classList.remove('hidden');
+    document.getElementById('loginBtn').classList.add('hidden');
+  } else {
+    isAdmin = false;
+    // Скрываем кнопку выхода и показываем кнопку входа
+    document.getElementById('logoutBtn').classList.add('hidden');
+    document.getElementById('loginBtn').classList.remove('hidden');
+    
+    // Удаляем ссылку на расходы, если она есть
+    const expensesLink = document.getElementById('expensesNavLink');
+    if (expensesLink) {
+      expensesLink.remove();
+    }
   }
+});
+
+// Инициализация активного раздела при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+  showBookingsSection();
 });
 
   </script>
