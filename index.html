@@ -1953,29 +1953,59 @@
       event.preventDefault();
       const form = document.getElementById('addExpenseForm');
       const modal = document.getElementById('addExpenseModal');
+      const submitButton = form.querySelector('button[type="submit"]');
       
       try {
         if (!auth.currentUser) {
           throw new Error('Пользователь не авторизован');
+        }
+
+        // Отключаем кнопку на время сохранения
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Сохранение...';
         }
         
         const expenseData = {
           category: form.category.value,
           description: form.description.value,
           amount: Number(form.amount.value),
-          date: new Date(form.date.value + 'T00:00:00'),
-          createdAt: new Date(),
+          date: firebase.firestore.Timestamp.fromDate(new Date(form.date.value + 'T00:00:00')),
+          createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
           createdBy: auth.currentUser.uid
         };
         
-        await addDoc(collection(db, 'expenses'), expenseData);
-        modal.classList.add('hidden');
-        form.reset();
-        await loadExpenses(); // Перезагружаем список расходов
+        const docRef = await addDoc(collection(db, 'expenses'), expenseData);
+        
+        if (docRef.id) {
+          modal.classList.add('hidden');
+          form.reset();
+          
+          // Добавляем новый расход в локальный массив
+          expenses.unshift({
+            id: docRef.id,
+            ...expenseData,
+            date: new Date(form.date.value + 'T00:00:00')
+          });
+          
+          // Обновляем отображение
+          renderExpenses();
+          updateStatistics();
+        }
+        
         return false;
       } catch (error) {
         console.error('Ошибка при добавлении расхода:', error);
-        alert('Произошла ошибка при сохранении расхода. Пожалуйста, попробуйте позже.');
+        // Не показываем alert, если запись успешно создалась
+        if (!error.message.includes('already exists')) {
+          alert('Произошла ошибка при сохранении расхода. Пожалуйста, попробуйте позже.');
+        }
+      } finally {
+        // Восстанавливаем кнопку
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.innerHTML = 'Сохранить';
+        }
       }
     }
 
@@ -5640,32 +5670,59 @@ function showExpensesSection() {
 
 window.loadExpenses = async function() {
   try {
+    console.log('Начало загрузки расходов');
     expenses = [];
     const expensesCollection = collection(db, 'expenses');
     const categoryFilter = document.getElementById('categoryFilter');
     
-    let q = query(expensesCollection, orderBy('date', 'desc'));
+    // Создаем базовый запрос
+    let baseQuery = query(expensesCollection, orderBy('date', 'desc'));
+    
+    // Добавляем фильтр по категории, если выбран
     if (categoryFilter && categoryFilter.value) {
-      q = query(expensesCollection, 
+      console.log('Применяем фильтр категории:', categoryFilter.value);
+      baseQuery = query(expensesCollection, 
         where('category', '==', categoryFilter.value), 
         orderBy('date', 'desc')
       );
     }
     
-    const snap = await getDocs(q);
+    console.log('Выполняем запрос к Firebase');
+    const snap = await getDocs(baseQuery);
+    console.log('Получено документов:', snap.size);
+    
     snap.forEach(doc => {
-      const data = doc.data();
-      // Преобразуем timestamp в Date
-      const date = data.date instanceof Date ? data.date : 
-                  data.date?.toDate ? data.date.toDate() : 
-                  new Date(data.date);
-      
-      expenses.push({ 
-        id: doc.id, 
-        ...data,
-        date: date
-      });
+      try {
+        const data = doc.data();
+        console.log('Обработка документа:', doc.id, data);
+        
+        // Преобразуем timestamp в Date
+        let expenseDate;
+        if (data.date?.toDate) {
+          expenseDate = data.date.toDate();
+        } else if (data.date instanceof Date) {
+          expenseDate = data.date;
+        } else if (typeof data.date === 'string') {
+          expenseDate = new Date(data.date);
+        } else {
+          console.warn('Некорректный формат даты:', data.date);
+          expenseDate = new Date();
+        }
+        
+        expenses.push({ 
+          id: doc.id, 
+          ...data,
+          date: expenseDate
+        });
+      } catch (docError) {
+        console.error('Ошибка при обработке документа:', doc.id, docError);
+      }
     });
+    
+    console.log('Загружено расходов:', expenses.length);
+    
+    // Сортируем по дате перед отображением
+    expenses.sort((a, b) => b.date - a.date);
     
     renderExpenses();
     updateStatistics();
@@ -5735,6 +5792,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderExpenses() {
+  console.log('Начало рендеринга расходов');
   const expensesList = document.getElementById('expensesList');
   if (!expensesList) {
     console.error('Элемент expensesList не найден');
@@ -5742,7 +5800,11 @@ function renderExpenses() {
   }
   
   console.log('Рендеринг расходов:', expenses.length, 'записей');
-  expensesList.innerHTML = '';
+  
+  // Очищаем список
+  while (expensesList.firstChild) {
+    expensesList.removeChild(expensesList.firstChild);
+  }
   
   const categoryColors = {
     utilities: 'bg-blue-100 text-blue-800',
@@ -5760,26 +5822,45 @@ function renderExpenses() {
     other: 'Прочее'
   };
   
-  expenses.forEach(expense => {
+  if (expenses.length === 0) {
+    const emptyState = document.createElement('div');
+    emptyState.className = 'text-center py-8 text-gray-500';
+    emptyState.innerHTML = '<i class="fas fa-receipt mb-2 text-2xl"></i><p>Нет расходов для отображения</p>';
+    expensesList.appendChild(emptyState);
+    return;
+  }
+  
+  expenses.forEach((expense, index) => {
     try {
+      console.log(`Создание карточки для расхода ${index + 1}:`, expense);
+      
       const card = document.createElement('div');
       card.className = 'expense-card bg-white border rounded-lg p-4 flex justify-between items-center mb-3 hover:shadow-md transition-shadow';
       
       // Проверяем и форматируем дату
       let formattedDate = '';
       try {
-        const date = expense.date instanceof Date ? expense.date : new Date(expense.date);
-        formattedDate = date.toLocaleDateString('ru-RU');
+        const date = expense.date instanceof Date ? expense.date : 
+                    expense.date?.toDate ? expense.date.toDate() : 
+                    new Date(expense.date);
+        formattedDate = date.toLocaleDateString('ru-RU', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
       } catch (dateError) {
-        console.error('Ошибка форматирования даты:', dateError);
+        console.error('Ошибка форматирования даты:', dateError, expense.date);
         formattedDate = 'Дата не указана';
       }
+      
+      const categoryName = categoryNames[expense.category] || expense.category || 'Без категории';
+      const categoryColor = categoryColors[expense.category] || 'bg-gray-100 text-gray-800';
       
       card.innerHTML = `
         <div class="flex-1">
           <div class="flex items-center mb-2">
-            <span class="category-badge ${categoryColors[expense.category] || 'bg-gray-100 text-gray-800'} px-2 py-1 rounded-full text-sm font-medium">
-              ${categoryNames[expense.category] || expense.category}
+            <span class="category-badge ${categoryColor} px-2 py-1 rounded-full text-sm font-medium">
+              ${categoryName}
             </span>
             <span class="text-gray-500 text-sm ml-2">${formattedDate}</span>
           </div>
@@ -5790,16 +5871,21 @@ function renderExpenses() {
           <button 
             onclick="deleteExpense('${expense.id}')" 
             class="text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
+            title="Удалить расход"
           >
             <i class="fas fa-trash"></i>
           </button>
         </div>
       `;
+      
       expensesList.appendChild(card);
     } catch (cardError) {
-      console.error('Ошибка при создании карточки расхода:', cardError);
+      console.error('Ошибка при создании карточки расхода:', cardError, expense);
     }
   });
+  
+  console.log('Рендеринг завершен');
+}
 }
 
 function updateStatistics() {
