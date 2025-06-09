@@ -1040,6 +1040,12 @@
             <div id="todayPayrollResults" class="space-y-2 text-sm">
                 <!-- Результаты сегодняшних выплат -->
             </div>
+            <button class="mt-4 text-sm text-green-600 hover:text-green-800 view-today-details flex items-center">
+                <i class="fas fa-list mr-1.5"></i> Показать детализацию
+            </button>
+            <div id="today-details" class="hidden mt-4 space-y-3 border-t border-green-100 pt-4">
+                <!-- Детализация будет здесь -->
+            </div>
         </div>
 
         <!-- ЕЖЕНЕДЕЛЬНЫЙ РАСЧЕТ К ВЫПЛАТЕ -->
@@ -4459,6 +4465,11 @@
         const prevWeekStartStr = formatDateSafe(previousWeek.start);
         const prevWeekEndStr = formatDateSafe(previousWeek.end);
 
+        console.log('Calculating payroll for:', {
+            currentWeek: { start: weekStartStr, end: weekEndStr },
+            previousWeek: { start: prevWeekStartStr, end: prevWeekEndStr }
+        });
+
         // Создаем объект для хранения данных по зарплате
         const weeklyPayrollData = {}; // { adminId: { name: 'Name', total: 0, previousWeekTotal: 0 } }
 
@@ -4467,18 +4478,23 @@
             weeklyPayrollData[admin.id] = { 
                 name: admin.name, 
                 total: 0,
-                previousWeekTotal: 0
+                previousWeekTotal: 0,
+                details: [] // Добавляем массив для хранения деталей по дням
             };
         });
 
         // 2. Фильтруем назначения и бронирования за текущую и прошлую недели
-        const weekAssignments = adminAssignments.filter(a =>
-            typeof a.date === 'string' && a.date >= weekStartStr && a.date <= weekEndStr
-        );
+        const weekAssignments = adminAssignments.filter(a => {
+            const isValid = typeof a.date === 'string' && a.date >= weekStartStr && a.date <= weekEndStr;
+            if (isValid) console.log('Current week assignment:', a);
+            return isValid;
+        });
 
-        const prevWeekAssignments = isMonday ? adminAssignments.filter(a =>
-            typeof a.date === 'string' && a.date >= prevWeekStartStr && a.date <= prevWeekEndStr
-        ) : [];
+        const prevWeekAssignments = isMonday ? adminAssignments.filter(a => {
+            const isValid = typeof a.date === 'string' && a.date >= prevWeekStartStr && a.date <= prevWeekEndStr;
+            if (isValid) console.log('Previous week assignment:', a);
+            return isValid;
+        }) : [];
 
         const weekBookingsByDate = {};
         const prevWeekBookingsByDate = {};
@@ -4637,9 +4653,14 @@
                         
          // 4. Расчет ЗП за прошлую неделю (если сегодня понедельник)
          if (isMonday) {
+             console.log('Processing previous week assignments:', prevWeekAssignments);
+             
              prevWeekAssignments.forEach(assignment => {
                  const dateStr = assignment.date;
                  const dayBookings = prevWeekBookingsByDate[dateStr] || [];
+                 
+                 console.log('Processing date:', dateStr, 'Bookings:', dayBookings);
+                 
                  let dayRevenue = 0;
                  let birthdayRevenue = 0;
                  let hostessRevenue = 0;
@@ -4647,28 +4668,34 @@
 
                  // Расчет выручки дня
                  dayBookings.forEach(booking => {
-                        let bookingTotalAmount = 0;
+                     let bookingTotalAmount = 0;
                      const duration = parseFloat(booking.duration) || 0;
+                     
+                     // Определяем тип услуги
                      const isBirthdayService = 
                          (booking.selectedServices && Array.isArray(booking.selectedServices) && 
                           booking.selectedServices.includes('birthday')) || 
                          booking.serviceType === 'birthday';
-
+                     
+                     // Расчет стоимости услуг
                      if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
                          booking.selectedServices.forEach(service => {
                              if (service === 'birthday') {
-                            const fullHours = Math.floor(duration);
-                            const hasHalfHour = duration % 1 !== 0;
-                            let birthdayTotal = 0;
-                            for (let hour = 1; hour <= fullHours; hour++) {
-                                const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
-                                birthdayTotal += hourPrice;
-                            }
-                            if (hasHalfHour) {
-                                if (fullHours === 0) { birthdayTotal += 2000; }
-                                else if (fullHours === 1) { birthdayTotal += 2000; }
-                                else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
-                            }
+                                 const fullHours = Math.floor(duration);
+                                 const hasHalfHour = duration % 1 !== 0;
+                                 let birthdayTotal = 0;
+                                 
+                                 for (let hour = 1; hour <= fullHours; hour++) {
+                                     const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                                     birthdayTotal += hourPrice;
+                                 }
+                                 
+                                 if (hasHalfHour) {
+                                     if (fullHours === 0) birthdayTotal += 2000;
+                                     else if (fullHours === 1) birthdayTotal += 2000;
+                                     else birthdayTotal += (servicePrices.birthday[3] || 3000) / 2;
+                                 }
+                                 
                                  bookingTotalAmount += birthdayTotal;
                              } else if (service === 'hostess') {
                                  bookingTotalAmount += servicePrices.hostess;
@@ -4680,39 +4707,49 @@
                          });
                      } else if (booking.serviceType) {
                          if (booking.serviceType === 'birthday') {
-                            const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
-                            bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                             const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                             bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
                          } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
                              bookingTotalAmount = servicePriceHalfHour[booking.serviceType] || 0;
                          } else {
                              const pricePerHour = servicePrices[booking.serviceType] || 0;
                              bookingTotalAmount = pricePerHour * duration;
                          }
-                        }
-                        
+                     }
+                     
                      // Применяем скидки
-                        const discountPercent = booking.discountPercent || 0;
-                        const discountAmount = booking.discountAmount || 0;
-                        let finalBookingAmount = bookingTotalAmount;
-                        if (discountPercent > 0) {
-                            finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
-                        } else if (discountAmount > 0) {
-                            finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
-                        }
-                        
+                     const discountPercent = booking.discountPercent || 0;
+                     const discountAmount = booking.discountAmount || 0;
+                     let finalBookingAmount = bookingTotalAmount;
+                     
+                     if (discountPercent > 0) {
+                         finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+                     } else if (discountAmount > 0) {
+                         finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+                     }
+                     
+                     // Распределяем выручку
                      dayRevenue += finalBookingAmount;
                      if (isBirthdayService) {
-                        birthdayRevenue += finalBookingAmount;
+                         birthdayRevenue += finalBookingAmount;
                      } else {
                          otherServicesRevenue += finalBookingAmount;
                      }
                  });
-                
-                 // Начисление основному администратору за прошлую неделю
+                 
+                 console.log('Revenue calculation:', {
+                     date: dateStr,
+                     dayRevenue,
+                     birthdayRevenue,
+                     hostessRevenue,
+                     otherServicesRevenue
+                 });
+                 
+                 // Начисление основному администратору
                  if (assignment.mainAdminId && weeklyPayrollData[assignment.mainAdminId]) {
                      const basePay = 500;
                      const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-                     let bonus;
+                     let bonus = 0;
                      
                      if (birthdayRevenue > 0) {
                          const birthdayBonusRevenue = birthdayRevenue - hostessRevenue;
@@ -4721,12 +4758,23 @@
                          bonus = dayRevenue * bonusPercent;
                      }
                      
-                     weeklyPayrollData[assignment.mainAdminId].previousWeekTotal += basePay + bonus;
+                     const total = basePay + bonus;
+                     weeklyPayrollData[assignment.mainAdminId].previousWeekTotal += total;
+                     
+                     console.log('Admin payment:', {
+                         adminId: assignment.mainAdminId,
+                         date: dateStr,
+                         basePay,
+                         bonus,
+                         total,
+                         previousWeekTotal: weeklyPayrollData[assignment.mainAdminId].previousWeekTotal
+                     });
                  }
-
-                 // Начисление помощнику за прошлую неделю
+                 
+                 // Начисление помощнику
                  if (assignment.helperAdminId && weeklyPayrollData[assignment.helperAdminId] && assignment.helperHours) {
                      let actualHelperHours = 0;
+                     
                      dayBookings.forEach(booking => {
                          const isBirthdayService = 
                              (booking.selectedServices && Array.isArray(booking.selectedServices) && 
@@ -4745,9 +4793,21 @@
                      const bonusPercent = 0.07;
                      const bonusRevenue = birthdayRevenue - hostessRevenue;
                      const bonus = bonusRevenue * bonusPercent;
-                     weeklyPayrollData[assignment.helperAdminId].previousWeekTotal += basePay + bonus;
-            }
-         });
+                     const total = basePay + bonus;
+                     
+                     weeklyPayrollData[assignment.helperAdminId].previousWeekTotal += total;
+                     
+                     console.log('Helper payment:', {
+                         helperId: assignment.helperAdminId,
+                         date: dateStr,
+                         hours,
+                         basePay,
+                         bonus,
+                         total,
+                         previousWeekTotal: weeklyPayrollData[assignment.helperAdminId].previousWeekTotal
+                     });
+                 }
+             });
          }
 
         renderWeeklyPayroll(weeklyPayrollData, currentWeek);
@@ -4884,6 +4944,203 @@
 
             if (!hasTodayData) {
                 todayPayrollResults.innerHTML = '<p class="italic text-green-600">Нет выплат за прошлую неделю</p>';
+            }
+
+            // Добавляем обработчик для кнопки детализации
+            const todayDetailsBtn = document.querySelector('.view-today-details');
+            const todayDetailsDiv = document.getElementById('today-details');
+            
+            if (todayDetailsBtn && todayDetailsDiv) {
+                todayDetailsBtn.addEventListener('click', () => {
+                    const icon = todayDetailsBtn.querySelector('i');
+                    
+                    if (todayDetailsDiv.classList.contains('hidden')) {
+                        todayDetailsDiv.classList.remove('hidden');
+                        icon.className = 'fas fa-chevron-up mr-1.5';
+                        todayDetailsBtn.textContent = ' Скрыть детализацию';
+                        todayDetailsBtn.insertBefore(icon, todayDetailsBtn.firstChild);
+
+                        // Заполняем детализацию
+                        todayDetailsDiv.innerHTML = '';
+                        
+                        prevWeekAssignments.forEach(assignment => {
+                            const dateStr = assignment.date;
+                            const dayBookings = bookings.filter(b => b.bookingDate === dateStr);
+                            
+                            let dayRevenue = 0;
+                            let birthdayRevenue = 0;
+                            let otherServicesRevenue = 0;
+                            let hostessRevenue = 0;
+
+                            dayBookings.forEach(booking => {
+                                const duration = parseFloat(booking.duration) || 0;
+                                let amount = 0;
+
+                                if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+                                    booking.selectedServices.forEach(service => {
+                                        const servicePrice = parseFloat(booking.servicePrices?.[service]) || 0;
+                                        amount += servicePrice;
+                                        
+                                        if (service === 'birthday') {
+                                            birthdayRevenue += servicePrice;
+                                        } else if (service === 'hostess') {
+                                            hostessRevenue += servicePrice;
+                                        } else {
+                                            otherServicesRevenue += servicePrice;
+                                        }
+                                    });
+                                }
+                                
+                                dayRevenue += amount;
+                            });
+
+                            // Создаем карточку для каждого дня
+                            const dayCard = document.createElement('div');
+                            dayCard.className = 'bg-white rounded-xl p-4 shadow-sm border border-green-100';
+                            
+                            const date = new Date(dateStr + 'T00:00:00');
+                            const formattedDate = date.toLocaleDateString('ru-RU', {
+                                weekday: 'short',
+                                day: '2-digit',
+                                month: 'long'
+                            });
+
+                            let dayHTML = `
+                                <div class="flex justify-between items-center mb-3">
+                                    <h5 class="font-medium text-green-900">${formattedDate}</h5>
+                                    <span class="text-sm text-green-600">Выручка: ${dayRevenue.toLocaleString('ru-RU')} ₽</span>
+                                </div>
+                            `;
+
+                            // Информация об основном администраторе
+                            if (assignment.mainAdminId) {
+                                const admin = admins.find(a => a.id === assignment.mainAdminId);
+                                if (admin) {
+                                    const basePay = 500;
+                                    const bonusPercent = assignment.helperAdminId ? 8 : 15;
+                                    let bonus = 0;
+                                    
+                                    if (birthdayRevenue > 0) {
+                                        const birthdayBonusRevenue = birthdayRevenue - hostessRevenue;
+                                        bonus = (birthdayBonusRevenue + otherServicesRevenue) * (bonusPercent / 100);
+                                    } else {
+                                        bonus = dayRevenue * (bonusPercent / 100);
+                                    }
+                                    
+                                    const total = basePay + bonus;
+
+                                    dayHTML += `
+                                        <div class="mb-3">
+                                            <p class="font-medium text-green-800">${admin.name} (основной)</p>
+                                            <div class="mt-1 space-y-1 text-sm">
+                                                <div class="flex justify-between">
+                                                    <span>Ставка:</span>
+                                                    <span class="font-medium">${basePay.toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span>Бонус (${bonusPercent}%):</span>
+                                                    <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                <div class="flex justify-between text-xs text-gray-600">
+                                                    <span>Выручка за ДР:</span>
+                                                    <span>${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                ${hostessRevenue > 0 ? `
+                                                <div class="flex justify-between text-xs text-gray-600">
+                                                    <span>Стоимость ведущей:</span>
+                                                    <span>-${hostessRevenue.toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                ` : ''}
+                                                <div class="flex justify-between text-xs text-gray-600">
+                                                    <span>Выручка от других услуг:</span>
+                                                    <span>${otherServicesRevenue.toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                <div class="flex justify-between border-t border-green-100 pt-1 mt-1">
+                                                    <span class="font-medium">Итого за день:</span>
+                                                    <span class="font-semibold text-green-700">${parseInt(total).toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
+                                }
+                            }
+
+                            // Информация о помощнике
+                            if (assignment.helperAdminId) {
+                                const helper = admins.find(a => a.id === assignment.helperAdminId);
+                                if (helper) {
+                                    let actualHelperHours = 0;
+                                    dayBookings.forEach(booking => {
+                                        const isBirthdayService = 
+                                            (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                                             booking.selectedServices.includes('birthday')) || 
+                                            booking.serviceType === 'birthday';
+                                        
+                                        if (isBirthdayService) {
+                                            const duration = parseFloat(booking.duration) || 0;
+                                            actualHelperHours += duration;
+                                        }
+                                    });
+                                    
+                                    actualHelperHours = Math.round(actualHelperHours);
+                                    const hours = actualHelperHours > 0 ? actualHelperHours : parseInt(assignment.helperHours);
+                                    const basePay = hours * 150;
+                                    const bonusPercent = 7;
+                                    const bonusRevenue = birthdayRevenue - hostessRevenue;
+                                    const bonus = bonusRevenue * (bonusPercent / 100);
+                                    const total = basePay + bonus;
+
+                                    const assignedHours = parseInt(assignment.helperHours) || 0;
+                                    const hoursWarning = assignedHours !== actualHelperHours && actualHelperHours > 0 ? 
+                                        `<p class="text-xs text-orange-600 mt-1">⚠️ Назначено ${assignedHours} ч, фактически ${actualHelperHours} ч по записям ДР</p>` : '';
+
+                                    dayHTML += `
+                                        <div class="border-t border-green-100 pt-3 mt-2">
+                                            <p class="font-medium text-green-800">${helper.name} (помощник, ${hours} ч)</p>
+                                            ${hoursWarning}
+                                            <div class="mt-1 space-y-1 text-sm">
+                                                <div class="flex justify-between">
+                                                    <span>Почасовая оплата (150 ₽/ч):</span>
+                                                    <span class="font-medium">${basePay.toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <span>Бонус (${bonusPercent}% от выручки ДР):</span>
+                                                    <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                <div class="flex justify-between text-xs text-gray-600">
+                                                    <span>Выручка за ДР:</span>
+                                                    <span>${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                ${hostessRevenue > 0 ? `
+                                                <div class="flex justify-between text-xs text-gray-600">
+                                                    <span>Стоимость ведущей:</span>
+                                                    <span>-${hostessRevenue.toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                <div class="flex justify-between text-xs text-gray-600">
+                                                    <span>Выручка для расчета бонуса:</span>
+                                                    <span>${bonusRevenue.toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                                ` : ''}
+                                                <div class="flex justify-between border-t border-green-100 pt-1 mt-1">
+                                                    <span class="font-medium">Итого за день:</span>
+                                                    <span class="font-semibold text-green-700">${parseInt(total).toLocaleString('ru-RU')} ₽</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `;
+                                }
+                            }
+
+                            dayCard.innerHTML = dayHTML;
+                            todayDetailsDiv.appendChild(dayCard);
+                        });
+                    } else {
+                        todayDetailsDiv.classList.add('hidden');
+                        icon.className = 'fas fa-list mr-1.5';
+                        todayDetailsBtn.textContent = ' Показать детализацию';
+                        todayDetailsBtn.insertBefore(icon, todayDetailsBtn.firstChild);
+                    }
+                });
             }
         } else {
             todayPayrollBlock.classList.add('hidden');
