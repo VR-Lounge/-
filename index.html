@@ -4982,6 +4982,19 @@
                                     amount = Math.max(0, amount - discountAmount);
                                 }
 
+                                // Если нет totalAmount, пробуем рассчитать по старой логике
+                                if (!amount && booking.serviceType) {
+                                    if (booking.serviceType === 'birthday') {
+                                        const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                                        amount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                                    } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+                                        amount = servicePriceHalfHour[booking.serviceType] || 0;
+                                    } else {
+                                        const pricePerHour = servicePrices[booking.serviceType] || 0;
+                                        amount = pricePerHour * duration;
+                                    }
+                                }
+
                                 if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
                                     const totalBeforeDiscount = booking.selectedServices.reduce((sum, service) => {
                                         return sum + (parseFloat(booking.servicePrices?.[service]) || 0);
@@ -5002,6 +5015,10 @@
                                             otherServicesRevenue += priceAfterDiscount;
                                         }
                                     });
+                                } else if (booking.serviceType === 'birthday') {
+                                    birthdayRevenue += amount;
+                                } else {
+                                    otherServicesRevenue += amount;
                                 }
                                 
                                 dayRevenue += amount;
@@ -5033,13 +5050,14 @@
                                     const bonusPercent = assignment.helperAdminId ? 8 : 15;
                                     let bonus = 0;
                                     
-                                    // Если есть день рождения, считаем от (выручка ДР - ведущая + другие услуги)
-                                    // Если нет дня рождения, считаем от общей выручки
-                                    const bonusRevenue = birthdayRevenue > 0 ? 
-                                        (birthdayRevenue - hostessRevenue + otherServicesRevenue) : 
-                                        dayRevenue;
-                                        
-                                    bonus = Math.round(bonusRevenue * (bonusPercent / 100));
+                                    if (birthdayRevenue > 0) {
+                                        // Если был День Рождения, считаем бонус от (выручки ДР минус ведущая) + выручка от других услуг
+                                        const birthdayBonusRevenue = birthdayRevenue - hostessRevenue;
+                                        bonus = Math.round((birthdayBonusRevenue + otherServicesRevenue) * (bonusPercent / 100));
+                                    } else {
+                                        // Если не было Дня Рождения, считаем бонус от всей выручки за день
+                                        bonus = Math.round(dayRevenue * (bonusPercent / 100));
+                                    }
                                     const total = basePay + bonus;
 
                                     dayHTML += `
