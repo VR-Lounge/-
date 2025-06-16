@@ -2097,11 +2097,13 @@
     let admins = []; // Список администраторов
     let adminAssignments = []; // Список назначений
     let selectedServices = new Set(); // Множество выбранных услуг
+    let salaryData = {}; // Глобальные данные о зарплате
 
     // Переменные для хранения функций отписки от слушателей Firestore
     let unsubscribeBookings = null;
     let unsubscribeAdmins = null;
     let unsubscribeAdminAssignments = null;
+    let unsubscribeExpenses = null; // Добавлено для расходов
 
     // === Цены услуг ===
     const servicePrices = {
@@ -3253,19 +3255,36 @@
 
     // === Логика Расчета Зарплаты ===
     function calculateSalaries() {
+      console.log('calculateSalaries called. isAdmin:', isAdmin);
+      
       if (!isAdmin) {
           salarySection.classList.add('hidden'); // Скрыть секцию если не админ
+          console.log('Not admin, hiding salary section');
           return;
       }
-       salarySection.classList.remove('hidden'); // Показать секцию если админ
-
+      
+      // Проверяем, что все необходимые данные загружены
+      if (!admins || admins.length === 0) {
+          console.warn('No admins loaded, skipping salary calculation');
+          return;
+      }
+      if (!bookings || bookings.length === 0) {
+          console.warn('No bookings loaded, skipping salary calculation');
+          return;
+      }
+      if (!adminAssignments || adminAssignments.length === 0) {
+          console.warn('No admin assignments loaded, skipping salary calculation');
+          return;
+      }
+      
+      salarySection.classList.remove('hidden'); // Показать секцию если админ
+      
       const year = salaryViewMonth.getFullYear();
       const month = salaryViewMonth.getMonth();
-
-      currentMonthSalary.textContent = salaryViewMonth.toLocaleDateString('ru-RU', {
-        year: 'numeric',
-        month: 'long',
-      });
+      console.log('Calculating salaries for:', year, month);
+      console.log('Current admins:', admins);
+      console.log('Current bookings:', bookings);
+      console.log('Current assignments:', adminAssignments);
 
       // 1. Группировка бронирований по датам для текущего месяца
       const bookingsByDate = {};
@@ -3291,7 +3310,7 @@
       });
 
       // 2. Инициализация данных по зарплате для каждого администратора
-      const salaryData = {};
+      salaryData = {}; // Очищаем предыдущие данные
       admins.forEach(admin => {
         salaryData[admin.id] = {
           name: admin.name,
@@ -3303,6 +3322,7 @@
           details: [] // Массив для детализации по дням
         };
       });
+      console.log('Initialized salaryData:', salaryData);
 
       // 3. Обработка каждого дня месяца, на который есть назначение
       let totalMonthRevenue = 0; // Общая выручка за месяц (после скидок)
@@ -3481,11 +3501,13 @@
 
 
       // 4. Отображение результатов
+      console.log('Final salaryData:', salaryData);
       renderSalaryResults(salaryData, totalMonthRevenue);
     }
 
 
     function renderSalaryResults(salaryData, totalRevenue) {
+      console.log('renderSalaryResults called with data:', salaryData, 'totalRevenue:', totalRevenue);
       salaryResults.innerHTML = ''; // Очищаем предыдущие результаты
       
       // Карточка общей выручки
@@ -3586,24 +3608,24 @@
         <h3 class="text-lg font-semibold mb-4 text-green-800">Общая выручка за месяц</h3>
         <div class="space-y-3">
           <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-green-600">49 525 ₽</span>
+            <span class="text-3xl font-bold text-green-600">${totalRevenue.toLocaleString('ru-RU')} ₽</span>
             <span class="text-sm text-gray-500">Всего</span>
           </div>
           <div class="grid grid-cols-2 gap-4 pt-3 border-t border-green-100">
             <div>
               <p class="text-sm text-gray-600">Фактическая выручка</p>
-              <p class="text-xl font-semibold text-green-700">28 525 ₽</p>
+              <p class="text-xl font-semibold text-green-700">${actualRevenue.toLocaleString('ru-RU')} ₽</p>
               <p class="text-xs text-gray-500 mt-1">Оказанные услуги</p>
             </div>
             <div>
               <p class="text-sm text-gray-600">Планируемая выручка</p>
-              <p class="text-xl font-semibold text-blue-600">21 000 ₽</p>
+              <p class="text-xl font-semibold text-blue-600">${plannedRevenue.toLocaleString('ru-RU')} ₽</p>
               <p class="text-xs text-gray-500 mt-1">Будущие записи</p>
             </div>
           </div>
         </div>
         <button class="mt-4 text-sm text-green-700 hover:text-green-900 view-revenue-details flex items-center">
-            <i class="fas fa-list mr-1.5"></i> Показать детализацию
+            <i class="fa-solid fa-list mr-1.5"></i> Показать детализацию
         </button>
         <div id="revenue-details" class="hidden mt-4 space-y-2 border-t border-green-100 pt-3">
           ${Object.entries(revenueByDay).sort().map(([date, data]) => `
@@ -3671,7 +3693,7 @@
               <p class="text-2xl font-bold text-blue-600 mt-1">${data.totalSalary.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p> <!-- Округление итоговой -->
             </div>
             <button class="mt-5 text-sm text-blue-600 hover:text-blue-800 view-details flex items-center" data-admin="${admin.id}">
-              <i class="fas fa-list mr-1.5"></i> Показать детализацию
+              <i class="fa-solid fa-list mr-1.5"></i> Показать детализацию
             </button>
             <div id="details-${admin.id}" class="hidden mt-4 space-y-3 border-t border-gray-100 pt-4">
               <!-- Детализация будет здесь -->
@@ -3701,7 +3723,7 @@
           // Переключаем класс скрытия и иконку
           if (detailsDiv.classList.contains('hidden')) {
             detailsDiv.classList.remove('hidden');
-            icon.className = 'fas fa-chevron-up mr-1.5';
+            icon.className = 'fa-solid fa-chevron-up mr-1.5';
             btn.textContent = ' Скрыть детализацию';
             btn.insertBefore(icon, btn.firstChild); // Возвращаем иконку обратно в начало
 
@@ -3756,7 +3778,7 @@
             }
           } else {
             detailsDiv.classList.add('hidden');
-            icon.className = 'fas fa-list mr-1.5';
+            icon.className = 'fa-solid fa-list mr-1.5';
             btn.textContent = ' Показать детализацию';
             btn.insertBefore(icon, btn.firstChild); // Возвращаем иконку обратно в начало
           }
@@ -3896,11 +3918,11 @@
 
 
                    detailsDiv.classList.remove('hidden');
-                   revenueDetailsBtn.innerHTML = '<i class="fas fa-chevron-up mr-1.5"></i> Скрыть детализацию';
+                   revenueDetailsBtn.innerHTML = '<i class="fa-solid fa-chevron-up mr-1.5"></i> Скрыть детализацию';
                } else {
                    // Скрыть детализацию выручки
                    detailsDiv.classList.add('hidden');
-                   revenueDetailsBtn.innerHTML = '<i class="fas fa-list mr-1.5"></i> Показать детализацию';
+                   revenueDetailsBtn.innerHTML = '<i class="fa-solid fa-list mr-1.5"></i> Показать детализацию';
                }
            });
        }
@@ -4097,18 +4119,22 @@
 
       // --- Расчет зарплаты ---
       prevMonthSalaryBtn.addEventListener('click', () => {
+        console.log('Previous month clicked, current month:', salaryViewMonth);
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() - 1);
+        console.log('Month changed to:', salaryViewMonth);
         // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
         calculateRevenueStats();
         calculateSalaries();
         // Еженедельная ЗП не зависит от выбранного месяца
       });
       nextMonthSalaryBtn.addEventListener('click', () => {
+        console.log('Next month clicked, current month:', salaryViewMonth);
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() + 1);
-         // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
+        console.log('Month changed to:', salaryViewMonth);
+        // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
         calculateRevenueStats();
         calculateSalaries();
-         // Еженедельная ЗП не зависит от выбранного месяца
+        // Еженедельная ЗП не зависит от выбранного месяца
       });
 
        // --- Закрытие модальных окон ---
@@ -4763,6 +4789,9 @@
 
     // === Отображение Зарплаты за Текущую Неделю ===
     function renderWeeklyPayroll(payrollData, weekRange) {
+        console.log('renderWeeklyPayroll called with data:', payrollData);
+        console.log('weekRange:', weekRange);
+        
         const today = new Date();
         const isMonday = today.getDay() === 1;
         const todayPayrollBlock = document.getElementById('todayPayrollBlock');
@@ -4810,53 +4839,24 @@
             todayPayrollResults.innerHTML = '';
             let hasTodayData = false;
 
-            // Используем данные из месячного отчета для отображения выплат за прошлую неделю
+            // Используем данные из payrollData для отображения выплат за прошлую неделю
             admins.forEach(admin => {
-                const adminSalaryData = salaryData[admin.id];
-                if (!adminSalaryData) return;
+                const data = payrollData[admin.id];
+                if (!data || data.previousWeekTotal <= 0) return;
 
-                // Фильтруем детали только за прошлую неделю
-                const weekDetails = adminSalaryData.details.filter(detail => {
-                    const detailDate = new Date(detail.date);
-                    return detailDate >= previousWeek.start && detailDate <= previousWeek.end;
-                });
-
-                if (weekDetails.length > 0) {
-                    hasTodayData = true;
-                    const adminBlock = document.createElement('div');
-                    adminBlock.className = 'mb-4';
-                    
-                    // Заголовок с именем админа и общей суммой за неделю
-                    const totalWeekAmount = weekDetails.reduce((sum, detail) => sum + detail.basePay + (detail.bonus || 0), 0);
-                    adminBlock.innerHTML = `
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="font-medium">${admin.name}:</span>
-                            <span class="font-semibold text-green-800">${totalWeekAmount.toLocaleString('ru-RU')} ₽</span>
-                        </div>
-                    `;
-
-                    // Детализация по дням
-                    const detailsList = document.createElement('div');
-                    detailsList.className = 'pl-4 text-sm';
-                    
-                    weekDetails.forEach(detail => {
-                        const date = new Date(detail.date);
-                        const dayName = date.toLocaleDateString('ru-RU', { weekday: 'short' });
-                        const dayDate = date.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short' });
-                        const helperInfo = detail.isHelper ? ' (помощник ' + detail.hours + 'ч)' : '';
-                        
-                        const dayDetail = document.createElement('div');
-                        dayDetail.className = 'flex justify-between items-center text-gray-600';
-                        dayDetail.innerHTML = `
-                            <span>${dayName}, ${dayDate}${helperInfo}:</span>
-                            <span>${detail.basePay}₽ + ${detail.bonus || 0}₽ = ${(detail.basePay + (detail.bonus || 0)).toLocaleString('ru-RU')}₽</span>
-                        `;
-                        detailsList.appendChild(dayDetail);
-                    });
-                    
-                    adminBlock.appendChild(detailsList);
-                    todayPayrollResults.appendChild(adminBlock);
-                }
+                hasTodayData = true;
+                const adminBlock = document.createElement('div');
+                adminBlock.className = 'mb-4';
+                
+                // Заголовок с именем админа и общей суммой за неделю
+                adminBlock.innerHTML = `
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-medium">${admin.name}:</span>
+                        <span class="font-semibold text-green-800">${data.previousWeekTotal.toLocaleString('ru-RU')} ₽</span>
+                    </div>
+                `;
+                
+                todayPayrollResults.appendChild(adminBlock);
             });
 
             if (!hasTodayData) {
@@ -5021,7 +5021,7 @@
                     const editBtn = document.createElement('button');
                     editBtn.type = 'button';
                     editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
-                    editBtn.innerHTML = '<i class="fas fa-edit fa-fw mr-1"></i> Редакт.';
+                    editBtn.innerHTML = '<i class="fa-solid fa-edit fa-fw mr-1"></i> Редакт.';
                     editBtn.addEventListener('click', (e) => {
                         e.stopPropagation();
                         dayDetailsModal.classList.add('hidden'); // Закрываем текущее окно
@@ -5031,7 +5031,7 @@
                     const deleteBtn = document.createElement('button');
                     deleteBtn.type = 'button';
                     deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
-                    deleteBtn.innerHTML = '<i class="fas fa-trash-alt fa-fw mr-1"></i> Удалить';
+                    deleteBtn.innerHTML = '<i class="fa-solid fa-trash-alt fa-fw mr-1"></i> Удалить';
                     deleteBtn.addEventListener('click', (e) => {
                         e.stopPropagation();
                         if (confirm(`Вы уверены, что хотите удалить запись для "${b.clientName}"?`)) {
@@ -5462,7 +5462,7 @@
       const editAssignmentBtn = document.createElement('button');
       editAssignmentBtn.type = 'button';
       editAssignmentBtn.className = 'flex-1 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-blue-300 focus:outline-none';
-      editAssignmentBtn.innerHTML = '<i class="fas fa-edit mr-2"></i> Редактировать назначение';
+      editAssignmentBtn.innerHTML = '<i class="fa-solid fa-edit mr-2"></i> Редактировать назначение';
       editAssignmentBtn.addEventListener('click', () => {
         adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
         openAssignModal(date, dateStr); // Открываем окно назначения
@@ -5472,7 +5472,7 @@
       const addBookingBtn = document.createElement('button');
       addBookingBtn.type = 'button';
       addBookingBtn.className = 'flex-1 bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-green-300 focus:outline-none';
-      addBookingBtn.innerHTML = '<i class="fas fa-plus mr-2"></i> Добавить запись';
+      addBookingBtn.innerHTML = '<i class="fa-solid fa-plus mr-2"></i> Добавить запись';
       addBookingBtn.addEventListener('click', () => {
         adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
         openBookingModal(date); // Открываем окно добавления записи
@@ -5595,7 +5595,7 @@
     
     // === Учёт расходов (только для админов) ===
 let expenses = [];
-let unsubscribeExpenses = null; // Добавляем переменную для отписки от слушателя расходов
+// Используем глобальную переменную unsubscribeExpenses, объявленную выше
 
 function showExpensesSection() {
   try {
@@ -5725,7 +5725,7 @@ function renderExpenses() {
           onclick="deleteExpense('${expense.id}')" 
           class="text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
         >
-          <i class="fas fa-trash"></i>
+          <i class="fa-solid fa-trash"></i>
         </button>
       </div>
     `;
@@ -5778,7 +5778,7 @@ function addExpensesNavLink() {
     expensesLink.href = '#';
     expensesLink.id = 'expensesNavLink';
     expensesLink.className = 'nav-link';
-    expensesLink.innerHTML = '<i class="fas fa-receipt mr-2"></i>Расходы';
+    expensesLink.innerHTML = '<i class="fa-solid fa-receipt mr-2"></i>Расходы';
     expensesLink.onclick = showExpensesSection;
     navLinks.appendChild(expensesLink);
   } catch (error) {
