@@ -3407,7 +3407,7 @@
                             (birthdayRevenue - hostessRevenue + (dayRevenue - birthdayRevenue)) : 
                             dayRevenue;
                             
-                          const bonus = Math.round(bonusRevenue * bonusPercent);
+                          const bonus = bonusRevenue * bonusPercent;
                           adminData.bonusSalary += bonus;
                           adminData.totalSalary += basePay + bonus;
 
@@ -3450,7 +3450,7 @@
                               
                               const bonusPercent = 0.07;
                           const bonusRevenue = birthdayRevenue - hostessRevenue;
-                          const bonus = Math.round(bonusRevenue * bonusPercent); // Считаем бонус только от выручки за ДР
+                          const bonus = bonusRevenue * bonusPercent; // Считаем бонус только от выручки за ДР
                               helperData.bonusSalary += bonus;
                               helperData.totalSalary += basePay + bonus;
 
@@ -3639,12 +3639,10 @@
       salaryResults.appendChild(revenueCard);
 
       // Карточки для каждого администратора, кто работал в этом месяце
-      let hasAnyData = false;
       admins.forEach(admin => {
         const data = salaryData[admin.id];
-        // Отображаем только если есть данные, детали и ЗП > 0
-        if (data && data.details && data.details.length > 0 && data.totalSalary > 0) {
-          hasAnyData = true;
+        // Отображаем только если есть данные и ЗП > 0
+        if (data && data.totalSalary > 0) {
           const adminCard = document.createElement('div');
           adminCard.className = 'bg-white rounded-2xl shadow-md p-6 border border-gray-200 transition hover:shadow-lg'; // Эффект при наведении
 
@@ -3684,7 +3682,7 @@
       });
 
         // Если нет данных по зарплате ни у одного админа
-        if (!hasAnyData) {
+        if (salaryResults.children.length <= 1) { // Только карточка выручки
              const noSalaryText = document.createElement('p');
              noSalaryText.className = 'text-center text-gray-500 italic mt-6';
              noSalaryText.textContent = 'Нет данных о зарплате за выбранный месяц.';
@@ -4098,18 +4096,19 @@
 
 
       // --- Расчет зарплаты ---
-      function updateSalaryData() {
-        calculateRevenueStats();
-        calculateSalaries();
-      }
-
       prevMonthSalaryBtn.addEventListener('click', () => {
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() - 1);
-        updateSalaryData();
+        // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
+        calculateRevenueStats();
+        calculateSalaries();
+        // Еженедельная ЗП не зависит от выбранного месяца
       });
       nextMonthSalaryBtn.addEventListener('click', () => {
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() + 1);
-        updateSalaryData();
+         // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
+        calculateRevenueStats();
+        calculateSalaries();
+         // Еженедельная ЗП не зависит от выбранного месяца
       });
 
        // --- Закрытие модальных окон ---
@@ -4770,9 +4769,6 @@
         const todayPayrollResults = document.getElementById('todayPayrollResults');
         const todayPayrollPeriod = document.getElementById('todayPayrollPeriod');
         weeklyPayrollResultsEl.innerHTML = ''; // Очистка
-        
-        // Пересчитываем зарплаты для корректного отображения
-        calculateSalaries();
 
         if (!weekRange) {
              weeklyPayrollPeriodEl.textContent = 'Расчет периода...';
@@ -4814,97 +4810,52 @@
             todayPayrollResults.innerHTML = '';
             let hasTodayData = false;
 
-            // Получаем данные о выплатах за прошлую неделю из месячного отчета
-            const previousWeekPayrollData = {};
+            // Используем данные из месячного отчета для отображения выплат за прошлую неделю
             admins.forEach(admin => {
-                previousWeekPayrollData[admin.id] = {
-                    name: admin.name,
-                    total: 0,
-                    details: [] // Добавляем массив для детализации
-                };
-            });
+                const adminSalaryData = salaryData[admin.id];
+                if (!adminSalaryData) return;
 
-            // Используем данные из месячного отчета для расчета выплат за прошлую неделю
-            const prevWeekStart = previousWeek.start.toISOString().split('T')[0];
-            const prevWeekEnd = previousWeek.end.toISOString().split('T')[0];
+                // Фильтруем детали только за прошлую неделю
+                const weekDetails = adminSalaryData.details.filter(detail => {
+                    const detailDate = new Date(detail.date);
+                    return detailDate >= previousWeek.start && detailDate <= previousWeek.end;
+                });
 
-            // Проходим по всем администраторам и их деталям из месячного отчета
-            admins.forEach(admin => {
-                if (salaryData[admin.id] && salaryData[admin.id].details) {
-                    // Фильтруем детали только за прошлую неделю
-                    const weekDetails = salaryData[admin.id].details.filter(detail => {
-                        return detail.date >= prevWeekStart && detail.date <= prevWeekEnd;
-                    });
-
-                    // Если есть детали за эту неделю
-                    if (weekDetails.length > 0) {
-                        previousWeekPayrollData[admin.id].details = weekDetails;
-                        
-                        // Считаем общую сумму
-                        weekDetails.forEach(detail => {
-                            const base = detail.base || 0;
-                            const bonus = detail.bonus || 0;
-                            previousWeekPayrollData[admin.id].total += base + bonus;
-                        });
-                    }
-                }
-            });
-
-            // Отображаем результаты за прошлую неделю с детализацией
-            admins.forEach(admin => {
-                const data = previousWeekPayrollData[admin.id];
-                if (data && data.total > 0) {
+                if (weekDetails.length > 0) {
                     hasTodayData = true;
-                    const adminDiv = document.createElement('div');
-                    adminDiv.className = 'mb-4';
+                    const adminBlock = document.createElement('div');
+                    adminBlock.className = 'mb-4';
                     
-                    // Создаем заголовок с именем и общей суммой
-                    const headerDiv = document.createElement('div');
-                    headerDiv.className = 'flex justify-between items-center mb-2';
-                    headerDiv.innerHTML = `
-                        <span class="font-medium">${data.name}:</span>
-                        <span class="font-semibold text-green-800">${Math.round(data.total).toLocaleString('ru-RU')} ₽</span>
+                    // Заголовок с именем админа и общей суммой за неделю
+                    const totalWeekAmount = weekDetails.reduce((sum, detail) => sum + detail.basePay + (detail.bonus || 0), 0);
+                    adminBlock.innerHTML = `
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="font-medium">${admin.name}:</span>
+                            <span class="font-semibold text-green-800">${totalWeekAmount.toLocaleString('ru-RU')} ₽</span>
+                        </div>
                     `;
-                    adminDiv.appendChild(headerDiv);
+
+                    // Детализация по дням
+                    const detailsList = document.createElement('div');
+                    detailsList.className = 'pl-4 text-sm';
                     
-                    // Добавляем детализацию
-                    if (data.details && data.details.length > 0) {
-                        const detailsDiv = document.createElement('div');
-                        detailsDiv.className = 'ml-4 text-sm space-y-1';
+                    weekDetails.forEach(detail => {
+                        const date = new Date(detail.date);
+                        const dayName = date.toLocaleDateString('ru-RU', { weekday: 'short' });
+                        const dayDate = date.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short' });
+                        const helperInfo = detail.isHelper ? ' (помощник ' + detail.hours + 'ч)' : '';
                         
-                        // Сортируем детали по дате
-                        data.details.sort((a, b) => new Date(a.date) - new Date(b.date));
-                        
-                        data.details.forEach(detail => {
-                            const detailDate = new Date(detail.date);
-                            const dateStr = detailDate.toLocaleDateString('ru-RU', { weekday: 'short', day: '2-digit', month: 'short' });
-                            
-                            const detailRow = document.createElement('div');
-                            detailRow.className = 'flex justify-between items-center text-gray-600';
-                            
-                            const base = detail.base || 0;
-                            const bonus = detail.bonus || 0;
-                            const total = base + bonus;
-                            
-                            if (detail.type === 'Помощь на смене') {
-                                detailRow.innerHTML = `
-                                    <span>${dateStr} (помощник ${detail.hours}ч):</span>
-                                    <span>${base}₽ + ${Math.round(bonus)}₽ = ${Math.round(total)}₽</span>
-                                `;
-                            } else {
-                                detailRow.innerHTML = `
-                                    <span>${dateStr}:</span>
-                                    <span>${base}₽ + ${Math.round(bonus)}₽ = ${Math.round(total)}₽</span>
-                                `;
-                            }
-                            
-                            detailsDiv.appendChild(detailRow);
-                        });
-                        
-                        adminDiv.appendChild(detailsDiv);
-                    }
+                        const dayDetail = document.createElement('div');
+                        dayDetail.className = 'flex justify-between items-center text-gray-600';
+                        dayDetail.innerHTML = `
+                            <span>${dayName}, ${dayDate}${helperInfo}:</span>
+                            <span>${detail.basePay}₽ + ${detail.bonus || 0}₽ = ${(detail.basePay + (detail.bonus || 0)).toLocaleString('ru-RU')}₽</span>
+                        `;
+                        detailsList.appendChild(dayDetail);
+                    });
                     
-                    todayPayrollResults.appendChild(adminDiv);
+                    adminBlock.appendChild(detailsList);
+                    todayPayrollResults.appendChild(adminBlock);
                 }
             });
 
@@ -5278,322 +5229,322 @@
             </div>
           </div>
         `;
-      }
-    } else {
-      adminInfoHTML += `
-        <div>
-          <h4 class="font-semibold text-lg text-red-500 mb-2">❗ Основной администратор не назначен</h4>
-        </div>
-      `;
-    }
-    
-    // Помощник
-    if (helperAdmin && assignment.helperHours) {
-      // Рассчитываем фактические часы помощника по записям Аренды ДР
-      let actualHelperHours = 0;
-      dayBookings.forEach(booking => {
-        const isBirthdayService = 
-          (booking.selectedServices && Array.isArray(booking.selectedServices) && 
-           booking.selectedServices.includes('birthday')) || 
-          booking.serviceType === 'birthday';
-        
-        if (isBirthdayService) {
-          const duration = parseFloat(booking.duration) || 0;
-          actualHelperHours += duration;
         }
-      });
-      actualHelperHours = Math.round(actualHelperHours);
-      
-      const assignedHours = parseInt(assignment.helperHours) || 0;
-      // Используем фактические часы для расчета зарплаты
-      const hours = actualHelperHours > 0 ? actualHelperHours : assignedHours;
-      const basePay = hours * 150;
-      const bonusPercent = 7;
-      // Вычитаем стоимость ведущей из выручки ДР при расчете бонуса
-      const bonusRevenue = birthdayRevenue - hostessRevenue;
-      const bonus = (bonusRevenue * bonusPercent / 100).toFixed(0);
-      const totalHelperSalary = (basePay + parseFloat(bonus)).toFixed(0);
-      
-      let hoursWarning = '';
-      if (actualHelperHours > 0 && actualHelperHours !== assignedHours) {
-        hoursWarning = `<div class="text-xs p-1 bg-yellow-100 rounded text-yellow-800 mt-1 mb-2">
-          Внимание: назначено ${assignedHours} ч, фактически ${actualHelperHours} ч по записям ДР
-        </div>`;
-      }
-      
-      adminInfoHTML += `
-        <div class="border-t border-gray-200 pt-4 mt-2">
-          <h4 class="font-semibold text-lg text-indigo-800 mb-2">🛠️ Помощник администратора</h4>
-          <p class="text-lg font-medium">${helperAdmin.name} (${hours} ч)</p>
-          ${hoursWarning}
-          <div class="mt-2 space-y-1">
-            <div class="flex justify-between">
-              <span>Почасовая оплата (150 ₽/ч):</span>
-              <span class="font-medium">${basePay.toLocaleString('ru-RU')} ₽</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Бонус (7% от выручки ДР минус ведущая):</span>
-              <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
-            </div>
-            <div class="flex justify-between text-xs text-gray-600">
-              <span>Выручка за ДР:</span>
-              <span>${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
-            </div>
-            ${hostessRevenue > 0 ? `
-            <div class="flex justify-between text-xs text-gray-600">
-              <span>Стоимость ведущей:</span>
-              <span>-${hostessRevenue.toLocaleString('ru-RU')} ₽</span>
-            </div>
-            <div class="flex justify-between text-xs text-gray-600">
-              <span>Выручка для расчета бонуса:</span>
-              <span>${bonusRevenue.toLocaleString('ru-RU')} ₽</span>
-            </div>
-            ` : ''}
-            <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
-              <span class="font-medium">Итого за день:</span>
-              <span class="font-semibold text-indigo-700">${totalHelperSalary.toLocaleString('ru-RU')} ₽</span>
-            </div>
+      } else {
+        adminInfoHTML += `
+          <div>
+            <h4 class="font-semibold text-lg text-red-500 mb-2">❗ Основной администратор не назначен</h4>
           </div>
-        </div>
-      `;
-    }
-    
-    adminInfoHTML += '</div>';
-    adminInfoCard.innerHTML = adminInfoHTML;
-    
-    // Создаем карточку информации о записях
-    const bookingsCard = document.createElement('div');
-    bookingsCard.className = 'bg-white rounded-xl p-5 border border-gray-200 shadow-sm mt-4';
-    
-    let bookingsHTML = '<h4 class="font-semibold text-lg text-gray-800 mb-3">Записи на этот день</h4>';
-    
-    if (dayBookings.length > 0) {
-      bookingsHTML += '<div class="space-y-3">';
+        `;
+      }
       
-      dayBookings.forEach(booking => {
-        const services = booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.length > 0 
-          ? booking.selectedServices.map(s => getServiceLabel(s)).join(', ') 
-          : getServiceLabel(booking.serviceType);
+      // Помощник
+      if (helperAdmin && assignment.helperHours) {
+        // Рассчитываем фактические часы помощника по записям Аренды ДР
+        let actualHelperHours = 0;
+        dayBookings.forEach(booking => {
+          const isBirthdayService = 
+            (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+             booking.selectedServices.includes('birthday')) || 
+            booking.serviceType === 'birthday';
           
-        const discountPercent = booking.discountPercent || 0;
-        const discountAmount = booking.discountAmount || 0;
-        let finalAmount = 0;
-        
-        // Рассчитываем итоговую сумму бронирования
-        if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
-          const duration = parseFloat(booking.duration) || 0;
-          let total = 0;
-          
-          booking.selectedServices.forEach(service => {
-            if (service === 'birthday') {
-              const fullHours = Math.floor(duration);
-              const hasHalfHour = duration % 1 !== 0;
-              let birthdayTotal = 0;
-              for (let hour = 1; hour <= fullHours; hour++) {
-                const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
-                birthdayTotal += hourPrice;
-              }
-              if (hasHalfHour) {
-                if (fullHours === 0) { birthdayTotal += 2000; }
-                else if (fullHours === 1) { birthdayTotal += 2000; }
-                else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
-              }
-              total += birthdayTotal;
-            } else if (service === 'hostess') {
-              // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
-              total += servicePrices.hostess;
-            } else {
-              const price = servicePrices[service] || 0;
-              total += price * duration;
-            }
-          });
-          
-          if (discountPercent > 0) {
-            finalAmount = total * (1 - discountPercent / 100);
-          } else if (discountAmount > 0) {
-            finalAmount = Math.max(0, total - discountAmount);
-          } else {
-            finalAmount = total;
+          if (isBirthdayService) {
+            const duration = parseFloat(booking.duration) || 0;
+            actualHelperHours += duration;
           }
+        });
+        actualHelperHours = Math.round(actualHelperHours);
+        
+        const assignedHours = parseInt(assignment.helperHours) || 0;
+        // Используем фактические часы для расчета зарплаты
+        const hours = actualHelperHours > 0 ? actualHelperHours : assignedHours;
+        const basePay = hours * 150;
+        const bonusPercent = 7;
+        // Вычитаем стоимость ведущей из выручки ДР при расчете бонуса
+        const bonusRevenue = birthdayRevenue - hostessRevenue;
+        const bonus = (bonusRevenue * bonusPercent / 100).toFixed(0);
+        const totalHelperSalary = (basePay + parseFloat(bonus)).toFixed(0);
+        
+        let hoursWarning = '';
+        if (actualHelperHours > 0 && actualHelperHours !== assignedHours) {
+          hoursWarning = `<div class="text-xs p-1 bg-yellow-100 rounded text-yellow-800 mt-1 mb-2">
+            Внимание: назначено ${assignedHours} ч, фактически ${actualHelperHours} ч по записям ДР
+          </div>`;
         }
         
-        const isBirthdayService = 
-          (booking.selectedServices && Array.isArray(booking.selectedServices) && 
-           booking.selectedServices.includes('birthday')) || 
-          booking.serviceType === 'birthday';
-          
-        // Создаем HTML для записи
-        bookingsHTML += `
-          <div class="p-3 ${isBirthdayService ? 'bg-pink-50 border-pink-200' : 'bg-gray-50 border-gray-200'} border rounded-lg">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">${booking.clientName}</span>
-              <span>${booking.startTime} (${booking.duration}ч)</span>
-            </div>
-            <div class="text-sm text-gray-700">
-              <div>Услуги: ${services}</div>
-              <div>Сумма: ${finalAmount.toLocaleString('ru-RU')} ₽</div>
+        adminInfoHTML += `
+          <div class="border-t border-gray-200 pt-4 mt-2">
+            <h4 class="font-semibold text-lg text-indigo-800 mb-2">🛠️ Помощник администратора</h4>
+            <p class="text-lg font-medium">${helperAdmin.name} (${hours} ч)</p>
+            ${hoursWarning}
+            <div class="mt-2 space-y-1">
+              <div class="flex justify-between">
+                <span>Почасовая оплата (150 ₽/ч):</span>
+                <span class="font-medium">${basePay.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Бонус (7% от выручки ДР минус ведущая):</span>
+                <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Выручка за ДР:</span>
+                <span>${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              ${hostessRevenue > 0 ? `
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Стоимость ведущей:</span>
+                <span>-${hostessRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Выручка для расчета бонуса:</span>
+                <span>${bonusRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              ` : ''}
+              <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
+                <span class="font-medium">Итого за день:</span>
+                <span class="font-semibold text-indigo-700">${totalHelperSalary.toLocaleString('ru-RU')} ₽</span>
+              </div>
             </div>
           </div>
         `;
-      });
+      }
       
-      bookingsHTML += '</div>';
-    } else {
-      bookingsHTML += '<p class="text-gray-500 italic">Нет записей на этот день</p>';
-    }
-    
-    bookingsCard.innerHTML = bookingsHTML;
-    
-    // Создаем карточку финансовой информации
-    const financeCard = document.createElement('div');
-    financeCard.className = 'bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border border-green-200 shadow-sm mt-4';
-    
-    // Рассчитываем фактические часы помощника для финансовой сводки
-    let actualHelperHours = 0;
-    if (helperAdmin) {
-      dayBookings.forEach(booking => {
-        const isBirthdayService = 
-          (booking.selectedServices && Array.isArray(booking.selectedServices) && 
-          booking.selectedServices.includes('birthday')) || 
-          booking.serviceType === 'birthday';
+      adminInfoHTML += '</div>';
+      adminInfoCard.innerHTML = adminInfoHTML;
+      
+      // Создаем карточку информации о записях
+      const bookingsCard = document.createElement('div');
+      bookingsCard.className = 'bg-white rounded-xl p-5 border border-gray-200 shadow-sm mt-4';
+      
+      let bookingsHTML = '<h4 class="font-semibold text-lg text-gray-800 mb-3">Записи на этот день</h4>';
+      
+      if (dayBookings.length > 0) {
+        bookingsHTML += '<div class="space-y-3">';
         
-        if (isBirthdayService) {
-          actualHelperHours += parseFloat(booking.duration) || 0;
-        }
-      });
-      actualHelperHours = Math.round(actualHelperHours);
-    }
-    
-    const financeHTML = `
-      <h4 class="font-semibold text-lg text-green-800 mb-3">Финансовая сводка</h4>
-      <div class="space-y-2">
-        <div class="flex justify-between">
-          <span>Общая выручка за день:</span>
-          <span class="font-semibold text-green-700">${dayRevenue.toLocaleString('ru-RU')} ₽</span>
-        </div>
-        <div class="flex justify-between">
-          <span>Выручка за "Аренду ДР":</span>
-          <span class="font-semibold text-green-700">${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
-        </div>
-        <div class="flex justify-between">
-          <span>Кол-во записей:</span>
-          <span class="font-semibold">${dayBookings.length}</span>
-        </div>
-        <div class="flex justify-between border-t border-green-200 pt-2 mt-1">
-          <span class="font-medium">Всего заработная плата:</span>
-          <span class="font-bold text-green-800 text-lg">
-            ${(
-              // Зарплата основного: ставка + бонус
-              (mainAdmin ? 500 + (
-                // Если есть день рождения, считаем от (выручка ДР - ведущая + другие услуги)
-                // Если нет дня рождения, считаем от общей выручки
-                (birthdayRevenue > 0 ? 
-                  ((birthdayRevenue - (hostessRevenue || 0) + (otherServicesRevenue || 0)) * (helperAdmin ? 0.08 : 0.15)) :
-                  (dayRevenue * (helperAdmin ? 0.08 : 0.15))
-                )
-              ) : 0) + 
-              // Зарплата помощника: почасовая + бонус от ДР
-              (helperAdmin && actualHelperHours > 0 ? 
-                (actualHelperHours * 150) + ((birthdayRevenue - (hostessRevenue || 0)) * 0.07) : 0)
-            ).toFixed(0).toLocaleString('ru-RU')} ₽
-          </span>
-        </div>
-      </div>
-    `;
-    
-    financeCard.innerHTML = financeHTML;
-    
-    // Добавляем кнопки редактирования и создания записей
-    const actionButtons = document.createElement('div');
-    actionButtons.className = 'flex space-x-4 mt-5';
-    
-    // Кнопка редактирования назначения
-    const editAssignmentBtn = document.createElement('button');
-    editAssignmentBtn.type = 'button';
-    editAssignmentBtn.className = 'flex-1 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-blue-300 focus:outline-none';
-    editAssignmentBtn.innerHTML = '<i class="fas fa-edit mr-2"></i> Редактировать назначение';
-    editAssignmentBtn.addEventListener('click', () => {
-      adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
-      openAssignModal(date, dateStr); // Открываем окно назначения
-    });
-    
-    // Кнопка добавления записи
-    const addBookingBtn = document.createElement('button');
-    addBookingBtn.type = 'button';
-    addBookingBtn.className = 'flex-1 bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-green-300 focus:outline-none';
-    addBookingBtn.innerHTML = '<i class="fas fa-plus mr-2"></i> Добавить запись';
-    addBookingBtn.addEventListener('click', () => {
-      adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
-      openBookingModal(date); // Открываем окно добавления записи
-    });
-    
-    actionButtons.appendChild(editAssignmentBtn);
-    actionButtons.appendChild(addBookingBtn);
-    
-    // Добавляем все элементы в модальное окно
-    adminDayDetailsContent.appendChild(adminInfoCard);
-    adminDayDetailsContent.appendChild(bookingsCard);
-    adminDayDetailsContent.appendChild(financeCard);
-    adminDayDetailsContent.appendChild(actionButtons);
-    
-    // Показываем модальное окно
-    adminDayDetailsModal.classList.remove('hidden');
-    
-    // Добавляем обработчик для кнопки закрытия непосредственно в этой функции
-    document.getElementById('closeAdminDayDetailsModal').onclick = function() {
-      adminDayDetailsModal.classList.add('hidden');
-    };
-  }
-
-  // === Логика Модального Окна Назначения Админа ===
-  // ... existing code ...
-
-  // Обработчик изменения выбора помощника
-  helperAdminSelect.addEventListener('change', function() {
-    const helperAdminId = this.value;
-    // Показываем/скрываем поле часов в зависимости от выбора помощника
-    toggleHelperHours(helperAdminId !== "");
-
-    // Если выбран помощник, предлагаем автоматически установить часы на основе записей "Аренда ДР"
-    if (helperAdminId) {
-      const dateStr = assignDateInput.value;
-      const dayBookings = bookings.filter(b => b.bookingDate === dateStr);
-      const birthdayRentalHours = calculateBirthdayRentalHours(dayBookings);
-
-      if (birthdayRentalHours > 0) {
-        // Автоматически заполняем часы помощника
-        helperHoursInput.value = birthdayRentalHours;
+        dayBookings.forEach(booking => {
+          const services = booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.length > 0 
+            ? booking.selectedServices.map(s => getServiceLabel(s)).join(', ') 
+            : getServiceLabel(booking.serviceType);
+            
+          const discountPercent = booking.discountPercent || 0;
+          const discountAmount = booking.discountAmount || 0;
+          let finalAmount = 0;
+          
+          // Рассчитываем итоговую сумму бронирования
+          if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+            const duration = parseFloat(booking.duration) || 0;
+            let total = 0;
+            
+            booking.selectedServices.forEach(service => {
+              if (service === 'birthday') {
+                const fullHours = Math.floor(duration);
+                const hasHalfHour = duration % 1 !== 0;
+                let birthdayTotal = 0;
+                for (let hour = 1; hour <= fullHours; hour++) {
+                  const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                  birthdayTotal += hourPrice;
+                }
+                if (hasHalfHour) {
+                  if (fullHours === 0) { birthdayTotal += 2000; }
+                  else if (fullHours === 1) { birthdayTotal += 2000; }
+                  else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                }
+                total += birthdayTotal;
+              } else if (service === 'hostess') {
+                // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                total += servicePrices.hostess;
+              } else {
+                const price = servicePrices[service] || 0;
+                total += price * duration;
+              }
+            });
+            
+            if (discountPercent > 0) {
+              finalAmount = total * (1 - discountPercent / 100);
+            } else if (discountAmount > 0) {
+              finalAmount = Math.max(0, total - discountAmount);
+            } else {
+              finalAmount = total;
+            }
+          }
+          
+          const isBirthdayService = 
+            (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+             booking.selectedServices.includes('birthday')) || 
+            booking.serviceType === 'birthday';
+            
+          // Создаем HTML для записи
+          bookingsHTML += `
+            <div class="p-3 ${isBirthdayService ? 'bg-pink-50 border-pink-200' : 'bg-gray-50 border-gray-200'} border rounded-lg">
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">${booking.clientName}</span>
+                <span>${booking.startTime} (${booking.duration}ч)</span>
+              </div>
+              <div class="text-sm text-gray-700">
+                <div>Услуги: ${services}</div>
+                <div>Сумма: ${finalAmount.toLocaleString('ru-RU')} ₽</div>
+              </div>
+            </div>
+          `;
+        });
+        
+        bookingsHTML += '</div>';
       } else {
-        // Если нет записей "Аренда ДР", предупреждаем пользователя
-        alert('Внимание! На выбранную дату нет записей "Аренда (ДР)".\nПомощник должен назначаться только на услуги "Аренда (ДР)".');
-        helperHoursInput.value = ''; // Очищаем поле часов
+        bookingsHTML += '<p class="text-gray-500 italic">Нет записей на этот день</p>';
       }
+      
+      bookingsCard.innerHTML = bookingsHTML;
+      
+      // Создаем карточку финансовой информации
+      const financeCard = document.createElement('div');
+      financeCard.className = 'bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border border-green-200 shadow-sm mt-4';
+      
+      // Рассчитываем фактические часы помощника для финансовой сводки
+      let actualHelperHours = 0;
+      if (helperAdmin) {
+        dayBookings.forEach(booking => {
+          const isBirthdayService = 
+            (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+            booking.selectedServices.includes('birthday')) || 
+            booking.serviceType === 'birthday';
+          
+          if (isBirthdayService) {
+            actualHelperHours += parseFloat(booking.duration) || 0;
+          }
+        });
+        actualHelperHours = Math.round(actualHelperHours);
+      }
+      
+      const financeHTML = `
+        <h4 class="font-semibold text-lg text-green-800 mb-3">Финансовая сводка</h4>
+        <div class="space-y-2">
+          <div class="flex justify-between">
+            <span>Общая выручка за день:</span>
+            <span class="font-semibold text-green-700">${dayRevenue.toLocaleString('ru-RU')} ₽</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Выручка за "Аренду ДР":</span>
+            <span class="font-semibold text-green-700">${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Кол-во записей:</span>
+            <span class="font-semibold">${dayBookings.length}</span>
+          </div>
+          <div class="flex justify-between border-t border-green-200 pt-2 mt-1">
+            <span class="font-medium">Всего заработная плата:</span>
+            <span class="font-bold text-green-800 text-lg">
+              ${(
+                // Зарплата основного: ставка + бонус
+                (mainAdmin ? 500 + (
+                  // Если есть день рождения, считаем от (выручка ДР - ведущая + другие услуги)
+                  // Если нет дня рождения, считаем от общей выручки
+                  (birthdayRevenue > 0 ? 
+                    ((birthdayRevenue - (hostessRevenue || 0) + (otherServicesRevenue || 0)) * (helperAdmin ? 0.08 : 0.15)) :
+                    (dayRevenue * (helperAdmin ? 0.08 : 0.15))
+                  )
+                ) : 0) + 
+                // Зарплата помощника: почасовая + бонус от ДР
+                (helperAdmin && actualHelperHours > 0 ? 
+                  (actualHelperHours * 150) + ((birthdayRevenue - (hostessRevenue || 0)) * 0.07) : 0)
+              ).toFixed(0).toLocaleString('ru-RU')} ₽
+            </span>
+          </div>
+        </div>
+      `;
+      
+      financeCard.innerHTML = financeHTML;
+      
+      // Добавляем кнопки редактирования и создания записей
+      const actionButtons = document.createElement('div');
+      actionButtons.className = 'flex space-x-4 mt-5';
+      
+      // Кнопка редактирования назначения
+      const editAssignmentBtn = document.createElement('button');
+      editAssignmentBtn.type = 'button';
+      editAssignmentBtn.className = 'flex-1 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-blue-300 focus:outline-none';
+      editAssignmentBtn.innerHTML = '<i class="fas fa-edit mr-2"></i> Редактировать назначение';
+      editAssignmentBtn.addEventListener('click', () => {
+        adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
+        openAssignModal(date, dateStr); // Открываем окно назначения
+      });
+      
+      // Кнопка добавления записи
+      const addBookingBtn = document.createElement('button');
+      addBookingBtn.type = 'button';
+      addBookingBtn.className = 'flex-1 bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-green-300 focus:outline-none';
+      addBookingBtn.innerHTML = '<i class="fas fa-plus mr-2"></i> Добавить запись';
+      addBookingBtn.addEventListener('click', () => {
+        adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
+        openBookingModal(date); // Открываем окно добавления записи
+      });
+      
+      actionButtons.appendChild(editAssignmentBtn);
+      actionButtons.appendChild(addBookingBtn);
+      
+      // Добавляем все элементы в модальное окно
+      adminDayDetailsContent.appendChild(adminInfoCard);
+      adminDayDetailsContent.appendChild(bookingsCard);
+      adminDayDetailsContent.appendChild(financeCard);
+      adminDayDetailsContent.appendChild(actionButtons);
+      
+      // Показываем модальное окно
+      adminDayDetailsModal.classList.remove('hidden');
+      
+      // Добавляем обработчик для кнопки закрытия непосредственно в этой функции
+      document.getElementById('closeAdminDayDetailsModal').onclick = function() {
+        adminDayDetailsModal.classList.add('hidden');
+      };
     }
-  });
-  
-  // Обработчик изменения выбора Дня Рождения
-  birthdayBookingSelect.addEventListener('change', function() {
-    const selectedOption = this.options[this.selectedIndex];
+
+    // === Логика Модального Окна Назначения Админа ===
+    // ... existing code ...
+
+    // Обработчик изменения выбора помощника
+    helperAdminSelect.addEventListener('change', function() {
+      const helperAdminId = this.value;
+      // Показываем/скрываем поле часов в зависимости от выбора помощника
+      toggleHelperHours(helperAdminId !== "");
+
+      // Если выбран помощник, предлагаем автоматически установить часы на основе записей "Аренда ДР"
+      if (helperAdminId) {
+        const dateStr = assignDateInput.value;
+        const dayBookings = bookings.filter(b => b.bookingDate === dateStr);
+        const birthdayRentalHours = calculateBirthdayRentalHours(dayBookings);
+
+        if (birthdayRentalHours > 0) {
+          // Автоматически заполняем часы помощника
+          helperHoursInput.value = birthdayRentalHours;
+        } else {
+          // Если нет записей "Аренда ДР", предупреждаем пользователя
+          alert('Внимание! На выбранную дату нет записей "Аренда (ДР)".\nПомощник должен назначаться только на услуги "Аренда (ДР)".');
+          helperHoursInput.value = ''; // Очищаем поле часов
+        }
+      }
+    });
     
-    if (this.value && selectedOption) {
-      // Получаем продолжительность выбранного ДР
-      const duration = parseFloat(selectedOption.dataset.duration) || 0;
+    // Обработчик изменения выбора Дня Рождения
+    birthdayBookingSelect.addEventListener('change', function() {
+      const selectedOption = this.options[this.selectedIndex];
       
-      // Обновляем информацию о максимальных часах
-      maxHelperHoursSpan.textContent = duration;
-      maxHelperHoursNote.classList.remove('hidden');
-      
-      // Ограничиваем максимальное значение в поле ввода часов
-      helperHoursInput.max = duration;
-      
-      // Если текущее значение больше максимума, корректируем
-      if (parseFloat(helperHoursInput.value) > duration) {
-        helperHoursInput.value = duration;
+      if (this.value && selectedOption) {
+        // Получаем продолжительность выбранного ДР
+        const duration = parseFloat(selectedOption.dataset.duration) || 0;
+        
+        // Обновляем информацию о максимальных часах
+        maxHelperHoursSpan.textContent = duration;
+        maxHelperHoursNote.classList.remove('hidden');
+        
+        // Ограничиваем максимальное значение в поле ввода часов
+        helperHoursInput.max = duration;
+        
+        // Если текущее значение больше максимума, корректируем
+        if (parseFloat(helperHoursInput.value) > duration) {
+          helperHoursInput.value = duration;
+        }
+      } else {
+        maxHelperHoursNote.classList.add('hidden');
       }
-    } else {
-      maxHelperHoursNote.classList.add('hidden');
-    }
-  });
+    });
 
     // Инициализация виджета ВКонтакте
     document.addEventListener('DOMContentLoaded', function() {
@@ -5857,7 +5808,6 @@ window.showSalarySection = function() {
   document.getElementById('salarySection').classList.remove('hidden');
   document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
   document.querySelector('.nav-link[onclick*="showSalarySection"]').classList.add('active');
-  updateSalaryData(); // Обновляем данные о зарплате при переключении на раздел
   return false;
 }
 
@@ -5944,7 +5894,6 @@ onAuthStateChanged(auth, async (user) => {
       
       initExpensesHandlers();
       setupExpensesListener(); // Устанавливаем слушатель при авторизации
-      updateSalaryData(); // Обновляем данные о зарплате при авторизации
       
     } catch (error) {
       console.error('Ошибка при авторизации:', error);
