@@ -3639,10 +3639,12 @@
       salaryResults.appendChild(revenueCard);
 
       // Карточки для каждого администратора, кто работал в этом месяце
+      let hasAnyData = false;
       admins.forEach(admin => {
         const data = salaryData[admin.id];
-        // Отображаем только если есть данные и ЗП > 0
-        if (data && data.totalSalary > 0) {
+        // Отображаем только если есть данные, детали и ЗП > 0
+        if (data && data.details && data.details.length > 0 && data.totalSalary > 0) {
+          hasAnyData = true;
           const adminCard = document.createElement('div');
           adminCard.className = 'bg-white rounded-2xl shadow-md p-6 border border-gray-200 transition hover:shadow-lg'; // Эффект при наведении
 
@@ -3682,7 +3684,7 @@
       });
 
         // Если нет данных по зарплате ни у одного админа
-        if (salaryResults.children.length <= 1) { // Только карточка выручки
+        if (!hasAnyData) {
              const noSalaryText = document.createElement('p');
              noSalaryText.className = 'text-center text-gray-500 italic mt-6';
              noSalaryText.textContent = 'Нет данных о зарплате за выбранный месяц.';
@@ -4096,19 +4098,18 @@
 
 
       // --- Расчет зарплаты ---
-      prevMonthSalaryBtn.addEventListener('click', () => {
-        salaryViewMonth.setMonth(salaryViewMonth.getMonth() - 1);
-        // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
+      function updateSalaryData() {
         calculateRevenueStats();
         calculateSalaries();
-        // Еженедельная ЗП не зависит от выбранного месяца
+      }
+
+      prevMonthSalaryBtn.addEventListener('click', () => {
+        salaryViewMonth.setMonth(salaryViewMonth.getMonth() - 1);
+        updateSalaryData();
       });
       nextMonthSalaryBtn.addEventListener('click', () => {
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() + 1);
-         // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
-        calculateRevenueStats();
-        calculateSalaries();
-         // Еженедельная ЗП не зависит от выбранного месяца
+        updateSalaryData();
       });
 
        // --- Закрытие модальных окон ---
@@ -4769,6 +4770,9 @@
         const todayPayrollResults = document.getElementById('todayPayrollResults');
         const todayPayrollPeriod = document.getElementById('todayPayrollPeriod');
         weeklyPayrollResultsEl.innerHTML = ''; // Очистка
+        
+        // Пересчитываем зарплаты для корректного отображения
+        calculateSalaries();
 
         if (!weekRange) {
              weeklyPayrollPeriodEl.textContent = 'Расчет периода...';
@@ -5853,6 +5857,7 @@ window.showSalarySection = function() {
   document.getElementById('salarySection').classList.remove('hidden');
   document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
   document.querySelector('.nav-link[onclick*="showSalarySection"]').classList.add('active');
+  updateSalaryData(); // Обновляем данные о зарплате при переключении на раздел
   return false;
 }
 
@@ -5939,6 +5944,7 @@ onAuthStateChanged(auth, async (user) => {
       
       initExpensesHandlers();
       setupExpensesListener(); // Устанавливаем слушатель при авторизации
+      updateSalaryData(); // Обновляем данные о зарплате при авторизации
       
     } catch (error) {
       console.error('Ошибка при авторизации:', error);
