@@ -854,7 +854,7 @@
       if (expensesLink) {
         expensesLink.classList.add('active');
       }
-      loadExpenses();
+      setupExpensesListener(); // Устанавливаем слушатель расходов при переключении на раздел
       return false;
     }
 
@@ -1984,7 +1984,7 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { 
       getFirestore, collection, addDoc, getDocs, onSnapshot, 
-      deleteDoc, doc, updateDoc, query, where, getDoc, setDoc // Добавлен setDoc
+      deleteDoc, doc, updateDoc, query, where, orderBy, getDoc, setDoc // Добавлен orderBy и setDoc
     } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
     import { 
       getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged 
@@ -5760,7 +5760,7 @@ window.deleteExpense = async function(id) {
     
     if (confirm('Вы уверены, что хотите удалить этот расход?')) {
       await deleteDoc(doc(db, 'expenses', id));
-      await loadExpenses();
+      // onSnapshot listener автоматически обновит список расходов
     }
   } catch (error) {
     console.error('Ошибка при удалении расхода:', error);
@@ -5819,7 +5819,7 @@ window.showExpensesSection = function() {
   if (expensesLink) {
     expensesLink.classList.add('active');
   }
-  loadExpenses(); // Добавляем загрузку расходов при переключении на раздел
+  setupExpensesListener(); // Устанавливаем слушатель расходов при переключении на раздел
   return false;
 }
 
