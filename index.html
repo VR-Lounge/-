@@ -854,7 +854,7 @@
       if (expensesLink) {
         expensesLink.classList.add('active');
       }
-      setupExpensesListener(); // Устанавливаем слушатель расходов при переключении на раздел
+      loadExpenses();
       return false;
     }
 
@@ -1951,40 +1951,113 @@
     // Функция обработки добавления расхода
     async function handleAddExpense(event) {
   event.preventDefault();
+  console.log('Adding expense...');
+  
   const form = document.getElementById('addExpenseForm');
   const modal = document.getElementById('addExpenseModal');
+  
+  if (!form) {
+    console.error('Add expense form not found');
+    return;
+  }
   
   try {
     if (!auth.currentUser) {
       throw new Error('Пользователь не авторизован');
     }
     
+    // Валидация данных формы
+    const category = form.category.value;
+    const description = form.description.value.trim();
+    const amount = Number(form.amount.value);
+    const dateValue = form.date.value;
+    
+    if (!category) {
+      alert('Пожалуйста, выберите категорию');
+      return;
+    }
+    
+    if (!description) {
+      alert('Пожалуйста, введите описание');
+      return;
+    }
+    
+    if (!amount || amount <= 0) {
+      alert('Пожалуйста, введите корректную сумму');
+      return;
+    }
+    
+    if (!dateValue) {
+      alert('Пожалуйста, выберите дату');
+      return;
+    }
+    
     const expenseData = {
-      category: form.category.value,
-      description: form.description.value,
-      amount: Number(form.amount.value),
-      date: new Date(form.date.value),
+      category: category,
+      description: description,
+      amount: amount,
+      date: new Date(dateValue + 'T00:00:00'), // Добавляем время для корректного сохранения
       createdAt: new Date(),
       createdBy: auth.currentUser.uid
     };
     
-    await addDoc(collection(db, 'expenses'), expenseData);
+    console.log('Saving expense data:', expenseData);
+    
+    const docRef = await addDoc(collection(db, 'expenses'), expenseData);
+    console.log('Expense saved with ID:', docRef.id);
+    
     modal.classList.add('hidden');
     form.reset();
-    // Не нужно вызывать loadExpenses, так как слушатель автоматически обновит данные
+    
+    // Показываем уведомление об успехе
+    alert('Расход успешно добавлен!');
+    
   } catch (error) {
     console.error('Ошибка при добавлении расхода:', error);
-    alert('Произошла ошибка при сохранении расхода. Пожалуйста, попробуйте позже.');
+    alert('Произошла ошибка при сохранении расхода: ' + error.message);
   }
 }
 
     window.handleAddExpense = handleAddExpense;
 
+    // Функция для отладки состояния секции расходов
+    window.debugExpensesSection = function() {
+      console.log('=== DEBUG EXPENSES SECTION ===');
+      
+      const expensesSection = document.getElementById('expensesSection');
+      console.log('Expenses section found:', !!expensesSection);
+      console.log('Expenses section visible:', expensesSection && !expensesSection.classList.contains('hidden'));
+      
+      const expensesList = document.getElementById('expensesList');
+      console.log('Expenses list found:', !!expensesList);
+      
+      const addExpenseBtn = document.getElementById('addExpenseBtn');
+      console.log('Add expense button found:', !!addExpenseBtn);
+      
+      const addExpenseModal = document.getElementById('addExpenseModal');
+      console.log('Add expense modal found:', !!addExpenseModal);
+      
+      const categoryFilter = document.getElementById('categoryFilter');
+      console.log('Category filter found:', !!categoryFilter);
+      
+      const monthlyExpenses = document.getElementById('monthlyExpenses');
+      console.log('Monthly expenses element found:', !!monthlyExpenses);
+      
+      const totalExpenses = document.getElementById('totalExpenses');
+      console.log('Total expenses element found:', !!totalExpenses);
+      
+      console.log('Current isAdmin:', isAdmin);
+      console.log('Current user:', auth.currentUser ? auth.currentUser.email : 'none');
+      console.log('Expenses array length:', expenses.length);
+      
+      console.log('=== END DEBUG ===');
+    };
+
     // Инициализация Firebase
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { 
       getFirestore, collection, addDoc, getDocs, onSnapshot, 
-      deleteDoc, doc, updateDoc, query, where, orderBy, getDoc, setDoc // Добавлен orderBy и setDoc
+      deleteDoc, doc, updateDoc, query, where, getDoc, setDoc, orderBy // Добавлен orderBy
     } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
     import { 
       getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged 
@@ -2004,6 +2077,38 @@
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
     const auth = getAuth(app);
+
+    // Функция для тестирования подключения к Firebase
+    window.testFirebaseConnection = async function() {
+      try {
+        console.log('Testing Firebase connection...');
+        
+        if (!auth.currentUser) {
+          console.log('User not authenticated');
+          return;
+        }
+        
+        console.log('Current user:', auth.currentUser.email);
+        
+        // Пробуем получить коллекцию expenses
+        const expensesRef = collection(db, 'expenses');
+        console.log('Expenses collection reference:', expensesRef);
+        
+        // Пробуем выполнить простой запрос
+        const snapshot = await getDocs(query(expensesRef, orderBy('date', 'desc')));
+        console.log('Expenses query result:', snapshot.docs.length, 'documents');
+        
+        snapshot.docs.forEach((doc, index) => {
+          console.log(`Document ${index}:`, doc.id, doc.data());
+        });
+        
+        return snapshot.docs.length;
+        
+      } catch (error) {
+        console.error('Error testing Firebase connection:', error);
+        return null;
+      }
+    };
 
     // === Элементы интерфейса ===
     // --- Общие ---
@@ -2288,6 +2393,10 @@
           }, (error) => {
             console.error("Error loading admins:", error); // DEBUG
           });
+
+          // Устанавливаем слушатель расходов для админов
+          console.log('Setting up expenses listener from loadData...'); // DEBUG
+          setupExpensesListener();
 
           // Загрузка назначений администраторов (только для админа)
           console.log('Attempting to load adminAssignments...'); // DEBUG
@@ -5618,35 +5727,76 @@ function showExpensesSection() {
 // Функция для настройки слушателя изменений расходов
 function setupExpensesListener() {
   try {
+    console.log('Setting up expenses listener...'); // Добавляем отладку
+    
     // Отписываемся от предыдущего слушателя, если он есть
     if (unsubscribeExpenses) {
       unsubscribeExpenses();
       unsubscribeExpenses = null;
     }
 
+    if (!isAdmin) {
+      console.log('User is not admin, skipping expenses listener');
+      return;
+    }
+
     const expensesCollection = collection(db, 'expenses');
     const categoryFilter = document.getElementById('categoryFilter');
     
-    let q = query(expensesCollection, orderBy('date', 'desc'));
+    let q;
     if (categoryFilter && categoryFilter.value) {
       q = query(expensesCollection, 
         where('category', '==', categoryFilter.value), 
         orderBy('date', 'desc')
       );
+    } else {
+      q = query(expensesCollection, orderBy('date', 'desc'));
     }
+    
+    console.log('Setting up query:', q);
     
     // Устанавливаем слушатель
     unsubscribeExpenses = onSnapshot(q, (snapshot) => {
-      expenses = snapshot.docs.map(doc => ({ 
-        id: doc.id, 
-        ...doc.data(),
-        date: doc.data().date instanceof Date ? doc.data().date : new Date(doc.data().date)
-      }));
+      console.log('Expenses snapshot received:', snapshot.docs.length);
       
+      expenses = snapshot.docs.map(doc => {
+        const data = doc.data();
+        let date;
+        
+        // Обработка разных типов дат
+        if (data.date) {
+          if (data.date.toDate && typeof data.date.toDate === 'function') {
+            // Firebase Timestamp
+            date = data.date.toDate();
+          } else if (data.date instanceof Date) {
+            // Обычный Date объект
+            date = data.date;
+          } else if (typeof data.date === 'string') {
+            // Строка даты
+            date = new Date(data.date);
+          } else {
+            // Fallback
+            date = new Date();
+          }
+        } else {
+          date = new Date();
+        }
+        
+        return { 
+          id: doc.id, 
+          ...data,
+          date: date
+        };
+      });
+      
+      console.log('Processed expenses:', expenses);
       renderExpenses();
       updateStatistics();
     }, (error) => {
       console.error('Ошибка при получении данных расходов:', error);
+      if (error.code === 'failed-precondition') {
+        console.error('Возможно, нужно создать индекс для запроса. Проверьте Firebase Console.');
+      }
     });
   } catch (error) {
     console.error('Ошибка при настройке слушателя расходов:', error);
@@ -5655,14 +5805,22 @@ function setupExpensesListener() {
 
 // Инициализация обработчиков событий для расходов
 function initExpensesHandlers() {
+  console.log('Initializing expenses handlers...');
+  
   const categoryFilter = document.getElementById('categoryFilter');
   const addExpenseBtn = document.getElementById('addExpenseBtn');
   
   if (categoryFilter) {
+    console.log('Setting up category filter handler');
+    // Удаляем старые обработчики, если есть
+    categoryFilter.removeEventListener('change', setupExpensesListener);
     categoryFilter.addEventListener('change', setupExpensesListener);
+  } else {
+    console.warn('Category filter not found');
   }
   
   if (addExpenseBtn) {
+    console.log('Setting up add expense button handler');
     addExpenseBtn.addEventListener('click', () => {
       const modal = document.getElementById('addExpenseModal');
       const dateInput = document.querySelector('#addExpenseForm [name="date"]');
@@ -5671,9 +5829,16 @@ function initExpensesHandlers() {
         modal.classList.remove('hidden');
         document.getElementById('addExpenseForm').reset();
         dateInput.valueAsDate = new Date();
+        console.log('Add expense modal opened');
+      } else {
+        console.error('Add expense modal or date input not found');
       }
     });
+  } else {
+    console.warn('Add expense button not found');
   }
+  
+  console.log('Expenses handlers initialized');
 }
 
 // Инициализация модуля расходов при загрузке страницы
@@ -5682,10 +5847,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderExpenses() {
+  console.log('Rendering expenses...', expenses.length);
+  
   const expensesList = document.getElementById('expensesList');
-  if (!expensesList) return;
+  if (!expensesList) {
+    console.error('ExpensesList element not found');
+    return;
+  }
   
   expensesList.innerHTML = '';
+  
+  if (!expenses || expenses.length === 0) {
+    expensesList.innerHTML = '<p class="text-center text-gray-500 italic">Нет записей о расходах</p>';
+    return;
+  }
   
   const categoryColors = {
     utilities: 'bg-blue-100 text-blue-800',
@@ -5703,27 +5878,41 @@ function renderExpenses() {
     other: 'Прочее'
   };
   
-  expenses.forEach(expense => {
+  expenses.forEach((expense, index) => {
+    console.log(`Rendering expense ${index}:`, expense);
+    
     const card = document.createElement('div');
     card.className = 'expense-card bg-white border rounded-lg p-4 flex justify-between items-center mb-3 hover:shadow-md transition-shadow';
     
-    const date = expense.date instanceof Date ? expense.date : new Date(expense.date);
+    let date;
+    try {
+      date = expense.date instanceof Date ? expense.date : new Date(expense.date);
+    } catch (e) {
+      console.error('Error parsing date for expense:', expense, e);
+      date = new Date(); // Fallback
+    }
+    
+    const formattedDate = date.toLocaleDateString('ru-RU');
+    const categoryColor = categoryColors[expense.category] || 'bg-gray-100 text-gray-800';
+    const categoryName = categoryNames[expense.category] || expense.category;
+    const amount = (expense.amount || 0).toLocaleString('ru-RU');
     
     card.innerHTML = `
       <div class="flex-1">
         <div class="flex items-center mb-2">
-          <span class="category-badge ${categoryColors[expense.category] || 'bg-gray-100 text-gray-800'} px-2 py-1 rounded-full text-sm font-medium">
-            ${categoryNames[expense.category] || expense.category}
+          <span class="category-badge ${categoryColor} px-2 py-1 rounded-full text-sm font-medium">
+            ${categoryName}
           </span>
-          <span class="text-gray-500 text-sm ml-2">${date.toLocaleDateString('ru-RU')}</span>
+          <span class="text-gray-500 text-sm ml-2">${formattedDate}</span>
         </div>
-        <p class="text-gray-800">${expense.description}</p>
+        <p class="text-gray-800">${expense.description || 'Без описания'}</p>
       </div>
       <div class="flex items-center">
-        <span class="text-lg font-semibold mr-4">${expense.amount.toLocaleString('ru-RU')} ₽</span>
+        <span class="text-lg font-semibold mr-4">${amount} ₽</span>
         <button 
           onclick="deleteExpense('${expense.id}')" 
           class="text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
+          title="Удалить расход"
         >
           <i class="fa-solid fa-trash"></i>
         </button>
@@ -5731,24 +5920,42 @@ function renderExpenses() {
     `;
     expensesList.appendChild(card);
   });
+  
+  console.log('Expenses rendered successfully');
 }
 
 function updateStatistics() {
   try {
+    console.log('Updating statistics...');
+    
     const monthlyExpensesEl = document.getElementById('monthlyExpenses');
     const totalExpensesEl = document.getElementById('totalExpenses');
     
-    if (!monthlyExpensesEl || !totalExpensesEl) return;
+    if (!monthlyExpensesEl || !totalExpensesEl) {
+      console.error('Statistics elements not found');
+      return;
+    }
     
     const now = new Date();
     const firstDayOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
     
+    console.log('Calculating monthly expenses from:', firstDayOfMonth);
+    console.log('Total expenses:', expenses.length);
+    
     const monthlyExpenses = expenses
-      .filter(e => e.date >= firstDayOfMonth)
-      .reduce((sum, e) => sum + e.amount, 0);
+      .filter(e => {
+        const isThisMonth = e.date >= firstDayOfMonth;
+        console.log(`Expense ${e.description} (${e.date.toLocaleDateString('ru-RU')}): ${isThisMonth ? 'включен' : 'исключен'}`);
+        return isThisMonth;
+      })
+      .reduce((sum, e) => sum + (e.amount || 0), 0);
+    
+    console.log('Monthly expenses total:', monthlyExpenses);
     
     monthlyExpensesEl.textContent = `${monthlyExpenses.toLocaleString('ru-RU')} ₽`;
     totalExpensesEl.textContent = expenses.length.toString();
+    
+    console.log('Statistics updated successfully');
   } catch (error) {
     console.error('Ошибка при обновлении статистики:', error);
   }
@@ -5760,7 +5967,7 @@ window.deleteExpense = async function(id) {
     
     if (confirm('Вы уверены, что хотите удалить этот расход?')) {
       await deleteDoc(doc(db, 'expenses', id));
-      // onSnapshot listener автоматически обновит список расходов
+      // Слушатель автоматически обновит данные, поэтому не нужно вызывать loadExpenses
     }
   } catch (error) {
     console.error('Ошибка при удалении расхода:', error);
@@ -5819,7 +6026,7 @@ window.showExpensesSection = function() {
   if (expensesLink) {
     expensesLink.classList.add('active');
   }
-  setupExpensesListener(); // Устанавливаем слушатель расходов при переключении на раздел
+  setupExpensesListener(); // Устанавливаем слушатель при переключении на раздел
   return false;
 }
 
@@ -5875,9 +6082,12 @@ window.addEventListener('scroll', () => {
 
 // Обработка авторизации
 onAuthStateChanged(auth, async (user) => {
+  console.log('Auth state changed. User:', user ? user.email : 'none');
+  
   if (user && user.email) {
     try {
       isAdmin = true;
+      console.log('User authenticated as admin');
       
       document.getElementById('logoutBtn').classList.remove('hidden');
       document.getElementById('loginBtn').classList.add('hidden');
@@ -5892,18 +6102,28 @@ onAuthStateChanged(auth, async (user) => {
       document.getElementById('salarySection').classList.remove('hidden');
       document.getElementById('expensesSection').classList.remove('hidden');
       
+      // Инициализируем обработчики и слушатель расходов
       initExpensesHandlers();
-      setupExpensesListener(); // Устанавливаем слушатель при авторизации
+      
+      // Добавляем небольшую задержку для корректной инициализации DOM
+      setTimeout(() => {
+        setupExpensesListener();
+      }, 100);
       
     } catch (error) {
       console.error('Ошибка при авторизации:', error);
     }
   } else {
+    console.log('User logged out or not authenticated');
     isAdmin = false;
-    if (unsubscribeExpenses) { // Отписываемся от слушателя при выходе
+    
+    // Отписываемся от слушателя при выходе
+    if (unsubscribeExpenses) {
       unsubscribeExpenses();
       unsubscribeExpenses = null;
+      console.log('Unsubscribed from expenses');
     }
+    
     document.getElementById('logoutBtn').classList.add('hidden');
     document.getElementById('loginBtn').classList.remove('hidden');
     
