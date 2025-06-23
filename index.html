@@ -854,7 +854,7 @@
       if (expensesLink) {
         expensesLink.classList.add('active');
       }
-      setupExpensesListener();
+      window.setupExpensesListener();
       return false;
     }
 
@@ -2841,124 +2841,6 @@
         alert("Не удалось удалить запись.");
       }
     }
-
-    // === Логика Графика Администраторов ===
-    function renderAdminsCalendar() {
-      if (!isAdmin) {
-          adminScheduleSection.classList.add('hidden'); // Скрыть секцию если не админ
-          return;
-      }
-      adminScheduleSection.classList.remove('hidden'); // Показать секцию если админ
-
-      // Очистка старых дней (оставляем заголовки)
-      while (adminsCalendar.children.length > 7) {
-        adminsCalendar.removeChild(adminsCalendar.lastChild);
-      }
-
-      const year = adminsViewMonth.getFullYear();
-      const month = adminsViewMonth.getMonth();
-
-      currentMonthAdmins.textContent = adminsViewMonth.toLocaleDateString('ru-RU', {
-        year: 'numeric',
-        month: 'long',
-      });
-
-      const firstDayOfMonth = new Date(year, month, 1);
-      let startDayOfWeek = firstDayOfMonth.getDay();
-      startDayOfWeek = startDayOfWeek === 0 ? 6 : startDayOfWeek - 1;
-
-      const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-      // Пустые ячейки
-      for (let i = 0; i < startDayOfWeek; i++) {
-        const emptyCell = document.createElement('div');
-        emptyCell.className = 'border border-gray-200 bg-gray-50 rounded-xl calendar-day-cell'; // Используем новый класс и стиль
-        adminsCalendar.appendChild(emptyCell);
-      }
-
-      // Ячейки дней
-      for (let day = 1; day <= daysInMonth; day++) {
-        const date = new Date(year, month, day);
-        // Используем безопасное форматирование
-        const dateStr = formatDateSafe(date);
-
-        const dayCell = document.createElement('div');
-        // Добавляем классы для стилизации и управления высотой
-        dayCell.className = 'calendar-day-cell border border-gray-300 rounded-xl p-2 flex flex-col cursor-pointer hover:bg-blue-50 transition relative';
-
-        // Выделение сегодняшнего дня
-        const today = new Date();
-        // Используем безопасное форматирование
-        if (formatDateSafe(date) === formatDateSafe(today)) {
-          dayCell.classList.add('ring-2', 'ring-blue-600');
-        }
-
-        // Номер дня
-        const dayNumber = document.createElement('div');
-        dayNumber.textContent = day;
-        dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 text-left'; // Выравнивание по левому краю
-        dayCell.appendChild(dayNumber);
-
-        // Отображение назначенных администраторов
-        // Сравнение идет со строкой dateStr, которая теперь формируется безопасно
-        const assignment = adminAssignments.find(a => a.date === dateStr);
-        const assignmentDetails = document.createElement('div');
-        assignmentDetails.className = 'flex-grow flex flex-col justify-start space-y-1 mt-1 text-xs'; // Выравнивание контента
-
-        if (assignment && assignment.mainAdminId) {
-          const mainAdmin = admins.find(a => a.id === assignment.mainAdminId);
-          if (mainAdmin) {
-            const adminDiv = document.createElement('div');
-            adminDiv.className = 'bg-blue-100 text-blue-800 rounded px-1.5 py-0.5 truncate text-left';
-            adminDiv.textContent = `👑 ${mainAdmin.name}`;
-            adminDiv.title = `Основной: ${mainAdmin.name}`;
-            assignmentDetails.appendChild(adminDiv);
-          }
-
-          if (assignment.helperAdminId) {
-            const helperAdmin = admins.find(a => a.id === assignment.helperAdminId);
-            if (helperAdmin) {
-              const helperDiv = document.createElement('div');
-              helperDiv.className = 'bg-indigo-100 text-indigo-800 rounded px-1.5 py-0.5 truncate text-left';
-              const hoursText = assignment.helperHours ? ` (${assignment.helperHours}ч)` : '';
-              helperDiv.textContent = `🛠️ ${helperAdmin.name}${hoursText}`; // Иконка помощи
-              helperDiv.title = `Помощник: ${helperAdmin.name}${hoursText}`;
-              assignmentDetails.appendChild(helperDiv);
-            }
-          }
-        } else {
-            // Можно добавить плейсхолдер или оставить пустым
-             const noAdminDiv = document.createElement('div');
-             noAdminDiv.className = 'text-gray-400 italic text-xs text-center mt-2';
-             noAdminDiv.textContent = 'Нет смены';
-             assignmentDetails.appendChild(noAdminDiv);
-        }
-        dayCell.appendChild(assignmentDetails);
-
-
-        // Обработчик клика для назначения (только для админа)
-        dayCell.addEventListener('click', () => {
-          if (!isAdmin) {
-            showLoginModal();
-            return;
-          }
-          
-          // Проверяем, существует ли назначение на этот день
-          const assignment = adminAssignments.find(a => a.date === dateStr);
-          
-          if (assignment && assignment.mainAdminId) {
-            // Если есть назначение - показываем детали
-            showAdminDayDetailsModal(date, dateStr, assignment);
-          } else {
-            // Если нет назначения - открываем окно для назначения администратора
-            openAssignModal(date, dateStr);
-          }
-        });
-
-        adminsCalendar.appendChild(dayCell);
-      }
-    }
-
 
     // === Логика Модального Окна Назначения Админа ===
     function updateAdminSelects() {
@@ -5370,7 +5252,7 @@
           
           const isBirthdayService = 
             (booking.selectedServices && Array.isArray(booking.selectedServices) && 
-             booking.selectedServices.includes('birthday')) || 
+            booking.selectedServices.includes('birthday')) || 
             booking.serviceType === 'birthday';
             
           // Создаем HTML для записи
@@ -5820,7 +5702,7 @@ window.showExpensesSection = function() {
   if (expensesLink) {
     expensesLink.classList.add('active');
   }
-  setupExpensesListener();
+  window.setupExpensesListener();
   return false;
 }
 
@@ -5894,7 +5776,7 @@ onAuthStateChanged(auth, async (user) => {
       document.getElementById('expensesSection').classList.remove('hidden');
       
       initExpensesHandlers();
-      setupExpensesListener(); // Устанавливаем слушатель при авторизации
+      window.setupExpensesListener(); // Устанавливаем слушатель при авторизации
       
     } catch (error) {
       console.error('Ошибка при авторизации:', error);
