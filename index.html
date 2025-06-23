@@ -5491,7 +5491,7 @@ function showExpensesSection() {
     
     sections.forEach(section => section.classList.add('hidden'));
     expensesSection.classList.remove('hidden');
-    setupExpensesListener(); // Вместо loadExpenses вызываем setupExpensesListener
+    window.setupExpensesListener(); // Вместо loadExpenses вызываем setupExpensesListener
   } catch (error) {
     console.error('Ошибка при отображении секции расходов:', error);
   }
@@ -5500,6 +5500,7 @@ function showExpensesSection() {
 // Функция для настройки слушателя изменений расходов
 function setupExpensesListener() {
   try {
+    console.log('setupExpensesListener вызвана');
     // Отписываемся от предыдущего слушателя, если он есть
     if (unsubscribeExpenses) {
       unsubscribeExpenses();
@@ -5517,14 +5518,17 @@ function setupExpensesListener() {
       );
     }
     
+    console.log('Создан запрос к Firestore для expenses');
     // Устанавливаем слушатель
     unsubscribeExpenses = onSnapshot(q, (snapshot) => {
+      console.log('onSnapshot сработал, получено документов:', snapshot.docs.length);
       expenses = snapshot.docs.map(doc => ({ 
         id: doc.id, 
         ...doc.data(),
         date: doc.data().date instanceof Date ? doc.data().date : new Date(doc.data().date)
       }));
       
+      console.log('Массив expenses обновлен:', expenses);
       renderExpenses();
       updateStatistics();
     }, (error) => {
@@ -5565,9 +5569,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderExpenses() {
+  console.log('renderExpenses вызвана, expenses:', expenses);
   const expensesList = document.getElementById('expensesList');
-  if (!expensesList) return;
+  if (!expensesList) {
+    console.error('Элемент expensesList не найден в DOM!');
+    return;
+  }
   
+  console.log('Очищаем expensesList');
   expensesList.innerHTML = '';
   
   const categoryColors = {
@@ -5586,7 +5595,9 @@ function renderExpenses() {
     other: 'Прочее'
   };
   
+  console.log('Начинаем перебор expenses для создания карточек:', expenses.length);
   expenses.forEach(expense => {
+    console.log('Создаем карточку для расхода:', expense);
     const card = document.createElement('div');
     card.className = 'expense-card bg-white border rounded-lg p-4 flex justify-between items-center mb-3 hover:shadow-md transition-shadow';
     
@@ -5605,7 +5616,7 @@ function renderExpenses() {
       <div class="flex items-center">
         <span class="text-lg font-semibold mr-4">${expense.amount.toLocaleString('ru-RU')} ₽</span>
         <button 
-          onclick="deleteExpense('${expense.id}')" 
+          onclick="window.deleteExpense('${expense.id}')" 
           class="text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
         >
           <i class="fa-solid fa-trash"></i>
@@ -5613,7 +5624,9 @@ function renderExpenses() {
       </div>
     `;
     expensesList.appendChild(card);
+    console.log('Карточка добавлена в DOM');
   });
+  console.log('Все карточки расходов отрисованы');
 }
 
 function updateStatistics() {
@@ -5643,7 +5656,7 @@ window.deleteExpense = async function(id) {
     
     if (confirm('Вы уверены, что хотите удалить этот расход?')) {
       await deleteDoc(doc(db, 'expenses', id));
-      await loadExpenses();
+      window.setupExpensesListener(); // Вместо loadExpenses вызываем setupExpensesListener
     }
   } catch (error) {
     console.error('Ошибка при удалении расхода:', error);
