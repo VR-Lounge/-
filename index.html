@@ -854,7 +854,7 @@
       if (expensesLink) {
         expensesLink.classList.add('active');
       }
-      loadExpenses();
+      setupExpensesListener(); // Исправлено: теперь всегда слушатель
       return false;
     }
 
@@ -3277,8 +3277,8 @@
           return;
       }
       
-      salarySection.classList.remove('hidden'); // Показать секцию если админ
-      
+       salarySection.classList.remove('hidden'); // Показать секцию если админ
+
       const year = salaryViewMonth.getFullYear();
       const month = salaryViewMonth.getMonth();
       console.log('Calculating salaries for:', year, month);
@@ -4131,10 +4131,10 @@
         console.log('Next month clicked, current month:', salaryViewMonth);
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() + 1);
         console.log('Month changed to:', salaryViewMonth);
-        // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
+         // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
         calculateRevenueStats();
         calculateSalaries();
-        // Еженедельная ЗП не зависит от выбранного месяца
+         // Еженедельная ЗП не зависит от выбранного месяца
       });
 
        // --- Закрытие модальных окон ---
@@ -5819,7 +5819,7 @@ window.showExpensesSection = function() {
   if (expensesLink) {
     expensesLink.classList.add('active');
   }
-  loadExpenses(); // Добавляем загрузку расходов при переключении на раздел
+  setupExpensesListener(); // Исправлено: теперь всегда слушатель
   return false;
 }
 
