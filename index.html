@@ -780,22 +780,22 @@
       <div class="bottom-header-block bg-white/80 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 md:px-6">
           <nav class="nav-links flex items-center space-x-2 md:space-x-6 py-2 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none;">
-            <a href="#" class="nav-link active whitespace-nowrap" onclick="return showBookingsSection()">
+            <a href="#" id="bookingsLink" class="nav-link active whitespace-nowrap">
               <i class="fas fa-calendar-alt mr-2"></i>Записи
             </a>
-            <a href="#" class="nav-link whitespace-nowrap" onclick="return showAdminScheduleSection()">
+            <a href="#" id="adminScheduleLink" class="nav-link whitespace-nowrap">
               <i class="fas fa-user-clock mr-2"></i>График
             </a>
-            <a href="#" class="nav-link whitespace-nowrap" onclick="return showSalarySection()">
+            <a href="#" id="salaryLink" class="nav-link whitespace-nowrap">
               <i class="fas fa-money-bill-wave mr-2"></i>Финансы
             </a>
-            <a href="#" class="nav-link whitespace-nowrap" onclick="return showServicesSection()">
+            <a href="#" id="servicesLink" class="nav-link whitespace-nowrap">
               <i class="fas fa-list-alt mr-2"></i>Услуги
             </a>
-            <a href="#" class="nav-link whitespace-nowrap" onclick="return showWidgetsSection()">
+            <a href="#" id="widgetsLink" class="nav-link whitespace-nowrap">
               <i class="fas fa-share-alt mr-2"></i>Виджеты
             </a>
-            <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink" onclick="return showExpensesSection()">
+            <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink">
               <i class="fas fa-receipt mr-2"></i>Расходы
             </a>
           </nav>
@@ -5324,7 +5324,7 @@
                     ((birthdayRevenue - (hostessRevenue || 0) + (otherServicesRevenue || 0)) * (helperAdmin ? 0.08 : 0.15)) :
                     (dayRevenue * (helperAdmin ? 0.08 : 0.15))
                   )
-                ) : 0) + 
+                ) : 0) +
                 // Зарплата помощника: почасовая + бонус от ДР
                 (helperAdmin && actualHelperHours > 0 ? 
                   (actualHelperHours * 150) + ((birthdayRevenue - (hostessRevenue || 0)) * 0.07) : 0)
@@ -5615,9 +5615,9 @@ function renderExpenses() {
       </div>
       <div class="flex items-center">
         <span class="text-lg font-semibold mr-4">${expense.amount.toLocaleString('ru-RU')} ₽</span>
-        <button 
-          onclick="window.deleteExpense('${expense.id}')" 
-          class="text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
+        <button
+          data-id="${expense.id}"
+          class="delete-expense-btn text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
         >
           <i class="fa-solid fa-trash"></i>
         </button>
