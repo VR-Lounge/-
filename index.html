@@ -780,22 +780,22 @@
       <div class="bottom-header-block bg-white/80 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 md:px-6">
           <nav class="nav-links flex items-center space-x-2 md:space-x-6 py-2 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none;">
-            <a href="#" id="bookingsLink" class="nav-link active whitespace-nowrap">
+            <a href="#" class="nav-link active whitespace-nowrap" onclick="return showBookingsSection()">
               <i class="fas fa-calendar-alt mr-2"></i>Записи
             </a>
-            <a href="#" id="adminScheduleLink" class="nav-link whitespace-nowrap">
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showAdminScheduleSection()">
               <i class="fas fa-user-clock mr-2"></i>График
             </a>
-            <a href="#" id="salaryLink" class="nav-link whitespace-nowrap">
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showSalarySection()">
               <i class="fas fa-money-bill-wave mr-2"></i>Финансы
             </a>
-            <a href="#" id="servicesLink" class="nav-link whitespace-nowrap">
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showServicesSection()">
               <i class="fas fa-list-alt mr-2"></i>Услуги
             </a>
-            <a href="#" id="widgetsLink" class="nav-link whitespace-nowrap">
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showWidgetsSection()">
               <i class="fas fa-share-alt mr-2"></i>Виджеты
             </a>
-            <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink">
+            <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink" onclick="return showExpensesSection()">
               <i class="fas fa-receipt mr-2"></i>Расходы
             </a>
           </nav>
@@ -854,7 +854,7 @@
       if (expensesLink) {
         expensesLink.classList.add('active');
       }
-      window.setupExpensesListener();
+      loadExpenses();
       return false;
     }
 
@@ -1984,7 +1984,7 @@
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { 
       getFirestore, collection, addDoc, getDocs, onSnapshot, 
-      deleteDoc, doc, updateDoc, query, where, getDoc, setDoc, orderBy
+      deleteDoc, doc, updateDoc, query, where, getDoc, setDoc // Добавлен setDoc
     } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
     import { 
       getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged 
@@ -2841,6 +2841,124 @@
         alert("Не удалось удалить запись.");
       }
     }
+
+    // === Логика Графика Администраторов ===
+    function renderAdminsCalendar() {
+      if (!isAdmin) {
+          adminScheduleSection.classList.add('hidden'); // Скрыть секцию если не админ
+          return;
+      }
+      adminScheduleSection.classList.remove('hidden'); // Показать секцию если админ
+
+      // Очистка старых дней (оставляем заголовки)
+      while (adminsCalendar.children.length > 7) {
+        adminsCalendar.removeChild(adminsCalendar.lastChild);
+      }
+
+      const year = adminsViewMonth.getFullYear();
+      const month = adminsViewMonth.getMonth();
+
+      currentMonthAdmins.textContent = adminsViewMonth.toLocaleDateString('ru-RU', {
+        year: 'numeric',
+        month: 'long',
+      });
+
+      const firstDayOfMonth = new Date(year, month, 1);
+      let startDayOfWeek = firstDayOfMonth.getDay();
+      startDayOfWeek = startDayOfWeek === 0 ? 6 : startDayOfWeek - 1;
+
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      // Пустые ячейки
+      for (let i = 0; i < startDayOfWeek; i++) {
+        const emptyCell = document.createElement('div');
+        emptyCell.className = 'border border-gray-200 bg-gray-50 rounded-xl calendar-day-cell'; // Используем новый класс и стиль
+        adminsCalendar.appendChild(emptyCell);
+      }
+
+      // Ячейки дней
+      for (let day = 1; day <= daysInMonth; day++) {
+        const date = new Date(year, month, day);
+        // Используем безопасное форматирование
+        const dateStr = formatDateSafe(date);
+
+        const dayCell = document.createElement('div');
+        // Добавляем классы для стилизации и управления высотой
+        dayCell.className = 'calendar-day-cell border border-gray-300 rounded-xl p-2 flex flex-col cursor-pointer hover:bg-blue-50 transition relative';
+
+        // Выделение сегодняшнего дня
+        const today = new Date();
+        // Используем безопасное форматирование
+        if (formatDateSafe(date) === formatDateSafe(today)) {
+          dayCell.classList.add('ring-2', 'ring-blue-600');
+        }
+
+        // Номер дня
+        const dayNumber = document.createElement('div');
+        dayNumber.textContent = day;
+        dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 text-left'; // Выравнивание по левому краю
+        dayCell.appendChild(dayNumber);
+
+        // Отображение назначенных администраторов
+        // Сравнение идет со строкой dateStr, которая теперь формируется безопасно
+        const assignment = adminAssignments.find(a => a.date === dateStr);
+        const assignmentDetails = document.createElement('div');
+        assignmentDetails.className = 'flex-grow flex flex-col justify-start space-y-1 mt-1 text-xs'; // Выравнивание контента
+
+        if (assignment && assignment.mainAdminId) {
+          const mainAdmin = admins.find(a => a.id === assignment.mainAdminId);
+          if (mainAdmin) {
+            const adminDiv = document.createElement('div');
+            adminDiv.className = 'bg-blue-100 text-blue-800 rounded px-1.5 py-0.5 truncate text-left';
+            adminDiv.textContent = `👑 ${mainAdmin.name}`;
+            adminDiv.title = `Основной: ${mainAdmin.name}`;
+            assignmentDetails.appendChild(adminDiv);
+          }
+
+          if (assignment.helperAdminId) {
+            const helperAdmin = admins.find(a => a.id === assignment.helperAdminId);
+            if (helperAdmin) {
+              const helperDiv = document.createElement('div');
+              helperDiv.className = 'bg-indigo-100 text-indigo-800 rounded px-1.5 py-0.5 truncate text-left';
+              const hoursText = assignment.helperHours ? ` (${assignment.helperHours}ч)` : '';
+              helperDiv.textContent = `🛠️ ${helperAdmin.name}${hoursText}`; // Иконка помощи
+              helperDiv.title = `Помощник: ${helperAdmin.name}${hoursText}`;
+              assignmentDetails.appendChild(helperDiv);
+            }
+          }
+        } else {
+            // Можно добавить плейсхолдер или оставить пустым
+             const noAdminDiv = document.createElement('div');
+             noAdminDiv.className = 'text-gray-400 italic text-xs text-center mt-2';
+             noAdminDiv.textContent = 'Нет смены';
+             assignmentDetails.appendChild(noAdminDiv);
+        }
+        dayCell.appendChild(assignmentDetails);
+
+
+        // Обработчик клика для назначения (только для админа)
+        dayCell.addEventListener('click', () => {
+          if (!isAdmin) {
+            showLoginModal();
+            return;
+          }
+          
+          // Проверяем, существует ли назначение на этот день
+          const assignment = adminAssignments.find(a => a.date === dateStr);
+          
+          if (assignment && assignment.mainAdminId) {
+            // Если есть назначение - показываем детали
+            showAdminDayDetailsModal(date, dateStr, assignment);
+          } else {
+            // Если нет назначения - открываем окно для назначения администратора
+            openAssignModal(date, dateStr);
+          }
+        });
+
+        adminsCalendar.appendChild(dayCell);
+      }
+    }
+
 
     // === Логика Модального Окна Назначения Админа ===
     function updateAdminSelects() {
@@ -5252,7 +5370,7 @@
           
           const isBirthdayService = 
             (booking.selectedServices && Array.isArray(booking.selectedServices) && 
-            booking.selectedServices.includes('birthday')) || 
+             booking.selectedServices.includes('birthday')) || 
             booking.serviceType === 'birthday';
             
           // Создаем HTML для записи
@@ -5324,7 +5442,7 @@
                     ((birthdayRevenue - (hostessRevenue || 0) + (otherServicesRevenue || 0)) * (helperAdmin ? 0.08 : 0.15)) :
                     (dayRevenue * (helperAdmin ? 0.08 : 0.15))
                   )
-                ) : 0) +
+                ) : 0) + 
                 // Зарплата помощника: почасовая + бонус от ДР
                 (helperAdmin && actualHelperHours > 0 ? 
                   (actualHelperHours * 150) + ((birthdayRevenue - (hostessRevenue || 0)) * 0.07) : 0)
@@ -5491,7 +5609,7 @@ function showExpensesSection() {
     
     sections.forEach(section => section.classList.add('hidden'));
     expensesSection.classList.remove('hidden');
-    window.setupExpensesListener(); // Вместо loadExpenses вызываем setupExpensesListener
+    setupExpensesListener(); // Вместо loadExpenses вызываем setupExpensesListener
   } catch (error) {
     console.error('Ошибка при отображении секции расходов:', error);
   }
@@ -5500,7 +5618,6 @@ function showExpensesSection() {
 // Функция для настройки слушателя изменений расходов
 function setupExpensesListener() {
   try {
-    console.log('setupExpensesListener вызвана');
     // Отписываемся от предыдущего слушателя, если он есть
     if (unsubscribeExpenses) {
       unsubscribeExpenses();
@@ -5518,17 +5635,14 @@ function setupExpensesListener() {
       );
     }
     
-    console.log('Создан запрос к Firestore для expenses');
     // Устанавливаем слушатель
     unsubscribeExpenses = onSnapshot(q, (snapshot) => {
-      console.log('onSnapshot сработал, получено документов:', snapshot.docs.length);
       expenses = snapshot.docs.map(doc => ({ 
         id: doc.id, 
         ...doc.data(),
         date: doc.data().date instanceof Date ? doc.data().date : new Date(doc.data().date)
       }));
       
-      console.log('Массив expenses обновлен:', expenses);
       renderExpenses();
       updateStatistics();
     }, (error) => {
@@ -5538,7 +5652,6 @@ function setupExpensesListener() {
     console.error('Ошибка при настройке слушателя расходов:', error);
   }
 }
-window.setupExpensesListener = setupExpensesListener;
 
 // Инициализация обработчиков событий для расходов
 function initExpensesHandlers() {
@@ -5569,14 +5682,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function renderExpenses() {
-  console.log('renderExpenses вызвана, expenses:', expenses);
   const expensesList = document.getElementById('expensesList');
-  if (!expensesList) {
-    console.error('Элемент expensesList не найден в DOM!');
-    return;
-  }
+  if (!expensesList) return;
   
-  console.log('Очищаем expensesList');
   expensesList.innerHTML = '';
   
   const categoryColors = {
@@ -5595,9 +5703,7 @@ function renderExpenses() {
     other: 'Прочее'
   };
   
-  console.log('Начинаем перебор expenses для создания карточек:', expenses.length);
   expenses.forEach(expense => {
-    console.log('Создаем карточку для расхода:', expense);
     const card = document.createElement('div');
     card.className = 'expense-card bg-white border rounded-lg p-4 flex justify-between items-center mb-3 hover:shadow-md transition-shadow';
     
@@ -5615,18 +5721,16 @@ function renderExpenses() {
       </div>
       <div class="flex items-center">
         <span class="text-lg font-semibold mr-4">${expense.amount.toLocaleString('ru-RU')} ₽</span>
-        <button
-          data-id="${expense.id}"
-          class="delete-expense-btn text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
+        <button 
+          onclick="deleteExpense('${expense.id}')" 
+          class="text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
         >
           <i class="fa-solid fa-trash"></i>
         </button>
       </div>
     `;
     expensesList.appendChild(card);
-    console.log('Карточка добавлена в DOM');
   });
-  console.log('Все карточки расходов отрисованы');
 }
 
 function updateStatistics() {
@@ -5656,7 +5760,7 @@ window.deleteExpense = async function(id) {
     
     if (confirm('Вы уверены, что хотите удалить этот расход?')) {
       await deleteDoc(doc(db, 'expenses', id));
-      window.setupExpensesListener(); // Вместо loadExpenses вызываем setupExpensesListener
+      await loadExpenses();
     }
   } catch (error) {
     console.error('Ошибка при удалении расхода:', error);
@@ -5715,7 +5819,7 @@ window.showExpensesSection = function() {
   if (expensesLink) {
     expensesLink.classList.add('active');
   }
-  window.setupExpensesListener();
+  loadExpenses(); // Добавляем загрузку расходов при переключении на раздел
   return false;
 }
 
@@ -5789,7 +5893,7 @@ onAuthStateChanged(auth, async (user) => {
       document.getElementById('expensesSection').classList.remove('hidden');
       
       initExpensesHandlers();
-      window.setupExpensesListener(); // Устанавливаем слушатель при авторизации
+      setupExpensesListener(); // Устанавливаем слушатель при авторизации
       
     } catch (error) {
       console.error('Ошибка при авторизации:', error);
