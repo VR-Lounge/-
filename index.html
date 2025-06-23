@@ -854,7 +854,7 @@
       if (expensesLink) {
         expensesLink.classList.add('active');
       }
-      setupExpensesListener(); // Исправлено: теперь всегда слушатель
+      setupExpensesListener();
       return false;
     }
 
@@ -5652,6 +5652,7 @@ function setupExpensesListener() {
     console.error('Ошибка при настройке слушателя расходов:', error);
   }
 }
+window.setupExpensesListener = setupExpensesListener;
 
 // Инициализация обработчиков событий для расходов
 function initExpensesHandlers() {
@@ -5819,7 +5820,7 @@ window.showExpensesSection = function() {
   if (expensesLink) {
     expensesLink.classList.add('active');
   }
-  setupExpensesListener(); // Исправлено: теперь всегда слушатель
+  setupExpensesListener();
   return false;
 }
 
