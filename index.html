@@ -4130,6 +4130,7 @@
         console.log('Previous month clicked, current month:', salaryViewMonth);
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() - 1);
         console.log('Month changed to:', salaryViewMonth);
+        updateCurrentMonthTitle();
         // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
         calculateRevenueStats();
         calculateSalaries();
@@ -4139,6 +4140,7 @@
         console.log('Next month clicked, current month:', salaryViewMonth);
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() + 1);
         console.log('Month changed to:', salaryViewMonth);
+        updateCurrentMonthTitle();
          // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
         calculateRevenueStats();
         calculateSalaries();
@@ -4302,6 +4304,7 @@
       renderRevenueStats(0, 0, 0); // Инициализируем нулями
       renderWeeklyPayroll({}, null); // Иниц. пустым состоянием
       calculateSalaries(); // Показ. пустой месячный отчет
+      updateCurrentMonthTitle();
       // Загрузка данных инициируется через onAuthStateChanged
     }
 
@@ -4309,6 +4312,12 @@
     init();
 
     // === Расчет Статистики Выручки ===
+    function updateCurrentMonthTitle() {
+      const monthsRu = ['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'];
+      if (currentMonthSalary) {
+        currentMonthSalary.textContent = monthsRu[salaryViewMonth.getMonth()];
+      }
+    }
     function calculateRevenueStats() {
         const todayStr = formatDateSafe(new Date());
         const currentWeek = getWeekRange(new Date());
