@@ -2366,7 +2366,7 @@
       // Пустые ячейки до начала месяца
       for (let i = 0; i < startDayOfWeek; i++) {
         const emptyCell = document.createElement('div');
-        emptyCell.className = 'border border-gray-200 bg-gray-50 h-24 rounded-3xl'; // Используем h-24 как в index.html
+        emptyCell.className = 'border border-gray-200 bg-gray-50 h-24 rounded-xl';
         calendarEl.appendChild(emptyCell);
       }
 
@@ -2377,7 +2377,7 @@
         const dateStr = formatDateSafe(date);
 
         const dayCell = document.createElement('div');
-        dayCell.className = 'border border-gray-300 rounded-3xl h-24 p-3 flex flex-col justify-start cursor-pointer hover:bg-blue-50 transition relative select-text';
+        dayCell.className = 'border border-gray-300 rounded-xl h-24 p-2 flex flex-col justify-start cursor-pointer hover:bg-blue-50 transition relative select-text';
 
         if (isWeekend(date)) {
           dayCell.classList.add('bg-blue-50'); // Подсветка выходных
@@ -2398,7 +2398,7 @@
 
         const dayNumber = document.createElement('div');
         dayNumber.textContent = day;
-        dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 select-none';
+        dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 select-none text-left';
         dayCell.appendChild(dayNumber);
 
         // Отображение бронирований на этот день
@@ -2408,36 +2408,43 @@
 
         if (dayBookings.length > 0) {
           const bookingsList = document.createElement('ul');
-          bookingsList.className = 'bookings-list mt-0.5 overflow-y-auto max-h-16 text-xs text-gray-800 space-y-0.5';
+          bookingsList.className = 'bookings-list mt-0.5 overflow-hidden max-h-16 text-[11px] text-gray-800 space-y-1';
 
-          dayBookings.forEach((b) => {
+          const displayBookings = dayBookings.slice(0, 3);
+          displayBookings.forEach((b) => {
             const li = document.createElement('li');
-            li.className = 'truncate rounded-2xl px-2 py-0.5';
+            li.className = 'truncate rounded-xl px-2 py-0.5 inline-flex items-center gap-2';
 
             let bgColor = 'bg-gray-100 text-gray-700';
             if (b.serviceType === 'weekday_vr') bgColor = 'bg-blue-100 text-blue-800';
-            else if (b.serviceType === 'weekday_ps') bgColor = 'bg-sky-100 text-sky-800'; // Изменен цвет для PS
+            else if (b.serviceType === 'weekday_ps') bgColor = 'bg-sky-100 text-sky-800';
             else if (b.serviceType === 'weekend_vr') bgColor = 'bg-indigo-100 text-indigo-800';
-            else if (b.serviceType === 'weekend_ps') bgColor = 'bg-purple-100 text-purple-800'; // Изменен цвет для PS выходные
-            else if (b.serviceType === 'birthday') bgColor = 'bg-pink-100 text-pink-800 font-semibold'; // Изменен цвет ДР
+            else if (b.serviceType === 'weekend_ps') bgColor = 'bg-purple-100 text-purple-800';
+            else if (b.serviceType === 'birthday') bgColor = 'bg-pink-100 text-pink-800 font-semibold';
 
             li.classList.add(...bgColor.split(' '));
-            li.textContent = `${b.startTime} (${b.duration}ч) - ${b.clientName}`;
-            li.title = `${b.startTime} (${b.duration}ч) - ${b.clientName}\nУслуга: ${getServiceLabel(b.serviceType)}\nТел: ${b.clientPhone || '-'}\nПримечания: ${b.notes || '-'}`; // Всплывающая подсказка
+            li.innerHTML = `<span class="font-semibold">${b.startTime}</span><span class="truncate">${b.clientName}</span>`;
+            li.title = `${b.startTime} (${b.duration}ч) - ${b.clientName}\nУслуга: ${getServiceLabel(b.serviceType)}\nТел: ${b.clientPhone || '-'}\nПримечания: ${b.notes || '-'}`;
 
-            // Добавляем обработчик для редактирования по клику на запись (только для админа)
-             if (isAdmin) {
-                li.classList.add('cursor-pointer', 'hover:ring-1', 'hover:ring-black');
-                li.addEventListener('click', (e) => {
-                   e.stopPropagation(); // Предотвращаем срабатывание клика на ячейке дня
-                   openEditModal(b.id);
-                });
-             }
+            if (isAdmin) {
+              li.classList.add('cursor-pointer', 'hover:ring-1', 'hover:ring-black');
+              li.addEventListener('click', (e) => {
+                e.stopPropagation();
+                openEditModal(b.id);
+              });
+            }
 
             bookingsList.appendChild(li);
           });
 
           dayCell.appendChild(bookingsList);
+
+          if (dayBookings.length > 3) {
+            const more = document.createElement('div');
+            more.className = 'absolute bottom-1 right-1 text-[10px] bg-gray-800 text-white rounded-full px-1.5 py-0.5';
+            more.textContent = `+${dayBookings.length - 3}`;
+            dayCell.appendChild(more);
+          }
         }
 
         // Обработчик клика на ячейку дня
