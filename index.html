@@ -1898,6 +1898,10 @@
         <option value="other">Прочее</option>
       </select>
     </div>
+    <div>
+      <label for="monthFilter" class="block text-sm text-gray-600 mb-1">Месяц</label>
+      <input id="monthFilter" type="month" class="border rounded-lg px-3 py-2 w-48" />
+    </div>
     <div class="flex flex-col justify-end">
       <span class="text-gray-600 text-sm">За месяц:</span>
       <span id="monthlyExpenses" class="text-xl font-bold text-blue-700">0 ₽</span>
@@ -1907,6 +1911,7 @@
       <span id="totalExpenses" class="text-xl font-bold text-blue-700">0</span>
     </div>
   </div>
+  <div id="categoryTotals" class="space-y-1 mb-4"></div>
   <div id="expensesList" class="space-y-3"></div>
 </section>
 
@@ -5639,13 +5644,40 @@ function setupExpensesListener() {
 
     const expensesCollection = collection(db, 'expenses');
     const categoryFilter = document.getElementById('categoryFilter');
+    const monthFilter = document.getElementById('monthFilter');
     
-    // Чтобы поддержать старые документы, где поле date может быть строкой,
-    // в запросе сортируем по createdAt (всегда Timestamp).
-    // При фильтре по категории не сортируем на сервере — отсортируем на клиенте.
-    let q = query(expensesCollection, orderBy('createdAt', 'desc'));
+    // Фильтрация по месяцу (по полю date)
+    let startOfMonth = null, endOfMonth = null;
+    if (monthFilter && monthFilter.value) {
+      const [y, m] = monthFilter.value.split('-').map(Number);
+      startOfMonth = new Date(y, m - 1, 1);
+      endOfMonth = new Date(y, m, 1);
+    } else {
+      const now = new Date();
+      startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+      endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+      if (monthFilter) {
+        monthFilter.value = `${startOfMonth.getFullYear()}-${String(startOfMonth.getMonth()+1).padStart(2,'0')}`;
+      }
+    }
+
+    // Базовый запрос: по диапазону дат текущего/выбранного месяца и сортировка по date
+    // Важно: все документы должны иметь одинаковый тип поля date (вы уже привели к Timestamp)
+    let q = query(
+      expensesCollection,
+      where('date', '>=', startOfMonth),
+      where('date', '<', endOfMonth),
+      orderBy('date', 'desc')
+    );
+
     if (categoryFilter && categoryFilter.value) {
-      q = query(expensesCollection, where('category', '==', categoryFilter.value));
+      q = query(
+        expensesCollection,
+        where('category', '==', categoryFilter.value),
+        where('date', '>=', startOfMonth),
+        where('date', '<', endOfMonth),
+        orderBy('date', 'desc')
+      );
     }
     
     // Устанавливаем слушатель
@@ -5655,7 +5687,7 @@ function setupExpensesListener() {
         ...doc.data(),
         date: normalizeToDate(doc.data().date)
       }));
-      // Клиентская сортировка по дате расхода (на случай разных типов в старых документах)
+      // Данные уже отсортированы сервером, но держим безопасно
       expenses.sort((a, b) => (b.date?.getTime?.() || 0) - (a.date?.getTime?.() || 0));
       
       renderExpenses();
@@ -5672,9 +5704,13 @@ function setupExpensesListener() {
 function initExpensesHandlers() {
   const categoryFilter = document.getElementById('categoryFilter');
   const addExpenseBtn = document.getElementById('addExpenseBtn');
+  const monthFilter = document.getElementById('monthFilter');
   
   if (categoryFilter) {
     categoryFilter.addEventListener('change', setupExpensesListener);
+  }
+  if (monthFilter) {
+    monthFilter.addEventListener('change', setupExpensesListener);
   }
   
   if (addExpenseBtn) {
@@ -5752,11 +5788,19 @@ function updateStatistics() {
   try {
     const monthlyExpensesEl = document.getElementById('monthlyExpenses');
     const totalExpensesEl = document.getElementById('totalExpenses');
+    const totalsEl = document.getElementById('categoryTotals');
     
     if (!monthlyExpensesEl || !totalExpensesEl) return;
     
-    const now = new Date();
-    const firstDayOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+    const monthFilter = document.getElementById('monthFilter');
+    let firstDayOfMonth;
+    if (monthFilter && monthFilter.value) {
+      const [y, m] = monthFilter.value.split('-').map(Number);
+      firstDayOfMonth = new Date(y, m - 1, 1);
+    } else {
+      const now = new Date();
+      firstDayOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+    }
     
     const monthlyExpenses = expenses
       .filter(e => e.date >= firstDayOfMonth)
@@ -5764,6 +5808,29 @@ function updateStatistics() {
     
     monthlyExpensesEl.textContent = `${monthlyExpenses.toLocaleString('ru-RU')} ₽`;
     totalExpensesEl.textContent = expenses.length.toString();
+
+    // Агрегаты по категориям
+    if (totalsEl) {
+      const byCategory = expenses.reduce((acc, e) => {
+        const key = e.category || 'other';
+        acc[key] = (acc[key] || 0) + (Number(e.amount) || 0);
+        return acc;
+      }, {});
+
+      const categoryNames = {
+        utilities: 'Коммунальные услуги',
+        consumables: 'Расходные материалы',
+        equipment: 'Оборудование',
+        food: 'Продукты',
+        other: 'Прочее'
+      };
+
+      const entries = Object.entries(byCategory)
+        .sort((a, b) => b[1] - a[1])
+        .map(([key, sum]) => `<div class="text-sm text-gray-600">${categoryNames[key] || key}: <span class="font-semibold text-gray-900">${sum.toLocaleString('ru-RU')} ₽</span></div>`)
+        .join('');
+      totalsEl.innerHTML = entries || '';
+    }
   } catch (error) {
     console.error('Ошибка при обновлении статистики:', error);
   }
