@@ -5637,12 +5637,12 @@ function setupExpensesListener() {
     const expensesCollection = collection(db, 'expenses');
     const categoryFilter = document.getElementById('categoryFilter');
     
-    let q = query(expensesCollection, orderBy('date', 'desc'));
+    // Чтобы поддержать старые документы, где поле date может быть строкой,
+    // в запросе сортируем по createdAt (всегда Timestamp).
+    // При фильтре по категории не сортируем на сервере — отсортируем на клиенте.
+    let q = query(expensesCollection, orderBy('createdAt', 'desc'));
     if (categoryFilter && categoryFilter.value) {
-      q = query(expensesCollection, 
-        where('category', '==', categoryFilter.value), 
-        orderBy('date', 'desc')
-      );
+      q = query(expensesCollection, where('category', '==', categoryFilter.value));
     }
     
     // Устанавливаем слушатель
@@ -5652,6 +5652,8 @@ function setupExpensesListener() {
         ...doc.data(),
         date: normalizeToDate(doc.data().date)
       }));
+      // Клиентская сортировка по дате расхода (на случай разных типов в старых документах)
+      expenses.sort((a, b) => (b.date?.getTime?.() || 0) - (a.date?.getTime?.() || 0));
       
       renderExpenses();
       updateStatistics();
