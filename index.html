@@ -624,10 +624,17 @@
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
 
+    /* Обеспечиваем правильное наложение элементов внутри виджетов */
+    .widget-container {
+      position: relative;
+    }
+
     /* Стили для iframe виджетов */
     .widget-iframe {
       border-radius: 16px;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 0;
     }
 
     /* Стили для кнопок "Поделиться" */
@@ -647,6 +654,9 @@
       box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
       visibility: visible !important;
       opacity: 1 !important;
+      position: relative;
+      z-index: 10; /* Поверх iframe */
+      flex-shrink: 0; /* Не сжимать в узких контейнерах */
     }
 
     .share-button:hover {
