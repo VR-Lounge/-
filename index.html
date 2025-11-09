@@ -808,6 +808,9 @@
             <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink" onclick="return showExpensesSection()">
               <i class="fas fa-receipt mr-2"></i>Расходы
             </a>
+            <a href="#" class="nav-link whitespace-nowrap" id="clientsNavLink" onclick="return showClientsSection()">
+              <i class="fas fa-users mr-2"></i>База клиентов
+            </a>
           </nav>
       </div>
     </div>
@@ -865,6 +868,18 @@
         expensesLink.classList.add('active');
       }
       // Загрузка данных осуществляется через onAuthStateChanged внутри модуля
+      return false;
+    }
+
+    window.showClientsSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('clientsSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      const clientsLink = document.getElementById('clientsNavLink');
+      if (clientsLink) {
+        clientsLink.classList.add('active');
+      }
+      // Загрузка данных клиентов будет происходить через onAuthStateChanged
       return false;
     }
 
@@ -1925,6 +1940,89 @@
   <div id="expensesList" class="space-y-3"></div>
 </section>
 
+  <!-- === СЕКЦИЯ БАЗЫ КЛИЕНТОВ === -->
+  <section id="clientsSection" class="hidden max-w-7xl mx-auto my-8">
+    <div class="bg-white rounded-3xl shadow-lg p-6 border border-gray-200">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 tracking-tight flex items-center">
+          <i class="fas fa-users mr-3 text-blue-600"></i>База клиентов
+        </h2>
+        <div class="text-sm text-gray-600">
+          Всего клиентов: <span id="clientsCount" class="font-semibold text-blue-600">0</span>
+        </div>
+      </div>
+
+      <!-- Поиск и фильтры -->
+      <div class="mb-6 space-y-4">
+        <div class="flex flex-col md:flex-row gap-4">
+          <div class="flex-1">
+            <label for="clientSearch" class="block text-sm font-medium text-gray-700 mb-2">Поиск клиента</label>
+            <div class="relative">
+              <input 
+                type="text" 
+                id="clientSearch" 
+                placeholder="Поиск по имени, телефону..." 
+                class="w-full rounded-2xl border border-gray-300 px-5 py-3 pl-10 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+              />
+              <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+          </div>
+          <div class="md:w-48">
+            <label for="clientSort" class="block text-sm font-medium text-gray-700 mb-2">Сортировка</label>
+            <select 
+              id="clientSort" 
+              class="w-full rounded-2xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            >
+              <option value="name">По имени (А-Я)</option>
+              <option value="nameDesc">По имени (Я-А)</option>
+              <option value="bookings">По количеству записей</option>
+              <option value="lastBooking">Последняя запись</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Таблица клиентов -->
+      <div class="overflow-x-auto">
+        <table class="w-full">
+          <thead>
+            <tr class="border-b border-gray-200">
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Имя</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Телефон</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Telegram</th>
+              <th class="text-center py-3 px-4 font-semibold text-gray-700">Записей</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Последняя запись</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Общая сумма</th>
+              <th class="text-center py-3 px-4 font-semibold text-gray-700">Действия</th>
+            </tr>
+          </thead>
+          <tbody id="clientsTableBody" class="divide-y divide-gray-100">
+            <!-- Данные будут загружены через JavaScript -->
+          </tbody>
+        </table>
+        <div id="clientsLoading" class="text-center py-8 text-gray-500">
+          <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
+          <p>Загрузка данных клиентов...</p>
+        </div>
+        <div id="clientsEmpty" class="hidden text-center py-12 text-gray-500">
+          <i class="fas fa-users text-4xl mb-4 text-gray-300"></i>
+          <p class="text-lg">Клиенты не найдены</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальное окно детальной информации о клиенте -->
+  <div id="clientDetailModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200">
+      <button id="closeClientModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть">&times;</button>
+      <h3 id="clientDetailTitle" class="text-2xl font-semibold mb-6 text-gray-900 tracking-tight">Информация о клиенте</h3>
+      <div id="clientDetailContent">
+        <!-- Контент будет загружен через JavaScript -->
+      </div>
+    </div>
+  </div>
+
 <!-- === МОДАЛЬНОЕ ОКНО ДОБАВЛЕНИЯ РАСХОДА === -->
 <div id="addExpenseModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
   <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md relative">
@@ -2274,6 +2372,7 @@
       }));
         renderCalendar(); // Обновляем календарь клиентов
         renderBookingsList(); // Обновляем список записей
+        renderClientsDatabase(); // Обновляем базу клиентов
         if (isAdmin) {
             calculateRevenueStats(); // Рассчитать и отобразить выручку
             calculateWeeklyPayroll(); // Рассчитать и отобразить ЗП за прошлую неделю
@@ -2679,6 +2778,393 @@
         bookingsListEl.appendChild(li);
       });
     }
+
+    // === Логика Базы Клиентов ===
+    let clientsData = []; // Массив для хранения данных клиентов
+
+    async function renderClientsDatabase() {
+      const clientsTableBody = document.getElementById('clientsTableBody');
+      const clientsLoading = document.getElementById('clientsLoading');
+      const clientsEmpty = document.getElementById('clientsEmpty');
+      const clientsCount = document.getElementById('clientsCount');
+      const clientSearch = document.getElementById('clientSearch');
+      const clientSort = document.getElementById('clientSort');
+
+      if (!clientsTableBody) return; // Если секция не загружена, выходим
+
+      try {
+        // Загружаем клиентов из Firebase
+        const clientsSnapshot = await getDocs(collection(db, "clients"));
+        clientsData = clientsSnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+
+        // Если клиентов нет в базе, создаем их из существующих бронирований
+        if (clientsData.length === 0 && bookings.length > 0) {
+          await createClientsFromBookings();
+          // Перезагружаем после создания
+          const newSnapshot = await getDocs(collection(db, "clients"));
+          clientsData = newSnapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data()
+          }));
+        }
+
+        // Обновляем статистику из бронирований
+        await updateClientsStats();
+
+        // Применяем поиск и сортировку
+        let filteredClients = [...clientsData];
+        
+        // Поиск
+        if (clientSearch && clientSearch.value) {
+          const searchTerm = clientSearch.value.toLowerCase();
+          filteredClients = filteredClients.filter(client => 
+            client.clientName?.toLowerCase().includes(searchTerm) ||
+            client.clientPhone?.includes(searchTerm) ||
+            client.phoneDigits?.includes(searchTerm.replace(/\D/g, ''))
+          );
+        }
+
+        // Сортировка
+        if (clientSort && clientSort.value) {
+          switch(clientSort.value) {
+            case 'name':
+              filteredClients.sort((a, b) => (a.clientName || '').localeCompare(b.clientName || ''));
+              break;
+            case 'nameDesc':
+              filteredClients.sort((a, b) => (b.clientName || '').localeCompare(a.clientName || ''));
+              break;
+            case 'bookings':
+              filteredClients.sort((a, b) => (b.totalBookings || 0) - (a.totalBookings || 0));
+              break;
+            case 'lastBooking':
+              filteredClients.sort((a, b) => {
+                const dateA = a.lastBookingDate ? new Date(a.lastBookingDate) : new Date(0);
+                const dateB = b.lastBookingDate ? new Date(b.lastBookingDate) : new Date(0);
+                return dateB - dateA;
+              });
+              break;
+          }
+        }
+
+        // Обновляем счетчик
+        if (clientsCount) {
+          clientsCount.textContent = filteredClients.length;
+        }
+
+        // Очищаем таблицу
+        clientsTableBody.innerHTML = '';
+
+        // Скрываем/показываем элементы загрузки
+        if (clientsLoading) clientsLoading.classList.add('hidden');
+        
+        if (filteredClients.length === 0) {
+          if (clientsEmpty) clientsEmpty.classList.remove('hidden');
+          return;
+        }
+
+        if (clientsEmpty) clientsEmpty.classList.add('hidden');
+
+        // Рендерим клиентов
+        filteredClients.forEach(client => {
+          const row = document.createElement('tr');
+          row.className = 'hover:bg-gray-50 transition';
+
+          // Telegram статус
+          const telegramStatus = client.telegramId 
+            ? `<span class="text-green-600"><i class="fab fa-telegram"></i> ${client.telegramUsername || 'Подключен'}</span>`
+            : '<span class="text-gray-400">Не подключен</span>';
+
+          // Форматирование даты последней записи
+          const lastBookingDate = client.lastBookingDate 
+            ? new Date(client.lastBookingDate).toLocaleDateString('ru-RU', { day: '2-digit', month: 'short', year: 'numeric' })
+            : '-';
+
+          row.innerHTML = `
+            <td class="py-3 px-4">
+              <div class="font-semibold text-gray-900">${client.clientName || '-'}</div>
+            </td>
+            <td class="py-3 px-4">
+              <a href="tel:${client.clientPhone || ''}" class="text-blue-600 hover:underline">
+                ${client.clientPhone || '-'}
+              </a>
+            </td>
+            <td class="py-3 px-4">${telegramStatus}</td>
+            <td class="py-3 px-4 text-center">
+              <span class="font-semibold">${client.totalBookings || 0}</span>
+            </td>
+            <td class="py-3 px-4">${lastBookingDate}</td>
+            <td class="py-3 px-4">
+              <span class="font-semibold text-green-600">${(client.totalSpent || 0).toLocaleString('ru-RU')} ₽</span>
+            </td>
+            <td class="py-3 px-4 text-center">
+              <button 
+                onclick="showClientDetails('${client.id}')" 
+                class="text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded px-2 py-1"
+                title="Подробнее"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </td>
+          `;
+
+          clientsTableBody.appendChild(row);
+        });
+
+      } catch (error) {
+        console.error('Ошибка загрузки клиентов:', error);
+        if (clientsLoading) clientsLoading.classList.add('hidden');
+        if (clientsEmpty) clientsEmpty.classList.remove('hidden');
+      }
+    }
+
+    // Создание клиентов из существующих бронирований
+    async function createClientsFromBookings() {
+      const clientsMap = new Map();
+
+      bookings.forEach(booking => {
+        const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+        if (!phoneDigits) return;
+
+        const key = phoneDigits;
+        if (!clientsMap.has(key)) {
+          clientsMap.set(key, {
+            clientName: booking.clientName,
+            clientPhone: booking.clientPhone,
+            phoneDigits: phoneDigits,
+            createdAt: booking.bookingDate ? new Date(booking.bookingDate) : new Date(),
+            lastBookingDate: booking.bookingDate,
+            totalBookings: 0,
+            totalSpent: 0,
+            isActive: true
+          });
+        }
+
+        const client = clientsMap.get(key);
+        client.totalBookings += 1;
+        if (booking.bookingDate && (!client.lastBookingDate || booking.bookingDate > client.lastBookingDate)) {
+          client.lastBookingDate = booking.bookingDate;
+        }
+      });
+
+      // Сохраняем клиентов в Firebase
+      for (const [phoneDigits, clientData] of clientsMap) {
+        try {
+          // Проверяем, существует ли клиент
+          const existingClients = await getDocs(
+            query(collection(db, "clients"), where("phoneDigits", "==", phoneDigits))
+          );
+          
+          if (existingClients.empty) {
+            await addDoc(collection(db, "clients"), {
+              ...clientData,
+              createdAt: clientData.createdAt instanceof Date 
+                ? clientData.createdAt 
+                : new Date(clientData.createdAt)
+            });
+          }
+        } catch (error) {
+          console.error(`Ошибка создания клиента ${phoneDigits}:`, error);
+        }
+      }
+    }
+
+    // Обновление статистики клиентов из бронирований
+    async function updateClientsStats() {
+      const clientsMap = new Map();
+      
+      // Группируем бронирования по телефону
+      bookings.forEach(booking => {
+        const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+        if (!phoneDigits) return;
+
+        if (!clientsMap.has(phoneDigits)) {
+          clientsMap.set(phoneDigits, {
+            totalBookings: 0,
+            totalSpent: 0,
+            lastBookingDate: null
+          });
+        }
+
+        const stats = clientsMap.get(phoneDigits);
+        stats.totalBookings += 1;
+
+        // Расчет суммы бронирования
+        let bookingAmount = 0;
+        const duration = parseFloat(booking.duration) || 0;
+        
+        if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+          booking.selectedServices.forEach(service => {
+            if (service === 'birthday') {
+              const fullHours = Math.floor(duration);
+              const hasHalfHour = duration % 1 !== 0;
+              let birthdayTotal = 0;
+              for (let hour = 1; hour <= fullHours; hour++) {
+                const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                birthdayTotal += hourPrice;
+              }
+              if (hasHalfHour) {
+                if (fullHours === 0) birthdayTotal += 2000;
+                else if (fullHours === 1) birthdayTotal += 2000;
+                else birthdayTotal += (servicePrices.birthday[3] || 3000) / 2;
+              }
+              bookingAmount += birthdayTotal;
+            } else if (service === 'hostess') {
+              bookingAmount += servicePrices.hostess;
+            } else {
+              const price = servicePrices[service] || 0;
+              bookingAmount += price * duration;
+            }
+          });
+        }
+
+        // Применяем скидки
+        const discountPercent = booking.discountPercent || 0;
+        const discountAmount = booking.discountAmount || 0;
+        if (discountPercent > 0) {
+          bookingAmount = bookingAmount * (1 - discountPercent / 100);
+        } else if (discountAmount > 0) {
+          bookingAmount = Math.max(0, bookingAmount - discountAmount);
+        }
+
+        stats.totalSpent += bookingAmount;
+
+        // Обновляем дату последней записи
+        if (booking.bookingDate && (!stats.lastBookingDate || booking.bookingDate > stats.lastBookingDate)) {
+          stats.lastBookingDate = booking.bookingDate;
+        }
+      });
+
+      // Обновляем клиентов в Firebase
+      for (const client of clientsData) {
+        const stats = clientsMap.get(client.phoneDigits);
+        if (stats) {
+          try {
+            const clientRef = doc(db, "clients", client.id);
+            await updateDoc(clientRef, {
+              totalBookings: stats.totalBookings,
+              totalSpent: stats.totalSpent,
+              lastBookingDate: stats.lastBookingDate
+            });
+            // Обновляем локальные данные
+            client.totalBookings = stats.totalBookings;
+            client.totalSpent = stats.totalSpent;
+            client.lastBookingDate = stats.lastBookingDate;
+          } catch (error) {
+            console.error(`Ошибка обновления клиента ${client.id}:`, error);
+          }
+        }
+      }
+    }
+
+    // Показ детальной информации о клиенте
+    window.showClientDetails = async function(clientId) {
+      const client = clientsData.find(c => c.id === clientId);
+      if (!client) return;
+
+      const modal = document.getElementById('clientDetailModal');
+      const title = document.getElementById('clientDetailTitle');
+      const content = document.getElementById('clientDetailContent');
+
+      if (!modal || !title || !content) return;
+
+      title.textContent = `Информация о клиенте: ${client.clientName}`;
+
+      // Получаем все бронирования клиента
+      const clientBookings = bookings.filter(b => {
+        const bookingPhone = b.clientPhone?.replace(/\D/g, '') || '';
+        return bookingPhone === client.phoneDigits;
+      }).sort((a, b) => {
+        const dateA = new Date(a.bookingDate + 'T' + a.startTime);
+        const dateB = new Date(b.bookingDate + 'T' + b.startTime);
+        return dateB - dateA;
+      });
+
+      let bookingsHTML = '';
+      if (clientBookings.length > 0) {
+        bookingsHTML = '<div class="mt-4"><h4 class="font-semibold mb-2">История записей:</h4><div class="space-y-2">';
+        clientBookings.slice(0, 10).forEach(booking => {
+          const dateStr = new Date(booking.bookingDate).toLocaleDateString('ru-RU', {
+            day: '2-digit',
+            month: 'short',
+            year: 'numeric',
+            weekday: 'short'
+          });
+          bookingsHTML += `
+            <div class="border border-gray-200 rounded-lg p-3">
+              <div class="font-medium">${dateStr} в ${booking.startTime} (${booking.duration}ч)</div>
+              <div class="text-sm text-gray-600 mt-1">
+                ${booking.selectedServices && Array.isArray(booking.selectedServices) 
+                  ? booking.selectedServices.map(s => getServiceLabel(s)).join(', ')
+                  : getServiceLabel(booking.serviceType || '')}
+              </div>
+            </div>
+          `;
+        });
+        if (clientBookings.length > 10) {
+          bookingsHTML += `<div class="text-sm text-gray-500 italic">... и еще ${clientBookings.length - 10} записей</div>`;
+        }
+        bookingsHTML += '</div></div>';
+      }
+
+      content.innerHTML = `
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-semibold mb-2">Контактная информация</h4>
+            <div class="space-y-2">
+              <div><span class="font-medium">Имя:</span> ${client.clientName}</div>
+              <div><span class="font-medium">Телефон:</span> <a href="tel:${client.clientPhone}" class="text-blue-600 hover:underline">${client.clientPhone}</a></div>
+              <div><span class="font-medium">Telegram:</span> ${client.telegramId 
+                ? `<span class="text-green-600"><i class="fab fa-telegram"></i> ${client.telegramUsername || 'ID: ' + client.telegramId}</span>`
+                : '<span class="text-gray-400">Не подключен</span>'}</div>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Статистика</h4>
+            <div class="space-y-2">
+              <div><span class="font-medium">Всего записей:</span> ${client.totalBookings || 0}</div>
+              <div><span class="font-medium">Общая сумма:</span> <span class="text-green-600 font-semibold">${(client.totalSpent || 0).toLocaleString('ru-RU')} ₽</span></div>
+              <div><span class="font-medium">Последняя запись:</span> ${client.lastBookingDate 
+                ? new Date(client.lastBookingDate).toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric' })
+                : 'Нет записей'}</div>
+              <div><span class="font-medium">Дата регистрации:</span> ${client.createdAt 
+                ? new Date(client.createdAt.seconds ? client.createdAt.seconds * 1000 : client.createdAt).toLocaleDateString('ru-RU')
+                : 'Не указана'}</div>
+            </div>
+          </div>
+          ${bookingsHTML}
+        </div>
+      `;
+
+      modal.classList.remove('hidden');
+    };
+
+    // Обработчики поиска и сортировки
+    document.addEventListener('DOMContentLoaded', () => {
+      const clientSearch = document.getElementById('clientSearch');
+      const clientSort = document.getElementById('clientSort');
+      const closeClientModal = document.getElementById('closeClientModal');
+
+      if (clientSearch) {
+        clientSearch.addEventListener('input', () => {
+          renderClientsDatabase();
+        });
+      }
+
+      if (clientSort) {
+        clientSort.addEventListener('change', () => {
+          renderClientsDatabase();
+        });
+      }
+
+      if (closeClientModal) {
+        closeClientModal.addEventListener('click', () => {
+          document.getElementById('clientDetailModal').classList.add('hidden');
+        });
+      }
+    });
 
 
     // === Логика Модального Окна Бронирования Клиента ===
