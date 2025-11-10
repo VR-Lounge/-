@@ -1,0 +1,683 @@
+// Telegram Bot для VR Lounge CRM
+// Интеграция с Firebase для управления клиентами и уведомлениями
+
+require('dotenv').config();
+const TelegramBot = require('node-telegram-bot-api');
+const admin = require('firebase-admin');
+const serviceAccount = require('./firebase-service-account.json');
+
+// Инициализация Firebase Admin SDK
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount)
+});
+
+const db = admin.firestore();
+
+// Инициализация Telegram бота
+const token = process.env.TELEGRAM_BOT_TOKEN;
+if (!token) {
+  console.error('ОШИБКА: TELEGRAM_BOT_TOKEN не установлен в переменных окружения!');
+  process.exit(1);
+}
+
+const bot = new TelegramBot(token, { polling: true });
+
+// Логирование всех входящих сообщений для отладки
+// Обработка текстовых сообщений (кнопки клавиатуры)
+bot.on('message', async (msg) => {
+  // Пропускаем команды и служебные сообщения
+  if (msg.text && msg.text.startsWith('/')) {
+    return;
+  }
+  
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  const text = msg.text;
+  const MINI_APP_URL = process.env.MINI_APP_URL || 'https://vr-lounge.github.io/-/telegram-miniapp.html';
+  
+  // Определяем роль пользователя
+  const role = await getUserRole(userId);
+  
+  // Обработка кнопок для администраторов
+  if (role === 'admin') {
+    if (text === '👥 Клиенты') {
+      await bot.sendMessage(chatId, '👥 Открываю базу клиентов...', {
+        reply_markup: {
+          inline_keyboard: [
+            [{
+              text: '👥 База клиентов',
+              web_app: { url: MINI_APP_URL + '?section=clients' }
+            }]
+          ]
+        }
+      });
+      return;
+    }
+    
+    if (text === '📊 Статистика') {
+      await bot.sendMessage(chatId, '📊 Открываю статистику...', {
+        reply_markup: {
+          inline_keyboard: [
+            [{
+              text: '📊 Статистика и финансы',
+              web_app: { url: MINI_APP_URL + '?section=finance' }
+            }]
+          ]
+        }
+      });
+      return;
+    }
+    
+    if (text === '📢 Рассылка') {
+      await bot.sendMessage(chatId, '📢 Открываю рассылку...', {
+        reply_markup: {
+          inline_keyboard: [
+            [{
+              text: '📢 Рассылка клиентам',
+              web_app: { url: MINI_APP_URL + '?section=broadcast' }
+            }]
+          ]
+        }
+      });
+      return;
+    }
+  }
+  
+  // Логируем остальные сообщения
+  console.log(`📩 Получено сообщение от ${msg.from.first_name} (${msg.chat.type}):`, text || '[не текст]');
+});
+
+// ID группы администраторов (замените на ваш)
+const ADMIN_GROUP_ID = process.env.ADMIN_GROUP_ID || '-1001234567890'; // Пример формата
+
+console.log('🤖 Telegram бот запущен!');
+console.log('📋 ID группы администраторов:', ADMIN_GROUP_ID);
+
+// ============================================
+// СИСТЕМА РОЛЕЙ ПОЛЬЗОВАТЕЛЕЙ
+// ============================================
+
+// Функция определения роли пользователя
+async function getUserRole(userId) {
+  try {
+    // Сначала проверяем, является ли пользователь админом (из графика смен)
+    const adminSnapshot = await db.collection('admins')
+      .where('telegramId', '==', userId.toString())
+      .get();
+    
+    if (!adminSnapshot.empty) {
+      return 'admin';
+    }
+    
+    // Затем проверяем, является ли пользователь руководителем
+    const managerSnapshot = await db.collection('managers')
+      .where('telegramId', '==', userId.toString())
+      .get();
+    
+    if (!managerSnapshot.empty) {
+      return 'admin'; // Руководители имеют те же права, что и админы
+    }
+    
+    // Затем проверяем, является ли пользователь клиентом
+    const clientSnapshot = await db.collection('clients')
+      .where('telegramId', '==', userId.toString())
+      .get();
+    
+    if (!clientSnapshot.empty) {
+      return 'client';
+    }
+    
+    // Если не найден нигде - гость
+    return 'guest';
+  } catch (error) {
+    console.error('Ошибка определения роли пользователя:', error);
+    return 'guest';
+  }
+}
+
+// ============================================
+// ОСНОВНЫЕ КОМАНДЫ БОТА
+// ============================================
+
+// Команда /start
+bot.onText(/\/start/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  const username = msg.from.username || msg.from.first_name;
+  
+  console.log(`📨 Получена команда /start от ${username} (chatId: ${chatId})`);
+
+  // Определяем роль пользователя
+  const role = await getUserRole(userId);
+  console.log(`👤 Роль пользователя ${username}: ${role}`);
+
+  // URL Mini App
+  const MINI_APP_URL = process.env.MINI_APP_URL || 'https://vr-lounge.github.io/-/telegram-miniapp.html';
+
+  try {
+    if (role === 'admin') {
+      // Меню для администратора
+      await bot.sendMessage(chatId, `
+👋 Привет, ${username}!
+
+Добро пожаловать в панель администратора VR Lounge! 🎮
+
+Доступные функции:
+• Создавать новые записи клиентов
+• Просматривать статистику
+• Управлять клиентами
+• Делать рассылки
+• Получать уведомления о событиях
+      `, {
+        reply_markup: {
+          keyboard: [
+            [{ 
+              text: '📝 Создать запись', 
+              web_app: { url: MINI_APP_URL + '?section=booking' }
+            }],
+            [{ text: '📊 Статистика' }, { text: '👥 Клиенты' }],
+            [{ text: '📢 Рассылка' }, { text: '/help - Помощь' }]
+          ],
+          resize_keyboard: true
+        }
+      });
+    } else if (role === 'client') {
+      // Меню для клиента
+      await bot.sendMessage(chatId, `
+👋 Привет, ${username}!
+
+Добро пожаловать в бот VR Lounge! 🎮
+
+Я помогу вам:
+• Получать напоминания о ваших записях
+• Узнавать информацию о предстоящих событиях
+• Быть на связи с VR Lounge
+• Получать приглашения и специальные предложения
+      `, {
+        reply_markup: {
+          keyboard: [
+            [{ text: '📅 Мои записи' }],
+            [{ text: 'ℹ️ Информация' }, { text: '📞 Контакты' }],
+            [{ text: '/help - Помощь' }]
+          ],
+          resize_keyboard: true
+        }
+      });
+    } else {
+      // Меню для гостя (не зарегистрированного)
+      await bot.sendMessage(chatId, `
+👋 Привет, ${username}!
+
+Добро пожаловать в бот VR Lounge! 🎮
+
+Для начала работы зарегистрируйтесь в базе клиентов.
+После регистрации вы будете получать:
+• Напоминания о ваших записях
+• Информацию о предстоящих событиях
+• Приглашения и специальные предложения
+      `, {
+        reply_markup: {
+          keyboard: [
+            [{ text: '/register - Зарегистрироваться' }],
+            [{ text: '/help - Помощь' }]
+          ],
+          resize_keyboard: true
+        }
+      });
+    }
+    
+    console.log(`✅ Ответ отправлен пользователю ${username} (роль: ${role})`);
+  } catch (error) {
+    console.error('Ошибка отправки сообщения /start:', error.message);
+  }
+});
+
+// Команда /register - регистрация клиента
+bot.onText(/\/register/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  const username = msg.from.username ? `@${msg.from.username}` : null;
+  const firstName = msg.from.first_name || '';
+  const lastName = msg.from.last_name || '';
+  const fullName = `${firstName} ${lastName}`.trim();
+
+  // Проверяем, что это личный чат (не группа)
+  if (msg.chat.type !== 'private') {
+    await bot.sendMessage(chatId, '❌ Регистрация возможна только в личном чате с ботом. Пожалуйста, напишите боту напрямую.');
+    return;
+  }
+
+  try {
+    await bot.sendMessage(chatId, `
+📝 Регистрация в базе клиентов
+
+Для завершения регистрации мне нужен ваш номер телефона.
+
+Пожалуйста, отправьте ваш номер телефона в формате:
++7 (XXX) XXX-XX-XX
+
+Или нажмите кнопку ниже, чтобы поделиться номером:
+    `, {
+      reply_markup: {
+        keyboard: [
+          [{
+            text: '📱 Поделиться номером телефона',
+            request_contact: true
+          }],
+          [{ text: 'Отмена' }]
+        ],
+        resize_keyboard: true
+      }
+    });
+  } catch (error) {
+    console.error('Ошибка отправки сообщения регистрации:', error);
+    await bot.sendMessage(chatId, 'Произошла ошибка. Попробуйте позже или напишите номер телефона вручную в формате +7 (XXX) XXX-XX-XX');
+  }
+});
+
+// Обработка контакта (номер телефона)
+bot.on('contact', async (msg) => {
+  const chatId = msg.chat.id;
+  const contact = msg.contact;
+  const userId = msg.from.id.toString();
+  const username = msg.from.username ? `@${msg.from.username}` : null;
+  const phoneNumber = contact.phone_number;
+  
+  // Проверяем, что это личный чат
+  if (msg.chat.type !== 'private') {
+    return; // Игнорируем контакты из групп
+  }
+  
+  // Нормализуем номер телефона
+  let normalizedPhone = phoneNumber.replace(/\D/g, '');
+  if (normalizedPhone.startsWith('8')) {
+    normalizedPhone = '7' + normalizedPhone.substring(1);
+  }
+  if (!normalizedPhone.startsWith('7')) {
+    normalizedPhone = '7' + normalizedPhone;
+  }
+  
+  const formattedPhone = `+7 (${normalizedPhone.substring(1, 4)}) ${normalizedPhone.substring(4, 7)}-${normalizedPhone.substring(7, 9)}-${normalizedPhone.substring(9, 11)}`;
+  const phoneDigits = normalizedPhone;
+
+  try {
+    // Ищем клиента по телефону
+    const clientsSnapshot = await db.collection('clients')
+      .where('phoneDigits', '==', phoneDigits)
+      .get();
+
+    if (!clientsSnapshot.empty) {
+      // Клиент существует - обновляем Telegram данные
+      const clientDoc = clientsSnapshot.docs[0];
+      await clientDoc.ref.update({
+        telegramId: userId,
+        telegramUsername: username,
+        updatedAt: admin.firestore.FieldValue.serverTimestamp()
+      });
+
+      await bot.sendMessage(chatId, `
+✅ Отлично! Ваш Telegram успешно привязан к вашему аккаунту!
+
+Теперь вы будете получать уведомления о ваших записях и предстоящих событиях.
+      `);
+    } else {
+      // Клиента нет - создаем нового
+      await db.collection('clients').add({
+        clientName: contact.first_name || 'Не указано',
+        clientPhone: formattedPhone,
+        phoneDigits: phoneDigits,
+        telegramId: userId,
+        telegramUsername: username,
+        createdAt: admin.firestore.FieldValue.serverTimestamp(),
+        lastBookingDate: null,
+        totalBookings: 0,
+        totalSpent: 0,
+        isActive: true
+      });
+
+      await bot.sendMessage(chatId, `
+✅ Регистрация завершена!
+
+Вы успешно зарегистрированы в базе клиентов VR Lounge.
+Теперь вы будете получать уведомления о ваших записях.
+      `);
+    }
+
+    // Уведомляем администраторов
+    try {
+      await bot.sendMessage(ADMIN_GROUP_ID, `
+🆕 Новый клиент зарегистрировался через бота:
+👤 Имя: ${contact.first_name || 'Не указано'}
+📱 Телефон: ${formattedPhone}
+💬 Telegram: ${username || userId}
+      `);
+    } catch (groupError) {
+      console.error('Ошибка отправки уведомления в группу:', groupError.message);
+    }
+
+  } catch (error) {
+    console.error('Ошибка регистрации клиента:', error);
+    try {
+      await bot.sendMessage(chatId, '❌ Произошла ошибка при регистрации. Попробуйте позже.');
+    } catch (sendError) {
+      console.error('Ошибка отправки сообщения об ошибке:', sendError.message);
+    }
+  }
+});
+
+// Команда /newbooking - открыть Mini App для создания записи (только для админов)
+bot.onText(/\/newbooking|\/запись|\/новая_запись/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  const MINI_APP_URL = process.env.MINI_APP_URL || 'https://vr-lounge.github.io/-/telegram-miniapp.html';
+
+  // Проверяем роль пользователя
+  const role = await getUserRole(userId);
+  
+  if (role !== 'admin') {
+    await bot.sendMessage(chatId, '❌ Эта функция доступна только администраторам.');
+    return;
+  }
+
+  try {
+    await bot.sendMessage(chatId, '📝 Открываю форму создания записи...', {
+      reply_markup: {
+        inline_keyboard: [
+          [{
+            text: '📝 Создать запись',
+            web_app: { url: MINI_APP_URL }
+          }]
+        ]
+      }
+    });
+  } catch (error) {
+    console.error('Ошибка открытия Mini App:', error.message);
+    await bot.sendMessage(chatId, '❌ Не удалось открыть форму. Попробуйте позже.');
+  }
+});
+
+// Команда /help
+bot.onText(/\/help/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  const role = await getUserRole(userId);
+  
+  try {
+    if (role === 'admin') {
+      await bot.sendMessage(chatId, `
+📖 Справка по боту VR Lounge (Администратор)
+
+Доступные команды:
+/start - Начать работу с ботом
+/newbooking - Создать новую запись (открывает Mini App)
+/register - Зарегистрировать клиента
+/help - Показать эту справку
+
+Функции администратора:
+• Создание записей через Mini App
+• Просмотр статистики
+• Управление клиентами
+• Рассылки клиентам
+• Уведомления о событиях в группе администраторов
+
+После регистрации клиентов они будут автоматически получать:
+• Напоминания о предстоящих записях (за 1 день и за 3 часа)
+• Информацию об изменениях в их записях
+• Специальные предложения и новости
+      `);
+    } else if (role === 'client') {
+      await bot.sendMessage(chatId, `
+📖 Справка по боту VR Lounge
+
+Доступные команды:
+/start - Начать работу с ботом
+/help - Показать эту справку
+
+Вы будете автоматически получать:
+• Напоминания о предстоящих записях (за 1 день и за 3 часа)
+• Информацию об изменениях в ваших записях
+• Приглашения и специальные предложения
+
+Если у вас есть вопросы, свяжитесь с нами через администраторов.
+      `);
+    } else {
+      await bot.sendMessage(chatId, `
+📖 Справка по боту VR Lounge
+
+Доступные команды:
+/start - Начать работу с ботом
+/register - Зарегистрироваться в базе клиентов
+/help - Показать эту справку
+
+После регистрации вы будете получать:
+• Напоминания о ваших записях
+• Информацию о предстоящих событиях
+• Приглашения и специальные предложения
+
+Если у вас есть вопросы, свяжитесь с нами через администраторов.
+      `);
+    }
+  } catch (error) {
+    console.error('Ошибка отправки сообщения /help:', error);
+  }
+});
+
+// ============================================
+// ФУНКЦИИ УВЕДОМЛЕНИЙ
+// ============================================
+
+// Функция отправки уведомления клиенту
+async function sendNotificationToClient(clientId, message) {
+  try {
+    const clientDoc = await db.collection('clients').doc(clientId).get();
+    if (!clientDoc.exists) return false;
+
+    const client = clientDoc.data();
+    if (!client.telegramId) return false;
+
+    await bot.sendMessage(client.telegramId, message);
+    return true;
+  } catch (error) {
+    console.error(`Ошибка отправки уведомления клиенту ${clientId}:`, error);
+    return false;
+  }
+}
+
+// Функция отправки уведомления в группу администраторов
+async function sendNotificationToAdmins(message) {
+  try {
+    await bot.sendMessage(ADMIN_GROUP_ID, message);
+    return true;
+  } catch (error) {
+    console.error('Ошибка отправки уведомления администраторам:', error);
+    return false;
+  }
+}
+
+// Функция рассылки всем клиентам (только для админов)
+async function broadcastToClients(message, adminUserId) {
+  // Проверяем, что отправитель - админ
+  const role = await getUserRole(adminUserId);
+  if (role !== 'admin') {
+    return { success: false, error: 'Только администраторы могут делать рассылки' };
+  }
+
+  try {
+    const clientsSnapshot = await db.collection('clients')
+      .where('isActive', '==', true)
+      .get();
+
+    let successCount = 0;
+    let failCount = 0;
+
+    for (const clientDoc of clientsSnapshot.docs) {
+      const client = clientDoc.data();
+      if (client.telegramId) {
+        try {
+          await bot.sendMessage(client.telegramId, message);
+          successCount++;
+        } catch (error) {
+          console.error(`Ошибка отправки клиенту ${client.clientName}:`, error.message);
+          failCount++;
+        }
+      } else {
+        failCount++;
+      }
+    }
+
+    return {
+      success: true,
+      total: clientsSnapshot.size,
+      successCount,
+      failCount
+    };
+  } catch (error) {
+    console.error('Ошибка рассылки клиентам:', error);
+    return { success: false, error: error.message };
+  }
+}
+
+// Функция проверки предстоящих событий и отправки напоминаний
+async function checkUpcomingEvents() {
+  try {
+    const now = new Date();
+    const tomorrow = new Date(now);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrowStr = tomorrow.toISOString().split('T')[0];
+
+    // Проверяем события на завтра (напоминание за 1 день)
+    const tomorrowBookings = await db.collection('bookings')
+      .where('bookingDate', '==', tomorrowStr)
+      .get();
+
+    for (const bookingDoc of tomorrowBookings.docs) {
+      const booking = bookingDoc.data();
+      const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+      
+      if (!phoneDigits) continue;
+
+      // Находим клиента
+      const clientsSnapshot = await db.collection('clients')
+        .where('phoneDigits', '==', phoneDigits)
+        .get();
+
+      if (!clientsSnapshot.empty) {
+        const client = clientsSnapshot.docs[0].data();
+        if (client.telegramId) {
+          const dateStr = new Date(booking.bookingDate).toLocaleDateString('ru-RU', {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric',
+            weekday: 'long'
+          });
+
+          const message = `
+🔔 Напоминание о записи
+
+У вас запланировано посещение VR Lounge:
+
+📅 Дата: ${dateStr}
+⏰ Время: ${booking.startTime}
+⏱ Длительность: ${booking.duration} ч
+
+${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
+
+Ждем вас! 🎮
+          `;
+
+          await sendNotificationToClient(clientsSnapshot.docs[0].id, message);
+        }
+      }
+
+      // Уведомляем администраторов о предстоящем событии
+      if (booking.selectedServices?.includes('birthday')) {
+        const dateStr = new Date(booking.bookingDate).toLocaleDateString('ru-RU', {
+          day: '2-digit',
+          month: 'long',
+          year: 'numeric',
+          weekday: 'long'
+        });
+        
+        await sendNotificationToAdmins(`
+🎂 Напоминание: Завтра День Рождения!
+
+👤 Клиент: ${booking.clientName}
+📅 Дата: ${dateStr}
+⏰ Время: ${booking.startTime}
+⏱ Длительность: ${booking.duration} ч
+
+Пожалуйста, подготовьтесь к мероприятию!
+        `);
+      }
+    }
+
+    // Проверяем события через 3 часа (напоминание за 3 часа)
+    const threeHoursLater = new Date(now);
+    threeHoursLater.setHours(threeHoursLater.getHours() + 3);
+    const threeHoursDateStr = threeHoursLater.toISOString().split('T')[0];
+    const threeHoursTimeStr = threeHoursLater.toTimeString().split(':').slice(0, 2).join(':');
+
+    const threeHoursBookings = await db.collection('bookings')
+      .where('bookingDate', '==', threeHoursDateStr)
+      .where('startTime', '==', threeHoursTimeStr)
+      .get();
+
+    for (const bookingDoc of threeHoursBookings.docs) {
+      const booking = bookingDoc.data();
+      const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+      
+      if (!phoneDigits) continue;
+
+      const clientsSnapshot = await db.collection('clients')
+        .where('phoneDigits', '==', phoneDigits)
+        .get();
+
+      if (!clientsSnapshot.empty) {
+        const client = clientsSnapshot.docs[0].data();
+        if (client.telegramId) {
+          await sendNotificationToClient(clientsSnapshot.docs[0].id, `
+⏰ Напоминание: До вашей записи осталось 3 часа!
+
+Ждем вас в ${booking.startTime} 🎮
+          `);
+        }
+      }
+    }
+
+  } catch (error) {
+    console.error('Ошибка проверки предстоящих событий:', error);
+  }
+}
+
+// Запускаем проверку каждые 30 минут
+setInterval(checkUpcomingEvents, 30 * 60 * 1000);
+
+// Проверяем сразу при запуске
+checkUpcomingEvents();
+
+// ============================================
+// ОБРАБОТКА ОШИБОК
+// ============================================
+
+bot.on('polling_error', (error) => {
+  console.error('Ошибка polling:', error.message);
+  // Не останавливаем бота при ошибках polling
+});
+
+bot.on('error', (error) => {
+  console.error('Общая ошибка бота:', error.message);
+});
+
+process.on('SIGINT', () => {
+  console.log('\n🛑 Остановка бота...');
+  bot.stopPolling();
+  process.exit(0);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Необработанное отклонение промиса:', reason);
+  // Не останавливаем бота при необработанных ошибках
+});
+
+console.log('✅ Бот готов к работе!');
+

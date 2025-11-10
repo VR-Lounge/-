@@ -79,17 +79,63 @@
       opacity: 1;
       cursor: pointer;
     }
+    
+    /* Навигация */
+    .nav-btn {
+      color: #6b7280;
+      transition: all 0.2s;
+    }
+    
+    .nav-btn.active {
+      color: #3b82f6;
+    }
+    
+    .section {
+      display: none;
+    }
+    
+    .section.active {
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <div class="min-h-screen bg-gray-50 pb-20">
+  <div class="min-h-screen bg-gray-50 pb-24" id="app">
     <!-- Заголовок -->
     <div class="bg-blue-600 text-white p-4 sticky top-0 z-10 shadow-md">
-      <h1 class="text-xl font-bold text-center">📝 Новая запись клиента</h1>
+      <h1 class="text-xl font-bold text-center" id="pageTitle">📝 Новая запись клиента</h1>
     </div>
 
-    <!-- Форма бронирования -->
-    <form id="bookingForm" class="p-4 space-y-4 max-w-lg mx-auto">
+    <!-- Навигация (внизу) -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-20 shadow-lg">
+      <div class="flex justify-around items-center py-2">
+        <button onclick="showSection('booking')" class="nav-btn flex flex-col items-center px-2 py-1 text-xs" data-section="booking">
+          <i class="fas fa-calendar-alt text-lg mb-1"></i>
+          <span>Записи</span>
+        </button>
+        <button onclick="showSection('schedule')" class="nav-btn flex flex-col items-center px-2 py-1 text-xs" data-section="schedule">
+          <i class="fas fa-user-clock text-lg mb-1"></i>
+          <span>График</span>
+        </button>
+        <button onclick="showSection('finance')" class="nav-btn flex flex-col items-center px-2 py-1 text-xs" data-section="finance">
+          <i class="fas fa-money-bill-wave text-lg mb-1"></i>
+          <span>Финансы</span>
+        </button>
+        <button onclick="showSection('clients')" class="nav-btn flex flex-col items-center px-2 py-1 text-xs" data-section="clients">
+          <i class="fas fa-users text-lg mb-1"></i>
+          <span>Клиенты</span>
+        </button>
+        <button onclick="showSection('services')" class="nav-btn flex flex-col items-center px-2 py-1 text-xs" data-section="services">
+          <i class="fas fa-list-alt text-lg mb-1"></i>
+          <span>Услуги</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Раздел: Создание записи -->
+    <section id="section-booking" class="section active">
+      <!-- Форма бронирования -->
+      <form id="bookingForm" class="p-4 space-y-4 max-w-lg mx-auto">
       <!-- Имя клиента -->
       <div>
         <label for="clientName" class="block text-gray-900 font-semibold mb-2">Имя клиента</label>
@@ -243,6 +289,65 @@
         ✅ Сохранить запись
       </button>
     </form>
+    </section>
+
+    <!-- Раздел: База клиентов -->
+    <section id="section-clients" class="section hidden">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-4">👥 База клиентов</h2>
+        <div class="mb-4">
+          <input type="text" id="clientSearch" placeholder="Поиск по имени, телефону..." 
+            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left">
+        </div>
+        <div id="clientsList" class="space-y-2">
+          <div class="text-center text-gray-500 py-8">Загрузка клиентов...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел: Финансы -->
+    <section id="section-finance" class="section hidden">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-4">💰 Финансы</h2>
+        <div class="bg-white rounded-2xl p-4 mb-4">
+          <div class="text-sm text-gray-600 mb-2">Выручка сегодня</div>
+          <div class="text-2xl font-bold text-green-600" id="revenueToday">0 ₽</div>
+        </div>
+        <div class="bg-white rounded-2xl p-4 mb-4">
+          <div class="text-sm text-gray-600 mb-2">Выручка за неделю</div>
+          <div class="text-2xl font-bold text-green-600" id="revenueWeek">0 ₽</div>
+        </div>
+        <div class="bg-white rounded-2xl p-4">
+          <div class="text-sm text-gray-600 mb-2">Выручка за месяц</div>
+          <div class="text-2xl font-bold text-green-600" id="revenueMonth">0 ₽</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел: График администраторов -->
+    <section id="section-schedule" class="section hidden">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-4">📅 График администраторов</h2>
+        <div id="scheduleCalendar" class="bg-white rounded-2xl p-4">
+          <div class="text-center text-gray-500 py-8">Загрузка графика...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел: Услуги -->
+    <section id="section-services" class="section hidden">
+      <div class="p-4">
+        <h2 class="text-xl font-bold mb-4">📋 Стоимость услуг</h2>
+        <div class="bg-white rounded-2xl p-4 mb-4">
+          <h3 class="font-semibold mb-2">Будние дни</h3>
+          <div class="text-sm space-y-1" id="weekdayServices"></div>
+        </div>
+        <div class="bg-white rounded-2xl p-4">
+          <h3 class="font-semibold mb-2">Выходные дни</h3>
+          <div class="text-sm space-y-1" id="weekendServices"></div>
+        </div>
+      </div>
+    </section>
 
     <!-- Сообщение об успехе/ошибке -->
     <div id="message" class="fixed top-20 left-4 right-4 bg-green-500 text-white p-4 rounded-2xl shadow-lg hidden z-50">
@@ -725,8 +830,222 @@
       }
     });
 
+    // Навигация по разделам
+    function showSection(sectionName) {
+      // Скрываем все разделы
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+        section.classList.add('hidden');
+      });
+      
+      // Показываем выбранный раздел
+      const sectionEl = document.getElementById(`section-${sectionName}`);
+      if (sectionEl) {
+        sectionEl.classList.add('active');
+        sectionEl.classList.remove('hidden');
+      }
+      
+      // Обновляем активную кнопку навигации
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      const activeBtn = document.querySelector(`.nav-btn[data-section="${sectionName}"]`);
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+      }
+      
+      // Обновляем заголовок
+      const titles = {
+        'booking': '📝 Новая запись клиента',
+        'clients': '👥 База клиентов',
+        'finance': '💰 Финансы',
+        'schedule': '📅 График администраторов',
+        'services': '📋 Услуги'
+      };
+      const titleEl = document.getElementById('pageTitle');
+      if (titleEl && titles[sectionName]) {
+        titleEl.textContent = titles[sectionName];
+      }
+      
+      // Загружаем данные раздела
+      loadSectionData(sectionName);
+    }
+    
+    // Загрузка данных раздела
+    async function loadSectionData(sectionName) {
+      if (sectionName === 'clients') {
+        await loadClients();
+      } else if (sectionName === 'finance') {
+        await loadFinance();
+      } else if (sectionName === 'schedule') {
+        await loadSchedule();
+      } else if (sectionName === 'services') {
+        loadServices();
+      }
+    }
+    
+    // Загрузка клиентов
+    async function loadClients() {
+      const clientsList = document.getElementById('clientsList');
+      if (!clientsList) return;
+      
+      try {
+        clientsList.innerHTML = '<div class="text-center text-gray-500 py-8">Загрузка...</div>';
+        const clientsSnapshot = await getDocs(collection(db, 'clients'));
+        const clients = clientsSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        
+        if (clients.length === 0) {
+          clientsList.innerHTML = '<div class="text-center text-gray-500 py-8">Клиенты не найдены</div>';
+          return;
+        }
+        
+        clientsList.innerHTML = '';
+        clients.forEach(client => {
+          const clientCard = document.createElement('div');
+          clientCard.className = 'bg-white rounded-2xl p-4 mb-2';
+          clientCard.innerHTML = `
+            <div class="font-semibold text-gray-900">${client.clientName || '-'}</div>
+            <div class="text-sm text-gray-600 mt-1">${client.clientPhone || '-'}</div>
+            <div class="text-xs text-gray-500 mt-2">
+              Записей: ${client.totalBookings || 0} | 
+              Потрачено: ${(client.totalSpent || 0).toLocaleString('ru-RU')} ₽
+            </div>
+          `;
+          clientsList.appendChild(clientCard);
+        });
+      } catch (error) {
+        console.error('Ошибка загрузки клиентов:', error);
+        clientsList.innerHTML = '<div class="text-center text-red-500 py-8">Ошибка загрузки</div>';
+      }
+    }
+    
+    // Загрузка финансов
+    async function loadFinance() {
+      try {
+        const bookingsSnapshot = await getDocs(collection(db, 'bookings'));
+        const bookings = bookingsSnapshot.docs.map(doc => doc.data());
+        
+        const today = new Date().toISOString().split('T')[0];
+        const weekAgo = new Date();
+        weekAgo.setDate(weekAgo.getDate() - 7);
+        const monthAgo = new Date();
+        monthAgo.setMonth(monthAgo.getMonth() - 1);
+        
+        let revenueToday = 0;
+        let revenueWeek = 0;
+        let revenueMonth = 0;
+        
+        bookings.forEach(booking => {
+          // Упрощенный расчет (нужно будет добавить полную логику расчета стоимости)
+          const bookingDate = booking.bookingDate;
+          const date = new Date(bookingDate);
+          
+          if (bookingDate === today) {
+            revenueToday += booking.totalAmount || 0;
+          }
+          if (date >= weekAgo) {
+            revenueWeek += booking.totalAmount || 0;
+          }
+          if (date >= monthAgo) {
+            revenueMonth += booking.totalAmount || 0;
+          }
+        });
+        
+        document.getElementById('revenueToday').textContent = revenueToday.toLocaleString('ru-RU') + ' ₽';
+        document.getElementById('revenueWeek').textContent = revenueWeek.toLocaleString('ru-RU') + ' ₽';
+        document.getElementById('revenueMonth').textContent = revenueMonth.toLocaleString('ru-RU') + ' ₽';
+      } catch (error) {
+        console.error('Ошибка загрузки финансов:', error);
+      }
+    }
+    
+    // Загрузка графика
+    async function loadSchedule() {
+      const scheduleCalendar = document.getElementById('scheduleCalendar');
+      if (!scheduleCalendar) return;
+      
+      try {
+        scheduleCalendar.innerHTML = '<div class="text-center text-gray-500 py-8">Загрузка графика...</div>';
+        const assignmentsSnapshot = await getDocs(collection(db, 'adminAssignments'));
+        const assignments = assignmentsSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        
+        if (assignments.length === 0) {
+          scheduleCalendar.innerHTML = '<div class="text-center text-gray-500 py-8">Назначений нет</div>';
+          return;
+        }
+        
+        scheduleCalendar.innerHTML = '';
+        assignments.forEach(assignment => {
+          const assignmentCard = document.createElement('div');
+          assignmentCard.className = 'bg-gray-50 rounded-xl p-3 mb-2';
+          assignmentCard.innerHTML = `
+            <div class="font-semibold text-gray-900">${assignment.date || '-'}</div>
+            <div class="text-sm text-gray-600 mt-1">Администратор назначен</div>
+          `;
+          scheduleCalendar.appendChild(assignmentCard);
+        });
+      } catch (error) {
+        console.error('Ошибка загрузки графика:', error);
+        scheduleCalendar.innerHTML = '<div class="text-center text-red-500 py-8">Ошибка загрузки</div>';
+      }
+    }
+    
+    // Загрузка услуг
+    function loadServices() {
+      const weekdayServices = document.getElementById('weekdayServices');
+      const weekendServices = document.getElementById('weekendServices');
+      
+      if (weekdayServices) {
+        weekdayServices.innerHTML = `
+          <div>PS5 (1 джойстик) — 150 ₽/час</div>
+          <div>PS5 (2 джойстика) — 300 ₽/час</div>
+          <div>VR очки (1 шт.) — 500 ₽/час</div>
+          <div>VR очки (2 шт.) — 1000 ₽/час</div>
+          <div>VR очки (3 шт.) — 1500 ₽/час</div>
+          <div>VR очки (4 шт.) — 2000 ₽/час</div>
+          <div>X-Box Kinnect — 500 ₽/час</div>
+          <div>X-Box (1 джойстик) — 250 ₽/час</div>
+          <div>X-Box (2 джойстика) — 500 ₽/час</div>
+          <div>Караоке — 1000 ₽/час</div>
+          <div>Настольные игры — 500 ₽/час</div>
+        `;
+      }
+      
+      if (weekendServices) {
+        weekendServices.innerHTML = `
+          <div>VR очки (1 шт.) — 750 ₽/час</div>
+          <div>VR очки (2 шт.) — 1500 ₽/час</div>
+          <div>VR очки (3 шт.) — 2250 ₽/час</div>
+          <div>VR очки (4 шт.) — 3000 ₽/час</div>
+          <div>PS5 (1 джойстик) — 150 ₽/час</div>
+          <div>PS5 (2 джойстика) — 300 ₽/час</div>
+          <div>X-Box Kinnect — 500 ₽/час</div>
+          <div>X-Box (1 джойстик) — 250 ₽/час</div>
+          <div>X-Box (2 джойстика) — 500 ₽/час</div>
+          <div>Караоке — 1000 ₽/час</div>
+          <div>Настольные игры — 500 ₽/час</div>
+        `;
+      }
+    }
+    
     // Инициализация при загрузке
+    // Определяем раздел из URL параметра
+    const urlParams = new URLSearchParams(window.location.search);
+    const section = urlParams.get('section') || 'booking';
+    
+    // Инициализируем форму бронирования
     initForm();
+    
+    // Показываем нужный раздел
+    showSection(section);
+    
+    // Поиск клиентов
+    const clientSearch = document.getElementById('clientSearch');
+    if (clientSearch) {
+      clientSearch.addEventListener('input', async () => {
+        await loadClients();
+      });
+    }
   </script>
 </body>
 </html>
