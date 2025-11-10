@@ -2808,17 +2808,61 @@
           ...doc.data()
         }));
 
+        // Удаляем дубликаты по phoneDigits (оставляем первый найденный)
+        const uniqueClientsMap = new Map();
+        const duplicateIds = [];
+        
+        clientsData.forEach(client => {
+          const phoneDigits = client.phoneDigits;
+          if (!phoneDigits) return;
+          
+          if (!uniqueClientsMap.has(phoneDigits)) {
+            uniqueClientsMap.set(phoneDigits, client);
+          } else {
+            // Найден дубликат - сохраняем ID для удаления
+            duplicateIds.push(client.id);
+            console.log(`⚠️ Найден дубликат клиента: ${client.clientName} (${phoneDigits}), ID: ${client.id}`);
+          }
+        });
+        
+        // Удаляем дубликаты из массива
+        if (duplicateIds.length > 0) {
+          console.log(`🗑️ Удаление ${duplicateIds.length} дубликатов клиентов...`);
+          clientsData = clientsData.filter(client => !duplicateIds.includes(client.id));
+          
+          // Удаляем дубликаты из Firebase
+          for (const duplicateId of duplicateIds) {
+            try {
+              await deleteDoc(doc(db, "clients", duplicateId));
+              console.log(`✅ Удален дубликат: ${duplicateId}`);
+            } catch (error) {
+              console.error(`Ошибка удаления дубликата ${duplicateId}:`, error);
+            }
+          }
+        }
+
         // Создаем клиентов из всех бронирований (включая будущие), которых еще нет в базе
+        // Оптимизация: создаем только если действительно нужно
         if (bookings.length > 0) {
-          console.log(`📝 Обработка ${bookings.length} записей для создания клиентов...`);
-          await createClientsFromBookings();
-          // Перезагружаем после создания
-          const newSnapshot = await getDocs(collection(db, "clients"));
-          clientsData = newSnapshot.docs.map(doc => ({
-            id: doc.id,
-            ...doc.data()
-          }));
-          console.log(`✅ Всего клиентов после создания: ${clientsData.length}`);
+          const existingPhoneDigits = new Set(clientsData.map(c => c.phoneDigits).filter(Boolean));
+          const bookingsWithNewClients = bookings.filter(booking => {
+            const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+            return phoneDigits && !existingPhoneDigits.has(phoneDigits);
+          });
+          
+          if (bookingsWithNewClients.length > 0) {
+            console.log(`📝 Обработка ${bookingsWithNewClients.length} записей для создания новых клиентов...`);
+            await createClientsFromBookings();
+            // Перезагружаем после создания
+            const newSnapshot = await getDocs(collection(db, "clients"));
+            clientsData = newSnapshot.docs.map(doc => ({
+              id: doc.id,
+              ...doc.data()
+            }));
+            console.log(`✅ Всего клиентов после создания: ${clientsData.length}`);
+          } else {
+            console.log('✅ Все клиенты уже существуют в базе');
+          }
         } else {
           console.log('⚠️ Нет записей для обработки');
         }
