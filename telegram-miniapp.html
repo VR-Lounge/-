@@ -1286,39 +1286,47 @@
     // Делаем renderBookingsCalendar доступной глобально (ПОСЛЕ определения функции)
     window.renderBookingsCalendar = renderBookingsCalendar;
     
-    // Инициализация при загрузке DOM
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initializeApp);
-    } else {
-      initializeApp();
-    }
-    
     function initializeApp() {
       // Определяем раздел из URL параметра
       const urlParams = new URLSearchParams(window.location.search);
       const section = urlParams.get('section') || 'booking';
       
       // Инициализируем форму бронирования
-      initForm();
+      if (typeof initForm === 'function') {
+        initForm();
+      }
       
       // Показываем нужный раздел
-      showSection(section);
+      if (window.showSection) {
+        window.showSection(section);
+      }
       
       // По умолчанию показываем календарь в разделе записей
-      if (section === 'booking') {
+      if (section === 'booking' && window.showBookingView) {
         setTimeout(() => {
-          showBookingView('calendar');
-        }, 100);
+          window.showBookingView('calendar');
+        }, 200);
       }
       
       // Поиск клиентов
       const clientSearch = document.getElementById('clientSearch');
       if (clientSearch) {
         clientSearch.addEventListener('input', async () => {
-          await loadClients();
+          if (typeof loadClients === 'function') {
+            await loadClients();
+          }
         });
       }
     }
+    
+    // Вызываем инициализацию после небольшой задержки, чтобы модуль успел загрузиться
+    setTimeout(() => {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeApp);
+      } else {
+        initializeApp();
+      }
+    }, 100);
   </script>
 </body>
 </html>
