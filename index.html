@@ -4,11 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VR Lounge - Управление Записями и Администраторами</title>
+  <style>
+    .top-header-block {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    @media (max-width: 768px) {
+      .header-scrolled .top-header-block {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+    }
+  </style>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <!-- VK Widget Script -->
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+  <!-- Yandex Maps -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API_ключ&lang=ru_RU"></script>
   
   <!-- Функции для модального окна "Поделиться" - объявляем в отдельном скрипте -->
   <script>
@@ -610,10 +624,17 @@
       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
 
+    /* Обеспечиваем правильное наложение элементов внутри виджетов */
+    .widget-container {
+      position: relative;
+    }
+
     /* Стили для iframe виджетов */
     .widget-iframe {
       border-radius: 16px;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 0;
     }
 
     /* Стили для кнопок "Поделиться" */
@@ -633,6 +654,9 @@
       box-shadow: 0 2px 8px rgba(0, 122, 255, 0.3);
       visibility: visible !important;
       opacity: 1 !important;
+      position: relative;
+      z-index: 10; /* Поверх iframe */
+      flex-shrink: 0; /* Не сжимать в узких контейнерах */
     }
 
     .share-button:hover {
@@ -748,20 +772,182 @@
 </div>
 
   <!-- Основной интерфейс -->
-  <header class="bg-white shadow-md sticky top-0 z-30">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row md:items-center md:justify-between">
-      <h1 class="text-3xl font-semibold tracking-tight text-gray-900 select-none" style="font-weight: 600;">VR Lounge - Управление</h1>
-      <div class="flex items-center space-x-4 mt-2 md:mt-0">
-        <p class="text-gray-500 text-sm select-none">Записи и Администраторы</p>
-        <button id="logoutBtn" class="hidden text-sm text-blue-600 hover:text-blue-800">Выйти</button>
-        <button id="loginBtn" class="text-sm text-blue-600 hover:text-blue-800">Вход для администратора</button>
+  <header class="bg-white/50 shadow-md sticky top-0 z-30 backdrop-blur-md" id="mainHeader">
+    <!-- Верхний блок шапки (скрывается при скролле) -->
+    <div class="top-header-block transition-all duration-300" id="headerTop">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 py-3">
+        <div class="flex flex-row items-center justify-between">
+          <h1 class="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 select-none">VR Lounge - Управление</h1>
+          <div class="flex items-center space-x-4">
+            <button id="logoutBtn" class="hidden text-sm text-blue-600 hover:text-blue-800 px-3 py-1 rounded-full hover:bg-blue-50">Выйти</button>
+            <button id="loginBtn" class="text-sm text-blue-600 hover:text-blue-800 px-3 py-1 rounded-full hover:bg-blue-50">Вход для администратора</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+          <!-- Нижний блок с навигацией (всегда виден) -->
+      <div class="bottom-header-block bg-white/80 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+          <nav class="nav-links flex items-center space-x-2 md:space-x-6 py-2 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none;">
+            <a href="#" class="nav-link active whitespace-nowrap" onclick="return showBookingsSection()">
+              <i class="fas fa-calendar-alt mr-2"></i>Записи
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showAdminScheduleSection()">
+              <i class="fas fa-user-clock mr-2"></i>График
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showSalarySection()">
+              <i class="fas fa-money-bill-wave mr-2"></i>Финансы
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showServicesSection()">
+              <i class="fas fa-list-alt mr-2"></i>Услуги
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" onclick="return showWidgetsSection()">
+              <i class="fas fa-share-alt mr-2"></i>Виджеты
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink" onclick="return showExpensesSection()">
+              <i class="fas fa-receipt mr-2"></i>Расходы
+            </a>
+            <a href="#" class="nav-link whitespace-nowrap" id="clientsNavLink" onclick="return showClientsSection()">
+              <i class="fas fa-users mr-2"></i>База клиентов
+            </a>
+          </nav>
       </div>
     </div>
   </header>
 
+  <script>
+    // Функции для переключения разделов
+    window.showBookingsSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('bookingsSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showBookingsSection"]').classList.add('active');
+      return false;
+    }
+
+    window.showAdminScheduleSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('adminScheduleSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showAdminScheduleSection"]').classList.add('active');
+      return false;
+    }
+
+    window.showSalarySection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('salarySection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showSalarySection"]').classList.add('active');
+      return false;
+    }
+
+    window.showServicesSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('servicesSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showServicesSection"]').classList.add('active');
+      return false;
+    }
+
+    window.showWidgetsSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('widgetsSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      document.querySelector('.nav-link[onclick*="showWidgetsSection"]').classList.add('active');
+      initWidgets();
+      return false;
+    }
+
+    window.showExpensesSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('expensesSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      const expensesLink = document.getElementById('expensesNavLink');
+      if (expensesLink) {
+        expensesLink.classList.add('active');
+      }
+      // Загрузка данных осуществляется через onAuthStateChanged внутри модуля
+      return false;
+    }
+
+    window.showClientsSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      document.getElementById('clientsSection').classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      const clientsLink = document.getElementById('clientsNavLink');
+      if (clientsLink) {
+        clientsLink.classList.add('active');
+      }
+      // Загрузка данных клиентов будет происходить через onAuthStateChanged
+      return false;
+    }
+
+    // Инициализация активного раздела при загрузке страницы
+    document.addEventListener('DOMContentLoaded', () => {
+      showBookingsSection();
+    });
+  </script>
+
+  <style>
+    /* Базовые стили для навигационных ссылок */
+    .nav-link {
+      color: #4a5568;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      padding: 0.5rem 0.75rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      min-width: max-content;
+    }
+    
+    .nav-link:hover {
+      color: #2d3748;
+      background-color: #f7fafc;
+    }
+    
+    .nav-link.active {
+      color: #3182ce;
+      background-color: #ebf8ff;
+    }
+
+    /* Скрываем скроллбар в навигации */
+    .nav-links::-webkit-scrollbar {
+      display: none;
+    }
+    
+    /* Стили для мобильной версии */
+    @media (max-width: 768px) {
+      .nav-links {
+        padding-bottom: 0.5rem;
+        margin-bottom: -0.5rem;
+      }
+      
+      /* Класс для скрытия верхней части шапки при скролле */
+      .header-scrolled #headerTop {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .header-scrolled {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+      
+      /* Анимация для плавного скрытия/появления */
+      #headerTop {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  </style>
+
   <main class="flex-grow max-w-7xl mx-auto px-6 py-8 flex flex-col space-y-10">
     <!-- Календарь записи клиентов -->
-    <section>
+    <section id="bookingsSection">
       <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Календарь записи клиентов</h2>
       <div class="bg-white rounded-3xl shadow-lg max-w-4xl mx-auto p-8 border border-gray-200">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8 space-y-5 md:space-y-0">
@@ -872,9 +1058,18 @@
         <!-- КОНЕЦ СТАТИСТИКИ ВЫРУЧКИ -->
 
 
+        <!-- БЛОК СЕГОДНЯШНИХ ВЫПЛАТ (показывается только в понедельник) -->
+        <div id="todayPayrollBlock" class="mb-8 p-6 bg-green-50 border border-green-200 rounded-2xl hidden">
+            <h4 class="font-semibold text-base mb-3 text-green-900">Сегодня к выплате:</h4>
+            <p id="todayPayrollPeriod" class="text-xs text-green-700 mb-3"></p>
+            <div id="todayPayrollResults" class="space-y-2 text-sm">
+                <!-- Результаты сегодняшних выплат -->
+            </div>
+        </div>
+
         <!-- ЕЖЕНЕДЕЛЬНЫЙ РАСЧЕТ К ВЫПЛАТЕ -->
         <div class="mb-8 p-6 bg-yellow-50 border border-yellow-200 rounded-2xl">
-            <h4 class="font-semibold text-base mb-3 text-yellow-900">К выплате в этот понедельник (за прошлую неделю):</h4>
+            <h4 class="font-semibold text-base mb-3 text-yellow-900" id="weeklyPayrollTitle">К выплате в следующий понедельник (за текущую неделю):</h4>
             <p id="weeklyPayrollPeriod" class="text-xs text-yellow-700 mb-3"></p>
             <div id="weeklyPayrollResults" class="space-y-2 text-sm">
                 <p class="italic text-yellow-600">Расчет...</p>
@@ -1048,7 +1243,7 @@
           </ul>
           <p class="mt-4 font-semibold text-gray-900 tracking-tight">Дополнительные услуги:</p>
           <ul class="list-disc list-inside text-gray-700 space-y-1 mt-2 text-base leading-relaxed">
-            <li><span class="font-medium">Ведущая:</span> 1000 ₽ (фиксированная стоимость на весь период мероприятия)</li>
+            <li><span class="font-medium">Ведущая:</span> 2000 ₽ (фиксированная стоимость на весь период мероприятия)</li>
           </ul>
           <p class="mt-4 text-gray-500 italic text-sm">Можно заказать свою еду и напитки</p>
         </div>
@@ -1084,14 +1279,14 @@
               <i class="fas fa-map-marker-alt text-red-600 text-2xl mr-3"></i>
               <h3 class="text-xl font-semibold text-gray-900 tracking-tight">Мы на карте</h3>
             </div>
-            <button class="share-button" onclick="openShareModal('maps', 'https://yandex.ru/maps/-/CHCriIOU')">
+            <button class="share-button" onclick="openShareModal('maps', 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713')">
               <i class="fas fa-map-pin"></i>
               Отправить локацию
             </button>
           </div>
           <div class="flex-grow flex items-center justify-center">
             <iframe 
-              src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=180466118783" 
+              src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=5361992713" 
               width="100%" 
               height="600" 
               frameborder="0"
@@ -1107,7 +1302,7 @@
               <i class="fas fa-star text-yellow-500 text-2xl mr-3"></i>
               <h3 class="text-xl font-semibold text-gray-900 tracking-tight">Отзывы клиентов</h3>
             </div>
-            <button class="share-button" onclick="openShareModal('reviews', 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/180466118783/reviews')">
+            <button class="share-button" onclick="openShareModal('reviews', 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/?ll')">
               <i class="fas fa-star"></i>
               Поделиться отзывами
             </button>
@@ -1117,10 +1312,10 @@
               <iframe 
                 class="widget-iframe"
                 style="width:100%;height:100%;border:1px solid #e6e6e6;box-sizing:border-box" 
-                src="https://yandex.ru/maps-reviews-widget/180466118783?comments">
+                src="https://yandex.ru/maps-reviews-widget/5361992713?comments">
               </iframe>
               <a 
-                href="https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/180466118783/" 
+                href="https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713" 
                 target="_blank" 
                 style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">
                 VR Lounge - Игровой Рай на карте Кольчугино — Яндекс Карты
@@ -1141,33 +1336,33 @@
       
       <div class="space-y-3">
         <!-- WhatsApp -->
-        <a id="shareWhatsApp" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fab fa-whatsapp text-green-500" style="color: #25D366 !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">WhatsApp</span>
+        <a id="shareWhatsApp" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors" target="_blank">
+          <i class="fa-brands fa-whatsapp text-2xl" style="color: #25D366;"></i>
+          <span class="text-gray-900">WhatsApp</span>
         </a>
         
         <!-- Telegram -->
-        <a id="shareTelegram" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fab fa-telegram text-blue-500" style="color: #0088cc !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">Telegram</span>
+        <a id="shareTelegram" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors" target="_blank">
+          <i class="fa-brands fa-telegram text-2xl" style="color: #0088cc;"></i>
+          <span class="text-gray-900">Telegram</span>
         </a>
         
         <!-- ВКонтакте -->
-        <a id="shareVK" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fab fa-vk text-blue-600" style="color: #4c75a3 !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">ВКонтакте</span>
+        <a id="shareVK" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors" target="_blank">
+          <i class="fa-brands fa-vk text-2xl" style="color: #4c75a3;"></i>
+          <span class="text-gray-900">ВКонтакте</span>
         </a>
         
         <!-- Копировать ссылку -->
-        <button id="copyLink" class="share-option w-full border-0 bg-transparent" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fas fa-copy text-gray-600" style="color: #6c757d !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">Копировать ссылку</span>
+        <button id="copyLink" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors w-full">
+          <i class="fa-solid fa-copy text-2xl text-gray-600"></i>
+          <span class="text-gray-900">Копировать ссылку</span>
         </button>
         
         <!-- Email -->
-        <a id="shareEmail" class="share-option" target="_blank" style="display: flex !important; visibility: visible !important; opacity: 1 !important; height: auto !important; min-height: 48px !important; width: 100% !important; background: #f8f9fa !important; border: 1px solid #e9ecef !important; padding: 12px 16px !important; margin: 5px 0 !important;">
-          <i class="fas fa-envelope text-red-500" style="color: #dc3545 !important; font-size: 20px !important;"></i>
-          <span style="color: #1d1d1f !important;">Email</span>
+        <a id="shareEmail" class="share-option flex items-center space-x-3 bg-gray-50 hover:bg-gray-100 rounded-xl p-4 transition-colors" target="_blank">
+          <i class="fa-solid fa-envelope text-2xl" style="color: #dc3545;"></i>
+          <span class="text-gray-900">Email</span>
         </a>
       </div>
     </div>
@@ -1294,9 +1489,9 @@
                <div class="service-tag-line1"><i class="fas fa-birthday-cake text-red-600"></i> <span>Аренда всего (День Рождения)</span></div>
                <div class="service-tag-price">от 3000 ₽/час</div> <!-- Цена для ДР динамическая -->
             </button>
-            <button type="button" class="service-tag" data-service="hostess" data-price="1000">
+            <button type="button" class="service-tag" data-service="hostess" data-price="2000">
                <div class="service-tag-line1"><i class="fas fa-user-tie text-pink-600"></i> <span>Ведущая</span></div>
-               <div class="service-tag-price">1000 ₽</div>
+               <div class="service-tag-price">2000 ₽</div>
             </button>
         </div>
           <input type="hidden" id="selectedServices" name="selectedServices">
@@ -1444,14 +1639,465 @@
     </div>
   </div>
 
+  <!-- === СЕКЦИЯ УСЛУГ === -->
+  <section id="servicesSection" class="hidden max-w-7xl mx-auto my-8">
+    <h2 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight">Стоимость услуг</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Будние дни</h3>
+          <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS5 (1 джойстик) — 150 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS5 (2 джойстика) — 300 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (1 шт.) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (2 шт.) — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (3 шт.) — 1500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (4 шт.) — 2000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-person text-2xl" style="color: #f97316;"></i>
+              <span>X-Box Kinnect (до 8 чел.) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (1 джойстик) — 250 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (2 джойстика) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (3 джойстика) — 750 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (4 джойстика) — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-microphone text-2xl" style="color: #ec4899;"></i>
+              <span>Караоке — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-dice text-2xl" style="color: #9333ea;"></i>
+              <span>Настольные игры — 500 ₽/час</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight">Выходные дни</h3>
+          <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (1 шт.) — 750 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (2 шт.) — 1500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (3 шт.) — 2250 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки (4 шт.) — 3000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS5 (1 джойстик) — 150 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS5 (2 джойстика) — 300 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-person text-2xl" style="color: #f97316;"></i>
+              <span>X-Box Kinnect (до 8 чел.) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (1 джойстик) — 250 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (2 джойстика) — 500 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (3 джойстика) — 750 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>X-Box (4 джойстика) — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-microphone text-2xl" style="color: #ec4899;"></i>
+              <span>Караоке — 1000 ₽/час</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-dice text-2xl" style="color: #9333ea;"></i>
+              <span>Настольные игры — 500 ₽/час</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">
+          <h3 class="text-xl font-semibold mb-5 border-b border-gray-200 pb-3 text-gray-900 tracking-tight flex items-center">
+            <i class="fa-solid fa-cake-candles text-2xl mr-2" style="color: #ef4444;"></i>
+            <span>Аренда всего (День Рождения)</span>
+          </h3>
+          <ul class="space-y-3 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-clock text-2xl" style="color: #3b82f6;"></i>
+              <span>Первый час — 4000 руб.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-clock text-2xl" style="color: #3b82f6;"></i>
+              <span>Второй час — 3500 руб.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-clock text-2xl" style="color: #3b82f6;"></i>
+              <span>Третий час — 3000 руб.</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-clock text-2xl" style="color: #3b82f6;"></i>
+              <span>Четвертый и далее — 3000 руб./час</span>
+            </li>
+          </ul>
+          <p class="mt-5 font-semibold text-gray-900 tracking-tight">В стоимость входит аренда всего помещения:</p>
+          <ul class="space-y-2 mt-2 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-vr-cardboard text-2xl" style="color: #3b82f6;"></i>
+              <span>VR очки</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #6366f1;"></i>
+              <span>PS комната</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-microphone text-2xl" style="color: #ec4899;"></i>
+              <span>Караоке</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-film text-2xl" style="color: #64748b;"></i>
+              <span>Кино</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-gamepad text-2xl" style="color: #22c55e;"></i>
+              <span>XBOX 360</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-person text-2xl" style="color: #f97316;"></i>
+              <span>Танцы в XBOX</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-desktop text-2xl" style="color: #0ea5e9;"></i>
+              <span>Игры на ПК</span>
+            </li>
+          </ul>
+          <p class="mt-4 font-semibold text-gray-900 tracking-tight">Дополнительные услуги:</p>
+          <ul class="space-y-2 mt-2 text-gray-700 text-base leading-relaxed">
+            <li class="flex items-center space-x-3">
+              <i class="fa-solid fa-user-group text-2xl" style="color: #8b5cf6;"></i>
+              <span><span class="font-medium">Ведущая:</span> 2000 ₽ (фиксированная стоимость на весь период мероприятия)</span>
+            </li>
+          </ul>
+          <p class="mt-4 text-gray-500 italic text-sm flex items-center space-x-2">
+            <i class="fa-solid fa-utensils text-gray-400"></i>
+            <span>Можно заказать свою еду и напитки</span>
+          </p>
+        </div>
+      </div>
+  </section>
+
+  <!-- === СЕКЦИЯ ВИДЖЕТОВ === -->
+  <section id="widgetsSection" class="hidden max-w-7xl mx-auto my-8">
+    <h2 class="text-2xl font-semibold mb-8 text-center text-gray-900 tracking-tight">Мы в социальных сетях и на картах</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Виджет ВКонтакте -->
+      <div class="widget-container bg-white rounded-3xl shadow-lg p-6 border border-gray-200 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center">
+            <i class="fab fa-vk text-blue-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-gray-900 tracking-tight">Наше сообщество</h3>
+          </div>
+          <button class="share-button" onclick="openShareModal('vk', 'https://vk.com/vr_lounge')">
+            <i class="fas fa-share-alt"></i>
+            Поделиться группой
+          </button>
+        </div>
+        <div class="flex-grow flex items-center justify-center">
+          <div id="vk_groups" class="w-full"></div>
+        </div>
+      </div>
+
+      <!-- Виджет Яндекс Карты -->
+      <div class="widget-container bg-white rounded-3xl shadow-lg p-6 border border-gray-200 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center">
+            <i class="fas fa-map-marker-alt text-red-600 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-gray-900 tracking-tight">Мы на карте</h3>
+          </div>
+          <button class="share-button" onclick="openShareModal('maps', 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713')">
+            <i class="fas fa-map-pin"></i>
+            Отправить локацию
+          </button>
+        </div>
+        <div class="flex-grow flex items-center justify-center">
+          <iframe 
+            src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=5361992713" 
+            width="100%" 
+            height="600" 
+            frameborder="0"
+            class="widget-iframe">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Виджет Отзывы -->
+      <div class="widget-container bg-white rounded-3xl shadow-lg p-6 border border-gray-200 flex flex-col">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center">
+            <i class="fas fa-star text-yellow-500 text-2xl mr-3"></i>
+            <h3 class="text-xl font-semibold text-gray-900 tracking-tight">Отзывы клиентов</h3>
+          </div>
+          <button class="share-button" onclick="openShareModal('reviews', 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/?ll')">
+            <i class="fas fa-star"></i>
+            Поделиться отзывами
+          </button>
+        </div>
+        <div class="flex-grow flex items-center justify-center">
+          <div style="width:100%;height:600px;overflow:hidden;position:relative;">
+            <iframe 
+              class="widget-iframe"
+              style="width:100%;height:100%;border:1px solid #e6e6e6;box-sizing:border-box" 
+              src="https://yandex.ru/maps-reviews-widget/5361992713?comments">
+            </iframe>
+            <a 
+              href="https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713" 
+              target="_blank" 
+              style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">
+              VR Lounge - Игровой Рай на карте Кольчугино — Яндекс Карты
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === СЕКЦИЯ УЧЁТА РАСХОДОВ (только для админов) === -->
+  <section id="expensesSection" class="hidden max-w-3xl mx-auto my-8 bg-white rounded-2xl shadow-lg p-6">
+  <div class="flex items-center justify-between mb-4">
+    <h2 class="text-2xl font-bold text-gray-900 flex items-center">
+      <i class="fas fa-receipt mr-2 text-blue-500"></i>Учёт расходов
+    </h2>
+    <button id="addExpenseBtn" onclick="document.getElementById('addExpenseModal').classList.remove('hidden')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold flex items-center">
+      <i class="fa-solid fa-plus mr-2"></i>Добавить расход
+    </button>
+  </div>
+  <div class="flex flex-wrap gap-4 mb-4">
+    <div>
+      <label for="categoryFilter" class="block text-sm text-gray-600 mb-1">Категория</label>
+      <select id="categoryFilter" class="border rounded-lg px-3 py-2 w-48">
+        <option value="">Все категории</option>
+        <option value="utilities">Коммунальные услуги</option>
+        <option value="consumables">Расходные материалы</option>
+        <option value="equipment">Оборудование</option>
+        <option value="food">Продукты</option>
+        <option value="other">Прочее</option>
+      </select>
+    </div>
+    <div>
+      <label for="monthFilter" class="block text-sm text-gray-600 mb-1">Месяц</label>
+      <input id="monthFilter" type="month" class="border rounded-lg px-3 py-2 w-48" />
+    </div>
+    <div class="flex flex-col justify-end">
+      <span class="text-gray-600 text-sm">За месяц:</span>
+      <span id="monthlyExpenses" class="text-xl font-bold text-blue-700">0 ₽</span>
+    </div>
+    <div class="flex flex-col justify-end">
+      <span class="text-gray-600 text-sm">Всего расходов:</span>
+      <span id="totalExpenses" class="text-xl font-bold text-blue-700">0</span>
+    </div>
+  </div>
+  <div id="categoryTotals" class="space-y-1 mb-4"></div>
+  <div id="expensesList" class="space-y-3"></div>
+</section>
+
+  <!-- === СЕКЦИЯ БАЗЫ КЛИЕНТОВ === -->
+  <section id="clientsSection" class="hidden max-w-7xl mx-auto my-8">
+    <div class="bg-white rounded-3xl shadow-lg p-6 border border-gray-200">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold text-gray-900 tracking-tight flex items-center">
+          <i class="fas fa-users mr-3 text-blue-600"></i>База клиентов
+        </h2>
+        <div class="text-sm text-gray-600">
+          Всего клиентов: <span id="clientsCount" class="font-semibold text-blue-600">0</span>
+        </div>
+      </div>
+
+      <!-- Поиск и фильтры -->
+      <div class="mb-6 space-y-4">
+        <div class="flex flex-col md:flex-row gap-4">
+          <div class="flex-1">
+            <label for="clientSearch" class="block text-sm font-medium text-gray-700 mb-2">Поиск клиента</label>
+            <div class="relative">
+              <input 
+                type="text" 
+                id="clientSearch" 
+                placeholder="Поиск по имени, телефону..." 
+                class="w-full rounded-2xl border border-gray-300 px-5 py-3 pl-10 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
+              />
+              <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+          </div>
+          <div class="md:w-48">
+            <label for="clientSort" class="block text-sm font-medium text-gray-700 mb-2">Сортировка</label>
+            <select 
+              id="clientSort" 
+              class="w-full rounded-2xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            >
+              <option value="name">По имени (А-Я)</option>
+              <option value="nameDesc">По имени (Я-А)</option>
+              <option value="bookings">По количеству записей</option>
+              <option value="lastBooking">Последняя запись</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Таблица клиентов -->
+      <div class="overflow-x-auto">
+        <table class="w-full">
+          <thead>
+            <tr class="border-b border-gray-200">
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Имя</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Телефон</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Telegram</th>
+              <th class="text-center py-3 px-4 font-semibold text-gray-700">Записей</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Последняя запись</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Общая сумма</th>
+              <th class="text-center py-3 px-4 font-semibold text-gray-700">Действия</th>
+            </tr>
+          </thead>
+          <tbody id="clientsTableBody" class="divide-y divide-gray-100">
+            <!-- Данные будут загружены через JavaScript -->
+          </tbody>
+        </table>
+        <div id="clientsLoading" class="text-center py-8 text-gray-500">
+          <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
+          <p>Загрузка данных клиентов...</p>
+        </div>
+        <div id="clientsEmpty" class="hidden text-center py-12 text-gray-500">
+          <i class="fas fa-users text-4xl mb-4 text-gray-300"></i>
+          <p class="text-lg">Клиенты не найдены</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальное окно детальной информации о клиенте -->
+  <div id="clientDetailModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200">
+      <button id="closeClientModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть">&times;</button>
+      <h3 id="clientDetailTitle" class="text-2xl font-semibold mb-6 text-gray-900 tracking-tight">Информация о клиенте</h3>
+      <div id="clientDetailContent">
+        <!-- Контент будет загружен через JavaScript -->
+      </div>
+    </div>
+  </div>
+
+<!-- === МОДАЛЬНОЕ ОКНО ДОБАВЛЕНИЯ РАСХОДА === -->
+<div id="addExpenseModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md relative">
+    <button onclick="document.getElementById('addExpenseModal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+    <h3 class="text-xl font-bold mb-4 text-gray-900 flex items-center"><i class="fas fa-plus mr-2 text-blue-500"></i>Добавить расход</h3>
+    <form id="addExpenseForm" class="space-y-4" onsubmit="return false;">
+      <div>
+        <label class="block text-sm mb-1 text-gray-700">Категория</label>
+        <select name="category" required class="border rounded-lg px-3 py-2 w-full">
+          <option value="utilities">Коммунальные услуги</option>
+          <option value="consumables">Расходные материалы</option>
+          <option value="equipment">Оборудование</option>
+          <option value="food">Продукты</option>
+          <option value="other">Прочее</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm mb-1 text-gray-700">Описание</label>
+        <input name="description" required maxlength="100" class="border rounded-lg px-3 py-2 w-full" placeholder="Что купили?" />
+      </div>
+      <div>
+        <label class="block text-sm mb-1 text-gray-700">Сумма (₽)</label>
+        <input name="amount" type="number" min="1" required class="border rounded-lg px-3 py-2 w-full" placeholder="0" />
+      </div>
+      <div>
+        <label class="block text-sm mb-1 text-gray-700">Дата</label>
+        <input name="date" type="date" required class="border rounded-lg px-3 py-2 w-full" />
+      </div>
+      <div class="flex justify-end gap-2 mt-4">
+        <button type="button" onclick="document.getElementById('addExpenseModal').classList.add('hidden')" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700">Отмена</button>
+        <button type="submit" onclick="handleAddExpense(event)" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold">Сохранить</button>
+      </div>
+    </form>
+  </div>
+</div>
 
   <!-- Firebase и основная логика приложения -->
   <script type="module">
+    // Функция обработки добавления расхода
+    async function handleAddExpense(event) {
+  event.preventDefault();
+  const form = document.getElementById('addExpenseForm');
+  const modal = document.getElementById('addExpenseModal');
+  
+  try {
+    if (!auth.currentUser) {
+      throw new Error('Пользователь не авторизован');
+    }
+    
+    const expenseData = {
+      category: form.category.value,
+      description: form.description.value,
+      amount: Number(form.amount.value),
+      date: new Date(form.date.value),
+      createdAt: new Date(),
+      createdBy: auth.currentUser.uid
+    };
+    
+    await addDoc(collection(db, 'expenses'), expenseData);
+    modal.classList.add('hidden');
+    form.reset();
+    // Не нужно вызывать loadExpenses, так как слушатель автоматически обновит данные
+  } catch (error) {
+    console.error('Ошибка при добавлении расхода:', error);
+    alert('Произошла ошибка при сохранении расхода. Пожалуйста, попробуйте позже.');
+  }
+}
+
+    window.handleAddExpense = handleAddExpense;
+
     // Инициализация Firebase
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { 
       getFirestore, collection, addDoc, getDocs, onSnapshot, 
-      deleteDoc, doc, updateDoc, query, where, getDoc, setDoc // Добавлен setDoc
+      deleteDoc, doc, updateDoc, query, where, getDoc, setDoc, orderBy
     } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
     import { 
       getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged 
@@ -1533,6 +2179,9 @@
     const dayDetailsTitle = document.getElementById('dayDetailsTitle');
     const dayDetailsContent = document.getElementById('dayDetailsContent');
     const closeDayDetailsModalBtn = document.getElementById('closeDayDetailsModal');
+    // Модалка с деталями администраторов за день
+    const adminDayDetailsModal = document.getElementById('adminDayDetailsModal');
+    const closeAdminDayDetailsModalBtn = document.getElementById('closeAdminDayDetailsModal');
 
     // --- Расчет зарплаты ---
     const salarySection = document.getElementById('salarySection'); // Секция ЗП
@@ -1564,11 +2213,13 @@
     let admins = []; // Список администраторов
     let adminAssignments = []; // Список назначений
     let selectedServices = new Set(); // Множество выбранных услуг
+    let salaryData = {}; // Глобальные данные о зарплате
 
     // Переменные для хранения функций отписки от слушателей Firestore
     let unsubscribeBookings = null;
     let unsubscribeAdmins = null;
     let unsubscribeAdminAssignments = null;
+    let unsubscribeExpenses = null; // Добавлено для расходов
 
     // === Цены услуг ===
     const servicePrices = {
@@ -1594,7 +2245,7 @@
         // Другие услуги
         karaoke: 1000, // Караоке
         board_games: 500, // Настольные игры
-        hostess: 1000, // Ведущая (фикс. стоимость)
+        hostess: 2000, // Ведущая (фикс. стоимость)
         // День рождения
         birthday: {
             1: 4000, 2: 3500, 3: 3000, 4: 3000, 5: 3000,
@@ -1721,6 +2372,7 @@
       }));
         renderCalendar(); // Обновляем календарь клиентов
         renderBookingsList(); // Обновляем список записей
+        renderClientsDatabase(); // Обновляем базу клиентов
         if (isAdmin) {
             calculateRevenueStats(); // Рассчитать и отобразить выручку
             calculateWeeklyPayroll(); // Рассчитать и отобразить ЗП за прошлую неделю
@@ -1823,7 +2475,7 @@
       // Пустые ячейки до начала месяца
       for (let i = 0; i < startDayOfWeek; i++) {
         const emptyCell = document.createElement('div');
-        emptyCell.className = 'border border-gray-200 bg-gray-50 h-24 rounded-3xl'; // Используем h-24 как в index.html
+        emptyCell.className = 'border border-gray-200 bg-gray-50 h-24 rounded-xl';
         calendarEl.appendChild(emptyCell);
       }
 
@@ -1834,7 +2486,7 @@
         const dateStr = formatDateSafe(date);
 
         const dayCell = document.createElement('div');
-        dayCell.className = 'border border-gray-300 rounded-3xl h-24 p-3 flex flex-col justify-start cursor-pointer hover:bg-blue-50 transition relative select-text';
+        dayCell.className = 'border border-gray-300 rounded-xl h-24 p-2 flex flex-col justify-start cursor-pointer hover:bg-blue-50 transition relative select-text';
 
         if (isWeekend(date)) {
           dayCell.classList.add('bg-blue-50'); // Подсветка выходных
@@ -1855,7 +2507,7 @@
 
         const dayNumber = document.createElement('div');
         dayNumber.textContent = day;
-        dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 select-none';
+        dayNumber.className = 'font-semibold text-sm text-gray-900 mb-1 select-none text-left';
         dayCell.appendChild(dayNumber);
 
         // Отображение бронирований на этот день
@@ -1865,36 +2517,43 @@
 
         if (dayBookings.length > 0) {
           const bookingsList = document.createElement('ul');
-          bookingsList.className = 'bookings-list mt-0.5 overflow-y-auto max-h-16 text-xs text-gray-800 space-y-0.5';
+          bookingsList.className = 'bookings-list mt-0.5 overflow-hidden max-h-16 text-[11px] text-gray-800 space-y-1';
 
-          dayBookings.forEach((b) => {
+          const displayBookings = dayBookings.slice(0, 3);
+          displayBookings.forEach((b) => {
             const li = document.createElement('li');
-            li.className = 'truncate rounded-2xl px-2 py-0.5';
+            li.className = 'truncate rounded-xl px-2 py-0.5 inline-flex items-center gap-2';
 
             let bgColor = 'bg-gray-100 text-gray-700';
             if (b.serviceType === 'weekday_vr') bgColor = 'bg-blue-100 text-blue-800';
-            else if (b.serviceType === 'weekday_ps') bgColor = 'bg-sky-100 text-sky-800'; // Изменен цвет для PS
+            else if (b.serviceType === 'weekday_ps') bgColor = 'bg-sky-100 text-sky-800';
             else if (b.serviceType === 'weekend_vr') bgColor = 'bg-indigo-100 text-indigo-800';
-            else if (b.serviceType === 'weekend_ps') bgColor = 'bg-purple-100 text-purple-800'; // Изменен цвет для PS выходные
-            else if (b.serviceType === 'birthday') bgColor = 'bg-pink-100 text-pink-800 font-semibold'; // Изменен цвет ДР
+            else if (b.serviceType === 'weekend_ps') bgColor = 'bg-purple-100 text-purple-800';
+            else if (b.serviceType === 'birthday') bgColor = 'bg-pink-100 text-pink-800 font-semibold';
 
             li.classList.add(...bgColor.split(' '));
-            li.textContent = `${b.startTime} (${b.duration}ч) - ${b.clientName}`;
-            li.title = `${b.startTime} (${b.duration}ч) - ${b.clientName}\nУслуга: ${getServiceLabel(b.serviceType)}\nТел: ${b.clientPhone || '-'}\nПримечания: ${b.notes || '-'}`; // Всплывающая подсказка
+            li.innerHTML = `<span class="font-semibold">${b.startTime}</span><span class="truncate">${b.clientName}</span>`;
+            li.title = `${b.startTime} (${b.duration}ч) - ${b.clientName}\nУслуга: ${getServiceLabel(b.serviceType)}\nТел: ${b.clientPhone || '-'}\nПримечания: ${b.notes || '-'}`;
 
-            // Добавляем обработчик для редактирования по клику на запись (только для админа)
-             if (isAdmin) {
-                li.classList.add('cursor-pointer', 'hover:ring-1', 'hover:ring-black');
-                li.addEventListener('click', (e) => {
-                   e.stopPropagation(); // Предотвращаем срабатывание клика на ячейке дня
-                   openEditModal(b.id);
-                });
-             }
+            if (isAdmin) {
+              li.classList.add('cursor-pointer', 'hover:ring-1', 'hover:ring-black');
+              li.addEventListener('click', (e) => {
+                e.stopPropagation();
+                openEditModal(b.id);
+              });
+            }
 
             bookingsList.appendChild(li);
           });
 
           dayCell.appendChild(bookingsList);
+
+          if (dayBookings.length > 3) {
+            const more = document.createElement('div');
+            more.className = 'absolute bottom-1 right-1 text-[10px] bg-gray-800 text-white rounded-full px-1.5 py-0.5';
+            more.textContent = `+${dayBookings.length - 3}`;
+            dayCell.appendChild(more);
+          }
         }
 
         // Обработчик клика на ячейку дня
@@ -2119,6 +2778,393 @@
         bookingsListEl.appendChild(li);
       });
     }
+
+    // === Логика Базы Клиентов ===
+    let clientsData = []; // Массив для хранения данных клиентов
+
+    async function renderClientsDatabase() {
+      const clientsTableBody = document.getElementById('clientsTableBody');
+      const clientsLoading = document.getElementById('clientsLoading');
+      const clientsEmpty = document.getElementById('clientsEmpty');
+      const clientsCount = document.getElementById('clientsCount');
+      const clientSearch = document.getElementById('clientSearch');
+      const clientSort = document.getElementById('clientSort');
+
+      if (!clientsTableBody) return; // Если секция не загружена, выходим
+
+      try {
+        // Загружаем клиентов из Firebase
+        const clientsSnapshot = await getDocs(collection(db, "clients"));
+        clientsData = clientsSnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+
+        // Если клиентов нет в базе, создаем их из существующих бронирований
+        if (clientsData.length === 0 && bookings.length > 0) {
+          await createClientsFromBookings();
+          // Перезагружаем после создания
+          const newSnapshot = await getDocs(collection(db, "clients"));
+          clientsData = newSnapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data()
+          }));
+        }
+
+        // Обновляем статистику из бронирований
+        await updateClientsStats();
+
+        // Применяем поиск и сортировку
+        let filteredClients = [...clientsData];
+        
+        // Поиск
+        if (clientSearch && clientSearch.value) {
+          const searchTerm = clientSearch.value.toLowerCase();
+          filteredClients = filteredClients.filter(client => 
+            client.clientName?.toLowerCase().includes(searchTerm) ||
+            client.clientPhone?.includes(searchTerm) ||
+            client.phoneDigits?.includes(searchTerm.replace(/\D/g, ''))
+          );
+        }
+
+        // Сортировка
+        if (clientSort && clientSort.value) {
+          switch(clientSort.value) {
+            case 'name':
+              filteredClients.sort((a, b) => (a.clientName || '').localeCompare(b.clientName || ''));
+              break;
+            case 'nameDesc':
+              filteredClients.sort((a, b) => (b.clientName || '').localeCompare(a.clientName || ''));
+              break;
+            case 'bookings':
+              filteredClients.sort((a, b) => (b.totalBookings || 0) - (a.totalBookings || 0));
+              break;
+            case 'lastBooking':
+              filteredClients.sort((a, b) => {
+                const dateA = a.lastBookingDate ? new Date(a.lastBookingDate) : new Date(0);
+                const dateB = b.lastBookingDate ? new Date(b.lastBookingDate) : new Date(0);
+                return dateB - dateA;
+              });
+              break;
+          }
+        }
+
+        // Обновляем счетчик
+        if (clientsCount) {
+          clientsCount.textContent = filteredClients.length;
+        }
+
+        // Очищаем таблицу
+        clientsTableBody.innerHTML = '';
+
+        // Скрываем/показываем элементы загрузки
+        if (clientsLoading) clientsLoading.classList.add('hidden');
+        
+        if (filteredClients.length === 0) {
+          if (clientsEmpty) clientsEmpty.classList.remove('hidden');
+          return;
+        }
+
+        if (clientsEmpty) clientsEmpty.classList.add('hidden');
+
+        // Рендерим клиентов
+        filteredClients.forEach(client => {
+          const row = document.createElement('tr');
+          row.className = 'hover:bg-gray-50 transition';
+
+          // Telegram статус
+          const telegramStatus = client.telegramId 
+            ? `<span class="text-green-600"><i class="fab fa-telegram"></i> ${client.telegramUsername || 'Подключен'}</span>`
+            : '<span class="text-gray-400">Не подключен</span>';
+
+          // Форматирование даты последней записи
+          const lastBookingDate = client.lastBookingDate 
+            ? new Date(client.lastBookingDate).toLocaleDateString('ru-RU', { day: '2-digit', month: 'short', year: 'numeric' })
+            : '-';
+
+          row.innerHTML = `
+            <td class="py-3 px-4">
+              <div class="font-semibold text-gray-900">${client.clientName || '-'}</div>
+            </td>
+            <td class="py-3 px-4">
+              <a href="tel:${client.clientPhone || ''}" class="text-blue-600 hover:underline">
+                ${client.clientPhone || '-'}
+              </a>
+            </td>
+            <td class="py-3 px-4">${telegramStatus}</td>
+            <td class="py-3 px-4 text-center">
+              <span class="font-semibold">${client.totalBookings || 0}</span>
+            </td>
+            <td class="py-3 px-4">${lastBookingDate}</td>
+            <td class="py-3 px-4">
+              <span class="font-semibold text-green-600">${(client.totalSpent || 0).toLocaleString('ru-RU')} ₽</span>
+            </td>
+            <td class="py-3 px-4 text-center">
+              <button 
+                onclick="showClientDetails('${client.id}')" 
+                class="text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded px-2 py-1"
+                title="Подробнее"
+              >
+                <i class="fas fa-eye"></i>
+              </button>
+            </td>
+          `;
+
+          clientsTableBody.appendChild(row);
+        });
+
+      } catch (error) {
+        console.error('Ошибка загрузки клиентов:', error);
+        if (clientsLoading) clientsLoading.classList.add('hidden');
+        if (clientsEmpty) clientsEmpty.classList.remove('hidden');
+      }
+    }
+
+    // Создание клиентов из существующих бронирований
+    async function createClientsFromBookings() {
+      const clientsMap = new Map();
+
+      bookings.forEach(booking => {
+        const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+        if (!phoneDigits) return;
+
+        const key = phoneDigits;
+        if (!clientsMap.has(key)) {
+          clientsMap.set(key, {
+            clientName: booking.clientName,
+            clientPhone: booking.clientPhone,
+            phoneDigits: phoneDigits,
+            createdAt: booking.bookingDate ? new Date(booking.bookingDate) : new Date(),
+            lastBookingDate: booking.bookingDate,
+            totalBookings: 0,
+            totalSpent: 0,
+            isActive: true
+          });
+        }
+
+        const client = clientsMap.get(key);
+        client.totalBookings += 1;
+        if (booking.bookingDate && (!client.lastBookingDate || booking.bookingDate > client.lastBookingDate)) {
+          client.lastBookingDate = booking.bookingDate;
+        }
+      });
+
+      // Сохраняем клиентов в Firebase
+      for (const [phoneDigits, clientData] of clientsMap) {
+        try {
+          // Проверяем, существует ли клиент
+          const existingClients = await getDocs(
+            query(collection(db, "clients"), where("phoneDigits", "==", phoneDigits))
+          );
+          
+          if (existingClients.empty) {
+            await addDoc(collection(db, "clients"), {
+              ...clientData,
+              createdAt: clientData.createdAt instanceof Date 
+                ? clientData.createdAt 
+                : new Date(clientData.createdAt)
+            });
+          }
+        } catch (error) {
+          console.error(`Ошибка создания клиента ${phoneDigits}:`, error);
+        }
+      }
+    }
+
+    // Обновление статистики клиентов из бронирований
+    async function updateClientsStats() {
+      const clientsMap = new Map();
+      
+      // Группируем бронирования по телефону
+      bookings.forEach(booking => {
+        const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+        if (!phoneDigits) return;
+
+        if (!clientsMap.has(phoneDigits)) {
+          clientsMap.set(phoneDigits, {
+            totalBookings: 0,
+            totalSpent: 0,
+            lastBookingDate: null
+          });
+        }
+
+        const stats = clientsMap.get(phoneDigits);
+        stats.totalBookings += 1;
+
+        // Расчет суммы бронирования
+        let bookingAmount = 0;
+        const duration = parseFloat(booking.duration) || 0;
+        
+        if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+          booking.selectedServices.forEach(service => {
+            if (service === 'birthday') {
+              const fullHours = Math.floor(duration);
+              const hasHalfHour = duration % 1 !== 0;
+              let birthdayTotal = 0;
+              for (let hour = 1; hour <= fullHours; hour++) {
+                const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                birthdayTotal += hourPrice;
+              }
+              if (hasHalfHour) {
+                if (fullHours === 0) birthdayTotal += 2000;
+                else if (fullHours === 1) birthdayTotal += 2000;
+                else birthdayTotal += (servicePrices.birthday[3] || 3000) / 2;
+              }
+              bookingAmount += birthdayTotal;
+            } else if (service === 'hostess') {
+              bookingAmount += servicePrices.hostess;
+            } else {
+              const price = servicePrices[service] || 0;
+              bookingAmount += price * duration;
+            }
+          });
+        }
+
+        // Применяем скидки
+        const discountPercent = booking.discountPercent || 0;
+        const discountAmount = booking.discountAmount || 0;
+        if (discountPercent > 0) {
+          bookingAmount = bookingAmount * (1 - discountPercent / 100);
+        } else if (discountAmount > 0) {
+          bookingAmount = Math.max(0, bookingAmount - discountAmount);
+        }
+
+        stats.totalSpent += bookingAmount;
+
+        // Обновляем дату последней записи
+        if (booking.bookingDate && (!stats.lastBookingDate || booking.bookingDate > stats.lastBookingDate)) {
+          stats.lastBookingDate = booking.bookingDate;
+        }
+      });
+
+      // Обновляем клиентов в Firebase
+      for (const client of clientsData) {
+        const stats = clientsMap.get(client.phoneDigits);
+        if (stats) {
+          try {
+            const clientRef = doc(db, "clients", client.id);
+            await updateDoc(clientRef, {
+              totalBookings: stats.totalBookings,
+              totalSpent: stats.totalSpent,
+              lastBookingDate: stats.lastBookingDate
+            });
+            // Обновляем локальные данные
+            client.totalBookings = stats.totalBookings;
+            client.totalSpent = stats.totalSpent;
+            client.lastBookingDate = stats.lastBookingDate;
+          } catch (error) {
+            console.error(`Ошибка обновления клиента ${client.id}:`, error);
+          }
+        }
+      }
+    }
+
+    // Показ детальной информации о клиенте
+    window.showClientDetails = async function(clientId) {
+      const client = clientsData.find(c => c.id === clientId);
+      if (!client) return;
+
+      const modal = document.getElementById('clientDetailModal');
+      const title = document.getElementById('clientDetailTitle');
+      const content = document.getElementById('clientDetailContent');
+
+      if (!modal || !title || !content) return;
+
+      title.textContent = `Информация о клиенте: ${client.clientName}`;
+
+      // Получаем все бронирования клиента
+      const clientBookings = bookings.filter(b => {
+        const bookingPhone = b.clientPhone?.replace(/\D/g, '') || '';
+        return bookingPhone === client.phoneDigits;
+      }).sort((a, b) => {
+        const dateA = new Date(a.bookingDate + 'T' + a.startTime);
+        const dateB = new Date(b.bookingDate + 'T' + b.startTime);
+        return dateB - dateA;
+      });
+
+      let bookingsHTML = '';
+      if (clientBookings.length > 0) {
+        bookingsHTML = '<div class="mt-4"><h4 class="font-semibold mb-2">История записей:</h4><div class="space-y-2">';
+        clientBookings.slice(0, 10).forEach(booking => {
+          const dateStr = new Date(booking.bookingDate).toLocaleDateString('ru-RU', {
+            day: '2-digit',
+            month: 'short',
+            year: 'numeric',
+            weekday: 'short'
+          });
+          bookingsHTML += `
+            <div class="border border-gray-200 rounded-lg p-3">
+              <div class="font-medium">${dateStr} в ${booking.startTime} (${booking.duration}ч)</div>
+              <div class="text-sm text-gray-600 mt-1">
+                ${booking.selectedServices && Array.isArray(booking.selectedServices) 
+                  ? booking.selectedServices.map(s => getServiceLabel(s)).join(', ')
+                  : getServiceLabel(booking.serviceType || '')}
+              </div>
+            </div>
+          `;
+        });
+        if (clientBookings.length > 10) {
+          bookingsHTML += `<div class="text-sm text-gray-500 italic">... и еще ${clientBookings.length - 10} записей</div>`;
+        }
+        bookingsHTML += '</div></div>';
+      }
+
+      content.innerHTML = `
+        <div class="space-y-4">
+          <div>
+            <h4 class="font-semibold mb-2">Контактная информация</h4>
+            <div class="space-y-2">
+              <div><span class="font-medium">Имя:</span> ${client.clientName}</div>
+              <div><span class="font-medium">Телефон:</span> <a href="tel:${client.clientPhone}" class="text-blue-600 hover:underline">${client.clientPhone}</a></div>
+              <div><span class="font-medium">Telegram:</span> ${client.telegramId 
+                ? `<span class="text-green-600"><i class="fab fa-telegram"></i> ${client.telegramUsername || 'ID: ' + client.telegramId}</span>`
+                : '<span class="text-gray-400">Не подключен</span>'}</div>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Статистика</h4>
+            <div class="space-y-2">
+              <div><span class="font-medium">Всего записей:</span> ${client.totalBookings || 0}</div>
+              <div><span class="font-medium">Общая сумма:</span> <span class="text-green-600 font-semibold">${(client.totalSpent || 0).toLocaleString('ru-RU')} ₽</span></div>
+              <div><span class="font-medium">Последняя запись:</span> ${client.lastBookingDate 
+                ? new Date(client.lastBookingDate).toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric' })
+                : 'Нет записей'}</div>
+              <div><span class="font-medium">Дата регистрации:</span> ${client.createdAt 
+                ? new Date(client.createdAt.seconds ? client.createdAt.seconds * 1000 : client.createdAt).toLocaleDateString('ru-RU')
+                : 'Не указана'}</div>
+            </div>
+          </div>
+          ${bookingsHTML}
+        </div>
+      `;
+
+      modal.classList.remove('hidden');
+    };
+
+    // Обработчики поиска и сортировки
+    document.addEventListener('DOMContentLoaded', () => {
+      const clientSearch = document.getElementById('clientSearch');
+      const clientSort = document.getElementById('clientSort');
+      const closeClientModal = document.getElementById('closeClientModal');
+
+      if (clientSearch) {
+        clientSearch.addEventListener('input', () => {
+          renderClientsDatabase();
+        });
+      }
+
+      if (clientSort) {
+        clientSort.addEventListener('change', () => {
+          renderClientsDatabase();
+        });
+      }
+
+      if (closeClientModal) {
+        closeClientModal.addEventListener('click', () => {
+          document.getElementById('clientDetailModal').classList.add('hidden');
+        });
+      }
+    });
 
 
     // === Логика Модального Окна Бронирования Клиента ===
@@ -2720,324 +3766,407 @@
 
     // === Логика Расчета Зарплаты ===
     function calculateSalaries() {
+      console.log('calculateSalaries called. isAdmin:', isAdmin);
+      
       if (!isAdmin) {
-          salarySection.classList.add('hidden');
+          salarySection.classList.add('hidden'); // Скрыть секцию если не админ
+          console.log('Not admin, hiding salary section');
           return;
       }
-      salarySection.classList.remove('hidden');
+      
+      // Проверяем, что все необходимые данные загружены
+      if (!admins || admins.length === 0) {
+          console.warn('No admins loaded, skipping salary calculation');
+          return;
+      }
+      if (!bookings || bookings.length === 0) {
+          console.warn('No bookings loaded, skipping salary calculation');
+          return;
+      }
+      if (!adminAssignments || adminAssignments.length === 0) {
+          console.warn('No admin assignments loaded, skipping salary calculation');
+          return;
+      }
+      
+       salarySection.classList.remove('hidden'); // Показать секцию если админ
 
       const year = salaryViewMonth.getFullYear();
       const month = salaryViewMonth.getMonth();
-
-      currentMonthSalary.textContent = salaryViewMonth.toLocaleDateString('ru-RU', {
-        year: 'numeric',
-        month: 'long',
-      });
+      console.log('Calculating salaries for:', year, month);
+      console.log('Current admins:', admins);
+      console.log('Current bookings:', bookings);
+      console.log('Current assignments:', adminAssignments);
 
       // 1. Группировка бронирований по датам для текущего месяца
       const bookingsByDate = {};
       bookings.forEach(booking => {
+        // Убедимся что bookingDate существует и это строка
         if (typeof booking.bookingDate === 'string') {
-          try {
-            const bookingDateObj = new Date(booking.bookingDate + 'T00:00:00');
-            if (bookingDateObj.getFullYear() === year && bookingDateObj.getMonth() === month) {
-              const dateStr = booking.bookingDate;
-              if (!bookingsByDate[dateStr]) {
-                bookingsByDate[dateStr] = [];
-              }
-              bookingsByDate[dateStr].push(booking);
+           try {
+                const bookingDateObj = new Date(booking.bookingDate + 'T00:00:00'); // Добавляем время для надежности парсинга
+                if (bookingDateObj.getFullYear() === year && bookingDateObj.getMonth() === month) {
+                    const dateStr = booking.bookingDate; // Используем исходную строку даты
+                    if (!bookingsByDate[dateStr]) {
+                        bookingsByDate[dateStr] = [];
+                    }
+                    bookingsByDate[dateStr].push(booking);
+                }
+            } catch (e) {
+                 console.error("Ошибка парсинга даты бронирования:", booking.bookingDate, e);
             }
-          } catch (e) {
-            console.error("Ошибка парсинга даты бронирования:", booking.bookingDate, e);
-          }
+        } else {
+             console.warn("Некорректный формат даты в бронировании:", booking);
         }
+
       });
 
       // 2. Инициализация данных по зарплате для каждого администратора
-      const salaryData = {};
+      salaryData = {}; // Очищаем предыдущие данные
       admins.forEach(admin => {
         salaryData[admin.id] = {
           name: admin.name,
-          baseSalary: 0,
-          bonusSalary: 0,
-          totalSalary: 0,
-          daysWorked: 0,
-          hoursWorked: 0,
-          details: []
+          baseSalary: 0, // Сумма фиксированных ставок и почасовой оплаты
+          bonusSalary: 0, // Сумма бонусов от выручки
+          totalSalary: 0, // Итоговая ЗП
+          daysWorked: 0, // Количество смен основного
+          hoursWorked: 0, // Количество часов помощника
+          details: [] // Массив для детализации по дням
         };
       });
+      console.log('Initialized salaryData:', salaryData);
 
-      // 3. Обработка каждого дня месяца
-      let totalMonthRevenue = 0;
+      // 3. Обработка каждого дня месяца, на который есть назначение
+      let totalMonthRevenue = 0; // Общая выручка за месяц (после скидок)
 
       adminAssignments.forEach(assignment => {
-        if (typeof assignment.date === 'string') {
-          try {
-            const assignmentDateObj = new Date(assignment.date + 'T00:00:00');
-            if (assignmentDateObj.getFullYear() === year && assignmentDateObj.getMonth() === month) {
-              const dateStr = assignment.date;
-              const dayBookings = bookingsByDate[dateStr] || [];
+          // Убедимся, что assignment.date это строка и соответствует текущему месяцу/году
+          if (typeof assignment.date === 'string') {
+              try {
+                  const assignmentDateObj = new Date(assignment.date + 'T00:00:00');
+                  if (assignmentDateObj.getFullYear() === year && assignmentDateObj.getMonth() === month) {
+                      const dateStr = assignment.date; // Строка даты 'YYYY-MM-DD'
+                      const dayBookings = bookingsByDate[dateStr] || [];
+                      let dayRevenue = 0; // Выручка дня ПОСЛЕ скидок
+                      let birthdayRevenue = 0; // Выручка только от ДР
+                      let hostessRevenue = 0; // Выручка от услуги ведущей
+                      let otherServicesRevenue = 0; // Выручка от других услуг
 
-              // Расчет выручки за день
-              let dayRevenue = 0;
-              let birthdayRevenue = 0;
-              let hostessRevenue = 0;
-              let hasHostess = false;
+                      // Расчет выручки дня
+                      dayBookings.forEach(booking => {
+                          let bookingTotalAmount = 0; // Сумма до скидки
+                          const duration = parseFloat(booking.duration) || 0;
 
-              dayBookings.forEach(booking => {
-                let bookingTotalAmount = 0;
-                const duration = parseFloat(booking.duration) || 0;
+                           // Определяем, является ли услуга "Арендой ДР"
+                           const isBirthdayService = 
+                               (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                                booking.selectedServices.includes('birthday')) || 
+                               booking.serviceType === 'birthday';
 
-                if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
-                  booking.selectedServices.forEach(service => {
-                    if (service === 'birthday') {
-                      const fullHours = Math.floor(duration);
-                      const hasHalfHour = duration % 1 !== 0;
-                      let birthdayTotal = 0;
-                      for (let hour = 1; hour <= fullHours; hour++) {
-                        const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
-                        birthdayTotal += hourPrice;
-                      }
-                      if (hasHalfHour) {
+                          // Используем selectedServices для расчета суммы ДО скидки
+                          if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+                              booking.selectedServices.forEach(service => {
+                   if (service === 'birthday') { 
+                                      // Накопительный расчет для ДР
+                     const fullHours = Math.floor(duration);
+                     const hasHalfHour = duration % 1 !== 0;
+                     let birthdayTotal = 0;
+                     for (let hour = 1; hour <= fullHours; hour++) {
+                       const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                       birthdayTotal += hourPrice;
+                     }
+                     if (hasHalfHour) {
                         if (fullHours === 0) { birthdayTotal += 2000; }
                         else if (fullHours === 1) { birthdayTotal += 2000; }
                         else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                     }
+                     bookingTotalAmount += birthdayTotal;
+                   } else if (service === 'hostess') {
+                     // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                     bookingTotalAmount += servicePrices.hostess;
+                                     hostessRevenue += servicePrices.hostess;
+                   } else {
+                     const price = servicePrices[service] || 0;
+                     bookingTotalAmount += price * duration;
+                   }
+                 });
+                          } else if (booking.serviceType) { // Обратная совместимость со старым полем
+                               // Логика расчета суммы ДО скидки по старому полю serviceType
+                               // ... (логика расчета bookingRevenue по serviceType остается той же, но присваиваем в bookingTotalAmount) ...
+                               console.warn('Using legacy serviceType for monthly salary calculation (calculating pre-discount amount)', booking);
+                               if (booking.serviceType === 'birthday') {
+                                   const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                                   bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                               } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+                                   bookingTotalAmount = servicePriceHalfHour[booking.serviceType] || 0;
+                               } else {
+                                   const pricePerHour = servicePrices[booking.serviceType] || 0;
+                                   bookingTotalAmount = pricePerHour * duration;
+                               }
+                          }
+
+                          // Рассчитываем итоговую стоимость бронирования с учетом скидки
+                          const discountPercent = booking.discountPercent || 0;
+                          const discountAmount = booking.discountAmount || 0;
+                          let finalBookingAmount = bookingTotalAmount; // Итоговая стоимость этого бронирования
+            if (discountPercent > 0) {
+              finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+            } else if (discountAmount > 0) {
+              finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
+                          }
+
+                          dayRevenue += finalBookingAmount; // Добавляем к выручке дня ИТОГОВУЮ сумму бронирования
+                           
+                           // Если это День Рождения, добавляем в birthdayRevenue
+                           if (isBirthdayService) {
+                               birthdayRevenue += finalBookingAmount;
+                           }
+                      });
+
+                      totalMonthRevenue += dayRevenue; // Добавляем к общей выручке месяца (уже с учетом скидок)
+
+                      // Начисление зарплаты основному администратору (используем birthdayRevenue минус hostessRevenue)
+                      if (assignment.mainAdminId && salaryData[assignment.mainAdminId]) {
+                          const adminData = salaryData[assignment.mainAdminId];
+                          adminData.daysWorked++;
+                          const basePay = 500; // Фиксированная ставка за смену
+                          adminData.baseSalary += basePay;
+                          const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
+                          
+                          // Если есть день рождения, считаем от (выручка ДР - ведущая + другие услуги)
+                          // Если нет дня рождения, считаем от общей выручки
+                          const bonusRevenue = birthdayRevenue > 0 ? 
+                            (birthdayRevenue - hostessRevenue + (dayRevenue - birthdayRevenue)) : 
+                            dayRevenue;
+                            
+                          const bonus = bonusRevenue * bonusPercent;
+                          adminData.bonusSalary += bonus;
+                          adminData.totalSalary += basePay + bonus;
+
+                          adminData.details.push({
+                              date: dateStr,
+                              type: 'Основная смена',
+                              base: basePay,
+                              bonus: bonus,
+                              revenue: dayRevenue,
+                              hours: 0
+                          });
                       }
-                      bookingTotalAmount += birthdayTotal;
-                      birthdayRevenue += birthdayTotal;
-                    } else if (service === 'hostess') {
-                      bookingTotalAmount += servicePrices.hostess;
-                      hostessRevenue += servicePrices.hostess;
-                      hasHostess = true;
-                    } else {
-                      const price = servicePrices[service] || 0;
-                      bookingTotalAmount += price * duration;
-                    }
-                  });
-                } else if (booking.serviceType === 'birthday') {
-                  const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
-                  bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
-                  birthdayRevenue += bookingTotalAmount;
-                }
 
-                // Применяем скидки
-                const discountPercent = booking.discountPercent || 0;
-                const discountAmount = booking.discountAmount || 0;
-                let finalBookingAmount = bookingTotalAmount;
+                      // Начисление зарплаты помощнику (используем birthdayRevenue минус hostessRevenue)
+                      if (assignment.helperAdminId && salaryData[assignment.helperAdminId] && assignment.helperHours) {
+                          const helperData = salaryData[assignment.helperAdminId];
+                          
+                          // Рассчитываем фактические часы помощника
+                          let actualHelperHours = 0;
+                          
+                          dayBookings.forEach(booking => {
+                              // Проверяем, является ли услуга "Арендой ДР"
+                              const isBirthdayService = 
+                                  (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                                   booking.selectedServices.includes('birthday')) || 
+                                  booking.serviceType === 'birthday';
+                              
+                              if (isBirthdayService) {
+                                  // Считаем фактические часы помощника
+                                  const duration = parseFloat(booking.duration) || 0;
+                                  actualHelperHours += duration;
+                              }
+                          });
+                          
+                          actualHelperHours = Math.round(actualHelperHours);
+                          const hours = actualHelperHours > 0 ? actualHelperHours : parseInt(assignment.helperHours);
+                          helperData.hoursWorked += hours;
+                          const basePay = hours * 150; // 150₽ в час
+                              helperData.baseSalary += basePay;
+                              
+                              const bonusPercent = 0.07;
+                          const bonusRevenue = birthdayRevenue - hostessRevenue;
+                          const bonus = bonusRevenue * bonusPercent; // Считаем бонус только от выручки за ДР
+                              helperData.bonusSalary += bonus;
+                              helperData.totalSalary += basePay + bonus;
 
-                if (discountPercent > 0) {
-                  finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
-                } else if (discountAmount > 0) {
-                  finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
-                }
-
-                dayRevenue += finalBookingAmount;
-              });
-
-              totalMonthRevenue += dayRevenue;
-
-              // Начисление зарплаты основному администратору
-              if (assignment.mainAdminId && salaryData[assignment.mainAdminId]) {
-                const adminData = salaryData[assignment.mainAdminId];
-                adminData.daysWorked++;
-                adminData.baseSalary += 500; // Фиксированная ставка за смену
-
-                // Расчет бонуса основного администратора
-                const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-                let bonus = 0;
-
-                if (birthdayRevenue > 0 && hasHostess) {
-                  // Если есть День Рождения и ведущая, считаем бонус от выручки ДР минус стоимость ведущей
-                  bonus = (birthdayRevenue - hostessRevenue) * bonusPercent;
-                } else {
-                  // В остальных случаях считаем от общей выручки
-                  bonus = dayRevenue * bonusPercent;
-                }
-
-                adminData.bonusSalary += bonus;
-                adminData.details.push({
-                  date: dateStr,
-                  type: 'Основная смена',
-                  base: 500,
-                  bonus: bonus,
-                  revenue: dayRevenue,
-                  hours: 0
-                });
+                              helperData.details.push({
+                                  date: dateStr,
+                                  type: 'Помощь на смене',
+                                  base: basePay,
+                                  bonus: bonus, // Сохраняем бонус, посчитанный от правильной выручки
+                                  revenue: birthdayRevenue, // Сохраняем выручку только от ДР
+                              hours: hours // Сохраняем фактические часы
+                              });
+                              
+                              // Если фактические часы отличаются от назначенных, добавляем информацию
+                              const assignedHours = parseInt(assignment.helperHours) || 0;
+                              if (assignedHours !== actualHelperHours) {
+                                  helperData.details[helperData.details.length - 1].note = 
+                                      `Назначено ${assignedHours} ч, фактически ${actualHelperHours} ч по записям ДР`;
+                          }
+                      }
+                  }
+              } catch(e) {
+                  console.error("Ошибка парсинга даты назначения:", assignment.date, e);
               }
-
-              // Начисление зарплаты помощнику
-              if (assignment.helperAdminId && salaryData[assignment.helperAdminId] && assignment.helperHours) {
-                const helperData = salaryData[assignment.helperAdminId];
-                const hours = parseFloat(assignment.helperHours) || 0;
-                const hourlyPay = hours * 150;
-                helperData.hoursWorked += hours;
-                helperData.baseSalary += hourlyPay;
-
-                // Расчет бонуса помощника
-                let helperBonus = 0;
-                if (birthdayRevenue > 0 && hasHostess) {
-                  // Если есть День Рождения и ведущая, считаем бонус от выручки ДР минус стоимость ведущей
-                  helperBonus = (birthdayRevenue - hostessRevenue) * 0.07;
-                } else {
-                  // В остальных случаях считаем от выручки ДР
-                  helperBonus = birthdayRevenue * 0.07;
-                }
-
-                helperData.bonusSalary += helperBonus;
-                helperData.details.push({
-                  date: dateStr,
-                  type: 'Помощь на смене',
-                  base: hourlyPay,
-                  bonus: helperBonus,
-                  revenue: birthdayRevenue,
-                  hours: hours
-                });
-              }
-            }
-          } catch (e) {
-            console.error("Ошибка обработки назначения:", assignment, e);
-          }
-        }
-      });
-
-      // 4. Расчет итоговых сумм и отображение результатов
-      admins.forEach(admin => {
-        const data = salaryData[admin.id];
-        data.totalSalary = data.baseSalary + data.bonusSalary;
-      });
-
-      // Отображение результатов
-      salaryResults.innerHTML = `
-        <div class="bg-green-50 p-6 rounded-xl mb-8">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-lg font-semibold text-green-900">Общая выручка за месяц</h3>
-            <button class="text-sm text-green-700 hover:text-green-800 view-revenue-details flex items-center">
-              <i class="fas fa-list mr-1.5"></i> Показать детализацию
-            </button>
-          </div>
-          <p class="text-3xl font-bold text-green-700">${totalMonthRevenue.toLocaleString('ru-RU')} ₽</p>
-          <div id="revenue-details" class="hidden mt-4 pt-4 border-t border-green-200"></div>
-        </div>
-      `;
-
-      // Добавляем карточки администраторов
-      admins.forEach(admin => {
-        const data = salaryData[admin.id];
-        const adminCard = document.createElement('div');
-        adminCard.className = 'bg-white rounded-xl p-6 border border-gray-200 mb-6';
-        adminCard.innerHTML = `
-          <h3 class="text-xl font-semibold mb-4 text-gray-800">${admin.name}</h3>
-          <div class="grid grid-cols-2 gap-x-6 gap-y-3 mb-5">
-            <div>
-              <p class="text-sm text-gray-500">Смен (основной)</p>
-              <p class="font-medium text-lg">${data.daysWorked}</p>
-            </div>
-            <div>
-              <p class="text-sm text-gray-500">Часов (помощник)</p>
-              <p class="font-medium text-lg">${data.hoursWorked}</p>
-            </div>
-            <div>
-              <p class="text-sm text-gray-500">Ставка + Почасовая</p>
-              <p class="font-medium text-lg">${data.baseSalary.toLocaleString('ru-RU')} ₽</p>
-            </div>
-            <div>
-              <p class="text-sm text-gray-500">Бонус от выручки</p>
-              <p class="font-medium text-lg">${Math.round(data.bonusSalary).toLocaleString('ru-RU')} ₽</p>
-            </div>
-          </div>
-          <div class="border-t border-gray-200 pt-4 mt-4">
-            <p class="text-sm font-medium text-gray-600">Итого зарплата</p>
-            <p class="text-2xl font-bold text-blue-600 mt-1">${Math.round(data.totalSalary).toLocaleString('ru-RU')} ₽</p>
-          </div>
-          <button class="mt-5 text-sm text-blue-600 hover:text-blue-800 view-details flex items-center" data-admin="${admin.id}">
-            <i class="fas fa-list mr-1.5"></i> Показать детализацию
-          </button>
-          <div id="details-${admin.id}" class="hidden mt-4 space-y-3 border-t border-gray-100 pt-4">
-            <!-- Детализация будет здесь -->
-          </div>
-        `;
-        salaryResults.appendChild(adminCard);
-      });
-
-      // Обработчики для кнопок детализации
-      document.querySelectorAll('.view-details').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const adminId = btn.getAttribute('data-admin');
-          const detailsDiv = document.getElementById(`details-${adminId}`);
-          const data = salaryData[adminId];
-          const icon = btn.querySelector('i');
-
-          if (detailsDiv.classList.contains('hidden')) {
-            detailsDiv.classList.remove('hidden');
-            icon.className = 'fas fa-chevron-up mr-1.5';
-            btn.textContent = ' Скрыть детализацию';
-            btn.insertBefore(icon, btn.firstChild);
-
-            if (detailsDiv.children.length === 0) {
-              data.details.forEach(detail => {
-                const detailCard = document.createElement('div');
-                detailCard.className = 'py-3 border-b border-gray-100 last:border-b-0';
-
-                const dateObj = new Date(detail.date + 'T00:00:00');
-                const formattedDate = dateObj.toLocaleDateString('ru-RU', {
-                  day: '2-digit',
-                  month: 'short',
-                  weekday: 'short'
-                });
-
-                let typeClass = 'bg-blue-50 text-blue-800';
-                let hoursText = '';
-                if (detail.type === 'Помощь на смене') {
-                  typeClass = 'bg-indigo-50 text-indigo-800';
-                  hoursText = ` (${detail.hours} ч)`;
-                }
-
-                detailCard.innerHTML = `
-                  <div class="flex justify-between items-start">
-                    <div>
-                      <span class="font-medium">${formattedDate}</span>
-                      <span class="inline-block px-2 py-0.5 text-xs rounded-full ml-2 ${typeClass}">${detail.type}${hoursText}</span>
-                    </div>
-                    <div class="text-right">
-                      <div class="text-gray-600 text-sm">
-                        <span>Ставка/часы: ${detail.base.toLocaleString('ru-RU')} ₽</span>
-                      </div>
-                      <div class="text-gray-600 text-sm">
-                        <span>Бонус: ${Math.round(detail.bonus).toLocaleString('ru-RU')} ₽</span>
-                      </div>
-                      <div class="font-medium">
-                        <span>Итого: ${Math.round(detail.base + detail.bonus).toLocaleString('ru-RU')} ₽</span>
-                      </div>
-                    </div>
-                  </div>
-                `;
-                detailsDiv.appendChild(detailCard);
-              });
-            }
           } else {
-            detailsDiv.classList.add('hidden');
-            icon.className = 'fas fa-list mr-1.5';
-            btn.textContent = ' Показать детализацию';
-            btn.insertBefore(icon, btn.firstChild);
+               console.warn("Некорректный формат даты в назначении:", assignment);
           }
-        });
       });
+
+
+      // 4. Отображение результатов
+      console.log('Final salaryData:', salaryData);
+      renderSalaryResults(salaryData, totalMonthRevenue);
     }
 
+
     function renderSalaryResults(salaryData, totalRevenue) {
+      console.log('renderSalaryResults called with data:', salaryData, 'totalRevenue:', totalRevenue);
       salaryResults.innerHTML = ''; // Очищаем предыдущие результаты
       
       // Карточка общей выручки
       const revenueCard = document.createElement('div');
       revenueCard.className = 'bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl shadow-md p-6 border border-green-200'; // Градиент
+      
+      // Разделяем выручку на фактическую и планируемую
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      let actualRevenue = 0;
+      let plannedRevenue = 0;
+      
+      // Группируем выручку по дням для отображения
+      const revenueByDay = {};
+      
+      // Обрабатываем все бронирования за месяц
+      bookings.forEach(booking => {
+        if (typeof booking.bookingDate === 'string') {
+          try {
+            const bookingDate = new Date(booking.bookingDate + 'T00:00:00');
+            const bookingYear = bookingDate.getFullYear();
+            const bookingMonth = bookingDate.getMonth();
+            
+            // Проверяем, что бронирование относится к текущему месяцу
+            if (bookingYear === salaryViewMonth.getFullYear() && bookingMonth === salaryViewMonth.getMonth()) {
+              // Рассчитываем выручку от этого бронирования
+              let bookingRevenue = 0;
+              
+              if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+                const duration = parseFloat(booking.duration) || 0;
+                booking.selectedServices.forEach(service => {
+                  if (service === 'birthday') {
+                    const fullHours = Math.floor(duration);
+                    const hasHalfHour = duration % 1 !== 0;
+                    let birthdayTotal = 0;
+                    for (let hour = 1; hour <= fullHours; hour++) {
+                      const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                      birthdayTotal += hourPrice;
+                    }
+                    if (hasHalfHour) {
+                      if (fullHours === 0) { birthdayTotal += 2000; }
+                      else if (fullHours === 1) { birthdayTotal += 2000; }
+                      else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                    }
+                    bookingRevenue += birthdayTotal;
+                  } else if (service === 'hostess') {
+                    bookingRevenue += servicePrices.hostess;
+                  } else {
+                    const price = servicePrices[service] || 0;
+                    bookingRevenue += price * duration;
+                  }
+                });
+              } else if (booking.serviceType) {
+                const duration = parseFloat(booking.duration) || 0;
+                if (booking.serviceType === 'birthday') {
+                  const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+                  bookingRevenue = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+                  bookingRevenue = servicePriceHalfHour[booking.serviceType] || 0;
+                } else {
+                  const pricePerHour = servicePrices[booking.serviceType] || 0;
+                  bookingRevenue = pricePerHour * duration;
+                }
+              }
+              
+              // Применяем скидки
+              if (booking.discountPercent > 0) {
+                bookingRevenue *= (1 - booking.discountPercent / 100);
+              } else if (booking.discountAmount > 0) {
+                bookingRevenue = Math.max(0, bookingRevenue - booking.discountAmount);
+              }
+              
+              // Определяем, фактическая это выручка или планируемая
+              if (bookingDate <= today) {
+                actualRevenue += bookingRevenue;
+              } else {
+                plannedRevenue += bookingRevenue;
+              }
+              
+              // Сохраняем информацию о дне для детализации
+              if (!revenueByDay[booking.bookingDate]) {
+                revenueByDay[booking.bookingDate] = {
+                  revenue: bookingRevenue,
+                  isPlanned: bookingDate > today
+                };
+              } else {
+                revenueByDay[booking.bookingDate].revenue += bookingRevenue;
+              }
+            }
+          } catch (e) {
+            console.error("Ошибка обработки бронирования:", e, booking);
+          }
+        }
+      });
+
       revenueCard.innerHTML = `
-        <h3 class="text-lg font-semibold mb-2 text-green-800">Общая выручка за месяц</h3>
-        <p class="text-3xl font-bold text-green-600">${totalRevenue.toLocaleString('ru-RU')} ₽</p> <!-- Округление -->
-        <button class="mt-3 text-sm text-green-700 hover:text-green-900 view-revenue-details flex items-center">
-            <i class="fas fa-list mr-1.5"></i> Показать детализацию
+        <h3 class="text-lg font-semibold mb-4 text-green-800">Общая выручка за месяц</h3>
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-3xl font-bold text-green-600">${totalRevenue.toLocaleString('ru-RU')} ₽</span>
+            <span class="text-sm text-gray-500">Всего</span>
+          </div>
+          <div class="grid grid-cols-2 gap-4 pt-3 border-t border-green-100">
+            <div>
+              <p class="text-sm text-gray-600">Фактическая выручка</p>
+              <p class="text-xl font-semibold text-green-700">${actualRevenue.toLocaleString('ru-RU')} ₽</p>
+              <p class="text-xs text-gray-500 mt-1">Оказанные услуги</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-600">Планируемая выручка</p>
+              <p class="text-xl font-semibold text-blue-600">${plannedRevenue.toLocaleString('ru-RU')} ₽</p>
+              <p class="text-xs text-gray-500 mt-1">Будущие записи</p>
+            </div>
+          </div>
+        </div>
+        <button class="mt-4 text-sm text-green-700 hover:text-green-900 view-revenue-details flex items-center">
+            <i class="fa-solid fa-list mr-1.5"></i> Показать детализацию
         </button>
         <div id="revenue-details" class="hidden mt-4 space-y-2 border-t border-green-100 pt-3">
-          <!-- Детализация выручки будет здесь -->
+          ${Object.entries(revenueByDay).sort().map(([date, data]) => `
+            <div class="flex justify-between items-center py-2">
+              <div class="flex items-center">
+                <span class="font-medium">${new Date(date + 'T00:00:00').toLocaleDateString('ru-RU', {
+                  weekday: 'short',
+                  day: '2-digit',
+                  month: 'long'
+                })}</span>
+                ${data.isPlanned ? 
+                  '<span class="ml-2 px-2 py-0.5 text-xs bg-blue-100 text-blue-800 rounded-full">План</span>' : 
+                  '<span class="ml-2 px-2 py-0.5 text-xs bg-green-100 text-green-800 rounded-full">Факт</span>'
+                }
+              </div>
+              <span class="font-medium ${data.isPlanned ? 'text-blue-600' : 'text-green-600'}">
+                ${data.revenue.toLocaleString('ru-RU')} ₽
+              </span>
+            </div>
+          `).join('')}
+          <div class="pt-3 mt-3 border-t border-green-100 grid grid-cols-2 gap-4 text-sm">
+            <div class="flex items-center">
+              <span class="w-3 h-3 rounded-full bg-green-100 mr-2"></span>
+              <span class="text-gray-600">Оказанные услуги</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-3 h-3 rounded-full bg-blue-100 mr-2"></span>
+              <span class="text-gray-600">Будущие записи</span>
+            </div>
+          </div>
                 </div>
       `;
       salaryResults.appendChild(revenueCard);
@@ -3075,7 +4204,7 @@
               <p class="text-2xl font-bold text-blue-600 mt-1">${data.totalSalary.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p> <!-- Округление итоговой -->
             </div>
             <button class="mt-5 text-sm text-blue-600 hover:text-blue-800 view-details flex items-center" data-admin="${admin.id}">
-              <i class="fas fa-list mr-1.5"></i> Показать детализацию
+              <i class="fa-solid fa-list mr-1.5"></i> Показать детализацию
             </button>
             <div id="details-${admin.id}" class="hidden mt-4 space-y-3 border-t border-gray-100 pt-4">
               <!-- Детализация будет здесь -->
@@ -3105,7 +4234,7 @@
           // Переключаем класс скрытия и иконку
           if (detailsDiv.classList.contains('hidden')) {
             detailsDiv.classList.remove('hidden');
-            icon.className = 'fas fa-chevron-up mr-1.5';
+            icon.className = 'fa-solid fa-chevron-up mr-1.5';
             btn.textContent = ' Скрыть детализацию';
             btn.insertBefore(icon, btn.firstChild); // Возвращаем иконку обратно в начало
 
@@ -3160,7 +4289,7 @@
             }
           } else {
             detailsDiv.classList.add('hidden');
-            icon.className = 'fas fa-list mr-1.5';
+            icon.className = 'fa-solid fa-list mr-1.5';
             btn.textContent = ' Показать детализацию';
             btn.insertBefore(icon, btn.firstChild); // Возвращаем иконку обратно в начало
           }
@@ -3300,11 +4429,11 @@
 
 
                    detailsDiv.classList.remove('hidden');
-                   revenueDetailsBtn.innerHTML = '<i class="fas fa-chevron-up mr-1.5"></i> Скрыть детализацию';
+                   revenueDetailsBtn.innerHTML = '<i class="fa-solid fa-chevron-up mr-1.5"></i> Скрыть детализацию';
                } else {
                    // Скрыть детализацию выручки
                    detailsDiv.classList.add('hidden');
-                   revenueDetailsBtn.innerHTML = '<i class="fas fa-list mr-1.5"></i> Показать детализацию';
+                   revenueDetailsBtn.innerHTML = '<i class="fa-solid fa-list mr-1.5"></i> Показать детализацию';
                }
            });
        }
@@ -3501,14 +4630,20 @@
 
       // --- Расчет зарплаты ---
       prevMonthSalaryBtn.addEventListener('click', () => {
+        console.log('Previous month clicked, current month:', salaryViewMonth);
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() - 1);
+        console.log('Month changed to:', salaryViewMonth);
+        updateCurrentMonthTitle();
         // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
         calculateRevenueStats();
         calculateSalaries();
         // Еженедельная ЗП не зависит от выбранного месяца
       });
       nextMonthSalaryBtn.addEventListener('click', () => {
+        console.log('Next month clicked, current month:', salaryViewMonth);
         salaryViewMonth.setMonth(salaryViewMonth.getMonth() + 1);
+        console.log('Month changed to:', salaryViewMonth);
+        updateCurrentMonthTitle();
          // Пересчитываем ТОЛЬКО месячный отчет и статистику выручки для этого месяца
         calculateRevenueStats();
         calculateSalaries();
@@ -3672,6 +4807,7 @@
       renderRevenueStats(0, 0, 0); // Инициализируем нулями
       renderWeeklyPayroll({}, null); // Иниц. пустым состоянием
       calculateSalaries(); // Показ. пустой месячный отчет
+      updateCurrentMonthTitle();
       // Загрузка данных инициируется через onAuthStateChanged
     }
 
@@ -3679,17 +4815,25 @@
     init();
 
     // === Расчет Статистики Выручки ===
+    function updateCurrentMonthTitle() {
+      const monthsRu = ['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'];
+      if (currentMonthSalary) {
+        currentMonthSalary.textContent = monthsRu[salaryViewMonth.getMonth()];
+      }
+    }
     function calculateRevenueStats() {
         const todayStr = formatDateSafe(new Date());
         const currentWeek = getWeekRange(new Date());
         const currentWeekStartStr = formatDateSafe(currentWeek.start);
         const currentWeekEndStr = formatDateSafe(currentWeek.end);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
 
         const monthYearStr = `${salaryViewMonth.getFullYear()}-${(salaryViewMonth.getMonth() + 1).toString().padStart(2, '0')}`;
 
         let revenueToday = 0;
-        let revenueCurrentWeek = 0;
-        let revenueSelectedMonth = 0;
+        let revenueCurrentWeek = { actual: 0, planned: 0 };
+        let revenueSelectedMonth = { actual: 0, planned: 0 };
 
         bookings.forEach(booking => {
             if (typeof booking.bookingDate !== 'string') return;
@@ -3745,15 +4889,27 @@
               finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
             }
 
+            // Определяем, планируемая это выручка или фактическая
+            const bookingDate = new Date(booking.bookingDate + 'T00:00:00');
+            const isPlanned = bookingDate > today;
+
             // Суммируем итоговую выручку
             if (booking.bookingDate === todayStr) {
                 revenueToday += finalBookingAmount;
             }
             if (booking.bookingDate >= currentWeekStartStr && booking.bookingDate <= currentWeekEndStr) {
-                revenueCurrentWeek += finalBookingAmount;
+                if (isPlanned) {
+                    revenueCurrentWeek.planned += finalBookingAmount;
+                } else {
+                    revenueCurrentWeek.actual += finalBookingAmount;
+                }
             }
             if (booking.bookingDate.startsWith(monthYearStr)) {
-                revenueSelectedMonth += finalBookingAmount;
+                if (isPlanned) {
+                    revenueSelectedMonth.planned += finalBookingAmount;
+                } else {
+                    revenueSelectedMonth.actual += finalBookingAmount;
+                }
             }
         });
 
@@ -3783,8 +4939,28 @@
         const revenueSelectedMonthEl = document.getElementById('revenueSelectedMonth');
 
         if (revenueTodayEl) revenueTodayEl.textContent = `${today.toLocaleString('ru-RU')} ₽`;
-        if (revenueCurrentWeekEl) revenueCurrentWeekEl.textContent = `${week.toLocaleString('ru-RU')} ₽`;
-        if (revenueSelectedMonthEl) revenueSelectedMonthEl.textContent = `${month.toLocaleString('ru-RU')} ₽`;
+        if (revenueCurrentWeekEl) {
+            const totalWeekRevenue = week.actual + week.planned;
+            revenueCurrentWeekEl.innerHTML = `
+                ${totalWeekRevenue.toLocaleString('ru-RU')} ₽
+                ${week.planned > 0 ? `
+                    <div class="text-xs text-blue-600 mt-1">
+                        <span class="font-medium">Включая планируемую: ${week.planned.toLocaleString('ru-RU')} ₽</span>
+                    </div>
+                ` : ''}
+            `;
+        }
+        if (revenueSelectedMonthEl) {
+            const totalMonthRevenue = month.actual + month.planned;
+            revenueSelectedMonthEl.innerHTML = `
+                ${totalMonthRevenue.toLocaleString('ru-RU')} ₽
+                ${month.planned > 0 ? `
+                    <div class="text-xs text-blue-600 mt-1">
+                        <span class="font-medium">Включая планируемую: ${month.planned.toLocaleString('ru-RU')} ₽</span>
+                    </div>
+                ` : ''}
+            `;
+        }
 
         // Функция для добавления/обновления параграфа с датой/периодом
         const upsertDateParagraph = (parentElement, dateString, elementId) => {
@@ -3809,46 +4985,91 @@
     }
 
 
-    // === Расчет Зарплаты за Прошлую Неделю ===
+    // === Расчет Зарплаты за Текущую и Прошлую Неделю ===
     function calculateWeeklyPayroll() {
         const today = new Date();
-        const previousWeek = getPreviousWeekRange(today);
+        const isMonday = today.getDay() === 1;
+        const currentWeek = getWeekRange(today);
+        
+        // Получаем диапазон для текущей недели
+        const weekStartStr = formatDateSafe(currentWeek.start);
+        const weekEndStr = formatDateSafe(currentWeek.end);
+
+        // Получаем диапазон для прошлой недели
+        const previousWeek = {
+            start: new Date(currentWeek.start),
+            end: new Date(currentWeek.start)
+        };
+        previousWeek.start.setDate(previousWeek.start.getDate() - 7);
+        previousWeek.end.setDate(previousWeek.end.getDate() - 1);
         const prevWeekStartStr = formatDateSafe(previousWeek.start);
         const prevWeekEndStr = formatDateSafe(previousWeek.end);
 
-        const weeklyPayrollData = {}; // { adminId: { name: 'Name', total: 0 } }
+        // Создаем объект для хранения данных по зарплате
+        const weeklyPayrollData = {}; // { adminId: { name: 'Name', total: 0, previousWeekTotal: 0 } }
 
         // 1. Инициализация данных
         admins.forEach(admin => {
-            weeklyPayrollData[admin.id] = { name: admin.name, total: 0 };
+            weeklyPayrollData[admin.id] = { 
+                name: admin.name, 
+                total: 0,
+                previousWeekTotal: 0
+            };
         });
 
-        // 2. Фильтруем назначения и бронирования за прошлую неделю
-        const prevWeekAssignments = adminAssignments.filter(a =>
-            typeof a.date === 'string' && a.date >= prevWeekStartStr && a.date <= prevWeekEndStr
+        // 2. Фильтруем назначения и бронирования за текущую и прошлую недели
+        const weekAssignments = adminAssignments.filter(a =>
+            typeof a.date === 'string' && a.date >= weekStartStr && a.date <= weekEndStr
         );
 
+        const prevWeekAssignments = isMonday ? adminAssignments.filter(a =>
+            typeof a.date === 'string' && a.date >= prevWeekStartStr && a.date <= prevWeekEndStr
+        ) : [];
+
+        const weekBookingsByDate = {};
         const prevWeekBookingsByDate = {};
+        
         bookings.forEach(booking => {
-             if (typeof booking.bookingDate === 'string' && booking.bookingDate >= prevWeekStartStr && booking.bookingDate <= prevWeekEndStr) {
+            if (typeof booking.bookingDate === 'string') {
+                // Для текущей недели
+                if (booking.bookingDate >= weekStartStr && booking.bookingDate <= weekEndStr) {
+                    const dateStr = booking.bookingDate;
+                    if (!weekBookingsByDate[dateStr]) {
+                        weekBookingsByDate[dateStr] = [];
+                    }
+                    weekBookingsByDate[dateStr].push(booking);
+                }
+                
+                // Для прошлой недели (только если сегодня понедельник)
+                if (isMonday && booking.bookingDate >= prevWeekStartStr && booking.bookingDate <= prevWeekEndStr) {
                 const dateStr = booking.bookingDate;
                 if (!prevWeekBookingsByDate[dateStr]) {
                     prevWeekBookingsByDate[dateStr] = [];
                 }
                 prevWeekBookingsByDate[dateStr].push(booking);
+                }
              }
         });
 
-         // 3. Расчет ЗП за прошлую неделю
-         prevWeekAssignments.forEach(assignment => {
+         // 3. Расчет ЗП за текущую неделю
+         weekAssignments.forEach(assignment => {
             const dateStr = assignment.date;
-            const dayBookings = prevWeekBookingsByDate[dateStr] || [];
+            const dayBookings = weekBookingsByDate[dateStr] || [];
             let dayRevenue = 0; // Итоговая выручка дня ПОСЛЕ скидок
+            let birthdayRevenue = 0; // Выручка только от ДР
+            let hostessRevenue = 0; // Выручка от услуги ведущей
+            let otherServicesRevenue = 0; // Выручка от других услуг
 
             // Расчет выручки дня
             dayBookings.forEach(booking => {
                  let bookingTotalAmount = 0; // Сумма до скидки
                  const duration = parseFloat(booking.duration) || 0;
+
+                 // Определяем, является ли услуга "Арендой ДР"
+                 const isBirthdayService = 
+                     (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                      booking.selectedServices.includes('birthday')) || 
+                     booking.serviceType === 'birthday';
 
                  // Используем selectedServices для расчета суммы ДО скидки
                  if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
@@ -3871,6 +5092,7 @@
                          } else if (service === 'hostess') {
                            // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
                            bookingTotalAmount += servicePrices.hostess;
+                           hostessRevenue += servicePrices.hostess;
                          } else {
                              const price = servicePrices[service] || 0;
                              bookingTotalAmount += price * duration;
@@ -3902,20 +5124,37 @@
                  }
 
                  dayRevenue += finalBookingAmount; // Добавляем к выручке дня ИТОГОВУЮ сумму бронирования
+                 
+                 // Распределяем выручку по категориям
+                 if (isBirthdayService) {
+                     birthdayRevenue += finalBookingAmount;
+              } else {
+                     otherServicesRevenue += finalBookingAmount;
+                 }
             });
 
-            // Начисление основному (используем dayRevenue, которая теперь УЧИТЫВАЕТ скидки)
+            // Начисление основному администратору
             if (assignment.mainAdminId && weeklyPayrollData[assignment.mainAdminId]) {
                 const basePay = 500;
                 const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
-                const bonus = dayRevenue * bonusPercent;
-                weeklyPayrollData[assignment.mainAdminId].total += basePay + bonus;
+                let bonus;
+                
+                if (birthdayRevenue > 0) {
+                    // Если был День Рождения, считаем бонус от (выручки ДР минус ведущая) + выручка от других услуг
+                    const birthdayBonusRevenue = birthdayRevenue - hostessRevenue;
+                    bonus = (birthdayBonusRevenue + otherServicesRevenue) * bonusPercent;
+                } else {
+                    // Если не было Дня Рождения, считаем бонус от всей выручки за день
+                    bonus = dayRevenue * bonusPercent;
+                }
+                
+                const total = basePay + bonus;
+                weeklyPayrollData[assignment.mainAdminId].total += total;
             }
 
-             // Начисление помощнику (используем dayRevenue, которая теперь УЧИТЫВАЕТ скидки)
+            // Начисление помощнику
             if (assignment.helperAdminId && weeklyPayrollData[assignment.helperAdminId] && assignment.helperHours) {
-                // Рассчитываем выручку только от услуг "День Рождения" (Аренда ДР) и фактические часы
-                let birthdayRevenue = 0;
+                // Рассчитываем фактические часы помощника
                 let actualHelperHours = 0;
                 
                 (dayBookings || []).forEach(booking => {
@@ -3929,14 +5168,41 @@
                         // Считаем фактические часы помощника
                         const duration = parseFloat(booking.duration) || 0;
                         actualHelperHours += duration;
+                    }
+                });
+                
+                actualHelperHours = Math.round(actualHelperHours);
+                const hours = actualHelperHours > 0 ? actualHelperHours : parseInt(assignment.helperHours);
+                const basePay = hours * 150;
+                const bonusPercent = 0.07;
+                const bonusRevenue = birthdayRevenue - hostessRevenue;
+                const bonus = bonusRevenue * bonusPercent;
+                weeklyPayrollData[assignment.helperAdminId].total += basePay + bonus;
+            }
+         });
                         
-                        // Расчет итоговой суммы с учетом скидки
+         // 4. Расчет ЗП за прошлую неделю (если сегодня понедельник)
+         if (isMonday) {
+             prevWeekAssignments.forEach(assignment => {
+                 const dateStr = assignment.date;
+                 const dayBookings = prevWeekBookingsByDate[dateStr] || [];
+                 let dayRevenue = 0;
+                 let birthdayRevenue = 0;
+                 let hostessRevenue = 0;
+                 let otherServicesRevenue = 0;
+
+                 // Расчет выручки дня
+                 dayBookings.forEach(booking => {
                         let bookingTotalAmount = 0;
-                        
-                        // Рассчитываем сумму до скидки
-                        if (booking.selectedServices && Array.isArray(booking.selectedServices) && 
-                            booking.selectedServices.includes('birthday')) {
-                            // Накопительный расчет для ДР
+                     const duration = parseFloat(booking.duration) || 0;
+                     const isBirthdayService = 
+                         (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                          booking.selectedServices.includes('birthday')) || 
+                         booking.serviceType === 'birthday';
+
+                     if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+                         booking.selectedServices.forEach(service => {
+                             if (service === 'birthday') {
                             const fullHours = Math.floor(duration);
                             const hasHalfHour = duration % 1 !== 0;
                             let birthdayTotal = 0;
@@ -3949,58 +5215,108 @@
                                 else if (fullHours === 1) { birthdayTotal += 2000; }
                                 else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
                             }
-                            bookingTotalAmount = birthdayTotal;
-                        } else if (booking.serviceType === 'birthday') {
-                            // Обратная совместимость
+                                 bookingTotalAmount += birthdayTotal;
+                             } else if (service === 'hostess') {
+                                 bookingTotalAmount += servicePrices.hostess;
+                                 hostessRevenue += servicePrices.hostess;
+                             } else {
+                                 const price = servicePrices[service] || 0;
+                                 bookingTotalAmount += price * duration;
+                             }
+                         });
+                     } else if (booking.serviceType) {
+                         if (booking.serviceType === 'birthday') {
                             const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
                             bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+                         } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+                             bookingTotalAmount = servicePriceHalfHour[booking.serviceType] || 0;
+                         } else {
+                             const pricePerHour = servicePrices[booking.serviceType] || 0;
+                             bookingTotalAmount = pricePerHour * duration;
+                         }
                         }
                         
-                        // Применяем скидку
+                     // Применяем скидки
                         const discountPercent = booking.discountPercent || 0;
                         const discountAmount = booking.discountAmount || 0;
                         let finalBookingAmount = bookingTotalAmount;
-                        
                         if (discountPercent > 0) {
                             finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
                         } else if (discountAmount > 0) {
                             finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
                         }
                         
+                     dayRevenue += finalBookingAmount;
+                     if (isBirthdayService) {
                         birthdayRevenue += finalBookingAmount;
-                    }
-                });
+                     } else {
+                         otherServicesRevenue += finalBookingAmount;
+                     }
+                 });
                 
-                // Округляем часы до целого числа
-                actualHelperHours = Math.round(actualHelperHours);
-                
-                // Используем фактические часы вместо указанных вручную
-                if (actualHelperHours > 0) {
-                    const basePay = actualHelperHours * 150;
-                    const bonusPercent = 0.07;
-                    const bonus = birthdayRevenue * bonusPercent; // Считаем бонус только от выручки за ДР
-                    weeklyPayrollData[assignment.helperAdminId].total += basePay + bonus;
-                    
-                    // Добавляем информацию о фактических часах если они отличаются от назначенных
-                    const assignedHours = parseInt(assignment.helperHours) || 0;
-                    if (assignedHours !== actualHelperHours && !weeklyPayrollData[assignment.helperAdminId].warnings) {
-                        weeklyPayrollData[assignment.helperAdminId].warnings = [];
-                    }
-                    if (assignedHours !== actualHelperHours) {
-                        weeklyPayrollData[assignment.helperAdminId].warnings.push(
-                            `${dateStr}: Назначено ${assignedHours} ч, фактически ${actualHelperHours} ч по записям ДР`
-                        );
-                    }
-                }
+                 // Начисление основному администратору за прошлую неделю
+                 if (assignment.mainAdminId && weeklyPayrollData[assignment.mainAdminId]) {
+                     const basePay = 500;
+                     const bonusPercent = assignment.helperAdminId ? 0.08 : 0.15;
+                     let bonus;
+                     
+                     if (birthdayRevenue > 0) {
+                         const birthdayBonusRevenue = birthdayRevenue - hostessRevenue;
+                         bonus = (birthdayBonusRevenue + otherServicesRevenue) * bonusPercent;
+                     } else {
+                         bonus = dayRevenue * bonusPercent;
+                     }
+                     
+                     weeklyPayrollData[assignment.mainAdminId].previousWeekTotal += basePay + bonus;
+                 }
+
+                 // Начисление помощнику за прошлую неделю
+                 if (assignment.helperAdminId && weeklyPayrollData[assignment.helperAdminId] && assignment.helperHours) {
+                     let actualHelperHours = 0;
+                     dayBookings.forEach(booking => {
+                         const isBirthdayService = 
+                             (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                              booking.selectedServices.includes('birthday')) || 
+                             booking.serviceType === 'birthday';
+                         
+                         if (isBirthdayService) {
+                             const duration = parseFloat(booking.duration) || 0;
+                             actualHelperHours += duration;
+                         }
+                     });
+                     
+                     actualHelperHours = Math.round(actualHelperHours);
+                     const hours = actualHelperHours > 0 ? actualHelperHours : parseInt(assignment.helperHours);
+                     const basePay = hours * 150;
+                     const bonusPercent = 0.07;
+                     const bonusRevenue = birthdayRevenue - hostessRevenue;
+                     const bonus = bonusRevenue * bonusPercent;
+                     weeklyPayrollData[assignment.helperAdminId].previousWeekTotal += basePay + bonus;
             }
          });
+         }
 
-        renderWeeklyPayroll(weeklyPayrollData, previousWeek);
+        renderWeeklyPayroll(weeklyPayrollData, currentWeek);
     }
 
 
-    // === Отображение Зарплаты за Прошлую Неделю ===
+    // Функция для получения даты следующего понедельника
+    function getNextMonday(date) {
+        const nextMonday = new Date(date);
+        nextMonday.setDate(nextMonday.getDate() + (8 - nextMonday.getDay()) % 7);
+        return nextMonday;
+    }
+
+    // === Отображение Зарплаты за Текущую Неделю ===
     function renderWeeklyPayroll(payrollData, weekRange) {
+        console.log('renderWeeklyPayroll called with data:', payrollData);
+        console.log('weekRange:', weekRange);
+        
+        const today = new Date();
+        const isMonday = today.getDay() === 1;
+        const todayPayrollBlock = document.getElementById('todayPayrollBlock');
+        const todayPayrollResults = document.getElementById('todayPayrollResults');
+        const todayPayrollPeriod = document.getElementById('todayPayrollPeriod');
         weeklyPayrollResultsEl.innerHTML = ''; // Очистка
 
         if (!weekRange) {
@@ -4009,9 +5325,68 @@
         return;
       }
 
-        const options = { day: '2-digit', month: 'short' };
-        weeklyPayrollPeriodEl.textContent = `(с ${weekRange.start.toLocaleDateString('ru-RU', options)} по ${weekRange.end.toLocaleDateString('ru-RU', options)})`;
+        const nextMonday = getNextMonday(weekRange.end);
+        const dateOptions = { 
+            day: '2-digit', 
+            month: 'long'
+        };
+        const weekOptions = { 
+            day: '2-digit', 
+            month: 'short' 
+        };
 
+        // Обновляем заголовок с датой следующего понедельника
+        const weeklyPayrollTitleEl = document.getElementById('weeklyPayrollTitle');
+        weeklyPayrollTitleEl.textContent = `К выплате в следующий понедельник, ${nextMonday.toLocaleDateString('ru-RU', dateOptions)} (за текущую неделю):`;
+
+        // Обновляем период
+        weeklyPayrollPeriodEl.textContent = `(с ${weekRange.start.toLocaleDateString('ru-RU', weekOptions)} по ${weekRange.end.toLocaleDateString('ru-RU', weekOptions)})`;
+
+        // Если сегодня понедельник, показываем блок с выплатами за прошлую неделю
+        if (isMonday) {
+            const previousWeek = {
+                start: new Date(weekRange.start),
+                end: new Date(weekRange.start)
+            };
+            previousWeek.start.setDate(previousWeek.start.getDate() - 7);
+            previousWeek.end.setDate(previousWeek.end.getDate() - 1);
+
+            // Показываем блок с выплатами за прошлую неделю
+            todayPayrollBlock.classList.remove('hidden');
+            todayPayrollPeriod.textContent = `(с ${previousWeek.start.toLocaleDateString('ru-RU', weekOptions)} по ${previousWeek.end.toLocaleDateString('ru-RU', weekOptions)})`;
+            
+            // Очищаем и заполняем результаты за прошлую неделю
+            todayPayrollResults.innerHTML = '';
+            let hasTodayData = false;
+
+            // Используем данные из payrollData для отображения выплат за прошлую неделю
+            admins.forEach(admin => {
+                const data = payrollData[admin.id];
+                if (!data || data.previousWeekTotal <= 0) return;
+
+                hasTodayData = true;
+                const adminBlock = document.createElement('div');
+                adminBlock.className = 'mb-4';
+                
+                // Заголовок с именем админа и общей суммой за неделю
+                adminBlock.innerHTML = `
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="font-medium">${admin.name}:</span>
+                        <span class="font-semibold text-green-800">${data.previousWeekTotal.toLocaleString('ru-RU')} ₽</span>
+                    </div>
+                `;
+                
+                todayPayrollResults.appendChild(adminBlock);
+            });
+
+            if (!hasTodayData) {
+                todayPayrollResults.innerHTML = '<p class="italic text-green-600">Нет выплат за прошлую неделю</p>';
+            }
+        } else {
+            todayPayrollBlock.classList.add('hidden');
+        }
+
+        // Отображаем прогноз на следующую неделю
         let hasData = false;
         admins.forEach(admin => {
             const data = payrollData[admin.id];
@@ -4028,7 +5403,7 @@
         });
 
         if (!hasData) {
-            weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет начислений за прошлую неделю.</p>';
+            weeklyPayrollResultsEl.innerHTML = '<p class="italic text-yellow-600">Нет начислений за текущую неделю.</p>';
         }
     }
 
@@ -4166,7 +5541,7 @@
                     const editBtn = document.createElement('button');
                     editBtn.type = 'button';
                     editBtn.className = 'text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded p-1';
-                    editBtn.innerHTML = '<i class="fas fa-edit fa-fw mr-1"></i> Редакт.';
+                    editBtn.innerHTML = '<i class="fa-solid fa-edit fa-fw mr-1"></i> Редакт.';
                     editBtn.addEventListener('click', (e) => {
                         e.stopPropagation();
                         dayDetailsModal.classList.add('hidden'); // Закрываем текущее окно
@@ -4176,7 +5551,7 @@
                     const deleteBtn = document.createElement('button');
                     deleteBtn.type = 'button';
                     deleteBtn.className = 'text-red-600 hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 rounded p-1';
-                    deleteBtn.innerHTML = '<i class="fas fa-trash-alt fa-fw mr-1"></i> Удалить';
+                    deleteBtn.innerHTML = '<i class="fa-solid fa-trash-alt fa-fw mr-1"></i> Удалить';
                     deleteBtn.addEventListener('click', (e) => {
                         e.stopPropagation();
                         if (confirm(`Вы уверены, что хотите удалить запись для "${b.clientName}"?`)) {
@@ -4200,32 +5575,40 @@
 
     // === Логика Модального Окна Деталей Администраторов ===
     function showAdminDayDetailsModal(date, dateStr, assignment) {
-      const adminDayDetailsModal = document.getElementById('adminDayDetailsModal');
-      const adminDayDetailsTitle = document.getElementById('adminDayDetailsTitle');
-      const adminDayDetailsContent = document.getElementById('adminDayDetailsContent');
+      const formattedDate = date.toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric', weekday: 'long' });
+      adminDayDetailsTitle.textContent = `Информация о смене на ${formattedDate}`;
+      adminDayDetailsContent.innerHTML = ''; // Очищаем содержимое
 
-      // Форматируем дату для заголовка
-      adminDayDetailsTitle.textContent = `Информация о смене на ${date.toLocaleDateString('ru-RU', {
-        day: '2-digit',
-        month: 'long',
-        year: 'numeric',
-        weekday: 'long'
-      })}`;
+      // Получаем информацию об администраторах
+      const mainAdmin = assignment.mainAdminId ? admins.find(a => a.id === assignment.mainAdminId) : null;
+      const helperAdmin = assignment.helperAdminId ? admins.find(a => a.id === assignment.helperAdminId) : null;
 
-      // Получаем все бронирования на этот день
-      const dayBookings = bookings.filter(b => b.bookingDate === dateStr);
+      // Получаем бронирования на этот день для расчета зарплаты
+      const dayBookings = bookings.filter(b => b.bookingDate === dateStr)
+                                .sort((a, b) => a.startTime.localeCompare(b.startTime));
 
-      // Рассчитываем выручку за день, отдельно для ДР и общую
-      let totalDayRevenue = 0;
+      // Рассчитываем выручку дня
+      let dayRevenue = 0;
       let birthdayRevenue = 0;
       let hostessRevenue = 0;
-      let hasHostess = false;
+      let otherServicesRevenue = 0;
 
       dayBookings.forEach(booking => {
         let bookingTotalAmount = 0;
         const duration = parseFloat(booking.duration) || 0;
-
-        // Расчет суммы бронирования до скидки
+        
+        // Определяем, является ли запись услугой "День рождения"
+        const isBirthdayService = 
+          (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+           booking.selectedServices.includes('birthday')) || 
+          booking.serviceType === 'birthday';
+        
+        // Определяем, есть ли услуга ведущей
+        const hasHostess = 
+          booking.selectedServices && Array.isArray(booking.selectedServices) && 
+          booking.selectedServices.includes('hostess');
+        
+        // Рассчитываем сумму до скидки
         if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
           booking.selectedServices.forEach(service => {
             if (service === 'birthday') {
@@ -4242,145 +5625,395 @@
                 else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
               }
               bookingTotalAmount += birthdayTotal;
-              birthdayRevenue += birthdayTotal;
             } else if (service === 'hostess') {
+              // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
               bookingTotalAmount += servicePrices.hostess;
               hostessRevenue += servicePrices.hostess;
-              hasHostess = true;
             } else {
               const price = servicePrices[service] || 0;
               bookingTotalAmount += price * duration;
             }
           });
-        } else if (booking.serviceType === 'birthday') {
-          const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
-          bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
-          birthdayRevenue += bookingTotalAmount;
+        } else if (booking.serviceType) {
+          if (booking.serviceType === 'birthday') {
+            const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+            bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+          } else if (duration === 0.5 && servicePriceHalfHour[booking.serviceType]) {
+            bookingTotalAmount = servicePriceHalfHour[booking.serviceType] || 0;
+          } else {
+            const pricePerHour = servicePrices[booking.serviceType] || 0;
+            bookingTotalAmount = pricePerHour * duration;
+          }
         }
-
-        // Применяем скидки
+        
+        // Применяем скидку
         const discountPercent = booking.discountPercent || 0;
         const discountAmount = booking.discountAmount || 0;
         let finalBookingAmount = bookingTotalAmount;
-
+        
         if (discountPercent > 0) {
           finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
         } else if (discountAmount > 0) {
           finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
         }
-
-        totalDayRevenue += finalBookingAmount;
+        
+        // Добавляем в общую выручку
+        dayRevenue += finalBookingAmount;
+        
+        // Распределяем выручку по категориям
+        if (isBirthdayService) {
+          birthdayRevenue += finalBookingAmount;
+        } else {
+          otherServicesRevenue += finalBookingAmount;
+        }
       });
 
-      // Находим администраторов
-      const mainAdmin = admins.find(a => a.id === assignment.mainAdminId);
-      const helperAdmin = assignment.helperAdminId ? admins.find(a => a.id === assignment.helperAdminId) : null;
-
-      // Рассчитываем зарплату
-      const basePay = 500; // Фиксированная ставка за смену
-      let mainAdminBonus = 0;
-      let helperAdminBonus = 0;
-      let helperAdminHourlyPay = 0;
-
-      // Если есть День Рождения и ведущая
-      if (birthdayRevenue > 0 && hasHostess) {
-        // Для основного админа
-        const bonusPercent = helperAdmin ? 0.08 : 0.15;
-        mainAdminBonus = (birthdayRevenue - hostessRevenue) * bonusPercent;
-
-        // Для помощника
-        if (helperAdmin) {
-          helperAdminBonus = (birthdayRevenue - hostessRevenue) * 0.07;
-          helperAdminHourlyPay = (assignment.helperHours || 0) * 150;
-        }
-      } else {
-        // Стандартный расчет от общей выручки
-        const bonusPercent = helperAdmin ? 0.08 : 0.15;
-        mainAdminBonus = totalDayRevenue * bonusPercent;
-
-        if (helperAdmin) {
-          helperAdminBonus = birthdayRevenue * 0.07;
-          helperAdminHourlyPay = (assignment.helperHours || 0) * 150;
-        }
-      }
-
-      // Формируем HTML для отображения
-      let html = `
-        <div class="space-y-6">
-          <div class="bg-blue-50 p-4 rounded-xl">
-            <h4 class="font-semibold text-blue-900 mb-2">Основной администратор</h4>
-            <div class="space-y-2">
-              <p class="text-blue-800">${mainAdmin.name}</p>
-              <div class="grid grid-cols-2 gap-4 text-sm">
-                <div>
-                  <p class="text-blue-600">Ставка за смену</p>
-                  <p class="font-medium">${basePay.toLocaleString('ru-RU')} ₽</p>
-                </div>
-                <div>
-                  <p class="text-blue-600">Бонус от выручки</p>
-                  <p class="font-medium">${Math.round(mainAdminBonus).toLocaleString('ru-RU')} ₽</p>
-                </div>
+      // Создаем карточку информации об администраторах
+      const adminInfoCard = document.createElement('div');
+      adminInfoCard.className = 'bg-white rounded-xl p-5 border border-gray-200 shadow-sm';
+      
+      let adminInfoHTML = '<div class="space-y-4">';
+      
+      // Основной администратор
+      if (mainAdmin) {
+        adminInfoHTML += `
+          <div>
+            <h4 class="font-semibold text-lg text-blue-800 mb-2">👑 Основной администратор</h4>
+            <p class="text-lg font-medium">${mainAdmin.name}</p>
+            <div class="mt-2 space-y-1">
+              <div class="flex justify-between">
+                <span>Фиксированная ставка:</span>
+                <span class="font-medium">500 ₽</span>
               </div>
-              <div class="mt-2 pt-2 border-t border-blue-100">
-                <p class="text-blue-600">Итого за смену</p>
-                <p class="text-lg font-semibold">${Math.round(basePay + mainAdminBonus).toLocaleString('ru-RU')} ₽</p>
+        `;
+        
+        // Расчет бонуса основного администратора
+        const bonusPercent = helperAdmin ? 8 : 15;
+        let bonusRevenue;
+        let bonusDescription;
+        
+        if (birthdayRevenue > 0) {
+          // Если был День Рождения, считаем бонус от (выручки ДР минус ведущая) + выручка от других услуг
+          const birthdayBonusRevenue = birthdayRevenue - hostessRevenue;
+          const bonus = ((birthdayBonusRevenue + otherServicesRevenue) * bonusPercent / 100).toFixed(0);
+          const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
+          
+          adminInfoHTML += `
+              <div class="flex justify-between">
+                <span>Бонус (${bonusPercent}% от общей выручки):</span>
+                <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Выручка за ДР:</span>
+                <span>${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              ${hostessRevenue > 0 ? `
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Стоимость ведущей:</span>
+                <span>-${hostessRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              ` : ''}
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Выручка от других услуг:</span>
+                <span>${otherServicesRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Выручка для расчета бонуса:</span>
+                <span>${(birthdayBonusRevenue + otherServicesRevenue).toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
+                <span class="font-medium">Итого за день:</span>
+                <span class="font-semibold text-blue-700">${parseInt(totalSalary).toLocaleString('ru-RU')} ₽</span>
               </div>
             </div>
           </div>
-      `;
-
-      if (helperAdmin) {
-        html += `
-          <div class="bg-indigo-50 p-4 rounded-xl">
-            <h4 class="font-semibold text-indigo-900 mb-2">Помощник администратора</h4>
-            <div class="space-y-2">
-              <p class="text-indigo-800">${helperAdmin.name}</p>
-              <div class="grid grid-cols-2 gap-4 text-sm">
-                <div>
-                  <p class="text-indigo-600">Почасовая оплата (${assignment.helperHours || 0} ч)</p>
-                  <p class="font-medium">${helperAdminHourlyPay.toLocaleString('ru-RU')} ₽</p>
-                </div>
-                <div>
-                  <p class="text-indigo-600">Бонус от выручки ДР</p>
-                  <p class="font-medium">${Math.round(helperAdminBonus).toLocaleString('ru-RU')} ₽</p>
-                </div>
+          `;
+        } else {
+          // Если не было Дня Рождения, считаем бонус от всей выручки за день
+        const bonus = (dayRevenue * bonusPercent / 100).toFixed(0);
+        const totalSalary = (500 + parseFloat(bonus)).toFixed(0);
+        
+        adminInfoHTML += `
+              <div class="flex justify-between">
+                <span>Бонус (${bonusPercent}% от выручки):</span>
+                <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
               </div>
-              <div class="mt-2 pt-2 border-t border-indigo-100">
-                <p class="text-indigo-600">Итого за смену</p>
-                <p class="text-lg font-semibold">${Math.round(helperAdminHourlyPay + helperAdminBonus).toLocaleString('ru-RU')} ₽</p>
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Общая выручка за день:</span>
+                <span>${dayRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
+                <span class="font-medium">Итого за день:</span>
+                <span class="font-semibold text-blue-700">${parseInt(totalSalary).toLocaleString('ru-RU')} ₽</span>
+              </div>
+            </div>
+          </div>
+        `;
+        }
+      } else {
+        adminInfoHTML += `
+          <div>
+            <h4 class="font-semibold text-lg text-red-500 mb-2">❗ Основной администратор не назначен</h4>
+          </div>
+        `;
+      }
+      
+      // Помощник
+      if (helperAdmin && assignment.helperHours) {
+        // Рассчитываем фактические часы помощника по записям Аренды ДР
+        let actualHelperHours = 0;
+        dayBookings.forEach(booking => {
+          const isBirthdayService = 
+            (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+             booking.selectedServices.includes('birthday')) || 
+            booking.serviceType === 'birthday';
+          
+          if (isBirthdayService) {
+            const duration = parseFloat(booking.duration) || 0;
+            actualHelperHours += duration;
+          }
+        });
+        actualHelperHours = Math.round(actualHelperHours);
+        
+        const assignedHours = parseInt(assignment.helperHours) || 0;
+        // Используем фактические часы для расчета зарплаты
+        const hours = actualHelperHours > 0 ? actualHelperHours : assignedHours;
+        const basePay = hours * 150;
+        const bonusPercent = 7;
+        // Вычитаем стоимость ведущей из выручки ДР при расчете бонуса
+        const bonusRevenue = birthdayRevenue - hostessRevenue;
+        const bonus = (bonusRevenue * bonusPercent / 100).toFixed(0);
+        const totalHelperSalary = (basePay + parseFloat(bonus)).toFixed(0);
+        
+        let hoursWarning = '';
+        if (actualHelperHours > 0 && actualHelperHours !== assignedHours) {
+          hoursWarning = `<div class="text-xs p-1 bg-yellow-100 rounded text-yellow-800 mt-1 mb-2">
+            Внимание: назначено ${assignedHours} ч, фактически ${actualHelperHours} ч по записям ДР
+          </div>`;
+        }
+        
+        adminInfoHTML += `
+          <div class="border-t border-gray-200 pt-4 mt-2">
+            <h4 class="font-semibold text-lg text-indigo-800 mb-2">🛠️ Помощник администратора</h4>
+            <p class="text-lg font-medium">${helperAdmin.name} (${hours} ч)</p>
+            ${hoursWarning}
+            <div class="mt-2 space-y-1">
+              <div class="flex justify-between">
+                <span>Почасовая оплата (150 ₽/ч):</span>
+                <span class="font-medium">${basePay.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Бонус (7% от выручки ДР минус ведущая):</span>
+                <span class="font-medium">${parseInt(bonus).toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Выручка за ДР:</span>
+                <span>${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              ${hostessRevenue > 0 ? `
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Стоимость ведущей:</span>
+                <span>-${hostessRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              <div class="flex justify-between text-xs text-gray-600">
+                <span>Выручка для расчета бонуса:</span>
+                <span>${bonusRevenue.toLocaleString('ru-RU')} ₽</span>
+              </div>
+              ` : ''}
+              <div class="flex justify-between border-t border-gray-200 pt-1 mt-1">
+                <span class="font-medium">Итого за день:</span>
+                <span class="font-semibold text-indigo-700">${totalHelperSalary.toLocaleString('ru-RU')} ₽</span>
               </div>
             </div>
           </div>
         `;
       }
-
-      // Добавляем информацию о выручке
-      html += `
-        <div class="bg-green-50 p-4 rounded-xl">
-          <h4 class="font-semibold text-green-900 mb-2">Выручка за день</h4>
-          <div class="space-y-2">
-            <div class="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <p class="text-green-600">Выручка за ДР</p>
-                <p class="font-medium">${birthdayRevenue.toLocaleString('ru-RU')} ₽</p>
+      
+      adminInfoHTML += '</div>';
+      adminInfoCard.innerHTML = adminInfoHTML;
+      
+      // Создаем карточку информации о записях
+      const bookingsCard = document.createElement('div');
+      bookingsCard.className = 'bg-white rounded-xl p-5 border border-gray-200 shadow-sm mt-4';
+      
+      let bookingsHTML = '<h4 class="font-semibold text-lg text-gray-800 mb-3">Записи на этот день</h4>';
+      
+      if (dayBookings.length > 0) {
+        bookingsHTML += '<div class="space-y-3">';
+        
+        dayBookings.forEach(booking => {
+          const services = booking.selectedServices && Array.isArray(booking.selectedServices) && booking.selectedServices.length > 0 
+            ? booking.selectedServices.map(s => getServiceLabel(s)).join(', ') 
+            : getServiceLabel(booking.serviceType);
+            
+          const discountPercent = booking.discountPercent || 0;
+          const discountAmount = booking.discountAmount || 0;
+          let finalAmount = 0;
+          
+          // Рассчитываем итоговую сумму бронирования
+          if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+            const duration = parseFloat(booking.duration) || 0;
+            let total = 0;
+            
+            booking.selectedServices.forEach(service => {
+              if (service === 'birthday') {
+                const fullHours = Math.floor(duration);
+                const hasHalfHour = duration % 1 !== 0;
+                let birthdayTotal = 0;
+                for (let hour = 1; hour <= fullHours; hour++) {
+                  const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                  birthdayTotal += hourPrice;
+                }
+                if (hasHalfHour) {
+                  if (fullHours === 0) { birthdayTotal += 2000; }
+                  else if (fullHours === 1) { birthdayTotal += 2000; }
+                  else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                }
+                total += birthdayTotal;
+              } else if (service === 'hostess') {
+                // Фиксированная стоимость услуги "Ведущая" не зависит от длительности
+                total += servicePrices.hostess;
+              } else {
+                const price = servicePrices[service] || 0;
+                total += price * duration;
+              }
+            });
+            
+            if (discountPercent > 0) {
+              finalAmount = total * (1 - discountPercent / 100);
+            } else if (discountAmount > 0) {
+              finalAmount = Math.max(0, total - discountAmount);
+            } else {
+              finalAmount = total;
+            }
+          }
+          
+          const isBirthdayService = 
+            (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+             booking.selectedServices.includes('birthday')) || 
+            booking.serviceType === 'birthday';
+            
+          // Создаем HTML для записи
+          bookingsHTML += `
+            <div class="p-3 ${isBirthdayService ? 'bg-pink-50 border-pink-200' : 'bg-gray-50 border-gray-200'} border rounded-lg">
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">${booking.clientName}</span>
+                <span>${booking.startTime} (${booking.duration}ч)</span>
               </div>
-              <div>
-                <p class="text-green-600">Общая выручка</p>
-                <p class="font-medium">${totalDayRevenue.toLocaleString('ru-RU')} ₽</p>
+              <div class="text-sm text-gray-700">
+                <div>Услуги: ${services}</div>
+                <div>Сумма: ${finalAmount.toLocaleString('ru-RU')} ₽</div>
               </div>
             </div>
-            ${hasHostess ? `
-              <div class="mt-2 pt-2 border-t border-green-100">
-                <p class="text-green-600">Стоимость услуги "Ведущая"</p>
-                <p class="font-medium">${hostessRevenue.toLocaleString('ru-RU')} ₽</p>
-              </div>
-            ` : ''}
+          `;
+        });
+        
+        bookingsHTML += '</div>';
+      } else {
+        bookingsHTML += '<p class="text-gray-500 italic">Нет записей на этот день</p>';
+      }
+      
+      bookingsCard.innerHTML = bookingsHTML;
+      
+      // Создаем карточку финансовой информации
+      const financeCard = document.createElement('div');
+      financeCard.className = 'bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-5 border border-green-200 shadow-sm mt-4';
+      
+      // Рассчитываем фактические часы помощника для финансовой сводки
+      let actualHelperHours = 0;
+      if (helperAdmin) {
+        dayBookings.forEach(booking => {
+          const isBirthdayService = 
+            (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+            booking.selectedServices.includes('birthday')) || 
+            booking.serviceType === 'birthday';
+          
+          if (isBirthdayService) {
+            actualHelperHours += parseFloat(booking.duration) || 0;
+          }
+        });
+        actualHelperHours = Math.round(actualHelperHours);
+      }
+      
+      const financeHTML = `
+        <h4 class="font-semibold text-lg text-green-800 mb-3">Финансовая сводка</h4>
+        <div class="space-y-2">
+          <div class="flex justify-between">
+            <span>Общая выручка за день:</span>
+            <span class="font-semibold text-green-700">${dayRevenue.toLocaleString('ru-RU')} ₽</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Выручка за "Аренду ДР":</span>
+            <span class="font-semibold text-green-700">${birthdayRevenue.toLocaleString('ru-RU')} ₽</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Кол-во записей:</span>
+            <span class="font-semibold">${dayBookings.length}</span>
+          </div>
+          <div class="flex justify-between border-t border-green-200 pt-2 mt-1">
+            <span class="font-medium">Всего заработная плата:</span>
+            <span class="font-bold text-green-800 text-lg">
+              ${(
+                // Зарплата основного: ставка + бонус
+                (mainAdmin ? 500 + (
+                  // Если есть день рождения, считаем от (выручка ДР - ведущая + другие услуги)
+                  // Если нет дня рождения, считаем от общей выручки
+                  (birthdayRevenue > 0 ? 
+                    ((birthdayRevenue - (hostessRevenue || 0) + (otherServicesRevenue || 0)) * (helperAdmin ? 0.08 : 0.15)) :
+                    (dayRevenue * (helperAdmin ? 0.08 : 0.15))
+                  )
+                ) : 0) + 
+                // Зарплата помощника: почасовая + бонус от ДР
+                (helperAdmin && actualHelperHours > 0 ? 
+                  (actualHelperHours * 150) + ((birthdayRevenue - (hostessRevenue || 0)) * 0.07) : 0)
+              ).toFixed(0).toLocaleString('ru-RU')} ₽
+            </span>
           </div>
         </div>
       `;
-
-      adminDayDetailsContent.innerHTML = html;
+      
+      financeCard.innerHTML = financeHTML;
+      
+      // Добавляем кнопки редактирования и создания записей
+      const actionButtons = document.createElement('div');
+      actionButtons.className = 'flex space-x-4 mt-5';
+      
+      // Кнопка редактирования назначения
+      const editAssignmentBtn = document.createElement('button');
+      editAssignmentBtn.type = 'button';
+      editAssignmentBtn.className = 'flex-1 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-blue-300 focus:outline-none';
+      editAssignmentBtn.innerHTML = '<i class="fa-solid fa-edit mr-2"></i> Редактировать назначение';
+      editAssignmentBtn.addEventListener('click', () => {
+        adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
+        openAssignModal(date, dateStr); // Открываем окно назначения
+      });
+      
+      // Кнопка добавления записи
+      const addBookingBtn = document.createElement('button');
+      addBookingBtn.type = 'button';
+      addBookingBtn.className = 'flex-1 bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-3 rounded-xl font-medium transition focus:ring-2 focus:ring-green-300 focus:outline-none';
+      addBookingBtn.innerHTML = '<i class="fa-solid fa-plus mr-2"></i> Добавить запись';
+      addBookingBtn.addEventListener('click', () => {
+        adminDayDetailsModal.classList.add('hidden'); // Закрываем окно деталей
+        openBookingModal(date); // Открываем окно добавления записи
+      });
+      
+      actionButtons.appendChild(editAssignmentBtn);
+      actionButtons.appendChild(addBookingBtn);
+      
+      // Добавляем все элементы в модальное окно
+      adminDayDetailsContent.appendChild(adminInfoCard);
+      adminDayDetailsContent.appendChild(bookingsCard);
+      adminDayDetailsContent.appendChild(financeCard);
+      adminDayDetailsContent.appendChild(actionButtons);
+      
+      // Показываем модальное окно
       adminDayDetailsModal.classList.remove('hidden');
+      
+      // Добавляем обработчик для кнопки закрытия непосредственно в этой функции
+      document.getElementById('closeAdminDayDetailsModal').onclick = function() {
+        adminDayDetailsModal.classList.add('hidden');
+      };
     }
 
     // === Логика Модального Окна Назначения Админа ===
@@ -4479,6 +6112,413 @@
         });
     });
 
+    
+    // === Учёт расходов (только для админов) ===
+let expenses = [];
+// Используем глобальную переменную unsubscribeExpenses, объявленную выше
+
+function showExpensesSection() {
+  try {
+    const sections = document.querySelectorAll('section');
+    const expensesSection = document.getElementById('expensesSection');
+    
+    if (!expensesSection) {
+      console.error('Секция расходов не найдена');
+      return;
+    }
+    
+    sections.forEach(section => section.classList.add('hidden'));
+    expensesSection.classList.remove('hidden');
+    setupExpensesListener(); // Вместо loadExpenses вызываем setupExpensesListener
+  } catch (error) {
+    console.error('Ошибка при отображении секции расходов:', error);
+  }
+}
+
+// Нормализация значения даты из Firestore/формы в объект Date
+function normalizeToDate(value) {
+  if (!value) return new Date(NaN);
+  if (value instanceof Date) return value;
+  // Firestore Timestamp имеет метод toDate()
+  if (typeof value.toDate === 'function') return value.toDate();
+  // ISO-строка или миллисекунды
+  return new Date(value);
+}
+
+// Функция для настройки слушателя изменений расходов
+function setupExpensesListener() {
+  try {
+    // Отписываемся от предыдущего слушателя, если он есть
+    if (unsubscribeExpenses) {
+      unsubscribeExpenses();
+      unsubscribeExpenses = null;
+    }
+
+    const expensesCollection = collection(db, 'expenses');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const monthFilter = document.getElementById('monthFilter');
+    
+    // Фильтрация по месяцу (по полю date)
+    let startOfMonth = null, endOfMonth = null;
+    if (monthFilter && monthFilter.value) {
+      const [y, m] = monthFilter.value.split('-').map(Number);
+      startOfMonth = new Date(y, m - 1, 1);
+      endOfMonth = new Date(y, m, 1);
+    } else {
+      const now = new Date();
+      startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+      endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+      if (monthFilter) {
+        monthFilter.value = `${startOfMonth.getFullYear()}-${String(startOfMonth.getMonth()+1).padStart(2,'0')}`;
+      }
+    }
+
+    // Базовый запрос: по диапазону дат текущего/выбранного месяца и сортировка по date
+    // Важно: все документы должны иметь одинаковый тип поля date (вы уже привели к Timestamp)
+    let q = query(
+      expensesCollection,
+      where('date', '>=', startOfMonth),
+      where('date', '<', endOfMonth),
+      orderBy('date', 'desc')
+    );
+
+    if (categoryFilter && categoryFilter.value) {
+      q = query(
+        expensesCollection,
+        where('category', '==', categoryFilter.value),
+        where('date', '>=', startOfMonth),
+        where('date', '<', endOfMonth),
+        orderBy('date', 'desc')
+      );
+    }
+    
+    // Устанавливаем слушатель
+    unsubscribeExpenses = onSnapshot(q, (snapshot) => {
+      expenses = snapshot.docs.map(doc => ({ 
+        id: doc.id, 
+        ...doc.data(),
+        date: normalizeToDate(doc.data().date)
+      }));
+      // Данные уже отсортированы сервером, но держим безопасно
+      expenses.sort((a, b) => (b.date?.getTime?.() || 0) - (a.date?.getTime?.() || 0));
+      
+      renderExpenses();
+      updateStatistics();
+    }, (error) => {
+      console.error('Ошибка при получении данных расходов:', error);
+    });
+  } catch (error) {
+    console.error('Ошибка при настройке слушателя расходов:', error);
+  }
+}
+
+// Инициализация обработчиков событий для расходов
+function initExpensesHandlers() {
+  const categoryFilter = document.getElementById('categoryFilter');
+  const addExpenseBtn = document.getElementById('addExpenseBtn');
+  const monthFilter = document.getElementById('monthFilter');
+  
+  if (categoryFilter) {
+    categoryFilter.addEventListener('change', setupExpensesListener);
+  }
+  if (monthFilter) {
+    monthFilter.addEventListener('change', setupExpensesListener);
+  }
+  
+  if (addExpenseBtn) {
+    addExpenseBtn.addEventListener('click', () => {
+      const modal = document.getElementById('addExpenseModal');
+      const dateInput = document.querySelector('#addExpenseForm [name="date"]');
+      
+      if (modal && dateInput) {
+        modal.classList.remove('hidden');
+        document.getElementById('addExpenseForm').reset();
+        dateInput.valueAsDate = new Date();
+      }
+    });
+  }
+}
+
+// Инициализация модуля расходов при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+  initExpensesHandlers();
+});
+
+function renderExpenses() {
+  const expensesList = document.getElementById('expensesList');
+  if (!expensesList) return;
+  
+  expensesList.innerHTML = '';
+  
+  const categoryColors = {
+    utilities: 'bg-blue-100 text-blue-800',
+    consumables: 'bg-green-100 text-green-800',
+    equipment: 'bg-purple-100 text-purple-800',
+    food: 'bg-yellow-100 text-yellow-800',
+    other: 'bg-gray-100 text-gray-800'
+  };
+  
+  const categoryNames = {
+    utilities: 'Коммунальные услуги',
+    consumables: 'Расходные материалы',
+    equipment: 'Оборудование',
+    food: 'Продукты',
+    other: 'Прочее'
+  };
+  
+  expenses.forEach(expense => {
+    const card = document.createElement('div');
+    card.className = 'expense-card bg-white border rounded-lg p-4 flex justify-between items-center mb-3 hover:shadow-md transition-shadow';
+    
+    const date = expense.date instanceof Date ? expense.date : new Date(expense.date);
+    
+    card.innerHTML = `
+      <div class="flex-1">
+        <div class="flex items-center mb-2">
+          <span class="category-badge ${categoryColors[expense.category] || 'bg-gray-100 text-gray-800'} px-2 py-1 rounded-full text-sm font-medium">
+            ${categoryNames[expense.category] || expense.category}
+          </span>
+          <span class="text-gray-500 text-sm ml-2">${date.toLocaleDateString('ru-RU')}</span>
+        </div>
+        <p class="text-gray-800">${expense.description}</p>
+      </div>
+      <div class="flex items-center">
+        <span class="text-lg font-semibold mr-4">${expense.amount.toLocaleString('ru-RU')} ₽</span>
+        <button 
+          onclick="deleteExpense('${expense.id}')" 
+          class="text-red-600 hover:text-red-800 transition-colors p-2 rounded-full hover:bg-red-50"
+        >
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+    `;
+    expensesList.appendChild(card);
+  });
+}
+
+function updateStatistics() {
+  try {
+    const monthlyExpensesEl = document.getElementById('monthlyExpenses');
+    const totalExpensesEl = document.getElementById('totalExpenses');
+    const totalsEl = document.getElementById('categoryTotals');
+    
+    if (!monthlyExpensesEl || !totalExpensesEl) return;
+    
+    const monthFilter = document.getElementById('monthFilter');
+    let firstDayOfMonth;
+    if (monthFilter && monthFilter.value) {
+      const [y, m] = monthFilter.value.split('-').map(Number);
+      firstDayOfMonth = new Date(y, m - 1, 1);
+    } else {
+      const now = new Date();
+      firstDayOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+    }
+    
+    const monthlyExpenses = expenses
+      .filter(e => e.date >= firstDayOfMonth)
+      .reduce((sum, e) => sum + e.amount, 0);
+    
+    monthlyExpensesEl.textContent = `${monthlyExpenses.toLocaleString('ru-RU')} ₽`;
+    totalExpensesEl.textContent = expenses.length.toString();
+
+    // Агрегаты по категориям
+    if (totalsEl) {
+      const byCategory = expenses.reduce((acc, e) => {
+        const key = e.category || 'other';
+        acc[key] = (acc[key] || 0) + (Number(e.amount) || 0);
+        return acc;
+      }, {});
+
+      const categoryNames = {
+        utilities: 'Коммунальные услуги',
+        consumables: 'Расходные материалы',
+        equipment: 'Оборудование',
+        food: 'Продукты',
+        other: 'Прочее'
+      };
+
+      const entries = Object.entries(byCategory)
+        .sort((a, b) => b[1] - a[1])
+        .map(([key, sum]) => `<div class="text-sm text-gray-600">${categoryNames[key] || key}: <span class="font-semibold text-gray-900">${sum.toLocaleString('ru-RU')} ₽</span></div>`)
+        .join('');
+      totalsEl.innerHTML = entries || '';
+    }
+  } catch (error) {
+    console.error('Ошибка при обновлении статистики:', error);
+  }
+}
+
+window.deleteExpense = async function(id) {
+  try {
+    if (!id) throw new Error('ID расхода не указан');
+    
+    if (confirm('Вы уверены, что хотите удалить этот расход?')) {
+      await deleteDoc(doc(db, 'expenses', id));
+      // Обновление произойдет через активный onSnapshot
+    }
+  } catch (error) {
+    console.error('Ошибка при удалении расхода:', error);
+    alert('Произошла ошибка при удалении расхода. Пожалуйста, попробуйте позже.');
+  }
+}
+
+// Добавляем пункт меню "Расходы" только для админов после авторизации
+function addExpensesNavLink() {
+  try {
+    const navLinks = document.querySelector('.nav-links');
+    if (!navLinks || document.getElementById('expensesNavLink')) return;
+    
+    const expensesLink = document.createElement('a');
+    expensesLink.href = '#';
+    expensesLink.id = 'expensesNavLink';
+    expensesLink.className = 'nav-link';
+    expensesLink.innerHTML = '<i class="fa-solid fa-receipt mr-2"></i>Расходы';
+    expensesLink.onclick = showExpensesSection;
+    navLinks.appendChild(expensesLink);
+  } catch (error) {
+    console.error('Ошибка при добавлении ссылки на расходы:', error);
+  }
+}
+
+// === Функции навигации ===
+window.showBookingsSection = function() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.querySelector('section:first-of-type').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick*="showBookingsSection"]').classList.add('active');
+  return false;
+}
+
+window.showAdminScheduleSection = function() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('adminScheduleSection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick*="showAdminScheduleSection"]').classList.add('active');
+  return false;
+}
+
+window.showSalarySection = function() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('salarySection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick*="showSalarySection"]').classList.add('active');
+  return false;
+}
+
+window.showExpensesSection = function() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('expensesSection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  const expensesLink = document.getElementById('expensesNavLink');
+  if (expensesLink) {
+    expensesLink.classList.add('active');
+  }
+  // Данные загружаются реактивно через setupExpensesListener/onSnapshot
+  return false;
+}
+
+window.showServicesSection = function() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('servicesSection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick*="showServicesSection"]').classList.add('active');
+  return false;
+}
+
+window.showWidgetsSection = function() {
+  document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+  document.getElementById('widgetsSection').classList.remove('hidden');
+  document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+  document.querySelector('.nav-link[onclick*="showWidgetsSection"]').classList.add('active');
+  initWidgets();
+  return false;
+}
+
+// === Инициализация виджетов ===
+function initWidgets() {
+  // Инициализация виджета ВКонтакте
+  if (typeof VK !== 'undefined' && VK.Widgets) {
+    VK.Widgets.Group("vk_groups", {
+      mode: 4,
+      wide: 1,
+      height: 600,
+      color1: "FFFFFF",
+      color2: "363636",
+      color3: "b457a6"
+    }, 227237589);
+  }
+}
+
+// Управление шапкой при скролле
+let lastScrollTop = 0;
+window.addEventListener('scroll', () => {
+  const header = document.getElementById('mainHeader');
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (window.innerWidth <= 768) { // Только для мобильных устройств
+    if (currentScroll > lastScrollTop && currentScroll > 50) {
+      // Скролл вниз
+      header.classList.add('header-scrolled');
+    } else {
+      // Скролл вверх
+      header.classList.remove('header-scrolled');
+    }
+    lastScrollTop = currentScroll;
+  }
+});
+
+// Обработка авторизации
+onAuthStateChanged(auth, async (user) => {
+  if (user && user.email) {
+    try {
+      isAdmin = true;
+      
+      document.getElementById('logoutBtn').classList.remove('hidden');
+      document.getElementById('loginBtn').classList.add('hidden');
+      
+      const expensesLink = document.getElementById('expensesNavLink');
+      if (expensesLink) {
+        expensesLink.style.display = '';
+        expensesLink.classList.remove('disabled');
+      }
+      
+      document.getElementById('adminScheduleSection').classList.remove('hidden');
+      document.getElementById('salarySection').classList.remove('hidden');
+      document.getElementById('expensesSection').classList.remove('hidden');
+      
+      initExpensesHandlers();
+      setupExpensesListener(); // Устанавливаем слушатель при авторизации
+      
+    } catch (error) {
+      console.error('Ошибка при авторизации:', error);
+    }
+  } else {
+    isAdmin = false;
+    if (unsubscribeExpenses) { // Отписываемся от слушателя при выходе
+      unsubscribeExpenses();
+      unsubscribeExpenses = null;
+    }
+    document.getElementById('logoutBtn').classList.add('hidden');
+    document.getElementById('loginBtn').classList.remove('hidden');
+    
+    // Скрываем ссылку на расходы и секцию расходов
+    const expensesLink = document.getElementById('expensesNavLink');
+    if (expensesLink) {
+      expensesLink.style.display = 'none';
+      expensesLink.classList.add('disabled');
+    }
+    document.getElementById('expensesSection').classList.add('hidden');
+    
+    // Скрываем другие админские секции
+    document.getElementById('adminScheduleSection').classList.add('hidden');
+    document.getElementById('salarySection').classList.add('hidden');
+  }
+});
+
+// Инициализация активного раздела при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+  showBookingsSection();
+});
 
   </script>
 </body>

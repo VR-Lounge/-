@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>VR Lounge - Запись через Telegram</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--tg-theme-bg-color, #ffffff);
+      color: var(--tg-theme-text-color, #000000);
+    }
+    
+    .service-tag {
+      border: 2px solid #e5e7eb;
+      border-radius: 1rem;
+      padding: 0.75rem;
+      background: white;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: left;
+      width: 100%;
+    }
+    
+    .service-tag.selected {
+      border-color: #3b82f6;
+      background: #eff6ff;
+    }
+    
+    .service-tag-line1 {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    
+    .service-tag-price {
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+    
+    input[type="date"]::-webkit-calendar-picker-indicator,
+    input[type="time"]::-webkit-calendar-picker-indicator {
+      opacity: 1;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen bg-gray-50 pb-20">
+    <!-- Заголовок -->
+    <div class="bg-blue-600 text-white p-4 sticky top-0 z-10 shadow-md">
+      <h1 class="text-xl font-bold text-center">📝 Новая запись клиента</h1>
+    </div>
+
+    <!-- Форма бронирования -->
+    <form id="bookingForm" class="p-4 space-y-4 max-w-lg mx-auto">
+      <!-- Имя клиента -->
+      <div>
+        <label for="clientName" class="block text-gray-900 font-semibold mb-2">Имя клиента</label>
+        <input type="text" id="clientName" name="clientName" required 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
+          placeholder="Введите имя клиента" />
+      </div>
+
+      <!-- Номер телефона -->
+      <div>
+        <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
+        <input type="tel" id="clientPhone" name="clientPhone" required 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
+          placeholder="+7 (XXX) XXX-XX-XX" />
+      </div>
+
+      <!-- Дата -->
+      <div>
+        <label for="bookingDate" class="block text-gray-900 font-semibold mb-2">Дата</label>
+        <input type="date" id="bookingDate" name="bookingDate" required 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+      </div>
+
+      <!-- Время начала -->
+      <div>
+        <label for="startTime" class="block text-gray-900 font-semibold mb-2">Время начала</label>
+        <input type="time" id="startTime" name="startTime" required 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+      </div>
+
+      <!-- Длительность -->
+      <div>
+        <label for="duration" class="block text-gray-900 font-semibold mb-2">Длительность (часы)</label>
+        <select id="duration" name="duration" required 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          <option value="0.5">0.5</option>
+          <option value="1" selected>1</option>
+          <option value="1.5">1.5</option>
+          <option value="2">2</option>
+          <option value="2.5">2.5</option>
+          <option value="3">3</option>
+          <option value="3.5">3.5</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
+
+      <!-- Услуги -->
+      <div>
+        <label class="block text-gray-900 font-semibold mb-2">Услуги</label>
+        <div id="servicesContainer" class="space-y-2">
+          <!-- Услуги будут добавлены динамически -->
+        </div>
+      </div>
+
+      <!-- Сумма -->
+      <div>
+        <label class="block text-gray-900 font-semibold mb-2">Сумма</label>
+        <input type="text" id="totalAmount" readonly 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 bg-gray-50" 
+          value="0 ₽">
+      </div>
+
+      <!-- Скидка -->
+      <div>
+        <label class="block text-gray-900 font-semibold mb-2">Скидка</label>
+        <div class="flex items-center space-x-2">
+          <input type="number" id="discountPercent" min="0" max="100" 
+            class="w-1/2 rounded-2xl border border-gray-300 px-4 py-3 text-gray-900" 
+            placeholder="%">
+          <span class="text-gray-500">или</span>
+          <input type="number" id="discountAmount" min="0" 
+            class="w-1/2 rounded-2xl border border-gray-300 px-4 py-3 text-gray-900" 
+            placeholder="₽">
+        </div>
+      </div>
+
+      <!-- Предоплата -->
+      <div class="grid grid-cols-3 gap-2">
+        <div>
+          <label class="block text-gray-900 font-semibold mb-2 text-sm">Предоплата (₽)</label>
+          <input type="number" id="prepayAmount" min="0" 
+            class="w-full rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 text-sm" 
+            placeholder="0">
+        </div>
+        <div>
+          <label class="block text-gray-900 font-semibold mb-2 text-sm">Метод</label>
+          <select id="prepayMethod" 
+            class="w-full rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 text-sm">
+            <option value="cash">Наличные</option>
+            <option value="transfer">Перевод</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-gray-900 font-semibold mb-2 text-sm">Дата</label>
+          <input type="date" id="prepayDate" 
+            class="w-full rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 text-sm">
+        </div>
+      </div>
+
+      <!-- Доплата наличными -->
+      <div>
+        <label class="block text-gray-900 font-semibold mb-2">Доплата наличными (₽)</label>
+        <div class="grid grid-cols-2 gap-2">
+          <input type="number" id="finalPayAmountCash" min="0" 
+            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900" 
+            placeholder="0">
+          <input type="date" id="finalPayDateCash" 
+            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900">
+        </div>
+      </div>
+
+      <!-- Доплата переводом -->
+      <div>
+        <label class="block text-gray-900 font-semibold mb-2">Доплата переводом (₽)</label>
+        <div class="grid grid-cols-2 gap-2">
+          <input type="number" id="finalPayAmountTransfer" min="0" 
+            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900" 
+            placeholder="0">
+          <input type="date" id="finalPayDateTransfer" 
+            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900">
+        </div>
+      </div>
+
+      <!-- Итоговая стоимость -->
+      <div>
+        <label class="block text-gray-900 font-semibold mb-2">Итоговая стоимость</label>
+        <input type="text" id="finalAmount" readonly 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 bg-gray-50 font-semibold" 
+          value="0 ₽">
+      </div>
+
+      <!-- Примечания -->
+      <div>
+        <label for="notes" class="block text-gray-900 font-semibold mb-2">Примечания</label>
+        <textarea id="notes" name="notes" rows="3" 
+          placeholder="Введите дополнительные сведения" 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"></textarea>
+      </div>
+
+      <!-- Кнопка отправки -->
+      <button type="submit" 
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-2xl font-semibold transition shadow-lg">
+        ✅ Сохранить запись
+      </button>
+    </form>
+
+    <!-- Сообщение об успехе/ошибке -->
+    <div id="message" class="fixed top-20 left-4 right-4 bg-green-500 text-white p-4 rounded-2xl shadow-lg hidden z-50">
+      <p id="messageText"></p>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { 
+      getFirestore, collection, addDoc, query, where, getDocs, updateDoc, doc
+    } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+    // Конфигурация Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyBaq_faWwfE_TXn4Xh_2U3GYSAsUzGJ1bk",
+      authDomain: "vr-lounge33.firebaseapp.com",
+      projectId: "vr-lounge33",
+      storageBucket: "vr-lounge33.appspot.com",
+      messagingSenderId: "825655988090",
+      appId: "1:825655988090:web:76d8e0554b8601f8bd10c3"
+    };
+
+    // Инициализация Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Telegram Web App API
+    const tg = window.Telegram.WebApp;
+    tg.ready();
+    tg.expand();
+
+    // Получаем данные пользователя из Telegram
+    const user = tg.initDataUnsafe?.user;
+    const userId = user?.id?.toString();
+    const username = user?.username ? `@${user.username}` : null;
+    const firstName = user?.first_name || '';
+
+    console.log('Telegram User:', user);
+
+    // Цены услуг (синхронизированы с CRM)
+    const servicePrices = {
+      weekday_ps1: 150,
+      weekday_ps2: 300,
+      weekday_vr1: 500,
+      weekday_vr2: 1000,
+      weekday_vr3: 1500,
+      weekday_vr4: 2000,
+      weekend_vr1: 750,
+      weekend_vr2: 1500,
+      weekend_vr3: 2250,
+      weekend_vr4: 3000,
+      xbox_kinnect: 500,
+      xbox1: 250,
+      xbox2: 500,
+      xbox3: 750,
+      xbox4: 1000,
+      karaoke: 1000,
+      board_games: 500,
+      hostess: 2000,
+      birthday: {
+        1: 4000, 2: 3500, 3: 3000, 4: 3000, 5: 3000,
+        6: 3000, 7: 3000, 8: 3000, 9: 3000, 10: 3000,
+        11: 3000, 12: 3000
+      }
+    };
+
+    // Названия услуг
+    const serviceLabels = {
+      weekday_ps1: 'PS5 (1 джойстик)',
+      weekday_ps2: 'PS5 (2 джойстика)',
+      weekday_vr1: 'VR очки (1 шт.) | Будни',
+      weekday_vr2: 'VR очки (2 шт.) | Будни',
+      weekday_vr3: 'VR очки (3 шт.) | Будни',
+      weekday_vr4: 'VR очки (4 шт.) | Будни',
+      weekend_vr1: 'VR очки (1 шт.) | Выходные',
+      weekend_vr2: 'VR очки (2 шт.) | Выходные',
+      weekend_vr3: 'VR очки (3 шт.) | Выходные',
+      weekend_vr4: 'VR очки (4 шт.) | Выходные',
+      xbox_kinnect: 'X-Box Kinnect (до 8 чел.)',
+      xbox1: 'X-Box (1 джойстик)',
+      xbox2: 'X-Box (2 джойстика)',
+      xbox3: 'X-Box (3 джойстика)',
+      xbox4: 'X-Box (4 джойстика)',
+      karaoke: 'Караоке',
+      board_games: 'Настольные игры',
+      hostess: 'Ведущая',
+      birthday: 'Аренда всего (День Рождения)'
+    };
+
+    // Иконки услуг
+    const serviceIcons = {
+      weekday_ps1: 'fa-gamepad',
+      weekday_ps2: 'fa-gamepad',
+      weekday_vr1: 'fa-vr-cardboard',
+      weekday_vr2: 'fa-vr-cardboard',
+      weekday_vr3: 'fa-vr-cardboard',
+      weekday_vr4: 'fa-vr-cardboard',
+      weekend_vr1: 'fa-vr-cardboard',
+      weekend_vr2: 'fa-vr-cardboard',
+      weekend_vr3: 'fa-vr-cardboard',
+      weekend_vr4: 'fa-vr-cardboard',
+      xbox_kinnect: 'fa-child',
+      xbox1: 'fa-gamepad',
+      xbox2: 'fa-gamepad',
+      xbox3: 'fa-gamepad',
+      xbox4: 'fa-gamepad',
+      karaoke: 'fa-microphone',
+      board_games: 'fa-dice-d6',
+      hostess: 'fa-user-tie',
+      birthday: 'fa-birthday-cake'
+    };
+
+    // Цвета иконок
+    const serviceColors = {
+      weekday_ps1: 'text-indigo-600',
+      weekday_ps2: 'text-indigo-600',
+      weekday_vr1: 'text-blue-600',
+      weekday_vr2: 'text-blue-600',
+      weekday_vr3: 'text-blue-600',
+      weekday_vr4: 'text-blue-600',
+      weekend_vr1: 'text-blue-600',
+      weekend_vr2: 'text-blue-600',
+      weekend_vr3: 'text-blue-600',
+      weekend_vr4: 'text-blue-600',
+      xbox_kinnect: 'text-orange-600',
+      xbox1: 'text-green-600',
+      xbox2: 'text-green-600',
+      xbox3: 'text-green-600',
+      xbox4: 'text-green-600',
+      karaoke: 'text-pink-600',
+      board_games: 'text-purple-600',
+      hostess: 'text-pink-600',
+      birthday: 'text-red-600'
+    };
+
+    // Выбранные услуги
+    const selectedServices = new Set();
+
+    // Проверка выходного дня
+    function isWeekend(dateStr) {
+      const date = new Date(dateStr);
+      const day = date.getDay();
+      return day === 0 || day === 6;
+    }
+
+    // Форматирование телефона
+    function formatPhone(phone) {
+      const digits = phone.replace(/\D/g, '');
+      if (digits.startsWith('8')) {
+        return '7' + digits.substring(1);
+      }
+      if (!digits.startsWith('7')) {
+        return '7' + digits;
+      }
+      return digits;
+    }
+
+    // Форматирование телефона для отображения
+    function formatPhoneDisplay(phoneDigits) {
+      if (phoneDigits.length < 11) return phoneDigits;
+      return `+7 (${phoneDigits.substring(1, 4)}) ${phoneDigits.substring(4, 7)}-${phoneDigits.substring(7, 9)}-${phoneDigits.substring(9, 11)}`;
+    }
+
+    // Расчет стоимости
+    function calculateTotal() {
+      const duration = parseFloat(document.getElementById('duration').value) || 0;
+      const bookingDate = document.getElementById('bookingDate').value;
+      const isWeekendDay = isWeekend(bookingDate);
+      
+      let total = 0;
+
+      selectedServices.forEach(service => {
+        if (service === 'birthday') {
+          const fullHours = Math.floor(duration);
+          const hasHalfHour = duration % 1 !== 0;
+          let birthdayTotal = 0;
+          for (let hour = 1; hour <= fullHours; hour++) {
+            const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+            birthdayTotal += hourPrice;
+          }
+          if (hasHalfHour) {
+            if (fullHours === 0) birthdayTotal += 2000;
+            else if (fullHours === 1) birthdayTotal += 2000;
+            else birthdayTotal += (servicePrices.birthday[3] || 3000) / 2;
+          }
+          total += birthdayTotal;
+        } else if (service === 'hostess') {
+          total += servicePrices.hostess;
+        } else {
+          // Проверяем, будний или выходной день для VR услуг
+          let serviceKey = service;
+          if (service.includes('vr') && isWeekendDay && !service.includes('weekend')) {
+            serviceKey = service.replace('weekday', 'weekend');
+          } else if (service.includes('vr') && !isWeekendDay && !service.includes('weekday')) {
+            serviceKey = service.replace('weekend', 'weekday');
+          }
+          const price = servicePrices[serviceKey] || servicePrices[service] || 0;
+          total += price * duration;
+        }
+      });
+
+      // Применяем скидки
+      const discountPercent = parseFloat(document.getElementById('discountPercent').value) || 0;
+      const discountAmount = parseFloat(document.getElementById('discountAmount').value) || 0;
+      
+      if (discountPercent > 0) {
+        total = total * (1 - discountPercent / 100);
+      } else if (discountAmount > 0) {
+        total = Math.max(0, total - discountAmount);
+      }
+
+      return Math.round(total);
+    }
+
+    // Обновление отображения стоимости
+    function updateTotal() {
+      const total = calculateTotal();
+      document.getElementById('totalAmount').value = total.toLocaleString('ru-RU') + ' ₽';
+      
+      const prepayAmount = parseFloat(document.getElementById('prepayAmount').value) || 0;
+      const finalPayCash = parseFloat(document.getElementById('finalPayAmountCash').value) || 0;
+      const finalPayTransfer = parseFloat(document.getElementById('finalPayAmountTransfer').value) || 0;
+      
+      const finalTotal = total - prepayAmount - finalPayCash - finalPayTransfer;
+      document.getElementById('finalAmount').value = finalTotal.toLocaleString('ru-RU') + ' ₽';
+    }
+
+    // Рендеринг услуг
+    function renderServices() {
+      const container = document.getElementById('servicesContainer');
+      const bookingDate = document.getElementById('bookingDate').value;
+      const isWeekendDay = isWeekend(bookingDate);
+
+      // Определяем доступные услуги
+      const availableServices = isWeekendDay
+        ? ['weekend_vr1', 'weekend_vr2', 'weekend_vr3', 'weekend_vr4', 'weekday_ps1', 'weekday_ps2', 'xbox_kinnect', 'xbox1', 'xbox2', 'xbox3', 'xbox4', 'karaoke', 'board_games', 'hostess', 'birthday']
+        : ['weekday_vr1', 'weekday_vr2', 'weekday_vr3', 'weekday_vr4', 'weekday_ps1', 'weekday_ps2', 'xbox_kinnect', 'xbox1', 'xbox2', 'xbox3', 'xbox4', 'karaoke', 'board_games', 'hostess', 'birthday'];
+
+      container.innerHTML = '';
+
+      availableServices.forEach(service => {
+        const isSelected = selectedServices.has(service);
+        const label = serviceLabels[service] || service;
+        const icon = serviceIcons[service] || 'fa-circle';
+        const color = serviceColors[service] || 'text-gray-600';
+        const price = servicePrices[service] || (service === 'birthday' ? 'от 3000' : '0');
+
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = `service-tag ${isSelected ? 'selected' : ''}`;
+        button.dataset.service = service;
+        
+        button.innerHTML = `
+          <div class="service-tag-line1">
+            <i class="fas ${icon} ${color}"></i>
+            <span>${label}</span>
+          </div>
+          <div class="service-tag-price">${service === 'hostess' ? '2000 ₽' : service === 'birthday' ? 'от 3000 ₽/час' : price + ' ₽/час'}</div>
+        `;
+
+        button.addEventListener('click', () => {
+          if (selectedServices.has(service)) {
+            selectedServices.delete(service);
+          } else {
+            selectedServices.add(service);
+          }
+          button.classList.toggle('selected');
+          updateTotal();
+        });
+
+        container.appendChild(button);
+      });
+    }
+
+    // Показ сообщения
+    function showMessage(text, isError = false) {
+      const messageEl = document.getElementById('message');
+      const messageTextEl = document.getElementById('messageText');
+      messageTextEl.textContent = text;
+      messageEl.className = `fixed top-20 left-4 right-4 p-4 rounded-2xl shadow-lg z-50 ${isError ? 'bg-red-500' : 'bg-green-500'} text-white`;
+      messageEl.classList.remove('hidden');
+      
+      setTimeout(() => {
+        messageEl.classList.add('hidden');
+      }, 3000);
+    }
+
+    // Инициализация формы
+    function initForm() {
+      // Устанавливаем дату по умолчанию (сегодня)
+      const today = new Date();
+      const dateStr = today.toISOString().split('T')[0];
+      document.getElementById('bookingDate').value = dateStr;
+
+      // Устанавливаем время по умолчанию (текущее время + 1 час)
+      const nextHour = new Date(today.getTime() + 60 * 60 * 1000);
+      const timeStr = nextHour.toTimeString().slice(0, 5);
+      document.getElementById('startTime').value = timeStr;
+
+      // Если есть данные пользователя из Telegram, заполняем имя
+      if (firstName) {
+        document.getElementById('clientName').value = firstName;
+      }
+
+      // Рендерим услуги
+      renderServices();
+
+      // Слушатели событий
+      document.getElementById('bookingDate').addEventListener('change', () => {
+        renderServices();
+        updateTotal();
+      });
+
+      document.getElementById('duration').addEventListener('change', updateTotal);
+      document.getElementById('discountPercent').addEventListener('input', updateTotal);
+      document.getElementById('discountAmount').addEventListener('input', updateTotal);
+      document.getElementById('prepayAmount').addEventListener('input', updateTotal);
+      document.getElementById('finalPayAmountCash').addEventListener('input', updateTotal);
+      document.getElementById('finalPayAmountTransfer').addEventListener('input', updateTotal);
+
+      // Маска телефона
+      const phoneInput = document.getElementById('clientPhone');
+      phoneInput.value = '+7 (';
+      phoneInput.addEventListener('input', (e) => {
+        let value = e.target.value.replace(/\D/g, '');
+        if (value.startsWith('8')) {
+          value = '7' + value.substring(1);
+        }
+        if (!value.startsWith('7')) {
+          value = '7' + value;
+        }
+        if (value.length > 11) value = value.substring(0, 11);
+        
+        if (value.length >= 1) {
+          let formatted = '+7 (';
+          if (value.length > 1) formatted += value.substring(1, 4);
+          if (value.length >= 4) formatted += ') ' + value.substring(4, 7);
+          if (value.length >= 7) formatted += '-' + value.substring(7, 9);
+          if (value.length >= 9) formatted += '-' + value.substring(9, 11);
+          e.target.value = formatted;
+        } else {
+          e.target.value = '+7 (';
+        }
+      });
+    }
+
+    // Обработка отправки формы
+    document.getElementById('bookingForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const clientName = document.getElementById('clientName').value.trim();
+      const clientPhone = document.getElementById('clientPhone').value.trim();
+      const bookingDate = document.getElementById('bookingDate').value;
+      const startTime = document.getElementById('startTime').value;
+      const duration = parseFloat(document.getElementById('duration').value);
+      const notes = document.getElementById('notes').value.trim();
+
+      // Валидация
+      if (!clientName) {
+        showMessage('Пожалуйста, введите имя клиента', true);
+        return;
+      }
+
+      if (selectedServices.size === 0) {
+        showMessage('Пожалуйста, выберите хотя бы одну услугу', true);
+        return;
+      }
+
+      // Нормализация телефона
+      const phoneDigits = formatPhone(clientPhone);
+      if (phoneDigits.length < 11) {
+        showMessage('Пожалуйста, введите корректный номер телефона', true);
+        return;
+      }
+
+      const formattedPhone = formatPhoneDisplay(phoneDigits);
+
+      // Подготовка данных бронирования
+      const bookingData = {
+        clientName: clientName,
+        clientPhone: formattedPhone,
+        bookingDate: bookingDate,
+        startTime: startTime,
+        duration: duration,
+        selectedServices: Array.from(selectedServices),
+        notes: notes,
+        discountPercent: parseFloat(document.getElementById('discountPercent').value) || 0,
+        discountAmount: parseFloat(document.getElementById('discountAmount').value) || 0,
+        prepayment: {
+          amount: parseFloat(document.getElementById('prepayAmount').value) || 0,
+          method: document.getElementById('prepayMethod').value || 'cash',
+          date: document.getElementById('prepayDate').value || ''
+        },
+        finalPaymentCash: {
+          amount: parseFloat(document.getElementById('finalPayAmountCash').value) || 0,
+          date: document.getElementById('finalPayDateCash').value || ''
+        },
+        finalPaymentTransfer: {
+          amount: parseFloat(document.getElementById('finalPayAmountTransfer').value) || 0,
+          date: document.getElementById('finalPayDateTransfer').value || '',
+          notes: 'Перевод'
+        },
+        createdAt: new Date()
+      };
+
+      try {
+        // Сохраняем в Firebase
+        await addDoc(collection(db, 'bookings'), bookingData);
+
+        // Обновляем или создаем клиента
+        const clientsQuery = query(
+          collection(db, 'clients'),
+          where('phoneDigits', '==', phoneDigits)
+        );
+        const clientsSnapshot = await getDocs(clientsQuery);
+
+        if (!clientsSnapshot.empty) {
+          // Клиент существует - обновляем статистику
+          const clientDoc = clientsSnapshot.docs[0];
+          const clientData = clientDoc.data();
+          
+          await updateDoc(clientDoc.ref, {
+            lastBookingDate: bookingDate,
+            totalBookings: (clientData.totalBookings || 0) + 1,
+            totalSpent: (clientData.totalSpent || 0) + calculateTotal(),
+            telegramId: userId || clientData.telegramId,
+            telegramUsername: username || clientData.telegramUsername
+          });
+        } else {
+          // Создаем нового клиента
+          await addDoc(collection(db, 'clients'), {
+            clientName: clientName,
+            clientPhone: formattedPhone,
+            phoneDigits: phoneDigits,
+            telegramId: userId,
+            telegramUsername: username,
+            createdAt: new Date(),
+            lastBookingDate: bookingDate,
+            totalBookings: 1,
+            totalSpent: calculateTotal(),
+            isActive: true
+          });
+        }
+
+        showMessage('✅ Запись успешно создана!');
+        
+        // Закрываем Mini App через 2 секунды
+        setTimeout(() => {
+          tg.close();
+        }, 2000);
+
+      } catch (error) {
+        console.error('Ошибка сохранения:', error);
+        showMessage('❌ Ошибка при сохранении записи. Попробуйте позже.', true);
+      }
+    });
+
+    // Инициализация при загрузке
+    initForm();
+  </script>
+</body>
+</html>
+
