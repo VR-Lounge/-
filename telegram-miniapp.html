@@ -896,6 +896,7 @@
 
     // Навигация по разделам (глобальная функция) - переопределяем заглушку
     window.showSection = function(sectionName) {
+      console.log('showSection вызвана для раздела:', sectionName);
       // Скрываем все разделы
       document.querySelectorAll('.section').forEach(section => {
         section.classList.remove('active');
@@ -1094,10 +1095,16 @@
     
     // Переключение между календарем и формой (глобальная функция) - переопределяем заглушку
     window.showBookingView = function(view) {
+      console.log('showBookingView вызвана для вида:', view);
       const calendarView = document.getElementById('booking-calendar-view');
       const formView = document.getElementById('booking-form-view');
       const btnCalendar = document.getElementById('btn-calendar');
       const btnForm = document.getElementById('btn-form');
+      
+      if (!calendarView || !formView || !btnCalendar || !btnForm) {
+        console.error('Элементы календаря/формы не найдены');
+        return;
+      }
       
       if (view === 'calendar') {
         calendarView.classList.remove('hidden');
@@ -1106,12 +1113,24 @@
         btnCalendar.classList.remove('text-gray-600');
         btnForm.classList.remove('border-b-2', 'border-blue-600', 'text-blue-600');
         btnForm.classList.add('text-gray-600');
+        
+        // Вызываем рендеринг календаря
+        console.log('Вызываем renderBookingsCalendar...');
         if (window.renderBookingsCalendar) {
-          window.renderBookingsCalendar();
+          console.log('renderBookingsCalendar найдена, вызываем...');
+          window.renderBookingsCalendar().catch(err => {
+            console.error('Ошибка при рендеринге календаря:', err);
+          });
         } else {
+          console.error('renderBookingsCalendar не определена!');
           setTimeout(() => {
             if (window.renderBookingsCalendar) {
-              window.renderBookingsCalendar();
+              console.log('renderBookingsCalendar найдена через таймаут, вызываем...');
+              window.renderBookingsCalendar().catch(err => {
+                console.error('Ошибка при рендеринге календаря (таймаут):', err);
+              });
+            } else {
+              console.error('renderBookingsCalendar все еще не определена после таймаута');
             }
           }, 500);
         }
@@ -1145,6 +1164,7 @@
     
     // Рендеринг календаря записей
     async function renderBookingsCalendar() {
+      console.log('renderBookingsCalendar вызвана');
       const calendarEl = document.getElementById('bookingsCalendar');
       const monthTitleEl = document.getElementById('bookingMonthTitle');
       
@@ -1152,6 +1172,8 @@
         console.error('Элемент bookingsCalendar не найден');
         return;
       }
+      
+      console.log('Элемент bookingsCalendar найден, начинаем рендеринг...');
       
       // Обновляем заголовок месяца
       if (monthTitleEl) {
@@ -1165,10 +1187,11 @@
       try {
         const firestoreDb = db || window.db;
         if (!firestoreDb) {
-          console.error('Firebase не инициализирован');
+          console.error('Firebase не инициализирован, db:', db, 'window.db:', window.db);
           calendarEl.innerHTML = '<div class="text-center text-red-500 py-8">Ошибка: Firebase не загружен</div>';
           return;
         }
+        console.log('Загружаем записи из Firebase...');
         const bookingsSnapshot = await getDocs(collection(firestoreDb, 'bookings'));
         window.bookings = bookingsSnapshot.docs.map(doc => ({
           id: doc.id,
@@ -1178,7 +1201,7 @@
       } catch (error) {
         console.error('Ошибка загрузки записей:', error);
         window.bookings = [];
-        calendarEl.innerHTML = '<div class="text-center text-red-500 py-8">Ошибка загрузки записей</div>';
+        calendarEl.innerHTML = '<div class="text-center text-red-500 py-8">Ошибка загрузки записей: ' + error.message + '</div>';
         return;
       }
       
@@ -1286,7 +1309,7 @@
     // Делаем renderBookingsCalendar доступной глобально (ПОСЛЕ определения функции)
     window.renderBookingsCalendar = renderBookingsCalendar;
     
-    function initializeApp() {
+    function startApp() {
       // Определяем раздел из URL параметра
       const urlParams = new URLSearchParams(window.location.search);
       const section = urlParams.get('section') || 'booking';
@@ -1322,9 +1345,9 @@
     // Вызываем инициализацию после небольшой задержки, чтобы модуль успел загрузиться
     setTimeout(() => {
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initializeApp);
+        document.addEventListener('DOMContentLoaded', startApp);
       } else {
-        initializeApp();
+        startApp();
       }
     }, 100);
   </script>
