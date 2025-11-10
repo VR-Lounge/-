@@ -1106,7 +1106,15 @@
         btnCalendar.classList.remove('text-gray-600');
         btnForm.classList.remove('border-b-2', 'border-blue-600', 'text-blue-600');
         btnForm.classList.add('text-gray-600');
-        renderBookingsCalendar();
+        if (window.renderBookingsCalendar) {
+          window.renderBookingsCalendar();
+        } else {
+          setTimeout(() => {
+            if (window.renderBookingsCalendar) {
+              window.renderBookingsCalendar();
+            }
+          }, 500);
+        }
       } else {
         calendarView.classList.add('hidden');
         formView.classList.remove('hidden');
@@ -1151,14 +1159,23 @@
       
       // Загружаем записи
       try {
-        const bookingsSnapshot = await getDocs(collection(db, 'bookings'));
+        if (!db && !window.db) {
+          console.error('Firebase не инициализирован');
+          calendarEl.innerHTML = '<div class="text-center text-red-500 py-8">Ошибка: Firebase не загружен</div>';
+          return;
+        }
+        const firestoreDb = db || window.db;
+        const bookingsSnapshot = await getDocs(collection(firestoreDb, 'bookings'));
         window.bookings = bookingsSnapshot.docs.map(doc => ({
           id: doc.id,
           ...doc.data()
         }));
+        console.log('Загружено записей:', window.bookings.length);
       } catch (error) {
         console.error('Ошибка загрузки записей:', error);
         window.bookings = [];
+        calendarEl.innerHTML = '<div class="text-center text-red-500 py-8">Ошибка загрузки записей</div>';
+        return;
       }
       
       const year = window.bookingsViewMonth.getFullYear();
