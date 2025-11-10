@@ -2800,8 +2800,8 @@
           ...doc.data()
         }));
 
-        // Если клиентов нет в базе, создаем их из существующих бронирований
-        if (clientsData.length === 0 && bookings.length > 0) {
+        // Создаем клиентов из всех бронирований (включая будущие), которых еще нет в базе
+        if (bookings.length > 0) {
           await createClientsFromBookings();
           // Перезагружаем после создания
           const newSnapshot = await getDocs(collection(db, "clients"));
@@ -2818,13 +2818,17 @@
         let filteredClients = [...clientsData];
         
         // Поиск
-        if (clientSearch && clientSearch.value) {
-          const searchTerm = clientSearch.value.toLowerCase();
-          filteredClients = filteredClients.filter(client => 
-            client.clientName?.toLowerCase().includes(searchTerm) ||
-            client.clientPhone?.includes(searchTerm) ||
-            client.phoneDigits?.includes(searchTerm.replace(/\D/g, ''))
-          );
+        if (clientSearch && clientSearch.value.trim()) {
+          const searchTerm = clientSearch.value.trim().toLowerCase();
+          const searchTermDigits = searchTerm.replace(/\D/g, '');
+          
+          filteredClients = filteredClients.filter(client => {
+            const nameMatch = client.clientName?.toLowerCase().trim().includes(searchTerm) || false;
+            const phoneMatch = client.clientPhone?.includes(searchTerm) || false;
+            const phoneDigitsMatch = client.phoneDigits?.includes(searchTermDigits) || false;
+            
+            return nameMatch || phoneMatch || phoneDigitsMatch;
+          });
         }
 
         // Сортировка
@@ -2920,51 +2924,60 @@
       }
     }
 
-    // Создание клиентов из существующих бронирований
+    // Создание клиентов из всех бронирований (включая будущие)
     async function createClientsFromBookings() {
-      const clientsMap = new Map();
-
-      bookings.forEach(booking => {
-        const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
-        if (!phoneDigits) return;
-
-        const key = phoneDigits;
-        if (!clientsMap.has(key)) {
-          clientsMap.set(key, {
-            clientName: booking.clientName,
-            clientPhone: booking.clientPhone,
-            phoneDigits: phoneDigits,
-            createdAt: booking.bookingDate ? new Date(booking.bookingDate) : new Date(),
-            lastBookingDate: booking.bookingDate,
-            totalBookings: 0,
-            totalSpent: 0,
-            isActive: true
-          });
-        }
-
-        const client = clientsMap.get(key);
-        client.totalBookings += 1;
-        if (booking.bookingDate && (!client.lastBookingDate || booking.bookingDate > client.lastBookingDate)) {
-          client.lastBookingDate = booking.bookingDate;
+      // Получаем существующих клиентов из Firebase для проверки
+      const existingClientsSnapshot = await getDocs(collection(db, "clients"));
+      const existingClientsSet = new Set();
+      existingClientsSnapshot.docs.forEach(doc => {
+        const client = doc.data();
+        if (client.phoneDigits) {
+          existingClientsSet.add(client.phoneDigits);
         }
       });
 
-      // Сохраняем клиентов в Firebase
-      for (const [phoneDigits, clientData] of clientsMap) {
-        try {
-          // Проверяем, существует ли клиент
-          const existingClients = await getDocs(
-            query(collection(db, "clients"), where("phoneDigits", "==", phoneDigits))
-          );
-          
-          if (existingClients.empty) {
-            await addDoc(collection(db, "clients"), {
-              ...clientData,
-              createdAt: clientData.createdAt instanceof Date 
-                ? clientData.createdAt 
-                : new Date(clientData.createdAt)
+      const clientsMap = new Map();
+
+      // Обрабатываем все бронирования (включая будущие)
+      bookings.forEach(booking => {
+        const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+        if (!phoneDigits || !booking.clientName) return;
+
+        const key = phoneDigits;
+        
+        // Создаем клиента только если его еще нет в базе
+        if (!existingClientsSet.has(key)) {
+          if (!clientsMap.has(key)) {
+            clientsMap.set(key, {
+              clientName: booking.clientName,
+              clientPhone: booking.clientPhone,
+              phoneDigits: phoneDigits,
+              createdAt: booking.createdAt?.toDate ? booking.createdAt.toDate() : (booking.createdAt ? new Date(booking.createdAt) : new Date()),
+              lastBookingDate: booking.bookingDate,
+              totalBookings: 0,
+              totalSpent: 0,
+              isActive: true
             });
           }
+
+          const client = clientsMap.get(key);
+          client.totalBookings += 1;
+          if (booking.bookingDate && (!client.lastBookingDate || booking.bookingDate > client.lastBookingDate)) {
+            client.lastBookingDate = booking.bookingDate;
+          }
+        }
+      });
+
+      // Сохраняем только новых клиентов в Firebase
+      for (const [phoneDigits, clientData] of clientsMap) {
+        try {
+          await addDoc(collection(db, "clients"), {
+            ...clientData,
+            createdAt: clientData.createdAt instanceof Date 
+              ? clientData.createdAt 
+              : new Date(clientData.createdAt)
+          });
+          console.log(`✅ Создан новый клиент: ${clientData.clientName} (${phoneDigits})`);
         } catch (error) {
           console.error(`Ошибка создания клиента ${phoneDigits}:`, error);
         }
