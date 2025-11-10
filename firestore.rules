@@ -1,0 +1,99 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Правила для бронирований
+    match /bookings/{bookingId} {
+      // Чтение разрешено всем (для отображения в CRM)
+      allow read: if true;
+      
+      // Запись разрешена:
+      // 1. Авторизованным пользователям (админы из CRM)
+      // 2. Неавторизованным пользователям из Mini App (с валидацией данных)
+      allow create: if request.auth != null 
+        || (
+          // Валидация данных из Mini App
+          request.resource.data.keys().hasAll(['clientName', 'clientPhone', 'bookingDate', 'startTime', 'duration', 'selectedServices'])
+          && request.resource.data.clientName is string
+          && request.resource.data.clientName.size() > 0
+          && request.resource.data.clientPhone is string
+          && request.resource.data.bookingDate is string
+          && request.resource.data.startTime is string
+          && request.resource.data.duration is number
+          && request.resource.data.duration > 0
+          && request.resource.data.selectedServices is list
+          && request.resource.data.selectedServices.size() > 0
+        );
+      
+      // Обновление и удаление только авторизованным пользователям
+      allow update, delete: if request.auth != null;
+    }
+    
+    // Правила для базы клиентов
+    match /clients/{clientId} {
+      // Чтение разрешено:
+      // 1. Авторизованным пользователям (для CRM)
+      // 2. Неавторизованным пользователям из Mini App (для поиска клиента по телефону)
+      allow read: if request.auth != null || true;
+      
+      // Запись разрешена:
+      // 1. Авторизованным пользователям (админы из CRM)
+      // 2. Неавторизованным пользователям из Mini App (с валидацией данных)
+      allow create: if request.auth != null 
+        || (
+          // Валидация данных из Mini App
+          request.resource.data.keys().hasAll(['clientName', 'clientPhone', 'phoneDigits'])
+          && request.resource.data.clientName is string
+          && request.resource.data.clientName.size() > 0
+          && request.resource.data.clientPhone is string
+          && request.resource.data.phoneDigits is string
+          && request.resource.data.phoneDigits.size() == 11
+        );
+      
+      // Обновление разрешено:
+      // 1. Авторизованным пользователям
+      // 2. Неавторизованным пользователям из Mini App (только обновление статистики)
+      allow update: if request.auth != null 
+        || (
+          // Разрешаем обновление только определенных полей (статистика)
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['lastBookingDate', 'totalBookings', 'totalSpent', 'telegramId', 'telegramUsername'])
+        );
+      
+      // Удаление только авторизованным пользователям
+      allow delete: if request.auth != null;
+    }
+    
+    // Существующие правила для администраторов
+    match /admins/{adminId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+    
+    // Правила для руководителей (имеют права админа в боте, но не в графике смен)
+    match /managers/{managerId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+    
+    // Существующие правила для назначений администраторов
+    match /adminAssignments/{assignmentId} {
+      // Чтение разрешено всем (график смен не является критически конфиденциальной информацией)
+      // Это позволяет отображать график в Telegram Mini App
+      allow read: if true;
+      // Запись только авторизованным админам
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+    
+    // Правила для расходов (доступ всем авторизованным)
+    match /expenses/{expenseId} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Правила для категорий расходов
+    match /expense-categories/{categoryId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+  }
+}
+

@@ -1031,27 +1031,79 @@
       
       try {
         scheduleCalendar.innerHTML = '<div class="text-center text-gray-500 py-8">Загрузка графика...</div>';
-        const assignmentsSnapshot = await getDocs(collection(db, 'adminAssignments'));
+        
+        const firestoreDb = db || window.db;
+        if (!firestoreDb) {
+          throw new Error('Firebase не инициализирован');
+        }
+        
+        // Загружаем назначения администраторов
+        const assignmentsSnapshot = await getDocs(collection(firestoreDb, 'adminAssignments'));
         const assignments = assignmentsSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        
+        // Загружаем список администраторов для отображения имен
+        let adminsMap = {};
+        try {
+          const adminsSnapshot = await getDocs(collection(firestoreDb, 'admins'));
+          adminsSnapshot.docs.forEach(doc => {
+            const adminData = doc.data();
+            adminsMap[doc.id] = adminData.name || adminData.telegramId || 'Неизвестно';
+          });
+        } catch (adminError) {
+          console.warn('Не удалось загрузить список администраторов:', adminError);
+          // Продолжаем без имен администраторов
+        }
         
         if (assignments.length === 0) {
           scheduleCalendar.innerHTML = '<div class="text-center text-gray-500 py-8">Назначений нет</div>';
           return;
         }
         
+        // Сортируем назначения по дате
+        assignments.sort((a, b) => {
+          const dateA = a.date || a.id || '';
+          const dateB = b.date || b.id || '';
+          return dateA.localeCompare(dateB);
+        });
+        
         scheduleCalendar.innerHTML = '';
         assignments.forEach(assignment => {
           const assignmentCard = document.createElement('div');
           assignmentCard.className = 'bg-gray-50 rounded-xl p-3 mb-2';
+          
+          // Форматируем дату
+          let dateDisplay = assignment.date || assignment.id || '-';
+          if (dateDisplay && dateDisplay.length === 10) {
+            // Формат YYYY-MM-DD
+            const [year, month, day] = dateDisplay.split('-');
+            const dateObj = new Date(year, month - 1, day);
+            dateDisplay = dateObj.toLocaleDateString('ru-RU', { 
+              day: 'numeric', 
+              month: 'long', 
+              year: 'numeric' 
+            });
+          }
+          
+          // Получаем имя администратора
+          const adminName = assignment.adminId && adminsMap[assignment.adminId] 
+            ? adminsMap[assignment.adminId] 
+            : assignment.adminName || 'Не назначен';
+          
           assignmentCard.innerHTML = `
-            <div class="font-semibold text-gray-900">${assignment.date || '-'}</div>
-            <div class="text-sm text-gray-600 mt-1">Администратор назначен</div>
+            <div class="font-semibold text-gray-900">${dateDisplay}</div>
+            <div class="text-sm text-gray-600 mt-1">👤 ${adminName}</div>
           `;
           scheduleCalendar.appendChild(assignmentCard);
         });
       } catch (error) {
         console.error('Ошибка загрузки графика:', error);
-        scheduleCalendar.innerHTML = '<div class="text-center text-red-500 py-8">Ошибка загрузки</div>';
+        let errorMessage = 'Ошибка загрузки';
+        if (error.code === 'permission-denied') {
+          errorMessage = 'График доступен только администраторам';
+        } else if (error.message) {
+          errorMessage = `Ошибка: ${error.message}`;
+        }
+        scheduleCalendar.innerHTML = `<div class="text-center text-red-500 py-8">${errorMessage}</div>`;
       }
     }
     
