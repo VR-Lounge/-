@@ -2797,8 +2797,12 @@
       if (clientsEmpty) clientsEmpty.classList.add('hidden');
 
       try {
+        console.log('🔄 Начало загрузки клиентов...');
+        
         // Загружаем клиентов из Firebase
         const clientsSnapshot = await getDocs(collection(db, "clients"));
+        console.log(`📊 Загружено клиентов из Firebase: ${clientsSnapshot.docs.length}`);
+        
         clientsData = clientsSnapshot.docs.map(doc => ({
           id: doc.id,
           ...doc.data()
@@ -2806,6 +2810,7 @@
 
         // Создаем клиентов из всех бронирований (включая будущие), которых еще нет в базе
         if (bookings.length > 0) {
+          console.log(`📝 Обработка ${bookings.length} записей для создания клиентов...`);
           await createClientsFromBookings();
           // Перезагружаем после создания
           const newSnapshot = await getDocs(collection(db, "clients"));
@@ -2813,10 +2818,15 @@
             id: doc.id,
             ...doc.data()
           }));
+          console.log(`✅ Всего клиентов после создания: ${clientsData.length}`);
+        } else {
+          console.log('⚠️ Нет записей для обработки');
         }
 
         // Обновляем статистику из бронирований
+        console.log('📊 Обновление статистики клиентов...');
         await updateClientsStats();
+        console.log('✅ Статистика обновлена');
 
         // Применяем поиск и сортировку
         let filteredClients = [...clientsData];
@@ -2876,6 +2886,7 @@
         if (clientsEmpty) clientsEmpty.classList.add('hidden');
 
         // Рендерим клиентов
+        console.log(`📋 Рендеринг ${filteredClients.length} клиентов...`);
         filteredClients.forEach(client => {
           const row = document.createElement('tr');
           row.className = 'hover:bg-gray-50 transition';
@@ -2920,9 +2931,16 @@
 
           clientsTableBody.appendChild(row);
         });
+        
+        console.log('✅ Клиенты успешно отображены');
 
       } catch (error) {
-        console.error('Ошибка загрузки клиентов:', error);
+        console.error('❌ Ошибка загрузки клиентов:', error);
+        console.error('Детали ошибки:', {
+          message: error.message,
+          stack: error.stack,
+          name: error.name
+        });
         if (clientsLoading) clientsLoading.classList.add('hidden');
         if (clientsEmpty) clientsEmpty.classList.remove('hidden');
       }
