@@ -32,17 +32,46 @@
       background: #eff6ff;
     }
     
+    .service-tag.selected .service-tag-line1 span {
+      color: #1e40af !important;
+      font-weight: 600;
+    }
+    
     .service-tag-line1 {
       display: flex;
       align-items: center;
       gap: 0.5rem;
       font-weight: 600;
       margin-bottom: 0.25rem;
+      color: #111827;
     }
     
     .service-tag-price {
       font-size: 0.875rem;
       color: #6b7280;
+    }
+    
+    /* Видимый курсор в полях ввода */
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    textarea {
+      caret-color: #3b82f6;
+    }
+    
+    /* Выравнивание текста в полях даты и времени */
+    input[type="date"],
+    input[type="time"] {
+      text-align: left !important;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+    
+    /* Выравнивание в select */
+    select {
+      text-align: left !important;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
     }
     
     input[type="date"]::-webkit-calendar-picker-indicator,
@@ -65,7 +94,7 @@
       <div>
         <label for="clientName" class="block text-gray-900 font-semibold mb-2">Имя клиента</label>
         <input type="text" id="clientName" name="clientName" required 
-          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
           placeholder="Введите имя клиента" />
       </div>
 
@@ -73,7 +102,7 @@
       <div>
         <label for="clientPhone" class="block text-gray-900 font-semibold mb-2">Номер телефона</label>
         <input type="tel" id="clientPhone" name="clientPhone" required 
-          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" 
           placeholder="+7 (XXX) XXX-XX-XX" />
       </div>
 
@@ -81,21 +110,21 @@
       <div>
         <label for="bookingDate" class="block text-gray-900 font-semibold mb-2">Дата</label>
         <input type="date" id="bookingDate" name="bookingDate" required 
-          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left focus:ring-2 focus:ring-blue-500 focus:outline-none" />
       </div>
 
       <!-- Время начала -->
       <div>
         <label for="startTime" class="block text-gray-900 font-semibold mb-2">Время начала</label>
         <input type="time" id="startTime" name="startTime" required 
-          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left focus:ring-2 focus:ring-blue-500 focus:outline-none" />
       </div>
 
       <!-- Длительность -->
       <div>
         <label for="duration" class="block text-gray-900 font-semibold mb-2">Длительность (часы)</label>
         <select id="duration" name="duration" required 
-          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left focus:ring-2 focus:ring-blue-500 focus:outline-none">
           <option value="0.5">0.5</option>
           <option value="1" selected>1</option>
           <option value="1.5">1.5</option>
@@ -147,24 +176,24 @@
 
       <!-- Предоплата -->
       <div class="grid grid-cols-3 gap-2">
-        <div>
+        <div class="flex-1">
           <label class="block text-gray-900 font-semibold mb-2 text-sm">Предоплата (₽)</label>
           <input type="number" id="prepayAmount" min="0" 
-            class="w-full rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 text-sm" 
+            class="w-full rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 text-sm text-left" 
             placeholder="0">
         </div>
-        <div>
+        <div class="flex-1">
           <label class="block text-gray-900 font-semibold mb-2 text-sm">Метод</label>
           <select id="prepayMethod" 
-            class="w-full rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 text-sm">
+            class="w-full rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 text-sm text-left">
             <option value="cash">Наличные</option>
             <option value="transfer">Перевод</option>
           </select>
         </div>
-        <div>
+        <div class="flex-1">
           <label class="block text-gray-900 font-semibold mb-2 text-sm">Дата</label>
           <input type="date" id="prepayDate" 
-            class="w-full rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 text-sm">
+            class="w-full rounded-2xl border border-gray-300 px-3 py-2 text-gray-900 text-sm text-left">
         </div>
       </div>
 
@@ -173,10 +202,10 @@
         <label class="block text-gray-900 font-semibold mb-2">Доплата наличными (₽)</label>
         <div class="grid grid-cols-2 gap-2">
           <input type="number" id="finalPayAmountCash" min="0" 
-            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900" 
+            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left" 
             placeholder="0">
           <input type="date" id="finalPayDateCash" 
-            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900">
+            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left">
         </div>
       </div>
 
@@ -185,10 +214,10 @@
         <label class="block text-gray-900 font-semibold mb-2">Доплата переводом (₽)</label>
         <div class="grid grid-cols-2 gap-2">
           <input type="number" id="finalPayAmountTransfer" min="0" 
-            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900" 
+            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left" 
             placeholder="0">
           <input type="date" id="finalPayDateTransfer" 
-            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900">
+            class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left">
         </div>
       </div>
 
