@@ -1128,7 +1128,7 @@
       
       // Обновляем заголовок месяца
       if (monthTitleEl) {
-        monthTitleEl.textContent = bookingsViewMonth.toLocaleDateString('ru-RU', {
+        monthTitleEl.textContent = window.bookingsViewMonth.toLocaleDateString('ru-RU', {
           month: 'long',
           year: 'numeric'
         });
@@ -1137,17 +1137,17 @@
       // Загружаем записи
       try {
         const bookingsSnapshot = await getDocs(collection(db, 'bookings'));
-        bookings = bookingsSnapshot.docs.map(doc => ({
+        window.bookings = bookingsSnapshot.docs.map(doc => ({
           id: doc.id,
           ...doc.data()
         }));
       } catch (error) {
         console.error('Ошибка загрузки записей:', error);
-        bookings = [];
+        window.bookings = [];
       }
       
-      const year = bookingsViewMonth.getFullYear();
-      const month = bookingsViewMonth.getMonth();
+      const year = window.bookingsViewMonth.getFullYear();
+      const month = window.bookingsViewMonth.getMonth();
       
       // Первый день месяца
       const firstDay = new Date(year, month, 1);
@@ -1191,7 +1191,7 @@
         dayCell.appendChild(dayNumber);
         
         // Записи на этот день
-        const dayBookings = bookings.filter(b => b.bookingDate === dateStr)
+        const dayBookings = window.bookings.filter(b => b.bookingDate === dateStr)
           .sort((a, b) => a.startTime.localeCompare(b.startTime));
         
         if (dayBookings.length > 0) {
