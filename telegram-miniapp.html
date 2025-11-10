@@ -984,44 +984,178 @@
       }
     }
     
+    // Вспомогательная функция для получения названия услуги
+    function getServiceLabel(serviceType) {
+      switch (serviceType) {
+        case 'weekday_ps1': return 'PS5 (1 дж.)';
+        case 'weekday_ps2': return 'PS5 (2 дж.)';
+        case 'weekday_vr1': return 'VR (1) | Будни';
+        case 'weekday_vr2': return 'VR (2) | Будни';
+        case 'weekday_vr3': return 'VR (3) | Будни';
+        case 'weekday_vr4': return 'VR (4) | Будни';
+        case 'weekend_vr1': return 'VR (1) | Выходные';
+        case 'weekend_vr2': return 'VR (2) | Выходные';
+        case 'weekend_vr3': return 'VR (3) | Выходные';
+        case 'weekend_vr4': return 'VR (4) | Выходные';
+        case 'xbox_kinnect': return 'X-Box Kinnect';
+        case 'xbox1': return 'X-Box (1 дж.)';
+        case 'xbox2': return 'X-Box (2 дж.)';
+        case 'xbox3': return 'X-Box (3 дж.)';
+        case 'xbox4': return 'X-Box (4 дж.)';
+        case 'karaoke': return 'Караоке';
+        case 'board_games': return 'Наст. игры';
+        case 'birthday': return 'Аренда (ДР)';
+        case 'hostess': return 'Ведущая';
+        default: return serviceType || 'Неизв. услуга';
+      }
+    }
+    
+    // Вспомогательная функция для форматирования телефона
+    function formatPhoneNumber(phoneStr) {
+      if (!phoneStr) return '';
+      const digits = phoneStr.replace(/\D/g, '');
+      if (digits.length === 11 && digits.startsWith('7')) {
+        return `+7 (${digits.substring(1, 4)}) ${digits.substring(4, 7)}-${digits.substring(7, 9)}-${digits.substring(9, 11)}`;
+      }
+      return phoneStr;
+    }
+    
     // Загрузка финансов
     async function loadFinance() {
       try {
-        const bookingsSnapshot = await getDocs(collection(db, 'bookings'));
-        const bookings = bookingsSnapshot.docs.map(doc => doc.data());
+        const firestoreDb = db || window.db;
+        if (!firestoreDb) {
+          throw new Error('Firebase не инициализирован');
+        }
         
-        const today = new Date().toISOString().split('T')[0];
-        const weekAgo = new Date();
-        weekAgo.setDate(weekAgo.getDate() - 7);
-        const monthAgo = new Date();
-        monthAgo.setMonth(monthAgo.getMonth() - 1);
+        const bookingsSnapshot = await getDocs(collection(firestoreDb, 'bookings'));
+        const bookings = bookingsSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const todayStr = formatDateSafe(today);
+        
+        // Текущая неделя (понедельник - воскресенье)
+        const currentWeek = getWeekRange(today);
+        const currentWeekStartStr = formatDateSafe(currentWeek.start);
+        const currentWeekEndStr = formatDateSafe(currentWeek.end);
+        
+        // Текущий месяц
+        const currentMonth = today.getMonth();
+        const currentYear = today.getFullYear();
+        const monthYearStr = `${currentYear}-${(currentMonth + 1).toString().padStart(2, '0')}`;
         
         let revenueToday = 0;
-        let revenueWeek = 0;
-        let revenueMonth = 0;
+        let revenueCurrentWeek = { actual: 0, planned: 0 };
+        let revenueSelectedMonth = { actual: 0, planned: 0 };
         
         bookings.forEach(booking => {
-          // Упрощенный расчет (нужно будет добавить полную логику расчета стоимости)
-          const bookingDate = booking.bookingDate;
-          const date = new Date(bookingDate);
+          if (typeof booking.bookingDate !== 'string') return;
           
-          if (bookingDate === today) {
-            revenueToday += booking.totalAmount || 0;
+          const duration = parseFloat(booking.duration) || 0;
+          let bookingTotalAmount = 0; // Сумма ДО скидки
+          
+          // Расчет суммы ДО скидки
+          if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+            booking.selectedServices.forEach(service => {
+              if (service === 'birthday') {
+                const fullHours = Math.floor(duration);
+                const hasHalfHour = duration % 1 !== 0;
+                let birthdayTotal = 0;
+                for (let hour = 1; hour <= fullHours; hour++) {
+                  const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                  birthdayTotal += hourPrice;
+                }
+                if (hasHalfHour) {
+                  if (fullHours === 0) { birthdayTotal += 2000; }
+                  else if (fullHours === 1) { birthdayTotal += 2000; }
+                  else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                }
+                bookingTotalAmount += birthdayTotal;
+              } else if (service === 'hostess') {
+                bookingTotalAmount += servicePrices.hostess;
+              } else {
+                const price = servicePrices[service] || 0;
+                bookingTotalAmount += price * duration;
+              }
+            });
+          } else if (booking.serviceType) {
+            // Обратная совместимость
+            if (booking.serviceType === 'birthday') {
+              const hours = Math.min(Math.max(Math.ceil(duration), 1), 12);
+              bookingTotalAmount = servicePrices.birthday[hours] || servicePrices.birthday[4];
+            } else {
+              const pricePerHour = servicePrices[booking.serviceType] || 0;
+              bookingTotalAmount = pricePerHour * duration;
+            }
           }
-          if (date >= weekAgo) {
-            revenueWeek += booking.totalAmount || 0;
+          
+          // Рассчитываем итоговую стоимость ПОСЛЕ скидки
+          const discountPercent = booking.discountPercent || 0;
+          const discountAmount = booking.discountAmount || 0;
+          let finalBookingAmount = bookingTotalAmount;
+          if (discountPercent > 0) {
+            finalBookingAmount = bookingTotalAmount * (1 - discountPercent / 100);
+          } else if (discountAmount > 0) {
+            finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
           }
-          if (date >= monthAgo) {
-            revenueMonth += booking.totalAmount || 0;
+          
+          // Определяем, планируемая это выручка или фактическая
+          const bookingDate = new Date(booking.bookingDate + 'T00:00:00');
+          const isPlanned = bookingDate > today;
+          
+          // Суммируем итоговую выручку
+          if (booking.bookingDate === todayStr) {
+            revenueToday += finalBookingAmount;
+          }
+          if (booking.bookingDate >= currentWeekStartStr && booking.bookingDate <= currentWeekEndStr) {
+            if (isPlanned) {
+              revenueCurrentWeek.planned += finalBookingAmount;
+            } else {
+              revenueCurrentWeek.actual += finalBookingAmount;
+            }
+          }
+          if (booking.bookingDate.startsWith(monthYearStr)) {
+            if (isPlanned) {
+              revenueSelectedMonth.planned += finalBookingAmount;
+            } else {
+              revenueSelectedMonth.actual += finalBookingAmount;
+            }
           }
         });
         
-        document.getElementById('revenueToday').textContent = revenueToday.toLocaleString('ru-RU') + ' ₽';
-        document.getElementById('revenueWeek').textContent = revenueWeek.toLocaleString('ru-RU') + ' ₽';
-        document.getElementById('revenueMonth').textContent = revenueMonth.toLocaleString('ru-RU') + ' ₽';
+        // Отображаем результаты
+        const revenueTodayEl = document.getElementById('revenueToday');
+        const revenueWeekEl = document.getElementById('revenueWeek');
+        const revenueMonthEl = document.getElementById('revenueMonth');
+        
+        if (revenueTodayEl) {
+          revenueTodayEl.textContent = revenueToday.toLocaleString('ru-RU') + ' ₽';
+        }
+        if (revenueWeekEl) {
+          const weekTotal = revenueCurrentWeek.actual + revenueCurrentWeek.planned;
+          revenueWeekEl.textContent = weekTotal.toLocaleString('ru-RU') + ' ₽';
+        }
+        if (revenueMonthEl) {
+          const monthTotal = revenueSelectedMonth.actual + revenueSelectedMonth.planned;
+          revenueMonthEl.textContent = monthTotal.toLocaleString('ru-RU') + ' ₽';
+        }
       } catch (error) {
         console.error('Ошибка загрузки финансов:', error);
       }
+    }
+    
+    // Вспомогательная функция для получения диапазона недели
+    function getWeekRange(date) {
+      const d = new Date(date);
+      const day = d.getDay();
+      const diff = d.getDate() - day + (day === 0 ? -6 : 1); // Понедельник
+      const monday = new Date(d.setDate(diff));
+      monday.setHours(0, 0, 0, 0);
+      const sunday = new Date(monday);
+      sunday.setDate(monday.getDate() + 6);
+      sunday.setHours(23, 59, 59, 999);
+      return { start: monday, end: sunday };
     }
     
     // Загрузка графика
@@ -1343,22 +1477,124 @@
       console.log('Пустых ячеек:', startDayOfWeek, 'Дней в месяце:', daysInMonth);
     }
     
-    // Показ записей на день
+    // Показ записей на день (с модальным окном)
     function showDayBookings(dayBookings, date) {
-      const dateStr = date.toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
-      let message = `📅 Записи на ${dateStr}:\n\n`;
+      const dayDetailsModal = document.getElementById('dayDetailsModal');
+      const dayDetailsTitle = document.getElementById('dayDetailsTitle');
+      const dayDetailsContent = document.getElementById('dayDetailsContent');
       
-      dayBookings.forEach((booking, index) => {
-        message += `${index + 1}. ${booking.startTime} - ${booking.clientName || 'Без имени'}\n`;
-        message += `   Телефон: ${booking.clientPhone || '-'}\n`;
-        message += `   Длительность: ${booking.duration || 0} ч\n`;
-        if (booking.notes) {
-          message += `   Примечания: ${booking.notes}\n`;
-        }
-        message += '\n';
-      });
+      if (!dayDetailsModal || !dayDetailsTitle || !dayDetailsContent) {
+        console.error('Элементы модального окна не найдены');
+        return;
+      }
       
-      showMessage(message, false);
+      const dateStr = date.toLocaleDateString('ru-RU', { day: '2-digit', month: 'long', year: 'numeric', weekday: 'long' });
+      dayDetailsTitle.textContent = `Записи на ${dateStr}`;
+      dayDetailsContent.innerHTML = '';
+      
+      if (dayBookings.length === 0) {
+        dayDetailsContent.innerHTML = '<p class="text-center text-gray-500 italic">На этот день нет записей.</p>';
+      } else {
+        dayBookings.forEach(b => {
+          const bookingCard = document.createElement('div');
+          bookingCard.className = 'border border-gray-200 rounded-xl p-4 shadow-sm';
+          
+          // Информация о клиенте
+          let clientHTML = `<div class="font-semibold text-lg mb-1">${b.clientName || 'Без имени'}</div>`;
+          if (b.clientPhone) {
+            let cleanPhone = b.clientPhone.replace(/\D/g, '');
+            if (cleanPhone.startsWith('7') || cleanPhone.startsWith('8')) {
+              cleanPhone = cleanPhone.substring(1);
+            }
+            const formattedPhone = formatPhoneNumber(b.clientPhone);
+            clientHTML += `<div class="text-sm mb-2"><a href="tel:+7${cleanPhone}" class="text-blue-600 hover:text-blue-800 hover:underline">${formattedPhone}</a></div>`;
+          }
+          
+          // Время и длительность
+          const timeHTML = `<div class="text-sm text-gray-700 mb-2"><span class="font-medium">Время:</span> ${b.startTime} (${b.duration} ч)</div>`;
+          
+          // Услуги
+          let serviceLabels = 'Не указаны';
+          if (b.selectedServices && Array.isArray(b.selectedServices) && b.selectedServices.length > 0) {
+            serviceLabels = b.selectedServices.map(serviceKey => getServiceLabel(serviceKey)).join(', ');
+          } else if (b.serviceType) {
+            serviceLabels = getServiceLabel(b.serviceType);
+          }
+          const servicesHTML = `<div class="text-sm text-gray-700 mb-2"><span class="font-medium">Услуги:</span> ${serviceLabels}</div>`;
+          
+          // Финансовая информация
+          let totalAmount = 0;
+          const duration = parseFloat(b.duration) || 0;
+          if (b.selectedServices && Array.isArray(b.selectedServices)) {
+            b.selectedServices.forEach(service => {
+              if (service === 'birthday') {
+                const fullHours = Math.floor(duration);
+                const hasHalfHour = duration % 1 !== 0;
+                let birthdayTotal = 0;
+                for (let hour = 1; hour <= fullHours; hour++) {
+                  const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                  birthdayTotal += hourPrice;
+                }
+                if (hasHalfHour) {
+                  if (fullHours === 0) { birthdayTotal += 2000; }
+                  else if (fullHours === 1) { birthdayTotal += 2000; }
+                  else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                }
+                totalAmount += birthdayTotal;
+              } else if (service === 'hostess') {
+                totalAmount += servicePrices.hostess;
+              } else {
+                const price = servicePrices[service] || 0;
+                totalAmount += price * duration;
+              }
+            });
+          }
+          
+          // Рассчитываем итоговую стоимость с учетом скидки
+          const discountPercent = b.discountPercent || 0;
+          const discountAmount = b.discountAmount || 0;
+          let finalAmount = totalAmount;
+          let discountText = 'Нет';
+          if (discountPercent > 0) {
+            finalAmount = totalAmount * (1 - discountPercent / 100);
+            discountText = `${discountPercent}%`;
+          } else if (discountAmount > 0) {
+            finalAmount = Math.max(0, totalAmount - discountAmount);
+            discountText = `${discountAmount.toLocaleString('ru-RU')} ₽`;
+          }
+          
+          const financialHTML = `
+            <div class="grid grid-cols-3 gap-x-4 text-sm mt-3 pt-3 border-t border-gray-100">
+              <div><span class="font-medium">Сумма:</span> ${totalAmount.toLocaleString('ru-RU')} ₽</div>
+              <div><span class="font-medium">Скидка:</span> ${discountText}</div>
+              <div><span class="font-medium">Итоговая:</span> ${finalAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
+            </div>
+            <div class="text-xs text-gray-600 space-y-1 mt-1">
+              <div><span class="font-medium">Предоплата:</span> ${b.prepayment && b.prepayment.amount ? `${b.prepayment.amount.toLocaleString('ru-RU')} ₽ (${b.prepayment.method === 'cash' ? 'нал' : 'перевод'})${b.prepayment.date ? ' от ' + new Date(b.prepayment.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
+              <div><span class="font-medium">Доплата нал:</span> ${b.finalPaymentCash && b.finalPaymentCash.amount ? `${b.finalPaymentCash.amount.toLocaleString('ru-RU')} ₽${b.finalPaymentCash.date ? ' от ' + new Date(b.finalPaymentCash.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
+              <div><span class="font-medium">Доплата пер:</span> ${b.finalPaymentTransfer && b.finalPaymentTransfer.amount ? `${b.finalPaymentTransfer.amount.toLocaleString('ru-RU')} ₽${b.finalPaymentTransfer.date ? ' от ' + new Date(b.finalPaymentTransfer.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
+            </div>
+          `;
+          
+          // Примечания
+          let notesHTML = '';
+          if (b.notes) {
+            notesHTML = `<div class="text-sm text-gray-500 italic whitespace-pre-wrap break-words border-t border-gray-100 pt-2 mt-2"><span class="font-medium text-gray-700 not-italic">Примечания:</span> ${b.notes}</div>`;
+          }
+          
+          bookingCard.innerHTML = clientHTML + timeHTML + servicesHTML + financialHTML + notesHTML;
+          dayDetailsContent.appendChild(bookingCard);
+        });
+      }
+      
+      // Показываем модальное окно
+      dayDetailsModal.classList.remove('hidden');
+      
+      // Обработчик закрытия
+      const closeBtn = document.getElementById('closeDayDetailsModal');
+      if (closeBtn) {
+        closeBtn.onclick = () => dayDetailsModal.classList.add('hidden');
+      }
     }
     
     // Делаем renderBookingsCalendar доступной глобально (ПОСЛЕ определения функции)
@@ -1386,16 +1622,37 @@
         }, 200);
       }
       
-      // Поиск клиентов
-      const clientSearch = document.getElementById('clientSearch');
-      if (clientSearch) {
-        clientSearch.addEventListener('input', async () => {
-          if (typeof loadClients === 'function') {
-            await loadClients();
-          }
+      // Инициализируем обработчики модальных окон
+      const closeDayDetailsModalBtn = document.getElementById('closeDayDetailsModal');
+      const closeAdminDayDetailsModalBtn = document.getElementById('closeAdminDayDetailsModal');
+      
+      if (closeDayDetailsModalBtn) {
+        closeDayDetailsModalBtn.addEventListener('click', () => {
+          const modal = document.getElementById('dayDetailsModal');
+          if (modal) modal.classList.add('hidden');
         });
       }
-    }
+      
+      if (closeAdminDayDetailsModalBtn) {
+        closeAdminDayDetailsModalBtn.addEventListener('click', () => {
+          const modal = document.getElementById('adminDayDetailsModal');
+          if (modal) modal.classList.add('hidden');
+        });
+      }
+      
+      // Закрытие по клавише Esc
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          const dayModal = document.getElementById('dayDetailsModal');
+          const adminModal = document.getElementById('adminDayDetailsModal');
+          if (dayModal && !dayModal.classList.contains('hidden')) {
+            dayModal.classList.add('hidden');
+          }
+          if (adminModal && !adminModal.classList.contains('hidden')) {
+            adminModal.classList.add('hidden');
+          }
+        }
+      });
     
     // Вызываем инициализацию после небольшой задержки, чтобы модуль успел загрузиться
     setTimeout(() => {
@@ -1406,6 +1663,29 @@
       }
     }, 100);
   </script>
+
+  <!-- Модальное окно с деталями записей за день -->
+  <div id="dayDetailsModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && this.classList.add('hidden')">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200" onclick="event.stopPropagation()">
+      <button id="closeDayDetailsModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="dayDetailsTitle">Записи на день</h3>
+      <div id="dayDetailsContent" class="space-y-4">
+        <!-- Детали бронирований будут добавлены сюда -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно с деталями администраторов за день -->
+  <div id="adminDayDetailsModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50" onclick="event.target === this && this.classList.add('hidden')">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200" onclick="event.stopPropagation()">
+      <button id="closeAdminDayDetailsModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
+      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="adminDayDetailsTitle">Информация о смене</h3>
+      <div id="adminDayDetailsContent" class="space-y-4">
+        <!-- Детали о смене и зарплате будут добавлены сюда -->
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
 

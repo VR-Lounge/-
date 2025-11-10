@@ -65,7 +65,9 @@ service cloud.firestore {
     
     // Существующие правила для администраторов
     match /admins/{adminId} {
-      allow read: if request.auth != null;
+      // Чтение разрешено всем (для отображения имен в графике и Mini App)
+      allow read: if true;
+      // Запись только авторизованным админам
       allow write: if request.auth != null && request.auth.token.admin == true;
     }
     
