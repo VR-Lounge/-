@@ -134,6 +134,47 @@
 
     <!-- Раздел: Создание записи -->
     <section id="section-booking" class="section active">
+      <!-- Переключатель между календарем и формой -->
+      <div class="flex border-b border-gray-200 bg-white sticky top-14 z-10">
+        <button onclick="showBookingView('calendar')" id="btn-calendar" class="flex-1 py-3 text-center font-semibold border-b-2 border-blue-600 text-blue-600">
+          📅 Календарь
+        </button>
+        <button onclick="showBookingView('form')" id="btn-form" class="flex-1 py-3 text-center font-semibold text-gray-600">
+          ➕ Создать запись
+        </button>
+      </div>
+
+      <!-- Вид: Календарь записей -->
+      <div id="booking-calendar-view" class="p-4">
+        <div class="flex items-center justify-between mb-4">
+          <button onclick="changeBookingMonth(-1)" class="p-2 text-gray-600">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <h3 class="text-lg font-semibold" id="bookingMonthTitle">Ноябрь 2025</h3>
+          <button onclick="changeBookingMonth(1)" class="p-2 text-gray-600">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        
+        <!-- Дни недели -->
+        <div class="grid grid-cols-7 gap-1 mb-2">
+          <div class="text-center text-xs font-semibold text-gray-600 py-1">Пн</div>
+          <div class="text-center text-xs font-semibold text-gray-600 py-1">Вт</div>
+          <div class="text-center text-xs font-semibold text-gray-600 py-1">Ср</div>
+          <div class="text-center text-xs font-semibold text-gray-600 py-1">Чт</div>
+          <div class="text-center text-xs font-semibold text-gray-600 py-1">Пт</div>
+          <div class="text-center text-xs font-semibold text-purple-600 py-1">Сб</div>
+          <div class="text-center text-xs font-semibold text-purple-600 py-1">Вс</div>
+        </div>
+        
+        <!-- Календарь -->
+        <div id="bookingsCalendar" class="grid grid-cols-7 gap-1">
+          <!-- Календарь будет заполнен динамически -->
+        </div>
+      </div>
+
+      <!-- Вид: Форма создания записи -->
+      <div id="booking-form-view" class="hidden">
       <!-- Форма бронирования -->
       <form id="bookingForm" class="p-4 space-y-4 max-w-lg mx-auto">
       <!-- Имя клиента -->
@@ -289,6 +330,7 @@
         ✅ Сохранить запись
       </button>
     </form>
+    </div>
     </section>
 
     <!-- Раздел: База клиентов -->
@@ -1028,6 +1070,183 @@
       }
     }
     
+    // Переменные для календаря записей
+    let bookingsViewMonth = new Date();
+    let bookings = [];
+    
+    // Переключение между календарем и формой
+    function showBookingView(view) {
+      const calendarView = document.getElementById('booking-calendar-view');
+      const formView = document.getElementById('booking-form-view');
+      const btnCalendar = document.getElementById('btn-calendar');
+      const btnForm = document.getElementById('btn-form');
+      
+      if (view === 'calendar') {
+        calendarView.classList.remove('hidden');
+        formView.classList.add('hidden');
+        btnCalendar.classList.add('border-b-2', 'border-blue-600', 'text-blue-600');
+        btnCalendar.classList.remove('text-gray-600');
+        btnForm.classList.remove('border-b-2', 'border-blue-600', 'text-blue-600');
+        btnForm.classList.add('text-gray-600');
+        renderBookingsCalendar();
+      } else {
+        calendarView.classList.add('hidden');
+        formView.classList.remove('hidden');
+        btnForm.classList.add('border-b-2', 'border-blue-600', 'text-blue-600');
+        btnForm.classList.remove('text-gray-600');
+        btnCalendar.classList.remove('border-b-2', 'border-blue-600', 'text-blue-600');
+        btnCalendar.classList.add('text-gray-600');
+      }
+    }
+    
+    // Изменение месяца в календаре записей
+    function changeBookingMonth(delta) {
+      bookingsViewMonth.setMonth(bookingsViewMonth.getMonth() + delta);
+      renderBookingsCalendar();
+    }
+    
+    // Форматирование даты для сравнения
+    function formatDateSafe(date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
+    }
+    
+    // Проверка выходного дня
+    function isWeekend(date) {
+      const day = date.getDay();
+      return day === 0 || day === 6;
+    }
+    
+    // Рендеринг календаря записей
+    async function renderBookingsCalendar() {
+      const calendarEl = document.getElementById('bookingsCalendar');
+      const monthTitleEl = document.getElementById('bookingMonthTitle');
+      
+      if (!calendarEl) return;
+      
+      // Обновляем заголовок месяца
+      if (monthTitleEl) {
+        monthTitleEl.textContent = bookingsViewMonth.toLocaleDateString('ru-RU', {
+          month: 'long',
+          year: 'numeric'
+        });
+      }
+      
+      // Загружаем записи
+      try {
+        const bookingsSnapshot = await getDocs(collection(db, 'bookings'));
+        bookings = bookingsSnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+      } catch (error) {
+        console.error('Ошибка загрузки записей:', error);
+        bookings = [];
+      }
+      
+      const year = bookingsViewMonth.getFullYear();
+      const month = bookingsViewMonth.getMonth();
+      
+      // Первый день месяца
+      const firstDay = new Date(year, month, 1);
+      let startDayOfWeek = firstDay.getDay();
+      startDayOfWeek = startDayOfWeek === 0 ? 6 : startDayOfWeek - 1; // Понедельник = 0
+      
+      // Количество дней в месяце
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      
+      calendarEl.innerHTML = '';
+      
+      // Пустые ячейки в начале
+      for (let i = 0; i < startDayOfWeek; i++) {
+        const emptyCell = document.createElement('div');
+        emptyCell.className = 'h-16 bg-gray-50 rounded-lg';
+        calendarEl.appendChild(emptyCell);
+      }
+      
+      // Ячейки дней
+      for (let day = 1; day <= daysInMonth; day++) {
+        const date = new Date(year, month, day);
+        const dateStr = formatDateSafe(date);
+        
+        const dayCell = document.createElement('div');
+        dayCell.className = 'h-16 border border-gray-300 rounded-lg p-1 flex flex-col cursor-pointer hover:bg-blue-50 transition relative';
+        
+        if (isWeekend(date)) {
+          dayCell.classList.add('bg-blue-50');
+        }
+        
+        // Подсветка сегодняшнего дня
+        const today = new Date();
+        if (formatDateSafe(date) === formatDateSafe(today)) {
+          dayCell.classList.add('ring-2', 'ring-blue-600');
+        }
+        
+        // Номер дня
+        const dayNumber = document.createElement('div');
+        dayNumber.textContent = day;
+        dayNumber.className = 'text-xs font-semibold text-gray-900';
+        dayCell.appendChild(dayNumber);
+        
+        // Записи на этот день
+        const dayBookings = bookings.filter(b => b.bookingDate === dateStr)
+          .sort((a, b) => a.startTime.localeCompare(b.startTime));
+        
+        if (dayBookings.length > 0) {
+          const bookingsList = document.createElement('div');
+          bookingsList.className = 'flex-1 overflow-hidden mt-0.5';
+          
+          // Показываем до 2 записей
+          const displayBookings = dayBookings.slice(0, 2);
+          displayBookings.forEach(booking => {
+            const bookingItem = document.createElement('div');
+            bookingItem.className = 'text-[10px] bg-blue-100 text-blue-800 rounded px-1 py-0.5 mb-0.5 truncate';
+            bookingItem.textContent = `${booking.startTime} ${booking.clientName || ''}`;
+            bookingsList.appendChild(bookingItem);
+          });
+          
+          dayCell.appendChild(bookingsList);
+          
+          // Показываем количество дополнительных записей
+          if (dayBookings.length > 2) {
+            const more = document.createElement('div');
+            more.className = 'absolute bottom-0.5 right-0.5 text-[9px] bg-gray-800 text-white rounded-full px-1';
+            more.textContent = `+${dayBookings.length - 2}`;
+            dayCell.appendChild(more);
+          }
+        }
+        
+        // Клик на день - показываем детали
+        dayCell.addEventListener('click', () => {
+          if (dayBookings.length > 0) {
+            showDayBookings(dayBookings, date);
+          }
+        });
+        
+        calendarEl.appendChild(dayCell);
+      }
+    }
+    
+    // Показ записей на день
+    function showDayBookings(dayBookings, date) {
+      const dateStr = date.toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
+      let message = `📅 Записи на ${dateStr}:\n\n`;
+      
+      dayBookings.forEach((booking, index) => {
+        message += `${index + 1}. ${booking.startTime} - ${booking.clientName || 'Без имени'}\n`;
+        message += `   Телефон: ${booking.clientPhone || '-'}\n`;
+        message += `   Длительность: ${booking.duration || 0} ч\n`;
+        if (booking.notes) {
+          message += `   Примечания: ${booking.notes}\n`;
+        }
+        message += '\n';
+      });
+      
+      showMessage(message, false);
+    }
+    
     // Инициализация при загрузке
     // Определяем раздел из URL параметра
     const urlParams = new URLSearchParams(window.location.search);
@@ -1038,6 +1257,11 @@
     
     // Показываем нужный раздел
     showSection(section);
+    
+    // По умолчанию показываем календарь в разделе записей
+    if (section === 'booking') {
+      showBookingView('calendar');
+    }
     
     // Поиск клиентов
     const clientSearch = document.getElementById('clientSearch');
