@@ -1070,9 +1070,9 @@
       }
     }
     
-    // Переменные для календаря записей
-    let bookingsViewMonth = new Date();
-    let bookings = [];
+    // Переменные для календаря записей (глобальные)
+    window.bookingsViewMonth = new Date();
+    window.bookings = [];
     
     // Переключение между календарем и формой (глобальная функция)
     window.showBookingView = function(view) {
