@@ -397,6 +397,27 @@
     </div>
   </div>
 
+  <!-- Глобальные функции для onclick обработчиков -->
+  <script>
+    // Глобальные переменные
+    window.bookingsViewMonth = new Date();
+    window.bookings = [];
+    window.db = null; // Будет установлен после инициализации Firebase
+    
+    // Заглушки функций - будут переопределены после загрузки модуля
+    window.showSection = function(sectionName) {
+      console.log('showSection called, waiting for module to load...');
+    };
+    
+    window.showBookingView = function(view) {
+      console.log('showBookingView called, waiting for module to load...');
+    };
+    
+    window.changeBookingMonth = function(delta) {
+      console.log('changeBookingMonth called, waiting for module to load...');
+    };
+  </script>
+
   <!-- Firebase SDK -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
@@ -417,6 +438,7 @@
     // Инициализация Firebase
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
+    window.db = db; // Делаем доступным глобально
 
     // Telegram Web App API
     const tg = window.Telegram.WebApp;
@@ -530,9 +552,9 @@
     // Выбранные услуги
     const selectedServices = new Set();
 
-    // Проверка выходного дня
-    function isWeekend(dateStr) {
-      const date = new Date(dateStr);
+    // Проверка выходного дня (принимает строку даты или объект Date)
+    function isWeekend(dateInput) {
+      const date = typeof dateInput === 'string' ? new Date(dateInput) : dateInput;
       const day = date.getDay();
       return day === 0 || day === 6;
     }
@@ -872,7 +894,7 @@
       }
     });
 
-    // Навигация по разделам (глобальная функция)
+    // Навигация по разделам (глобальная функция) - переопределяем заглушку
     window.showSection = function(sectionName) {
       // Скрываем все разделы
       document.querySelectorAll('.section').forEach(section => {
@@ -1070,11 +1092,7 @@
       }
     }
     
-    // Переменные для календаря записей (глобальные)
-    window.bookingsViewMonth = new Date();
-    window.bookings = [];
-    
-    // Переключение между календарем и формой (глобальная функция)
+    // Переключение между календарем и формой (глобальная функция) - переопределяем заглушку
     window.showBookingView = function(view) {
       const calendarView = document.getElementById('booking-calendar-view');
       const formView = document.getElementById('booking-form-view');
@@ -1099,11 +1117,14 @@
       }
     }
     
-    // Изменение месяца в календаре записей (глобальная функция)
+    // Изменение месяца в календаре записей (глобальная функция) - переопределяем заглушку
     window.changeBookingMonth = function(delta) {
-      bookingsViewMonth.setMonth(bookingsViewMonth.getMonth() + delta);
+      window.bookingsViewMonth.setMonth(window.bookingsViewMonth.getMonth() + delta);
       renderBookingsCalendar();
     }
+    
+    // Делаем renderBookingsCalendar доступной глобально
+    window.renderBookingsCalendar = renderBookingsCalendar;
     
     // Форматирование даты для сравнения
     function formatDateSafe(date) {
@@ -1111,12 +1132,6 @@
       const month = String(date.getMonth() + 1).padStart(2, '0');
       const day = String(date.getDate()).padStart(2, '0');
       return `${year}-${month}-${day}`;
-    }
-    
-    // Проверка выходного дня
-    function isWeekend(date) {
-      const day = date.getDay();
-      return day === 0 || day === 6;
     }
     
     // Рендеринг календаря записей
