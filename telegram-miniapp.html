@@ -872,8 +872,8 @@
       }
     });
 
-    // Навигация по разделам
-    function showSection(sectionName) {
+    // Навигация по разделам (глобальная функция)
+    window.showSection = function(sectionName) {
       // Скрываем все разделы
       document.querySelectorAll('.section').forEach(section => {
         section.classList.remove('active');
@@ -1074,8 +1074,8 @@
     let bookingsViewMonth = new Date();
     let bookings = [];
     
-    // Переключение между календарем и формой
-    function showBookingView(view) {
+    // Переключение между календарем и формой (глобальная функция)
+    window.showBookingView = function(view) {
       const calendarView = document.getElementById('booking-calendar-view');
       const formView = document.getElementById('booking-form-view');
       const btnCalendar = document.getElementById('btn-calendar');
@@ -1099,8 +1099,8 @@
       }
     }
     
-    // Изменение месяца в календаре записей
-    function changeBookingMonth(delta) {
+    // Изменение месяца в календаре записей (глобальная функция)
+    window.changeBookingMonth = function(delta) {
       bookingsViewMonth.setMonth(bookingsViewMonth.getMonth() + delta);
       renderBookingsCalendar();
     }
@@ -1247,28 +1247,38 @@
       showMessage(message, false);
     }
     
-    // Инициализация при загрузке
-    // Определяем раздел из URL параметра
-    const urlParams = new URLSearchParams(window.location.search);
-    const section = urlParams.get('section') || 'booking';
-    
-    // Инициализируем форму бронирования
-    initForm();
-    
-    // Показываем нужный раздел
-    showSection(section);
-    
-    // По умолчанию показываем календарь в разделе записей
-    if (section === 'booking') {
-      showBookingView('calendar');
+    // Инициализация при загрузке DOM
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeApp);
+    } else {
+      initializeApp();
     }
     
-    // Поиск клиентов
-    const clientSearch = document.getElementById('clientSearch');
-    if (clientSearch) {
-      clientSearch.addEventListener('input', async () => {
-        await loadClients();
-      });
+    function initializeApp() {
+      // Определяем раздел из URL параметра
+      const urlParams = new URLSearchParams(window.location.search);
+      const section = urlParams.get('section') || 'booking';
+      
+      // Инициализируем форму бронирования
+      initForm();
+      
+      // Показываем нужный раздел
+      showSection(section);
+      
+      // По умолчанию показываем календарь в разделе записей
+      if (section === 'booking') {
+        setTimeout(() => {
+          showBookingView('calendar');
+        }, 100);
+      }
+      
+      // Поиск клиентов
+      const clientSearch = document.getElementById('clientSearch');
+      if (clientSearch) {
+        clientSearch.addEventListener('input', async () => {
+          await loadClients();
+        });
+      }
     }
   </script>
 </body>
