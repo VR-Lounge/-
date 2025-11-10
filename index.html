@@ -2993,13 +2993,22 @@
       // Сохраняем только новых клиентов в Firebase
       for (const [phoneDigits, clientData] of clientsMap) {
         try {
-          await addDoc(collection(db, "clients"), {
-            ...clientData,
-            createdAt: clientData.createdAt instanceof Date 
-              ? clientData.createdAt 
-              : new Date(clientData.createdAt)
-          });
-          console.log(`✅ Создан новый клиент: ${clientData.clientName} (${phoneDigits})`);
+          // Дополнительная проверка на дубликаты перед созданием
+          const duplicateCheck = await getDocs(
+            query(collection(db, "clients"), where("phoneDigits", "==", phoneDigits))
+          );
+          
+          if (duplicateCheck.empty) {
+            await addDoc(collection(db, "clients"), {
+              ...clientData,
+              createdAt: clientData.createdAt instanceof Date 
+                ? clientData.createdAt 
+                : new Date(clientData.createdAt)
+            });
+            console.log(`✅ Создан новый клиент: ${clientData.clientName} (${phoneDigits})`);
+          } else {
+            console.log(`⚠️ Клиент ${clientData.clientName} (${phoneDigits}) уже существует, пропускаем`);
+          }
         } catch (error) {
           console.error(`Ошибка создания клиента ${phoneDigits}:`, error);
         }
@@ -3072,26 +3081,30 @@
         }
       });
 
-      // Обновляем клиентов в Firebase
+      // Обновляем клиентов в Firebase (оптимизация: используем batch для быстрого обновления)
+      const updatePromises = [];
       for (const client of clientsData) {
         const stats = clientsMap.get(client.phoneDigits);
         if (stats) {
-          try {
-            const clientRef = doc(db, "clients", client.id);
-            await updateDoc(clientRef, {
+          updatePromises.push(
+            updateDoc(doc(db, "clients", client.id), {
               totalBookings: stats.totalBookings,
               totalSpent: stats.totalSpent,
               lastBookingDate: stats.lastBookingDate
-            });
-            // Обновляем локальные данные
-            client.totalBookings = stats.totalBookings;
-            client.totalSpent = stats.totalSpent;
-            client.lastBookingDate = stats.lastBookingDate;
-          } catch (error) {
-            console.error(`Ошибка обновления клиента ${client.id}:`, error);
-          }
+            }).then(() => {
+              // Обновляем локальные данные
+              client.totalBookings = stats.totalBookings;
+              client.totalSpent = stats.totalSpent;
+              client.lastBookingDate = stats.lastBookingDate;
+            }).catch(error => {
+              console.error(`Ошибка обновления клиента ${client.id}:`, error);
+            })
+          );
         }
       }
+      
+      // Выполняем все обновления параллельно для ускорения
+      await Promise.all(updatePromises);
     }
 
     // Показ детальной информации о клиенте
