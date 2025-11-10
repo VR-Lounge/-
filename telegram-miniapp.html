@@ -622,15 +622,22 @@
       };
 
       try {
+        // Логируем данные перед сохранением для отладки
+        console.log('Данные для сохранения:', bookingData);
+        console.log('Выбранные услуги:', Array.from(selectedServices));
+        
         // Сохраняем в Firebase
         await addDoc(collection(db, 'bookings'), bookingData);
+        console.log('✅ Запись успешно сохранена в bookings');
 
         // Обновляем или создаем клиента
+        console.log('Поиск клиента по телефону:', phoneDigits);
         const clientsQuery = query(
           collection(db, 'clients'),
           where('phoneDigits', '==', phoneDigits)
         );
         const clientsSnapshot = await getDocs(clientsQuery);
+        console.log('Найдено клиентов:', clientsSnapshot.size);
 
         if (!clientsSnapshot.empty) {
           // Клиент существует - обновляем статистику
@@ -669,7 +676,23 @@
 
       } catch (error) {
         console.error('Ошибка сохранения:', error);
-        showMessage('❌ Ошибка при сохранении записи. Попробуйте позже.', true);
+        console.error('Детали ошибки:', {
+          code: error.code,
+          message: error.message,
+          stack: error.stack
+        });
+        
+        // Более детальное сообщение об ошибке
+        let errorMessage = '❌ Ошибка при сохранении записи. ';
+        if (error.code === 'permission-denied') {
+          errorMessage += 'Проверьте правила Firestore в Firebase Console.';
+        } else if (error.code === 'unavailable') {
+          errorMessage += 'Проблема с подключением к Firebase. Проверьте интернет.';
+        } else {
+          errorMessage += `Код ошибки: ${error.code || 'неизвестно'}. Проверьте консоль браузера (F12).`;
+        }
+        
+        showMessage(errorMessage, true);
       }
     });
 
