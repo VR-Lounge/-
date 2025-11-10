@@ -1128,11 +1128,12 @@
     // Изменение месяца в календаре записей (глобальная функция) - переопределяем заглушку
     window.changeBookingMonth = function(delta) {
       window.bookingsViewMonth.setMonth(window.bookingsViewMonth.getMonth() + delta);
-      renderBookingsCalendar();
+      if (window.renderBookingsCalendar) {
+        window.renderBookingsCalendar();
+      } else {
+        console.error('renderBookingsCalendar не определена');
+      }
     }
-    
-    // Делаем renderBookingsCalendar доступной глобально
-    window.renderBookingsCalendar = renderBookingsCalendar;
     
     // Форматирование даты для сравнения
     function formatDateSafe(date) {
@@ -1147,7 +1148,10 @@
       const calendarEl = document.getElementById('bookingsCalendar');
       const monthTitleEl = document.getElementById('bookingMonthTitle');
       
-      if (!calendarEl) return;
+      if (!calendarEl) {
+        console.error('Элемент bookingsCalendar не найден');
+        return;
+      }
       
       // Обновляем заголовок месяца
       if (monthTitleEl) {
@@ -1159,12 +1163,12 @@
       
       // Загружаем записи
       try {
-        if (!db && !window.db) {
+        const firestoreDb = db || window.db;
+        if (!firestoreDb) {
           console.error('Firebase не инициализирован');
           calendarEl.innerHTML = '<div class="text-center text-red-500 py-8">Ошибка: Firebase не загружен</div>';
           return;
         }
-        const firestoreDb = db || window.db;
         const bookingsSnapshot = await getDocs(collection(firestoreDb, 'bookings'));
         window.bookings = bookingsSnapshot.docs.map(doc => ({
           id: doc.id,
@@ -1278,6 +1282,9 @@
       
       showMessage(message, false);
     }
+    
+    // Делаем renderBookingsCalendar доступной глобально (ПОСЛЕ определения функции)
+    window.renderBookingsCalendar = renderBookingsCalendar;
     
     // Инициализация при загрузке DOM
     if (document.readyState === 'loading') {
