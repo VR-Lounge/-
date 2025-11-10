@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Существующие правила
+    match /bookings/{bookingId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+    
+    match /admins/{adminId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+    
+    match /adminAssignments/{assignmentId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+
+    // Правила для расходов - доступ всем авторизованным пользователям
+    match /expenses/{expenseId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Правила для базы клиентов
+    match /clients/{clientId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+  }
+} 
