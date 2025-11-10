@@ -2792,6 +2792,10 @@
 
       if (!clientsTableBody) return; // Если секция не загружена, выходим
 
+      // Показываем индикатор загрузки
+      if (clientsLoading) clientsLoading.classList.remove('hidden');
+      if (clientsEmpty) clientsEmpty.classList.add('hidden');
+
       try {
         // Загружаем клиентов из Firebase
         const clientsSnapshot = await getDocs(collection(db, "clients"));
