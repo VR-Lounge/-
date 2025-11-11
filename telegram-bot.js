@@ -316,6 +316,7 @@ bot.on('contact', async (msg) => {
 // Обработчик кнопки "Контакты"
 bot.onText(/📞 Контакты|Контакты|контакты/, async (msg) => {
   const chatId = msg.chat.id;
+  const CLIENT_MINI_APP_URL = process.env.CLIENT_MINI_APP_URL || 'https://vr-lounge.github.io/-/client-booking-miniapp.html';
   
   const contactsMessage = `
 📞 Контакты VR Lounge
@@ -360,6 +361,7 @@ bot.onText(/📞 Контакты|Контакты|контакты/, async (msg
 // Обработчик кнопки "О нас" / "Информация"
 bot.onText(/ℹ️ О нас|О нас|о нас|ℹ️ Информация|Информация|информация/, async (msg) => {
   const chatId = msg.chat.id;
+  const CLIENT_MINI_APP_URL = process.env.CLIENT_MINI_APP_URL || 'https://vr-lounge.github.io/-/client-booking-miniapp.html';
   
   const infoMessage = `
 🎮 VR Lounge - Игровой Рай
@@ -410,6 +412,7 @@ bot.onText(/ℹ️ О нас|О нас|о нас|ℹ️ Информация|И�
 bot.onText(/📅 Мои записи|Мои записи|мои записи/, async (msg) => {
   const chatId = msg.chat.id;
   const userId = msg.from.id.toString();
+  const CLIENT_MINI_APP_URL = process.env.CLIENT_MINI_APP_URL || 'https://vr-lounge.github.io/-/client-booking-miniapp.html';
   
   try {
     // Находим клиента по telegramId
@@ -488,6 +491,7 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
 bot.on('callback_query', async (query) => {
   const chatId = query.message.chat.id;
   const data = query.data;
+  const CLIENT_MINI_APP_URL = process.env.CLIENT_MINI_APP_URL || 'https://vr-lounge.github.io/-/client-booking-miniapp.html';
   
   if (data === 'show_contacts') {
     const contactsMessage = `
