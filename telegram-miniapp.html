@@ -1036,10 +1036,15 @@
       // Обработка вставки из буфера обмена (Ctrl+V, Cmd+V)
       phoneInput.addEventListener('paste', (e) => {
         e.preventDefault();
+        const input = e.target;
         const pastedText = (e.clipboardData || window.clipboardData).getData('text');
+        
+        console.log('📋 Вставлен текст из буфера:', pastedText);
         
         // Извлекаем только цифры из вставленного текста
         let digits = pastedText.replace(/\D/g, '');
+        
+        console.log('🔢 Извлеченные цифры:', digits);
         
         // Обрабатываем разные форматы
         if (digits.startsWith('8')) {
@@ -1052,12 +1057,15 @@
           digits = digits.substring(0, 11);
         }
         
-        // Если после обработки осталось только "7", оставляем только маску
+        console.log('✅ Нормализованные цифры:', digits);
+        
+        // Если после обработки осталось только "7" или меньше, оставляем только маску
         if (digits.length <= 1) {
           input.value = '+7 (';
           input.setSelectionRange(4, 4);
           lastValue = '+7 (';
           lastCursorPosition = 4;
+          console.log('⚠️ Недостаточно цифр, оставлена только маска');
           return;
         }
         
@@ -1075,6 +1083,8 @@
             }
           }
         }
+        
+        console.log('📞 Отформатированный номер:', formatted);
         
         input.value = formatted;
         input.setSelectionRange(formatted.length, formatted.length);
