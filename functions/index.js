@@ -22,35 +22,66 @@ const bot = new TelegramBot(token);
 // СИСТЕМА РОЛЕЙ ПОЛЬЗОВАТЕЛЕЙ
 // ============================================
 
+// Кэш для ролей пользователей (чтобы не делать запросы каждый раз)
+const userRoleCache = new Map();
+const CACHE_TTL = 5 * 60 * 1000; // 5 минут
+
+// Функция определения роли пользователя (с кэшированием)
 async function getUserRole(userId) {
   try {
+    // Проверяем кэш
+    const cached = userRoleCache.get(userId);
+    if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+      return cached.role;
+    }
+    
+    // Сначала проверяем, является ли пользователь админом (из графика смен)
     const adminSnapshot = await db.collection('admins')
       .where('telegramId', '==', userId.toString())
+      .limit(1) // Ограничиваем результат
       .get();
     
     if (!adminSnapshot.empty) {
-      return 'admin';
+      const role = 'admin';
+      userRoleCache.set(userId, { role, timestamp: Date.now() });
+      return role;
     }
     
+    // Затем проверяем, является ли пользователь руководителем
     const managerSnapshot = await db.collection('managers')
       .where('telegramId', '==', userId.toString())
+      .limit(1) // Ограничиваем результат
       .get();
     
     if (!managerSnapshot.empty) {
-      return 'admin';
+      const role = 'admin'; // Руководители имеют те же права, что и админы
+      userRoleCache.set(userId, { role, timestamp: Date.now() });
+      return role;
     }
     
+    // Затем проверяем, является ли пользователь клиентом
     const clientSnapshot = await db.collection('clients')
       .where('telegramId', '==', userId.toString())
+      .limit(1) // Ограничиваем результат
       .get();
     
     if (!clientSnapshot.empty) {
-      return 'client';
+      const role = 'client';
+      userRoleCache.set(userId, { role, timestamp: Date.now() });
+      return role;
     }
     
-    return 'guest';
+    // Если не найден нигде - гость
+    const role = 'guest';
+    userRoleCache.set(userId, { role, timestamp: Date.now() });
+    return role;
   } catch (error) {
     console.error('Ошибка определения роли пользователя:', error);
+    // При ошибке возвращаем роль из кэша, если есть
+    const cached = userRoleCache.get(userId);
+    if (cached) {
+      return cached.role;
+    }
     return 'guest';
   }
 }
