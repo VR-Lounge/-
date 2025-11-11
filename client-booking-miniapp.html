@@ -210,7 +210,7 @@
       box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 1rem;
     }
     
@@ -221,6 +221,8 @@
       object-fit: contain;
       flex-shrink: 0;
       box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 5px;
     }
     
     .header-content {
@@ -230,17 +232,22 @@
     
     @media (max-width: 640px) {
       .header {
-        flex-direction: column;
+        flex-direction: row;
         gap: 0.75rem;
-      }
-      
-      .header-content {
-        text-align: center;
+        padding: 1rem;
       }
       
       .header-logo {
         width: 50px;
         height: 50px;
+      }
+      
+      .header-content h1 {
+        font-size: 1.25rem;
+      }
+      
+      .header-content p {
+        font-size: 0.75rem;
       }
     }
     
@@ -281,7 +288,7 @@
   <div class="min-h-screen pb-24">
     <!-- Заголовок -->
     <div class="header">
-      <img src="https://vr-lounge.github.io/-/logo.png" alt="VR Lounge Logo" class="header-logo" onerror="this.style.display='none'">
+      <img src="https://vr-lounge.github.io/-/Logo.png" alt="VR Lounge Logo" class="header-logo" onerror="this.style.display='none'">
       <div class="header-content">
         <h1 class="text-2xl font-bold neon-text">🎮 Записаться в VR Lounge</h1>
         <p class="text-sm mt-1 opacity-90">Выберите услугу и удобное время</p>
