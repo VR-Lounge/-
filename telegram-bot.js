@@ -138,7 +138,8 @@ bot.onText(/\/start/, async (msg) => {
         });
       } catch (error) {
         console.error('Ошибка установки Menu Button для админа:', error.message);
-      } else if (role === 'client') {
+      }
+    } else if (role === 'client') {
       // Меню для клиента
       await bot.sendMessage(chatId, `
 👋 Привет, ${username}!
