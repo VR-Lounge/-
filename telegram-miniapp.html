@@ -302,7 +302,7 @@
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { 
-      getFirestore, collection, addDoc, query, where, getDocs, updateDoc, doc
+      getFirestore, collection, addDoc, query, where, getDocs, updateDoc, doc, Timestamp
     } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
     // Конфигурация Firebase
@@ -1189,7 +1189,7 @@
           date: document.getElementById('finalPayDateTransfer').value || '',
           notes: 'Перевод'
         },
-        createdAt: new Date(),
+        createdAt: Timestamp.now(),
         source: 'admin_miniapp'
       };
 
@@ -1223,6 +1223,7 @@
             telegramId: userId || clientData.telegramId,
             telegramUsername: username || clientData.telegramUsername
           });
+          console.log('✅ Клиент обновлен');
         } else {
           // Создаем нового клиента
           await addDoc(collection(db, 'clients'), {
@@ -1231,14 +1232,16 @@
             phoneDigits: phoneDigits,
             telegramId: userId,
             telegramUsername: username,
-            createdAt: new Date(),
+            createdAt: Timestamp.now(),
             lastBookingDate: bookingDate,
             totalBookings: 1,
             totalSpent: calculation.total,
             isActive: true
           });
+          console.log('✅ Новый клиент создан');
         }
 
+        console.log('✅ Все операции выполнены успешно');
         showMessage('✅ Запись успешно создана!');
         
         // Закрываем Mini App через 2 секунды
