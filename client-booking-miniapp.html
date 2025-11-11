@@ -1126,23 +1126,23 @@
       }
     }
     
-    // Показ модального окна с ошибкой
-    function showErrorModal(message) {
+    // Показ модального окна с успехом
+    function showSuccessModal(message) {
       // Удаляем предыдущее модальное окно, если есть
-      const existingModal = document.getElementById('errorModal');
+      const existingModal = document.getElementById('successModal');
       if (existingModal) {
         existingModal.remove();
       }
       
       const modal = document.createElement('div');
-      modal.id = 'errorModal';
+      modal.id = 'successModal';
       modal.className = 'modal-overlay';
       modal.innerHTML = `
         <div class="modal-content">
-          <div class="modal-title">⚠️ Ошибка заполнения</div>
+          <div class="modal-title">✅ Запись успешно создана!</div>
           <div class="modal-message">${message}</div>
-          <button class="modal-button" onclick="this.closest('.modal-overlay').remove()">
-            Понятно
+          <button class="modal-button" onclick="this.closest('.modal-overlay').remove(); window.Telegram.WebApp.close();">
+            Отлично!
           </button>
         </div>
       `;
@@ -1153,16 +1153,17 @@
       modal.addEventListener('click', (e) => {
         if (e.target === modal) {
           modal.remove();
+          tg.close();
         }
       });
       
-      // Прокручиваем к кнопке после закрытия модального окна
+      // Автоматическое закрытие через 5 секунд
       setTimeout(() => {
-        const submitBtn = document.getElementById('submitBtn');
-        if (submitBtn) {
-          submitBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (document.getElementById('successModal')) {
+          document.getElementById('successModal').remove();
+          tg.close();
         }
-      }, 100);
+      }, 5000);
     }
     
     // Показ сообщения об ошибке над кнопкой
@@ -1326,7 +1327,14 @@
 
         showMessage('✅ Запись успешно создана! Мы свяжемся с вами для подтверждения.', 'success');
         
-        // Прокручиваем к сообщению об успехе
+        // Показываем модальное окно об успехе
+        showSuccessModal('Ваша запись успешно создана! Мы свяжемся с вами для подтверждения. Ждем вас! 🎮');
+        
+        // Обновляем состояние кнопки
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Забронировано';
+        
+        // Прокручиваем к сообщению об успехе (на случай, если модальное окно не показалось)
         setTimeout(() => {
           const messageContainer = document.getElementById('messageContainer');
           if (messageContainer) {
@@ -1334,10 +1342,13 @@
           }
         }, 100);
         
-        // Закрытие мини-аппа через 4 секунды (чтобы пользователь успел увидеть сообщение)
+        // Закрытие мини-аппа через 5 секунд (если модальное окно не закрылось автоматически)
         setTimeout(() => {
-          tg.close();
-        }, 4000);
+          const successModal = document.getElementById('successModal');
+          if (!successModal) {
+            tg.close();
+          }
+        }, 5000);
 
       } catch (error) {
         console.error('❌ Ошибка сохранения:', error);

@@ -906,7 +906,7 @@ function setupNewBookingListener() {
           
           // Добавляем источник записи
           if (booking.source === 'client_miniapp') {
-            adminNotificationMessage += `\n📱 Запись создана через Friendly-сервис`;
+            adminNotificationMessage += `\n📱 Запись создана через бот @vr_lounge_bot . СВЯЗАТЬСЯ С КЛИЕНТОМ!`;
           }
           
           // Отправляем уведомление админам
@@ -916,12 +916,34 @@ function setupNewBookingListener() {
           const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
           if (phoneDigits) {
             try {
+              // Нормализуем номер телефона для поиска в базе (убираем первую 7 или 8)
+              let normalizedPhoneDigits = phoneDigits;
+              if (normalizedPhoneDigits.startsWith('7')) {
+                normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
+              } else if (normalizedPhoneDigits.startsWith('8')) {
+                normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
+              }
+              
+              console.log(`🔍 Поиск клиента по телефону:`, {
+                original: booking.clientPhone,
+                phoneDigits: phoneDigits,
+                normalizedPhoneDigits: normalizedPhoneDigits
+              });
+              
               const clientsSnapshot = await db.collection('clients')
-                .where('phoneDigits', '==', phoneDigits)
+                .where('phoneDigits', '==', normalizedPhoneDigits)
                 .get();
+              
+              console.log(`📋 Найдено клиентов: ${clientsSnapshot.size}`);
               
               if (!clientsSnapshot.empty) {
                 const client = clientsSnapshot.docs[0].data();
+                console.log(`👤 Клиент найден:`, {
+                  name: client.clientName,
+                  telegramId: client.telegramId,
+                  phoneDigits: client.phoneDigits
+                });
+                
                 if (client.telegramId) {
                   const clientMessage = `✅ Ваша запись успешно создана!\n\n` +
                     `📅 Дата: ${formattedDate}\n` +
@@ -931,12 +953,18 @@ function setupNewBookingListener() {
                     `Мы свяжемся с вами для подтверждения. Ждем вас! 🎮`;
                   
                   await sendNotificationToClient(clientsSnapshot.docs[0].id, clientMessage);
-                  console.log(`✅ Уведомление отправлено клиенту ${booking.clientName}`);
+                  console.log(`✅ Уведомление отправлено клиенту ${booking.clientName} (telegramId: ${client.telegramId})`);
+                } else {
+                  console.log(`⚠️ У клиента ${booking.clientName} нет telegramId`);
                 }
+              } else {
+                console.log(`⚠️ Клиент с телефоном ${normalizedPhoneDigits} не найден в базе`);
               }
             } catch (error) {
-              console.error('Ошибка отправки уведомления клиенту:', error);
+              console.error('❌ Ошибка отправки уведомления клиенту:', error);
             }
+          } else {
+            console.log(`⚠️ Не удалось извлечь phoneDigits из ${booking.clientPhone}`);
           }
         }
       }
