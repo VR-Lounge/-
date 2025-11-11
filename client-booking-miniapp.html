@@ -911,6 +911,7 @@
       });
       
       // Маппим выбранные услуги на новые ID и сохраняем только доступные
+      const oldSelectedServices = new Set(selectedServices); // Сохраняем старые для логирования
       selectedServices.forEach(oldServiceId => {
         const newServiceId = serviceMapping[oldServiceId];
         if (newServiceId && availableServiceIds.has(newServiceId)) {
@@ -923,7 +924,7 @@
       
       console.log('🔄 Обновление услуг:', {
         isWeekendDay,
-        oldSelected: Array.from(selectedServices),
+        oldSelected: Array.from(oldSelectedServices),
         newSelected: Array.from(newSelectedServices),
         availableServices: Array.from(availableServiceIds)
       });
