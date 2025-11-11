@@ -548,32 +548,42 @@
       }
     }
 
-    // Загрузка услуг
-    function loadServices() {
+    // Загрузка услуг (с учетом дня недели)
+    function loadServices(date = null) {
       const container = document.getElementById('servicesContainer');
       if (!container) return;
 
-      const services = [
-        { id: 'weekday_ps1', label: 'PS5 (1 джойстик)', price: 150, icon: 'fa-gamepad' },
-        { id: 'weekday_ps2', label: 'PS5 (2 джойстика)', price: 300, icon: 'fa-gamepad' },
-        { id: 'weekday_vr1', label: 'VR очки (1 шт.)', price: 500, icon: 'fa-vr-cardboard' },
-        { id: 'weekday_vr2', label: 'VR очки (2 шт.)', price: 1000, icon: 'fa-vr-cardboard' },
-        { id: 'weekday_vr3', label: 'VR очки (3 шт.)', price: 1500, icon: 'fa-vr-cardboard' },
-        { id: 'weekday_vr4', label: 'VR очки (4 шт.)', price: 2000, icon: 'fa-vr-cardboard' },
-        { id: 'weekend_vr1', label: 'VR очки (1 шт.)', price: 750, icon: 'fa-vr-cardboard' },
-        { id: 'weekend_vr2', label: 'VR очки (2 шт.)', price: 1500, icon: 'fa-vr-cardboard' },
-        { id: 'weekend_vr3', label: 'VR очки (3 шт.)', price: 2250, icon: 'fa-vr-cardboard' },
-        { id: 'weekend_vr4', label: 'VR очки (4 шт.)', price: 3000, icon: 'fa-vr-cardboard' },
-        { id: 'xbox_kinnect', label: 'X-Box Kinnect', price: 500, icon: 'fa-child' },
-        { id: 'xbox1', label: 'X-Box (1 джойстик)', price: 250, icon: 'fa-gamepad' },
-        { id: 'xbox2', label: 'X-Box (2 джойстика)', price: 500, icon: 'fa-gamepad' },
-        { id: 'xbox3', label: 'X-Box (3 джойстика)', price: 750, icon: 'fa-gamepad' },
-        { id: 'xbox4', label: 'X-Box (4 джойстика)', price: 1000, icon: 'fa-gamepad' },
-        { id: 'karaoke', label: 'Караоке', price: 1000, icon: 'fa-microphone' },
-        { id: 'board_games', label: 'Настольные игры', price: 500, icon: 'fa-dice-d6' },
-        { id: 'hostess', label: 'Ведущая', price: 2000, icon: 'fa-user-tie' },
-        { id: 'birthday', label: 'Аренда (День Рождения)', price: 3000, icon: 'fa-birthday-cake' }
+      const isWeekendDay = date ? isWeekend(new Date(date)) : isWeekend(new Date());
+      
+      const allServices = [
+        { id: 'weekday_ps1', label: 'PS5 (1 джойстик)', price: 150, icon: 'fa-gamepad', weekday: true },
+        { id: 'weekday_ps2', label: 'PS5 (2 джойстика)', price: 300, icon: 'fa-gamepad', weekday: true },
+        { id: 'weekday_vr1', label: 'VR очки (1 шт.)', price: 500, icon: 'fa-vr-cardboard', weekday: true },
+        { id: 'weekday_vr2', label: 'VR очки (2 шт.)', price: 1000, icon: 'fa-vr-cardboard', weekday: true },
+        { id: 'weekday_vr3', label: 'VR очки (3 шт.)', price: 1500, icon: 'fa-vr-cardboard', weekday: true },
+        { id: 'weekday_vr4', label: 'VR очки (4 шт.)', price: 2000, icon: 'fa-vr-cardboard', weekday: true },
+        { id: 'weekend_vr1', label: 'VR очки (1 шт.)', price: 750, icon: 'fa-vr-cardboard', weekday: false },
+        { id: 'weekend_vr2', label: 'VR очки (2 шт.)', price: 1500, icon: 'fa-vr-cardboard', weekday: false },
+        { id: 'weekend_vr3', label: 'VR очки (3 шт.)', price: 2250, icon: 'fa-vr-cardboard', weekday: false },
+        { id: 'weekend_vr4', label: 'VR очки (4 шт.)', price: 3000, icon: 'fa-vr-cardboard', weekday: false },
+        { id: 'xbox_kinnect', label: 'X-Box Kinnect', price: 500, icon: 'fa-child', weekday: null },
+        { id: 'xbox1', label: 'X-Box (1 джойстик)', price: 250, icon: 'fa-gamepad', weekday: null },
+        { id: 'xbox2', label: 'X-Box (2 джойстика)', price: 500, icon: 'fa-gamepad', weekday: null },
+        { id: 'xbox3', label: 'X-Box (3 джойстика)', price: 750, icon: 'fa-gamepad', weekday: null },
+        { id: 'xbox4', label: 'X-Box (4 джойстика)', price: 1000, icon: 'fa-gamepad', weekday: null },
+        { id: 'karaoke', label: 'Караоке', price: 1000, icon: 'fa-microphone', weekday: null },
+        { id: 'board_games', label: 'Настольные игры', price: 500, icon: 'fa-dice-d6', weekday: null },
+        { id: 'hostess', label: 'Ведущая', price: 2000, icon: 'fa-user-tie', weekday: null },
+        { id: 'birthday', label: 'Аренда (День Рождения)', price: 3000, icon: 'fa-birthday-cake', weekday: null }
       ];
+
+      // Фильтруем услуги в зависимости от дня недели
+      const services = allServices.filter(service => {
+        if (service.weekday === null) return true; // Услуги доступны всегда
+        return service.weekday === !isWeekendDay;
+      });
+
+      container.innerHTML = '';
 
       services.forEach(service => {
         const card = document.createElement('div');
@@ -593,7 +603,10 @@
         `;
         
         card.addEventListener('click', () => {
-          document.querySelectorAll('.service-card').forEach(c => c.classList.remove('selected'));
+          document.querySelectorAll('.service-card').forEach(c => {
+            c.classList.remove('selected');
+            c.querySelector('.fa-check-circle').style.opacity = '0';
+          });
           card.classList.add('selected');
           card.querySelector('.fa-check-circle').style.opacity = '1';
           selectedService = service.id;
@@ -741,7 +754,15 @@
 
     // Обработчики событий
     document.getElementById('bookingDate').addEventListener('change', (e) => {
-      generateTimeSlots(e.target.value);
+      const date = e.target.value;
+      loadServices(date); // Перезагружаем услуги с учетом дня недели
+      generateTimeSlots(date);
+      selectedService = null; // Сбрасываем выбор услуги
+      document.querySelectorAll('.service-card').forEach(c => {
+        c.classList.remove('selected');
+        c.querySelector('.fa-check-circle').style.opacity = '0';
+      });
+      updateTotal();
     });
 
     document.getElementById('duration').addEventListener('change', () => {
