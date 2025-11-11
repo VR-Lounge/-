@@ -1116,7 +1116,7 @@
           await window.addDoc(window.collection(window.db, "clients"), {
             clientName,
             clientPhone,
-            phoneDigits,
+            phoneDigits: cleanPhone,
             telegramId: user?.id?.toString() || null,
             telegramUsername: user?.username ? `@${user.username}` : null,
             createdAt: window.Timestamp.now(),
