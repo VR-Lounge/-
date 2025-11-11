@@ -175,7 +175,8 @@ bot.onText(/\/start/, async (msg) => {
         });
       } catch (error) {
         console.error('Ошибка установки Menu Button для клиента:', error.message);
-      } else {
+      }
+    } else {
       // Меню для гостя (не зарегистрированного)
       await bot.sendMessage(chatId, `
 👋 Привет, ${username}!
