@@ -1181,6 +1181,7 @@
       const bookingData = {
         clientName: clientName,
         clientPhone: formattedPhone,
+        phoneDigits: cleanPhoneDigits, // Добавляем phoneDigits для валидации в Firestore rules
         bookingDate: bookingDate,
         startTime: startTime,
         duration: duration,
