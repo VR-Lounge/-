@@ -744,6 +744,11 @@
 
     // Получение графика работы
     function getWorkingHours(date) {
+      // Если date - строка в формате YYYY-MM-DD, создаем Date объект правильно
+      if (typeof date === 'string') {
+        const [year, month, day] = date.split('-').map(Number);
+        date = new Date(year, month - 1, day);
+      }
       const isWeekendDay = isWeekend(date);
       if (isWeekendDay) {
         return { start: 12, end: 21 }; // Сб-Вс: 12-21
