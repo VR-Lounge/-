@@ -74,6 +74,25 @@
       padding-right: 1rem !important;
     }
     
+    /* Отступы справа для всех полей ввода */
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
+      padding-right: 1rem !important;
+    }
+    
+    /* Увеличение высоты для полей Метод и Дата в секции Предоплата */
+    #prepayMethod,
+    #prepayDate {
+      min-height: 2.75rem;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
+    }
+    
     input[type="date"]::-webkit-calendar-picker-indicator,
     input[type="time"]::-webkit-calendar-picker-indicator {
       opacity: 1;
@@ -89,7 +108,7 @@
     </div>
 
     <!-- Форма бронирования -->
-    <form id="bookingForm" class="p-4 space-y-4 max-w-lg mx-auto">
+    <form id="bookingForm" class="p-4 pr-6 space-y-4 max-w-lg mx-auto">
       <!-- Имя клиента -->
       <div>
         <label for="clientName" class="block text-gray-900 font-semibold mb-2">Имя клиента</label>
