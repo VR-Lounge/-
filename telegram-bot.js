@@ -851,7 +851,6 @@ function setupNewBookingListener() {
   let processedBookingIds = new Set();
   
   const unsubscribe = db.collection('bookings')
-    .orderBy('createdAt', 'desc')
     .limit(50) // Ограничиваем количество записей для проверки
     .onSnapshot(async (snapshot) => {
       try {
