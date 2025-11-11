@@ -620,12 +620,14 @@
       
       // Генерируем все возможные временные слоты с шагом 30 минут
       const availableSlots = [];
+      const selectedDuration = parseFloat(document.getElementById('duration').value) || 1;
+      
       for (let hour = workStartHour; hour < workEndHour; hour++) {
         for (let minute = 0; minute < 60; minute += 30) {
           const timeStr = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
           
-          // Проверяем, не пересекается ли этот слот с занятыми
-          const isAvailable = !isTimeSlotBooked(timeStr);
+          // Проверяем, не пересекается ли этот слот с занятыми (с учетом выбранной длительности)
+          const isAvailable = !isTimeSlotBooked(timeStr, selectedDuration);
           
           if (isAvailable) {
             availableSlots.push(timeStr);
@@ -657,12 +659,13 @@
       }
     }
     
-    // Проверка, занят ли временной слот
-    function isTimeSlotBooked(startTime) {
+    // Проверка, занят ли временной слот (с учетом длительности)
+    function isTimeSlotBooked(startTime, duration = 1) {
       if (!startTime || bookedTimeSlots.length === 0) return false;
       
       const [startHours, startMinutes] = startTime.split(':').map(Number);
       const requestedStart = startHours * 60 + startMinutes;
+      const requestedEnd = requestedStart + duration * 60;
       
       return bookedTimeSlots.some(slot => {
         const [slotStartHours, slotStartMinutes] = slot.start.split(':').map(Number);
@@ -670,8 +673,14 @@
         const slotStart = slotStartHours * 60 + slotStartMinutes;
         const slotEnd = slotEndHours * 60 + slotEndMinutes;
         
-        // Проверяем пересечение: запрашиваемое время попадает в занятый интервал
-        return requestedStart >= slotStart && requestedStart < slotEnd;
+        // Проверяем пересечение интервалов:
+        // Запрашиваемый интервал пересекается с занятым, если:
+        // - начало запрашиваемого попадает в занятый интервал, ИЛИ
+        // - конец запрашиваемого попадает в занятый интервал, ИЛИ
+        // - запрашиваемый интервал полностью содержит занятый интервал
+        return (requestedStart >= slotStart && requestedStart < slotEnd) ||
+               (requestedEnd > slotStart && requestedEnd <= slotEnd) ||
+               (requestedStart <= slotStart && requestedEnd >= slotEnd);
       });
     }
 
@@ -843,7 +852,14 @@
         loadBookedTimeSlots(selectedDate); // Загружаем занятые слоты для новой даты
       });
 
-      document.getElementById('duration').addEventListener('change', updateTotal);
+      document.getElementById('duration').addEventListener('change', () => {
+        updateTotal();
+        // Обновляем список доступных слотов с учетом новой длительности
+        const selectedDate = document.getElementById('bookingDate').value;
+        if (selectedDate) {
+          updateTimeSlots(selectedDate);
+        }
+      });
       document.getElementById('discountPercent').addEventListener('input', updateTotal);
       document.getElementById('discountAmount').addEventListener('input', updateTotal);
       document.getElementById('prepayAmount').addEventListener('input', updateTotal);
