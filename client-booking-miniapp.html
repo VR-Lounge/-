@@ -982,10 +982,16 @@
         isWeekendDay,
         oldSelected: Array.from(oldSelectedServices),
         newSelected: Array.from(newSelectedServices),
-        availableServices: Array.from(availableServiceIds)
+        availableServices: Array.from(availableServiceIds),
+        filteredServicesCount: services.length
       });
 
       container.innerHTML = '';
+
+      console.log('📋 Отображаем услуги:', {
+        totalServices: services.length,
+        services: services.map(s => ({ id: s.id, label: s.label }))
+      });
 
       services.forEach(service => {
         const card = document.createElement('div');
