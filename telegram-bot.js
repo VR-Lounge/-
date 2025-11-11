@@ -864,7 +864,6 @@ function setupNewBookingListener() {
       
       const newBookings = await db.collection('bookings')
         .where('createdAt', '>=', thirtySecondsAgo)
-        .orderBy('createdAt', 'desc')
         .get();
       
       console.log(`📋 Найдено записей за последние 30 секунд: ${newBookings.size}`);
