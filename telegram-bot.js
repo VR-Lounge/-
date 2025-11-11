@@ -846,152 +846,177 @@ function getServiceNames(serviceKeys) {
 function setupNewBookingListener() {
   console.log('🔔 Настройка слушателя новых записей...');
   
-  // Отслеживаем новые документы в коллекции bookings
-  // Используем timestamp для фильтрации только новых записей
-  let lastCheckTime = admin.firestore.Timestamp.now();
+  // Используем onSnapshot для отслеживания новых записей в реальном времени
+  // Это более эффективно, чем периодические запросы
+  let processedBookingIds = new Set();
   
-  // Проверяем новые записи каждые 10 секунд
-  setInterval(async () => {
-    try {
-      const now = admin.firestore.Timestamp.now();
-      
-      // Ищем записи, созданные за последние 30 секунд
-      const thirtySecondsAgo = admin.firestore.Timestamp.fromMillis(
-        now.toMillis() - 30 * 1000
-      );
-      
-      console.log('🔍 Поиск новых записей с createdAt >=', thirtySecondsAgo.toDate());
-      
-      const newBookings = await db.collection('bookings')
-        .where('createdAt', '>=', thirtySecondsAgo)
-        .get();
-      
-      console.log(`📋 Найдено записей за последние 30 секунд: ${newBookings.size}`);
-      
-      for (const bookingDoc of newBookings.docs) {
-        const booking = bookingDoc.data();
-        const bookingId = bookingDoc.id;
+  const unsubscribe = db.collection('bookings')
+    .orderBy('createdAt', 'desc')
+    .limit(50) // Ограничиваем количество записей для проверки
+    .onSnapshot(async (snapshot) => {
+      try {
+        const now = admin.firestore.Timestamp.now();
+        const thirtySecondsAgo = admin.firestore.Timestamp.fromMillis(
+          now.toMillis() - 30 * 1000
+        );
         
-        // Проверяем, что это действительно новая запись (создана после последней проверки)
-        const createdAt = booking.createdAt?.toDate ? booking.createdAt.toDate() : new Date(booking.createdAt);
-        const createdAtTimestamp = booking.createdAt || admin.firestore.Timestamp.fromDate(createdAt);
+        console.log(`🔍 Проверка новых записей...`);
         
-        if (createdAtTimestamp.toMillis() > lastCheckTime.toMillis()) {
-          console.log(`📝 Новая запись обнаружена: ${bookingId}`);
-          console.log('📅 Дата создания:', createdAt);
-          
-          // Формируем уведомление для админов
-          const formattedDate = formatDateForNotification(booking.bookingDate);
-          const serviceNames = getServiceNames(booking.selectedServices || []);
-          
-          let adminNotificationMessage = `📝 Новая запись клиента!\n\n`;
-          adminNotificationMessage += `👤 Клиент: ${booking.clientName}\n`;
-          adminNotificationMessage += `📞 Телефон: ${booking.clientPhone}\n`;
-          adminNotificationMessage += `📅 Дата: ${formattedDate}\n`;
-          adminNotificationMessage += `⏰ Время: ${booking.startTime}\n`;
-          adminNotificationMessage += `⏱ Длительность: ${booking.duration} ч\n`;
-          adminNotificationMessage += `🎮 Услуги: ${serviceNames}\n`;
-          
-          // Добавляем информацию о скидке, если есть
-          if (booking.discountPercent > 0 || booking.discountAmount > 0) {
-            if (booking.discountPercent > 0) {
-              adminNotificationMessage += `💰 Скидка: ${booking.discountPercent}%\n`;
-            } else {
-              adminNotificationMessage += `💰 Скидка: ${booking.discountAmount} ₽\n`;
+        for (const change of snapshot.docChanges()) {
+          // Обрабатываем только новые документы
+          if (change.type === 'added') {
+            const booking = change.doc.data();
+            const bookingId = change.doc.id;
+            
+            // Пропускаем, если уже обработали
+            if (processedBookingIds.has(bookingId)) {
+              continue;
             }
-          }
-          
-          // Добавляем информацию о предоплате, если есть
-          if (booking.prepayment && booking.prepayment.amount > 0) {
-            const method = booking.prepayment.method === 'cash' ? 'Наличные' : 'Перевод';
-            adminNotificationMessage += `💵 Предоплата: ${booking.prepayment.amount} ₽ (${method})\n`;
-          }
-          
-          // Добавляем примечания, если есть
-          if (booking.notes && booking.notes.trim()) {
-            adminNotificationMessage += `📝 Примечания: ${booking.notes}\n`;
-          }
-          
-          // Добавляем источник записи
-          if (booking.source === 'client_miniapp') {
-            adminNotificationMessage += `\n📱 Запись создана через бот @vr_lounge_bot . СВЯЗАТЬСЯ С КЛИЕНТОМ!`;
-          } else if (booking.source === 'admin_miniapp') {
-            adminNotificationMessage += `\n📱 Запись создана через админ-панель`;
-          }
-          
-          // Отправляем уведомление админам
-          await sendNotificationToAdmins(adminNotificationMessage);
-          console.log('✅ Уведомление отправлено в админ группу');
-          
-          // Отправляем уведомление клиенту, если есть telegramId
-          // Используем phoneDigits из booking, если он есть, иначе извлекаем из clientPhone
-          const phoneDigits = booking.phoneDigits || booking.clientPhone?.replace(/\D/g, '') || '';
-          if (phoneDigits) {
-            try {
-              // Нормализуем номер телефона для поиска в базе (убираем первую 7 или 8)
-              let normalizedPhoneDigits = phoneDigits;
-              if (normalizedPhoneDigits.length === 11) {
-                if (normalizedPhoneDigits.startsWith('7')) {
-                  normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
-                } else if (normalizedPhoneDigits.startsWith('8')) {
-                  normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
+            
+            // Проверяем, что запись создана недавно (за последние 30 секунд)
+            const createdAt = booking.createdAt?.toDate ? booking.createdAt.toDate() : new Date(booking.createdAt);
+            const createdAtTimestamp = booking.createdAt || admin.firestore.Timestamp.fromDate(createdAt);
+            
+            if (createdAtTimestamp.toMillis() >= thirtySecondsAgo.toMillis()) {
+              console.log(`📝 Новая запись обнаружена: ${bookingId}`);
+              console.log('📅 Дата создания:', createdAt);
+              
+              // Помечаем как обработанную
+              processedBookingIds.add(bookingId);
+              
+              // Очищаем старые ID (старше 1 часа)
+              if (processedBookingIds.size > 100) {
+                const oldestIds = Array.from(processedBookingIds).slice(0, 50);
+                oldestIds.forEach(id => processedBookingIds.delete(id));
+              }
+              
+              // Формируем уведомление для админов
+              const formattedDate = formatDateForNotification(booking.bookingDate);
+              const serviceNames = getServiceNames(booking.selectedServices || []);
+              
+              let adminNotificationMessage = `📝 Новая запись клиента!\n\n`;
+              adminNotificationMessage += `👤 Клиент: ${booking.clientName}\n`;
+              adminNotificationMessage += `📞 Телефон: ${booking.clientPhone}\n`;
+              adminNotificationMessage += `📅 Дата: ${formattedDate}\n`;
+              adminNotificationMessage += `⏰ Время: ${booking.startTime}\n`;
+              adminNotificationMessage += `⏱ Длительность: ${booking.duration} ч\n`;
+              adminNotificationMessage += `🎮 Услуги: ${serviceNames}\n`;
+              
+              // Добавляем информацию о скидке, если есть
+              if (booking.discountPercent > 0 || booking.discountAmount > 0) {
+                if (booking.discountPercent > 0) {
+                  adminNotificationMessage += `💰 Скидка: ${booking.discountPercent}%\n`;
+                } else {
+                  adminNotificationMessage += `💰 Скидка: ${booking.discountAmount} ₽\n`;
                 }
               }
-              // Если phoneDigits уже в формате 10 цифр, используем как есть
               
-              console.log(`🔍 Поиск клиента по телефону:`, {
-                original: booking.clientPhone,
-                phoneDigits: phoneDigits,
-                normalizedPhoneDigits: normalizedPhoneDigits
-              });
+              // Добавляем информацию о предоплате, если есть
+              if (booking.prepayment && booking.prepayment.amount > 0) {
+                const method = booking.prepayment.method === 'cash' ? 'Наличные' : 'Перевод';
+                adminNotificationMessage += `💵 Предоплата: ${booking.prepayment.amount} ₽ (${method})\n`;
+              }
               
-              const clientsSnapshot = await db.collection('clients')
-                .where('phoneDigits', '==', normalizedPhoneDigits)
-                .get();
+              // Добавляем примечания, если есть
+              if (booking.notes && booking.notes.trim()) {
+                adminNotificationMessage += `📝 Примечания: ${booking.notes}\n`;
+              }
               
-              console.log(`📋 Найдено клиентов: ${clientsSnapshot.size}`);
+              // Добавляем источник записи
+              if (booking.source === 'client_miniapp') {
+                adminNotificationMessage += `\n📱 Запись создана через бот @vr_lounge_bot . СВЯЗАТЬСЯ С КЛИЕНТОМ!`;
+              } else if (booking.source === 'admin_miniapp') {
+                adminNotificationMessage += `\n📱 Запись создана через админ-панель`;
+              }
               
-              if (!clientsSnapshot.empty) {
-                const client = clientsSnapshot.docs[0].data();
-                console.log(`👤 Клиент найден:`, {
-                  name: client.clientName,
-                  telegramId: client.telegramId,
-                  phoneDigits: client.phoneDigits
-                });
-                
-                if (client.telegramId) {
-                  const clientMessage = `✅ Ваша запись успешно создана!\n\n` +
-                    `📅 Дата: ${formattedDate}\n` +
-                    `⏰ Время: ${booking.startTime}\n` +
-                    `⏱ Длительность: ${booking.duration} ч\n` +
-                    `🎮 Услуги: ${serviceNames}\n\n` +
-                    `Мы свяжемся с вами для подтверждения. Ждем вас! 🎮`;
+              // Отправляем уведомление админам
+              try {
+                await sendNotificationToAdmins(adminNotificationMessage);
+                console.log('✅ Уведомление отправлено в админ группу');
+              } catch (error) {
+                console.error('❌ Ошибка отправки уведомления в админ группу:', error);
+              }
+              
+              // Отправляем уведомление клиенту, если есть telegramId
+              // Используем phoneDigits из booking, если он есть, иначе извлекаем из clientPhone
+              const phoneDigits = booking.phoneDigits || booking.clientPhone?.replace(/\D/g, '') || '';
+              if (phoneDigits) {
+                try {
+                  // Нормализуем номер телефона для поиска в базе (убираем первую 7 или 8)
+                  let normalizedPhoneDigits = phoneDigits;
+                  if (normalizedPhoneDigits.length === 11) {
+                    if (normalizedPhoneDigits.startsWith('7')) {
+                      normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
+                    } else if (normalizedPhoneDigits.startsWith('8')) {
+                      normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
+                    }
+                  }
+                  // Если phoneDigits уже в формате 10 цифр, используем как есть
                   
-                  await sendNotificationToClient(clientsSnapshot.docs[0].id, clientMessage);
-                  console.log(`✅ Уведомление отправлено клиенту ${booking.clientName} (telegramId: ${client.telegramId})`);
-                } else {
-                  console.log(`⚠️ У клиента ${booking.clientName} нет telegramId`);
+                  console.log(`🔍 Поиск клиента по телефону:`, {
+                    original: booking.clientPhone,
+                    phoneDigits: phoneDigits,
+                    normalizedPhoneDigits: normalizedPhoneDigits
+                  });
+                  
+                  const clientsSnapshot = await db.collection('clients')
+                    .where('phoneDigits', '==', normalizedPhoneDigits)
+                    .get();
+                  
+                  console.log(`📋 Найдено клиентов: ${clientsSnapshot.size}`);
+                  
+                  if (!clientsSnapshot.empty) {
+                    const client = clientsSnapshot.docs[0].data();
+                    console.log(`👤 Клиент найден:`, {
+                      name: client.clientName,
+                      telegramId: client.telegramId,
+                      phoneDigits: client.phoneDigits
+                    });
+                    
+                    if (client.telegramId) {
+                      const clientMessage = `✅ Ваша запись успешно создана!\n\n` +
+                        `📅 Дата: ${formattedDate}\n` +
+                        `⏰ Время: ${booking.startTime}\n` +
+                        `⏱ Длительность: ${booking.duration} ч\n` +
+                        `🎮 Услуги: ${serviceNames}\n\n` +
+                        `Мы свяжемся с вами для подтверждения. Ждем вас! 🎮`;
+                      
+                      await sendNotificationToClient(clientsSnapshot.docs[0].id, clientMessage);
+                      console.log(`✅ Уведомление отправлено клиенту ${booking.clientName} (telegramId: ${client.telegramId})`);
+                    } else {
+                      console.log(`⚠️ У клиента ${booking.clientName} нет telegramId`);
+                    }
+                  } else {
+                    console.log(`⚠️ Клиент с телефоном ${normalizedPhoneDigits} не найден в базе`);
+                  }
+                } catch (error) {
+                  console.error('❌ Ошибка отправки уведомления клиенту:', error);
                 }
               } else {
-                console.log(`⚠️ Клиент с телефоном ${normalizedPhoneDigits} не найден в базе`);
+                console.log(`⚠️ Не удалось извлечь phoneDigits из ${booking.clientPhone}`);
               }
-            } catch (error) {
-              console.error('❌ Ошибка отправки уведомления клиенту:', error);
             }
-          } else {
-            console.log(`⚠️ Не удалось извлечь phoneDigits из ${booking.clientPhone}`);
           }
         }
+      } catch (error) {
+        console.error('Ошибка обработки новых записей:', error);
+        console.error('Детали ошибки:', error.message, error.stack);
       }
-      
-      lastCheckTime = now;
-    } catch (error) {
-      console.error('Ошибка проверки новых записей:', error);
+    }, (error) => {
+      console.error('Ошибка слушателя Firestore:', error);
       console.error('Детали ошибки:', error.message, error.stack);
-    }
-  }, 10000); // Проверяем каждые 10 секунд
+      
+      // Переподключаемся через 30 секунд при ошибке
+      setTimeout(() => {
+        console.log('🔄 Переподключение слушателя...');
+        setupNewBookingListener();
+      }, 30000);
+    });
   
-  console.log('✅ Слушатель новых записей настроен');
+  console.log('✅ Слушатель новых записей настроен (onSnapshot)');
+  
+  // Возвращаем функцию для отмены подписки (если нужно)
+  return unsubscribe;
 }
 
 // Функция рассылки всем клиентам (только для админов)
