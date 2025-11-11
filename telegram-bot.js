@@ -153,7 +153,7 @@ bot.onText(/\/start/, async (msg) => {
 
 Мы - игровой клуб с VR очками, PS5, X-Box и многим другим!
 
-📍 Наш адрес: г. Кольчугино
+📍 Адрес: г. Кольчугино, ул. Зернова, д. 11
 🕐 График работы:
    Пн-Пт: 15:00 - 20:00
    Сб-Вс: 12:00 - 21:00
@@ -321,34 +321,36 @@ bot.onText(/📞 Контакты|Контакты|контакты/, async (msg
   const contactsMessage = `
 📞 Контакты VR Lounge
 
-📍 Адрес: г. Кольчугино
+📍 Адрес: г. Кольчугино, ул. Зернова, д. 11
 
 🕐 График работы:
    Пн-Пт: 15:00 - 20:00
    Сб-Вс: 12:00 - 21:00
 
+📱 Связь с нами:
+   Юлия: +7 (930) 224-45-51
+   Артур: +7 (910) 678-33-17
+
 🌐 Мы в социальных сетях и на картах:
-
-🔵 ВКонтакте: https://vk.com/vr_lounge
-
-🗺️ Яндекс Карты: https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713
-
-⭐ Отзывы: https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/
-
-💬 Telegram: @vr_lounge_bot
-
-Запишитесь на удобное время прямо здесь! 🎮
   `;
 
   await bot.sendMessage(chatId, contactsMessage, {
     reply_markup: {
       inline_keyboard: [
         [
-          { text: '🔵 ВКонтакте', url: 'https://vk.com/vr_lounge' },
-          { text: '🗺️ Карты', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713' }
+          { text: '📍 Адрес на карте', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713' },
+          { text: '⭐ Отзывы', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/?ll' }
         ],
         [
-          { text: '⭐ Отзывы', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/' }
+          { text: '🔵 Мы ВКонтакте', url: 'https://vk.com/vr_lounge' }
+        ],
+        [
+          { text: '📞 Юлия: +7 (930) 224-45-51', url: 'tel:+79302244551' },
+          { text: '💬 Telegram Юлии', url: 'https://t.me/YulaAlex' }
+        ],
+        [
+          { text: '📞 Артур: +7 (910) 678-33-17', url: 'tel:+79106783317' },
+          { text: '💬 Telegram Артура', url: 'https://t.me/tur3321' }
         ],
         [
           { text: '✨ Записаться', web_app: { url: CLIENT_MINI_APP_URL } }
@@ -383,7 +385,7 @@ bot.onText(/ℹ️ О нас|О нас|о нас|ℹ️ Информация|И�
 • Выходные: от 250 ₽/час
 • День Рождения: от 3000 ₽/час
 
-📍 Адрес: г. Кольчугино
+📍 Адрес: г. Кольчугино, ул. Зернова, д. 11
 
 🕐 График работы:
    Пн-Пт: 15:00 - 20:00
@@ -400,8 +402,11 @@ bot.onText(/ℹ️ О нас|О нас|о нас|ℹ️ Информация|И�
           { text: '📞 Контакты', callback_data: 'show_contacts' }
         ],
         [
-          { text: '🔵 ВКонтакте', url: 'https://vk.com/vr_lounge' },
-          { text: '🗺️ Карты', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713' }
+          { text: '📍 Адрес на карте', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713' },
+          { text: '⭐ Отзывы', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/?ll' }
+        ],
+        [
+          { text: '🔵 Мы ВКонтакте', url: 'https://vk.com/vr_lounge' }
         ]
       ]
     }
@@ -497,21 +502,17 @@ bot.on('callback_query', async (query) => {
     const contactsMessage = `
 📞 Контакты VR Lounge
 
-📍 Адрес: г. Кольчугино
+📍 Адрес: г. Кольчугино, ул. Зернова, д. 11
 
 🕐 График работы:
    Пн-Пт: 15:00 - 20:00
    Сб-Вс: 12:00 - 21:00
 
+📱 Связь с нами:
+   Юлия: +7 (930) 224-45-51
+   Артур: +7 (910) 678-33-17
+
 🌐 Мы в социальных сетях и на картах:
-
-🔵 ВКонтакте: https://vk.com/vr_lounge
-
-🗺️ Яндекс Карты: https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713
-
-⭐ Отзывы: https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/
-
-💬 Telegram: @vr_lounge_bot
     `;
     
     await bot.answerCallbackQuery(query.id);
@@ -519,11 +520,19 @@ bot.on('callback_query', async (query) => {
       reply_markup: {
         inline_keyboard: [
           [
-            { text: '🔵 ВКонтакте', url: 'https://vk.com/vr_lounge' },
-            { text: '🗺️ Карты', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713' }
+            { text: '📍 Адрес на карте', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713' },
+            { text: '⭐ Отзывы', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/?ll' }
           ],
           [
-            { text: '⭐ Отзывы', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/' }
+            { text: '🔵 Мы ВКонтакте', url: 'https://vk.com/vr_lounge' }
+          ],
+          [
+            { text: '📞 Юлия: +7 (930) 224-45-51', url: 'tel:+79302244551' },
+            { text: '💬 Telegram Юлии', url: 'https://t.me/YulaAlex' }
+          ],
+          [
+            { text: '📞 Артур: +7 (910) 678-33-17', url: 'tel:+79106783317' },
+            { text: '💬 Telegram Артура', url: 'https://t.me/tur3321' }
           ],
           [
             { text: '✨ Записаться', web_app: { url: CLIENT_MINI_APP_URL } }
