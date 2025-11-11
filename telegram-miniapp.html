@@ -82,15 +82,26 @@
     input[type="time"],
     select,
     textarea {
-      padding-right: 1rem !important;
+      padding-right: 1.5rem !important;
     }
     
-    /* Увеличение высоты для полей Метод и Дата в секции Предоплата */
+    /* Увеличение высоты для полей Метод и Дата в секции Предоплата - синхронизация с Предоплата */
+    #prepayAmount,
     #prepayMethod,
     #prepayDate {
-      min-height: 2.75rem;
-      padding-top: 0.625rem;
-      padding-bottom: 0.625rem;
+      min-height: 2.75rem !important;
+      padding-top: 0.625rem !important;
+      padding-bottom: 0.625rem !important;
+      height: auto;
+    }
+    
+    /* Синхронизация высоты для полей Дата, Время начала, Длительность с Имя клиента и Номер телефона */
+    #bookingDate,
+    #startTime,
+    #duration {
+      min-height: 3rem;
+      padding-top: 0.75rem !important;
+      padding-bottom: 0.75rem !important;
     }
     
     input[type="date"]::-webkit-calendar-picker-indicator,
@@ -108,7 +119,7 @@
     </div>
 
     <!-- Форма бронирования -->
-    <form id="bookingForm" class="p-4 pr-6 space-y-4 max-w-lg mx-auto">
+    <form id="bookingForm" class="p-4 pr-8 space-y-4 max-w-lg mx-auto">
       <!-- Имя клиента -->
       <div>
         <label for="clientName" class="block text-gray-900 font-semibold mb-2">Имя клиента</label>
