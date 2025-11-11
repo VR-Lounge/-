@@ -451,7 +451,7 @@
       }
       
       // Заполнение телефона (доступно только если пользователь разрешил доступ)
-      if (userPhone && phoneInput && !phoneInput.value || phoneInput.value === '+7 (') {
+      if (userPhone && phoneInput && (!phoneInput.value || phoneInput.value === '+7 (')) {
         const formattedPhone = formatPhoneFromTelegram(userPhone);
         phoneInput.value = formattedPhone;
         console.log('✅ Телефон заполнен из Telegram:', formattedPhone);
