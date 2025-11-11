@@ -123,7 +123,22 @@ bot.onText(/\/start/, async (msg) => {
           resize_keyboard: true
         }
       });
-    } else if (role === 'client') {
+      
+      // Устанавливаем правильную Menu Button для админов
+      try {
+        await bot.setChatMenuButton({
+          chat_id: chatId,
+          menu_button: {
+            type: 'web_app',
+            text: '📝 Создать запись',
+            web_app: {
+              url: ADMIN_MINI_APP_URL
+            }
+          }
+        });
+      } catch (error) {
+        console.error('Ошибка установки Menu Button для админа:', error.message);
+      } else if (role === 'client') {
       // Меню для клиента
       await bot.sendMessage(chatId, `
 👋 Привет, ${username}!
@@ -144,7 +159,22 @@ bot.onText(/\/start/, async (msg) => {
           resize_keyboard: true
         }
       });
-    } else {
+      
+      // Устанавливаем правильную Menu Button для клиентов
+      try {
+        await bot.setChatMenuButton({
+          chat_id: chatId,
+          menu_button: {
+            type: 'web_app',
+            text: '✨ Записаться',
+            web_app: {
+              url: CLIENT_MINI_APP_URL
+            }
+          }
+        });
+      } catch (error) {
+        console.error('Ошибка установки Menu Button для клиента:', error.message);
+      } else {
       // Меню для гостя (не зарегистрированного)
       await bot.sendMessage(chatId, `
 👋 Привет, ${username}!
@@ -169,9 +199,26 @@ bot.onText(/\/start/, async (msg) => {
             [{ text: '📞 Контакты' }, { text: 'ℹ️ О нас' }],
             [{ text: '/register - Зарегистрироваться' }, { text: '/help - Помощь' }]
           ],
-          resize_keyboard: true
+          resize_keyboard: true,
+          remove_keyboard: false
         }
       });
+      
+      // Устанавливаем правильную Menu Button для гостей через Bot API
+      try {
+        await bot.setChatMenuButton({
+          chat_id: chatId,
+          menu_button: {
+            type: 'web_app',
+            text: '✨ Записаться',
+            web_app: {
+              url: CLIENT_MINI_APP_URL
+            }
+          }
+        });
+      } catch (error) {
+        console.error('Ошибка установки Menu Button для гостя:', error.message);
+      }
     }
     
     console.log(`✅ Ответ отправлен пользователю ${username} (роль: ${role})`);
