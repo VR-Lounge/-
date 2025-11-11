@@ -369,10 +369,39 @@ bot.on('contact', async (msg) => {
   const phoneDigits = normalizedPhone;
 
   try {
-    // Ищем клиента по телефону
-    const clientsSnapshot = await db.collection('clients')
-      .where('phoneDigits', '==', phoneDigits)
-      .get();
+    // Ищем клиента по телефону с retry логикой
+    let clientsSnapshot;
+    let retries = 3;
+    let lastError;
+    
+    while (retries > 0) {
+      try {
+        clientsSnapshot = await db.collection('clients')
+          .where('phoneDigits', '==', phoneDigits)
+          .limit(1) // Ограничиваем результат для экономии лимита
+          .get();
+        break; // Успешно, выходим из цикла
+      } catch (queryError) {
+        lastError = queryError;
+        retries--;
+        
+        if (queryError.code === 8 || queryError.message.includes('Quota exceeded')) {
+          // Превышен лимит - ждем перед повтором
+          console.warn(`⚠️ Превышен лимит Firestore. Осталось попыток: ${retries}`);
+          if (retries > 0) {
+            await new Promise(resolve => setTimeout(resolve, 2000)); // Ждем 2 секунды
+            continue;
+          }
+        } else {
+          // Другая ошибка - не повторяем
+          throw queryError;
+        }
+      }
+    }
+    
+    if (retries === 0 && lastError) {
+      throw lastError; // Все попытки исчерпаны
+    }
 
     if (!clientsSnapshot.empty) {
       // Клиент существует - обновляем Telegram данные
@@ -442,8 +471,22 @@ bot.on('contact', async (msg) => {
 
   } catch (error) {
     console.error('Ошибка регистрации клиента:', error);
+    console.error('Детали ошибки:', error.message, error.code);
+    
+    let errorMessage = '😅 Упс! Что-то пошло не так при регистрации.';
+    
+    // Более информативное сообщение в зависимости от типа ошибки
+    if (error.code === 8 || error.message.includes('Quota exceeded')) {
+      errorMessage = '⏳ Сейчас слишком много запросов к базе данных. Пожалуйста, попробуй через 1-2 минуты. Мы работаем над решением!';
+      console.error('⚠️ Превышен лимит Firebase Firestore. Нужно подождать.');
+    } else if (error.code === 14 || error.message.includes('UNAVAILABLE')) {
+      errorMessage = '🔌 База данных временно недоступна. Попробуй через минуту!';
+    } else if (error.code === 3 || error.message.includes('INVALID_ARGUMENT')) {
+      errorMessage = '❌ Ошибка в данных. Пожалуйста, убедись, что номер телефона указан правильно.';
+    }
+    
     try {
-      await bot.sendMessage(chatId, '😅 Упс! Что-то пошло не так при регистрации. Попробуй еще раз через минуту!');
+      await bot.sendMessage(chatId, errorMessage);
     } catch (sendError) {
       console.error('Ошибка отправки сообщения об ошибке:', sendError.message);
     }
