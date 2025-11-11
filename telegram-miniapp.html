@@ -1158,6 +1158,19 @@
         return;
       }
 
+      // Нормализуем phoneDigits для сохранения (убираем первую 7 или 8, оставляем 10 цифр)
+      let cleanPhoneDigits = phoneDigits;
+      if (cleanPhoneDigits.startsWith('7')) {
+        cleanPhoneDigits = cleanPhoneDigits.substring(1);
+      } else if (cleanPhoneDigits.startsWith('8')) {
+        cleanPhoneDigits = cleanPhoneDigits.substring(1);
+      }
+      // Убеждаемся, что у нас 10 цифр
+      if (cleanPhoneDigits.length !== 10) {
+        showMessage('Пожалуйста, введите корректный номер телефона (10 цифр)', true);
+        return;
+      }
+
       const formattedPhone = formatPhoneDisplay(phoneDigits);
 
       // Получаем расчет для сохранения правильной суммы
@@ -1197,48 +1210,58 @@
         // Логируем данные перед сохранением для отладки
         console.log('Данные для сохранения:', bookingData);
         console.log('Выбранные услуги:', Array.from(selectedServices));
+        console.log('phoneDigits:', cleanPhoneDigits);
         
         // Сохраняем в Firebase
-        await addDoc(collection(db, 'bookings'), bookingData);
-        console.log('✅ Запись успешно сохранена в bookings');
+        const bookingRef = await addDoc(collection(db, 'bookings'), bookingData);
+        console.log('✅ Запись успешно сохранена в bookings, ID:', bookingRef.id);
 
-        // Обновляем или создаем клиента
-        console.log('Поиск клиента по телефону:', phoneDigits);
-        const clientsQuery = query(
-          collection(db, 'clients'),
-          where('phoneDigits', '==', phoneDigits)
-        );
-        const clientsSnapshot = await getDocs(clientsQuery);
-        console.log('Найдено клиентов:', clientsSnapshot.size);
+        // Обновляем или создаем клиента (делаем это асинхронно, чтобы не блокировать успешное сообщение)
+        let clientUpdateSuccess = false;
+        try {
+          console.log('Поиск клиента по телефону:', cleanPhoneDigits);
+          const clientsQuery = query(
+            collection(db, 'clients'),
+            where('phoneDigits', '==', cleanPhoneDigits)
+          );
+          const clientsSnapshot = await getDocs(clientsQuery);
+          console.log('Найдено клиентов:', clientsSnapshot.size);
 
-        if (!clientsSnapshot.empty) {
-          // Клиент существует - обновляем статистику
-          const clientDoc = clientsSnapshot.docs[0];
-          const clientData = clientDoc.data();
-          
-          await updateDoc(clientDoc.ref, {
-            lastBookingDate: bookingDate,
-            totalBookings: (clientData.totalBookings || 0) + 1,
-            totalSpent: (clientData.totalSpent || 0) + calculation.total,
-            telegramId: userId || clientData.telegramId,
-            telegramUsername: username || clientData.telegramUsername
-          });
-          console.log('✅ Клиент обновлен');
-        } else {
-          // Создаем нового клиента
-          await addDoc(collection(db, 'clients'), {
-            clientName: clientName,
-            clientPhone: formattedPhone,
-            phoneDigits: phoneDigits,
-            telegramId: userId,
-            telegramUsername: username,
-            createdAt: Timestamp.now(),
-            lastBookingDate: bookingDate,
-            totalBookings: 1,
-            totalSpent: calculation.total,
-            isActive: true
-          });
-          console.log('✅ Новый клиент создан');
+          if (!clientsSnapshot.empty) {
+            // Клиент существует - обновляем статистику
+            const clientDoc = clientsSnapshot.docs[0];
+            const clientData = clientDoc.data();
+            
+            await updateDoc(clientDoc.ref, {
+              lastBookingDate: bookingDate,
+              totalBookings: (clientData.totalBookings || 0) + 1,
+              totalSpent: (clientData.totalSpent || 0) + calculation.total,
+              telegramId: userId || clientData.telegramId,
+              telegramUsername: username || clientData.telegramUsername
+            });
+            console.log('✅ Клиент обновлен');
+            clientUpdateSuccess = true;
+          } else {
+            // Создаем нового клиента
+            await addDoc(collection(db, 'clients'), {
+              clientName: clientName,
+              clientPhone: formattedPhone,
+              phoneDigits: cleanPhoneDigits,
+              telegramId: userId,
+              telegramUsername: username,
+              createdAt: Timestamp.now(),
+              lastBookingDate: bookingDate,
+              totalBookings: 1,
+              totalSpent: calculation.total,
+              isActive: true
+            });
+            console.log('✅ Новый клиент создан');
+            clientUpdateSuccess = true;
+          }
+        } catch (clientError) {
+          // Если ошибка при обновлении клиента, логируем, но не прерываем процесс
+          console.error('⚠️ Ошибка при обновлении/создании клиента:', clientError);
+          console.error('Запись уже сохранена, продолжаем...');
         }
 
         console.log('✅ Все операции выполнены успешно');
