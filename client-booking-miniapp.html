@@ -396,7 +396,8 @@
         </label>
         <input type="text" id="clientName" name="clientName" required 
           class="w-full" 
-          placeholder="Как к вам обращаться?" />
+          placeholder="Как к вам обращаться?"
+          tabindex="1" />
       </div>
 
       <!-- Номер телефона -->
@@ -406,7 +407,8 @@
         </label>
         <input type="tel" id="clientPhone" name="clientPhone" required 
           class="w-full" 
-          placeholder="+7 (XXX) XXX-XX-XX" />
+          placeholder="+7 (XXX) XXX-XX-XX"
+          tabindex="2" />
       </div>
 
       <!-- Услуги -->
@@ -414,7 +416,7 @@
         <label class="block text-sm font-semibold mb-3 text-purple-300">
           <i class="fas fa-gamepad"></i> Выберите услугу
         </label>
-        <div id="servicesContainer" class="grid grid-cols-1 gap-3">
+        <div id="servicesContainer" class="grid grid-cols-1 gap-3" tabindex="3">
           <!-- Услуги будут загружены динамически -->
         </div>
       </div>
@@ -425,7 +427,8 @@
           <i class="fas fa-calendar"></i> Выберите дату
         </label>
         <input type="date" id="bookingDate" name="bookingDate" required 
-          class="w-full" />
+          class="w-full"
+          tabindex="4" />
       </div>
 
       <!-- Время -->
@@ -433,7 +436,7 @@
         <label class="block text-sm font-semibold mb-3 text-purple-300">
           <i class="fas fa-clock"></i> Выберите время
         </label>
-        <div id="timeSlotsContainer" class="grid grid-cols-3 gap-2">
+        <div id="timeSlotsContainer" class="grid grid-cols-3 gap-2" tabindex="5">
           <!-- Временные слоты будут загружены динамически -->
         </div>
         <p id="workingHoursInfo" class="text-xs mt-3 text-purple-300 opacity-75"></p>
@@ -444,7 +447,7 @@
         <label for="duration" class="block text-sm font-semibold mb-3 text-purple-300">
           <i class="fas fa-hourglass-half"></i> Длительность
         </label>
-        <select id="duration" name="duration" required class="w-full">
+        <select id="duration" name="duration" required class="w-full" tabindex="6">
           <option value="0.5">30 минут</option>
           <option value="1" selected>1 час</option>
           <option value="1.5">1.5 часа</option>
@@ -847,6 +850,33 @@
 
       const isWeekendDay = date ? isWeekend(new Date(date)) : isWeekend(new Date());
       
+      // Маппинг старых ID услуг на новые (для сохранения выбора при смене дня недели)
+      const serviceMapping = {
+        'weekday_ps1': 'weekday_ps1',
+        'weekday_ps2': 'weekday_ps2',
+        'weekday_vr1': isWeekendDay ? 'weekend_vr1' : 'weekday_vr1',
+        'weekday_vr2': isWeekendDay ? 'weekend_vr2' : 'weekday_vr2',
+        'weekday_vr3': isWeekendDay ? 'weekend_vr3' : 'weekday_vr3',
+        'weekday_vr4': isWeekendDay ? 'weekend_vr4' : 'weekday_vr4',
+        'weekend_vr1': isWeekendDay ? 'weekend_vr1' : 'weekday_vr1',
+        'weekend_vr2': isWeekendDay ? 'weekend_vr2' : 'weekday_vr2',
+        'weekend_vr3': isWeekendDay ? 'weekend_vr3' : 'weekday_vr3',
+        'weekend_vr4': isWeekendDay ? 'weekend_vr4' : 'weekday_vr4',
+        'xbox_kinnect': 'xbox_kinnect',
+        'xbox1': 'xbox1',
+        'xbox2': 'xbox2',
+        'xbox3': 'xbox3',
+        'xbox4': 'xbox4',
+        'karaoke': 'karaoke',
+        'board_games': 'board_games',
+        'hostess': 'hostess',
+        'birthday': 'birthday'
+      };
+      
+      // Обновляем selectedServices: маппим старые ID на новые и удаляем недоступные
+      const newSelectedServices = new Set();
+      const availableServiceIds = new Set();
+      
       const allServices = [
         { id: 'weekday_ps1', label: 'PS5 (1 джойстик)', price: 150, icon: 'fa-gamepad', weekday: true },
         { id: 'weekday_ps2', label: 'PS5 (2 джойстика)', price: 300, icon: 'fa-gamepad', weekday: true },
@@ -873,6 +903,29 @@
       const services = allServices.filter(service => {
         if (service.weekday === null) return true; // Услуги доступны всегда
         return service.weekday === !isWeekendDay;
+      });
+      
+      // Собираем доступные ID услуг
+      services.forEach(service => {
+        availableServiceIds.add(service.id);
+      });
+      
+      // Маппим выбранные услуги на новые ID и сохраняем только доступные
+      selectedServices.forEach(oldServiceId => {
+        const newServiceId = serviceMapping[oldServiceId];
+        if (newServiceId && availableServiceIds.has(newServiceId)) {
+          newSelectedServices.add(newServiceId);
+        }
+      });
+      
+      // Обновляем selectedServices
+      selectedServices = newSelectedServices;
+      
+      console.log('🔄 Обновление услуг:', {
+        isWeekendDay,
+        oldSelected: Array.from(selectedServices),
+        newSelected: Array.from(newSelectedServices),
+        availableServices: Array.from(availableServiceIds)
       });
 
       container.innerHTML = '';
@@ -923,6 +976,9 @@
         
         container.appendChild(card);
       });
+      
+      // Обновляем итоговую стоимость после перерисовки
+      updateTotal();
     }
 
     // Обновление итоговой стоимости
@@ -1415,9 +1471,10 @@
     // Обработчики событий
     document.getElementById('bookingDate').addEventListener('change', (e) => {
       const date = e.target.value;
-      loadServices(date); // Перезагружаем услуги с учетом дня недели (сохраняя выбранные)
+      // Перезагружаем услуги с учетом дня недели (с маппингом выбранных услуг)
+      loadServices(date);
       generateTimeSlots(date);
-      updateTotal();
+      // updateTotal вызывается внутри loadServices
     });
 
     document.getElementById('duration').addEventListener('change', () => {
