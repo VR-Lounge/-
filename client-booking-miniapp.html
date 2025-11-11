@@ -1486,21 +1486,50 @@
         submitBtn.disabled = false;
         submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Забронировано';
         
-        // Прокручиваем к сообщению об успехе (на случай, если модальное окно не показалось)
-        setTimeout(() => {
-          const messageContainer = document.getElementById('messageContainer');
-          if (messageContainer) {
-            messageContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Сохранение бронирования
+        console.log('💾 Сохранение бронирования в Firebase...');
+        await window.addDoc(window.collection(window.db, "bookings"), bookingData);
+        console.log('✅ Бронирование успешно сохранено!');
+
+        // Сразу показываем модальное окно об успехе и обновляем кнопку
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Забронировано';
+        showSuccessModal('Ваша запись успешно создана! Мы свяжемся с вами для подтверждения. Ждем вас! 🎮');
+        showMessage('✅ Запись успешно создана! Мы свяжемся с вами для подтверждения.', 'success');
+
+        // Обновление или создание клиента (выполняется асинхронно, не блокирует UI)
+        const clientsQuery = window.query(
+          window.collection(window.db, "clients"),
+          window.where("phoneDigits", "==", cleanPhone)
+        );
+        const clientsSnapshot = await window.getDocs(clientsQuery);
+
+        if (!clientsSnapshot.empty) {
+          // Обновляем существующего клиента
+          const clientDoc = clientsSnapshot.docs[0];
+          const clientData = clientDoc.data();
+          // Обновление статистики будет выполнено в CRM
+          console.log('✅ Клиент найден, статистика будет обновлена в CRM');
+        } else {
+          // Создаем нового клиента
+          try {
+            await window.addDoc(window.collection(window.db, "clients"), {
+              clientName,
+              clientPhone,
+              phoneDigits: cleanPhone,
+              telegramId: user?.id?.toString() || null,
+              telegramUsername: user?.username ? `@${user.username}` : null,
+              createdAt: window.Timestamp.now(),
+              totalBookings: 0,
+              totalSpent: 0,
+              isActive: true
+            });
+            console.log('✅ Новый клиент создан');
+          } catch (clientError) {
+            console.error('⚠️ Ошибка создания клиента (не критично):', clientError);
+            // Не блокируем успешное завершение, если клиент не создан
           }
-        }, 100);
-        
-        // Закрытие мини-аппа через 5 секунд (если модальное окно не закрылось автоматически)
-        setTimeout(() => {
-          const successModal = document.getElementById('successModal');
-          if (!successModal) {
-            tg.close();
-          }
-        }, 5000);
+        }
 
       } catch (error) {
         console.error('❌ Ошибка сохранения:', error);
