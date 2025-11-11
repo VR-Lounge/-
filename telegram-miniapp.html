@@ -513,7 +513,9 @@
       const discountPercent = parseFloat(document.getElementById('discountPercent').value) || 0;
       const discountAmount = parseFloat(document.getElementById('discountAmount').value) || 0;
       
+      const totalBeforeDiscount = total; // Сохраняем сумму до скидки
       let discountApplied = 0;
+      
       if (discountPercent > 0) {
         discountApplied = total * (discountPercent / 100);
         total = total * (1 - discountPercent / 100);
@@ -526,7 +528,7 @@
         total: Math.round(total),
         details: calculationDetails,
         discountApplied: Math.round(discountApplied),
-        totalBeforeDiscount: Math.round(total + discountApplied)
+        totalBeforeDiscount: Math.round(totalBeforeDiscount)
       };
     }
 
