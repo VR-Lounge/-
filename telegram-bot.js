@@ -574,12 +574,10 @@ bot.on('callback_query', async (query) => {
             { text: '🔵 Мы ВКонтакте', url: 'https://vk.com/vr_lounge' }
           ],
           [
-            { text: '📞 Юлия: +7 (930) 224-45-51', url: 'tel:+79302244551' },
-            { text: '💬 Telegram Юлии', url: 'https://t.me/YulaAlex' }
+            { text: '💬 Telegram Юлии (@YulaAlex)', url: 'https://t.me/YulaAlex' }
           ],
           [
-            { text: '📞 Артур: +7 (910) 678-33-17', url: 'tel:+79106783317' },
-            { text: '💬 Telegram Артура', url: 'https://t.me/tur3321' }
+            { text: '💬 Telegram Артура (@tur3321)', url: 'https://t.me/tur3321' }
           ],
           [
             { text: '✨ Записаться', web_app: { url: CLIENT_MINI_APP_URL } }
