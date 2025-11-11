@@ -281,6 +281,95 @@
       text-align: center;
       margin: 1rem 0;
       box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+      animation: slideDown 0.3s ease-out;
+    }
+    
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      animation: fadeIn 0.2s ease-out;
+    }
+    
+    .modal-content {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      max-width: 90%;
+      width: 400px;
+      box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+      border: 2px solid var(--neon-purple);
+      animation: scaleIn 0.3s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    .modal-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: var(--neon-purple);
+      text-align: center;
+    }
+    
+    .modal-message {
+      color: #fff;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    
+    .modal-button {
+      width: 100%;
+      padding: 0.75rem;
+      background: linear-gradient(18deg, #500a91 0%, #bc2972 100%);
+      color: white;
+      border: none;
+      border-radius: 0.75rem;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .modal-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+    }
+    
+    .modal-button:active {
+      transform: translateY(0);
     }
   </style>
 </head>
@@ -388,6 +477,9 @@
           <!-- Содержимое будет заполнено динамически -->
         </div>
       </div>
+
+      <!-- Контейнер для сообщений об ошибках (над кнопкой) -->
+      <div id="errorMessageContainer" class="mb-4"></div>
 
       <!-- Кнопка отправки -->
       <button type="submit" id="submitBtn" class="btn-primary">
@@ -1033,6 +1125,72 @@
         }, 5000);
       }
     }
+    
+    // Показ модального окна с ошибкой
+    function showErrorModal(message) {
+      // Удаляем предыдущее модальное окно, если есть
+      const existingModal = document.getElementById('errorModal');
+      if (existingModal) {
+        existingModal.remove();
+      }
+      
+      const modal = document.createElement('div');
+      modal.id = 'errorModal';
+      modal.className = 'modal-overlay';
+      modal.innerHTML = `
+        <div class="modal-content">
+          <div class="modal-title">⚠️ Ошибка заполнения</div>
+          <div class="modal-message">${message}</div>
+          <button class="modal-button" onclick="this.closest('.modal-overlay').remove()">
+            Понятно
+          </button>
+        </div>
+      `;
+      
+      document.body.appendChild(modal);
+      
+      // Закрытие по клику на overlay
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.remove();
+        }
+      });
+      
+      // Прокручиваем к кнопке после закрытия модального окна
+      setTimeout(() => {
+        const submitBtn = document.getElementById('submitBtn');
+        if (submitBtn) {
+          submitBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    }
+    
+    // Показ сообщения об ошибке над кнопкой
+    function showErrorAboveButton(message) {
+      const container = document.getElementById('errorMessageContainer');
+      if (!container) {
+        console.error('Контейнер для ошибок не найден!');
+        showErrorModal(message);
+        return;
+      }
+      
+      const errorDiv = document.createElement('div');
+      errorDiv.className = 'error-message';
+      errorDiv.textContent = message;
+      
+      container.innerHTML = '';
+      container.appendChild(errorDiv);
+      
+      // Прокручиваем к сообщению
+      errorDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      // Удаляем через 5 секунд
+      setTimeout(() => {
+        errorDiv.style.opacity = '0';
+        errorDiv.style.transition = 'opacity 0.3s';
+        setTimeout(() => errorDiv.remove(), 300);
+      }, 5000);
+    }
 
     // Обработка отправки формы
     document.getElementById('bookingForm').addEventListener('submit', async (e) => {
@@ -1048,8 +1206,48 @@
       const duration = parseFloat(document.getElementById('duration').value);
       const notes = document.getElementById('notes').value.trim();
 
-      if (!clientName || !clientPhone || !bookingDate || !selectedTime || selectedServices.size === 0) {
-        showMessage('Пожалуйста, заполните все обязательные поля и выберите хотя бы одну услугу', 'error');
+      // Детальная валидация с указанием конкретных проблем
+      const errors = [];
+      
+      if (!clientName) {
+        errors.push('имя');
+      }
+      if (!clientPhone) {
+        errors.push('номер телефона');
+      }
+      if (!bookingDate) {
+        errors.push('дату');
+      }
+      if (!selectedTime) {
+        errors.push('время');
+      }
+      if (selectedServices.size === 0) {
+        errors.push('услугу');
+      }
+      
+      // Логирование для отладки
+      console.log('🔍 Проверка формы:', {
+        clientName: !!clientName,
+        clientPhone: !!clientPhone,
+        bookingDate: !!bookingDate,
+        selectedTime: selectedTime,
+        selectedServices: Array.from(selectedServices),
+        selectedServicesSize: selectedServices.size,
+        errors: errors
+      });
+      
+      if (errors.length > 0) {
+        let errorMessage = 'Пожалуйста, заполните ';
+        if (errors.length === 1) {
+          errorMessage += errors[0];
+        } else if (errors.length === 2) {
+          errorMessage += errors.join(' и ');
+        } else {
+          const lastError = errors.pop();
+          errorMessage += errors.join(', ') + ' и ' + lastError;
+        }
+        
+        showErrorAboveButton(errorMessage);
         submitBtn.disabled = false;
         submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Забронировать';
         return;
@@ -1057,7 +1255,7 @@
 
       // Проверка доступности времени
       if (!isTimeAvailable(bookingDate, selectedTime, duration)) {
-        showMessage('Это время уже занято. Пожалуйста, выберите другое время.', 'error');
+        showErrorAboveButton('Это время уже занято. Пожалуйста, выберите другое время.');
         submitBtn.disabled = false;
         submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Забронировать';
         generateTimeSlots(bookingDate);
