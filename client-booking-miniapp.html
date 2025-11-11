@@ -1156,6 +1156,60 @@
           const serviceTotal = price * duration;
           total += serviceTotal;
           console.log(`✅ ${serviceLabels[serviceId] || serviceId}: ${price} ₽/час × ${duration} ч = ${serviceTotal} ₽`);
+          
+          // Добавляем детализацию для всех услуг
+          const serviceLabel = serviceLabels[serviceId] || serviceId;
+          const pricePerHour = price;
+          const conditions = [];
+          
+          // Добавляем описание в зависимости от типа услуги
+          if (serviceId.includes('ps')) {
+            conditions.push(`Аренда игровой консоли PlayStation 5`);
+            if (serviceId.includes('ps1')) {
+              conditions.push(`1 джойстик для игры`);
+            } else {
+              conditions.push(`2 джойстика для игры`);
+            }
+          } else if (serviceId.includes('vr')) {
+            conditions.push(`Аренда VR очков и оборудования`);
+            if (serviceId.includes('vr1')) {
+              conditions.push(`1 комплект VR очков`);
+            } else if (serviceId.includes('vr2')) {
+              conditions.push(`2 комплекта VR очков`);
+            } else if (serviceId.includes('vr3')) {
+              conditions.push(`3 комплекта VR очков`);
+            } else if (serviceId.includes('vr4')) {
+              conditions.push(`4 комплекта VR очков`);
+            }
+          } else if (serviceId.includes('xbox')) {
+            conditions.push(`Аренда игровой консоли Xbox`);
+            if (serviceId === 'xbox_kinnect') {
+              conditions.push(`Kinect для танцев и активных игр`);
+            } else if (serviceId.includes('xbox1')) {
+              conditions.push(`1 джойстик для игры`);
+            } else if (serviceId.includes('xbox2')) {
+              conditions.push(`2 джойстика для игры`);
+            } else if (serviceId.includes('xbox3')) {
+              conditions.push(`3 джойстика для игры`);
+            } else if (serviceId.includes('xbox4')) {
+              conditions.push(`4 джойстика для игры`);
+            }
+          } else if (serviceId === 'karaoke') {
+            conditions.push(`Аренда караоке-системы`);
+            conditions.push(`Микрофоны и музыкальное оборудование`);
+          } else if (serviceId === 'board_games') {
+            conditions.push(`Аренда настольных игр`);
+            conditions.push(`Большой выбор игр на любой вкус`);
+          }
+          
+          calculationDetails.push({
+            service: serviceId,
+            label: serviceLabel,
+            pricePerHour: pricePerHour,
+            duration: duration,
+            total: serviceTotal,
+            conditions: conditions.length > 0 ? conditions : [`Стоимость: ${pricePerHour.toLocaleString('ru-RU')} ₽/час`]
+          });
         }
       });
 
@@ -1193,6 +1247,13 @@
           item.hourDetails.forEach(detail => {
             html += `<div class="ml-2">${detail}</div>`;
           });
+          html += `</div>`;
+        }
+        
+        // Детали расчета для обычных услуг (цена × длительность)
+        if (item.pricePerHour !== undefined && item.duration !== undefined) {
+          html += `<div class="text-sm text-purple-200/80 mb-2">`;
+          html += `<div class="ml-2">${item.pricePerHour.toLocaleString('ru-RU')} ₽/час × ${item.duration} ч = ${item.total.toLocaleString('ru-RU')} ₽</div>`;
           html += `</div>`;
         }
         
