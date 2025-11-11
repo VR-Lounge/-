@@ -127,7 +127,7 @@ bot.onText(/\/start/, async (msg) => {
               web_app: { url: ADMIN_MINI_APP_URL }
             }],
             [{ text: '📊 Статистика' }, { text: '👥 Клиенты' }],
-            [{ text: '📢 Рассылка' }, { text: '/help - Помощь' }]
+            [{ text: '📢 Рассылка' }, { text: 'Помощь' }]
           ],
           resize_keyboard: true
         }
@@ -164,7 +164,7 @@ bot.onText(/\/start/, async (msg) => {
               web_app: { url: CLIENT_MINI_APP_URL }
             }],
             [{ text: '📅 Мои записи' }, { text: '📞 Контакты' }],
-            [{ text: 'ℹ️ Информация' }, { text: '/help - Помощь' }]
+            [{ text: 'ℹ️ Информация' }, { text: 'Помощь' }]
           ],
           resize_keyboard: true
         }
