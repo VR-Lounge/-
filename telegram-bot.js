@@ -1100,7 +1100,7 @@ function setupNewBookingListener() {
   let lastCheckTime = admin.firestore.Timestamp.now();
   
   // Используем периодическую проверку вместо onSnapshot для экономии лимита
-  // Проверяем каждые 10 секунд только новые записи
+  // Проверяем каждые 30 секунд только новые записи (увеличен интервал для экономии лимита)
   const checkInterval = setInterval(async () => {
     try {
       const now = admin.firestore.Timestamp.now();
@@ -1241,18 +1241,18 @@ function setupNewBookingListener() {
       console.error('Ошибка проверки новых записей:', error);
       console.error('Детали ошибки:', error.message, error.code);
       
-      // Если превышен лимит, увеличиваем интервал проверки
+      // Если превышен лимит, увеличиваем интервал проверки до 60 секунд
       if (error.code === 8 || error.message.includes('Quota exceeded')) {
-        console.warn('⚠️ Превышен лимит Firestore. Увеличиваем интервал проверки до 30 секунд.');
+        console.warn('⚠️ Превышен лимит Firestore. Увеличиваем интервал проверки до 60 секунд.');
         clearInterval(checkInterval);
         setTimeout(() => {
           setupNewBookingListener();
-        }, 30000);
+        }, 60000);
       }
     }
-  }, 10000); // Проверяем каждые 10 секунд
+  }, 30000); // Проверяем каждые 30 секунд (увеличен интервал для экономии лимита)
   
-  console.log('✅ Слушатель новых записей настроен (периодическая проверка каждые 10 секунд)');
+  console.log('✅ Слушатель новых записей настроен (периодическая проверка каждые 30 секунд)');
   
   // Возвращаем функцию для отмены интервала
   return () => clearInterval(checkInterval);
