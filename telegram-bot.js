@@ -208,7 +208,7 @@ bot.onText(/\/start/, async (msg) => {
               web_app: { url: CLIENT_MINI_APP_URL }
             }],
             [{ text: '📞 Контакты' }, { text: 'ℹ️ О нас' }],
-            [{ text: '/register - Зарегистрироваться' }, { text: '/help - Помощь' }]
+            [{ text: 'Зарегистрироваться' }, { text: 'Помощь' }]
           ],
           resize_keyboard: true,
           remove_keyboard: false
