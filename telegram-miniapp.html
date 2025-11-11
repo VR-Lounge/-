@@ -221,6 +221,14 @@
         </div>
       </div>
 
+      <!-- Детальный расчет и условия -->
+      <div id="calculationDetails" class="hidden">
+        <label class="block text-gray-900 font-semibold mb-2">Детализация расчета</label>
+        <div id="calculationDetailsContent" class="bg-blue-50 border border-blue-200 rounded-2xl p-4 text-sm space-y-2">
+          <!-- Содержимое будет заполнено динамически -->
+        </div>
+      </div>
+
       <!-- Итоговая стоимость -->
       <div>
         <label class="block text-gray-900 font-semibold mb-2">Итоговая стоимость</label>
@@ -408,31 +416,77 @@
       return `+7 (${phoneDigits.substring(1, 4)}) ${phoneDigits.substring(4, 7)}-${phoneDigits.substring(7, 9)}-${phoneDigits.substring(9, 11)}`;
     }
 
-    // Расчет стоимости
+    // Расчет стоимости с детализацией
     function calculateTotal() {
       const duration = parseFloat(document.getElementById('duration').value) || 0;
       const bookingDate = document.getElementById('bookingDate').value;
       const isWeekendDay = isWeekend(bookingDate);
       
       let total = 0;
+      const calculationDetails = [];
 
       selectedServices.forEach(service => {
         if (service === 'birthday') {
           const fullHours = Math.floor(duration);
           const hasHalfHour = duration % 1 !== 0;
           let birthdayTotal = 0;
+          const hourDetails = [];
+          
           for (let hour = 1; hour <= fullHours; hour++) {
             const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
             birthdayTotal += hourPrice;
+            hourDetails.push(`Час ${hour}: ${hourPrice.toLocaleString('ru-RU')} ₽`);
           }
+          
           if (hasHalfHour) {
-            if (fullHours === 0) birthdayTotal += 2000;
-            else if (fullHours === 1) birthdayTotal += 2000;
-            else birthdayTotal += (servicePrices.birthday[3] || 3000) / 2;
+            let halfHourPrice = 0;
+            if (fullHours === 0) {
+              halfHourPrice = 2000;
+              hourDetails.push(`0.5 часа: ${halfHourPrice.toLocaleString('ru-RU')} ₽`);
+            } else if (fullHours === 1) {
+              halfHourPrice = 2000;
+              hourDetails.push(`+0.5 часа: ${halfHourPrice.toLocaleString('ru-RU')} ₽`);
+            } else {
+              halfHourPrice = (servicePrices.birthday[3] || 3000) / 2;
+              hourDetails.push(`+0.5 часа: ${halfHourPrice.toLocaleString('ru-RU')} ₽`);
+            }
+            birthdayTotal += halfHourPrice;
           }
+          
+          calculationDetails.push({
+            service: 'birthday',
+            label: serviceLabels[service],
+            details: hourDetails,
+            total: birthdayTotal,
+            conditions: [
+              'В стоимость входит аренда всего помещения:',
+              '• VR очки',
+              '• PS комната',
+              '• Караоке',
+              '• Кино',
+              '• XBOX 360',
+              '• Танцы в XBOX',
+              '• Игры на ПК',
+              '',
+              'Можно заказать свою еду и напитки'
+            ]
+          });
+          
           total += birthdayTotal;
         } else if (service === 'hostess') {
-          total += servicePrices.hostess;
+          const hostessPrice = servicePrices.hostess;
+          total += hostessPrice;
+          calculationDetails.push({
+            service: 'hostess',
+            label: serviceLabels[service],
+            details: [`${hostessPrice.toLocaleString('ru-RU')} ₽ (фиксированная стоимость на весь период мероприятия)`],
+            total: hostessPrice,
+            conditions: [
+              'Ведущая создаёт общее настроение, поздравляет именинника,',
+              'устраивает конкурсы, увлекает, заинтересовывает и помогает гостям.',
+              'Особенно актуально для детских праздников!'
+            ]
+          });
         } else {
           // Проверяем, будний или выходной день для VR услуг
           let serviceKey = service;
@@ -442,7 +496,16 @@
             serviceKey = service.replace('weekend', 'weekday');
           }
           const price = servicePrices[serviceKey] || servicePrices[service] || 0;
-          total += price * duration;
+          const serviceTotal = price * duration;
+          total += serviceTotal;
+          
+          calculationDetails.push({
+            service: service,
+            label: serviceLabels[service] || service,
+            details: [`${price.toLocaleString('ru-RU')} ₽/час × ${duration} ч = ${serviceTotal.toLocaleString('ru-RU')} ₽`],
+            total: serviceTotal,
+            conditions: null
+          });
         }
       });
 
@@ -450,19 +513,32 @@
       const discountPercent = parseFloat(document.getElementById('discountPercent').value) || 0;
       const discountAmount = parseFloat(document.getElementById('discountAmount').value) || 0;
       
+      let discountApplied = 0;
       if (discountPercent > 0) {
+        discountApplied = total * (discountPercent / 100);
         total = total * (1 - discountPercent / 100);
       } else if (discountAmount > 0) {
+        discountApplied = discountAmount;
         total = Math.max(0, total - discountAmount);
       }
 
-      return Math.round(total);
+      return {
+        total: Math.round(total),
+        details: calculationDetails,
+        discountApplied: Math.round(discountApplied),
+        totalBeforeDiscount: Math.round(total + discountApplied)
+      };
     }
 
     // Обновление отображения стоимости
     function updateTotal() {
-      const total = calculateTotal();
-      document.getElementById('totalAmount').value = total.toLocaleString('ru-RU') + ' ₽';
+      const calculation = calculateTotal();
+      const total = calculation.total;
+      const details = calculation.details;
+      const discountApplied = calculation.discountApplied;
+      const totalBeforeDiscount = calculation.totalBeforeDiscount;
+      
+      document.getElementById('totalAmount').value = totalBeforeDiscount.toLocaleString('ru-RU') + ' ₽';
       
       const prepayAmount = parseFloat(document.getElementById('prepayAmount').value) || 0;
       const finalPayCash = parseFloat(document.getElementById('finalPayAmountCash').value) || 0;
@@ -470,6 +546,64 @@
       
       const finalTotal = total - prepayAmount - finalPayCash - finalPayTransfer;
       document.getElementById('finalAmount').value = finalTotal.toLocaleString('ru-RU') + ' ₽';
+      
+      // Обновляем детализацию расчета
+      updateCalculationDetails(details, discountApplied, totalBeforeDiscount, total);
+    }
+    
+    // Обновление детализации расчета
+    function updateCalculationDetails(details, discountApplied, totalBeforeDiscount, totalAfterDiscount) {
+      const detailsContainer = document.getElementById('calculationDetails');
+      const detailsContent = document.getElementById('calculationDetailsContent');
+      
+      if (details.length === 0) {
+        detailsContainer.classList.add('hidden');
+        return;
+      }
+      
+      detailsContainer.classList.remove('hidden');
+      
+      let html = '';
+      
+      details.forEach((item, index) => {
+        html += `<div class="mb-4 ${index > 0 ? 'border-t border-blue-300 pt-3' : ''}">`;
+        html += `<div class="font-semibold text-blue-900 mb-2">${item.label}</div>`;
+        
+        // Детали расчета по часам/услугам
+        html += `<div class="text-gray-700 mb-2">`;
+        item.details.forEach(detail => {
+          html += `<div class="ml-2">${detail}</div>`;
+        });
+        html += `</div>`;
+        
+        html += `<div class="font-semibold text-blue-800">Итого: ${item.total.toLocaleString('ru-RU')} ₽</div>`;
+        
+        // Условия обслуживания (только для Дня Рождения и Ведущей)
+        if (item.conditions && item.conditions.length > 0) {
+          html += `<div class="mt-2 pt-2 border-t border-blue-200 text-gray-600 text-xs">`;
+          item.conditions.forEach(condition => {
+            html += `<div class="ml-1">${condition}</div>`;
+          });
+          html += `</div>`;
+        }
+        
+        html += `</div>`;
+      });
+      
+      // Общая сумма до скидки
+      if (discountApplied > 0) {
+        html += `<div class="border-t-2 border-blue-400 pt-3 mt-3">`;
+        html += `<div class="text-gray-700">Сумма до скидки: ${totalBeforeDiscount.toLocaleString('ru-RU')} ₽</div>`;
+        html += `<div class="text-red-600 font-semibold">Скидка: -${discountApplied.toLocaleString('ru-RU')} ₽</div>`;
+        html += `<div class="text-blue-900 font-bold text-lg mt-1">Итого: ${totalAfterDiscount.toLocaleString('ru-RU')} ₽</div>`;
+        html += `</div>`;
+      } else {
+        html += `<div class="border-t-2 border-blue-400 pt-3 mt-3">`;
+        html += `<div class="text-blue-900 font-bold text-lg">Итого: ${totalAfterDiscount.toLocaleString('ru-RU')} ₽</div>`;
+        html += `</div>`;
+      }
+      
+      detailsContent.innerHTML = html;
     }
 
     // Рендеринг услуг
@@ -622,6 +756,10 @@
 
       const formattedPhone = formatPhoneDisplay(phoneDigits);
 
+      // Получаем расчет для сохранения правильной суммы
+      const calculation = calculateTotal();
+      const totalAmount = calculation.totalBeforeDiscount; // Сумма до скидки
+
       // Подготовка данных бронирования
       const bookingData = {
         clientName: clientName,
@@ -647,7 +785,8 @@
           date: document.getElementById('finalPayDateTransfer').value || '',
           notes: 'Перевод'
         },
-        createdAt: new Date()
+        createdAt: new Date(),
+        source: 'admin_miniapp'
       };
 
       try {
@@ -676,7 +815,7 @@
           await updateDoc(clientDoc.ref, {
             lastBookingDate: bookingDate,
             totalBookings: (clientData.totalBookings || 0) + 1,
-            totalSpent: (clientData.totalSpent || 0) + calculateTotal(),
+            totalSpent: (clientData.totalSpent || 0) + calculation.total,
             telegramId: userId || clientData.telegramId,
             telegramUsername: username || clientData.telegramUsername
           });
@@ -691,7 +830,7 @@
             createdAt: new Date(),
             lastBookingDate: bookingDate,
             totalBookings: 1,
-            totalSpent: calculateTotal(),
+            totalSpent: calculation.total,
             isActive: true
           });
         }
