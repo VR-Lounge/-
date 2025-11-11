@@ -138,9 +138,8 @@ bot.onText(/\/start/, async (msg) => {
               text: '✨ Записаться', 
               web_app: { url: CLIENT_MINI_APP_URL }
             }],
-            [{ text: '📅 Мои записи' }],
-            [{ text: 'ℹ️ Информация' }, { text: '📞 Контакты' }],
-            [{ text: '/help - Помощь' }]
+            [{ text: '📅 Мои записи' }, { text: '📞 Контакты' }],
+            [{ text: 'ℹ️ Информация' }, { text: '/help - Помощь' }]
           ],
           resize_keyboard: true
         }
@@ -152,7 +151,14 @@ bot.onText(/\/start/, async (msg) => {
 
 Добро пожаловать в VR Lounge! 🎮
 
-Запишитесь на удобное время и выберите услугу прямо здесь!
+Мы - игровой клуб с VR очками, PS5, X-Box и многим другим!
+
+📍 Наш адрес: г. Кольчугино
+🕐 График работы:
+   Пн-Пт: 15:00 - 20:00
+   Сб-Вс: 12:00 - 21:00
+
+Запишитесь на удобное время прямо здесь!
       `, {
         reply_markup: {
           keyboard: [
@@ -160,8 +166,8 @@ bot.onText(/\/start/, async (msg) => {
               text: '✨ Записаться', 
               web_app: { url: CLIENT_MINI_APP_URL }
             }],
-            [{ text: '/register - Зарегистрироваться' }],
-            [{ text: '/help - Помощь' }]
+            [{ text: '📞 Контакты' }, { text: 'ℹ️ О нас' }],
+            [{ text: '/register - Зарегистрироваться' }, { text: '/help - Помощь' }]
           ],
           resize_keyboard: true
         }
@@ -307,6 +313,223 @@ bot.on('contact', async (msg) => {
   }
 });
 
+// Обработчик кнопки "Контакты"
+bot.onText(/📞 Контакты|Контакты|контакты/, async (msg) => {
+  const chatId = msg.chat.id;
+  
+  const contactsMessage = `
+📞 Контакты VR Lounge
+
+📍 Адрес: г. Кольчугино
+
+🕐 График работы:
+   Пн-Пт: 15:00 - 20:00
+   Сб-Вс: 12:00 - 21:00
+
+🌐 Мы в социальных сетях и на картах:
+
+🔵 ВКонтакте: https://vk.com/vr_lounge
+
+🗺️ Яндекс Карты: https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713
+
+⭐ Отзывы: https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/
+
+💬 Telegram: @vr_lounge_bot
+
+Запишитесь на удобное время прямо здесь! 🎮
+  `;
+
+  await bot.sendMessage(chatId, contactsMessage, {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          { text: '🔵 ВКонтакте', url: 'https://vk.com/vr_lounge' },
+          { text: '🗺️ Карты', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713' }
+        ],
+        [
+          { text: '⭐ Отзывы', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/' }
+        ],
+        [
+          { text: '✨ Записаться', web_app: { url: CLIENT_MINI_APP_URL } }
+        ]
+      ]
+    }
+  });
+});
+
+// Обработчик кнопки "О нас" / "Информация"
+bot.onText(/ℹ️ О нас|О нас|о нас|ℹ️ Информация|Информация|информация/, async (msg) => {
+  const chatId = msg.chat.id;
+  
+  const infoMessage = `
+🎮 VR Lounge - Игровой Рай
+
+Мы - современный игровой клуб с широким выбором развлечений!
+
+🎯 Наши услуги:
+• VR очки (1-4 шт.)
+• PS5 (1-2 джойстика)
+• X-Box (1-4 джойстика)
+• X-Box Kinnect (до 8 человек)
+• Караоке
+• Настольные игры
+• Аренда всего помещения (День Рождения)
+• Ведущая для мероприятий
+
+💰 Стоимость:
+• Будни: от 150 ₽/час
+• Выходные: от 250 ₽/час
+• День Рождения: от 3000 ₽/час
+
+📍 Адрес: г. Кольчугино
+
+🕐 График работы:
+   Пн-Пт: 15:00 - 20:00
+   Сб-Вс: 12:00 - 21:00
+
+Запишитесь на удобное время прямо здесь! 🎮
+  `;
+
+  await bot.sendMessage(chatId, infoMessage, {
+    reply_markup: {
+      inline_keyboard: [
+        [
+          { text: '✨ Записаться', web_app: { url: CLIENT_MINI_APP_URL } },
+          { text: '📞 Контакты', callback_data: 'show_contacts' }
+        ],
+        [
+          { text: '🔵 ВКонтакте', url: 'https://vk.com/vr_lounge' },
+          { text: '🗺️ Карты', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713' }
+        ]
+      ]
+    }
+  });
+});
+
+// Обработчик кнопки "Мои записи"
+bot.onText(/📅 Мои записи|Мои записи|мои записи/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  
+  try {
+    // Находим клиента по telegramId
+    const clientsSnapshot = await db.collection('clients')
+      .where('telegramId', '==', userId)
+      .get();
+    
+    if (clientsSnapshot.empty) {
+      await bot.sendMessage(chatId, '❌ Вы не зарегистрированы в базе клиентов.\n\nИспользуйте команду /register для регистрации.');
+      return;
+    }
+    
+    const client = clientsSnapshot.docs[0].data();
+    const phoneDigits = client.phoneDigits;
+    
+    // Находим все бронирования клиента
+    const bookingsSnapshot = await db.collection('bookings')
+      .where('phoneDigits', '==', phoneDigits)
+      .orderBy('bookingDate', 'desc')
+      .orderBy('startTime', 'desc')
+      .limit(10)
+      .get();
+    
+    if (bookingsSnapshot.empty) {
+      await bot.sendMessage(chatId, '📅 У вас пока нет записей.\n\nЗапишитесь на удобное время прямо здесь! 🎮', {
+        reply_markup: {
+          inline_keyboard: [
+            [{ text: '✨ Записаться', web_app: { url: CLIENT_MINI_APP_URL } }]
+          ]
+        }
+      });
+      return;
+    }
+    
+    let bookingsMessage = `📅 Ваши записи:\n\n`;
+    
+    bookingsSnapshot.docs.forEach((doc, index) => {
+      const booking = doc.data();
+      const date = new Date(booking.bookingDate);
+      const formattedDate = date.toLocaleDateString('ru-RU', {
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric',
+        weekday: 'short'
+      });
+      
+      const serviceNames = getServiceNames(booking.selectedServices || []);
+      
+      bookingsMessage += `${index + 1}. 📅 ${formattedDate}\n`;
+      bookingsMessage += `   ⏰ ${booking.startTime} (${booking.duration} ч)\n`;
+      bookingsMessage += `   🎮 ${serviceNames}\n`;
+      if (booking.notes) {
+        bookingsMessage += `   📝 ${booking.notes}\n`;
+      }
+      bookingsMessage += `\n`;
+    });
+    
+    bookingsMessage += `\nДля создания новой записи нажмите кнопку ниже:`;
+    
+    await bot.sendMessage(chatId, bookingsMessage, {
+      reply_markup: {
+        inline_keyboard: [
+          [{ text: '✨ Новая запись', web_app: { url: CLIENT_MINI_APP_URL } }],
+          [{ text: '📞 Контакты', callback_data: 'show_contacts' }]
+        ]
+      }
+    });
+    
+  } catch (error) {
+    console.error('Ошибка получения записей клиента:', error);
+    await bot.sendMessage(chatId, '❌ Произошла ошибка при получении ваших записей. Попробуйте позже.');
+  }
+});
+
+// Обработчик callback для кнопки "Контакты"
+bot.on('callback_query', async (query) => {
+  const chatId = query.message.chat.id;
+  const data = query.data;
+  
+  if (data === 'show_contacts') {
+    const contactsMessage = `
+📞 Контакты VR Lounge
+
+📍 Адрес: г. Кольчугино
+
+🕐 График работы:
+   Пн-Пт: 15:00 - 20:00
+   Сб-Вс: 12:00 - 21:00
+
+🌐 Мы в социальных сетях и на картах:
+
+🔵 ВКонтакте: https://vk.com/vr_lounge
+
+🗺️ Яндекс Карты: https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713
+
+⭐ Отзывы: https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/
+
+💬 Telegram: @vr_lounge_bot
+    `;
+    
+    await bot.answerCallbackQuery(query.id);
+    await bot.sendMessage(chatId, contactsMessage, {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: '🔵 ВКонтакте', url: 'https://vk.com/vr_lounge' },
+            { text: '🗺️ Карты', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713' }
+          ],
+          [
+            { text: '⭐ Отзывы', url: 'https://yandex.ru/maps/org/vr_lounge_igrovoy_ray/5361992713/reviews/' }
+          ],
+          [
+            { text: '✨ Записаться', web_app: { url: CLIENT_MINI_APP_URL } }
+          ]
+        ]
+      }
+    });
+  }
+});
+
 // Команда /newbooking - открыть Mini App для создания записи (только для админов)
 // Работает как в личных чатах, так и в группах
 bot.onText(/\/newbooking|\/запись|\/новая_запись/, async (msg) => {
@@ -332,7 +555,7 @@ bot.onText(/\/newbooking|\/запись|\/новая_запись/, async (msg) 
             inline_keyboard: [
               [{
                 text: '📝 Создать запись',
-                web_app: { url: MINI_APP_URL }
+                web_app: { url: ADMIN_MINI_APP_URL }
               }]
             ]
           }
@@ -364,7 +587,7 @@ bot.onText(/\/newbooking|\/запись|\/новая_запись/, async (msg) 
         inline_keyboard: [
           [{
             text: '📝 Создать запись клиента',
-            web_app: { url: MINI_APP_URL }
+            web_app: { url: ADMIN_MINI_APP_URL }
           }]
         ]
       }
