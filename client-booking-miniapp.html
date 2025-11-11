@@ -170,9 +170,16 @@
       background: var(--dark-card);
       border: 2px solid rgba(168, 85, 247, 0.3);
       border-radius: 0.75rem;
-      padding: 0.75rem 1rem;
+      padding: 1rem 1.25rem;
       color: white;
       caret-color: var(--neon-purple);
+      font-size: 1rem;
+      min-height: 3rem;
+    }
+    
+    input[type="date"], input[type="tel"], input[type="text"], select {
+      padding: 1rem 1.25rem;
+      min-height: 3rem;
     }
     
     input:focus, select:focus, textarea:focus {
@@ -194,12 +201,12 @@
     }
     
     .header {
-      background: linear-gradient(135deg, var(--neon-purple) 0%, var(--neon-pink) 100%);
+      background: linear-gradient(18deg, #320859 0%, #bc2972 100%);
       padding: 1.5rem;
       text-align: center;
-      position: sticky;
-      top: 0;
       z-index: 100;
+      border-bottom-right-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
       box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
     }
     
