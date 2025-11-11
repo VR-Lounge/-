@@ -23,6 +23,7 @@ service cloud.firestore {
           && request.resource.data.duration > 0
           && request.resource.data.selectedServices is list
           && request.resource.data.selectedServices.size() > 0
+          // phoneDigits опционально (может быть, а может не быть)
         );
       
       // Обновление и удаление только авторизованным пользователям
@@ -65,9 +66,7 @@ service cloud.firestore {
     
     // Существующие правила для администраторов
     match /admins/{adminId} {
-      // Чтение разрешено всем (для отображения имен в графике и Mini App)
-      allow read: if true;
-      // Запись только авторизованным админам
+      allow read: if request.auth != null;
       allow write: if request.auth != null && request.auth.token.admin == true;
     }
     
@@ -79,10 +78,7 @@ service cloud.firestore {
     
     // Существующие правила для назначений администраторов
     match /adminAssignments/{assignmentId} {
-      // Чтение разрешено всем (график смен не является критически конфиденциальной информацией)
-      // Это позволяет отображать график в Telegram Mini App
-      allow read: if true;
-      // Запись только авторизованным админам
+      allow read: if request.auth != null;
       allow write: if request.auth != null && request.auth.token.admin == true;
     }
     
