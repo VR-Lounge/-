@@ -427,19 +427,44 @@ bot.on('contact', async (msg) => {
 Ждем тебя в VR Lounge! 🎮
       `);
     } else {
-      // Клиента нет - создаем нового
-      await db.collection('clients').add({
-        clientName: contact.first_name || 'Не указано',
-        clientPhone: formattedPhone,
-        phoneDigits: phoneDigits,
-        telegramId: userId,
-        telegramUsername: username,
-        createdAt: admin.firestore.FieldValue.serverTimestamp(),
-        lastBookingDate: null,
-        totalBookings: 0,
-        totalSpent: 0,
-        isActive: true
-      });
+      // Клиента нет - создаем нового с retry логикой
+      let retries = 3;
+      let lastError;
+      
+      while (retries > 0) {
+        try {
+          await db.collection('clients').add({
+            clientName: contact.first_name || 'Не указано',
+            clientPhone: formattedPhone,
+            phoneDigits: phoneDigits,
+            telegramId: userId,
+            telegramUsername: username,
+            createdAt: admin.firestore.FieldValue.serverTimestamp(),
+            lastBookingDate: null,
+            totalBookings: 0,
+            totalSpent: 0,
+            isActive: true
+          });
+          break; // Успешно, выходим из цикла
+        } catch (createError) {
+          lastError = createError;
+          retries--;
+          
+          if (createError.code === 8 || createError.message.includes('Quota exceeded')) {
+            console.warn(`⚠️ Превышен лимит Firestore при создании клиента. Осталось попыток: ${retries}`);
+            if (retries > 0) {
+              await new Promise(resolve => setTimeout(resolve, 2000)); // Ждем 2 секунды
+              continue;
+            }
+          } else {
+            throw createError; // Другая ошибка - не повторяем
+          }
+        }
+      }
+      
+      if (retries === 0 && lastError) {
+        throw lastError; // Все попытки исчерпаны
+      }
 
       await bot.sendMessage(chatId, `
 🎉 Добро пожаловать в VR Lounge!
