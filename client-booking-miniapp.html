@@ -873,7 +873,10 @@
     // Загрузка услуг (с учетом дня недели)
     function loadServices(date = null) {
       const container = document.getElementById('servicesContainer');
-      if (!container) return;
+      if (!container) {
+        console.error('❌ Контейнер услуг не найден в loadServices!');
+        return;
+      }
 
       // Если дата не передана, берем текущую выбранную дату из формы
       if (!date) {
@@ -899,7 +902,8 @@
       console.log('📅 Загрузка услуг:', {
         date: date,
         isWeekendDay: isWeekendDay,
-        selectedServicesBefore: Array.from(selectedServices)
+        selectedServicesBefore: Array.from(selectedServices),
+        containerExists: !!container
       });
       
       // Маппинг старых ID услуг на новые (для сохранения выбора при смене дня недели)
