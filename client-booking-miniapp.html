@@ -814,8 +814,11 @@
       const workingHours = getWorkingHours(new Date(date));
       info.textContent = `График работы: ${workingHours.start}:00 - ${workingHours.end}:00`;
 
+      // Сохраняем выбранное время перед перерисовкой
+      const savedSelectedTime = selectedTime;
+
       container.innerHTML = '';
-      selectedTime = null;
+      // НЕ сбрасываем selectedTime здесь, чтобы сохранить выбор
 
       for (let hour = workingHours.start; hour < workingHours.end; hour++) {
         for (let minute of [0, 30]) {
@@ -829,6 +832,12 @@
           slot.className = `time-slot ${isAvailable ? '' : 'disabled'}`;
           slot.textContent = timeStr;
           
+          // Восстанавливаем выбранное время, если оно было выбрано и доступно
+          if (savedSelectedTime === timeStr && isAvailable) {
+            slot.classList.add('selected');
+            selectedTime = timeStr;
+          }
+          
           if (isAvailable) {
             slot.addEventListener('click', () => {
               document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
@@ -840,6 +849,12 @@
           
           container.appendChild(slot);
         }
+      }
+      
+      // Если сохраненное время недоступно или не найдено, сбрасываем его
+      if (savedSelectedTime && !container.querySelector('.time-slot.selected')) {
+        selectedTime = null;
+        console.log(`⚠️ Выбранное время ${savedSelectedTime} больше не доступно, сброшено`);
       }
     }
 
