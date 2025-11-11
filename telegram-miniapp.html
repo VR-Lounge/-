@@ -869,8 +869,82 @@
       // Маска телефона
       const phoneInput = document.getElementById('clientPhone');
       phoneInput.value = '+7 (';
+      
+      // Сохраняем позицию курсора для правильной обработки удаления
+      let lastValue = '+7 (';
+      let lastCursorPosition = 4;
+      
       phoneInput.addEventListener('input', (e) => {
-        let value = e.target.value.replace(/\D/g, '');
+        const input = e.target;
+        const currentValue = input.value;
+        const cursorPosition = input.selectionStart;
+        
+        // Если пользователь удаляет символы (значение уменьшилось)
+        if (currentValue.length < lastValue.length) {
+          // Если пытаются удалить часть маски "+7 (", не позволяем
+          if (currentValue.length <= 4 && !currentValue.startsWith('+7 (')) {
+            input.value = '+7 (';
+            input.setSelectionRange(4, 4);
+            lastValue = '+7 (';
+            lastCursorPosition = 4;
+            return;
+          }
+          
+          // Если удалили до "+7 (", оставляем только "+7 ("
+          if (currentValue.length <= 4) {
+            input.value = '+7 (';
+            input.setSelectionRange(4, 4);
+            lastValue = '+7 (';
+            lastCursorPosition = 4;
+            return;
+          }
+          
+          // Если удалили часть номера, переформатируем оставшиеся цифры
+          let digits = currentValue.replace(/\D/g, '');
+          if (digits.startsWith('8')) {
+            digits = '7' + digits.substring(1);
+          }
+          if (!digits.startsWith('7')) {
+            digits = '7' + digits;
+          }
+          if (digits.length > 11) digits = digits.substring(0, 11);
+          
+          // Форматируем заново
+          let formatted = '+7 (';
+          if (digits.length > 1) {
+            formatted += digits.substring(1, Math.min(4, digits.length));
+            if (digits.length >= 4) {
+              formatted += ') ' + digits.substring(4, Math.min(7, digits.length));
+              if (digits.length >= 7) {
+                formatted += '-' + digits.substring(7, Math.min(9, digits.length));
+                if (digits.length >= 9) {
+                  formatted += '-' + digits.substring(9, Math.min(11, digits.length));
+                }
+              }
+            }
+          }
+          
+          input.value = formatted;
+          
+          // Восстанавливаем позицию курсора с учетом удаленных символов
+          const deletedChars = lastValue.length - currentValue.length;
+          let newCursorPos = Math.max(4, cursorPosition - deletedChars);
+          
+          // Корректируем позицию курсора, чтобы он не попал в середину форматирующих символов
+          if (formatted.length < newCursorPos) {
+            newCursorPos = formatted.length;
+          }
+          
+          input.setSelectionRange(newCursorPos, newCursorPos);
+          lastValue = formatted;
+          lastCursorPosition = newCursorPos;
+          return;
+        }
+        
+        // Обработка вставки/ввода новых символов
+        let value = currentValue.replace(/\D/g, '');
+        
+        // Обрабатываем разные форматы ввода
         if (value.startsWith('8')) {
           value = '7' + value.substring(1);
         }
@@ -879,15 +953,61 @@
         }
         if (value.length > 11) value = value.substring(0, 11);
         
-        if (value.length >= 1) {
-          let formatted = '+7 (';
-          if (value.length > 1) formatted += value.substring(1, 4);
-          if (value.length >= 4) formatted += ') ' + value.substring(4, 7);
-          if (value.length >= 7) formatted += '-' + value.substring(7, 9);
-          if (value.length >= 9) formatted += '-' + value.substring(9, 11);
-          e.target.value = formatted;
-        } else {
-          e.target.value = '+7 (';
+        // Форматируем номер
+        let formatted = '+7 (';
+        if (value.length > 1) {
+          formatted += value.substring(1, Math.min(4, value.length));
+          if (value.length >= 4) {
+            formatted += ') ' + value.substring(4, Math.min(7, value.length));
+            if (value.length >= 7) {
+              formatted += '-' + value.substring(7, Math.min(9, value.length));
+              if (value.length >= 9) {
+                formatted += '-' + value.substring(9, Math.min(11, value.length));
+              }
+            }
+          }
+        }
+        
+        input.value = formatted;
+        
+        // Устанавливаем курсор в правильную позицию
+        let newCursorPos = formatted.length;
+        if (cursorPosition < currentValue.length) {
+          // Курсор был не в конце - пытаемся сохранить относительную позицию
+          const digitsBeforeCursor = currentValue.substring(0, cursorPosition).replace(/\D/g, '').length;
+          let pos = 4; // Начинаем после "+7 ("
+          if (digitsBeforeCursor > 0) {
+            pos += Math.min(3, digitsBeforeCursor - 1); // Цифры кода
+            if (digitsBeforeCursor > 3) {
+              pos += 2; // ") "
+              pos += Math.min(3, digitsBeforeCursor - 3); // Следующие 3 цифры
+              if (digitsBeforeCursor > 6) {
+                pos += 1; // "-"
+                pos += Math.min(2, digitsBeforeCursor - 6); // Следующие 2 цифры
+                if (digitsBeforeCursor > 8) {
+                  pos += 1; // "-"
+                  pos += Math.min(2, digitsBeforeCursor - 8); // Последние 2 цифры
+                }
+              }
+            }
+          }
+          newCursorPos = Math.min(pos, formatted.length);
+        }
+        
+        input.setSelectionRange(newCursorPos, newCursorPos);
+        lastValue = formatted;
+        lastCursorPosition = newCursorPos;
+      });
+      
+      // Обработка событий удаления (Backspace, Delete)
+      phoneInput.addEventListener('keydown', (e) => {
+        const input = e.target;
+        const cursorPosition = input.selectionStart;
+        
+        // Если нажали Backspace или Delete и курсор находится в начале маски "+7 ("
+        if ((e.key === 'Backspace' || e.key === 'Delete') && cursorPosition <= 4) {
+          e.preventDefault();
+          return;
         }
       });
     }
