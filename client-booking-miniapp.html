@@ -733,6 +733,11 @@
 
     // Проверка, является ли дата выходным днем
     function isWeekend(date) {
+      // Если date - строка в формате YYYY-MM-DD, создаем Date объект правильно
+      if (typeof date === 'string') {
+        const [year, month, day] = date.split('-').map(Number);
+        date = new Date(year, month - 1, day);
+      }
       const day = date.getDay();
       return day === 0 || day === 6;
     }
@@ -869,7 +874,20 @@
         date = dateInput ? dateInput.value : null;
       }
 
-      const isWeekendDay = date ? isWeekend(new Date(date)) : isWeekend(new Date());
+      // Правильно определяем день недели
+      let isWeekendDay = false;
+      if (date) {
+        // Если date - строка в формате YYYY-MM-DD, создаем Date объект правильно
+        if (typeof date === 'string') {
+          const [year, month, day] = date.split('-').map(Number);
+          const dateObj = new Date(year, month - 1, day);
+          isWeekendDay = isWeekend(dateObj);
+        } else {
+          isWeekendDay = isWeekend(date);
+        }
+      } else {
+        isWeekendDay = isWeekend(new Date());
+      }
       
       console.log('📅 Загрузка услуг:', {
         date: date,
