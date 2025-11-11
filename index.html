@@ -2936,9 +2936,16 @@
           row.className = 'hover:bg-gray-50 transition';
 
           // Telegram статус
-          const telegramStatus = client.telegramId 
-            ? `<span class="text-green-600"><i class="fab fa-telegram"></i> ${client.telegramUsername || 'Подключен'}</span>`
-            : '<span class="text-gray-400">Не подключен</span>';
+          let telegramStatus;
+          if (client.telegramId && client.telegramUsername) {
+            // Убираем @ если есть, и создаем кликабельную ссылку
+            const username = client.telegramUsername.replace('@', '');
+            telegramStatus = `<a href="https://t.me/${username}" target="_blank" class="text-green-600 hover:text-green-800 hover:underline"><i class="fab fa-telegram"></i> @${username}</a>`;
+          } else if (client.telegramId) {
+            telegramStatus = `<span class="text-green-600"><i class="fab fa-telegram"></i> Подключен</span>`;
+          } else {
+            telegramStatus = '<span class="text-gray-400">Не подключен</span>';
+          }
 
           // Форматирование даты последней записи
           const lastBookingDate = client.lastBookingDate 
@@ -3209,7 +3216,9 @@
               <div><span class="font-medium">Имя:</span> ${client.clientName}</div>
               <div><span class="font-medium">Телефон:</span> <a href="tel:${client.clientPhone}" class="text-blue-600 hover:underline">${client.clientPhone}</a></div>
               <div><span class="font-medium">Telegram:</span> ${client.telegramId 
-                ? `<span class="text-green-600"><i class="fab fa-telegram"></i> ${client.telegramUsername || 'ID: ' + client.telegramId}</span>`
+                ? (client.telegramUsername 
+                  ? `<a href="https://t.me/${client.telegramUsername.replace('@', '')}" target="_blank" class="text-green-600 hover:text-green-800 hover:underline"><i class="fab fa-telegram"></i> @${client.telegramUsername.replace('@', '')}</a>`
+                  : `<span class="text-green-600"><i class="fab fa-telegram"></i> ID: ${client.telegramId}</span>`)
                 : '<span class="text-gray-400">Не подключен</span>'}</div>
             </div>
           </div>
