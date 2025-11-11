@@ -863,7 +863,19 @@
       const container = document.getElementById('servicesContainer');
       if (!container) return;
 
+      // Если дата не передана, берем текущую выбранную дату из формы
+      if (!date) {
+        const dateInput = document.getElementById('bookingDate');
+        date = dateInput ? dateInput.value : null;
+      }
+
       const isWeekendDay = date ? isWeekend(new Date(date)) : isWeekend(new Date());
+      
+      console.log('📅 Загрузка услуг:', {
+        date: date,
+        isWeekendDay: isWeekendDay,
+        selectedServicesBefore: Array.from(selectedServices)
+      });
       
       // Маппинг старых ID услуг на новые (для сохранения выбора при смене дня недели)
       const serviceMapping = {
@@ -988,6 +1000,12 @@
           }
           
           updateTotal();
+          
+          // Перерисовываем услуги с учетом текущей выбранной даты, чтобы убедиться, что все доступные услуги отображаются
+          const currentDate = document.getElementById('bookingDate').value;
+          if (currentDate) {
+            loadServices(currentDate);
+          }
         });
         
         container.appendChild(card);
