@@ -1126,6 +1126,45 @@
       }
     }
     
+    // Показ модального окна с ошибкой
+    function showErrorModal(message) {
+      // Удаляем предыдущее модальное окно, если есть
+      const existingModal = document.getElementById('errorModal');
+      if (existingModal) {
+        existingModal.remove();
+      }
+      
+      const modal = document.createElement('div');
+      modal.id = 'errorModal';
+      modal.className = 'modal-overlay';
+      modal.innerHTML = `
+        <div class="modal-content">
+          <div class="modal-title">⚠️ Ошибка заполнения</div>
+          <div class="modal-message">${message}</div>
+          <button class="modal-button" onclick="this.closest('.modal-overlay').remove()">
+            Понятно
+          </button>
+        </div>
+      `;
+      
+      document.body.appendChild(modal);
+      
+      // Закрытие по клику на overlay
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.remove();
+        }
+      });
+      
+      // Прокручиваем к кнопке после закрытия модального окна
+      setTimeout(() => {
+        const submitBtn = document.getElementById('submitBtn');
+        if (submitBtn) {
+          submitBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 100);
+    }
+    
     // Показ модального окна с успехом
     function showSuccessModal(message) {
       // Удаляем предыдущее модальное окно, если есть
