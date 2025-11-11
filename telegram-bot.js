@@ -4,7 +4,16 @@
 require('dotenv').config();
 const TelegramBot = require('node-telegram-bot-api');
 const admin = require('firebase-admin');
-const serviceAccount = require('./firebase-service-account.json');
+
+// Поддержка Firebase ключа из переменной окружения (для облачных сервисов)
+let serviceAccount;
+if (process.env.FIREBASE_SERVICE_ACCOUNT) {
+  // Для облачных сервисов (Railway, Render и т.д.)
+  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+} else {
+  // Для локальной разработки
+  serviceAccount = require('./firebase-service-account.json');
+}
 
 // Инициализация Firebase Admin SDK
 admin.initializeApp({
