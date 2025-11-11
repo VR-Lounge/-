@@ -116,8 +116,12 @@
       <!-- Время начала -->
       <div>
         <label for="startTime" class="block text-gray-900 font-semibold mb-2">Время начала</label>
-        <input type="time" id="startTime" name="startTime" required 
-          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+        <select id="startTime" name="startTime" required 
+          class="w-full rounded-2xl border border-gray-300 px-4 py-3 text-gray-900 text-left focus:ring-2 focus:ring-blue-500 focus:outline-none">
+          <option value="">Выберите время</option>
+          <!-- Временные слоты будут добавлены динамически -->
+        </select>
+        <div id="timeSlotsInfo" class="text-xs text-gray-500 mt-1 hidden"></div>
       </div>
 
       <!-- Длительность -->
@@ -390,6 +394,9 @@
 
     // Выбранные услуги
     const selectedServices = new Set();
+    
+    // Занятые временные слоты (загружаются из Firebase)
+    let bookedTimeSlots = [];
 
     // Проверка выходного дня
     function isWeekend(dateStr) {
@@ -425,17 +432,24 @@
       let total = 0;
       const calculationDetails = [];
 
+      console.log('🔍 Расчет стоимости. Выбранные услуги:', Array.from(selectedServices));
+      console.log('⏱ Длительность:', duration);
+      
       selectedServices.forEach(service => {
+        console.log(`📦 Обработка услуги: ${service}`);
         if (service === 'birthday') {
           const fullHours = Math.floor(duration);
           const hasHalfHour = duration % 1 !== 0;
           let birthdayTotal = 0;
           const hourDetails = [];
           
+          console.log(`🎂 День Рождения: полных часов=${fullHours}, есть полчаса=${hasHalfHour}`);
+          
           for (let hour = 1; hour <= fullHours; hour++) {
             const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
             birthdayTotal += hourPrice;
             hourDetails.push(`Час ${hour}: ${hourPrice.toLocaleString('ru-RU')} ₽`);
+            console.log(`  Час ${hour}: ${hourPrice} ₽ (сумма: ${birthdayTotal})`);
           }
           
           if (hasHalfHour) {
@@ -472,6 +486,7 @@
             ]
           });
           
+          console.log(`✅ Итого за День Рождения: ${birthdayTotal} ₽`);
           total += birthdayTotal;
         } else if (service === 'hostess') {
           const hostessPrice = servicePrices.hostess;
@@ -524,12 +539,140 @@
         total = Math.max(0, total - discountAmount);
       }
 
+      console.log(`💰 Итоговая сумма: ${total} ₽ (до скидки: ${totalBeforeDiscount} ₽)`);
+      
       return {
         total: Math.round(total),
         details: calculationDetails,
         discountApplied: Math.round(discountApplied),
         totalBeforeDiscount: Math.round(totalBeforeDiscount)
       };
+    }
+    
+    // Загрузка занятых временных слотов из Firebase
+    async function loadBookedTimeSlots(selectedDate) {
+      if (!selectedDate) return;
+      
+      try {
+        const bookingsQuery = query(
+          collection(db, 'bookings'),
+          where('bookingDate', '==', selectedDate)
+        );
+        const bookingsSnapshot = await getDocs(bookingsQuery);
+        
+        bookedTimeSlots = [];
+        bookingsSnapshot.forEach(doc => {
+          const booking = doc.data();
+          if (booking.startTime && booking.duration) {
+            const startTime = booking.startTime;
+            const duration = parseFloat(booking.duration) || 0;
+            
+            // Вычисляем время окончания
+            const [startHours, startMinutes] = startTime.split(':').map(Number);
+            const startDateTime = new Date();
+            startDateTime.setHours(startHours, startMinutes, 0, 0);
+            const endDateTime = new Date(startDateTime.getTime() + duration * 60 * 60 * 1000);
+            const endTime = `${endDateTime.getHours().toString().padStart(2, '0')}:${endDateTime.getMinutes().toString().padStart(2, '0')}`;
+            
+            bookedTimeSlots.push({
+              start: startTime,
+              end: endTime,
+              duration: duration,
+              clientName: booking.clientName || 'Клиент'
+            });
+          }
+        });
+        
+        console.log('📅 Занятые временные слоты:', bookedTimeSlots);
+        updateTimeSlots(selectedDate);
+      } catch (error) {
+        console.error('Ошибка загрузки занятых слотов:', error);
+        // В случае ошибки показываем все временные слоты
+        updateTimeSlots(selectedDate);
+      }
+    }
+    
+    // Обновление списка доступных временных слотов
+    function updateTimeSlots(selectedDate) {
+      const startTimeSelect = document.getElementById('startTime');
+      const timeSlotsInfo = document.getElementById('timeSlotsInfo');
+      
+      if (!selectedDate) {
+        startTimeSelect.innerHTML = '<option value="">Сначала выберите дату</option>';
+        return;
+      }
+      
+      // Определяем рабочие часы в зависимости от дня недели
+      const date = new Date(selectedDate);
+      const dayOfWeek = date.getDay();
+      const isWeekendDay = dayOfWeek === 0 || dayOfWeek === 6;
+      
+      let workStartHour, workEndHour;
+      if (isWeekendDay) {
+        // Сб-Вс: 12-21
+        workStartHour = 12;
+        workEndHour = 21;
+      } else {
+        // Пн-Пт: 15-20
+        workStartHour = 15;
+        workEndHour = 20;
+      }
+      
+      // Генерируем все возможные временные слоты с шагом 30 минут
+      const availableSlots = [];
+      for (let hour = workStartHour; hour < workEndHour; hour++) {
+        for (let minute = 0; minute < 60; minute += 30) {
+          const timeStr = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+          
+          // Проверяем, не пересекается ли этот слот с занятыми
+          const isAvailable = !isTimeSlotBooked(timeStr);
+          
+          if (isAvailable) {
+            availableSlots.push(timeStr);
+          }
+        }
+      }
+      
+      // Заполняем select
+      startTimeSelect.innerHTML = '<option value="">Выберите время</option>';
+      if (availableSlots.length === 0) {
+        startTimeSelect.innerHTML += '<option value="" disabled>Нет доступных слотов</option>';
+        timeSlotsInfo.textContent = '❌ На эту дату нет свободных временных слотов';
+        timeSlotsInfo.classList.remove('hidden');
+      } else {
+        availableSlots.forEach(slot => {
+          const option = document.createElement('option');
+          option.value = slot;
+          option.textContent = slot;
+          startTimeSelect.appendChild(option);
+        });
+        
+        const bookedCount = bookedTimeSlots.length;
+        if (bookedCount > 0) {
+          timeSlotsInfo.textContent = `✅ Доступно ${availableSlots.length} слотов. Занято: ${bookedCount}`;
+          timeSlotsInfo.classList.remove('hidden');
+        } else {
+          timeSlotsInfo.classList.add('hidden');
+        }
+      }
+    }
+    
+    // Проверка, занят ли временной слот
+    function isTimeSlotBooked(startTime) {
+      if (!startTime || bookedTimeSlots.length === 0) return false;
+      
+      const [startHours, startMinutes] = startTime.split(':').map(Number);
+      const requestedStart = startHours * 60 + startMinutes;
+      
+      return bookedTimeSlots.some(slot => {
+        const [slotStartHours, slotStartMinutes] = slot.start.split(':').map(Number);
+        const [slotEndHours, slotEndMinutes] = slot.end.split(':').map(Number);
+        const slotStart = slotStartHours * 60 + slotStartMinutes;
+        const slotEnd = slotEndHours * 60 + slotEndMinutes;
+        
+        // Проверяем пересечение: запрашиваемое время попадает в занятый интервал
+        return requestedStart >= slotStart && requestedStart < slotEnd;
+      });
     }
 
     // Обновление отображения стоимости
@@ -642,12 +785,16 @@
         `;
 
         button.addEventListener('click', () => {
-          if (selectedServices.has(service)) {
+          const wasSelected = selectedServices.has(service);
+          if (wasSelected) {
             selectedServices.delete(service);
+            button.classList.remove('selected');
+            console.log(`❌ Услуга "${label}" удалена. Всего выбрано: ${selectedServices.size}`);
           } else {
             selectedServices.add(service);
+            button.classList.add('selected');
+            console.log(`✅ Услуга "${label}" добавлена. Всего выбрано: ${selectedServices.size}`);
           }
-          button.classList.toggle('selected');
           updateTotal();
         });
 
@@ -675,10 +822,7 @@
       const dateStr = today.toISOString().split('T')[0];
       document.getElementById('bookingDate').value = dateStr;
 
-      // Устанавливаем время по умолчанию (текущее время + 1 час)
-      const nextHour = new Date(today.getTime() + 60 * 60 * 1000);
-      const timeStr = nextHour.toTimeString().slice(0, 5);
-      document.getElementById('startTime').value = timeStr;
+      // Время будет установлено после загрузки доступных слотов
 
       // Если есть данные пользователя из Telegram, заполняем имя
       if (firstName) {
@@ -687,11 +831,16 @@
 
       // Рендерим услуги
       renderServices();
+      
+      // Загружаем занятые временные слоты для выбранной даты
+      loadBookedTimeSlots(document.getElementById('bookingDate').value);
 
       // Слушатели событий
-      document.getElementById('bookingDate').addEventListener('change', () => {
-        renderServices();
+      document.getElementById('bookingDate').addEventListener('change', (e) => {
+        const selectedDate = e.target.value;
+        renderServices(); // Перерисовываем услуги (сохраняя выбранные)
         updateTotal();
+        loadBookedTimeSlots(selectedDate); // Загружаем занятые слоты для новой даты
       });
 
       document.getElementById('duration').addEventListener('change', updateTotal);
