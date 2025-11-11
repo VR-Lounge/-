@@ -1095,12 +1095,14 @@
         console.log('📋 Данные для сохранения:', bookingData);
 
         // Сохранение бронирования
+        console.log('💾 Сохранение бронирования в Firebase...');
         await window.addDoc(window.collection(window.db, "bookings"), bookingData);
+        console.log('✅ Бронирование успешно сохранено!');
 
         // Обновление или создание клиента
         const clientsQuery = window.query(
           window.collection(window.db, "clients"),
-          window.where("phoneDigits", "==", phoneDigits)
+          window.where("phoneDigits", "==", cleanPhone)
         );
         const clientsSnapshot = await window.getDocs(clientsQuery);
 
