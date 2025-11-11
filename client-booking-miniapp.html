@@ -12,7 +12,7 @@
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { 
-      getFirestore, collection, addDoc, getDocs, query, where, Timestamp
+      getFirestore, collection, addDoc, getDocs, query, where, Timestamp, updateDoc, doc
     } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
     const firebaseConfig = {
@@ -35,6 +35,8 @@
     window.query = query;
     window.where = where;
     window.Timestamp = Timestamp;
+    window.updateDoc = updateDoc;
+    window.doc = doc;
     
     // Сигнализируем, что Firebase готов
     window.firebaseReady = true;
@@ -1489,6 +1491,18 @@
         showMessage('✅ Запись успешно создана! Мы свяжемся с вами для подтверждения.', 'success');
 
         // Обновление или создание клиента (выполняется асинхронно, не блокирует UI)
+        // Обновляем данные пользователя перед сохранением клиента
+        const updatedUser = getUserData();
+        const currentTelegramId = updatedUser?.id?.toString() || user?.id?.toString() || null;
+        const currentTelegramUsername = updatedUser?.username ? `@${updatedUser.username}` : (user?.username ? `@${user.username}` : null);
+        
+        console.log('👤 Данные пользователя для сохранения клиента:', {
+          updatedUser: updatedUser,
+          user: user,
+          telegramId: currentTelegramId,
+          telegramUsername: currentTelegramUsername
+        });
+        
         const clientsQuery = window.query(
           window.collection(window.db, "clients"),
           window.where("phoneDigits", "==", cleanPhone)
@@ -1496,9 +1510,22 @@
         const clientsSnapshot = await window.getDocs(clientsQuery);
 
         if (!clientsSnapshot.empty) {
-          // Обновляем существующего клиента
+          // Обновляем существующего клиента (добавляем telegramId, если его нет)
           const clientDoc = clientsSnapshot.docs[0];
           const clientData = clientDoc.data();
+          
+          // Если у клиента нет telegramId, но он есть у пользователя, обновляем
+          if (!clientData.telegramId && currentTelegramId) {
+            try {
+              await window.updateDoc(window.doc(window.db, "clients", clientDoc.id), {
+                telegramId: currentTelegramId,
+                telegramUsername: currentTelegramUsername
+              });
+              console.log('✅ Telegram ID добавлен существующему клиенту');
+            } catch (updateError) {
+              console.error('⚠️ Ошибка обновления telegramId клиента:', updateError);
+            }
+          }
           // Обновление статистики будет выполнено в CRM
           console.log('✅ Клиент найден, статистика будет обновлена в CRM');
         } else {
@@ -1508,14 +1535,14 @@
               clientName,
               clientPhone,
               phoneDigits: cleanPhone,
-              telegramId: user?.id?.toString() || null,
-              telegramUsername: user?.username ? `@${user.username}` : null,
+              telegramId: currentTelegramId,
+              telegramUsername: currentTelegramUsername,
               createdAt: window.Timestamp.now(),
               totalBookings: 0,
               totalSpent: 0,
               isActive: true
             });
-            console.log('✅ Новый клиент создан');
+            console.log('✅ Новый клиент создан с telegramId:', currentTelegramId);
           } catch (clientError) {
             console.error('⚠️ Ошибка создания клиента (не критично):', clientError);
             // Не блокируем успешное завершение, если клиент не создан
