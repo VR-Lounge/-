@@ -1178,15 +1178,15 @@
         prepayment: {
           amount: parseFloat(document.getElementById('prepayAmount').value) || 0,
           method: document.getElementById('prepayMethod').value || 'cash',
-          date: document.getElementById('prepayDate').value || ''
+          date: document.getElementById('prepayDate').value || null
         },
         finalPaymentCash: {
           amount: parseFloat(document.getElementById('finalPayAmountCash').value) || 0,
-          date: document.getElementById('finalPayDateCash').value || ''
+          date: document.getElementById('finalPayDateCash').value || null
         },
         finalPaymentTransfer: {
           amount: parseFloat(document.getElementById('finalPayAmountTransfer').value) || 0,
-          date: document.getElementById('finalPayDateTransfer').value || '',
+          date: document.getElementById('finalPayDateTransfer').value || null,
           notes: 'Перевод'
         },
         createdAt: Timestamp.now(),
