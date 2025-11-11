@@ -1108,11 +1108,10 @@ function setupNewBookingListener() {
         now.toMillis() - 30 * 1000
       );
       
-      // Проверяем только записи, созданные за последние 30 секунд
-      // И только те, которые созданы после последней проверки
+      // Проверяем только записи, созданные после последней проверки
+      // Используем только один where для избежания необходимости в индексе
       const bookingsSnapshot = await db.collection('bookings')
         .where('createdAt', '>=', lastCheckTime)
-        .where('createdAt', '<=', now)
         .limit(10) // Ограничиваем до 10 записей за раз
         .get();
       
