@@ -881,19 +881,16 @@
         
         // Если пользователь удаляет символы (значение уменьшилось)
         if (currentValue.length < lastValue.length) {
-          // Если пытаются удалить часть маски "+7 (", не позволяем
-          if (currentValue.length <= 4 && !currentValue.startsWith('+7 (')) {
-            input.value = '+7 (';
-            input.setSelectionRange(4, 4);
-            lastValue = '+7 (';
-            lastCursorPosition = 4;
-            return;
-          }
-          
-          // Если удалили до "+7 (", оставляем только "+7 ("
+          // Если пытаются удалить часть маски "+7 (", не позволяем удалять только до "+7 ("
           if (currentValue.length <= 4) {
-            input.value = '+7 (';
-            input.setSelectionRange(4, 4);
+            if (!currentValue.startsWith('+7 (')) {
+              input.value = '+7 (';
+              input.setSelectionRange(4, 4);
+            } else {
+              // Если осталось только "+7 (", оставляем как есть
+              input.value = '+7 (';
+              input.setSelectionRange(4, 4);
+            }
             lastValue = '+7 (';
             lastCursorPosition = 4;
             return;
@@ -908,6 +905,15 @@
             digits = '7' + digits;
           }
           if (digits.length > 11) digits = digits.substring(0, 11);
+          
+          // Если после удаления осталось меньше 2 цифр (только "7"), оставляем только маску
+          if (digits.length <= 1) {
+            input.value = '+7 (';
+            input.setSelectionRange(4, 4);
+            lastValue = '+7 (';
+            lastCursorPosition = 4;
+            return;
+          }
           
           // Форматируем заново
           let formatted = '+7 (';
@@ -944,7 +950,7 @@
         // Обработка вставки/ввода новых символов
         let value = currentValue.replace(/\D/g, '');
         
-        // Обрабатываем разные форматы ввода
+        // Обрабатываем разные форматы ввода (включая вставку из буфера)
         if (value.startsWith('8')) {
           value = '7' + value.substring(1);
         }
@@ -952,6 +958,15 @@
           value = '7' + value;
         }
         if (value.length > 11) value = value.substring(0, 11);
+        
+        // Если после обработки осталось только "7", оставляем только маску
+        if (value.length <= 1) {
+          input.value = '+7 (';
+          input.setSelectionRange(4, 4);
+          lastValue = '+7 (';
+          lastCursorPosition = 4;
+          return;
+        }
         
         // Форматируем номер
         let formatted = '+7 (';
@@ -1003,12 +1018,68 @@
       phoneInput.addEventListener('keydown', (e) => {
         const input = e.target;
         const cursorPosition = input.selectionStart;
+        const value = input.value;
         
         // Если нажали Backspace или Delete и курсор находится в начале маски "+7 ("
         if ((e.key === 'Backspace' || e.key === 'Delete') && cursorPosition <= 4) {
           e.preventDefault();
           return;
         }
+        
+        // Если нажали Backspace и курсор находится сразу после "+7 (", не позволяем удалять
+        if (e.key === 'Backspace' && cursorPosition === 4 && value.startsWith('+7 (')) {
+          e.preventDefault();
+          return;
+        }
+      });
+      
+      // Обработка вставки из буфера обмена (Ctrl+V, Cmd+V)
+      phoneInput.addEventListener('paste', (e) => {
+        e.preventDefault();
+        const pastedText = (e.clipboardData || window.clipboardData).getData('text');
+        
+        // Извлекаем только цифры из вставленного текста
+        let digits = pastedText.replace(/\D/g, '');
+        
+        // Обрабатываем разные форматы
+        if (digits.startsWith('8')) {
+          digits = '7' + digits.substring(1);
+        }
+        if (!digits.startsWith('7')) {
+          digits = '7' + digits;
+        }
+        if (digits.length > 11) {
+          digits = digits.substring(0, 11);
+        }
+        
+        // Если после обработки осталось только "7", оставляем только маску
+        if (digits.length <= 1) {
+          input.value = '+7 (';
+          input.setSelectionRange(4, 4);
+          lastValue = '+7 (';
+          lastCursorPosition = 4;
+          return;
+        }
+        
+        // Форматируем номер
+        let formatted = '+7 (';
+        if (digits.length > 1) {
+          formatted += digits.substring(1, Math.min(4, digits.length));
+          if (digits.length >= 4) {
+            formatted += ') ' + digits.substring(4, Math.min(7, digits.length));
+            if (digits.length >= 7) {
+              formatted += '-' + digits.substring(7, Math.min(9, digits.length));
+              if (digits.length >= 9) {
+                formatted += '-' + digits.substring(9, Math.min(11, digits.length));
+              }
+            }
+          }
+        }
+        
+        input.value = formatted;
+        input.setSelectionRange(formatted.length, formatted.length);
+        lastValue = formatted;
+        lastCursorPosition = formatted.length;
       });
     }
 
