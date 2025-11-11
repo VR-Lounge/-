@@ -889,11 +889,26 @@
       });
 
       document.getElementById('duration').addEventListener('change', () => {
+        // Сохраняем выбранное время перед обновлением слотов
+        const startTimeSelect = document.getElementById('startTime');
+        const selectedTime = startTimeSelect.value;
+        
         updateTotal();
+        
         // Обновляем список доступных слотов с учетом новой длительности
         const selectedDate = document.getElementById('bookingDate').value;
         if (selectedDate) {
           updateTimeSlots(selectedDate);
+          
+          // Восстанавливаем выбранное время, если оно все еще доступно
+          setTimeout(() => {
+            if (selectedTime && startTimeSelect.querySelector(`option[value="${selectedTime}"]`)) {
+              startTimeSelect.value = selectedTime;
+              console.log('✅ Восстановлено выбранное время:', selectedTime);
+            } else if (selectedTime) {
+              console.log('⚠️ Выбранное время больше не доступно с новой длительностью:', selectedTime);
+            }
+          }, 100);
         }
       });
       document.getElementById('discountPercent').addEventListener('input', updateTotal);

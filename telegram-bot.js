@@ -848,19 +848,26 @@ function setupNewBookingListener() {
   
   // Отслеживаем новые документы в коллекции bookings
   // Используем timestamp для фильтрации только новых записей
-  let lastCheckTime = new Date();
+  let lastCheckTime = admin.firestore.Timestamp.now();
   
   // Проверяем новые записи каждые 10 секунд
   setInterval(async () => {
     try {
-      const now = new Date();
+      const now = admin.firestore.Timestamp.now();
       
       // Ищем записи, созданные за последние 30 секунд
-      const thirtySecondsAgo = new Date(now.getTime() - 30 * 1000);
+      const thirtySecondsAgo = admin.firestore.Timestamp.fromMillis(
+        now.toMillis() - 30 * 1000
+      );
+      
+      console.log('🔍 Поиск новых записей с createdAt >=', thirtySecondsAgo.toDate());
       
       const newBookings = await db.collection('bookings')
         .where('createdAt', '>=', thirtySecondsAgo)
+        .orderBy('createdAt', 'desc')
         .get();
+      
+      console.log(`📋 Найдено записей за последние 30 секунд: ${newBookings.size}`);
       
       for (const bookingDoc of newBookings.docs) {
         const booking = bookingDoc.data();
@@ -868,9 +875,11 @@ function setupNewBookingListener() {
         
         // Проверяем, что это действительно новая запись (создана после последней проверки)
         const createdAt = booking.createdAt?.toDate ? booking.createdAt.toDate() : new Date(booking.createdAt);
+        const createdAtTimestamp = booking.createdAt || admin.firestore.Timestamp.fromDate(createdAt);
         
-        if (createdAt > lastCheckTime) {
+        if (createdAtTimestamp.toMillis() > lastCheckTime.toMillis()) {
           console.log(`📝 Новая запись обнаружена: ${bookingId}`);
+          console.log('📅 Дата создания:', createdAt);
           
           // Формируем уведомление для админов
           const formattedDate = formatDateForNotification(booking.bookingDate);
@@ -907,22 +916,29 @@ function setupNewBookingListener() {
           // Добавляем источник записи
           if (booking.source === 'client_miniapp') {
             adminNotificationMessage += `\n📱 Запись создана через бот @vr_lounge_bot . СВЯЗАТЬСЯ С КЛИЕНТОМ!`;
+          } else if (booking.source === 'admin_miniapp') {
+            adminNotificationMessage += `\n📱 Запись создана через админ-панель`;
           }
           
           // Отправляем уведомление админам
           await sendNotificationToAdmins(adminNotificationMessage);
+          console.log('✅ Уведомление отправлено в админ группу');
           
           // Отправляем уведомление клиенту, если есть telegramId
-          const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+          // Используем phoneDigits из booking, если он есть, иначе извлекаем из clientPhone
+          const phoneDigits = booking.phoneDigits || booking.clientPhone?.replace(/\D/g, '') || '';
           if (phoneDigits) {
             try {
               // Нормализуем номер телефона для поиска в базе (убираем первую 7 или 8)
               let normalizedPhoneDigits = phoneDigits;
-              if (normalizedPhoneDigits.startsWith('7')) {
-                normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
-              } else if (normalizedPhoneDigits.startsWith('8')) {
-                normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
+              if (normalizedPhoneDigits.length === 11) {
+                if (normalizedPhoneDigits.startsWith('7')) {
+                  normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
+                } else if (normalizedPhoneDigits.startsWith('8')) {
+                  normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
+                }
               }
+              // Если phoneDigits уже в формате 10 цифр, используем как есть
               
               console.log(`🔍 Поиск клиента по телефону:`, {
                 original: booking.clientPhone,
@@ -972,6 +988,7 @@ function setupNewBookingListener() {
       lastCheckTime = now;
     } catch (error) {
       console.error('Ошибка проверки новых записей:', error);
+      console.error('Детали ошибки:', error.message, error.stack);
     }
   }, 10000); // Проверяем каждые 10 секунд
   
