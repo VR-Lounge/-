@@ -768,7 +768,7 @@
           bookingDate,
           startTime: selectedTime,
           duration,
-          selectedServices: [selectedService],
+          selectedServices: Array.from(selectedServices),
           notes: notes || '',
           createdAt: window.Timestamp.now(),
           source: 'client_miniapp'
@@ -822,13 +822,8 @@
     // Обработчики событий
     document.getElementById('bookingDate').addEventListener('change', (e) => {
       const date = e.target.value;
-      loadServices(date); // Перезагружаем услуги с учетом дня недели
+      loadServices(date); // Перезагружаем услуги с учетом дня недели (сохраняя выбранные)
       generateTimeSlots(date);
-      selectedServices.clear(); // Сбрасываем выбор услуг
-      document.querySelectorAll('.service-card').forEach(c => {
-        c.classList.remove('selected');
-        c.querySelector('.fa-check-circle').style.opacity = '0';
-      });
       updateTotal();
     });
 
