@@ -10,3 +10,7 @@ cmds = []
 [start]
 cmd = "node telegram-bot.js"
 
+# Указываем, что это Node.js проект
+[providers]
+nodejs = true
+
