@@ -508,6 +508,9 @@ bot.on('contact', async (msg) => {
         updatedAt: admin.firestore.FieldValue.serverTimestamp()
       });
 
+      // URL Mini App для клиентов (Friendly-сервис)
+      const CLIENT_MINI_APP_URL = process.env.CLIENT_MINI_APP_URL || 'https://vr-lounge.github.io/-/client-booking-miniapp.html';
+      
       await bot.sendMessage(chatId, `
 🎉 Отлично! Твой Telegram успешно привязан к аккаунту!
 
@@ -521,7 +524,35 @@ bot.on('contact', async (msg) => {
 • Специальные предложения и новости о наших новинках
 
 Ждем тебя в VR Lounge! 🎮
-      `);
+      `, {
+        reply_markup: {
+          keyboard: [
+            [{ 
+              text: '✨ Записаться', 
+              web_app: { url: CLIENT_MINI_APP_URL }
+            }],
+            [{ text: '📅 Мои записи' }, { text: '📞 Контакты' }],
+            [{ text: 'ℹ️ Информация' }, { text: 'Помощь' }]
+          ],
+          resize_keyboard: true
+        }
+      });
+      
+      // Устанавливаем правильную Menu Button для клиентов
+      try {
+        await bot.setChatMenuButton({
+          chat_id: chatId,
+          menu_button: {
+            type: 'web_app',
+            text: '✨ Записаться',
+            web_app: {
+              url: CLIENT_MINI_APP_URL
+            }
+          }
+        });
+      } catch (error) {
+        console.error('Ошибка установки Menu Button для клиента:', error.message);
+      }
     } else {
       await db.collection('clients').add({
         clientName: contact.first_name || 'Не указано',
@@ -536,6 +567,9 @@ bot.on('contact', async (msg) => {
         isActive: true
       });
 
+      // URL Mini App для клиентов (Friendly-сервис)
+      const CLIENT_MINI_APP_URL = process.env.CLIENT_MINI_APP_URL || 'https://vr-lounge.github.io/-/client-booking-miniapp.html';
+      
       await bot.sendMessage(chatId, `
 🎉 Добро пожаловать в VR Lounge!
 
@@ -549,7 +583,35 @@ bot.on('contact', async (msg) => {
 • Специальные предложения и новости о наших новинках
 
 Записывайся на удобное время и наслаждайся игрой! 🚀
-      `);
+      `, {
+        reply_markup: {
+          keyboard: [
+            [{ 
+              text: '✨ Записаться', 
+              web_app: { url: CLIENT_MINI_APP_URL }
+            }],
+            [{ text: '📅 Мои записи' }, { text: '📞 Контакты' }],
+            [{ text: 'ℹ️ Информация' }, { text: 'Помощь' }]
+          ],
+          resize_keyboard: true
+        }
+      });
+      
+      // Устанавливаем правильную Menu Button для клиентов
+      try {
+        await bot.setChatMenuButton({
+          chat_id: chatId,
+          menu_button: {
+            type: 'web_app',
+            text: '✨ Записаться',
+            web_app: {
+              url: CLIENT_MINI_APP_URL
+            }
+          }
+        });
+      } catch (error) {
+        console.error('Ошибка установки Menu Button для клиента:', error.message);
+      }
     }
 
     try {
