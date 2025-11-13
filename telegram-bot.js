@@ -756,19 +756,70 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
     const client = clientsSnapshot.docs[0].data();
     const phoneDigits = client.phoneDigits;
     
+    console.log(`📱 Поиск записей для клиента ${client.clientName || userId}:`);
+    console.log(`   📞 phoneDigits из clients: ${phoneDigits}`);
+    
     if (!phoneDigits) {
       await bot.sendMessage(chatId, '❌ У вас не указан номер телефона в базе. Пожалуйста, зарегистрируйтесь заново через /register');
       return;
     }
     
-    // Находим все бронирования клиента
-    // Убираем orderBy полностью, чтобы не требовать индекс - сортировка будет в коде
-    const bookingsSnapshot = await db.collection('bookings')
-      .where('phoneDigits', '==', phoneDigits)
-      .limit(50) // Ограничиваем до 50 записей для безопасности
-      .get();
+    // Пробуем несколько вариантов формата номера для поиска записей
+    const phoneVariants = [];
     
-    if (bookingsSnapshot.empty) {
+    // Исходный номер
+    phoneVariants.push(phoneDigits);
+    
+    // Если номер начинается с 7 или 8 и имеет 11 цифр, пробуем без первой цифры
+    if (phoneDigits.length === 11) {
+      if (phoneDigits.startsWith('7')) {
+        phoneVariants.push(phoneDigits.substring(1));
+      } else if (phoneDigits.startsWith('8')) {
+        phoneVariants.push(phoneDigits.substring(1));
+      }
+    }
+    
+    // Если номер имеет 10 цифр, пробуем с 7 в начале
+    if (phoneDigits.length === 10) {
+      phoneVariants.push('7' + phoneDigits);
+    }
+    
+    // Убираем дубликаты
+    const uniqueVariants = [...new Set(phoneVariants)];
+    console.log(`   🔍 Варианты номеров для поиска: ${uniqueVariants.join(', ')}`);
+    
+    // Находим все бронирования клиента по всем вариантам номера
+    let allBookings = [];
+    
+    for (const variant of uniqueVariants) {
+      try {
+        const variantSnapshot = await db.collection('bookings')
+          .where('phoneDigits', '==', variant)
+          .limit(50)
+          .get();
+        
+        if (!variantSnapshot.empty) {
+          console.log(`   ✅ Найдено записей по номеру ${variant}: ${variantSnapshot.size}`);
+          // Добавляем записи, избегая дубликатов
+          variantSnapshot.docs.forEach(doc => {
+            const bookingId = doc.id;
+            if (!allBookings.find(b => b.id === bookingId)) {
+              allBookings.push({
+                id: bookingId,
+                ...doc.data()
+              });
+            }
+          });
+        }
+      } catch (queryError) {
+        console.error(`   ❌ Ошибка поиска по варианту ${variant}:`, queryError.message);
+        continue;
+      }
+    }
+    
+    console.log(`   📊 Всего найдено уникальных записей: ${allBookings.length}`);
+    
+    if (allBookings.length === 0) {
       await bot.sendMessage(chatId, '📅 У вас пока нет записей.\n\nЗапишитесь на удобное время прямо здесь! 🎮', {
         reply_markup: {
           inline_keyboard: [
@@ -779,14 +830,8 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
       return;
     }
     
-    // Сортируем записи по дате и времени вручную (так как используем только один orderBy)
-    const bookings = bookingsSnapshot.docs.map(doc => ({
-      id: doc.id,
-      ...doc.data()
-    }));
-    
     // Сортируем: сначала по дате (desc), затем по времени (desc)
-    bookings.sort((a, b) => {
+    allBookings.sort((a, b) => {
       const dateA = new Date(a.bookingDate);
       const dateB = new Date(b.bookingDate);
       if (dateB.getTime() !== dateA.getTime()) {
@@ -800,7 +845,7 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
     
     let bookingsMessage = `📅 Ваши записи:\n\n`;
     
-    bookings.slice(0, 10).forEach((booking, index) => {
+    allBookings.slice(0, 10).forEach((booking, index) => {
       const date = new Date(booking.bookingDate);
       const formattedDate = date.toLocaleDateString('ru-RU', {
         day: '2-digit',
