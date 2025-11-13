@@ -748,10 +748,28 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
       return;
     }
     
+    // Сортируем записи по дате и времени вручную (так как используем только один orderBy)
+    const bookings = bookingsSnapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data()
+    }));
+    
+    // Сортируем: сначала по дате (desc), затем по времени (desc)
+    bookings.sort((a, b) => {
+      const dateA = new Date(a.bookingDate);
+      const dateB = new Date(b.bookingDate);
+      if (dateB.getTime() !== dateA.getTime()) {
+        return dateB.getTime() - dateA.getTime();
+      }
+      // Если даты одинаковые, сортируем по времени
+      const timeA = a.startTime || '00:00';
+      const timeB = b.startTime || '00:00';
+      return timeB.localeCompare(timeA);
+    });
+    
     let bookingsMessage = `📅 Ваши записи:\n\n`;
     
-    bookingsSnapshot.docs.forEach((doc, index) => {
-      const booking = doc.data();
+    bookings.slice(0, 10).forEach((booking, index) => {
       const date = new Date(booking.bookingDate);
       const formattedDate = date.toLocaleDateString('ru-RU', {
         day: '2-digit',
@@ -763,8 +781,8 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
       const serviceNames = getServiceNames(booking.selectedServices || []);
       
       bookingsMessage += `${index + 1}. 📅 ${formattedDate}\n`;
-      bookingsMessage += `   ⏰ ${booking.startTime} (${booking.duration} ч)\n`;
-      bookingsMessage += `   🎮 ${serviceNames}\n`;
+      bookingsMessage += `   ⏰ ${booking.startTime || 'Не указано'} (${booking.duration || 0} ч)\n`;
+      bookingsMessage += `   🎮 ${serviceNames || 'Не указано'}\n`;
       if (booking.notes) {
         bookingsMessage += `   📝 ${booking.notes}\n`;
       }
