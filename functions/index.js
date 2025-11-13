@@ -1268,26 +1268,75 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
           }
         }
 
-        // Уведомляем администраторов о предстоящем событии
+        // Уведомляем администраторов о предстоящем событии (для всех записей)
+        const dateStr = new Date(booking.bookingDate).toLocaleDateString('ru-RU', {
+          day: '2-digit',
+          month: 'long',
+          year: 'numeric',
+          weekday: 'long'
+        });
+        
+        const serviceNames = getServiceNames(booking.selectedServices || []);
+        const calculation = calculateBookingTotal(booking);
+        
+        let reminderMessage = '';
         if (booking.selectedServices?.includes('birthday')) {
-          const dateStr = new Date(booking.bookingDate).toLocaleDateString('ru-RU', {
-            day: '2-digit',
-            month: 'long',
-            year: 'numeric',
-            weekday: 'long'
-          });
-          
-          await sendNotificationToAdmins(`
-🎂 Напоминание: Завтра День Рождения!
-
-👤 Клиент: ${booking.clientName}
-📅 Дата: ${dateStr}
-⏰ Время: ${booking.startTime}
-⏱ Длительность: ${booking.duration} ч
-
-Пожалуйста, подготовьтесь к мероприятию!
-          `);
+          reminderMessage = `🎂 Напоминание: Завтра День Рождения!\n\n`;
+        } else {
+          reminderMessage = `🔔 Напоминание: Завтра запись клиента!\n\n`;
         }
+        
+        reminderMessage += `👤 Клиент: ${booking.clientName}\n`;
+        reminderMessage += `📞 Телефон: ${booking.clientPhone}\n`;
+        reminderMessage += `📅 Дата: ${dateStr}\n`;
+        reminderMessage += `⏰ Время: ${booking.startTime}\n`;
+        reminderMessage += `⏱ Длительность: ${booking.duration} ч\n`;
+        reminderMessage += `🎮 Услуги: ${serviceNames}\n`;
+        reminderMessage += `\n💰 Финансы:\n`;
+        reminderMessage += `   Сумма: ${calculation.total.toLocaleString('ru-RU')} ₽\n`;
+        
+        // Добавляем информацию о скидке, если есть
+        if (booking.discountPercent > 0 || booking.discountAmount > 0) {
+          if (booking.discountPercent > 0) {
+            reminderMessage += `   Скидка: ${booking.discountPercent}%\n`;
+          } else {
+            reminderMessage += `   Скидка: ${booking.discountAmount.toLocaleString('ru-RU')} ₽\n`;
+          }
+          reminderMessage += `   Итоговая: ${calculation.finalTotal.toLocaleString('ru-RU')} ₽\n`;
+        } else {
+          reminderMessage += `   Итоговая: ${calculation.finalTotal.toLocaleString('ru-RU')} ₽\n`;
+        }
+        
+        // Добавляем информацию о предоплате, если есть
+        if (booking.prepayment && booking.prepayment.amount > 0) {
+          const method = booking.prepayment.method === 'cash' ? 'нал' : 'перевод';
+          const prepayDate = booking.prepayment.date ? 
+            ` от ${new Date(booking.prepayment.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'})}` : '';
+          reminderMessage += `   Предоплата: ${booking.prepayment.amount.toLocaleString('ru-RU')} ₽ (${method})${prepayDate}\n`;
+        }
+        
+        // Добавляем информацию о доплате наличными, если есть
+        if (booking.finalPaymentCash && booking.finalPaymentCash.amount > 0) {
+          const cashDate = booking.finalPaymentCash.date ? 
+            ` от ${new Date(booking.finalPaymentCash.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'})}` : '';
+          reminderMessage += `   Доплата нал: ${booking.finalPaymentCash.amount.toLocaleString('ru-RU')} ₽${cashDate}\n`;
+        }
+        
+        // Добавляем информацию о доплате переводом, если есть
+        if (booking.finalPaymentTransfer && booking.finalPaymentTransfer.amount > 0) {
+          const transferDate = booking.finalPaymentTransfer.date ? 
+            ` от ${new Date(booking.finalPaymentTransfer.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'})}` : '';
+          reminderMessage += `   Доплата пер: ${booking.finalPaymentTransfer.amount.toLocaleString('ru-RU')} ₽${transferDate}\n`;
+        }
+        
+        // Добавляем примечания, если есть
+        if (booking.notes && booking.notes.trim()) {
+          reminderMessage += `\n📝 Примечания: ${booking.notes}\n`;
+        }
+        
+        reminderMessage += `\nПожалуйста, подготовьтесь к мероприятию!`;
+        
+        await sendNotificationToAdmins(reminderMessage);
       }
 
       // Проверяем события через 3 часа (напоминание за 3 часа)
