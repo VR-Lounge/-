@@ -29,7 +29,13 @@ if (!token) {
   process.exit(1);
 }
 
+console.log('🚀 Инициализация Telegram бота...');
+console.log('📅 Время запуска:', new Date().toISOString());
+console.log('🆔 Process ID:', process.pid);
+
 const bot = new TelegramBot(token, { polling: true });
+
+console.log('✅ Telegram бот инициализирован с polling: true');
 
 // Логирование всех входящих сообщений для отладки
 bot.on('message', (msg) => {
@@ -1130,16 +1136,35 @@ bot.onText(/^Помощь$/i, async (msg) => {
 // Функция отправки уведомления клиенту
 async function sendNotificationToClient(clientId, message) {
   try {
+    console.log(`   📤 Попытка отправить уведомление клиенту с ID: ${clientId}`);
     const clientDoc = await db.collection('clients').doc(clientId).get();
-    if (!clientDoc.exists) return false;
+    if (!clientDoc.exists) {
+      console.error(`   ❌ Клиент с ID ${clientId} не найден в базе данных`);
+      return false;
+    }
 
     const client = clientDoc.data();
-    if (!client.telegramId) return false;
+    if (!client.telegramId) {
+      console.error(`   ❌ У клиента ${client.clientName || clientId} нет telegramId`);
+      return false;
+    }
 
+    console.log(`   📱 Отправка сообщения в Telegram ID: ${client.telegramId}`);
     await bot.sendMessage(client.telegramId, message);
+    console.log(`   ✅ Сообщение успешно отправлено в Telegram ID: ${client.telegramId}`);
     return true;
   } catch (error) {
-    console.error(`Ошибка отправки уведомления клиенту ${clientId}:`, error);
+    console.error(`   ❌ Ошибка отправки уведомления клиенту ${clientId}:`, error.message);
+    console.error(`   📋 Код ошибки:`, error.code);
+    
+    // Специальная обработка ошибок Telegram API
+    if (error.response) {
+      console.error(`   📡 Статус ответа: ${error.response.statusCode}`);
+      if (error.response.body) {
+        console.error(`   📄 Тело ответа:`, JSON.stringify(error.response.body, null, 2));
+      }
+    }
+    
     return false;
   }
 }
@@ -1395,24 +1420,63 @@ function setupNewBookingListener() {
           
           // Отправляем уведомление клиенту, если есть telegramId
           const phoneDigits = booking.phoneDigits || booking.clientPhone?.replace(/\D/g, '') || '';
+          console.log(`📱 Попытка отправить уведомление клиенту ${booking.clientName}:`);
+          console.log(`   📞 Номер из booking: ${booking.clientPhone}`);
+          console.log(`   🔢 phoneDigits: ${phoneDigits}`);
+          
           if (phoneDigits) {
             try {
-              let normalizedPhoneDigits = phoneDigits;
-              if (normalizedPhoneDigits.length === 11) {
-                if (normalizedPhoneDigits.startsWith('7')) {
-                  normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
-                } else if (normalizedPhoneDigits.startsWith('8')) {
-                  normalizedPhoneDigits = normalizedPhoneDigits.substring(1);
+              // Пробуем несколько вариантов формата номера
+              const phoneVariants = [];
+              
+              // Исходный номер
+              phoneVariants.push(phoneDigits);
+              
+              // Если номер начинается с 7 или 8 и имеет 11 цифр, пробуем без первой цифры
+              if (phoneDigits.length === 11) {
+                if (phoneDigits.startsWith('7')) {
+                  phoneVariants.push(phoneDigits.substring(1));
+                } else if (phoneDigits.startsWith('8')) {
+                  phoneVariants.push(phoneDigits.substring(1));
                 }
               }
               
-              const clientsSnapshot = await db.collection('clients')
-                .where('phoneDigits', '==', normalizedPhoneDigits)
-                .limit(1) // Ограничиваем результат
-                .get();
+              // Если номер имеет 10 цифр, пробуем с 7 в начале
+              if (phoneDigits.length === 10) {
+                phoneVariants.push('7' + phoneDigits);
+              }
               
-              if (!clientsSnapshot.empty) {
+              // Убираем дубликаты
+              const uniqueVariants = [...new Set(phoneVariants)];
+              console.log(`   🔍 Варианты номеров для поиска: ${uniqueVariants.join(', ')}`);
+              
+              let clientsSnapshot = null;
+              
+              // Пробуем найти клиента по каждому варианту номера
+              for (const variant of uniqueVariants) {
+                try {
+                  clientsSnapshot = await db.collection('clients')
+                    .where('phoneDigits', '==', variant)
+                    .limit(1)
+                    .get();
+                  
+                  if (!clientsSnapshot.empty) {
+                    console.log(`   ✅ Клиент найден по номеру: ${variant}`);
+                    break;
+                  }
+                } catch (queryError) {
+                  console.error(`   ❌ Ошибка поиска по варианту ${variant}:`, queryError.message);
+                  continue;
+                }
+              }
+              
+              if (clientsSnapshot && !clientsSnapshot.empty) {
                 const client = clientsSnapshot.docs[0].data();
+                const clientId = clientsSnapshot.docs[0].id;
+                console.log(`   👤 Клиент найден: ${client.clientName || 'Без имени'}`);
+                console.log(`   🆔 Client ID: ${clientId}`);
+                console.log(`   📱 Telegram ID: ${client.telegramId || 'НЕ УКАЗАН'}`);
+                
                 if (client.telegramId) {
                   const clientMessage = `✅ Ваша запись успешно создана!\n\n` +
                     `📅 Дата: ${formattedDate}\n` +
@@ -1421,13 +1485,30 @@ function setupNewBookingListener() {
                     `🎮 Услуги: ${serviceNames}\n\n` +
                     `Мы свяжемся с вами для подтверждения. Ждем вас! 🎮`;
                   
-                  await sendNotificationToClient(clientsSnapshot.docs[0].id, clientMessage);
-                  console.log(`✅ Уведомление отправлено клиенту ${booking.clientName}`);
+                  const sent = await sendNotificationToClient(clientId, clientMessage);
+                  if (sent) {
+                    console.log(`   ✅ Уведомление успешно отправлено клиенту ${booking.clientName} (Telegram ID: ${client.telegramId})`);
+                  } else {
+                    console.error(`   ❌ Не удалось отправить уведомление клиенту ${booking.clientName}`);
+                  }
+                } else {
+                  console.warn(`   ⚠️ У клиента ${booking.clientName} нет telegramId. Уведомление не отправлено.`);
+                  console.warn(`   💡 Клиент должен зарегистрироваться через бота командой /register`);
                 }
+              } else {
+                console.warn(`   ⚠️ Клиент с номером ${booking.clientPhone} не найден в базе clients.`);
+                console.warn(`   🔍 Проверенные варианты: ${uniqueVariants.join(', ')}`);
+                console.warn(`   💡 Убедитесь, что клиент зарегистрирован через бота командой /register`);
               }
             } catch (error) {
               console.error('❌ Ошибка отправки уведомления клиенту:', error);
+              console.error('   📋 Детали ошибки:', error.message);
+              console.error('   🔢 Код ошибки:', error.code);
             }
+          } else {
+            console.warn(`   ⚠️ Не удалось извлечь номер телефона из booking для клиента ${booking.clientName}`);
+            console.warn(`   📋 booking.phoneDigits: ${booking.phoneDigits}`);
+            console.warn(`   📋 booking.clientPhone: ${booking.clientPhone}`);
           }
         }
       }
@@ -1674,24 +1755,68 @@ setupNewBookingListener();
 // ============================================
 
 bot.on('polling_error', (error) => {
-  console.error('Ошибка polling:', error.message);
-  // Не останавливаем бота при ошибках polling
+  console.error('❌ Ошибка polling:', error.message);
+  console.error('📋 Код ошибки:', error.code);
+  console.error('🔍 Полная ошибка:', JSON.stringify(error, null, 2));
+  
+  // Если это ошибка 409 (конфликт - другой экземпляр бота запущен)
+  if (error.code === 'ETELEGRAM' && (error.message.includes('409') || error.message.includes('Conflict'))) {
+    console.error('');
+    console.error('⚠️═══════════════════════════════════════════════════════════⚠️');
+    console.error('⚠️ КРИТИЧЕСКАЯ ОШИБКА: Обнаружен конфликт с другим экземпляром бота!');
+    console.error('⚠️═══════════════════════════════════════════════════════════⚠️');
+    console.error('');
+    console.error('🔍 Возможные причины:');
+    console.error('   1. В Railway запущено несколько инстансов одного сервиса');
+    console.error('   2. Бот запущен локально и одновременно на сервере');
+    console.error('   3. Произошел рестарт без корректной остановки предыдущего экземпляра');
+    console.error('');
+    console.error('✅ Рекомендуемые действия:');
+    console.error('   1. Проверьте Railway Dashboard на наличие дублирующихся сервисов');
+    console.error('   2. Убедитесь, что запущен только ОДИН экземпляр бота');
+    console.error('   3. Остановите все локальные экземпляры, если они запущены');
+    console.error('   4. Перезапустите сервис в Railway');
+    console.error('');
+    console.error('📊 Текущий процесс ID:', process.pid);
+    console.error('📅 Время ошибки:', new Date().toISOString());
+    console.error('');
+    
+    // НЕ останавливаем polling автоматически, так как это может усугубить проблему
+    // Telegram API сам обработает конфликт, и один из экземпляров должен остановиться
+  }
 });
 
 bot.on('error', (error) => {
-  console.error('Общая ошибка бота:', error.message);
+  console.error('❌ Общая ошибка бота:', error.message);
+  console.error('📋 Код ошибки:', error.code);
+  console.error('🔍 Полная ошибка:', JSON.stringify(error, null, 2));
+  console.error('📅 Время ошибки:', new Date().toISOString());
 });
 
-process.on('SIGINT', () => {
-  console.log('\n🛑 Остановка бота...');
-  bot.stopPolling();
+// Обработка сигналов остановки
+const gracefulShutdown = (signal) => {
+  console.log(`\n🛑 Получен сигнал ${signal}. Остановка бота...`);
+  console.log('📅 Время остановки:', new Date().toISOString());
+  try {
+    bot.stopPolling();
+    console.log('✅ Polling остановлен корректно.');
+  } catch (error) {
+    console.error('❌ Ошибка остановки polling:', error.message);
+  }
   process.exit(0);
-});
+};
+
+process.on('SIGINT', () => gracefulShutdown('SIGINT'));
+process.on('SIGTERM', () => gracefulShutdown('SIGTERM')); // Для Railway и других платформ
 
 process.on('unhandledRejection', (reason, promise) => {
-  console.error('Необработанное отклонение промиса:', reason);
-  // Не останавливаем бота при необработанных ошибках
+  console.error('❌ Необработанное отклонение промиса:');
+  console.error('📋 Причина:', reason);
+  console.error('📅 Время ошибки:', new Date().toISOString());
+  console.error('🔍 Promise:', promise);
+  // Не останавливаем бота при необработанных ошибках, но логируем для отладки
 });
 
 console.log('✅ Бот готов к работе!');
+
 
