@@ -1,0 +1,27 @@
+{
+  "name": "vr-lounge-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for VR Lounge CRM integration",
+  "main": "telegram-bot.js",
+  "scripts": {
+    "start": "node telegram-bot.js",
+    "dev": "nodemon telegram-bot.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "firebase",
+    "crm"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "firebase-admin": "^12.0.0",
+    "node-telegram-bot-api": "^0.64.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^14.24.2",
+    "nodemon": "^3.0.2"
+  }
+}
