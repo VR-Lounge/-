@@ -2,6 +2,28 @@
 // Интеграция с Firebase для управления клиентами и уведомлениями
 
 require('dotenv').config();
+
+// Защита от случайного локального запуска
+// Бот должен работать только в Railway (или с явным разрешением через ALLOW_LOCAL_RUN=true)
+const isRailway = process.env.RAILWAY_ENVIRONMENT || process.env.RAILWAY;
+const allowLocalRun = process.env.ALLOW_LOCAL_RUN === 'true';
+
+if (!isRailway && !allowLocalRun) {
+  console.error('');
+  console.error('⚠️═══════════════════════════════════════════════════════════⚠️');
+  console.error('⚠️ БОТ НЕ ДОЛЖЕН ЗАПУСКАТЬСЯ ЛОКАЛЬНО!');
+  console.error('⚠️═══════════════════════════════════════════════════════════⚠️');
+  console.error('');
+  console.error('🔍 Обнаружена попытка локального запуска бота.');
+  console.error('📋 Бот должен работать только в Railway для избежания конфликтов.');
+  console.error('');
+  console.error('✅ Если вам нужно запустить бота локально для тестирования:');
+  console.error('   Установите переменную окружения: ALLOW_LOCAL_RUN=true');
+  console.error('');
+  console.error('🛑 Завершение работы...');
+  process.exit(1);
+}
+
 const TelegramBot = require('node-telegram-bot-api');
 const admin = require('firebase-admin');
 
@@ -32,6 +54,10 @@ if (!token) {
 console.log('🚀 Инициализация Telegram бота...');
 console.log('📅 Время запуска:', new Date().toISOString());
 console.log('🆔 Process ID:', process.pid);
+console.log('🌐 Окружение:', isRailway ? 'Railway' : 'Локальное (разрешено)');
+if (isRailway) {
+  console.log('🚂 Railway Environment:', process.env.RAILWAY_ENVIRONMENT || 'production');
+}
 
 const bot = new TelegramBot(token, { polling: true });
 
