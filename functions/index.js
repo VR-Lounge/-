@@ -152,6 +152,78 @@ function getServiceNames(serviceKeys) {
   return serviceKeys.map(key => serviceLabels[key] || key).join(', ');
 }
 
+// Функция расчета суммы бронирования
+function calculateBookingTotal(booking) {
+  const servicePrices = {
+    // PS5
+    weekday_ps1: 150,
+    weekday_ps2: 300,
+    // VR очки будни
+    weekday_vr1: 500,
+    weekday_vr2: 1000,
+    weekday_vr3: 1500,
+    weekday_vr4: 2000,
+    // VR очки выходные
+    weekend_vr1: 750,
+    weekend_vr2: 1500,
+    weekend_vr3: 2250,
+    weekend_vr4: 3000,
+    // X-Box
+    xbox_kinnect: 500,
+    xbox1: 250,
+    xbox2: 500,
+    xbox3: 750,
+    xbox4: 1000,
+    // Другие услуги
+    karaoke: 1000,
+    board_games: 500,
+    hostess: 2000,
+    // День рождения
+    birthday: {
+      1: 4000, 2: 3500, 3: 3000, 4: 3000, 5: 3000,
+      6: 3000, 7: 3000, 8: 3000, 9: 3000, 10: 3000,
+      11: 3000, 12: 3000
+    }
+  };
+
+  let total = 0;
+  const duration = booking.duration || 1;
+  const selectedServices = booking.selectedServices || [];
+  const bookingDate = new Date(booking.bookingDate);
+  const isWeekendDay = bookingDate.getDay() === 0 || bookingDate.getDay() === 6;
+
+  for (const serviceKey of selectedServices) {
+    if (serviceKey === 'birthday') {
+      // Расчет для Дня Рождения
+      let birthdayTotal = 0;
+      for (let hour = 1; hour <= duration; hour++) {
+        const hourPrice = servicePrices.birthday[Math.min(hour, 12)] || 3000;
+        birthdayTotal += hourPrice;
+      }
+      total += birthdayTotal;
+    } else if (serviceKey === 'hostess') {
+      // Ведущая - фиксированная стоимость
+      total += servicePrices.hostess;
+    } else if (servicePrices[serviceKey]) {
+      // Остальные услуги - цена за час * длительность
+      total += servicePrices[serviceKey] * duration;
+    }
+  }
+
+  // Применяем скидку
+  let finalTotal = total;
+  if (booking.discountPercent > 0) {
+    finalTotal = total * (1 - booking.discountPercent / 100);
+  } else if (booking.discountAmount > 0) {
+    finalTotal = Math.max(0, total - booking.discountAmount);
+  }
+
+  return {
+    total: Math.round(total),
+    finalTotal: Math.round(finalTotal)
+  };
+}
+
 // ============================================
 // ОСНОВНЫЕ КОМАНДЫ БОТА
 // ============================================
@@ -1036,6 +1108,9 @@ exports.onNewBooking = functions.firestore
     const formattedDate = formatDateForNotification(booking.bookingDate);
     const serviceNames = getServiceNames(booking.selectedServices || []);
     
+    // Рассчитываем сумму бронирования
+    const calculation = calculateBookingTotal(booking);
+    
     let adminNotificationMessage = `📝 Новая запись клиента!\n\n`;
     adminNotificationMessage += `👤 Клиент: ${booking.clientName}\n`;
     adminNotificationMessage += `📞 Телефон: ${booking.clientPhone}\n`;
@@ -1043,24 +1118,49 @@ exports.onNewBooking = functions.firestore
     adminNotificationMessage += `⏰ Время: ${booking.startTime}\n`;
     adminNotificationMessage += `⏱ Длительность: ${booking.duration} ч\n`;
     adminNotificationMessage += `🎮 Услуги: ${serviceNames}\n`;
+    adminNotificationMessage += `\n💰 Финансы:\n`;
+    adminNotificationMessage += `   Сумма: ${calculation.total.toLocaleString('ru-RU')} ₽\n`;
     
+    // Добавляем информацию о скидке, если есть
     if (booking.discountPercent > 0 || booking.discountAmount > 0) {
       if (booking.discountPercent > 0) {
-        adminNotificationMessage += `💰 Скидка: ${booking.discountPercent}%\n`;
+        adminNotificationMessage += `   Скидка: ${booking.discountPercent}%\n`;
       } else {
-        adminNotificationMessage += `💰 Скидка: ${booking.discountAmount} ₽\n`;
+        adminNotificationMessage += `   Скидка: ${booking.discountAmount.toLocaleString('ru-RU')} ₽\n`;
       }
+      adminNotificationMessage += `   Итоговая: ${calculation.finalTotal.toLocaleString('ru-RU')} ₽\n`;
+    } else {
+      adminNotificationMessage += `   Итоговая: ${calculation.finalTotal.toLocaleString('ru-RU')} ₽\n`;
     }
     
+    // Добавляем информацию о предоплате, если есть
     if (booking.prepayment && booking.prepayment.amount > 0) {
-      const method = booking.prepayment.method === 'cash' ? 'Наличные' : 'Перевод';
-      adminNotificationMessage += `💵 Предоплата: ${booking.prepayment.amount} ₽ (${method})\n`;
+      const method = booking.prepayment.method === 'cash' ? 'нал' : 'перевод';
+      const prepayDate = booking.prepayment.date ? 
+        ` от ${new Date(booking.prepayment.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'})}` : '';
+      adminNotificationMessage += `   Предоплата: ${booking.prepayment.amount.toLocaleString('ru-RU')} ₽ (${method})${prepayDate}\n`;
     }
     
+    // Добавляем информацию о доплате наличными, если есть
+    if (booking.finalPaymentCash && booking.finalPaymentCash.amount > 0) {
+      const cashDate = booking.finalPaymentCash.date ? 
+        ` от ${new Date(booking.finalPaymentCash.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'})}` : '';
+      adminNotificationMessage += `   Доплата нал: ${booking.finalPaymentCash.amount.toLocaleString('ru-RU')} ₽${cashDate}\n`;
+    }
+    
+    // Добавляем информацию о доплате переводом, если есть
+    if (booking.finalPaymentTransfer && booking.finalPaymentTransfer.amount > 0) {
+      const transferDate = booking.finalPaymentTransfer.date ? 
+        ` от ${new Date(booking.finalPaymentTransfer.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'})}` : '';
+      adminNotificationMessage += `   Доплата пер: ${booking.finalPaymentTransfer.amount.toLocaleString('ru-RU')} ₽${transferDate}\n`;
+    }
+    
+    // Добавляем примечания, если есть
     if (booking.notes && booking.notes.trim()) {
-      adminNotificationMessage += `📝 Примечания: ${booking.notes}\n`;
+      adminNotificationMessage += `\n📝 Примечания: ${booking.notes}\n`;
     }
     
+    // Добавляем источник записи
     if (booking.source === 'client_miniapp') {
       adminNotificationMessage += `\n📱 Запись создана через бот @vr_lounge_bot . СВЯЗАТЬСЯ С КЛИЕНТОМ!`;
     } else if (booking.source === 'admin_miniapp') {
