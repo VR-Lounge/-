@@ -724,11 +724,16 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
     const client = clientsSnapshot.docs[0].data();
     const phoneDigits = client.phoneDigits;
     
+    if (!phoneDigits) {
+      await bot.sendMessage(chatId, '❌ У вас не указан номер телефона в базе. Пожалуйста, зарегистрируйтесь заново через /register');
+      return;
+    }
+    
     // Находим все бронирования клиента
+    // Используем только один orderBy, чтобы не требовать составной индекс
     const bookingsSnapshot = await db.collection('bookings')
       .where('phoneDigits', '==', phoneDigits)
       .orderBy('bookingDate', 'desc')
-      .orderBy('startTime', 'desc')
       .limit(10)
       .get();
     
@@ -779,7 +784,25 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
     
   } catch (error) {
     console.error('Ошибка получения записей клиента:', error);
-    await bot.sendMessage(chatId, '❌ Произошла ошибка при получении ваших записей. Попробуйте позже.');
+    console.error('Детали ошибки:', {
+      code: error.code,
+      message: error.message,
+      userId: userId
+    });
+    
+    let errorMessage = '❌ Произошла ошибка при получении ваших записей.';
+    
+    // Более информативное сообщение в зависимости от типа ошибки
+    if (error.code === 8 || error.message.includes('Quota exceeded')) {
+      errorMessage = '⏳ Сейчас слишком много запросов к базе данных. Пожалуйста, попробуйте через 1-2 минуты.';
+    } else if (error.code === 9 || error.message.includes('FAILED_PRECONDITION')) {
+      errorMessage = '⚠️ Требуется создать индекс в Firebase. Обратитесь к администратору.';
+      console.error('⚠️ Нужно создать индекс для запроса: bookings по phoneDigits и bookingDate');
+    } else if (error.code === 14 || error.message.includes('UNAVAILABLE')) {
+      errorMessage = '🔌 База данных временно недоступна. Попробуйте через минуту.';
+    }
+    
+    await bot.sendMessage(chatId, errorMessage);
   }
 });
 

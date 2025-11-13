@@ -763,10 +763,16 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
     const client = clientsSnapshot.docs[0].data();
     const phoneDigits = client.phoneDigits;
     
+    if (!phoneDigits) {
+      await bot.sendMessage(chatId, '❌ У вас не указан номер телефона в базе. Пожалуйста, зарегистрируйтесь заново через /register');
+      return;
+    }
+    
+    // Находим все бронирования клиента
+    // Используем только один orderBy, чтобы не требовать составной индекс
     const bookingsSnapshot = await db.collection('bookings')
       .where('phoneDigits', '==', phoneDigits)
       .orderBy('bookingDate', 'desc')
-      .orderBy('startTime', 'desc')
       .limit(10)
       .get();
     
@@ -781,10 +787,28 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
       return;
     }
     
+    // Сортируем записи по дате и времени вручную (так как используем только один orderBy)
+    const bookings = bookingsSnapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data()
+    }));
+    
+    // Сортируем: сначала по дате (desc), затем по времени (desc)
+    bookings.sort((a, b) => {
+      const dateA = new Date(a.bookingDate);
+      const dateB = new Date(b.bookingDate);
+      if (dateB.getTime() !== dateA.getTime()) {
+        return dateB.getTime() - dateA.getTime();
+      }
+      // Если даты одинаковые, сортируем по времени
+      const timeA = a.startTime || '00:00';
+      const timeB = b.startTime || '00:00';
+      return timeB.localeCompare(timeA);
+    });
+    
     let bookingsMessage = `📅 Ваши записи:\n\n`;
     
-    bookingsSnapshot.docs.forEach((doc, index) => {
-      const booking = doc.data();
+    bookings.slice(0, 10).forEach((booking, index) => {
       const date = new Date(booking.bookingDate);
       const formattedDate = date.toLocaleDateString('ru-RU', {
         day: '2-digit',
@@ -796,13 +820,13 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
       const serviceNames = getServiceNames(booking.selectedServices || []);
       
       bookingsMessage += `${index + 1}. 📅 ${formattedDate}\n`;
-      bookingsMessage += `   ⏰ ${booking.startTime} (${booking.duration} ч)\n`;
-      bookingsMessage += `   🎮 ${serviceNames}\n`;
+      bookingsMessage += `   ⏰ ${booking.startTime || 'Не указано'} (${booking.duration || 0} ч)\n`;
+      bookingsMessage += `   🎮 ${serviceNames || 'Не указано'}\n`;
       if (booking.notes) {
         bookingsMessage += `   📝 ${booking.notes}\n`;
       }
       bookingsMessage += `\n`;
-    });
+    }););
     
     bookingsMessage += `\nДля создания новой записи нажмите кнопку ниже:`;
     
@@ -817,7 +841,25 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
     
   } catch (error) {
     console.error('Ошибка получения записей клиента:', error);
-    await bot.sendMessage(chatId, '❌ Произошла ошибка при получении ваших записей. Попробуйте позже.');
+    console.error('Детали ошибки:', {
+      code: error.code,
+      message: error.message,
+      userId: userId
+    });
+    
+    let errorMessage = '❌ Произошла ошибка при получении ваших записей.';
+    
+    // Более информативное сообщение в зависимости от типа ошибки
+    if (error.code === 8 || error.message.includes('Quota exceeded')) {
+      errorMessage = '⏳ Сейчас слишком много запросов к базе данных. Пожалуйста, попробуйте через 1-2 минуты.';
+    } else if (error.code === 9 || error.message.includes('FAILED_PRECONDITION')) {
+      errorMessage = '⚠️ Требуется создать индекс в Firebase. Обратитесь к администратору.';
+      console.error('⚠️ Нужно создать индекс для запроса: bookings по phoneDigits и bookingDate');
+    } else if (error.code === 14 || error.message.includes('UNAVAILABLE')) {
+      errorMessage = '🔌 База данных временно недоступна. Попробуйте через минуту.';
+    }
+    
+    await bot.sendMessage(chatId, errorMessage);
   }
 });
 
