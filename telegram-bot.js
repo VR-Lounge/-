@@ -1655,20 +1655,43 @@ async function broadcastToClients(message, adminUserId) {
 async function checkUpcomingEvents() {
   try {
     const now = new Date();
+    const todayStr = now.toISOString().split('T')[0]; // Сегодняшняя дата для проверки отправленных уведомлений
     const tomorrow = new Date(now);
     tomorrow.setDate(tomorrow.getDate() + 1);
     const tomorrowStr = tomorrow.toISOString().split('T')[0];
+
+    console.log('🔔 Проверка предстоящих событий...');
+    console.log(`   📅 Сегодня: ${todayStr}`);
+    console.log(`   📅 Завтра: ${tomorrowStr}`);
 
     // Проверяем события на завтра (напоминание за 1 день)
     const tomorrowBookings = await db.collection('bookings')
       .where('bookingDate', '==', tomorrowStr)
       .get();
 
+    console.log(`   📊 Найдено записей на завтра: ${tomorrowBookings.size}`);
+
     for (const bookingDoc of tomorrowBookings.docs) {
       const booking = bookingDoc.data();
+      const bookingId = bookingDoc.id;
       const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
       
       if (!phoneDigits) continue;
+
+      // Проверяем, было ли уже отправлено уведомление за 1 день сегодня
+      const reminderSent1Day = booking.reminderSent1Day;
+      const reminderSent1DayDate = reminderSent1Day?.toDate ? reminderSent1Day.toDate() : 
+                                   (reminderSent1Day ? new Date(reminderSent1Day) : null);
+      
+      if (reminderSent1DayDate) {
+        const reminderDateStr = reminderSent1DayDate.toISOString().split('T')[0];
+        if (reminderDateStr === todayStr) {
+          console.log(`   ⏭️ Уведомление за 1 день уже отправлено сегодня для записи ${bookingId}`);
+          continue; // Пропускаем, так как уведомление уже отправлено сегодня
+        }
+      }
+
+      console.log(`   📝 Обработка записи ${bookingId} (клиент: ${booking.clientName})`);
 
       // Находим клиента
       const clientsSnapshot = await db.collection('clients')
@@ -1772,6 +1795,16 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
       reminderMessage += `\nПожалуйста, подготовьтесь к мероприятию!`;
       
       await sendNotificationToAdmins(reminderMessage);
+      
+      // Сохраняем timestamp отправки уведомления за 1 день
+      try {
+        await bookingDoc.ref.update({
+          reminderSent1Day: admin.firestore.FieldValue.serverTimestamp()
+        });
+        console.log(`   ✅ Уведомление за 1 день отправлено и сохранено для записи ${bookingId}`);
+      } catch (updateError) {
+        console.error(`   ❌ Ошибка сохранения timestamp уведомления за 1 день:`, updateError.message);
+      }
     }
 
     // Проверяем события через 3 часа (напоминание за 3 часа)
@@ -1780,16 +1813,39 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
     const threeHoursDateStr = threeHoursLater.toISOString().split('T')[0];
     const threeHoursTimeStr = threeHoursLater.toTimeString().split(':').slice(0, 2).join(':');
 
+    console.log(`   ⏰ Проверка записей через 3 часа: ${threeHoursDateStr} в ${threeHoursTimeStr}`);
+
     const threeHoursBookings = await db.collection('bookings')
       .where('bookingDate', '==', threeHoursDateStr)
       .where('startTime', '==', threeHoursTimeStr)
       .get();
 
+    console.log(`   📊 Найдено записей через 3 часа: ${threeHoursBookings.size}`);
+
     for (const bookingDoc of threeHoursBookings.docs) {
       const booking = bookingDoc.data();
+      const bookingId = bookingDoc.id;
       const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
       
       if (!phoneDigits) continue;
+
+      // Проверяем, было ли уже отправлено уведомление за 3 часа
+      const reminderSent3Hours = booking.reminderSent3Hours;
+      const reminderSent3HoursDate = reminderSent3Hours?.toDate ? reminderSent3Hours.toDate() : 
+                                      (reminderSent3Hours ? new Date(reminderSent3Hours) : null);
+      
+      if (reminderSent3HoursDate) {
+        // Проверяем, было ли отправлено в течение последних 3 часов
+        const timeDiff = now.getTime() - reminderSent3HoursDate.getTime();
+        const hoursDiff = timeDiff / (1000 * 60 * 60);
+        
+        if (hoursDiff < 3) {
+          console.log(`   ⏭️ Уведомление за 3 часа уже отправлено недавно (${hoursDiff.toFixed(1)} ч назад) для записи ${bookingId}`);
+          continue; // Пропускаем, так как уведомление уже отправлено недавно
+        }
+      }
+
+      console.log(`   📝 Обработка записи за 3 часа ${bookingId} (клиент: ${booking.clientName})`);
 
       const clientsSnapshot = await db.collection('clients')
         .where('phoneDigits', '==', phoneDigits)
@@ -1803,6 +1859,16 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
 
 Ждем вас в ${booking.startTime} 🎮
           `);
+          
+          // Сохраняем timestamp отправки уведомления за 3 часа
+          try {
+            await bookingDoc.ref.update({
+              reminderSent3Hours: admin.firestore.FieldValue.serverTimestamp()
+            });
+            console.log(`   ✅ Уведомление за 3 часа отправлено и сохранено для записи ${bookingId}`);
+          } catch (updateError) {
+            console.error(`   ❌ Ошибка сохранения timestamp уведомления за 3 часа:`, updateError.message);
+          }
         }
       }
     }
