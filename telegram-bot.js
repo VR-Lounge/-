@@ -1243,10 +1243,21 @@ async function sendNotificationToClient(clientId, message) {
 // Функция отправки уведомления в группу администраторов
 async function sendNotificationToAdmins(message) {
   try {
+    console.log(`📤 Попытка отправить уведомление администраторам в группу ${ADMIN_GROUP_ID}`);
+    console.log(`📝 Длина сообщения: ${message.length} символов`);
     await bot.sendMessage(ADMIN_GROUP_ID, message);
+    console.log(`✅ Уведомление успешно отправлено администраторам в группу ${ADMIN_GROUP_ID}`);
     return true;
   } catch (error) {
-    console.error('Ошибка отправки уведомления администраторам:', error);
+    console.error('❌ Ошибка отправки уведомления администраторам:', error);
+    console.error(`📋 Код ошибки: ${error.code}`);
+    console.error(`📋 Сообщение ошибки: ${error.message}`);
+    if (error.response) {
+      console.error(`📡 Статус ответа: ${error.response.statusCode}`);
+      if (error.response.body) {
+        console.error(`📄 Тело ответа:`, JSON.stringify(error.response.body, null, 2));
+      }
+    }
     return false;
   }
 }
@@ -1653,6 +1664,13 @@ async function broadcastToClients(message, adminUserId) {
 
 // Функция проверки предстоящих событий и отправки напоминаний
 async function checkUpcomingEvents() {
+  const startTime = Date.now();
+  console.log('');
+  console.log('═══════════════════════════════════════════════════════════');
+  console.log('🔔 Запуск проверки предстоящих событий...');
+  console.log(`📅 Время запуска: ${new Date().toISOString()}`);
+  console.log(`🆔 Process ID: ${process.pid}`);
+  
   try {
     const now = new Date();
     const todayStr = now.toISOString().split('T')[0]; // Сегодняшняя дата для проверки отправленных уведомлений
@@ -1660,9 +1678,9 @@ async function checkUpcomingEvents() {
     tomorrow.setDate(tomorrow.getDate() + 1);
     const tomorrowStr = tomorrow.toISOString().split('T')[0];
 
-    console.log('🔔 Проверка предстоящих событий...');
     console.log(`   📅 Сегодня: ${todayStr}`);
     console.log(`   📅 Завтра: ${tomorrowStr}`);
+    console.log(`   🕐 Текущее время: ${now.toLocaleTimeString('ru-RU')}`);
 
     // Проверяем события на завтра (напоминание за 1 день)
     const tomorrowBookings = await db.collection('bookings')
@@ -1674,9 +1692,14 @@ async function checkUpcomingEvents() {
     for (const bookingDoc of tomorrowBookings.docs) {
       const booking = bookingDoc.data();
       const bookingId = bookingDoc.id;
-      const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
+      const phoneDigits = booking.phoneDigits || booking.clientPhone?.replace(/\D/g, '') || '';
       
-      if (!phoneDigits) continue;
+      if (!phoneDigits) {
+        console.log(`   ⚠️ У записи ${bookingId} нет номера телефона, пропускаем`);
+        continue;
+      }
+
+      console.log(`   📝 Обработка записи ${bookingId} (клиент: ${booking.clientName}, телефон: ${booking.clientPhone})`);
 
       // Проверяем, было ли уже отправлено уведомление за 1 день сегодня
       const reminderSent1Day = booking.reminderSent1Day;
@@ -1691,12 +1714,46 @@ async function checkUpcomingEvents() {
         }
       }
 
-      console.log(`   📝 Обработка записи ${bookingId} (клиент: ${booking.clientName})`);
+      // Пробуем несколько вариантов формата номера для поиска клиента
+      const phoneVariants = [];
+      phoneVariants.push(phoneDigits);
+      
+      // Если номер начинается с 7 или 8 и имеет 11 цифр, пробуем без первой цифры
+      if (phoneDigits.length === 11) {
+        if (phoneDigits.startsWith('7')) {
+          phoneVariants.push(phoneDigits.substring(1));
+        } else if (phoneDigits.startsWith('8')) {
+          phoneVariants.push(phoneDigits.substring(1));
+        }
+      }
+      
+      // Если номер имеет 10 цифр, пробуем с 7 в начале
+      if (phoneDigits.length === 10) {
+        phoneVariants.push('7' + phoneDigits);
+      }
+      
+      // Убираем дубликаты
+      const uniqueVariants = [...new Set(phoneVariants)];
+      console.log(`   🔍 Варианты номеров для поиска клиента: ${uniqueVariants.join(', ')}`);
 
       // Находим клиента
-      const clientsSnapshot = await db.collection('clients')
-        .where('phoneDigits', '==', phoneDigits)
-        .get();
+      let clientsSnapshot = null;
+      for (const variant of uniqueVariants) {
+        try {
+          clientsSnapshot = await db.collection('clients')
+            .where('phoneDigits', '==', variant)
+            .limit(1)
+            .get();
+          
+          if (!clientsSnapshot.empty) {
+            console.log(`   ✅ Клиент найден по номеру: ${variant}`);
+            break;
+          }
+        } catch (queryError) {
+          console.error(`   ❌ Ошибка поиска клиента по варианту ${variant}:`, queryError.message);
+          continue;
+        }
+      }
 
       if (!clientsSnapshot.empty) {
         const client = clientsSnapshot.docs[0].data();
@@ -1794,40 +1851,105 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
       
       reminderMessage += `\nПожалуйста, подготовьтесь к мероприятию!`;
       
-      await sendNotificationToAdmins(reminderMessage);
+      // Отправляем уведомление администраторам (для всех записей, даже если клиент не найден)
+      try {
+        await sendNotificationToAdmins(reminderMessage);
+        console.log(`   ✅ Уведомление администраторам за 1 день отправлено для записи ${bookingId}`);
+      } catch (adminError) {
+        console.error(`   ❌ Ошибка отправки уведомления администраторам за 1 день:`, adminError.message);
+        console.error(`   📋 Детали ошибки:`, adminError);
+      }
       
       // Сохраняем timestamp отправки уведомления за 1 день
       try {
         await bookingDoc.ref.update({
           reminderSent1Day: admin.firestore.FieldValue.serverTimestamp()
         });
-        console.log(`   ✅ Уведомление за 1 день отправлено и сохранено для записи ${bookingId}`);
+        console.log(`   ✅ Timestamp уведомления за 1 день сохранен для записи ${bookingId}`);
       } catch (updateError) {
         console.error(`   ❌ Ошибка сохранения timestamp уведомления за 1 день:`, updateError.message);
       }
     }
 
     // Проверяем события через 3 часа (напоминание за 3 часа)
+    // Вычисляем целевое время (текущее время + 3 часа)
     const threeHoursLater = new Date(now);
     threeHoursLater.setHours(threeHoursLater.getHours() + 3);
-    const threeHoursDateStr = threeHoursLater.toISOString().split('T')[0];
-    const threeHoursTimeStr = threeHoursLater.toTimeString().split(':').slice(0, 2).join(':');
+    const timeWindowStart = new Date(threeHoursLater.getTime() - 5 * 60 * 1000); // 5 минут до
+    const timeWindowEnd = new Date(threeHoursLater.getTime() + 5 * 60 * 1000); // 5 минут после
 
-    console.log(`   ⏰ Проверка записей через 3 часа: ${threeHoursDateStr} в ${threeHoursTimeStr}`);
+    console.log(`   ⏰ Проверка записей через 3 часа от текущего времени`);
+    console.log(`   📅 Текущее время: ${now.toISOString()}`);
+    console.log(`   🎯 Целевое время (текущее + 3 часа): ${threeHoursLater.toISOString()}`);
+    console.log(`   ⏱ Окно времени: ${timeWindowStart.toISOString()} - ${timeWindowEnd.toISOString()}`);
 
-    const threeHoursBookings = await db.collection('bookings')
-      .where('bookingDate', '==', threeHoursDateStr)
-      .where('startTime', '==', threeHoursTimeStr)
+    // Получаем все записи на сегодня и завтра (чтобы не пропустить события)
+    // Используем уже объявленные переменные todayStr и tomorrowStr
+
+    // Получаем записи на сегодня
+    const todayBookingsSnapshot = await db.collection('bookings')
+      .where('bookingDate', '==', todayStr)
       .get();
 
-    console.log(`   📊 Найдено записей через 3 часа: ${threeHoursBookings.size}`);
+    // Получаем записи на завтра
+    const tomorrowBookingsSnapshot = await db.collection('bookings')
+      .where('bookingDate', '==', tomorrowStr)
+      .get();
 
-    for (const bookingDoc of threeHoursBookings.docs) {
+    console.log(`   📊 Найдено записей на сегодня (${todayStr}): ${todayBookingsSnapshot.size}`);
+    console.log(`   📊 Найдено записей на завтра (${tomorrowStr}): ${tomorrowBookingsSnapshot.size}`);
+
+    // Объединяем все записи
+    const allBookingsSnapshot = [...todayBookingsSnapshot.docs, ...tomorrowBookingsSnapshot.docs];
+
+    // Фильтруем записи по времени в коде
+    const threeHoursBookings = [];
+    for (const bookingDoc of allBookingsSnapshot) {
       const booking = bookingDoc.data();
       const bookingId = bookingDoc.id;
-      const phoneDigits = booking.clientPhone?.replace(/\D/g, '') || '';
       
-      if (!phoneDigits) continue;
+      if (!booking.startTime) {
+        console.log(`   ⚠️ У записи ${bookingId} нет startTime, пропускаем`);
+        continue;
+      }
+      
+      // Парсим время из записи (может быть в формате "HH:MM" или "HH:MM:SS")
+      const bookingTimeParts = booking.startTime.split(':');
+      const bookingHour = parseInt(bookingTimeParts[0], 10);
+      const bookingMinute = parseInt(bookingTimeParts[1], 10);
+      
+      if (isNaN(bookingHour) || isNaN(bookingMinute)) {
+        console.log(`   ⚠️ Не удалось распарсить время ${booking.startTime} для записи ${bookingId}, пропускаем`);
+        continue;
+      }
+      
+      // Создаем объект Date для времени начала события
+      const bookingDateStr = booking.bookingDate; // Формат: "YYYY-MM-DD"
+      const bookingDateTime = new Date(bookingDateStr + 'T' + 
+        String(bookingHour).padStart(2, '0') + ':' + 
+        String(bookingMinute).padStart(2, '0') + ':00');
+      
+      // Проверяем, попадает ли время начала события в окно ±5 минут от "текущее + 3 часа"
+      if (bookingDateTime >= timeWindowStart && bookingDateTime <= timeWindowEnd) {
+        threeHoursBookings.push({ doc: bookingDoc, data: booking, id: bookingId });
+        console.log(`   ✅ Запись ${bookingId} (${booking.clientName}) попадает в окно времени: ${booking.bookingDate} ${booking.startTime}`);
+      } else {
+        const timeDiff = (bookingDateTime.getTime() - threeHoursLater.getTime()) / (1000 * 60); // разница в минутах
+        if (Math.abs(timeDiff) < 30) { // Логируем только если разница меньше 30 минут
+          console.log(`   ⏭️ Запись ${bookingId} (${booking.clientName}) не попадает в окно: ${booking.bookingDate} ${booking.startTime} (разница: ${timeDiff.toFixed(0)} мин)`);
+        }
+      }
+    }
+
+    console.log(`   📊 Отфильтровано записей через 3 часа: ${threeHoursBookings.length}`);
+
+    for (const { doc: bookingDoc, data: booking, id: bookingId } of threeHoursBookings) {
+      const phoneDigits = booking.phoneDigits || booking.clientPhone?.replace(/\D/g, '') || '';
+      
+      if (!phoneDigits) {
+        console.log(`   ⚠️ У записи ${bookingId} нет номера телефона, пропускаем`);
+        continue;
+      }
 
       // Проверяем, было ли уже отправлено уведомление за 3 часа
       const reminderSent3Hours = booking.reminderSent3Hours;
@@ -1847,6 +1969,77 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
 
       console.log(`   📝 Обработка записи за 3 часа ${bookingId} (клиент: ${booking.clientName})`);
 
+      // Формируем уведомление для администраторов
+      const dateStr = new Date(booking.bookingDate).toLocaleDateString('ru-RU', {
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric',
+        weekday: 'long'
+      });
+      
+      const serviceNames = getServiceNames(booking.selectedServices || []);
+      const calculation = calculateBookingTotal(booking);
+      
+      let adminReminderMessage = `⏰ Напоминание: Через 3 часа запись клиента!\n\n`;
+      adminReminderMessage += `👤 Клиент: ${booking.clientName}\n`;
+      adminReminderMessage += `📞 Телефон: ${booking.clientPhone}\n`;
+      adminReminderMessage += `📅 Дата: ${dateStr}\n`;
+      adminReminderMessage += `⏰ Время: ${booking.startTime}\n`;
+      adminReminderMessage += `⏱ Длительность: ${booking.duration} ч\n`;
+      adminReminderMessage += `🎮 Услуги: ${serviceNames}\n`;
+      adminReminderMessage += `\n💰 Финансы:\n`;
+      adminReminderMessage += `   Сумма: ${calculation.total.toLocaleString('ru-RU')} ₽\n`;
+      
+      // Добавляем информацию о скидке, если есть
+      if (booking.discountPercent > 0 || booking.discountAmount > 0) {
+        if (booking.discountPercent > 0) {
+          adminReminderMessage += `   Скидка: ${booking.discountPercent}%\n`;
+        } else {
+          adminReminderMessage += `   Скидка: ${booking.discountAmount.toLocaleString('ru-RU')} ₽\n`;
+        }
+        adminReminderMessage += `   Итоговая: ${calculation.finalTotal.toLocaleString('ru-RU')} ₽\n`;
+      } else {
+        adminReminderMessage += `   Итоговая: ${calculation.finalTotal.toLocaleString('ru-RU')} ₽\n`;
+      }
+      
+      // Добавляем информацию о предоплате, если есть
+      if (booking.prepayment && booking.prepayment.amount > 0) {
+        const method = booking.prepayment.method === 'cash' ? 'нал' : 'перевод';
+        const prepayDate = booking.prepayment.date ? 
+          ` от ${new Date(booking.prepayment.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'})}` : '';
+        adminReminderMessage += `   Предоплата: ${booking.prepayment.amount.toLocaleString('ru-RU')} ₽ (${method})${prepayDate}\n`;
+      }
+      
+      // Добавляем информацию о доплате наличными, если есть
+      if (booking.finalPaymentCash && booking.finalPaymentCash.amount > 0) {
+        const cashDate = booking.finalPaymentCash.date ? 
+          ` от ${new Date(booking.finalPaymentCash.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'})}` : '';
+        adminReminderMessage += `   Доплата нал: ${booking.finalPaymentCash.amount.toLocaleString('ru-RU')} ₽${cashDate}\n`;
+      }
+      
+      // Добавляем информацию о доплате переводом, если есть
+      if (booking.finalPaymentTransfer && booking.finalPaymentTransfer.amount > 0) {
+        const transferDate = booking.finalPaymentTransfer.date ? 
+          ` от ${new Date(booking.finalPaymentTransfer.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'})}` : '';
+        adminReminderMessage += `   Доплата пер: ${booking.finalPaymentTransfer.amount.toLocaleString('ru-RU')} ₽${transferDate}\n`;
+      }
+      
+      // Добавляем примечания, если есть
+      if (booking.notes && booking.notes.trim()) {
+        adminReminderMessage += `\n📝 Примечания: ${booking.notes}\n`;
+      }
+      
+      adminReminderMessage += `\nПожалуйста, подготовьтесь к мероприятию!`;
+      
+      // Отправляем уведомление администраторам
+      try {
+        await sendNotificationToAdmins(adminReminderMessage);
+        console.log(`   ✅ Уведомление администраторам за 3 часа отправлено для записи ${bookingId}`);
+      } catch (adminError) {
+        console.error(`   ❌ Ошибка отправки уведомления администраторам за 3 часа:`, adminError.message);
+      }
+
+      // Отправляем уведомление клиенту
       const clientsSnapshot = await db.collection('clients')
         .where('phoneDigits', '==', phoneDigits)
         .get();
@@ -1859,22 +2052,36 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
 
 Ждем вас в ${booking.startTime} 🎮
           `);
-          
-          // Сохраняем timestamp отправки уведомления за 3 часа
-          try {
-            await bookingDoc.ref.update({
-              reminderSent3Hours: admin.firestore.FieldValue.serverTimestamp()
-            });
-            console.log(`   ✅ Уведомление за 3 часа отправлено и сохранено для записи ${bookingId}`);
-          } catch (updateError) {
-            console.error(`   ❌ Ошибка сохранения timestamp уведомления за 3 часа:`, updateError.message);
-          }
+          console.log(`   ✅ Уведомление клиенту за 3 часа отправлено для записи ${bookingId}`);
+        } else {
+          console.log(`   ⚠️ У клиента ${booking.clientName} нет telegramId, уведомление клиенту не отправлено`);
         }
+      } else {
+        console.log(`   ⚠️ Клиент с номером ${booking.clientPhone} не найден в базе clients`);
+      }
+      
+      // Сохраняем timestamp отправки уведомления за 3 часа
+      try {
+        await bookingDoc.ref.update({
+          reminderSent3Hours: admin.firestore.FieldValue.serverTimestamp()
+        });
+        console.log(`   ✅ Timestamp уведомления за 3 часа сохранен для записи ${bookingId}`);
+      } catch (updateError) {
+        console.error(`   ❌ Ошибка сохранения timestamp уведомления за 3 часа:`, updateError.message);
       }
     }
 
   } catch (error) {
-    console.error('Ошибка проверки предстоящих событий:', error);
+    console.error('❌ Ошибка проверки предстоящих событий:', error);
+    console.error(`📋 Код ошибки: ${error.code}`);
+    console.error(`📋 Сообщение ошибки: ${error.message}`);
+    console.error(`📋 Стек ошибки:`, error.stack);
+  } finally {
+    const endTime = Date.now();
+    const duration = ((endTime - startTime) / 1000).toFixed(2);
+    console.log(`✅ Проверка предстоящих событий завершена за ${duration} сек`);
+    console.log('═══════════════════════════════════════════════════════════');
+    console.log('');
   }
 }
 
