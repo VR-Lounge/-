@@ -3936,6 +3936,81 @@
       });
       console.log('Initialized salaryData:', salaryData);
 
+      // Инициализация данных по ведущей
+      const hostessData = {
+        eventsCount: 0, // Количество мероприятий с ведущей
+        totalRevenue: 0, // Общая выручка от услуги "Ведущая"
+        details: [] // Детализация по каждому мероприятию
+      };
+
+      // 2.5. Сбор данных о ведущей из всех бронирований за месяц
+      Object.keys(bookingsByDate).forEach(dateStr => {
+        const dayBookings = bookingsByDate[dateStr];
+        dayBookings.forEach(booking => {
+          // Проверяем, есть ли услуга "Ведущая" в бронировании
+          const hasHostess = (booking.selectedServices && Array.isArray(booking.selectedServices) && 
+                              booking.selectedServices.includes('hostess')) ||
+                             booking.serviceType === 'hostess';
+          
+          if (hasHostess) {
+            const hostessPrice = servicePrices.hostess;
+            const duration = parseFloat(booking.duration) || 0;
+            
+            // Рассчитываем общую сумму бронирования для правильного применения скидки
+            let bookingTotalAmount = 0;
+            if (booking.selectedServices && Array.isArray(booking.selectedServices)) {
+              booking.selectedServices.forEach(service => {
+                if (service === 'birthday') {
+                  const fullHours = Math.floor(duration);
+                  const hasHalfHour = duration % 1 !== 0;
+                  let birthdayTotal = 0;
+                  for (let hour = 1; hour <= fullHours; hour++) {
+                    const hourPrice = servicePrices.birthday[hour] || servicePrices.birthday[4] || 3000;
+                    birthdayTotal += hourPrice;
+                  }
+                  if (hasHalfHour) {
+                    if (fullHours === 0) { birthdayTotal += 2000; }
+                    else if (fullHours === 1) { birthdayTotal += 2000; }
+                    else { birthdayTotal += (servicePrices.birthday[3] || 3000) / 2; }
+                  }
+                  bookingTotalAmount += birthdayTotal;
+                } else if (service === 'hostess') {
+                  bookingTotalAmount += hostessPrice;
+                } else {
+                  const price = servicePrices[service] || 0;
+                  bookingTotalAmount += price * duration;
+                }
+              });
+            }
+            
+            // Применяем скидку к стоимости ведущей пропорционально
+            let finalHostessAmount = hostessPrice;
+            const discountPercent = booking.discountPercent || 0;
+            const discountAmount = booking.discountAmount || 0;
+            if (discountPercent > 0) {
+              // Если скидка процентная, применяем её пропорционально к ведущей
+              finalHostessAmount = hostessPrice * (1 - discountPercent / 100);
+            } else if (discountAmount > 0 && bookingTotalAmount > 0) {
+              // Если скидка фиксированная, распределяем её пропорционально между услугами
+              finalHostessAmount = Math.max(0, hostessPrice - (discountAmount * hostessPrice / bookingTotalAmount));
+            }
+            
+            hostessData.eventsCount++;
+            hostessData.totalRevenue += finalHostessAmount;
+            hostessData.details.push({
+              date: dateStr,
+              clientName: booking.clientName || 'Не указано',
+              clientPhone: booking.clientPhone || 'Не указано',
+              time: booking.startTime || 'Не указано',
+              duration: duration,
+              amount: finalHostessAmount,
+              originalAmount: hostessPrice,
+              hasDiscount: discountPercent > 0 || discountAmount > 0
+            });
+          }
+        });
+      });
+
       // 3. Обработка каждого дня месяца, на который есть назначение
       let totalMonthRevenue = 0; // Общая выручка за месяц (после скидок)
 
@@ -4114,12 +4189,13 @@
 
       // 4. Отображение результатов
       console.log('Final salaryData:', salaryData);
-      renderSalaryResults(salaryData, totalMonthRevenue);
+      console.log('Hostess data:', hostessData);
+      renderSalaryResults(salaryData, totalMonthRevenue, hostessData);
     }
 
 
-    function renderSalaryResults(salaryData, totalRevenue) {
-      console.log('renderSalaryResults called with data:', salaryData, 'totalRevenue:', totalRevenue);
+    function renderSalaryResults(salaryData, totalRevenue, hostessData = { eventsCount: 0, totalRevenue: 0, details: [] }) {
+      console.log('renderSalaryResults called with data:', salaryData, 'totalRevenue:', totalRevenue, 'hostessData:', hostessData);
       salaryResults.innerHTML = ''; // Очищаем предыдущие результаты
       
       // Карточка общей выручки
@@ -4314,6 +4390,40 @@
           salaryResults.appendChild(adminCard);
         }
       });
+
+      // Карточка для ведущей
+      if (hostessData && hostessData.eventsCount > 0) {
+        const hostessCard = document.createElement('div');
+        hostessCard.className = 'bg-white rounded-2xl shadow-md p-6 border border-gray-200 transition hover:shadow-lg';
+        
+        // Сохраняем данные о ведущей в data-атрибуте для доступа в обработчике
+        hostessCard.setAttribute('data-hostess-details', JSON.stringify(hostessData.details));
+
+        hostessCard.innerHTML = `
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Ведущая</h3>
+          <div class="grid grid-cols-2 gap-x-6 gap-y-3 mb-5">
+            <div>
+              <p class="text-sm text-gray-500">Мероприятий</p>
+              <p class="font-medium text-lg">${hostessData.eventsCount}</p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-500">Общая выручка</p>
+              <p class="font-medium text-lg">${hostessData.totalRevenue.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p>
+            </div>
+          </div>
+          <div class="border-t border-gray-200 pt-4 mt-4">
+            <p class="text-sm font-medium text-gray-600">Итого выручка</p>
+            <p class="text-2xl font-bold text-purple-600 mt-1">${hostessData.totalRevenue.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</p>
+          </div>
+          <button class="mt-5 text-sm text-purple-600 hover:text-purple-800 view-hostess-details flex items-center">
+            <i class="fa-solid fa-list mr-1.5"></i> Показать детализацию
+          </button>
+          <div id="hostess-details" class="hidden mt-4 space-y-3 border-t border-gray-100 pt-4">
+            <!-- Детализация будет здесь -->
+          </div>
+        `;
+        salaryResults.appendChild(hostessCard);
+      }
 
         // Если нет данных по зарплате ни у одного админа
         if (salaryResults.children.length <= 1) { // Только карточка выручки
@@ -4538,6 +4648,75 @@
                }
            });
        }
+
+       // Обработчик для кнопки детализации ведущей (используем делегирование событий)
+       salaryResults.addEventListener('click', (e) => {
+           if (e.target.closest('.view-hostess-details')) {
+               const hostessDetailsBtn = e.target.closest('.view-hostess-details');
+               const hostessCard = hostessDetailsBtn.closest('[data-hostess-details]');
+               const detailsDiv = document.getElementById('hostess-details');
+               const icon = hostessDetailsBtn.querySelector('i');
+
+               if (detailsDiv && hostessCard) {
+                   const hostessDetailsData = JSON.parse(hostessCard.getAttribute('data-hostess-details') || '[]');
+                   
+                   if (hostessDetailsData.length > 0) {
+                       if (detailsDiv.classList.contains('hidden')) {
+                           // Показать детализацию ведущей
+                           detailsDiv.innerHTML = ''; // Очистить
+
+                           hostessDetailsData.forEach(detail => {
+                           const detailCard = document.createElement('div');
+                           detailCard.className = 'py-3 border-b border-gray-100 last:border-b-0';
+
+                           const dateObj = new Date(detail.date + 'T00:00:00');
+                           const formattedDate = dateObj.toLocaleDateString('ru-RU', { 
+                               day: '2-digit', 
+                               month: 'short',
+                               weekday: 'short'
+                           });
+
+                           let discountHtml = '';
+                           if (detail.hasDiscount) {
+                               const discountAmount = detail.originalAmount - detail.amount;
+                               discountHtml = `<div class="mt-1 text-xs text-gray-500">
+                                   <span class="line-through">${detail.originalAmount.toLocaleString('ru-RU')} ₽</span>
+                                   <span class="text-red-600 ml-1">Скидка: ${discountAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
+                               </div>`;
+                           }
+
+                           detailCard.innerHTML = `
+                               <div class="flex justify-between items-start">
+                                   <div class="flex-1">
+                                       <div class="font-medium">${formattedDate} в ${detail.time}</div>
+                                       <div class="text-sm text-gray-600 mt-1">
+                                           <div>Клиент: ${detail.clientName}</div>
+                                           <div>Телефон: ${detail.clientPhone}</div>
+                                           <div>Длительность: ${detail.duration} ч</div>
+                                       </div>
+                                       ${discountHtml}
+                                   </div>
+                                   <div class="text-right ml-4">
+                                       <div class="font-medium text-lg text-purple-600">
+                                           ${detail.amount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽
+                                       </div>
+                                   </div>
+                               </div>
+                           `;
+                           detailsDiv.appendChild(detailCard);
+                       });
+
+                           detailsDiv.classList.remove('hidden');
+                           hostessDetailsBtn.innerHTML = '<i class="fa-solid fa-chevron-up mr-1.5"></i> Скрыть детализацию';
+                       } else {
+                           // Скрыть детализацию ведущей
+                           detailsDiv.classList.add('hidden');
+                           hostessDetailsBtn.innerHTML = '<i class="fa-solid fa-list mr-1.5"></i> Показать детализацию';
+                       }
+                   }
+               }
+           }
+       });
     }
 
     // === Аутентификация и Авторизация ===
