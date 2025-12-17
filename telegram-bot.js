@@ -152,16 +152,27 @@ bot.onText(/\/start/, async (msg) => {
   const userId = msg.from.id.toString();
   const username = msg.from.username || msg.from.first_name;
   
-  console.log(`📨 Получена команда /start от ${username} (chatId: ${chatId})`);
-
-  // Определяем роль пользователя
-  const role = await getUserRole(userId);
-  console.log(`👤 Роль пользователя ${username}: ${role}`);
+  console.log(`📨 Получена команда /start от ${username} (chatId: ${chatId}, userId: ${userId})`);
 
   // URL Mini App для админов
   const ADMIN_MINI_APP_URL = process.env.MINI_APP_URL || 'https://vr-lounge.github.io/-/telegram-miniapp.html';
   // URL Mini App для клиентов (Friendly-сервис)
   const CLIENT_MINI_APP_URL = process.env.CLIENT_MINI_APP_URL || 'https://vr-lounge.github.io/-/client-booking-miniapp.html';
+
+  // Определяем роль пользователя с таймаутом и обработкой ошибок
+  let role = 'guest'; // По умолчанию гость
+  try {
+    console.log(`🔍 Определение роли для пользователя ${userId}...`);
+    // Добавляем таймаут для определения роли (максимум 5 секунд)
+    const rolePromise = getUserRole(userId);
+    const timeoutPromise = new Promise((resolve) => setTimeout(() => resolve('guest'), 5000));
+    role = await Promise.race([rolePromise, timeoutPromise]);
+    console.log(`👤 Роль пользователя ${username}: ${role}`);
+  } catch (error) {
+    console.error(`❌ Ошибка определения роли пользователя ${userId}:`, error);
+    console.error(`📋 Детали ошибки:`, error.message, error.stack);
+    role = 'guest'; // При ошибке считаем гостем
+  }
 
   try {
     if (role === 'admin') {
@@ -292,7 +303,31 @@ bot.onText(/\/start/, async (msg) => {
     
     console.log(`✅ Ответ отправлен пользователю ${username} (роль: ${role})`);
   } catch (error) {
-    console.error('Ошибка отправки сообщения /start:', error.message);
+    console.error('❌ Ошибка отправки сообщения /start:', error);
+    console.error('📋 Детали ошибки:', error.message);
+    console.error('📋 Код ошибки:', error.code);
+    if (error.response) {
+      console.error('📡 Статус ответа:', error.response.statusCode);
+      if (error.response.body) {
+        console.error('📄 Тело ответа:', JSON.stringify(error.response.body, null, 2));
+      }
+    }
+    
+    // Попытка отправить простое сообщение об ошибке
+    try {
+      await bot.sendMessage(chatId, `👋 Привет, ${username}!\n\nПроизошла ошибка при загрузке меню. Пожалуйста, попробуйте еще раз через несколько секунд.`, {
+        reply_markup: {
+          keyboard: [
+            [{ text: '✨ Записаться', web_app: { url: CLIENT_MINI_APP_URL } }],
+            [{ text: 'Помощь' }]
+          ],
+          resize_keyboard: true
+        }
+      });
+      console.log(`✅ Отправлено сообщение об ошибке пользователю ${username}`);
+    } catch (fallbackError) {
+      console.error('❌ Критическая ошибка: не удалось отправить даже сообщение об ошибке:', fallbackError.message);
+    }
   }
 });
 
@@ -1743,7 +1778,7 @@ async function checkUpcomingEvents() {
           clientsSnapshot = await db.collection('clients')
             .where('phoneDigits', '==', variant)
             .limit(1)
-            .get();
+        .get();
           
           if (!clientsSnapshot.empty) {
             console.log(`   ✅ Клиент найден по номеру: ${variant}`);
@@ -1853,7 +1888,7 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
       
       // Отправляем уведомление администраторам (для всех записей, даже если клиент не найден)
       try {
-        await sendNotificationToAdmins(reminderMessage);
+      await sendNotificationToAdmins(reminderMessage);
         console.log(`   ✅ Уведомление администраторам за 1 день отправлено для записи ${bookingId}`);
       } catch (adminError) {
         console.error(`   ❌ Ошибка отправки уведомления администраторам за 1 день:`, adminError.message);
@@ -2059,15 +2094,15 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
       } else {
         console.log(`   ⚠️ Клиент с номером ${booking.clientPhone} не найден в базе clients`);
       }
-      
-      // Сохраняем timestamp отправки уведомления за 3 часа
-      try {
-        await bookingDoc.ref.update({
-          reminderSent3Hours: admin.firestore.FieldValue.serverTimestamp()
-        });
+          
+          // Сохраняем timestamp отправки уведомления за 3 часа
+          try {
+            await bookingDoc.ref.update({
+              reminderSent3Hours: admin.firestore.FieldValue.serverTimestamp()
+            });
         console.log(`   ✅ Timestamp уведомления за 3 часа сохранен для записи ${bookingId}`);
-      } catch (updateError) {
-        console.error(`   ❌ Ошибка сохранения timestamp уведомления за 3 часа:`, updateError.message);
+          } catch (updateError) {
+            console.error(`   ❌ Ошибка сохранения timestamp уведомления за 3 часа:`, updateError.message);
       }
     }
 
