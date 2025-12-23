@@ -2180,6 +2180,38 @@ process.on('unhandledRejection', (reason, promise) => {
   // Не останавливаем бота при необработанных ошибках, но логируем для отладки
 });
 
+// ============================================
+// HTTP СЕРВЕР ДЛЯ ПРОБУЖДЕНИЯ (для бесплатного Render)
+// ============================================
+
+// Простой HTTP сервер для поддержания активности бота на бесплатном плане
+const http = require('http');
+
+const PORT = process.env.PORT || 10000;
+
+const server = http.createServer((req, res) => {
+  // Простой endpoint для проверки работоспособности
+  if (req.url === '/health' || req.url === '/') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      status: 'ok',
+      bot: 'vr_lounge33_bot',
+      uptime: process.uptime(),
+      timestamp: new Date().toISOString(),
+      message: 'Telegram bot is running'
+    }));
+  } else {
+    res.writeHead(404, { 'Content-Type': 'text/plain' });
+    res.end('Not Found');
+  }
+});
+
+server.listen(PORT, () => {
+  console.log(`🌐 HTTP сервер запущен на порту ${PORT}`);
+  console.log(`🔗 Health check endpoint: http://localhost:${PORT}/health`);
+  console.log(`💡 Используйте этот endpoint для предотвращения засыпания на Render`);
+});
+
 console.log('✅ Бот готов к работе!');
 
 
