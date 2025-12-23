@@ -2,13 +2,23 @@ services:
   - type: web
     name: vr-lounge-telegram-bot
     env: node
+    plan: free
     buildCommand: npm install
     startCommand: node telegram-bot.js
     envVars:
+      - key: NODE_ENV
+        value: production
       - key: TELEGRAM_BOT_TOKEN
         sync: false
+        fromService:
+          type: web
+          name: vr-lounge-telegram-bot
+          property: envVar
       - key: ADMIN_GROUP_ID
         sync: false
+      - key: CLIENT_MINI_APP_URL
+        value: https://vr-lounge.github.io/-/client-booking-miniapp.html
+      - key: MINI_APP_URL
+        value: https://vr-lounge.github.io/-/telegram-miniapp.html
       - key: FIREBASE_SERVICE_ACCOUNT
         sync: false
-
