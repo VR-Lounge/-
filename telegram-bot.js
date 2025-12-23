@@ -51,11 +51,71 @@ bot.on('message', (msg) => {
   console.log(`📩 Получено сообщение от ${msg.from.first_name} (${msg.chat.type}):`, msg.text || '[не текст]');
 });
 
+// Обработка текстовых сообщений от админа для рассылки (должен быть после всех команд)
+bot.on('message', async (msg) => {
+  // Пропускаем сообщения из групп
+  if (msg.chat.type !== 'private') {
+    return;
+  }
+  
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  const text = msg.text;
+  
+  // Проверяем, ожидает ли этот админ сообщение для рассылки
+  if (!broadcastPendingState.get(userId) || !text) {
+    return;
+  }
+  
+  // Пропускаем команды
+  if (text.startsWith('/')) {
+    return;
+  }
+  
+  // Проверяем, что пользователь - администратор
+  const role = await getUserRole(userId);
+  if (role !== 'admin') {
+    broadcastPendingState.delete(userId);
+    return;
+  }
+  
+  try {
+    // Подтверждение рассылки
+    await bot.sendMessage(chatId, `📢 Подтверждение рассылки
+
+📝 Ваше сообщение:
+${text}
+
+📊 Будет отправлено активным клиентам с Telegram.
+
+Продолжить?`, {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: '✅ Да, отправить', callback_data: `confirm_broadcast:${msg.message_id}` },
+            { text: '❌ Отмена', callback_data: 'cancel_broadcast' }
+          ]
+        ]
+      }
+    });
+    
+    // Сохраняем текст сообщения
+    broadcastPendingState.set(userId, text);
+    
+  } catch (error) {
+    console.error('Ошибка обработки сообщения для рассылки:', error);
+    broadcastPendingState.delete(userId);
+  }
+});
+
 // ID группы администраторов (замените на ваш)
 const ADMIN_GROUP_ID = process.env.ADMIN_GROUP_ID || '-1001234567890'; // Пример формата
 
 console.log('🤖 Telegram бот запущен!');
 console.log('📋 ID группы администраторов:', ADMIN_GROUP_ID);
+
+// Хранилище для состояния рассылки (временное, в памяти)
+const broadcastPendingState = new Map();
 
 // ============================================
 // СИСТЕМА РОЛЕЙ ПОЛЬЗОВАТЕЛЕЙ
@@ -918,12 +978,247 @@ bot.onText(/📅 Мои записи|Мои записи|мои записи/, a
   }
 });
 
-// Обработчик callback для кнопки "Контакты"
+// Обработчик callback для всех inline кнопок
 bot.on('callback_query', async (query) => {
   const chatId = query.message.chat.id;
+  const userId = query.from.id.toString();
   const data = query.data;
   const CLIENT_MINI_APP_URL = process.env.CLIENT_MINI_APP_URL || 'https://vr-lounge.github.io/-/client-booking-miniapp.html';
   
+  // Обработка обновления списка клиентов
+  if (data === 'refresh_clients') {
+    await bot.answerCallbackQuery(query.id, { text: 'Обновление списка...' });
+    // Вызываем обработчик напрямую
+    const role = await getUserRole(userId);
+    if (role === 'admin') {
+      try {
+        const clientsSnapshot = await db.collection('clients')
+          .where('isActive', '==', true)
+          .orderBy('clientName', 'asc')
+          .limit(50)
+          .get();
+        
+        if (clientsSnapshot.empty) {
+          await bot.sendMessage(chatId, '📋 Клиентов в базе пока нет.');
+          return;
+        }
+        
+        let message = `👥 Список клиентов (всего: ${clientsSnapshot.size})\n\n`;
+        
+        clientsSnapshot.docs.forEach((doc, index) => {
+          const client = doc.data();
+          const name = client.clientName || 'Без имени';
+          const phone = client.clientPhone || 'Нет телефона';
+          const telegram = client.telegramId ? '✅ Telegram' : '❌ Нет Telegram';
+          const bookingsCount = client.bookingsCount || 0;
+          
+          message += `${index + 1}. ${name}\n`;
+          message += `   📞 ${phone}\n`;
+          message += `   ${telegram} | Записей: ${bookingsCount}\n\n`;
+          
+          if (message.length > 3500) {
+            message += `\n... и еще клиентов`;
+            return;
+          }
+        });
+        
+        const totalClients = (await db.collection('clients')
+          .where('isActive', '==', true)
+          .get()).size;
+        
+        const clientsWithTelegram = (await db.collection('clients')
+          .where('isActive', '==', true)
+          .where('telegramId', '!=', null)
+          .get()).size;
+        
+        message += `\n📊 Статистика:\n`;
+        message += `• Всего активных: ${totalClients}\n`;
+        message += `• С Telegram: ${clientsWithTelegram}\n`;
+        message += `• Без Telegram: ${totalClients - clientsWithTelegram}`;
+        
+        await bot.sendMessage(chatId, message, {
+          reply_markup: {
+            inline_keyboard: [
+              [
+                { text: '🔄 Обновить список', callback_data: 'refresh_clients' }
+              ]
+            ]
+          }
+        });
+      } catch (error) {
+        console.error('Ошибка обновления списка клиентов:', error);
+      }
+    }
+    return;
+  }
+  
+  // Обработка обновления статистики
+  if (data === 'refresh_stats') {
+    await bot.answerCallbackQuery(query.id, { text: 'Обновление статистики...' });
+    // Вызываем обработчик напрямую
+    const role = await getUserRole(userId);
+    if (role === 'admin') {
+      try {
+        const now = new Date();
+        const todayStr = now.toISOString().split('T')[0];
+        const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+        const startOfMonthStr = startOfMonth.toISOString().split('T')[0];
+        
+        const totalClients = (await db.collection('clients')
+          .where('isActive', '==', true)
+          .get()).size;
+        
+        const clientsWithTelegram = (await db.collection('clients')
+          .where('isActive', '==', true)
+          .where('telegramId', '!=', null)
+          .get()).size;
+        
+        const todayBookings = await db.collection('bookings')
+          .where('bookingDate', '==', todayStr)
+          .get();
+        
+        const monthBookings = await db.collection('bookings')
+          .where('bookingDate', '>=', startOfMonthStr)
+          .get();
+        
+        let monthRevenue = 0;
+        monthBookings.docs.forEach(doc => {
+          const booking = doc.data();
+          const total = booking.total || booking.bookingTotal || 0;
+          monthRevenue += parseFloat(total) || 0;
+        });
+        
+        let todayRevenue = 0;
+        todayBookings.docs.forEach(doc => {
+          const booking = doc.data();
+          const total = booking.total || booking.bookingTotal || 0;
+          todayRevenue += parseFloat(total) || 0;
+        });
+        
+        const tomorrow = new Date(now);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const tomorrowStr = tomorrow.toISOString().split('T')[0];
+        
+        const upcomingBookings = await db.collection('bookings')
+          .where('bookingDate', 'in', [todayStr, tomorrowStr])
+          .orderBy('bookingDate', 'asc')
+          .orderBy('startTime', 'asc')
+          .limit(10)
+          .get();
+        
+        let message = `📊 Статистика VR Lounge\n\n`;
+        
+        message += `👥 Клиенты:\n`;
+        message += `• Всего активных: ${totalClients}\n`;
+        message += `• С Telegram: ${clientsWithTelegram}\n`;
+        message += `• Без Telegram: ${totalClients - clientsWithTelegram}\n\n`;
+        
+        message += `📅 Записи сегодня (${todayStr}):\n`;
+        message += `• Всего: ${todayBookings.size}\n`;
+        message += `• Выручка: ${todayRevenue.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽\n\n`;
+        
+        message += `📆 Записи за месяц:\n`;
+        message += `• Всего: ${monthBookings.size}\n`;
+        message += `• Выручка: ${monthRevenue.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽\n\n`;
+        
+        if (upcomingBookings.size > 0) {
+          message += `⏰ Ближайшие записи:\n`;
+          upcomingBookings.docs.slice(0, 5).forEach((doc, index) => {
+            const booking = doc.data();
+            const date = booking.bookingDate;
+            const time = booking.startTime || '--:--';
+            const client = booking.clientName || 'Без имени';
+            message += `${index + 1}. ${date} ${time} - ${client}\n`;
+          });
+          if (upcomingBookings.size > 5) {
+            message += `... и еще ${upcomingBookings.size - 5} записей\n`;
+          }
+        }
+        
+        await bot.sendMessage(chatId, message, {
+          reply_markup: {
+            inline_keyboard: [
+              [
+                { text: '🔄 Обновить', callback_data: 'refresh_stats' }
+              ]
+            ]
+          }
+        });
+      } catch (error) {
+        console.error('Ошибка обновления статистики:', error);
+      }
+    }
+    return;
+  }
+  
+  // Обработка отмены рассылки
+  if (data === 'cancel_broadcast') {
+    broadcastPendingState.delete(userId);
+    await bot.answerCallbackQuery(query.id, { text: 'Рассылка отменена' });
+    await bot.editMessageText('❌ Рассылка отменена.', {
+      chat_id: chatId,
+      message_id: query.message.message_id
+    });
+    return;
+  }
+  
+  // Обработка подтверждения рассылки
+  if (data.startsWith('confirm_broadcast:')) {
+    await bot.answerCallbackQuery(query.id, { text: 'Отправка рассылки...' });
+    
+    const messageText = broadcastPendingState.get(userId);
+    if (!messageText) {
+      await bot.sendMessage(chatId, '❌ Сообщение для рассылки не найдено. Попробуйте начать заново.');
+      return;
+    }
+    
+    try {
+      // Получаем активных клиентов с Telegram
+      const clientsSnapshot = await db.collection('clients')
+        .where('isActive', '==', true)
+        .where('telegramId', '!=', null)
+        .get();
+      
+      let successCount = 0;
+      let failCount = 0;
+      
+      await bot.sendMessage(chatId, `📢 Начинаю рассылку ${clientsSnapshot.size} клиентам...`);
+      
+      // Отправляем сообщение каждому клиенту
+      for (const clientDoc of clientsSnapshot.docs) {
+        const client = clientDoc.data();
+        if (client.telegramId) {
+          try {
+            await bot.sendMessage(client.telegramId, messageText);
+            successCount++;
+            
+            // Небольшая задержка, чтобы не превышать лимиты Telegram API
+            await new Promise(resolve => setTimeout(resolve, 50));
+          } catch (error) {
+            console.error(`Ошибка отправки клиенту ${client.clientName}:`, error.message);
+            failCount++;
+          }
+        }
+      }
+      
+      broadcastPendingState.delete(userId);
+      
+      await bot.sendMessage(chatId, `✅ Рассылка завершена!
+
+📊 Результаты:
+• Отправлено успешно: ${successCount}
+• Ошибок: ${failCount}
+• Всего клиентов: ${clientsSnapshot.size}`);
+      
+    } catch (error) {
+      console.error('Ошибка рассылки:', error);
+      broadcastPendingState.delete(userId);
+      await bot.sendMessage(chatId, '❌ Ошибка при рассылке. Попробуйте позже.');
+    }
+    return;
+  }
+  
+  // Обработка кнопки "Контакты"
   if (data === 'show_contacts') {
     const contactsMessage = `
 📞 Контакты VR Lounge
@@ -1217,6 +1512,259 @@ bot.onText(/^Помощь$/i, async (msg) => {
     console.error('Ошибка отправки сообщения /help:', error);
   }
 });
+
+// ============================================
+// АДМИНСКИЕ ФУНКЦИИ: КЛИЕНТЫ, СТАТИСТИКА, РАССЫЛКА
+// ============================================
+
+// Обработчик кнопки "👥 Клиенты"
+bot.onText(/👥 Клиенты|Клиенты|клиенты/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  
+  // Проверяем, что пользователь - администратор
+  const role = await getUserRole(userId);
+  if (role !== 'admin') {
+    await bot.sendMessage(chatId, '❌ Эта функция доступна только администраторам.');
+    return;
+  }
+  
+  try {
+    console.log(`👥 Админ ${userId} запросил список клиентов`);
+    
+    // Получаем всех активных клиентов
+    const clientsSnapshot = await db.collection('clients')
+      .where('isActive', '==', true)
+      .orderBy('clientName', 'asc')
+      .limit(50) // Ограничиваем для первой страницы
+      .get();
+    
+    if (clientsSnapshot.empty) {
+      await bot.sendMessage(chatId, '📋 Клиентов в базе пока нет.');
+      return;
+    }
+    
+    let message = `👥 Список клиентов (всего: ${clientsSnapshot.size})\n\n`;
+    
+    // Формируем список клиентов
+    clientsSnapshot.docs.forEach((doc, index) => {
+      const client = doc.data();
+      const name = client.clientName || 'Без имени';
+      const phone = client.clientPhone || 'Нет телефона';
+      const telegram = client.telegramId ? '✅ Telegram' : '❌ Нет Telegram';
+      const bookingsCount = client.bookingsCount || 0;
+      
+      message += `${index + 1}. ${name}\n`;
+      message += `   📞 ${phone}\n`;
+      message += `   ${telegram} | Записей: ${bookingsCount}\n\n`;
+      
+      // Ограничиваем длину сообщения (Telegram лимит ~4096 символов)
+      if (message.length > 3500) {
+        message += `\n... и еще клиентов`;
+        return;
+      }
+    });
+    
+    // Добавляем статистику
+    const totalClients = (await db.collection('clients')
+      .where('isActive', '==', true)
+      .get()).size;
+    
+    const clientsWithTelegram = (await db.collection('clients')
+      .where('isActive', '==', true)
+      .where('telegramId', '!=', null)
+      .get()).size;
+    
+    message += `\n📊 Статистика:\n`;
+    message += `• Всего активных: ${totalClients}\n`;
+    message += `• С Telegram: ${clientsWithTelegram}\n`;
+    message += `• Без Telegram: ${totalClients - clientsWithTelegram}`;
+    
+    await bot.sendMessage(chatId, message, {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: '🔄 Обновить список', callback_data: 'refresh_clients' }
+          ]
+        ]
+      }
+    });
+    
+  } catch (error) {
+    console.error('Ошибка получения списка клиентов:', error);
+    await bot.sendMessage(chatId, '❌ Ошибка при получении списка клиентов. Попробуйте позже.');
+  }
+});
+
+// Обработчик кнопки "📊 Статистика"
+bot.onText(/📊 Статистика|Статистика|статистика/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  
+  // Проверяем, что пользователь - администратор
+  const role = await getUserRole(userId);
+  if (role !== 'admin') {
+    await bot.sendMessage(chatId, '❌ Эта функция доступна только администраторам.');
+    return;
+  }
+  
+  try {
+    console.log(`📊 Админ ${userId} запросил статистику`);
+    
+    const now = new Date();
+    const todayStr = now.toISOString().split('T')[0];
+    const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+    const startOfMonthStr = startOfMonth.toISOString().split('T')[0];
+    
+    // Статистика клиентов
+    const totalClients = (await db.collection('clients')
+      .where('isActive', '==', true)
+      .get()).size;
+    
+    const clientsWithTelegram = (await db.collection('clients')
+      .where('isActive', '==', true)
+      .where('telegramId', '!=', null)
+      .get()).size;
+    
+    // Статистика записей (сегодня)
+    const todayBookings = await db.collection('bookings')
+      .where('bookingDate', '==', todayStr)
+      .get();
+    
+    // Статистика записей (этот месяц)
+    const monthBookings = await db.collection('bookings')
+      .where('bookingDate', '>=', startOfMonthStr)
+      .get();
+    
+    // Подсчитываем выручку за месяц
+    let monthRevenue = 0;
+    monthBookings.docs.forEach(doc => {
+      const booking = doc.data();
+      const total = booking.total || booking.bookingTotal || 0;
+      monthRevenue += parseFloat(total) || 0;
+    });
+    
+    // Подсчитываем записей на сегодня
+    let todayRevenue = 0;
+    todayBookings.docs.forEach(doc => {
+      const booking = doc.data();
+      const total = booking.total || booking.bookingTotal || 0;
+      todayRevenue += parseFloat(total) || 0;
+    });
+    
+    // Ближайшие записи (сегодня и завтра)
+    const tomorrow = new Date(now);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrowStr = tomorrow.toISOString().split('T')[0];
+    
+    const upcomingBookings = await db.collection('bookings')
+      .where('bookingDate', 'in', [todayStr, tomorrowStr])
+      .orderBy('bookingDate', 'asc')
+      .orderBy('startTime', 'asc')
+      .limit(10)
+      .get();
+    
+    // Формируем сообщение
+    let message = `📊 Статистика VR Lounge\n\n`;
+    
+    message += `👥 Клиенты:\n`;
+    message += `• Всего активных: ${totalClients}\n`;
+    message += `• С Telegram: ${clientsWithTelegram}\n`;
+    message += `• Без Telegram: ${totalClients - clientsWithTelegram}\n\n`;
+    
+    message += `📅 Записи сегодня (${todayStr}):\n`;
+    message += `• Всего: ${todayBookings.size}\n`;
+    message += `• Выручка: ${todayRevenue.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽\n\n`;
+    
+    message += `📆 Записи за месяц:\n`;
+    message += `• Всего: ${monthBookings.size}\n`;
+    message += `• Выручка: ${monthRevenue.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽\n\n`;
+    
+    if (upcomingBookings.size > 0) {
+      message += `⏰ Ближайшие записи:\n`;
+      upcomingBookings.docs.slice(0, 5).forEach((doc, index) => {
+        const booking = doc.data();
+        const date = booking.bookingDate;
+        const time = booking.startTime || '--:--';
+        const client = booking.clientName || 'Без имени';
+        message += `${index + 1}. ${date} ${time} - ${client}\n`;
+      });
+      if (upcomingBookings.size > 5) {
+        message += `... и еще ${upcomingBookings.size - 5} записей\n`;
+      }
+    }
+    
+    await bot.sendMessage(chatId, message, {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: '🔄 Обновить', callback_data: 'refresh_stats' }
+          ]
+        ]
+      }
+    });
+    
+  } catch (error) {
+    console.error('Ошибка получения статистики:', error);
+    await bot.sendMessage(chatId, '❌ Ошибка при получении статистики. Попробуйте позже.');
+  }
+});
+
+// Обработчик кнопки "📢 Рассылка"
+bot.onText(/📢 Рассылка|Рассылка|рассылка/, async (msg) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  
+  // Проверяем, что пользователь - администратор
+  const role = await getUserRole(userId);
+  if (role !== 'admin') {
+    await bot.sendMessage(chatId, '❌ Эта функция доступна только администраторам.');
+    return;
+  }
+  
+  try {
+    console.log(`📢 Админ ${userId} начал рассылку`);
+    
+    // Проверяем количество активных клиентов с Telegram
+    const clientsSnapshot = await db.collection('clients')
+      .where('isActive', '==', true)
+      .where('telegramId', '!=', null)
+      .get();
+    
+    if (clientsSnapshot.empty) {
+      await bot.sendMessage(chatId, '❌ Нет активных клиентов с Telegram для рассылки.');
+      return;
+    }
+    
+    // Отправляем инструкцию
+    await bot.sendMessage(chatId, `📢 Рассылка сообщений клиентам
+
+📊 Будет отправлено ${clientsSnapshot.size} активным клиентам с Telegram.
+
+⚠️ Внимание: Отправьте сообщение, которое хотите разослать.
+
+Напишите текст сообщения для рассылки:`, {
+      reply_markup: {
+        inline_keyboard: [
+          [
+            { text: '❌ Отмена', callback_data: 'cancel_broadcast' }
+          ]
+        ]
+      }
+    });
+    
+    // Сохраняем состояние "ожидание сообщения для рассылки"
+    // Используем временное хранилище (можно улучшить с Redis или базой данных)
+    broadcastPendingState.set(userId, true);
+    
+  } catch (error) {
+    console.error('Ошибка инициализации рассылки:', error);
+    await bot.sendMessage(chatId, '❌ Ошибка при инициализации рассылки.');
+  }
+});
+
+// Хранилище для состояния рассылки (временное, в памяти)
+
 
 // ============================================
 // ФУНКЦИИ УВЕДОМЛЕНИЙ
