@@ -2112,10 +2112,6 @@ checkUpcomingEvents();
 // Настраиваем слушатель новых записей
 setupNewBookingListener();
 
-// ============================================
-// ОБРАБОТКА ОШИБОК
-// ============================================
-
 bot.on('polling_error', (error) => {
   console.error('❌ Ошибка polling:', error.message);
   console.error('📋 Код ошибки:', error.code);
@@ -2210,8 +2206,7 @@ server.listen(PORT, () => {
   console.log(`🌐 HTTP сервер запущен на порту ${PORT}`);
   console.log(`🔗 Health check endpoint: http://localhost:${PORT}/health`);
   console.log(`💡 Используйте этот endpoint для предотвращения засыпания на Render`);
+  console.log('✅ Бот готов к работе!');
 });
-
-console.log('✅ Бот готов к работе!');
 
 
