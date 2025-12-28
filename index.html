@@ -4187,15 +4187,64 @@
       });
 
 
-      // 4. Отображение результатов
+      // 4. Расчет всех расходов за месяц
+      const startOfMonth = new Date(year, month, 1);
+      const endOfMonth = new Date(year, month + 1, 1);
+      
+      // Сумма зарплат всех администраторов
+      let totalAdminSalaries = 0;
+      Object.values(salaryData).forEach(adminData => {
+        totalAdminSalaries += adminData.totalSalary || 0;
+      });
+      
+      // Зарплата ведущей
+      const hostessSalary = hostessData.totalRevenue || 0;
+      
+      // Расходы из "Учёт расходов"
+      let totalOtherExpenses = 0;
+      if (expenses && Array.isArray(expenses)) {
+        totalOtherExpenses = expenses
+          .filter(e => {
+            if (!e.date) return false;
+            let expenseDate;
+            if (e.date instanceof Date) {
+              expenseDate = e.date;
+            } else if (typeof e.date.toDate === 'function') {
+              // Firestore Timestamp
+              expenseDate = e.date.toDate();
+            } else {
+              expenseDate = new Date(e.date);
+            }
+            // Проверяем, что дата валидна
+            if (isNaN(expenseDate.getTime())) return false;
+            return expenseDate >= startOfMonth && expenseDate < endOfMonth;
+          })
+          .reduce((sum, e) => sum + (parseFloat(e.amount) || 0), 0);
+      }
+      
+      // Общая сумма всех расходов
+      const totalExpenses = totalAdminSalaries + hostessSalary + totalOtherExpenses;
+      
+      // Чистая прибыль
+      const netProfit = totalMonthRevenue - totalExpenses;
+
+      // 5. Отображение результатов
       console.log('Final salaryData:', salaryData);
       console.log('Hostess data:', hostessData);
-      renderSalaryResults(salaryData, totalMonthRevenue, hostessData);
+      console.log('Total expenses:', totalExpenses, '(admins:', totalAdminSalaries, ', hostess:', hostessSalary, ', other:', totalOtherExpenses, ')');
+      console.log('Net profit:', netProfit);
+      renderSalaryResults(salaryData, totalMonthRevenue, hostessData, {
+        totalAdminSalaries,
+        hostessSalary,
+        totalOtherExpenses,
+        totalExpenses,
+        netProfit
+      });
     }
 
 
-    function renderSalaryResults(salaryData, totalRevenue, hostessData = { eventsCount: 0, totalRevenue: 0, details: [] }) {
-      console.log('renderSalaryResults called with data:', salaryData, 'totalRevenue:', totalRevenue, 'hostessData:', hostessData);
+    function renderSalaryResults(salaryData, totalRevenue, hostessData = { eventsCount: 0, totalRevenue: 0, details: [] }, profitData = { totalAdminSalaries: 0, hostessSalary: 0, totalOtherExpenses: 0, totalExpenses: 0, netProfit: 0 }) {
+      console.log('renderSalaryResults called with data:', salaryData, 'totalRevenue:', totalRevenue, 'hostessData:', hostessData, 'profitData:', profitData);
       salaryResults.innerHTML = ''; // Очищаем предыдущие результаты
       
       // Карточка общей выручки
@@ -4348,6 +4397,67 @@
       `;
       salaryResults.appendChild(revenueCard);
 
+      // Карточка прибыли (выручка минус все расходы)
+      const profitCard = document.createElement('div');
+      const isProfitPositive = profitData.netProfit >= 0;
+      profitCard.className = `bg-gradient-to-r ${isProfitPositive ? 'from-blue-50 to-cyan-50' : 'from-red-50 to-orange-50'} rounded-2xl shadow-md p-6 border ${isProfitPositive ? 'border-blue-200' : 'border-red-200'}`;
+      
+      profitCard.innerHTML = `
+        <h3 class="text-lg font-semibold mb-4 ${isProfitPositive ? 'text-blue-800' : 'text-red-800'}">Чистая прибыль за месяц</h3>
+        <div class="space-y-4">
+          <!-- Выручка -->
+          <div class="bg-white rounded-lg p-4 border border-gray-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-sm font-medium text-gray-700">Выручка</span>
+              <span class="text-xl font-bold text-green-600">+${totalRevenue.toLocaleString('ru-RU')} ₽</span>
+            </div>
+          </div>
+          
+          <!-- Расходы -->
+          <div class="bg-white rounded-lg p-4 border border-gray-200">
+            <p class="text-sm font-medium text-gray-700 mb-3">Расходы:</p>
+            <div class="space-y-2 ml-4">
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-600">Зарплаты администраторов</span>
+                <span class="text-sm font-semibold text-gray-800">${profitData.totalAdminSalaries.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
+              </div>
+              ${profitData.hostessSalary > 0 ? `
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-600">Зарплата ведущей</span>
+                <span class="text-sm font-semibold text-gray-800">${profitData.hostessSalary.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
+              </div>
+              ` : ''}
+              ${profitData.totalOtherExpenses > 0 ? `
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-600">Прочие расходы</span>
+                <span class="text-sm font-semibold text-gray-800">${profitData.totalOtherExpenses.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
+              </div>
+              ` : ''}
+            </div>
+            <div class="mt-3 pt-3 border-t border-gray-200 flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-700">Всего расходов</span>
+              <span class="text-lg font-bold text-red-600">-${profitData.totalExpenses.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
+            </div>
+          </div>
+          
+          <!-- Итоговая прибыль -->
+          <div class="bg-white rounded-lg p-4 border-2 ${isProfitPositive ? 'border-blue-300' : 'border-red-300'}">
+            <div class="flex items-center justify-between">
+              <span class="text-base font-semibold ${isProfitPositive ? 'text-blue-800' : 'text-red-800'}">Чистая прибыль</span>
+              <span class="text-3xl font-bold ${isProfitPositive ? 'text-blue-600' : 'text-red-600'}">
+                ${profitData.netProfit >= 0 ? '+' : ''}${profitData.netProfit.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽
+              </span>
+            </div>
+            ${profitData.netProfit < 0 ? `
+            <p class="text-xs text-red-600 mt-2">⚠️ Убыток за месяц</p>
+            ` : `
+            <p class="text-xs text-blue-600 mt-2">✓ Прибыль за месяц</p>
+            `}
+          </div>
+        </div>
+      `;
+      salaryResults.appendChild(profitCard);
+
       // Карточки для каждого администратора, кто работал в этом месяце
       admins.forEach(admin => {
         const data = salaryData[admin.id];
@@ -4426,7 +4536,7 @@
       }
 
         // Если нет данных по зарплате ни у одного админа
-        if (salaryResults.children.length <= 1) { // Только карточка выручки
+        if (salaryResults.children.length <= 2) { // Только карточка выручки и карточка прибыли
              const noSalaryText = document.createElement('p');
              noSalaryText.className = 'text-center text-gray-500 italic mt-6';
              noSalaryText.textContent = 'Нет данных о зарплате за выбранный месяц.';
