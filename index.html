@@ -774,7 +774,7 @@
   <!-- Основной интерфейс -->
   <header class="bg-white/50 shadow-md sticky top-0 z-30 backdrop-blur-md" id="mainHeader">
     <!-- Верхний блок шапки (скрывается при скролле) -->
-    <div class="top-header-block transition-all duration-300" id="headerTop">
+    <div class="top-header-block transition-all duration-300" id="headerTop" style="will-change: height;">
       <div class="max-w-7xl mx-auto px-4 md:px-6 py-3">
         <div class="flex flex-row items-center justify-between">
           <h1 class="text-xl md:text-2xl font-semibold tracking-tight text-gray-900 select-none">VR Lounge - Управление</h1>
@@ -787,9 +787,9 @@
     </div>
     
           <!-- Нижний блок с навигацией (всегда виден) -->
-      <div class="bottom-header-block bg-white/80 border-t border-gray-100">
+      <div class="bottom-header-block bg-white/80 border-t border-gray-100" style="min-height: 53px;">
         <div class="max-w-7xl mx-auto px-4 md:px-6">
-          <nav class="nav-links flex items-center space-x-2 md:space-x-6 py-2 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none;">
+          <nav class="nav-links flex items-center space-x-2 md:space-x-6 py-2 overflow-x-auto whitespace-nowrap" style="scrollbar-width: none; -ms-overflow-style: none; min-height: 37px;">
             <a href="#" class="nav-link active whitespace-nowrap" onclick="return showBookingsSection()">
               <i class="fas fa-calendar-alt mr-2"></i>Записи
             </a>
@@ -805,7 +805,7 @@
             <a href="#" class="nav-link whitespace-nowrap" onclick="return showWidgetsSection()">
               <i class="fas fa-share-alt mr-2"></i>Виджеты
             </a>
-            <a href="#" class="nav-link whitespace-nowrap" id="expensesNavLink" onclick="return showExpensesSection()">
+            <a href="#" class="nav-link whitespace-nowrap hidden" id="expensesNavLink" onclick="return showExpensesSection()">
               <i class="fas fa-receipt mr-2"></i>Расходы
             </a>
             <a href="#" class="nav-link whitespace-nowrap" id="clientsNavLink" onclick="return showClientsSection()">
@@ -895,12 +895,18 @@
       color: #4a5568;
       font-size: 0.875rem;
       font-weight: 500;
-      transition: all 0.2s;
+      transition: color 0.2s, background-color 0.2s;
       padding: 0.5rem 0.75rem;
       border-radius: 0.5rem;
       display: flex;
       align-items: center;
       min-width: max-content;
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .nav-link.hidden {
+      display: none;
     }
     
     .nav-link:hover {
@@ -940,7 +946,12 @@
       
       /* Анимация для плавного скрытия/появления */
       #headerTop {
-        transition: all 0.3s ease-in-out;
+        transition: height 0.3s ease-in-out, padding 0.3s ease-in-out, margin 0.3s ease-in-out;
+      }
+      
+      /* Фиксируем высоту шапки для предотвращения подёргивания */
+      #mainHeader {
+        contain: layout style paint;
       }
     }
   </style>
@@ -6774,23 +6785,7 @@ window.deleteExpense = async function(id) {
   }
 }
 
-// Добавляем пункт меню "Расходы" только для админов после авторизации
-function addExpensesNavLink() {
-  try {
-    const navLinks = document.querySelector('.nav-links');
-    if (!navLinks || document.getElementById('expensesNavLink')) return;
-    
-    const expensesLink = document.createElement('a');
-    expensesLink.href = '#';
-    expensesLink.id = 'expensesNavLink';
-    expensesLink.className = 'nav-link';
-    expensesLink.innerHTML = '<i class="fa-solid fa-receipt mr-2"></i>Расходы';
-    expensesLink.onclick = showExpensesSection;
-    navLinks.appendChild(expensesLink);
-  } catch (error) {
-    console.error('Ошибка при добавлении ссылки на расходы:', error);
-  }
-}
+// Функция больше не нужна - элементы уже есть в HTML
 
 // === Функции навигации ===
 window.showBookingsSection = function() {
@@ -6890,7 +6885,7 @@ onAuthStateChanged(auth, async (user) => {
       
       const expensesLink = document.getElementById('expensesNavLink');
       if (expensesLink) {
-        expensesLink.style.display = '';
+        expensesLink.classList.remove('hidden');
         expensesLink.classList.remove('disabled');
       }
       
@@ -6916,7 +6911,7 @@ onAuthStateChanged(auth, async (user) => {
     // Скрываем ссылку на расходы и секцию расходов
     const expensesLink = document.getElementById('expensesNavLink');
     if (expensesLink) {
-      expensesLink.style.display = 'none';
+      expensesLink.classList.add('hidden');
       expensesLink.classList.add('disabled');
     }
     document.getElementById('expensesSection').classList.add('hidden');
