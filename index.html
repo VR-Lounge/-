@@ -3866,7 +3866,7 @@
 
 
     // === Логика Расчета Зарплаты ===
-    function calculateSalaries() {
+    async function calculateSalaries() {
       console.log('calculateSalaries called. isAdmin:', isAdmin);
       
       if (!isAdmin) {
@@ -4201,25 +4201,47 @@
       const hostessSalary = hostessData.totalRevenue || 0;
       
       // Расходы из "Учёт расходов"
+      // ВАЖНО: Нужно получить ВСЕ расходы за выбранный месяц, независимо от текущего фильтра
+      // Используем ту же логику, что и в updateStatistics(), но с правильным месяцем
       let totalOtherExpenses = 0;
-      if (expenses && Array.isArray(expenses)) {
-        totalOtherExpenses = expenses
-          .filter(e => {
-            if (!e.date) return false;
-            let expenseDate;
-            if (e.date instanceof Date) {
-              expenseDate = e.date;
-            } else if (typeof e.date.toDate === 'function') {
-              // Firestore Timestamp
-              expenseDate = e.date.toDate();
-            } else {
-              expenseDate = new Date(e.date);
-            }
-            // Проверяем, что дата валидна
-            if (isNaN(expenseDate.getTime())) return false;
-            return expenseDate >= startOfMonth && expenseDate < endOfMonth;
-          })
-          .reduce((sum, e) => sum + (parseFloat(e.amount) || 0), 0);
+      
+      // Получаем все расходы напрямую из Firestore за нужный месяц
+      try {
+        const expensesCollection = collection(db, 'expenses');
+        const expensesQuery = query(
+          expensesCollection,
+          where('date', '>=', startOfMonth),
+          where('date', '<', endOfMonth)
+        );
+        
+        // Выполняем запрос для получения расходов за нужный месяц
+        const expensesSnapshot = await getDocs(expensesQuery);
+        totalOtherExpenses = expensesSnapshot.docs.reduce((sum, doc) => {
+          const data = doc.data();
+          const amount = parseFloat(data.amount) || 0;
+          return sum + amount;
+        }, 0);
+        console.log(`Загружено расходов за месяц: ${expensesSnapshot.docs.length}, сумма: ${totalOtherExpenses.toLocaleString('ru-RU')} ₽`);
+      } catch (error) {
+        console.error('Ошибка при загрузке расходов для расчета прибыли:', error);
+        // Fallback: используем существующую переменную expenses, если запрос не удался
+        if (expenses && Array.isArray(expenses)) {
+          totalOtherExpenses = expenses
+            .filter(e => {
+              if (!e.date) return false;
+              let expenseDate;
+              if (e.date instanceof Date) {
+                expenseDate = e.date;
+              } else if (typeof e.date.toDate === 'function') {
+                expenseDate = e.date.toDate();
+              } else {
+                expenseDate = new Date(e.date);
+              }
+              if (isNaN(expenseDate.getTime())) return false;
+              return expenseDate >= startOfMonth && expenseDate < endOfMonth;
+            })
+            .reduce((sum, e) => sum + (parseFloat(e.amount) || 0), 0);
+        }
       }
       
       // Общая сумма всех расходов
