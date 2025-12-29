@@ -556,6 +556,113 @@
           justify-content: center;
       }
 
+      /* Фиксируем модальное окно на мобильных, чтобы элементы не "гуляли" */
+      #bookingModal {
+        padding: 0.75rem;
+        align-items: flex-start;
+        overflow-y: auto;
+      }
+      
+      #bookingModal > div {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+      
+      /* Фиксируем заголовок модального окна */
+      #bookingModal h3 {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      
+      /* Выравниваем все элементы формы на мобильных */
+      #bookingForm {
+        width: 100%;
+      }
+      
+      #bookingForm > div {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      
+      #bookingForm input,
+      #bookingForm select,
+      #bookingForm textarea {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      /* Фиксируем контейнер услуг */
+      #servicesContainer {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      
+      /* Выравниваем grid-элементы в модальном окне */
+      #bookingForm .grid {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+        grid-template-columns: 1fr !important; /* Одна колонка на мобильных */
+      }
+      
+      #bookingForm .grid.grid-cols-2 {
+        grid-template-columns: 1fr !important; /* Одна колонка на мобильных */
+      }
+      
+      #bookingForm .grid.grid-cols-3 {
+        grid-template-columns: 1fr !important; /* Одна колонка на мобильных */
+      }
+      
+      #bookingForm .grid > div {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      /* Выравниваем кнопки в модальном окне */
+      #bookingForm button[type="submit"],
+      #bookingForm button[type="button"] {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      
+      /* Выравниваем flex-контейнеры */
+      #bookingForm .flex {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      
+      /* Кнопки в одну колонку на мобильных */
+      #bookingForm .flex.space-x-4 {
+        flex-direction: column;
+        gap: 0.75rem;
+        space-x: 0;
+      }
+      
+      #bookingForm .flex.space-x-4 > button {
+        width: 100%;
+        flex-grow: 0;
+      }
+      
+      /* Фиксируем label */
+      #bookingForm label {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
       /* Адаптивные стили для виджетов на мобильных */
       .grid.lg\\:grid-cols-3 {
         grid-template-columns: 1fr; /* Один столбец на мобильных */
@@ -1380,8 +1487,8 @@
   </div>
 
   <!-- Модальное окно бронирования клиента -->
-  <div id="bookingModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50">
-    <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200">
+  <div id="bookingModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-4 md:p-6 hidden z-50">
+    <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-4 md:p-8 relative ring-1 ring-gray-200 mx-auto">
       <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
       <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="modalTitle">Добавить запись клиента</h3>
       <form id="bookingForm" class="space-y-6">
