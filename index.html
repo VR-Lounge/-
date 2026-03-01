@@ -4883,7 +4883,7 @@
                    // Показать детализацию выручки
                    detailsDiv.innerHTML = ''; // Очистить
 
-                   // 1. Пересчитываем выручку по дням напрямую из bookings
+                   // 1. Пересчитываем выручку по дням напрямую из bookings (с разбивкой наличные/перевод)
                    const revenueByDay = {};
                    const year = salaryViewMonth.getFullYear();
                    const month = salaryViewMonth.getMonth();
@@ -4893,7 +4893,7 @@
                        if (typeof booking.bookingDate === 'string' && booking.bookingDate.startsWith(yearMonthStr)) {
                             const dateStr = booking.bookingDate;
                             if (!revenueByDay[dateStr]) {
-                                revenueByDay[dateStr] = 0;
+                                revenueByDay[dateStr] = { total: 0, cash: 0, transfer: 0 };
                             }
 
                             // Расчет итоговой суммы бронирования ПОСЛЕ скидки (аналогично calculateRevenueStats)
@@ -4945,27 +4945,40 @@
                               finalBookingAmount = Math.max(0, bookingTotalAmount - discountAmount);
                             }
 
-                            revenueByDay[dateStr] += finalBookingAmount; // Суммируем итоговую сумму
+                            const paymentMethod = booking.finalPaymentMethod || 'cash';
+                            revenueByDay[dateStr].total += finalBookingAmount;
+                            if (paymentMethod === 'transfer') {
+                                revenueByDay[dateStr].transfer += finalBookingAmount;
+                            } else {
+                                revenueByDay[dateStr].cash += finalBookingAmount;
+                            }
                        }
                    });
 
-                   // 2. Группируем по неделям и считаем итоги
-                   const revenueByWeek = {}; // { 'YYYY-MM-DD_пн': { days: [{date: '...', amount: N}, ...], total: T } }
+                   // 2. Группируем по неделям и считаем итоги (в т.ч. наличные/перевод)
+                   const revenueByWeek = {};
                    const sortedDays = Object.keys(revenueByDay).sort();
 
                    sortedDays.forEach(dateStr => {
-                       const amount = revenueByDay[dateStr];
-                       if (amount <= 0) return; // Пропускаем дни без выручки
+                       const dayData = revenueByDay[dateStr];
+                       if (dayData.total <= 0) return;
 
                        const dateObj = new Date(dateStr + 'T00:00:00');
-                       const weekRange = getWeekRange(dateObj); // Получаем Пн и Вс недели
-                       const mondayStr = formatDateSafe(weekRange.start); // Ключ - дата понедельника
+                       const weekRange = getWeekRange(dateObj);
+                       const mondayStr = formatDateSafe(weekRange.start);
 
                        if (!revenueByWeek[mondayStr]) {
-                           revenueByWeek[mondayStr] = { days: [], total: 0 };
+                           revenueByWeek[mondayStr] = { days: [], total: 0, cash: 0, transfer: 0 };
                        }
-                       revenueByWeek[mondayStr].days.push({ date: dateStr, amount: amount });
-                       revenueByWeek[mondayStr].total += amount;
+                       revenueByWeek[mondayStr].days.push({
+                           date: dateStr,
+                           amount: dayData.total,
+                           cash: dayData.cash,
+                           transfer: dayData.transfer
+                       });
+                       revenueByWeek[mondayStr].total += dayData.total;
+                       revenueByWeek[mondayStr].cash += dayData.cash;
+                       revenueByWeek[mondayStr].transfer += dayData.transfer;
                    });
 
                    // 3. Отображаем сгруппированные данные
@@ -4975,28 +4988,36 @@
                         sortedWeeks.forEach(mondayStr => {
                             const weekData = revenueByWeek[mondayStr];
 
-                            // Отображаем дни недели
+                            // Отображаем дни недели (с разбивкой наличные/перевод)
                             weekData.days.forEach(dayData => {
                                 const detailItem = document.createElement('div');
-                                detailItem.className = 'text-sm flex justify-between items-center text-green-800 py-0.5'; // Добавлен вертикальный отступ
+                                detailItem.className = 'text-sm flex justify-between items-start text-green-800 py-1';
                                 const detailDate = new Date(dayData.date + 'T00:00:00');
-                                // Формат даты с днем недели
                                 const formattedDate = detailDate.toLocaleDateString('ru-RU', { day: '2-digit', month: 'short', weekday: 'short' });
+                                const methodLine = (dayData.cash > 0 || dayData.transfer > 0)
+                                    ? `<span class="text-xs text-gray-500 block mt-0.5">Наличные: ${dayData.cash.toLocaleString('ru-RU')} ₽ · Перевод: ${dayData.transfer.toLocaleString('ru-RU')} ₽</span>`
+                                    : '';
                                 detailItem.innerHTML = `
-                                    <span>${formattedDate}</span> <!-- Убрано двоеточие -->
-                                    <span class="font-medium">${dayData.amount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
+                                    <span>${formattedDate}</span>
+                                    <div class="text-right">
+                                        <span class="font-medium">${dayData.amount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</span>
+                                        ${methodLine}
+                                    </div>
                                 `;
                                 detailsDiv.appendChild(detailItem);
                             });
 
-                            // Добавляем разделитель и итог недели
+                            // Добавляем разделитель и итог недели (с наличные/перевод)
                             const hr = document.createElement('hr');
-                            hr.className = 'border-t border-green-200 my-1.5'; // Чуть толще и с отступами
+                            hr.className = 'border-t border-green-200 my-1.5';
                             detailsDiv.appendChild(hr);
 
                             const weekTotalDiv = document.createElement('div');
-                            weekTotalDiv.className = 'text-sm font-semibold text-right text-green-700 pr-1 mb-3'; // Отступ снизу
-                            weekTotalDiv.innerHTML = `Итого за неделю: ${weekData.total.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽`;
+                            weekTotalDiv.className = 'text-sm font-semibold text-right text-green-700 pr-1 mb-3';
+                            weekTotalDiv.innerHTML = `
+                                <div>Итого за неделю: ${weekData.total.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
+                                <div class="text-xs font-normal text-gray-600 mt-0.5">Наличные: ${weekData.cash.toLocaleString('ru-RU')} ₽ · Перевод: ${weekData.transfer.toLocaleString('ru-RU')} ₽</div>
+                            `;
                             detailsDiv.appendChild(weekTotalDiv);
                         });
                    } else {
