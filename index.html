@@ -558,17 +558,25 @@
 
       /* Фиксируем модальное окно на мобильных, чтобы элементы не "гуляли" */
       #bookingModal {
-        padding: 0.75rem;
+        padding: 0;
         align-items: flex-start;
         overflow-y: auto;
+        height: 100vh;
+        max-height: 100vh;
       }
       
       #bookingModal > div {
         width: 100%;
         max-width: 100%;
-        margin: 0 auto;
-        padding: 1rem;
+        margin: 0;
+        padding: 1rem 0.75rem;
         box-sizing: border-box;
+        height: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
       }
       
       /* Фиксируем заголовок модального окна */
@@ -579,17 +587,27 @@
         margin-right: 0;
         padding-left: 0;
         padding-right: 0;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
       }
       
       /* Выравниваем все элементы формы на мобильных */
       #bookingForm {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        overflow-y: auto;
+        gap: 0.75rem;
+        padding-bottom: 1rem;
+        -webkit-overflow-scrolling: touch;
       }
       
       #bookingForm > div {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+        flex-shrink: 0;
       }
       
       #bookingForm input,
@@ -597,6 +615,19 @@
       #bookingForm textarea {
         width: 100%;
         box-sizing: border-box;
+        padding: 0.625rem 1rem;
+        font-size: 1rem;
+      }
+      
+      #bookingForm textarea {
+        min-height: 4rem;
+        resize: vertical;
+      }
+      
+      /* Уменьшаем отступы label на мобильных */
+      #bookingForm label {
+        margin-bottom: 0.5rem;
+        font-size: 0.875rem;
       }
       
       /* Фиксируем контейнер услуг */
@@ -605,6 +636,24 @@
         box-sizing: border-box;
         margin-left: 0;
         margin-right: 0;
+        max-height: 250px;
+        padding: 0.5rem;
+        gap: 0.5rem;
+      }
+      
+      /* Уменьшаем размеры кнопок услуг на мобильных */
+      .service-tag {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.8125rem;
+      }
+      
+      .service-tag-line1 {
+        font-size: 0.8125rem;
+        margin-bottom: 0.25rem;
+      }
+      
+      .service-tag-price {
+        font-size: 0.75rem;
       }
       
       /* Выравниваем grid-элементы в модальном окне */
@@ -614,14 +663,17 @@
         margin-left: 0;
         margin-right: 0;
         grid-template-columns: 1fr !important; /* Одна колонка на мобильных */
+        gap: 0.75rem;
       }
       
       #bookingForm .grid.grid-cols-2 {
         grid-template-columns: 1fr !important; /* Одна колонка на мобильных */
+        gap: 0.75rem;
       }
       
       #bookingForm .grid.grid-cols-3 {
         grid-template-columns: 1fr !important; /* Одна колонка на мобильных */
+        gap: 0.75rem;
       }
       
       #bookingForm .grid > div {
@@ -649,11 +701,23 @@
         flex-direction: column;
         gap: 0.75rem;
         space-x: 0;
+        margin-top: 0.5rem;
       }
       
       #bookingForm .flex.space-x-4 > button {
         width: 100%;
         flex-grow: 0;
+        padding: 0.75rem;
+        font-size: 0.9375rem;
+      }
+      
+      /* Уменьшаем отступы в flex-контейнерах */
+      #bookingForm .flex.items-center {
+        gap: 0.5rem;
+      }
+      
+      #bookingForm .flex.items-center.space-x-2 {
+        gap: 0.5rem;
       }
       
       /* Фиксируем label */
@@ -661,6 +725,20 @@
         display: block;
         width: 100%;
         box-sizing: border-box;
+      }
+      
+      /* Уменьшаем отступы в space-y контейнерах */
+      #bookingForm .space-y-4 {
+        gap: 0.75rem;
+      }
+      
+      /* Кнопка закрытия модального окна */
+      #closeModal {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
       }
 
       /* Адаптивные стили для виджетов на мобильных */
@@ -1490,8 +1568,8 @@
   <div id="bookingModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-4 md:p-6 hidden z-50">
     <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-4 md:p-8 relative ring-1 ring-gray-200 mx-auto">
       <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-3xl font-thin leading-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-full w-10 h-10 flex items-center justify-center" aria-label="Закрыть модальное окно">&times;</button>
-      <h3 class="text-2xl font-semibold mb-6 text-center text-gray-900 tracking-tight" id="modalTitle">Добавить запись клиента</h3>
-      <form id="bookingForm" class="space-y-6">
+      <h3 class="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-center text-gray-900 tracking-tight" id="modalTitle">Добавить запись клиента</h3>
+      <form id="bookingForm" class="space-y-4 md:space-y-6">
         <input type="hidden" id="bookingId" name="bookingId" />
         <div>
           <label for="clientName" class="block text-gray-900 font-semibold mb-2">Имя клиента</label>
@@ -1670,11 +1748,20 @@
           </div>
         </div>
 
-        <!-- Итоговая стоимость (остается ниже) -->
-        <div>
-          <label class="block text-gray-900 font-semibold mb-2">Итоговая стоимость</label>
-          <div class="flex items-center">
-            <input type="text" id="finalAmount" readonly class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 bg-gray-50 font-semibold" value="0 ₽">
+        <!-- Итоговая стоимость и метод оплаты -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Итоговая стоимость</label>
+            <div class="flex items-center">
+              <input type="text" id="finalAmount" readonly class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 bg-gray-50 font-semibold" value="0 ₽">
+            </div>
+          </div>
+          <div>
+            <label class="block text-gray-900 font-semibold mb-2">Метод оплаты</label>
+            <select id="finalPaymentMethod" class="w-full rounded-3xl border border-gray-300 px-5 py-3 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none transition">
+              <option value="cash">Наличные</option>
+              <option value="transfer">Перевод</option>
+            </select>
           </div>
         </div>
 
@@ -3398,6 +3485,7 @@
       deleteBookingBtn.classList.add('hidden'); // Скрыть кнопку удаления
       bookingForm.reset(); // Сбросить форму
       clientPhoneInput.value = '+7 ('; // Установить маску по умолчанию
+      document.getElementById('finalPaymentMethod').value = 'cash'; // Метод оплаты по умолчанию
 
       // Установить дату по умолчанию (сегодня или выбранная дата)
       // Используем безопасное форматирование
@@ -3474,6 +3562,9 @@
         document.getElementById('finalPayAmountTransfer').value = '';
         document.getElementById('finalPayDateTransfer').value = '';
       }
+
+      // Метод оплаты итоговой суммы (наличные/перевод)
+      document.getElementById('finalPaymentMethod').value = booking.finalPaymentMethod || 'cash';
     }
 
     async function handleBookingFormSubmit(e) {
@@ -3508,7 +3599,8 @@
         finalPaymentTransfer: { // Доплата переводом
           amount: parseFloat(document.getElementById('finalPayAmountTransfer').value) || 0,
           date: document.getElementById('finalPayDateTransfer').value || ''
-        }
+        },
+        finalPaymentMethod: document.getElementById('finalPaymentMethod').value || 'cash' // Источник поступления: наличные или перевод
       };
 
         // --- Валидация ---
@@ -4397,7 +4489,9 @@
       
       let actualRevenue = 0;
       let plannedRevenue = 0;
-      
+      let actualRevenueCash = 0;
+      let actualRevenueTransfer = 0;
+
       // Группируем выручку по дням для отображения
       const revenueByDay = {};
       
@@ -4459,20 +4553,30 @@
               }
               
               // Определяем, фактическая это выручка или планируемая
+              const paymentMethod = booking.finalPaymentMethod || 'cash';
               if (bookingDate <= today) {
                 actualRevenue += bookingRevenue;
+                if (paymentMethod === 'cash') actualRevenueCash += bookingRevenue;
+                else actualRevenueTransfer += bookingRevenue;
               } else {
                 plannedRevenue += bookingRevenue;
               }
-              
-              // Сохраняем информацию о дне для детализации
+
+              // Сохраняем информацию о дне для детализации (в т.ч. по методам оплаты)
               if (!revenueByDay[booking.bookingDate]) {
                 revenueByDay[booking.bookingDate] = {
                   revenue: bookingRevenue,
+                  cashRevenue: paymentMethod === 'cash' ? bookingRevenue : 0,
+                  transferRevenue: paymentMethod === 'transfer' ? bookingRevenue : 0,
                   isPlanned: bookingDate > today
                 };
               } else {
                 revenueByDay[booking.bookingDate].revenue += bookingRevenue;
+                if (paymentMethod === 'cash') {
+                  revenueByDay[booking.bookingDate].cashRevenue += bookingRevenue;
+                } else {
+                  revenueByDay[booking.bookingDate].transferRevenue += bookingRevenue;
+                }
               }
             }
           } catch (e) {
@@ -4493,6 +4597,10 @@
               <p class="text-sm text-gray-600">Фактическая выручка</p>
               <p class="text-xl font-semibold text-green-700">${actualRevenue.toLocaleString('ru-RU')} ₽</p>
               <p class="text-xs text-gray-500 mt-1">Оказанные услуги</p>
+              ${actualRevenue > 0 ? `
+              <p class="text-xs text-gray-600 mt-2">Наличные: ${actualRevenueCash.toLocaleString('ru-RU')} ₽</p>
+              <p class="text-xs text-gray-600">Перевод: ${actualRevenueTransfer.toLocaleString('ru-RU')} ₽</p>
+              ` : ''}
             </div>
             <div>
               <p class="text-sm text-gray-600">Планируемая выручка</p>
@@ -4505,7 +4613,11 @@
             <i class="fa-solid fa-list mr-1.5"></i> Показать детализацию
         </button>
         <div id="revenue-details" class="hidden mt-4 space-y-2 border-t border-green-100 pt-3">
-          ${Object.entries(revenueByDay).sort().map(([date, data]) => `
+          ${Object.entries(revenueByDay).sort().map(([date, data]) => {
+            const methodLabel = (data.cashRevenue != null && data.transferRevenue != null)
+              ? `<span class="text-xs text-gray-500 block mt-0.5">Наличные: ${data.cashRevenue.toLocaleString('ru-RU')} ₽ · Перевод: ${data.transferRevenue.toLocaleString('ru-RU')} ₽</span>`
+              : '';
+            return `
             <div class="flex justify-between items-center py-2">
               <div class="flex items-center">
                 <span class="font-medium">${new Date(date + 'T00:00:00').toLocaleDateString('ru-RU', {
@@ -4518,11 +4630,14 @@
                   '<span class="ml-2 px-2 py-0.5 text-xs bg-green-100 text-green-800 rounded-full">Факт</span>'
                 }
               </div>
-              <span class="font-medium ${data.isPlanned ? 'text-blue-600' : 'text-green-600'}">
-                ${data.revenue.toLocaleString('ru-RU')} ₽
-              </span>
+              <div class="text-right">
+                <span class="font-medium ${data.isPlanned ? 'text-blue-600' : 'text-green-600'}">
+                  ${data.revenue.toLocaleString('ru-RU')} ₽
+                </span>
+                ${methodLabel}
+              </div>
             </div>
-          `).join('')}
+          `}).join('')}
           <div class="pt-3 mt-3 border-t border-green-100 grid grid-cols-2 gap-4 text-sm">
             <div class="flex items-center">
               <span class="w-3 h-3 rounded-full bg-green-100 mr-2"></span>
@@ -6021,7 +6136,7 @@
                   <div class="grid grid-cols-3 gap-x-4 text-sm mt-3 pt-3 border-t border-gray-100">
                     <div><span class="font-medium">Сумма:</span> ${totalAmount.toLocaleString('ru-RU')} ₽</div>
                     <div><span class="font-medium">Скидка:</span> ${discountText}</div>
-                    <div><span class="font-medium">Итоговая:</span> ${finalAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽</div>
+                    <div><span class="font-medium">Итоговая:</span> ${finalAmount.toLocaleString('ru-RU', { maximumFractionDigits: 0 })} ₽ (${(b.finalPaymentMethod === 'transfer' ? 'Перевод' : 'Наличные')})</div>
                   </div>
                   <div class="text-xs text-gray-600 space-y-1 mt-1">
                     <div><span class="font-medium">Предоплата:</span> ${b.prepayment && b.prepayment.amount ? `${b.prepayment.amount.toLocaleString('ru-RU')} ₽ (${b.prepayment.method === 'cash' ? 'нал' : 'перевод'})${b.prepayment.date ? ' от ' + new Date(b.prepayment.date).toLocaleDateString('ru-RU', {day: '2-digit', month: 'short'}) : ''}` : '-'}</div>
