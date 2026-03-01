@@ -645,7 +645,7 @@
         overflow-y: auto;
         overflow-x: hidden;
         gap: 0.75rem;
-        padding-bottom: 1rem;
+        padding: 4px 4px 1rem 4px; /* 4px — запас для кольца фокуса, чтобы не обрезалось */
         -webkit-overflow-scrolling: touch;
         box-sizing: border-box;
       }
@@ -659,6 +659,7 @@
         flex-shrink: 0;
         overflow: hidden;
         box-sizing: border-box;
+        padding: 4px; /* запас для кольца фокуса (3px), чтобы не обрезалось белым полем */
       }
       
       #bookingForm input,
