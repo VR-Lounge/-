@@ -410,6 +410,42 @@
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
+    /* Фиксация модалки и полей в Safari iOS: только вертикальный скролл, без горизонтального сдвига */
+    #bookingModal {
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-y;
+      max-width: 100vw;
+      left: 0;
+      right: 0;
+    }
+    #bookingModal > div {
+      min-width: 0;
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
+    #bookingForm {
+      min-width: 0;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    #bookingForm input,
+    #bookingForm select,
+    #bookingForm textarea {
+      max-width: 100%;
+      min-width: 0;
+    }
+    #bookingForm > div,
+    #bookingForm .flex,
+    #bookingForm .grid {
+      min-width: 0;
+      max-width: 100%;
+    }
+    /* При открытой модалке запрещаем горизонтальный скролл страницы (Safari iOS) */
+    body.modal-open {
+      overflow-x: hidden;
+    }
     button:focus {
       outline: none;
       box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.4);
@@ -556,18 +592,25 @@
           justify-content: center;
       }
 
-      /* Фиксируем модальное окно на мобильных, чтобы элементы не "гуляли" */
+      /* Фиксируем модальное окно на мобильных, чтобы элементы не "гуляли" (в т.ч. Safari iOS) */
       #bookingModal {
         padding: 0;
         align-items: flex-start;
         overflow-y: auto;
+        overflow-x: hidden;
         height: 100vh;
         max-height: 100vh;
+        width: 100%;
+        max-width: 100vw;
+        left: 0;
+        right: 0;
+        touch-action: pan-y;
       }
       
       #bookingModal > div {
         width: 100%;
         max-width: 100%;
+        min-width: 0;
         margin: 0;
         padding: 1rem 0.75rem;
         box-sizing: border-box;
@@ -577,6 +620,7 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        overflow-x: hidden;
       }
       
       /* Фиксируем заголовок модального окна */
@@ -591,32 +635,48 @@
         margin-bottom: 1rem;
       }
       
-      /* Выравниваем все элементы формы на мобильных */
+      /* Выравниваем все элементы формы на мобильных (Safari iOS: не выезжают за край) */
       #bookingForm {
         width: 100%;
+        max-width: 100%;
+        min-width: 0;
         display: flex;
         flex-direction: column;
         flex: 1;
         overflow-y: auto;
+        overflow-x: hidden;
         gap: 0.75rem;
         padding-bottom: 1rem;
         -webkit-overflow-scrolling: touch;
+        box-sizing: border-box;
       }
       
       #bookingForm > div {
         width: 100%;
+        max-width: 100%;
+        min-width: 0;
         margin-left: 0;
         margin-right: 0;
         flex-shrink: 0;
+        overflow: hidden;
+        box-sizing: border-box;
       }
       
       #bookingForm input,
       #bookingForm select,
       #bookingForm textarea {
         width: 100%;
+        max-width: 100%;
+        min-width: 0;
         box-sizing: border-box;
         padding: 0.625rem 1rem;
         font-size: 1rem;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      #bookingForm input[type="date"],
+      #bookingForm input[type="time"] {
+        max-width: 100%;
       }
       
       #bookingForm textarea {
@@ -690,10 +750,16 @@
         margin-right: 0;
       }
       
-      /* Выравниваем flex-контейнеры */
+      /* Выравниваем flex-контейнеры (Safari: дочерние не выезжают) */
       #bookingForm .flex {
         width: 100%;
+        max-width: 100%;
+        min-width: 0;
         box-sizing: border-box;
+      }
+      #bookingForm .flex > * {
+        min-width: 0;
+        max-width: 100%;
       }
       
       /* Кнопки в одну колонку на мобильных */
@@ -3498,6 +3564,7 @@
 
 
       bookingModal.classList.remove('hidden');
+      document.body.classList.add('modal-open'); // Блокируем горизонтальный скролл (Safari iOS)
       bookingForm.clientName.focus(); // Фокус на имени клиента
       // Создаем новый объект Date для selectedDate, чтобы избежать изменения исходного объекта date
       selectedDate = date ? new Date(date.getFullYear(), date.getMonth(), date.getDate()) : null;
@@ -3521,6 +3588,7 @@
       modalTitle.textContent = 'Карточка клиента'; // Изменено
       deleteBookingBtn.classList.remove('hidden'); // Показать кнопку удаления
       bookingModal.classList.remove('hidden');
+      document.body.classList.add('modal-open'); // Блокируем горизонтальный скролл (Safari iOS)
 
       // Заполнить форму данными из бронирования
       bookingForm.clientName.value = booking.clientName;
@@ -3642,6 +3710,7 @@
                 await addDoc(collection(db, "bookings"), bookingData);
         }
         bookingModal.classList.add('hidden');
+        document.body.classList.remove('modal-open');
       } catch (error) {
             console.error("Ошибка сохранения бронирования:", error);
             alert("Не удалось сохранить запись. Пожалуйста, попробуйте еще раз.");
@@ -5244,13 +5313,13 @@
 
       // --- Модальное окно бронирования клиента ---
       bookingForm.addEventListener('submit', handleBookingFormSubmit);
-      closeModalBtn.addEventListener('click', () => bookingModal.classList.add('hidden'));
+      closeModalBtn.addEventListener('click', () => { bookingModal.classList.add('hidden'); document.body.classList.remove('modal-open'); });
       deleteBookingBtn.addEventListener('click', () => {
          const id = bookingIdInput.value;
          const booking = bookings.find(b => b.id === id);
          if (id && booking && confirm(`Вы уверены, что хотите удалить запись для "${booking.clientName}"?`)) {
              deleteBooking(id);
-             bookingModal.classList.add('hidden'); // Закрыть окно после удаления
+             bookingModal.classList.add('hidden'); document.body.classList.remove('modal-open'); // Закрыть окно после удаления
          }
       });
 
@@ -5332,7 +5401,7 @@
                    authContainer.classList.add('hidden');
                }
                if (!bookingModal.classList.contains('hidden')) {
-        bookingModal.classList.add('hidden');
+        bookingModal.classList.add('hidden'); document.body.classList.remove('modal-open');
                }
                if (!assignAdminModal.classList.contains('hidden')) {
                    assignAdminModal.classList.add('hidden');
