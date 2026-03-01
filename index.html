@@ -446,15 +446,14 @@
     body.modal-open {
       overflow-x: hidden;
     }
+    /* Не меняем border-radius при фокусе — остаётся как у элемента (rounded-3xl и т.д.) */
     button:focus {
       outline: none;
       box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.4);
-      border-radius: 12px;
     }
     input:focus, select:focus, textarea:focus {
       outline: none;
       box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.4);
-      border-radius: 12px;
       border-color: #007aff;
     }
     .calendar-day-cell { /* Добавлен класс для ячеек календаря админов */
