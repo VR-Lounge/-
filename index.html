@@ -2232,7 +2232,7 @@
               <input 
                 type="text" 
                 id="clientSearch" 
-                placeholder="Поиск по имени, телефону..." 
+                placeholder="Поиск по имени, телефону, VK, Max..." 
                 class="w-full rounded-2xl border border-gray-300 px-5 py-3 pl-10 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none transition"
               />
               <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
@@ -2261,6 +2261,10 @@
               <th class="text-left py-3 px-4 font-semibold text-gray-700">Имя</th>
               <th class="text-left py-3 px-4 font-semibold text-gray-700">Телефон</th>
               <th class="text-left py-3 px-4 font-semibold text-gray-700">Telegram</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Дата рождения</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">VK</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Max</th>
+              <th class="text-left py-3 px-4 font-semibold text-gray-700">Комментарий</th>
               <th class="text-center py-3 px-4 font-semibold text-gray-700">Записей</th>
               <th class="text-left py-3 px-4 font-semibold text-gray-700">Последняя запись</th>
               <th class="text-left py-3 px-4 font-semibold text-gray-700">Общая сумма</th>
@@ -3053,6 +3057,41 @@
     // === Логика Базы Клиентов ===
     let clientsData = []; // Массив для хранения данных клиентов
 
+    function formatDateOfBirth(dateStr) {
+      if (!dateStr) return '-';
+      const date = new Date(dateStr + 'T00:00:00');
+      if (isNaN(date.getTime())) return '-';
+      return date.toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' });
+    }
+
+    function formatVkLink(vkUsername) {
+      if (!vkUsername || !vkUsername.trim()) return '<span class="text-gray-400">—</span>';
+      const username = vkUsername.replace(/^@/, '').trim();
+      return `<a href="https://vk.com/${username}" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline"><i class="fab fa-vk"></i> ${username}</a>`;
+    }
+
+    function formatMaxNickname(maxUsername) {
+      if (!maxUsername || !maxUsername.trim()) return '<span class="text-gray-400">—</span>';
+      const nickname = maxUsername.replace(/^@/, '').trim();
+      return `<span class="text-purple-600">@${nickname}</span>`;
+    }
+
+    function formatCommentsPreview(comments) {
+      if (!comments || !comments.trim()) return '<span class="text-gray-400">—</span>';
+      const trimmed = comments.trim();
+      const preview = trimmed.length > 40 ? trimmed.slice(0, 40) + '…' : trimmed;
+      return `<span class="text-gray-600" title="${escapeHtml(trimmed)}">${escapeHtml(preview)}</span>`;
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
     async function renderClientsDatabase() {
       const clientsTableBody = document.getElementById('clientsTableBody');
       const clientsLoading = document.getElementById('clientsLoading');
@@ -3155,8 +3194,11 @@
             const nameMatch = client.clientName?.toLowerCase().trim().includes(searchTerm) || false;
             const phoneMatch = client.clientPhone?.includes(searchTerm) || false;
             const phoneDigitsMatch = client.phoneDigits?.includes(searchTermDigits) || false;
+            const vkMatch = client.vkUsername?.toLowerCase().includes(searchTerm) || false;
+            const maxMatch = client.maxUsername?.toLowerCase().includes(searchTerm) || false;
+            const commentsMatch = client.comments?.toLowerCase().includes(searchTerm) || false;
             
-            return nameMatch || phoneMatch || phoneDigitsMatch;
+            return nameMatch || phoneMatch || phoneDigitsMatch || vkMatch || maxMatch || commentsMatch;
           });
         }
 
@@ -3233,6 +3275,10 @@
               </a>
             </td>
             <td class="py-3 px-4">${telegramStatus}</td>
+            <td class="py-3 px-4">${formatDateOfBirth(client.dateOfBirth)}</td>
+            <td class="py-3 px-4">${formatVkLink(client.vkUsername)}</td>
+            <td class="py-3 px-4">${formatMaxNickname(client.maxUsername)}</td>
+            <td class="py-3 px-4 max-w-xs">${formatCommentsPreview(client.comments)}</td>
             <td class="py-3 px-4 text-center">
               <span class="font-semibold">${client.totalBookings || 0}</span>
             </td>
@@ -3493,6 +3539,44 @@
                 : '<span class="text-gray-400">Не подключен</span>'}</div>
             </div>
           </div>
+          ${isAdmin ? `
+          <div class="border-t border-gray-200 pt-4">
+            <h4 class="font-semibold mb-3">Дополнительная информация</h4>
+            <form id="clientEditForm" class="space-y-4" onsubmit="return false;">
+              <div>
+                <label for="clientDateOfBirth" class="block text-sm font-medium text-gray-700 mb-1">Дата рождения</label>
+                <input type="date" id="clientDateOfBirth" value="${escapeHtml(client.dateOfBirth || '')}" class="w-full rounded-2xl border border-gray-300 px-4 py-2 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+              </div>
+              <div>
+                <label for="clientVkUsername" class="block text-sm font-medium text-gray-700 mb-1">VK (никнейм)</label>
+                <input type="text" id="clientVkUsername" value="${escapeHtml(client.vkUsername || '')}" placeholder="id123456 или username" autocomplete="off" class="w-full rounded-2xl border border-gray-300 px-4 py-2 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+              </div>
+              <div>
+                <label for="clientMaxUsername" class="block text-sm font-medium text-gray-700 mb-1">Max (никнейм)</label>
+                <input type="text" id="clientMaxUsername" value="${escapeHtml(client.maxUsername || '')}" placeholder="@username" autocomplete="off" class="w-full rounded-2xl border border-gray-300 px-4 py-2 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+              </div>
+              <div>
+                <label for="clientComments" class="block text-sm font-medium text-gray-700 mb-1">Комментарий менеджера</label>
+                <textarea id="clientComments" rows="3" placeholder="Заметки о клиенте..." class="w-full rounded-2xl border border-gray-300 px-4 py-2 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none resize-y">${escapeHtml(client.comments || '')}</textarea>
+              </div>
+              <div class="flex justify-end">
+                <button type="button" id="saveClientProfileBtn" onclick="saveClientProfile('${client.id}')" class="px-6 py-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-semibold transition focus:outline-none focus:ring-2 focus:ring-blue-400">
+                  <i class="fas fa-save mr-2"></i>Сохранить
+                </button>
+              </div>
+            </form>
+          </div>
+          ` : `
+          <div>
+            <h4 class="font-semibold mb-2">Дополнительная информация</h4>
+            <div class="space-y-2">
+              <div><span class="font-medium">Дата рождения:</span> ${formatDateOfBirth(client.dateOfBirth)}</div>
+              <div><span class="font-medium">VK:</span> ${formatVkLink(client.vkUsername)}</div>
+              <div><span class="font-medium">Max:</span> ${formatMaxNickname(client.maxUsername)}</div>
+              <div><span class="font-medium">Комментарий:</span> ${client.comments ? client.comments : '<span class="text-gray-400">Нет</span>'}</div>
+            </div>
+          </div>
+          `}
           <div>
             <h4 class="font-semibold mb-2">Статистика</h4>
             <div class="space-y-2">
@@ -3511,6 +3595,57 @@
       `;
 
       modal.classList.remove('hidden');
+    };
+
+    window.saveClientProfile = async function(clientId) {
+      if (!isAdmin) {
+        showLoginModal();
+        return;
+      }
+
+      const client = clientsData.find(c => c.id === clientId);
+      if (!client) return;
+
+      const saveBtn = document.getElementById('saveClientProfileBtn');
+      const dateOfBirth = document.getElementById('clientDateOfBirth')?.value || '';
+      const vkUsername = document.getElementById('clientVkUsername')?.value.trim() || '';
+      const maxUsername = document.getElementById('clientMaxUsername')?.value.trim() || '';
+      const comments = document.getElementById('clientComments')?.value.trim() || '';
+
+      try {
+        if (saveBtn) {
+          saveBtn.disabled = true;
+          saveBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Сохранение...';
+        }
+
+        const updateData = {
+          dateOfBirth: dateOfBirth || null,
+          vkUsername: vkUsername || null,
+          maxUsername: maxUsername || null,
+          comments: comments || null,
+          updatedAt: new Date()
+        };
+
+        await updateDoc(doc(db, "clients", clientId), updateData);
+
+        Object.assign(client, updateData);
+        await renderClientsDatabase();
+
+        if (saveBtn) {
+          saveBtn.disabled = false;
+          saveBtn.innerHTML = '<i class="fas fa-check mr-2"></i>Сохранено';
+          setTimeout(() => {
+            saveBtn.innerHTML = '<i class="fas fa-save mr-2"></i>Сохранить';
+          }, 2000);
+        }
+      } catch (error) {
+        console.error('Ошибка сохранения профиля клиента:', error);
+        alert('Не удалось сохранить данные клиента. Попробуйте позже.');
+        if (saveBtn) {
+          saveBtn.disabled = false;
+          saveBtn.innerHTML = '<i class="fas fa-save mr-2"></i>Сохранить';
+        }
+      }
     };
 
     // Обработчики поиска и сортировки
