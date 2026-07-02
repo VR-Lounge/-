@@ -3104,6 +3104,17 @@
       return `<span class="text-purple-600">@${nickname}</span>`;
     }
 
+    function formatTelegramStatus(client) {
+      if (client.telegramUsername) {
+        const username = client.telegramUsername.replace(/^@/, '').trim();
+        return `<a href="https://t.me/${username}" target="_blank" class="text-green-600 hover:text-green-800 hover:underline"><i class="fab fa-telegram"></i> @${escapeHtml(username)}</a>`;
+      }
+      if (client.telegramId) {
+        return `<span class="text-green-600"><i class="fab fa-telegram"></i> Подключен</span>`;
+      }
+      return '<span class="text-gray-400">Не подключен</span>';
+    }
+
     function formatCommentsPreview(comments) {
       if (!comments || !comments.trim()) return '<span class="text-gray-400">—</span>';
       const trimmed = comments.trim();
@@ -3224,9 +3235,10 @@
             const phoneDigitsMatch = client.phoneDigits?.includes(searchTermDigits) || false;
             const vkMatch = client.vkUsername?.toLowerCase().includes(searchTerm) || false;
             const maxMatch = client.maxUsername?.toLowerCase().includes(searchTerm) || false;
+            const telegramMatch = client.telegramUsername?.toLowerCase().includes(searchTerm.replace(/^@/, '')) || false;
             const commentsMatch = client.comments?.toLowerCase().includes(searchTerm) || false;
             
-            return nameMatch || phoneMatch || phoneDigitsMatch || vkMatch || maxMatch || commentsMatch;
+            return nameMatch || phoneMatch || phoneDigitsMatch || vkMatch || maxMatch || telegramMatch || commentsMatch;
           });
         }
 
@@ -3277,16 +3289,7 @@
           row.className = 'hover:bg-gray-50 transition';
 
           // Telegram статус
-          let telegramStatus;
-          if (client.telegramId && client.telegramUsername) {
-            // Убираем @ если есть, и создаем кликабельную ссылку
-            const username = client.telegramUsername.replace('@', '');
-            telegramStatus = `<a href="https://t.me/${username}" target="_blank" class="text-green-600 hover:text-green-800 hover:underline"><i class="fab fa-telegram"></i> @${username}</a>`;
-          } else if (client.telegramId) {
-            telegramStatus = `<span class="text-green-600"><i class="fab fa-telegram"></i> Подключен</span>`;
-          } else {
-            telegramStatus = '<span class="text-gray-400">Не подключен</span>';
-          }
+          const telegramStatus = formatTelegramStatus(client);
 
           // Форматирование даты последней записи
           const lastBookingDate = client.lastBookingDate 
@@ -3564,11 +3567,7 @@
               <div><span class="font-medium">Имя:</span> ${escapeHtml(client.clientName || '-')}</div>
               <div><span class="font-medium">Телефон:</span> <a href="tel:${client.clientPhone}" class="text-blue-600 hover:underline">${escapeHtml(client.clientPhone || '-')}</a></div>
               `}
-              <div><span class="font-medium">Telegram:</span> ${client.telegramId 
-                ? (client.telegramUsername 
-                  ? `<a href="https://t.me/${client.telegramUsername.replace('@', '')}" target="_blank" class="text-green-600 hover:text-green-800 hover:underline"><i class="fab fa-telegram"></i> @${client.telegramUsername.replace('@', '')}</a>`
-                  : `<span class="text-green-600"><i class="fab fa-telegram"></i> ID: ${client.telegramId}</span>`)
-                : '<span class="text-gray-400">Не подключен</span>'}</div>
+              <div><span class="font-medium">Telegram:</span> ${formatTelegramStatus(client)}</div>
             </div>
           </div>
           ${isAdmin ? `
@@ -3594,6 +3593,10 @@
               <div>
                 <label for="clientMaxUsername" class="block text-sm font-medium text-gray-700 mb-1">Max (никнейм)</label>
                 <input type="text" id="clientMaxUsername" value="${escapeHtml(client.maxUsername || '')}" placeholder="@username" autocomplete="off" class="w-full rounded-2xl border border-gray-300 px-4 py-2 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+              </div>
+              <div>
+                <label for="clientTelegramUsername" class="block text-sm font-medium text-gray-700 mb-1">Telegram (никнейм)</label>
+                <input type="text" id="clientTelegramUsername" value="${escapeHtml(client.telegramUsername || '')}" placeholder="@username" autocomplete="off" class="w-full rounded-2xl border border-gray-300 px-4 py-2 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
               </div>
               <div>
                 <label for="clientComments" class="block text-sm font-medium text-gray-700 mb-1">Комментарий менеджера</label>
@@ -3656,6 +3659,7 @@
       const dateOfBirth = document.getElementById('clientDateOfBirth')?.value || '';
       const vkUsername = document.getElementById('clientVkUsername')?.value.trim() || '';
       const maxUsername = document.getElementById('clientMaxUsername')?.value.trim() || '';
+      const telegramUsername = document.getElementById('clientTelegramUsername')?.value.trim() || '';
       const comments = document.getElementById('clientComments')?.value.trim() || '';
 
       if (!clientName) {
@@ -3695,6 +3699,7 @@
           dateOfBirth: dateOfBirth || null,
           vkUsername: vkUsername || null,
           maxUsername: maxUsername || null,
+          telegramUsername: telegramUsername || null,
           comments: comments || null,
           updatedAt: new Date()
         };
