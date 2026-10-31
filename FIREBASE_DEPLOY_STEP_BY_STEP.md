@@ -98,7 +98,7 @@ npx firebase-tools init functions
 После инициализации нужно установить секретные переменные:
 
 ```bash
-firebase functions:config:set telegram.bot_token="7981391917:AAHKZSnGue3vJyaOblDLYpXBhj5vJn5kQIE"
+firebase functions:config:set telegram.bot_token="YOUR_TELEGRAM_BOT_TOKEN"
 firebase functions:config:set telegram.admin_group_id="-1002640127163"
 firebase functions:config:set telegram.mini_app_url="https://vr-lounge.github.io/-/telegram-miniapp.html"
 firebase functions:config:set telegram.client_mini_app_url="https://vr-lounge.github.io/-/client-booking-miniapp.html"
@@ -142,18 +142,18 @@ https://us-central1-vr-lounge33.cloudfunctions.net/telegramBot
 После развертывания нужно один раз установить Webhook:
 
 ```bash
-curl -X POST "https://api.telegram.org/bot7981391917:AAHKZSnGue3vJyaOblDLYpXBhj5vJn5kQIE/setWebhook" \
+curl -X POST "https://api.telegram.org/botYOUR_TELEGRAM_BOT_TOKEN/setWebhook" \
   -d "url=https://us-central1-vr-lounge33.cloudfunctions.net/telegramBot"
 ```
 
 Или через браузер откройте:
 ```
-https://api.telegram.org/bot7981391917:AAHKZSnGue3vJyaOblDLYpXBhj5vJn5kQIE/setWebhook?url=https://us-central1-vr-lounge33.cloudfunctions.net/telegramBot
+https://api.telegram.org/botYOUR_TELEGRAM_BOT_TOKEN/setWebhook?url=https://us-central1-vr-lounge33.cloudfunctions.net/telegramBot
 ```
 
 **Проверка Webhook:**
 ```bash
-curl "https://api.telegram.org/bot7981391917:AAHKZSnGue3vJyaOblDLYpXBhj5vJn5kQIE/getWebhookInfo"
+curl "https://api.telegram.org/botYOUR_TELEGRAM_BOT_TOKEN/getWebhookInfo"
 ```
 
 ---

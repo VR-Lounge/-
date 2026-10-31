@@ -40,7 +40,7 @@
 
 6. **BotFather даст вам токен:**
    ```
-   Отлично! Вот ваш токен: 1234567890:ABCdefGHIjklMNOpqrsTUVwxyz
+   Отлично! Вот ваш токен: YOUR_TELEGRAM_BOT_TOKEN
    
    Используйте этот токен для доступа к HTTP API: ...
    ```
