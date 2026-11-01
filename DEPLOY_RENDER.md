@@ -49,7 +49,7 @@
 
 | Ключ | Значение | Описание |
 |------|----------|----------|
-| `TELEGRAM_BOT_TOKEN` | `8056109709:AAHntOo2Ns8FM9PESgqaIixTxSS9yCmJaUA` | Токен нового бота |
+| `TELEGRAM_BOT_TOKEN` | `YOUR_TELEGRAM_BOT_TOKEN` | Токен нового бота |
 | `ADMIN_GROUP_ID` | `-1002640127163` | ID группы администраторов |
 | `CLIENT_MINI_APP_URL` | `https://vr-lounge.github.io/-/client-booking-miniapp.html` | URL Mini App для клиентов |
 | `MINI_APP_URL` | `https://vr-lounge.github.io/-/telegram-miniapp.html` | URL Mini App для админов |

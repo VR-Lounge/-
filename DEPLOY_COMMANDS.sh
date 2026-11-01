@@ -59,7 +59,7 @@ echo ""
 # Шаг 5: Настройка переменных окружения
 echo -e "${GREEN}=== ШАГ 5: Настройка переменных окружения ===${NC}"
 echo "Устанавливаю конфигурацию..."
-$FIREBASE_CMD functions:config:set telegram.bot_token="7981391917:AAHKZSnGue3vJyaOblDLYpXBhj5vJn5kQIE"
+$FIREBASE_CMD functions:config:set telegram.bot_token="YOUR_TELEGRAM_BOT_TOKEN"
 $FIREBASE_CMD functions:config:set telegram.admin_group_id="-1002640127163"
 $FIREBASE_CMD functions:config:set telegram.mini_app_url="https://vr-lounge.github.io/-/telegram-miniapp.html"
 $FIREBASE_CMD functions:config:set telegram.client_mini_app_url="https://vr-lounge.github.io/-/client-booking-miniapp.html"
@@ -94,12 +94,12 @@ FUNCTION_URL="https://us-central1-vr-lounge33.cloudfunctions.net/telegramBot"
 echo "URL функции: $FUNCTION_URL"
 echo ""
 echo "Устанавливаю Webhook..."
-curl -X POST "https://api.telegram.org/bot7981391917:AAHKZSnGue3vJyaOblDLYpXBhj5vJn5kQIE/setWebhook" \
+curl -X POST "https://api.telegram.org/botYOUR_TELEGRAM_BOT_TOKEN/setWebhook" \
   -d "url=$FUNCTION_URL"
 echo ""
 echo ""
 echo "Проверка Webhook:"
-curl "https://api.telegram.org/bot7981391917:AAHKZSnGue3vJyaOblDLYpXBhj5vJn5kQIE/getWebhookInfo"
+curl "https://api.telegram.org/botYOUR_TELEGRAM_BOT_TOKEN/getWebhookInfo"
 echo ""
 echo ""
 

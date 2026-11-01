@@ -27,7 +27,7 @@
 4. В разделе **"Environment Variables"** добавьте:
 
 ```
-TELEGRAM_BOT_TOKEN = 8056109709:AAHntOo2Ns8FM9PESgqaIixTxSS9yCmJaUA
+TELEGRAM_BOT_TOKEN = YOUR_TELEGRAM_BOT_TOKEN
 ADMIN_GROUP_ID = -1002640127163
 CLIENT_MINI_APP_URL = https://vr-lounge.github.io/-/client-booking-miniapp.html
 MINI_APP_URL = https://vr-lounge.github.io/-/telegram-miniapp.html

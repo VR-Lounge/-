@@ -36,7 +36,7 @@
 
    **Переменная 1:**
    - **Name:** `TELEGRAM_BOT_TOKEN`
-   - **Value:** `7981391917:AAHKZSnGue3vJyaOblDLYpXBhj5vJn5kQIE`
+   - **Value:** `YOUR_TELEGRAM_BOT_TOKEN`
    - Нажмите **"Add Variable"**
 
    **Переменная 2:**
