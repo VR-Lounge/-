@@ -1481,3 +1481,40 @@ ${booking.notes ? `📝 Примечания: ${booking.notes}` : ''}
     }
   });
 
+// ============================================
+// ПОДАРОЧНЫЕ КАРТЫ — уведомление в рабочую группу
+// (тот же sendNotificationToAdmins, что и для bookings)
+// HITL: деплой functions — только по явному ок
+// ============================================
+
+exports.onNewGiftCard = functions.firestore
+  .document('giftCards/{cardId}')
+  .onCreate(async (snap, context) => {
+    const card = snap.data();
+    const cardId = context.params.cardId;
+    console.log(`🎁 Новая подарочная карта: ${cardId}`);
+
+    const face = Number(card.faceValue || 0).toLocaleString('ru-RU');
+    const source =
+      card.createdBy === 'site' ? 'сайт' :
+      card.createdBy === 'crm' ? 'CRM' :
+      String(card.createdBy || 'неизвестно');
+
+    let message = `🎁 Новая заявка на подарочную карту!\n\n`;
+    message += `🔖 Код: ${card.publicCode || '—'}\n`;
+    message += `👤 Получатель: ${card.recipientName || '—'}\n`;
+    message += `📞 Телефон покупателя: ${card.buyerPhone || '—'}\n`;
+    message += `💰 Номинал: ${face} ₽\n`;
+    message += `📊 Статус: ${card.status || '—'}\n`;
+    message += `🛎 Источник: ${source}\n`;
+    message += `\n➡️ CRM → «Подарочные карты» → «Оплачено / активировать» после оплаты.`;
+    message += `\n🔗 https://vr-lounge.github.io/vr-lounge-redesign/gift.html?code=${encodeURIComponent(card.publicCode || '')}`;
+
+    try {
+      await sendNotificationToAdmins(message);
+      console.log('✅ Уведомление о подарочной карте отправлено');
+    } catch (error) {
+      console.error('❌ Ошибка уведомления о подарочной карте:', error);
+    }
+  });
+

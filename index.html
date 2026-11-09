@@ -1062,6 +1062,9 @@
             <a href="#" class="nav-link whitespace-nowrap" id="clientsNavLink" onclick="return showClientsSection()">
               <i class="fas fa-users mr-2"></i>База клиентов
             </a>
+            <a href="#" class="nav-link whitespace-nowrap" id="giftCardsNavLink" onclick="return showGiftCardsSection()">
+              <i class="fas fa-gift mr-2"></i>Подарочные карты
+            </a>
           </nav>
       </div>
     </div>
@@ -1131,6 +1134,16 @@
         clientsLink.classList.add('active');
       }
       // Загрузка данных клиентов будет происходить через onAuthStateChanged
+      return false;
+    }
+
+    window.showGiftCardsSection = function() {
+      document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+      const giftSection = document.getElementById('giftCardsSection');
+      if (giftSection) giftSection.classList.remove('hidden');
+      document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+      const giftLink = document.getElementById('giftCardsNavLink');
+      if (giftLink) giftLink.classList.add('active');
       return false;
     }
 
@@ -2287,6 +2300,67 @@
     </div>
   </section>
 
+  <!-- === СЕКЦИЯ ПОДАРОЧНЫХ КАРТ (та же CRM / Firebase; payroll не затрагивает) === -->
+  <section id="giftCardsSection" class="hidden max-w-7xl mx-auto my-8 px-4">
+    <div class="bg-white rounded-3xl shadow-lg p-6 border border-gray-200">
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+        <h2 class="text-2xl font-semibold text-gray-900 tracking-tight flex items-center">
+          <i class="fas fa-gift mr-3 text-blue-600"></i>Подарочные карты
+        </h2>
+        <p data-gift-backend-hint class="hidden text-xs px-3 py-1 rounded-full"></p>
+      </div>
+      <p class="text-sm text-gray-500 mb-6">Заявки с сайта (pending) → оплата у Юлии → выпуск (issued) → списание баланса при визите. Без второй CRM.</p>
+      <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+        <div class="xl:col-span-2 space-y-4">
+          <div class="flex flex-col md:flex-row gap-3">
+            <input id="giftSearch" type="search" placeholder="Поиск: код, имя, телефон" class="flex-1 rounded-2xl border border-gray-300 px-4 py-2" />
+            <select id="giftStatusFilter" class="rounded-2xl border border-gray-300 px-4 py-2">
+              <option value="">Все статусы</option>
+              <option value="pending">Ожидает оплаты</option>
+              <option value="issued">Выпущена</option>
+              <option value="partial">Частично</option>
+              <option value="redeemed">Погашена</option>
+              <option value="void">Аннулирована</option>
+            </select>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="border-b text-left text-gray-600">
+                  <th class="py-2 px-3">Код</th>
+                  <th class="py-2 px-3">Получатель</th>
+                  <th class="py-2 px-3">Телефон</th>
+                  <th class="py-2 px-3">Номинал</th>
+                  <th class="py-2 px-3">Баланс</th>
+                  <th class="py-2 px-3">Статус</th>
+                  <th class="py-2 px-3">Создана</th>
+                </tr>
+              </thead>
+              <tbody data-gift-list class="divide-y divide-gray-100"></tbody>
+            </table>
+            <div data-gift-empty class="hidden text-center py-10 text-gray-400">Карт пока нет</div>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <form id="giftIssueForm" class="rounded-2xl border border-gray-200 p-4 space-y-3">
+            <h3 class="font-semibold text-gray-900">Выпустить карту</h3>
+            <input name="recipientName" placeholder="Имя получателя (опц.)" class="w-full rounded-2xl border border-gray-300 px-4 py-2" />
+            <input name="buyerPhone" required type="tel" placeholder="+7 (XXX) XXX-XX-XX" class="w-full rounded-2xl border border-gray-300 px-4 py-2" />
+            <input name="faceValue" required type="number" min="1000" max="20000" step="1000" placeholder="Номинал ₽" class="w-full rounded-2xl border border-gray-300 px-4 py-2" />
+            <select name="theme" class="w-full rounded-2xl border border-gray-300 px-4 py-2">
+              <option value="amethyst">Amethyst</option>
+              <option value="silver">Silver</option>
+            </select>
+            <button type="submit" class="w-full rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5">Выпустить</button>
+          </form>
+          <div data-gift-detail class="rounded-2xl border border-gray-200 p-4 min-h-[200px]">
+            <p class="text-gray-400 text-center py-8">Выберите карту из списка</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Модальное окно детальной информации о клиенте -->
   <div id="clientDetailModal" class="fixed inset-0 bg-white bg-opacity-90 flex items-center justify-center p-6 hidden z-50">
     <div class="bg-white rounded-3xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-8 relative ring-1 ring-gray-200">
@@ -2336,6 +2410,8 @@
 
   <!-- Firebase и основная логика приложения -->
   <script type="module">
+    import { initGiftCardsCrm } from './gift-cards.js';
+
     // Функция обработки добавления расхода
     async function handleAddExpense(event) {
   event.preventDefault();
@@ -4010,6 +4086,16 @@
       }
 
       const id = bookingIdInput.value;
+        // gift_note — UI-метка списания подарочной карты; в Firestore finalPaymentMethod остаётся cash|transfer
+        const paymentMethodUi = document.getElementById('finalPaymentMethod').value || 'cash';
+        const isGiftNote = paymentMethodUi === 'gift_note';
+        const giftCodeUi = (document.getElementById('giftPayCode')?.value || '').trim().toUpperCase();
+        const giftAmountUi = parseFloat(document.getElementById('giftPayAmount')?.value || '0') || 0;
+        let notesValue = bookingForm.notes.value.trim();
+        if (isGiftNote && giftCodeUi && giftAmountUi > 0) {
+          const giftLine = `Подарочная карта ${giftCodeUi}: −${giftAmountUi.toLocaleString('ru-RU')} ₽ (ledger отдельно, ЗП не меняется)`;
+          notesValue = notesValue ? `${notesValue}\n${giftLine}` : giftLine;
+        }
         const bookingData = {
         clientName: bookingForm.clientName.value.trim(),
         clientPhone: bookingForm.clientPhone.value.trim(),
@@ -4017,7 +4103,7 @@
         startTime: bookingForm.startTime.value,
         duration: parseFloat(bookingForm.duration.value),
         selectedServices: Array.from(selectedServices), // Сохраняем выбранные услуги
-        notes: bookingForm.notes.value.trim(),
+        notes: notesValue,
         discountPercent: parseFloat(bookingForm.discountPercent.value) || 0, // Сохраняем скидку %
         discountAmount: parseFloat(bookingForm.discountAmount.value) || 0, // Сохраняем скидку ₽
         prepayment: {
@@ -4033,7 +4119,12 @@
           amount: parseFloat(document.getElementById('finalPayAmountTransfer').value) || 0,
           date: document.getElementById('finalPayDateTransfer').value || ''
         },
-        finalPaymentMethod: document.getElementById('finalPaymentMethod').value || 'cash' // Источник поступления: наличные или перевод
+        finalPaymentMethod: isGiftNote ? 'cash' : paymentMethodUi,
+        giftPayment: isGiftNote && giftCodeUi && giftAmountUi > 0 ? {
+          publicCode: giftCodeUi,
+          amount: giftAmountUi,
+          cardId: document.getElementById('giftPayCardId')?.value || null
+        } : null
       };
 
         // --- Валидация ---
@@ -4067,12 +4158,22 @@
         // ----------------
 
       try {
+        let savedBookingId = id || null;
         if (id) {
           // Обновление существующей записи
                 await updateDoc(doc(db, "bookings", id), bookingData);
         } else {
           // Добавление новой записи
-                await addDoc(collection(db, "bookings"), bookingData);
+                const createdRef = await addDoc(collection(db, "bookings"), bookingData);
+                savedBookingId = createdRef.id;
+        }
+        if (typeof window.__vrlGiftPaymentCapture === 'function' && bookingData.giftPayment) {
+          try {
+            await window.__vrlGiftPaymentCapture(savedBookingId);
+          } catch (giftErr) {
+            console.error('Gift redeem after booking save failed:', giftErr);
+            alert('Запись сохранена, но списание подарочной карты не удалось: ' + (giftErr.message || giftErr));
+          }
         }
         bookingModal.classList.add('hidden');
         document.body.classList.remove('modal-open');
@@ -5913,6 +6014,18 @@
 
     // Запуск приложения
     init();
+
+    // Аддитивный модуль подарочных карт (giftCards / giftLedger; payroll не трогает)
+    try {
+      initGiftCardsCrm({
+        db,
+        isAdmin: () => !!isAdmin,
+        getUid: () => (auth.currentUser && auth.currentUser.uid) || null,
+        preferLocal: new URLSearchParams(location.search).get('giftLocal') === '1'
+      });
+    } catch (giftInitErr) {
+      console.error('Gift cards module init failed:', giftInitErr);
+    }
 
     // === Расчет Статистики Выручки ===
     function updateCurrentMonthTitle() {

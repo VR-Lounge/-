@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Подарочная карта · VR Lounge</title>
+  <meta name="robots" content="noindex" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+    :root {
+      --c1: #723c87;
+      --c2: #592349;
+      --accent: #e04fd8;
+    }
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(80% 60% at 100% 0%, #c026d318, transparent 55%),
+        radial-gradient(60% 50% at 0% 100%, #7b2ff714, transparent 50%),
+        linear-gradient(165deg, #0b0614 0%, #1a1028 45%, #120a1c 100%);
+      color: #f5eef8;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+    .card-shell {
+      position: relative;
+      width: min(520px, 100%);
+      aspect-ratio: 1.6 / 1;
+      border-radius: 18px;
+      padding: 2px;
+      background: linear-gradient(135deg, #8b5cff, #ff3ea5);
+      box-shadow: 0 24px 60px #00000066;
+      animation: floatIn 0.7s ease-out both;
+    }
+    @keyframes floatIn {
+      from { opacity: 0; transform: translateY(16px) scale(0.98); }
+      to { opacity: 1; transform: none; }
+    }
+    .card-inner {
+      height: 100%;
+      border-radius: 16px;
+      background: linear-gradient(145deg, var(--c1), var(--c2));
+      padding: 6%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+    .card-inner::after {
+      content: "";
+      position: absolute;
+      inset: -40% -20%;
+      background: linear-gradient(105deg, transparent 40%, #ffffff22 48%, transparent 56%);
+      animation: sheen 8s ease-in-out infinite;
+      pointer-events: none;
+    }
+    @keyframes sheen {
+      0%, 100% { transform: translateX(-30%); }
+      50% { transform: translateX(30%); }
+    }
+    .brand { font-weight: 900; letter-spacing: 0.02em; font-size: clamp(18px, 4vw, 26px); }
+    .brand span {
+      background: linear-gradient(90deg, #a96bff, #e04fd8 45%, #ff4f8d);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .amount { font-weight: 900; font-size: clamp(28px, 8vw, 44px); letter-spacing: -0.03em; }
+    .serial { font-family: ui-monospace, monospace; opacity: 0.85; font-size: 12px; letter-spacing: 0.06em; }
+    @media print {
+      body { background: #fff; color: #111; }
+      .no-print { display: none !important; }
+      .card-shell { box-shadow: none; break-inside: avoid; }
+    }
+  </style>
+</head>
+<body class="px-4 py-8">
+  <div class="max-w-3xl mx-auto">
+    <header class="text-center mb-8 no-print">
+      <p class="text-sm uppercase tracking-[0.2em] text-fuchsia-200/80 mb-2">VR Lounge · Владимир</p>
+      <h1 class="text-2xl md:text-3xl font-bold">Подарочная карта</h1>
+      <p id="loadStatus" class="text-sm text-fuchsia-100/70 mt-2">Загрузка…</p>
+    </header>
+
+    <div class="flex justify-center mb-8">
+      <div class="card-shell" id="visualCard">
+        <div class="card-inner">
+          <div>
+            <div class="text-[10px] font-bold tracking-[0.2em] opacity-80">ПОДАРОЧНАЯ КАРТА</div>
+            <div class="brand mt-1"><span>VR LOUNGE</span></div>
+            <div class="text-xs opacity-80 mt-1">Владимир</div>
+          </div>
+          <div>
+            <div class="amount" id="cardAmount">—</div>
+            <div class="mt-2 text-sm leading-snug" id="cardRecipient">—</div>
+          </div>
+          <div class="serial" id="cardSerial">VRL-······</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur rounded-3xl p-5 md:p-6 border border-white/10 mb-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div>
+          <div class="text-xs text-fuchsia-100/70">Номинал</div>
+          <div class="text-lg font-semibold" id="statFace">—</div>
+        </div>
+        <div>
+          <div class="text-xs text-fuchsia-100/70">Баланс</div>
+          <div class="text-lg font-semibold text-emerald-300" id="statBalance">—</div>
+        </div>
+        <div>
+          <div class="text-xs text-fuchsia-100/70">Статус</div>
+          <div class="text-lg font-semibold" id="statStatus">—</div>
+        </div>
+        <div>
+          <div class="text-xs text-fuchsia-100/70">Выпущена</div>
+          <div class="text-lg font-semibold" id="statIssued">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white/10 backdrop-blur rounded-3xl p-5 md:p-6 border border-white/10 mb-6">
+      <h2 class="font-semibold mb-3">История операций</h2>
+      <div id="ledgerList" class="space-y-2 text-sm">
+        <p class="opacity-60">—</p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap gap-3 justify-center no-print">
+      <button type="button" id="btnPrint" class="px-5 py-3 rounded-2xl bg-fuchsia-500 hover:bg-fuchsia-400 text-white font-semibold">
+        <i class="fas fa-file-pdf mr-2"></i>Скачать / печать PDF
+      </button>
+      <a href="https://vr-lounge.github.io/vr-lounge-redesign/" class="px-5 py-3 rounded-2xl border border-white/20 hover:bg-white/10 font-medium">На сайт</a>
+      <a href="https://vr-lounge.github.io/-/" class="px-5 py-3 rounded-2xl border border-white/20 hover:bg-white/10 font-medium">CRM</a>
+    </div>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import {
+      getFirestore, collection, query, where, getDocs, limit
+    } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+    import {
+      findGiftCardByCode,
+      getGiftCardLedger,
+      STATUS_LABELS,
+      formatRub,
+      seedLocalDemoIfEmpty,
+      loadLocalCards,
+      loadLocalLedger,
+    } from "./gift-cards.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBaq_faWwfE_TXn4Xh_2U3GYSAsUzGJ1bk",
+      authDomain: "vr-lounge33.firebaseapp.com",
+      projectId: "vr-lounge33",
+      storageBucket: "vr-lounge33.appspot.com",
+      messagingSenderId: "825655988090",
+      appId: "1:825655988090:web:76d8e0554b8601f8bd10c3"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const params = new URLSearchParams(location.search);
+    const code = (params.get("code") || params.get("c") || "").trim().toUpperCase();
+    const statusEl = document.getElementById("loadStatus");
+
+    function formatDate(v) {
+      if (!v) return "—";
+      try {
+        const d = v.toDate ? v.toDate() : new Date(v);
+        return d.toLocaleString("ru-RU", { day: "2-digit", month: "short", year: "numeric" });
+      } catch { return "—"; }
+    }
+
+    function render(card, ledger, sourceLabel) {
+      document.getElementById("cardAmount").textContent = formatRub(card.balance ?? card.faceValue);
+      document.getElementById("cardRecipient").textContent = card.recipientName || "—";
+      document.getElementById("cardSerial").textContent = card.publicCode || "—";
+      document.getElementById("statFace").textContent = formatRub(card.faceValue);
+      document.getElementById("statBalance").textContent = formatRub(card.balance);
+      document.getElementById("statStatus").textContent = STATUS_LABELS[card.status] || card.status || "—";
+      document.getElementById("statIssued").textContent = formatDate(card.issuedAt || card.createdAt);
+      const list = document.getElementById("ledgerList");
+      if (!ledger.length) {
+        list.innerHTML = '<p class="opacity-60">Операций пока нет</p>';
+      } else {
+        list.innerHTML = ledger
+          .slice()
+          .sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)))
+          .map((e) => {
+            const sign = e.kind === "debit" ? "−" : "+";
+            return `<div class="flex justify-between gap-3 rounded-xl bg-black/20 px-3 py-2">
+              <div><span class="font-medium">${sign}${formatRub(e.amount)}</span>
+              <span class="opacity-70"> · ${e.note || e.kind}</span></div>
+              <div class="opacity-50 whitespace-nowrap">${formatDate(e.createdAt)}</div>
+            </div>`;
+          })
+          .join("");
+      }
+      statusEl.textContent = sourceLabel;
+      document.title = `${card.publicCode} · VR Lounge`;
+    }
+
+    async function main() {
+      if (!code) {
+        statusEl.textContent = "Укажите код карты в адресе: ?code=VRL-XXXXXX";
+        seedLocalDemoIfEmpty();
+        const demo = loadLocalCards()[0];
+        if (demo) {
+          render(demo, loadLocalLedger().filter((e) => e.cardId === demo.id), "Демо-карта (нет кода в URL)");
+        }
+        return;
+      }
+
+      try {
+        const card = await findGiftCardByCode(db, code, false);
+        if (card) {
+          const ledger = await getGiftCardLedger(db, card.id, false);
+          render(card, ledger, "Данные из Firebase");
+          return;
+        }
+      } catch (err) {
+        console.warn("Firebase lookup failed", err);
+      }
+
+      seedLocalDemoIfEmpty();
+      const local = loadLocalCards().find((c) => c.publicCode === code);
+      if (local) {
+        render(local, loadLocalLedger().filter((e) => e.cardId === local.id), "Локальные данные браузера");
+        return;
+      }
+
+      statusEl.textContent = "Карта не найдена. Проверьте код или дождитесь деплоя Firestore rules.";
+    }
+
+    document.getElementById("btnPrint").addEventListener("click", () => window.print());
+    main().then(() => {
+      if (params.get("print") === "1" && code) {
+        window.setTimeout(() => {
+          try { window.print(); } catch (_) { /* ignore */ }
+        }, 600);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -2692,6 +2692,67 @@ checkUpcomingEvents();
 // Настраиваем слушатель новых записей
 setupNewBookingListener();
 
+// Слушатель заявок на подарочные карты (тот же ADMIN_GROUP_ID)
+function setupNewGiftCardListener() {
+  console.log('🎁 Настройка слушателя подарочных карт...');
+  let processedGiftIds = new Set();
+  let lastGiftCheckTime = admin.firestore.Timestamp.now();
+
+  setInterval(async () => {
+    try {
+      const now = admin.firestore.Timestamp.now();
+      const thirtySecondsAgo = admin.firestore.Timestamp.fromMillis(now.toMillis() - 30 * 1000);
+      const giftSnapshot = await db.collection('giftCards')
+        .where('createdAt', '>=', lastGiftCheckTime)
+        .limit(10)
+        .get();
+
+      if (giftSnapshot.empty) return;
+
+      for (const docSnap of giftSnapshot.docs) {
+        const card = docSnap.data();
+        const cardId = docSnap.id;
+        if (processedGiftIds.has(cardId)) continue;
+
+        const createdAt = card.createdAt?.toDate ? card.createdAt.toDate() : new Date(card.createdAt);
+        const createdAtTimestamp = card.createdAt || admin.firestore.Timestamp.fromDate(createdAt);
+        if (createdAtTimestamp.toMillis() < thirtySecondsAgo.toMillis()) continue;
+
+        processedGiftIds.add(cardId);
+        if (processedGiftIds.size > 100) {
+          Array.from(processedGiftIds).slice(0, 50).forEach((id) => processedGiftIds.delete(id));
+        }
+
+        const face = Number(card.faceValue || 0).toLocaleString('ru-RU');
+        let message = `🎁 Новая заявка на подарочную карту!\n\n`;
+        message += `🔖 Код: ${card.publicCode || '—'}\n`;
+        message += `👤 Получатель: ${card.recipientName || '—'}\n`;
+        message += `📞 Телефон: ${card.buyerPhone || '—'}\n`;
+        message += `💰 Номинал: ${face} ₽\n`;
+        message += `📊 Статус: ${card.status || '—'}\n`;
+        message += `🛎 Источник: ${card.createdBy || card.source || '—'}\n`;
+        message += `\n➡️ CRM → «Подарочные карты» → после оплаты «Оплачено / активировать».`;
+
+        try {
+          await sendNotificationToAdmins(message);
+          console.log(`✅ Уведомление о giftCards/${cardId} отправлено`);
+        } catch (notifyErr) {
+          console.error('❌ Ошибка уведомления gift card:', notifyErr);
+        }
+      }
+
+      lastGiftCheckTime = now;
+    } catch (error) {
+      // Коллекция может отсутствовать до первого create / rules deploy
+      if (error.code !== 9 && !String(error.message || '').includes('FAILED_PRECONDITION')) {
+        console.error('❌ Ошибка слушателя giftCards:', error.message || error);
+      }
+    }
+  }, 30000);
+}
+
+setupNewGiftCardListener();
+
 bot.on('polling_error', (error) => {
   console.error('❌ Ошибка polling:', error.message);
   console.error('📋 Код ошибки:', error.code);

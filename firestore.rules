@@ -81,7 +81,7 @@ service cloud.firestore {
       allow read: if request.auth != null;
       allow write: if request.auth != null && request.auth.token.admin == true;
     }
-    
+
     // Правила для расходов (доступ всем авторизованным)
     match /expenses/{expenseId} {
       allow read, write: if request.auth != null;
@@ -91,6 +91,52 @@ service cloud.firestore {
     match /expense-categories/{categoryId} {
       allow read: if request.auth != null;
       allow write: if request.auth != null && request.auth.token.admin == true;
+    }
+
+    // Подарочные карты (та же CRM / vr-lounge33; без второй БД)
+    // site → status pending; Юлия (auth) → issued + списание баланса
+    match /giftCards/{cardId} {
+      allow read: if true;
+
+      allow create: if request.auth != null
+        || (
+          request.resource.data.keys().hasAll([
+            'type', 'publicCode', 'status', 'faceValue', 'balance',
+            'currency', 'buyerPhone', 'recipientName', 'createdBy'
+          ])
+          && request.resource.data.type in ['gift', 'prepaid']
+          && request.resource.data.publicCode is string
+          && request.resource.data.publicCode.size() >= 8
+          && request.resource.data.publicCode.size() <= 24
+          && request.resource.data.status in ['draft', 'pending', 'issued', 'partial', 'redeemed', 'void']
+          && request.resource.data.faceValue is number
+          && request.resource.data.faceValue >= 1000
+          && request.resource.data.faceValue <= 20000
+          && request.resource.data.balance is number
+          && request.resource.data.balance == request.resource.data.faceValue
+          && request.resource.data.currency == 'RUB'
+          && request.resource.data.buyerPhone is string
+          && request.resource.data.recipientName is string
+          && request.resource.data.recipientName.size() >= 3
+          && request.resource.data.createdBy in ['site', 'crm', 'admin', 'web-form']
+          // с сайта без auth — только заявка на оплату
+          && (request.auth != null || request.resource.data.status == 'pending')
+        );
+
+      allow update, delete: if request.auth != null;
+    }
+
+    match /giftLedger/{entryId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        || (
+          request.resource.data.keys().hasAll(['cardId', 'publicCode', 'kind', 'amount', 'createdBy'])
+          && request.resource.data.kind == 'credit'
+          && request.resource.data.amount is number
+          && request.resource.data.amount > 0
+          && request.resource.data.createdBy in ['site', 'crm', 'admin', 'system', 'web-form']
+        );
+      allow update, delete: if request.auth != null;
     }
   }
 }
