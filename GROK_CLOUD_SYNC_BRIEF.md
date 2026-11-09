@@ -1,7 +1,7 @@
 # Grok ↔ Cloud Cursor ↔ Desktop — единый sync-бриф
 
 **Дата:** 2026-11-09 18:00 (МСК)  
-**Статус sync:** **выровнен каноном** (бриф → Grok 18:00; ack 18:00:26 / 18:00:55)  
+**Статус sync:** **DONE live cycle** (2026-11-09 ~18:25 МСК) — rules+Pages; Telegram Functions = Blaze blocker  
 **SoT:** `GIFT_CARD_SYNC_SOURCE_OF_TRUTH.md` (не спорить)  
 **HITL:** деньги / публикация / прод / OTP / `firebase deploy` / Pages — **только явное «деплой»**
 

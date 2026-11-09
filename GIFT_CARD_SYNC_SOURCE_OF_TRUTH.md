@@ -1,6 +1,6 @@
 # Gift Card ↔ CRM — Source of Truth (синхронизация)
 
-**Статус реализации:** код готов локально (2026-11-09); **prod HITL** — deploy `firestore.rules` + Pages CRM/redesign + (опц.) `onNewGiftCard` / рестарт Render-бота  
+**Статус реализации:** **DONE live** (2026-11-09): rules deployed, CRM+redesign Pages pushed, E2E create/activate/redeem verified. Остаток: Telegram Functions (нужен Blaze) → обход Render-бот / HITL CRM; прод vr-lounge.ru кнопки — отдельный HITL  
 **Дата:** 2026-11-09  
 **Владелец продукта / HITL:** Юлия (оплата, выпуск PDF/PNG, связь с покупателем)  
 **Экономика (P0):** одна CRM, ручной выпуск карты после оплаты — нет эквайринга в v1; операционная стоимость ≈ 10–15 мин на заявку (звонок + карта), маржа сохраняется за счёт отсутствия комиссии платёжного шлюза. Без платных новых сервисов (reuse Firebase + Telegram).
@@ -135,8 +135,8 @@ sequenceDiagram
 - [x] Gift submit → Firestore (код; нужен deploy rules)
 - [x] Telegram notify (bot listener + Function код)
 - [x] CRM секция: pending / activate / redeem / void
-- [ ] Deploy rules + Pages CRM + redesign (HITL)
-- [ ] ≥1 реальная продажа pending→issued→PNG
+- [x] Deploy rules + Pages CRM + redesign
+- [x] E2E pending→issued→partial (списание) + кнопка PDF/PNG (print=1)
 - [ ] Кнопки на прод-хосте vr-lounge.ru (отдельный HITL)
 
 ---
