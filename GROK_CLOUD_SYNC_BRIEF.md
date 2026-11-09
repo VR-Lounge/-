@@ -1,93 +1,78 @@
 # Grok ↔ Cloud Cursor ↔ Desktop — единый sync-бриф
 
-**Дата:** 2026-11-09 18:00 (МСК)  
-**Статус sync:** **DONE live cycle** (2026-11-09 ~18:25 МСК) — rules+Pages; Telegram Functions = Blaze blocker  
+**Дата:** 2026-11-09 ~19:00 (МСК)  
+**Статус sync:** **DELIVERY contour** — публичная ссылка + CRM + бот  
 **SoT:** `GIFT_CARD_SYNC_SOURCE_OF_TRUTH.md` (не спорить)  
-**HITL:** деньги / публикация / прод / OTP / `firebase deploy` / Pages — **только явное «деплой»**
+**HITL:** деньги / OTP / прод vr-lounge.ru — только явное ок. Push github.io Pages + правки бота — по мандату delivery можно.
 
-### Ack Grok («VR-клуб Кольчугино»)
-> Принял бриф как рабочий канон. SoT = `GIFT_CARD_SYNC_SOURCE_OF_TRUTH.md`; UI — облачный Cursor; CRM/Firebase/Telegram — локальный интегратор. Вторую CRM / параллельные gift-модули не создаём. Деплой — только по явной команде «деплой».  
-> Сохранил канон в памяти; старый план превью больше не актуален; ничего не запускает и не выкладывает.
-
----
-
-## 1. Кто где (факт)
-
-| Агент / канал | ID / путь | Статус |
-|---------------|-----------|--------|
-| GrokBot спец.агент | «VR-клуб Кольчугино» (Grok Bot.app) | **Нашёл**, чат открыт; головной «Основной Bot» закреплён |
-| Cloud Cursor work | `bc-4ee4d687-0d2b-58cf-aa0e-c8437b0ae6c6`, env `gift-card-preview-e6c6` | Ссылка живая в Grok; UI gift → GitHub |
-| Cloud sidebar label | «VR Lounge — превью подарочной карты» | Виден в ленте Grok (4 / 15 msgs) |
-| Desktop Cursor (эта сессия) | workspace `VR Lounge` | Интегратор CRM + sync |
-| GitHub redesign | `VR-Lounge/vr-lounge-redesign` | Клон локально |
-| CRM live | https://vr-lounge.github.io/-/ | Истина UI CRM |
-| CRM код | `/Users/LOBANOFF-PRO/Documents/VR Lounge/CRM VR Lounge` | Локальные gift-патчи применены |
-
-**Живого API-коннекта** к cloud agent / Grok из desktop Cursor **нет**. Синхронизация = SoT + этот бриф + GitHub артефакты + сообщение в Grok (18:00).
-
-> Computer Use **не управляет Cursor IDE** (блок политики). Cloud-статус снят через Grok-ссылки + `git`/`gh`, не через клики по Agents sidebar.
+### Ack ожидание от Grok («VR-клуб Кольчугино»)
+Принять как канон выдачи клиенту:
+1. Клиент получает **уникальную ссылку** `gift.html?code=VRL-XXXXXX`, не «просто PDF».
+2. Страница: 3D flip (язык redesign), баланс, ledger RO, PDF / позвонить / записаться.
+3. CRM: «Скопировать ссылку клиенту» + PDF + offer после activate.
+4. Бот `@vr_lounge33_bot`: после activate доставляет ссылку (phone→telegram) или пишет админу «отправь вручную» + `/giftlink`.
+5. Списание только в CRM. Публичка read-only.
 
 ---
 
-## 2. Git карта (redesign)
+## 1. Кто где
 
-| Ветка | vs `main` | Вердикт |
-|-------|-----------|---------|
-| `cursor/gift-card-preview-e6c6` (+ ui/flip/name/…-e6c6) | **влито** (PR #4 MERGED) | UI gift в `origin/main` |
-| `cursor/gift-crm-integrate-e6c6` | **+3 коммита** не в main | Патч-пак CRM + Firestore submit в `js/gift.js` |
-| Локальный `main` redesign | `js/gift.js` **модифицирован** (реальный submit); `js/gift-cards.js`, `gift.html` untracked | Код интегратора на диске, **не запушен / не деплоен** |
-
-**Итог:** UI cloud уже в remote main; CRM-интеграция cloud **не** в remote main, но **перенесена локально** в CRM + локальный redesign submit.
-
----
-
-## 3. Карта владения (чтобы не конфликтовать)
-
-| Зона | Владелец | Не трогать |
-|------|----------|------------|
-| Gift **UI** (карта, flip, hero buttons, popup UX) | Cloud Cursor works / уже в `main` redesign | Не форкать вторую визуальную ветку без нужды |
-| Gift **submit** → Firestore `pending` | Desktop интегратор (локальный `js/gift.js` + `js/gift-cards.js`) | Cloud не пушить параллельный submit в обход SoT |
-| **CRM** UI (`gift-cards.js`, секция в `index.html`) | Desktop / папка CRM VR Lounge | Запрет второй CRM; `crm-gift/` на redesign — архив, не прод |
-| **Telegram** `setupNewGiftCardListener` | Desktop CRM `telegram-bot.js` | |
-| **Firestore rules** `giftCards` / `giftLedger` | Desktop CRM `firestore.rules` (черновик) | **Deploy = HITL** |
-| **Pages / prod сайт / Functions** | HITL (Юлия / Александр явным «деплой») | Никто не деплоит сам |
-| Оркестрация канона / sync | Desktop Cursor + этот бриф → Grok | |
+| Агент / канал | Статус |
+|---------------|--------|
+| Grok «VR-клуб Кольчугино» | Канон + этот бриф |
+| Desktop Cursor | Интегратор delivery |
+| GitHub redesign | `VR-Lounge/vr-lounge-redesign` → Pages |
+| CRM | `VR-Lounge/-` → Pages |
+| Бот | Render + `telegram-bot.js` (без Blaze) |
 
 ---
 
-## 4. Канон продукта (кратко)
+## 2. Как выдаём клиенту (полный сценарий)
 
-- Визуал: горизонтальная «банковская» карта (Давид слева, сумма/имя/номер справа).
-- Вход: Play / Birthday / **Gift** → popup 1000–20000 ₽.
-- Поток: phone (+ name?) → Firestore `giftCards` `pending` → CRM + Telegram → HITL Юлия (оплата) → activate / баланс / PDF-PNG вручную.
-- Одна БД: Firebase `vr-lounge33`. Без эквайринга v1.
+**Покупатель** → форма Подарить → `pending` → Юлия звонит/оплата → CRM activate →  
+**ссылка** `https://vr-lounge.github.io/vr-lounge-redesign/gift.html?code=VRL-XXXXXX`  
+→ бот шлёт покупателю **или** Юлия копирует из CRM / получает текст от бота →  
+**получатель** открывает страницу (flip, баланс, история) → визит → Юлия списывает в CRM.
 
----
-
-## 5. Что уже сделано / что ждёт
-
-**Сделано**
-- Cloud: UI gift → PR #4 merged в redesign `main`.
-- Desktop: CRM `gift-cards.js`, rules draft, telegram listener, локальный redesign submit.
-- Sync-бриф отправлен в Grok «VR-клуб Кольчугино» (2026-11-09 18:00).
-
-**Не сделано (HITL)**
-- `firebase deploy` (rules / functions)
-- Push/Pages CRM и redesign с live submit
-- Рестарт Render-бота при необходимости
+Пример (тест): `https://vr-lounge.github.io/vr-lounge-redesign/gift.html?code=VRL-W2C7GB`
 
 ---
 
-## 6. Запреты конфликтов
+## 3. Пути файлов (чинить здесь)
 
-1. Не плодить вторую CRM / отдельную gift-БД.  
-2. Не деплоить rules/Pages/Functions без явного «деплой».  
-3. Cloud не переписывает локальную CRM в обход папки `CRM VR Lounge`.  
-4. Desktop не открывает параллельный UI-форк «с нуля» — UI уже в main.  
-5. Grok не запускает новых cloud works на ту же фичу без чтения этого брифа + SoT.
+| Зона | Файлы |
+|------|-------|
+| Публичная страница | `vr-lounge-redesign/gift.html`, `css/gift-page.css`, `js/gift-page.js`, `css/vrl-gift.css` |
+| Shared API | `vr-lounge-redesign/js/gift-cards.js` + копия CRM `gift-cards.js` |
+| CRM UI | `CRM VR Lounge/gift-cards.js`, `index.html` (секция), `gift.html` (redirect) |
+| Бот | `CRM VR Lounge/telegram-bot.js` (`setupNewGiftCardListener`, `setupGiftCardDeliveryListener`, `/giftlink`) |
+| Rules | `CRM VR Lounge/firestore.rules` |
+| Docs | `GIFT_CARD_SYNC_SOURCE_OF_TRUTH.md`, `GIFT_CARD_OPERATOR_RUNBOOK.md`, этот бриф |
 
 ---
 
-## 7. Экономика (P0)
+## 4. Как чинить типичное
 
-Одна CRM, ручной выпуск после оплаты → нет комиссии эквайринга; опер.стоимость ≈ 10–15 мин/заявка. Новых платных сервисов нет (reuse Firebase + Telegram). Landed cost деплоя ≈ 0 ₽ (уже оплаченные Firebase/GitHub/Render).
+| Симптом | Действие |
+|---------|----------|
+| Ссылка 404 / старая плоская карта | Push redesign Pages; hard refresh `gift.html` |
+| CRM копирует неверный URL | `publicPageUrl()` → всегда redesign base |
+| Бот не шлёт после activate | Рестарт Render; проверить `issuedAt` + `deliveryNotifiedAt`; `/giftlink CODE` |
+| Нет telegram у покупателя | Ожидаемо → админу текст + ручная отправка ссылки |
+| Списание с публички | Не должно быть; если появилось — баг, откатить |
+| Карта не найдена | Проверить `publicCode` и rules read |
+
+---
+
+## 5. Запреты
+
+1. Не плодить вторую CRM / gift-БД / нового бота.  
+2. Не делать эквайринг в v1.  
+3. Не деплоить vr-lounge.ru без явного HITL.  
+4. Grok не запускает параллельный cloud work на выдачу без чтения SoT + этого брифа.
+
+---
+
+## 6. Экономика
+
+Landed cost контура выдачи ≈ **0 ₽** новых сервисов. Экономия времени Юлии: ссылка + бот вместо ручной сборки PDF как единственного канала; PDF остаётся опцией с той же страницы (`&print=1`).

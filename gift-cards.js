@@ -357,9 +357,9 @@ export function initGiftCardsCrm(opts) {
           )}</div></div>
         </div>
         <div class="flex flex-wrap gap-2">
-          <a href="${escapeAttr(publicUrl)}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded-2xl bg-blue-600 text-white text-sm font-medium hover:bg-blue-700">Открыть публичную страницу</a>
-          <a href="${escapeAttr(publicUrl + (publicUrl.includes("?") ? "&" : "?") + "print=1")}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded-2xl bg-fuchsia-600 text-white text-sm font-medium hover:bg-fuchsia-700" title="Откроет карту и диалог печати / PDF / PNG через системный диалог">Скачать карту (PDF/PNG)</a>
-          <button type="button" data-copy-link class="px-4 py-2 rounded-2xl border border-gray-300 text-sm font-medium hover:bg-gray-50">Копировать ссылку</button>
+          <a href="${escapeAttr(publicUrl)}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded-2xl bg-blue-600 text-white text-sm font-medium hover:bg-blue-700">Открыть страницу клиента</a>
+          <a href="${escapeAttr(printPageUrl(card.publicCode))}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded-2xl bg-fuchsia-600 text-white text-sm font-medium hover:bg-fuchsia-700" title="Откроет карту и диалог печати / PDF / PNG">Скачать PDF/PNG</a>
+          <button type="button" data-copy-link class="px-4 py-2 rounded-2xl border border-gray-300 text-sm font-medium hover:bg-gray-50">Скопировать ссылку клиенту</button>
           ${
             card.status === "pending"
               ? `<button type="button" data-confirm-paid class="px-4 py-2 rounded-2xl bg-green-600 text-white text-sm font-medium hover:bg-green-700">Оплачено / активировать</button>`
@@ -422,12 +422,8 @@ export function initGiftCardsCrm(opts) {
       </div>
     `;
     els.detail.querySelector("[data-copy-link]")?.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(publicUrl);
-        alert("Ссылка скопирована");
-      } catch {
-        prompt("Скопируйте ссылку:", publicUrl);
-      }
+      const ok = await copyClientLink(publicUrl);
+      if (ok) alert("Ссылка для клиента скопирована");
     });
     els.detail.querySelector("[data-confirm-paid]")?.addEventListener("click", async () => {
       if (!isAdmin()) {
@@ -450,7 +446,14 @@ export function initGiftCardsCrm(opts) {
           renderList();
         }
         renderDetail(card.id);
-        alert("Карта активирована (issued). Отправьте PNG/PDF покупателю.");
+        const link = publicPageUrl(card.publicCode);
+        const sendHint =
+          "Карта активирована.\n\nСсылка клиенту:\n" +
+          link +
+          "\n\nБот @vr_lounge33_bot попробует отправить ссылку покупателю (если есть Telegram). Иначе отправьте вручную.\n\nСкопировать ссылку в буфер?";
+        if (confirm(sendHint)) {
+          await copyClientLink(link);
+        }
       } catch (err) {
         console.error(err);
         alert("Не удалось активировать: " + (err.message || err));
@@ -589,21 +592,22 @@ export function initGiftCardsCrm(opts) {
 }
 
 function publicPageUrl(code) {
-  // Prefer redesign public page (deployable from this agent); CRM gift.html as fallback path
-  const redesign = REDESIGN_GIFT_PUBLIC_BASE + "?code=" + encodeURIComponent(code);
+  // Канон выдачи клиенту — премиум-страница redesign (flip + баланс + ledger)
+  return REDESIGN_GIFT_PUBLIC_BASE + "?code=" + encodeURIComponent(code || "");
+}
+
+function printPageUrl(code) {
+  return publicPageUrl(code) + "&print=1";
+}
+
+async function copyClientLink(publicUrl) {
   try {
-    if (/vr-lounge\.github\.io\/-\//.test(location.href) || /\/-\//.test(location.pathname)) {
-      return (
-        location.origin +
-        location.pathname.replace(/index\.html$/, "").replace(/\/?$/, "/") +
-        "gift.html?code=" +
-        encodeURIComponent(code)
-      );
-    }
+    await navigator.clipboard.writeText(publicUrl);
+    return true;
   } catch {
-    /* ignore */
+    prompt("Скопируйте ссылку клиенту:", publicUrl);
+    return false;
   }
-  return redesign;
 }
 
 function wireBookingGiftHook(db, getUseLocal) {

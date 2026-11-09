@@ -190,12 +190,34 @@ async function getUserRole(userId) {
 // ============================================
 
 // Команда /start
-bot.onText(/\/start/, async (msg) => {
+bot.onText(/\/start(?:\s+(.+))?/, async (msg, match) => {
   const chatId = msg.chat.id;
   const userId = msg.from.id.toString();
   const username = msg.from.username || msg.from.first_name;
+  const startPayload = String((match && match[1]) || '').trim();
   
   console.log(`📨 Получена команда /start от ${username} (chatId: ${chatId}, userId: ${userId})`);
+
+  // Deep link: /start gift_VRL-XXXXXX — сразу отдать ссылку на карту
+  const giftStart = startPayload.match(/^gift[_-]?([A-Za-z0-9\-]+)$/i);
+  if (giftStart) {
+    const giftCode = giftStart[1].toUpperCase();
+    const link = `https://vr-lounge.github.io/vr-lounge-redesign/gift.html?code=${encodeURIComponent(giftCode)}`;
+    try {
+      const roleQuick = await getUserRole(userId);
+      if (roleQuick === 'admin') {
+        await bot.sendMessage(
+          chatId,
+          `🎁 Карта ${giftCode}\n\nСсылка клиенту:\n${link}\n\nПовторить доставку: /giftlink ${giftCode}`
+        );
+      } else {
+        await bot.sendMessage(chatId, `🎁 Ваша карта ${giftCode}:\n${link}`);
+      }
+    } catch (e) {
+      await bot.sendMessage(chatId, `🎁 Карта ${giftCode}:\n${link}`);
+    }
+    return;
+  }
 
   // URL Mini App для админов
   const ADMIN_MINI_APP_URL = process.env.MINI_APP_URL || 'https://vr-lounge.github.io/-/telegram-miniapp.html';
@@ -1427,6 +1449,7 @@ bot.onText(/\/help/, async (msg) => {
 /start - Начать работу с ботом
 /newbooking - Создать новую запись (открывает Mini App)
 /register - Зарегистрировать клиента
+/giftlink VRL-XXXXXX - отправить клиенту ссылку на подарочную карту
 /help - Показать эту справку
 
 Функции администратора:
@@ -1435,6 +1458,7 @@ bot.onText(/\/help/, async (msg) => {
 • Управление клиентами
 • Рассылки клиентам
 • Уведомления о событиях в группе администраторов
+• После activate карты — авто-доставка ссылки (или текст «отправь вручную»)
 
 После регистрации клиентов они будут автоматически получать:
 • Напоминания о предстоящих записях (за 1 день и за 3 часа)
@@ -1494,6 +1518,7 @@ bot.onText(/^Помощь$/i, async (msg) => {
 /start - Начать работу с ботом
 /newbooking - Создать новую запись (открывает Mini App)
 /register - Зарегистрировать клиента
+/giftlink VRL-XXXXXX - ссылка на подарочную карту клиенту
 /help - Показать эту справку
 
 Функции администратора:
@@ -2692,6 +2717,146 @@ checkUpcomingEvents();
 // Настраиваем слушатель новых записей
 setupNewBookingListener();
 
+const GIFT_PUBLIC_BASE = 'https://vr-lounge.github.io/vr-lounge-redesign/gift.html';
+
+function giftCardClientUrl(publicCode) {
+  return `${GIFT_PUBLIC_BASE}?code=${encodeURIComponent(publicCode || '')}`;
+}
+
+function giftDeepLinkForAdmin(publicCode) {
+  // Deep link в бота: админ шлёт /giftlink CODE себе или пересылает
+  return `https://t.me/vr_lounge33_bot?start=gift_${encodeURIComponent(publicCode || '')}`;
+}
+
+function normalizePhoneDigits(phone) {
+  const digits = String(phone || '').replace(/\D/g, '');
+  if (!digits) return [];
+  const variants = new Set([digits]);
+  if (digits.length === 11 && (digits.startsWith('7') || digits.startsWith('8'))) {
+    variants.add(digits.slice(1));
+    variants.add('7' + digits.slice(1));
+    variants.add('8' + digits.slice(1));
+  }
+  if (digits.length === 10) {
+    variants.add('7' + digits);
+    variants.add('8' + digits);
+  }
+  return Array.from(variants);
+}
+
+async function findClientTelegramByPhone(phone) {
+  const variants = normalizePhoneDigits(phone);
+  for (const variant of variants) {
+    try {
+      const snap = await db.collection('clients')
+        .where('phoneDigits', '==', variant)
+        .limit(1)
+        .get();
+      if (!snap.empty) {
+        const client = snap.docs[0].data();
+        if (client.telegramId) {
+          return {
+            telegramId: String(client.telegramId),
+            clientName: client.clientName || '',
+            clientId: snap.docs[0].id,
+          };
+        }
+      }
+    } catch (err) {
+      console.warn('findClientTelegramByPhone:', err.message || err);
+    }
+  }
+  return null;
+}
+
+function buildGiftClientMessage(card) {
+  const code = card.publicCode || '—';
+  const link = giftCardClientUrl(code);
+  const face = Number(card.faceValue || 0).toLocaleString('ru-RU');
+  const balance = Number(card.balance != null ? card.balance : card.faceValue || 0).toLocaleString('ru-RU');
+  const name = card.recipientName || 'гостю';
+  return (
+    `🎁 Ваша подарочная карта VR Lounge готова!\n\n` +
+    `🔖 Код: ${code}\n` +
+    `👤 Для: ${name}\n` +
+    `💰 Номинал: ${face} ₽ · баланс ${balance} ₽\n\n` +
+    `Откройте персональную страницу (карта переворачивается, баланс и история):\n${link}\n\n` +
+    `Запись: 8 930 224-45-51 · @vr_lounge33_bot`
+  );
+}
+
+async function deliverGiftCardLink(card, cardId, opts = {}) {
+  const code = card.publicCode || '';
+  const link = giftCardClientUrl(code);
+  const clientMsg = buildGiftClientMessage(card);
+  const phone = card.buyerPhone || card.buyerPhoneDigits || '';
+  let deliveredTo = null;
+
+  // 1) Явный telegram id на карте (если когда-нибудь проставят)
+  if (card.buyerTelegramId) {
+    try {
+      await bot.sendMessage(String(card.buyerTelegramId), clientMsg, {
+        disable_web_page_preview: false,
+      });
+      deliveredTo = String(card.buyerTelegramId);
+    } catch (err) {
+      console.warn('gift deliver buyerTelegramId failed:', err.message || err);
+    }
+  }
+
+  // 2) Клиент в CRM по телефону покупателя
+  if (!deliveredTo && phone) {
+    const found = await findClientTelegramByPhone(phone);
+    if (found?.telegramId) {
+      try {
+        await bot.sendMessage(found.telegramId, clientMsg, {
+          disable_web_page_preview: false,
+        });
+        deliveredTo = found.telegramId;
+      } catch (err) {
+        console.warn('gift deliver client telegram failed:', err.message || err);
+      }
+    }
+  }
+
+  if (deliveredTo) {
+    try {
+      await db.collection('giftCards').doc(cardId).update({
+        deliveryNotifiedAt: admin.firestore.FieldValue.serverTimestamp(),
+        deliveryChannel: 'telegram',
+        deliveryTelegramId: deliveredTo,
+      });
+    } catch (err) {
+      console.warn('gift delivery flag update failed:', err.message || err);
+    }
+    if (!opts.silentAdmin) {
+      await sendNotificationToAdmins(
+        `✅ Ссылка на карту ${code} отправлена клиенту в Telegram.\n🔗 ${link}`
+      );
+    }
+    return { ok: true, deliveredTo, link };
+  }
+
+  // 3) Нет chat id — админу текст «отправь ссылку» + deep link
+  const adminMsg =
+    `🎁 Карта ${code} активирована, но Telegram покупателя не найден.\n\n` +
+    `📞 Телефон: ${phone || '—'}\n` +
+    `👤 Получатель: ${card.recipientName || '—'}\n\n` +
+    `Отправьте клиенту ссылку вручную:\n${link}\n\n` +
+    `Или команда боту: /giftlink ${code}\n` +
+    `Deep link: ${giftDeepLinkForAdmin(code)}`;
+  await sendNotificationToAdmins(adminMsg);
+  try {
+    await db.collection('giftCards').doc(cardId).update({
+      deliveryNotifiedAt: admin.firestore.FieldValue.serverTimestamp(),
+      deliveryChannel: 'admin_manual',
+    });
+  } catch (err) {
+    console.warn('gift delivery admin flag failed:', err.message || err);
+  }
+  return { ok: false, deliveredTo: null, link };
+}
+
 // Слушатель заявок на подарочные карты (тот же ADMIN_GROUP_ID)
 function setupNewGiftCardListener() {
   console.log('🎁 Настройка слушателя подарочных карт...');
@@ -2707,7 +2872,10 @@ function setupNewGiftCardListener() {
         .limit(10)
         .get();
 
-      if (giftSnapshot.empty) return;
+      if (giftSnapshot.empty) {
+        lastGiftCheckTime = now;
+        return;
+      }
 
       for (const docSnap of giftSnapshot.docs) {
         const card = docSnap.data();
@@ -2724,6 +2892,7 @@ function setupNewGiftCardListener() {
         }
 
         const face = Number(card.faceValue || 0).toLocaleString('ru-RU');
+        const link = giftCardClientUrl(card.publicCode);
         let message = `🎁 Новая заявка на подарочную карту!\n\n`;
         message += `🔖 Код: ${card.publicCode || '—'}\n`;
         message += `👤 Получатель: ${card.recipientName || '—'}\n`;
@@ -2731,6 +2900,7 @@ function setupNewGiftCardListener() {
         message += `💰 Номинал: ${face} ₽\n`;
         message += `📊 Статус: ${card.status || '—'}\n`;
         message += `🛎 Источник: ${card.createdBy || card.source || '—'}\n`;
+        message += `\n🔗 Страница карты: ${link}`;
         message += `\n➡️ CRM → «Подарочные карты» → после оплаты «Оплачено / активировать».`;
 
         try {
@@ -2751,7 +2921,125 @@ function setupNewGiftCardListener() {
   }, 30000);
 }
 
+// После activate (issued): доставка ссылки клиенту через @vr_lounge33_bot
+function setupGiftCardDeliveryListener() {
+  console.log('🎁 Настройка доставки ссылок подарочных карт...');
+  let processedDelivery = new Set();
+
+  setInterval(async () => {
+    try {
+      const windowStart = admin.firestore.Timestamp.fromMillis(Date.now() - 6 * 60 * 60 * 1000);
+      let snap;
+      try {
+        snap = await db.collection('giftCards')
+          .where('status', 'in', ['issued', 'partial'])
+          .where('issuedAt', '>=', windowStart)
+          .limit(15)
+          .get();
+      } catch (indexErr) {
+        // Без составного индекса — fallback: недавние issued без deliveryNotifiedAt через status
+        snap = await db.collection('giftCards')
+          .where('status', '==', 'issued')
+          .limit(20)
+          .get();
+      }
+
+      const cutoffMs = Date.now() - 6 * 60 * 60 * 1000;
+      for (const docSnap of snap.docs) {
+        const card = docSnap.data();
+        const cardId = docSnap.id;
+        if (card.deliveryNotifiedAt) continue;
+        if (!card.publicCode) continue;
+        if (processedDelivery.has(cardId)) continue;
+        // Только реально активированные (есть paid/issued timestamp)
+        const issuedMs = card.issuedAt?.toMillis
+          ? card.issuedAt.toMillis()
+          : card.paidAt?.toMillis
+            ? card.paidAt.toMillis()
+            : (card.issuedAt || card.paidAt)
+              ? new Date(card.issuedAt || card.paidAt).getTime()
+              : 0;
+        if (!issuedMs || issuedMs < cutoffMs) continue;
+
+        processedDelivery.add(cardId);
+        if (processedDelivery.size > 120) {
+          Array.from(processedDelivery).slice(0, 60).forEach((id) => processedDelivery.delete(id));
+        }
+
+        try {
+          const result = await deliverGiftCardLink(card, cardId);
+          console.log(
+            `🎁 Delivery ${card.publicCode}:`,
+            result.ok ? `sent to ${result.deliveredTo}` : 'admin manual'
+          );
+        } catch (err) {
+          console.error('❌ gift delivery error:', err.message || err);
+          processedDelivery.delete(cardId);
+        }
+      }
+    } catch (error) {
+      if (error.code !== 9 && !String(error.message || '').includes('FAILED_PRECONDITION')) {
+        console.error('❌ Ошибка delivery giftCards:', error.message || error);
+      }
+    }
+  }, 30000);
+}
+
+// Админ: /giftlink VRL-XXXXXX — повторно отправить / показать ссылку
+bot.onText(/\/giftlink(?:\s+|_)?([A-Za-z0-9\-]+)?/i, async (msg, match) => {
+  const chatId = msg.chat.id;
+  const userId = msg.from.id.toString();
+  const role = await getUserRole(userId);
+  if (role !== 'admin') {
+    await bot.sendMessage(chatId, '❌ Команда только для администраторов.\nИспользование: /giftlink VRL-XXXXXX');
+    return;
+  }
+  const code = String(match[1] || '').trim().toUpperCase();
+  if (!code) {
+    await bot.sendMessage(
+      chatId,
+      'Использование: /giftlink VRL-XXXXXX\nОтправит ссылку клиенту (если известен Telegram) или вернёт текст для ручной отправки.'
+    );
+    return;
+  }
+  try {
+    const snap = await db.collection('giftCards')
+      .where('publicCode', '==', code)
+      .limit(1)
+      .get();
+    if (snap.empty) {
+      await bot.sendMessage(chatId, `Карта ${code} не найдена.`);
+      return;
+    }
+    const docSnap = snap.docs[0];
+    const card = docSnap.data();
+    // Сброс флага, чтобы команда могла повторить доставку
+    try {
+      await docSnap.ref.update({
+        deliveryNotifiedAt: admin.firestore.FieldValue.delete(),
+        deliveryChannel: admin.firestore.FieldValue.delete(),
+        deliveryTelegramId: admin.firestore.FieldValue.delete(),
+      });
+    } catch (_) { /* ignore */ }
+    const result = await deliverGiftCardLink({ ...card, deliveryNotifiedAt: null }, docSnap.id, {
+      silentAdmin: true,
+    });
+    if (result.ok) {
+      await bot.sendMessage(chatId, `✅ Ссылка отправлена клиенту.\n${result.link}`);
+    } else {
+      await bot.sendMessage(
+        chatId,
+        `Telegram покупателя не найден — отправьте вручную:\n${result.link}`
+      );
+    }
+  } catch (err) {
+    console.error('/giftlink error:', err);
+    await bot.sendMessage(chatId, 'Ошибка: ' + (err.message || err));
+  }
+});
+
 setupNewGiftCardListener();
+setupGiftCardDeliveryListener();
 
 bot.on('polling_error', (error) => {
   console.error('❌ Ошибка polling:', error.message);
