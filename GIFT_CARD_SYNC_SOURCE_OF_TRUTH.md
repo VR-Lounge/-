@@ -141,8 +141,9 @@ sequenceDiagram
 - [x] CRM: скопировать ссылку + PDF + offer после activate
 - [x] Бот: delivery после activate + `/giftlink`
 - [x] Безопасность: RO публичка, списание только CRM
-- [ ] Chrome E2E после Pages push (этот цикл)
+- [x] Chrome E2E: `gift.html?code=VRL-W2C7GB` — flip, баланс 2 500, ledger, PDF; console critical=0
 - [ ] Кнопки на прод vr-lounge.ru (HITL)
+- [ ] Рестарт Render-бота (подхватить delivery listener)
 
 ---
 
