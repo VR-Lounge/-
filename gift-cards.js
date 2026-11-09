@@ -49,6 +49,57 @@ function digitsPhone(phone) {
   return String(phone || "").replace(/\D/g, "");
 }
 
+/** RU mobile → +7XXXXXXXXXX or null */
+function normalizeRuPhone(phone) {
+  let d = digitsPhone(phone);
+  if (!d) return null;
+  if (d.length === 11 && (d[0] === "8" || d[0] === "7")) d = "7" + d.slice(1);
+  else if (d.length === 10) d = "7" + d;
+  if (d.length === 11 && d[0] === "7") return "+" + d;
+  return null;
+}
+
+/** Маска ввода: 8… / +7 / 9… → +7 (XXX) XXX-XX-XX */
+function formatRuPhoneInput(value) {
+  let d = digitsPhone(value);
+  if (!d) return "";
+  if (d[0] === "8") d = "7" + d.slice(1);
+  else if (d[0] === "9") d = "7" + d;
+  if (d[0] !== "7") d = "7" + d;
+  d = d.slice(0, 11);
+  const rest = d.slice(1);
+  let out = "+7";
+  if (!rest.length) return out;
+  out += " (" + rest.slice(0, Math.min(3, rest.length));
+  if (rest.length >= 3) out += ")";
+  if (rest.length > 3) out += " " + rest.slice(3, Math.min(6, rest.length));
+  if (rest.length > 6) out += "-" + rest.slice(6, Math.min(8, rest.length));
+  if (rest.length > 8) out += "-" + rest.slice(8, Math.min(10, rest.length));
+  return out;
+}
+
+function looksLikePhoneRef(value) {
+  const d = digitsPhone(value);
+  return d.length === 10 || (d.length === 11 && (d[0] === "7" || d[0] === "8"));
+}
+
+function wireRuPhoneMask(input) {
+  if (!input || input.dataset.phoneMask === "1") return;
+  input.dataset.phoneMask = "1";
+  input.setAttribute("inputmode", "tel");
+  input.setAttribute("autocomplete", "tel");
+  input.addEventListener("input", () => {
+    const next = formatRuPhoneInput(input.value);
+    if (input.value !== next) {
+      input.value = next;
+    }
+  });
+  input.addEventListener("blur", () => {
+    const norm = normalizeRuPhone(input.value);
+    if (norm) input.value = formatRuPhoneInput(norm);
+  });
+}
+
 function normalizeRecipient(name) {
   return String(name || "")
     .trim()
@@ -208,7 +259,7 @@ export function initGiftCardsCrm(opts) {
       cards = seedLocalDemoIfEmpty();
       renderList();
       setBackendHint(
-        "Локальный режим: Firestore недоступен или demo-флаг. Данные только в этом браузере.",
+        "Офлайн: карты только в этом браузере. Проверьте интернет или войдите снова.",
         true
       );
       return;
@@ -220,7 +271,7 @@ export function initGiftCardsCrm(opts) {
           firebaseReady = true;
           useLocal = false;
           cards = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
-          setBackendHint("Firestore: giftCards · live", false);
+          setBackendHint("Онлайн · список обновляется сам", false);
           renderList();
           if (selectedId) renderDetail(selectedId);
         },
@@ -229,7 +280,7 @@ export function initGiftCardsCrm(opts) {
           useLocal = true;
           cards = seedLocalDemoIfEmpty();
           setBackendHint(
-            "Firestore rules/index ещё не задеплоены — локальный режим. Деплой firestore.rules + индекс giftCards.createdAt.",
+            "Офлайн: не удалось подключить список карт. Данные только в этом браузере.",
             true
           );
           renderList();
@@ -239,7 +290,7 @@ export function initGiftCardsCrm(opts) {
       console.warn("[gift] subscribe error", err);
       useLocal = true;
       cards = seedLocalDemoIfEmpty();
-      setBackendHint("Ошибка подписки Firestore — локальный режим.", true);
+      setBackendHint("Офлайн: ошибка связи. Данные только в этом браузере.", true);
       renderList();
     }
   }
@@ -358,8 +409,9 @@ export function initGiftCardsCrm(opts) {
         </div>
         <div class="flex flex-wrap gap-2">
           <a href="${escapeAttr(publicUrl)}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded-2xl bg-blue-600 text-white text-sm font-medium hover:bg-blue-700">Открыть страницу клиента</a>
-          <a href="${escapeAttr(printPageUrl(card.publicCode))}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded-2xl bg-fuchsia-600 text-white text-sm font-medium hover:bg-fuchsia-700" title="Откроет карту и диалог печати / PDF / PNG">Скачать PDF/PNG</a>
+          <a href="${escapeAttr(printPageUrl(card.publicCode))}" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 rounded-2xl bg-fuchsia-600 text-white text-sm font-medium hover:bg-fuchsia-700" title="Откроет карту и диалог печати / сохранить как PDF">Скачать PDF/PNG</a>
           <button type="button" data-copy-link class="px-4 py-2 rounded-2xl border border-gray-300 text-sm font-medium hover:bg-gray-50">Скопировать ссылку клиенту</button>
+          <button type="button" data-copy-code class="px-4 py-2 rounded-2xl border border-gray-300 text-sm font-medium hover:bg-gray-50">Скопировать номер карты</button>
           ${
             card.status === "pending"
               ? `<button type="button" data-confirm-paid class="px-4 py-2 rounded-2xl bg-green-600 text-white text-sm font-medium hover:bg-green-700">Оплачено / активировать</button>`
@@ -377,7 +429,7 @@ export function initGiftCardsCrm(opts) {
           }
         </div>
         <div>
-          <h4 class="font-semibold text-gray-800 mb-2">История (ledger)</h4>
+          <h4 class="font-semibold text-gray-800 mb-2">История операций</h4>
           <div class="space-y-2 max-h-64 overflow-y-auto">
             ${
               ledger.length
@@ -391,7 +443,9 @@ export function initGiftCardsCrm(opts) {
                   }">${e.kind === "debit" ? "−" : "+"}${formatRub(e.amount)}</div>
                   <div class="text-gray-500">${escapeHtml(e.note || "")}${
                         e.bookingId
-                          ? ` · запись ${escapeHtml(e.bookingId)}`
+                          ? looksLikePhoneRef(e.bookingId)
+                            ? ` · ${escapeHtml(formatRuPhoneInput(e.bookingId))}`
+                            : ` · ${escapeHtml(e.bookingId)}`
                           : ""
                       }</div>
                 </div>
@@ -409,21 +463,31 @@ export function initGiftCardsCrm(opts) {
           card.status === "void" || card.balance <= 0 ? "hidden" : ""
         }">
           <h4 class="font-semibold text-amber-900">Списать с карты</h4>
-          <p class="text-xs text-amber-800">Списание идёт только в giftLedger. Формулы зарплаты / выручки CRM не меняются. Можно указать id записи для связи.</p>
+          <p class="text-xs text-amber-800">Спишите деньги с карты, когда гость поиграл. Зарплата и выручка по услугам не меняются. Можно указать телефон гостя для связи.</p>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
             <input name="amount" type="number" min="1" max="${
               card.balance
             }" required placeholder="Сумма ₽" class="rounded-2xl border border-amber-300 px-4 py-2" />
-            <input name="bookingId" type="text" placeholder="ID записи (опц.)" class="rounded-2xl border border-amber-300 px-4 py-2" />
+            <input name="guestPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Телефон гостя (опц.)" class="rounded-2xl border border-amber-300 px-4 py-2" />
             <input name="note" type="text" placeholder="Комментарий" class="rounded-2xl border border-amber-300 px-4 py-2" />
           </div>
           <button type="submit" class="px-4 py-2 rounded-2xl bg-amber-600 text-white font-semibold hover:bg-amber-700">Списать</button>
         </form>
       </div>
     `;
+    wireRuPhoneMask(els.detail.querySelector('input[name="guestPhone"]'));
     els.detail.querySelector("[data-copy-link]")?.addEventListener("click", async () => {
       const ok = await copyClientLink(publicUrl);
       if (ok) alert("Ссылка для клиента скопирована");
+    });
+    els.detail.querySelector("[data-copy-code]")?.addEventListener("click", async () => {
+      const code = card.publicCode || "";
+      try {
+        await navigator.clipboard.writeText(code);
+        alert("Номер карты скопирован: " + code);
+      } catch {
+        prompt("Скопируйте номер карты:", code);
+      }
     });
     els.detail.querySelector("[data-confirm-paid]")?.addEventListener("click", async () => {
       if (!isAdmin()) {
@@ -496,8 +560,18 @@ export function initGiftCardsCrm(opts) {
       }
       const fd = new FormData(e.target);
       const amount = parseFloat(String(fd.get("amount")));
-      const bookingId = String(fd.get("bookingId") || "").trim() || null;
-      const note = String(fd.get("note") || "").trim() || "Списание в CRM";
+      const rawPhone = String(fd.get("guestPhone") || "").trim();
+      const phoneNorm = rawPhone ? normalizeRuPhone(rawPhone) : null;
+      if (rawPhone && !phoneNorm) {
+        alert("Телефон гостя: +7 (XXX) XXX-XX-XX");
+        return;
+      }
+      // bookingId в схеме = телефон гостя (основной идентификатор связи)
+      const bookingId = phoneNorm || null;
+      let note = String(fd.get("note") || "").trim() || "Списание при визите";
+      if (phoneNorm && !note.includes(phoneNorm) && !digitsPhone(note).includes(digitsPhone(phoneNorm))) {
+        note = note + " · тел. " + formatRuPhoneInput(phoneNorm);
+      }
       try {
         await redeemGiftCard(db, {
           cardId: card.id,
@@ -525,6 +599,7 @@ export function initGiftCardsCrm(opts) {
   }
 
   if (els.issueForm) {
+    wireRuPhoneMask(els.issueForm.querySelector('input[name="buyerPhone"]'));
     els.issueForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (!isAdmin()) {
@@ -533,11 +608,14 @@ export function initGiftCardsCrm(opts) {
       }
       const fd = new FormData(els.issueForm);
       const faceValue = parseFloat(String(fd.get("faceValue")));
-      const buyerPhone = String(fd.get("buyerPhone") || "").trim();
+      const buyerPhoneRaw = String(fd.get("buyerPhone") || "").trim();
+      const buyerPhoneNorm = normalizeRuPhone(buyerPhoneRaw);
+      const buyerPhone = buyerPhoneNorm
+        ? formatRuPhoneInput(buyerPhoneNorm)
+        : buyerPhoneRaw;
       const recipientName = normalizeRecipient(fd.get("recipientName")) || "НЕ УКАЗАНО";
       const theme = String(fd.get("theme") || "amethyst");
-      const phoneDigits = digitsPhone(buyerPhone);
-      if (!(phoneDigits.length === 11 && phoneDigits.startsWith("7")) && phoneDigits.length !== 10) {
+      if (!buyerPhoneNorm) {
         alert("Телефон покупателя: +7 (XXX) XXX-XX-XX");
         return;
       }
@@ -592,7 +670,7 @@ export function initGiftCardsCrm(opts) {
 }
 
 function publicPageUrl(code) {
-  // Канон выдачи клиенту — премиум-страница redesign (flip + баланс + ledger)
+  // Канон выдачи клиенту — премиум-страница redesign (flip + баланс + история)
   return REDESIGN_GIFT_PUBLIC_BASE + "?code=" + encodeURIComponent(code || "");
 }
 
@@ -618,7 +696,7 @@ function wireBookingGiftHook(db, getUseLocal) {
 
   const opt = document.createElement("option");
   opt.value = "gift_note";
-  opt.textContent = "Подарочная карта (заметка, без изменения ЗП)";
+  opt.textContent = "Подарочная карта (списать баланс карты)";
   methodSelect.appendChild(opt);
 
   let panel = document.getElementById("giftPaymentPanel");
@@ -628,7 +706,7 @@ function wireBookingGiftHook(db, getUseLocal) {
     panel.className = "hidden rounded-2xl border border-violet-200 bg-violet-50 p-4 space-y-3";
     panel.innerHTML = `
       <p class="text-sm text-violet-900 font-medium">Оплата с подарочной карты</p>
-      <p class="text-xs text-violet-800">Списание баланса карты — отдельный ledger. Поля наличных/перевода и расчёт зарплаты не меняются. В примечание записи добавится код карты.</p>
+      <p class="text-xs text-violet-800">Спишите сумму с баланса карты. Наличные/перевод и зарплата не меняются — в примечание записи добавится код карты.</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
         <input id="giftPayCode" type="text" placeholder="Код VRL-…" class="rounded-2xl border border-violet-300 px-4 py-2 uppercase" />
         <input id="giftPayAmount" type="number" min="0" placeholder="Сумма списания" class="rounded-2xl border border-violet-300 px-4 py-2" />
@@ -985,7 +1063,7 @@ export function defaultGiftSectionHtml() {
         </h2>
         <p data-gift-backend-hint class="hidden text-xs px-3 py-1 rounded-full"></p>
       </div>
-      <p class="text-sm text-gray-500 mb-6">Отдельный модуль баланса (gift / позже prepaid). Не влияет на расчёт зарплаты и выручки по услугам.</p>
+      <p class="text-sm text-gray-500 mb-6">Как работать: заявка с сайта → вы принимаете оплату → выпускаете карту → при визите списываете с баланса.</p>
       <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
         <div class="xl:col-span-2 space-y-4">
           <div class="flex flex-col md:flex-row gap-3">

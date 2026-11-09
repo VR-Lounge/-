@@ -2309,7 +2309,7 @@
         </h2>
         <p data-gift-backend-hint class="hidden text-xs px-3 py-1 rounded-full"></p>
       </div>
-      <p class="text-sm text-gray-500 mb-6">Заявки с сайта (pending) → оплата у Юлии → выпуск (issued) → списание баланса при визите. Без второй CRM.</p>
+      <p class="text-sm text-gray-500 mb-6">Как работать: заявка приходит с сайта → вы принимаете оплату → выпускаете карту → при визите списываете сумму с баланса.</p>
       <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
         <div class="xl:col-span-2 space-y-4">
           <div class="flex flex-col md:flex-row gap-3">
@@ -2410,7 +2410,7 @@
 
   <!-- Firebase и основная логика приложения -->
   <script type="module">
-    import { initGiftCardsCrm } from './gift-cards.js';
+    import { initGiftCardsCrm } from './gift-cards.js?v=20261109-human';
 
     // Функция обработки добавления расхода
     async function handleAddExpense(event) {
@@ -4093,7 +4093,7 @@
         const giftAmountUi = parseFloat(document.getElementById('giftPayAmount')?.value || '0') || 0;
         let notesValue = bookingForm.notes.value.trim();
         if (isGiftNote && giftCodeUi && giftAmountUi > 0) {
-          const giftLine = `Подарочная карта ${giftCodeUi}: −${giftAmountUi.toLocaleString('ru-RU')} ₽ (ledger отдельно, ЗП не меняется)`;
+          const giftLine = `Подарочная карта ${giftCodeUi}: −${giftAmountUi.toLocaleString('ru-RU')} ₽ (списано с карты, зарплата не меняется)`;
           notesValue = notesValue ? `${notesValue}\n${giftLine}` : giftLine;
         }
         const bookingData = {
