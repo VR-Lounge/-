@@ -137,6 +137,7 @@ sequenceDiagram
 - [x] CRM секция: pending / activate / redeem / void
 - [x] Deploy rules + Pages CRM + redesign
 - [x] E2E pending→issued→partial (списание) + кнопка PDF/PNG (print=1)
+- [x] Native form live: `?autogift=1` → `VRL-BJS434` pending (Chrome DevTools, 0 critical console errors)
 - [ ] Кнопки на прод-хосте vr-lounge.ru (отдельный HITL)
 
 ---
