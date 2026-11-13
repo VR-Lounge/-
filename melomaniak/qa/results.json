@@ -1,0 +1,82 @@
+[
+  {
+    "area": "load",
+    "pass": true,
+    "detail": "desktop 1440"
+  },
+  {
+    "area": "logo-vinyl",
+    "pass": true,
+    "detail": "continuous CSS vinyl"
+  },
+  {
+    "area": "product-photos",
+    "pass": true,
+    "detail": "loaded=6/6"
+  },
+  {
+    "area": "filter-acoustics",
+    "pass": true,
+    "detail": "2 cards"
+  },
+  {
+    "area": "filter-amps",
+    "pass": true,
+    "detail": "2 amps"
+  },
+  {
+    "area": "filter-all",
+    "pass": true,
+    "detail": "6 cards"
+  },
+  {
+    "area": "sort-price-asc",
+    "pass": true,
+    "detail": "99000→100000→150000→170000→200000→560000"
+  },
+  {
+    "area": "search",
+    "pass": true,
+    "detail": "Yara hit"
+  },
+  {
+    "area": "modal-detail",
+    "pass": true,
+    "detail": "detail open"
+  },
+  {
+    "area": "modal-gallery",
+    "pass": true,
+    "detail": "thumbs=3"
+  },
+  {
+    "area": "favorites",
+    "pass": true,
+    "detail": "fav filter"
+  },
+  {
+    "area": "brief-steps",
+    "pass": true,
+    "detail": "Уже есть с чего начать."
+  },
+  {
+    "area": "mobile-menu",
+    "pass": true,
+    "detail": "menu"
+  },
+  {
+    "area": "mobile-cards",
+    "pass": true,
+    "detail": "6 cards @390"
+  },
+  {
+    "area": "tablet-768",
+    "pass": true,
+    "detail": "screenshot ok"
+  },
+  {
+    "area": "js-errors",
+    "pass": true,
+    "detail": "none"
+  }
+]
