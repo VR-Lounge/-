@@ -17,14 +17,19 @@ Cloud Agent ≠ ваш компьютер ≠ «сайт уже в интерн�
 ```
 melomaniak/
   index.html              ← страница
-  catalog-data.js         ← ~1887 товаров из Woo Store API (имена/цены)
-  shop-app.js             ← каталог, избранное, бриф, маршруты #oplata/…
+  catalog-data.js         ← ~1887 товаров (листинг: имена/цены/thumbs)
+  data/pdp/{id}.json      ← полные описания + specs с Woo Store API
+  enrich_product_details.py ← пайплайн выгрузки PDP
+  shop-app.js             ← каталог, PDP #product/slug, PhotoSwipe, бриф
   assets-manifest.js      ← hero / lookbook / gallery overrides
   CLIENT-PORTRAIT.md      ← портрет клиента (тон всех текстов)
   assets/
     display/              ← курируемые JPEG + thumbs/ для листинга
     from-live/            ← полный дамп (~1.5 GB, ~9k) — архив
 ```
+
+Карточка товара (deep link): `http://127.0.0.1:8080/#product/<slug>`  
+Пример: `#product/av_protsessor_anthem_statement_d2v_3d-178924`
 
 ## Как открыть локальный превью
 

@@ -76,8 +76,11 @@
   function photo(p, eager) {
     const a = thumbOf(p);
     const loading = eager ? "eager" : "lazy";
+    const local = p.thumbLocal && p.thumbLocal !== a ? p.thumbLocal : "";
     return a
-      ? `<img src="${esc(a)}" alt="${esc(p.name)}" width="640" height="640" loading="${loading}" decoding="async" onerror="this.onerror=null;this.outerHTML=window.__meloIllu()">`
+      ? `<img src="${esc(a)}" alt="${esc(p.name)}" width="640" height="640" loading="${loading}" decoding="async"${
+          local ? ` data-local="${esc(local)}"` : ""
+        } onerror="if(this.dataset.local){const l=this.dataset.local;this.removeAttribute('data-local');this.src=l;}else{this.onerror=null;this.outerHTML=window.__meloIllu()}">`
       : illustration();
   }
   window.__meloIllu = illustration;
@@ -170,63 +173,327 @@
       .slice(0, n);
   }
 
-  function detail(id, imgIdx) {
-    imgIdx = imgIdx || 0;
-    const p = products.find((x) => String(x.id) === String(id));
-    if (!p) return;
-    const g = (p.gallery && p.gallery.length ? p.gallery : thumbOf(p) ? [thumbOf(p)] : []).filter(Boolean);
-    const src = g[imgIdx] || thumbOf(p);
-    const media = src
-      ? `<img id="detailImg" src="${esc(src)}" alt="${esc(p.name)}" width="800" height="800" decoding="async">`
-      : illustration();
+  const detailCache = new Map();
+  let pdpGallery = [];
+  let pdpActive = 0;
+  let pdpListing = null;
+
+  function findProduct(ref) {
+    const key = String(ref || "");
+    let decoded = key;
+    try {
+      decoded = decodeURIComponent(key);
+    } catch (e) {}
+    return (
+      products.find(
+        (x) =>
+          String(x.id) === key ||
+          String(x.id) === decoded ||
+          x.slug === key ||
+          x.slug === decoded
+      ) || null
+    );
+  }
+
+  function galleryItems(listing, detail) {
+    const fromDetail = (detail && detail.gallery) || [];
+    if (fromDetail.length) {
+      return fromDetail.map((g) => ({
+        src: g.local || g.src,
+        thumb: g.thumb || g.local || g.src,
+        alt: g.alt || (listing && listing.name) || "",
+        cdn: g.src,
+      }));
+    }
+    const g = (listing && listing.gallery) || [];
+    if (g.length) {
+      return g.map((u) => ({ src: u, thumb: u, alt: (listing && listing.name) || "" }));
+    }
+    const t = listing && thumbOf(listing);
+    return t ? [{ src: t, thumb: t, alt: listing.name || "" }] : [];
+  }
+
+  function measureImage(src) {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () =>
+        resolve({
+          src,
+          width: img.naturalWidth || 1600,
+          height: img.naturalHeight || 1600,
+        });
+      img.onerror = () => resolve({ src, width: 1600, height: 1600 });
+      img.src = src;
+    });
+  }
+
+  function openPhotoSwipe(items, index) {
+    if (!items || !items.length) return;
+    if (typeof PhotoSwipe === "undefined") {
+      toast("Галерея ещё загружается…");
+      return;
+    }
+    const start = Math.max(0, Math.min(index || 0, items.length - 1));
+    Promise.all(
+      items.map(async (it) => {
+        const measured = await measureImage(it.src);
+        return {
+          src: measured.src,
+          width: measured.width,
+          height: measured.height,
+          alt: it.alt || "",
+        };
+      })
+    ).then((dataSource) => {
+      const pswp = new PhotoSwipe({
+        dataSource,
+        index: start,
+        bgOpacity: 0.94,
+        wheelToZoom: true,
+        paddingFn: () => ({ top: 28, bottom: 28, left: 16, right: 16 }),
+      });
+      pswp.init();
+    });
+  }
+  window.openPhotoSwipe = openPhotoSwipe;
+
+  function setPdpSlide(idx) {
+    if (!pdpGallery.length) return;
+    pdpActive = ((idx % pdpGallery.length) + pdpGallery.length) % pdpGallery.length;
+    const item = pdpGallery[pdpActive];
+    const img = document.getElementById("pdpHeroImg");
+    if (img) {
+      img.src = item.thumb || item.src;
+      img.alt = item.alt || (pdpListing && pdpListing.name) || "";
+      img.dataset.full = item.src;
+    }
+    document.querySelectorAll(".pdp-thumbs button").forEach((btn, i) => {
+      const on = i === pdpActive;
+      btn.classList.toggle("active", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+  window.setPdpSlide = setPdpSlide;
+  window.pdpPrev = () => setPdpSlide(pdpActive - 1);
+  window.pdpNext = () => setPdpSlide(pdpActive + 1);
+  window.openPdpGallery = (idx) => openPhotoSwipe(pdpGallery, idx == null ? pdpActive : idx);
+
+  async function loadDetailPayload(p) {
+    if (detailCache.has(p.id)) return detailCache.get(p.id);
+    try {
+      const res = await fetch("data/pdp/" + p.id + ".json", { credentials: "same-origin" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      detailCache.set(p.id, data);
+      return data;
+    } catch (e) {
+      const fallback = {
+        id: p.id,
+        slug: p.slug,
+        name: p.name,
+        descriptionHtml: "",
+        descriptionText: p.facts || "",
+        specs: [],
+        gallery: (p.gallery || []).map((u) => ({ src: u, thumb: u, alt: p.name })),
+        source: p.source,
+        missing: true,
+      };
+      detailCache.set(p.id, fallback);
+      return fallback;
+    }
+  }
+
+  function renderSpecs(specs) {
+    if (!specs || !specs.length) return "";
+    return `<section class="pdp-section" id="pdp-specs">
+      <div class="eyebrow">ХАРАКТЕРИСТИКИ</div>
+      <h3 class="pdp-h">Как записано у источника</h3>
+      <p class="pdp-lead">Только атрибуты и таблицы с карточки melomaniak.рф — без домыслов о мощности или наличии.</p>
+      <div class="pdp-specs-wrap"><table class="pdp-specs"><tbody>${specs
+        .map(
+          (s) =>
+            `<tr><th scope="row">${esc(s.label)}</th><td>${esc(s.value)}</td></tr>`
+        )
+        .join("")}</tbody></table></div>
+    </section>`;
+  }
+
+  function renderDescription(detail, listing) {
+    const html = (detail.descriptionHtml || "").trim();
+    if (html) {
+      return `<section class="pdp-section" id="pdp-about">
+        <div class="eyebrow">О ПРОДУКТЕ</div>
+        <h3 class="pdp-h">Слова с живой карточки</h3>
+        <p class="pdp-lead">Ниже — оригинальное описание WooCommerce. Мы лишь собрали его в спокойную вёрстку салона.</p>
+        <div class="pdp-prose">${html}</div>
+      </section>`;
+    }
+    const text = (detail.descriptionText || listing.facts || "").trim();
+    if (text) {
+      return `<section class="pdp-section" id="pdp-about">
+        <div class="eyebrow">О ПРОДУКТЕ</div>
+        <h3 class="pdp-h">Кратко из источника</h3>
+        <div class="pdp-prose"><p>${esc(text)}</p></div>
+        <p class="hitl-flag">HITL: полного HTML-описания в выгрузке нет — показан доступный текст.</p>
+      </section>`;
+    }
+    return `<section class="pdp-section" id="pdp-about">
+      <div class="eyebrow">О ПРОДУКТЕ</div>
+      <h3 class="pdp-h">Описание у источника пустое</h3>
+      <p class="pdp-lead">${esc(listing.note || "")}</p>
+      <p class="hitl-flag">HITL: на живой карточке нет текста описания. Не выдумываем характеристики.</p>
+    </section>`;
+  }
+
+  function renderPdp(listing, detail) {
+    pdpListing = listing;
+    pdpGallery = galleryItems(listing, detail);
+    pdpActive = 0;
+    const hero = pdpGallery[0];
+    const heroSrc = hero ? hero.thumb || hero.src : null;
+    const media = heroSrc
+      ? `<button type="button" class="pdp-hero-btn" onclick="openPdpGallery()" aria-label="Открыть галерею, увеличить">
+          <img id="pdpHeroImg" src="${esc(heroSrc)}" data-full="${esc(hero.src)}" alt="${esc(listing.name)}" width="1000" height="1000" decoding="async">
+          <span class="pdp-zoom-hint">Увеличить · pinch / drag</span>
+        </button>`
+      : `<div class="pdp-hero-btn">${illustration()}</div>`;
     const thumbs =
-      g.length > 1
-        ? `<div class="thumbs">${g
+      pdpGallery.length > 1
+        ? `<div class="pdp-thumbs" role="list">${pdpGallery
             .map(
-              (u, k) =>
-                `<button type="button" class="${k === imgIdx ? "active" : ""}" aria-label="Кадр ${k + 1}" aria-pressed="${k === imgIdx}" onclick="detail(${p.id},${k})"><img src="${esc(u)}" alt="" width="128" height="128" loading="lazy" decoding="async"></button>`
+              (g, i) =>
+                `<button type="button" role="listitem" class="${i === 0 ? "active" : ""}" aria-label="Кадр ${i + 1}" aria-pressed="${i === 0}" onclick="setPdpSlide(${i});">
+                  <img src="${esc(g.thumb || g.src)}" alt="" width="120" height="120" loading="lazy" decoding="async">
+                </button>`
             )
-            .join("")}</div>`
-        : "";
-    const hitl = p.hitl
+            .join("")}</div>
+          <div class="pdp-gallery-nav">
+            <button type="button" class="btn ghost" onclick="pdpPrev()" aria-label="Предыдущий кадр">←</button>
+            <button type="button" class="btn ghost" onclick="openPdpGallery()">Галерея · ${pdpGallery.length}</button>
+            <button type="button" class="btn ghost" onclick="pdpNext()" aria-label="Следующий кадр">→</button>
+          </div>`
+        : pdpGallery.length === 1
+          ? `<div class="pdp-gallery-nav"><button type="button" class="btn ghost" onclick="openPdpGallery(0)">Открыть в полном размере</button></div>`
+          : "";
+
+    const priceBlock =
+      listing.price != null
+        ? `<p class="pdp-price">${money(listing.price)}${
+            listing.old ? '<del>' + money(listing.old) + "</del>" : ""
+          }</p>`
+        : `<p class="pdp-price">Цена по запросу</p>`;
+
+    const hitlPhoto = listing.hitl
       ? '<p class="hitl-flag">HITL: на исходном фото карточки читаются Smart DX1 и Smart BX1 при листинге «DX1 + PX1».</p>'
       : "";
-    const priceBlock =
-      p.price != null
-        ? `<h3 class="price">${money(p.price)} ${
-            p.old ? '<del class="muted" style="font-size:14px">' + money(p.old) + "</del>" : ""
-          }</h3>`
-        : `<h3 class="price">Цена по запросу</h3>`;
-    const rel = related(p);
+    const hitlSpecs =
+      !detail.specs || !detail.specs.length
+        ? '<p class="hitl-flag">HITL: структурированных характеристик (атрибуты Woo / таблицы) у источника нет — блок спецификаций скрыт, без выдуманных ваттов и импеданса.</p>'
+        : "";
+
+    const rel = related(listing);
     const relHtml = rel.length
-      ? `<div class="related"><div class="eyebrow">РЯДОМ В КАТАЛОГЕ</div><div class="related-rail">${rel
+      ? `<section class="pdp-section"><div class="eyebrow">РЯДОМ В КАТАЛОГЕ</div><div class="related-rail">${rel
           .map(
             (r) =>
-              `<button type="button" class="related-card" onclick="detail(${r.id})"><span class="related-thumb">${photo(r)}</span><span>${esc(r.name)}</span><strong>${money(r.price)}</strong></button>`
+              `<a class="related-card" href="#product/${esc(r.slug || r.id)}"><span class="related-thumb">${photo(r)}</span><span>${esc(r.name)}</span><strong>${money(r.price)}</strong></a>`
           )
-          .join("")}</div></div>`
+          .join("")}</div></section>`
       : "";
-    const jsonLd =
-      p.price != null
-        ? ""
-        : ""; /* Product JSON-LD injected separately only with real Offer */
-    document.getElementById("detailbody").innerHTML = `${jsonLd}<div class="eyebrow">${esc(
-      (p.cat || "").toUpperCase()
-    )} / WOO · ЖИВОЙ КАТАЛОГ</div><h2>${esc(p.name)}</h2><div class="product-detail-art">${media}</div>${thumbs}<p>${esc(
-      p.note || ""
-    )}</p>${hitl}${priceBlock}${
-      p.facts ? `<p class="muted">${esc(p.facts)}</p>` : ""
-    }<div class="notice">Цена и название из Woo Store API живого сайта. Наличие не подтверждаем в демо. Оплаты нет — только бриф/звонок.</div><div class="actions"><button class="btn" onclick="closeDialog('detail');startQuiz('${esc(
-      p.name
-    )}')">Подойдёт ли к моей системе? ↗</button><a class="btn ghost" href="${esc(
-      p.source || "https://xn--80aannlcfckh.xn--p1ai/"
-    )}" target="_blank" rel="noopener">На оригинальном сайте ↗</a></div>${relHtml}`;
-    openDialog("detail");
-    injectProductJsonLd(p);
+
+    const gallerySection =
+      pdpGallery.length > 1
+        ? `<section class="pdp-section" id="pdp-gallery">
+            <div class="eyebrow">ГАЛЕРЕЯ</div>
+            <h3 class="pdp-h">Кадры с карточки</h3>
+            <p class="pdp-lead">Листинг остаётся лёгким; полный размер — в PhotoSwipe: зум, pan, клавиатура, свайп.</p>
+            <div class="pdp-gallery-grid">${pdpGallery
+              .map(
+                (g, i) =>
+                  `<button type="button" class="pdp-gcell" onclick="openPdpGallery(${i})" aria-label="Открыть кадр ${i + 1}">
+                    <img src="${esc(g.thumb || g.src)}" alt="${esc(g.alt || listing.name)}" loading="lazy" decoding="async" width="400" height="400">
+                  </button>`
+              )
+              .join("")}</div>
+          </section>`
+        : "";
+
+    const root = document.getElementById("pdpbody");
+    if (!root) return;
+    root.innerHTML = `
+      <nav class="pdp-crumb" aria-label="Навигация">
+        <a href="#collection">Каталог</a>
+        <span aria-hidden="true">/</span>
+        <span>${esc(listing.cat || "Компонент")}</span>
+      </nav>
+      <div class="pdp-hero">
+        <div class="pdp-stage">
+          ${media}
+          ${thumbs}
+        </div>
+        <div class="pdp-buy">
+          <div class="eyebrow">${esc((listing.cat || "").toUpperCase())} · ЖИВОЙ КАТАЛОГ</div>
+          <h1 class="pdp-title">${esc(listing.name)}</h1>
+          <p class="pdp-kicker">${esc(listing.note || "")}</p>
+          ${hitlPhoto}
+          ${priceBlock}
+          <div class="notice">Цена и название — Woo Store API. Наличие в демо не подтверждаем. Оплаты нет — бриф или звонок.</div>
+          <div class="actions">
+            <button type="button" class="btn" onclick="startQuiz('${esc(listing.name)}')">Подойдёт ли к моей системе? ↗</button>
+            <a class="btn ghost" href="${esc(listing.source || detail.source || "#")}" target="_blank" rel="noopener">На оригинальном сайте ↗</a>
+          </div>
+          <div class="pdp-jump">
+            <a href="#pdp-about">О продукте</a>
+            ${detail.specs && detail.specs.length ? '<a href="#pdp-specs">Характеристики</a>' : ""}
+            ${pdpGallery.length > 1 ? '<a href="#pdp-gallery">Галерея</a>' : ""}
+          </div>
+        </div>
+      </div>
+      ${renderDescription(detail, listing)}
+      ${renderSpecs(detail.specs)}
+      ${hitlSpecs}
+      ${gallerySection}
+      ${relHtml}
+      <p class="micro pdp-foot">Карточка: <code>#product/${esc(listing.slug || listing.id)}</code> · payload <code>data/pdp/${listing.id}.json</code></p>
+    `;
+    injectProductJsonLd(listing, detail);
+  }
+
+  function detail(id) {
+    const p = findProduct(id);
+    if (!p) {
+      toast("Позиция не найдена в выгрузке каталога");
+      return;
+    }
+    const slug = p.slug || String(p.id);
+    if (location.hash !== "#product/" + slug && location.hash !== "#product/" + p.id) {
+      location.hash = "#product/" + slug;
+      return;
+    }
+    openPdp(p);
   }
   window.detail = detail;
 
-  function injectProductJsonLd(p) {
+  async function openPdp(p) {
+    const pdpRoot = document.getElementById("pdp");
+    const journeyRoot = document.getElementById("journey");
+    const body = document.getElementById("pdpbody");
+    setHomeVisibility(false);
+    if (journeyRoot) journeyRoot.hidden = true;
+    if (pdpRoot) pdpRoot.hidden = false;
+    if (body)
+      body.innerHTML =
+        '<div class="pdp-loading"><div class="eyebrow">MELOMANIAK</div><p>Собираем карточку из живого описания…</p></div>';
+    const detailData = await loadDetailPayload(p);
+    // race: user may have navigated away
+    const ref = (location.hash || "").replace(/^#product\//, "");
+    if (!location.hash.startsWith("#product/")) return;
+    if (ref && ref !== p.slug && ref !== String(p.id)) return;
+    renderPdp(p, detailData);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function injectProductJsonLd(p, detail) {
     let el = document.getElementById("product-jsonld");
     if (!el) {
       el = document.createElement("script");
@@ -234,12 +501,18 @@
       el.id = "product-jsonld";
       document.head.appendChild(el);
     }
+    const imgs = galleryItems(p, detail)
+      .map((g) => g.src)
+      .filter(Boolean)
+      .slice(0, 5);
+    const desc =
+      (detail && (detail.descriptionText || "").slice(0, 500)) || p.note || undefined;
     const data = {
       "@context": "https://schema.org",
       "@type": "Product",
       name: p.name,
-      description: p.note || undefined,
-      image: (p.gallery || []).slice(0, 3),
+      description: desc,
+      image: imgs.length ? imgs : (p.gallery || []).slice(0, 3),
       brand: { "@type": "Brand", name: (p.name || "").split(" ")[0] },
       url: p.source,
     };
@@ -311,7 +584,7 @@
             return `<article class="rail-item" id="product-${x.id}">
         <div class="rail-media" onclick="detail(${x.id})"><span class="tag">${x.old ? "СПЕЦПРЕДЛОЖЕНИЕ" : esc((x.cat || "").toUpperCase())}</span>
         <button type="button" class="fav ${isFav(x) ? "on" : ""}" aria-label="Избранное" aria-pressed="${isFav(x)}" onclick="event.stopPropagation();toggleFav(${x.id})">${isFav(x) ? "♥" : "♡"}</button>${photo(x)}</div>
-        <div class="rail-body"><h3><a href="#product-${x.id}" onclick="event.preventDefault();detail(${x.id})">${esc(x.name)}</a></h3>
+        <div class="rail-body"><h3><a href="#product/${esc(x.slug || x.id)}">${esc(x.name)}</a></h3>
         <p>${esc(x.note || "")}</p>${h}<div class="rail-foot"><div class="price">${money(x.price)}${x.old ? "<del>" + money(x.old) + "</del>" : ""}</div>
         <button type="button" class="round" onclick="detail(${x.id})" aria-label="Подробнее">↗</button></div></div></article>`;
           })
@@ -513,38 +786,68 @@
   }
   window.article = article;
 
-  /* hash pages: home scroll vs journey content pages */
+  /* hash pages: home scroll vs journey vs product PDP */
+  function setHomeVisibility(showHome) {
+    const journeyRoot = document.getElementById("journey");
+    const pdpRoot = document.getElementById("pdp");
+    const homeBlocks = document.querySelectorAll("[data-page='home']");
+    homeBlocks.forEach((el) => (el.hidden = !showHome));
+    document.querySelectorAll("main > section:not([data-page]), main > div:not([data-page])").forEach((el) => {
+      if (el.id === "journey" || el.id === "pdp") return;
+      el.hidden = !showHome;
+    });
+    if (journeyRoot && showHome) journeyRoot.hidden = true;
+    if (pdpRoot && showHome) pdpRoot.hidden = true;
+  }
+
   function showPage(hash) {
-    const id = (hash || "#home").replace(/^#/, "") || "home";
+    const raw = (hash || "#home").replace(/^#/, "") || "home";
     const journeyIds = ["oplata", "dostavka", "ustanovka"];
     const journeyRoot = document.getElementById("journey");
     const panels = document.querySelectorAll(".journey-panel");
-    const homeBlocks = document.querySelectorAll("[data-page='home']");
-    const isJourney = journeyIds.includes(id);
+    const pdpRoot = document.getElementById("pdp");
 
+    // #product/slug or #product/id
+    if (raw.startsWith("product/") || raw.startsWith("product-")) {
+      let ref = raw.startsWith("product/")
+        ? decodeURIComponent(raw.slice("product/".length))
+        : raw.slice("product-".length);
+      const p = findProduct(ref);
+      setHomeVisibility(false);
+      if (journeyRoot) journeyRoot.hidden = true;
+      panels.forEach((panel) => (panel.hidden = true));
+      if (pdpRoot) pdpRoot.hidden = false;
+      if (p && (!pdpListing || pdpListing.id !== p.id)) {
+        openPdp(p);
+      } else if (!p) {
+        if (pdpRoot) {
+          document.getElementById("pdpbody").innerHTML =
+            '<div class="pdp-loading"><p>Позиция не найдена.</p><a class="btn ghost" href="#collection">В каталог</a></div>';
+        }
+      }
+      return;
+    }
+
+    if (pdpRoot) pdpRoot.hidden = true;
+    pdpListing = null;
+
+    const isJourney = journeyIds.includes(raw);
     if (isJourney) {
-      homeBlocks.forEach((el) => (el.hidden = true));
-      // hide default main sections that aren't marked (hero etc.)
-      document.querySelectorAll("main > section:not([data-page]), main > div:not([data-page])").forEach((el) => {
-        if (el.id !== "journey") el.hidden = true;
-      });
+      setHomeVisibility(false);
       if (journeyRoot) journeyRoot.hidden = false;
-      panels.forEach((p) => (p.hidden = p.id !== "journey-" + id));
+      panels.forEach((panel) => (panel.hidden = panel.id !== "journey-" + raw));
       window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
 
     // restore home
     if (journeyRoot) journeyRoot.hidden = true;
-    panels.forEach((p) => (p.hidden = true));
-    homeBlocks.forEach((el) => (el.hidden = false));
-    document.querySelectorAll("main > section:not([data-page]), main > div:not([data-page])").forEach((el) => {
-      el.hidden = false;
-    });
+    panels.forEach((panel) => (panel.hidden = true));
+    setHomeVisibility(true);
     const scrollTargets = ["collection", "services", "approach", "journal", "faq", "contacts"];
-    if (scrollTargets.includes(id)) {
-      setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }), 40);
-    } else if (id === "home") {
+    if (scrollTargets.includes(raw)) {
+      setTimeout(() => document.getElementById(raw)?.scrollIntoView({ behavior: "smooth" }), 40);
+    } else if (raw === "home") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }
@@ -588,6 +891,23 @@
         .join("");
     }
   })();
+
+  document.addEventListener("keydown", (e) => {
+    const pdp = document.getElementById("pdp");
+    if (!pdp || pdp.hidden) return;
+    if (document.querySelector("dialog[open]")) return;
+    // PhotoSwipe owns Escape / arrows while open
+    if (document.querySelector(".pswp--open")) return;
+    if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      setPdpSlide(pdpActive - 1);
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      setPdpSlide(pdpActive + 1);
+    } else if (e.key === "Escape" && location.hash.startsWith("#product/")) {
+      location.hash = "#collection";
+    }
+  });
 
   render();
   showPage(location.hash || "#home");
