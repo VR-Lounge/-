@@ -15,7 +15,7 @@
 <meta property="og:title" content="MELOMANIAK — Деньги ничто, музыка всё">
 <meta property="og:description" content="Музыкальный салон Hi-Fi / High End. Не витрина коробок — пространство, где систему собирают из понимания.">
 <meta property="og:url" content="https://xn--80aannlcfckh.xn--p1ai/">
-<meta property="og:image" content="assets/from-live/hero/1_d43908e399.jpg">
+<meta property="og:image" content="assets/from-live/hero/da2b43ff5e_JBL_Stage_start_inside_1920.jpg">
 <meta name="geo.region" content="RU-MOW">
 <meta name="geo.placename" content="Москва">
 <meta name="geo.position" content="55.793;37.799">
@@ -91,13 +91,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 /* FULL-BLEED HERO */
 .hero{position:relative;min-height:min(100dvh,960px);display:grid;align-items:end;overflow:hidden;isolation:isolate}
 .hero-bleed{position:absolute;inset:0;z-index:0}
-.hero-bleed img{width:100%;height:100%;object-fit:cover;object-position:62% center;transform:scale(1.04);animation:ken 28s ease-in-out infinite alternate}
+.hero-bleed img{width:100%;height:100%;object-fit:cover;object-position:68% 40%;transform:scale(1.06);animation:ken 28s ease-in-out infinite alternate}
 .hero-bleed:after{content:"";position:absolute;inset:0;background:
-  linear-gradient(90deg,rgba(5,5,5,.92) 0%,rgba(5,5,5,.72) 38%,rgba(5,5,5,.25) 62%,rgba(5,5,5,.55) 100%),
-  linear-gradient(180deg,rgba(5,5,5,.35) 0%,transparent 30%,rgba(5,5,5,.88) 88%,var(--void) 100%),
-  radial-gradient(ellipse at 70% 40%,rgba(212,175,55,.18),transparent 50%)}
-@keyframes ken{from{transform:scale(1.04)}to{transform:scale(1.1)}}
-.hero-vinyl-wrap{position:absolute;width:min(34vw,360px);height:min(34vw,360px);right:6%;top:18%;z-index:2;pointer-events:none;opacity:.9;filter:drop-shadow(0 30px 60px rgba(0,0,0,.7));animation:pulse-glow 5s ease-in-out infinite}
+  linear-gradient(90deg,rgba(5,5,5,.78) 0%,rgba(5,5,5,.45) 32%,rgba(5,5,5,.12) 58%,rgba(5,5,5,.35) 100%),
+  linear-gradient(180deg,rgba(5,5,5,.25) 0%,transparent 28%,rgba(5,5,5,.55) 78%,var(--void) 100%),
+  radial-gradient(ellipse at 72% 42%,rgba(212,175,55,.14),transparent 52%)}
+@keyframes ken{from{transform:scale(1.06)}to{transform:scale(1.12)}}
+.hero-vinyl-wrap{position:absolute;width:min(28vw,280px);height:min(28vw,280px);right:4%;bottom:14%;top:auto;z-index:2;pointer-events:none;opacity:.72;filter:drop-shadow(0 30px 60px rgba(0,0,0,.7));animation:pulse-glow 5s ease-in-out infinite}
 .hero-vinyl{width:100%;height:100%;border-radius:50%;background:repeating-radial-gradient(circle at center,#0a0a0a 0 1px,#1c1a14 2px,#0c0c0c 3px);box-shadow:0 0 0 1px rgba(212,175,55,.25),0 0 60px rgba(212,175,55,.15);animation:spin 18s linear infinite;will-change:transform}
 .hero-vinyl .hub{position:absolute;inset:32%;border-radius:50%;background:radial-gradient(circle at 40% 35%,#2a2618,#0c0c0c 70%);display:grid;place-items:center;border:1px solid rgba(212,175,55,.4);animation:spin-rev 18s linear infinite}
 .hero-vinyl .hub img{width:62%;border-radius:50%}
@@ -122,13 +122,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .ticker span{color:var(--gold);padding:0 22px}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* Atmosphere strip — live speakers + crowd */
-.atmosphere{display:grid;grid-template-columns:1fr 1.4fr 1fr;min-height:clamp(200px,28vw,340px);border-bottom:1px solid var(--line);background:#080808}
+/* Atmosphere strip — live floorstanders + stage */
+.atmosphere{display:grid;grid-template-columns:1fr 1.35fr 1fr;min-height:clamp(220px,30vw,380px);border-bottom:1px solid var(--line);background:#080808}
 .atmosphere figure{margin:0;position:relative;overflow:hidden;display:grid;place-items:center;background:#0c0c0c}
-.atmosphere img{width:100%;height:100%;object-fit:contain;padding:8% 10%;filter:drop-shadow(0 20px 30px rgba(0,0,0,.6))}
-.atmosphere .crowd{object-fit:cover;padding:0;opacity:.85;filter:sepia(.35) saturate(1.4) hue-rotate(-5deg) brightness(.9)}
-.atmosphere .crowd-wrap:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(5,5,5,.55));pointer-events:none}
-.atmosphere figcaption{position:absolute;bottom:12px;left:14px;font-family:var(--rock);font-size:12px;letter-spacing:.2em;color:var(--gold);z-index:1}
+.atmosphere img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.92;transition:transform .8s var(--ease),opacity .4s;filter:saturate(.95) contrast(1.05)}
+.atmosphere figure:hover img{transform:scale(1.05);opacity:1}
+.atmosphere .contain{object-fit:contain;padding:6% 8%;opacity:1;filter:drop-shadow(0 20px 30px rgba(0,0,0,.6))}
+.atmosphere figure:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(5,5,5,.7));pointer-events:none}
+.atmosphere figcaption{position:absolute;bottom:12px;left:14px;font-family:var(--rock);font-size:12px;letter-spacing:.2em;color:var(--gold);z-index:1;text-shadow:0 2px 10px #000}
 
 section{padding:clamp(56px,9vw,108px) 0}
 .section-head{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:40px}
@@ -192,11 +193,19 @@ h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.2vw,52px);l
 .hitl-flag{font-size:10px;color:#c4a574;letter-spacing:.04em;margin-top:4px}
 
 /* Photo strip between sections */
-.photo-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-block:1px solid var(--line);min-height:180px}
-.photo-strip figure{margin:0;overflow:hidden;position:relative;background:#0c0c0c;min-height:180px}
-.photo-strip img{width:100%;height:100%;object-fit:cover;opacity:.75;transition:transform .7s,opacity .4s;filter:saturate(.9) contrast(1.05)}
-.photo-strip figure:hover img{transform:scale(1.06);opacity:.95}
+.photo-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-block:1px solid var(--line);min-height:200px}
+.photo-strip figure{margin:0;overflow:hidden;position:relative;background:#0c0c0c;min-height:200px}
+.photo-strip img{width:100%;height:100%;object-fit:cover;opacity:.78;transition:transform .7s,opacity .4s;filter:saturate(.92) contrast(1.06)}
+.photo-strip figure:hover img{transform:scale(1.06);opacity:.98}
 .photo-strip figcaption{position:absolute;left:10px;bottom:8px;font-family:var(--rock);font-size:11px;letter-spacing:.16em;color:var(--gold);text-shadow:0 2px 8px #000}
+.lookbook-stage{padding:clamp(40px,6vw,72px) 0;border-bottom:1px solid var(--line)}
+.lookbook-mosaic{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:minmax(220px,28vw) minmax(180px,22vw);gap:10px}
+.lookbook-mosaic figure{margin:0;position:relative;overflow:hidden;background:#0c0c0c;border:1px solid var(--line);min-height:160px}
+.lookbook-mosaic figure:first-child{grid-row:1/3}
+.lookbook-mosaic img{width:100%;height:100%;object-fit:cover;opacity:.88;transition:transform .8s var(--ease),opacity .35s}
+.lookbook-mosaic figure:hover img{transform:scale(1.04);opacity:1}
+.lookbook-mosaic figcaption{position:absolute;left:14px;bottom:12px;font-family:var(--rock);font-size:12px;letter-spacing:.18em;color:var(--gold);text-shadow:0 2px 12px #000;z-index:1}
+.lookbook-mosaic figure:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(5,5,5,.65));pointer-events:none}
 
 .editorial{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,5vw,72px);align-items:center}
 .expert-art{height:min(480px,70vw);position:relative;overflow:hidden;border:1px solid var(--line);background:#0c0c0c}
@@ -284,16 +293,18 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
   .journal{grid-template-columns:1fr 1fr}
   .story:last-child{grid-column:1/-1;display:grid;grid-template-columns:200px 1fr}
   .story:last-child .story-art{height:100%;border-bottom:0;border-right:1px solid var(--line)}
-  .photo-strip{grid-template-columns:repeat(2,1fr)}
+  .photo-strip{grid-template-columns:repeat(3,1fr)}
+  .lookbook-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .lookbook-mosaic figure:first-child{grid-row:auto;grid-column:1/-1;min-height:240px}
 }
 @media(max-width:720px){
   .nav{height:68px}.phone-nav{display:none}
   .hero{min-height:auto}.hero-copy{padding:88px 0 40px;max-width:100%}
   .hero-brand{font-size:clamp(48px,14vw,72px)}
-  .hero-vinyl-wrap{display:none}.hero-bleed img{object-position:70% center}
+  .hero-vinyl-wrap{display:none}.hero-bleed img{object-position:58% center}
   .atmosphere{grid-template-columns:1fr;min-height:auto}
-  .atmosphere figure{min-height:160px}
-  .atmosphere .crowd-wrap{order:-1;min-height:140px}
+  .atmosphere figure{min-height:180px}
+  .atmosphere figure:nth-child(2){order:-1;min-height:200px}
   section{padding:48px 0}.section-head{display:block}
   .paths{grid-template-columns:1fr}
   .rail{grid-template-columns:1fr}
@@ -305,6 +316,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
   .story:last-child .story-art{height:180px;border-right:0;border-bottom:1px solid var(--line)}
   .formgrid{grid-template-columns:1fr}.modal{padding:22px}
   .photo-strip{grid-template-columns:1fr 1fr}
+  .lookbook-mosaic{grid-template-columns:1fr}
   .brands{font-size:16px;justify-content:flex-start}
 }
 @media(prefers-reduced-motion:reduce){
@@ -345,7 +357,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 <main>
   <section class="hero" aria-label="Обложка MELOMANIAK">
     <div class="hero-bleed">
-      <img id="heroPortrait" src="assets/from-live/hero/1_d43908e399.jpg" alt="Сценический портрет с родного сайта MELOMANIAK" fetchpriority="high" decoding="async" width="758" height="667">
+      <img id="heroPortrait" src="assets/from-live/hero/da2b43ff5e_JBL_Stage_start_inside_1920.jpg" alt="Напольная и полочная акустика JBL Stage — кадр с melomaniak.рф" fetchpriority="high" decoding="async" width="1920" height="1000">
     </div>
     <div class="hero-vinyl-wrap" aria-hidden="true">
       <div class="hero-vinyl"><div class="hub"><img src="assets/logo-static.png" alt="" decoding="async"></div></div>
@@ -366,7 +378,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
         <div><strong>ПОДБОР</strong><span class="muted">под жанры и бюджет</span></div>
         <div><strong>МОСКВА</strong><span class="muted">Первомайская, 42</span></div>
       </div>
-      <p class="micro" style="margin-top:10px">*Заявление исходного сайта — актуальность уточнить у владельца. Фото героя — с melomaniak.рф.</p>
+      <p class="micro" style="margin-top:10px">*Заявление исходного сайта — актуальность уточнить у владельца. Hero — live-кадр JBL Stage с melomaniak.рф.</p>
     </div>
   </section>
 
@@ -376,16 +388,16 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 
   <div class="atmosphere" aria-label="Атмосфера салона — изображения с родного сайта">
     <figure>
-      <img src="assets/from-live/hero/left_kolonka_56b547751f.png" alt="Акустика — графика с сайта MELOMANIAK" decoding="async" width="422" height="422">
-      <figcaption>LEFT CHANNEL</figcaption>
-    </figure>
-    <figure class="crowd-wrap">
-      <img class="crowd" src="assets/from-live/hero/divan_f11f00dd6e.png" alt="Толпа на концерте — мотив с сайта MELOMANIAK" decoding="async" width="732" height="300">
-      <figcaption>LIVE ENERGY</figcaption>
+      <img src="assets/from-live/hero/0b8eb9967c_davis_acoustics_atmosphere_mk2_06.jpg" alt="Davis Acoustics Atmosphere Mk2 — кадр с melomaniak.рф" decoding="async" width="1200" height="1200">
+      <figcaption>DAVIS · ATMOSPHERE</figcaption>
     </figure>
     <figure>
-      <img src="assets/from-live/hero/right_kolonka_cd2924f9e8.png" alt="Акустика — графика с сайта MELOMANIAK" decoding="async" width="422" height="422">
-      <figcaption>RIGHT CHANNEL</figcaption>
+      <img src="assets/from-live/hero/0f794ca1b0_JBL_STAGE_A190_1920.jpg" alt="JBL Stage A190 — кадр с melomaniak.рф" decoding="async" width="1920" height="1080">
+      <figcaption>JBL STAGE · A190</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/from-live/hero/1a775a7a16_ELAC_Debut_F62_1920.jpg" alt="ELAC Debut F62 — кадр с melomaniak.рф" decoding="async" width="1920" height="1080">
+      <figcaption>ELAC · DEBUT</figcaption>
     </figure>
   </div>
 
@@ -431,10 +443,20 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 
   <div class="photo-strip" id="photoStrip" aria-label="Кадры с родного сайта"></div>
 
+  <section class="lookbook-stage" aria-label="Lookbook — live-кадры с melomaniak.рф">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="eyebrow">LOOKBOOK · LIVE DUMP</div><h2>Атмосфера, не витрина.</h2></div>
+        <p>Кадры из полного краула родного сайта: сцена, напольники, редакционные обзоры. Без стока.</p>
+      </div>
+      <div class="lookbook-mosaic" id="lookbookMosaic"></div>
+    </div>
+  </section>
+
   <section id="approach">
     <div class="wrap editorial">
       <div class="expert-art">
-        <img src="assets/from-live/hero/1_d43908e399.jpg" alt="Атмосфера MELOMANIAK — кадр с родного сайта" decoding="async" loading="lazy">
+        <img src="assets/from-live/hero/0b8eb9967c_davis_acoustics_atmosphere_mk2_06.jpg" alt="Davis Acoustics Atmosphere — кадр с melomaniak.рф" decoding="async" loading="lazy">
         <div class="expert-badge"><strong>15+</strong><span>ЛЕТ В МИРЕ ХОРОШЕГО ЗВУКА</span></div>
       </div>
       <div>
@@ -485,7 +507,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
       <details><summary>С чего начать, если я не знаю моделей?</summary><p class="muted">С музыки: жанры, любимая запись, комната и то, что уже стоит. Бриф собирает вводные для специалиста — без «умного» автоподбора и без отправки данных.</p></details>
       <details><summary>Это действующий магазин с оплатой?</summary><p class="muted">Нет. Это концепт SIDE A. Оплата и заявки отключены. Актуальные цены, наличие и условия — на <a class="link" href="https://xn--80aannlcfckh.xn--p1ai/" target="_blank" rel="noopener">оригинальном сайте</a> и по телефону.</p></details>
       <details><summary>Можно ли приехать послушать?</summary><p class="muted">Адрес на сайте: Москва, Первомайская, 42. Это не доказательство шоурума или готового прослушивания — перед визитом уточните возможность встречи.</p></details>
-      <details><summary>Откуда фотографии?</summary><p class="muted">Спарсены с https://xn--80aannlcfckh.xn--p1ai/ в assets/from-live/. Манифест: assets-live-manifest.json. Одно имя листинга (DX1+PX1) требует HITL.</p></details>
+      <details><summary>Откуда фотографии?</summary><p class="muted">Полный live-краул: ~9139 уникальных кадров в assets/from-live/ (hero / products / editorial / brand / misc). Манифест: assets-live-manifest.json. DX1+PX1: HITL по панелям на фото.</p></details>
     </div>
   </section>
 
@@ -516,7 +538,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
       <span>Дизайн-концепт · не действующий интернет-магазин</span>
       <button class="link" onclick="openDialog('about')">Что работает в демо</button>
     </div>
-    <div class="demo">Прототип не принимает оплату и не отправляет заявки. Фото с melomaniak.рф. Палитра: чёрное + золото. Staging: noindex.</div>
+    <div class="demo">Прототип не принимает оплату и не отправляет заявки. Фото с melomaniak.рф (~9k live). Палитра: чёрное + золото. Staging: noindex.</div>
   </div>
 </footer>
 
@@ -524,7 +546,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 <dialog class="modal" id="detail"><button class="close" onclick="closeDialog('detail')" aria-label="Закрыть">×</button><div id="detailbody"></div></dialog>
 <dialog class="modal" id="search"><button class="close" onclick="closeDialog('search')" aria-label="Закрыть">×</button><h2>Что ищем?</h2><input class="searchbar" id="query" placeholder="Бренд, компонент, название…" aria-label="Поиск по демонстрационному каталогу" oninput="searchProducts(this.value)"><div class="searchresults" id="results"></div><p class="micro">Поиск по шести товарам прототипа, не по всему магазину.</p></dialog>
 <dialog class="modal" id="menu"><button class="close" onclick="closeDialog('menu')" aria-label="Закрыть">×</button><h2>MELOMANIAK</h2><nav class="menu-links"><a href="#collection" onclick="closeDialog('menu')">Аппаратура</a><a href="#approach" onclick="closeDialog('menu')">Подход</a><a href="#journal" onclick="closeDialog('menu')">Журнал</a><a href="#faq" onclick="closeDialog('menu')">Вопросы</a><a href="#contacts" onclick="closeDialog('menu')">Контакты</a></nav></dialog>
-<dialog class="modal" id="assets"><button class="close" onclick="closeDialog('assets')" aria-label="Закрыть">×</button><h2>Фотографии с родного сайта</h2><p>Изображения спарсены с карточек и страниц https://xn--80aannlcfckh.xn--p1ai/ в <code>assets/from-live/</code>. Манифест: assets-live-manifest.json. Hero — сценический порт с главной темы сайта; колонки и crowd-графика — оригинальные theme assets.</p><p class="notice">Никаких стоковых подмен. DX1+PX1: HITL по соответствию имени листинга и панелей на фото.</p></dialog>
+<dialog class="modal" id="assets"><button class="close" onclick="closeDialog('assets')" aria-label="Закрыть">×</button><h2>Фотографии с родного сайта</h2><p>Полный краул https://xn--80aannlcfckh.xn--p1ai/ → <code>assets/from-live/</code>: ~9139 уникальных / ~9695 файлов (~1.5&nbsp;GB). Папки: hero, products, editorial, brand, misc. Манифест: assets-live-manifest.json. Hero на обложке — JBL Stage (live); lookbook — Davis Atmosphere, ELAC, редакционные кадры.</p><p class="notice">Никаких стоковых подмен. DX1+PX1: HITL по соответствию имени листинга и панелей на фото.</p></dialog>
 <dialog class="modal" id="about"><button class="close" onclick="closeDialog('about')" aria-label="Закрыть">×</button><h2>Живой концепт, не магазин</h2><p>Работают фильтры, сортировка, поиск, карточки, избранное в localStorage, мобильное меню, трёхшаговый бриф и скачивание результата.</p><p>Заявки никуда не отправляются. CRM, оплата, наличие и полный каталог — следующий этап после HITL.</p></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -649,8 +671,15 @@ function article(i){
 }
 (function initStrip(){
   const strip=document.getElementById("photoStrip");
-  const items=(manifest.atmosphere||[]).slice(0,4);
-  strip.innerHTML=items.map((src,i)=>`<figure><img src="${esc(src)}" alt="Кадр с melomaniak.рф ${i+1}" loading="lazy" decoding="async"><figcaption>LIVE · ${i+1}</figcaption></figure>`).join("");
+  const items=(manifest.atmosphere||[]).slice(0,6);
+  const labels=["DAVIS","STAGE","ELAC","JBL A190","ATMOSPHERE","STEREOPHILE"];
+  strip.innerHTML=items.map((src,i)=>`<figure><img src="${esc(src)}" alt="Кадр с melomaniak.рф ${i+1}" loading="lazy" decoding="async"><figcaption>LIVE · ${labels[i]||(i+1)}</figcaption></figure>`).join("");
+  const mosaic=document.getElementById("lookbookMosaic");
+  if(mosaic){
+    const shots=(manifest.lookbookStrip||manifest.atmosphere||[]).slice(0,5);
+    const caps=["JBL STAGE","DAVIS MK2","ELAC DEBUT","STAGE A170","ELAC VELA"];
+    mosaic.innerHTML=shots.map((src,i)=>`<figure><img src="${esc(src)}" alt="Lookbook ${caps[i]||i+1} — melomaniak.рф" loading="lazy" decoding="async"><figcaption>${caps[i]||("LIVE · "+(i+1))}</figcaption></figure>`).join("");
+  }
 })();
 document.getElementById("stories").innerHTML=stories.map((s,i)=>{
   const img=manifest.stories?.[s.title];
