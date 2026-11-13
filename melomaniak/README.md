@@ -6,11 +6,18 @@
 
 ## Live asset crawl (from-live)
 
-Источник: [MELOMANIAK](https://xn--80aannlcfckh.xn--p1ai/).
+Источник: родной сайт [MELOMANIAK](https://xn--80aannlcfckh.xn--p1ai/).
 
 - Манифест: `assets-live-manifest.json`
-- Файлы: `assets/from-live/{hero,products,editorial,brand,misc}/`
-- Краулер: `python3 crawl_live_focused.py` (целевой набор; полный `crawl_live_assets.py` слишком тяжёл из‑за ~31k media)
+- URL-чекпоинт: `assets-live-urls.json`
+- Скачанные файлы: `assets/from-live/{hero,products,editorial,brand,misc}/`
+- Уже импортированные ассеты в `assets/` сохранены (`existingAssets` в манифесте)
+- Краулер: `python3 crawl_live_assets.py` (`collect` | `download` | `all`)
+
+**Сводка краула:** страниц обнаружено 2655, HTML-скрап 302, уникальных картинок скачано 9139 (URL найдено 10436). Топ hero — поле `topHeroCandidates`.
+
+Картинки дедуплицированы по SHA-256; `suggestedUse` — подсказка для элитного редизайна (чёрное+золото).
+
 
 ## Локальный просмотр
 

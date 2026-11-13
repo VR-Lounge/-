@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError
-from urllib.parse import urljoin, urlparse, urlunparse, unquote
+from urllib.parse import urljoin, urlparse, urlunparse, unquote, quote
 from urllib.request import Request, urlopen
 
 BASE = "https://xn--80aannlcfckh.xn--p1ai/"
@@ -37,8 +37,15 @@ SRCSET_SPLIT = re.compile(r",\s*(?![^(]*\))")
 BG_URL = re.compile(r"url\(\s*['\"]?([^)'\"]+)['\"]?\s*\)", re.I)
 
 
+def encode_url(url: str) -> str:
+    """Percent-encode non-ASCII path segments for urllib."""
+    parts = urlparse(url)
+    path = quote(unquote(parts.path), safe="/:@!$&'()*+,;=-._~")
+    return urlunparse((parts.scheme, parts.netloc, path, parts.params, parts.query, parts.fragment))
+
+
 def fetch(url: str, timeout: int = 40, binary: bool = False):
-    req = Request(url, headers={"User-Agent": UA, "Referer": BASE, "Accept": "*/*"})
+    req = Request(encode_url(url), headers={"User-Agent": UA, "Referer": BASE, "Accept": "*/*"})
     with urlopen(req, timeout=timeout) as resp:
         data = resp.read()
         ctype = (resp.headers.get("Content-Type") or "").split(";")[0].strip().lower()
@@ -535,7 +542,58 @@ def load_checkpoint() -> dict | None:
     return data
 
 
-def download_one(url: str, use: str):
+def _index_existing_files() -> dict[str, Path]:
+    """Map sanitized original filename -> local path (first wins; used for resume)."""
+    index: dict[str, list[Path]] = defaultdict(list)
+    if not OUT.exists():
+        return {}
+    for p in OUT.rglob("*"):
+        if not p.is_file():
+            continue
+        name = p.name
+        # {10-hex}_{original}
+        if len(name) > 11 and name[10] == "_":
+            original = name[11:]
+            index[original].append(p)
+    # Prefer single unambiguous matches
+    return {k: v[0] for k, v in index.items() if len(v) == 1}
+
+
+def download_one(url: str, use: str, existing_by_name: dict[str, Path] | None = None):
+    existing_by_name = existing_by_name or {}
+    parsed_name = Path(unquote(urlparse(url).path)).name
+    sanitized = re.sub(r"[^\w.\-]+", "_", parsed_name or "image", flags=re.U)
+    if len(sanitized) > 120:
+        sanitized = Path(sanitized).stem[:80] + (Path(sanitized).suffix or ".img")
+
+    cached = existing_by_name.get(sanitized)
+    if cached and cached.exists():
+        data = cached.read_bytes()
+        digest = hashlib.sha256(data).hexdigest()
+        # Move into suggested folder if needed
+        folder = folder_for(use)
+        dest = OUT / folder / safe_name(url, digest)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if dest.resolve() != cached.resolve():
+            if not dest.exists():
+                dest.write_bytes(data)
+        width = height = None
+        if data[:8] == b"\x89PNG\r\n\x1a\n" and len(data) >= 24:
+            width = int.from_bytes(data[16:20], "big")
+            height = int.from_bytes(data[20:24], "big")
+        return {
+            "url": url,
+            "finalUrl": url,
+            "localPath": str(dest.relative_to(ROOT)).replace("\\", "/"),
+            "sha256": digest,
+            "bytes": len(data),
+            "contentType": "",
+            "width": width,
+            "height": height,
+            "suggestedUse": use,
+            "fromCache": True,
+        }
+
     try:
         data, ctype, final = fetch(url, timeout=60, binary=True)
     except Exception as e:
@@ -569,15 +627,24 @@ def download_one(url: str, use: str):
     }
 
 
+def _as_int(val) -> int:
+    try:
+        if val is None or val == "":
+            return 0
+        return int(float(str(val).strip()))
+    except (TypeError, ValueError):
+        return 0
+
+
 def hero_score(entry: dict, dl: dict) -> float:
     path = unquote(entry["url"]).lower()
     alts = " ".join(entry.get("alts") or []).lower()
     kinds = " ".join(entry.get("kinds") or []).lower()
     pages = " ".join(entry.get("pageSources") or []).lower()
     blob = f"{path} {alts} {kinds} {pages}"
-    score = min((dl.get("bytes") or 0) / 50_000, 40)
-    w = dl.get("width") or 0
-    h = dl.get("height") or 0
+    score = min((_as_int(dl.get("bytes")) or 0) / 50_000, 40)
+    w = _as_int(dl.get("width"))
+    h = _as_int(dl.get("height"))
     if w and h:
         score += min((w * h) / 100_000, 30)
         if w >= 1200:
@@ -733,10 +800,12 @@ def phase_download(reg_images: dict, pages: list, scraped: list):
     downloads = []
     hash_index: dict[str, dict] = {}
     errors = []
+    existing_by_name = _index_existing_files()
+    print(f"Resume index: {len(existing_by_name)} unambiguous local files", flush=True)
 
     def work(item):
         url, entry, use = item
-        return entry, download_one(url, use)
+        return entry, download_one(url, use, existing_by_name)
 
     with ThreadPoolExecutor(max_workers=10) as pool:
         futs = [pool.submit(work, it) for it in items]
