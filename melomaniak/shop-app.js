@@ -73,15 +73,29 @@
   function thumbOf(p) {
     return p.thumb || (p.gallery && p.gallery[0]) || null;
   }
+  function isRemoteUrl(u) {
+    return /^https?:\/\//i.test(String(u || ""));
+  }
+  /** Prefer curated/local files for demo reliability; fall back to CDN then illustration. */
   function photo(p, eager) {
-    const a = thumbOf(p);
+    const thumb = thumbOf(p);
+    const local = p.thumbLocal || null;
+    let primary = null;
+    let fallback = "";
+    if (thumb && !isRemoteUrl(thumb)) {
+      primary = thumb;
+      fallback = local && local !== thumb ? local : "";
+    } else if (local) {
+      primary = local;
+      fallback = thumb && thumb !== local ? thumb : "";
+    } else if (thumb) {
+      primary = thumb;
+    }
+    if (!primary) return illustration();
     const loading = eager ? "eager" : "lazy";
-    const local = p.thumbLocal && p.thumbLocal !== a ? p.thumbLocal : "";
-    return a
-      ? `<img src="${esc(a)}" alt="${esc(p.name)}" width="640" height="640" loading="${loading}" decoding="async"${
-          local ? ` data-local="${esc(local)}"` : ""
-        } onerror="if(this.dataset.local){const l=this.dataset.local;this.removeAttribute('data-local');this.src=l;}else{this.onerror=null;this.outerHTML=window.__meloIllu()}">`
-      : illustration();
+    return `<img src="${esc(primary)}" alt="${esc(p.name)}" width="640" height="640" loading="${loading}" decoding="async"${
+      fallback ? ` data-fallback="${esc(fallback)}"` : ""
+    } onerror="if(this.dataset.fallback){const f=this.dataset.fallback;this.removeAttribute('data-fallback');this.src=f;}else{this.onerror=null;this.outerHTML=window.__meloIllu()}">`;
   }
   window.__meloIllu = illustration;
 
@@ -118,7 +132,22 @@
     if (scroll) document.getElementById("collection")?.scrollIntoView({ behavior: "smooth" });
   }
   window.filterCategory = filterCategory;
-  window.showFavorites = () => filterCategory("Избранное", true);
+  window.showFavorites = () => {
+    onlyFav = true;
+    current = "Все";
+    page = 0;
+    render();
+    const onDetached =
+      location.hash.startsWith("#product/") ||
+      location.hash === "#oplata" ||
+      location.hash === "#dostavka" ||
+      location.hash === "#ustanovka";
+    if (onDetached) {
+      location.hash = "#collection";
+    } else {
+      document.getElementById("collection")?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   function toggleFav(id) {
     const p = products.find((x) => favKey(x) === String(id) || String(x.id) === String(id));
@@ -198,19 +227,43 @@
   function galleryItems(listing, detail) {
     const fromDetail = (detail && detail.gallery) || [];
     if (fromDetail.length) {
-      return fromDetail.map((g) => ({
-        src: g.local || g.src,
-        thumb: g.thumb || g.local || g.src,
-        alt: g.alt || (listing && listing.name) || "",
-        cdn: g.src,
-      }));
+      return fromDetail.map((g) => {
+        const local = g.local || null;
+        const cdn = g.src || null;
+        const src = local || cdn;
+        return {
+          src,
+          thumb: g.thumb || local || cdn,
+          alt: g.alt || (listing && listing.name) || "",
+          cdn,
+        };
+      });
     }
     const g = (listing && listing.gallery) || [];
     if (g.length) {
-      return g.map((u) => ({ src: u, thumb: u, alt: (listing && listing.name) || "" }));
+      // Prefer listing thumbLocal as first frame when gallery is CDN-only
+      const frames = g.map((u) => ({ src: u, thumb: u, alt: (listing && listing.name) || "" }));
+      if (listing.thumbLocal && isRemoteUrl(frames[0].src)) {
+        frames[0] = {
+          src: listing.thumbLocal,
+          thumb: listing.thumbLocal,
+          alt: listing.name || "",
+          cdn: frames[0].src,
+        };
+      } else if (listing.thumb && !isRemoteUrl(listing.thumb)) {
+        frames[0] = {
+          src: listing.thumb,
+          thumb: listing.thumb,
+          alt: listing.name || "",
+          cdn: isRemoteUrl(g[0]) ? g[0] : undefined,
+        };
+      }
+      return frames;
     }
+    const local = listing && listing.thumbLocal;
     const t = listing && thumbOf(listing);
-    return t ? [{ src: t, thumb: t, alt: listing.name || "" }] : [];
+    const src = (t && !isRemoteUrl(t) ? t : null) || local || t;
+    return src ? [{ src, thumb: src, alt: listing.name || "" }] : [];
   }
 
   function measureImage(src) {
@@ -248,9 +301,17 @@
       const pswp = new PhotoSwipe({
         dataSource,
         index: start,
-        bgOpacity: 0.94,
+        bgOpacity: 1,
         wheelToZoom: true,
-        paddingFn: () => ({ top: 28, bottom: 28, left: 16, right: 16 }),
+        paddingFn: (viewportSize) => {
+          const narrow = viewportSize.x < 720;
+          return {
+            top: narrow ? 56 : 48,
+            bottom: narrow ? 48 : 40,
+            left: narrow ? 12 : 56,
+            right: narrow ? 12 : 56,
+          };
+        },
       });
       pswp.init();
     });
@@ -614,23 +675,38 @@
   window.openSearch = openSearch;
 
   function searchProducts(q) {
-    query = q || "";
-    const ids = filtered().slice(0, 40);
+    // Modal search is independent of category / избранное / liveQuery filter
+    const modalQ = String(q || "")
+      .trim()
+      .toLowerCase();
     const box = document.getElementById("results");
     if (!box) return;
+    let list = products;
+    if (modalQ) {
+      list = products.filter((p) => {
+        const hay = (
+          p.name +
+          " " +
+          p.cat +
+          " " +
+          (p.note || "") +
+          " " +
+          (p.cats || []).join(" ") +
+          " " +
+          (p.slug || "")
+        ).toLowerCase();
+        return hay.includes(modalQ);
+      });
+    }
+    const ids = list.slice(0, 40);
     box.innerHTML = ids.length
       ? ids
           .map(
             (p) =>
-              `<button type="button" onclick="closeDialog('search');detail(${p.id})">${esc(p.name)}<span style="float:right;color:var(--gold)">${money(p.price)}</span></button>`
+              `<button type="button" class="search-hit" onclick="closeDialog('search');detail(${p.id})"><span class="search-hit-name">${esc(p.name)}</span><span class="search-hit-meta">${esc(p.cat || "")} · ${money(p.price)}</span></button>`
           )
           .join("")
       : '<p class="muted">В выгрузке каталога такого компонента нет.</p>';
-    // live filter catalog when typing from toolbar
-    if (document.getElementById("liveQuery") === document.activeElement) {
-      page = 0;
-      render();
-    }
   }
   window.searchProducts = searchProducts;
 

@@ -1,0 +1,230 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "passed": [
+    {
+      "n": "title",
+      "d": ""
+    },
+    {
+      "n": "catalog-cards",
+      "d": "24"
+    },
+    {
+      "n": "catalog-count",
+      "d": "1887"
+    },
+    {
+      "n": "imgs-catalog",
+      "d": "10"
+    },
+    {
+      "n": "overflow-home",
+      "d": ""
+    },
+    {
+      "n": "nav-#services",
+      "d": ""
+    },
+    {
+      "n": "nav-#oplata",
+      "d": ""
+    },
+    {
+      "n": "nav-#dostavka",
+      "d": ""
+    },
+    {
+      "n": "nav-#ustanovka",
+      "d": ""
+    },
+    {
+      "n": "nav-#contacts",
+      "d": ""
+    },
+    {
+      "n": "chips-present",
+      "d": "16"
+    },
+    {
+      "n": "filter-acoustic",
+      "d": "24"
+    },
+    {
+      "n": "sort-options",
+      "d": "Как в подборке|Цена ↑|Цена ↓|Имя"
+    },
+    {
+      "n": "sort-change",
+      "d": ""
+    },
+    {
+      "n": "fav-toast",
+      "d": ""
+    },
+    {
+      "n": "fav-tool-click",
+      "d": ""
+    },
+    {
+      "n": "search-open",
+      "d": ""
+    },
+    {
+      "n": "search-hits-after-fav",
+      "d": "30"
+    },
+    {
+      "n": "search-open-product",
+      "d": "#product/advance-acoustic-x-a220-x-p700"
+    },
+    {
+      "n": "pdp-deep-link",
+      "d": ""
+    },
+    {
+      "n": "pdp-hides-home",
+      "d": ""
+    },
+    {
+      "n": "pdp-title",
+      "d": "Advance Acoustic X-A220 + X-P700"
+    },
+    {
+      "n": "pdp-description",
+      "d": ""
+    },
+    {
+      "n": "pdp-specs",
+      "d": ""
+    },
+    {
+      "n": "pdp-gallery-ui",
+      "d": "9"
+    },
+    {
+      "n": "imgs-pdp",
+      "d": "8"
+    },
+    {
+      "n": "overflow-pdp",
+      "d": ""
+    },
+    {
+      "n": "pswp-open",
+      "d": ""
+    },
+    {
+      "n": "pswp-close-btn",
+      "d": ""
+    },
+    {
+      "n": "pswp-zoom-btn",
+      "d": ""
+    },
+    {
+      "n": "pswp-counter",
+      "d": ""
+    },
+    {
+      "n": "pswp-vars",
+      "d": "{\"close\":true,\"zoom\":true,\"prev\":true,\"next\":true,\"counter\":true,\"iconColor\":\"#f0d78c\"}"
+    },
+    {
+      "n": "pswp-next",
+      "d": ""
+    },
+    {
+      "n": "pswp-prev",
+      "d": ""
+    },
+    {
+      "n": "pswp-zoom-click",
+      "d": ""
+    },
+    {
+      "n": "pswp-close",
+      "d": ""
+    },
+    {
+      "n": "modal-scroll-lock",
+      "d": ""
+    },
+    {
+      "n": "quiz-open",
+      "d": ""
+    },
+    {
+      "n": "quiz-step",
+      "d": ""
+    },
+    {
+      "n": "services-cards",
+      "d": "3"
+    },
+    {
+      "n": "pagination-present",
+      "d": "ПОКАЗАТЬ ЕЩЁ · ОСТАЛОСЬ 1863"
+    },
+    {
+      "n": "pagination-click",
+      "d": "48"
+    },
+    {
+      "n": "overflow-tablet-home",
+      "d": ""
+    },
+    {
+      "n": "overflow-tablet-pdp",
+      "d": ""
+    },
+    {
+      "n": "mobile-menu",
+      "d": ""
+    },
+    {
+      "n": "mobile-menu-scroll-lock",
+      "d": ""
+    },
+    {
+      "n": "overflow-mobile-catalog",
+      "d": ""
+    },
+    {
+      "n": "overflow-mobile-pdp",
+      "d": ""
+    },
+    {
+      "n": "mobile-pswp-open",
+      "d": ""
+    },
+    {
+      "n": "mobile-pswp-close",
+      "d": ""
+    },
+    {
+      "n": "no-console-errors",
+      "d": ""
+    },
+    {
+      "n": "no-page-errors",
+      "d": ""
+    }
+  ],
+  "failed": [],
+  "warnings": [],
+  "screenshots": [
+    "ux-desktop-hero.png",
+    "ux-desktop-catalog.png",
+    "ux-desktop-pdp.png",
+    "ux-desktop-pswp.png",
+    "ux-desktop-services.png",
+    "ux-tablet-catalog.png",
+    "ux-tablet-pdp.png",
+    "ux-mobile-hero.png",
+    "ux-mobile-catalog.png",
+    "ux-mobile-pdp.png",
+    "ux-mobile-pswp.png"
+  ],
+  "consoleErrors": [],
+  "pageErrors": []
+}
