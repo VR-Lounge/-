@@ -228,9 +228,19 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   filter:drop-shadow(0 4px 16px rgba(0,0,0,.6))
 }
 .hero-equip{
-  position:absolute;bottom:12%;left:52%;width:min(42vw,480px);z-index:2;
-  filter:drop-shadow(0 30px 40px rgba(0,0,0,.7));opacity:.88;
-  transform:perspective(800px) rotateY(-8deg);pointer-events:none
+  position:absolute;bottom:10%;left:48%;width:min(46vw,520px);z-index:2;
+  filter:drop-shadow(0 36px 48px rgba(0,0,0,.85));opacity:.95;
+  transform:perspective(900px) rotateY(-10deg) rotateX(4deg);pointer-events:none
+}
+.hero-equip img{
+  width:100%;height:auto;display:block;object-fit:contain;
+  mask-image:linear-gradient(180deg,#000 70%,transparent 100%);
+  -webkit-mask-image:linear-gradient(180deg,#000 70%,transparent 100%)
+}
+.hero-side-mark{
+  position:absolute;right:clamp(12px,3vw,36px);top:28%;
+  writing-mode:vertical-rl;font-family:var(--rock);font-size:14px;
+  letter-spacing:.42em;color:rgba(184,190,200,.45);z-index:3;pointer-events:none
 }
 .hero-copy{
   position:relative;z-index:3;padding:clamp(100px,14vh,160px) 0 clamp(48px,8vh,80px);
@@ -333,14 +343,21 @@ h2{
 .product-art{
   position:relative;height:280px;
   background:
-    radial-gradient(ellipse at 50% 80%,rgba(255,106,26,.08),transparent 55%),
-    linear-gradient(180deg,#161820,#0c0d12);
+    radial-gradient(ellipse at 50% 78%,rgba(255,106,26,.1),transparent 50%),
+    linear-gradient(165deg,#1a1c24 0%,#0c0d12 55%,#08090c 100%);
   display:grid;place-items:center;overflow:hidden;
   border-bottom:1px solid var(--line)
 }
+.product-art:after{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
+  background:
+    linear-gradient(180deg,rgba(3,3,4,.15),transparent 30%,rgba(3,3,4,.55)),
+    radial-gradient(ellipse at 50% 100%,rgba(0,0,0,.5),transparent 55%)
+}
 .product-art img{
-  height:100%;width:100%;object-fit:contain;padding:22px;
-  transition:transform .6s var(--ease);filter:drop-shadow(0 18px 24px rgba(0,0,0,.5))
+  height:100%;width:100%;object-fit:contain;padding:22px;position:relative;z-index:0;
+  transition:transform .6s var(--ease);
+  filter:drop-shadow(0 18px 28px rgba(0,0,0,.65)) contrast(1.04) saturate(.95)
 }
 .card:hover .product-art img{transform:scale(1.05)}
 .fav{
@@ -361,7 +378,7 @@ h2{
 }
 .card h3 a:hover{color:var(--ember)}
 .card p{font-size:12px;color:var(--muted);margin:0 0 16px;min-height:2.6em}
-.price{font-family:var(--rock);font-size:22px;letter-spacing:.04em;font-weight:400}
+.price{font-family:var(--rock);font-size:22px;letter-spacing:.04em;font-weight:400;color:var(--ember)}
 .price del{font-size:13px;font-weight:400;color:var(--muted);margin-left:8px;font-family:var(--sans)}
 .cardfoot{display:flex;align-items:center;justify-content:space-between}
 .round{
@@ -571,6 +588,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
       </div>
     </div>
     <div class="hero-equip" id="heroEquipment" aria-hidden="true"></div>
+    <span class="hero-side-mark">LISTEN · SIDE A · 33⅓</span>
     <div class="wrap hero-copy">
       <p class="eyebrow">HI-FI / HIGH END · МОСКВА</p>
       <p class="hero-brand">MELOMANIAK<span>SIDE A</span></p>
@@ -901,7 +919,15 @@ function article(i){
   document.getElementById("detailbody").innerHTML=`<div class="eyebrow">${s.label}</div><h2>${s.title}</h2><div class="article-body"><p>${s.body}</p></div><div class="notice">В демо — аннотация. Полный архив статей не импортирован.</div><a class="btn ghost" href="https://xn--80aannlcfckh.xn--p1ai/?s=${encodeURIComponent(s.title)}" target="_blank" rel="noopener">Найти материал на оригинале ↗</a>`;
   openDialog("detail");
 }
-document.getElementById("heroEquipment").innerHTML=illustration();
+(function setHeroMedia(){
+  const el=document.getElementById("heroEquipment");
+  const src=manifest.products?.["Advance Acoustic X-A220 + X-P700"];
+  if(src){
+    el.innerHTML=`<img src="${esc(src)}" alt="" decoding="async" width="520" height="320">`;
+  }else{
+    el.innerHTML=illustration();
+  }
+})();
 document.getElementById("stories").innerHTML=stories.map((s,i)=>`<button class="story" onclick="article(${i})"><div class="story-art">${s.art}</div><div class="story-inner"><p><small>${s.label}</small></p><h3>${s.title} ↗</h3><p>Открыть аннотацию материала из архива.</p></div></button>`).join("");
 render();
 </script>
