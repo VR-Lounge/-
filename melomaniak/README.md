@@ -1,8 +1,16 @@
-# MELOMANIAK / SIDE A — VOID STAGE
+# MELOMANIAK / SIDE A — BLACK & GOLD
 
 Интерактивный дизайн-концепт музыкального салона. **Не** действующий интернет-магазин.
 
-Визуал **VOID STAGE**: сценический чёрный, свечение ламп (#ff6a1a), сталь, Unbounded + Bebas Neue + IBM Plex Sans. Предыдущий «бумажный» look полностью заменён.
+Визуал **чёрное + золото** (элитная ось для рокеров/меломанов): Cormorant Garamond + Bebas Neue + Manrope. Full-bleed hero с портретом с родного сайта, atmosphere strips, editorial lookbook-каталог.
+
+## Live asset crawl (from-live)
+
+Источник: [MELOMANIAK](https://xn--80aannlcfckh.xn--p1ai/).
+
+- Манифест: `assets-live-manifest.json`
+- Файлы: `assets/from-live/{hero,products,editorial,brand,misc}/`
+- Краулер: `python3 crawl_live_focused.py` (целевой набор; полный `crawl_live_assets.py` слишком тяжёл из‑за ~31k media)
 
 ## Локальный просмотр
 

@@ -9,3 +9,8 @@ bot.log
 melomaniak/qa/node_modules/
 melomaniak/qa/package-lock.json
 .superdesign/
+
+__pycache__/
+*.pyc
+melomaniak/qa/node_modules/
+*.mp4

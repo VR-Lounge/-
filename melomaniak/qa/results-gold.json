@@ -1,0 +1,52 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "passed": [
+    {
+      "n": "title",
+      "d": ""
+    },
+    {
+      "n": "hero-brand",
+      "d": ""
+    },
+    {
+      "n": "hero-live-photo",
+      "d": "758"
+    },
+    {
+      "n": "catalog-6",
+      "d": "6"
+    },
+    {
+      "n": "filter-acoustic",
+      "d": "2"
+    },
+    {
+      "n": "favorites-toast",
+      "d": ""
+    },
+    {
+      "n": "search",
+      "d": ""
+    },
+    {
+      "n": "detail",
+      "d": ""
+    },
+    {
+      "n": "brief",
+      "d": ""
+    },
+    {
+      "n": "mobile-menu",
+      "d": ""
+    }
+  ],
+  "failed": [],
+  "screenshots": [
+    "desktop-hero-gold.png",
+    "desktop-catalog-gold.png",
+    "mobile-hero-gold.png",
+    "mobile-catalog-gold.png"
+  ]
+}
