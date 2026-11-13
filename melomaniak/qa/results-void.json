@@ -1,0 +1,52 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "passed": [
+    {
+      "name": "title",
+      "detail": "MELOMANIAK — Деньги ничто, музыка всё | Концепт салона Hi-Fi"
+    },
+    {
+      "name": "hero-brand",
+      "detail": "MELOMANIAK SIDE A"
+    },
+    {
+      "name": "catalog-6",
+      "detail": "6"
+    },
+    {
+      "name": "filter-acoustic",
+      "detail": "2"
+    },
+    {
+      "name": "favorites-toast",
+      "detail": ""
+    },
+    {
+      "name": "search-mcintosh",
+      "detail": "1"
+    },
+    {
+      "name": "detail-modal",
+      "detail": ""
+    },
+    {
+      "name": "brief-steps",
+      "detail": ""
+    },
+    {
+      "name": "mobile-menu",
+      "detail": ""
+    },
+    {
+      "name": "mobile-cards",
+      "detail": "6"
+    }
+  ],
+  "failed": [],
+  "screenshots": [
+    "desktop-hero-void.png",
+    "desktop-contact.png",
+    "mobile-hero-void.png",
+    "mobile-catalog-void.png"
+  ]
+}

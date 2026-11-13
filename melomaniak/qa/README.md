@@ -1,7 +1,12 @@
-# Browser QA (Playwright, 2026-11-13)
+# QA — VOID STAGE redesign
 
 Local: http://127.0.0.1:8080/
 
-All checks PASS: load, vinyl logo, 6/6 photos, filters, sort, search, detail modal + gallery, favorites, brief 3 steps, mobile menu/cards @390, tablet @768, no page JS errors.
+```bash
+cd melomaniak && python3 -m http.server 8080 --bind 127.0.0.1
+# then from melomaniak/qa (with playwright installed):
+node playwright-qa.mjs
+```
 
-Screenshots: desktop-hero, mobile-hero, mobile-catalog, tablet-catalog.
+Latest run: `results-void.json` — filters, search, favorites, modals, brief, mobile menu.
+Screenshots: `*-void.png`.
