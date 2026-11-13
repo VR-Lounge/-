@@ -110,6 +110,38 @@
       "d": ""
     },
     {
+      "n": "pdp-cyrillic-cyr-marantz-pm7000n-enc",
+      "d": "Стриминговый интегральный усилитель Marantz PM7000"
+    },
+    {
+      "n": "pdp-cyrillic-cyr-marantz-pm7000n-dec",
+      "d": "Стриминговый интегральный усилитель Marantz PM7000"
+    },
+    {
+      "n": "pdp-cyrillic-cyr-marantz-pm7000n-id",
+      "d": "Стриминговый интегральный усилитель Marantz PM7000"
+    },
+    {
+      "n": "pdp-cyrillic-cyr-audio-research-ds450-enc",
+      "d": "Усилитель мощности Audio Research DS450 ( audio re"
+    },
+    {
+      "n": "pdp-cyrillic-cyr-audio-research-ds450-dec",
+      "d": "Усилитель мощности Audio Research DS450 ( audio re"
+    },
+    {
+      "n": "pdp-cyrillic-cyr-audio-research-ds450-id",
+      "d": "Усилитель мощности Audio Research DS450 ( audio re"
+    },
+    {
+      "n": "pdp-cyrillic-sample-10",
+      "d": "10/10"
+    },
+    {
+      "n": "pdp-specs-anchor-stays",
+      "d": "#product/advance-acoustic-x-a220-x-p700 → #product/advance-acoustic-x-a220-x-p700; inView=true"
+    },
+    {
       "n": "pswp-open",
       "d": ""
     },
@@ -160,6 +192,10 @@
     {
       "n": "services-cards",
       "d": "3"
+    },
+    {
+      "n": "services-ht-images",
+      "d": "svc-ht-tv.jpg,svc-projector-120.jpg,svc-projector-150.jpg"
     },
     {
       "n": "pagination-present",

@@ -249,6 +249,128 @@ galleryCells >= 1 ? ok("pdp-gallery-ui", String(galleryCells)) : fail("pdp-galle
 await checkBrokenImages(desktop, "pdp", "#pdpbody img", 8);
 await checkOverflow(desktop, "pdp");
 
+/* --- Regression: Cyrillic Woo slugs (encoded / decoded / id) --- */
+{
+  const cyrCases = [
+    {
+      n: "cyr-marantz-pm7000n",
+      enc: "%d1%81%d1%82%d1%80%d0%b8%d0%bc%d0%b8%d0%bd%d0%b3%d0%be%d0%b2%d1%8b%d0%b9-%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c",
+      id: "262399",
+      expect: /Marantz|PM7000/i,
+    },
+    {
+      n: "cyr-audio-research-ds450",
+      enc: "%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-audio-research-ds450",
+      id: "42427",
+      expect: /Audio Research|DS450/i,
+    },
+  ];
+  for (const c of cyrCases) {
+    let decoded = c.enc;
+    try {
+      decoded = decodeURIComponent(c.enc);
+    } catch (_) {}
+    for (const [label, slug] of [
+      ["enc", c.enc],
+      ["dec", decoded],
+      ["id", c.id],
+    ]) {
+      await desktop.goto(BASE + "#product/" + slug, {
+        waitUntil: "domcontentloaded",
+        timeout: 60000,
+      });
+      await desktop.waitForTimeout(1000);
+      const info = await desktop.evaluate(() => {
+        const body = document.getElementById("pdpbody")?.innerText || "";
+        const title =
+          document.querySelector(".pdp-title, #pdpbody h1")?.textContent || "";
+        return {
+          notFound: /Позиция не найдена/.test(body),
+          title,
+          hidden: !!document.getElementById("pdp")?.hidden,
+        };
+      });
+      const pass =
+        !info.notFound &&
+        !info.hidden &&
+        c.expect.test(info.title || "");
+      pass
+        ? ok(`pdp-cyrillic-${c.n}-${label}`, info.title.slice(0, 50))
+        : fail(
+            `pdp-cyrillic-${c.n}-${label}`,
+            JSON.stringify({ slug: String(slug).slice(0, 60), ...info })
+          );
+    }
+  }
+
+  // Broader sample: 10 random percent-encoded catalog slugs via MELO_CATALOG
+  const sample = await desktop.evaluate(() => {
+    const products = (window.MELO_CATALOG && window.MELO_CATALOG.products) || [];
+    const cyr = products.filter((p) => /%[0-9a-f]{2}/i.test(p.slug || ""));
+    const out = [];
+    const step = Math.max(1, Math.floor(cyr.length / 10));
+    for (let i = 0; i < 10 && i * step < cyr.length; i++) {
+      const p = cyr[i * step];
+      out.push({ id: p.id, slug: p.slug, name: p.name });
+    }
+    return out;
+  });
+  let sampleOk = 0;
+  for (const p of sample) {
+    await desktop.goto(BASE + "#product/" + p.slug, {
+      waitUntil: "domcontentloaded",
+      timeout: 60000,
+    });
+    await desktop.waitForTimeout(700);
+    const okOne = await desktop.evaluate((id) => {
+      const body = document.getElementById("pdpbody")?.innerText || "";
+      if (/Позиция не найдена/.test(body)) return false;
+      if (document.getElementById("pdp")?.hidden) return false;
+      const title =
+        document.querySelector(".pdp-title, #pdpbody h1")?.textContent || "";
+      return title.length > 2;
+    }, p.id);
+    if (okOne) sampleOk++;
+    else fail("pdp-cyrillic-sample", `${p.id} ${String(p.slug).slice(0, 40)}`);
+  }
+  if (sample.length)
+    sampleOk === sample.length
+      ? ok("pdp-cyrillic-sample-10", `${sampleOk}/${sample.length}`)
+      : fail("pdp-cyrillic-sample-10", `${sampleOk}/${sample.length}`);
+}
+
+/* --- Regression: Характеристики must stay on PDP (no hash hijack) --- */
+{
+  await desktop.goto(BASE + "#product/advance-acoustic-x-a220-x-p700", {
+    waitUntil: "domcontentloaded",
+    timeout: 60000,
+  });
+  await desktop.waitForSelector("#pdpbody .pdp-title", { timeout: 30000 });
+  await desktop.waitForTimeout(600);
+  const hasJump = await desktop.locator('a[data-pdp-anchor="pdp-specs"], a[href="#pdp-specs"]').count();
+  if (hasJump) {
+    const before = await desktop.evaluate(() => location.hash);
+    await desktop.locator('a[data-pdp-anchor="pdp-specs"], a[href="#pdp-specs"]').first().click();
+    await desktop.waitForTimeout(500);
+    const after = await desktop.evaluate(() => {
+      const specs = document.getElementById("pdp-specs");
+      const r = specs && specs.getBoundingClientRect();
+      return {
+        hash: location.hash,
+        pdpHidden: !!document.getElementById("pdp")?.hidden,
+        heroHidden: !!document.querySelector(".hero")?.hidden,
+        specsInView: !!(r && r.top < window.innerHeight && r.bottom > 0),
+        stillProduct: /^#product\//.test(location.hash),
+      };
+    });
+    after.stillProduct && !after.pdpHidden && after.heroHidden
+      ? ok("pdp-specs-anchor-stays", `${before} → ${after.hash}; inView=${after.specsInView}`)
+      : fail("pdp-specs-anchor-stays", JSON.stringify(after));
+  } else {
+    warn("pdp-specs-anchor-stays", "no specs jump link on this SKU");
+  }
+}
+
 // PhotoSwipe open
 await desktop.locator(".pdp-hero-btn").first().click();
 await desktop.waitForSelector(".pswp--open", { timeout: 15000 }).catch(() => null);
@@ -325,11 +447,34 @@ if (await quizChip.count()) {
 await desktop.locator('#quiz .close').click().catch(() => {});
 await desktop.keyboard.press("Escape");
 
-// Services section cards
+// Services section cards + on-theme HT/projector images
 await desktop.goto(BASE + "#services", { waitUntil: "domcontentloaded" });
 await desktop.waitForTimeout(500);
 const svc = await desktop.locator(".service-card, #services .story").count();
 svc >= 1 ? ok("services-cards", String(svc)) : fail("services-cards", String(svc));
+const svcImgs = await desktop.evaluate(async () => {
+  const list = [...document.querySelectorAll(".service-card .svc-media img")];
+  await Promise.all(
+    list.map((img) =>
+      img.complete && img.naturalWidth
+        ? null
+        : new Promise((r) => {
+            img.onload = img.onerror = r;
+          })
+    )
+  );
+  return list.map((img) => ({
+    src: img.getAttribute("src") || "",
+    w: img.naturalWidth,
+    h: img.naturalHeight,
+  }));
+});
+const svcOk =
+  svcImgs.length >= 3 &&
+  svcImgs.every((i) => i.w > 100 && /assets\/services\//.test(i.src));
+svcOk
+  ? ok("services-ht-images", svcImgs.map((i) => i.src.split("/").pop()).join(","))
+  : fail("services-ht-images", JSON.stringify(svcImgs));
 await shot(desktop, "ux-desktop-services.png");
 
 // Pagination — reset filters so full catalog can page

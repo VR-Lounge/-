@@ -207,19 +207,69 @@
   let pdpActive = 0;
   let pdpListing = null;
 
+  /**
+   * Woo catalog stores many Cyrillic slugs already percent-encoded
+   * (e.g. "%d1%81%d1%82%d1%80…"). Hash routing / browsers may hand us
+   * encoded, decoded, or double-encoded forms. Normalize both sides.
+   */
+  function decodeSlug(value) {
+    let cur = String(value || "");
+    for (let i = 0; i < 5; i++) {
+      try {
+        const next = decodeURIComponent(cur);
+        if (next === cur) break;
+        cur = next;
+      } catch (e) {
+        break;
+      }
+    }
+    return cur;
+  }
+
+  function encodeSlug(value) {
+    const decoded = decodeSlug(value);
+    try {
+      return encodeURIComponent(decoded).replace(/%[0-9A-F]{2}/gi, (m) =>
+        m.toLowerCase()
+      );
+    } catch (e) {
+      return decoded;
+    }
+  }
+
+  function slugMatches(stored, ref) {
+    if (stored == null || ref == null) return false;
+    const a = String(stored);
+    const b = String(ref);
+    if (a === b) return true;
+    const da = decodeSlug(a);
+    const db = decodeSlug(b);
+    if (da === db) return true;
+    if (a === encodeSlug(b) || encodeSlug(a) === b || encodeSlug(a) === encodeSlug(b))
+      return true;
+    return false;
+  }
+
+  function productHash(p) {
+    if (!p) return "#collection";
+    const raw = p.slug != null && String(p.slug) !== "" ? String(p.slug) : String(p.id);
+    // Prefer decoded Cyrillic in the hash; the browser encodes once.
+    // If catalog already has %xx, decode first so we never double-encode.
+    const path = decodeSlug(raw);
+    return "#product/" + path;
+  }
+
   function findProduct(ref) {
     const key = String(ref || "");
-    let decoded = key;
-    try {
-      decoded = decodeURIComponent(key);
-    } catch (e) {}
+    if (!key) return null;
+    const decoded = decodeSlug(key);
     return (
       products.find(
         (x) =>
           String(x.id) === key ||
           String(x.id) === decoded ||
-          x.slug === key ||
-          x.slug === decoded
+          slugMatches(x.slug, key) ||
+          slugMatches(x.slug, decoded)
       ) || null
     );
   }
@@ -457,7 +507,7 @@
       ? `<section class="pdp-section"><div class="eyebrow">РЯДОМ В КАТАЛОГЕ</div><div class="related-rail">${rel
           .map(
             (r) =>
-              `<a class="related-card" href="#product/${esc(r.slug || r.id)}"><span class="related-thumb">${photo(r)}</span><span>${esc(r.name)}</span><strong>${money(r.price)}</strong></a>`
+              `<a class="related-card" href="${esc(productHash(r))}"><span class="related-thumb">${photo(r)}</span><span>${esc(r.name)}</span><strong>${money(r.price)}</strong></a>`
           )
           .join("")}</div></section>`
       : "";
@@ -504,9 +554,9 @@
             <a class="btn ghost" href="${esc(listing.source || detail.source || "#")}" target="_blank" rel="noopener">На оригинальном сайте ↗</a>
           </div>
           <div class="pdp-jump">
-            <a href="#pdp-about">О продукте</a>
-            ${detail.specs && detail.specs.length ? '<a href="#pdp-specs">Характеристики</a>' : ""}
-            ${pdpGallery.length > 1 ? '<a href="#pdp-gallery">Галерея</a>' : ""}
+            <a href="#pdp-about" data-pdp-anchor="pdp-about">О продукте</a>
+            ${detail.specs && detail.specs.length ? '<a href="#pdp-specs" data-pdp-anchor="pdp-specs">Характеристики</a>' : ""}
+            ${pdpGallery.length > 1 ? '<a href="#pdp-gallery" data-pdp-anchor="pdp-gallery">Галерея</a>' : ""}
           </div>
         </div>
       </div>
@@ -515,7 +565,7 @@
       ${hitlSpecs}
       ${gallerySection}
       ${relHtml}
-      <p class="micro pdp-foot">Карточка: <code>#product/${esc(listing.slug || listing.id)}</code> · payload <code>data/pdp/${listing.id}.json</code></p>
+      <p class="micro pdp-foot">Карточка: <code>${esc(productHash(listing))}</code> · payload <code>data/pdp/${listing.id}.json</code></p>
     `;
     injectProductJsonLd(listing, detail);
   }
@@ -526,9 +576,14 @@
       toast("Позиция не найдена в выгрузке каталога");
       return;
     }
-    const slug = p.slug || String(p.id);
-    if (location.hash !== "#product/" + slug && location.hash !== "#product/" + p.id) {
-      location.hash = "#product/" + slug;
+    const target = productHash(p);
+    const cur = location.hash || "";
+    const curRef = cur.replace(/^#product\//, "");
+    const sameProduct =
+      cur.startsWith("#product/") &&
+      (slugMatches(curRef, p.slug) || String(p.id) === decodeSlug(curRef) || String(p.id) === curRef);
+    if (!sameProduct) {
+      location.hash = target;
       return;
     }
     openPdp(p);
@@ -536,6 +591,7 @@
   window.detail = detail;
 
   async function openPdp(p) {
+    pdpListing = p;
     const pdpRoot = document.getElementById("pdp");
     const journeyRoot = document.getElementById("journey");
     const body = document.getElementById("pdpbody");
@@ -546,10 +602,18 @@
       body.innerHTML =
         '<div class="pdp-loading"><div class="eyebrow">MELOMANIAK</div><p>Собираем карточку из живого описания…</p></div>';
     const detailData = await loadDetailPayload(p);
-    // race: user may have navigated away
-    const ref = (location.hash || "").replace(/^#product\//, "");
-    if (!location.hash.startsWith("#product/")) return;
-    if (ref && ref !== p.slug && ref !== String(p.id)) return;
+    // race: user may have navigated away (also tolerate encoded/decoded slug forms)
+    const hash = location.hash || "";
+    if (!hash.startsWith("#product/")) return;
+    const ref = hash.replace(/^#product\//, "");
+    if (
+      ref &&
+      !slugMatches(ref, p.slug) &&
+      String(p.id) !== decodeSlug(ref) &&
+      String(p.id) !== ref
+    ) {
+      return;
+    }
     renderPdp(p, detailData);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -645,7 +709,7 @@
             return `<article class="rail-item" id="product-${x.id}">
         <div class="rail-media" onclick="detail(${x.id})"><span class="tag">${x.old ? "СПЕЦПРЕДЛОЖЕНИЕ" : esc((x.cat || "").toUpperCase())}</span>
         <button type="button" class="fav ${isFav(x) ? "on" : ""}" aria-label="Избранное" aria-pressed="${isFav(x)}" onclick="event.stopPropagation();toggleFav(${x.id})">${isFav(x) ? "♥" : "♡"}</button>${photo(x)}</div>
-        <div class="rail-body"><h3><a href="#product/${esc(x.slug || x.id)}">${esc(x.name)}</a></h3>
+        <div class="rail-body"><h3><a href="${esc(productHash(x))}">${esc(x.name)}</a></h3>
         <p>${esc(x.note || "")}</p>${h}<div class="rail-foot"><div class="price">${money(x.price)}${x.old ? "<del>" + money(x.old) + "</del>" : ""}</div>
         <button type="button" class="round" onclick="detail(${x.id})" aria-label="Подробнее">↗</button></div></div></article>`;
           })
@@ -876,6 +940,15 @@
     if (pdpRoot && showHome) pdpRoot.hidden = true;
   }
 
+  const PDP_INPAGE = new Set(["pdp-specs", "pdp-about", "pdp-gallery"]);
+
+  function scrollPdpAnchor(id) {
+    const el = document.getElementById(id);
+    if (!el) return false;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    return true;
+  }
+
   function showPage(hash) {
     const raw = (hash || "#home").replace(/^#/, "") || "home";
     const journeyIds = ["oplata", "dostavka", "ustanovka"];
@@ -883,11 +956,27 @@
     const panels = document.querySelectorAll(".journey-panel");
     const pdpRoot = document.getElementById("pdp");
 
-    // #product/slug or #product/id
+    // In-page PDP anchors (#pdp-specs etc.) must NOT leave the product page.
+    // Prefer click handler (keeps #product/…); this is a safety net if hash changed.
+    if (PDP_INPAGE.has(raw)) {
+      if (pdpRoot && !pdpRoot.hidden && pdpListing) {
+        setHomeVisibility(false);
+        if (journeyRoot) journeyRoot.hidden = true;
+        panels.forEach((panel) => (panel.hidden = true));
+        pdpRoot.hidden = false;
+        setTimeout(() => scrollPdpAnchor(raw), 40);
+        return;
+      }
+      // Cold load of #pdp-specs with no product — fall through to home rather than blank.
+    }
+
+    // #product/slug or #product/id (slug may be encoded, decoded, or catalog-%xx)
     if (raw.startsWith("product/") || raw.startsWith("product-")) {
       let ref = raw.startsWith("product/")
-        ? decodeURIComponent(raw.slice("product/".length))
+        ? raw.slice("product/".length)
         : raw.slice("product-".length);
+      // Strip accidental in-page fragment leftovers if any
+      ref = ref.split(/[?#]/)[0];
       const p = findProduct(ref);
       setHomeVisibility(false);
       if (journeyRoot) journeyRoot.hidden = true;
@@ -895,7 +984,10 @@
       if (pdpRoot) pdpRoot.hidden = false;
       if (p && (!pdpListing || pdpListing.id !== p.id)) {
         openPdp(p);
+      } else if (p && pdpListing && pdpListing.id === p.id) {
+        // already on this PDP — keep content
       } else if (!p) {
+        pdpListing = null;
         if (pdpRoot) {
           document.getElementById("pdpbody").innerHTML =
             '<div class="pdp-loading"><p>Позиция не найдена.</p><a class="btn ghost" href="#collection">В каталог</a></div>';
@@ -929,6 +1021,21 @@
   }
   window.showPage = showPage;
   window.addEventListener("hashchange", () => showPage(location.hash));
+
+  /* PDP in-page jump links: scroll without replacing #product/… hash (router hijack). */
+  document.addEventListener(
+    "click",
+    (e) => {
+      const a = e.target && e.target.closest && e.target.closest("[data-pdp-anchor]");
+      if (!a) return;
+      const id = a.getAttribute("data-pdp-anchor");
+      if (!id || !PDP_INPAGE.has(id)) return;
+      e.preventDefault();
+      e.stopPropagation();
+      scrollPdpAnchor(id);
+    },
+    true
+  );
 
   /* init media strips */
   (function initStrip() {
