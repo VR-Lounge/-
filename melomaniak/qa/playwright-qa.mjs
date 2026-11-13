@@ -22,6 +22,38 @@ await page.screenshot({ path: path.join(__dirname, 'desktop-hero-gold.png') });
 results.screenshots.push('desktop-hero-gold.png');
 const items = await page.locator('#products .feature-row, #products .rail-item').count();
 items === 6 ? ok('catalog-6', String(items)) : fail('catalog-6', String(items));
+await page.locator('#collection').scrollIntoViewIfNeeded();
+const cardImgs = page.locator('#products .feature-media img, #products .rail-media img');
+const cardCount = await cardImgs.count();
+let broken = 0;
+for (let i = 0; i < cardCount; i++) {
+  const el = cardImgs.nth(i);
+  await el.scrollIntoViewIfNeeded();
+  await el.evaluate(img => img.decode?.().catch(()=>{}) || Promise.resolve());
+  await page.waitForFunction((idx) => {
+    const imgs = [...document.querySelectorAll('#products .feature-media img, #products .rail-media img')];
+    const img = imgs[idx];
+    return img && img.complete && img.naturalWidth > 0;
+  }, i, { timeout: 8000 }).catch(() => null);
+  const info = await el.evaluate(img => ({
+    w: img.naturalWidth, h: img.naturalHeight, complete: img.complete, src: img.getAttribute('src')
+  }));
+  if (!info.complete || info.w < 100) { broken++; fail('card-img', JSON.stringify(info)); }
+}
+if (!broken) ok('card-images-ok', String(cardCount));
+const usesDisplay = await page.evaluate(() =>
+  [...document.querySelectorAll('#products img')].every(img => /assets\/display\//.test(img.getAttribute('src')||''))
+);
+usesDisplay ? ok('cards-use-display') : fail('cards-use-display');
+await page.locator('#products .feature-row').first().click();
+await page.waitForSelector('#detail[open]');
+await page.waitForFunction(() => {
+  const img = document.getElementById('detailImg');
+  return img && img.complete && img.naturalWidth > 0;
+}, null, { timeout: 8000 });
+const detailImg = await page.locator('#detailImg').evaluate(img => ({w: img.naturalWidth, src: img.getAttribute('src')}));
+detailImg.w > 0 ? ok('detail-img', String(detailImg.w)) : fail('detail-img', JSON.stringify(detailImg));
+await page.locator('#detail .close').click();
 await page.locator('.chip', { hasText: 'Акустика' }).click();
 await page.waitForTimeout(250);
 const acoustic = await page.locator('#products .feature-row, #products .rail-item').count();

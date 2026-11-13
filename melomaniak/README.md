@@ -8,16 +8,12 @@
 
 Источник: родной сайт [MELOMANIAK](https://xn--80aannlcfckh.xn--p1ai/).
 
-- Манифест: `assets-live-manifest.json`
-- URL-чекпоинт: `assets-live-urls.json`
-- Скачанные файлы: `assets/from-live/{hero,products,editorial,brand,misc}/`
-- Уже импортированные ассеты в `assets/` сохранены (`existingAssets` в манифесте)
+- **UI использует** курируемый набор `assets/display/` (см. `assets-manifest.js`)
+- Полный дамп (~1.5 GB, ~9k): `assets/from-live/{hero,products,editorial,brand,misc}/` — архив, не грузится целиком
+- Метаданные краула: `assets-live-manifest.json`, `assets-live-urls.json`
 - Краулер: `python3 crawl_live_assets.py` (`collect` | `download` | `all`)
 
-**Сводка краула:** страниц обнаружено 2655, HTML-скрап 302, уникальных картинок скачано 9139 (URL найдено 10436). Топ hero — поле `topHeroCandidates`.
-
-Картинки дедуплицированы по SHA-256; `suggestedUse` — подсказка для элитного редизайна (чёрное+золото).
-
+Для новичков: **[WHERE-THINGS-ARE.md](WHERE-THINGS-ARE.md)** — диск агента vs GitHub vs ПК, что такое from-live, как открыть превью.
 
 ## Локальный просмотр
 

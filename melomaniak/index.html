@@ -15,7 +15,7 @@
 <meta property="og:title" content="MELOMANIAK — Деньги ничто, музыка всё">
 <meta property="og:description" content="Музыкальный салон Hi-Fi / High End. Не витрина коробок — пространство, где систему собирают из понимания.">
 <meta property="og:url" content="https://xn--80aannlcfckh.xn--p1ai/">
-<meta property="og:image" content="assets/from-live/hero/da2b43ff5e_JBL_Stage_start_inside_1920.jpg">
+<meta property="og:image" content="assets/display/hero-jbl-stage.jpg">
 <meta name="geo.region" content="RU-MOW">
 <meta name="geo.placename" content="Москва">
 <meta name="geo.position" content="55.793;37.799">
@@ -56,10 +56,6 @@ body{
     linear-gradient(180deg,#050505,#080808 50%,#050505);
   min-height:100dvh
 }
-body:before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.04;mix-blend-mode:overlay;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")
-}
 button,input,select,textarea{font:inherit}a{color:inherit;text-decoration:none}
 button,a,input,select,textarea{touch-action:manipulation}button{cursor:pointer;color:inherit}
 button:disabled{opacity:.4;cursor:not-allowed}
@@ -68,11 +64,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .eyebrow{font-family:var(--rock);font-size:clamp(13px,1.2vw,15px);letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
 .muted{color:var(--muted)}.noscroll{overflow:hidden}
 .top{padding:8px 14px;text-align:center;background:linear-gradient(90deg,#1a1508,var(--gold-deep),#1a1508);color:#fff8e8;font-family:var(--rock);font-size:13px;letter-spacing:.18em}
-.header{position:sticky;top:0;z-index:40;background:rgba(5,5,5,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.header{position:sticky;top:0;z-index:40;background:rgba(5,5,5,.96);border-bottom:1px solid var(--line)}
 .nav{height:78px;display:flex;align-items:center;gap:22px}
 .brand{display:flex;align-items:center;gap:14px;min-width:0}
 .vinyl-logo{position:relative;width:52px;height:52px;flex:none;display:grid;place-items:center}
-.logo-badge{width:44px;height:auto;display:block;border-radius:50%;filter:drop-shadow(0 0 14px rgba(212,175,55,.4));animation:spin 9s linear infinite;will-change:transform}
+.logo-badge{width:44px;height:auto;display:block;border-radius:50%;box-shadow:0 0 14px rgba(212,175,55,.35);animation:spin 9s linear infinite}
 .vinyl-spin-ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(212,175,55,.3);border-top-color:var(--gold);border-right-color:rgba(240,215,140,.5);animation:spin 2.8s linear infinite;pointer-events:none}
 .logo-word{font-family:var(--rock);font-size:clamp(22px,2vw,28px);letter-spacing:.08em;line-height:1}
 .logo-word small{display:block;font-size:11px;letter-spacing:.22em;margin-top:4px;color:var(--muted);font-weight:400}
@@ -91,14 +87,14 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 /* FULL-BLEED HERO */
 .hero{position:relative;min-height:min(100dvh,960px);display:grid;align-items:end;overflow:hidden;isolation:isolate}
 .hero-bleed{position:absolute;inset:0;z-index:0}
-.hero-bleed img{width:100%;height:100%;object-fit:cover;object-position:68% 40%;transform:scale(1.06);animation:ken 28s ease-in-out infinite alternate}
+.hero-bleed img{width:100%;height:100%;object-fit:cover;object-position:68% 40%;transform:scale(1.04);animation:ken 36s ease-in-out infinite alternate;will-change:transform}
 .hero-bleed:after{content:"";position:absolute;inset:0;background:
   linear-gradient(90deg,rgba(5,5,5,.78) 0%,rgba(5,5,5,.45) 32%,rgba(5,5,5,.12) 58%,rgba(5,5,5,.35) 100%),
   linear-gradient(180deg,rgba(5,5,5,.25) 0%,transparent 28%,rgba(5,5,5,.55) 78%,var(--void) 100%),
   radial-gradient(ellipse at 72% 42%,rgba(212,175,55,.14),transparent 52%)}
-@keyframes ken{from{transform:scale(1.06)}to{transform:scale(1.12)}}
-.hero-vinyl-wrap{position:absolute;width:min(28vw,280px);height:min(28vw,280px);right:4%;bottom:14%;top:auto;z-index:2;pointer-events:none;opacity:.72;filter:drop-shadow(0 30px 60px rgba(0,0,0,.7));animation:pulse-glow 5s ease-in-out infinite}
-.hero-vinyl{width:100%;height:100%;border-radius:50%;background:repeating-radial-gradient(circle at center,#0a0a0a 0 1px,#1c1a14 2px,#0c0c0c 3px);box-shadow:0 0 0 1px rgba(212,175,55,.25),0 0 60px rgba(212,175,55,.15);animation:spin 18s linear infinite;will-change:transform}
+@keyframes ken{from{transform:scale(1.04)}to{transform:scale(1.08)}}
+.hero-vinyl-wrap{position:absolute;width:min(28vw,280px);height:min(28vw,280px);right:4%;bottom:14%;top:auto;z-index:2;pointer-events:none;opacity:.72;box-shadow:0 30px 60px rgba(0,0,0,.55)}
+.hero-vinyl{width:100%;height:100%;border-radius:50%;background:repeating-radial-gradient(circle at center,#0a0a0a 0 1px,#1c1a14 2px,#0c0c0c 3px);box-shadow:0 0 0 1px rgba(212,175,55,.25),0 0 40px rgba(212,175,55,.12);animation:spin 18s linear infinite}
 .hero-vinyl .hub{position:absolute;inset:32%;border-radius:50%;background:radial-gradient(circle at 40% 35%,#2a2618,#0c0c0c 70%);display:grid;place-items:center;border:1px solid rgba(212,175,55,.4);animation:spin-rev 18s linear infinite}
 .hero-vinyl .hub img{width:62%;border-radius:50%}
 .hero-copy{position:relative;z-index:3;padding:clamp(110px,16vh,180px) 0 clamp(48px,8vh,88px);max-width:min(620px,94vw);animation:rise .95s var(--ease) both}
@@ -115,23 +111,22 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes spin-rev{to{transform:rotate(-360deg)}}
 @keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
-@keyframes pulse-glow{0%,100%{filter:drop-shadow(0 30px 60px rgba(0,0,0,.7))}50%{filter:drop-shadow(0 30px 60px rgba(0,0,0,.7)) drop-shadow(0 0 28px rgba(212,175,55,.25))}}
-
 .ticker{padding:14px 0;border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;background:rgba(212,175,55,.04)}
 .ticker-track{display:inline-block;font-family:var(--rock);font-size:clamp(22px,3vw,32px);letter-spacing:.08em;color:#b8a878;animation:marquee 32s linear infinite}
 .ticker span{color:var(--gold);padding:0 22px}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* Atmosphere strip — live floorstanders + stage */
-.atmosphere{display:grid;grid-template-columns:1fr 1.35fr 1fr;min-height:clamp(220px,30vw,380px);border-bottom:1px solid var(--line);background:#080808}
+.atmosphere{display:grid;grid-template-columns:1fr 1.35fr 1fr;min-height:clamp(220px,30vw,380px);border-bottom:1px solid var(--line);background:#080808;content-visibility:auto;contain-intrinsic-size:auto 320px}
 .atmosphere figure{margin:0;position:relative;overflow:hidden;display:grid;place-items:center;background:#0c0c0c}
-.atmosphere img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.92;transition:transform .8s var(--ease),opacity .4s;filter:saturate(.95) contrast(1.05)}
-.atmosphere figure:hover img{transform:scale(1.05);opacity:1}
-.atmosphere .contain{object-fit:contain;padding:6% 8%;opacity:1;filter:drop-shadow(0 20px 30px rgba(0,0,0,.6))}
+.atmosphere img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.92;transition:transform .8s var(--ease),opacity .4s}
+.atmosphere figure:hover img{transform:scale(1.04);opacity:1}
+.atmosphere .contain{object-fit:contain;padding:6% 8%;opacity:1}
 .atmosphere figure:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(5,5,5,.7));pointer-events:none}
 .atmosphere figcaption{position:absolute;bottom:12px;left:14px;font-family:var(--rock);font-size:12px;letter-spacing:.2em;color:var(--gold);z-index:1;text-shadow:0 2px 10px #000}
 
-section{padding:clamp(56px,9vw,108px) 0}
+section{padding:clamp(56px,9vw,108px) 0;content-visibility:auto;contain-intrinsic-size:auto 520px}
+.hero,section.collection{content-visibility:visible}
 .section-head{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:40px}
 h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.2vw,52px);line-height:1.1;letter-spacing:-.02em;margin:12px 0 0}
 .section-head p{max-width:340px;color:var(--muted);margin:0}
@@ -155,11 +150,11 @@ h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.2vw,52px);l
 .sort{border:1px solid var(--line);background:var(--panel);padding:10px 12px;font-size:12px;color:var(--ink)}
 
 .lookbook{display:flex;flex-direction:column;gap:18px}
-.feature-row{display:grid;grid-template-columns:1.15fr .85fr;min-height:min(52vw,480px);border:1px solid var(--line);background:var(--panel);overflow:hidden;cursor:pointer;transition:border-color .35s,box-shadow .35s}
+.feature-row{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);background:var(--panel);overflow:hidden;cursor:pointer;transition:border-color .35s,box-shadow .35s}
 .feature-row:hover{border-color:rgba(212,175,55,.5);box-shadow:0 0 50px rgba(212,175,55,.08)}
-.feature-media{position:relative;background:#0c0c0c;display:grid;place-items:center;overflow:hidden}
-.feature-media img{width:100%;height:100%;object-fit:contain;padding:clamp(16px,3vw,40px);transition:transform .7s var(--ease);filter:drop-shadow(0 20px 40px rgba(0,0,0,.55))}
-.feature-row:hover .feature-media img{transform:scale(1.04)}
+.feature-media{position:relative;background:linear-gradient(165deg,#16140e,#0c0c0c);display:grid;place-items:center;overflow:hidden;aspect-ratio:1/1;min-height:280px}
+.feature-media img{width:100%;height:100%;object-fit:contain;object-position:center;padding:clamp(18px,3vw,36px);transition:transform .7s var(--ease)}
+.feature-row:hover .feature-media img{transform:scale(1.03)}
 .feature-body{padding:clamp(24px,4vw,48px);display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--line);position:relative}
 .feature-body .tag{font-family:var(--rock);font-size:12px;letter-spacing:.18em;color:var(--gold);margin-bottom:14px}
 .feature-body h3{font-family:var(--display);font-size:clamp(26px,3vw,40px);font-weight:600;margin:0 0 12px;line-height:1.15}
@@ -172,12 +167,12 @@ h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.2vw,52px);l
 .feature-fav{position:absolute;top:18px;right:18px}
 
 .rail{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.rail-item{display:grid;grid-template-rows:220px auto;border:1px solid var(--line);background:var(--panel);overflow:hidden;transition:border-color .3s,transform .35s var(--ease)}
+.rail-item{display:grid;grid-template-rows:auto auto;border:1px solid var(--line);background:var(--panel);overflow:hidden;transition:border-color .3s,transform .35s var(--ease)}
 .rail-item:hover{border-color:rgba(212,175,55,.45);transform:translateY(-3px)}
-.rail-media{position:relative;background:linear-gradient(165deg,#16140e,#0c0c0c);display:grid;place-items:center;overflow:hidden;border-bottom:1px solid var(--line);cursor:pointer}
-.rail-media:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 50%,rgba(5,5,5,.4))}
-.rail-media img{height:100%;width:100%;object-fit:contain;padding:18px;transition:transform .55s var(--ease);filter:drop-shadow(0 14px 24px rgba(0,0,0,.5))}
-.rail-item:hover .rail-media img{transform:scale(1.05)}
+.rail-media{position:relative;aspect-ratio:1/1;background:linear-gradient(165deg,#16140e,#0c0c0c);display:grid;place-items:center;overflow:hidden;border-bottom:1px solid var(--line);cursor:pointer}
+.rail-media:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 55%,rgba(5,5,5,.35))}
+.rail-media img{height:100%;width:100%;object-fit:contain;object-position:center;padding:16px;transition:transform .55s var(--ease)}
+.rail-item:hover .rail-media img{transform:scale(1.03)}
 .rail-media .tag{position:absolute;left:12px;top:12px;z-index:2;font-family:var(--rock);font-size:11px;letter-spacing:.14em;background:rgba(5,5,5,.75);border:1px solid var(--line);padding:4px 8px;color:var(--gold-bright)}
 .rail-media .fav{position:absolute;right:12px;top:12px;z-index:2}
 .rail-body{padding:16px 18px 20px}
@@ -193,25 +188,25 @@ h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.2vw,52px);l
 .hitl-flag{font-size:10px;color:#c4a574;letter-spacing:.04em;margin-top:4px}
 
 /* Photo strip between sections */
-.photo-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-block:1px solid var(--line);min-height:200px}
-.photo-strip figure{margin:0;overflow:hidden;position:relative;background:#0c0c0c;min-height:200px}
-.photo-strip img{width:100%;height:100%;object-fit:cover;opacity:.78;transition:transform .7s,opacity .4s;filter:saturate(.92) contrast(1.06)}
-.photo-strip figure:hover img{transform:scale(1.06);opacity:.98}
+.photo-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-block:1px solid var(--line);min-height:200px;content-visibility:auto;contain-intrinsic-size:auto 200px}
+.photo-strip figure{margin:0;overflow:hidden;position:relative;background:#0c0c0c;min-height:200px;aspect-ratio:4/5}
+.photo-strip img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.78;transition:transform .7s,opacity .4s}
+.photo-strip figure:hover img{transform:scale(1.04);opacity:.98}
 .photo-strip figcaption{position:absolute;left:10px;bottom:8px;font-family:var(--rock);font-size:11px;letter-spacing:.16em;color:var(--gold);text-shadow:0 2px 8px #000}
 .lookbook-stage{padding:clamp(40px,6vw,72px) 0;border-bottom:1px solid var(--line)}
-.lookbook-mosaic{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:minmax(220px,28vw) minmax(180px,22vw);gap:10px}
+.lookbook-mosaic{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:minmax(220px,28vw) minmax(180px,22vw);gap:10px;content-visibility:auto;contain-intrinsic-size:auto 420px}
 .lookbook-mosaic figure{margin:0;position:relative;overflow:hidden;background:#0c0c0c;border:1px solid var(--line);min-height:160px}
 .lookbook-mosaic figure:first-child{grid-row:1/3}
-.lookbook-mosaic img{width:100%;height:100%;object-fit:cover;opacity:.88;transition:transform .8s var(--ease),opacity .35s}
+.lookbook-mosaic img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.88;transition:transform .8s var(--ease),opacity .35s}
 .lookbook-mosaic figure:hover img{transform:scale(1.04);opacity:1}
 .lookbook-mosaic figcaption{position:absolute;left:14px;bottom:12px;font-family:var(--rock);font-size:12px;letter-spacing:.18em;color:var(--gold);text-shadow:0 2px 12px #000;z-index:1}
 .lookbook-mosaic figure:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(5,5,5,.65));pointer-events:none}
 
 .editorial{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,5vw,72px);align-items:center}
 .expert-art{height:min(480px,70vw);position:relative;overflow:hidden;border:1px solid var(--line);background:#0c0c0c}
-.expert-art img{width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.9;filter:sepia(.15) contrast(1.05)}
+.expert-art img{width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.9}
 .expert-art:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,175,55,.12),transparent 45%),linear-gradient(180deg,transparent 50%,rgba(5,5,5,.7))}
-.expert-badge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;z-index:1;border:1px solid rgba(212,175,55,.4);border-radius:50%;width:min(240px,55%);aspect-ratio:1;display:grid;place-content:center;background:rgba(5,5,5,.45);backdrop-filter:blur(6px);animation:pulse 7s ease-in-out infinite}
+.expert-badge{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;z-index:1;border:1px solid rgba(212,175,55,.4);border-radius:50%;width:min(240px,55%);aspect-ratio:1;display:grid;place-content:center;background:rgba(5,5,5,.72);animation:pulse 7s ease-in-out infinite}
 .expert-badge strong{font-family:var(--display);font-size:clamp(64px,10vw,96px);line-height:1;color:var(--gold);font-weight:700}
 .expert-badge span{font-family:var(--rock);font-size:11px;letter-spacing:.24em;color:var(--gold-bright)}
 @keyframes pulse{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.03)}}
@@ -221,7 +216,7 @@ h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.2vw,52px);l
 
 .ritual{border:1px solid var(--line);display:grid;grid-template-columns:1.1fr 1fr;overflow:hidden;background:#0c0c0c}
 .ritual-media{min-height:320px;position:relative}
-.ritual-media img{width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:saturate(.95)}
+.ritual-media img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
 .ritual-media:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 40%,rgba(5,5,5,.85))}
 .ritual-body{padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;justify-content:center}
 .ritual h3{font-family:var(--display);font-size:32px;margin:0 0 10px;font-weight:600}
@@ -230,7 +225,7 @@ h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.2vw,52px);l
 .story{border:1px solid var(--line);padding:0;text-align:left;background:var(--panel);color:inherit;overflow:hidden;transition:border-color .3s,transform .35s}
 .story:hover{border-color:rgba(212,175,55,.45);transform:translateY(-3px)}
 .story-art{height:200px;background:#0c0c0c;overflow:hidden;border-bottom:1px solid var(--line)}
-.story-art img{width:100%;height:100%;object-fit:cover;transition:transform .6s;filter:saturate(.92)}
+.story-art img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s}
 .story:hover .story-art img{transform:scale(1.05)}
 .story-inner{padding:16px 18px 20px}
 .story h3{font-family:var(--display);font-size:20px;font-weight:600;margin:8px 0}
@@ -255,7 +250,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 .demo{font-size:11px;color:var(--muted);padding:12px 0 0}
 
 .modal{border:1px solid rgba(212,175,55,.3);background:#0e0e0c;color:var(--ink);width:min(780px,94vw);max-height:90dvh;padding:32px;box-shadow:0 40px 120px rgba(0,0,0,.85),0 0 50px rgba(212,175,55,.1)}
-.modal::backdrop{background:rgba(0,0,0,.85);backdrop-filter:blur(10px)}
+.modal::backdrop{background:rgba(0,0,0,.88)}
 .close{float:right;background:transparent;border:1px solid var(--line);width:36px;height:36px;color:var(--ink)}
 .close:hover{border-color:var(--gold);color:var(--gold)}
 .modal h2{font-family:var(--display);font-size:clamp(24px,3vw,36px);margin:8px 36px 16px 0;font-weight:600}
@@ -275,12 +270,12 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 .searchresults button{display:block;width:100%;text-align:left;padding:15px 0;border:0;border-bottom:1px solid var(--line);background:none;color:inherit}
 .searchresults button:hover{color:var(--gold)}
 .menu-links a{display:block;padding:14px;border-bottom:1px solid var(--line);font-family:var(--rock);font-size:20px;letter-spacing:.08em}
-.product-detail-art{height:280px;background:linear-gradient(180deg,#16140e,#0c0c0c);display:grid;place-items:center;border:1px solid var(--line)}
-.product-detail-art img{height:100%;max-width:100%;object-fit:contain;padding:12px}
+.product-detail-art{aspect-ratio:1/1;max-height:min(360px,55vh);background:linear-gradient(180deg,#16140e,#0c0c0c);display:grid;place-items:center;border:1px solid var(--line);overflow:hidden}
+.product-detail-art img{width:100%;height:100%;object-fit:contain;object-position:center;padding:12px}
 .thumbs{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap}
-.thumbs button{width:68px;height:52px;padding:0;border:1px solid var(--line);background:#0c0c0c;overflow:hidden}
-.thumbs button:hover{border-color:var(--gold)}
-.thumbs img{width:100%;height:100%;object-fit:contain}
+.thumbs button{width:64px;height:64px;padding:0;border:1px solid var(--line);background:#0c0c0c;overflow:hidden;aspect-ratio:1}
+.thumbs button:hover,.thumbs button.active{border-color:var(--gold)}
+.thumbs img{width:100%;height:100%;object-fit:contain;object-position:center}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 
 @media(max-width:1050px){
@@ -308,7 +303,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
   section{padding:48px 0}.section-head{display:block}
   .paths{grid-template-columns:1fr}
   .rail{grid-template-columns:1fr}
-  .rail-media{height:200px}
+  .rail-media{aspect-ratio:1/1}
   .editorial,.ritual,.contact{grid-template-columns:1fr;gap:24px}
   .ritual-media:after{background:linear-gradient(180deg,transparent 40%,rgba(5,5,5,.9))}
   .journal{grid-template-columns:1fr}
@@ -321,7 +316,8 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .vinyl-spin-ring,.logo-badge,.hero-vinyl,.hero-vinyl .hub,.hero-vinyl-wrap,.hero-bleed img,.ticker-track,.expert-badge,.hero-copy{animation:none!important}
+  .vinyl-spin-ring,.logo-badge,.hero-vinyl,.hero-vinyl .hub,.hero-bleed img,.ticker-track,.expert-badge,.hero-copy{animation:none!important}
+  .hero-bleed img{will-change:auto;transform:none}
   *{transition:none!important}
 }
 </style>
@@ -357,7 +353,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 <main>
   <section class="hero" aria-label="Обложка MELOMANIAK">
     <div class="hero-bleed">
-      <img id="heroPortrait" src="assets/from-live/hero/da2b43ff5e_JBL_Stage_start_inside_1920.jpg" alt="Напольная и полочная акустика JBL Stage — кадр с melomaniak.рф" fetchpriority="high" decoding="async" width="1920" height="1000">
+      <img id="heroPortrait" src="assets/display/hero-jbl-stage.jpg" alt="Напольная и полочная акустика JBL Stage — кадр с melomaniak.рф" fetchpriority="high" decoding="async" width="1600" height="833">
     </div>
     <div class="hero-vinyl-wrap" aria-hidden="true">
       <div class="hero-vinyl"><div class="hub"><img src="assets/logo-static.png" alt="" decoding="async"></div></div>
@@ -388,15 +384,15 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 
   <div class="atmosphere" aria-label="Атмосфера салона — изображения с родного сайта">
     <figure>
-      <img src="assets/from-live/hero/0b8eb9967c_davis_acoustics_atmosphere_mk2_06.jpg" alt="Davis Acoustics Atmosphere Mk2 — кадр с melomaniak.рф" decoding="async" width="1200" height="1200">
+      <img src="assets/display/atm-davis.jpg" alt="Davis Acoustics Atmosphere Mk2 — кадр с melomaniak.рф" decoding="async" loading="lazy" width="960" height="960">
       <figcaption>DAVIS · ATMOSPHERE</figcaption>
     </figure>
     <figure>
-      <img src="assets/from-live/hero/0f794ca1b0_JBL_STAGE_A190_1920.jpg" alt="JBL Stage A190 — кадр с melomaniak.рф" decoding="async" width="1920" height="1080">
+      <img src="assets/display/atm-jbl-a190.jpg" alt="JBL Stage A190 — кадр с melomaniak.рф" decoding="async" loading="lazy" width="960" height="800">
       <figcaption>JBL STAGE · A190</figcaption>
     </figure>
     <figure>
-      <img src="assets/from-live/hero/1a775a7a16_ELAC_Debut_F62_1920.jpg" alt="ELAC Debut F62 — кадр с melomaniak.рф" decoding="async" width="1920" height="1080">
+      <img src="assets/display/atm-elac.jpg" alt="ELAC Debut F62 — кадр с melomaniak.рф" decoding="async" loading="lazy" width="960" height="800">
       <figcaption>ELAC · DEBUT</figcaption>
     </figure>
   </div>
@@ -456,7 +452,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
   <section id="approach">
     <div class="wrap editorial">
       <div class="expert-art">
-        <img src="assets/from-live/hero/0b8eb9967c_davis_acoustics_atmosphere_mk2_06.jpg" alt="Davis Acoustics Atmosphere — кадр с melomaniak.рф" decoding="async" loading="lazy">
+        <img src="assets/display/atm-davis.jpg" alt="Davis Acoustics Atmosphere — кадр с melomaniak.рф" decoding="async" loading="lazy" width="960" height="960">
         <div class="expert-badge"><strong>15+</strong><span>ЛЕТ В МИРЕ ХОРОШЕГО ЗВУКА</span></div>
       </div>
       <div>
@@ -475,7 +471,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
     <div class="wrap">
       <div class="ritual">
         <div class="ritual-media">
-          <img src="assets/from-live/hero/1_d43908e399.jpg" alt="Пол Ди’Анно — мотив с родного сайта" decoding="async" loading="lazy">
+          <img src="assets/display/ritual-dianno.jpg" alt="Пол Ди’Анно — мотив с родного сайта" decoding="async" loading="lazy" width="758" height="667">
         </div>
         <div class="ritual-body">
           <div class="eyebrow">СВОИ ЛЮДИ. СВОИ ПОВОДЫ.</div>
@@ -507,7 +503,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
       <details><summary>С чего начать, если я не знаю моделей?</summary><p class="muted">С музыки: жанры, любимая запись, комната и то, что уже стоит. Бриф собирает вводные для специалиста — без «умного» автоподбора и без отправки данных.</p></details>
       <details><summary>Это действующий магазин с оплатой?</summary><p class="muted">Нет. Это концепт SIDE A. Оплата и заявки отключены. Актуальные цены, наличие и условия — на <a class="link" href="https://xn--80aannlcfckh.xn--p1ai/" target="_blank" rel="noopener">оригинальном сайте</a> и по телефону.</p></details>
       <details><summary>Можно ли приехать послушать?</summary><p class="muted">Адрес на сайте: Москва, Первомайская, 42. Это не доказательство шоурума или готового прослушивания — перед визитом уточните возможность встречи.</p></details>
-      <details><summary>Откуда фотографии?</summary><p class="muted">Полный live-краул: ~9139 уникальных кадров в assets/from-live/ (hero / products / editorial / brand / misc). Манифест: assets-live-manifest.json. DX1+PX1: HITL по панелям на фото.</p></details>
+      <details><summary>Откуда фотографии?</summary><p class="muted">Полный live-краул (~9k) лежит в <code>assets/from-live/</code>. На странице — курируемый набор <code>assets/display/</code> (сжатые listing/hero). См. WHERE-THINGS-ARE.md. DX1+PX1: HITL по панелям на фото.</p></details>
     </div>
   </section>
 
@@ -546,7 +542,7 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 <dialog class="modal" id="detail"><button class="close" onclick="closeDialog('detail')" aria-label="Закрыть">×</button><div id="detailbody"></div></dialog>
 <dialog class="modal" id="search"><button class="close" onclick="closeDialog('search')" aria-label="Закрыть">×</button><h2>Что ищем?</h2><input class="searchbar" id="query" placeholder="Бренд, компонент, название…" aria-label="Поиск по демонстрационному каталогу" oninput="searchProducts(this.value)"><div class="searchresults" id="results"></div><p class="micro">Поиск по шести товарам прототипа, не по всему магазину.</p></dialog>
 <dialog class="modal" id="menu"><button class="close" onclick="closeDialog('menu')" aria-label="Закрыть">×</button><h2>MELOMANIAK</h2><nav class="menu-links"><a href="#collection" onclick="closeDialog('menu')">Аппаратура</a><a href="#approach" onclick="closeDialog('menu')">Подход</a><a href="#journal" onclick="closeDialog('menu')">Журнал</a><a href="#faq" onclick="closeDialog('menu')">Вопросы</a><a href="#contacts" onclick="closeDialog('menu')">Контакты</a></nav></dialog>
-<dialog class="modal" id="assets"><button class="close" onclick="closeDialog('assets')" aria-label="Закрыть">×</button><h2>Фотографии с родного сайта</h2><p>Полный краул https://xn--80aannlcfckh.xn--p1ai/ → <code>assets/from-live/</code>: ~9139 уникальных / ~9695 файлов (~1.5&nbsp;GB). Папки: hero, products, editorial, brand, misc. Манифест: assets-live-manifest.json. Hero на обложке — JBL Stage (live); lookbook — Davis Atmosphere, ELAC, редакционные кадры.</p><p class="notice">Никаких стоковых подмен. DX1+PX1: HITL по соответствию имени листинга и панелей на фото.</p></dialog>
+<dialog class="modal" id="assets"><button class="close" onclick="closeDialog('assets')" aria-label="Закрыть">×</button><h2>Фотографии с родного сайта</h2><p>UI грузит только курируемый набор <code>assets/display/</code> (сжатые JPEG для карточек и секций). Полный краул ~1.5&nbsp;GB остаётся в <code>assets/from-live/</code> как архив — страница его целиком не подтягивает. Манифест UI: <code>assets-manifest.js</code>.</p><p class="notice">Никаких стоковых подмен. DX1+PX1: HITL по соответствию имени листинга и панелей на фото. Подробнее: WHERE-THINGS-ARE.md</p></dialog>
 <dialog class="modal" id="about"><button class="close" onclick="closeDialog('about')" aria-label="Закрыть">×</button><h2>Живой концепт, не магазин</h2><p>Работают фильтры, сортировка, поиск, карточки, избранное в localStorage, мобильное меню, трёхшаговый бриф и скачивание результата.</p><p>Заявки никуда не отправляются. CRM, оплата, наличие и полный каталог — следующий этап после HITL.</p></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -575,7 +571,7 @@ function illustration(type="amp"){
   return `<svg viewBox="0 0 620 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Схематическая иллюстрация"><defs><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3a3420"/><stop offset=".5" stop-color="#151510"/><stop offset="1" stop-color="#0a0a08"/></linearGradient></defs><ellipse cx="310" cy="266" rx="240" ry="20" fill="#0004"/><rect x="55" y="125" width="513" height="125" rx="2" fill="url(#metal)" stroke="#d4af3744"/><circle cx="449" cy="187" r="28" fill="#2a2618" stroke="#d4af3766" stroke-width="2"/><text x="305" y="236" fill="#9a9286" text-anchor="middle" font-size="9" letter-spacing="4">M E L O M A N I A K</text></svg>`;
 }
 function photoSrc(i){return manifest.products?.[products[i].name]||null}
-function photo(i){const a=photoSrc(i);return a?`<img src="${esc(a)}" alt="${esc(products[i].name)}" loading="lazy" decoding="async" onerror="this.outerHTML=illustration('${products[i].type}')">`:illustration(products[i].type)}
+function photo(i){const a=photoSrc(i);return a?`<img src="${esc(a)}" alt="${esc(products[i].name)}" width="800" height="800" loading="lazy" decoding="async" onerror="this.outerHTML=illustration('${products[i].type}')">`:illustration(products[i].type)}
 function orderedIds(){
   let ids=products.map((_,i)=>i).filter(i=>onlyFav?fav.includes(i):current==="Все"||products[i].cat===current);
   if(sortMode==="price-asc")ids.sort((a,b)=>products[a].price-products[b].price);
@@ -624,11 +620,17 @@ document.querySelectorAll("dialog").forEach(d=>{
   d.addEventListener("click",e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog(d.id)}});
   d.addEventListener("close",()=>{if(!document.querySelector("dialog[open]"))document.body.classList.remove("noscroll")});
 });
-function gallery(i){const p=products[i];return manifest.galleries?.[p.name]||(photoSrc(i)?[photoSrc(i)]:[])}
+function gallery(i){
+  const p=products[i];
+  const raw=manifest.galleries?.[p.name]||(photoSrc(i)?[photoSrc(i)]:[]);
+  const seen=new Set();
+  return raw.filter(u=>{if(!u||seen.has(u))return false;seen.add(u);return true});
+}
 function detail(i,imgIdx=0){
   const p=products[i];const g=gallery(i);const src=g[imgIdx]||photoSrc(i);
-  const media=src?`<img id="detailImg" src="${esc(src)}" alt="${esc(p.name)}">`:illustration(p.type);
-  const thumbs=g.length>1?`<div class="thumbs">${g.map((u,k)=>`<button type="button" aria-label="Кадр ${k+1}" onclick="detail(${i},${k})"><img src="${esc(u)}" alt=""></button>`).join("")}</div>`:"";
+  /* Главный кадр сразу; превью — lazy, без полной raw-галереи from-live */
+  const media=src?`<img id="detailImg" src="${esc(src)}" alt="${esc(p.name)}" width="800" height="800" decoding="async">`:illustration(p.type);
+  const thumbs=g.length>1?`<div class="thumbs">${g.map((u,k)=>`<button type="button" class="${k===imgIdx?"active":""}" aria-label="Кадр ${k+1}" aria-pressed="${k===imgIdx}" onclick="detail(${i},${k})"><img src="${esc(u)}" alt="" width="128" height="128" loading="lazy" decoding="async"></button>`).join("")}</div>`:"";
   const hitl=p.hitl?'<p class="hitl-flag">HITL: на исходном фото карточки читаются Smart DX1 и Smart BX1 при листинге «DX1 + PX1».</p>':"";
   document.getElementById("detailbody").innerHTML=`<div class="eyebrow">${p.cat.toUpperCase()} / ИЗ КАТАЛОГА ОРИГИНАЛА</div><h2>${p.name}</h2><div class="product-detail-art">${media}</div>${thumbs}<p>${p.note}</p>${hitl}<h3 class="price">${money(p.price)} ${p.old?'<del class="muted" style="font-size:14px">'+money(p.old)+"</del>":""}</h3>${p.facts?`<p class="muted">${p.facts}</p>`:""}<div class="notice">Цена из исходного сайта, не подтверждение наличия. Автоматической покупки в демо нет.</div><div class="actions"><button class="btn" onclick="closeDialog('detail');startQuiz('${esc(p.name)}')">Подойдёт ли к моей системе? ↗</button><a class="btn ghost" href="${p.source||"https://xn--80aannlcfckh.xn--p1ai/?s="+encodeURIComponent(p.name)+"&post_type=product"}" target="_blank" rel="noopener">На оригинальном сайте ↗</a></div>`;
   openDialog("detail");
@@ -673,17 +675,17 @@ function article(i){
   const strip=document.getElementById("photoStrip");
   const items=(manifest.atmosphere||[]).slice(0,6);
   const labels=["DAVIS","STAGE","ELAC","JBL A190","ATMOSPHERE","STEREOPHILE"];
-  strip.innerHTML=items.map((src,i)=>`<figure><img src="${esc(src)}" alt="Кадр с melomaniak.рф ${i+1}" loading="lazy" decoding="async"><figcaption>LIVE · ${labels[i]||(i+1)}</figcaption></figure>`).join("");
+  strip.innerHTML=items.map((src,i)=>`<figure><img src="${esc(src)}" alt="Кадр с melomaniak.рф ${i+1}" width="480" height="600" loading="lazy" decoding="async"><figcaption>LIVE · ${labels[i]||(i+1)}</figcaption></figure>`).join("");
   const mosaic=document.getElementById("lookbookMosaic");
   if(mosaic){
     const shots=(manifest.lookbookStrip||manifest.atmosphere||[]).slice(0,5);
     const caps=["JBL STAGE","DAVIS MK2","ELAC DEBUT","STAGE A170","ELAC VELA"];
-    mosaic.innerHTML=shots.map((src,i)=>`<figure><img src="${esc(src)}" alt="Lookbook ${caps[i]||i+1} — melomaniak.рф" loading="lazy" decoding="async"><figcaption>${caps[i]||("LIVE · "+(i+1))}</figcaption></figure>`).join("");
+    mosaic.innerHTML=shots.map((src,i)=>`<figure><img src="${esc(src)}" alt="Lookbook ${caps[i]||i+1} — melomaniak.рф" width="960" height="720" loading="lazy" decoding="async"><figcaption>${caps[i]||("LIVE · "+(i+1))}</figcaption></figure>`).join("");
   }
 })();
 document.getElementById("stories").innerHTML=stories.map((s,i)=>{
   const img=manifest.stories?.[s.title];
-  const art=img?`<img src="${esc(img)}" alt="${esc(s.title)}" loading="lazy" decoding="async">`:`<span style="font:48px var(--display);color:rgba(212,175,55,.35);display:grid;place-items:center;height:100%">${esc(s.title.slice(0,4))}</span>`;
+  const art=img?`<img src="${esc(img)}" alt="${esc(s.title)}" width="800" height="450" loading="lazy" decoding="async">`:`<span style="font:48px var(--display);color:rgba(212,175,55,.35);display:grid;place-items:center;height:100%">${esc(s.title.slice(0,4))}</span>`;
   return `<button class="story" onclick="article(${i})"><div class="story-art">${art}</div><div class="story-inner"><p><small>${s.label}</small></p><h3>${s.title} ↗</h3><p>Открыть аннотацию материала из архива.</p></div></button>`;
 }).join("");
 render();
