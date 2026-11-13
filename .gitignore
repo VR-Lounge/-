@@ -14,3 +14,7 @@ __pycache__/
 *.pyc
 melomaniak/qa/node_modules/
 *.mp4
+
+melomaniak/data/woo-store-products.json
+melomaniak/data/page-*.html
+melomaniak/__pycache__/

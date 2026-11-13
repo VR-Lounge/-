@@ -2,7 +2,7 @@
 
 Интерактивный дизайн-концепт музыкального салона. **Не** действующий интернет-магазин.
 
-Визуал **чёрное + золото** (элитная ось для рокеров/меломанов): Cormorant Garamond + Bebas Neue + Manrope. Full-bleed hero с портретом с родного сайта, atmosphere strips, editorial lookbook-каталог.
+Визуал **чёрное + золото**: Cormorant Garamond (display) + Outfit (labels) + Manrope (body). Без Bebas. Full-bleed hero с портретом с родного сайта, atmosphere strips, editorial lookbook-каталог.
 
 ## Live asset crawl (from-live)
 
@@ -24,7 +24,9 @@ python3 -m http.server 8080 --bind 127.0.0.1
 
 Откройте http://127.0.0.1:8080/
 
-npm не нужен. Работают фильтры, сортировка, поиск, избранное, модалки, бриф (скачивание TXT). Заявки не отправляются, оплаты нет.
+На Cloud Agent: `127.0.0.1` только внутри VM — пробросьте **порт 8080** через Cursor **Ports**.
+
+npm не нужен. Каталог ~1887 позиций из Woo Store API. Фильтры, поиск, избранное, услуги, страницы Оплата/Доставка/Установка, бриф (TXT). Заявки не отправляются, оплаты нет.
 
 ## Ассеты
 
@@ -38,6 +40,7 @@ python3 import_assets.py   # при необходимости перекача�
 
 ## Документы
 
+- `CLIENT-PORTRAIT.md` — портрет клиента и тон
 - `CURSOR_BRIEF.md` — концепция и ограничения
 - `SEO-AUDIT.md` — аудит живого сайта + что вшито в прототип
 - `CMS-IMPLEMENTATION-PLAN.md` — WP+Woo план внедрения
