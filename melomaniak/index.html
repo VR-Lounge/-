@@ -100,17 +100,10 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .header{position:sticky;top:0;z-index:30;background:#141411f2;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
 .nav{height:84px;display:flex;align-items:center;gap:28px}
 .brand{display:flex;align-items:center;gap:14px;min-width:0}
-.vinyl-logo{position:relative;width:52px;height:52px;flex:none}
-.vinyl-platter{position:absolute;inset:4px;border-radius:50%;background:
-  radial-gradient(circle at 50% 50%,#1a1a16 0 18%,#0a0a08 19% 20%,
-  repeating-radial-gradient(circle,#111 0 1px,#2a2a24 2px) 21% 92%,#0d0d0b 93%);
-  box-shadow:0 0 0 1px #ffffff18,0 8px 24px #0008;
-  animation:spin 8s linear infinite;will-change:transform}
-.vinyl-platter .m-mark{position:absolute;inset:28%;border-radius:50%;background:var(--acid);color:#1a1e14;
-  display:grid;place-content:center;font:700 13px/1 var(--serif);letter-spacing:-1px}
-.vinyl-arm{position:absolute;right:-2px;top:6px;width:22px;height:38px;pointer-events:none;z-index:2}
-.vinyl-arm:before{content:'';position:absolute;right:4px;top:0;width:10px;height:10px;border:1.5px solid #ddd8c8;border-radius:2px;background:#2a2c24}
-.vinyl-arm:after{content:'';position:absolute;right:7px;top:8px;width:2px;height:28px;background:#eee9dc;transform:rotate(28deg);transform-origin:top center;border-radius:2px;box-shadow:0 26px 0 -0.5px #eee9dc}
+.vinyl-logo{position:relative;width:56px;height:48px;flex:none;display:grid;place-items:center}
+.logo-badge{width:56px;height:auto;display:block;filter:drop-shadow(0 6px 14px #0008)}
+.vinyl-spin-ring{position:absolute;width:40px;height:40px;border-radius:50%;border:1px solid #ffffff22;
+  border-top-color:var(--acid);animation:spin 3.2s linear infinite;pointer-events:none;opacity:.55}
 .logo-word{font-size:22px;font-weight:800;letter-spacing:-1.2px;line-height:1}
 .logo-word small{display:block;font-size:8px;font-weight:500;letter-spacing:2.4px;margin-top:7px;color:var(--muted)}
 .navlinks{display:flex;gap:24px;margin-left:auto;font-size:12px}
@@ -251,7 +244,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:10px;color:var(
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .vinyl-platter,.hero-vinyl,.hero-vinyl .label,.ticker-track,.rings,.card{animation:none!important}
+  .vinyl-spin-ring,.hero-vinyl,.hero-vinyl .label,.ticker-track,.rings,.card{animation:none!important}
   *{transition:none!important}
 }
 </style>
@@ -263,8 +256,8 @@ footer{padding:28px 0;border-top:1px solid var(--line);font-size:10px;color:var(
   <div class="wrap nav">
     <a class="brand" href="#" aria-label="MELOMANIAK — на главную">
       <span class="vinyl-logo" aria-hidden="true">
-        <span class="vinyl-platter"><span class="m-mark">M</span></span>
-        <span class="vinyl-arm"></span>
+        <span class="vinyl-spin-ring"></span>
+        <img class="logo-badge" src="assets/logo-static.png" alt="" width="56" height="46" decoding="async">
       </span>
       <span class="logo-word">MELOMANIAK<small>ДЕНЬГИ НИЧТО — МУЗЫКА ВСЁ</small></span>
     </a>
