@@ -429,26 +429,282 @@
     </section>`;
   }
 
+  /** Clean Woo HTML artifacts (@@@…@@@) left by imperfect exports. */
+  function scrubWooArtifacts(s) {
+    return String(s || "")
+      .replace(/@@@[^@]*@@@/g, "")
+      .replace(/\s{2,}/g, " ")
+      .trim();
+  }
+
+  function plainTextOf(el) {
+    return scrubWooArtifacts((el && el.textContent) || "").replace(/\s+/g, " ").trim();
+  }
+
+  function isLoneStrongParagraph(p) {
+    if (!p || p.tagName !== "P") return false;
+    const kids = Array.from(p.childNodes).filter((n) => {
+      if (n.nodeType === 3) return String(n.textContent || "").trim().length > 0;
+      return n.nodeType === 1;
+    });
+    if (kids.length !== 1 || kids[0].nodeType !== 1) return false;
+    const only = kids[0];
+    if (!/^(STRONG|B)$/i.test(only.tagName)) return false;
+    const t = plainTextOf(only);
+    return t.length >= 8 && t.length <= 160;
+  }
+
+  /** Woo often uses <p><strong>Title</strong><br>body…</p> — split without inventing copy. */
+  function splitStrongLeadParagraph(p) {
+    if (!p || p.tagName !== "P") return false;
+    const kids = Array.from(p.childNodes);
+    let lead = null;
+    let leadIdx = -1;
+    for (let i = 0; i < kids.length; i++) {
+      const n = kids[i];
+      if (n.nodeType === 3 && !String(n.textContent || "").trim()) continue;
+      if (n.nodeType === 1 && /^(STRONG|B)$/i.test(n.tagName)) {
+        lead = n;
+        leadIdx = i;
+        break;
+      }
+      return false;
+    }
+    if (!lead) return false;
+    const title = plainTextOf(lead);
+    if (title.length < 8 || title.length > 160) return false;
+    let sawBr = false;
+    let hasBody = false;
+    for (let i = leadIdx + 1; i < kids.length; i++) {
+      const n = kids[i];
+      if (n.nodeType === 1 && /^BR$/i.test(n.tagName)) {
+        sawBr = true;
+        continue;
+      }
+      if (n.nodeType === 3 && !String(n.textContent || "").trim()) continue;
+      hasBody = true;
+      break;
+    }
+    if (!sawBr || !hasBody) return false;
+    const bodyNodes = [];
+    let pastBr = false;
+    for (let i = leadIdx + 1; i < kids.length; i++) {
+      const n = kids[i];
+      if (!pastBr) {
+        if (n.nodeType === 1 && /^BR$/i.test(n.tagName)) pastBr = true;
+        continue;
+      }
+      bodyNodes.push(n);
+    }
+    const sub = document.createElement("p");
+    sub.className = "pdp-prose-sub";
+    sub.textContent = title;
+    const body = document.createElement("p");
+    body.className = "pdp-prose-p";
+    bodyNodes.forEach((n) => body.appendChild(n.cloneNode(true)));
+    if (!plainTextOf(body)) return false;
+    p.replaceWith(sub, body);
+    return true;
+  }
+
+  function chipLabelFromLi(li) {
+    const full = plainTextOf(li);
+    if (!full) return "";
+    if (full.length <= 72) return full;
+    const split = full.split(/\s*[:–—−]\s+/);
+    if (split.length >= 2) {
+      const lead = scrubWooArtifacts(split[0]);
+      if (lead.length >= 8 && lead.length <= 72) return lead;
+    }
+    return "";
+  }
+
+  /**
+   * Editorial salon transform: sanitize allowlist, promote strong-only
+   * subheads, optional pull-quote + feature chips — never invent copy.
+   */
+  function formatPdpProse(rawHtml) {
+    const ALLOWED = new Set([
+      "P",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "UL",
+      "OL",
+      "LI",
+      "STRONG",
+      "B",
+      "EM",
+      "I",
+      "A",
+      "BR",
+      "HR",
+      "TABLE",
+      "THEAD",
+      "TBODY",
+      "TR",
+      "TH",
+      "TD",
+      "IMG",
+      "BLOCKQUOTE",
+      "SUP",
+      "SUB",
+    ]);
+    /* DIV/SPAN intentionally unwrapped — Woo export chrome, not salon semantics */
+    const wrap = document.createElement("div");
+    try {
+      const doc = new DOMParser().parseFromString(
+        "<div id='melo-prose-root'>" + rawHtml + "</div>",
+        "text/html"
+      );
+      const src = doc.getElementById("melo-prose-root");
+      if (src) wrap.appendChild(document.importNode(src, true));
+      else wrap.innerHTML = rawHtml;
+    } catch (e) {
+      wrap.textContent = scrubWooArtifacts(rawHtml.replace(/<[^>]+>/g, " "));
+      return { chipsHtml: "", bodyHtml: wrap.innerHTML };
+    }
+
+    // Drop broken manual/PDF shells and interactive junk.
+    wrap
+      .querySelectorAll("script,style,form,button,input,textarea,select,iframe,object,embed")
+      .forEach((n) => n.remove());
+    wrap.querySelectorAll("[class*='manual'], a[href*='@@@'], img[src*='@@@']").forEach((n) => {
+      const block = n.closest("div,p") || n;
+      block.remove();
+    });
+
+    function sanitizeNode(node) {
+      if (node.nodeType === 3) {
+        node.textContent = String(node.textContent || "").replace(/@@@[^@]*@@@/g, "");
+        return;
+      }
+      if (node.nodeType !== 1) {
+        node.remove();
+        return;
+      }
+      const tag = node.tagName;
+      Array.from(node.attributes || []).forEach((attr) => {
+        const name = attr.name.toLowerCase();
+        const val = attr.value || "";
+        if (name.startsWith("on") || name === "style" || name === "srcset") {
+          node.removeAttribute(attr.name);
+          return;
+        }
+        if (val.includes("@@@")) {
+          const cleaned = scrubWooArtifacts(val);
+          if (!cleaned && (name === "class" || name === "id" || name === "align")) {
+            node.removeAttribute(attr.name);
+          } else if (name === "href" || name === "src") {
+            if (!cleaned || cleaned.startsWith("javascript:")) node.removeAttribute(attr.name);
+            else node.setAttribute(attr.name, cleaned);
+          } else {
+            node.setAttribute(attr.name, cleaned);
+          }
+        }
+      });
+      if (tag === "A") {
+        const href = node.getAttribute("href") || "";
+        if (!href || href.startsWith("javascript:")) node.removeAttribute("href");
+        else {
+          node.setAttribute("rel", "noopener noreferrer");
+          if (/^https?:/i.test(href)) node.setAttribute("target", "_blank");
+        }
+      }
+      if (tag === "IMG") {
+        const src = node.getAttribute("src") || "";
+        if (!src || src.includes("@@@") || src.startsWith("javascript:")) {
+          node.remove();
+          return;
+        }
+        node.setAttribute("loading", "lazy");
+        node.setAttribute("decoding", "async");
+      }
+      Array.from(node.childNodes).forEach(sanitizeNode);
+      if (!ALLOWED.has(tag)) {
+        const parent = node.parentNode;
+        if (!parent) return;
+        while (node.firstChild) parent.insertBefore(node.firstChild, node);
+        parent.removeChild(node);
+      }
+    }
+    Array.from(wrap.childNodes).forEach(sanitizeNode);
+
+    // Promote sourced strong leads to gold subheads.
+    Array.from(wrap.querySelectorAll("p")).forEach((p) => {
+      if (splitStrongLeadParagraph(p)) return;
+      if (!isLoneStrongParagraph(p)) return;
+      const sub = document.createElement("p");
+      sub.className = "pdp-prose-sub";
+      sub.textContent = plainTextOf(p);
+      p.replaceWith(sub);
+    });
+
+    // Pull-quote: only an opening short paragraph (sourced), never mid-article.
+    (function promoteOpeningPullquote() {
+      const blocks = Array.from(wrap.children);
+      let seenBody = 0;
+      for (let i = 0; i < blocks.length && seenBody < 2; i++) {
+        const el = blocks[i];
+        if (el.classList && el.classList.contains("pdp-prose-sub")) continue;
+        if (/^H[1-4]$/.test(el.tagName)) continue;
+        if (el.tagName !== "P") {
+          if (/^(UL|OL|TABLE|BLOCKQUOTE|HR)$/.test(el.tagName)) break;
+          continue;
+        }
+        seenBody++;
+        const t = plainTextOf(el);
+        if (t.length < 24 || t.length > 180) return;
+        const q = document.createElement("blockquote");
+        q.className = "pdp-pullquote";
+        q.textContent = t;
+        el.replaceWith(q);
+        return;
+      }
+    })();
+
+    // Feature chips from first feature <ul> — labels only from sourced li leads.
+    let chipsHtml = "";
+    const firstUl = wrap.querySelector("ul");
+    if (firstUl) {
+      const items = Array.from(firstUl.children).filter((c) => c.tagName === "LI");
+      firstUl.classList.add("pdp-feature-list");
+      const labels = items.map(chipLabelFromLi).filter(Boolean).slice(0, 8);
+      if (labels.length >= 3) {
+        chipsHtml = `<div class="pdp-feature-chips" role="list">${labels
+          .map((l) => `<span class="pdp-chip" role="listitem">${esc(l)}</span>`)
+          .join("")}</div>`;
+      }
+    }
+
+    wrap.querySelectorAll("p:not(.pdp-prose-sub)").forEach((p) => p.classList.add("pdp-prose-p"));
+
+    return { chipsHtml, bodyHtml: wrap.innerHTML };
+  }
+
   function renderDescription(detail, listing) {
     const html = (detail.descriptionHtml || "").trim();
     if (html) {
-      return `<section class="pdp-section" id="pdp-about">
+      const { chipsHtml, bodyHtml } = formatPdpProse(html);
+      return `<section class="pdp-section pdp-section--about" id="pdp-about">
         <div class="eyebrow">О ПРОДУКТЕ</div>
         <h3 class="pdp-h">Слова с живой карточки</h3>
-        <p class="pdp-lead">Ниже — оригинальное описание WooCommerce. Мы лишь собрали его в спокойную вёрстку салона.</p>
-        <div class="pdp-prose">${html}</div>
+        <p class="pdp-lead">Оригинальное описание WooCommerce в editorial-вёрстке салона — без домыслов и новых характеристик.</p>
+        ${chipsHtml}
+        <div class="pdp-prose">${bodyHtml}</div>
       </section>`;
     }
     const text = (detail.descriptionText || listing.facts || "").trim();
     if (text) {
-      return `<section class="pdp-section" id="pdp-about">
+      return `<section class="pdp-section pdp-section--about" id="pdp-about">
         <div class="eyebrow">О ПРОДУКТЕ</div>
         <h3 class="pdp-h">Кратко из источника</h3>
-        <div class="pdp-prose"><p>${esc(text)}</p></div>
+        <div class="pdp-prose"><p class="pdp-prose-p">${esc(text)}</p></div>
         <p class="hitl-flag">HITL: полного HTML-описания в выгрузке нет — показан доступный текст.</p>
       </section>`;
     }
-    return `<section class="pdp-section" id="pdp-about">
+    return `<section class="pdp-section pdp-section--about" id="pdp-about">
       <div class="eyebrow">О ПРОДУКТЕ</div>
       <h3 class="pdp-h">Описание у источника пустое</h3>
       <p class="pdp-lead">${esc(listing.note || "")}</p>

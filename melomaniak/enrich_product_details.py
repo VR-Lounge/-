@@ -300,6 +300,9 @@ def sanitize_description_html(html: str) -> str:
     s = re.sub(r"(?is)\son\w+\s*=\s*[^\s>]+", "", s)
     # remove Woo add-to-cart fragments if any
     s = re.sub(r"(?is)<div[^>]*class=\"[^\"]*cart[^\"]*\"[^>]*>.*?</div>", "", s)
+    # export artifacts like @@@manual@@@ / broken PDF shells
+    s = re.sub(r"(?is)<div[^>]*class=\"[^\"]*manual[^\"]*\"[^>]*>.*?</div>", "", s)
+    s = re.sub(r"@@@[^@]*@@@", "", s)
     return s.strip()
 
 
