@@ -1,1 +1,66 @@
-{"id":269839,"slug":"d1c0f6a501264ee99b554b8882c86b0d","name":"Кабель межблочный аналоговый RCA Wireworld Luna 8","cat":"Кабели","cats":["Кабель межблочный"],"price":11600,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/d1c0f6a501264ee99b554b8882c86b0d/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_4355313571-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_4355313571-1.jpg","alt":"wireworld_luna_8_4355313571-1.jpg","local":"assets/from-live/products/6a2cefb177_wireworld_luna_8_4355313571-1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_4355314048-2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_4355314048-2.jpg","alt":"wireworld_luna_8_4355314048-2.jpg","local":"assets/from-live/products/56fa601eff_wireworld_luna_8_4355314048-2.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8-3.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8-3.jpg","alt":"wireworld_luna_8-3.jpg","local":"assets/from-live/products/0360e458c3_wireworld_luna_8-3.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8-4.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8-4.jpg","alt":"wireworld_luna_8-4.jpg","local":"assets/from-live/products/5b003eff5a_wireworld_luna_8-4.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269839,
+  "slug": "d1c0f6a501264ee99b554b8882c86b0d",
+  "name": "Кабель межблочный аналоговый RCA Wireworld Luna 8",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель межблочный"
+  ],
+  "price": 11600,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/d1c0f6a501264ee99b554b8882c86b0d/",
+  "descriptionHtml": "<p>Wireworld Luna 8 — RCA interconnect Series 8. Геометрия и материалы семейства Luna; разъёмы Wireworld Series 8.</p>\n<ul><li>Series 8</li><li>RCA</li><li>Luna family</li><li>Analog IC</li></ul>\n<h2>Назначение</h2>\n<p>Аналоговый RCA между источником и усилителем без «флагманского» Eclipse.</p>",
+  "shortHtml": "",
+  "descriptionText": "Wireworld Luna 8 — RCA interconnect Series 8. Геометрия и материалы семейства Luna; разъёмы Wireworld Series 8.\n\n Series 8\n RCA\n Luna family\n Analog IC\n\n Назначение\n\n Аналоговый RCA между источником и усилителем без «флагманского» Eclipse.",
+  "specs": [
+    {
+      "label": "Линейка",
+      "value": "Wireworld Luna 8",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Тип",
+      "value": "Analog RCA interconnect",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Серия",
+      "value": "Series 8",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_4355313571-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_4355313571-1.jpg",
+      "alt": "wireworld_luna_8_4355313571-1.jpg",
+      "local": "assets/from-live/products/6a2cefb177_wireworld_luna_8_4355313571-1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_4355314048-2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_4355314048-2.jpg",
+      "alt": "wireworld_luna_8_4355314048-2.jpg",
+      "local": "assets/from-live/products/56fa601eff_wireworld_luna_8_4355314048-2.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8-3.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8-3.jpg",
+      "alt": "wireworld_luna_8-3.jpg",
+      "local": "assets/from-live/products/0360e458c3_wireworld_luna_8-3.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8-4.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8-4.jpg",
+      "alt": "wireworld_luna_8-4.jpg",
+      "local": "assets/from-live/products/5b003eff5a_wireworld_luna_8-4.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://wireworldcable.com/"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

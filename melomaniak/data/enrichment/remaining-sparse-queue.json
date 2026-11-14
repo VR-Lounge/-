@@ -1,420 +1,161 @@
 {
-  "generatedAt": "2026-11-14T11:22:55Z",
-  "auditedPdpTotal": 1887,
-  "enrichedCount": 44,
-  "remainingEmptyDesc": 122,
-  "enrichedSample": [
+  "remaining": 39,
+  "items": [
     {
-      "id": 273552,
-      "name": "Моноусилитель мощности PS Audio BHK Signature 600",
-      "price": 4361000,
-      "specs": 10,
-      "gal": 3,
-      "sources": 2
+      "id": 264046,
+      "name": "Фоно коннектор Acoustic Revive Phone Jack (Stereo) [RPJ-1ST]"
     },
     {
-      "id": 272602,
-      "name": "Виниловый проигрыватель Clearaudio Reference Jubilee",
-      "price": 2717100,
-      "specs": 9,
-      "gal": 6,
-      "sources": 1
+      "id": 272195,
+      "name": "Стереоусилитель Shanling CA80"
     },
     {
-      "id": 273961,
-      "name": "Предусилитель T+A P 3100 HV",
-      "price": 2550000,
-      "specs": 11,
-      "gal": 4,
-      "sources": 2
+      "id": 270588,
+      "name": "Фонокабель Van den Hul D-502 Hybrid RCA-RCA"
     },
     {
-      "id": 273987,
-      "name": "CD-проигрыватель T+A MP 3000 HV MKII",
-      "price": 1926900,
-      "specs": 9,
-      "gal": 2,
-      "sources": 2
+      "id": 264558,
+      "name": "Разъём SAEC  MM-803 ( ъ saec mm 803 )"
     },
     {
-      "id": 274340,
-      "name": "Сетевой проигрыватель Aurender N20 8Tb SSD",
-      "price": 1841840,
-      "specs": 14,
-      "gal": 5,
-      "sources": 2
+      "id": 273447,
+      "name": "Саундбар Polk Audio Signa S3"
     },
     {
-      "id": 274334,
-      "name": "Сетевой проигрыватель Aurender N20 4Tb SSD",
-      "price": 1744050,
-      "specs": 14,
-      "gal": 5,
-      "sources": 2
-    },
-    {
-      "id": 274010,
-      "name": "Сетевой проигрыватель T+A MP 2500 R G3",
-      "price": 1509400,
-      "specs": 12,
-      "gal": 5,
-      "sources": 2
-    },
-    {
-      "id": 270878,
-      "name": "Стереоусилитель Hegel H600",
-      "price": 1349900,
-      "specs": 13,
-      "gal": 4,
-      "sources": 1
-    },
-    {
-      "id": 274038,
-      "name": "Внешний ЦАП T+A DAC 200 + HDMI Module",
-      "price": 991500,
-      "specs": 14,
-      "gal": 11,
-      "sources": 2
-    },
-    {
-      "id": 274049,
-      "name": "Внешний ЦАП T+A DAC 200",
-      "price": 928500,
-      "specs": 13,
-      "gal": 12,
-      "sources": 2
-    },
-    {
-      "id": 269778,
-      "name": "Многоканальный усилитель мощности Parasound A51",
-      "price": 919990,
-      "specs": 10,
-      "gal": 6,
-      "sources": 2
-    },
-    {
-      "id": 274303,
-      "name": "Сетевой проигрыватель Aurender N200 4Tb SSD",
-      "price": 861080,
-      "specs": 11,
-      "gal": 4,
-      "sources": 1
-    },
-    {
-      "id": 274264,
-      "name": "Сетевой проигрыватель Aurender N200 2Tb HDD",
-      "price": 796620,
-      "specs": 11,
-      "gal": 4,
-      "sources": 1
-    },
-    {
-      "id": 274001,
-      "name": "Сетевой проигрыватель T+A MP 200",
-      "price": 733500,
-      "specs": 8,
-      "gal": 8,
-      "sources": 1
-    },
-    {
-      "id": 269774,
-      "name": "Многоканальный усилитель мощности Parasound A52+",
-      "price": 679990,
-      "specs": 8,
-      "gal": 3,
-      "sources": 1
-    }
-  ],
-  "remainingTop": [
-    {
-      "id": 270473,
-      "name": "Виниловый проигрыватель Transrotor ZET 3",
-      "price": 962900,
-      "gal": 4,
-      "specs": 0
-    },
-    {
-      "id": 269030,
-      "name": "AV-процессор Emotiva RMC-1 + DIRAC",
-      "price": 779990,
-      "gal": 18,
-      "specs": 0
-    },
-    {
-      "id": 269017,
-      "name": "AV-процессор Emotiva RMC-1L + DIRAC",
-      "price": 669990,
-      "gal": 12,
-      "specs": 0
-    },
-    {
-      "id": 270454,
-      "name": "Виниловый проигрыватель Transrotor Dark Star",
-      "price": 608900,
-      "gal": 6,
-      "specs": 0
-    },
-    {
-      "id": 269006,
-      "name": "AV-процессор Emotiva XMC-2 + DIRAC",
-      "price": 519990,
-      "gal": 10,
-      "specs": 0
-    },
-    {
-      "id": 273194,
-      "name": "AV-процессор Marantz AV8805A",
-      "price": 459900,
-      "gal": 5,
-      "specs": 0
-    },
-    {
-      "id": 269782,
-      "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
-      "price": 449990,
-      "gal": 3,
-      "specs": 0
-    },
-    {
-      "id": 273696,
-      "name": "Многоканальный усилитель мощности Rotel RMB-1587MKII",
-      "price": 439990,
-      "gal": 9,
-      "specs": 0
-    },
-    {
-      "id": 273713,
-      "name": "Многоканальный усилитель мощности Rotel RMB-1585MKII",
-      "price": 399990,
-      "gal": 9,
-      "specs": 0
-    },
-    {
-      "id": 272271,
-      "name": "Портативный Hi-Fi-плеер Shanling M9 Plus",
-      "price": 399990,
-      "gal": 14,
-      "specs": 0
-    },
-    {
-      "id": 270163,
-      "name": "Стереоусилитель MOON ACE All-in-One",
-      "price": 399900,
-      "gal": 3,
-      "specs": 0
-    },
-    {
-      "id": 272551,
-      "name": "Виниловый проигрыватель Clearaudio Concept MC/S",
-      "price": 388900,
-      "gal": 6,
-      "specs": 0
-    },
-    {
-      "id": 270152,
-      "name": "Сетевой проигрыватель MOON 280D MiND 2",
-      "price": 375900,
-      "gal": 3,
-      "specs": 0
-    },
-    {
-      "id": 270208,
-      "name": "Стереоусилитель Naim Nait 50",
-      "price": 299000,
-      "gal": 4,
-      "specs": 0
-    },
-    {
-      "id": 269763,
-      "name": "Стереоусилитель мощности Parasound 2250 v2",
-      "price": 259990,
-      "gal": 4,
-      "specs": 0
-    },
-    {
-      "id": 271191,
-      "name": "Распределитель питания Nordost QBase QB8 Mark II",
-      "price": 254990,
-      "gal": 3,
-      "specs": 0
-    },
-    {
-      "id": 270171,
-      "name": "Стереоусилитель MOON 250i V2 Black",
-      "price": 249900,
-      "gal": 6,
-      "specs": 0
-    },
-    {
-      "id": 269858,
-      "name": "Проектор BenQ TK700",
-      "price": 233000,
-      "gal": 6,
-      "specs": 0
-    },
-    {
-      "id": 271014,
-      "name": "Стереоусилитель мощности Matrix Audio Element P2",
-      "price": 219990,
-      "gal": 7,
-      "specs": 0
-    },
-    {
-      "id": 269327,
-      "name": "Активная полочная акустика Klipsch The Nines McLaren",
-      "price": 219990,
-      "gal": 13,
-      "specs": 0
-    },
-    {
-      "id": 272017,
-      "name": "Беспроводная Hi-Fi-акустика iFi audio Aurora",
-      "price": 215286,
-      "gal": 11,
-      "specs": 0
-    },
-    {
-      "id": 268996,
-      "name": "AV-процессор Emotiva MC1",
-      "price": 179990,
-      "gal": 9,
-      "specs": 0
-    },
-    {
-      "id": 272205,
-      "name": "CD-проигрыватель Shanling SCD 1.3",
-      "price": 179000,
-      "gal": 7,
-      "specs": 0
-    },
-    {
-      "id": 271974,
-      "name": "Сетевой фильтр Isol-8 Powerline Extreme",
-      "price": 170900,
-      "gal": 1,
-      "specs": 0
-    },
-    {
-      "id": 269881,
-      "name": "Беспроводная Hi-Fi-акустика Cambridge Audio Evo One",
-      "price": 159990,
-      "gal": 15,
-      "specs": 0
-    },
-    {
-      "id": 270397,
-      "name": "Стереоусилитель мощности Quad 303",
-      "price": 149990,
-      "gal": 13,
-      "specs": 0
-    },
-    {
-      "id": 270380,
-      "name": "Предварительный усилитель Quad 33",
-      "price": 149990,
-      "gal": 16,
-      "specs": 0
-    },
-    {
-      "id": 269184,
-      "name": "Активный сабвуфер Klipsch RP 1200 SW",
-      "price": 144990,
-      "gal": 17,
-      "specs": 0
-    },
-    {
-      "id": 273393,
-      "name": "Полочная акустика Mission 700 with Stands",
-      "price": 144990,
-      "gal": 7,
-      "specs": 0
+      "id": 270334,
+      "name": "Центральный громкоговоритель Quad S-C2"
     },
     {
       "id": 264102,
-      "name": "Стабилизатор Audio Replas OPS-1 HR ( audio replas ops 1 hr )",
-      "price": 140250,
-      "gal": 1,
-      "specs": 0
+      "name": "Стабилизатор Audio Replas OPS-1 HR ( audio replas ops 1 hr )"
     },
     {
-      "id": 269743,
-      "name": "Предусилитель Parasound 200 Pre",
-      "price": 139990,
-      "gal": 4,
-      "specs": 0
+      "id": 264074,
+      "name": "Платформа под шипы Audio Replas OPT-100HG/FLAT-PL HR ( audio"
     },
     {
-      "id": 270805,
-      "name": "Сетевой проигрыватель Arcam RADIA ST5",
-      "price": 139990,
-      "gal": 5,
-      "specs": 0
+      "id": 269823,
+      "name": "Сетевой фильтр Wireworld MATRIX2 Rack Mount Strip"
     },
     {
-      "id": 268782,
-      "name": "Моноусилитель мощности Emotiva XPA-HC1",
-      "price": 139990,
-      "gal": 8,
-      "specs": 0
+      "id": 269167,
+      "name": "Активный сабвуфер Klipsch R-121SW"
     },
     {
-      "id": 269753,
-      "name": "Стереоусилитель мощности Parasound 275 v2",
-      "price": 134990,
-      "gal": 4,
-      "specs": 0
+      "id": 269817,
+      "name": "Кабель для сабвуфера QED Performance Subwoofer"
     },
     {
-      "id": 273494,
-      "name": "Саундбар Polk Audio Magnifi Max AX SR",
-      "price": 119990,
-      "gal": 16,
-      "specs": 0
+      "id": 264123,
+      "name": "Сетевые пластины Audio Replas SCB-4SZ ( audio replas scb 4sz"
     },
     {
-      "id": 272310,
-      "name": "Стационарный усилитель для наушников Shanling EH3",
-      "price": 119000,
-      "gal": 6,
-      "specs": 0
+      "id": 270525,
+      "name": "Кабель акустический готовый Van den Hul The Snowline Banana "
     },
     {
-      "id": 270017,
-      "name": "Сетевой проигрыватель Cambridge Audio CXN100",
-      "price": 118466,
-      "gal": 15,
-      "specs": 0
+      "id": 272130,
+      "name": "Сетевой фильтр iFi audio iFi iPurifier LAN Pro"
     },
     {
-      "id": 270782,
-      "name": "CD-проигрыватель Arcam RADIA CD5",
-      "price": 114990,
-      "gal": 3,
-      "specs": 0
+      "id": 264045,
+      "name": "Разьём для наушников Acoustic Revive Headphone Plug for SHUR"
     },
     {
-      "id": 272121,
-      "name": "Сетевой фильтр iFi audio Power Station",
-      "price": 107696,
-      "gal": 8,
-      "specs": 0
+      "id": 269819,
+      "name": "Кабель для сабвуфера QED Reference Subwoofer 40"
     },
     {
-      "id": 270702,
-      "name": "Полочная акустика Wharfedale Super Denton",
-      "price": 106990,
-      "gal": 6,
-      "specs": 0
+      "id": 272300,
+      "name": "Портативный усилитель для наушников Shanling H5"
+    },
+    {
+      "id": 270520,
+      "name": "Кабель акустический готовый Van den Hul The Skyline Banana p"
+    },
+    {
+      "id": 264122,
+      "name": "Сетевые пластины Audio Replas SCB-2SZ ( audio replas scb 2sz"
+    },
+    {
+      "id": 269804,
+      "name": "Кабель акустический готовый QED XT25 Banana"
+    },
+    {
+      "id": 272059,
+      "name": "Внешний ЦАП iFi audio ZEN One Studio"
+    },
+    {
+      "id": 269810,
+      "name": "Кабель межблочный аналоговый RCA QED Performance"
+    },
+    {
+      "id": 271252,
+      "name": "Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA"
+    },
+    {
+      "id": 269837,
+      "name": "Кабель цифровой коаксиальный Wireworld Chroma 8 75-ohm"
+    },
+    {
+      "id": 272243,
+      "name": "Портативный Hi-Fi-плеер Shanling M5 Ultra"
+    },
+    {
+      "id": 264008,
+      "name": "USB кабель Acoustic Revive RUT-1 ( usb acoustic revive rut 1"
+    },
+    {
+      "id": 271431,
+      "name": "Стереоусилитель IOTAVX MA3"
+    },
+    {
+      "id": 264078,
+      "name": "Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio repl"
+    },
+    {
+      "id": 269821,
+      "name": "Кабель оптический QED Performance 3 m"
+    },
+    {
+      "id": 270583,
+      "name": "Фонокабель Van den Hul D-501 Hybrid RCA-RCA"
+    },
+    {
+      "id": 274166,
+      "name": "Беспроводная Hi-Fi-акустика Loewe Klang mr1"
+    },
+    {
+      "id": 269825,
+      "name": "Кабель акустический готовый Wireworld Helicon 16/2 OFC"
+    },
+    {
+      "id": 270132,
+      "name": ""
+    },
+    {
+      "id": 269834,
+      "name": "Кабель оптический Wireworld Nova Toslink"
+    },
+    {
+      "id": 264047,
+      "name": "Фоно коннектор Acoustic Revive Phone Jack (Monaural) [RPJ-1M"
+    },
+    {
+      "id": 270554,
+      "name": "Кабель межблочный аналоговый RCA Van den Hul The Tide"
+    },
+    {
+      "id": 264419,
+      "name": "Цифровой кабель Furutech FD-4418 ( furutech fd 4418 )"
+    },
+    {
+      "id": 264055,
+      "name": "Абсорбер Acoustic Revive PSA-100 ( acoustic revive psa 100 )"
+    },
+    {
+      "id": 264559,
+      "name": "Разъём SAEC  MR-803 ( ъ saec mr 803 )"
     }
-  ],
-  "photoDirs": [
-    "268935",
-    "269778",
-    "270853",
-    "273565",
-    "273974",
-    "274038",
-    "274049"
-  ],
-  "approach": "Exa + Tavily manufacturer pages; prefer OEM over dealers; enriched:true + sources[]; HITL flags in shop-app"
+  ]
 }

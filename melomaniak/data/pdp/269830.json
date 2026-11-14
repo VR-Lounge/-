@@ -1,1 +1,53 @@
-{"id":269830,"slug":"bc951df8df19bed3043a6fd7cc9c67b6","name":"Кабель для сабвуфера Wireworld Luna 8 Mono","cat":"Кабели","cats":["Кабель акустический"],"price":7400,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/bc951df8df19bed3043a6fd7cc9c67b6/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono1.jpg","alt":"wireworld_luna_8_mono1.jpg","local":"assets/from-live/products/0b64849aef_wireworld_luna_8_mono1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono2.jpg","alt":"wireworld_luna_8_mono2.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono3.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono3.jpg","alt":"wireworld_luna_8_mono3.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269830,
+  "slug": "bc951df8df19bed3043a6fd7cc9c67b6",
+  "name": "Кабель для сабвуфера Wireworld Luna 8 Mono",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель акустический"
+  ],
+  "price": 7400,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/bc951df8df19bed3043a6fd7cc9c67b6/",
+  "descriptionHtml": "<p>Wireworld Luna 8 Mono — сабвуферный RCA на платформе Luna 8 (mono). Для LFE/line между ресивером и активным сабом.</p>\n<ul><li>Luna 8</li><li>Mono RCA</li><li>Subwoofer</li><li>Series 8</li></ul>\n<h2>Конструкция</h2>\n<p>Mono RCA; материалы Series 8 Luna.</p>",
+  "shortHtml": "",
+  "descriptionText": "Wireworld Luna 8 Mono — сабвуферный RCA на платформе Luna 8 (mono). Для LFE/line между ресивером и активным сабом.\n\n Luna 8\n Mono RCA\n Subwoofer\n Series 8\n\n Конструкция\n\n Mono RCA; материалы Series 8 Luna.",
+  "specs": [
+    {
+      "label": "Линейка",
+      "value": "Wireworld Luna 8 Mono",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Тип",
+      "value": "Subwoofer RCA (mono)",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono1.jpg",
+      "alt": "wireworld_luna_8_mono1.jpg",
+      "local": "assets/from-live/products/0b64849aef_wireworld_luna_8_mono1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono2.jpg",
+      "alt": "wireworld_luna_8_mono2.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono3.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono3.jpg",
+      "alt": "wireworld_luna_8_mono3.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://wireworldcable.com/"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

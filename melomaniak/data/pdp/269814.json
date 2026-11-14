@@ -1,1 +1,65 @@
-{"id":269814,"slug":"7df5761c8786f901b0819dfa11961988","name":"Кабель межблочный аналоговый RCA QED Reference 40","cat":"Кабели","cats":["Кабель межблочный"],"price":22000,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/7df5761c8786f901b0819dfa11961988/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_40_4346843776-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_40_4346843776-1.jpg","alt":"qed_reference_40_4346843776-1.jpg","local":"assets/from-live/products/a7f1a4dcb0_qed_reference_40_4346843776-1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_40_4346844366-2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_40_4346844366-2.jpg","alt":"qed_reference_40_4346844366-2.jpg","local":"assets/from-live/products/52ac890526_qed_reference_40_4346844366-2.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269814,
+  "slug": "7df5761c8786f901b0819dfa11961988",
+  "name": "Кабель межблочный аналоговый RCA QED Reference 40",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель межблочный"
+  ],
+  "price": 22000,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/7df5761c8786f901b0819dfa11961988/",
+  "descriptionHtml": "<p>QED Reference Audio 40 — аналоговый RCA: silver-plated 99,999% OFC Complementary Conductors, Analoc2™, Zn/Mn ferrite jacket. C=76 пФ/м; L=0,37 мкГн/м; Rloop=0,072 Ω/м.</p>\n<ul><li>SPOFC complementary</li><li>Analoc2</li><li>76 pF/m</li><li>Ferrite jacket</li><li>Lifetime QED</li></ul>\n<h2>Электрика</h2>\n<p>Dissipation Factor 0,0059. OFC shield 100% screening. Gold-plated Analoc2 RCA.</p>",
+  "shortHtml": "",
+  "descriptionText": "QED Reference Audio 40 — аналоговый RCA: silver-plated 99,999% OFC Complementary Conductors, Analoc2™, Zn/Mn ferrite jacket. C=76 пФ/м; L=0,37 мкГн/м; Rloop=0,072 Ω/м.\n\n SPOFC complementary\n Analoc2\n 76 pF/m\n Ferrite jacket\n Lifetime QED\n\n Электрика\n\n Dissipation Factor 0,0059. OFC shield 100% screening. Gold-plated Analoc2 RCA.",
+  "specs": [
+    {
+      "label": "Проводники",
+      "value": "Silver-plated 99.999% OFC (разный диаметр)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Ёмкость",
+      "value": "76 пФ/м",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Индуктивность",
+      "value": "0,37 мкГн/м",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Сопротивление петли",
+      "value": "0,072 Ω/м",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Разъёмы",
+      "value": "Analoc2™ gold RCA",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_40_4346843776-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_40_4346843776-1.jpg",
+      "alt": "qed_reference_40_4346843776-1.jpg",
+      "local": "assets/from-live/products/a7f1a4dcb0_qed_reference_40_4346843776-1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_40_4346844366-2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_40_4346844366-2.jpg",
+      "alt": "qed_reference_40_4346844366-2.jpg",
+      "local": "assets/from-live/products/52ac890526_qed_reference_40_4346844366-2.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.qed.co.uk/reference-audio-40.html",
+    "http://newsroom.qed.co.uk/tag/music"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

@@ -1,1 +1,54 @@
-{"id":264320,"slug":"%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202g","name":"Коннектор Furutech FP-202(G) ( furutech fp 202(g) )","cat":"Другое","cats":["Коннекторы"],"price":11004,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202g/","descriptionHtml":"<p>High Performance Banana connector</p>","shortHtml":"","descriptionText":"High Performance Banana connector","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/202g-500x520-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/202g-500x520-1.jpg","alt":"202g-500&#215;520","local":"assets/from-live/products/73e50f6c82_202g-500x520-1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 264320,
+  "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202g",
+  "name": "Коннектор Furutech FP-202(G) ( furutech fp 202(g) )",
+  "cat": "Другое",
+  "cats": [
+    "Коннекторы"
+  ],
+  "price": 11004,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202g/",
+  "descriptionHtml": "<p>Furutech FP-202(G) — banana lock, α pure copper / copper alloy, 24k Gold. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.</p>\n<ul><li>Banana lock</li><li>24k Gold</li><li>Set-screw</li><li>≤5.5 mm</li><li>α copper</li></ul>\n<h2>Контакт</h2>\n<p>Lock-структура для надёжной посадки в binding post без люфта.</p>",
+  "shortHtml": "",
+  "descriptionText": "Furutech FP-202(G) — banana lock, α pure copper / copper alloy, 24k Gold. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.\n\n Banana lock\n 24k Gold\n Set-screw\n ≤5.5 mm\n α copper\n\n Контакт\n\n Lock-структура для надёжной посадки в binding post без люфта.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Banana plug (lock)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Покрытие",
+      "value": "24k Gold",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Кабель",
+      "value": "до ~5,5 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Размер",
+      "value": "Ø12 мм; 46 × 26,7 мм",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/202g-500x520-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/202g-500x520-1.jpg",
+      "alt": "202g-500&#215;520",
+      "local": "assets/from-live/products/73e50f6c82_202g-500x520-1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://furutech.com/",
+    "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-spring.pdf"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

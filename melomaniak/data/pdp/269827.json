@@ -1,1 +1,60 @@
-{"id":269827,"slug":"91e2fa8c0513581df221773a66045b3b","name":"Кабель акустический в нарезку Wireworld Oasis 8","cat":"Кабели","cats":["Кабель акустический"],"price":5980,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/91e2fa8c0513581df221773a66045b3b/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-1.jpg","alt":"wireworld_oasis_8-1.jpg","local":"assets/from-live/products/ef5479490a_wireworld_oasis_8-1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-2.jpg","alt":"wireworld_oasis_8-2.jpg","local":"assets/from-live/products/4a05a953bd_wireworld_oasis_8-2.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269827,
+  "slug": "91e2fa8c0513581df221773a66045b3b",
+  "name": "Кабель акустический в нарезку Wireworld Oasis 8",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель акустический"
+  ],
+  "price": 5980,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/91e2fa8c0513581df221773a66045b3b/",
+  "descriptionHtml": "<p>Wireworld Oasis 8 — акустический кабель Series 8 DNA HELIX на OFC (предшественник Oasis 10 с удвоенным числом strand groups). Нарезка / готовые терминации Uni-Term.</p>\n<ul><li>DNA HELIX</li><li>OFC</li><li>Series 8</li><li>Speaker</li><li>HITL gauge</li></ul>\n<h2>HITL</h2>\n<p>Series 8 вытесняется Series 10 на сайте; для точного AWG/числа жил партии в салоне сверьте бирку или legacy datasheet.</p>",
+  "shortHtml": "",
+  "descriptionText": "Wireworld Oasis 8 — акустический кабель Series 8 DNA HELIX на OFC (предшественник Oasis 10 с удвоенным числом strand groups). Нарезка / готовые терминации Uni-Term.\n\n DNA HELIX\n OFC\n Series 8\n Speaker\n HITL gauge\n\n HITL\n\n Series 8 вытесняется Series 10 на сайте; для точного AWG/числа жил партии в салоне сверьте бирку или legacy datasheet.",
+  "specs": [
+    {
+      "label": "Линейка",
+      "value": "Wireworld Oasis 8",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Геометрия",
+      "value": "DNA HELIX",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Проводники",
+      "value": "OFC",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Тип",
+      "value": "Speaker cable",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-1.jpg",
+      "alt": "wireworld_oasis_8-1.jpg",
+      "local": "assets/from-live/products/ef5479490a_wireworld_oasis_8-1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-2.jpg",
+      "alt": "wireworld_oasis_8-2.jpg",
+      "local": "assets/from-live/products/4a05a953bd_wireworld_oasis_8-2.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://wireworldcable.com/collections/speaker-cables",
+    "https://wireworldcable.com/products/oasis-10-speaker-cable"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

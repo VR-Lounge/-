@@ -1,1 +1,54 @@
-{"id":264321,"slug":"%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202r","name":"Коннектор Furutech FP-202(R) ( furutech fp 202(r) )","cat":"Другое","cats":["Коннекторы"],"price":12848,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202r/","descriptionHtml":"<p>High Performance Banana connector</p>","shortHtml":"","descriptionText":"High Performance Banana connector","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-202R-e1551086422886.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-202R-e1551086422886.jpg","alt":"Furutech-FP-202R-e1551086422886","local":"assets/from-live/products/2388c2c727_Furutech-FP-202R-e1551086422886.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 264321,
+  "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202r",
+  "name": "Коннектор Furutech FP-202(R) ( furutech fp 202(r) )",
+  "cat": "Другое",
+  "cats": [
+    "Коннекторы"
+  ],
+  "price": 12848,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202r/",
+  "descriptionHtml": "<p>Furutech FP-202(R) — banana lock, α pure copper / copper alloy, Rhodium. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.</p>\n<ul><li>Banana lock</li><li>Rhodium</li><li>Set-screw</li><li>≤5.5 mm</li><li>α copper</li></ul>\n<h2>Контакт</h2>\n<p>Lock-структура для надёжной посадки в binding post без люфта.</p>",
+  "shortHtml": "",
+  "descriptionText": "Furutech FP-202(R) — banana lock, α pure copper / copper alloy, Rhodium. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.\n\n Banana lock\n Rhodium\n Set-screw\n ≤5.5 mm\n α copper\n\n Контакт\n\n Lock-структура для надёжной посадки в binding post без люфта.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Banana plug (lock)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Покрытие",
+      "value": "Rhodium",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Кабель",
+      "value": "до ~5,5 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Размер",
+      "value": "Ø12 мм; 46 × 26,7 мм",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-202R-e1551086422886.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-202R-e1551086422886.jpg",
+      "alt": "Furutech-FP-202R-e1551086422886",
+      "local": "assets/from-live/products/2388c2c727_Furutech-FP-202R-e1551086422886.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://furutech.com/",
+    "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-spring.pdf"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

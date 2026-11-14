@@ -1,1 +1,58 @@
-{"id":264322,"slug":"%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-200br","name":"Коннектор Furutech FP-200B(R) ( furutech fp 200b(r) )","cat":"Другое","cats":["Коннекторы"],"price":11340,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-200br/","descriptionHtml":"<p>High Performance Banana connector                 </p>","shortHtml":"","descriptionText":"High Performance Banana connector","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-200B-R.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-200B-R.jpg","alt":"Furutech-FP-200B-R","local":"assets/from-live/products/3a16d0a5ea_Furutech-FP-200B-R.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 264322,
+  "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-200br",
+  "name": "Коннектор Furutech FP-200B(R) ( furutech fp 200b(r) )",
+  "cat": "Другое",
+  "cats": [
+    "Коннекторы"
+  ],
+  "price": 11340,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-200br/",
+  "descriptionHtml": "<p>Furutech FP-200B(R) — banana на α phosphor bronze, Rhodium. Винт; кабель до ~5 мм. Корпус Ø10,8 × 30 мм; штырь Ø4,4 × 19,5 мм; L≈49,5 мм.</p>\n<ul><li>Phosphor bronze</li><li>Rhodium</li><li>Banana</li><li>≤5 mm</li><li>~49.5 mm</li></ul>\n<h2>Линейка</h2>\n<p>Базовый banana Furutech для акустических jumper/кабелей.</p>",
+  "shortHtml": "",
+  "descriptionText": "Furutech FP-200B(R) — banana на α phosphor bronze, Rhodium. Винт; кабель до ~5 мм. Корпус Ø10,8 × 30 мм; штырь Ø4,4 × 19,5 мм; L≈49,5 мм.\n\n Phosphor bronze\n Rhodium\n Banana\n ≤5 mm\n ~49.5 mm\n\n Линейка\n\n Базовый banana Furutech для акустических jumper/кабелей.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Banana plug",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Контакт",
+      "value": "α phosphor bronze",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Покрытие",
+      "value": "Rhodium",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Кабель",
+      "value": "до ~5 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Длина",
+      "value": "≈ 49,5 мм",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-200B-R.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-200B-R.jpg",
+      "alt": "Furutech-FP-200B-R",
+      "local": "assets/from-live/products/3a16d0a5ea_Furutech-FP-200B-R.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://furutech.com/wp-content/uploads/2025/04/FDHE-OY-02-1-012-1.pdf"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

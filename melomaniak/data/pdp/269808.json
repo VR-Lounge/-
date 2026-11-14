@@ -1,1 +1,49 @@
-{"id":269808,"slug":"65a5ad662bf3cac8b19a0b269599a811","name":"Кабель акустический в нарезку QED Genesis Silver Spiral","cat":"Кабели","cats":["Кабель акустический"],"price":12132,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/65a5ad662bf3cac8b19a0b269599a811/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_genesis_silver_spiral1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_genesis_silver_spiral1.jpg","alt":"qed_genesis_silver_spiral1.jpg","local":"assets/from-live/products/eeab63b992_qed_genesis_silver_spiral1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269808,
+  "slug": "65a5ad662bf3cac8b19a0b269599a811",
+  "name": "Кабель акустический в нарезку QED Genesis Silver Spiral",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель акустический"
+  ],
+  "price": 12132,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/65a5ad662bf3cac8b19a0b269599a811/",
+  "descriptionHtml": "<p>QED Signature Genesis Silver Spiral — флагманский акустический кабель линейки Signature (нарезка). Silver Spiral геометрия; lifetime guarantee QED.</p>\n<ul><li>Signature line</li><li>Silver Spiral</li><li>By the metre</li><li>Lifetime guarantee</li><li>HITL AWG</li></ul>\n<h2>HITL</h2>\n<p>Точное сечение/AWG уточнять по актуальному datasheet QED для партии в салоне — в открытых сниппетах без PDF не фиксируем мм².</p>",
+  "shortHtml": "",
+  "descriptionText": "QED Signature Genesis Silver Spiral — флагманский акустический кабель линейки Signature (нарезка). Silver Spiral геометрия; lifetime guarantee QED.\n\n Signature line\n Silver Spiral\n By the metre\n Lifetime guarantee\n HITL AWG\n\n HITL\n\n Точное сечение/AWG уточнять по актуальному datasheet QED для партии в салоне — в открытых сниппетах без PDF не фиксируем мм².",
+  "specs": [
+    {
+      "label": "Линейка",
+      "value": "QED Signature Genesis Silver Spiral",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Формат",
+      "value": "Speaker cable (bulk / pair)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Гарантия",
+      "value": "Lifetime (QED)",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_genesis_silver_spiral1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_genesis_silver_spiral1.jpg",
+      "alt": "qed_genesis_silver_spiral1.jpg",
+      "local": "assets/from-live/products/eeab63b992_qed_genesis_silver_spiral1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.qed.co.uk/",
+    "https://newsroom.qed.co.uk/2018/10/01/qed-has-defined-hi-fi-cables-since-1973-and-now-ensures-the-best-quality-audio-and-visual-performance-whatever-your-system-or-budget"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

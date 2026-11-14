@@ -1,0 +1,829 @@
+{
+  "269995": {
+    "descriptionHtml": "<p>Cambridge Audio AXN10 — полноразмерный сетевой стример StreamMagic с ESS Sabre ES9033Q. PCM до 768 кГц / 32 бит и DSD512; RCA, coaxial и optical out.</p>\n<ul><li>ES9033Q</li><li>PCM 768k / DSD512</li><li>StreamMagic</li><li>RCA + dig out</li><li>430×75×305 мм</li></ul>\n<h2>Сеть и габариты</h2>\n<p>Ethernet / Wi‑Fi 5 / Bluetooth 5.0 (SBC/AAC). Chromecast, Spotify Connect, Tidal, Qobuz, Roon Ready, AirPlay 2. 430 × 75 × 305 мм, 3,3 кг (сайт CA); FAQ указывает 3,5 кг — ориентируйтесь на актуальную страницу производителя.</p>",
+    "specs": [
+      {
+        "label": "ЦАП",
+        "value": "ESS Sabre ES9033Q",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц – 70 кГц (+0/−1 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Hi-Res",
+        "value": "до 768 кГц 32 бит PCM; DSD512",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "Ethernet, USB host, Wi‑Fi, Bluetooth",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA; coaxial; optical",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "430 × 75 × 305 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "3,3 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "макс. 20 Вт; standby <0,5 Вт",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.cambridgeaudio.com/usa/en/products/hi-fi/ax/axn10"
+    ]
+  },
+  "270005": {
+    "descriptionHtml": "<p>Cambridge Audio MXN10 — компактный стример с тем же ESS ES9033Q и StreamMagic, что у AXN10. 215 × 52 × 191 мм, 1,2 кг — для стойки, где сантиметры на вес золота.</p>\n<ul><li>ES9033Q</li><li>PCM 768k / DSD512</li><li>Compact chassis</li><li>1,2 кг</li><li>StreamMagic</li></ul>\n<h2>Совместимость</h2>\n<p>UPnP, USB media, интернет‑радио, Chromecast, Spotify Connect, Tidal, Qobuz, Roon Ready, AirPlay 2. Bluetooth 5.0 SBC/AAC.</p>",
+    "specs": [
+      {
+        "label": "ЦАП",
+        "value": "ESS Sabre ES9033Q",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц – 70 кГц (+0/−1 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Hi-Res",
+        "value": "до 768 кГц 32 бит PCM; DSD512",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "215 × 52 × 191 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "1,2 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA; coaxial; optical",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.cambridgeaudio.com/usa/en/products/hi-fi/mx/mxn10"
+    ]
+  },
+  "270156": {
+    "descriptionHtml": "<p>MOON 110LP v2 — фонокорректор MM/MC с DIP‑переключателями: усиление 40/50/54/60/66 дБ, нагрузка 10 Ω–47 кΩ и ёмкость 0–430 пФ. RIAA или IEC.</p>\n<ul><li>Gain 40–66 дБ</li><li>MM/MC loading</li><li>RIAA / IEC</li><li>THD 0,002%</li><li>1,5 кг</li></ul>\n<h2>Измерения</h2>\n<p>THD 0,002% (20 Гц–20 кГц); АЧХ 20 Гц–20 кГц (±0,5 дБ). S/N 104 дБ @ 40 дБ / 87 дБ @ 60 дБ. 12,7 × 4,2 × 16,5 см, 1,5 кг.</p>",
+    "specs": [
+      {
+        "label": "Усиление",
+        "value": "40 / 50 / 54 / 60 / 66 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вх. импеданс",
+        "value": "10 Ω / 100 Ω / 475 Ω / 47 кΩ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "0 / 100 / 330 / 430 пФ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кривая",
+        "value": "RIAA / IEC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "0,002% (20 Гц–20 кГц)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц–20 кГц (±0,5 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "12,7 × 4,2 × 16,5 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "1,5 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://simaudio.com/wp-content/uploads/2018/03/110LP-v2_Manual_EN.pdf",
+      "https://simaudio.com/"
+    ]
+  },
+  "269153": {
+    "descriptionHtml": "<p>Klipsch R-101SW — активный сабвуфер Reference: 10″ spun-copper TCP, цифровой усилитель 150 Вт cont. / 300 Вт peak. АЧХ 29,5–120 Гц; макс. выход 115 дБ.</p>\n<ul><li>10″ TCP</li><li>150/300 Вт</li><li>29.5–120 Гц</li><li>115 дБ</li><li>13,9 кг</li></ul>\n<h2>Корпус</h2>\n<p>Bass-reflex, rear port; MDF; LFE/line RCA. 370 × 356 × 500 мм, 13,9 кг. Phase 0/180, LPF, auto-on.</p>",
+    "specs": [
+      {
+        "label": "Драйвер",
+        "value": "10″ high-excursion spun-copper TCP",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Усилитель",
+        "value": "All-digital 150 Вт cont. / 300 Вт peak",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "29,5 Гц – 120 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Макс. выход",
+        "value": "115 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "370 × 356 × 500 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "13,9 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://d2um2qdswy1tb0.cloudfront.net/spec-sheets/Reference-R-101SW-Spec-Sheet.pdf?v=1718394610"
+    ]
+  },
+  "269184": {
+    "descriptionHtml": "<p>Klipsch RP-1200SW — 12″ Cerametallic Ultra Long Throw, Class D 400 Вт RMS / 800 Вт peak. АЧХ 16,5–138 Гц (±3 дБ), макс. 121 дБ. Front Aerofoil slot port.</p>\n<ul><li>12″ Cerametallic</li><li>400/800 Вт</li><li>16.5–138 Гц</li><li>121 дБ</li><li>WA-2 ready</li></ul>\n<h2>Управление</h2>\n<p>LPF, variable phase, dual RCA/LFE, порт WA-2 (kit отдельно). 48 × 43,2 × 65,8 см, 31,1 кг.</p>",
+    "specs": [
+      {
+        "label": "Драйвер",
+        "value": "12″ Ultra Long Throw Cerametallic",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Усилитель",
+        "value": "Class D 400 W RMS / 800 W Peak",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "16,5 Гц – 138 Гц (±3 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Макс. выход",
+        "value": "121 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "48 × 43,2 × 65,8 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "31,1 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://assets.klipsch.com/product-specsheets/RP-1200SW_Spec-Sheet_v02-1.pdf"
+    ]
+  },
+  "269341": {
+    "descriptionHtml": "<p>Klipsch The One Plus — Heritage tabletop 2.1: два 2,25″ full-range и 4,5″ high-excursion woofer, bi-amp. Bluetooth 5.3, USB‑C, Klipsch Connect App, Broadcast Mode.</p>\n<ul><li>2×2.25″ + 4.5″</li><li>BT 5.3</li><li>USB-C</li><li>Connect App</li><li>Broadcast</li></ul>\n<h2>Габариты</h2>\n<p>12″ × 6,39″ × 6″ (≈305 × 162 × 152 мм). Отделка walnut / ebony, real wood veneer.</p>",
+    "specs": [
+      {
+        "label": "Конфигурация",
+        "value": "2.1 bi-amplified",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Драйверы",
+        "value": "2 × 2,25″ FR; 1 × 4,5″ woofer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.3",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "≈ 305 × 162 × 152 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Приложение",
+        "value": "Klipsch Connect",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.klipsch.com/products/the-one-plus"
+    ]
+  },
+  "269350": {
+    "descriptionHtml": "<p>Klipsch The Three Plus — старший Heritage tabletop: dual 2,25″ + 5,25″ woofer, BT 5.3, USB‑C, Connect App. 14″ × 8,39″ × 7″ — для комнаты побольше, чем One Plus.</p>\n<ul><li>2×2.25″ + 5.25″</li><li>BT 5.3</li><li>USB-C</li><li>Turntable ready</li><li>Broadcast</li></ul>\n<h2>Особенности</h2>\n<p>Turntable-ready вход (по OEM features); Broadcast Mode на 10+ колонок. Walnut / ebony.</p>",
+    "specs": [
+      {
+        "label": "Конфигурация",
+        "value": "2.1 bi-amplified",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Драйверы",
+        "value": "2 × 2,25″ FR; 1 × 5,25″ woofer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.3",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "≈ 356 × 213 × 178 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.klipsch.com/products/the-three-plus"
+    ]
+  },
+  "272063": {
+    "descriptionHtml": "<p>iFi audio GO bar — USB‑C ЦАП/усилитель размером с флешку: 475 мВт @ 32 Ом balanced / 300 мВт SE, выход <1 Ом. Cirrus Logic DAC, MQA Full Decoder.</p>\n<ul><li>475 мВт bal</li><li><1 Ω</li><li>USB-C</li><li>MQA Full</li><li>28,5 г</li></ul>\n<h2>Форматы</h2>\n<p>PCM до 384 кГц, DSD256, DXD, MQA. 4,4 мм BAL + 3,5 мм S‑Balanced. Вес 28,5 г; <4 Вт.</p>",
+    "specs": [
+      {
+        "label": "Мощность BAL",
+        "value": "475 мВт @ 32 Ω; 7,2 В @ 600 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность UnBAL",
+        "value": "300 мВт @ 32 Ω; 3,8 В @ 600 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вых. импеданс",
+        "value": "< 1 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц – 45 кГц (−3 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "28,5 г",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://ifi-audio.com/products/go-bar"
+    ]
+  },
+  "273467": {
+    "descriptionHtml": "<p>Polk MagniFi Mini AX — ультракомпактный Atmos/DTS:X саундбар ~37 см с беспроводным сабом. HDMI eARC, Chromecast, AirPlay 2, Spotify Connect, BT 5.0.</p>\n<ul><li>Atmos / DTS:X</li><li>~37 см бар</li><li>Wireless sub</li><li>eARC</li><li>AirPlay 2</li></ul>\n<h2>Комплект</h2>\n<p>Саундбар: 2×19 мм твитера + 3×51 мм mid; саб 5″×7″. Бар 366×104×79 мм; саб 182×396×371 мм.</p>",
+    "specs": [
+      {
+        "label": "Форматы",
+        "value": "Dolby Atmos, DTS:X, Dolby Digital+, DTS-HD…",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "HDMI eARC; optical; 3,5 мм; USB-A (FW)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Стриминг",
+        "value": "Chromecast, AirPlay 2, Spotify Connect, BT 5.0",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Драйверы бара",
+        "value": "2×19 мм + 3×51 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Саб",
+        "value": "5″ × 7″ wireless",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты бара",
+        "value": "366 × 104 × 79 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.polkaudio.com/on/demandware.static/-/Library-Sites-polk_northamerica_shared/default/dw527a8c26/downloads/magnifi-mini-ax-infosheet-en.pdf"
+    ]
+  },
+  "269814": {
+    "descriptionHtml": "<p>QED Reference Audio 40 — аналоговый RCA: silver-plated 99,999% OFC Complementary Conductors, Analoc2™, Zn/Mn ferrite jacket. C=76 пФ/м; L=0,37 мкГн/м; Rloop=0,072 Ω/м.</p>\n<ul><li>SPOFC complementary</li><li>Analoc2</li><li>76 pF/m</li><li>Ferrite jacket</li><li>Lifetime QED</li></ul>\n<h2>Электрика</h2>\n<p>Dissipation Factor 0,0059. OFC shield 100% screening. Gold-plated Analoc2 RCA.</p>",
+    "specs": [
+      {
+        "label": "Проводники",
+        "value": "Silver-plated 99.999% OFC (разный диаметр)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "76 пФ/м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Индуктивность",
+        "value": "0,37 мкГн/м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сопротивление петли",
+        "value": "0,072 Ω/м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "Analoc2™ gold RCA",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.qed.co.uk/reference-audio-40.html",
+      "http://newsroom.qed.co.uk/tag/music"
+    ]
+  },
+  "269812": {
+    "descriptionHtml": "<p>QED Performance Audio 40i — Solid Core Complementary Conductors™: один OFC и один silver-plated OFC в одной паре, Anamate RCA и ferrite insulation.</p>\n<ul><li>Solid Complementary</li><li>OFC + SPOFC</li><li>Anamate RCA</li><li>Ferrite</li></ul>\n<h2>Назначение</h2>\n<p>Средний уровень апгрейда RCA без «референсного» ценника Reference 40.</p>",
+    "specs": [
+      {
+        "label": "Технология",
+        "value": "Solid Core Complementary Conductors™",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводники",
+        "value": "OFC + silver-plated OFC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "QED Anamate RCA",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.qed.co.uk/cables/analogue/audio40i-audio-interconnect.html",
+      "https://newsroom.qed.co.uk/2021/03/01/qed-enhances-audio-offering-with-new-reference-xt40i-performance-audio-40i-and-xt25-bi-wire-cables"
+    ]
+  },
+  "269808": {
+    "descriptionHtml": "<p>QED Signature Genesis Silver Spiral — флагманский акустический кабель линейки Signature (нарезка). Silver Spiral геометрия; lifetime guarantee QED.</p>\n<ul><li>Signature line</li><li>Silver Spiral</li><li>By the metre</li><li>Lifetime guarantee</li><li>HITL AWG</li></ul>\n<h2>HITL</h2>\n<p>Точное сечение/AWG уточнять по актуальному datasheet QED для партии в салоне — в открытых сниппетах без PDF не фиксируем мм².</p>",
+    "specs": [
+      {
+        "label": "Линейка",
+        "value": "QED Signature Genesis Silver Spiral",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Формат",
+        "value": "Speaker cable (bulk / pair)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Гарантия",
+        "value": "Lifetime (QED)",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.qed.co.uk/",
+      "https://newsroom.qed.co.uk/2018/10/01/qed-has-defined-hi-fi-cables-since-1973-and-now-ensures-the-best-quality-audio-and-visual-performance-whatever-your-system-or-budget"
+    ]
+  },
+  "264317": {
+    "descriptionHtml": "<p>Furutech FP-201(G) — Y-spade α (Alpha) pure copper, 24k Gold. Винт/пайка; кабель до ~5–6 мм. 12,9 × 40 мм; зев 8,2 мм.</p>\n<ul><li>α pure copper</li><li>24k Gold</li><li>Spade</li><li>≤5–6 mm cable</li><li>8.2 mm fork</li></ul>\n<h2>Применение</h2>\n<p>Акустические терминалы усилителя/колонок; комплект обычно 4 шт.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Spade terminal",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Материал",
+        "value": "α (Alpha) pure copper",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Покрытие",
+        "value": "24k Gold",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель",
+        "value": "до ~5–6 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Размер",
+        "value": "12,9 × 40 мм; зев 8,2 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/fp-201-r-g"
+    ]
+  },
+  "264318": {
+    "descriptionHtml": "<p>Furutech FP-201(R) — Y-spade α (Alpha) pure copper, Rhodium. Винт/пайка; кабель до ~5–6 мм. 12,9 × 40 мм; зев 8,2 мм.</p>\n<ul><li>α pure copper</li><li>Rhodium</li><li>Spade</li><li>≤5–6 mm cable</li><li>8.2 mm fork</li></ul>\n<h2>Применение</h2>\n<p>Акустические терминалы усилителя/колонок; комплект обычно 4 шт.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Spade terminal",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Материал",
+        "value": "α (Alpha) pure copper",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Покрытие",
+        "value": "Rhodium",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель",
+        "value": "до ~5–6 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Размер",
+        "value": "12,9 × 40 мм; зев 8,2 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/fp-201-r-g"
+    ]
+  },
+  "264315": {
+    "descriptionHtml": "<p>Furutech FP-203(G) — компактный spade из α pure copper, 24k Gold, обжим. Кабель до ~4 мм; 12,9 × 24 мм; зев 8,2 мм.</p>\n<ul><li>α copper</li><li>24k Gold</li><li>Crimp spade</li><li>≤4 mm</li><li>24 mm L</li></ul>\n<h2>Отличие от FP-201</h2>\n<p>Короче корпус, crimp вместо винта — для тонких сечений и плотной клеммной колодки.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Spade (crimp)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Материал",
+        "value": "α (Alpha) pure copper",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Покрытие",
+        "value": "24k Gold",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель",
+        "value": "до ~4 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Размер",
+        "value": "12,9 × 24 мм; зев 8,2 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/fp-203-r-g"
+    ]
+  },
+  "264316": {
+    "descriptionHtml": "<p>Furutech FP-203(R) — компактный spade из α pure copper, Rhodium, обжим. Кабель до ~4 мм; 12,9 × 24 мм; зев 8,2 мм.</p>\n<ul><li>α copper</li><li>Rhodium</li><li>Crimp spade</li><li>≤4 mm</li><li>24 mm L</li></ul>\n<h2>Отличие от FP-201</h2>\n<p>Короче корпус, crimp вместо винта — для тонких сечений и плотной клеммной колодки.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Spade (crimp)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Материал",
+        "value": "α (Alpha) pure copper",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Покрытие",
+        "value": "Rhodium",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель",
+        "value": "до ~4 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Размер",
+        "value": "12,9 × 24 мм; зев 8,2 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/fp-203-r-g"
+    ]
+  },
+  "264320": {
+    "descriptionHtml": "<p>Furutech FP-202(G) — banana lock, α pure copper / copper alloy, 24k Gold. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.</p>\n<ul><li>Banana lock</li><li>24k Gold</li><li>Set-screw</li><li>≤5.5 mm</li><li>α copper</li></ul>\n<h2>Контакт</h2>\n<p>Lock-структура для надёжной посадки в binding post без люфта.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Banana plug (lock)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Покрытие",
+        "value": "24k Gold",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель",
+        "value": "до ~5,5 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Размер",
+        "value": "Ø12 мм; 46 × 26,7 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/",
+      "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-spring.pdf"
+    ]
+  },
+  "264321": {
+    "descriptionHtml": "<p>Furutech FP-202(R) — banana lock, α pure copper / copper alloy, Rhodium. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.</p>\n<ul><li>Banana lock</li><li>Rhodium</li><li>Set-screw</li><li>≤5.5 mm</li><li>α copper</li></ul>\n<h2>Контакт</h2>\n<p>Lock-структура для надёжной посадки в binding post без люфта.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Banana plug (lock)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Покрытие",
+        "value": "Rhodium",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель",
+        "value": "до ~5,5 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Размер",
+        "value": "Ø12 мм; 46 × 26,7 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/",
+      "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-spring.pdf"
+    ]
+  },
+  "264323": {
+    "descriptionHtml": "<p>Furutech FP-200B(G) — banana на α phosphor bronze, 24k Gold. Винт; кабель до ~5 мм. Корпус Ø10,8 × 30 мм; штырь Ø4,4 × 19,5 мм; L≈49,5 мм.</p>\n<ul><li>Phosphor bronze</li><li>24k Gold</li><li>Banana</li><li>≤5 mm</li><li>~49.5 mm</li></ul>\n<h2>Линейка</h2>\n<p>Базовый banana Furutech для акустических jumper/кабелей.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Banana plug",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Контакт",
+        "value": "α phosphor bronze",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Покрытие",
+        "value": "24k Gold",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель",
+        "value": "до ~5 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "≈ 49,5 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/wp-content/uploads/2025/04/FDHE-OY-02-1-012-1.pdf"
+    ]
+  },
+  "264322": {
+    "descriptionHtml": "<p>Furutech FP-200B(R) — banana на α phosphor bronze, Rhodium. Винт; кабель до ~5 мм. Корпус Ø10,8 × 30 мм; штырь Ø4,4 × 19,5 мм; L≈49,5 мм.</p>\n<ul><li>Phosphor bronze</li><li>Rhodium</li><li>Banana</li><li>≤5 mm</li><li>~49.5 mm</li></ul>\n<h2>Линейка</h2>\n<p>Базовый banana Furutech для акустических jumper/кабелей.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Banana plug",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Контакт",
+        "value": "α phosphor bronze",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Покрытие",
+        "value": "Rhodium",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель",
+        "value": "до ~5 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "≈ 49,5 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/wp-content/uploads/2025/04/FDHE-OY-02-1-012-1.pdf"
+    ]
+  },
+  "269844": {
+    "descriptionHtml": "<p>Wireworld Stratus 7 — сетевой шнур Fluxfield / flat design линейки Series 7. Wireworld позиционирует power cords как фильтры: длиннее — тише по их методологии.</p>\n<ul><li>Series 7</li><li>Fluxfield</li><li>Flat cable</li><li>OFC</li><li>Power filter design</li></ul>\n<h2>Материалы</h2>\n<p>OFC-проводники Series 7; COMPOSILEX изоляция поколения 7. IEC + wall plug в стандартной сборке.</p>",
+    "specs": [
+      {
+        "label": "Линейка",
+        "value": "Wireworld Stratus 7",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Power conditioning cord",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Геометрия",
+        "value": "Flat Fluxfield",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводники",
+        "value": "OFC (Series 7)",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://wireworldcable.com/collections/power-cables",
+      "https://wireworldcable.com/"
+    ]
+  },
+  "269848": {
+    "descriptionHtml": "<p>Wireworld Aurora 7 — шаг выше Stratus: silver-clad OFC на той же flat Fluxfield-платформе Series 7. Более яркая тональная окраска по описанию производителя относительно Stratus.</p>\n<ul><li>Silver-clad OFC</li><li>Series 7</li><li>Fluxfield</li><li>Flat</li><li>vs Stratus upgrade</li></ul>\n<h2>Применение</h2>\n<p>Сетевой кабель для ЦАПов/интегралов, где уже слышен потолок Stratus.</p>",
+    "specs": [
+      {
+        "label": "Линейка",
+        "value": "Wireworld Aurora 7",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводники",
+        "value": "Silver-clad OFC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Геометрия",
+        "value": "Flat Fluxfield",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://wireworldcable.com/collections/power-conditioning-cords/products/aurora-10-power-conditioning-cord",
+      "https://wireworldcable.com/"
+    ]
+  },
+  "269853": {
+    "descriptionHtml": "<p>Wireworld Electra 7 — OCC copper + Fluxfield Series 7. Производитель заявляет quieter/dynamic относительно младших flat power cords; IEC 15A стандарт, C19 опция.</p>\n<ul><li>OCC copper</li><li>Fluxfield</li><li>Series 7</li><li>IEC 15A</li><li>Optional C19</li></ul>\n<h2>Конструкция</h2>\n<p>OCC copper; COMPOSILEX; Globe-Grip plugs. Длиннее длины — выше заявленный filter-эффект.</p>",
+    "specs": [
+      {
+        "label": "Линейка",
+        "value": "Wireworld Electra 7",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводники",
+        "value": "OCC copper",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Геометрия",
+        "value": "Flat Fluxfield",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://wireworldcable.com/products/copy-of-electra-7-power-conditioning-cord"
+    ]
+  },
+  "269827": {
+    "descriptionHtml": "<p>Wireworld Oasis 8 — акустический кабель Series 8 DNA HELIX на OFC (предшественник Oasis 10 с удвоенным числом strand groups). Нарезка / готовые терминации Uni-Term.</p>\n<ul><li>DNA HELIX</li><li>OFC</li><li>Series 8</li><li>Speaker</li><li>HITL gauge</li></ul>\n<h2>HITL</h2>\n<p>Series 8 вытесняется Series 10 на сайте; для точного AWG/числа жил партии в салоне сверьте бирку или legacy datasheet.</p>",
+    "specs": [
+      {
+        "label": "Линейка",
+        "value": "Wireworld Oasis 8",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Геометрия",
+        "value": "DNA HELIX",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводники",
+        "value": "OFC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Speaker cable",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://wireworldcable.com/collections/speaker-cables",
+      "https://wireworldcable.com/products/oasis-10-speaker-cable"
+    ]
+  },
+  "269839": {
+    "descriptionHtml": "<p>Wireworld Luna 8 — RCA interconnect Series 8. Геометрия и материалы семейства Luna; разъёмы Wireworld Series 8.</p>\n<ul><li>Series 8</li><li>RCA</li><li>Luna family</li><li>Analog IC</li></ul>\n<h2>Назначение</h2>\n<p>Аналоговый RCA между источником и усилителем без «флагманского» Eclipse.</p>",
+    "specs": [
+      {
+        "label": "Линейка",
+        "value": "Wireworld Luna 8",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Analog RCA interconnect",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Series 8",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://wireworldcable.com/"
+    ]
+  },
+  "269830": {
+    "descriptionHtml": "<p>Wireworld Luna 8 Mono — сабвуферный RCA на платформе Luna 8 (mono). Для LFE/line между ресивером и активным сабом.</p>\n<ul><li>Luna 8</li><li>Mono RCA</li><li>Subwoofer</li><li>Series 8</li></ul>\n<h2>Конструкция</h2>\n<p>Mono RCA; материалы Series 8 Luna.</p>",
+    "specs": [
+      {
+        "label": "Линейка",
+        "value": "Wireworld Luna 8 Mono",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Subwoofer RCA (mono)",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://wireworldcable.com/"
+    ]
+  }
+}

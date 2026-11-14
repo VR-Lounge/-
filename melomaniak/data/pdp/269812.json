@@ -1,1 +1,49 @@
-{"id":269812,"slug":"fb71b076e8397363f4e2f32605d81946","name":"Кабель межблочный аналоговый RCA QED 40i Performance","cat":"Кабели","cats":["Кабель межблочный"],"price":10000,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/fb71b076e8397363f4e2f32605d81946/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_40i_performance_4200514928-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_40i_performance_4200514928-1.jpg","alt":"qed_40i_performance_4200514928-1.jpg","local":"assets/from-live/products/0fe8b67873_qed_40i_performance_4200514928-1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269812,
+  "slug": "fb71b076e8397363f4e2f32605d81946",
+  "name": "Кабель межблочный аналоговый RCA QED 40i Performance",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель межблочный"
+  ],
+  "price": 10000,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/fb71b076e8397363f4e2f32605d81946/",
+  "descriptionHtml": "<p>QED Performance Audio 40i — Solid Core Complementary Conductors™: один OFC и один silver-plated OFC в одной паре, Anamate RCA и ferrite insulation.</p>\n<ul><li>Solid Complementary</li><li>OFC + SPOFC</li><li>Anamate RCA</li><li>Ferrite</li></ul>\n<h2>Назначение</h2>\n<p>Средний уровень апгрейда RCA без «референсного» ценника Reference 40.</p>",
+  "shortHtml": "",
+  "descriptionText": "QED Performance Audio 40i — Solid Core Complementary Conductors™: один OFC и один silver-plated OFC в одной паре, Anamate RCA и ferrite insulation.\n\n Solid Complementary\n OFC + SPOFC\n Anamate RCA\n Ferrite\n\n Назначение\n\n Средний уровень апгрейда RCA без «референсного» ценника Reference 40.",
+  "specs": [
+    {
+      "label": "Технология",
+      "value": "Solid Core Complementary Conductors™",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Проводники",
+      "value": "OFC + silver-plated OFC",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Разъёмы",
+      "value": "QED Anamate RCA",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_40i_performance_4200514928-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_40i_performance_4200514928-1.jpg",
+      "alt": "qed_40i_performance_4200514928-1.jpg",
+      "local": "assets/from-live/products/0fe8b67873_qed_40i_performance_4200514928-1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.qed.co.uk/cables/analogue/audio40i-audio-interconnect.html",
+    "https://newsroom.qed.co.uk/2021/03/01/qed-enhances-audio-offering-with-new-reference-xt40i-performance-audio-40i-and-xt25-bi-wire-cables"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

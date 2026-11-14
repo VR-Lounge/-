@@ -1,1 +1,104 @@
-{"id":270156,"slug":"831995da25fa36c8731a90a82e01deb7","name":"Фонокорректор MOON 110LP v2","cat":"Усилители","cats":["Фонокорректоры"],"price":79900,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/831995da25fa36c8731a90a82e01deb7/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-1.jpg","alt":"moon_110lp_v2-1.jpg","local":"assets/from-live/products/aa2c523101_moon_110lp_v2-1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-2.jpg","alt":"moon_110lp_v2-2.jpg","local":"assets/from-live/products/130b24fe32_moon_110lp_v2-2.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-3.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-3.jpg","alt":"moon_110lp_v2-3.jpg","local":"assets/from-live/products/b425357a02_moon_110lp_v2-3.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-4.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-4.jpg","alt":"moon_110lp_v2-4.jpg","local":"assets/from-live/products/6b8ec693f3_moon_110lp_v2-4.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-5.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-5.jpg","alt":"moon_110lp_v2-5.jpg","local":"assets/from-live/products/a5c7bd715f_moon_110lp_v2-5.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-6.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-6.jpg","alt":"moon_110lp_v2-6.jpg","local":"assets/from-live/products/b0e5cb717a_moon_110lp_v2-6.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 270156,
+  "slug": "831995da25fa36c8731a90a82e01deb7",
+  "name": "Фонокорректор MOON 110LP v2",
+  "cat": "Усилители",
+  "cats": [
+    "Фонокорректоры"
+  ],
+  "price": 79900,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/831995da25fa36c8731a90a82e01deb7/",
+  "descriptionHtml": "<p>MOON 110LP v2 — фонокорректор MM/MC с DIP‑переключателями: усиление 40/50/54/60/66 дБ, нагрузка 10 Ω–47 кΩ и ёмкость 0–430 пФ. RIAA или IEC.</p>\n<ul><li>Gain 40–66 дБ</li><li>MM/MC loading</li><li>RIAA / IEC</li><li>THD 0,002%</li><li>1,5 кг</li></ul>\n<h2>Измерения</h2>\n<p>THD 0,002% (20 Гц–20 кГц); АЧХ 20 Гц–20 кГц (±0,5 дБ). S/N 104 дБ @ 40 дБ / 87 дБ @ 60 дБ. 12,7 × 4,2 × 16,5 см, 1,5 кг.</p>",
+  "shortHtml": "",
+  "descriptionText": "MOON 110LP v2 — фонокорректор MM/MC с DIP‑переключателями: усиление 40/50/54/60/66 дБ, нагрузка 10 Ω–47 кΩ и ёмкость 0–430 пФ. RIAA или IEC.\n\n Gain 40–66 дБ\n MM/MC loading\n RIAA / IEC\n THD 0,002%\n 1,5 кг\n\n Измерения\n\n THD 0,002% (20 Гц–20 кГц); АЧХ 20 Гц–20 кГц (±0,5 дБ). S/N 104 дБ @ 40 дБ / 87 дБ @ 60 дБ. 12,7 × 4,2 × 16,5 см, 1,5 кг.",
+  "specs": [
+    {
+      "label": "Усиление",
+      "value": "40 / 50 / 54 / 60 / 66 дБ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Вх. импеданс",
+      "value": "10 Ω / 100 Ω / 475 Ω / 47 кΩ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Ёмкость",
+      "value": "0 / 100 / 330 / 430 пФ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Кривая",
+      "value": "RIAA / IEC",
+      "source": "manufacturer"
+    },
+    {
+      "label": "THD",
+      "value": "0,002% (20 Гц–20 кГц)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "АЧХ",
+      "value": "20 Гц–20 кГц (±0,5 дБ)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Габариты",
+      "value": "12,7 × 4,2 × 16,5 см",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Вес",
+      "value": "1,5 кг",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-1.jpg",
+      "alt": "moon_110lp_v2-1.jpg",
+      "local": "assets/from-live/products/aa2c523101_moon_110lp_v2-1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-2.jpg",
+      "alt": "moon_110lp_v2-2.jpg",
+      "local": "assets/from-live/products/130b24fe32_moon_110lp_v2-2.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-3.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-3.jpg",
+      "alt": "moon_110lp_v2-3.jpg",
+      "local": "assets/from-live/products/b425357a02_moon_110lp_v2-3.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-4.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-4.jpg",
+      "alt": "moon_110lp_v2-4.jpg",
+      "local": "assets/from-live/products/6b8ec693f3_moon_110lp_v2-4.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-5.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-5.jpg",
+      "alt": "moon_110lp_v2-5.jpg",
+      "local": "assets/from-live/products/a5c7bd715f_moon_110lp_v2-5.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-6.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_110lp_v2-6.jpg",
+      "alt": "moon_110lp_v2-6.jpg",
+      "local": "assets/from-live/products/b0e5cb717a_moon_110lp_v2-6.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://simaudio.com/wp-content/uploads/2018/03/110LP-v2_Manual_EN.pdf",
+    "https://simaudio.com/"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

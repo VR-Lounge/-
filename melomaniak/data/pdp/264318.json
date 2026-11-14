@@ -1,1 +1,58 @@
-{"id":264318,"slug":"%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-201r","name":"Спайд Furutech FP-201(R) ( furutech fp 201(r) )","cat":"Другое","cats":["Коннекторы"],"price":2310,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-201r/","descriptionHtml":"<p>High Performance Spade-Terminal</p>","shortHtml":"","descriptionText":"High Performance Spade-Terminal","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-201R.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-201R.jpg","alt":"FP-201R","local":"assets/from-live/products/497a592fdf_FP-201R.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 264318,
+  "slug": "%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-201r",
+  "name": "Спайд Furutech FP-201(R) ( furutech fp 201(r) )",
+  "cat": "Другое",
+  "cats": [
+    "Коннекторы"
+  ],
+  "price": 2310,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-201r/",
+  "descriptionHtml": "<p>Furutech FP-201(R) — Y-spade α (Alpha) pure copper, Rhodium. Винт/пайка; кабель до ~5–6 мм. 12,9 × 40 мм; зев 8,2 мм.</p>\n<ul><li>α pure copper</li><li>Rhodium</li><li>Spade</li><li>≤5–6 mm cable</li><li>8.2 mm fork</li></ul>\n<h2>Применение</h2>\n<p>Акустические терминалы усилителя/колонок; комплект обычно 4 шт.</p>",
+  "shortHtml": "",
+  "descriptionText": "Furutech FP-201(R) — Y-spade α (Alpha) pure copper, Rhodium. Винт/пайка; кабель до ~5–6 мм. 12,9 × 40 мм; зев 8,2 мм.\n\n α pure copper\n Rhodium\n Spade\n ≤5–6 mm cable\n 8.2 mm fork\n\n Применение\n\n Акустические терминалы усилителя/колонок; комплект обычно 4 шт.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Spade terminal",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Материал",
+      "value": "α (Alpha) pure copper",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Покрытие",
+      "value": "Rhodium",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Кабель",
+      "value": "до ~5–6 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Размер",
+      "value": "12,9 × 40 мм; зев 8,2 мм",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-201R.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-201R.jpg",
+      "alt": "FP-201R",
+      "local": "assets/from-live/products/497a592fdf_FP-201R.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://furutech.com/product/fp-201-r-g"
+  ],
+  "enrichedAt": "2026-11-14T11:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}
