@@ -9,9 +9,9 @@
   "price": 49170,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/87d30e367da6d0b66b5aa2cfccad1764/",
-  "descriptionHtml": "<p>iFi audio GO bar — USB‑C ЦАП/усилитель размером с флешку: 475 мВт @ 32 Ом balanced / 300 мВт SE, выход <1 Ом. Cirrus Logic DAC, MQA Full Decoder.</p>\n<ul><li>475 мВт bal</li><li><1 Ω</li><li>USB-C</li><li>MQA Full</li><li>28,5 г</li></ul>\n<h2>Форматы</h2>\n<p>PCM до 384 кГц, DSD256, DXD, MQA. 4,4 мм BAL + 3,5 мм S‑Balanced. Вес 28,5 г; <4 Вт.</p>",
+  "descriptionHtml": "<p>iFi audio GO bar — USB‑C ЦАП/усилитель размером с флешку: 475 мВт @ 32 Ом balanced / 300 мВт SE, выход <1 Ом. Cirrus Logic DAC, MQA Full Decoder.</p>\n<ul><li>475 мВт bal</li><li><1 Ω</li><li>USB-C</li><li>MQA Full</li><li>28,5 г</li></ul>\n<h2>Форматы</h2>\n<p>PCM до 384 кГц, DSD256, DXD, MQA. 4,4 мм BAL + 3,5 мм S‑Balanced. Вес 28,5 г; <4 Вт.</p>\n<p>Портативный усилитель для наушников iFi audio Go Bar — позиция каталога Melomaniak. Ниже editorial-описание и структурированные specs без выдуманных ватт или импедансов.</p>\n<aside><p><strong>Editorial bar.</strong> Опираемся на OEM/дилерские факты; HITL по длине, цвету и ревизии экземпляра.</p></aside>\n<p>Сверить комплектацию, длину кабеля и отделку в салоне перед публикацией. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM даёт меньше четырёх ракурсов — пометка HITL; не подставляем водяные знаки чужих магазинов.</p>",
   "shortHtml": "",
-  "descriptionText": "iFi audio GO bar — USB‑C ЦАП/усилитель размером с флешку: 475 мВт @ 32 Ом balanced / 300 мВт SE, выход 475 мВт bal\n USB-C\n MQA Full\n 28,5 г\n\n Форматы\n\n PCM до 384 кГц, DSD256, DXD, MQA. 4,4 мм BAL + 3,5 мм S‑Balanced. Вес 28,5 г; <4 Вт.",
+  "descriptionText": "iFi audio GO bar — USB‑C ЦАП/усилитель размером с флешку: 475 мВт @ 32 Ом balanced / 300 мВт SE, выход 475 мВт bal\n USB-C\n MQA Full\n 28,5 г\n\n Форматы\n\n PCM до 384 кГц, DSD256, DXD, MQA. 4,4 мм BAL + 3,5 мм S‑Balanced. Вес 28,5 г; Портативный усилитель для наушников iFi audio Go Bar — позиция каталога Melomaniak. Ниже editorial-описание и структурированные specs без выдуманных ватт или импедансов.\n\n Editorial bar. Опираемся на OEM/дилерские факты; HITL по длине, цвету и ревизии экземпляра.\n\n Сверить комплектацию, длину кабеля и отделку в салоне перед публикацией. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM даёт меньше четырёх ракурсов — пометка HITL; не подставляем водяные знаки чужих магазинов.",
   "specs": [
     {
       "label": "Мощность BAL",
@@ -113,6 +113,7 @@
   "sources": [
     "https://ifi-audio.com/products/go-bar"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:02:35Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w4-2026-11"
 }

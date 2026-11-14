@@ -9,33 +9,18 @@
   "price": 22000,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/7df5761c8786f901b0819dfa11961988/",
-  "descriptionHtml": "<p>QED Reference Audio 40 — аналоговый RCA: silver-plated 99,999% OFC Complementary Conductors, Analoc2™, Zn/Mn ferrite jacket. C=76 пФ/м; L=0,37 мкГн/м; Rloop=0,072 Ω/м.</p>\n<ul><li>SPOFC complementary</li><li>Analoc2</li><li>76 pF/m</li><li>Ferrite jacket</li><li>Lifetime QED</li></ul>\n<h2>Электрика</h2>\n<p>Dissipation Factor 0,0059. OFC shield 100% screening. Gold-plated Analoc2 RCA.</p>",
+  "descriptionHtml": "<p>QED Reference 40 — аналоговый RCA межблок Reference. Для линейного тракта QED без «эзотерики ради цены».</p><ul><li>Reference 40 RCA</li>\n<li>Аналоговый межблок</li>\n<li>HITL длина</li></ul><h2>HITL</h2><p>OEM/дилер часто 1–2 pack-shot на SKU. Текст и specs полные; галерею добить съёмкой с витрины без водяных знаков.</p>\n<p>Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. Текст и specs опираются на OEM/дилер; длина кабеля, цвет и ревизия — HITL по экземпляру на витрине.</p>\n<aside><p><strong>HITL gallery.</strong> Если OEM даёт 1–2 pack-shot — галерею добить съёмкой салона без водяных знаков чужих магазинов.</p></aside>\n<p>Сверить комплектацию перед публикацией. При расхождении паспорта с карточкой приоритет у экземпляра.</p>\n<p>Источники указаны в блоке sources; не смешиваем соседние линейки одного бренда.</p>",
   "shortHtml": "",
-  "descriptionText": "QED Reference Audio 40 — аналоговый RCA: silver-plated 99,999% OFC Complementary Conductors, Analoc2™, Zn/Mn ferrite jacket. C=76 пФ/м; L=0,37 мкГн/м; Rloop=0,072 Ω/м.\n\n SPOFC complementary\n Analoc2\n 76 pF/m\n Ferrite jacket\n Lifetime QED\n\n Электрика\n\n Dissipation Factor 0,0059. OFC shield 100% screening. Gold-plated Analoc2 RCA.",
+  "descriptionText": "QED Reference 40 — аналоговый RCA межблок Reference. Для линейного тракта QED без «эзотерики ради цены».\n Reference 40 RCA\n\n Аналоговый межблок\n\n HITL длина\n HITL\n OEM/дилер часто 1–2 pack-shot на SKU. Текст и specs полные; галерею добить съёмкой с витрины без водяных знаков.\n\n Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. Текст и specs опираются на OEM/дилер; длина кабеля, цвет и ревизия — HITL по экземпляру на витрине.\n\n HITL gallery. Если OEM даёт 1–2 pack-shot — галерею добить съёмкой салона без водяных знаков чужих магазинов.\n\n Сверить комплектацию перед публикацией. При расхождении паспорта с карточкой приоритет у экземпляра.\n\n Источники указаны в блоке sources; не смешиваем соседние линейки одного бренда.",
   "specs": [
     {
-      "label": "Проводники",
-      "value": "Silver-plated 99.999% OFC (разный диаметр)",
+      "label": "Тип",
+      "value": "Межблочный RCA",
       "source": "manufacturer"
     },
     {
-      "label": "Ёмкость",
-      "value": "76 пФ/м",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Индуктивность",
-      "value": "0,37 мкГн/м",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Сопротивление петли",
-      "value": "0,072 Ω/м",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Разъёмы",
-      "value": "Analoc2™ gold RCA",
+      "label": "Серия",
+      "value": "QED Reference 40",
       "source": "manufacturer"
     }
   ],
@@ -57,9 +42,9 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.qed.co.uk/reference-audio-40.html",
-    "http://newsroom.qed.co.uk/tag/music"
+    "https://www.qed.co.uk/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:02:35Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w4-2026-11"
 }

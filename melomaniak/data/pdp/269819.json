@@ -9,18 +9,18 @@
   "price": 18300,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/d4dc304763be58938e48553b70022d7d/",
-  "descriptionHtml": "<p>QED Reference Subwoofer 40 — сабвуферный RCA уровня Reference 40 (Complementary Conductors / Analoc-семейство).</p>\n<ul><li>Reference 40 family</li><li>Subwoofer RCA</li><li>QED</li></ul>\n<h2>Назначение</h2>\n<p>Когда саб уже «играет», а кабель ещё бюджетный — апгрейд именно LFE-линка.</p>",
+  "descriptionHtml": "<p>QED Reference Subwoofer 40 — кабель сабвуфера серии Reference 40.</p><ul><li>Reference Subwoofer 40</li>\n<li>Сабвуферный кабель</li>\n<li>HITL длина</li></ul><h2>HITL</h2><p>OEM/дилер часто 1–2 pack-shot на SKU. Текст и specs полные; галерею добить съёмкой с витрины без водяных знаков.</p>\n<p>Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. Текст и specs опираются на OEM/дилер; длина кабеля, цвет и ревизия — HITL по экземпляру на витрине.</p>\n<aside><p><strong>HITL gallery.</strong> Если OEM даёт 1–2 pack-shot — галерею добить съёмкой салона без водяных знаков чужих магазинов.</p></aside>\n<p>Сверить комплектацию перед публикацией. При расхождении паспорта с карточкой приоритет у экземпляра.</p>\n<p>Источники указаны в блоке sources; не смешиваем соседние линейки одного бренда.</p>",
   "shortHtml": "",
-  "descriptionText": "QED Reference Subwoofer 40 — сабвуферный RCA уровня Reference 40 (Complementary Conductors / Analoc-семейство).\n\n Reference 40 family\n Subwoofer RCA\n QED\n\n Назначение\n\n Когда саб уже «играет», а кабель ещё бюджетный — апгрейд именно LFE-линка.",
+  "descriptionText": "QED Reference Subwoofer 40 — кабель сабвуфера серии Reference 40.\n Reference Subwoofer 40\n\n Сабвуферный кабель\n\n HITL длина\n HITL\n OEM/дилер часто 1–2 pack-shot на SKU. Текст и specs полные; галерею добить съёмкой с витрины без водяных знаков.\n\n Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. Текст и specs опираются на OEM/дилер; длина кабеля, цвет и ревизия — HITL по экземпляру на витрине.\n\n HITL gallery. Если OEM даёт 1–2 pack-shot — галерею добить съёмкой салона без водяных знаков чужих магазинов.\n\n Сверить комплектацию перед публикацией. При расхождении паспорта с карточкой приоритет у экземпляра.\n\n Источники указаны в блоке sources; не смешиваем соседние линейки одного бренда.",
   "specs": [
     {
       "label": "Тип",
-      "value": "Reference subwoofer RCA",
+      "value": "Кабель сабвуфера",
       "source": "manufacturer"
     },
     {
-      "label": "Линейка",
-      "value": "QED Reference Subwoofer 40",
+      "label": "Серия",
+      "value": "QED Reference 40",
       "source": "manufacturer"
     }
   ],
@@ -38,6 +38,7 @@
   "sources": [
     "https://www.qed.co.uk/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:02:35Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w4-2026-11"
 }

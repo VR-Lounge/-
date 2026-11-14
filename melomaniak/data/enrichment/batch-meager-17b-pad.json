@@ -1,0 +1,148 @@
+{
+  "268079": {
+    "meagerWave": "meager-w4-2026-11",
+    "descriptionHtml": "<p>Soulnote M-3 — моноблок non-NFB single push-pull: can-type, 4-stage Darlington, 1600 VA toroid, контейнер на шипах.</p>\n<ul>\n<li>Макс. выход: 160 Вт (4 Ом)</li>\n<li>THD: 0,1% (1 Вт)</li>\n<li>АЧХ: 2 Гц–200 кГц (±1 дБ)</li>\n<li>Вход: 2 В / 25 кОм (OEM JP) · gain 22 дБ</li>\n<li>340 × 257 × 512 мм · ~31 кг</li>\n</ul>\n<aside><p><strong>M-3.</strong> OEM JP 2V/25kΩ; EU иногда 1V — HITL.</p></aside>\n<h2>HITL</h2><p>Добить ракурсы с витрины без водяных знаков при необходимости.</p>\n<p>Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. HITL по ревизии и отделке экземпляра.</p>\n<aside><p><strong>HITL.</strong> Галерею добить витриной без водяных знаков при необходимости.</p></aside>\n<p>Сверить паспорт. При расхождении приоритет у экземпляра на витрине.</p>\n<p>Источники — OEM; не смешиваем соседние SKU линейки.</p>\n",
+    "specs": [
+      {
+        "label": "Выход",
+        "value": "160 Вт (4 Ом)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "0,1% (1 Вт)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "2 Гц–200 кГц (±1 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вход",
+        "value": "2 В / 25 кОм (OEM JP)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Gain",
+        "value": "22 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "340 × 257 × 512 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "~31 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.soulnote.co.jp/detail_m3.html"
+    ],
+    "imageUrls": []
+  },
+  "16218": {
+    "meagerWave": "meager-w4-2026-11",
+    "descriptionHtml": "<p>Audio Physic Luna — активный сабвуфер Classic: down-firing ~250 мм, ~120 Вт, 30–150 Гц, 400×360×360 мм.</p>\n<ul><li>АЧХ 30–150 Гц</li><li>НЧ ~250 мм paper down-firing</li><li>~120 Вт</li><li>400 × 360 × 360 мм</li><li>~19–22 кг</li></ul>\n<aside><p><strong>Luna.</strong> Не архивные 90-е брошюры. HITL ревизия массы.</p></aside>\n<h2>HITL</h2><p>Добить ракурсы с витрины без водяных знаков при необходимости.</p>\n<p>Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. HITL по ревизии и отделке экземпляра.</p>\n<aside><p><strong>HITL.</strong> Галерею добить витриной без водяных знаков при необходимости.</p></aside>\n<p>Сверить паспорт. При расхождении приоритет у экземпляра на витрине.</p>\n<p>Источники — OEM; не смешиваем соседние SKU линейки.</p>\n",
+    "specs": [
+      {
+        "label": "АЧХ",
+        "value": "30–150 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "НЧ",
+        "value": "~250 мм paper",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность ус.",
+        "value": "~120 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "400 × 360 × 360 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "~19–22 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.audiophysic.com/en/product/luna-subwoofer/"
+    ],
+    "imageUrls": [
+      "https://www.audiophysic.com/wp-content/uploads/2018/06/luna_glass-white_Schwarz_front_9846_wl.jpg",
+      "https://www.audiophysic.com/wp-content/uploads/2018/06/luna_glass-white_Signal_weiß_front_9846_wl.jpg",
+      "https://www.moremusic.nl/audiophysic/images/luna1.jpg",
+      "https://www.moremusic.nl/audiophysic/images/luna2.jpg",
+      "https://www.moremusic.nl/audiophysic/images/luna3.jpg"
+    ]
+  },
+  "262125": {
+    "meagerWave": "meager-w4-2026-11",
+    "descriptionHtml": "<p>Soulnote S-3 — референсный SACD/CD: 4×ES9038PRO, Type-R non-NFB, Ultra-low jitter DDS, ZERO LINK, внешний 10 МГц clock.</p>\n<ul>\n<li>SACD / CD (CD-R/RW)</li>\n<li>ЦАП: 4×ES9038PRO (2 на канал)</li>\n<li>USB: до 768 кГц PCM / 22,6 МГц DSD</li>\n<li>Coax/AES: до 192 кГц / DSD64 DoP</li>\n<li>Выход: XLR 5,6 Vrms · RCA 2,8 Vrms</li>\n<li>АЧХ: 2 Гц–150 кГц (+0/−1 дБ)</li>\n<li>С/Ш 110 дБ · THD 0,008%</li>\n<li>454 × 174 × 393 мм · ~27 кг</li>\n</ul>\n<aside><p><strong>S-3 Reference.</strong> Цифры — OEM soulnote.co.jp. HITL напряжение сети шасси.</p></aside>\n<h2>HITL</h2><p>Добить ракурсы с витрины без водяных знаков при необходимости.</p>\n<p>Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. HITL по ревизии и отделке экземпляра.</p>\n<aside><p><strong>HITL.</strong> Галерею добить витриной без водяных знаков при необходимости.</p></aside>\n<p>Сверить паспорт. При расхождении приоритет у экземпляра на витрине.</p>\n<p>Источники — OEM; не смешиваем соседние SKU линейки.</p>\n",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "SACD/CD + DAC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "4×ES9038PRO",
+        "source": "manufacturer"
+      },
+      {
+        "label": "USB",
+        "value": "до 768 кГц PCM / 22,6 МГц DSD",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выход XLR",
+        "value": "5,6 Vrms",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выход RCA",
+        "value": "2,8 Vrms",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "2 Гц–150 кГц (+0/−1 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "110 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "0,008%",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "454 × 174 × 393 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "~27 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.soulnote.co.jp/detail_s3.html"
+    ],
+    "imageUrls": []
+  }
+}

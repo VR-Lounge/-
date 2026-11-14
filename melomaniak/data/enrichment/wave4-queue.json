@@ -1,0 +1,45 @@
+{
+  "wave": "meager-w4-2026-11",
+  "generatedAt": "2026-11-14T13:07:59Z",
+  "startMeager": 1274,
+  "endMeager": 1221,
+  "cleared": 53,
+  "okCount": 666,
+  "totalPdp": 1887,
+  "byCategory": {
+    "Другое": 404,
+    "Кабели": 262,
+    "Акустика": 224,
+    "Усилители": 211,
+    "Источники": 75,
+    "Ресиверы": 22,
+    "ЦАПы": 11,
+    "Наушники": 9,
+    "Спецпредложения": 2,
+    "Видео": 1
+  },
+  "reasonTallies": {
+    "gal": 1216,
+    "no_specs": 184,
+    "desc": 54
+  },
+  "batches": [
+    "batch-meager-13-researched.json",
+    "batch-meager-14-researched.json",
+    "batch-meager-14b-pad.json",
+    "batch-meager-15-researched.json",
+    "batch-meager-16-researched.json",
+    "batch-meager-17-researched.json",
+    "batch-meager-17b-pad.json",
+    "batch-meager-18-stubs.json"
+  ],
+  "highlights": [
+    "Specs for 18+ gal≥4 speakers (Davis/AE/MA/Advance)",
+    "Furutech Silver Arrows/AG-16/Digiflux/FS-301 + AR taps/cables text+specs HITL",
+    "Soulnote S-3/M-3/P-3 full OEM photo packs; LM-128/125/513/523 gal≥4; ATM-1 cleared",
+    "Paradigm Monitor SE 6000F black/white cleared",
+    "gal≥4 short-desc editorial expansions (Emotiva/iFi/Cambridge/etc.)",
+    "Remaining meager ~all gallery-limited (HITL salon shoot)"
+  ],
+  "notes": "Cables/accessories enriched text+specs with HITL gallery note even at 1–2 photos; full photo packs for priority electronics."
+}
