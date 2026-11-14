@@ -9,9 +9,9 @@
   "price": 12132,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/65a5ad662bf3cac8b19a0b269599a811/",
-  "descriptionHtml": "<p>QED Signature Genesis Silver Spiral — флагманский акустический кабель линейки Signature (нарезка). Silver Spiral геометрия; lifetime guarantee QED.</p>\n<ul><li>Signature line</li><li>Silver Spiral</li><li>By the metre</li><li>Lifetime guarantee</li><li>HITL AWG</li></ul>\n<h2>HITL</h2>\n<p>Точное сечение/AWG уточнять по актуальному datasheet QED для партии в салоне — в открытых сниппетах без PDF не фиксируем мм².</p>",
+  "descriptionHtml": "<p>QED Signature Genesis Silver Spiral — флагманский акустический кабель линейки Signature (нарезка). Silver Spiral геометрия; lifetime guarantee QED.</p>\n<ul><li>Signature line</li><li>Silver Spiral</li><li>By the metre</li><li>Lifetime guarantee</li><li>HITL AWG</li></ul>\n<h2>HITL</h2>\n<p>Точное сечение/AWG уточнять по актуальному datasheet QED для партии в салоне — в открытых сниппетах без PDF не фиксируем мм².</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Кабель акустический в нарезку QED Genesis Silver Spiral — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "QED Signature Genesis Silver Spiral — флагманский акустический кабель линейки Signature (нарезка). Silver Spiral геометрия; lifetime guarantee QED.\n\n Signature line\n Silver Spiral\n By the metre\n Lifetime guarantee\n HITL AWG\n\n HITL\n\n Точное сечение/AWG уточнять по актуальному datasheet QED для партии в салоне — в открытых сниппетах без PDF не фиксируем мм².",
+  "descriptionText": "QED Signature Genesis Silver Spiral — флагманский акустический кабель линейки Signature (нарезка). Silver Spiral геометрия; lifetime guarantee QED.\n\n Signature line\n Silver Spiral\n By the metre\n Lifetime guarantee\n HITL AWG\n\n HITL\n\n Точное сечение/AWG уточнять по актуальному datasheet QED для партии в салоне — в открытых сниппетах без PDF не фиксируем мм².\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Кабель акустический в нарезку QED Genesis Silver Spiral — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Линейка",
@@ -42,8 +42,11 @@
   "enriched": true,
   "sources": [
     "https://www.qed.co.uk/",
-    "https://newsroom.qed.co.uk/2018/10/01/qed-has-defined-hi-fi-cables-since-1973-and-now-ensures-the-best-quality-audio-and-visual-performance-whatever-your-system-or-budget"
+    "https://newsroom.qed.co.uk/2018/10/01/qed-has-defined-hi-fi-cables-since-1973-and-now-ensures-the-best-quality-audio-and-visual-performance-whatever-your-system-or-budget",
+    "https://xn--80aannlcfckh.xn--p1ai/product/65a5ad662bf3cac8b19a0b269599a811/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:35:58Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

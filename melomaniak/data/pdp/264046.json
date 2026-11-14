@@ -9,9 +9,9 @@
   "price": 31540,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-acoustic-revive-phone-jack-stereo-rpj-1st/",
-  "descriptionHtml": "<p>Acoustic Revive RPJ-1ST — фоно-коннектор (phone jack) Stereo для замены/апгрейда разъёма. Фирменные контакты Acoustic Revive.</p>\n<ul><li>RPJ-1ST</li><li>Stereo</li><li>Phone jack</li><li>Acoustic Revive</li><li>HITL</li></ul>\n<h2>HITL</h2>\n<p>Распиновка и материал контактов — по карточке RPJ-1ST у дистрибьютора Acoustic Revive.</p>",
+  "descriptionHtml": "<p>Acoustic Revive RPJ-1ST — фоно-коннектор (phone jack) Stereo для замены/апгрейда разъёма. Фирменные контакты Acoustic Revive.</p>\n<ul><li>RPJ-1ST</li><li>Stereo</li><li>Phone jack</li><li>Acoustic Revive</li><li>HITL</li></ul>\n<h2>HITL</h2>\n<p>Распиновка и материал контактов — по карточке RPJ-1ST у дистрибьютора Acoustic Revive.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Фоно коннектор Acoustic Revive Phone Jack (Stereo) [RPJ-1ST] ( acoustic revive phone jack (stereo) [rpj 1st] ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Acoustic Revive RPJ-1ST — фоно-коннектор (phone jack) Stereo для замены/апгрейда разъёма. Фирменные контакты Acoustic Revive.\n\n RPJ-1ST\n Stereo\n Phone jack\n Acoustic Revive\n HITL\n\n HITL\n\n Распиновка и материал контактов — по карточке RPJ-1ST у дистрибьютора Acoustic Revive.",
+  "descriptionText": "Acoustic Revive RPJ-1ST — фоно-коннектор (phone jack) Stereo для замены/апгрейда разъёма. Фирменные контакты Acoustic Revive.\n\n RPJ-1ST\n Stereo\n Phone jack\n Acoustic Revive\n HITL\n\n HITL\n\n Распиновка и материал контактов — по карточке RPJ-1ST у дистрибьютора Acoustic Revive.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Фоно коннектор Acoustic Revive Phone Jack (Stereo) [RPJ-1ST] ( acoustic revive phone jack (stereo) [rpj 1st] ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Модель",
@@ -41,8 +41,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://acoustic-revive.com/"
+    "https://acoustic-revive.com/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-acoustic-revive-phone-jack-stereo-rpj-1st/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

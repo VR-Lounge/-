@@ -41,6 +41,15 @@
   ],
   "gallery": [
     {
+      "src": "local://d3437f0981_line-magnetic-lm-845ia-1.jpg",
+      "thumb": "assets/enriched/262110/4608207829_live1.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM 845iA Premium ( line magnetic audio lm 845ia premium )",
+      "local": "assets/enriched/262110/4608207829_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 97461
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/LINE-MAGNETIC-AUDIO-LM-845-IA-Premium-2.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/LINE-MAGNETIC-AUDIO-LM-845-IA-Premium-2-600x600.jpg",
       "alt": "LINE-MAGNETIC-AUDIO-LM-845-IA-Premium-2",
@@ -51,9 +60,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/"
+    "https://xn--80aannlcfckh.xn--p1ai/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-845ia/",
+    "https://www.lm-audio.com/"
   ],
-  "enrichedAt": "2026-11-14T13:03:35Z",
+  "enrichedAt": "2026-11-14T13:25:36Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w5-2026-11"
 }

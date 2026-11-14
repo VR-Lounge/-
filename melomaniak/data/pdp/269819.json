@@ -36,9 +36,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.qed.co.uk/"
+    "https://www.qed.co.uk/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/d4dc304763be58938e48553b70022d7d/"
   ],
-  "enrichedAt": "2026-11-14T13:02:35Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "enrichedAt": "2026-11-14T13:36:06Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

@@ -6,6 +6,7 @@ import argparse
 import hashlib
 import json
 import re
+import shutil
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -94,6 +95,67 @@ def local_size(item: dict) -> int:
         return 0
     p = ROOT / rel
     return p.stat().st_size if p.exists() else 0
+
+
+def attach_local_lives(d: dict, paths: list[str], pid: str) -> int:
+    """Copy already-local from-live/product frames into enriched gallery."""
+    if not paths:
+        return 0
+    gallery = list(d.get("gallery") or [])
+    if len(gallery) >= GALLERY_MAX_ADD:
+        return 0
+    asset_dir = ASSETS / pid
+    asset_dir.mkdir(parents=True, exist_ok=True)
+    used_names = {Path(g.get("local") or "").name for g in gallery}
+    used_srcs = {g.get("src") or "" for g in gallery}
+    added = 0
+    new_frames: list[dict] = []
+    for i, raw in enumerate(paths, start=1):
+        src_path = Path(raw)
+        if not src_path.is_absolute():
+            src_path = ROOT / raw
+        if not src_path.exists():
+            continue
+        size = src_path.stat().st_size
+        if size < MIN_IMAGE_BYTES:
+            continue
+        if src_path.name in used_names:
+            continue
+        h = hashlib.sha1(str(src_path).encode()).hexdigest()[:10]
+        ext = src_path.suffix.lower() or ".jpg"
+        if ext == ".jpeg":
+            ext = ".jpg"
+        local_name = f"{h}_live{i}{ext}"
+        dest = asset_dir / local_name
+        if not dest.exists():
+            shutil.copy2(src_path, dest)
+        rel = f"assets/enriched/{pid}/{local_name}"
+        src_key = f"local://{src_path.name}"
+        if src_key in used_srcs or any(g.get("local") == rel for g in gallery + new_frames):
+            continue
+        new_frames.append(
+            {
+                "src": src_key,
+                "thumb": rel,
+                "alt": d.get("name") or pid,
+                "local": rel,
+                "enriched": True,
+                "attribution": "from-live",
+                "bytes": size,
+            }
+        )
+        used_names.add(src_path.name)
+        used_srcs.add(src_key)
+        added += 1
+        if len(gallery) + len(new_frames) >= GALLERY_MAX_ADD:
+            break
+    if not new_frames:
+        return 0
+    if len(gallery) < GALLERY_TARGET:
+        d["gallery"] = (new_frames + gallery)[: max(GALLERY_TARGET, min(len(gallery) + len(new_frames), 10))]
+    else:
+        d["gallery"] = (gallery + new_frames)[:10]
+    return added
 
 
 def enrich_gallery(d: dict, urls: list[str], pid: str) -> int:
@@ -197,8 +259,28 @@ def apply_one(pid: str, payload: dict, provenance: dict) -> dict | None:
     )
     if payload.get("meagerWave"):
         d["meagerWave"] = payload["meagerWave"]
+    if payload.get("galleryHitl"):
+        d["galleryHitl"] = True
+        note = d.get("enrichmentNote") or ""
+        hitl_gal = (
+            " HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины "
+            "без водяных знаков; текст и specs уже elite-bar."
+        )
+        if "HITL gallery" not in note:
+            d["enrichmentNote"] = (note + hitl_gal).strip()
 
     added = enrich_gallery(d, list(payload.get("imageUrls") or []), pid)
+    added += attach_local_lives(d, list(payload.get("localLivePaths") or []), pid)
+    # If still under gallery target after scrape attempt, keep/force galleryHitl
+    if len(d.get("gallery") or []) < GALLERY_TARGET and (
+        payload.get("galleryHitl")
+        or payload.get("imageUrls") is not None
+        or payload.get("localLivePaths") is not None
+    ):
+        if payload.get("galleryHitl") or (
+            added == 0 and len(d.get("gallery") or []) < GALLERY_TARGET
+        ):
+            d["galleryHitl"] = True
 
     path.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     provenance[pid] = {
@@ -208,6 +290,7 @@ def apply_one(pid: str, payload: dict, provenance: dict) -> dict | None:
         "galleryCount": len(d.get("gallery") or []),
         "photosAdded": added,
         "descLen": len(d.get("descriptionText") or ""),
+        "galleryHitl": bool(d.get("galleryHitl")),
         "enrichedAt": d["enrichedAt"],
     }
     print(

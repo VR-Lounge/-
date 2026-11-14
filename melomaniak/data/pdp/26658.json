@@ -47,9 +47,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/"
+    "https://xn--80aannlcfckh.xn--p1ai/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_spec_rsa-f1/"
   ],
-  "enrichedAt": "2026-11-14T13:03:34Z",
+  "enrichedAt": "2026-11-14T13:18:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

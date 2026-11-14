@@ -9,9 +9,9 @@
   "price": 39990,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/ae9a5c55c56455035eefed46287046cc/",
-  "descriptionHtml": "<p>Nordost Cinema Flex CF142 CL3P — сабвуферный RCA из инсталляционной линейки Cinema Flex (CL3/CL3P rated). Для длинных LFE-трасс в стенах/стойках.</p>\n<ul><li>Cinema Flex</li><li>CF142</li><li>CL3P</li><li>Sub RCA</li><li>HITL electrical</li></ul>\n<h2>HITL</h2>\n<p>Электрические пФ/м и AWG — по Nordost Cinema Flex datasheet; открытый SERP без полной таблицы — не выдумываем.</p>",
+  "descriptionHtml": "<p>Nordost Cinema Flex CF142 CL3P — сабвуферный RCA из инсталляционной линейки Cinema Flex (CL3/CL3P rated). Для длинных LFE-трасс в стенах/стойках.</p>\n<ul><li>Cinema Flex</li><li>CF142</li><li>CL3P</li><li>Sub RCA</li><li>HITL electrical</li></ul>\n<h2>HITL</h2>\n<p>Электрические пФ/м и AWG — по Nordost Cinema Flex datasheet; открытый SERP без полной таблицы — не выдумываем.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "<p> Причина уценки: витринный экземпляр, отсутствует упаковка. </p>",
-  "descriptionText": "Nordost Cinema Flex CF142 CL3P — сабвуферный RCA из инсталляционной линейки Cinema Flex (CL3/CL3P rated). Для длинных LFE-трасс в стенах/стойках.\n\n Cinema Flex\n CF142\n CL3P\n Sub RCA\n HITL electrical\n\n HITL\n\n Электрические пФ/м и AWG — по Nordost Cinema Flex datasheet; открытый SERP без полной таблицы — не выдумываем.",
+  "descriptionText": "Nordost Cinema Flex CF142 CL3P — сабвуферный RCA из инсталляционной линейки Cinema Flex (CL3/CL3P rated). Для длинных LFE-трасс в стенах/стойках.\n\n Cinema Flex\n CF142\n CL3P\n Sub RCA\n HITL electrical\n\n HITL\n\n Электрические пФ/м и AWG — по Nordost Cinema Flex datasheet; открытый SERP без полной таблицы — не выдумываем.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Линейка",
@@ -47,8 +47,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.nordost.com/"
+    "https://www.nordost.com/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/ae9a5c55c56455035eefed46287046cc/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

@@ -9,9 +9,9 @@
   "price": 380000,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/tsentralnii_kanal_Audio_Physic_Orea/",
-  "descriptionHtml": "<p>Audio Physic Orea — центральный канал Audio Physic (карточка салона). Семейство Classic/старших AP; точные драйверы — HITL по паспорту экземпляра (OEM Orea page часто архивная).</p>\n<ul>\n<li>Тип: центральный канал</li>\n<li>Бренд: Audio Physic</li>\n<li>HITL: чувствительность, Ом, габариты с бирки</li>\n</ul>\n<aside><p><strong>Orea.</strong> Не подставляем цифры Classic Center без подтверждения, что это та же модель.</p></aside>\n<h2>HITL</h2><p>Добить ракурсы с витрины без водяных знаков, если OEM-пак &lt;4.</p>\n<p>Melomaniak editorial-bar: аксессуар/центр тракта; сверить отделку стекла/шпона.</p>",
+  "descriptionHtml": "<p>Audio Physic Orea — центральный канал Audio Physic (карточка салона). Семейство Classic/старших AP; точные драйверы — HITL по паспорту экземпляра (OEM Orea page часто архивная).</p>\n<ul>\n<li>Тип: центральный канал</li>\n<li>Бренд: Audio Physic</li>\n<li>HITL: чувствительность, Ом, габариты с бирки</li>\n</ul>\n<aside><p><strong>Orea.</strong> Не подставляем цифры Classic Center без подтверждения, что это та же модель.</p></aside>\n<h2>HITL</h2><p>Добить ракурсы с витрины без водяных знаков, если OEM-пак &lt;4.</p>\n<p>Melomaniak editorial-bar: аксессуар/центр тракта; сверить отделку стекла/шпона.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>центральный канал Audio Physic Orea ( audio physic orea ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Audio Physic Orea — центральный канал Audio Physic (карточка салона). Семейство Classic/старших AP; точные драйверы — HITL по паспорту экземпляра (OEM Orea page часто архивная).\n\n Тип: центральный канал\n\n Бренд: Audio Physic\n\n HITL: чувствительность, Ом, габариты с бирки\n\n Orea. Не подставляем цифры Classic Center без подтверждения, что это та же модель.\n\n HITL\n Добить ракурсы с витрины без водяных знаков, если OEM-пак &lt;4.\n\n Melomaniak editorial-bar: аксессуар/центр тракта; сверить отделку стекла/шпона.",
+  "descriptionText": "Audio Physic Orea — центральный канал Audio Physic (карточка салона). Семейство Classic/старших AP; точные драйверы — HITL по паспорту экземпляра (OEM Orea page часто архивная).\n\n Тип: центральный канал\n\n Бренд: Audio Physic\n\n HITL: чувствительность, Ом, габариты с бирки\n\n Orea. Не подставляем цифры Classic Center без подтверждения, что это та же модель.\n\n HITL\n Добить ракурсы с витрины без водяных знаков, если OEM-пак &lt;4.\n\n Melomaniak editorial-bar: аксессуар/центр тракта; сверить отделку стекла/шпона.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n центральный канал Audio Physic Orea ( audio physic orea ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Тип",
@@ -41,9 +41,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.audiophysic.com/"
+    "https://www.audiophysic.com/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/tsentralnii_kanal_Audio_Physic_Orea/"
   ],
-  "enrichedAt": "2026-11-14T13:03:29Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "enrichedAt": "2026-11-14T13:13:44Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

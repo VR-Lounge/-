@@ -9,9 +9,9 @@
   "price": 7000,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/839625a09ec99576b714a01f4ecc904e/",
-  "descriptionHtml": "<p>QED Performance Audio (RCA) — средний аналоговый interconnect линейки Performance. Для CD/стримера→усилитель без Reference 40.</p>\n<ul><li>Performance RCA</li><li>Analog IC</li><li>QED lifetime</li><li>HITL SKU</li></ul>\n<h2>HITL</h2>\n<p>Уточнить у салона точный sub-model (Audio / Audio 40 / Graphite) по этикетке — в листинге «Performance» без суффикса.</p>",
+  "descriptionHtml": "<p>QED Performance Audio (RCA) — средний аналоговый interconnect линейки Performance. Для CD/стримера→усилитель без Reference 40.</p>\n<ul><li>Performance RCA</li><li>Analog IC</li><li>QED lifetime</li><li>HITL SKU</li></ul>\n<h2>HITL</h2>\n<p>Уточнить у салона точный sub-model (Audio / Audio 40 / Graphite) по этикетке — в листинге «Performance» без суффикса.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Кабель межблочный аналоговый RCA QED Performance — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "QED Performance Audio (RCA) — средний аналоговый interconnect линейки Performance. Для CD/стримера→усилитель без Reference 40.\n\n Performance RCA\n Analog IC\n QED lifetime\n HITL SKU\n\n HITL\n\n Уточнить у салона точный sub-model (Audio / Audio 40 / Graphite) по этикетке — в листинге «Performance» без суффикса.",
+  "descriptionText": "QED Performance Audio (RCA) — средний аналоговый interconnect линейки Performance. Для CD/стримера→усилитель без Reference 40.\n\n Performance RCA\n Analog IC\n QED lifetime\n HITL SKU\n\n HITL\n\n Уточнить у салона точный sub-model (Audio / Audio 40 / Graphite) по этикетке — в листинге «Performance» без суффикса.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Кабель межблочный аналоговый RCA QED Performance — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Тип",
@@ -36,8 +36,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.qed.co.uk/"
+    "https://www.qed.co.uk/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/839625a09ec99576b714a01f4ecc904e/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:35:58Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

@@ -46,9 +46,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/"
+    "https://xn--80aannlcfckh.xn--p1ai/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/47-labs-rst-38/"
   ],
-  "enrichedAt": "2026-11-14T12:57:48Z",
+  "enrichedAt": "2026-11-14T13:19:57Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w3-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

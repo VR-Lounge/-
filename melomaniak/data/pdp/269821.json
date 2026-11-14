@@ -9,9 +9,9 @@
   "price": 12400,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/8f40298b1d0606e80e037433568316b7/",
-  "descriptionHtml": "<p>QED Performance Optical 3 m — Toslink оптика Performance, длина 3 м. Для ТВ/консоли→саундбар/DAC без электрической петли.</p>\n<ul><li>Toslink</li><li>3 m</li><li>Performance</li><li>Optical</li></ul>\n<h2>Применение</h2>\n<p>Цифровой S/PDIF optical; длина фиксирована 3 м в листинге.</p>",
+  "descriptionHtml": "<p>QED Performance Optical 3 m — Toslink оптика Performance, длина 3 м. Для ТВ/консоли→саундбар/DAC без электрической петли.</p>\n<ul><li>Toslink</li><li>3 m</li><li>Performance</li><li>Optical</li></ul>\n<h2>Применение</h2>\n<p>Цифровой S/PDIF optical; длина фиксирована 3 м в листинге.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Кабель оптический QED Performance 3 m — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>\n<p>Проверка OEM и витрины обязательна для Кабель оптический QED Performance 3 m. Не публикуем маркетинг без цифр.</p>",
   "shortHtml": "",
-  "descriptionText": "QED Performance Optical 3 m — Toslink оптика Performance, длина 3 м. Для ТВ/консоли→саундбар/DAC без электрической петли.\n\n Toslink\n 3 m\n Performance\n Optical\n\n Применение\n\n Цифровой S/PDIF optical; длина фиксирована 3 м в листинге.",
+  "descriptionText": "QED Performance Optical 3 m — Toslink оптика Performance, длина 3 м. Для ТВ/консоли→саундбар/DAC без электрической петли.\n\n Toslink\n 3 m\n Performance\n Optical\n\n Применение\n\n Цифровой S/PDIF optical; длина фиксирована 3 м в листинге.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Кабель оптический QED Performance 3 m — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.\n\n Проверка OEM и витрины обязательна для Кабель оптический QED Performance 3 m. Не публикуем маркетинг без цифр.",
   "specs": [
     {
       "label": "Тип",
@@ -41,8 +41,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.qed.co.uk/"
+    "https://www.qed.co.uk/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/8f40298b1d0606e80e037433568316b7/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:36:06Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

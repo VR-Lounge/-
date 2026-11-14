@@ -9,9 +9,9 @@
   "price": 20000,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/d461d09d6941929aebd404acb865f291/",
-  "descriptionHtml": "<p>Wireworld MATRIX2 Rack Mount Strip — рэковый сетевой блок/экстендер на технологиях Wireworld power (shielded strip).</p>\n<ul><li>Rack mount</li><li>Power strip</li><li>Wireworld</li><li>HITL outlets</li></ul>\n<h2>HITL</h2>\n<p>Число розеток и номинал уточнять по актуальной карточке MATRIX 2 на wireworldcable.com — линейка обновлялась.</p>",
+  "descriptionHtml": "<p>Wireworld MATRIX2 Rack Mount Strip — рэковый сетевой блок/экстендер на технологиях Wireworld power (shielded strip).</p>\n<ul><li>Rack mount</li><li>Power strip</li><li>Wireworld</li><li>HITL outlets</li></ul>\n<h2>HITL</h2>\n<p>Число розеток и номинал уточнять по актуальной карточке MATRIX 2 на wireworldcable.com — линейка обновлялась.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Сетевой фильтр Wireworld MATRIX2 Rack Mount Strip — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Wireworld MATRIX2 Rack Mount Strip — рэковый сетевой блок/экстендер на технологиях Wireworld power (shielded strip).\n\n Rack mount\n Power strip\n Wireworld\n HITL outlets\n\n HITL\n\n Число розеток и номинал уточнять по актуальной карточке MATRIX 2 на wireworldcable.com — линейка обновлялась.",
+  "descriptionText": "Wireworld MATRIX2 Rack Mount Strip — рэковый сетевой блок/экстендер на технологиях Wireworld power (shielded strip).\n\n Rack mount\n Power strip\n Wireworld\n HITL outlets\n\n HITL\n\n Число розеток и номинал уточнять по актуальной карточке MATRIX 2 на wireworldcable.com — линейка обновлялась.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Сетевой фильтр Wireworld MATRIX2 Rack Mount Strip — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Тип",
@@ -36,8 +36,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://wireworldcable.com/collections/power-cables"
+    "https://wireworldcable.com/collections/power-cables",
+    "https://xn--80aannlcfckh.xn--p1ai/product/d461d09d6941929aebd404acb865f291/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:36:06Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

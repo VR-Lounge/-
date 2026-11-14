@@ -9,9 +9,9 @@
   "price": 11004,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202g/",
-  "descriptionHtml": "<p>Furutech FP-202(G) — banana lock, α pure copper / copper alloy, 24k Gold. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.</p>\n<ul><li>Banana lock</li><li>24k Gold</li><li>Set-screw</li><li>≤5.5 mm</li><li>α copper</li></ul>\n<h2>Контакт</h2>\n<p>Lock-структура для надёжной посадки в binding post без люфта.</p>",
+  "descriptionHtml": "<p>Furutech FP-202(G) — banana lock, α pure copper / copper alloy, 24k Gold. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.</p>\n<ul><li>Banana lock</li><li>24k Gold</li><li>Set-screw</li><li>≤5.5 mm</li><li>α copper</li></ul>\n<h2>Контакт</h2>\n<p>Lock-структура для надёжной посадки в binding post без люфта.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Коннектор Furutech FP-202(G) ( furutech fp 202(g) ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Furutech FP-202(G) — banana lock, α pure copper / copper alloy, 24k Gold. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.\n\n Banana lock\n 24k Gold\n Set-screw\n ≤5.5 mm\n α copper\n\n Контакт\n\n Lock-структура для надёжной посадки в binding post без люфта.",
+  "descriptionText": "Furutech FP-202(G) — banana lock, α pure copper / copper alloy, 24k Gold. Винтовой захват; кабель до ~5,5 мм. Ø12 мм, ~46 × 26,7 мм.\n\n Banana lock\n 24k Gold\n Set-screw\n ≤5.5 mm\n α copper\n\n Контакт\n\n Lock-структура для надёжной посадки в binding post без люфта.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Коннектор Furutech FP-202(G) ( furutech fp 202(g) ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Тип",
@@ -47,8 +47,11 @@
   "enriched": true,
   "sources": [
     "https://furutech.com/",
-    "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-spring.pdf"
+    "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-spring.pdf",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202g/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

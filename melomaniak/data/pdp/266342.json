@@ -21,6 +21,33 @@
   ],
   "gallery": [
     {
+      "src": "local://72e09fc8d7_Audio_Physic_Avanti-1.jpg",
+      "thumb": "assets/enriched/266342/101778c2d6_live1.jpg",
+      "alt": "Напольная акустика Audio physic Avanti 35 ( audio physic avanti 35 )",
+      "local": "assets/enriched/266342/101778c2d6_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 232003
+    },
+    {
+      "src": "local://62c9e82b79_Audio_Physic_Avanti-3.jpg",
+      "thumb": "assets/enriched/266342/e61c43ceff_live2.jpg",
+      "alt": "Напольная акустика Audio physic Avanti 35 ( audio physic avanti 35 )",
+      "local": "assets/enriched/266342/e61c43ceff_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 204168
+    },
+    {
+      "src": "local://362ca0e664_napolnaia_akystika_Audio_Physic_Avanti_V.jpg",
+      "thumb": "assets/enriched/266342/00cd875554_live3.jpg",
+      "alt": "Напольная акустика Audio physic Avanti 35 ( audio physic avanti 35 )",
+      "local": "assets/enriched/266342/00cd875554_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 38583
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/01/Audio_Physic_Avanti_35-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/01/Audio_Physic_Avanti_35-1.jpg",
       "alt": "Audio_Physic_Avanti_35-1",
@@ -37,9 +64,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/"
+    "https://xn--80aannlcfckh.xn--p1ai/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-avanti-35/"
   ],
-  "enrichedAt": "2026-11-14T13:03:50Z",
+  "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

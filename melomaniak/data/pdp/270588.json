@@ -9,9 +9,9 @@
   "price": 30590,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/1bf642ba7fb4b02b997cf979f08ac060/",
-  "descriptionHtml": "<p>Van den Hul D-502 Hybrid — twin-версия D-501 Hybrid: два канала в одной оболочке для фоно RCA-RCA. Та же Hybrid/LSC философия линейки D-50x.</p>\n<ul><li>Twin of D-501</li><li>Phono RCA</li><li>Hybrid LSC</li><li>Hulliflex</li><li>HITL twin C</li></ul>\n<h2>HITL</h2>\n<p>Точные C/R для twin-конструкции уточнять по карточке VdH D-502; базовые материалы — как у D-501 Hybrid.</p>",
+  "descriptionHtml": "<p>Van den Hul D-502 Hybrid — twin-версия D-501 Hybrid: два канала в одной оболочке для фоно RCA-RCA. Та же Hybrid/LSC философия линейки D-50x.</p>\n<ul><li>Twin of D-501</li><li>Phono RCA</li><li>Hybrid LSC</li><li>Hulliflex</li><li>HITL twin C</li></ul>\n<h2>HITL</h2>\n<p>Точные C/R для twin-конструкции уточнять по карточке VdH D-502; базовые материалы — как у D-501 Hybrid.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Фонокабель Van den Hul D-502 Hybrid RCA-RCA — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "<p>Кабель для тонарма с разъемами RCA – RCA. В фирменном гибридном материале проводника используются серебро и линейно-структурированные углеродные волокна. Дополнительная стальная центральная жила обеспечивает прочность и может служить заземляющим проводом. Наружное сечение кабеля 8.4 х 4.0 мм.</p>",
-  "descriptionText": "Van den Hul D-502 Hybrid — twin-версия D-501 Hybrid: два канала в одной оболочке для фоно RCA-RCA. Та же Hybrid/LSC философия линейки D-50x.\n\n Twin of D-501\n Phono RCA\n Hybrid LSC\n Hulliflex\n HITL twin C\n\n HITL\n\n Точные C/R для twin-конструкции уточнять по карточке VdH D-502; базовые материалы — как у D-501 Hybrid.",
+  "descriptionText": "Van den Hul D-502 Hybrid — twin-версия D-501 Hybrid: два канала в одной оболочке для фоно RCA-RCA. Та же Hybrid/LSC философия линейки D-50x.\n\n Twin of D-501\n Phono RCA\n Hybrid LSC\n Hulliflex\n HITL twin C\n\n HITL\n\n Точные C/R для twin-конструкции уточнять по карточке VdH D-502; базовые материалы — как у D-501 Hybrid.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Фонокабель Van den Hul D-502 Hybrid RCA-RCA — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Тип",
@@ -41,8 +41,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.vandenhul.com/product-category/cables/interconnect-cables/page/2"
+    "https://www.vandenhul.com/product-category/cables/interconnect-cables/page/2",
+    "https://xn--80aannlcfckh.xn--p1ai/product/1bf642ba7fb4b02b997cf979f08ac060/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:36:16Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

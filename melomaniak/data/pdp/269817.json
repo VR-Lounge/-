@@ -9,9 +9,9 @@
   "price": 10100,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/003b64487f5a9e4bf093a02ab939d1be/",
-  "descriptionHtml": "<p>QED Performance Subwoofer — RCA сабвуферный кабель Performance с Complementary Conductor-идеями линейки QED analogue.</p>\n<ul><li>Subwoofer RCA</li><li>Performance</li><li>QED</li></ul>\n<h2>Назначение</h2>\n<p>LFE/line от ресивера к активному сабу.</p>",
+  "descriptionHtml": "<p>QED Performance Subwoofer — RCA сабвуферный кабель Performance с Complementary Conductor-идеями линейки QED analogue.</p>\n<ul><li>Subwoofer RCA</li><li>Performance</li><li>QED</li></ul>\n<h2>Назначение</h2>\n<p>LFE/line от ресивера к активному сабу.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Кабель для сабвуфера QED Performance Subwoofer — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>\n<p>Проверка OEM и витрины обязательна для Кабель для сабвуфера QED Performance Subwoofer. Не публикуем маркетинг без цифр.</p>",
   "shortHtml": "<p>Кабель для сабвуфера, проводник: бескислородная медь, двойное экранирование, сечение: 6.2 кв.мм, возможная длина 3, 6, 10 метров</p>",
-  "descriptionText": "QED Performance Subwoofer — RCA сабвуферный кабель Performance с Complementary Conductor-идеями линейки QED analogue.\n\n Subwoofer RCA\n Performance\n QED\n\n Назначение\n\n LFE/line от ресивера к активному сабу.",
+  "descriptionText": "QED Performance Subwoofer — RCA сабвуферный кабель Performance с Complementary Conductor-идеями линейки QED analogue.\n\n Subwoofer RCA\n Performance\n QED\n\n Назначение\n\n LFE/line от ресивера к активному сабу.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Кабель для сабвуфера QED Performance Subwoofer — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.\n\n Проверка OEM и витрины обязательна для Кабель для сабвуфера QED Performance Subwoofer. Не публикуем маркетинг без цифр.",
   "specs": [
     {
       "label": "Тип",
@@ -36,8 +36,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.qed.co.uk/"
+    "https://www.qed.co.uk/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/003b64487f5a9e4bf093a02ab939d1be/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:36:06Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

@@ -74,8 +74,11 @@
   "enriched": true,
   "sources": [
     "https://www.arcam.co.uk/product,radia,players,cd5.htm",
-    "https://www.arcam.co.uk/ugc/tor/CD5/English%20Owner's%20Manual/ARCAM%20CD5%20Owner's%20Manual%20EN%20V2.pdf"
+    "https://www.arcam.co.uk/ugc/tor/CD5/English%20Owner's%20Manual/ARCAM%20CD5%20Owner's%20Manual%20EN%20V2.pdf",
+    "https://xn--80aannlcfckh.xn--p1ai/product/fe55010d45cfed8d48b6a0d6d5c9f013/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

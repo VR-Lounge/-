@@ -41,6 +41,51 @@
   ],
   "gallery": [
     {
+      "src": "local://c1e7aab51f_rotel_rmb-1587mkii_1399699110-4.jpg",
+      "thumb": "assets/enriched/264390/db5c82e262_live1.jpg",
+      "alt": "Акустический кабель Furutech Speaker Ref.III-04 BW ( furutech speaker ref iii 04 bw )",
+      "local": "assets/enriched/264390/db5c82e262_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 53077
+    },
+    {
+      "src": "local://4108a030ef_music_hall_mmf_3-3-7.jpg",
+      "thumb": "assets/enriched/264390/914b83295e_live2.jpg",
+      "alt": "Акустический кабель Furutech Speaker Ref.III-04 BW ( furutech speaker ref iii 04 bw )",
+      "local": "assets/enriched/264390/914b83295e_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 102567
+    },
+    {
+      "src": "local://092792f53d_shanling_ec_mini_3889157852-3.jpg",
+      "thumb": "assets/enriched/264390/52ff3854d1_live3.jpg",
+      "alt": "Акустический кабель Furutech Speaker Ref.III-04 BW ( furutech speaker ref iii 04 bw )",
+      "local": "assets/enriched/264390/52ff3854d1_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 21587
+    },
+    {
+      "src": "local://88b0202643_kef_lsx_ii_10720516782-8.jpg",
+      "thumb": "assets/enriched/264390/e226985565_live4.jpg",
+      "alt": "Акустический кабель Furutech Speaker Ref.III-04 BW ( furutech speaker ref iii 04 bw )",
+      "local": "assets/enriched/264390/e226985565_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 108039
+    },
+    {
+      "src": "local://5a73985fec_kef_reference_5_meta_11881095719-1.jpg",
+      "thumb": "assets/enriched/264390/ea851c3cab_live5.jpg",
+      "alt": "Акустический кабель Furutech Speaker Ref.III-04 BW ( furutech speaker ref iii 04 bw )",
+      "local": "assets/enriched/264390/ea851c3cab_live5.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 78380
+    },
+    {
       "src": "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-SBW.jpg",
       "thumb": "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-SBW.jpg",
       "alt": "Акустический кабель Furutech Speaker Ref.III-04 BW ( furutech speaker ref iii 04 bw )",
@@ -69,9 +114,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://furutech.com/ja/product/speaker-reference-iii/"
+    "https://furutech.com/ja/product/speaker-reference-iii/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-speaker-ref-iii-04-bw/"
   ],
-  "enrichedAt": "2026-11-14T12:57:48Z",
+  "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w3-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

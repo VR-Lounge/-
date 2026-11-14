@@ -46,9 +46,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://acousticrevive.jp/"
+    "https://acousticrevive.jp/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-r-au1-pl/"
   ],
-  "enrichedAt": "2026-11-14T13:02:35Z",
+  "enrichedAt": "2026-11-14T13:29:52Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

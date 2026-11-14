@@ -9,9 +9,9 @@
   "price": 67500,
   "old": 75000,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-pl-hr/",
-  "descriptionHtml": "<p>Audio Replas OPT-100HG-PL HR — кварцевый изолятор HG HR серии OPT-100 (не flat). Высота базовой OPT-100HG SS HR ≈ 20 мм по каталогу производителя.</p>\n<ul><li>OPT-100HG</li><li>HG HR quartz</li><li>~20 mm class</li><li>Insulator</li></ul>\n<h2>Материал</h2>\n<p>Сверхчистый кварц HG HR; зеркальная обработка в SS HR вариантах.</p>",
+  "descriptionHtml": "<p>Audio Replas OPT-100HG-PL HR — кварцевый изолятор HG HR серии OPT-100 (не flat). Высота базовой OPT-100HG SS HR ≈ 20 мм по каталогу производителя.</p>\n<ul><li>OPT-100HG</li><li>HG HR quartz</li><li>~20 mm class</li><li>Insulator</li></ul>\n<h2>Материал</h2>\n<p>Сверхчистый кварц HG HR; зеркальная обработка в SS HR вариантах.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Audio Replas OPT-100HG-PL HR — кварцевый изолятор HG HR серии OPT-100 (не flat). Высота базовой OPT-100HG SS HR ≈ 20 мм по каталогу производителя.\n\n OPT-100HG\n HG HR quartz\n ~20 mm class\n Insulator\n\n Материал\n\n Сверхчистый кварц HG HR; зеркальная обработка в SS HR вариантах.",
+  "descriptionText": "Audio Replas OPT-100HG-PL HR — кварцевый изолятор HG HR серии OPT-100 (не flat). Высота базовой OPT-100HG SS HR ≈ 20 мм по каталогу производителя.\n\n OPT-100HG\n HG HR quartz\n ~20 mm class\n Insulator\n\n Материал\n\n Сверхчистый кварц HG HR; зеркальная обработка в SS HR вариантах.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Материал",
@@ -41,8 +41,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.audio-replas.com/insulator.html"
+    "https://www.audio-replas.com/insulator.html",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-pl-hr/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

@@ -36,6 +36,42 @@
   ],
   "gallery": [
     {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/solitaire_t_pro_slider_solitaire_t_serie_3.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/solitaire_t_pro_slider_solitaire_t_serie_3.jpg",
+      "alt": "Цифровой кабель SAEC  BNC-3000 ( saec bnc 3000 )",
+      "local": "assets/enriched/264546/9edbf165a0_1.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 884445
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/ps_3100_hv_slider_ps_3100_hv-1.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/ps_3100_hv_slider_ps_3100_hv-1.jpg",
+      "alt": "Цифровой кабель SAEC  BNC-3000 ( saec bnc 3000 )",
+      "local": "assets/enriched/264546/c26e972452_2.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 649087
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/sdx_3100_slider_referenz_streaming_dac_titan-2.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/sdx_3100_slider_referenz_streaming_dac_titan-2.jpg",
+      "alt": "Цифровой кабель SAEC  BNC-3000 ( saec bnc 3000 )",
+      "local": "assets/enriched/264546/a5773d6809_3.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 1227999
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/24356_TA_A3100Hv_008-scaled.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/24356_TA_A3100Hv_008-scaled.jpg",
+      "alt": "Цифровой кабель SAEC  BNC-3000 ( saec bnc 3000 )",
+      "local": "assets/enriched/264546/3eec563c35_4.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 496054
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/saec-bnc-3000.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/saec-bnc-3000.jpg",
       "alt": "saec-bnc-3000",
@@ -46,9 +82,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://saec-com.co.jp/"
+    "https://saec-com.co.jp/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-bnc-3000/"
   ],
-  "enrichedAt": "2026-11-14T13:02:35Z",
+  "enrichedAt": "2026-11-14T13:35:21Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w5-2026-11"
 }

@@ -9,9 +9,9 @@
   "price": 18300,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/927cd285d63a6d0122f0c36e4ca1175d/",
-  "descriptionHtml": "<p>Wireworld Stratus 7 — сетевой шнур Fluxfield / flat design линейки Series 7. Wireworld позиционирует power cords как фильтры: длиннее — тише по их методологии.</p>\n<ul><li>Series 7</li><li>Fluxfield</li><li>Flat cable</li><li>OFC</li><li>Power filter design</li></ul>\n<h2>Материалы</h2>\n<p>OFC-проводники Series 7; COMPOSILEX изоляция поколения 7. IEC + wall plug в стандартной сборке.</p>",
+  "descriptionHtml": "<p>Wireworld Stratus 7 — сетевой шнур Fluxfield / flat design линейки Series 7. Wireworld позиционирует power cords как фильтры: длиннее — тише по их методологии.</p>\n<ul><li>Series 7</li><li>Fluxfield</li><li>Flat cable</li><li>OFC</li><li>Power filter design</li></ul>\n<h2>Материалы</h2>\n<p>OFC-проводники Series 7; COMPOSILEX изоляция поколения 7. IEC + wall plug в стандартной сборке.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Кабель сетевой готовый Wireworld Stratus 7 — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Wireworld Stratus 7 — сетевой шнур Fluxfield / flat design линейки Series 7. Wireworld позиционирует power cords как фильтры: длиннее — тише по их методологии.\n\n Series 7\n Fluxfield\n Flat cable\n OFC\n Power filter design\n\n Материалы\n\n OFC-проводники Series 7; COMPOSILEX изоляция поколения 7. IEC + wall plug в стандартной сборке.",
+  "descriptionText": "Wireworld Stratus 7 — сетевой шнур Fluxfield / flat design линейки Series 7. Wireworld позиционирует power cords как фильтры: длиннее — тише по их методологии.\n\n Series 7\n Fluxfield\n Flat cable\n OFC\n Power filter design\n\n Материалы\n\n OFC-проводники Series 7; COMPOSILEX изоляция поколения 7. IEC + wall plug в стандартной сборке.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Кабель сетевой готовый Wireworld Stratus 7 — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Линейка",
@@ -59,8 +59,11 @@
   "enriched": true,
   "sources": [
     "https://wireworldcable.com/collections/power-cables",
-    "https://wireworldcable.com/"
+    "https://wireworldcable.com/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/927cd285d63a6d0122f0c36e4ca1175d/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:36:06Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

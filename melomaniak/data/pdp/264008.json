@@ -9,9 +9,9 @@
   "price": 27720,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rut-1/",
-  "descriptionHtml": "<p>Acoustic Revive RUT-1 — USB Type-A терминатор/фильтр для неиспользуемого порта: шумопоглощение на USB-шине. Размер ≈ 45 × 18 × 10 мм, 7 г (дилерские данные RUT-1).</p>\n<ul><li>USB terminator</li><li>Noise cut</li><li>≈45×18×10 mm</li><li>7 g</li><li>HITL RUT-1 vs 1K</li></ul>\n<h2>HITL</h2>\n<p>Линейка имеет RUT-1 / RUT-1K; сверьте маркировку на корпусе в салоне.</p>",
+  "descriptionHtml": "<p>Acoustic Revive RUT-1 — USB Type-A терминатор/фильтр для неиспользуемого порта: шумопоглощение на USB-шине. Размер ≈ 45 × 18 × 10 мм, 7 г (дилерские данные RUT-1).</p>\n<ul><li>USB terminator</li><li>Noise cut</li><li>≈45×18×10 mm</li><li>7 g</li><li>HITL RUT-1 vs 1K</li></ul>\n<h2>HITL</h2>\n<p>Линейка имеет RUT-1 / RUT-1K; сверьте маркировку на корпусе в салоне.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>USB кабель Acoustic Revive RUT-1 ( usb acoustic revive rut 1 ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Acoustic Revive RUT-1 — USB Type-A терминатор/фильтр для неиспользуемого порта: шумопоглощение на USB-шине. Размер ≈ 45 × 18 × 10 мм, 7 г (дилерские данные RUT-1).\n\n USB terminator\n Noise cut\n ≈45×18×10 mm\n 7 g\n HITL RUT-1 vs 1K\n\n HITL\n\n Линейка имеет RUT-1 / RUT-1K; сверьте маркировку на корпусе в салоне.",
+  "descriptionText": "Acoustic Revive RUT-1 — USB Type-A терминатор/фильтр для неиспользуемого порта: шумопоглощение на USB-шине. Размер ≈ 45 × 18 × 10 мм, 7 г (дилерские данные RUT-1).\n\n USB terminator\n Noise cut\n ≈45×18×10 mm\n 7 g\n HITL RUT-1 vs 1K\n\n HITL\n\n Линейка имеет RUT-1 / RUT-1K; сверьте маркировку на корпусе в салоне.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n USB кабель Acoustic Revive RUT-1 ( usb acoustic revive rut 1 ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Тип",
@@ -41,8 +41,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.thecableco.com/rut-1-usb-terminator.html"
+    "https://www.thecableco.com/rut-1-usb-terminator.html",
+    "https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rut-1/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:30:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

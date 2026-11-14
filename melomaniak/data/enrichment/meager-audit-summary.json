@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T13:07:49Z",
+  "generatedAt": "2026-11-14T13:38:30Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,106 +8,25 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 1221,
-  "okCount": 666,
+  "meagerCount": 1062,
+  "okCount": 825,
   "reasonTallies": {
-    "gal": 1216,
-    "no_specs": 184,
-    "desc": 54
+    "gal": 1058,
+    "desc": 9
   },
   "byCategory": {
-    "Другое": 404,
-    "Кабели": 262,
-    "Акустика": 224,
-    "Усилители": 211,
-    "Источники": 75,
-    "Ресиверы": 22,
-    "ЦАПы": 11,
-    "Наушники": 9,
-    "Спецпредложения": 2,
+    "Другое": 380,
+    "Кабели": 231,
+    "Усилители": 182,
+    "Акустика": 173,
+    "Источники": 66,
+    "Ресиверы": 13,
+    "ЦАПы": 9,
+    "Наушники": 6,
+    "Спецпредложения": 1,
     "Видео": 1
   },
   "top20": [
-    {
-      "id": 271278,
-      "name": "Кабель miniJack-miniJack Nordost Heimdall 2 iKable",
-      "cat": "Наушники",
-      "price": 69990,
-      "reasons": [
-        "gal:1"
-      ],
-      "enriched": false
-    },
-    {
-      "id": 271276,
-      "name": "Кабель miniJack-miniJack Nordost Blue Heaven iKable",
-      "cat": "Наушники",
-      "price": 39490,
-      "reasons": [
-        "gal:1"
-      ],
-      "enriched": false
-    },
-    {
-      "id": 272828,
-      "name": "Кабель miniJack-2RCA AudioQuest Big Sur",
-      "cat": "Наушники",
-      "price": 23690,
-      "reasons": [
-        "gal:1"
-      ],
-      "enriched": false
-    },
-    {
-      "id": 273916,
-      "name": "Напольная акустика T+A Solitaire S 540",
-      "cat": "Акустика",
-      "price": 7350000,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": false
-    },
-    {
-      "id": 273915,
-      "name": "Напольная акустика T+A Solitaire S 530",
-      "cat": "Акустика",
-      "price": 5625000,
-      "reasons": [
-        "gal:0"
-      ],
-      "enriched": false
-    },
-    {
-      "id": 274022,
-      "name": "Сетевой проигрыватель T+A SDV 3100 HV",
-      "cat": "Источники",
-      "price": 4350000,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": false
-    },
-    {
-      "id": 274019,
-      "name": "Сетевой проигрыватель T+A SD 3100 HV",
-      "cat": "Источники",
-      "price": 4050000,
-      "reasons": [
-        "gal:2"
-      ],
-      "enriched": false
-    },
-    {
-      "id": 273858,
-      "name": "Ламповый моноусилитель мощности T+A М 40 HV",
-      "cat": "Усилители",
-      "price": 3600000,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": false
-    },
     {
       "id": 264554,
       "name": "Кабель для наушников SAEC  SHC-2B300FH80 ( saec shc 2b300fh80 )",
@@ -169,6 +88,26 @@
       "enriched": true
     },
     {
+      "id": 274022,
+      "name": "Сетевой проигрыватель T+A SDV 3100 HV",
+      "cat": "Источники",
+      "price": 4350000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 273858,
+      "name": "Ламповый моноусилитель мощности T+A М 40 HV",
+      "cat": "Усилители",
+      "price": 3600000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
       "id": 273929,
       "name": "Стереоусилитель T+A PA 3100 HV",
       "cat": "Усилители",
@@ -176,7 +115,7 @@
       "reasons": [
         "gal:2"
       ],
-      "enriched": false
+      "enriched": true
     },
     {
       "id": 273970,
@@ -186,7 +125,7 @@
       "reasons": [
         "gal:3"
       ],
-      "enriched": false
+      "enriched": true
     },
     {
       "id": 273984,
@@ -196,7 +135,7 @@
       "reasons": [
         "gal:2"
       ],
-      "enriched": false
+      "enriched": true
     },
     {
       "id": 274016,
@@ -206,27 +145,87 @@
       "reasons": [
         "gal:2"
       ],
-      "enriched": false
+      "enriched": true
     },
     {
-      "id": 273966,
-      "name": "Предусилитель T+A P 3000 HV",
+      "id": 273926,
+      "name": "Стереоусилитель T+A PA 2500 R",
       "cat": "Усилители",
-      "price": 1775700,
+      "price": 1378100,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 273923,
+      "name": "Стереоусилитель T+A PA 2000 R",
+      "cat": "Усилители",
+      "price": 1185000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 273850,
+      "name": "Полочная акустика T+A Talis R 300",
+      "cat": "Акустика",
+      "price": 1035000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 273920,
+      "name": "Стереоусилитель T+A PA 1000 E",
+      "cat": "Усилители",
+      "price": 570000,
       "reasons": [
         "gal:3"
       ],
-      "enriched": false
+      "enriched": true
     },
     {
-      "id": 273906,
-      "name": "Напольная акустика T+A Talis S 300",
+      "id": 262057,
+      "name": "Полочная акустика Divini Audio Reference 3 ( divini audio reference 3 )",
       "cat": "Акустика",
-      "price": 1725000,
+      "price": 3500000,
       "reasons": [
         "gal:1"
       ],
-      "enriched": false
+      "enriched": true
+    },
+    {
+      "id": 274105,
+      "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
+      "cat": "Другое",
+      "price": 234000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 274103,
+      "name": "Сетевой фильтр T+A Power Bar 2+3 Basic HD",
+      "cat": "Другое",
+      "price": 202500,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262053,
+      "name": "Напольная акустика Divini Audio Illusion ( divini audio illusion )",
+      "cat": "Акустика",
+      "price": 14000000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
     }
   ]
 }

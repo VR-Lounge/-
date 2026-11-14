@@ -9,9 +9,9 @@
   "price": 140250,
   "old": 165000,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d1%82%d0%b0%d0%b1%d0%b8%d0%bb%d0%b8%d0%b7%d0%b0%d1%82%d0%be%d1%80-audio-replas-ops-1-hr/",
-  "descriptionHtml": "<p>Audio Replas OPS-1 HR — стабилизатор/изолятор OPS-1 HR на кварцевой платформе Audio Replas.</p>\n<ul><li>OPS-1 HR</li><li>Stabilizer</li><li>Audio Replas</li><li>HITL dims</li></ul>\n<h2>HITL</h2>\n<p>Точные габариты OPS-1 HR — по прайсу audio-replas.com; публичная страница краткая.</p>",
+  "descriptionHtml": "<p>Audio Replas OPS-1 HR — стабилизатор/изолятор OPS-1 HR на кварцевой платформе Audio Replas.</p>\n<ul><li>OPS-1 HR</li><li>Stabilizer</li><li>Audio Replas</li><li>HITL dims</li></ul>\n<h2>HITL</h2>\n<p>Точные габариты OPS-1 HR — по прайсу audio-replas.com; публичная страница краткая.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Стабилизатор Audio Replas OPS-1 HR ( audio replas ops 1 hr ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Audio Replas OPS-1 HR — стабилизатор/изолятор OPS-1 HR на кварцевой платформе Audio Replas.\n\n OPS-1 HR\n Stabilizer\n Audio Replas\n HITL dims\n\n HITL\n\n Точные габариты OPS-1 HR — по прайсу audio-replas.com; публичная страница краткая.",
+  "descriptionText": "Audio Replas OPS-1 HR — стабилизатор/изолятор OPS-1 HR на кварцевой платформе Audio Replas.\n\n OPS-1 HR\n Stabilizer\n Audio Replas\n HITL dims\n\n HITL\n\n Точные габариты OPS-1 HR — по прайсу audio-replas.com; публичная страница краткая.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Стабилизатор Audio Replas OPS-1 HR ( audio replas ops 1 hr ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Модель",
@@ -41,8 +41,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.audio-replas.com/"
+    "https://www.audio-replas.com/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d1%82%d0%b0%d0%b1%d0%b8%d0%bb%d0%b8%d0%b7%d0%b0%d1%82%d0%be%d1%80-audio-replas-ops-1-hr/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

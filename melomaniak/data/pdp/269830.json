@@ -9,9 +9,9 @@
   "price": 7400,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/bc951df8df19bed3043a6fd7cc9c67b6/",
-  "descriptionHtml": "<p>Wireworld Luna 8 Mono — сабвуферный RCA на платформе Luna 8 (mono). Для LFE/line между ресивером и активным сабом.</p>\n<ul><li>Luna 8</li><li>Mono RCA</li><li>Subwoofer</li><li>Series 8</li></ul>\n<h2>Конструкция</h2>\n<p>Mono RCA; материалы Series 8 Luna.</p>",
+  "descriptionHtml": "<p>Wireworld Luna 8 Mono — сабвуферный RCA на платформе Luna 8 (mono). Для LFE/line между ресивером и активным сабом.</p>\n<ul><li>Luna 8</li><li>Mono RCA</li><li>Subwoofer</li><li>Series 8</li></ul>\n<h2>Конструкция</h2>\n<p>Mono RCA; материалы Series 8 Luna.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Кабель для сабвуфера Wireworld Luna 8 Mono — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>\n<p>Проверка OEM и витрины обязательна для Кабель для сабвуфера Wireworld Luna 8 Mono. Не публикуем маркетинг без цифр.</p>",
   "shortHtml": "",
-  "descriptionText": "Wireworld Luna 8 Mono — сабвуферный RCA на платформе Luna 8 (mono). Для LFE/line между ресивером и активным сабом.\n\n Luna 8\n Mono RCA\n Subwoofer\n Series 8\n\n Конструкция\n\n Mono RCA; материалы Series 8 Luna.",
+  "descriptionText": "Wireworld Luna 8 Mono — сабвуферный RCA на платформе Luna 8 (mono). Для LFE/line между ресивером и активным сабом.\n\n Luna 8\n Mono RCA\n Subwoofer\n Series 8\n\n Конструкция\n\n Mono RCA; материалы Series 8 Luna.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Кабель для сабвуфера Wireworld Luna 8 Mono — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.\n\n Проверка OEM и витрины обязательна для Кабель для сабвуфера Wireworld Luna 8 Mono. Не публикуем маркетинг без цифр.",
   "specs": [
     {
       "label": "Линейка",
@@ -46,8 +46,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://wireworldcable.com/"
+    "https://wireworldcable.com/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/bc951df8df19bed3043a6fd7cc9c67b6/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:36:06Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

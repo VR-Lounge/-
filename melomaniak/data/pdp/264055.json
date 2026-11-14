@@ -9,9 +9,9 @@
   "price": 5800,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%b1%d1%81%d0%be%d1%80%d0%b1%d0%b5%d1%80-acoustic-revive-psa-100/",
-  "descriptionHtml": "<p>Acoustic Revive PSA-100 — вибрационный/акустический абсорбер линейки Acoustic Revive для шасси и стоек.</p>\n<ul><li>Absorber</li><li>Acoustic Revive</li><li>Chassis/stand</li><li>HITL dims</li></ul>\n<h2>HITL</h2>\n<p>Материал/габариты партии — по этикетке PSA-100; публичные OEM-таблицы тонкие.</p>",
+  "descriptionHtml": "<p>Acoustic Revive PSA-100 — вибрационный/акустический абсорбер линейки Acoustic Revive для шасси и стоек.</p>\n<ul><li>Absorber</li><li>Acoustic Revive</li><li>Chassis/stand</li><li>HITL dims</li></ul>\n<h2>HITL</h2>\n<p>Материал/габариты партии — по этикетке PSA-100; публичные OEM-таблицы тонкие.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Абсорбер Acoustic Revive PSA-100 ( acoustic revive psa 100 ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Acoustic Revive PSA-100 — вибрационный/акустический абсорбер линейки Acoustic Revive для шасси и стоек.\n\n Absorber\n Acoustic Revive\n Chassis/stand\n HITL dims\n\n HITL\n\n Материал/габариты партии — по этикетке PSA-100; публичные OEM-таблицы тонкие.",
+  "descriptionText": "Acoustic Revive PSA-100 — вибрационный/акустический абсорбер линейки Acoustic Revive для шасси и стоек.\n\n Absorber\n Acoustic Revive\n Chassis/stand\n HITL dims\n\n HITL\n\n Материал/габариты партии — по этикетке PSA-100; публичные OEM-таблицы тонкие.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Абсорбер Acoustic Revive PSA-100 ( acoustic revive psa 100 ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Тип",
@@ -41,8 +41,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://acoustic-revive.com/"
+    "https://acoustic-revive.com/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%b1%d1%81%d0%be%d1%80%d0%b1%d0%b5%d1%80-acoustic-revive-psa-100/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

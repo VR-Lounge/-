@@ -9,9 +9,9 @@
   "price": 0,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-hdmi-furutech-alpha-h-1/",
-  "descriptionHtml": "<p>ADL by Furutech. HDMI кабель разделанный, ver. 1.3. HDMI полная поддержка стандарта 1.4 в видео части &#8211; 3D Video Digital Cable,1.3. Длина Visual Grand Prix 2008 !</p>\n<p>Кабель HDMI Furutech Alpha H-1 ( hdmi furutech alpha h 1 ) — Melomaniak wave4: OEM/дилерские факты без выдуманных ампер и мм².</p>\n<aside><p><strong>HITL gallery.</strong> Коннекторы и кабели часто 1 pack-shot; добить витриной без водяных знаков.</p></aside>\n<p>Сверить покрытие (R/G/Cu/NCF), серию и комплектность. При расхождении — паспорт экземпляра.</p>\n<p>Не смешиваем соседние артикулы Furutech/AR/Replas.</p>",
+  "descriptionHtml": "<p>ADL by Furutech. HDMI кабель разделанный, ver. 1.3. HDMI полная поддержка стандарта 1.4 в видео части &#8211; 3D Video Digital Cable,1.3. Длина Visual Grand Prix 2008 !</p>\n<p>Кабель HDMI Furutech Alpha H-1 ( hdmi furutech alpha h 1 ) — Melomaniak wave4: OEM/дилерские факты без выдуманных ампер и мм².</p>\n<aside><p><strong>HITL gallery.</strong> Коннекторы и кабели часто 1 pack-shot; добить витриной без водяных знаков.</p></aside>\n<p>Сверить покрытие (R/G/Cu/NCF), серию и комплектность. При расхождении — паспорт экземпляра.</p>\n<p>Не смешиваем соседние артикулы Furutech/AR/Replas.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Кабель HDMI Furutech Alpha H-1 ( hdmi furutech alpha h 1 ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "ADL by Furutech. HDMI кабель разделанный, ver. 1.3. HDMI полная поддержка стандарта 1.4 в видео части &#8211; 3D Video Digital Cable,1.3. Длина Visual Grand Prix 2008 !\n\n Кабель HDMI Furutech Alpha H-1 ( hdmi furutech alpha h 1 ) — Melomaniak wave4: OEM/дилерские факты без выдуманных ампер и мм².\n\n HITL gallery. Коннекторы и кабели часто 1 pack-shot; добить витриной без водяных знаков.\n\n Сверить покрытие (R/G/Cu/NCF), серию и комплектность. При расхождении — паспорт экземпляра.\n\n Не смешиваем соседние артикулы Furutech/AR/Replas.",
+  "descriptionText": "ADL by Furutech. HDMI кабель разделанный, ver. 1.3. HDMI полная поддержка стандарта 1.4 в видео части &#8211; 3D Video Digital Cable,1.3. Длина Visual Grand Prix 2008 !\n\n Кабель HDMI Furutech Alpha H-1 ( hdmi furutech alpha h 1 ) — Melomaniak wave4: OEM/дилерские факты без выдуманных ампер и мм².\n\n HITL gallery. Коннекторы и кабели часто 1 pack-shot; добить витриной без водяных знаков.\n\n Сверить покрытие (R/G/Cu/NCF), серию и комплектность. При расхождении — паспорт экземпляра.\n\n Не смешиваем соседние артикулы Furutech/AR/Replas.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Кабель HDMI Furutech Alpha H-1 ( hdmi furutech alpha h 1 ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Модель",
@@ -46,9 +46,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://furutech.com/"
+    "https://furutech.com/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-hdmi-furutech-alpha-h-1/"
   ],
-  "enrichedAt": "2026-11-14T13:07:48Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "enrichedAt": "2026-11-14T13:34:53Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

@@ -36,6 +36,51 @@
   ],
   "gallery": [
     {
+      "src": "local://9d0e42c32f_courbet3-noyer-par.png",
+      "thumb": "assets/enriched/274450/1189ebd7cf_live1.png",
+      "alt": "Напольная акустика Davis Acoustics Courbet N°8",
+      "local": "assets/enriched/274450/1189ebd7cf_live1.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 135913
+    },
+    {
+      "src": "local://034f4f5e21_courbet-3-blanche-cache-scaled-1.jpg",
+      "thumb": "assets/enriched/274450/80b905e987_live2.jpg",
+      "alt": "Напольная акустика Davis Acoustics Courbet N°8",
+      "local": "assets/enriched/274450/80b905e987_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 47064
+    },
+    {
+      "src": "local://8f3d8dea54_courbet5-blanche-par.png",
+      "thumb": "assets/enriched/274450/9809887e75_live3.png",
+      "alt": "Напольная акустика Davis Acoustics Courbet N°8",
+      "local": "assets/enriched/274450/9809887e75_live3.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 135635
+    },
+    {
+      "src": "local://c11bdafca0_courbet-3-rouge-cache-pdt.png",
+      "thumb": "assets/enriched/274450/007bbd614c_live4.png",
+      "alt": "Напольная акустика Davis Acoustics Courbet N°8",
+      "local": "assets/enriched/274450/007bbd614c_live4.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 117167
+    },
+    {
+      "src": "local://5f0df2efc3_courbet-n_5-6-scaled-1.jpg",
+      "thumb": "assets/enriched/274450/65289d2d6d_live5.jpg",
+      "alt": "Напольная акустика Davis Acoustics Courbet N°8",
+      "local": "assets/enriched/274450/65289d2d6d_live5.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 42829
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/courbet8-noire-par.png",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/courbet8-noire-par.png",
       "alt": "courbet8-noire-par",
@@ -58,9 +103,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/"
+    "https://xn--80aannlcfckh.xn--p1ai/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-courbet-n8/"
   ],
-  "enrichedAt": "2026-11-14T13:04:10Z",
+  "enrichedAt": "2026-11-14T13:36:56Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w5-2026-11"
 }

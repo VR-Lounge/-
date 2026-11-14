@@ -9,9 +9,9 @@
   "price": 104990,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/2890863aa57ec793a8328c2f17a206cd/",
-  "descriptionHtml": "<p>Кабель сетевой готовый Nordost Red Dawn 16 Amp C19 — Entry-level Leif-family AC power cord using FEP insulation and Nordost Micro Mono-Filament construction. Характеристики ниже — только с страницы/листа производителя.</p>\n<ul><li>Conductors: 3 × 12 AWG, 168-strand 99.9999% OFC</li><li>Insulation: Fluorinated ethylene propylene (FEP)</li><li>Capacitance: 8.5 pF/ft</li><li>Inductance: 0.121 μH/ft</li><li>DC resistance: 1.64 ohms per 1,000 ft</li></ul>\n<h2>Характеристики производителя</h2>\n<p><strong>Conductors</strong>: 3 × 12 AWG, 168-strand 99.9999% OFC · <strong>Insulation</strong>: Fluorinated ethylene propylene (FEP) · <strong>Capacitance</strong>: 8.5 pF/ft · <strong>Inductance</strong>: 0.121 μH/ft · <strong>DC resistance</strong>: 1.64 ohms per 1,000 ft · <strong>Terminations</strong>: US (NEMA), EU (Schuko), UK or AUS to IEC-C15 or IEC-C19.</p>",
+  "descriptionHtml": "<p>Кабель сетевой готовый Nordost Red Dawn 16 Amp C19 — Entry-level Leif-family AC power cord using FEP insulation and Nordost Micro Mono-Filament construction. Характеристики ниже — только с страницы/листа производителя.</p>\n<ul><li>Conductors: 3 × 12 AWG, 168-strand 99.9999% OFC</li><li>Insulation: Fluorinated ethylene propylene (FEP)</li><li>Capacitance: 8.5 pF/ft</li><li>Inductance: 0.121 μH/ft</li><li>DC resistance: 1.64 ohms per 1,000 ft</li></ul>\n<h2>Характеристики производителя</h2>\n<p><strong>Conductors</strong>: 3 × 12 AWG, 168-strand 99.9999% OFC · <strong>Insulation</strong>: Fluorinated ethylene propylene (FEP) · <strong>Capacitance</strong>: 8.5 pF/ft · <strong>Inductance</strong>: 0.121 μH/ft · <strong>DC resistance</strong>: 1.64 ohms per 1,000 ft · <strong>Terminations</strong>: US (NEMA), EU (Schuko), UK or AUS to IEC-C15 or IEC-C19.</p><h2>HITL</h2><p>galleryHitl: OEM/пресс &lt;4 ракурса. Добить витриной без водяных знаков.</p>",
   "shortHtml": "",
-  "descriptionText": "Кабель сетевой готовый Nordost Red Dawn 16 Amp C19 — Entry-level Leif-family AC power cord using FEP insulation and Nordost Micro Mono-Filament construction. Характеристики ниже — только с страницы/листа производителя.\n\n Conductors: 3 × 12 AWG, 168-strand 99.9999% OFC\n Insulation: Fluorinated ethylene propylene (FEP)\n Capacitance: 8.5 pF/ft\n Inductance: 0.121 μH/ft\n DC resistance: 1.64 ohms per 1,000 ft\n\n Характеристики производителя\n\n Conductors : 3 × 12 AWG, 168-strand 99.9999% OFC · Insulation : Fluorinated ethylene propylene (FEP) · Capacitance : 8.5 pF/ft · Inductance : 0.121 μH/ft · DC resistance : 1.64 ohms per 1,000 ft · Terminations : US (NEMA), EU (Schuko), UK or AUS to IEC-C15 or IEC-C19.",
+  "descriptionText": "Кабель сетевой готовый Nordost Red Dawn 16 Amp C19 — Entry-level Leif-family AC power cord using FEP insulation and Nordost Micro Mono-Filament construction. Характеристики ниже — только с страницы/листа производителя.\n\n Conductors: 3 × 12 AWG, 168-strand 99.9999% OFC\n Insulation: Fluorinated ethylene propylene (FEP)\n Capacitance: 8.5 pF/ft\n Inductance: 0.121 μH/ft\n DC resistance: 1.64 ohms per 1,000 ft\n\n Характеристики производителя\n\n Conductors : 3 × 12 AWG, 168-strand 99.9999% OFC · Insulation : Fluorinated ethylene propylene (FEP) · Capacitance : 8.5 pF/ft · Inductance : 0.121 μH/ft · DC resistance : 1.64 ohms per 1,000 ft · Terminations : US (NEMA), EU (Schuko), UK or AUS to IEC-C15 or IEC-C19.\n HITL\n galleryHitl: OEM/пресс &lt;4 ракурса. Добить витриной без водяных знаков.",
   "specs": [
     {
       "label": "Conductors",
@@ -63,8 +63,11 @@
   "enriched": true,
   "sources": [
     "https://www.nordost.com/leif/red-dawn/red-dawn-3-power-cord.php",
-    "https://nordost.com/downloads/multiLanguage/Leif%203%20Brochure_Web.pdf"
+    "https://nordost.com/downloads/multiLanguage/Leif%203%20Brochure_Web.pdf",
+    "https://xn--80aannlcfckh.xn--p1ai/product/2890863aa57ec793a8328c2f17a206cd/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:36:22Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }

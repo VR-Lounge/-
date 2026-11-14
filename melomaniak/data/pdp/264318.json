@@ -9,9 +9,9 @@
   "price": 2310,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-201r/",
-  "descriptionHtml": "<p>Furutech FP-201(R) — Y-spade α (Alpha) pure copper, Rhodium. Винт/пайка; кабель до ~5–6 мм. 12,9 × 40 мм; зев 8,2 мм.</p>\n<ul><li>α pure copper</li><li>Rhodium</li><li>Spade</li><li>≤5–6 mm cable</li><li>8.2 mm fork</li></ul>\n<h2>Применение</h2>\n<p>Акустические терминалы усилителя/колонок; комплект обычно 4 шт.</p>",
+  "descriptionHtml": "<p>Furutech FP-201(R) — Y-spade α (Alpha) pure copper, Rhodium. Винт/пайка; кабель до ~5–6 мм. 12,9 × 40 мм; зев 8,2 мм.</p>\n<ul><li>α pure copper</li><li>Rhodium</li><li>Spade</li><li>≤5–6 mm cable</li><li>8.2 mm fork</li></ul>\n<h2>Применение</h2>\n<p>Акустические терминалы усилителя/колонок; комплект обычно 4 шт.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Спайд Furutech FP-201(R) ( furutech fp 201(r) ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
   "shortHtml": "",
-  "descriptionText": "Furutech FP-201(R) — Y-spade α (Alpha) pure copper, Rhodium. Винт/пайка; кабель до ~5–6 мм. 12,9 × 40 мм; зев 8,2 мм.\n\n α pure copper\n Rhodium\n Spade\n ≤5–6 mm cable\n 8.2 mm fork\n\n Применение\n\n Акустические терминалы усилителя/колонок; комплект обычно 4 шт.",
+  "descriptionText": "Furutech FP-201(R) — Y-spade α (Alpha) pure copper, Rhodium. Винт/пайка; кабель до ~5–6 мм. 12,9 × 40 мм; зев 8,2 мм.\n\n α pure copper\n Rhodium\n Spade\n ≤5–6 mm cable\n 8.2 mm fork\n\n Применение\n\n Акустические терминалы усилителя/колонок; комплект обычно 4 шт.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Спайд Furutech FP-201(R) ( furutech fp 201(r) ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
   "specs": [
     {
       "label": "Тип",
@@ -51,8 +51,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://furutech.com/product/fp-201-r-g"
+    "https://furutech.com/product/fp-201-r-g",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-201r/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
 }
