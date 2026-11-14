@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T20:08:20Z",
+  "generatedAt": "2026-11-14T21:43:10Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,84 +8,23 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 635,
-  "okCount": 1252,
+  "meagerCount": 500,
+  "okCount": 1387,
   "reasonTallies": {
-    "gal": 635
+    "gal": 500
   },
   "byCategory": {
-    "Другое": 305,
-    "Кабели": 175,
-    "Усилители": 73,
-    "Акустика": 39,
-    "Источники": 24,
-    "ЦАПы": 8,
-    "Ресиверы": 5,
-    "Наушники": 4,
+    "Другое": 223,
+    "Кабели": 153,
+    "Усилители": 65,
+    "Акустика": 28,
+    "Источники": 22,
+    "ЦАПы": 5,
+    "Ресиверы": 2,
     "Спецпредложения": 1,
     "Видео": 1
   },
   "top20": [
-    {
-      "id": 264551,
-      "name": "Кабель для наушников SAEC  SHC-B120FF ( saec shc b120ff )",
-      "cat": "Наушники",
-      "price": 30187,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 264550,
-      "name": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
-      "cat": "Наушники",
-      "price": 24699,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 264549,
-      "name": "Кабель для наушников SAEC  SHC-120FF ( saec shc 120ff )",
-      "cat": "Наушники",
-      "price": 20582,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 264548,
-      "name": "Кабель для наушников SAEC  SHC-120FS ( saec shc 120fs )",
-      "cat": "Наушники",
-      "price": 15094,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 274105,
-      "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
-      "cat": "Другое",
-      "price": 234000,
-      "reasons": [
-        "gal:1"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 274103,
-      "name": "Сетевой фильтр T+A Power Bar 2+3 Basic HD",
-      "cat": "Другое",
-      "price": 202500,
-      "reasons": [
-        "gal:1"
-      ],
-      "enriched": true
-    },
     {
       "id": 270461,
       "name": "Виниловый проигрыватель Transrotor Dark Star Reference",
@@ -107,32 +46,12 @@
       "enriched": true
     },
     {
-      "id": 269517,
-      "name": "Активный сабвуфер Magnat Signature Sub 730 A",
-      "cat": "Акустика",
-      "price": 94990,
-      "reasons": [
-        "gal:2"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 269533,
-      "name": "Активный сабвуфер Magnat Signature Sub 530 A",
-      "cat": "Акустика",
-      "price": 84990,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
       "id": 269814,
       "name": "Кабель межблочный аналоговый RCA QED Reference 40",
       "cat": "Кабели",
       "price": 22000,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "enriched": true
     },
@@ -223,6 +142,86 @@
       "price": 790000,
       "reasons": [
         "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 15910,
+      "name": "предусилитель Herron Audio VTSP 3 ( herron audio vtsp 3 )",
+      "cat": "Усилители",
+      "price": 780000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 26638,
+      "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
+      "cat": "Усилители",
+      "price": 731250,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 270472,
+      "name": "Виниловый проигрыватель Transrotor ZET 1",
+      "cat": "Источники",
+      "price": 691900,
+      "reasons": [
+        "gal:0"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 15890,
+      "name": "интегральный усилитель Air Tight ATM 4 ( air tight atm 4 )",
+      "cat": "Усилители",
+      "price": 680000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262137,
+      "name": "ЦАП Soulnote D 1N  ( soulnote d 1n  )",
+      "cat": "ЦАПы",
+      "price": 650000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262119,
+      "name": "Предусилитель Line Magnetic Audio LM 133 ( line magnetic audio lm 133 )",
+      "cat": "Усилители",
+      "price": 640000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 15908,
+      "name": "предусилитель Herron Audio VTSP 2 ( herron audio vtsp 2 )",
+      "cat": "Усилители",
+      "price": 620000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 16800,
+      "name": "интегральный усилитель Spec RSA V1 EX ( spec rsa v1 ex )",
+      "cat": "Усилители",
+      "price": 595845,
+      "reasons": [
+        "gal:2"
       ],
       "enriched": true
     }

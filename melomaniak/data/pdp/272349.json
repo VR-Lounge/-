@@ -79,7 +79,16 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "http://www.bluesound.com/cdn/shop/files/BluesoundPULSESUB3-4Black-withShadow-2000x2000px.png",
+      "local": "assets/enriched/272349/e34d11c5a4_w14oem.png",
+      "bytes": 3506296,
+      "wave": "meager-w14-2026-11",
+      "w": 2000,
+      "h": 2000
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

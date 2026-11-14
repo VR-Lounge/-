@@ -1,0 +1,24 @@
+{
+  "wave": "meager-w14-2026-11",
+  "prev_meager": 635,
+  "meager_now": 500,
+  "cleared_delta": 135,
+  "remaining_by_cat": {
+    "Другое": 223,
+    "Кабели": 153,
+    "Усилители": 65,
+    "Акустика": 28,
+    "Источники": 22,
+    "ЦАПы": 5,
+    "Ресиверы": 2,
+    "Спецпредложения": 1,
+    "Видео": 1
+  },
+  "w14_cleared_gal4_count": 135,
+  "notes": [
+    "All remaining are gal-only",
+    "Priority: Усилители→Акустика→Источники→Наушники/ЦАПы/Ресиверы→Кабели→Другое",
+    "Strict SKU: shop variants + OEM + from-live + media packs",
+    "Headphones 4/4 cleared; heavy Furutech/Replas connector clears in Другое/Кабели"
+  ]
+}
