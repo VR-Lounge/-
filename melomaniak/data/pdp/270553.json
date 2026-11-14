@@ -59,7 +59,40 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://www.vandenhul.com/wp-content/uploads/2026/04/024_-_Van_den_Hul_-_Bay_C5_Hybrid1-scaled.jpg",
+      "local": "assets/enriched/270553/e815f9fa2d_w17cdn.jpg",
+      "bytes": 193187,
+      "wave": "meager-w17-2026-11",
+      "w": 2560,
+      "h": 1707
+    },
+    {
+      "src": "https://www.vandenhul.com/wp-content/uploads/2026/04/024_-_Van_den_Hul_-_Bay_C5_Hybrid1-600x400.jpg",
+      "local": "assets/enriched/270553/268547459b_w17cdn.jpg",
+      "bytes": 20979,
+      "wave": "meager-w17-2026-11",
+      "w": 600,
+      "h": 400
+    },
+    {
+      "src": "https://www.vandenhul.com/wp-content/uploads/2026/04/025_-_Van_den_Hul_-_Bay_C5_Hybrid1-600x400.jpg",
+      "local": "assets/enriched/270553/e8e58c90f4_w17cdn.jpg",
+      "bytes": 22415,
+      "wave": "meager-w17-2026-11",
+      "w": 600,
+      "h": 400
+    },
+    {
+      "src": "https://www.vandenhul.com/wp-content/uploads/2026/04/026_-_Van_den_Hul_-_Bay_C5_Hybrid1-600x400.jpg",
+      "local": "assets/enriched/270553/59e8921038_w17cdn.jpg",
+      "bytes": 30915,
+      "wave": "meager-w17-2026-11",
+      "w": 600,
+      "h": 400
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

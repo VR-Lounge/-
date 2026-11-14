@@ -104,7 +104,40 @@
       "source": "list"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/EVO4.CSStandardBlack_1.jpg",
+      "local": "assets/enriched/270749/39b3ca00d8_w17cdn.jpg",
+      "bytes": 71068,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1367
+    },
+    {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/EVO4.CSStandardBlack_2.jpg",
+      "local": "assets/enriched/270749/a5f071b07c_w17cdn.jpg",
+      "bytes": 58267,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1367
+    },
+    {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/EVO4.CSStandardBlack_3.jpg",
+      "local": "assets/enriched/270749/2a7329b4e8_w17cdn.jpg",
+      "bytes": 35954,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1367
+    },
+    {
+      "src": "local-variant://270749/w17hsc95",
+      "local": "assets/enriched/270749/1d64900ef9_w17hsc95.jpg",
+      "bytes": 83507,
+      "wave": "meager-w17-2026-11",
+      "w": 1140,
+      "h": 1298
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

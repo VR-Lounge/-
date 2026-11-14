@@ -89,7 +89,56 @@
       "source": "list"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kube-15-mie-subwoofer_sp4102b0_product__front.png",
+      "local": "assets/enriched/271626/21a5de2d53_w17cdn.png",
+      "bytes": 1754681,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kube-15-mie-subwoofer_sp4102b0_lifestyle.png",
+      "local": "assets/enriched/271626/beec6b485f_w17cdn.png",
+      "bytes": 1238793,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kube-15-mie-subwoofer_sp4102b0_product_measurement_front.png",
+      "local": "assets/enriched/271626/a9ac4a3a7d_w17cdn.png",
+      "bytes": 1462944,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kube-15-mie-subwoofer_sp4102b0_product__front-side.png",
+      "local": "assets/enriched/271626/762e5ad2f4_w17cdn.png",
+      "bytes": 1847903,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kube-15-mie-subwoofer_sp4102b0_product__back.png",
+      "local": "assets/enriched/271626/056f2e88a4_w17cdn.png",
+      "bytes": 1810700,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kube-15-mie-subwoofer_sp4102b0_product__back-side.png",
+      "local": "assets/enriched/271626/8747d95333_w17cdn.png",
+      "bytes": 1551189,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

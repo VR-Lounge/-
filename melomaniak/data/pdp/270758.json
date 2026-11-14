@@ -94,7 +94,40 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/AURA_C_Standard_Black_1.jpg?v=1726631874&width=1200",
+      "local": "assets/enriched/270758/e92e1fbe83_w17cdn.jpg",
+      "bytes": 54317,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1367
+    },
+    {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/AURA_C_Standard_Black_2.jpg?v=1726631874&width=1200",
+      "local": "assets/enriched/270758/a29429e7f9_w17cdn.jpg",
+      "bytes": 51642,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1367
+    },
+    {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/AURA_C_Standard_Black_3.jpg?v=1726631874&width=1200",
+      "local": "assets/enriched/270758/a3b189cc15_w17cdn.jpg",
+      "bytes": 39693,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1367
+    },
+    {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/AURA_C_Standard_Black_4.jpg?v=1726631874&width=1200",
+      "local": "assets/enriched/270758/350b0b6331_w17cdn.jpg",
+      "bytes": 54315,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1367
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

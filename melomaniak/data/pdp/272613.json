@@ -94,7 +94,56 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/07/teaser-Smart-Phono-V2.jpg",
+      "local": "assets/enriched/272613/41f05d5687_w17cdn.jpg",
+      "bytes": 26496,
+      "wave": "meager-w17-2026-11",
+      "w": 800,
+      "h": 727
+    },
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/07/Hero-Smart-Phono-V2.jpg",
+      "local": "assets/enriched/272613/b204eac095_w17cdn.jpg",
+      "bytes": 36306,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 650
+    },
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/07/Hero-mobile-Smart-Phono-V2.jpg",
+      "local": "assets/enriched/272613/d994b4850e_w17cdn.jpg",
+      "bytes": 89534,
+      "wave": "meager-w17-2026-11",
+      "w": 1125,
+      "h": 1492
+    },
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/07/E-Smart-Phono-V2-05-2013.jpg",
+      "local": "assets/enriched/272613/f638e2c393_w17cdn.jpg",
+      "bytes": 441118,
+      "wave": "meager-w17-2026-11",
+      "w": 1699,
+      "h": 1019
+    },
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/07/E-Smart-Phono-V2-Det1-05-2013.jpg",
+      "local": "assets/enriched/272613/4ed195e5ce_w17cdn.jpg",
+      "bytes": 184627,
+      "wave": "meager-w17-2026-11",
+      "w": 1608,
+      "h": 1200
+    },
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/07/EL-Smart-Phono-silber-Unterseite-17-03.jpg",
+      "local": "assets/enriched/272613/676ebc879c_w17cdn.jpg",
+      "bytes": 185848,
+      "wave": "meager-w17-2026-11",
+      "w": 1086,
+      "h": 1200
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

@@ -99,7 +99,48 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/102496/silver-7g-gloss.jpg",
+      "local": "assets/enriched/271101/dc03f0dabf_w17cdn.jpg",
+      "bytes": 92627,
+      "wave": "meager-w17-2026-11",
+      "w": 1600,
+      "h": 1600
+    },
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/102497/silver-7g-oak.jpg",
+      "local": "assets/enriched/271101/03c5c9332d_w17cdn.jpg",
+      "bytes": 137167,
+      "wave": "meager-w17-2026-11",
+      "w": 1600,
+      "h": 1600
+    },
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/102498/silver-7g-walnut.jpg",
+      "local": "assets/enriched/271101/1b1fcca29f_w17cdn.jpg",
+      "bytes": 116371,
+      "wave": "meager-w17-2026-11",
+      "w": 1600,
+      "h": 1600
+    },
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/102499/silver-7g-ash.jpg",
+      "local": "assets/enriched/271101/62cf98430f_w17cdn.jpg",
+      "bytes": 138732,
+      "wave": "meager-w17-2026-11",
+      "w": 1600,
+      "h": 1600
+    },
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/102513/silver-7g-white.jpg",
+      "local": "assets/enriched/271101/cc44cd71f7_w17cdn.jpg",
+      "bytes": 82157,
+      "wave": "meager-w17-2026-11",
+      "w": 1600,
+      "h": 1600
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

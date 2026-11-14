@@ -89,7 +89,56 @@
       "source": "list"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://cdn02.plentyone.com/dvw13795n3e0/item/images/110401/full/Aune-S10N-black.jpg",
+      "local": "assets/enriched/271925/b081860452_w17cdn.jpg",
+      "bytes": 102348,
+      "wave": "meager-w17-2026-11",
+      "w": 1500,
+      "h": 1125
+    },
+    {
+      "src": "https://cdn02.plentyone.com/dvw13795n3e0/item/images/110401/full/Aune-S10N-Music-Player-black.jpg",
+      "local": "assets/enriched/271925/c333462d2a_w17cdn.jpg",
+      "bytes": 111457,
+      "wave": "meager-w17-2026-11",
+      "w": 1500,
+      "h": 1125
+    },
+    {
+      "src": "https://cdn02.plentyone.com/dvw13795n3e0/item/images/110401/full/Aune-S10N-black-back.jpg",
+      "local": "assets/enriched/271925/b380835049_w17cdn.jpg",
+      "bytes": 131614,
+      "wave": "meager-w17-2026-11",
+      "w": 1500,
+      "h": 1125
+    },
+    {
+      "src": "https://cdn02.plentymarkets.com/dvw13795n3e0/frontend/Aune_S10N/Aune-S10N-Network-Audio-Player.jpg",
+      "local": "assets/enriched/271925/958f6ede90_w17cdn.jpg",
+      "bytes": 140737,
+      "wave": "meager-w17-2026-11",
+      "w": 1280,
+      "h": 634
+    },
+    {
+      "src": "https://cdn02.plentymarkets.com/dvw13795n3e0/frontend/Aune_S10N/Aune-S10N-overview.jpg",
+      "local": "assets/enriched/271925/0146a4c3a4_w17cdn.jpg",
+      "bytes": 129976,
+      "wave": "meager-w17-2026-11",
+      "w": 1280,
+      "h": 555
+    },
+    {
+      "src": "https://cdn02.plentymarkets.com/dvw13795n3e0/frontend/Aune_S10N/Aune-S10N-Interface.jpg",
+      "local": "assets/enriched/271925/19ba9213b8_w17cdn.jpg",
+      "bytes": 117532,
+      "wave": "meager-w17-2026-11",
+      "w": 1280,
+      "h": 494
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

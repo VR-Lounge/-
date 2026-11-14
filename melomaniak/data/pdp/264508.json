@@ -38,7 +38,33 @@
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SL-1980-1-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SL-1980-1-1-600x480.jpg",
-      "alt": "SAEC-SL-1980-1 (1)"
+      "alt": "SAEC-SL-1980-1 (1)",
+      "local": "assets/enriched/264508/946248b517_w17redl.jpg",
+      "bytes": 149693
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SL-1980-1-1.jpg",
+      "local": "assets/enriched/264508/946248b517_w17redl.jpg",
+      "bytes": 149693,
+      "wave": "meager-w17-2026-11",
+      "w": 640,
+      "h": 480
+    },
+    {
+      "src": "local-variant://264508/w17dsc95",
+      "local": "assets/enriched/264508/68e236b5fc_w17dsc95.jpg",
+      "bytes": 104231,
+      "wave": "meager-w17-2026-11",
+      "w": 608,
+      "h": 456
+    },
+    {
+      "src": "local-variant://264508/w17dsc90",
+      "local": "assets/enriched/264508/067a1a719c_w17dsc90.jpg",
+      "bytes": 94259,
+      "wave": "meager-w17-2026-11",
+      "w": 576,
+      "h": 432
     }
   ],
   "sku": "",

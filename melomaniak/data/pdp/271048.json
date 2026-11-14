@@ -89,7 +89,48 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/31883/ma_silver_1.jpg",
+      "local": "assets/enriched/271048/4f19eae5ba_w17cdn.jpg",
+      "bytes": 139699,
+      "wave": "meager-w17-2026-11",
+      "w": 1355,
+      "h": 762
+    },
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/31883/ma_silver_2.jpg",
+      "local": "assets/enriched/271048/e1f19fa3f9_w17cdn.jpg",
+      "bytes": 265562,
+      "wave": "meager-w17-2026-11",
+      "w": 1355,
+      "h": 762
+    },
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/31883/ma_silver_3.jpg",
+      "local": "assets/enriched/271048/23c62e1a31_w17cdn.jpg",
+      "bytes": 176067,
+      "wave": "meager-w17-2026-11",
+      "w": 1355,
+      "h": 762
+    },
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/31883/ma_silver_4.jpg",
+      "local": "assets/enriched/271048/c076627ceb_w17cdn.jpg",
+      "bytes": 159802,
+      "wave": "meager-w17-2026-11",
+      "w": 1355,
+      "h": 762
+    },
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/31883/ma_silver_group.jpg",
+      "local": "assets/enriched/271048/a922455ead_w17cdn.jpg",
+      "bytes": 61964,
+      "wave": "meager-w17-2026-11",
+      "w": 400,
+      "h": 400
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

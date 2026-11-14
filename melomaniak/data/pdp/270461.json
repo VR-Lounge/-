@@ -74,7 +74,40 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://transrotor.de/media/pages/produkte/dark-star-reference/8923b8c844-1696931264/dark-startra-schraeg-ref1.jpg",
+      "local": "assets/enriched/270461/234a369557_w17cdn.jpg",
+      "bytes": 3739992,
+      "wave": "meager-w17-2026-11",
+      "w": 5568,
+      "h": 3712
+    },
+    {
+      "src": "https://transrotor.de/media/pages/produkte/dark-star-reference/21d389b15d-1696426454/tra-mitte-ref-min.jpg",
+      "local": "assets/enriched/270461/e032800036_w17cdn.jpg",
+      "bytes": 467419,
+      "wave": "meager-w17-2026-11",
+      "w": 5568,
+      "h": 3712
+    },
+    {
+      "src": "https://transrotor.de/media/pages/produkte/dark-star-reference/1be43fbba8-1696426445/tra-schraeg-ref-min-950x312-crop-q90.jpg",
+      "local": "assets/enriched/270461/377bb7b7fe_w17cdn.jpg",
+      "bytes": 40914,
+      "wave": "meager-w17-2026-11",
+      "w": 950,
+      "h": 312
+    },
+    {
+      "src": "https://transrotor.de/media/pages/produkte/dark-star-reference/b96953abcf-1696426464/tra-flach-ref-min.jpg",
+      "local": "assets/enriched/270461/a5158c8d8b_w17cdn.jpg",
+      "bytes": 501629,
+      "wave": "meager-w17-2026-11",
+      "w": 5476,
+      "h": 3651
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

@@ -94,7 +94,56 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://klipsch.imgix.net/product-images/R-605FA-front-and-top-views.png",
+      "local": "assets/enriched/269084/62384132a7_w17cdn.png",
+      "bytes": 404724,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://klipsch.imgix.net/product-images/R-605FA-Carousel-1.png",
+      "local": "assets/enriched/269084/2404a0a186_w17cdn.png",
+      "bytes": 1334149,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://klipsch.imgix.net/product-images/R-605FA-Carousel-2.png",
+      "local": "assets/enriched/269084/17fba133df_w17cdn.png",
+      "bytes": 1527024,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://klipsch.imgix.net/product-images/R-605FA-Carousel-3.png",
+      "local": "assets/enriched/269084/3b7847d37d_w17cdn.png",
+      "bytes": 1056250,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://klipsch.imgix.net/product-images/R-605FA-Carousel-4.png",
+      "local": "assets/enriched/269084/56f4360e53_w17cdn.png",
+      "bytes": 1292345,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://klipsch.imgix.net/product-images/R-605FA-Carousel-5.png",
+      "local": "assets/enriched/269084/531ad34e62_w17cdn.png",
+      "bytes": 1425426,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

@@ -124,7 +124,56 @@
       "source": "list"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://us.kef.com/cdn/shop/files/lsx-2-lt_sp4077j2_product__front-side.png",
+      "local": "assets/enriched/271670/0037f56003_w17cdn.png",
+      "bytes": 297656,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1200
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/lsx-2-lt_sp4077j2_lifestyle_computer__on-shelf.jpg",
+      "local": "assets/enriched/271670/48609f68a3_w17cdn.jpg",
+      "bytes": 185927,
+      "wave": "meager-w17-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/lsx-2-lt_sp4077j2_product_uni-q_front-side_detail.png",
+      "local": "assets/enriched/271670/56b96bee38_w17cdn.png",
+      "bytes": 465755,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1200
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/lsx-2-lt_sp4077j2_product__front-back-side.png",
+      "local": "assets/enriched/271670/eb66492c25_w17cdn.png",
+      "bytes": 321318,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1200
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/lsx-2-lt_sp4077j2_product__front-back.png",
+      "local": "assets/enriched/271670/3cee765739_w17cdn.png",
+      "bytes": 326086,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1200
+    },
+    {
+      "src": "https://cdn11.bigcommerce.com/s-pwefhhr7pn/images/stencil/1280x1280/products/51407/203948/lsx-ii-lt.jpg",
+      "local": "assets/enriched/271670/29da5fd84f_w17cdn.jpg",
+      "bytes": 86629,
+      "wave": "meager-w17-2026-11",
+      "w": 1280,
+      "h": 840
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

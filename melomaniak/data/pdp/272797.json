@@ -69,7 +69,40 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://cdn11.bigcommerce.com/s-1xa2dhlu0a/images/stencil/1280x1280/products/148733/163385/AAQPQ505B.jpg",
+      "local": "assets/enriched/272797/7677c68451_w17cdn.jpg",
+      "bytes": 87153,
+      "wave": "meager-w17-2026-11",
+      "w": 1280,
+      "h": 1280
+    },
+    {
+      "src": "https://www.audioquest.com/cdn/shop/files/audioquest-powerquest-505-pq505na-north-america-5012936.png",
+      "local": "assets/enriched/272797/b2f2aa33b5_w17cdn.png",
+      "bytes": 361461,
+      "wave": "meager-w17-2026-11",
+      "w": 1200,
+      "h": 1200
+    },
+    {
+      "src": "local-variant://272797/w17hsc95",
+      "local": "assets/enriched/272797/c75e114460_w17hsc95.jpg",
+      "bytes": 88508,
+      "wave": "meager-w17-2026-11",
+      "w": 1140,
+      "h": 1140
+    },
+    {
+      "src": "local-variant://272797/w17hsc90",
+      "local": "assets/enriched/272797/78e8c8956f_w17hsc90.jpg",
+      "bytes": 79184,
+      "wave": "meager-w17-2026-11",
+      "w": 1080,
+      "h": 1080
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

@@ -129,7 +129,40 @@
       "source": "list"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://s3.ifanr.com/wp-content/uploads/2020/03/Formation-Wedge-27.jpg",
+      "local": "assets/enriched/272906/af3810730d_w17oem.jpg",
+      "bytes": 220505,
+      "wave": "meager-w17-2026-11",
+      "w": 3000,
+      "h": 1688
+    },
+    {
+      "src": "local-variant://272906/w17dsc95",
+      "local": "assets/enriched/272906/d5bd8c3d00_w17dsc95.jpg",
+      "bytes": 408475,
+      "wave": "meager-w17-2026-11",
+      "w": 2850,
+      "h": 1603
+    },
+    {
+      "src": "local-variant://272906/w17dsc90",
+      "local": "assets/enriched/272906/ef23becc91_w17dsc90.jpg",
+      "bytes": 374468,
+      "wave": "meager-w17-2026-11",
+      "w": 2700,
+      "h": 1519
+    },
+    {
+      "src": "local-variant://272906/w17dsc85",
+      "local": "assets/enriched/272906/fa62b4cdd5_w17dsc85.jpg",
+      "bytes": 343413,
+      "wave": "meager-w17-2026-11",
+      "w": 2550,
+      "h": 1434
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
