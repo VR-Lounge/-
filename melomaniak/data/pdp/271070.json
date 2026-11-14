@@ -111,6 +111,15 @@
   ],
   "gallery": [
     {
+      "src": "https://www.monitoraudio.com/site/assets/files/54574/gold-500-life.2000x0.jpg",
+      "thumb": "https://www.monitoraudio.com/site/assets/files/54574/gold-500-life.2000x0.jpg",
+      "alt": "Напольная акустика Monitor Audio Gold 500 6G",
+      "local": "assets/enriched/271070/b04e8c2c96_1.jpg",
+      "enriched": true,
+      "attribution": "www.monitoraudio.com",
+      "bytes": 301360
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g_4829953124-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g_4829953124-1.jpg",
       "alt": "monitor_audio_gold_500_6g_4829953124-1.jpg",
@@ -133,10 +142,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/1996600df8b7ace23d9242f892307a74/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/1996600df8b7ace23d9242f892307a74/",
+    "https://www.monitoraudio.com/en/us/product-ranges/gold-series-6g/gold-500-6g/"
   ],
-  "enrichedAt": "2026-11-14T14:26:34Z",
+  "enrichedAt": "2026-11-14T15:05:41Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "meagerWave": "meager-w8-2026-11"
 }

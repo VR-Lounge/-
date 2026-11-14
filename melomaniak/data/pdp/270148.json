@@ -108,10 +108,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/1c729d2f539ea95e960f453ba2d24acb/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/1c729d2f539ea95e960f453ba2d24acb/",
+    "https://simaudio.com/en/products/moon-260d/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "enrichedAt": "2026-11-14T14:56:48Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11",
   "galleryHitl": true
 }

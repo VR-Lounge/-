@@ -141,6 +141,15 @@
   ],
   "gallery": [
     {
+      "src": "https://teac.jp/images/products/_tmp/main_img/teac/nt-505-x_main.jpg",
+      "thumb": "https://teac.jp/images/products/_tmp/main_img/teac/nt-505-x_main.jpg",
+      "alt": "Сетевой проигрыватель TEAC NT-505-X",
+      "local": "assets/enriched/273806/dbd854d623_1.jpg",
+      "enriched": true,
+      "attribution": "teac.jp",
+      "bytes": 327094
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/teac_nt-505-x1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/teac_nt-505-x1.jpg",
       "alt": "teac_nt-505-x1.jpg",
@@ -157,10 +166,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/13d19e5fff3068225de01c2ba14b98c8/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/13d19e5fff3068225de01c2ba14b98c8/",
+    "https://teac.jp/int/product/nt-505-x/top"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "enrichedAt": "2026-11-14T15:07:10Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11",
   "galleryHitl": true
 }

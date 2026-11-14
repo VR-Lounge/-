@@ -136,6 +136,78 @@
   ],
   "gallery": [
     {
+      "src": "https://en.audionet.de/wp-content/uploads/max_s_b.png",
+      "thumb": "https://en.audionet.de/wp-content/uploads/max_s_b.png",
+      "alt": "усилитель мощности AudioNet MAX ( audionet max )",
+      "local": "assets/enriched/26614/a97af72fa4_1.png",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 243652
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/max_galerie_02.jpg",
+      "thumb": "https://audionet.de/wp-content/uploads/max_galerie_02.jpg",
+      "alt": "усилитель мощности AudioNet MAX ( audionet max )",
+      "local": "assets/enriched/26614/edeff4b444_2.jpg",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 74863
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/max_galerie_03.jpg",
+      "thumb": "https://audionet.de/wp-content/uploads/max_galerie_03.jpg",
+      "alt": "усилитель мощности AudioNet MAX ( audionet max )",
+      "local": "assets/enriched/26614/175b317450_3.jpg",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 107220
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/max_galerie_04.jpg",
+      "thumb": "https://audionet.de/wp-content/uploads/max_galerie_04.jpg",
+      "alt": "усилитель мощности AudioNet MAX ( audionet max )",
+      "local": "assets/enriched/26614/7794363bb6_4.jpg",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 56163
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/max_galerie_05.jpg",
+      "thumb": "https://audionet.de/wp-content/uploads/max_galerie_05.jpg",
+      "alt": "усилитель мощности AudioNet MAX ( audionet max )",
+      "local": "assets/enriched/26614/f010b43669_5.jpg",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 128370
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/max_galerie_06.jpg",
+      "thumb": "https://audionet.de/wp-content/uploads/max_galerie_06.jpg",
+      "alt": "усилитель мощности AudioNet MAX ( audionet max )",
+      "local": "assets/enriched/26614/950b860df4_6.jpg",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 72293
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/max_mit_pre_g2.jpg",
+      "thumb": "https://audionet.de/wp-content/uploads/max_mit_pre_g2.jpg",
+      "alt": "усилитель мощности AudioNet MAX ( audionet max )",
+      "local": "assets/enriched/26614/1a86d3be2a_7.jpg",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 237552
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/max_galerie_01.jpg",
+      "thumb": "https://audionet.de/wp-content/uploads/max_galerie_01.jpg",
+      "alt": "усилитель мощности AudioNet MAX ( audionet max )",
+      "local": "assets/enriched/26614/7776a08178_8.jpg",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 81972
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_AudioNet_MAX.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_AudioNet_MAX-600x600.jpg",
       "alt": "AudioNet MAX",
@@ -152,10 +224,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_audionet_max/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_audionet_max/",
+    "https://audionet.de/en/products/max/"
   ],
-  "enrichedAt": "2026-11-14T13:45:25Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T15:11:23Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11"
 }

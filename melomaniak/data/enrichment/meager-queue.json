@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T14:54:05Z",
+  "generatedAt": "2026-11-14T15:15:09Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,17 +8,17 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 910,
-  "okCount": 977,
+  "meagerCount": 897,
+  "okCount": 990,
   "reasonTallies": {
-    "gal": 910
+    "gal": 897
   },
   "byCategory": {
     "Другое": 378,
     "Кабели": 214,
-    "Усилители": 131,
-    "Акустика": 117,
-    "Источники": 50,
+    "Усилители": 128,
+    "Акустика": 108,
+    "Источники": 49,
     "ЦАПы": 8,
     "Ресиверы": 6,
     "Наушники": 4,
@@ -265,22 +265,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/4699e717d2f828b88a2f376fa92017ec/",
       "priority": 2610
-    },
-    {
-      "id": 274436,
-      "name": "Напольная акустика Davis Acoustics The Wall",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-the-wall",
-      "cat": "Акустика",
-      "price": 3380990,
-      "descLen": 2712,
-      "gallery": 2,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-the-wall/",
-      "priority": 2280
     },
     {
       "id": 262061,
@@ -587,22 +571,6 @@
       "priority": 600
     },
     {
-      "id": 26614,
-      "name": "усилитель мощности AudioNet MAX ( audionet max )",
-      "slug": "ysilitel_moshnosti_audionet_max",
-      "cat": "Усилители",
-      "price": 1691500,
-      "descLen": 4194,
-      "gallery": 2,
-      "specs": 24,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_audionet_max/",
-      "priority": 591
-    },
-    {
       "id": 272806,
       "name": "Сетевой фильтр AudioQuest NIAGARA 7000",
       "slug": "15adc21d6bb5ac7eb28b7a2f0a6f7d03",
@@ -841,22 +809,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Arte_forma_805PP/",
       "priority": 40
-    },
-    {
-      "id": 274439,
-      "name": "Напольная акустика Davis Acoustics MV One Master",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-mv-one-master",
-      "cat": "Акустика",
-      "price": 1123490,
-      "descLen": 3862,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-mv-one-master/",
-      "priority": 23
     },
     {
       "id": 15906,
@@ -1147,22 +1099,6 @@
       "priority": -220
     },
     {
-      "id": 274443,
-      "name": "Полочная акустика Davis Acoustics Nikita 3.0",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-nikita-3-0",
-      "cat": "Акустика",
-      "price": 871490,
-      "descLen": 2075,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-nikita-3-0/",
-      "priority": -229
-    },
-    {
       "id": 260690,
       "name": "Полочная акустика Lawrence Audio Bulbul ( lawrence audio bulbul )",
       "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-lawrence-audio-bulbul",
@@ -1227,52 +1163,20 @@
       "priority": -290
     },
     {
-      "id": 273270,
-      "name": "Моноусилитель мощности Michi M8",
-      "slug": "aa286b5d1085cf9e0ed4b76b94eeaa58",
-      "cat": "Усилители",
-      "price": 799990,
-      "descLen": 3047,
-      "gallery": 3,
-      "specs": 15,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/aa286b5d1085cf9e0ed4b76b94eeaa58/",
-      "priority": -301
-    },
-    {
       "id": 25156,
       "name": "усилитель мощности Anthem Statement P 2 BL ( anthem statement p 2 bl )",
       "slug": "ysilitel_moshnosti_anthem_statement_p_2_bl",
       "cat": "Усилители",
       "price": 797215,
       "descLen": 2823,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_anthem_statement_p_2_bl/",
-      "priority": -303
-    },
-    {
-      "id": 271070,
-      "name": "Напольная акустика Monitor Audio Gold 500 6G",
-      "slug": "1996600df8b7ace23d9242f892307a74",
-      "cat": "Акустика",
-      "price": 794990,
-      "descLen": 3172,
       "gallery": 3,
-      "specs": 19,
+      "specs": 5,
       "enriched": true,
       "reasons": [
         "gal:3"
       ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/1996600df8b7ace23d9242f892307a74/",
-      "priority": -306
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_anthem_statement_p_2_bl/",
+      "priority": -303
     },
     {
       "id": 4232,
@@ -1819,22 +1723,6 @@
       "priority": -550
     },
     {
-      "id": 15902,
-      "name": "интегральный усилитель Audionet Sam G2 ( audionet sam g2 )",
-      "slug": "integralnii_ysilitel_audionet_sam_g2",
-      "cat": "Усилители",
-      "price": 550000,
-      "descLen": 2687,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_audionet_sam_g2/",
-      "priority": -550
-    },
-    {
       "id": 262108,
       "name": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
       "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-150ia",
@@ -2193,11 +2081,11 @@
       "cat": "Усилители",
       "price": 420000,
       "descLen": 2295,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 5,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_audionet_sam_v-2-0_/",
       "priority": -680
@@ -2329,22 +2217,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d1%83%d0%b7%d1%8b%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%86%d0%b5%d0%bd%d1%82%d1%80-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b2%d1%81%d1%91-%d0%b2-%d0%be%d0%b4%d0%bd/",
       "priority": -712
-    },
-    {
-      "id": 272459,
-      "name": "Активный сабвуфер Velodyne Vi-Q15",
-      "slug": "a0785502eb0372e38d4cc277fb3c380d",
-      "cat": "Акустика",
-      "price": 385000,
-      "descLen": 2980,
-      "gallery": 3,
-      "specs": 13,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/a0785502eb0372e38d4cc277fb3c380d/",
-      "priority": -715
     },
     {
       "id": 15638,
@@ -2763,22 +2635,6 @@
       "priority": -769
     },
     {
-      "id": 272456,
-      "name": "Активный сабвуфер Velodyne Vi-Q12",
-      "slug": "c13e597ebbd31b2880a52905d2b32dfa",
-      "cat": "Акустика",
-      "price": 330000,
-      "descLen": 3000,
-      "gallery": 2,
-      "specs": 12,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/c13e597ebbd31b2880a52905d2b32dfa/",
-      "priority": -770
-    },
-    {
       "id": 264246,
       "name": "Сетевой фильтр Furutech Daytona 303E ( furutech daytona 303e )",
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-daytona-303e",
@@ -2923,22 +2779,6 @@
       "priority": -800
     },
     {
-      "id": 271030,
-      "name": "Сетевой проигрыватель Monitor Audio IMS-4",
-      "slug": "74541de0aef29a4280e00d3150e6e897",
-      "cat": "Источники",
-      "price": 299990,
-      "descLen": 3050,
-      "gallery": 3,
-      "specs": 14,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/74541de0aef29a4280e00d3150e6e897/",
-      "priority": -801
-    },
-    {
       "id": 15978,
       "name": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
       "slug": "ysilitel_moshnosti_Musica_IRIS_50_pow",
@@ -3017,22 +2857,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/7bcf0908141101ef6c578aca54f10b61/",
       "priority": -810
-    },
-    {
-      "id": 274602,
-      "name": "Напольная акустика Acoustic Energy AE 320",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-acoustic-energy-ae-320",
-      "cat": "Акустика",
-      "price": 287500,
-      "descLen": 1818,
-      "gallery": 3,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-acoustic-energy-ae-320/",
-      "priority": -813
     },
     {
       "id": 41444,
@@ -3457,11 +3281,11 @@
       "cat": "Источники",
       "price": 249990,
       "descLen": 6071,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 25,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/13d19e5fff3068225de01c2ba14b98c8/",
       "priority": -851
@@ -3617,11 +3441,11 @@
       "cat": "Усилители",
       "price": 224000,
       "descLen": 3004,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 9,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/60e91d4a4833e515b844937aff08bae6/",
       "priority": -876
@@ -4424,22 +4248,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/furutech-e-tp609e-ncf-europe/",
-      "priority": -931
-    },
-    {
-      "id": 274490,
-      "name": "Напольная акустика Davis Acoustics Balthus 90",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-balthus-90",
-      "cat": "Акустика",
-      "price": 169190,
-      "descLen": 1272,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-balthus-90/",
       "priority": -931
     },
     {
@@ -7435,22 +7243,6 @@
       "priority": -1043
     },
     {
-      "id": 274513,
-      "name": "Сабвуфер Davis Acoustics Basson 77",
-      "slug": "%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-davis-acoustics-basson-77",
-      "cat": "Акустика",
-      "price": 56990,
-      "descLen": 934,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-davis-acoustics-basson-77/",
-      "priority": -1044
-    },
-    {
       "id": 264539,
       "name": "USB кабель SAEC  SUS 020 Stratosphere ( usb saec sus 020 stratosphere )",
       "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere",
@@ -8081,11 +7873,11 @@
       "cat": "Источники",
       "price": 48990,
       "descLen": 3120,
-      "gallery": 0,
+      "gallery": 1,
       "specs": 18,
       "enriched": true,
       "reasons": [
-        "gal:0"
+        "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/d15a92befc8b830d8911227c5d8f6409/",
       "priority": -1052

@@ -81,6 +81,15 @@
   ],
   "gallery": [
     {
+      "src": "https://velodyneacoustics.com/wp-content/uploads/2023/01/teaser-vi-q.jpg",
+      "thumb": "https://velodyneacoustics.com/wp-content/uploads/2023/01/teaser-vi-q.jpg",
+      "alt": "Активный сабвуфер Velodyne Vi-Q15",
+      "local": "assets/enriched/272459/18e952b9b5_4.jpg",
+      "enriched": true,
+      "attribution": "velodyneacoustics.com",
+      "bytes": 225067
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/velodyne_vi-q15-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/velodyne_vi-q15-1.jpg",
       "alt": "velodyne_vi-q15-1.jpg",
@@ -103,10 +112,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/a0785502eb0372e38d4cc277fb3c380d/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/a0785502eb0372e38d4cc277fb3c380d/",
+    "https://velodyneacoustics.com/products/vi-q15"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T15:05:42Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11"
 }

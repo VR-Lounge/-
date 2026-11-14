@@ -76,6 +76,24 @@
   ],
   "gallery": [
     {
+      "src": "https://velodyneacoustics.com/wp-content/uploads/2023/01/VI-Q-12-front.png",
+      "thumb": "https://velodyneacoustics.com/wp-content/uploads/2023/01/VI-Q-12-front.png",
+      "alt": "Активный сабвуфер Velodyne Vi-Q12",
+      "local": "assets/enriched/272456/70b66da4fe_1.png",
+      "enriched": true,
+      "attribution": "velodyneacoustics.com",
+      "bytes": 425537
+    },
+    {
+      "src": "https://velodyneacoustics.com/wp-content/uploads/2024/02/vi-q-12-heimkino-magazin.png",
+      "thumb": "https://velodyneacoustics.com/wp-content/uploads/2024/02/vi-q-12-heimkino-magazin.png",
+      "alt": "Активный сабвуфер Velodyne Vi-Q12",
+      "local": "assets/enriched/272456/2f98bf7a22_2.png",
+      "enriched": true,
+      "attribution": "velodyneacoustics.com",
+      "bytes": 84625
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/velodyne_vi-q12-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/velodyne_vi-q12-1.jpg",
       "alt": "velodyne_vi-q12-1.jpg",
@@ -92,10 +110,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/c13e597ebbd31b2880a52905d2b32dfa/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/c13e597ebbd31b2880a52905d2b32dfa/",
+    "https://velodyneacoustics.com/products/vi-q-12/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T15:07:07Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11"
 }

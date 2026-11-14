@@ -91,6 +91,42 @@
   ],
   "gallery": [
     {
+      "src": "https://www.rotel.com/sites/default/files/product/M8%20Front.jpg",
+      "thumb": "https://www.rotel.com/sites/default/files/product/M8%20Front.jpg",
+      "alt": "Моноусилитель мощности Michi M8",
+      "local": "assets/enriched/273270/235caa80e0_1.jpg",
+      "enriched": true,
+      "attribution": "www.rotel.com",
+      "bytes": 32013
+    },
+    {
+      "src": "https://www.rotel.com/sites/default/files/product/Michi-M8-back.jpg",
+      "thumb": "https://www.rotel.com/sites/default/files/product/Michi-M8-back.jpg",
+      "alt": "Моноусилитель мощности Michi M8",
+      "local": "assets/enriched/273270/584b31d823_2.jpg",
+      "enriched": true,
+      "attribution": "www.rotel.com",
+      "bytes": 80481
+    },
+    {
+      "src": "https://www.rotel.com/sites/default/files/S5_M8%20Internal.jpg",
+      "thumb": "https://www.rotel.com/sites/default/files/S5_M8%20Internal.jpg",
+      "alt": "Моноусилитель мощности Michi M8",
+      "local": "assets/enriched/273270/c9fe273af2_3.jpg",
+      "enriched": true,
+      "attribution": "www.rotel.com",
+      "bytes": 254776
+    },
+    {
+      "src": "https://www.rotel.com/sites/default/files/Lifestyle_P5_M8_LivingRoom1.jpg",
+      "thumb": "https://www.rotel.com/sites/default/files/Lifestyle_P5_M8_LivingRoom1.jpg",
+      "alt": "Моноусилитель мощности Michi M8",
+      "local": "assets/enriched/273270/ecca161997_4.jpg",
+      "enriched": true,
+      "attribution": "www.rotel.com",
+      "bytes": 175261
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/michi_m8-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/michi_m8-1.jpg",
       "alt": "michi_m8-1.jpg",
@@ -113,10 +149,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/aa286b5d1085cf9e0ed4b76b94eeaa58/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/aa286b5d1085cf9e0ed4b76b94eeaa58/",
+    "https://www.rotel.com/product/m8"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T15:05:47Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11"
 }

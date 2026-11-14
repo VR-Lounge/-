@@ -31,6 +31,42 @@
   ],
   "gallery": [
     {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2025/03/basson-777-cache.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2025/03/basson-777-cache.jpg",
+      "alt": "Сабвуфер Davis Acoustics Basson 77",
+      "local": "assets/enriched/274513/ca5b5b43b3_1.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 587752
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2025/03/basson-777-vue-de-haut.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2025/03/basson-777-vue-de-haut.jpg",
+      "alt": "Сабвуфер Davis Acoustics Basson 77",
+      "local": "assets/enriched/274513/fd091baa9a_2.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 531434
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2025/03/basson-777.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2025/03/basson-777.jpg",
+      "alt": "Сабвуфер Davis Acoustics Basson 77",
+      "local": "assets/enriched/274513/f780f42f9e_3.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 510546
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2025/03/HP-basson-777.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2025/03/HP-basson-777.jpg",
+      "alt": "Сабвуфер Davis Acoustics Basson 77",
+      "local": "assets/enriched/274513/6beed4f843_6.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 839571
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/basson-77.png",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/basson-77.png",
       "alt": "basson-77",
@@ -47,10 +83,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-davis-acoustics-basson-77/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-davis-acoustics-basson-77/",
+    "https://www.davis-acoustics.com/en/basson-77/"
   ],
-  "enrichedAt": "2026-11-14T13:47:14Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T15:11:46Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11"
 }

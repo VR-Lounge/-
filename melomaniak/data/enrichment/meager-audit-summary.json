@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T14:54:05Z",
+  "generatedAt": "2026-11-14T15:15:09Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,17 +8,17 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 910,
-  "okCount": 977,
+  "meagerCount": 897,
+  "okCount": 990,
   "reasonTallies": {
-    "gal": 910
+    "gal": 897
   },
   "byCategory": {
     "Другое": 378,
     "Кабели": 214,
-    "Усилители": 131,
-    "Акустика": 117,
-    "Источники": 50,
+    "Усилители": 128,
+    "Акустика": 108,
+    "Источники": 49,
     "ЦАПы": 8,
     "Ресиверы": 6,
     "Наушники": 4,
@@ -177,16 +177,6 @@
       "enriched": true
     },
     {
-      "id": 274436,
-      "name": "Напольная акустика Davis Acoustics The Wall",
-      "cat": "Акустика",
-      "price": 3380990,
-      "reasons": [
-        "gal:2"
-      ],
-      "enriched": true
-    },
-    {
       "id": 262061,
       "name": "Напольная акустика Divini Audio Reference 18 ( divini audio reference 18 )",
       "cat": "Акустика",
@@ -223,6 +213,16 @@
       "price": 690000,
       "reasons": [
         "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 270461,
+      "name": "Виниловый проигрыватель Transrotor Dark Star Reference",
+      "cat": "Источники",
+      "price": 634900,
+      "reasons": [
+        "gal:0"
       ],
       "enriched": true
     }

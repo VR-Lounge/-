@@ -36,6 +36,78 @@
   ],
   "gallery": [
     {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-bamboo-2.png",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-bamboo-2.png",
+      "alt": "Напольная акустика Davis Acoustics MV One Master",
+      "local": "assets/enriched/274439/c61eb3c7d0_1.png",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 3607663
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-bamboo-cache-1.png",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-bamboo-cache-1.png",
+      "alt": "Напольная акустика Davis Acoustics MV One Master",
+      "local": "assets/enriched/274439/8ee13aa861_2.png",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 3909729
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-ebene-1.png",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-ebene-1.png",
+      "alt": "Напольная акустика Davis Acoustics MV One Master",
+      "local": "assets/enriched/274439/1ba87601e9_3.png",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 4465583
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-ebene-cache.png",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-ebene-cache.png",
+      "alt": "Напольная акустика Davis Acoustics MV One Master",
+      "local": "assets/enriched/274439/5e3d72f040_4.png",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 4152707
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-tamo-ash-.png",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2025/05/MV-one-tamo-ash-.png",
+      "alt": "Напольная акустика Davis Acoustics MV One Master",
+      "local": "assets/enriched/274439/cb44014fd1_5.png",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 4116847
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/09/Mv-one-studio-756x1030-1.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/09/Mv-one-studio-756x1030-1.jpg",
+      "alt": "Напольная акустика Davis Acoustics MV One Master",
+      "local": "assets/enriched/274439/964623b309_6.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 408902
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/09/MV-One-HP-1030x687-1.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/09/MV-One-HP-1030x687-1.jpg",
+      "alt": "Напольная акустика Davis Acoustics MV One Master",
+      "local": "assets/enriched/274439/2455e9818f_7.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 495943
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/09/2-mv-one-1030x1030-1.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/09/2-mv-one-1030x1030-1.jpg",
+      "alt": "Напольная акустика Davis Acoustics MV One Master",
+      "local": "assets/enriched/274439/a86ad589c1_8.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 606039
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/mv-one-master-par.png",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/mv-one-master-par.png",
       "alt": "mv-one-master-par",
@@ -53,10 +125,10 @@
   "enriched": true,
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/",
-    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-mv-one-master/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-mv-one-master/",
+    "https://www.davis-acoustics.com/en/mv-one-master/"
   ],
-  "enrichedAt": "2026-11-14T13:47:06Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:57:06Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11"
 }

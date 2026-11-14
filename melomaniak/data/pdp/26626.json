@@ -41,6 +41,15 @@
   ],
   "gallery": [
     {
+      "src": "https://en.audionet.de/wp-content/uploads/sam-20-se.png",
+      "thumb": "https://en.audionet.de/wp-content/uploads/sam-20-se.png",
+      "alt": "интегральный усилитель AudioNet SAM v.2.0 ( audionet sam v 2 0 )",
+      "local": "assets/enriched/26626/560e7d1cb3_1.png",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 88783
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_AudioNet_SAM_v-2-0_.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_AudioNet_SAM_v-2-0_-600x600.jpg",
       "alt": "AudioNet SAM v.2.0",
@@ -58,10 +67,11 @@
   "enriched": true,
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/",
-    "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_audionet_sam_v-2-0_/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_audionet_sam_v-2-0_/",
+    "https://audionet.de/en/products/sam/"
   ],
-  "enrichedAt": "2026-11-14T13:45:25Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "enrichedAt": "2026-11-14T15:12:51Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11",
   "galleryHitl": true
 }

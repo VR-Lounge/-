@@ -41,6 +41,78 @@
   ],
   "gallery": [
     {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-03-scaled.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-03-scaled.jpg",
+      "alt": "Напольная акустика Davis Acoustics Balthus 90",
+      "local": "assets/enriched/274490/fc787a64cc_1.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 297109
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-04-scaled.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-04-scaled.jpg",
+      "alt": "Напольная акустика Davis Acoustics Balthus 90",
+      "local": "assets/enriched/274490/49480dfb6b_2.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 495699
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-05-scaled.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-05-scaled.jpg",
+      "alt": "Напольная акустика Davis Acoustics Balthus 90",
+      "local": "assets/enriched/274490/4b2d133b47_3.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 1094040
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-06-scaled.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-06-scaled.jpg",
+      "alt": "Напольная акустика Davis Acoustics Balthus 90",
+      "local": "assets/enriched/274490/829304dd6c_4.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 631695
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-07-scaled.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-07-scaled.jpg",
+      "alt": "Напольная акустика Davis Acoustics Balthus 90",
+      "local": "assets/enriched/274490/ad24b297cb_5.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 253899
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-noyer-1-scaled.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-noyer-1-scaled.jpg",
+      "alt": "Напольная акустика Davis Acoustics Balthus 90",
+      "local": "assets/enriched/274490/b145a9756d_6.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 322430
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-noyer-4-scaled.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-noyer-4-scaled.jpg",
+      "alt": "Напольная акустика Davis Acoustics Balthus 90",
+      "local": "assets/enriched/274490/9d4ded89e3_7.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 388885
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-noyer-5-scaled.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-noyer-5-scaled.jpg",
+      "alt": "Напольная акустика Davis Acoustics Balthus 90",
+      "local": "assets/enriched/274490/ddd4bce6ab_8.jpg",
+      "enriched": true,
+      "attribution": "davis-acoustics.com",
+      "bytes": 436062
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/balthus90-noir-par.png",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/balthus90-noir-par.png",
       "alt": "balthus90-noir-par",
@@ -51,10 +123,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-balthus-90/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-balthus-90/",
+    "https://www.davis-acoustics.com/en/balthus-90/"
   ],
-  "enrichedAt": "2026-11-14T13:47:14Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T15:11:35Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11"
 }

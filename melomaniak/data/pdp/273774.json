@@ -61,6 +61,15 @@
   ],
   "gallery": [
     {
+      "src": "https://teac.jp/images/products/_tmp/main_img/teac/ap-505_main.jpg",
+      "thumb": "https://teac.jp/images/products/_tmp/main_img/teac/ap-505_main.jpg",
+      "alt": "Стереоусилитель мощности TEAC AP-505",
+      "local": "assets/enriched/273774/5d5c82ed03_1.jpg",
+      "enriched": true,
+      "attribution": "teac.jp",
+      "bytes": 197587
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/teac_ap-505_11860120149-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/teac_ap-505_11860120149-1.jpg",
       "alt": "teac_ap-505_11860120149-1.jpg",
@@ -77,10 +86,11 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/60e91d4a4833e515b844937aff08bae6/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/60e91d4a4833e515b844937aff08bae6/",
+    "https://teac.jp/int/product/ap-505/top"
   ],
-  "enrichedAt": "2026-11-14T14:28:49Z",
+  "enrichedAt": "2026-11-14T15:07:09Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11",
+  "meagerWave": "meager-w8-2026-11",
   "galleryHitl": true
 }

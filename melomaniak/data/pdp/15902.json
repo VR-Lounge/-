@@ -36,6 +36,69 @@
   ],
   "gallery": [
     {
+      "src": "https://en.audionet.de/wp-content/uploads/sam_g2_s_b.png",
+      "thumb": "https://en.audionet.de/wp-content/uploads/sam_g2_s_b.png",
+      "alt": "интегральный усилитель Audionet Sam G2 ( audionet sam g2 )",
+      "local": "assets/enriched/15902/f1f3961bab_1.png",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 144091
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/sam_g2_front.jpg",
+      "thumb": "https://audionet.de/wp-content/uploads/sam_g2_front.jpg",
+      "alt": "интегральный усилитель Audionet Sam G2 ( audionet sam g2 )",
+      "local": "assets/enriched/15902/b735c483ab_2.jpg",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 107393
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/sam_g2_back.jpg",
+      "thumb": "https://audionet.de/wp-content/uploads/sam_g2_back.jpg",
+      "alt": "интегральный усилитель Audionet Sam G2 ( audionet sam g2 )",
+      "local": "assets/enriched/15902/7eef132944_3.jpg",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 135277
+    },
+    {
+      "src": "https://audionet.de/wp-content/uploads/machov_sam_g2_front_0380.png",
+      "thumb": "https://audionet.de/wp-content/uploads/machov_sam_g2_front_0380.png",
+      "alt": "интегральный усилитель Audionet Sam G2 ( audionet sam g2 )",
+      "local": "assets/enriched/15902/9447c33549_4.png",
+      "enriched": true,
+      "attribution": "audionet.de",
+      "bytes": 16443
+    },
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/sam_g2_b_b.png",
+      "thumb": "https://en.audionet.de/wp-content/uploads/sam_g2_b_b.png",
+      "alt": "интегральный усилитель Audionet Sam G2 ( audionet sam g2 )",
+      "local": "assets/enriched/15902/527e3dbd2f_5.png",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 144045
+    },
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/sam_g2_s_r.png",
+      "thumb": "https://en.audionet.de/wp-content/uploads/sam_g2_s_r.png",
+      "alt": "интегральный усилитель Audionet Sam G2 ( audionet sam g2 )",
+      "local": "assets/enriched/15902/4b23ae7141_6.png",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 145230
+    },
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/sam_g2_b_r.png",
+      "thumb": "https://en.audionet.de/wp-content/uploads/sam_g2_b_r.png",
+      "alt": "интегральный усилитель Audionet Sam G2 ( audionet sam g2 )",
+      "local": "assets/enriched/15902/ecdb51fae4_7.png",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 144120
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Audionet_Sam_G2.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Audionet_Sam_G2-600x600.jpg",
       "alt": "Audionet Sam G2",
@@ -53,10 +116,10 @@
   "enriched": true,
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/",
-    "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_audionet_sam_g2/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_audionet_sam_g2/",
+    "https://audionet.de/en/products/sam-g2/"
   ],
-  "enrichedAt": "2026-11-14T13:45:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T15:11:14Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w8-2026-11"
 }
