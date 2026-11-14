@@ -240,7 +240,11 @@ def apply_one(pid: str, payload: dict, provenance: dict) -> dict | None:
     html = (payload.get("descriptionHtml") or "").strip()
     if not html:
         # images-only / specs-only top-up allowed when already has some copy
-        if not payload.get("specs") and not payload.get("imageUrls"):
+        if (
+            not payload.get("specs")
+            and not payload.get("imageUrls")
+            and not payload.get("localLivePaths")
+        ):
             print(f"skip {pid}: no html")
             return None
     else:

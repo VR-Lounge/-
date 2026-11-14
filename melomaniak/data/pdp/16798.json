@@ -26,6 +26,15 @@
   ],
   "gallery": [
     {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/SPEC-RSA-M1-EX-rear.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/SPEC-RSA-M1-EX-rear.jpg",
+      "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
+      "local": "assets/enriched/16798/2aec59cd5b_1.jpg",
+      "enriched": true,
+      "attribution": "xn--80aannlcfckh.xn--p1ai",
+      "bytes": 39159
+    },
+    {
       "src": "local://210b3cbee9_SPEC-RSA-M1-EX-rear.jpg",
       "thumb": "assets/enriched/16798/8546e21d66_live1.jpg",
       "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
@@ -53,8 +62,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_spec_rsa_m1ex/"
   ],
-  "enrichedAt": "2026-11-14T14:46:04Z",
+  "enrichedAt": "2026-11-14T17:02:06Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11",
+  "meagerWave": "meager-w9-2026-11",
   "galleryHitl": true
 }

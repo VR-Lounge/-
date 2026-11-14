@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T15:15:09Z",
+  "generatedAt": "2026-11-14T17:04:39Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,19 +8,19 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 897,
-  "okCount": 990,
+  "meagerCount": 870,
+  "okCount": 1017,
   "reasonTallies": {
-    "gal": 897
+    "gal": 870
   },
   "byCategory": {
-    "Другое": 378,
-    "Кабели": 214,
-    "Усилители": 128,
-    "Акустика": 108,
-    "Источники": 49,
+    "Другое": 371,
+    "Кабели": 211,
+    "Усилители": 124,
+    "Акустика": 99,
+    "Источники": 46,
     "ЦАПы": 8,
-    "Ресиверы": 6,
+    "Ресиверы": 5,
     "Наушники": 4,
     "Спецпредложения": 1,
     "Видео": 1
@@ -137,22 +137,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/73c91c55045ede65a89c1da8e698283c/",
       "priority": 6065
-    },
-    {
-      "id": 273920,
-      "name": "Стереоусилитель T+A PA 1000 E",
-      "slug": "b3fda4aaeda63ee9407dffeb3b9a6095",
-      "cat": "Усилители",
-      "price": 570000,
-      "descLen": 4318,
-      "gallery": 3,
-      "specs": 21,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/b3fda4aaeda63ee9407dffeb3b9a6095/",
-      "priority": 4470
     },
     {
       "id": 262057,
@@ -681,22 +665,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/dc1104ce635a515acde001ad48ff44a7/",
       "priority": 382
-    },
-    {
-      "id": 16568,
-      "name": "виниловый проигрыватель 47 Labs 4724 Koma ( 47 labs 4724 koma )",
-      "slug": "vinilovii_proigrivatel_47_labs_4724_koma",
-      "cat": "Источники",
-      "price": 1480000,
-      "descLen": 2441,
-      "gallery": 3,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/vinilovii_proigrivatel_47_labs_4724_koma/",
-      "priority": 380
     },
     {
       "id": 25158,
@@ -1355,22 +1323,6 @@
       "priority": -352
     },
     {
-      "id": 261818,
-      "name": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
-      "slug": "av-%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81%d0%be%d1%80-anthem-avm-70-black",
-      "cat": "Ресиверы",
-      "price": 743665,
-      "descLen": 2950,
-      "gallery": 1,
-      "specs": 34,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/av-%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81%d0%be%d1%80-anthem-avm-70-black/",
-      "priority": -357
-    },
-    {
       "id": 26638,
       "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
       "slug": "predysilitel_Audio_Physic_AP_Pre_",
@@ -1385,22 +1337,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Audio_Physic_AP_Pre_/",
       "priority": -369
-    },
-    {
-      "id": 16798,
-      "name": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
-      "slug": "integralnii_ysilitel_spec_rsa_m1ex",
-      "cat": "Усилители",
-      "price": 720000,
-      "descLen": 9107,
-      "gallery": 3,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_spec_rsa_m1ex/",
-      "priority": -380
     },
     {
       "id": 272655,
@@ -2385,11 +2321,11 @@
       "cat": "Усилители",
       "price": 355300,
       "descLen": 1745,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 2,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-triode-trx-1se/",
       "priority": -745
@@ -2763,22 +2699,6 @@
       "priority": -800
     },
     {
-      "id": 16820,
-      "name": "интегральный усилитель Triode TRV 88SE ( triode trv 88se )",
-      "slug": "integralnii_ysilitel_triode_trv_88se",
-      "cat": "Усилители",
-      "price": 300000,
-      "descLen": 1045,
-      "gallery": 2,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_triode_trv_88se/",
-      "priority": -800
-    },
-    {
       "id": 15978,
       "name": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
       "slug": "ysilitel_moshnosti_Musica_IRIS_50_pow",
@@ -2987,22 +2907,6 @@
       "priority": -830
     },
     {
-      "id": 41440,
-      "name": "Напольная акустика Paradigm Premier 700F Espresso Grain ( paradigm premier 700f espresso grain )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-premier-700f-espresso-grain",
-      "cat": "Акустика",
-      "price": 269990,
-      "descLen": 2126,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-premier-700f-espresso-grain/",
-      "priority": -831
-    },
-    {
       "id": 41436,
       "name": "Напольная акустика Paradigm Premier 700F Gloss Black ( paradigm premier 700f gloss black )",
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-premier-700f-gloss-black",
@@ -3080,38 +2984,6 @@
         "gal:0"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/6fc65e284e8e74c4eb97fb42b8732961/",
-      "priority": -846
-    },
-    {
-      "id": 271150,
-      "name": "Центральный громкоговоритель Monitor Audio Gold C250 6G",
-      "slug": "762779f170a39d5ff470e6e6a98ec5ec",
-      "cat": "Другое",
-      "price": 254990,
-      "descLen": 3153,
-      "gallery": 3,
-      "specs": 17,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/762779f170a39d5ff470e6e6a98ec5ec/",
-      "priority": -846
-    },
-    {
-      "id": 271191,
-      "name": "Распределитель питания Nordost QBase QB8 Mark II",
-      "slug": "b6c618e39e303f7a7d55dec851f85e3d",
-      "cat": "Другое",
-      "price": 254990,
-      "descLen": 735,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/b6c618e39e303f7a7d55dec851f85e3d/",
       "priority": -846
     },
     {
@@ -3195,22 +3067,6 @@
       "priority": -850
     },
     {
-      "id": 271976,
-      "name": "Сетевой фильтр Isol-8 MiniSub Wave",
-      "slug": "6d54b209d08f8d47a5618f2203f9a9bc",
-      "cat": "Другое",
-      "price": 250200,
-      "descLen": 2953,
-      "gallery": 3,
-      "specs": 12,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/6d54b209d08f8d47a5618f2203f9a9bc/",
-      "priority": -850
-    },
-    {
       "id": 270043,
       "name": "Активная напольная акустика DALI Oberon 7 C + Sound Hub Compact",
       "slug": "4bef4bfe0397f437faefadb7e557e89a",
@@ -3243,22 +3099,6 @@
       "priority": -850
     },
     {
-      "id": 271049,
-      "name": "Напольная акустика Monitor Audio Silver 300 7G",
-      "slug": "c0ca491e3b103b46a7ef8f2b4fa1b7d6",
-      "cat": "Акустика",
-      "price": 249990,
-      "descLen": 3274,
-      "gallery": 3,
-      "specs": 18,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/c0ca491e3b103b46a7ef8f2b4fa1b7d6/",
-      "priority": -851
-    },
-    {
       "id": 271560,
       "name": "Центральный громкоговоритель KEF R6 Meta",
       "slug": "877e8462a1715ad7fe56779801931148",
@@ -3272,22 +3112,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/877e8462a1715ad7fe56779801931148/",
-      "priority": -851
-    },
-    {
-      "id": 273806,
-      "name": "Сетевой проигрыватель TEAC NT-505-X",
-      "slug": "13d19e5fff3068225de01c2ba14b98c8",
-      "cat": "Источники",
-      "price": 249990,
-      "descLen": 6071,
-      "gallery": 3,
-      "specs": 25,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/13d19e5fff3068225de01c2ba14b98c8/",
       "priority": -851
     },
     {
@@ -3899,22 +3723,6 @@
       "priority": -910
     },
     {
-      "id": 271556,
-      "name": "Центральный громкоговоритель KEF R2 Meta",
-      "slug": "f1b9eca0a4193fa788b91706ff688330",
-      "cat": "Другое",
-      "price": 189990,
-      "descLen": 3164,
-      "gallery": 3,
-      "specs": 17,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/f1b9eca0a4193fa788b91706ff688330/",
-      "priority": -911
-    },
-    {
       "id": 270516,
       "name": "Кабель акустический готовый Van den Hul The Inspiration Hybrid",
       "slug": "47983c617d697aab2bd8350395fb0959",
@@ -3961,22 +3769,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Musica_Iris_25_int/",
       "priority": -913
-    },
-    {
-      "id": 270286,
-      "name": "Напольная акустика Quad S-5",
-      "slug": "aeb8bb63bc3b66c6ae1d6f3278489bda",
-      "cat": "Акустика",
-      "price": 186990,
-      "descLen": 7795,
-      "gallery": 1,
-      "specs": 27,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/aeb8bb63bc3b66c6ae1d6f3278489bda/",
-      "priority": -914
     },
     {
       "id": 261062,
@@ -4089,22 +3881,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/054a1c8574a58238d3830af955e24bee/",
       "priority": -921
-    },
-    {
-      "id": 10134,
-      "name": "комплект Paradigm Cinema 100 CT gloss Black ( paradigm cinema 100 ct gloss black )",
-      "slug": "komplekt_akystiki_paradigm_cinema_100_ct_gloss_black",
-      "cat": "Акустика",
-      "price": 178415,
-      "descLen": 1771,
-      "gallery": 1,
-      "specs": 1,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/komplekt_akystiki_paradigm_cinema_100_ct_gloss_black/",
-      "priority": -922
     },
     {
       "id": 264111,
@@ -5771,38 +5547,6 @@
       "priority": -1003
     },
     {
-      "id": 10094,
-      "name": "всепогодная акустика Paradigm Stylus 470 Black ( paradigm stylus 470 black )",
-      "slug": "vsepogodnaia_akystika_paradigm_stylus_470_black",
-      "cat": "Акустика",
-      "price": 97665,
-      "descLen": 1087,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/vsepogodnaia_akystika_paradigm_stylus_470_black/",
-      "priority": -1003
-    },
-    {
-      "id": 10170,
-      "name": "всепогодная акустика Paradigm Stylus 470 white ( paradigm stylus 470 white )",
-      "slug": "vsepogodnaia_akystika_paradigm_stylus_470_white",
-      "cat": "Акустика",
-      "price": 97665,
-      "descLen": 1087,
-      "gallery": 1,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/vsepogodnaia_akystika_paradigm_stylus_470_white/",
-      "priority": -1003
-    },
-    {
       "id": 264444,
       "name": "Акустический кабель Furutech FS-301 ( furutech fs 301 )",
       "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-fs-301",
@@ -6361,38 +6105,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/8a5a2c23d5e964fec6d3453adb18f9b9/",
       "priority": -1019
-    },
-    {
-      "id": 10070,
-      "name": "всепогодная акустика Paradigm Stylus 370 Black ( paradigm stylus 370 black )",
-      "slug": "vsepogodnaia_akystika_paradigm_stylus_370_black",
-      "cat": "Акустика",
-      "price": 80010,
-      "descLen": 1225,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/vsepogodnaia_akystika_paradigm_stylus_370_black/",
-      "priority": -1020
-    },
-    {
-      "id": 10122,
-      "name": "всепогодная акустика Paradigm Stylus 370 white ( paradigm stylus 370 white )",
-      "slug": "vsepogodnaia_akystika_paradigm_stylus_370_white",
-      "cat": "Акустика",
-      "price": 80010,
-      "descLen": 1225,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/vsepogodnaia_akystika_paradigm_stylus_370_white/",
-      "priority": -1020
     },
     {
       "id": 271286,
@@ -7035,22 +6747,6 @@
       "priority": -1038
     },
     {
-      "id": 272609,
-      "name": "Фонокорректор Clearaudio Phonostage Nano Phono V2",
-      "slug": "203df34cff4bc7d542cadc28d1121bc1",
-      "cat": "Усилители",
-      "price": 61990,
-      "descLen": 3158,
-      "gallery": 3,
-      "specs": 16,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/203df34cff4bc7d542cadc28d1121bc1/",
-      "priority": -1039
-    },
-    {
       "id": 273357,
       "name": "Напольная акустика Mission LX-4 MKII",
       "slug": "0ba4098bb6bb79ff1b95b9fb5074c3e8",
@@ -7505,11 +7201,11 @@
       "cat": "Усилители",
       "price": 53100,
       "descLen": 2698,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_musica_pow_30usb_v/",
       "priority": -1047
@@ -7601,11 +7297,11 @@
       "cat": "Усилители",
       "price": 51300,
       "descLen": 2301,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_musica_pow_30usb/",
       "priority": -1049
@@ -7752,22 +7448,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/860f4a8a2ee4d0ac26f10edded1329fe/",
-      "priority": -1050
-    },
-    {
-      "id": 264402,
-      "name": "Фоно кабель Furutech AG-12 ( furutech ag 12 )",
-      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-12",
-      "cat": "Кабели",
-      "price": 50126,
-      "descLen": 923,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-12/",
       "priority": -1050
     },
     {
@@ -9611,22 +9291,6 @@
       "priority": -1074
     },
     {
-      "id": 264156,
-      "name": "Коннектор сетевой Furutech FI-48 NCF(R ) ( furutech fi 48 ncf(r ) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-48-ncfr",
-      "cat": "Другое",
-      "price": 26445,
-      "descLen": 843,
-      "gallery": 3,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-48-ncfr/",
-      "priority": -1074
-    },
-    {
       "id": 263967,
       "name": "Межблочный кабель Acoustic Revive Line 1.0BNC-TripleC-FM ( acoustic revive line 1 0bnc triplec fm )",
       "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-1-0bnc-triplec-fm",
@@ -9849,22 +9513,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%b4%d0%b0%d0%bf%d1%82%d0%b5%d1%80-acoustic-revive-bwa-4/",
       "priority": -1075
-    },
-    {
-      "id": 264157,
-      "name": "Коннектор сетевой Furutech FI-48 NCF(Ag ) ( furutech fi 48 ncf(ag ) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-48-ncfag",
-      "cat": "Другое",
-      "price": 24948,
-      "descLen": 845,
-      "gallery": 3,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-48-ncfag/",
-      "priority": -1076
     },
     {
       "id": 264273,
@@ -10137,22 +9785,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/a65e19952e3945519613ab7d81e363bc/",
       "priority": -1079
-    },
-    {
-      "id": 270771,
-      "name": "Активный сабвуфер Wharfedale WH-D8",
-      "slug": "c84919cb3d9813bd969bbb629dbdd54d",
-      "cat": "Акустика",
-      "price": 20990,
-      "descLen": 2547,
-      "gallery": 3,
-      "specs": 14,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/c84919cb3d9813bd969bbb629dbdd54d/",
-      "priority": -1080
     },
     {
       "id": 264281,
@@ -10472,22 +10104,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-rsa-50-3p/",
-      "priority": -1082
-    },
-    {
-      "id": 269844,
-      "name": "Кабель сетевой готовый Wireworld Stratus 7",
-      "slug": "927cd285d63a6d0122f0c36e4ca1175d",
-      "cat": "Кабели",
-      "price": 18300,
-      "descLen": 727,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/927cd285d63a6d0122f0c36e4ca1175d/",
       "priority": -1082
     },
     {
@@ -12283,22 +11899,6 @@
       "priority": -1093
     },
     {
-      "id": 269830,
-      "name": "Кабель для сабвуфера Wireworld Luna 8 Mono",
-      "slug": "bc951df8df19bed3043a6fd7cc9c67b6",
-      "cat": "Кабели",
-      "price": 7400,
-      "descLen": 720,
-      "gallery": 3,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/bc951df8df19bed3043a6fd7cc9c67b6/",
-      "priority": -1093
-    },
-    {
       "id": 264327,
       "name": "Коннектор Furutech CF-763SM ( R) ( furutech cf 763sm ( r) )",
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-cf-763sm-r",
@@ -14075,22 +13675,6 @@
       "priority": -1100
     },
     {
-      "id": 264225,
-      "name": "Накладка на розетку Furutech Outlet Cover plate 102-D ( furutech outlet cover plate 102 d )",
-      "slug": "%d0%bd%d0%b0%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0-%d0%bd%d0%b0-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d1%83-furutech-outlet-cover-plate-102-d",
-      "cat": "Другое",
-      "price": 0,
-      "descLen": 1055,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0-%d0%bd%d0%b0-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d1%83-furutech-outlet-cover-plate-102-d/",
-      "priority": -1100
-    },
-    {
       "id": 264226,
       "name": "Накладка на розетку Furutech Duplex cover plate 104-D ( furutech duplex cover plate 104 d )",
       "slug": "%d0%bd%d0%b0%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0-%d0%bd%d0%b0-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d1%83-furutech-duplex-cover-plate-104-d",
@@ -14267,22 +13851,6 @@
       "priority": -1100
     },
     {
-      "id": 265339,
-      "name": "SAСD проигрыватель Soulnote S-3 Ver.2 ( sa d soulnote s 3  ver 2 )",
-      "slug": "sasd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-soulnote-s-3-se-ver-2",
-      "cat": "Источники",
-      "price": 0,
-      "descLen": 9239,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/sasd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-soulnote-s-3-se-ver-2/",
-      "priority": -1100
-    },
-    {
       "id": 265505,
       "name": "Фонокорректор TRIGON Vanguard SE ( trigon vanguard se )",
       "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-trigon-vanguard-se",
@@ -14305,11 +13873,11 @@
       "cat": "Акустика",
       "price": 0,
       "descLen": 1790,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 21,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b2%d1%81%d1%82%d1%80%d0%b0%d0%b8%d0%b2%d0%b0%d0%b5%d0%bc%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-p80-iw/",
       "priority": -1100

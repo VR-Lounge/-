@@ -26,6 +26,24 @@
   ],
   "gallery": [
     {
+      "src": "local://0360e458c3_wireworld_luna_8_mono2.jpg",
+      "thumb": "assets/enriched/269830/25b87c9681_live1.jpg",
+      "alt": "Кабель для сабвуфера Wireworld Luna 8 Mono",
+      "local": "assets/enriched/269830/25b87c9681_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 17657
+    },
+    {
+      "src": "local://5b003eff5a_wireworld_luna_8_mono3.jpg",
+      "thumb": "assets/enriched/269830/e60f81cde3_live2.jpg",
+      "alt": "Кабель для сабвуфера Wireworld Luna 8 Mono",
+      "local": "assets/enriched/269830/e60f81cde3_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 23130
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_luna_8_mono1.jpg",
       "alt": "wireworld_luna_8_mono1.jpg",
@@ -46,11 +64,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://wireworldcable.com/",
     "https://xn--80aannlcfckh.xn--p1ai/product/bc951df8df19bed3043a6fd7cc9c67b6/"
   ],
-  "enrichedAt": "2026-11-14T13:36:06Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "enrichedAt": "2026-11-14T17:02:09Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w9-2026-11",
   "galleryHitl": true
 }

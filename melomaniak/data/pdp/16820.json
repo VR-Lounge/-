@@ -46,6 +46,24 @@
   ],
   "gallery": [
     {
+      "src": "local://f6807fc040_integralnii_ysilitel_Triode_TRV_88SER.jpg",
+      "thumb": "assets/enriched/16820/fd6859ec48_live1.jpg",
+      "alt": "интегральный усилитель Triode TRV 88SE ( triode trv 88se )",
+      "local": "assets/enriched/16820/fd6859ec48_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 46937
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Triode_TRV_88SER.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Triode_TRV_88SER.jpg",
+      "alt": "интегральный усилитель Triode TRV 88SE ( triode trv 88se )",
+      "local": "assets/enriched/16820/d3e84a5fa4_1.jpg",
+      "enriched": true,
+      "attribution": "xn--80aannlcfckh.xn--p1ai",
+      "bytes": 46937
+    },
+    {
       "src": "local://cafb1483fd_integralnii_ysilitel_Triode_TRV_88SE.jpg",
       "thumb": "assets/enriched/16820/65c4a070bc_live1.jpg",
       "alt": "интегральный усилитель Triode TRV 88SE ( triode trv 88se )",
@@ -66,8 +84,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_triode_trv_88se/"
   ],
-  "enrichedAt": "2026-11-14T14:22:42Z",
+  "enrichedAt": "2026-11-14T17:02:06Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11",
+  "meagerWave": "meager-w9-2026-11",
   "galleryHitl": true
 }

@@ -121,6 +121,15 @@
   ],
   "gallery": [
     {
+      "src": "local://4ed5c835a9_vstraivaemaya-akusticheskaya-sistema-paradigm-p80-r1-1000x500-1.jpg",
+      "thumb": "assets/enriched/266396/73850e4db7_live1.jpg",
+      "alt": "Встраиваемая акустика PARADIGM P80-IW ( paradigm p80 iw )",
+      "local": "assets/enriched/266396/73850e4db7_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 52879
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Paradigm_CI_Pro_P80-IW.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Paradigm_CI_Pro_P80-IW-600x600.jpg",
       "alt": "Paradigm_CI_Pro_P80-IW",
@@ -133,8 +142,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b2%d1%81%d1%82%d1%80%d0%b0%d0%b8%d0%b2%d0%b0%d0%b5%d0%bc%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-p80-iw/"
   ],
-  "enrichedAt": "2026-11-14T13:46:37Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "enrichedAt": "2026-11-14T17:02:08Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w9-2026-11",
   "galleryHitl": true
 }

@@ -36,6 +36,33 @@
   ],
   "gallery": [
     {
+      "src": "local://e9003df75e_FURUTECH-AG-12R-500x500-1-1.jpg",
+      "thumb": "assets/enriched/264402/df80c9f47b_live1.jpg",
+      "alt": "Фоно кабель Furutech AG-12 ( furutech ag 12 )",
+      "local": "assets/enriched/264402/df80c9f47b_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 42093
+    },
+    {
+      "src": "local://e9003df75e_FURUTECH-AG-12R-500x500-1.jpg",
+      "thumb": "assets/enriched/264402/43c7af1785_live2.jpg",
+      "alt": "Фоно кабель Furutech AG-12 ( furutech ag 12 )",
+      "local": "assets/enriched/264402/43c7af1785_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 42093
+    },
+    {
+      "src": "local://0ee8ac0555_FURUTECH-AG-12L-500x500-1.jpg",
+      "thumb": "assets/enriched/264402/aa11a8c84a_live3.jpg",
+      "alt": "Фоно кабель Furutech AG-12 ( furutech ag 12 )",
+      "local": "assets/enriched/264402/aa11a8c84a_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 38363
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-AG-12R-500x500-1-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-AG-12R-500x500-1-1.jpg",
       "alt": "FURUTECH-AG-12R-500&#215;500 (1)"
@@ -45,11 +72,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://furutech.com/",
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-12/"
   ],
-  "enrichedAt": "2026-11-14T13:34:38Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "enrichedAt": "2026-11-14T17:02:07Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w9-2026-11",
   "galleryHitl": true
 }

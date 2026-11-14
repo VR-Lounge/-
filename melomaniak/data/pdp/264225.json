@@ -36,6 +36,15 @@
   ],
   "gallery": [
     {
+      "src": "local://e68c398045_Furutech-Outlet-cover-102D.jpg",
+      "thumb": "assets/enriched/264225/d822f59072_live1.jpg",
+      "alt": "Накладка на розетку Furutech Outlet Cover plate 102-D ( furutech outlet cover plate 102 d )",
+      "local": "assets/enriched/264225/d822f59072_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 12559
+    },
+    {
       "src": "local://d9daafd623_Накладка-на-розетку-Furutech-GTX-Wall-Plate-1.jpg",
       "thumb": "assets/enriched/264225/72061d0e8b_live1.jpg",
       "alt": "Накладка на розетку Furutech Outlet Cover plate 102-D ( furutech outlet cover plate 102 d )",
@@ -64,11 +73,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://furutech.com/",
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0-%d0%bd%d0%b0-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d1%83-furutech-outlet-cover-plate-102-d/"
   ],
-  "enrichedAt": "2026-11-14T14:07:37Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w7-2026-11",
+  "enrichedAt": "2026-11-14T16:50:54Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w9-2026-11",
   "galleryHitl": true
 }
