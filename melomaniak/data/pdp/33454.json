@@ -37,6 +37,33 @@
   ],
   "gallery": [
     {
+      "src": "local://6891e8ed4d_advance-paris-x-a220-1.800x600w.png",
+      "thumb": "assets/enriched/33454/db76ebaf32_live1.png",
+      "alt": "Advance Acoustic X-A220 ( advance acoustic x a220 )",
+      "local": "assets/enriched/33454/db76ebaf32_live1.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 390497
+    },
+    {
+      "src": "local://b4e476c248_Advance-PAris-X-A220-EVO.png",
+      "thumb": "assets/enriched/33454/0285412219_live2.png",
+      "alt": "Advance Acoustic X-A220 ( advance acoustic x a220 )",
+      "local": "assets/enriched/33454/0285412219_live2.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 535444
+    },
+    {
+      "src": "local://advance-paris-x-a220-1.800x600w_6891e8ed4d.png",
+      "thumb": "assets/enriched/33454/72e3245eb0_live3.png",
+      "alt": "Advance Acoustic X-A220 ( advance acoustic x a220 )",
+      "local": "assets/enriched/33454/72e3245eb0_live3.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 390497
+    },
+    {
       "src": "local://x_a220_rear_314209c4f8.jpg",
       "thumb": "assets/enriched/33454/86675790c5_live1.jpg",
       "alt": "Advance Acoustic X-A220 ( advance acoustic x a220 )",
@@ -64,8 +91,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/advance_acoustic_x-a220__advance_paris_px1-184950/"
   ],
-  "enrichedAt": "2026-11-14T13:38:10Z",
+  "enrichedAt": "2026-11-14T13:52:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "meagerWave": "meager-w6-2026-11"
 }

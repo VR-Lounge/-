@@ -51,6 +51,15 @@
   ],
   "gallery": [
     {
+      "src": "local://1a09bdd159_nayshniki_Precide_ERGO_AMT_.jpg",
+      "thumb": "assets/enriched/271791/4a47645cd0_live1.jpg",
+      "alt": "CD-транспорт Primare DD15",
+      "local": "assets/enriched/271791/4a47645cd0_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 28834
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_dd15_9718173-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_dd15_9718173-1.jpg",
       "alt": "primare_dd15_9718173-1.jpg",
@@ -75,8 +84,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/c8b90d4c70f0388973203f077902f56f/"
   ],
-  "enrichedAt": "2026-11-14T13:36:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T13:52:16Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w6-2026-11"
 }

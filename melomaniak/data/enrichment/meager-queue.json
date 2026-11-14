@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T13:38:30Z",
+  "generatedAt": "2026-11-14T13:52:41Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,57 +8,24 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 1062,
-  "okCount": 825,
+  "meagerCount": 969,
+  "okCount": 918,
   "reasonTallies": {
-    "gal": 1058,
-    "desc": 9
+    "gal": 969
   },
   "byCategory": {
     "Другое": 380,
     "Кабели": 231,
-    "Усилители": 182,
-    "Акустика": 173,
-    "Источники": 66,
-    "Ресиверы": 13,
+    "Усилители": 154,
+    "Акустика": 123,
+    "Источники": 58,
     "ЦАПы": 9,
-    "Наушники": 6,
+    "Ресиверы": 8,
+    "Наушники": 4,
     "Спецпредложения": 1,
     "Видео": 1
   },
   "items": [
-    {
-      "id": 264554,
-      "name": "Кабель для наушников SAEC  SHC-2B300FH80 ( saec shc 2b300fh80 )",
-      "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-2b300fh80",
-      "cat": "Наушники",
-      "price": 48025,
-      "descLen": 1303,
-      "gallery": 3,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-2b300fh80/",
-      "priority": 8948
-    },
-    {
-      "id": 264553,
-      "name": "Кабель для наушников SAEC  SHC-2B300FH65 ( saec shc 2b300fh65 )",
-      "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-2b300fh65",
-      "cat": "Наушники",
-      "price": 43908,
-      "descLen": 1303,
-      "gallery": 3,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-2b300fh65/",
-      "priority": 8943
-    },
     {
       "id": 264551,
       "name": "Кабель для наушников SAEC  SHC-B120FF ( saec shc b120ff )",
@@ -172,22 +139,6 @@
       "priority": 6750
     },
     {
-      "id": 273970,
-      "name": "Стереоусилитель мощности T+A A 3000 HV",
-      "slug": "1ce53c97931666f8c6ae645a177aec93",
-      "cat": "Усилители",
-      "price": 2700000,
-      "descLen": 3846,
-      "gallery": 3,
-      "specs": 15,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/1ce53c97931666f8c6ae645a177aec93/",
-      "priority": 6600
-    },
-    {
       "id": 273984,
       "name": "CD-проигрыватель T+A MP 3100 HV",
       "slug": "f1f19dbff3bcd6812382e4366bf0a804",
@@ -250,22 +201,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/a4128b240b24b5ee9d13e545ecce7260/",
       "priority": 5085
-    },
-    {
-      "id": 273850,
-      "name": "Полочная акустика T+A Talis R 300",
-      "slug": "f40911bb455c9de4a90efa39e91fd981",
-      "cat": "Акустика",
-      "price": 1035000,
-      "descLen": 3824,
-      "gallery": 2,
-      "specs": 17,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/f40911bb455c9de4a90efa39e91fd981/",
-      "priority": 4935
     },
     {
       "id": 273920,
@@ -370,11 +305,11 @@
       "cat": "Усилители",
       "price": 3800000,
       "descLen": 2148,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 5,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Triode_TRX_M845/",
       "priority": 2700
@@ -578,30 +513,14 @@
       "cat": "Акустика",
       "price": 2362500,
       "descLen": 1136,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 5,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Caldera/",
       "priority": 1262
-    },
-    {
-      "id": 272183,
-      "name": "AV-ресивер NAD T778",
-      "slug": "97cab3589df6fb92381b19735ffb508a",
-      "cat": "Ресиверы",
-      "price": 399990,
-      "descLen": 3586,
-      "gallery": 6,
-      "specs": 19,
-      "enriched": false,
-      "reasons": [
-        "desc:3586"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/97cab3589df6fb92381b19735ffb508a/",
-      "priority": 1199
     },
     {
       "id": 269486,
@@ -634,22 +553,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/3bd40233a236e29090a18e901f7d5844/",
       "priority": 1019
-    },
-    {
-      "id": 272174,
-      "name": "AV-ресивер NAD T758 V3i",
-      "slug": "e7e89f61255bfc001376e874e6e2c2ce",
-      "cat": "Ресиверы",
-      "price": 199990,
-      "descLen": 3497,
-      "gallery": 8,
-      "specs": 19,
-      "enriched": false,
-      "reasons": [
-        "desc:3497"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/e7e89f61255bfc001376e874e6e2c2ce/",
-      "priority": 999
     },
     {
       "id": 269517,
@@ -762,22 +665,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/673ad79ae45147d37c1b1210aab3c51a/",
       "priority": 871
-    },
-    {
-      "id": 272029,
-      "name": "Сетевой проигрыватель iFi audio ZEN Stream",
-      "slug": "a0598cd8194d07d5b60f232cf6e6ebff",
-      "cat": "Источники",
-      "price": 55650,
-      "descLen": 4631,
-      "gallery": 7,
-      "specs": 20,
-      "enriched": false,
-      "reasons": [
-        "desc:4631"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/a0598cd8194d07d5b60f232cf6e6ebff/",
-      "priority": 855
     },
     {
       "id": 272838,
@@ -1004,39 +891,6 @@
       "priority": 319
     },
     {
-      "id": 15590,
-      "name": "Напольная акустическая система  Audio Physic Avantera ( audio physic avantera )",
-      "slug": "napolnaia_akystika_audio_physic_avantera",
-      "cat": "Акустика",
-      "price": 1400000,
-      "descLen": 2267,
-      "gallery": 3,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_audio_physic_avantera/",
-      "priority": 300
-    },
-    {
-      "id": 26598,
-      "name": "фонокорректор Amazon Audio B-Lab ( amazon audio b lab )",
-      "slug": "fonokorrektor_Amazon_Audio_B-Lab",
-      "cat": "Усилители",
-      "price": 540000,
-      "descLen": 806,
-      "gallery": 1,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "desc:806",
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/fonokorrektor_Amazon_Audio_B-Lab/",
-      "priority": 240
-    },
-    {
       "id": 26636,
       "name": "усилитель мощности Audio Physic AP MONO ( audio physic ap mono )",
       "slug": "ysilitel_moshnosti_audio_physic_ap_mono_",
@@ -1133,22 +987,6 @@
       "priority": 86
     },
     {
-      "id": 15592,
-      "name": "напольная акустика Audio Physic Avanti V ( audio physic avanti v )",
-      "slug": "napolnaia_akystika_Audio_Physic_Avanti_V",
-      "cat": "Акустика",
-      "price": 1150000,
-      "descLen": 1180,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Avanti_V/",
-      "priority": 50
-    },
-    {
       "id": 26602,
       "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
       "slug": "ysilitel_moshnosti_Arte_forma_805PP",
@@ -1181,38 +1019,6 @@
       "priority": 23
     },
     {
-      "id": 15612,
-      "name": "напольная акустика Audio Physic Virgo 25 plus ( audio physic virgo 25 plus )",
-      "slug": "napolnaia_akystika_Audio_Physic_Virgo_25_plus",
-      "cat": "Акустика",
-      "price": 1100000,
-      "descLen": 1197,
-      "gallery": 1,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Virgo_25_plus/",
-      "priority": 0
-    },
-    {
-      "id": 15898,
-      "name": "усилитель мощности Audionet Amp ( audionet amp )",
-      "slug": "ysilitel_moshnosti_audionet_amp",
-      "cat": "Усилители",
-      "price": 1100000,
-      "descLen": 1660,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_audionet_amp/",
-      "priority": 0
-    },
-    {
       "id": 15906,
       "name": "усилитель мощности Herron Audio M1 ( herron audio m1 )",
       "slug": "ysilitel_moshnosti_Herron_Audio_M1",
@@ -1227,86 +1033,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Herron_Audio_M1/",
       "priority": 0
-    },
-    {
-      "id": 15610,
-      "name": "напольная акустика Audio Physic Virgo 25 ( audio physic virgo 25 )",
-      "slug": "napolnaia_akystika_Audio_Physic_Virgo_25",
-      "cat": "Акустика",
-      "price": 1090000,
-      "descLen": 1204,
-      "gallery": 1,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Virgo_25/",
-      "priority": -10
-    },
-    {
-      "id": 40233,
-      "name": "полочная акустика Paradigm Persona B Vanta High Gloss Black ( paradigm persona b vanta high gloss black )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-persona-b-vanta-high-gloss-black",
-      "cat": "Акустика",
-      "price": 1087150,
-      "descLen": 4567,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-persona-b-vanta-high-gloss-black/",
-      "priority": -13
-    },
-    {
-      "id": 40235,
-      "name": "полочная акустика Paradigm Persona B Harmony Gloss White ( paradigm persona b harmony gloss white )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-persona-b-harmony-gloss-white",
-      "cat": "Акустика",
-      "price": 1087150,
-      "descLen": 4567,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-persona-b-harmony-gloss-white/",
-      "priority": -13
-    },
-    {
-      "id": 40237,
-      "name": "полочная акустика Paradigm Persona B Sonic Metallic Sliver ( paradigm persona b sonic metallic sliver )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-persona-b-sonic-metallic-sliver",
-      "cat": "Акустика",
-      "price": 1087150,
-      "descLen": 4567,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-persona-b-sonic-metallic-sliver/",
-      "priority": -13
-    },
-    {
-      "id": 40239,
-      "name": "полочная акустика Paradigm Persona B Aria Metallic Blue ( paradigm persona b aria metallic blue )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-persona-b-aria-metallic-blue",
-      "cat": "Акустика",
-      "price": 1087150,
-      "descLen": 4567,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-persona-b-aria-metallic-blue/",
-      "priority": -13
     },
     {
       "id": 15914,
@@ -1421,22 +1147,6 @@
       "priority": -100
     },
     {
-      "id": 261114,
-      "name": "предусилитель и усилитель мощности audio research sp20 + vs115 ( audio research sp20 plus vs115 )",
-      "slug": "%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%b8-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-audio-rese",
-      "cat": "Усилители",
-      "price": 1000000,
-      "descLen": 3304,
-      "gallery": 1,
-      "specs": 33,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%b8-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-audio-rese/",
-      "priority": -100
-    },
-    {
       "id": 15952,
       "name": "предусилитель Line Magnetic Audio LM 512CA ( line magnetic audio lm 512ca )",
       "slug": "predysilitel_Line_Magnetic_Audio_LM_512CA",
@@ -1450,22 +1160,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Line_Magnetic_Audio_LM_512CA/",
-      "priority": -110
-    },
-    {
-      "id": 16222,
-      "name": "напольная акустика Audio Physic Virgo V ( audio physic virgo v )",
-      "slug": "napolnaia_akystika_Audio_Physic_Virgo_V",
-      "cat": "Акустика",
-      "price": 990000,
-      "descLen": 1138,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Virgo_V/",
       "priority": -110
     },
     {
@@ -1597,22 +1291,6 @@
       "priority": -199
     },
     {
-      "id": 262110,
-      "name": "Интегральный усилитель Line Magnetic Audio LM 845iA Premium ( line magnetic audio lm 845ia premium )",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-845ia",
-      "cat": "Усилители",
-      "price": 900000,
-      "descLen": 1795,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-845ia/",
-      "priority": -200
-    },
-    {
       "id": 16846,
       "name": "усилитель мощности Triode TRX P3M ( triode trx p3m )",
       "slug": "ysilitel_moshnosti_triode_trx_p3m",
@@ -1661,23 +1339,6 @@
       "priority": -259
     },
     {
-      "id": 264335,
-      "name": "Переходник Furutech F 63 S (R) ( furutech f 63 s (r) )",
-      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-r",
-      "cat": "Другое",
-      "price": 35700,
-      "descLen": 974,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "desc:974",
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-r/",
-      "priority": -265
-    },
-    {
       "id": 272804,
       "name": "Сетевой фильтр AudioQuest NIAGARA 5000",
       "slug": "b1444ea83114ef3b6b60a033d267d3c3",
@@ -1710,22 +1371,6 @@
       "priority": -275
     },
     {
-      "id": 262117,
-      "name": "Предусилитель Line Magnetic Audio LM 129 ( line magnetic audio lm 129 )",
-      "slug": "%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-129",
-      "cat": "Усилители",
-      "price": 820000,
-      "descLen": 1512,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-129/",
-      "priority": -280
-    },
-    {
       "id": 15920,
       "name": "интегральный усилитель Leben CS 600 ( leben cs 600 )",
       "slug": "integralnii_ysilitel_Leben_CS_600",
@@ -1740,73 +1385,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Leben_CS_600/",
       "priority": -290
-    },
-    {
-      "id": 262114,
-      "name": "Интегральный усилитель Line Magnetic Audio LM 125iA ( line magnetic audio lm 125ia )",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-125ia",
-      "cat": "Усилители",
-      "price": 810000,
-      "descLen": 3444,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-125ia/",
-      "priority": -290
-    },
-    {
-      "id": 264336,
-      "name": "Переходник Furutech F 63 S (G) ( furutech f 63 s (g) )",
-      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-g",
-      "cat": "Другое",
-      "price": 2678,
-      "descLen": 992,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "desc:992",
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-g/",
-      "priority": -298
-    },
-    {
-      "id": 264337,
-      "name": "Переходник Furutech F 35 (R) ( furutech f 35 (r) )",
-      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-r",
-      "cat": "Другое",
-      "price": 0,
-      "descLen": 979,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "desc:979",
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-r/",
-      "priority": -300
-    },
-    {
-      "id": 264338,
-      "name": "Переходник Furutech F 35 (G) ( furutech f 35 (g) )",
-      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-g",
-      "cat": "Другое",
-      "price": 0,
-      "descLen": 980,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "desc:980",
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-g/",
-      "priority": -300
     },
     {
       "id": 273270,
@@ -2001,22 +1579,6 @@
       "priority": -326
     },
     {
-      "id": 261829,
-      "name": "AV ресивер ANTHEM MRX 1140 ( av anthem mrx 1140 )",
-      "slug": "av-%d1%80%d0%b5%d1%81%d0%b8%d0%b2%d0%b5%d1%80-anthem-mrx-1140",
-      "cat": "Ресиверы",
-      "price": 773415,
-      "descLen": 2535,
-      "gallery": 1,
-      "specs": 35,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/av-%d1%80%d0%b5%d1%81%d0%b8%d0%b2%d0%b5%d1%80-anthem-mrx-1140/",
-      "priority": -327
-    },
-    {
       "id": 264124,
       "name": "Сетевой фильтр Audio Replas TRIANGLE POWER 6 SIG ( audio replas triangle power 6 sig )",
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-audio-replas-triangle-power-6-sig",
@@ -2095,22 +1657,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_spec_rsa_m1ex/",
       "priority": -380
-    },
-    {
-      "id": 267427,
-      "name": "Сетевой плеер Line Magnetic Audio LM-612NAP",
-      "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%bf%d0%bb%d0%b5%d0%b5%d1%80-line-magnetic-audio-lm-612nap",
-      "cat": "Источники",
-      "price": 710000,
-      "descLen": 1791,
-      "gallery": 2,
-      "specs": 12,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%bf%d0%bb%d0%b5%d0%b5%d1%80-line-magnetic-audio-lm-612nap/",
-      "priority": -390
     },
     {
       "id": 272655,
@@ -2225,22 +1771,6 @@
       "priority": -421
     },
     {
-      "id": 271656,
-      "name": "Активная напольная акустика KEF LS60 Wireless",
-      "slug": "0f059629d58d5c5f15c7ac52f4d84dfd",
-      "cat": "Акустика",
-      "price": 659990,
-      "descLen": 3815,
-      "gallery": 1,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/0f059629d58d5c5f15c7ac52f4d84dfd/",
-      "priority": -441
-    },
-    {
       "id": 262137,
       "name": "ЦАП Soulnote D 1N  ( soulnote d 1n  )",
       "slug": "%d1%86%d0%b0%d0%bf-soulnote-d-1n-sh",
@@ -2255,22 +1785,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b0%d0%bf-soulnote-d-1n-sh/",
       "priority": -450
-    },
-    {
-      "id": 34458,
-      "name": "интегральный усилитель Anthem STR Integrated Amplifier ( anthem str integrated amplifier )",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-anthem-str-integrated-amplifier",
-      "cat": "Усилители",
-      "price": 647920,
-      "descLen": 1504,
-      "gallery": 3,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-anthem-str-integrated-amplifier/",
-      "priority": -453
     },
     {
       "id": 262119,
@@ -2335,22 +1849,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Herron_Audio_VTSP_2/",
       "priority": -480
-    },
-    {
-      "id": 40188,
-      "name": "предусилитель Anthem STR Preamplifier ( anthem str preamplifier )",
-      "slug": "%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-anthem-str-preamplifier",
-      "cat": "Усилители",
-      "price": 607665,
-      "descLen": 2647,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-anthem-str-preamplifier/",
-      "priority": -493
     },
     {
       "id": 16800,
@@ -2431,38 +1929,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/150621ddf7355d13f6d541be2c8ea0a7/",
       "priority": -527
-    },
-    {
-      "id": 265493,
-      "name": "Напольная акустика Audio Physic Classic 25 ( audio physic classic 25 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-25",
-      "cat": "Акустика",
-      "price": 571999,
-      "descLen": 2560,
-      "gallery": 1,
-      "specs": 10,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-25/",
-      "priority": -529
-    },
-    {
-      "id": 25160,
-      "name": "усилитель мощности Anthem Statement M 1 BL ( anthem statement m 1 bl )",
-      "slug": "ysilitel_moshnosti_anthem_statement_m_1_bl",
-      "cat": "Усилители",
-      "price": 569415,
-      "descLen": 2071,
-      "gallery": 3,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_anthem_statement_m_1_bl/",
-      "priority": -531
     },
     {
       "id": 272015,
@@ -2593,6 +2059,22 @@
       "priority": -550
     },
     {
+      "id": 26598,
+      "name": "фонокорректор Amazon Audio B-Lab ( amazon audio b lab )",
+      "slug": "fonokorrektor_Amazon_Audio_B-Lab",
+      "cat": "Усилители",
+      "price": 540000,
+      "descLen": 815,
+      "gallery": 1,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/fonokorrektor_Amazon_Audio_B-Lab/",
+      "priority": -560
+    },
+    {
       "id": 270661,
       "name": "Напольная акустика Wharfedale Elysian 3",
       "slug": "9c5cc35ce459847c42175bb60545eb4f",
@@ -2705,54 +2187,6 @@
       "priority": -580
     },
     {
-      "id": 261841,
-      "name": "Интегральный усилитель Line Magnetic Aaudio LM-805 IA ( line magnetic aaudio lm 805 ia )",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-aaudio-lm-805-ia",
-      "cat": "Усилители",
-      "price": 520000,
-      "descLen": 2048,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-aaudio-lm-805-ia/",
-      "priority": -580
-    },
-    {
-      "id": 262051,
-      "name": "Напольная акустика Audio Physic Tempo 25 ( audio physic tempo 25 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-tempo-25",
-      "cat": "Акустика",
-      "price": 520000,
-      "descLen": 2460,
-      "gallery": 1,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-tempo-25/",
-      "priority": -580
-    },
-    {
-      "id": 262063,
-      "name": "Напольная акустика Divini Audio Classical 13 ( divini audio classical 13 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-classical-13",
-      "cat": "Акустика",
-      "price": 510000,
-      "descLen": 1990,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-classical-13/",
-      "priority": -590
-    },
-    {
       "id": 14804,
       "name": "проектор Epson EH LS10000 ( epson eh ls10000 )",
       "slug": "proektor_Epson_EH_LS10000",
@@ -2817,68 +2251,20 @@
       "priority": -601
     },
     {
-      "id": 265489,
-      "name": "Напольная акустика AUDIO PHYSIC Classic 15 ( audio physic classic 15 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-15",
-      "cat": "Акустика",
-      "price": 495000,
-      "descLen": 2814,
-      "gallery": 1,
-      "specs": 19,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-15/",
-      "priority": -605
-    },
-    {
       "id": 261835,
       "name": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
       "slug": "%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-anthem-mca-525-gen-2",
       "cat": "Усилители",
       "price": 494925,
       "descLen": 1769,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 31,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-anthem-mca-525-gen-2/",
       "priority": -606
-    },
-    {
-      "id": 262049,
-      "name": "Напольная акустика Audio Physic Tempo VI ( audio physic tempo vi )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-tempo-vi",
-      "cat": "Акустика",
-      "price": 490000,
-      "descLen": 3782,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-tempo-vi/",
-      "priority": -610
-    },
-    {
-      "id": 274248,
-      "name": "Сетевой проигрыватель Aurender ACS100 4Tb HDD",
-      "slug": "cf2b008d66623ed7532643dfbda3db4a",
-      "cat": "Источники",
-      "price": 485100,
-      "descLen": 4208,
-      "gallery": 3,
-      "specs": 15,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/cf2b008d66623ed7532643dfbda3db4a/",
-      "priority": -615
     },
     {
       "id": 271210,
@@ -2959,86 +2345,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/av_protsessor_anthem_statement_d2v_3d-178924/",
       "priority": -621
-    },
-    {
-      "id": 271759,
-      "name": "Предусилитель Primare PRE35 DAC",
-      "slug": "46aa7a09225a0ebe02a1f46554570ed9",
-      "cat": "Усилители",
-      "price": 475000,
-      "descLen": 3040,
-      "gallery": 2,
-      "specs": 12,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/46aa7a09225a0ebe02a1f46554570ed9/",
-      "priority": -625
-    },
-    {
-      "id": 269167,
-      "name": "Активный сабвуфер Klipsch R-121SW",
-      "slug": "8ec6227f7e632b1781bd2651571c0359",
-      "cat": "Акустика",
-      "price": 69990,
-      "descLen": 774,
-      "gallery": 16,
-      "specs": 8,
-      "enriched": true,
-      "reasons": [
-        "desc:774"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/8ec6227f7e632b1781bd2651571c0359/",
-      "priority": -631
-    },
-    {
-      "id": 274238,
-      "name": "Сетевой проигрыватель Aurender ACS100 2Tb HDD",
-      "slug": "b08e078e450375655db710bb9d87c315",
-      "cat": "Источники",
-      "price": 463050,
-      "descLen": 4193,
-      "gallery": 2,
-      "specs": 15,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/b08e078e450375655db710bb9d87c315/",
-      "priority": -637
-    },
-    {
-      "id": 262036,
-      "name": "Предусилитель Advance Acoustic X-P 1200 ( advance acoustic x p 1200 )",
-      "slug": "%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-advance-acoustic-x-p-1200",
-      "cat": "Усилители",
-      "price": 460000,
-      "descLen": 4116,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-advance-acoustic-x-p-1200/",
-      "priority": -640
-    },
-    {
-      "id": 267831,
-      "name": "Интегральный усилитель Line Magnetic LM-845iA",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-lm-845ia",
-      "cat": "Усилители",
-      "price": 460000,
-      "descLen": 2948,
-      "gallery": 1,
-      "specs": 13,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-lm-845ia/",
-      "priority": -640
     },
     {
       "id": 271129,
@@ -3137,22 +2443,6 @@
       "priority": -670
     },
     {
-      "id": 262033,
-      "name": "Advance Acoustic X-A220 Evo ( advance acoustic x a220 evo )",
-      "slug": "advance-acoustic-x-a220-evo",
-      "cat": "Усилители",
-      "price": 430000,
-      "descLen": 2940,
-      "gallery": 3,
-      "specs": 19,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/advance-acoustic-x-a220-evo/",
-      "priority": -670
-    },
-    {
       "id": 270148,
       "name": "CD-проигрыватель MOON 260D Black",
       "slug": "1c729d2f539ea95e960f453ba2d24acb",
@@ -3167,22 +2457,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/1c729d2f539ea95e960f453ba2d24acb/",
       "priority": -671
-    },
-    {
-      "id": 26586,
-      "name": "усилитель мощности Advance Acoustic X-A1200 ( advance acoustic x a1200 )",
-      "slug": "ysilitel_moshnosti_advance_acoustic_x-a_1200",
-      "cat": "Усилители",
-      "price": 423938,
-      "descLen": 1862,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_advance_acoustic_x-a_1200/",
-      "priority": -677
     },
     {
       "id": 15916,
@@ -3383,11 +2657,11 @@
       "cat": "Усилители",
       "price": 395000,
       "descLen": 717,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 6,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Line_Magnetic_Audio_LM_501_IA/",
       "priority": -705
@@ -3487,22 +2761,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Line_Magnetic_Audio_LM_210_IA/",
       "priority": -726
-    },
-    {
-      "id": 15956,
-      "name": "интегральный усилитель Line Magnetic Audio LM 518 IA ( line magnetic audio lm 518 ia )",
-      "slug": "integralnii_ysilitel_line_magnetic_audio_lm_518_ia",
-      "cat": "Усилители",
-      "price": 370000,
-      "descLen": 2163,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_line_magnetic_audio_lm_518_ia/",
-      "priority": -730
     },
     {
       "id": 261873,
@@ -3649,22 +2907,6 @@
       "priority": -745
     },
     {
-      "id": 262681,
-      "name": "Напольная акустика AUDIO PHYSIC Classic 8 ( audio physic classic 8 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-8",
-      "cat": "Акустика",
-      "price": 352000,
-      "descLen": 3047,
-      "gallery": 2,
-      "specs": 22,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-8/",
-      "priority": -748
-    },
-    {
       "id": 15604,
       "name": "Сабвуфер  Audio Physic RHEA II ( audio physic rhea ii )",
       "slug": "napolnaia_akystika_Audio_Physic_RHEA_II",
@@ -3745,22 +2987,6 @@
       "priority": -750
     },
     {
-      "id": 16824,
-      "name": "интегральный усилитель Triode TRV A300SE ( triode trv a300se )",
-      "slug": "integralnii_ysilitel_Triode_TRV_A300SE",
-      "cat": "Усилители",
-      "price": 350000,
-      "descLen": 1087,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Triode_TRV_A300SE/",
-      "priority": -750
-    },
-    {
       "id": 16828,
       "name": "усилитель мощности Triode TRV M300SE ( triode trv m300se )",
       "slug": "ysilitel_moshnosti_triode_trv_m300se",
@@ -3774,22 +3000,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_triode_trv_m300se/",
-      "priority": -750
-    },
-    {
-      "id": 268005,
-      "name": "Усилитель мощности Advance Paris X-A600",
-      "slug": "%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-advance-paris-x-a600",
-      "cat": "Усилители",
-      "price": 350000,
-      "descLen": 2090,
-      "gallery": 2,
-      "specs": 18,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-advance-paris-x-a600/",
       "priority": -750
     },
     {
@@ -3847,11 +3057,11 @@
       "cat": "Усилители",
       "price": 340000,
       "descLen": 1721,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 5,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Ultimate_Audio_MC_3008_ABSE/",
       "priority": -760
@@ -3969,22 +3179,6 @@
       "priority": -776
     },
     {
-      "id": 261112,
-      "name": "Предусилитель с ЦАП и усилитель мощности Wadia Di122 + A102 ( wadia di122 plus a102 )",
-      "slug": "%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%81-%d1%86%d0%b0%d0%bf-%d0%b8-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be",
-      "cat": "Усилители",
-      "price": 322000,
-      "descLen": 4252,
-      "gallery": 1,
-      "specs": 26,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d1%81-%d1%86%d0%b0%d0%bf-%d0%b8-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be/",
-      "priority": -778
-    },
-    {
       "id": 15720,
       "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
       "slug": "cd_transport_47_labs_4716",
@@ -4001,33 +3195,17 @@
       "priority": -780
     },
     {
-      "id": 15742,
-      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
-      "slug": "cd_proigrivatel_ultimate_audio_mc_100_cd",
-      "cat": "Источники",
-      "price": 320000,
-      "descLen": 3493,
-      "gallery": 3,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/cd_proigrivatel_ultimate_audio_mc_100_cd/",
-      "priority": -780
-    },
-    {
       "id": 262549,
       "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )",
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-sitara",
       "cat": "Акустика",
       "price": 320000,
       "descLen": 2268,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 5,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-sitara/",
       "priority": -780
@@ -4103,30 +3281,14 @@
       "cat": "Усилители",
       "price": 305000,
       "descLen": 3112,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 9,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-88ia/",
       "priority": -795
-    },
-    {
-      "id": 15942,
-      "name": "интегральный усилитель Line Magnetic Audio LM 218 IA ( line magnetic audio lm 218 ia )",
-      "slug": "integralnii_ysilitel_Line_Magnetic_Audio_LM_218_IA",
-      "cat": "Усилители",
-      "price": 301750,
-      "descLen": 738,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Line_Magnetic_Audio_LM_218_IA/",
-      "priority": -799
     },
     {
       "id": 16812,
@@ -4135,11 +3297,11 @@
       "cat": "Усилители",
       "price": 300000,
       "descLen": 1099,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 6,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Triode_TRV_35SE/",
       "priority": -800
@@ -4151,29 +3313,13 @@
       "cat": "Усилители",
       "price": 300000,
       "descLen": 1045,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_triode_trv_88se/",
-      "priority": -800
-    },
-    {
-      "id": 271750,
-      "name": "Предусилитель Primare PRE35 Prisma",
-      "slug": "46d123a90f249109456941e4bb375bf7",
-      "cat": "Усилители",
-      "price": 300000,
-      "descLen": 3354,
       "gallery": 3,
-      "specs": 16,
+      "specs": 6,
       "enriched": true,
       "reasons": [
         "gal:3"
       ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/46d123a90f249109456941e4bb375bf7/",
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_triode_trv_88se/",
       "priority": -800
     },
     {
@@ -4190,22 +3336,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/74541de0aef29a4280e00d3150e6e897/",
-      "priority": -801
-    },
-    {
-      "id": 274446,
-      "name": "Полочная акустика Davis Acoustics Olympia One Master 35",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-olympia-one-master-35",
-      "cat": "Акустика",
-      "price": 299290,
-      "descLen": 2331,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-olympia-one-master-35/",
       "priority": -801
     },
     {
@@ -4257,22 +3387,6 @@
       "priority": -807
     },
     {
-      "id": 33454,
-      "name": "Advance Acoustic X-A220 ( advance acoustic x a220 )",
-      "slug": "advance_acoustic_x-a220__advance_paris_px1-184950",
-      "cat": "Усилители",
-      "price": 293000,
-      "descLen": 1165,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/advance_acoustic_x-a220__advance_paris_px1-184950/",
-      "priority": -807
-    },
-    {
       "id": 16728,
       "name": "Интегральный усилитель Musica Raicho ( musica raicho )",
       "slug": "predysilitel_musica_raicho",
@@ -4286,22 +3400,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_musica_raicho/",
-      "priority": -810
-    },
-    {
-      "id": 268002,
-      "name": "Интегральный усилитель Advance Paris A12 Classic",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-advance-paris-a12-classic",
-      "cat": "Усилители",
-      "price": 290000,
-      "descLen": 2999,
-      "gallery": 2,
-      "specs": 25,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-advance-paris-a12-classic/",
       "priority": -810
     },
     {
@@ -4334,22 +3432,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-acoustic-energy-ae-320/",
-      "priority": -813
-    },
-    {
-      "id": 10274,
-      "name": "сабвуфер Paradigm Seismic 110 ( paradigm seismic 110 )",
-      "slug": "sabvyfer_paradigm_seismic_110",
-      "cat": "Акустика",
-      "price": 287215,
-      "descLen": 958,
-      "gallery": 3,
-      "specs": 1,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/sabvyfer_paradigm_seismic_110/",
       "priority": -813
     },
     {
@@ -4433,22 +3515,6 @@
       "priority": -820
     },
     {
-      "id": 16228,
-      "name": "напольная Audio Physic Yara II Superior ( audio physic yara ii superior )",
-      "slug": "napolnaia_akystika_Audio_Physic_Yara_II_Superior",
-      "cat": "Акустика",
-      "price": 280000,
-      "descLen": 1008,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Yara_II_Superior/",
-      "priority": -820
-    },
-    {
       "id": 16810,
       "name": "предусилитель Trigon TRV 100 ( trigon trv 100 )",
       "slug": "predysilitel_trigon_trv_100",
@@ -4481,22 +3547,6 @@
       "priority": -820
     },
     {
-      "id": 15600,
-      "name": "сабвуфер Audio Physic LUNA II ( audio physic luna ii )",
-      "slug": "sabvyfer_Audio_Physic_LUNA_II",
-      "cat": "Акустика",
-      "price": 270000,
-      "descLen": 858,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/sabvyfer_Audio_Physic_LUNA_II/",
-      "priority": -830
-    },
-    {
       "id": 16788,
       "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
       "slug": "predysilitel_Soulnote_sa3-0",
@@ -4510,22 +3560,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Soulnote_sa3-0/",
-      "priority": -830
-    },
-    {
-      "id": 262065,
-      "name": "Напольная акустика Divini Audio Classical 11 ( divini audio classical 11 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-classical-11",
-      "cat": "Акустика",
-      "price": 270000,
-      "descLen": 2927,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-classical-11/",
       "priority": -830
     },
     {
@@ -4673,38 +3707,6 @@
       "priority": -846
     },
     {
-      "id": 10206,
-      "name": "сабвуфер Paradigm Millenia One Sub satin white ( paradigm millenia one sub satin white )",
-      "slug": "sabvyfer_paradigm_millenia_one_sub_satin_white",
-      "cat": "Акустика",
-      "price": 252365,
-      "descLen": 1698,
-      "gallery": 2,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/sabvyfer_paradigm_millenia_one_sub_satin_white/",
-      "priority": -848
-    },
-    {
-      "id": 10264,
-      "name": "сабвуфер Paradigm Millenia One Sub satin Black ( paradigm millenia one sub satin black )",
-      "slug": "sabvyfer_paradigm_millenia_one_sub_satin_black",
-      "cat": "Акустика",
-      "price": 252365,
-      "descLen": 1698,
-      "gallery": 2,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/sabvyfer_paradigm_millenia_one_sub_satin_black/",
-      "priority": -848
-    },
-    {
       "id": 261868,
       "name": "Центральный канал PARADIGM Founder 70LCR Gloss Black ( paradigm founder 70lcr gloss black )",
       "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-gloss-black",
@@ -4817,33 +3819,17 @@
       "priority": -850
     },
     {
-      "id": 16218,
-      "name": "сабвуфер Audio Physic Luna ( audio physic luna )",
-      "slug": "sabvyfer_audio_physic_luna",
-      "cat": "Акустика",
-      "price": 250000,
-      "descLen": 1007,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/sabvyfer_audio_physic_luna/",
-      "priority": -850
-    },
-    {
       "id": 16852,
       "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audio mc 300 ase )",
       "slug": "ysilitel_moshnosti_Ultimate_Audio_MC_300_ASE",
       "cat": "Усилители",
       "price": 250000,
       "descLen": 1117,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 6,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Ultimate_Audio_MC_300_ASE/",
       "priority": -850
@@ -5009,22 +3995,6 @@
       "priority": -871
     },
     {
-      "id": 274599,
-      "name": "Напольная акустика Acoustic Energy AE 309",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-acoustic-energy-ae-309",
-      "cat": "Акустика",
-      "price": 226500,
-      "descLen": 2285,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-acoustic-energy-ae-309/",
-      "priority": -874
-    },
-    {
       "id": 264108,
       "name": "Сетевой кабель Audio Replas RPS-7000SZ ( audio replas rps 7000sz )",
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-rps-7000sz",
@@ -5159,29 +4129,13 @@
       "cat": "ЦАПы",
       "price": 220000,
       "descLen": 1876,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b0%d0%bf-line-magnetic-lm-32-dac/",
-      "priority": -880
-    },
-    {
-      "id": 261056,
-      "name": "Интегральный усилитель Advance paris A10 Classic ( advance paris a10 classic )",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-advance-paris-a10-classic",
-      "cat": "Усилители",
-      "price": 220000,
-      "descLen": 4259,
       "gallery": 2,
-      "specs": 13,
+      "specs": 5,
       "enriched": true,
       "reasons": [
         "gal:2"
       ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-advance-paris-a10-classic/",
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b0%d0%bf-line-magnetic-lm-32-dac/",
       "priority": -880
     },
     {
@@ -5553,22 +4507,6 @@
       "priority": -909
     },
     {
-      "id": 267998,
-      "name": "Фонокорректор Line Magnetic LP-33 Phono",
-      "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-line-magnetic-lp-33-phono",
-      "cat": "Усилители",
-      "price": 191250,
-      "descLen": 2305,
-      "gallery": 2,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-line-magnetic-lp-33-phono/",
-      "priority": -909
-    },
-    {
       "id": 264394,
       "name": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii",
@@ -5614,38 +4552,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/481de67c2704ec778e901c5ced40ad4b/",
-      "priority": -910
-    },
-    {
-      "id": 15596,
-      "name": "Напольная акустическая система  Audio Physic Classic 10 ( audio physic classic 10 )",
-      "slug": "napolnaia_akystika_Audio_Physic_Classic_10",
-      "cat": "Акустика",
-      "price": 190000,
-      "descLen": 1076,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Classic_10/",
-      "priority": -910
-    },
-    {
-      "id": 15616,
-      "name": "напольная Audio Physic Yara II Classic ( audio physic yara ii classic )",
-      "slug": "napolnaia_akystika_audio_physic_yara_ii_classic",
-      "cat": "Акустика",
-      "price": 190000,
-      "descLen": 914,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_audio_physic_yara_ii_classic/",
       "priority": -910
     },
     {
@@ -5847,11 +4753,11 @@
       "cat": "Усилители",
       "price": 182750,
       "descLen": 800,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 6,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Line_Magnetic_Audio_LM_217_IA/",
       "priority": -918
@@ -5870,38 +4776,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/Fonokorrektor_47_Labs_4718/",
-      "priority": -920
-    },
-    {
-      "id": 15938,
-      "name": "интегральный усилитель Line Magnetic Audio LM 216 IA ( line magnetic audio lm 216 ia )",
-      "slug": "integralnii_ysilitel_line_magnetic_audio_lm_216_ia",
-      "cat": "Усилители",
-      "price": 180000,
-      "descLen": 4249,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_line_magnetic_audio_lm_216_ia/",
-      "priority": -920
-    },
-    {
-      "id": 262104,
-      "name": "Интегральный усилитель Line Magnetic Audio LM 34iA ( line magnetic audio lm 34ia )",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-34ia",
-      "cat": "Усилители",
-      "price": 180000,
-      "descLen": 3017,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-34ia/",
       "priority": -920
     },
     {
@@ -6015,22 +4889,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-12/",
       "priority": -926
-    },
-    {
-      "id": 262246,
-      "name": "Виниловый проигрыватель TEAC TN-5BB ( teac tn 5bb )",
-      "slug": "%d0%b2%d0%b8%d0%bd%d0%b8%d0%bb%d0%be%d0%b2%d1%8b%d0%b9-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-teac-tn-5bb",
-      "cat": "Источники",
-      "price": 173400,
-      "descLen": 3099,
-      "gallery": 1,
-      "specs": 17,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b2%d0%b8%d0%bd%d0%b8%d0%bb%d0%be%d0%b2%d1%8b%d0%b9-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-teac-tn-5bb/",
-      "priority": -927
     },
     {
       "id": 40263,
@@ -6225,22 +5083,6 @@
       "priority": -940
     },
     {
-      "id": 26832,
-      "name": "сабвуфер Audio Physic Classic Sub ( audio physic classic sub )",
-      "slug": "%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-audio-physic-classic-sub",
-      "cat": "Акустика",
-      "price": 160000,
-      "descLen": 1165,
-      "gallery": 1,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-audio-physic-classic-sub/",
-      "priority": -940
-    },
-    {
       "id": 271626,
       "name": "Активный сабвуфер KEF Kube 15 MIE",
       "slug": "636f7ff53008628637149779f49b081f",
@@ -6254,22 +5096,6 @@
         "gal:0"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/636f7ff53008628637149779f49b081f/",
-      "priority": -941
-    },
-    {
-      "id": 271791,
-      "name": "CD-транспорт Primare DD15",
-      "slug": "c8b90d4c70f0388973203f077902f56f",
-      "cat": "Источники",
-      "price": 159900,
-      "descLen": 1678,
-      "gallery": 3,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/c8b90d4c70f0388973203f077902f56f/",
       "priority": -941
     },
     {
@@ -6311,29 +5137,13 @@
       "cat": "Акустика",
       "price": 155000,
       "descLen": 2230,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 6,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/polochnaia_akystika_audio_physic_step/",
-      "priority": -945
-    },
-    {
-      "id": 15934,
-      "name": "интегральный усилитель Line Magnetic Audio LM 211 IA ( line magnetic audio lm 211 ia )",
-      "slug": "integralnii_ysilitel_Line_Magnetic_Audio_LM_211_IA",
-      "cat": "Усилители",
-      "price": 155000,
-      "descLen": 757,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Line_Magnetic_Audio_LM_211_IA/",
       "priority": -945
     },
     {
@@ -6431,54 +5241,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Trigon_SnowWhite/",
       "priority": -947
-    },
-    {
-      "id": 15614,
-      "name": "сабвуфер Audio Physic Yara II Sub ( audio physic yara ii sub )",
-      "slug": "sabvyfer_Audio_Physic_Yara_II_Sub",
-      "cat": "Акустика",
-      "price": 150000,
-      "descLen": 767,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/sabvyfer_Audio_Physic_Yara_II_Sub/",
-      "priority": -950
-    },
-    {
-      "id": 262042,
-      "name": "Напольная акустика Audio Physic Yara II Evolution ( audio physic yara ii evolution )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-yara-ii-evolution",
-      "cat": "Акустика",
-      "price": 150000,
-      "descLen": 2942,
-      "gallery": 1,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-yara-ii-evolution/",
-      "priority": -950
-    },
-    {
-      "id": 262067,
-      "name": "Полочная акустика Divini Audio Classical 3 ( divini audio classical 3 )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-classical-3",
-      "cat": "Акустика",
-      "price": 150000,
-      "descLen": 1625,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-classical-3/",
-      "priority": -950
     },
     {
       "id": 274427,
@@ -6737,22 +5499,6 @@
       "priority": -961
     },
     {
-      "id": 261896,
-      "name": "Навесная акустика PARADIGM Millenia LP Trio ( paradigm millenia lp trio )",
-      "slug": "%d0%bd%d0%b0%d0%b2%d0%b5%d1%81%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-millenia-lp-trio",
-      "cat": "Акустика",
-      "price": 137615,
-      "descLen": 2567,
-      "gallery": 1,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%b2%d0%b5%d1%81%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-millenia-lp-trio/",
-      "priority": -963
-    },
-    {
       "id": 272761,
       "name": "Стереоусилитель AudioLab 7000A",
       "slug": "1c4a32958736d678b7b510dd7f47dd7c",
@@ -6817,22 +5563,6 @@
       "priority": -965
     },
     {
-      "id": 15634,
-      "name": "полочная акустика Audio Physic Classic Compact ( audio physic classic compact )",
-      "slug": "polochnaia_akystika_Audio_Physic_Classic_Compact",
-      "cat": "Акустика",
-      "price": 135000,
-      "descLen": 1140,
-      "gallery": 1,
-      "specs": 1,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/polochnaia_akystika_Audio_Physic_Classic_Compact/",
-      "priority": -965
-    },
-    {
       "id": 15724,
       "name": "CD проигрыватель Line Magnetic Audio LM 215 ( cd line magnetic audio lm 215 )",
       "slug": "cd_pleer_line_magnetic_audio_lm_215_cd",
@@ -6863,22 +5593,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/cd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-205-cd/",
       "priority": -965
-    },
-    {
-      "id": 41465,
-      "name": "сабвуфер Paradigm Defiance V12 Black ( paradigm defiance v12 black )",
-      "slug": "%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-paradigm-defiance-v12-black",
-      "cat": "Акустика",
-      "price": 134900,
-      "descLen": 1616,
-      "gallery": 2,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-paradigm-defiance-v12-black/",
-      "priority": -966
     },
     {
       "id": 271969,
@@ -8161,22 +6875,6 @@
       "priority": -1009
     },
     {
-      "id": 10180,
-      "name": "напольная акустика Paradigm Millenia LP XL Black gloss ( paradigm millenia lp xl black gloss )",
-      "slug": "napolnaia_akystika_paradigm_millenia_lp_xl_black_gloss",
-      "cat": "Акустика",
-      "price": 91715,
-      "descLen": 1118,
-      "gallery": 2,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_paradigm_millenia_lp_xl_black_gloss/",
-      "priority": -1009
-    },
-    {
       "id": 26578,
       "name": "интегральный усилитель Advance Acoustic X-i75 ( advance acoustic x i75 )",
       "slug": "integralnii_ysilitel_Advance_Acoustic_X-i75",
@@ -8449,22 +7147,6 @@
       "priority": -1014
     },
     {
-      "id": 262044,
-      "name": "Полочная акустика Audio Physic Yara  II compact ( audio physic yara ii compact )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-yara-ii-compact",
-      "cat": "Акустика",
-      "price": 86000,
-      "descLen": 2033,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-yara-ii-compact/",
-      "priority": -1014
-    },
-    {
       "id": 264103,
       "name": "Стабилизатор Audio Replas OPS-1S  HR ( audio replas ops 1s hr )",
       "slug": "%d1%81%d1%82%d0%b0%d0%b1%d0%b8%d0%bb%d0%b8%d0%b7%d0%b0%d1%82%d0%be%d1%80-audio-replas-ops-1s-hr",
@@ -8510,22 +7192,6 @@
         "gal:0"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/a776f9b7f941c0deeb8e41913d686131/",
-      "priority": -1016
-    },
-    {
-      "id": 10132,
-      "name": "настенная акустика Paradigm Millenia 30 LCR Black chrome ( paradigm millenia 30 lcr black chrome )",
-      "slug": "nastennaia_akystika_paradigm_millenia_30_lcr_black_chrome",
-      "cat": "Акустика",
-      "price": 84510,
-      "descLen": 1982,
-      "gallery": 1,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/nastennaia_akystika_paradigm_millenia_30_lcr_black_chrome/",
       "priority": -1016
     },
     {
@@ -8734,22 +7400,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/68af5a98712600b19ca3426a70e4ff36/",
-      "priority": -1023
-    },
-    {
-      "id": 273723,
-      "name": "CD-проигрыватель Rotel CD14 MKII",
-      "slug": "e635dcce639e7120e1494b27b38a80cd",
-      "cat": "Источники",
-      "price": 77990,
-      "descLen": 8925,
-      "gallery": 3,
-      "specs": 29,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/e635dcce639e7120e1494b27b38a80cd/",
       "priority": -1023
     },
     {
@@ -9086,22 +7736,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/a9bd9fe41fa1cc2724920ce25b76b994/",
-      "priority": -1029
-    },
-    {
-      "id": 10158,
-      "name": "настенная акустика Paradigm Millenia LP v.2 Black gloss ( paradigm millenia lp v 2 black gloss )",
-      "slug": "nastennaia_akystika_paradigm_millenia_lp_v-2_black_gloss",
-      "cat": "Акустика",
-      "price": 71910,
-      "descLen": 1943,
-      "gallery": 2,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/nastennaia_akystika_paradigm_millenia_lp_v-2_black_gloss/",
       "priority": -1029
     },
     {
@@ -11294,6 +9928,22 @@
         "gal:0"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/84e7c8ed4599ee16ee6a6646f3e5dd23/",
+      "priority": -1065
+    },
+    {
+      "id": 264335,
+      "name": "Переходник Furutech F 63 S (R) ( furutech f 63 s (r) )",
+      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-r",
+      "cat": "Другое",
+      "price": 35700,
+      "descLen": 802,
+      "gallery": 1,
+      "specs": 3,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-r/",
       "priority": -1065
     },
     {
@@ -15905,6 +14555,22 @@
       "priority": -1098
     },
     {
+      "id": 264336,
+      "name": "Переходник Furutech F 63 S (G) ( furutech f 63 s (g) )",
+      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-g",
+      "cat": "Другое",
+      "price": 2678,
+      "descLen": 804,
+      "gallery": 1,
+      "specs": 3,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-g/",
+      "priority": -1098
+    },
+    {
       "id": 264331,
       "name": "Коннектор Furutech FT-610mF (R ) ( furutech ft 610mf (r ) )",
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-ft-610mf-r",
@@ -16177,22 +14843,6 @@
       "priority": -1099
     },
     {
-      "id": 15598,
-      "name": "Напольная акустическая система  Audio Physic Classic 20.2 ( audio physic classic 20 2 )",
-      "slug": "napolnaia_akystika_audio_physic_classic_20",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 823,
-      "gallery": 1,
-      "specs": 19,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_audio_physic_classic_20/",
-      "priority": -1100
-    },
-    {
       "id": 15648,
       "name": "напольная акустика Lawrence Audio Violin ( lawrence audio violin )",
       "slug": "napolnaya_akustika_Lawrence_Audio_Violin-171069",
@@ -16222,22 +14872,6 @@
         "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/cd_proigrivatel_soulnote_sc1-0/",
-      "priority": -1100
-    },
-    {
-      "id": 16214,
-      "name": "напольная акустика Audio Physic Cardeas ( audio physic cardeas )",
-      "slug": "napolnaia_akystika_Audio_Physic_Cardeas",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 990,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Cardeas/",
       "priority": -1100
     },
     {
@@ -16305,38 +14939,6 @@
       "priority": -1100
     },
     {
-      "id": 262480,
-      "name": "Напольная акустика Audio Physic Classic 5 ( audio physic classic 5 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-5",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 2968,
-      "gallery": 1,
-      "specs": 19,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-5/",
-      "priority": -1100
-    },
-    {
-      "id": 262541,
-      "name": "Напольная акустика AUDIO PHYSIC Classic 30 ( audio physic classic 30 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-30",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 2747,
-      "gallery": 1,
-      "specs": 21,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-30/",
-      "priority": -1100
-    },
-    {
       "id": 262546,
       "name": "Напольная акустика Audio Physic Scorpio ( audio physic scorpio )",
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-scorpio",
@@ -16350,22 +14952,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-scorpio/",
-      "priority": -1100
-    },
-    {
-      "id": 263057,
-      "name": "AV ресивер ANTHEM MRX 720 ( av anthem mrx 720 )",
-      "slug": "av-%d1%80%d0%b5%d1%81%d0%b8%d0%b2%d0%b5%d1%80-anthem-mrx-720",
-      "cat": "Ресиверы",
-      "price": 0,
-      "descLen": 3024,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/av-%d1%80%d0%b5%d1%81%d0%b8%d0%b2%d0%b5%d1%80-anthem-mrx-720/",
       "priority": -1100
     },
     {
@@ -16673,6 +15259,38 @@
       "priority": -1100
     },
     {
+      "id": 264337,
+      "name": "Переходник Furutech F 35 (R) ( furutech f 35 (r) )",
+      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-r",
+      "cat": "Другое",
+      "price": 0,
+      "descLen": 800,
+      "gallery": 1,
+      "specs": 3,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-r/",
+      "priority": -1100
+    },
+    {
+      "id": 264338,
+      "name": "Переходник Furutech F 35 (G) ( furutech f 35 (g) )",
+      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-g",
+      "cat": "Другое",
+      "price": 0,
+      "descLen": 802,
+      "gallery": 1,
+      "specs": 3,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-g/",
+      "priority": -1100
+    },
+    {
       "id": 264418,
       "name": "Кабель HDMI Furutech Alpha H-1 ( hdmi furutech alpha h 1 )",
       "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-hdmi-furutech-alpha-h-1",
@@ -16801,22 +15419,6 @@
       "priority": -1100
     },
     {
-      "id": 265302,
-      "name": "Сабвуфер PARADIGM Defiance WT Wireless Module ( paradigm defiance wt wireless module )",
-      "slug": "%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-paradigm-defiance-wt-wireless-module",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 1817,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-paradigm-defiance-wt-wireless-module/",
-      "priority": -1100
-    },
-    {
       "id": 265339,
       "name": "SAСD проигрыватель Soulnote S-3 Ver.2 ( sa d soulnote s 3  ver 2 )",
       "slug": "sasd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-soulnote-s-3-se-ver-2",
@@ -16833,38 +15435,6 @@
       "priority": -1100
     },
     {
-      "id": 265479,
-      "name": "Напольная акустика AUDIO PHYSIC Avantera III ( audio physic avantera iii )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-avantera-iii",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 4264,
-      "gallery": 1,
-      "specs": 18,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-avantera-iii/",
-      "priority": -1100
-    },
-    {
-      "id": 265495,
-      "name": "Полочная акустика AUDIO PHYSIC Classic 3 ( audio physic classic 3 )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-3",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 2572,
-      "gallery": 1,
-      "specs": 19,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-classic-3/",
-      "priority": -1100
-    },
-    {
       "id": 265505,
       "name": "Фонокорректор TRIGON Vanguard SE ( trigon vanguard se )",
       "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-trigon-vanguard-se",
@@ -16878,38 +15448,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-trigon-vanguard-se/",
-      "priority": -1100
-    },
-    {
-      "id": 265826,
-      "name": "Напольная акустика PARADIGM Millenia 200 Black Chrome ( paradigm millenia 200 black chrome )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-millenia-200-black-chrome",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 1491,
-      "gallery": 2,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-millenia-200-black-chrome/",
-      "priority": -1100
-    },
-    {
-      "id": 266348,
-      "name": "Напольная акустика Audio Physic Tempo 35 ( audio physic tempo 35 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-tempo-35",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 2780,
-      "gallery": 2,
-      "specs": 10,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-tempo-35/",
       "priority": -1100
     },
     {
@@ -16942,22 +15480,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b2%d1%81%d1%82%d1%80%d0%b0%d0%b8%d0%b2%d0%b0%d0%b5%d0%bc%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-p80-r/",
-      "priority": -1100
-    },
-    {
-      "id": 268135,
-      "name": "Напольная акустика Audio Physic Spark",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-spark",
-      "cat": "Акустика",
-      "price": 0,
-      "descLen": 2245,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-spark/",
       "priority": -1100
     },
     {
@@ -17006,22 +15528,6 @@
         "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-2sc-90-130-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2/",
-      "priority": -1100
-    },
-    {
-      "id": 42916,
-      "name": "47 Labs RST-38 ( 47 labs rst 38 )",
-      "slug": "47-labs-rst-38",
-      "cat": "Ресиверы",
-      "price": 0,
-      "descLen": 980,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/47-labs-rst-38/",
       "priority": -1100
     }
   ]

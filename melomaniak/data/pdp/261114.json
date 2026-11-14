@@ -183,6 +183,33 @@
   ],
   "gallery": [
     {
+      "src": "local://sp20vs115-1_8f132bcf12.jpg",
+      "thumb": "assets/enriched/261114/c74ec568cb_live1.jpg",
+      "alt": "предусилитель и усилитель мощности audio research sp20 + vs115 ( audio research sp20 plus vs115 )",
+      "local": "assets/enriched/261114/c74ec568cb_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 1478055
+    },
+    {
+      "src": "local://audio-research-vs115_big_611465e06c.jpg",
+      "thumb": "assets/enriched/261114/1998ce41eb_live2.jpg",
+      "alt": "предусилитель и усилитель мощности audio research sp20 + vs115 ( audio research sp20 plus vs115 )",
+      "local": "assets/enriched/261114/1998ce41eb_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 18618
+    },
+    {
+      "src": "local://611465e06c_audio-research-vs115_big.jpg",
+      "thumb": "assets/enriched/261114/8d34c03237_live3.jpg",
+      "alt": "предусилитель и усилитель мощности audio research sp20 + vs115 ( audio research sp20 plus vs115 )",
+      "local": "assets/enriched/261114/8d34c03237_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 18618
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/01/sp20vs115-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/01/sp20vs115-1-600x600.jpg",
       "alt": "sp20vs115",
@@ -195,8 +222,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%b8-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-audio-rese/"
   ],
-  "enrichedAt": "2026-11-14T13:20:16Z",
+  "enrichedAt": "2026-11-14T13:52:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "meagerWave": "meager-w6-2026-11"
 }

@@ -161,6 +161,15 @@
   ],
   "gallery": [
     {
+      "src": "local://bcd145efcb_dali_oberon_3_10080187889-4.jpg",
+      "thumb": "assets/enriched/273723/5ee56bd8b1_live1.jpg",
+      "alt": "CD-проигрыватель Rotel CD14 MKII",
+      "local": "assets/enriched/273723/5ee56bd8b1_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 299041
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_cd14_mkii_8026387241-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_cd14_mkii_8026387241-1.jpg",
       "alt": "rotel_cd14_mkii_8026387241-1.jpg",
@@ -185,8 +194,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/e635dcce639e7120e1494b27b38a80cd/"
   ],
-  "enrichedAt": "2026-11-14T13:36:27Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T13:52:16Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w6-2026-11"
 }

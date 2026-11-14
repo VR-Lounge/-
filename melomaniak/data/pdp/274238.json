@@ -91,6 +91,33 @@
   ],
   "gallery": [
     {
+      "src": "local://33ba21ffb3_aurender_acs100_4tb2.jpg",
+      "thumb": "assets/enriched/274238/84e00a7e24_live1.jpg",
+      "alt": "Сетевой проигрыватель Aurender ACS100 2Tb HDD",
+      "local": "assets/enriched/274238/84e00a7e24_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 359637
+    },
+    {
+      "src": "local://49ab36f0f0_aurender_acs100_4tb_2719349561-1.jpg",
+      "thumb": "assets/enriched/274238/809ede88aa_live2.jpg",
+      "alt": "Сетевой проигрыватель Aurender ACS100 2Tb HDD",
+      "local": "assets/enriched/274238/809ede88aa_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 261866
+    },
+    {
+      "src": "local://77ca835a6d_aurender_acs100_4tb_7239412637-1.jpg",
+      "thumb": "assets/enriched/274238/8a166cd433_live3.jpg",
+      "alt": "Сетевой проигрыватель Aurender ACS100 2Tb HDD",
+      "local": "assets/enriched/274238/8a166cd433_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 218052
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_acs100_2tb_4403351936-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_acs100_2tb_4403351936-1.jpg",
       "alt": "aurender_acs100_2tb_4403351936-1.jpg",
@@ -109,8 +136,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/b08e078e450375655db710bb9d87c315/"
   ],
-  "enrichedAt": "2026-11-14T13:36:42Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T13:52:16Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w6-2026-11"
 }

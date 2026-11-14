@@ -46,6 +46,24 @@
   ],
   "gallery": [
     {
+      "src": "local://e299aa3e62_ysilitel_moshnosti_Ultimate_Audio_MC300845_AB.jpg",
+      "thumb": "assets/enriched/16852/abd9e26622_live1.jpg",
+      "alt": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audio mc 300 ase )",
+      "local": "assets/enriched/16852/abd9e26622_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 32201
+    },
+    {
+      "src": "local://dd197cefb7_ysilitel_moshnosti_Ultimate_Audio_MC_3008_ABSE.jpg",
+      "thumb": "assets/enriched/16852/f47e17bad2_live2.jpg",
+      "alt": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audio mc 300 ase )",
+      "local": "assets/enriched/16852/f47e17bad2_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 29130
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Ultimate_Audio_MC_300_ASE.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Ultimate_Audio_MC_300_ASE-600x600.jpg",
       "alt": "Ultimate Audio MC 300 ASE",
@@ -58,8 +76,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Ultimate_Audio_MC_300_ASE/"
   ],
-  "enrichedAt": "2026-11-14T13:16:29Z",
+  "enrichedAt": "2026-11-14T13:51:09Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w6-2026-11",
   "galleryHitl": true
 }

@@ -41,6 +41,24 @@
   ],
   "gallery": [
     {
+      "src": "local://7dda6e8e43_audioquest_niagara_1200-2.jpg",
+      "thumb": "assets/enriched/26586/37632f8e53_live1.jpg",
+      "alt": "усилитель мощности Advance Acoustic X-A1200 ( advance acoustic x a1200 )",
+      "local": "assets/enriched/26586/37632f8e53_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 80848
+    },
+    {
+      "src": "local://99f7538e15_audioquest_niagara_1200-1.jpg",
+      "thumb": "assets/enriched/26586/1ac29920ca_live2.jpg",
+      "alt": "усилитель мощности Advance Acoustic X-A1200 ( advance acoustic x a1200 )",
+      "local": "assets/enriched/26586/1ac29920ca_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 63772
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/x-a_1200_front___rear.png",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/x-a_1200_front___rear-600x600.png",
       "alt": "x-a_1200_front___rear",
@@ -60,8 +78,7 @@
     "https://xn--80aannlcfckh.xn--p1ai/",
     "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_advance_acoustic_x-a_1200/"
   ],
-  "enrichedAt": "2026-11-14T13:18:11Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T13:45:25Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w6-2026-11"
 }

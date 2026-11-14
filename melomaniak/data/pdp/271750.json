@@ -96,6 +96,51 @@
   ],
   "gallery": [
     {
+      "src": "local://e205b2b318_primare_pre35_8899676-4.jpg",
+      "thumb": "assets/enriched/271750/5de1e9ef73_live1.jpg",
+      "alt": "Предусилитель Primare PRE35 Prisma",
+      "local": "assets/enriched/271750/5de1e9ef73_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 216161
+    },
+    {
+      "src": "local://22aa6b723e_primare_pre35_dac_9110420-1.jpg",
+      "thumb": "assets/enriched/271750/787c1da580_live2.jpg",
+      "alt": "Предусилитель Primare PRE35 Prisma",
+      "local": "assets/enriched/271750/787c1da580_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 43029
+    },
+    {
+      "src": "local://a2168705f6_primare_pre35_dac_9135662-2.jpg",
+      "thumb": "assets/enriched/271750/5458961af0_live3.jpg",
+      "alt": "Предусилитель Primare PRE35 Prisma",
+      "local": "assets/enriched/271750/5458961af0_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 73567
+    },
+    {
+      "src": "local://6da28cb762_primare_pre35_8898979-3.jpg",
+      "thumb": "assets/enriched/271750/740aeaffe4_live4.jpg",
+      "alt": "Предусилитель Primare PRE35 Prisma",
+      "local": "assets/enriched/271750/740aeaffe4_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 67546
+    },
+    {
+      "src": "local://b56143ecd9_primare_pre35_8897722-1.jpg",
+      "thumb": "assets/enriched/271750/eac3888161_live5.jpg",
+      "alt": "Предусилитель Primare PRE35 Prisma",
+      "local": "assets/enriched/271750/eac3888161_live5.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 36659
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_pre35_prisma_9121747-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_pre35_prisma_9121747-1.jpg",
       "alt": "primare_pre35_prisma_9121747-1.jpg",
@@ -120,8 +165,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/46d123a90f249109456941e4bb375bf7/"
   ],
-  "enrichedAt": "2026-11-14T13:36:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T13:52:16Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w6-2026-11"
 }

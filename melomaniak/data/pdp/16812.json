@@ -46,6 +46,15 @@
   ],
   "gallery": [
     {
+      "src": "local://ysilitel_moshnosti_Triode_TRV_35SE_cafb1483fd.jpg",
+      "thumb": "assets/enriched/16812/4f8c448544_live1.jpg",
+      "alt": "усилитель мощности Triode TRV 35SE ( triode trv 35se )",
+      "local": "assets/enriched/16812/4f8c448544_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 31377
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Triode_TRV_35SE.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Triode_TRV_35SE-600x600.jpg",
       "alt": "Triode TRV 35SE",
@@ -58,8 +67,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Triode_TRV_35SE/"
   ],
-  "enrichedAt": "2026-11-14T13:16:16Z",
+  "enrichedAt": "2026-11-14T13:51:09Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w6-2026-11",
   "galleryHitl": true
 }

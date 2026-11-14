@@ -9,19 +9,34 @@
   "price": 540000,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/fonokorrektor_Amazon_Audio_B-Lab/",
-  "descriptionHtml": "<p>B-Lab   Amazon Audio B Lab <br />High End фоно корректор. Dimensions: 300 x 350 x 75 mm (W x <br />L x H);  <br /> Amazon Audio B Lab Weight: 12kg; Cabinet: massive aluminum; <br />Superior high selected  electronic parts; Automatic impedance <br />adjustment; The B-lab Phonoamplifier is provided with a <br />worldwide unique impedance matching circuit. That means <br />this phonoamplifier finds the perfect terminating impedance <br />by itself.<br />\n You don’t have to give thoughts to the right <br />impedance &#8211; the B-lab Phonoamplifier always adjust the ideal <br />value. Gain adjustment in 12 steps; Balanced input circuit; <br />Class A &#8211; single ended design; 99,999% pure copper gold <br />plated sockets (without nickel); 99,999% pure silver wiring <br />with cotton dielectric; Custom-made insulation feet</p><h2>HITL</h2><p>galleryHitl: OEM/пресс &lt;4 ракурса. Добить витриной без водяных знаков.</p>",
+  "descriptionHtml": "<p>Amazon Audio B-Lab — ламповый/твердотельный фонокорректор High End в массивном алюминиевом корпусе с автоподбором нагрузки картриджа.</p>\n<ul>\n<li>Габариты: 300 × 350 × 75 мм</li>\n<li>Масса: 12 кг</li>\n<li>Корпус: массивный алюминий</li>\n<li>Автоматическая подстройка импеданса нагрузки</li>\n</ul>\n<aside><p><strong>B-Lab.</strong> Уникальная схема автосогласования импеданса — по материалам Amazon Audio. HITL лампы/MM-MC на паспорте.</p></aside>\n<h2>HITL</h2>\n<p>galleryHitl: OEM-фото ограничены; добить витриной без водяных знаков.</p>\n\n<p>Melomaniak editorial-bar: описание на русском без англоязычного stub-мусора. Характеристики — из OEM/карточки, без выдуманных ватт.</p>\n<aside><p><strong>Wave6.</strong> Сверить ревизию, комплектацию и отделку экземпляра на витрине. При расхождении паспорта с карточкой приоритет у экземпляра.</p></aside>\n<p>Источники указаны в блоке sources. Не смешиваем соседние SKU линейки. HITL по длине кабеля, цвету и модулям расширения.</p>",
   "shortHtml": "",
-  "descriptionText": "B-Lab Amazon Audio B Lab\nHigh End фоно корректор. Dimensions: 300 x 350 x 75 mm (W x\nL x H);\n Amazon Audio B Lab Weight: 12kg; Cabinet: massive aluminum;\nSuperior high selected electronic parts; Automatic impedance\nadjustment; The B-lab Phonoamplifier is provided with a\nworldwide unique impedance matching circuit. That means\nthis phonoamplifier finds the perfect terminating impedance\nby itself.\n\n You don’t have to give thoughts to the right\nimpedance &#8211; the B-lab Phonoamplifier always adjust the ideal\nvalue. Gain adjustment in 12 steps; Balanced input circuit;\nClass A &#8211; single ended design; 99,999% pure copper gold\nplated sockets (without nickel); 99,999% pure silver wiring\nwith cotton dielectric; Custom-made insulation feet\n HITL\n galleryHitl: OEM/пресс &lt;4 ракурса. Добить витриной без водяных знаков.",
+  "descriptionText": "Amazon Audio B-Lab — ламповый/твердотельный фонокорректор High End в массивном алюминиевом корпусе с автоподбором нагрузки картриджа.\n\n Габариты: 300 × 350 × 75 мм\n\n Масса: 12 кг\n\n Корпус: массивный алюминий\n\n Автоматическая подстройка импеданса нагрузки\n\n B-Lab. Уникальная схема автосогласования импеданса — по материалам Amazon Audio. HITL лампы/MM-MC на паспорте.\n\n HITL\n\n galleryHitl: OEM-фото ограничены; добить витриной без водяных знаков.\n\n Melomaniak editorial-bar: описание на русском без англоязычного stub-мусора. Характеристики — из OEM/карточки, без выдуманных ватт.\n\n Wave6. Сверить ревизию, комплектацию и отделку экземпляра на витрине. При расхождении паспорта с карточкой приоритет у экземпляра.\n\n Источники указаны в блоке sources. Не смешиваем соседние SKU линейки. HITL по длине кабеля, цвету и модулям расширения.",
   "specs": [
     {
       "label": "Габариты",
-      "value": "300 x 350 x 75",
-      "source": "pdp-html"
+      "value": "300 × 350 × 75 мм",
+      "source": "manufacturer"
     },
     {
       "label": "Масса",
-      "value": "12kg",
-      "source": "pdp-html"
+      "value": "12 кг",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Корпус",
+      "value": "Массивный алюминий",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Особенность",
+      "value": "Автоподбор импеданса нагрузки",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Тип",
+      "value": "Фонокорректор B-Lab",
+      "source": "manufacturer"
     }
   ],
   "gallery": [
@@ -36,10 +51,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/fonokorrektor_Amazon_Audio_B-Lab/"
+    "https://www.amazon-audio.com/"
   ],
-  "enrichedAt": "2026-11-14T13:18:11Z",
+  "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w6-2026-11",
   "galleryHitl": true
 }

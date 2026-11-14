@@ -101,6 +101,24 @@
   ],
   "gallery": [
     {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/symphonia_talis_white_slider.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/symphonia_talis_white_slider.jpg",
+      "alt": "Полочная акустика T+A Talis R 300",
+      "local": "assets/enriched/273850/0403d3da20_1.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 2134223
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/talis_teaser_lautsprecher_startseite_330.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/talis_teaser_lautsprecher_startseite_330.jpg",
+      "alt": "Полочная акустика T+A Talis R 300",
+      "local": "assets/enriched/273850/0be1703fcb_2.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 173467
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/talis_r_300_11714187842-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/talis_r_300_11714187842-1.jpg",
       "alt": "talis_r_300_11714187842-1.jpg",
@@ -111,6 +129,42 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/talis_r_300-2.jpg",
       "alt": "talis_r_300-2.jpg",
       "local": "assets/from-live/products/7c4e33bec5_talis_r_300-2.jpg"
+    },
+    {
+      "src": "local://91c3935dc9_SAEC-XR-3000-e1614258533593.jpg",
+      "thumb": "assets/enriched/273850/5adf676ffa_live1.jpg",
+      "alt": "Полочная акустика T+A Talis R 300",
+      "local": "assets/enriched/273850/5adf676ffa_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 41019
+    },
+    {
+      "src": "local://5b1c6ea687_monitor_audio_silver_300_7g6.jpg",
+      "thumb": "assets/enriched/273850/eaa121c612_live2.jpg",
+      "alt": "Полочная акустика T+A Talis R 300",
+      "local": "assets/enriched/273850/eaa121c612_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 95432
+    },
+    {
+      "src": "local://2f2ffde505_monitor_audio_silver_300_7g5.jpg",
+      "thumb": "assets/enriched/273850/64a9382196_live3.jpg",
+      "alt": "Полочная акустика T+A Talis R 300",
+      "local": "assets/enriched/273850/64a9382196_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 291215
+    },
+    {
+      "src": "local://18585f7a54_monitor_audio_silver_300_7g4.jpg",
+      "thumb": "assets/enriched/273850/e30eee8788_live4.jpg",
+      "alt": "Полочная акустика T+A Talis R 300",
+      "local": "assets/enriched/273850/e30eee8788_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 272525
     }
   ],
   "sku": "",
@@ -120,8 +174,7 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/f40911bb455c9de4a90efa39e91fd981/",
     "https://www.ta-hifi.de/"
   ],
-  "enrichedAt": "2026-11-14T13:36:27Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T13:47:03Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w6-2026-11"
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T13:38:30Z",
+  "generatedAt": "2026-11-14T13:52:41Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,45 +8,24 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 1062,
-  "okCount": 825,
+  "meagerCount": 969,
+  "okCount": 918,
   "reasonTallies": {
-    "gal": 1058,
-    "desc": 9
+    "gal": 969
   },
   "byCategory": {
     "Другое": 380,
     "Кабели": 231,
-    "Усилители": 182,
-    "Акустика": 173,
-    "Источники": 66,
-    "Ресиверы": 13,
+    "Усилители": 154,
+    "Акустика": 123,
+    "Источники": 58,
     "ЦАПы": 9,
-    "Наушники": 6,
+    "Ресиверы": 8,
+    "Наушники": 4,
     "Спецпредложения": 1,
     "Видео": 1
   },
   "top20": [
-    {
-      "id": 264554,
-      "name": "Кабель для наушников SAEC  SHC-2B300FH80 ( saec shc 2b300fh80 )",
-      "cat": "Наушники",
-      "price": 48025,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 264553,
-      "name": "Кабель для наушников SAEC  SHC-2B300FH65 ( saec shc 2b300fh65 )",
-      "cat": "Наушники",
-      "price": 43908,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
     {
       "id": 264551,
       "name": "Кабель для наушников SAEC  SHC-B120FF ( saec shc b120ff )",
@@ -118,16 +97,6 @@
       "enriched": true
     },
     {
-      "id": 273970,
-      "name": "Стереоусилитель мощности T+A A 3000 HV",
-      "cat": "Усилители",
-      "price": 2700000,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
       "id": 273984,
       "name": "CD-проигрыватель T+A MP 3100 HV",
       "cat": "Источники",
@@ -162,16 +131,6 @@
       "name": "Стереоусилитель T+A PA 2000 R",
       "cat": "Усилители",
       "price": 1185000,
-      "reasons": [
-        "gal:2"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 273850,
-      "name": "Полочная акустика T+A Talis R 300",
-      "cat": "Акустика",
-      "price": 1035000,
       "reasons": [
         "gal:2"
       ],
@@ -224,6 +183,46 @@
       "price": 14000000,
       "reasons": [
         "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 33408,
+      "name": "напольная акустика Lawrence Audio Drongo ( lawrence audio drongo )",
+      "cat": "Акустика",
+      "price": 4420000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 16836,
+      "name": "усилитель мощности Triode TRX M845 ( triode trx m845 )",
+      "cat": "Усилители",
+      "price": 3800000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 272695,
+      "name": "Внешний ЦАП Metronome Technologie c/AQWO D/A SP Converter",
+      "cat": "ЦАПы",
+      "price": 3790000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 272699,
+      "name": "Сетевой проигрыватель Metronome Technologie DSC",
+      "cat": "Источники",
+      "price": 3710000,
+      "reasons": [
+        "gal:2"
       ],
       "enriched": true
     }
