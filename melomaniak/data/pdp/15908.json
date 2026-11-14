@@ -35,30 +35,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Herron_Audio_VTSP_2-600x600.jpg",
       "alt": "Herron Audio VTSP 2",
       "local": "assets/from-live/products/7faffb7b75_predysilitel_Herron_Audio_VTSP_2.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Herron_Audio_VTSP_2-600x600.jpg",
-      "local": "assets/enriched/15908/f8fd6fed27_w13var.jpg",
-      "bytes": 19258,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Herron_Audio_VTSP_2-300x300.jpg",
-      "local": "assets/enriched/15908/ade72d53f1_w17cdn.jpg",
-      "bytes": 6498,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
-    },
-    {
-      "src": "local-variant://15908/w17sc95",
-      "local": "assets/enriched/15908/c767c98450_w17sc95.jpg",
-      "bytes": 22595,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
     }
   ],
   "sku": "",
@@ -69,7 +45,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Herron_Audio_VTSP_2/"
   ],
   "enrichedAt": "2026-11-14T13:45:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }

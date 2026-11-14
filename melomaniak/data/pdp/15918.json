@@ -58,14 +58,6 @@
       "enriched": true,
       "attribution": "from-live",
       "bytes": 28699
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Leben_CS_300X_S-600x600.jpg",
-      "local": "assets/enriched/15918/2a65408b95_w13var.jpg",
-      "bytes": 27763,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
     }
   ],
   "sku": "",
@@ -76,7 +68,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Leben_CS_300X_S/"
   ],
   "enrichedAt": "2026-11-14T13:45:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w10-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }

@@ -92,24 +92,10 @@
       "local": "assets/from-live/products/a58c189db6_moon_260d_black_4044835544-1.jpg"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black2.jpg",
-      "alt": "moon_260d_black2.jpg",
-      "local": "assets/from-live/products/7d144305c1_moon_260d_black2.jpg"
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black3.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black3.jpg",
       "alt": "moon_260d_black3.jpg",
       "local": "assets/from-live/products/599ed62cbd_moon_260d_black3.jpg"
-    },
-    {
-      "src": "local-variant://270148/w17sc95",
-      "local": "assets/enriched/270148/f552429c5a_w17sc95.jpg",
-      "bytes": 96038,
-      "wave": "meager-w17-2026-11",
-      "w": 1263,
-      "h": 1263
     }
   ],
   "sku": "",
@@ -120,7 +106,8 @@
     "https://simaudio.com/en/products/moon-260d/"
   ],
   "enrichedAt": "2026-11-14T17:02:09Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: true 1-shot / <4 OEM angles after depad — salon shoot needed.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:38:27Z"
 }

@@ -60,30 +60,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/transrotor_phono_8-2_mc1.jpg",
       "alt": "transrotor_phono_8-2_mc1.jpg",
       "local": "assets/from-live/products/c99730fea8_transrotor_phono_8-2_mc1.jpg"
-    },
-    {
-      "src": "local-variant://270483/w17sc95",
-      "local": "assets/enriched/270483/f4c9e7114a_w17sc95.jpg",
-      "bytes": 115286,
-      "wave": "meager-w17-2026-11",
-      "w": 1333,
-      "h": 1333
-    },
-    {
-      "src": "local-variant://270483/w17sc90",
-      "local": "assets/enriched/270483/3dbbf79e14_w17sc90.jpg",
-      "bytes": 105268,
-      "wave": "meager-w17-2026-11",
-      "w": 1263,
-      "h": 1263
-    },
-    {
-      "src": "local-variant://270483/w17sc85",
-      "local": "assets/enriched/270483/04216f072d_w17sc85.jpg",
-      "bytes": 96082,
-      "wave": "meager-w17-2026-11",
-      "w": 1193,
-      "h": 1193
     }
   ],
   "sku": "",
@@ -93,7 +69,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/150621ddf7355d13f6d541be2c8ea0a7/"
   ],
   "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: true 1-shot / <4 OEM angles after depad — salon shoot needed.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:38:20Z"
 }

@@ -40,30 +40,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/20400-600x600.jpg",
       "alt": "20400",
       "local": "assets/from-live/brand/ba35e03806_20400.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/20400-600x600.jpg",
-      "local": "assets/enriched/262137/14d06750a4_w14var.jpg",
-      "bytes": 22102,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "local-variant://262137/w17sc95",
-      "local": "assets/enriched/262137/4c11bd1353_w17sc95.jpg",
-      "bytes": 51134,
-      "wave": "meager-w17-2026-11",
-      "w": 1140,
-      "h": 759
-    },
-    {
-      "src": "local-variant://262137/w17sc90",
-      "local": "assets/enriched/262137/01e132020a_w17sc90.jpg",
-      "bytes": 47304,
-      "wave": "meager-w17-2026-11",
-      "w": 1080,
-      "h": 719
     }
   ],
   "sku": "",
@@ -73,7 +49,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b0%d0%bf-soulnote-d-1n-sh/"
   ],
   "enrichedAt": "2026-11-14T13:46:21Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }

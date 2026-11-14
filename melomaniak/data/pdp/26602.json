@@ -49,30 +49,6 @@
       "enriched": true,
       "attribution": "from-live",
       "bytes": 51099
-    },
-    {
-      "src": "https://web.archive.org/web/20250119025349im_/https://mvert.ru/wp-content/uploads/2016/12/Arte-Forma-805PP-front-right-side-220x286.jpg",
-      "local": "assets/enriched/26602/e7132e215c_w12805f.jpg",
-      "bytes": 10967,
-      "wave": "meager-w12-2026-11",
-      "w": 220,
-      "h": 286
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Arte_forma_805PP-600x600.jpg",
-      "local": "assets/enriched/26602/2e0ec25644_w13arte.jpg",
-      "bytes": 51367,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Arte_forma_805PP-300x300.jpg",
-      "local": "assets/enriched/26602/0a1d592a6d_w13arte.jpg",
-      "bytes": 15918,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
     }
   ],
   "sku": "",
@@ -83,7 +59,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Arte_forma_805PP/"
   ],
   "enrichedAt": "2026-11-14T13:45:25Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w10-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }

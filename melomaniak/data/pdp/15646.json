@@ -45,30 +45,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Mandolin-600x600.jpg",
       "alt": "Lawrence Audio Mandolin",
       "local": "assets/from-live/products/c8ed6fa629_napolnaia_akystika_Lawrence_Audio_Mandolin.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Mandolin-600x600.jpg",
-      "local": "assets/enriched/15646/e31e5d41af_w13var.jpg",
-      "bytes": 29678,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Mandolin-300x300.jpg",
-      "local": "assets/enriched/15646/909c26e106_w13var.jpg",
-      "bytes": 10407,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
-    },
-    {
-      "src": "local-variant://15646/w17sc95",
-      "local": "assets/enriched/15646/7b7a5c20dd_w17sc95.jpg",
-      "bytes": 35637,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
     }
   ],
   "sku": "",
@@ -79,7 +55,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Lawrence_Audio_Mandolin/"
   ],
   "enrichedAt": "2026-11-14T13:45:01Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }

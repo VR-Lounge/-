@@ -36,30 +36,34 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_zonemaster_12-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_zonemaster_12-1.jpg",
-      "alt": "parasound_zonemaster_12-1.jpg",
-      "local": "assets/from-live/products/d9646a31a1_parasound_zonemaster_12-1.jpg"
+      "src": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712274707-0474P107J0CGS4GU1ALS/zm12-interior.jpg",
+      "thumb": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712274707-0474P107J0CGS4GU1ALS/zm12-interior.jpg",
+      "alt": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
+      "local": "assets/enriched/269782/07f10c05c4_depad.jpg",
+      "bytes": 585697,
+      "from": "oem-depad",
+      "wave": "gallery-depad-2026-11",
+      "attribution": "cloneyaudio/parasound-press"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_zonemaster_12-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_zonemaster_12-2.jpg",
-      "alt": "parasound_zonemaster_12-2.jpg",
-      "local": "assets/from-live/products/60ea6f4523_parasound_zonemaster_12-2.jpg"
+      "src": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712275875-D9T13TC48N8PKQX248IN/zm12-rear_black.jpg",
+      "thumb": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712275875-D9T13TC48N8PKQX248IN/zm12-rear_black.jpg",
+      "alt": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
+      "local": "assets/enriched/269782/66491dc6df_depad.jpg",
+      "bytes": 333128,
+      "from": "oem-depad",
+      "wave": "gallery-depad-2026-11",
+      "attribution": "cloneyaudio/parasound-press"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_zonemaster_12-3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_zonemaster_12-3.jpg",
-      "alt": "parasound_zonemaster_12-3.jpg",
-      "local": "assets/from-live/products/bdad3b043a_parasound_zonemaster_12-3.jpg"
-    },
-    {
-      "src": "local-variant://269782/w17sc95",
-      "local": "assets/enriched/269782/81aee6ac03_w17sc95.jpg",
-      "bytes": 215689,
-      "wave": "meager-w17-2026-11",
-      "w": 1710,
-      "h": 1710
+      "src": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712274165-M1GT9Q6TXHZO326JGQOU/zm12-high_angle_black.jpg",
+      "thumb": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712274165-M1GT9Q6TXHZO326JGQOU/zm12-high_angle_black.jpg",
+      "alt": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
+      "local": "assets/enriched/269782/77cc8f0d54_depad.jpg",
+      "bytes": 274171,
+      "from": "oem-depad",
+      "wave": "gallery-depad-2026-11",
+      "attribution": "cloneyaudio/parasound-press"
     }
   ],
   "sku": "",
@@ -70,7 +74,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/4bbe134b71ef958197d0dc3927dfd42e/"
   ],
   "enrichedAt": "2026-11-14T14:24:40Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: true 1-shot / <4 OEM angles after depad — salon shoot needed.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:39:58Z"
 }

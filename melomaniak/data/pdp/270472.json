@@ -100,20 +100,13 @@
       "h": 3592
     },
     {
-      "src": "https://transrotor.de/media/pages/produkte/zet1/ef41cc0239-1702458085/zet1-tra-schraeg-1280x.jpg",
-      "local": "assets/enriched/270472/f10c65e1f0_w17cdn.jpg",
-      "bytes": 101554,
-      "wave": "meager-w17-2026-11",
-      "w": 1280,
-      "h": 853
-    },
-    {
-      "src": "https://transrotor.de/media/pages/produkte/zet1/f5214ef3f9-1702458067/zet1-rega-mittel-1280x.jpg",
-      "local": "assets/enriched/270472/d99b3285ab_w17cdn.jpg",
-      "bytes": 99747,
-      "wave": "meager-w17-2026-11",
-      "w": 1280,
-      "h": 853
+      "src": "https://transrotor.de/media/pages/produkte/zet1/0223ecb994-1702458066/zet1-rega-flach.jpg",
+      "thumb": "https://transrotor.de/media/pages/produkte/zet1/0223ecb994-1702458066/zet1-rega-flach.jpg",
+      "alt": "Виниловый проигрыватель Transrotor ZET 1",
+      "local": "assets/enriched/270472/250eb73dd5_depad.jpg",
+      "bytes": 1990233,
+      "from": "oem-depad",
+      "wave": "gallery-depad-2026-11"
     }
   ],
   "sku": "",
@@ -125,5 +118,6 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-14T23:40:00Z"
 }

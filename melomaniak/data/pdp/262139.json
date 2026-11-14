@@ -40,30 +40,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/8MWsd-jty_Q-600x337.jpg",
       "alt": "8MWsd-jty_Q",
       "local": "assets/from-live/products/fbcd9baa77_8MWsd-jty_Q.jpg"
-    },
-    {
-      "src": "local-variant://262139/w17sc95",
-      "local": "assets/enriched/262139/75d78fb0ae_w17sc95.jpg",
-      "bytes": 24581,
-      "wave": "meager-w17-2026-11",
-      "w": 760,
-      "h": 320
-    },
-    {
-      "src": "local-variant://262139/w17sc90",
-      "local": "assets/enriched/262139/e5cc59ba3d_w17sc90.jpg",
-      "bytes": 22336,
-      "wave": "meager-w17-2026-11",
-      "w": 720,
-      "h": 303
-    },
-    {
-      "src": "local-variant://262139/w17sc85",
-      "local": "assets/enriched/262139/2ee88e3c2a_w17sc85.jpg",
-      "bytes": 20309,
-      "wave": "meager-w17-2026-11",
-      "w": 680,
-      "h": 286
     }
   ],
   "sku": "",
@@ -73,7 +49,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-soulnote-e-1-sh/"
   ],
   "enrichedAt": "2026-11-14T13:46:21Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }

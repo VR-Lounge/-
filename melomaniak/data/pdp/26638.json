@@ -40,30 +40,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Audio_Physic_AP_Pre_-600x600.jpg",
       "alt": "Audio Physic AP Pre",
       "local": "assets/from-live/products/cf49f32284_predysilitel_Audio_Physic_AP_Pre_.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Audio_Physic_AP_Pre_-600x600.jpg",
-      "local": "assets/enriched/26638/e197afdfea_w13var.jpg",
-      "bytes": 12427,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "local-variant://26638/w17sc95",
-      "local": "assets/enriched/26638/2e9b2cf8bb_w17sc95.jpg",
-      "bytes": 14941,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
-    },
-    {
-      "src": "local-variant://26638/w17sc90",
-      "local": "assets/enriched/26638/1de7a9e653_w17sc90.jpg",
-      "bytes": 13885,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
     }
   ],
   "sku": "",
@@ -74,7 +50,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Audio_Physic_AP_Pre_/"
   ],
   "enrichedAt": "2026-11-14T13:45:25Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }

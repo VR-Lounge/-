@@ -45,30 +45,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/fonokorrektor_Amazon_Audio_B-Lab-600x600.jpg",
       "alt": "Amazon Audio B-Lab",
       "local": "assets/from-live/products/77963f7c12_fonokorrektor_Amazon_Audio_B-Lab.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/fonokorrektor_Amazon_Audio_B-Lab-600x600.jpg",
-      "local": "assets/enriched/26598/6276161c6a_w13var.jpg",
-      "bytes": 14416,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "local-variant://26598/w17sc95",
-      "local": "assets/enriched/26598/0b456fe65f_w17sc95.jpg",
-      "bytes": 18548,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
-    },
-    {
-      "src": "local-variant://26598/w17sc90",
-      "local": "assets/enriched/26598/f37bb74643_w17sc90.jpg",
-      "bytes": 16740,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
     }
   ],
   "sku": "",
@@ -78,7 +54,8 @@
     "https://www.amazon-audio.com/"
   ],
   "enrichedAt": "2026-11-14T13:45:25Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }

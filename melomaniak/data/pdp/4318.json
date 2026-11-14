@@ -47,22 +47,6 @@
       "local": "assets/from-live/products/332447778c_napolnaia_akystika_Lawrence_Audio_Violin_SE.jpg"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Violin_SE-600x600.jpg",
-      "local": "assets/enriched/4318/5c29d84a71_w13var.jpg",
-      "bytes": 36636,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Violin_SE-300x300.jpg",
-      "local": "assets/enriched/4318/8d7efeebc7_w13var.jpg",
-      "bytes": 12777,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/12/Acapella-Violin-white-side-right.jpg",
       "local": "assets/enriched/4318/6295d31bbb_w14media.jpg",
       "bytes": 32034,
@@ -79,7 +63,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Lawrence_Audio_Violin_SE/"
   ],
   "enrichedAt": "2026-11-14T13:44:50Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }

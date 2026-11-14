@@ -45,30 +45,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/LINE-MAGNETIC-AUDIO-AS-133-600x533.jpg",
       "alt": "LINE-MAGNETIC-AUDIO-AS-133",
       "local": "assets/from-live/products/7b1f2c3abd_LINE-MAGNETIC-AUDIO-AS-133.jpg"
-    },
-    {
-      "src": "local-variant://262119/w17sc95",
-      "local": "assets/enriched/262119/fb7983c716_w17sc95.jpg",
-      "bytes": 43916,
-      "wave": "meager-w17-2026-11",
-      "w": 760,
-      "h": 506
-    },
-    {
-      "src": "local-variant://262119/w17sc90",
-      "local": "assets/enriched/262119/b76fe14aa4_w17sc90.jpg",
-      "bytes": 40065,
-      "wave": "meager-w17-2026-11",
-      "w": 720,
-      "h": 479
-    },
-    {
-      "src": "local-variant://262119/w17sc85",
-      "local": "assets/enriched/262119/012879b34c_w17sc85.jpg",
-      "bytes": 36524,
-      "wave": "meager-w17-2026-11",
-      "w": 680,
-      "h": 453
     }
   ],
   "sku": "",
@@ -80,7 +56,8 @@
     "https://www.lm-audio.com/"
   ],
   "enrichedAt": "2026-11-14T14:07:25Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
 }
