@@ -464,6 +464,17 @@ footer{padding:32px 0;border-top:1px solid var(--line);font-size:11px;color:var(
 }
 .pdp-prose a{color:var(--gold)}
 .pdp-prose a:hover{color:var(--gold-bright)}
+.pdp-prose abbr,.pdp-prose dfn{
+  text-decoration:none;border-bottom:1px dotted rgba(212,175,55,.45);
+  cursor:help;letter-spacing:.02em;color:var(--gold-bright)
+}
+.pdp-prose aside{
+  column-span:all;margin:0 0 1.85em;padding:1.1em 1.15em 1.15em;
+  border:1px solid rgba(212,175,55,.22);background:linear-gradient(180deg,#12100c,#0c0b09);
+  max-width:100%
+}
+.pdp-prose aside p{margin:0;font-size:.92em;line-height:1.7;color:rgba(232,224,208,.88)}
+.pdp-prose aside strong{color:var(--gold-bright);font-weight:500;letter-spacing:.04em}
 .pdp-prose img,.pdp-prose video,.pdp-prose iframe{max-width:100%;height:auto;margin:1.2em 0;border:1px solid var(--line);column-span:all}
 .pdp-prose table,.pdp-prose .pdp-feature-list,.pdp-prose hr{max-width:none;width:100%;column-span:all}
 .pdp-prose hr{border:0;border-top:1px solid var(--line);margin:2.2em 0}

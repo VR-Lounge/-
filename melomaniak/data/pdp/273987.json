@@ -9,23 +9,18 @@
   "price": 1926900,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/341f780f5e00b75313afb569266fb518/",
-  "descriptionHtml": "<p>T+A MP 3000 HV MK II — multi-source CD-плеер и PCM ЦАП HV-серии: стриминг, FM/DAB+, Bluetooth aptX и Roon Ready в массивном алюминиевом шасси с раздельными отсеками.</p>\n<ul><li>CD + стриминг + тюнер</li><li>Roon Ready</li><li>RCA + XLR</li><li>HV шасси</li><li>26 кг</li></ul>\n<h2>Интерфейсы</h2>\n<p>Аналоговые выходы RCA и XLR (50 Ом); цифровой coax S/PDIF. Входы AES/EBU, coax/BNC/optical S/PDIF, USB Device и USB Master; LAN 10/100 и WLAN. Тюнер FM и DAB/DAB+.</p>\n<h2>Конвертация</h2>\n<p>По материалам T+A: Doppel-Differential-Quadrupel-Converter и программируемый signal processor с фазолинейным Bessel-фильтром. Потребление 2×40 Вт; standby < 0,5 Вт. Габариты 17 × 46 × 46 см, вес 26 кг.</p>",
+  "descriptionHtml": "<p>T+A MP 3000 HV MKII — мульти-источник HV: CD-транспорт, стриминг, FM/DAB+, Bluetooth и PCM-ЦАП с Double Differential Quadruple Converter (4 ЦАП на канал). Центр цифрового тракта салона без «коробки со всем сразу» в плохом смысле — с разделением БП и экранированием отсеков.</p>\n<ul><li>CD / CD-R / CD-RW / CD Text</li><li>Streaming PCM до 192 кГц / 24 бит</li><li>LAN + WLAN</li><li>FM · DAB/DAB+ · Bluetooth aptX</li><li>ЦАП: 4× на канал</li><li>17 × 46 × 46 см · 26 кг</li></ul>\n<aside><p><strong>Quadruple Converter.</strong> У T+A — четыре ЦАП на канал в дифференциальной схеме для снижения шума и повышения линейности преобразования. Не маркетинговый «чип», а архитектура цифро-аналогового тракта HV.</p></aside>\n<h2>Сеть и управление</h2>\n<p>По материалам T+A: Tidal / Deezer / Qobuz / Airable / Roon Ready; MusicNavigator; FD 100. Аналоговые RCA/XLR и цифровой S/PDIF. HITL: сверить версию MKII и опции с наличием.</p>",
   "shortHtml": "",
-  "descriptionText": "T+A MP 3000 HV MK II — multi-source CD-плеер и PCM ЦАП HV-серии: стриминг, FM/DAB+, Bluetooth aptX и Roon Ready в массивном алюминиевом шасси с раздельными отсеками.\n\n CD + стриминг + тюнер\n Roon Ready\n RCA + XLR\n HV шасси\n 26 кг\n\n Интерфейсы\n\n Аналоговые выходы RCA и XLR (50 Ом); цифровой coax S/PDIF. Входы AES/EBU, coax/BNC/optical S/PDIF, USB Device и USB Master; LAN 10/100 и WLAN. Тюнер FM и DAB/DAB+.\n\n Конвертация\n\n По материалам T+A: Doppel-Differential-Quadrupel-Converter и программируемый signal processor с фазолинейным Bessel-фильтром. Потребление 2×40 Вт; standby < 0,5 Вт. Габариты 17 × 46 × 46 см, вес 26 кг.",
+  "descriptionText": "T+A MP 3000 HV MKII — мульти-источник HV: CD-транспорт, стриминг, FM/DAB+, Bluetooth и PCM-ЦАП с Double Differential Quadruple Converter (4 ЦАП на канал). Центр цифрового тракта салона без «коробки со всем сразу» в плохом смысле — с разделением БП и экранированием отсеков.\n\n CD / CD-R / CD-RW / CD Text\n Streaming PCM до 192 кГц / 24 бит\n LAN + WLAN\n FM · DAB/DAB+ · Bluetooth aptX\n ЦАП: 4× на канал\n 17 × 46 × 46 см · 26 кг\n\n Quadruple Converter. У T+A — четыре ЦАП на канал в дифференциальной схеме для снижения шума и повышения линейности преобразования. Не маркетинговый «чип», а архитектура цифро-аналогового тракта HV.\n\n Сеть и управление\n\n По материалам T+A: Tidal / Deezer / Qobuz / Airable / Roon Ready; MusicNavigator; FD 100. Аналоговые RCA/XLR и цифровой S/PDIF. HITL: сверить версию MKII и опции с наличием.",
   "specs": [
     {
-      "label": "Тип",
-      "value": "Multi Source CD Player / PCM DAC",
+      "label": "CD",
+      "value": "CD/DA, CD-R, CD-RW, CD Text",
       "source": "manufacturer"
     },
     {
-      "label": "Аналоговые выходы",
-      "value": "RCA и XLR, 50 Ом",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Цифровые входы",
-      "value": "AES/EBU; coax/BNC/optical; USB Device/Master",
+      "label": "Streaming",
+      "value": "PCM 32–192 кГц, 16/24 бит",
       "source": "manufacturer"
     },
     {
@@ -35,27 +30,22 @@
     },
     {
       "label": "Тюнер",
-      "value": "FM; DAB/DAB+",
+      "value": "FM 87,5–108 МГц; DAB/DAB+ 168–240 МГц",
       "source": "manufacturer"
     },
     {
-      "label": "Bluetooth",
-      "value": "A2DP/AVRCP, aptX",
+      "label": "ЦАП",
+      "value": "Double Differential Quadruple Converter; 4 ЦАП/канал",
       "source": "manufacturer"
     },
     {
-      "label": "Габариты (В×Ш×Г)",
-      "value": "17 × 46 × 46 см",
+      "label": "Выходы",
+      "value": "RCA и XLR; S/PDIF coaxial",
       "source": "manufacturer"
     },
     {
-      "label": "Вес",
-      "value": "26 кг",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Потребление",
-      "value": "2 × 40 Вт; standby < 0,5 Вт",
+      "label": "Габариты / масса",
+      "value": "17 × 46 × 46 см; 26 кг",
       "source": "manufacturer"
     }
   ],
@@ -71,15 +61,40 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mp_3000_hv_mkii_8577693338-2.jpg",
       "alt": "mp_3000_hv_mkii_8577693338-2.jpg",
       "local": "assets/from-live/products/cbbc7147a6_mp_3000_hv_mkii_8577693338-2.jpg"
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/mp_3000_hv_mk2-700x467.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/mp_3000_hv_mk2-700x467.jpg",
+      "alt": "CD-проигрыватель T+A MP 3000 HV MKII",
+      "local": "assets/enriched/273987/4072845da9_1.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de"
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/mp_3000_hv_mk2.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/mp_3000_hv_mk2.jpg",
+      "alt": "CD-проигрыватель T+A MP 3000 HV MKII",
+      "local": "assets/enriched/273987/4571907459_2.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de"
+    },
+    {
+      "src": "assets/from-live/misc/d40b9dad8b_MP3000HV.png",
+      "thumb": "assets/from-live/misc/d40b9dad8b_MP3000HV.png",
+      "alt": "CD-проигрыватель T+A MP 3000 HV MKII",
+      "local": "assets/from-live/misc/d40b9dad8b_MP3000HV.png",
+      "enriched": true,
+      "attribution": "from-live"
     }
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.ta-hifi.de/support/hv-serie/support-mp-3000-hv-mkii/",
+    "https://www.ta-hifi.de/wp-content/uploads/um_mp3000hv_mkii_en.pdf",
     "https://www.ta-hifi.de/wp-content/uploads/MP_3000_HV_MK_II_4_Seiter_AD.pdf"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:23:26Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-flagships-2026-11"
 }

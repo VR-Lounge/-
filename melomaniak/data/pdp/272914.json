@@ -9,33 +9,43 @@
   "price": 53990,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/02fa75ea44c0e8b6c2edc29e05a07104/",
-  "descriptionHtml": "<p>Bowers & Wilkins Px7 S2e — беспроводные ANC-наушники: 40 мм драйверы, BT 5.2 с aptX Adaptive, до 30 часов с ANC. Эволюция Px7 S2 с DSP от линейки Px8.</p>\n<ul><li>40 мм drivers</li><li>ANC + ambient</li><li>aptX Adaptive</li><li>30 ч</li><li>307 г</li></ul>\n<h2>Питание</h2>\n<p>30 ч BT+ANC; 15 мин зарядки ≈ 7 ч. Вес 307 г. Кодеки: aptX Adaptive/HD/aptX, AAC, SBC.</p>",
+  "descriptionHtml": "<p>Bowers &amp; Wilkins Px7 S2e — беспроводные охватывающие наушники с гибридным ANC и 40-мм биоцеллюлозными драйверами. Мобильный контур салона: когда клиенту нужна тишина в дороге без отказа от характера B&amp;W.</p>\n<ul><li>2 × 40 мм биоцеллюлоза</li><li>Гибридное ANC + Ambient Pass-Through</li><li>Bluetooth 5.2 · aptX Adaptive</li><li>До 30 ч с ANC</li><li>Импеданс (провод) 33 Ом</li><li>Масса 307 г</li></ul>\n<aside><p><strong>aptX Adaptive.</strong> Кодек Qualcomm, подстраивающий битрейт под радиоусловия; в линейке B&amp;W соседствует с aptX HD / AAC / SBC. Не замена хорошему файлу по USB-C, а лучший беспроводной компромисс в городе.</p></aside>\n<h2>Питание и связь</h2>\n<p>По B&amp;W: 30 часов с ANC; ~7 часов после 15 минут зарядки; USB-C аудио; датчик ношения. Шесть микрофонов на ANC и голос. Масса 307 г без чехла. Для салона — честная «дорожная» альтернатива проводным флагманам, не их замена в референсной комнате.</p>",
   "shortHtml": "",
-  "descriptionText": "Bowers & Wilkins Px7 S2e — беспроводные ANC-наушники: 40 мм драйверы, BT 5.2 с aptX Adaptive, до 30 часов с ANC. Эволюция Px7 S2 с DSP от линейки Px8.\n\n 40 мм drivers\n ANC + ambient\n aptX Adaptive\n 30 ч\n 307 г\n\n Питание\n\n 30 ч BT+ANC; 15 мин зарядки ≈ 7 ч. Вес 307 г. Кодеки: aptX Adaptive/HD/aptX, AAC, SBC.",
+  "descriptionText": "Bowers &amp; Wilkins Px7 S2e — беспроводные охватывающие наушники с гибридным ANC и 40-мм биоцеллюлозными драйверами. Мобильный контур салона: когда клиенту нужна тишина в дороге без отказа от характера B&amp;W.\n\n 2 × 40 мм биоцеллюлоза\n Гибридное ANC + Ambient Pass-Through\n Bluetooth 5.2 · aptX Adaptive\n До 30 ч с ANC\n Импеданс (провод) 33 Ом\n Масса 307 г\n\n aptX Adaptive. Кодек Qualcomm, подстраивающий битрейт под радиоусловия; в линейке B&amp;W соседствует с aptX HD / AAC / SBC. Не замена хорошему файлу по USB-C, а лучший беспроводной компромисс в городе.\n\n Питание и связь\n\n По B&amp;W: 30 часов с ANC; ~7 часов после 15 минут зарядки; USB-C аудио; датчик ношения. Шесть микрофонов на ANC и голос. Масса 307 г без чехла. Для салона — честная «дорожная» альтернатива проводным флагманам, не их замена в референсной комнате.",
   "specs": [
     {
+      "label": "Тип",
+      "value": "Беспроводные over-ear с ANC",
+      "source": "manufacturer"
+    },
+    {
       "label": "Драйверы",
-      "value": "2 × 40 мм",
+      "value": "2 × 40 мм биоцеллюлоза",
+      "source": "manufacturer"
+    },
+    {
+      "label": "ANC",
+      "value": "Гибридное; Ambient Pass-Through",
       "source": "manufacturer"
     },
     {
       "label": "Bluetooth",
-      "value": "5.2, aptX Adaptive / HD / AAC / SBC",
+      "value": "5.2; aptX Adaptive / HD / aptX / AAC / SBC",
       "source": "manufacturer"
     },
     {
       "label": "Автономность",
-      "value": "30 ч (BT + ANC)",
+      "value": "до 30 ч с ANC; ~7 ч после 15 мин зарядки",
       "source": "manufacturer"
     },
     {
-      "label": "Вес",
-      "value": "307 г",
+      "label": "Импеданс",
+      "value": "33 Ом",
       "source": "manufacturer"
     },
     {
-      "label": "Интерфейс",
-      "value": "USB-C зарядка и аудио",
+      "label": "Масса",
+      "value": "307 г без чехла",
       "source": "manufacturer"
     }
   ],
@@ -189,8 +199,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.bowerswilkins.com/zh-cn/product/over-ear-headphones/px7-s2e/FP44520P.html"
+    "https://www.bowerswilkins.com/en-us/product/over-ear-headphones/px7-s2e/300866.html",
+    "https://www.bowerswilkins.com/on/demandware.static/-/Library-Sites-bowers_northamerica_shared/default/dwec29a146/downloads/Px7_S2e_manual_ALL.pdf"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:20:09Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-headphones-2026-11"
 }

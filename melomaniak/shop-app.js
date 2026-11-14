@@ -280,10 +280,11 @@
       return fromDetail.map((g) => {
         const local = g.local || null;
         const cdn = g.src || null;
+        // Prefer local enriched/from-live files over remote thumb URLs (avoid pixelated CDN heroes).
         const src = local || cdn;
         return {
           src,
-          thumb: g.thumb || local || cdn,
+          thumb: local || g.thumb || cdn,
           alt: g.alt || (listing && listing.name) || "",
           cdn,
         };
@@ -676,6 +677,9 @@
       "BLOCKQUOTE",
       "SUP",
       "SUB",
+      "ABBR",
+      "ASIDE",
+      "DFN",
     ]);
     /* DIV/SPAN intentionally unwrapped — Woo export chrome, not salon semantics */
     const wrap = document.createElement("div");

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-14T11:40:04Z",
-  "enrichedCount": 166,
+  "generatedAt": "2026-11-14T12:28:52Z",
+  "enrichedCount": 182,
   "products": {
     "264008": {
       "name": "USB кабель Acoustic Revive RUT-1 ( usb acoustic revive rut 1 )",
@@ -622,7 +622,8 @@
       "specsCount": 10,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 729,
+      "enrichedAt": "2026-11-14T12:28:52Z"
     },
     "269782": {
       "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
@@ -1118,17 +1119,19 @@
       "specsCount": 9,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 557,
+      "enrichedAt": "2026-11-14T12:28:52Z"
     },
     "270878": {
       "name": "Стереоусилитель Hegel H600",
       "sources": [
         "https://www.hegel.com/en/products/integrated/h600"
       ],
-      "specsCount": 13,
-      "galleryCount": 4,
-      "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "specsCount": 7,
+      "galleryCount": 8,
+      "photosAdded": 4,
+      "descLen": 708,
+      "enrichedAt": "2026-11-14T12:22:22Z"
     },
     "271014": {
       "name": "Стереоусилитель мощности Matrix Audio Element P2",
@@ -1358,10 +1361,11 @@
       "sources": [
         "https://www.clearaudio.de/en/produkt-laufwerk-reference-jubilee/"
       ],
-      "specsCount": 9,
-      "galleryCount": 6,
-      "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "specsCount": 7,
+      "galleryCount": 10,
+      "photosAdded": 5,
+      "descLen": 729,
+      "enrichedAt": "2026-11-14T12:22:26Z"
     },
     "272810": {
       "name": "Кабель HDMI AudioQuest Vodka 48 eARC Priority Braid",
@@ -1416,12 +1420,14 @@
     "272914": {
       "name": "Беспроводные наушники B PX7 S2e",
       "sources": [
-        "https://www.bowerswilkins.com/zh-cn/product/over-ear-headphones/px7-s2e/FP44520P.html"
+        "https://www.bowerswilkins.com/en-us/product/over-ear-headphones/px7-s2e/300866.html",
+        "https://www.bowerswilkins.com/on/demandware.static/-/Library-Sites-bowers_northamerica_shared/default/dwec29a146/downloads/Px7_S2e_manual_ALL.pdf"
       ],
-      "specsCount": 5,
+      "specsCount": 7,
       "galleryCount": 24,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 831,
+      "enrichedAt": "2026-11-14T12:20:09Z"
     },
     "273082": {
       "name": "AV-ресивер Denon AVR-S670H",
@@ -1521,10 +1527,11 @@
         "https://www.psaudio.com/products/bhk-mono-600-power-amplifier",
         "https://www.psaudio.com/pages/specifications-bhk-mono-600-power-amplifier"
       ],
-      "specsCount": 10,
-      "galleryCount": 3,
-      "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "specsCount": 6,
+      "galleryCount": 7,
+      "photosAdded": 4,
+      "descLen": 693,
+      "enrichedAt": "2026-11-14T12:22:36Z"
     },
     "273565": {
       "name": "Внешний ЦАП PS Audio StellarGold DAC",
@@ -1569,13 +1576,14 @@
     "273961": {
       "name": "Предусилитель T+A P 3100 HV",
       "sources": [
-        "https://www.ta-hifi.de/en/audiosystems/hv-series/p-3100-hv-pre-amplifier-2/",
-        "https://www.ta-hifi.de/wp-content/uploads/P_3100_HV_GB_web.pdf"
+        "https://www.ta-hifi.de/wp-content/uploads/P_3100_HV_GB_web.pdf",
+        "https://www.ta-hifi.de/en/audiosystems/hv-series/p-3100-hv-pre-amplifier-2/"
       ],
-      "specsCount": 11,
-      "galleryCount": 4,
-      "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "specsCount": 6,
+      "galleryCount": 9,
+      "photosAdded": 5,
+      "descLen": 728,
+      "enrichedAt": "2026-11-14T12:22:37Z"
     },
     "273974": {
       "name": "Стереоусилитель мощности T+A A 200",
@@ -1591,13 +1599,14 @@
     "273987": {
       "name": "CD-проигрыватель T+A MP 3000 HV MKII",
       "sources": [
-        "https://www.ta-hifi.de/support/hv-serie/support-mp-3000-hv-mkii/",
+        "https://www.ta-hifi.de/wp-content/uploads/um_mp3000hv_mkii_en.pdf",
         "https://www.ta-hifi.de/wp-content/uploads/MP_3000_HV_MK_II_4_Seiter_AD.pdf"
       ],
-      "specsCount": 9,
+      "specsCount": 7,
       "galleryCount": 2,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 821,
+      "enrichedAt": "2026-11-14T12:22:43Z"
     },
     "274001": {
       "name": "Сетевой проигрыватель T+A MP 200",
@@ -1629,7 +1638,8 @@
       "specsCount": 14,
       "galleryCount": 11,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 1045,
+      "enrichedAt": "2026-11-14T12:28:52Z"
     },
     "274049": {
       "name": "Внешний ЦАП T+A DAC 200",
@@ -1640,17 +1650,20 @@
       "specsCount": 13,
       "galleryCount": 12,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 945,
+      "enrichedAt": "2026-11-14T12:28:52Z"
     },
     "274060": {
       "name": "Охватывающие наушники T+A Solitaire P-SE",
       "sources": [
-        "https://www.ta-hifi.de/en/headphones/solitaire-headphones/solitaire-p-se/"
+        "https://www.ta-hifi.de/en/headphones/solitaire-headphones/solitaire-p-se/",
+        "https://www.ta-hifi.de/wp-content/uploads/Solitaire_P_SE_GB.pdf"
       ],
-      "specsCount": 6,
-      "galleryCount": 7,
-      "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "specsCount": 9,
+      "galleryCount": 10,
+      "photosAdded": 4,
+      "descLen": 1426,
+      "enrichedAt": "2026-11-14T12:20:11Z"
     },
     "274166": {
       "name": "Беспроводная Hi-Fi-акустика Loewe Klang mr1",
@@ -1713,7 +1726,206 @@
       "galleryCount": 5,
       "photosAdded": 0,
       "enrichedAt": "2026-11-14T11:40:04Z"
+    },
+    "4322": {
+      "name": "наушники Precide ERGO AMT ( precide ergo amt )",
+      "sources": [
+        "https://www.precide.ch/precide_shop/en/ERGO-Headphones-65.html",
+        "https://precideaplus.ch/ergo-1-and-2/",
+        "https://en.homecinesolutions.fr/p/19008-ergo-amt",
+        "https://necessoire-hifi.com/produit/ergo-amt/",
+        "https://www.avguide.ch/testbericht/wunderwandler-test-kopfhoerer-ergo-amt",
+        "https://en.wikipedia.org/wiki/Air_Motion_Transformer"
+      ],
+      "specsCount": 12,
+      "galleryCount": 9,
+      "photosAdded": 8,
+      "descLen": 2474,
+      "enrichedAt": "2026-11-14T12:15:26Z"
+    },
+    "4326": {
+      "name": "усилитель для наушников Precide ERGO AMP 2 ( precide ergo amp 2 )",
+      "sources": [
+        "https://precideaplus.ch/ergo-1-and-2/",
+        "https://precideaplus.ch/ergo-amp-1-en/",
+        "https://www.precide.ch/precide_shop/en/ERGO-Headphones-65.html",
+        "https://www.avguide.ch/testbericht/wunderwandler-test-kopfhoerer-ergo-amt"
+      ],
+      "specsCount": 5,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 1335,
+      "enrichedAt": "2026-11-14T12:15:32Z"
+    },
+    "5766": {
+      "name": "наушники Precide Ergo Amt + Ergo Amp2 ( precide ergo amt plus ergo amp2 )",
+      "sources": [
+        "https://www.precide.ch/precide_shop/en/ERGO-Headphones-65.html",
+        "https://precideaplus.ch/ergo-1-and-2/",
+        "https://necessoire-hifi.com/produit/ergo-amt/",
+        "https://www.avguide.ch/testbericht/wunderwandler-test-kopfhoerer-ergo-amt"
+      ],
+      "specsCount": 9,
+      "galleryCount": 10,
+      "photosAdded": 6,
+      "descLen": 1144,
+      "enrichedAt": "2026-11-14T12:15:36Z"
+    },
+    "273067": {
+      "name": "Охватывающие наушники Denon AH-D7200",
+      "sources": [
+        "https://www.denon.com/product/over-ear-headphones/ah-d7200/AHD7200.html",
+        "https://www.denon.com/on/demandware.static/-/Library-Sites-denon_northamerica_shared/default/dw5d669963/downloads/ah-d7200-info-sheet-en.pdf"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 4,
+      "descLen": 847,
+      "enrichedAt": "2026-11-14T12:20:09Z"
+    },
+    "273078": {
+      "name": "Охватывающие наушники Denon AH-D9200",
+      "sources": [
+        "https://www.denon.com/en/product/over-ear-headphones/ah-d9200/AHD9200.html",
+        "https://www.denon.com/on/demandware.static/-/Library-Sites-denon_northamerica_shared/default/dw6e821f92/downloads/ah-d9200-info-sheet-en.pdf"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 4,
+      "descLen": 970,
+      "enrichedAt": "2026-11-14T12:20:10Z"
+    },
+    "274068": {
+      "name": "Охватывающие наушники T+A Solitaire P-SE (Pentacon)",
+      "sources": [
+        "https://www.ta-hifi.de/en/headphones/solitaire-headphones/solitaire-p-se/",
+        "https://www.ta-hifi.de/wp-content/uploads/um_solitaire_p_se_de_en_2.pdf"
+      ],
+      "specsCount": 7,
+      "galleryCount": 4,
+      "photosAdded": 4,
+      "descLen": 914,
+      "enrichedAt": "2026-11-14T12:20:15Z"
+    },
+    "4334": {
+      "name": "напольная акустика Precide Heil AMT Kithara ( precide heil amt kithara )",
+      "sources": [
+        "https://precideaplus.ch/kithara-en/"
+      ],
+      "specsCount": 7,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 853,
+      "enrichedAt": "2026-11-14T12:22:19Z"
+    },
+    "264033": {
+      "name": "Кабель для наушников Acoustic Revive RHC-2.5 AK-SF ( acoustic revive rhc 2 5 ak sf )",
+      "sources": [
+        "https://acousticrevive.jp/portfolio-item/headphone-cable",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/headphone-cables/acoustic-revive-rhc-2-5ul-triplec-fm-headphone-cable"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 1304,
+      "enrichedAt": "2026-11-14T12:27:44Z"
+    },
+    "264034": {
+      "name": "Кабель для наушников Acoustic Revive RHC-2.5 SH-SF ( acoustic revive rhc 2 5 sh sf )",
+      "sources": [
+        "https://acousticrevive.jp/portfolio-item/headphone-cable",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/headphone-cables/acoustic-revive-rhc-2-5ul-triplec-fm-headphone-cable"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 1270,
+      "enrichedAt": "2026-11-14T12:27:51Z"
+    },
+    "264035": {
+      "name": "Кабель для наушников Acoustic Revive RHC-2.5 SH-S-SF ( acoustic revive rhc 2 5 sh s sf )",
+      "sources": [
+        "https://acousticrevive.jp/portfolio-item/headphone-cable",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/headphone-cables/acoustic-revive-rhc-2-5ul-triplec-fm-headphone-cable"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 1242,
+      "enrichedAt": "2026-11-14T12:27:58Z"
+    },
+    "264036": {
+      "name": "Кабель для наушников Acoustic Revive RHC-2.5 SH-B-SF ( acoustic revive rhc 2 5 sh b sf )",
+      "sources": [
+        "https://acousticrevive.jp/portfolio-item/headphone-cable",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/headphone-cables/acoustic-revive-rhc-2-5ul-triplec-fm-headphone-cable"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 1237,
+      "enrichedAt": "2026-11-14T12:28:06Z"
+    },
+    "264037": {
+      "name": "Кабель для наушников Acoustic Revive RHC-2.5 UL-SF ( acoustic revive rhc 2 5 ul sf )",
+      "sources": [
+        "https://acousticrevive.jp/portfolio-item/headphone-cable",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/headphone-cables/acoustic-revive-rhc-2-5ul-triplec-fm-headphone-cable"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 1233,
+      "enrichedAt": "2026-11-14T12:28:13Z"
+    },
+    "264038": {
+      "name": "Кабель для наушников Acoustic Revive RHC-2.5 HS-S-SF ( acoustic revive rhc 2 5 hs s sf )",
+      "sources": [
+        "https://acousticrevive.jp/portfolio-item/headphone-cable",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/headphone-cables/acoustic-revive-rhc-2-5ul-triplec-fm-headphone-cable"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 1250,
+      "enrichedAt": "2026-11-14T12:28:21Z"
+    },
+    "264039": {
+      "name": "Кабель для наушников Acoustic Revive RHC-2.5 HS-B-SF ( acoustic revive rhc 2 5 hs b sf )",
+      "sources": [
+        "https://acousticrevive.jp/portfolio-item/headphone-cable",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/headphone-cables/acoustic-revive-rhc-2-5ul-triplec-fm-headphone-cable"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 1248,
+      "enrichedAt": "2026-11-14T12:28:28Z"
+    },
+    "264040": {
+      "name": "Кабель для наушников Acoustic Revive RHC-2.5 HE-S-SF ( acoustic revive rhc 2 5 he s sf )",
+      "sources": [
+        "https://acousticrevive.jp/portfolio-item/headphone-cable",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/headphone-cables/acoustic-revive-rhc-2-5ul-triplec-fm-headphone-cable"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 1228,
+      "enrichedAt": "2026-11-14T12:28:36Z"
+    },
+    "264041": {
+      "name": "Кабель для наушников Acoustic Revive RHC-2.5 HE-B-SF ( acoustic revive rhc 2 5 he b sf )",
+      "sources": [
+        "https://acousticrevive.jp/portfolio-item/headphone-cable",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/headphone-cables/acoustic-revive-rhc-2-5ul-triplec-fm-headphone-cable"
+      ],
+      "specsCount": 8,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 1226,
+      "enrichedAt": "2026-11-14T12:28:44Z"
     }
   },
-  "method": "Manufacturer pages preferred (Hegel, PS Audio, T+A, Aurender, Clearaudio, Parasound, Naim, Marantz, Emotiva). Research via Exa + Tavily. No invented watts."
+  "method": "Manufacturer pages preferred. Research via Exa + Tavily + dealer OEM galleries. Meager bar: desc≥500 chars, gallery≥4, structured specs. No invented watts."
 }

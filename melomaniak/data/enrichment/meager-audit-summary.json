@@ -1,0 +1,252 @@
+{
+  "generatedAt": "2026-11-14T12:32:26Z",
+  "criteria": {
+    "descMinChars": 500,
+    "galleryMin": 4,
+    "stubHeuristics": true,
+    "requireSpecs": true,
+    "flagIfAny": true
+  },
+  "totalPdp": 1887,
+  "meagerCount": 1361,
+  "okCount": 526,
+  "reasonTallies": {
+    "desc": 649,
+    "gal": 1279,
+    "no_specs": 835
+  },
+  "byCategory": {
+    "Другое": 408,
+    "Кабели": 297,
+    "Акустика": 255,
+    "Усилители": 254,
+    "Источники": 87,
+    "Ресиверы": 30,
+    "Наушники": 13,
+    "ЦАПы": 13,
+    "Спецпредложения": 2,
+    "Видео": 2
+  },
+  "top20": [
+    {
+      "id": 264554,
+      "name": "Кабель для наушников SAEC  SHC-2B300FH80 ( saec shc 2b300fh80 )",
+      "cat": "Наушники",
+      "price": 48025,
+      "reasons": [
+        "desc:267",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 264557,
+      "name": "Кабель для наушников SAEC  SHC-U300FH80 ( saec shc u300fh80 )",
+      "cat": "Наушники",
+      "price": 45281,
+      "reasons": [
+        "desc:243",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 264553,
+      "name": "Кабель для наушников SAEC  SHC-2B300FH65 ( saec shc 2b300fh65 )",
+      "cat": "Наушники",
+      "price": 43908,
+      "reasons": [
+        "desc:282",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 264552,
+      "name": "Кабель для наушников SAEC  SHC-2B300FSH ( saec shc 2b300fsh )",
+      "cat": "Наушники",
+      "price": 39792,
+      "reasons": [
+        "desc:259",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 264556,
+      "name": "Кабель для наушников SAEC  SHC-U300FH65 ( saec shc u300fh65 )",
+      "cat": "Наушники",
+      "price": 38420,
+      "reasons": [
+        "desc:258",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 264551,
+      "name": "Кабель для наушников SAEC  SHC-B120FF ( saec shc b120ff )",
+      "cat": "Наушники",
+      "price": 30187,
+      "reasons": [
+        "desc:208",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 264555,
+      "name": "Кабель для наушников SAEC  SHC-U300FSH ( saec shc u300fsh )",
+      "cat": "Наушники",
+      "price": 30187,
+      "reasons": [
+        "desc:242",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 264550,
+      "name": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+      "cat": "Наушники",
+      "price": 24699,
+      "reasons": [
+        "desc:205",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 264549,
+      "name": "Кабель для наушников SAEC  SHC-120FF ( saec shc 120ff )",
+      "cat": "Наушники",
+      "price": 20582,
+      "reasons": [
+        "desc:207",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 264548,
+      "name": "Кабель для наушников SAEC  SHC-120FS ( saec shc 120fs )",
+      "cat": "Наушники",
+      "price": 15094,
+      "reasons": [
+        "desc:204",
+        "gal:1",
+        "no_specs"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 271278,
+      "name": "Кабель miniJack-miniJack Nordost Heimdall 2 iKable",
+      "cat": "Наушники",
+      "price": 69990,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 271276,
+      "name": "Кабель miniJack-miniJack Nordost Blue Heaven iKable",
+      "cat": "Наушники",
+      "price": 39490,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 272828,
+      "name": "Кабель miniJack-2RCA AudioQuest Big Sur",
+      "cat": "Наушники",
+      "price": 23690,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 273916,
+      "name": "Напольная акустика T+A Solitaire S 540",
+      "cat": "Акустика",
+      "price": 7350000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 273915,
+      "name": "Напольная акустика T+A Solitaire S 530",
+      "cat": "Акустика",
+      "price": 5625000,
+      "reasons": [
+        "gal:0"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 274022,
+      "name": "Сетевой проигрыватель T+A SDV 3100 HV",
+      "cat": "Источники",
+      "price": 4350000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 274019,
+      "name": "Сетевой проигрыватель T+A SD 3100 HV",
+      "cat": "Источники",
+      "price": 4050000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 273858,
+      "name": "Ламповый моноусилитель мощности T+A М 40 HV",
+      "cat": "Усилители",
+      "price": 3600000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 273929,
+      "name": "Стереоусилитель T+A PA 3100 HV",
+      "cat": "Усилители",
+      "price": 2850000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": false
+    },
+    {
+      "id": 273970,
+      "name": "Стереоусилитель мощности T+A A 3000 HV",
+      "cat": "Усилители",
+      "price": 2700000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": false
+    }
+  ]
+}

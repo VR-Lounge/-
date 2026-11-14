@@ -2,6 +2,7 @@
 """Apply researched enrichment batches into data/pdp/{id}.json + optional photos."""
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import re
@@ -14,11 +15,14 @@ PDP = ROOT / "data" / "pdp"
 ASSETS = ROOT / "assets" / "enriched"
 ENRICH = ROOT / "data" / "enrichment"
 UA = "Mozilla/5.0 (compatible; MELOMANIAK-enrich/1.0; +https://melomaniak.example)"
+GALLERY_TARGET = 4
+GALLERY_MAX_ADD = 8
+MIN_IMAGE_BYTES = 12_000  # skip logos / tiny thumbs
 
 
-def load_batches() -> dict:
+def load_batches(pattern: str = "batch-*-researched.json") -> dict:
     merged: dict = {}
-    for f in sorted(ENRICH.glob("batch-*-researched.json")):
+    for f in sorted(ENRICH.glob(pattern)):
         data = json.loads(f.read_text(encoding="utf-8"))
         for pid, payload in data.items():
             merged[str(pid)] = payload
@@ -38,7 +42,7 @@ def strip_tags(html: str) -> str:
     s = re.sub(r"(?is)<script[^>]*>.*?</script>", " ", html or "")
     s = re.sub(r"(?is)<style[^>]*>.*?</style>", " ", s)
     s = re.sub(r"(?is)<br\s*/?>", "\n", s)
-    s = re.sub(r"(?is)</(p|div|h[1-6]|li)>", "\n", s)
+    s = re.sub(r"(?is)</(p|div|h[1-6]|li|aside)>", "\n", s)
     s = re.sub(r"(?is)<[^>]+>", " ", s)
     s = re.sub(r"[ \t]+\n", "\n", s)
     s = re.sub(r"\n{3,}", "\n\n", s)
@@ -46,27 +50,34 @@ def strip_tags(html: str) -> str:
     return s.strip()
 
 
-def download_image(url: str, dest: Path) -> bool:
+def download_image(url: str, dest: Path) -> int:
+    """Download image; return byte size on success, 0 on failure."""
     dest.parent.mkdir(parents=True, exist_ok=True)
-    if dest.exists() and dest.stat().st_size > 2000:
-        return True
+    if dest.exists() and dest.stat().st_size >= MIN_IMAGE_BYTES:
+        return dest.stat().st_size
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": UA, "Referer": url})
+        req = urllib.request.Request(
+            url, headers={"User-Agent": UA, "Referer": url.rsplit("/", 1)[0] + "/"}
+        )
         with urllib.request.urlopen(req, timeout=45) as r:
             data = r.read()
             ctype = (r.headers.get("Content-Type") or "").lower()
-        if len(data) < 2000:
-            return False
+        if len(data) < MIN_IMAGE_BYTES:
+            return 0
         if "svg" in ctype or data[:200].lstrip().startswith(b"<svg"):
-            return False
-        # Skip tiny/logo-ish
-        if len(data) < 8000 and ("logo" in url.lower()):
-            return False
+            return 0
+        if not (
+            data[:3] == b"\xff\xd8\xff"
+            or data[:8] == b"\x89PNG\r\n\x1a\n"
+            or data[:4] == b"RIFF"
+            or "image" in ctype
+        ):
+            return 0
         dest.write_bytes(data)
-        return True
+        return len(data)
     except Exception as e:
         print(f"  image fail {url}: {e}")
-        return False
+        return 0
 
 
 def ext_from_url(url: str) -> str:
@@ -77,6 +88,87 @@ def ext_from_url(url: str) -> str:
     return ".jpg"
 
 
+def local_size(item: dict) -> int:
+    rel = item.get("local") or ""
+    if not rel:
+        return 0
+    p = ROOT / rel
+    return p.stat().st_size if p.exists() else 0
+
+
+def enrich_gallery(d: dict, urls: list[str], pid: str) -> int:
+    """Append OEM/press photos until gallery meets target; promote strong frames first."""
+    if not urls:
+        return 0
+    gallery = list(d.get("gallery") or [])
+    need = max(0, GALLERY_TARGET - len(gallery))
+    # Always try to add when below target OR when only low-res frames exist
+    only_weak = len(gallery) > 0 and all(local_size(g) < 80_000 for g in gallery)
+    if need == 0 and not only_weak and len(gallery) >= GALLERY_TARGET:
+        # still allow topping up to GALLERY_MAX_ADD if caller provided urls and gal thin-ish
+        if len(gallery) >= GALLERY_MAX_ADD:
+            return 0
+
+    asset_dir = ASSETS / pid
+    attr_lines = [
+        f"# Attribution — product {pid}",
+        f"Enriched: {d.get('enrichedAt')}",
+        "",
+    ]
+    added = 0
+    new_frames: list[dict] = []
+    for i, url in enumerate(urls[:GALLERY_MAX_ADD], start=1):
+        host = url.split("/")[2] if "://" in url else ""
+        junk = any(
+            x in host
+            for x in ("avito", "ebay", "aliexpress", "wildberries", "ozon.ru")
+        )
+        if junk:
+            continue
+        h = hashlib.sha1(url.encode()).hexdigest()[:10]
+        ext = ext_from_url(url)
+        local_name = f"{h}_{i}{ext}"
+        dest = asset_dir / local_name
+        size = download_image(url, dest)
+        if size < MIN_IMAGE_BYTES:
+            if dest.exists() and dest.stat().st_size < MIN_IMAGE_BYTES:
+                dest.unlink(missing_ok=True)
+            continue
+        rel = f"assets/enriched/{pid}/{local_name}"
+        if any(g.get("src") == url or g.get("local") == rel for g in gallery + new_frames):
+            continue
+        new_frames.append(
+            {
+                "src": url,
+                "thumb": url,
+                "alt": d.get("name") or pid,
+                "local": rel,
+                "enriched": True,
+                "attribution": host,
+                "bytes": size,
+            }
+        )
+        attr_lines.append(f"- {local_name} ← {url} ({host}, {size} bytes)")
+        added += 1
+
+    if not new_frames:
+        return 0
+
+    # Prefer enriched high-res first when existing gallery is weak/single low-res
+    if only_weak or len(gallery) < GALLERY_TARGET:
+        # keep original frames after enriched (provenance), drop duplicate tiny hero if same product
+        merged = new_frames + gallery
+    else:
+        merged = gallery + new_frames
+
+    # Cap gallery length but keep ≥ target
+    d["gallery"] = merged[: max(GALLERY_TARGET, min(len(merged), 10))]
+    (asset_dir / "ATTRIBUTION.md").write_text(
+        "\n".join(attr_lines) + "\n", encoding="utf-8"
+    )
+    return added
+
+
 def apply_one(pid: str, payload: dict, provenance: dict) -> dict | None:
     path = PDP / f"{pid}.json"
     if not path.exists():
@@ -85,70 +177,28 @@ def apply_one(pid: str, payload: dict, provenance: dict) -> dict | None:
     d = json.loads(path.read_text(encoding="utf-8"))
     html = (payload.get("descriptionHtml") or "").strip()
     if not html:
-        print(f"skip {pid}: no html")
-        return None
-
-    d["descriptionHtml"] = html
-    d["descriptionText"] = strip_tags(html)
+        # images-only / specs-only top-up allowed when already has some copy
+        if not payload.get("specs") and not payload.get("imageUrls"):
+            print(f"skip {pid}: no html")
+            return None
+    else:
+        d["descriptionHtml"] = html
+        d["descriptionText"] = strip_tags(html)
     if payload.get("specs"):
-        # Prefer researched specs when empty or mark enriched overwrite
         d["specs"] = payload["specs"]
     if payload.get("name") and not (d.get("name") or "").strip():
         d["name"] = payload["name"]
     d["enriched"] = True
-    d["sources"] = payload.get("sources") or []
+    d["sources"] = payload.get("sources") or d.get("sources") or []
     d["enrichedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     d["enrichmentNote"] = (
         "HITL: описание и specs собраны с страниц производителя/официальных материалов; "
         "не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
     )
+    if payload.get("meagerWave"):
+        d["meagerWave"] = payload["meagerWave"]
 
-    # Photos: keep existing from-live; append official downloads if gallery weak or imageUrls provided
-    gallery = list(d.get("gallery") or [])
-    urls = list(payload.get("imageUrls") or [])
-    added = 0
-    if urls and len(gallery) < 4:
-        asset_dir = ASSETS / pid
-        attr_lines = [
-            f"# Attribution — product {pid}",
-            f"Enriched: {d['enrichedAt']}",
-            "",
-        ]
-        for i, url in enumerate(urls[:6], start=1):
-            # Prefer manufacturer / official CDN hosts
-            host = url.split("/")[2] if "://" in url else ""
-            junk = any(
-                x in host
-                for x in ("avito", "ebay", "aliexpress", "wildberries", "ozon.ru")
-            )
-            if junk:
-                continue
-            h = hashlib.sha1(url.encode()).hexdigest()[:10]
-            ext = ext_from_url(url)
-            local_name = f"{h}_{i}{ext}"
-            dest = asset_dir / local_name
-            if download_image(url, dest):
-                rel = f"assets/enriched/{pid}/{local_name}"
-                # Avoid duplicates by src
-                if any(g.get("src") == url or g.get("local") == rel for g in gallery):
-                    continue
-                gallery.append(
-                    {
-                        "src": url,
-                        "thumb": url,
-                        "alt": d.get("name") or pid,
-                        "local": rel,
-                        "enriched": True,
-                        "attribution": host,
-                    }
-                )
-                attr_lines.append(f"- {local_name} ← {url} ({host})")
-                added += 1
-        if added:
-            (asset_dir / "ATTRIBUTION.md").write_text(
-                "\n".join(attr_lines) + "\n", encoding="utf-8"
-            )
-            d["gallery"] = gallery
+    added = enrich_gallery(d, list(payload.get("imageUrls") or []), pid)
 
     path.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     provenance[pid] = {
@@ -157,16 +207,49 @@ def apply_one(pid: str, payload: dict, provenance: dict) -> dict | None:
         "specsCount": len(d.get("specs") or []),
         "galleryCount": len(d.get("gallery") or []),
         "photosAdded": added,
+        "descLen": len(d.get("descriptionText") or ""),
         "enrichedAt": d["enrichedAt"],
     }
-    print(f"OK {pid} specs={len(d['specs'])} gal={len(d.get('gallery') or [])} +photos={added}")
+    print(
+        f"OK {pid} specs={len(d.get('specs') or [])} "
+        f"gal={len(d.get('gallery') or [])} +photos={added} "
+        f"desc={len(d.get('descriptionText') or '')}"
+    )
     return d
 
 
-def main():
-    batches = load_batches()
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--pattern",
+        default="batch-*-researched.json",
+        help="Glob under data/enrichment/",
+    )
+    ap.add_argument(
+        "--only",
+        default="",
+        help="Comma-separated product ids to apply",
+    )
+    ap.add_argument(
+        "--merge-provenance",
+        action="store_true",
+        help="Merge into existing provenance-batch.json instead of replace",
+    )
+    args = ap.parse_args()
+
+    batches = load_batches(args.pattern)
+    if args.only:
+        want = {x.strip() for x in args.only.split(",") if x.strip()}
+        batches = {k: v for k, v in batches.items() if k in want}
+
     provenance: dict = {}
-    for pid, payload in sorted(batches.items(), key=lambda x: int(x[0])):
+    if args.merge_provenance:
+        prev = ENRICH / "provenance-batch.json"
+        if prev.exists():
+            old = json.loads(prev.read_text(encoding="utf-8"))
+            provenance = dict(old.get("products") or {})
+
+    for pid, payload in sorted(batches.items(), key=lambda x: int(x[0]) if x[0].isdigit() else 0):
         apply_one(pid, payload, provenance)
 
     meta = {
@@ -174,14 +257,14 @@ def main():
         "enrichedCount": len(provenance),
         "products": provenance,
         "method": (
-            "Manufacturer pages preferred (Hegel, PS Audio, T+A, Aurender, Clearaudio, "
-            "Parasound, Naim, Marantz, Emotiva). Research via Exa + Tavily. No invented watts."
+            "Manufacturer pages preferred. Research via Exa + Tavily + dealer OEM galleries. "
+            "Meager bar: desc≥500 chars, gallery≥4, structured specs. No invented watts."
         ),
     }
     (ENRICH / "provenance-batch.json").write_text(
         json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    print(f"\nEnriched {len(provenance)} products. Provenance → data/enrichment/provenance-batch.json")
+    print(f"\nEnriched {len(batches)} this run / {len(provenance)} in provenance.")
 
 
 if __name__ == "__main__":

@@ -9,63 +9,38 @@
   "price": 2550000,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/f55dfd211466cdb4263004549400212f/",
-  "descriptionHtml": "<p>T+A P 3100 HV — предусилитель HV-серии: полностью дискретная симметричная схема, DC-связь без разделительных конденсаторов в тракте громкости и рабочие напряжения до ~100 В на каскадах — как у лампы по запасу линейности, но на транзисторах.</p>\n<ul><li>HV / High Voltage</li><li>DC-связь тракта</li><li>7× RCA + 4× XLR</li><li>Слот MM/MC</li><li>28 кг</li></ul>\n<h2>Тракт</h2>\n<p>АЧХ 0,5 Гц–300 кГц (+0/−3 дБ); С/Ш 108/112 дБ; THD и IM < 0,001%; разделение каналов > 108 дБ. Входы: 7× RCA (20 кОм) и 4× XLR (5 кОм). Выходы PRE RCA/XLR, recorder, наушники high-current 50 Ом. Слот под опциональный MM/MC фономодуль; вход 4 — surround pass-through.</p>\n<h2>Питание и корпус</h2>\n<p>Отдельные аналоговое и цифровое питание, два сетевых разъёма; резервуар 75 000 мкФ. Потребление 10 + 60 Вт; standby < 0,5 Вт. Габариты 17 × 46 × 46 см, вес 28 кг.</p>",
+  "descriptionHtml": "<p>T+A P 3100 HV — полностью дискретный симметричный предусилитель HV-серии: вход, громкость и выход без разделительных конденсаторов, раздельные аналоговый и цифровой БП с отдельными сетевыми вводами.</p>\n<ul><li>Симметричная дискретная схемотехника</li><li>DC-связь сигнального тракта</li><li>4 × XLR + 2 × RCA</li><li>С/Ш 108/112 дБ</li><li>THD &lt; 0,001 %</li><li>17 × 46 × 46 см · 28 кг</li></ul>\n<aside><p><strong>HV-серия.</strong> High Voltage — подход T+A к повышенным напряжениям питания аналоговых каскадов ради запаса по динамике и линейности. Не «высокий вольтаж сети», а архитектура усилительных узлов.</p></aside>\n<h2>Коммутация</h2>\n<p>По PDF T+A: Pre Out RCA до 9,5 В / XLR до 19,6 В; recorder; вход 4 с surround pass-through; опция MM/MC phono; пульт F 3001. Полоса 0,5 Гц–300 кГц (0/−3 дБ). Standby &lt; 0,5 Вт.</p>",
   "shortHtml": "",
-  "descriptionText": "T+A P 3100 HV — предусилитель HV-серии: полностью дискретная симметричная схема, DC-связь без разделительных конденсаторов в тракте громкости и рабочие напряжения до ~100 В на каскадах — как у лампы по запасу линейности, но на транзисторах.\n\n HV / High Voltage\n DC-связь тракта\n 7× RCA + 4× XLR\n Слот MM/MC\n 28 кг\n\n Тракт\n\n АЧХ 0,5 Гц–300 кГц (+0/−3 дБ); С/Ш 108/112 дБ; THD и IM 108 дБ. Входы: 7× RCA (20 кОм) и 4× XLR (5 кОм). Выходы PRE RCA/XLR, recorder, наушники high-current 50 Ом. Слот под опциональный MM/MC фономодуль; вход 4 — surround pass-through.\n\n Питание и корпус\n\n Отдельные аналоговое и цифровое питание, два сетевых разъёма; резервуар 75 000 мкФ. Потребление 10 + 60 Вт; standby < 0,5 Вт. Габариты 17 × 46 × 46 см, вес 28 кг.",
+  "descriptionText": "T+A P 3100 HV — полностью дискретный симметричный предусилитель HV-серии: вход, громкость и выход без разделительных конденсаторов, раздельные аналоговый и цифровой БП с отдельными сетевыми вводами.\n\n Симметричная дискретная схемотехника\n DC-связь сигнального тракта\n 4 × XLR + 2 × RCA\n С/Ш 108/112 дБ\n THD &lt; 0,001 %\n 17 × 46 × 46 см · 28 кг\n\n HV-серия. High Voltage — подход T+A к повышенным напряжениям питания аналоговых каскадов ради запаса по динамике и линейности. Не «высокий вольтаж сети», а архитектура усилительных узлов.\n\n Коммутация\n\n По PDF T+A: Pre Out RCA до 9,5 В / XLR до 19,6 В; recorder; вход 4 с surround pass-through; опция MM/MC phono; пульт F 3001. Полоса 0,5 Гц–300 кГц (0/−3 дБ). Standby &lt; 0,5 Вт.",
   "specs": [
     {
-      "label": "АЧХ",
-      "value": "0,5 Гц – 300 кГц (+0/−3 дБ)",
+      "label": "Частотная характеристика",
+      "value": "0,5 Гц–300 кГц (0/−3 дБ)",
       "source": "manufacturer"
     },
     {
-      "label": "С/Ш",
-      "value": "108 / 112 дБ",
+      "label": "Отношение сигнал/шум",
+      "value": "108/112 дБ",
       "source": "manufacturer"
     },
     {
-      "label": "THD / IM",
-      "value": "< 0,001% / < 0,001%",
+      "label": "THD",
+      "value": "< 0,001 %",
       "source": "manufacturer"
     },
     {
-      "label": "Разделение каналов",
-      "value": "> 108 дБ",
+      "label": "Входы",
+      "value": "4 × XLR, 2 × RCA; recorder; surround pass-through на вх. 4",
       "source": "manufacturer"
     },
     {
-      "label": "Входы RCA",
-      "value": "7 × 250 мВ…9 В / 20 кОм",
+      "label": "Выходы",
+      "value": "Pre Out RCA макс. 9,5 В; XLR макс. 19,6 В",
       "source": "manufacturer"
     },
     {
-      "label": "Входы XLR",
-      "value": "4 × 500 мВ…18 В / 5 кОм",
-      "source": "manufacturer"
-    },
-    {
-      "label": "PRE out RCA",
-      "value": "ном. 1 В, макс. 9,5 В / 50 Ом",
-      "source": "manufacturer"
-    },
-    {
-      "label": "PRE out XLR",
-      "value": "ном. 1,45 В, макс. 19,6 В / 50 Ом",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Резервуар",
-      "value": "75 000 мкФ",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Габариты (В×Ш×Г)",
-      "value": "17 × 46 × 46 см",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Вес",
-      "value": "28 кг",
+      "label": "Габариты / масса",
+      "value": "17 × 46 × 46 см; 28 кг",
       "source": "manufacturer"
     }
   ],
@@ -93,15 +68,61 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv4.jpg",
       "alt": "p_3100_hv4.jpg",
       "local": "assets/from-live/products/98efc3839e_p_3100_hv4.jpg"
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/p3100_slider_vorverstaerker.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/p3100_slider_vorverstaerker.jpg",
+      "alt": "Предусилитель T+A P 3100 HV",
+      "local": "assets/enriched/273961/d518bd2bfc_1.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 217207
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/p3100_teaser_vorverstaerker.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/p3100_teaser_vorverstaerker.jpg",
+      "alt": "Предусилитель T+A P 3100 HV",
+      "local": "assets/enriched/273961/0584300ce7_2.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 148900
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/p_3100_platine_cards_600_700.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/p_3100_platine_cards_600_700.jpg",
+      "alt": "Предусилитель T+A P 3100 HV",
+      "local": "assets/enriched/273961/c96db06e64_3.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 418746
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/p_3100_innen_cards_600_700.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/p_3100_innen_cards_600_700.jpg",
+      "alt": "Предусилитель T+A P 3100 HV",
+      "local": "assets/enriched/273961/2bccb0da19_4.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 469888
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/p3100_slider_rueck.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/p3100_slider_rueck.jpg",
+      "alt": "Предусилитель T+A P 3100 HV",
+      "local": "assets/enriched/273961/ae7851c1ea_5.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 376238
     }
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.ta-hifi.de/en/audiosystems/hv-series/p-3100-hv-pre-amplifier-2/",
-    "https://www.ta-hifi.de/wp-content/uploads/P_3100_HV_GB_web.pdf"
+    "https://www.ta-hifi.de/wp-content/uploads/P_3100_HV_GB_web.pdf",
+    "https://www.ta-hifi.de/en/audiosystems/hv-series/p-3100-hv-pre-amplifier-2/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:22:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-flagships-2026-11"
 }

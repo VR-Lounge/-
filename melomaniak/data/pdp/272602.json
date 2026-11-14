@@ -9,53 +9,43 @@
   "price": 2717100,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/c4d1eb0a979433ba60eb734bfd4e5360/",
-  "descriptionHtml": "<p>Clearaudio Reference Jubilee — опорный виниловый проигрыватель из Эрлангена: sandwich-шасси из бронированной древесины и алюминия, магнитный керамический подшипник CMB и оптический контроль скорости OSC. Цель конструкции — ровный ход и низкий резонансный шум.</p>\n<ul><li>33⅓ / 45 / 78 об/мин</li><li>OSC + IMS подвеска мотора</li><li>CMB магнитный подшипник</li><li>Диск POM ~50 мм</li><li>Wow & flutter < ±0,05%</li></ul>\n<h2>Привод и скорость</h2>\n<p>Ременный привод, высокомоментный 24 В DC мотор с железным бескаркасным ротором, подвешенный через IMS (18 O-rings). Скорости 33⅓, 45 и 78 об/мин; автокалибровка одной кнопкой. Гибридное управление: 12-bit ЦАП задаёт опорное напряжение для аналогового контура мотора; wow & flutter < ±0,05%.</p>\n<h2>Диск и подшипник</h2>\n<p>Основной диск ~50 мм из плотного технического пластика (POM), динамически сбалансирован; сабдиск 15 мм из нержавеющей стали. Инвертированный керамический вал, спечённая бронзовая втулка, патентованный CMB (Ceramic Magnetic Bearing).</p>\n<h2>Габариты</h2>\n<p>Примерно 495 × 343 × 180 мм (с базой тонарма, без тонарма); масса около 22 кг без тонарма и БП. Производитель указывает гарантию до 5 лет при регистрации.</p>",
+  "descriptionHtml": "<p>Clearaudio Reference Jubilee — прецизионный проигрыватель: шасси дерево/алюминий, POM-диск 50 мм, магнитная CMB и развязанный 24 В двигатель с оптическим контролем скорости. Для винилового тракта, где важны скорость и тишина механики.</p>\n<ul><li>33⅓ / 45 / 78 об/мин</li><li>Детонация &lt; ±0,05 %</li><li>Диск POM 50 мм</li><li>CMB magnetic bearing</li><li>Двигатель 24 В DC, ironless</li><li>≈ 22 кг без тонарма</li></ul>\n<aside><p><strong>CMB.</strong> Clearaudio Magnetic Bearing — магнитная развязка/опора, снижающая механический шум подшипника. Не картридж и не тонарм: элемент механики диска.</p></aside>\n<h2>Управление</h2>\n<p>По Clearaudio: гибридный контроллер с 12-битным ЦАП опорного напряжения и аналоговым моторным трактом; автокалибровка. Габариты ≈ 495 × 343 × 180 мм. Тонарм/картридж — отдельно (HITL комплект).</p>",
   "shortHtml": "<p> Без тонарма и головки в комплекте .</p>",
-  "descriptionText": "Clearaudio Reference Jubilee — опорный виниловый проигрыватель из Эрлангена: sandwich-шасси из бронированной древесины и алюминия, магнитный керамический подшипник CMB и оптический контроль скорости OSC. Цель конструкции — ровный ход и низкий резонансный шум.\n\n 33⅓ / 45 / 78 об/мин\n OSC + IMS подвеска мотора\n CMB магнитный подшипник\n Диск POM ~50 мм\n Wow & flutter\n Привод и скорость\n\n Ременный привод, высокомоментный 24 В DC мотор с железным бескаркасным ротором, подвешенный через IMS (18 O-rings). Скорости 33⅓, 45 и 78 об/мин; автокалибровка одной кнопкой. Гибридное управление: 12-bit ЦАП задаёт опорное напряжение для аналогового контура мотора; wow & flutter Диск и подшипник\n\n Основной диск ~50 мм из плотного технического пластика (POM), динамически сбалансирован; сабдиск 15 мм из нержавеющей стали. Инвертированный керамический вал, спечённая бронзовая втулка, патентованный CMB (Ceramic Magnetic Bearing).\n\n Габариты\n\n Примерно 495 × 343 × 180 мм (с базой тонарма, без тонарма); масса около 22 кг без тонарма и БП. Производитель указывает гарантию до 5 лет при регистрации.",
+  "descriptionText": "Clearaudio Reference Jubilee — прецизионный проигрыватель: шасси дерево/алюминий, POM-диск 50 мм, магнитная CMB и развязанный 24 В двигатель с оптическим контролем скорости. Для винилового тракта, где важны скорость и тишина механики.\n\n 33⅓ / 45 / 78 об/мин\n Детонация &lt; ±0,05 %\n Диск POM 50 мм\n CMB magnetic bearing\n Двигатель 24 В DC, ironless\n ≈ 22 кг без тонарма\n\n CMB. Clearaudio Magnetic Bearing — магнитная развязка/опора, снижающая механический шум подшипника. Не картридж и не тонарм: элемент механики диска.\n\n Управление\n\n По Clearaudio: гибридный контроллер с 12-битным ЦАП опорного напряжения и аналоговым моторным трактом; автокалибровка. Габариты ≈ 495 × 343 × 180 мм. Тонарм/картридж — отдельно (HITL комплект).",
   "specs": [
     {
       "label": "Скорости",
-      "value": "33⅓, 45, 78 об/мин",
+      "value": "33⅓, 45 и 78 об/мин",
       "source": "manufacturer"
     },
     {
-      "label": "Привод",
-      "value": "Ременный, 24 В DC, IMS-подвеска (18 O-rings)",
+      "label": "Детонация",
+      "value": "< ±0,05 %",
       "source": "manufacturer"
     },
     {
-      "label": "Контроль скорости",
-      "value": "Optical Speed Control (OSC), автокалибровка",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Подшипник",
-      "value": "Инвертированный керамический + CMB",
+      "label": "Двигатель",
+      "value": "24 В DC, ironless core, ременной привод",
       "source": "manufacturer"
     },
     {
       "label": "Диск",
-      "value": "POM ~50 мм + стальной сабдиск 15 мм",
+      "value": "50 мм POM, динамически сбалансирован",
       "source": "manufacturer"
     },
     {
-      "label": "Wow & flutter",
-      "value": "< ±0,05%",
+      "label": "Габариты",
+      "value": "≈ 495 × 343 × 180 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Масса",
+      "value": "≈ 22 кг без тонарма и БП",
       "source": "manufacturer"
     },
     {
       "label": "Потребление",
-      "value": "макс. 5 Вт; в работе ~2,1 Вт",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Габариты (Ш×Г×В)",
-      "value": "≈ 495 × 343 × 180 мм (с базой тонарма)",
-      "source": "manufacturer"
-    },
-    {
-      "label": "Вес",
-      "value": "≈ 22 кг (без тонарма и БП)",
+      "value": "макс. 5,0 Вт; работа 2,1 Вт; выкл. 1,8 Вт",
       "source": "manufacturer"
     }
   ],
@@ -95,6 +85,42 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/clearaudio_reference_jubilee6.jpg",
       "alt": "clearaudio_reference_jubilee6.jpg",
       "local": "assets/from-live/products/7a5ffa65bd_clearaudio_reference_jubilee6.jpg"
+    },
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det6-20-10-NEW.jpg?resize=1976",
+      "thumb": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det6-20-10-NEW.jpg?resize=1976",
+      "alt": "Виниловый проигрыватель Clearaudio Reference Jubilee",
+      "local": "assets/enriched/272602/1a9f34c35a_1.jpg",
+      "enriched": true,
+      "attribution": "media.canvayo.com",
+      "bytes": 192068
+    },
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det3-20-10-NEW.jpg?resize=1976",
+      "thumb": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det3-20-10-NEW.jpg?resize=1976",
+      "alt": "Виниловый проигрыватель Clearaudio Reference Jubilee",
+      "local": "assets/enriched/272602/cf8a260fa6_2.jpg",
+      "enriched": true,
+      "attribution": "media.canvayo.com",
+      "bytes": 170567
+    },
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det7-20-10.jpg?resize=1934",
+      "thumb": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det7-20-10.jpg?resize=1934",
+      "alt": "Виниловый проигрыватель Clearaudio Reference Jubilee",
+      "local": "assets/enriched/272602/5d31e7e829_3.jpg",
+      "enriched": true,
+      "attribution": "media.canvayo.com",
+      "bytes": 180374
+    },
+    {
+      "src": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det5-20-10-NEW.jpg?resize=1976",
+      "thumb": "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det5-20-10-NEW.jpg?resize=1976",
+      "alt": "Виниловый проигрыватель Clearaudio Reference Jubilee",
+      "local": "assets/enriched/272602/9707092f03_4.jpg",
+      "enriched": true,
+      "attribution": "media.canvayo.com",
+      "bytes": 168510
     }
   ],
   "sku": "",
@@ -103,6 +129,7 @@
   "sources": [
     "https://www.clearaudio.de/en/produkt-laufwerk-reference-jubilee/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:22:26Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-flagships-2026-11"
 }
