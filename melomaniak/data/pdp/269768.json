@@ -1,1 +1,102 @@
-{"id":269768,"slug":"6de31183e9d9c6ef66ec21947fe5981e","name":"Стереоусилитель мощности Parasound A21+","cat":"Усилители","cats":["Стереоусилители"],"price":649990,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/6de31183e9d9c6ef66ec21947fe5981e/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21_8742517582-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21_8742517582-1.jpg","alt":"parasound_a21_8742517582-1.jpg","local":"assets/from-live/products/051a22fe65_parasound_a21_8742517582-1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-2.jpg","alt":"parasound_a21-2.jpg","local":"assets/from-live/products/7dc543f775_parasound_a21-2.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-3.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-3.jpg","alt":"parasound_a21-3.jpg","local":"assets/from-live/products/bcbc4d1f0e_parasound_a21-3.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-4.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-4.jpg","alt":"parasound_a21-4.jpg","local":"assets/from-live/products/89e50549d8_parasound_a21-4.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-5.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-5.jpg","alt":"parasound_a21-5.jpg","local":"assets/from-live/products/67c573e7b9_parasound_a21-5.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269768,
+  "slug": "6de31183e9d9c6ef66ec21947fe5981e",
+  "name": "Стереоусилитель мощности Parasound A21+",
+  "cat": "Усилители",
+  "cats": [
+    "Стереоусилители"
+  ],
+  "price": 649990,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/6de31183e9d9c6ef66ec21947fe5981e/",
+  "descriptionHtml": "<p>Parasound Halo A21+ — стереоусилитель мощности: 300 Вт × 2 на 8 Ом, 500 Вт × 2 на 4 Ом и до 1000 Вт в мосте на 8 Ом. High-bias Class A/AB John Curl для фронтов кинозала или серьёзной стереопары.</p>\n<ul><li>300 Вт × 2 / 8 Ом</li><li>500 Вт × 2 / 4 Ом</li><li>Мост 1000 Вт</li><li>60 А peak</li><li>XLR + RCA</li></ul>\n<h2>Мощность и ток</h2>\n<p>Измерения при 0,1% THD, 20 Гц–20 кГц: 300 Вт × 2 / 8 Ом, 500 Вт × 2 / 4 Ом; мост 1000 Вт × 1 / 8 Ом. Пиковый ток 60 А на канал. Стабильность до провалов импеданса ~1,5 Ом.</p>\n<h2>Схема</h2>\n<p>Direct-coupled тракт, JFET вход, MOSFET драйвер, 1,3 кВА тороид, 108 000 мкФ. Входы XLR и RCA. Потребление: standby 1 Вт, idle 160 Вт, typical 300 Вт, max 1400 Вт. Вес ~60 lb.</p>",
+  "shortHtml": "",
+  "descriptionText": "Parasound Halo A21+ — стереоусилитель мощности: 300 Вт × 2 на 8 Ом, 500 Вт × 2 на 4 Ом и до 1000 Вт в мосте на 8 Ом. High-bias Class A/AB John Curl для фронтов кинозала или серьёзной стереопары.\n\n 300 Вт × 2 / 8 Ом\n 500 Вт × 2 / 4 Ом\n Мост 1000 Вт\n 60 А peak\n XLR + RCA\n\n Мощность и ток\n\n Измерения при 0,1% THD, 20 Гц–20 кГц: 300 Вт × 2 / 8 Ом, 500 Вт × 2 / 4 Ом; мост 1000 Вт × 1 / 8 Ом. Пиковый ток 60 А на канал. Стабильность до провалов импеданса ~1,5 Ом.\n\n Схема\n\n Direct-coupled тракт, JFET вход, MOSFET драйвер, 1,3 кВА тороид, 108 000 мкФ. Входы XLR и RCA. Потребление: standby 1 Вт, idle 160 Вт, typical 300 Вт, max 1400 Вт. Вес ~60 lb.",
+  "specs": [
+    {
+      "label": "Выходная мощность stereo",
+      "value": "300 Вт × 2 / 8 Ω; 500 Вт × 2 / 4 Ω",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Выходная мощность bridge",
+      "value": "1000 Вт × 1 / 8 Ω",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Ток",
+      "value": "60 А peak на канал",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Топология",
+      "value": "High-bias Class A/AB, direct-coupled",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Входы",
+      "value": "XLR balanced, RCA unbalanced",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Трансформатор",
+      "value": "1,3 кВА toroid",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Фильтр",
+      "value": "108 000 мкФ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Габариты",
+      "value": "17.25″ × 5.5″ × 19″",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Вес",
+      "value": "~60 lb",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21_8742517582-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21_8742517582-1.jpg",
+      "alt": "parasound_a21_8742517582-1.jpg",
+      "local": "assets/from-live/products/051a22fe65_parasound_a21_8742517582-1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-2.jpg",
+      "alt": "parasound_a21-2.jpg",
+      "local": "assets/from-live/products/7dc543f775_parasound_a21-2.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-3.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-3.jpg",
+      "alt": "parasound_a21-3.jpg",
+      "local": "assets/from-live/products/bcbc4d1f0e_parasound_a21-3.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-4.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-4.jpg",
+      "alt": "parasound_a21-4.jpg",
+      "local": "assets/from-live/products/89e50549d8_parasound_a21-4.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-5.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a21-5.jpg",
+      "alt": "parasound_a21-5.jpg",
+      "local": "assets/from-live/products/67c573e7b9_parasound_a21-5.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://parasound.com/products/a21"
+  ],
+  "enrichedAt": "2026-11-14T11:22:42Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

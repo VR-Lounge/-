@@ -1,0 +1,111 @@
+{
+  "268935": {
+    "descriptionHtml": "<p>Emotiva XPA-7 Gen3 — семиканальный усилитель на модульной платформе XPA: Class A/B модули и Soft-Switch Optimized Class H питание. Для 5.1 / 7.1 / Atmos, где ресиверу нужен запас по току, а не ещё один «всё в одном».</p>\n<ul><li>200 Вт × 7 / 8 Ом (all ch)</li><li>Class A/B + Class H SMPS</li><li>XLR + RCA на канал</li><li>Модульная XPA Gen3</li><li>53 lb</li></ul>\n<h2>Мощность</h2>\n<p>По Emotiva: 200 Вт RMS / канал на 8 Ом при всех семи каналах; 320 Вт / канал на 4 Ом при всех каналах; 300 Вт / 8 Ом и 490 Вт / 4 Ом при двух каналах. Один канал: до 300 Вт / 8 Ом (THD<0,1%) и 550 Вт / 4 Ом (THD<0,2%).</p>\n<h2>Интерфейсы и корпус</h2>\n<p>Независимый выбор XLR/RCA на канал; trigger 5–12 В. С/Ш > 117 дБ (A-weighted, FTC rated). Демпфинг > 500 / 8 Ом. Габариты 17″ × 8″ × 19″ (с ножками), вес 53 lb (~24 кг). Гарантия производителя 5 лет.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность (все 7 ch)",
+        "value": "200 Вт RMS / 8 Ω; 320 Вт RMS / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (2 ch)",
+        "value": "300 Вт / 8 Ω; 490 Вт / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (1 ch)",
+        "value": "300 Вт / 8 Ω; 550 Вт / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD+N",
+        "value": "< 0,005% @ 100 Вт / 8 Ω / 1 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "> 117 дБ A-weighted (FTC rated)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Демпфинг-фактор",
+        "value": "> 500 / 8 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR и RCA на каждый канал",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 8″ × 19″ (с ножками)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "53 lb (~24 кг)",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://emotiva.com/products/xpa-7-gen3"
+    ],
+    "imageUrls": [
+      "https://emotiva.com/cdn/shop/products/xpag3_7_top.png?v=1680152872&width=1200",
+      "https://emotiva.com/cdn/shop/products/xpag3_7_rear-1.png?v=1680152860&width=1200"
+    ]
+  },
+  "273565": {
+    "descriptionHtml": "<p>PS Audio StellarGold DAC — параллельная архитектура из четырёх ЦАП на канал на ESS 9038 Pro: запас по динамике и низкий шум без гонки за «ещё одним чипом». Встроенная громкость позволяет работать и без отдельного преда.</p>\n<ul><li>4× DAC на канал</li><li>ESS 9038 Pro</li><li>PCM 768 / DSD256</li><li>С/Ш > 127 дБ</li><li>I²S + USB + AES</li></ul>\n<h2>Преобразование</h2>\n<p>PCM до 768 кГц; DSD до DSD256 (11,2 МГц). С/Ш > 127 дБ (относительно 4 В RMS balanced); SINAD > 112 дБ. Дискретный гибридный Class A выходной каскад, fully balanced.</p>\n<h2>Входы и выходы</h2>\n<p>Входы: I²S, USB, AES/EBU, coaxial. Выходы balanced XLR (и single-ended по линейке Stellar). Несколько низкоомных БП и низкий джиттер тактирования — по описанию производителя.</p>",
+    "specs": [
+      {
+        "label": "ЦАП",
+        "value": "ESS 9038 Pro, 4 параллельных ЦАП на канал",
+        "source": "manufacturer"
+      },
+      {
+        "label": "PCM",
+        "value": "До 768 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "DSD",
+        "value": "До DSD256 (11,2 МГц)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "> 127 дБ (ref. 4 В RMS)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "SINAD",
+        "value": "> 112 дБ (ref. 4 В RMS)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "I²S, USB, AES/EBU, coaxial",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выход",
+        "value": "Balanced XLR, Class A hybrid",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Особенности",
+        "value": "Встроенная громкость; fully balanced",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.psaudio.com/products/stellargold-dac"
+    ],
+    "imageUrls": [
+      "https://www.psaudio.com/cdn/shop/files/stellargolddacsilverfront.jpg?v=1695077557&width=1600",
+      "https://www.psaudio.com/cdn/shop/files/Stellar-Gold-DAC-Silver-Rear_cf9c04c2-b7bf-4228-baba-83f876ad0a40.jpg?v=1708731093&width=1600"
+    ]
+  }
+}

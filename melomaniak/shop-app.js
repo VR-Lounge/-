@@ -888,12 +888,21 @@
     const html = (detail.descriptionHtml || "").trim();
     if (html) {
       const { chipsHtml, bodyHtml } = formatPdpProse(html);
+      const enriched = !!detail.enriched;
+      const title = enriched ? "Карточка салона" : "Слова с живой карточки";
+      const lead = enriched
+        ? "Редакционное описание по материалам производителя — только подтверждённые факты, без выдуманных ватт и импеданса."
+        : "Оригинальное описание WooCommerce в editorial-вёрстке салона — без домыслов и новых характеристик.";
+      const hitlEnriched = enriched
+        ? `<p class="hitl-flag">HITL: enriched=true · источники в карточке (${(detail.sources || []).length} URL) — сверить тон и комплектность перед публикацией.</p>`
+        : "";
       return `<section class="pdp-section pdp-section--about" id="pdp-about">
         <div class="eyebrow">О ПРОДУКТЕ</div>
-        <h3 class="pdp-h">Слова с живой карточки</h3>
-        <p class="pdp-lead">Оригинальное описание WooCommerce в editorial-вёрстке салона — без домыслов и новых характеристик.</p>
+        <h3 class="pdp-h">${title}</h3>
+        <p class="pdp-lead">${lead}</p>
         ${chipsHtml}
         <div class="pdp-prose">${bodyHtml}</div>
+        ${hitlEnriched}
       </section>`;
     }
     const text = (detail.descriptionText || listing.facts || "").trim();

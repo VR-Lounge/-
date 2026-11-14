@@ -1,1 +1,107 @@
-{"id":273961,"slug":"f55dfd211466cdb4263004549400212f","name":"Предусилитель T+A P 3100 HV","cat":"Усилители","cats":["Предварительные усилители"],"price":2550000,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/f55dfd211466cdb4263004549400212f/","descriptionHtml":"","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv1.jpg","alt":"p_3100_hv1.jpg","local":"assets/from-live/products/3d1416714f_p_3100_hv1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv2.jpg","alt":"p_3100_hv2.jpg","local":"assets/from-live/products/aa3a79c40f_p_3100_hv2.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv3.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv3.jpg","alt":"p_3100_hv3.jpg","local":"assets/from-live/products/38f4f5e9a4_p_3100_hv3.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv4.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv4.jpg","alt":"p_3100_hv4.jpg","local":"assets/from-live/products/98efc3839e_p_3100_hv4.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 273961,
+  "slug": "f55dfd211466cdb4263004549400212f",
+  "name": "Предусилитель T+A P 3100 HV",
+  "cat": "Усилители",
+  "cats": [
+    "Предварительные усилители"
+  ],
+  "price": 2550000,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/f55dfd211466cdb4263004549400212f/",
+  "descriptionHtml": "<p>T+A P 3100 HV — предусилитель HV-серии: полностью дискретная симметричная схема, DC-связь без разделительных конденсаторов в тракте громкости и рабочие напряжения до ~100 В на каскадах — как у лампы по запасу линейности, но на транзисторах.</p>\n<ul><li>HV / High Voltage</li><li>DC-связь тракта</li><li>7× RCA + 4× XLR</li><li>Слот MM/MC</li><li>28 кг</li></ul>\n<h2>Тракт</h2>\n<p>АЧХ 0,5 Гц–300 кГц (+0/−3 дБ); С/Ш 108/112 дБ; THD и IM < 0,001%; разделение каналов > 108 дБ. Входы: 7× RCA (20 кОм) и 4× XLR (5 кОм). Выходы PRE RCA/XLR, recorder, наушники high-current 50 Ом. Слот под опциональный MM/MC фономодуль; вход 4 — surround pass-through.</p>\n<h2>Питание и корпус</h2>\n<p>Отдельные аналоговое и цифровое питание, два сетевых разъёма; резервуар 75 000 мкФ. Потребление 10 + 60 Вт; standby < 0,5 Вт. Габариты 17 × 46 × 46 см, вес 28 кг.</p>",
+  "shortHtml": "",
+  "descriptionText": "T+A P 3100 HV — предусилитель HV-серии: полностью дискретная симметричная схема, DC-связь без разделительных конденсаторов в тракте громкости и рабочие напряжения до ~100 В на каскадах — как у лампы по запасу линейности, но на транзисторах.\n\n HV / High Voltage\n DC-связь тракта\n 7× RCA + 4× XLR\n Слот MM/MC\n 28 кг\n\n Тракт\n\n АЧХ 0,5 Гц–300 кГц (+0/−3 дБ); С/Ш 108/112 дБ; THD и IM 108 дБ. Входы: 7× RCA (20 кОм) и 4× XLR (5 кОм). Выходы PRE RCA/XLR, recorder, наушники high-current 50 Ом. Слот под опциональный MM/MC фономодуль; вход 4 — surround pass-through.\n\n Питание и корпус\n\n Отдельные аналоговое и цифровое питание, два сетевых разъёма; резервуар 75 000 мкФ. Потребление 10 + 60 Вт; standby < 0,5 Вт. Габариты 17 × 46 × 46 см, вес 28 кг.",
+  "specs": [
+    {
+      "label": "АЧХ",
+      "value": "0,5 Гц – 300 кГц (+0/−3 дБ)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "С/Ш",
+      "value": "108 / 112 дБ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "THD / IM",
+      "value": "< 0,001% / < 0,001%",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Разделение каналов",
+      "value": "> 108 дБ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Входы RCA",
+      "value": "7 × 250 мВ…9 В / 20 кОм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Входы XLR",
+      "value": "4 × 500 мВ…18 В / 5 кОм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "PRE out RCA",
+      "value": "ном. 1 В, макс. 9,5 В / 50 Ом",
+      "source": "manufacturer"
+    },
+    {
+      "label": "PRE out XLR",
+      "value": "ном. 1,45 В, макс. 19,6 В / 50 Ом",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Резервуар",
+      "value": "75 000 мкФ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Габариты (В×Ш×Г)",
+      "value": "17 × 46 × 46 см",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Вес",
+      "value": "28 кг",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv1.jpg",
+      "alt": "p_3100_hv1.jpg",
+      "local": "assets/from-live/products/3d1416714f_p_3100_hv1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv2.jpg",
+      "alt": "p_3100_hv2.jpg",
+      "local": "assets/from-live/products/aa3a79c40f_p_3100_hv2.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv3.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv3.jpg",
+      "alt": "p_3100_hv3.jpg",
+      "local": "assets/from-live/products/38f4f5e9a4_p_3100_hv3.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv4.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/p_3100_hv4.jpg",
+      "alt": "p_3100_hv4.jpg",
+      "local": "assets/from-live/products/98efc3839e_p_3100_hv4.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.ta-hifi.de/en/audiosystems/hv-series/p-3100-hv-pre-amplifier-2/",
+    "https://www.ta-hifi.de/wp-content/uploads/P_3100_HV_GB_web.pdf"
+  ],
+  "enrichedAt": "2026-11-14T11:22:42Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}
