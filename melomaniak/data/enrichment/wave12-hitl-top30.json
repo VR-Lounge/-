@@ -1,0 +1,579 @@
+{
+  "wave": "meager-w12-2026-11",
+  "generatedAt": "2026-11-14T18:50:07Z",
+  "cleared_from_wave11_hitl_stuck": [
+    {
+      "id": 272699,
+      "name": "Сетевой проигрыватель Metronome Technologie DSC",
+      "gal": 21,
+      "price": 3710000,
+      "cat": "Источники"
+    },
+    {
+      "id": 16834,
+      "name": "усилитель мощности Triode TRX M300 ( triode trx m300 )",
+      "gal": 15,
+      "price": 1600000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 15588,
+      "name": "напольная акустика Amazon A.M.T. One ( amazon a m t one )",
+      "gal": 9,
+      "price": 1490000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 26636,
+      "name": "усилитель мощности Audio Physic AP MONO ( audio physic ap mono )",
+      "gal": 7,
+      "price": 1327500,
+      "cat": "Усилители"
+    },
+    {
+      "id": 262061,
+      "name": "Напольная акустика Divini Audio Reference 18 ( divini audio reference 18 )",
+      "gal": 7,
+      "price": 1140000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 15906,
+      "name": "усилитель мощности Herron Audio M1 ( herron audio m1 )",
+      "gal": 4,
+      "price": 1100000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 16832,
+      "name": "усилитель мощности Triode TRV P845SE ( triode trv p845se )",
+      "gal": 4,
+      "price": 1000000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 15952,
+      "name": "предусилитель Line Magnetic Audio LM 512CA ( line magnetic audio lm 512ca )",
+      "gal": 10,
+      "price": 990000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 4234,
+      "name": "усилитель мощности Arte Forma Theos ( arte forma theos )",
+      "gal": 7,
+      "price": 940000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 26592,
+      "name": "напольная акустика Advance Acoustic X-L 500 Evo ( advance acoustic x l 500 evo )",
+      "gal": 9,
+      "price": 901425,
+      "cat": "Акустика"
+    },
+    {
+      "id": 262141,
+      "name": "Интегральный усилитель Spec RSA M3 EX ( spec rsa m3 ex )",
+      "gal": 13,
+      "price": 901000,
+      "cat": "Усилители"
+    }
+  ],
+  "cleared_from_wave11_hitl_stuck_count": 11,
+  "still_stuck_from_wave11_hitl": [
+    {
+      "id": 26602,
+      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
+      "gal": 3,
+      "price": 1140000,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:3"
+      ]
+    }
+  ],
+  "still_stuck_from_wave11_hitl_count": 1,
+  "top30": [
+    {
+      "id": 264551,
+      "name": "Кабель для наушников SAEC  SHC-B120FF ( saec shc b120ff )",
+      "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-b120ff",
+      "cat": "Наушники",
+      "price": 30187,
+      "descLen": 1287,
+      "gallery": 3,
+      "specs": 6,
+      "enriched": true,
+      "reasons": [
+        "gal:3"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-b120ff/",
+      "priority": 8930
+    },
+    {
+      "id": 264550,
+      "name": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+      "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-b120fs",
+      "cat": "Наушники",
+      "price": 24699,
+      "descLen": 1283,
+      "gallery": 3,
+      "specs": 6,
+      "enriched": true,
+      "reasons": [
+        "gal:3"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-b120fs/",
+      "priority": 8924
+    },
+    {
+      "id": 264549,
+      "name": "Кабель для наушников SAEC  SHC-120FF ( saec shc 120ff )",
+      "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-120ff",
+      "cat": "Наушники",
+      "price": 20582,
+      "descLen": 1272,
+      "gallery": 3,
+      "specs": 6,
+      "enriched": true,
+      "reasons": [
+        "gal:3"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-120ff/",
+      "priority": 8920
+    },
+    {
+      "id": 264548,
+      "name": "Кабель для наушников SAEC  SHC-120FS ( saec shc 120fs )",
+      "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-120fs",
+      "cat": "Наушники",
+      "price": 15094,
+      "descLen": 1192,
+      "gallery": 3,
+      "specs": 6,
+      "enriched": true,
+      "reasons": [
+        "gal:3"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-saec-shc-120fs/",
+      "priority": 8915
+    },
+    {
+      "id": 274105,
+      "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
+      "slug": "e2b5c9e7b3cb30f1ab10dcda88f8f892",
+      "cat": "Другое",
+      "price": 234000,
+      "descLen": 2768,
+      "gallery": 1,
+      "specs": 12,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/e2b5c9e7b3cb30f1ab10dcda88f8f892/",
+      "priority": 4134
+    },
+    {
+      "id": 274103,
+      "name": "Сетевой фильтр T+A Power Bar 2+3 Basic HD",
+      "slug": "682eadb9dbf4e9454b04584b30b2d6f0",
+      "cat": "Другое",
+      "price": 202500,
+      "descLen": 2834,
+      "gallery": 1,
+      "specs": 12,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/682eadb9dbf4e9454b04584b30b2d6f0/",
+      "priority": 4102
+    },
+    {
+      "id": 270461,
+      "name": "Виниловый проигрыватель Transrotor Dark Star Reference",
+      "slug": "3ddece0dbc5a88835f42288ede939ba3",
+      "cat": "Источники",
+      "price": 634900,
+      "descLen": 1874,
+      "gallery": 0,
+      "specs": 12,
+      "enriched": true,
+      "reasons": [
+        "gal:0"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/3ddece0dbc5a88835f42288ede939ba3/",
+      "priority": 1534
+    },
+    {
+      "id": 269486,
+      "name": "Полочная акустика Magnat Signature 903",
+      "slug": "9664d8ecead8e48453e26b3960d9ba71",
+      "cat": "Акустика",
+      "price": 149990,
+      "descLen": 3103,
+      "gallery": 1,
+      "specs": 17,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/9664d8ecead8e48453e26b3960d9ba71/",
+      "priority": 1049
+    },
+    {
+      "id": 269517,
+      "name": "Активный сабвуфер Magnat Signature Sub 730 A",
+      "slug": "5e28e32f28b1853c900b9e4bd30b7a1e",
+      "cat": "Акустика",
+      "price": 94990,
+      "descLen": 3016,
+      "gallery": 2,
+      "specs": 10,
+      "enriched": true,
+      "reasons": [
+        "gal:2"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/5e28e32f28b1853c900b9e4bd30b7a1e/",
+      "priority": 994
+    },
+    {
+      "id": 269533,
+      "name": "Активный сабвуфер Magnat Signature Sub 530 A",
+      "slug": "5daaac595aaf00069a1beb42493b8205",
+      "cat": "Акустика",
+      "price": 84990,
+      "descLen": 2813,
+      "gallery": 3,
+      "specs": 11,
+      "enriched": true,
+      "reasons": [
+        "gal:3"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/5daaac595aaf00069a1beb42493b8205/",
+      "priority": 984
+    },
+    {
+      "id": 269814,
+      "name": "Кабель межблочный аналоговый RCA QED Reference 40",
+      "slug": "7df5761c8786f901b0819dfa11961988",
+      "cat": "Кабели",
+      "price": 22000,
+      "descLen": 724,
+      "gallery": 2,
+      "specs": 2,
+      "enriched": true,
+      "reasons": [
+        "gal:2"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/7df5761c8786f901b0819dfa11961988/",
+      "priority": 922
+    },
+    {
+      "id": 269819,
+      "name": "Кабель для сабвуфера QED Reference Subwoofer 40",
+      "slug": "d4dc304763be58938e48553b70022d7d",
+      "cat": "Кабели",
+      "price": 18300,
+      "descLen": 691,
+      "gallery": 1,
+      "specs": 2,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/d4dc304763be58938e48553b70022d7d/",
+      "priority": 918
+    },
+    {
+      "id": 15640,
+      "name": "Центральный канал Audio Physic Reference Center ( audio physic reference center )",
+      "slug": "polochnaia_akystika_audio_physic_reference_center",
+      "cat": "Другое",
+      "price": 0,
+      "descLen": 1090,
+      "gallery": 1,
+      "specs": 4,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/polochnaia_akystika_audio_physic_reference_center/",
+      "priority": 900
+    },
+    {
+      "id": 272806,
+      "name": "Сетевой фильтр AudioQuest NIAGARA 7000",
+      "slug": "15adc21d6bb5ac7eb28b7a2f0a6f7d03",
+      "cat": "Другое",
+      "price": 1683990,
+      "descLen": 4649,
+      "gallery": 1,
+      "specs": 14,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/15adc21d6bb5ac7eb28b7a2f0a6f7d03/",
+      "priority": 583
+    },
+    {
+      "id": 33762,
+      "name": "SACD проигрыватель Esoteric K-01xs ( sacd esoteric k 01xs )",
+      "slug": "sacd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-esoteric-k-01x",
+      "cat": "Спецпредложения",
+      "price": 1500000,
+      "descLen": 3056,
+      "gallery": 3,
+      "specs": 7,
+      "enriched": true,
+      "reasons": [
+        "gal:3"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/sacd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-esoteric-k-01x/",
+      "priority": 400
+    },
+    {
+      "id": 26602,
+      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
+      "slug": "ysilitel_moshnosti_Arte_forma_805PP",
+      "cat": "Усилители",
+      "price": 1140000,
+      "descLen": 950,
+      "gallery": 3,
+      "specs": 4,
+      "enriched": true,
+      "reasons": [
+        "gal:3"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Arte_forma_805PP/",
+      "priority": 40
+    },
+    {
+      "id": 40225,
+      "name": "центральный канал Paradigm Persona C Vanta High Gloss Black ( paradigm persona c vanta high gloss black )",
+      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-persona-c-vanta-high-gloss-black",
+      "cat": "Другое",
+      "price": 1066750,
+      "descLen": 1162,
+      "gallery": 2,
+      "specs": 4,
+      "enriched": true,
+      "reasons": [
+        "gal:2"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-persona-c-vanta-high-gloss-black/",
+      "priority": -34
+    },
+    {
+      "id": 40229,
+      "name": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
+      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-persona-c-sonic-metallic-sliver",
+      "cat": "Другое",
+      "price": 1066750,
+      "descLen": 1156,
+      "gallery": 2,
+      "specs": 4,
+      "enriched": true,
+      "reasons": [
+        "gal:2"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-persona-c-sonic-metallic-sliver/",
+      "priority": -34
+    },
+    {
+      "id": 273573,
+      "name": "Сетевой фильтр PS Audio DirectStream Power Plant 15",
+      "slug": "996dfb24466fd2f3ec191f6ee8e395a5",
+      "cat": "Другое",
+      "price": 1039000,
+      "descLen": 4027,
+      "gallery": 3,
+      "specs": 19,
+      "enriched": true,
+      "reasons": [
+        "gal:3"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/996dfb24466fd2f3ec191f6ee8e395a5/",
+      "priority": -61
+    },
+    {
+      "id": 264506,
+      "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
+      "slug": "%d1%82%d0%be%d0%bd%d0%b0%d1%80%d0%bc-saec-we-4700",
+      "cat": "Другое",
+      "price": 1007276,
+      "descLen": 862,
+      "gallery": 1,
+      "specs": 4,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%82%d0%be%d0%bd%d0%b0%d1%80%d0%bc-saec-we-4700/",
+      "priority": -93
+    },
+    {
+      "id": 271212,
+      "name": "Кабель акустический готовый Nordost Tyr 2",
+      "slug": "0f17ea37f7ee0276b246b74c5f26a7c1",
+      "cat": "Кабели",
+      "price": 969990,
+      "descLen": 2702,
+      "gallery": 1,
+      "specs": 7,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/0f17ea37f7ee0276b246b74c5f26a7c1/",
+      "priority": -131
+    },
+    {
+      "id": 262129,
+      "name": "ЦАП Soulnote D 2 ( soulnote d 2 )",
+      "slug": "%d1%86%d0%b0%d0%bf-soulnote-d-2-se",
+      "cat": "ЦАПы",
+      "price": 920000,
+      "descLen": 1549,
+      "gallery": 2,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "gal:2"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b0%d0%bf-soulnote-d-2-se/",
+      "priority": -180
+    },
+    {
+      "id": 272804,
+      "name": "Сетевой фильтр AudioQuest NIAGARA 5000",
+      "slug": "b1444ea83114ef3b6b60a033d267d3c3",
+      "cat": "Другое",
+      "price": 829590,
+      "descLen": 3054,
+      "gallery": 1,
+      "specs": 11,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/b1444ea83114ef3b6b60a033d267d3c3/",
+      "priority": -271
+    },
+    {
+      "id": 15920,
+      "name": "интегральный усилитель Leben CS 600 ( leben cs 600 )",
+      "slug": "integralnii_ysilitel_Leben_CS_600",
+      "cat": "Усилители",
+      "price": 810000,
+      "descLen": 2290,
+      "gallery": 2,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "gal:2"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Leben_CS_600/",
+      "priority": -290
+    },
+    {
+      "id": 25156,
+      "name": "усилитель мощности Anthem Statement P 2 BL ( anthem statement p 2 bl )",
+      "slug": "ysilitel_moshnosti_anthem_statement_p_2_bl",
+      "cat": "Усилители",
+      "price": 797215,
+      "descLen": 2823,
+      "gallery": 3,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "gal:3"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_anthem_statement_p_2_bl/",
+      "priority": -303
+    },
+    {
+      "id": 4232,
+      "name": "усилитель мощности Arte Forma Due Volte ( arte forma due volte )",
+      "slug": "ysilitel_moshnosti_Arte_Forma_Due_Volte",
+      "cat": "Усилители",
+      "price": 790000,
+      "descLen": 959,
+      "gallery": 1,
+      "specs": 4,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Arte_Forma_Due_Volte/",
+      "priority": -310
+    },
+    {
+      "id": 15910,
+      "name": "предусилитель Herron Audio VTSP 3 ( herron audio vtsp 3 )",
+      "slug": "predysilitel_Herron_Audio_VTSP_3",
+      "cat": "Усилители",
+      "price": 780000,
+      "descLen": 1399,
+      "gallery": 1,
+      "specs": 3,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Herron_Audio_VTSP_3/",
+      "priority": -320
+    },
+    {
+      "id": 26594,
+      "name": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "slug": "ysilitel_moshnosti_air_tight_atm-1s",
+      "cat": "Усилители",
+      "price": 780000,
+      "descLen": 3345,
+      "gallery": 2,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "gal:2"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_air_tight_atm-1s/",
+      "priority": -320
+    },
+    {
+      "id": 273586,
+      "name": "Сетевой фильтр PS Audio DirectStream Power Plant 12",
+      "slug": "b4f0b018e66222d4c7ebee62fba8a963",
+      "cat": "Другое",
+      "price": 779000,
+      "descLen": 4148,
+      "gallery": 0,
+      "specs": 19,
+      "enriched": true,
+      "reasons": [
+        "gal:0"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/b4f0b018e66222d4c7ebee62fba8a963/",
+      "priority": -321
+    },
+    {
+      "id": 264124,
+      "name": "Сетевой фильтр Audio Replas TRIANGLE POWER 6 SIG ( audio replas triangle power 6 sig )",
+      "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-audio-replas-triangle-power-6-sig",
+      "cat": "Другое",
+      "price": 749777,
+      "descLen": 855,
+      "gallery": 1,
+      "specs": 4,
+      "enriched": true,
+      "reasons": [
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-audio-replas-triangle-power-6-sig/",
+      "priority": -351
+    }
+  ]
+}

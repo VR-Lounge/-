@@ -109,7 +109,40 @@
       "source": "list"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "http://graveaudio.com/cdn/shop/files/Element-M2-01_1200x1200.jpg",
+      "local": "assets/enriched/270973/c710677a65_w12mx.jpg",
+      "bytes": 34678,
+      "wave": "meager-w12-2026-11",
+      "w": 1000,
+      "h": 1167
+    },
+    {
+      "src": "http://graveaudio.com/cdn/shop/files/element-M2-02_1200x1200.jpg",
+      "local": "assets/enriched/270973/c0cab622b2_w12mx.jpg",
+      "bytes": 43679,
+      "wave": "meager-w12-2026-11",
+      "w": 1000,
+      "h": 1167
+    },
+    {
+      "src": "http://graveaudio.com/cdn/shop/files/element-M2-03_1200x1200.jpg",
+      "local": "assets/enriched/270973/18c328fac2_w12mx.jpg",
+      "bytes": 22655,
+      "wave": "meager-w12-2026-11",
+      "w": 1000,
+      "h": 1167
+    },
+    {
+      "src": "https://apos.audio/cdn/shop/products/apos-audio-matrix-audio-dac-digital-to-analog-converter-matrix-element-m2-mqa-dac-amp-music-streamer-37095419642092_1600x1171.png",
+      "local": "assets/enriched/270973/db26bbd6fa_w12mx.jpg",
+      "bytes": 727312,
+      "wave": "meager-w12-2026-11",
+      "w": 1600,
+      "h": 1171
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

@@ -94,7 +94,72 @@
       "source": "list"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "http://us.kef.com/cdn/shop/files/kc92-subwoofer_sp4076a0_product__front-side.png",
+      "local": "assets/enriched/271603/0084c89767_w12kc92.png",
+      "bytes": 686510,
+      "wave": "meager-w12-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kc92-subwoofer_sp4076a0_lifestyle___detail.jpg",
+      "local": "assets/enriched/271603/428de192d1_w12kc92.jpg",
+      "bytes": 169962,
+      "wave": "meager-w12-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kc92-subwoofer_sp4076a0_product__side.png",
+      "local": "assets/enriched/271603/a55751db97_w12kc92.png",
+      "bytes": 1061824,
+      "wave": "meager-w12-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kc92-subwoofer_sp4076a0_product__front.png",
+      "local": "assets/enriched/271603/4cd5badfb4_w12kc92.png",
+      "bytes": 697292,
+      "wave": "meager-w12-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kc92-subwoofer_sp4076a0_product__back.png",
+      "local": "assets/enriched/271603/8706931d81_w12kc92.png",
+      "bytes": 1111025,
+      "wave": "meager-w12-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kc92-subwoofer_sp4076a0_product__top_detail.png",
+      "local": "assets/enriched/271603/ebd10a7811_w12kc92.png",
+      "bytes": 1290756,
+      "wave": "meager-w12-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kc92-subwoofer_sp4076a0_product__back_detail.png",
+      "local": "assets/enriched/271603/a0420f0968_w12kc92.png",
+      "bytes": 1445570,
+      "wave": "meager-w12-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://us.kef.com/cdn/shop/files/kc92-subwoofer_sp4076b0_product__front-side.png",
+      "local": "assets/enriched/271603/b03e55b56d_w12kc92.png",
+      "bytes": 565793,
+      "wave": "meager-w12-2026-11",
+      "w": 2000,
+      "h": 2000
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

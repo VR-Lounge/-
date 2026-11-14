@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:08:47Z",
+  "generatedAt": "2026-11-14T18:49:22Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,17 +8,17 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 816,
-  "okCount": 1071,
+  "meagerCount": 797,
+  "okCount": 1090,
   "reasonTallies": {
-    "gal": 816
+    "gal": 797
   },
   "byCategory": {
     "Другое": 358,
     "Кабели": 211,
-    "Усилители": 114,
-    "Акустика": 78,
-    "Источники": 36,
+    "Усилители": 105,
+    "Акустика": 69,
+    "Источники": 35,
     "ЦАПы": 8,
     "Ресиверы": 5,
     "Наушники": 4,
@@ -121,54 +121,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/682eadb9dbf4e9454b04584b30b2d6f0/",
       "priority": 4102
-    },
-    {
-      "id": 272699,
-      "name": "Сетевой проигрыватель Metronome Technologie DSC",
-      "slug": "4699e717d2f828b88a2f376fa92017ec",
-      "cat": "Источники",
-      "price": 3710000,
-      "descLen": 2978,
-      "gallery": 2,
-      "specs": 14,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/4699e717d2f828b88a2f376fa92017ec/",
-      "priority": 2610
-    },
-    {
-      "id": 262061,
-      "name": "Напольная акустика Divini Audio Reference 18 ( divini audio reference 18 )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-reference-18",
-      "cat": "Акустика",
-      "price": 1140000,
-      "descLen": 2041,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-reference-18/",
-      "priority": 2040
-    },
-    {
-      "id": 262059,
-      "name": "Полочная акустика Divini Audio Reference 8 ( divini audio reference 8 )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-reference-8",
-      "cat": "Акустика",
-      "price": 690000,
-      "descLen": 850,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-reference-8/",
-      "priority": 1590
     },
     {
       "id": 270461,
@@ -299,22 +251,6 @@
       "priority": 583
     },
     {
-      "id": 16834,
-      "name": "усилитель мощности Triode TRX M300 ( triode trx m300 )",
-      "slug": "ysilitel_moshnosti_triode_trx_m300",
-      "cat": "Усилители",
-      "price": 1600000,
-      "descLen": 2029,
-      "gallery": 3,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_triode_trx_m300/",
-      "priority": 500
-    },
-    {
       "id": 33762,
       "name": "SACD проигрыватель Esoteric K-01xs ( sacd esoteric k 01xs )",
       "slug": "sacd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-esoteric-k-01x",
@@ -331,68 +267,20 @@
       "priority": 400
     },
     {
-      "id": 15588,
-      "name": "напольная акустика Amazon A.M.T. One ( amazon a m t one )",
-      "slug": "napolnaia_akystika_amazon_a-m-t-one",
-      "cat": "Акустика",
-      "price": 1490000,
-      "descLen": 1043,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_amazon_a-m-t-one/",
-      "priority": 390
-    },
-    {
-      "id": 26636,
-      "name": "усилитель мощности Audio Physic AP MONO ( audio physic ap mono )",
-      "slug": "ysilitel_moshnosti_audio_physic_ap_mono_",
-      "cat": "Усилители",
-      "price": 1327500,
-      "descLen": 1312,
-      "gallery": 1,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_audio_physic_ap_mono_/",
-      "priority": 227
-    },
-    {
       "id": 26602,
       "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
       "slug": "ysilitel_moshnosti_Arte_forma_805PP",
       "cat": "Усилители",
       "price": 1140000,
       "descLen": 950,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Arte_forma_805PP/",
       "priority": 40
-    },
-    {
-      "id": 15906,
-      "name": "усилитель мощности Herron Audio M1 ( herron audio m1 )",
-      "slug": "ysilitel_moshnosti_Herron_Audio_M1",
-      "cat": "Усилители",
-      "price": 1100000,
-      "descLen": 1134,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Herron_Audio_M1/",
-      "priority": 0
     },
     {
       "id": 40225,
@@ -459,38 +347,6 @@
       "priority": -93
     },
     {
-      "id": 16832,
-      "name": "усилитель мощности Triode TRV P845SE ( triode trv p845se )",
-      "slug": "ysilitel_moshnosti_triode_trv_p845se",
-      "cat": "Усилители",
-      "price": 1000000,
-      "descLen": 1971,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_triode_trv_p845se/",
-      "priority": -100
-    },
-    {
-      "id": 15952,
-      "name": "предусилитель Line Magnetic Audio LM 512CA ( line magnetic audio lm 512ca )",
-      "slug": "predysilitel_Line_Magnetic_Audio_LM_512CA",
-      "cat": "Усилители",
-      "price": 990000,
-      "descLen": 1063,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Line_Magnetic_Audio_LM_512CA/",
-      "priority": -110
-    },
-    {
       "id": 271212,
       "name": "Кабель акустический готовый Nordost Tyr 2",
       "slug": "0f17ea37f7ee0276b246b74c5f26a7c1",
@@ -505,22 +361,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/0f17ea37f7ee0276b246b74c5f26a7c1/",
       "priority": -131
-    },
-    {
-      "id": 4234,
-      "name": "усилитель мощности Arte Forma Theos ( arte forma theos )",
-      "slug": "ysilitel_moshnosti_Arte_Forma_Theos",
-      "cat": "Усилители",
-      "price": 940000,
-      "descLen": 947,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Arte_Forma_Theos/",
-      "priority": -160
     },
     {
       "id": 262129,
@@ -539,38 +379,6 @@
       "priority": -180
     },
     {
-      "id": 26592,
-      "name": "напольная акустика Advance Acoustic X-L 500 Evo ( advance acoustic x l 500 evo )",
-      "slug": "napolnaia_akystika_advance_acoustic_x-l_500",
-      "cat": "Акустика",
-      "price": 901425,
-      "descLen": 3697,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_advance_acoustic_x-l_500/",
-      "priority": -199
-    },
-    {
-      "id": 262141,
-      "name": "Интегральный усилитель Spec RSA M3 EX ( spec rsa m3 ex )",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-spec-rsa-m3-ex",
-      "cat": "Усилители",
-      "price": 901000,
-      "descLen": 2520,
-      "gallery": 1,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-spec-rsa-m3-ex/",
-      "priority": -199
-    },
-    {
       "id": 272804,
       "name": "Сетевой фильтр AudioQuest NIAGARA 5000",
       "slug": "b1444ea83114ef3b6b60a033d267d3c3",
@@ -585,22 +393,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/b1444ea83114ef3b6b60a033d267d3c3/",
       "priority": -271
-    },
-    {
-      "id": 262131,
-      "name": "Фонокорректор Soulnote E 2 ( soulnote e 2  )",
-      "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-soulnote-e-2-se",
-      "cat": "Усилители",
-      "price": 825000,
-      "descLen": 5785,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-soulnote-e-2-se/",
-      "priority": -275
     },
     {
       "id": 15920,
@@ -664,22 +456,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Herron_Audio_VTSP_3/",
-      "priority": -320
-    },
-    {
-      "id": 262127,
-      "name": "Интегральный усилитель Soulnote A 2 ( soulnote a 2 )",
-      "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-soulnote-a-2-se-be",
-      "cat": "Усилители",
-      "price": 780000,
-      "descLen": 1575,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-soulnote-a-2-se-be/",
       "priority": -320
     },
     {
@@ -977,11 +753,11 @@
       "cat": "Источники",
       "price": 574990,
       "descLen": 8327,
-      "gallery": 0,
+      "gallery": 3,
       "specs": 26,
       "enriched": true,
       "reasons": [
-        "gal:0"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/1d999e87201d0c3dfa08cb9122590f7c/",
       "priority": -526
@@ -1001,70 +777,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/150621ddf7355d13f6d541be2c8ea0a7/",
       "priority": -527
-    },
-    {
-      "id": 261878,
-      "name": "Напольная акустика PARADIGM Founder 80F Gloss Black ( paradigm founder 80f gloss black )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-founder-80f-gloss-black",
-      "cat": "Акустика",
-      "price": 550715,
-      "descLen": 2823,
-      "gallery": 1,
-      "specs": 21,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-founder-80f-gloss-black/",
-      "priority": -550
-    },
-    {
-      "id": 261882,
-      "name": "Напольная акустика PARADIGM Founder 80F Walnut ( paradigm founder 80f walnut )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-founder-80f-walnut",
-      "cat": "Акустика",
-      "price": 550715,
-      "descLen": 2813,
-      "gallery": 1,
-      "specs": 21,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-founder-80f-walnut/",
-      "priority": -550
-    },
-    {
-      "id": 261883,
-      "name": "Напольная акустика PARADIGM Founder 80F Midnight Cherry ( paradigm founder 80f midnight cherry )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-founder-80f-midnight-cherry",
-      "cat": "Акустика",
-      "price": 550715,
-      "descLen": 2831,
-      "gallery": 1,
-      "specs": 21,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-founder-80f-midnight-cherry/",
-      "priority": -550
-    },
-    {
-      "id": 261884,
-      "name": "Напольная акустика PARADIGM Founder 80F Black Walnut ( paradigm founder 80f black walnut )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-founder-80f-black-walnut",
-      "cat": "Акустика",
-      "price": 550715,
-      "descLen": 2825,
-      "gallery": 1,
-      "specs": 21,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-founder-80f-black-walnut/",
-      "priority": -550
     },
     {
       "id": 262108,
@@ -1553,11 +1265,11 @@
       "cat": "Усилители",
       "price": 380000,
       "descLen": 961,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D/",
       "priority": -720
@@ -1881,22 +1593,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/cd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-soulnote-%d1%811-sh/",
       "priority": -760
-    },
-    {
-      "id": 271603,
-      "name": "Активный сабвуфер KEF KC92",
-      "slug": "ab343fe2ff8da1689faefb4040e0b904",
-      "cat": "Акустика",
-      "price": 339990,
-      "descLen": 3372,
-      "gallery": 0,
-      "specs": 16,
-      "enriched": true,
-      "reasons": [
-        "gal:0"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ab343fe2ff8da1689faefb4040e0b904/",
-      "priority": -761
     },
     {
       "id": 40256,

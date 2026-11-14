@@ -42,15 +42,6 @@
       "local": "assets/from-live/products/330789e976_ysilitel_moshnosti_Triode_TRV_P845SE.jpg"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Triode_TRV_845SE.jpg",
-      "thumb": "assets/enriched/16832/7c259a8877_w10.jpg",
-      "alt": "16832",
-      "local": "assets/enriched/16832/7c259a8877_w10.jpg",
-      "enriched": true,
-      "attribution": "woo-media-exact",
-      "bytes": 36320
-    },
-    {
       "src": "from-live://330789e976_ysilitel_moshnosti_Triode_TRV_P845SE.jpg",
       "thumb": "assets/enriched/16832/810abc3c63_w10live.jpg",
       "alt": "16832",
@@ -58,6 +49,22 @@
       "enriched": true,
       "attribution": "from-live",
       "bytes": 33060
+    },
+    {
+      "src": "https://im.nazarov-gallery.ru/pic/700/700/upload/iblock/b83/b835210f4d6794658ab13db66995e2d2.jpg",
+      "local": "assets/enriched/16832/6c5366b919_w12p845d.jpg",
+      "bytes": 20226,
+      "wave": "meager-w12-2026-11",
+      "w": 700,
+      "h": 452
+    },
+    {
+      "src": "https://im.nazarov-gallery.ru/pic/1200/1200/upload/iblock/b83/b835210f4d6794658ab13db66995e2d2.jpg",
+      "local": "assets/enriched/16832/e1d359ac0a_w12p845d.jpg",
+      "bytes": 24946,
+      "wave": "meager-w12-2026-11",
+      "w": 800,
+      "h": 516
     }
   ],
   "sku": "",

@@ -99,7 +99,40 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "http://graveaudio.com/cdn/shop/files/Element-i2-01_1200x1200.jpg",
+      "local": "assets/enriched/270982/e8c31f4bec_w12mx.jpg",
+      "bytes": 31201,
+      "wave": "meager-w12-2026-11",
+      "w": 1000,
+      "h": 1167
+    },
+    {
+      "src": "http://graveaudio.com/cdn/shop/files/Element-i2-02_1200x1200.jpg",
+      "local": "assets/enriched/270982/ea25e5a79f_w12mx.jpg",
+      "bytes": 47797,
+      "wave": "meager-w12-2026-11",
+      "w": 1000,
+      "h": 1167
+    },
+    {
+      "src": "http://graveaudio.com/cdn/shop/files/Element-i2-03_1200x1200.jpg",
+      "local": "assets/enriched/270982/0cd5042eca_w12mx.jpg",
+      "bytes": 23206,
+      "wave": "meager-w12-2026-11",
+      "w": 1000,
+      "h": 1167
+    },
+    {
+      "src": "https://apos.audio/cdn/shop/products/apos-audio-matrix-audio-headphone-amp-matrix-element-i2-mqa-dac-amp-music-streamer-37095453884652_1600x1166.png",
+      "local": "assets/enriched/270982/54baf13efb_w12mx.jpg",
+      "bytes": 1652889,
+      "wave": "meager-w12-2026-11",
+      "w": 1600,
+      "h": 1166
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

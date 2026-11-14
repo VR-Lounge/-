@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:08:47Z",
+  "generatedAt": "2026-11-14T18:49:22Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,17 +8,17 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 816,
-  "okCount": 1071,
+  "meagerCount": 797,
+  "okCount": 1090,
   "reasonTallies": {
-    "gal": 816
+    "gal": 797
   },
   "byCategory": {
     "Другое": 358,
     "Кабели": 211,
-    "Усилители": 114,
-    "Акустика": 78,
-    "Источники": 36,
+    "Усилители": 105,
+    "Акустика": 69,
+    "Источники": 35,
     "ЦАПы": 8,
     "Ресиверы": 5,
     "Наушники": 4,
@@ -81,36 +81,6 @@
       "name": "Сетевой фильтр T+A Power Bar 2+3 Basic HD",
       "cat": "Другое",
       "price": 202500,
-      "reasons": [
-        "gal:1"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 272699,
-      "name": "Сетевой проигрыватель Metronome Technologie DSC",
-      "cat": "Источники",
-      "price": 3710000,
-      "reasons": [
-        "gal:2"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 262061,
-      "name": "Напольная акустика Divini Audio Reference 18 ( divini audio reference 18 )",
-      "cat": "Акустика",
-      "price": 1140000,
-      "reasons": [
-        "gal:1"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 262059,
-      "name": "Полочная акустика Divini Audio Reference 8 ( divini audio reference 8 )",
-      "cat": "Акустика",
-      "price": 690000,
       "reasons": [
         "gal:1"
       ],
@@ -197,16 +167,6 @@
       "enriched": true
     },
     {
-      "id": 16834,
-      "name": "усилитель мощности Triode TRX M300 ( triode trx m300 )",
-      "cat": "Усилители",
-      "price": 1600000,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
       "id": 33762,
       "name": "SACD проигрыватель Esoteric K-01xs ( sacd esoteric k 01xs )",
       "cat": "Спецпредложения",
@@ -217,10 +177,50 @@
       "enriched": true
     },
     {
-      "id": 15588,
-      "name": "напольная акустика Amazon A.M.T. One ( amazon a m t one )",
-      "cat": "Акустика",
-      "price": 1490000,
+      "id": 26602,
+      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
+      "cat": "Усилители",
+      "price": 1140000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 40225,
+      "name": "центральный канал Paradigm Persona C Vanta High Gloss Black ( paradigm persona c vanta high gloss black )",
+      "cat": "Другое",
+      "price": 1066750,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 40229,
+      "name": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
+      "cat": "Другое",
+      "price": 1066750,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 273573,
+      "name": "Сетевой фильтр PS Audio DirectStream Power Plant 15",
+      "cat": "Другое",
+      "price": 1039000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 264506,
+      "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
+      "cat": "Другое",
+      "price": 1007276,
       "reasons": [
         "gal:1"
       ],
