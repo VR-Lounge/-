@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T22:26:59Z",
+  "generatedAt": "2026-11-14T22:48:59Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,21 +8,21 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 443,
-  "okCount": 1444,
+  "meagerCount": 423,
+  "okCount": 1464,
   "reasonTallies": {
-    "gal": 443
+    "gal": 423
   },
   "byCategory": {
-    "Другое": 196,
-    "Кабели": 129,
+    "Другое": 181,
+    "Кабели": 127,
     "Усилители": 62,
     "Акустика": 26,
-    "Источники": 21,
-    "ЦАПы": 5,
-    "Ресиверы": 2,
+    "Источники": 20,
+    "ЦАПы": 4,
     "Спецпредложения": 1,
-    "Видео": 1
+    "Видео": 1,
+    "Ресиверы": 1
   },
   "top20": [
     {
@@ -66,16 +66,6 @@
       "enriched": true
     },
     {
-      "id": 272806,
-      "name": "Сетевой фильтр AudioQuest NIAGARA 7000",
-      "cat": "Другое",
-      "price": 1683990,
-      "reasons": [
-        "gal:1"
-      ],
-      "enriched": true
-    },
-    {
       "id": 33762,
       "name": "SACD проигрыватель Esoteric K-01xs ( sacd esoteric k 01xs )",
       "cat": "Спецпредложения",
@@ -112,16 +102,6 @@
       "price": 920000,
       "reasons": [
         "gal:2"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 272804,
-      "name": "Сетевой фильтр AudioQuest NIAGARA 5000",
-      "cat": "Другое",
-      "price": 829590,
-      "reasons": [
-        "gal:1"
       ],
       "enriched": true
     },
@@ -222,6 +202,26 @@
       "price": 580000,
       "reasons": [
         "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 270483,
+      "name": "Фонокорректор Transrotor Phono 8.2 MC",
+      "cat": "Усилители",
+      "price": 573900,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 26598,
+      "name": "фонокорректор Amazon Audio B-Lab ( amazon audio b lab )",
+      "cat": "Усилители",
+      "price": 540000,
+      "reasons": [
+        "gal:2"
       ],
       "enriched": true
     }

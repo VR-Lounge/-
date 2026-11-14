@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T22:26:59Z",
+  "generatedAt": "2026-11-14T22:48:59Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,21 +8,21 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 443,
-  "okCount": 1444,
+  "meagerCount": 423,
+  "okCount": 1464,
   "reasonTallies": {
-    "gal": 443
+    "gal": 423
   },
   "byCategory": {
-    "Другое": 196,
-    "Кабели": 129,
+    "Другое": 181,
+    "Кабели": 127,
     "Усилители": 62,
     "Акустика": 26,
-    "Источники": 21,
-    "ЦАПы": 5,
-    "Ресиверы": 2,
+    "Источники": 20,
+    "ЦАПы": 4,
     "Спецпредложения": 1,
-    "Видео": 1
+    "Видео": 1,
+    "Ресиверы": 1
   },
   "items": [
     {
@@ -90,22 +90,6 @@
       "priority": 900
     },
     {
-      "id": 272806,
-      "name": "Сетевой фильтр AudioQuest NIAGARA 7000",
-      "slug": "15adc21d6bb5ac7eb28b7a2f0a6f7d03",
-      "cat": "Другое",
-      "price": 1683990,
-      "descLen": 4649,
-      "gallery": 1,
-      "specs": 14,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/15adc21d6bb5ac7eb28b7a2f0a6f7d03/",
-      "priority": 583
-    },
-    {
       "id": 33762,
       "name": "SACD проигрыватель Esoteric K-01xs ( sacd esoteric k 01xs )",
       "slug": "sacd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-esoteric-k-01x",
@@ -168,22 +152,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b0%d0%bf-soulnote-d-2-se/",
       "priority": -180
-    },
-    {
-      "id": 272804,
-      "name": "Сетевой фильтр AudioQuest NIAGARA 5000",
-      "slug": "b1444ea83114ef3b6b60a033d267d3c3",
-      "cat": "Другое",
-      "price": 829590,
-      "descLen": 3054,
-      "gallery": 1,
-      "specs": 11,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/b1444ea83114ef3b6b60a033d267d3c3/",
-      "priority": -271
     },
     {
       "id": 4232,
@@ -570,22 +538,6 @@
       "priority": -686
     },
     {
-      "id": 267960,
-      "name": "музыкальный центр, система “Всё в одном” Advance Paris MyConnect 250",
-      "slug": "%d0%bc%d1%83%d0%b7%d1%8b%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%86%d0%b5%d0%bd%d1%82%d1%80-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b2%d1%81%d1%91-%d0%b2-%d0%be%d0%b4%d0%bd",
-      "cat": "Другое",
-      "price": 388000,
-      "descLen": 2443,
-      "gallery": 2,
-      "specs": 12,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d1%83%d0%b7%d1%8b%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%86%d0%b5%d0%bd%d1%82%d1%80-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0-%d0%b2%d1%81%d1%91-%d0%b2-%d0%be%d0%b4%d0%bd/",
-      "priority": -712
-    },
-    {
       "id": 15638,
       "name": "центральный канал Audio Physic Orea ( audio physic orea )",
       "slug": "tsentralnii_kanal_Audio_Physic_Orea",
@@ -616,70 +568,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Line_Magnetic_Audio_LM_210_IA/",
       "priority": -726
-    },
-    {
-      "id": 261873,
-      "name": "Центральный канал PARADIGM Founder 90C Gloss Black ( paradigm founder 90c gloss black )",
-      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-90c-gloss-black",
-      "cat": "Другое",
-      "price": 367115,
-      "descLen": 2819,
-      "gallery": 2,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-90c-gloss-black/",
-      "priority": -733
-    },
-    {
-      "id": 261875,
-      "name": "Центральный канал PARADIGM Founder 90C Walnut ( paradigm founder 90c walnut )",
-      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-90c-walnut",
-      "cat": "Другое",
-      "price": 367115,
-      "descLen": 2809,
-      "gallery": 2,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-90c-walnut/",
-      "priority": -733
-    },
-    {
-      "id": 261876,
-      "name": "Центральный канал PARADIGM Founder 90C Midnight Cherry ( paradigm founder 90c midnight cherry )",
-      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-90c-midnight-cherry",
-      "cat": "Другое",
-      "price": 367115,
-      "descLen": 2827,
-      "gallery": 2,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-90c-midnight-cherry/",
-      "priority": -733
-    },
-    {
-      "id": 261877,
-      "name": "Центральный канал PARADIGM Founder 90C Black Walnut ( paradigm founder 90c black walnut )",
-      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-90c-black-walnut",
-      "cat": "Другое",
-      "price": 367115,
-      "descLen": 2821,
-      "gallery": 2,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-90c-black-walnut/",
-      "priority": -733
     },
     {
       "id": 16572,
@@ -936,86 +824,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/Integralnii_ysilitel_47_Labs_4717_Shigaraki/",
       "priority": -820
-    },
-    {
-      "id": 267963,
-      "name": "аудиофильский музыкальный центр Advance Paris MyConnect 150",
-      "slug": "%d0%b0%d1%83%d0%b4%d0%b8%d0%be%d1%84%d0%b8%d0%bb%d1%8c%d1%81%d0%ba%d0%b8%d0%b9-%d0%bc%d1%83%d0%b7%d1%8b%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%86%d0%b5%d0%bd%d1%82%d1%80-advance-paris-myconnect",
-      "cat": "Другое",
-      "price": 268000,
-      "descLen": 1980,
-      "gallery": 3,
-      "specs": 11,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d1%83%d0%b4%d0%b8%d0%be%d1%84%d0%b8%d0%bb%d1%8c%d1%81%d0%ba%d0%b8%d0%b9-%d0%bc%d1%83%d0%b7%d1%8b%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%86%d0%b5%d0%bd%d1%82%d1%80-advance-paris-myconnect/",
-      "priority": -832
-    },
-    {
-      "id": 261868,
-      "name": "Центральный канал PARADIGM Founder 70LCR Gloss Black ( paradigm founder 70lcr gloss black )",
-      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-gloss-black",
-      "cat": "Другое",
-      "price": 252365,
-      "descLen": 2873,
-      "gallery": 2,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-gloss-black/",
-      "priority": -848
-    },
-    {
-      "id": 261870,
-      "name": "Центральный канал PARADIGM Founder 70LCR Walnut ( paradigm founder 70lcr walnut )",
-      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-walnut",
-      "cat": "Другое",
-      "price": 252365,
-      "descLen": 2863,
-      "gallery": 2,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-walnut/",
-      "priority": -848
-    },
-    {
-      "id": 261871,
-      "name": "Центральный канал PARADIGM Founder 70LCR Midnight Cherry ( paradigm founder 70lcr midnight cherry )",
-      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-midnight-cherry",
-      "cat": "Другое",
-      "price": 252365,
-      "descLen": 2881,
-      "gallery": 2,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-midnight-cherry/",
-      "priority": -848
-    },
-    {
-      "id": 261872,
-      "name": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( paradigm founder 70lcr black walnut )",
-      "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-black-walnut",
-      "cat": "Другое",
-      "price": 252365,
-      "descLen": 2875,
-      "gallery": 2,
-      "specs": 20,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-black-walnut/",
-      "priority": -848
     },
     {
       "id": 271560,
@@ -1287,22 +1095,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/481de67c2704ec778e901c5ced40ad4b/",
-      "priority": -910
-    },
-    {
-      "id": 15718,
-      "name": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )",
-      "slug": "tsap_47_Labs_4715",
-      "cat": "ЦАПы",
-      "price": 190000,
-      "descLen": 1009,
-      "gallery": 3,
-      "specs": 1,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/tsap_47_Labs_4715/",
       "priority": -910
     },
     {
@@ -2074,22 +1866,6 @@
       "priority": -999
     },
     {
-      "id": 270970,
-      "name": "Сетевой проигрыватель Matrix Audio Mini-i Pro 4",
-      "slug": "49252faf568c4aba4aa539cf1238f2e5",
-      "cat": "Источники",
-      "price": 99990,
-      "descLen": 3517,
-      "gallery": 2,
-      "specs": 18,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/49252faf568c4aba4aa539cf1238f2e5/",
-      "priority": -1001
-    },
-    {
       "id": 271303,
       "name": "Активный сабвуфер REL T5x",
       "slug": "cd476bcb0d97b1e2b2f4ad4ea17b3a5a",
@@ -2586,22 +2362,6 @@
       "priority": -1021
     },
     {
-      "id": 270545,
-      "name": "Кабель акустический готовый Van den Hul The Magnum Hybrid",
-      "slug": "cd7d8f49cdf75a5b56aec09d2e557598",
-      "cat": "Кабели",
-      "price": 79090,
-      "descLen": 1836,
-      "gallery": 3,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/cd7d8f49cdf75a5b56aec09d2e557598/",
-      "priority": -1021
-    },
-    {
       "id": 264250,
       "name": "Сетевой фильтр Furutech e-TP80ES (Europe) ( furutech e tp80es (europe) )",
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-e-tp80es-europe",
@@ -2648,22 +2408,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-30hg-pl-hr-4p/",
       "priority": -1024
-    },
-    {
-      "id": 271208,
-      "name": "Кабель акустический готовый Nordost White Lightning",
-      "slug": "3ae2a16558621c4550c13e550088d4c0",
-      "cat": "Кабели",
-      "price": 74990,
-      "descLen": 2507,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/3ae2a16558621c4550c13e550088d4c0/",
-      "priority": -1026
     },
     {
       "id": 263977,
@@ -2839,22 +2583,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-30hg-hr-4p/",
-      "priority": -1034
-    },
-    {
-      "id": 264024,
-      "name": "Поглотитель Acoustic Revive RST-38 ( acoustic revive rst 38 )",
-      "slug": "%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-acoustic-revive-rst-38",
-      "cat": "Другое",
-      "price": 66528,
-      "descLen": 978,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-acoustic-revive-rst-38/",
       "priority": -1034
     },
     {
@@ -3592,22 +3320,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-dig-4000/",
       "priority": -1055
-    },
-    {
-      "id": 269707,
-      "name": "Стереоресивер Onkyo TX-8220",
-      "slug": "6ba9f3f78926789fcad91875b0046517",
-      "cat": "Ресиверы",
-      "price": 44990,
-      "descLen": 3427,
-      "gallery": 3,
-      "specs": 22,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/6ba9f3f78926789fcad91875b0046517/",
-      "priority": -1056
     },
     {
       "id": 264144,
@@ -6026,22 +5738,6 @@
       "priority": -1094
     },
     {
-      "id": 264301,
-      "name": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-3-117r",
-      "cat": "Другое",
-      "price": 6362,
-      "descLen": 1007,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-3-117r/",
-      "priority": -1094
-    },
-    {
       "id": 263979,
       "name": "Межблочный кабель Acoustic Revive Line X ( acoustic revive line x )",
       "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-x",
@@ -6615,22 +6311,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-ft-111g-2/",
-      "priority": -1097
-    },
-    {
-      "id": 264302,
-      "name": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-3-117r-2",
-      "cat": "Другое",
-      "price": 3181,
-      "descLen": 1000,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-3-117r-2/",
       "priority": -1097
     },
     {
