@@ -197,6 +197,69 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/sdv_3100_hv3.jpg",
       "alt": "sdv_3100_hv3.jpg",
       "local": "assets/from-live/products/052fae76c6_sdv_3100_hv3.jpg"
+    },
+    {
+      "src": "local://pdf_274022_p2_4bda5230.png",
+      "thumb": "assets/enriched/274022/4bda523043_w10d.png",
+      "alt": "274022",
+      "local": "assets/enriched/274022/4bda523043_w10d.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 273056
+    },
+    {
+      "src": "local://pdf_274022_p3_97dbad6b.png",
+      "thumb": "assets/enriched/274022/97dbad6bbf_w10d.png",
+      "alt": "274022",
+      "local": "assets/enriched/274022/97dbad6bbf_w10d.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 262578
+    },
+    {
+      "src": "local://pdf_274022_p6_dedf92dc.png",
+      "thumb": "assets/enriched/274022/dedf92dc9d_w10d.png",
+      "alt": "274022",
+      "local": "assets/enriched/274022/dedf92dc9d_w10d.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 1583129
+    },
+    {
+      "src": "local://pdf_274022_p7_f628834e.png",
+      "thumb": "assets/enriched/274022/f628834e77_w10d.png",
+      "alt": "274022",
+      "local": "assets/enriched/274022/f628834e77_w10d.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 996243
+    },
+    {
+      "src": "local://pdf_274022_p8_8a43d8b5.png",
+      "thumb": "assets/enriched/274022/8a43d8b598_w10d.png",
+      "alt": "274022",
+      "local": "assets/enriched/274022/8a43d8b598_w10d.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 2595741
+    },
+    {
+      "src": "local://pdf_274022_p10_7ef162f2.png",
+      "thumb": "assets/enriched/274022/7ef162f295_w10d.png",
+      "alt": "274022",
+      "local": "assets/enriched/274022/7ef162f295_w10d.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 2590819
+    },
+    {
+      "src": "local://pdf_274022_p11_4ccd6885.png",
+      "thumb": "assets/enriched/274022/4ccd68857f_w10d.png",
+      "alt": "274022",
+      "local": "assets/enriched/274022/4ccd68857f_w10d.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 32522
     }
   ],
   "sku": "",
@@ -208,6 +271,6 @@
   ],
   "enrichedAt": "2026-11-14T17:02:12Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w9-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

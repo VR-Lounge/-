@@ -140,6 +140,33 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/psd_3100_hv2.jpg",
       "alt": "psd_3100_hv2.jpg",
       "local": "assets/from-live/products/8f586a7cba_psd_3100_hv2.jpg"
+    },
+    {
+      "src": "local://ta_274016_p0_d81b7ce3.png",
+      "thumb": "assets/enriched/274016/cf7eab1dba_w10c.png",
+      "alt": "274016",
+      "local": "assets/enriched/274016/cf7eab1dba_w10c.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 687212
+    },
+    {
+      "src": "local://ta_274016_p1_10f627d2.png",
+      "thumb": "assets/enriched/274016/6cc2d87b90_w10c.png",
+      "alt": "274016",
+      "local": "assets/enriched/274016/6cc2d87b90_w10c.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 206440
+    },
+    {
+      "src": "local://ta_274016_p3_eb833640.png",
+      "thumb": "assets/enriched/274016/4c5b070bdf_w10c.png",
+      "alt": "274016",
+      "local": "assets/enriched/274016/4c5b070bdf_w10c.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 196820
     }
   ],
   "sku": "",
@@ -151,6 +178,6 @@
   ],
   "enrichedAt": "2026-11-14T17:02:12Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w9-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

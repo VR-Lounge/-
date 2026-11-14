@@ -96,6 +96,15 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/avm_audio_mp_6-3-2.jpg",
       "alt": "avm_audio_mp_6-3-2.jpg",
       "local": "assets/from-live/products/968c860d70_avm_audio_mp_6-3-2.jpg"
+    },
+    {
+      "src": "local://pdf_272838_p0_9c112301.png",
+      "thumb": "assets/enriched/272838/9c11230144_w10f.png",
+      "alt": "272838",
+      "local": "assets/enriched/272838/9c11230144_w10f.png",
+      "enriched": true,
+      "attribution": "press-pdf",
+      "bytes": 24861
     }
   ],
   "sku": "",
@@ -106,6 +115,6 @@
   ],
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

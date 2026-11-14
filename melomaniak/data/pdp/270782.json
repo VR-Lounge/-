@@ -67,6 +67,33 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_radia_cd5-3.jpg",
       "alt": "arcam_radia_cd5-3.jpg",
       "local": "assets/from-live/products/ef869a7dfd_arcam_radia_cd5-3.jpg"
+    },
+    {
+      "src": "local://manual_270782_59c8c037c1.png",
+      "thumb": "assets/enriched/270782/9af55cf269_w10.png",
+      "alt": "270782",
+      "local": "assets/enriched/270782/9af55cf269_w10.png",
+      "enriched": true,
+      "attribution": "manual-pdf",
+      "bytes": 42849
+    },
+    {
+      "src": "local://manual_270782_6163632710.png",
+      "thumb": "assets/enriched/270782/81d2265479_w10.png",
+      "alt": "270782",
+      "local": "assets/enriched/270782/81d2265479_w10.png",
+      "enriched": true,
+      "attribution": "manual-pdf",
+      "bytes": 28931
+    },
+    {
+      "src": "local://manual_270782_4048d08d16.png",
+      "thumb": "assets/enriched/270782/6c79346f5c_w10.png",
+      "alt": "270782",
+      "local": "assets/enriched/270782/6c79346f5c_w10.png",
+      "enriched": true,
+      "attribution": "manual-pdf",
+      "bytes": 14938
     }
   ],
   "sku": "",
@@ -79,6 +106,6 @@
   ],
   "enrichedAt": "2026-11-14T14:25:40Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

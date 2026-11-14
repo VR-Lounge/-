@@ -41,6 +41,78 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/08/SPEC-RSA–F1-rear-500x178-1.jpg",
       "alt": "SPEC-RSA–F1-rear-500&#215;178",
       "local": "assets/from-live/products/eaa8c37fc3_SPEC-RSA_F1-rear-500x178-1.jpg"
+    },
+    {
+      "src": "https://www.spec-corp.co.jp/audio/rsa-f1/img/title.jpg",
+      "thumb": "assets/enriched/26658/f42f51bf6c_w10d.jpg",
+      "alt": "26658",
+      "local": "assets/enriched/26658/f42f51bf6c_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-spec",
+      "bytes": 30670
+    },
+    {
+      "src": "https://www.spec-corp.co.jp/audio/rsa-f1/img/image02_1.jpg",
+      "thumb": "assets/enriched/26658/3e75215b65_w10d.jpg",
+      "alt": "26658",
+      "local": "assets/enriched/26658/3e75215b65_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-spec",
+      "bytes": 17243
+    },
+    {
+      "src": "https://www.spec-corp.co.jp/audio/rsa-f1/img/image02_2.jpg",
+      "thumb": "assets/enriched/26658/f23022de0c_w10d.jpg",
+      "alt": "26658",
+      "local": "assets/enriched/26658/f23022de0c_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-spec",
+      "bytes": 12420
+    },
+    {
+      "src": "https://www.spec-corp.co.jp/audio/rsa-f1/img/image03.jpg",
+      "thumb": "assets/enriched/26658/33d9f0b67a_w10d.jpg",
+      "alt": "26658",
+      "local": "assets/enriched/26658/33d9f0b67a_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-spec",
+      "bytes": 13272
+    },
+    {
+      "src": "https://www.spec-corp.co.jp/audio/rsa-f1/img/image04.jpg",
+      "thumb": "assets/enriched/26658/19938ca27c_w10d.jpg",
+      "alt": "26658",
+      "local": "assets/enriched/26658/19938ca27c_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-spec",
+      "bytes": 20639
+    },
+    {
+      "src": "https://www.spec-corp.co.jp/audio/rsa-f1/img/image05.jpg",
+      "thumb": "assets/enriched/26658/7149c18f73_w10d.jpg",
+      "alt": "26658",
+      "local": "assets/enriched/26658/7149c18f73_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-spec",
+      "bytes": 35152
+    },
+    {
+      "src": "https://www.spec-corp.co.jp/audio/rsa-f1/img/image06_1.jpg",
+      "thumb": "assets/enriched/26658/a32f465880_w10d.jpg",
+      "alt": "26658",
+      "local": "assets/enriched/26658/a32f465880_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-spec",
+      "bytes": 14902
+    },
+    {
+      "src": "https://www.spec-corp.co.jp/audio/rsa-f1/img/image06_2.jpg",
+      "thumb": "assets/enriched/26658/bb5c0aea7a_w10d.jpg",
+      "alt": "26658",
+      "local": "assets/enriched/26658/bb5c0aea7a_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-spec",
+      "bytes": 34225
     }
   ],
   "sku": "",
@@ -52,6 +124,6 @@
   ],
   "enrichedAt": "2026-11-14T17:02:07Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w9-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

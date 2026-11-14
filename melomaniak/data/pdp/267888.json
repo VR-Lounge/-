@@ -71,6 +71,78 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/Z-3_silver_rear-600x600.jpg",
       "alt": "Z-3_silver_rear",
       "local": "assets/from-live/products/f374bdb027_Z-3_silver_rear.jpg"
+    },
+    {
+      "src": "https://www.soulnote.audio/fileadmin/soulnote/bilder/serie_3/Z-3_silver_front-left.jpg",
+      "thumb": "assets/enriched/267888/fcd1311bac_w10f.jpg",
+      "alt": "267888",
+      "local": "assets/enriched/267888/fcd1311bac_w10f.jpg",
+      "enriched": true,
+      "attribution": "oem-soulnote",
+      "bytes": 535757
+    },
+    {
+      "src": "https://www.soulnote.audio/fileadmin/soulnote/bilder/serie_3/Z-3_silver_front.jpg",
+      "thumb": "assets/enriched/267888/15e1d637be_w10f.jpg",
+      "alt": "267888",
+      "local": "assets/enriched/267888/15e1d637be_w10f.jpg",
+      "enriched": true,
+      "attribution": "oem-soulnote",
+      "bytes": 525913
+    },
+    {
+      "src": "https://www.soulnote.audio/fileadmin/soulnote/bilder/serie_3/Z-3_silver_up.jpg",
+      "thumb": "assets/enriched/267888/99aa61736a_w10f.jpg",
+      "alt": "267888",
+      "local": "assets/enriched/267888/99aa61736a_w10f.jpg",
+      "enriched": true,
+      "attribution": "oem-soulnote",
+      "bytes": 609570
+    },
+    {
+      "src": "https://www.soulnote.audio/fileadmin/_processed_/c/c/csm_Z-3_top_d86cce883d.jpg",
+      "thumb": "assets/enriched/267888/5099e40346_w10f.jpg",
+      "alt": "267888",
+      "local": "assets/enriched/267888/5099e40346_w10f.jpg",
+      "enriched": true,
+      "attribution": "oem-soulnote",
+      "bytes": 222508
+    },
+    {
+      "src": "https://www.soulnote.audio/fileadmin/soulnote/bilder/serie_3/Z-3_top.jpg",
+      "thumb": "assets/enriched/267888/ed8969a97a_w10f.jpg",
+      "alt": "267888",
+      "local": "assets/enriched/267888/ed8969a97a_w10f.jpg",
+      "enriched": true,
+      "attribution": "oem-soulnote",
+      "bytes": 1725944
+    },
+    {
+      "src": "https://www.soulnote.audio/fileadmin/user_upload/Z-3SE_sfp.jpg",
+      "thumb": "assets/enriched/267888/877716b9ba_w10f.jpg",
+      "alt": "267888",
+      "local": "assets/enriched/267888/877716b9ba_w10f.jpg",
+      "enriched": true,
+      "attribution": "oem-soulnote",
+      "bytes": 85243
+    },
+    {
+      "src": "https://www.soulnote.audio/fileadmin/_processed_/6/c/csm_Z-3_SC-Cut-ultra-low-phase-noise-OCXO_4efebefa59.jpg",
+      "thumb": "assets/enriched/267888/45b5a02413_w10f.jpg",
+      "alt": "267888",
+      "local": "assets/enriched/267888/45b5a02413_w10f.jpg",
+      "enriched": true,
+      "attribution": "oem-soulnote",
+      "bytes": 266241
+    },
+    {
+      "src": "https://www.soulnote.audio/fileadmin/soulnote/bilder/serie_3/Z-3_SC-Cut-ultra-low-phase-noise-OCXO.jpg",
+      "thumb": "assets/enriched/267888/65195b0697_w10f.jpg",
+      "alt": "267888",
+      "local": "assets/enriched/267888/65195b0697_w10f.jpg",
+      "enriched": true,
+      "attribution": "oem-soulnote",
+      "bytes": 1468795
     }
   ],
   "sku": "",
@@ -81,6 +153,6 @@
   ],
   "enrichedAt": "2026-11-14T13:47:00Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

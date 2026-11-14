@@ -67,6 +67,33 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_zpre3-3.jpg",
       "alt": "parasound_zpre3-3.jpg",
       "local": "assets/from-live/products/bb4534d395_parasound_zpre3-3.jpg"
+    },
+    {
+      "src": "https://parasound.com/cdn/shop/files/zpre3_front_black.jpg?v=1756329151&amp;width=1889",
+      "thumb": "assets/enriched/269739/c93582f38e_w10.jpg",
+      "alt": "269739",
+      "local": "assets/enriched/269739/c93582f38e_w10.jpg",
+      "enriched": true,
+      "attribution": "oem-page",
+      "bytes": 135884
+    },
+    {
+      "src": "https://parasound.com/cdn/shop/files/zpre3_rear_black.jpg?v=1780594583&amp;width=1709",
+      "thumb": "assets/enriched/269739/c651a807cf_w10.jpg",
+      "alt": "269739",
+      "local": "assets/enriched/269739/c651a807cf_w10.jpg",
+      "enriched": true,
+      "attribution": "oem-page",
+      "bytes": 171670
+    },
+    {
+      "src": "https://parasound.com/cdn/shop/products/zpre3_angle_black_fca36ab6-0dd4-46d0-abe8-557e9acab240.jpg?v=1756329152&amp;width=2000",
+      "thumb": "assets/enriched/269739/c5522ee70a_w10.jpg",
+      "alt": "269739",
+      "local": "assets/enriched/269739/c5522ee70a_w10.jpg",
+      "enriched": true,
+      "attribution": "oem-page",
+      "bytes": 138465
     }
   ],
   "sku": "",
@@ -78,6 +105,6 @@
   ],
   "enrichedAt": "2026-11-14T14:24:29Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

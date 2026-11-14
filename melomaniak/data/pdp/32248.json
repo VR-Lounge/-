@@ -151,6 +151,24 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/portativnaia_akystika_MCINTOSH_RS100-600x600.jpg",
       "alt": "MCINTOSH RS100",
       "local": "assets/from-live/products/37ac44b3e8_portativnaia_akystika_MCINTOSH_RS100.jpg"
+    },
+    {
+      "src": "from-live://37ac44b3e8_portativnaia_akystika_MCINTOSH_RS100.jpg",
+      "thumb": "assets/enriched/32248/2bad08b6af_w10live.jpg",
+      "alt": "32248",
+      "local": "assets/enriched/32248/2bad08b6af_w10live.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 43853
+    },
+    {
+      "src": "from-live://c9c5ec1267_sim-audio-moon-760a-rs-1000x500-1.jpg",
+      "thumb": "assets/enriched/32248/70d4342b27_w10live.jpg",
+      "alt": "32248",
+      "local": "assets/enriched/32248/70d4342b27_w10live.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 56833
     }
   ],
   "sku": "",
@@ -161,6 +179,6 @@
   ],
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

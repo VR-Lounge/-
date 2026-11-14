@@ -45,6 +45,24 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Triode_TRX_M300-600x600.jpg",
       "alt": "Triode TRX M300",
       "local": "assets/from-live/products/d8bebe018b_ysilitel_moshnosti_Triode_TRX_M300.jpg"
+    },
+    {
+      "src": "https://triode.co.jp/image/trx-m300_01.jpg",
+      "thumb": "assets/enriched/16834/80874ff85a_w10d.jpg",
+      "alt": "16834",
+      "local": "assets/enriched/16834/80874ff85a_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-triode",
+      "bytes": 38233
+    },
+    {
+      "src": "https://triode.co.jp/image/trx-m300.jpg",
+      "thumb": "assets/enriched/16834/01fc942162_w10d.jpg",
+      "alt": "16834",
+      "local": "assets/enriched/16834/01fc942162_w10d.jpg",
+      "enriched": true,
+      "attribution": "oem-triode",
+      "bytes": 31136
     }
   ],
   "sku": "",
@@ -56,6 +74,6 @@
   ],
   "enrichedAt": "2026-11-14T13:45:24Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

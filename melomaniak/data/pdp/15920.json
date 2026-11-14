@@ -45,6 +45,15 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Leben_CS_600-600x600.jpg",
       "alt": "Leben CS 600",
       "local": "assets/from-live/products/506522a216_integralnii_ysilitel_Leben_CS_600.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/LEBEN-CS-600X-e1614953012821.jpeg",
+      "thumb": "assets/enriched/15920/be33c41d1b_w10.jpg",
+      "alt": "15920",
+      "local": "assets/enriched/15920/be33c41d1b_w10.jpg",
+      "enriched": true,
+      "attribution": "woo-media-exact",
+      "bytes": 38379
     }
   ],
   "sku": "",
@@ -56,6 +65,6 @@
   ],
   "enrichedAt": "2026-11-14T13:45:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

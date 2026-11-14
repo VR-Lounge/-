@@ -40,6 +40,24 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Leben_CS_300X_S-600x600.jpg",
       "alt": "Leben CS 300X S",
       "local": "assets/from-live/products/aa048847ba_integralnii_ysilitel_Leben_CS_300X_S.jpg"
+    },
+    {
+      "src": "from-live://79745c5218_fdad84b2c35bf44a30c167fa806f69e7.300x300.jpg",
+      "thumb": "assets/enriched/15918/01f582a16b_w10live.jpg",
+      "alt": "15918",
+      "local": "assets/enriched/15918/01f582a16b_w10live.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 35346
+    },
+    {
+      "src": "from-live://aa048847ba_integralnii_ysilitel_Leben_CS_300X_S.jpg",
+      "thumb": "assets/enriched/15918/8c6ad25cc3_w10live.jpg",
+      "alt": "15918",
+      "local": "assets/enriched/15918/8c6ad25cc3_w10live.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 28699
     }
   ],
   "sku": "",
@@ -51,6 +69,6 @@
   ],
   "enrichedAt": "2026-11-14T13:45:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

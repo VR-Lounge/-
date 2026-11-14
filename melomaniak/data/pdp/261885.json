@@ -125,6 +125,51 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/157b2692a182f126cb8f79cda66e927a-1.jpg",
       "alt": "157b2692a182f126cb8f79cda66e927a (1)",
       "local": "assets/from-live/products/9c6069df58_157b2692a182f126cb8f79cda66e927a-1.jpg"
+    },
+    {
+      "src": "https://www.paradigm.com/3582-large_default/founder-100f.jpg",
+      "thumb": "assets/enriched/261885/449fa36b3d_w10i.jpg",
+      "alt": "261885",
+      "local": "assets/enriched/261885/449fa36b3d_w10i.jpg",
+      "enriched": true,
+      "attribution": "oem-paradigm",
+      "bytes": 387217
+    },
+    {
+      "src": "https://www.paradigm.com/img/cms/homepage/founder-100f.png",
+      "thumb": "assets/enriched/261885/7fe80329d2_w10i.jpg",
+      "alt": "261885",
+      "local": "assets/enriched/261885/7fe80329d2_w10i.jpg",
+      "enriched": true,
+      "attribution": "oem-paradigm",
+      "bytes": 324042
+    },
+    {
+      "src": "https://www.paradigm.com//media/img/cms/Founder/cascade-fusion-bracing.jpg",
+      "thumb": "assets/enriched/261885/e12bfd743a_w10j.jpg",
+      "alt": "261885",
+      "local": "assets/enriched/261885/e12bfd743a_w10j.jpg",
+      "enriched": true,
+      "attribution": "oem-paradigm",
+      "bytes": 93492
+    },
+    {
+      "src": "https://www.paradigm.com//media/img/cms/Founder/founder-cutaway.png",
+      "thumb": "assets/enriched/261885/3723142718_w10j.jpg",
+      "alt": "261885",
+      "local": "assets/enriched/261885/3723142718_w10j.jpg",
+      "enriched": true,
+      "attribution": "oem-paradigm",
+      "bytes": 1859370
+    },
+    {
+      "src": "https://www.paradigm.com/3500-large_default/founder-100f.jpg",
+      "thumb": "assets/enriched/261885/ed95a6daa3_w10k.jpg",
+      "alt": "261885",
+      "local": "assets/enriched/261885/ed95a6daa3_w10k.jpg",
+      "enriched": true,
+      "attribution": "oem-paradigm",
+      "bytes": 206133
     }
   ],
   "sku": "",
@@ -135,6 +180,6 @@
   ],
   "enrichedAt": "2026-11-14T13:45:44Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

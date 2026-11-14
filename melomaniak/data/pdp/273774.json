@@ -80,6 +80,69 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/teac_ap-505-2.jpg",
       "alt": "teac_ap-505-2.jpg",
       "local": "assets/from-live/products/27a9cf4671_teac_ap-505-2.jpg"
+    },
+    {
+      "src": "https://teacusa.com/cdn/shop/files/ap-505-b_front.jpg?v=1734445809&amp;width=1946",
+      "thumb": "assets/enriched/273774/ab4776f84c_w10c.jpg",
+      "alt": "273774",
+      "local": "assets/enriched/273774/ab4776f84c_w10c.jpg",
+      "enriched": true,
+      "attribution": "oem-teac",
+      "bytes": 170247
+    },
+    {
+      "src": "https://teacusa.com/cdn/shop/files/ap-505-b_angled.jpg?v=1734445809&amp;width=1946",
+      "thumb": "assets/enriched/273774/921154fd99_w10c.jpg",
+      "alt": "273774",
+      "local": "assets/enriched/273774/921154fd99_w10c.jpg",
+      "enriched": true,
+      "attribution": "oem-teac",
+      "bytes": 156046
+    },
+    {
+      "src": "https://teacusa.com/cdn/shop/files/ap-505-b_rear.jpg?v=1734445809&amp;width=1946",
+      "thumb": "assets/enriched/273774/21ed51a6ae_w10c.jpg",
+      "alt": "273774",
+      "local": "assets/enriched/273774/21ed51a6ae_w10c.jpg",
+      "enriched": true,
+      "attribution": "oem-teac",
+      "bytes": 146017
+    },
+    {
+      "src": "https://teac-usa.imgix.net/general/ap-505_w_ncore.jpeg?auto=format&amp;crop=focalpoint&amp;domain=teac-usa.imgix.net&amp;fit=crop&amp;fp-x=0.5&amp;fp-y=0.5&amp;h=937&amp;ixlib=php-3.3.0&amp;q=82&amp;w=1500",
+      "thumb": "assets/enriched/273774/de77656a8d_w10c.jpg",
+      "alt": "273774",
+      "local": "assets/enriched/273774/de77656a8d_w10c.jpg",
+      "enriched": true,
+      "attribution": "oem-teac",
+      "bytes": 255088
+    },
+    {
+      "src": "https://teac-usa.imgix.net/general/ap-505_p_btl_mode_e.jpeg?auto=compress%2Cformat&amp;crop=focalpoint&amp;domain=teac-usa.imgix.net&amp;fit=crop&amp;fp-x=0.5&amp;fp-y=0.5&amp;h=650&amp;ixlib=php-3.3.0&amp;w=662",
+      "thumb": "assets/enriched/273774/9746cb1731_w10c.jpg",
+      "alt": "273774",
+      "local": "assets/enriched/273774/9746cb1731_w10c.jpg",
+      "enriched": true,
+      "attribution": "oem-teac",
+      "bytes": 29398
+    },
+    {
+      "src": "https://teac-usa.imgix.net/product-images/ap-505-b_rear.jpeg?auto=format&amp;crop=focalpoint&amp;domain=teac-usa.imgix.net&amp;fit=crop&amp;fp-x=0.5&amp;fp-y=0.5&amp;h=465&amp;ixlib=php-3.3.1&amp;q=82&amp;w=1500",
+      "thumb": "assets/enriched/273774/9bc348e361_w10c.jpg",
+      "alt": "273774",
+      "local": "assets/enriched/273774/9bc348e361_w10c.jpg",
+      "enriched": true,
+      "attribution": "oem-teac",
+      "bytes": 130495
+    },
+    {
+      "src": "https://teac-usa.imgix.net/general/ap-505-b_w_3point_feet_dark.jpeg?auto=format&amp;crop=focalpoint&amp;domain=teac-usa.imgix.net&amp;fit=crop&amp;fp-x=0.5&amp;fp-y=0.5&amp;h=750&amp;ixlib=php-3.3.0&amp;q=82&amp;w=1500",
+      "thumb": "assets/enriched/273774/3cf2c83452_w10c.jpg",
+      "alt": "273774",
+      "local": "assets/enriched/273774/3cf2c83452_w10c.jpg",
+      "enriched": true,
+      "attribution": "oem-teac",
+      "bytes": 65373
     }
   ],
   "sku": "",
@@ -91,6 +154,6 @@
   ],
   "enrichedAt": "2026-11-14T15:07:09Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w8-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

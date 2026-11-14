@@ -81,6 +81,24 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/661b1010f5a6f65e70c533837ebacc19-600x600.jpg",
       "alt": "661b1010f5a6f65e70c533837ebacc19",
       "local": "assets/from-live/products/4cfcf902dd_661b1010f5a6f65e70c533837ebacc19.jpg"
+    },
+    {
+      "src": "https://www.paradigm.com/2532-large_default/premier-800f.jpg",
+      "thumb": "assets/enriched/41442/d792a48340_w10b.jpg",
+      "alt": "41442",
+      "local": "assets/enriched/41442/d792a48340_w10b.jpg",
+      "enriched": true,
+      "attribution": "oem-cdn",
+      "bytes": 400686
+    },
+    {
+      "src": "https://www.paradigm.com/img/cms/Paradigm-Premier-800F-Speakers-Unboxing.jpg",
+      "thumb": "assets/enriched/41442/ab25b2eead_w10b.jpg",
+      "alt": "41442",
+      "local": "assets/enriched/41442/ab25b2eead_w10b.jpg",
+      "enriched": true,
+      "attribution": "oem-cdn",
+      "bytes": 105311
     }
   ],
   "sku": "",
@@ -91,6 +109,6 @@
   ],
   "enrichedAt": "2026-11-14T14:06:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

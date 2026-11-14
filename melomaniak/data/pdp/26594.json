@@ -45,6 +45,15 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Air_Tight_ATM-1S-600x600.jpg",
       "alt": "Air Tight ATM-1S",
       "local": "assets/from-live/products/6f774df6d4_ysilitel_moshnosti_Air_Tight_ATM-1S.jpg"
+    },
+    {
+      "src": "from-live://6f774df6d4_ysilitel_moshnosti_Air_Tight_ATM-1S.jpg",
+      "thumb": "assets/enriched/26594/d70f0461aa_w10live.jpg",
+      "alt": "26594",
+      "local": "assets/enriched/26594/d70f0461aa_w10live.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 36441
     }
   ],
   "sku": "",
@@ -56,6 +65,6 @@
   ],
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

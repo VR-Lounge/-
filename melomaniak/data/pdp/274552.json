@@ -65,6 +65,15 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-corinium-w400-ae-mpic-0-1698653142.jpg",
       "alt": "ae-corinium-w400-ae-mpic-0-1698653142",
       "local": "assets/from-live/products/074a819dd7_ae-corinium-w400-ae-mpic-0-1698653142.jpg"
+    },
+    {
+      "src": "https://www.acoustic-energy.co.uk/wp-content/uploads/Corinium-Silver-Lifestyle.jpg",
+      "thumb": "assets/enriched/274552/2a162b2e90_w10b.jpg",
+      "alt": "274552",
+      "local": "assets/enriched/274552/2a162b2e90_w10b.jpg",
+      "enriched": true,
+      "attribution": "oem-cdn",
+      "bytes": 22386152
     }
   ],
   "sku": "",
@@ -77,6 +86,6 @@
   ],
   "enrichedAt": "2026-11-14T14:57:31Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w8-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }

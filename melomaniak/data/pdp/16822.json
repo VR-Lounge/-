@@ -45,6 +45,15 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Triode_TRV_88SER-600x600.jpg",
       "alt": "Triode TRV 88SER",
       "local": "assets/from-live/products/f6807fc040_integralnii_ysilitel_Triode_TRV_88SER.jpg"
+    },
+    {
+      "src": "https://triode.co.jp/image/trv-88ser.jpg",
+      "thumb": "assets/enriched/16822/e579cf6ca4_w10.jpg",
+      "alt": "16822",
+      "local": "assets/enriched/16822/e579cf6ca4_w10.jpg",
+      "enriched": true,
+      "attribution": "oem-triode",
+      "bytes": 54002
     }
   ],
   "sku": "",
@@ -56,6 +65,6 @@
   ],
   "enrichedAt": "2026-11-14T13:45:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true
 }
