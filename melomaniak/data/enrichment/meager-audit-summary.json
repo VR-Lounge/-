@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T21:43:10Z",
+  "generatedAt": "2026-11-14T22:26:59Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,17 +8,17 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 500,
-  "okCount": 1387,
+  "meagerCount": 443,
+  "okCount": 1444,
   "reasonTallies": {
-    "gal": 500
+    "gal": 443
   },
   "byCategory": {
-    "Другое": 223,
-    "Кабели": 153,
-    "Усилители": 65,
-    "Акустика": 28,
-    "Источники": 22,
+    "Другое": 196,
+    "Кабели": 129,
+    "Усилители": 62,
+    "Акустика": 26,
+    "Источники": 21,
     "ЦАПы": 5,
     "Ресиверы": 2,
     "Спецпредложения": 1,
@@ -42,16 +42,6 @@
       "price": 149990,
       "reasons": [
         "gal:1"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 269814,
-      "name": "Кабель межблочный аналоговый RCA QED Reference 40",
-      "cat": "Кабели",
-      "price": 22000,
-      "reasons": [
-        "gal:3"
       ],
       "enriched": true
     },
@@ -222,6 +212,16 @@
       "price": 595845,
       "reasons": [
         "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 15646,
+      "name": "напольная акустика Lawrence Audio Mandolin ( lawrence audio mandolin )",
+      "cat": "Акустика",
+      "price": 580000,
+      "reasons": [
+        "gal:3"
       ],
       "enriched": true
     }

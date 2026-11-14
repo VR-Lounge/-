@@ -1,0 +1,22 @@
+{
+  "wave": "meager-w15-2026-11",
+  "prev_meager": 500,
+  "meager_now": 443,
+  "cleared_delta": 57,
+  "remaining_by_cat": {
+    "Другое": 196,
+    "Кабели": 129,
+    "Усилители": 62,
+    "Акустика": 26,
+    "Источники": 21,
+    "ЦАПы": 5,
+    "Ресиверы": 2,
+    "Спецпредложения": 1,
+    "Видео": 1
+  },
+  "w15_cleared_gal4_count": 57,
+  "notes": [
+    "Strict SKU: OEM+media+from-live+sibling+gal3 chip",
+    "Priority amp→spk→src→DAC→recv→cable→other"
+  ]
+}

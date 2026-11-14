@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T21:43:10Z",
+  "generatedAt": "2026-11-14T22:26:59Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,17 +8,17 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 500,
-  "okCount": 1387,
+  "meagerCount": 443,
+  "okCount": 1444,
   "reasonTallies": {
-    "gal": 500
+    "gal": 443
   },
   "byCategory": {
-    "Другое": 223,
-    "Кабели": 153,
-    "Усилители": 65,
-    "Акустика": 28,
-    "Источники": 22,
+    "Другое": 196,
+    "Кабели": 129,
+    "Усилители": 62,
+    "Акустика": 26,
+    "Источники": 21,
     "ЦАПы": 5,
     "Ресиверы": 2,
     "Спецпредложения": 1,
@@ -56,22 +56,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/9664d8ecead8e48453e26b3960d9ba71/",
       "priority": 1049
-    },
-    {
-      "id": 269814,
-      "name": "Кабель межблочный аналоговый RCA QED Reference 40",
-      "slug": "7df5761c8786f901b0819dfa11961988",
-      "cat": "Кабели",
-      "price": 22000,
-      "descLen": 724,
-      "gallery": 3,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/7df5761c8786f901b0819dfa11961988/",
-      "priority": 922
     },
     {
       "id": 269819,
@@ -938,38 +922,6 @@
       "priority": -810
     },
     {
-      "id": 272451,
-      "name": "Активный сабвуфер Velodyne DW-12",
-      "slug": "7bcf0908141101ef6c578aca54f10b61",
-      "cat": "Акустика",
-      "price": 290000,
-      "descLen": 3107,
-      "gallery": 0,
-      "specs": 14,
-      "enriched": true,
-      "reasons": [
-        "gal:0"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/7bcf0908141101ef6c578aca54f10b61/",
-      "priority": -810
-    },
-    {
-      "id": 264533,
-      "name": "Акустический кабель SAEC  SP-1 Stratosphere ( saec sp 1 stratosphere )",
-      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sp-1-stratosphere",
-      "cat": "Кабели",
-      "price": 281053,
-      "descLen": 892,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sp-1-stratosphere/",
-      "priority": -819
-    },
-    {
       "id": 16158,
       "name": "интегральный усилитель 47 Labs 4717 Shigaraki ( 47 labs 4717 shigaraki )",
       "slug": "Integralnii_ysilitel_47_Labs_4717_Shigaraki",
@@ -984,22 +936,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/Integralnii_ysilitel_47_Labs_4717_Shigaraki/",
       "priority": -820
-    },
-    {
-      "id": 16788,
-      "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
-      "slug": "predysilitel_Soulnote_sa3-0",
-      "cat": "Усилители",
-      "price": 270000,
-      "descLen": 715,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Soulnote_sa3-0/",
-      "priority": -830
     },
     {
       "id": 267963,
@@ -1130,22 +1066,6 @@
       "priority": -855
     },
     {
-      "id": 272171,
-      "name": "Стереоусилитель NAD C399",
-      "slug": "f7979ced8b54ce3df2a4cc04bf272ee2",
-      "cat": "Усилители",
-      "price": 244990,
-      "descLen": 5131,
-      "gallery": 3,
-      "specs": 24,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/f7979ced8b54ce3df2a4cc04bf272ee2/",
-      "priority": -856
-    },
-    {
       "id": 16786,
       "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
       "slug": "ysilitel_moshnosti_soulnote_sa2-0",
@@ -1242,22 +1162,6 @@
       "priority": -880
     },
     {
-      "id": 264513,
-      "name": "Межблочный кабель SAEC  SL-1 Stratosphere ( saec sl 1 stratosphere )",
-      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sl-1-stratosphere",
-      "cat": "Кабели",
-      "price": 215769,
-      "descLen": 882,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sl-1-stratosphere/",
-      "priority": -885
-    },
-    {
       "id": 271048,
       "name": "Напольная акустика Monitor Audio Silver 200 7G",
       "slug": "fd3399e4492a5438af245dfe94385204",
@@ -1272,38 +1176,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/fd3399e4492a5438af245dfe94385204/",
       "priority": -886
-    },
-    {
-      "id": 264077,
-      "name": "Кварцевые диски Audio Replas OPT-100HG-SS HR/4P ( audio replas opt 100hg ss hr 4p )",
-      "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-ss-hr-4p",
-      "cat": "Другое",
-      "price": 212500,
-      "descLen": 820,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-ss-hr-4p/",
-      "priority": -888
-    },
-    {
-      "id": 261851,
-      "name": "Напольная акустика Paradigm Monitor SE 8000F Matte Black ( paradigm monitor se 8000f matte black )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-monitor-se-8000f-matte-black",
-      "cat": "Акустика",
-      "price": 212415,
-      "descLen": 841,
-      "gallery": 2,
-      "specs": 11,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-monitor-se-8000f-matte-black/",
-      "priority": -888
     },
     {
       "id": 270802,
@@ -1370,22 +1242,6 @@
       "priority": -900
     },
     {
-      "id": 15864,
-      "name": "усилитель мощности 47 Labs 4706-50 ( 47 labs 4706 50 )",
-      "slug": "ysilitel_moshnosti_47_labs_4706_50",
-      "cat": "Усилители",
-      "price": 199000,
-      "descLen": 2168,
-      "gallery": 2,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_47_labs_4706_50/",
-      "priority": -901
-    },
-    {
       "id": 264100,
       "name": "Держатель картриджей Audio Replas RHS-1 HR ( audio replas rhs 1 hr )",
       "slug": "%d0%b4%d0%b5%d1%80%d0%b6%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-%d0%ba%d0%b0%d1%80%d1%82%d1%80%d0%b8%d0%b4%d0%b6%d0%b5%d0%b9-audio-replas-rhs-1-hr",
@@ -1399,38 +1255,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b4%d0%b5%d1%80%d0%b6%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-%d0%ba%d0%b0%d1%80%d1%82%d1%80%d0%b8%d0%b4%d0%b6%d0%b5%d0%b9-audio-replas-rhs-1-hr/",
-      "priority": -905
-    },
-    {
-      "id": 264396,
-      "name": "Фоно кабель Furutech Silver Arrows II-R4 ( furutech silver arrows ii r4 )",
-      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-r4",
-      "cat": "Кабели",
-      "price": 195458,
-      "descLen": 949,
-      "gallery": 2,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-r4/",
-      "priority": -905
-    },
-    {
-      "id": 264397,
-      "name": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
-      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-xlr",
-      "cat": "Кабели",
-      "price": 195458,
-      "descLen": 955,
-      "gallery": 2,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-xlr/",
       "priority": -905
     },
     {
@@ -1448,22 +1272,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-acoustic-revive-raf-48-sp2/",
       "priority": -908
-    },
-    {
-      "id": 264395,
-      "name": "Фоно кабель Furutech Silver Arrows II-L ( furutech silver arrows ii l )",
-      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-l",
-      "cat": "Кабели",
-      "price": 190995,
-      "descLen": 961,
-      "gallery": 2,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-l/",
-      "priority": -910
     },
     {
       "id": 272614,
@@ -1512,22 +1320,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_Soulnote_sa300/",
       "priority": -910
-    },
-    {
-      "id": 270516,
-      "name": "Кабель акустический готовый Van den Hul The Inspiration Hybrid",
-      "slug": "47983c617d697aab2bd8350395fb0959",
-      "cat": "Кабели",
-      "price": 189590,
-      "descLen": 1792,
-      "gallery": 3,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/47983c617d697aab2bd8350395fb0959/",
-      "priority": -911
     },
     {
       "id": 264026,
@@ -1632,11 +1424,11 @@
       "cat": "Другое",
       "price": 170000,
       "descLen": 816,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-opt-30hg-sc-hr-4p/",
       "priority": -930
@@ -1655,22 +1447,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/tsentralnii_kanal_Audio_Physic_High_End_Center/",
-      "priority": -932
-    },
-    {
-      "id": 264076,
-      "name": "Кварцевые диски Audio Replas OPT-100HG-SS HR/3P ( audio replas opt 100hg ss hr 3p )",
-      "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-ss-hr-3p",
-      "cat": "Другое",
-      "price": 168300,
-      "descLen": 820,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-ss-hr-3p/",
       "priority": -932
     },
     {
@@ -1704,22 +1480,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/636f7ff53008628637149779f49b081f/",
       "priority": -941
-    },
-    {
-      "id": 264542,
-      "name": "USB кабель SAEC  SUS-020 Stratosphere C &#8211; mini B OTG ( usb saec sus 020 stratosphere c mini b otg )",
-      "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere-c-mini-b-otg",
-      "cat": "Кабели",
-      "price": 156923,
-      "descLen": 914,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere-c-mini-b-otg/",
-      "priority": -944
     },
     {
       "id": 260693,
@@ -1968,11 +1728,11 @@
       "cat": "Другое",
       "price": 131750,
       "descLen": 816,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-opt-30hg-sc-hr-3p/",
       "priority": -969
@@ -2138,22 +1898,6 @@
       "priority": -986
     },
     {
-      "id": 264118,
-      "name": "Аксессуар для розетки Audio Replas CPP-2SZ/HG ( audio replas cpp 2sz hg )",
-      "slug": "%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80-%d0%b4%d0%bb%d1%8f-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d0%b8-audio-replas-cpp-2sz-hg",
-      "cat": "Другое",
-      "price": 112640,
-      "descLen": 1084,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80-%d0%b4%d0%bb%d1%8f-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d0%b8-audio-replas-cpp-2sz-hg/",
-      "priority": -988
-    },
-    {
       "id": 16216,
       "name": "центральный канал Audio Physic Center II Special edition ( audio physic center ii special edition )",
       "slug": "tsentralnii_kanal_Audio_Physic_Center_II_Special_edition",
@@ -2232,22 +1976,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b3%d0%b5%d0%bd%d0%b5%d1%80%d0%b0%d1%82%d0%be%d1%80-%d0%b8%d0%be%d0%bd%d0%be%d0%b2-acoustic-revive-rio-5-mk-ii/",
       "priority": -995
-    },
-    {
-      "id": 271202,
-      "name": "Кабель акустический готовый Nordost Purple Flare",
-      "slug": "acccbd1af34ed180b181790e549d5bec",
-      "cat": "Кабели",
-      "price": 104990,
-      "descLen": 3146,
-      "gallery": 1,
-      "specs": 8,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/acccbd1af34ed180b181790e549d5bec/",
-      "priority": -996
     },
     {
       "id": 264518,
@@ -2344,22 +2072,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Musica_att_200/",
       "priority": -999
-    },
-    {
-      "id": 264532,
-      "name": "Акустический кабель SAEC  SP-10 Stratosphere ( saec sp 10 stratosphere )",
-      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sp-10-stratosphere",
-      "cat": "Кабели",
-      "price": 100728,
-      "descLen": 894,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sp-10-stratosphere/",
-      "priority": -1000
     },
     {
       "id": 270970,
@@ -2480,11 +2192,11 @@
       "cat": "Другое",
       "price": 95498,
       "descLen": 1097,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-e-tp80es-ncf-europe/",
       "priority": -1005
@@ -2560,11 +2272,11 @@
       "cat": "Другое",
       "price": 91800,
       "descLen": 1102,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-30hg-20hr-4p/",
       "priority": -1009
@@ -3008,29 +2720,13 @@
       "cat": "Другое",
       "price": 73800,
       "descLen": 1102,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-30hg-20hr-3p/",
-      "priority": -1027
-    },
-    {
-      "id": 264251,
-      "name": "Сетевой фильтр Furutech e-TP80E (Europe) ( furutech e tp80e (europe) )",
-      "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-e-tp80e-europe",
-      "cat": "Другое",
-      "price": 73710,
-      "descLen": 1067,
       "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
         "gal:3"
       ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-e-tp80e-europe/",
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-30hg-20hr-3p/",
       "priority": -1027
     },
     {
@@ -3130,65 +2826,17 @@
       "priority": -1032
     },
     {
-      "id": 264119,
-      "name": "Аксессуар для розетки Audio Replas CPP-2SZ SE ( audio replas cpp 2sz se )",
-      "slug": "%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80-%d0%b4%d0%bb%d1%8f-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d0%b8-audio-replas-cpp-2sz-se",
-      "cat": "Другое",
-      "price": 68940,
-      "descLen": 1084,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80-%d0%b4%d0%bb%d1%8f-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d0%b8-audio-replas-cpp-2sz-se/",
-      "priority": -1032
-    },
-    {
-      "id": 264075,
-      "name": "Кварцевые диски Audio Replas OPT-100HG-SS HR/1P ( audio replas opt 100hg ss hr 1p )",
-      "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-ss-hr-1p",
-      "cat": "Другое",
-      "price": 67500,
-      "descLen": 1114,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-ss-hr-1p/",
-      "priority": -1033
-    },
-    {
-      "id": 264078,
-      "name": "Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr )",
-      "slug": "%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-pl-hr",
-      "cat": "Другое",
-      "price": 67500,
-      "descLen": 712,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-pl-hr/",
-      "priority": -1033
-    },
-    {
       "id": 264083,
       "name": "Кварцевые диски Audio Replas OPT-30HG HR/4P ( audio replas opt 30hg hr 4p )",
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-30hg-hr-4p",
       "cat": "Другое",
       "price": 66600,
       "descLen": 1090,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-30hg-hr-4p/",
       "priority": -1034
@@ -3207,22 +2855,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-acoustic-revive-rst-38/",
-      "priority": -1034
-    },
-    {
-      "id": 264391,
-      "name": "Акустический кабель Furutech Evolution Speaker II  &#8211; 04 ( furutech evolution speaker ii 04 )",
-      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-evolution-speaker-ii-04",
-      "cat": "Кабели",
-      "price": 66125,
-      "descLen": 1079,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-evolution-speaker-ii-04/",
       "priority": -1034
     },
     {
@@ -3360,11 +2992,11 @@
       "cat": "Кабели",
       "price": 60624,
       "descLen": 995,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-scx-5000d-r/",
       "priority": -1040
@@ -3402,22 +3034,6 @@
       "priority": -1041
     },
     {
-      "id": 264096,
-      "name": "Вибропоглатитель Audio Replas RSI-M10 ( audio replas rsi m10 )",
-      "slug": "%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-rsi-m10",
-      "cat": "Другое",
-      "price": 58860,
-      "descLen": 1051,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-rsi-m10/",
-      "priority": -1042
-    },
-    {
       "id": 263987,
       "name": "Акустический кабель Acoustic Revive SPC Triple C (2.8 x 2.4) ( acoustic revive spc triple c (2 8 x 2 4) )",
       "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-spc-triple-c-2-8-x-2-4",
@@ -3448,22 +3064,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-hdmi-furutech-hdmi-a1/",
       "priority": -1043
-    },
-    {
-      "id": 264539,
-      "name": "USB кабель SAEC  SUS 020 Stratosphere ( usb saec sus 020 stratosphere )",
-      "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere",
-      "cat": "Кабели",
-      "price": 56919,
-      "descLen": 982,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere/",
-      "priority": -1044
     },
     {
       "id": 264540,
@@ -3610,38 +3210,6 @@
       "priority": -1047
     },
     {
-      "id": 264543,
-      "name": "USB кабель SAEC  SUS-020 Stratosphere A &#8211; female C OTG ( usb saec sus 020 stratosphere a female c otg )",
-      "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere-a-female-c-otg",
-      "cat": "Кабели",
-      "price": 53327,
-      "descLen": 1154,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere-a-female-c-otg/",
-      "priority": -1047
-    },
-    {
-      "id": 263965,
-      "name": "Межблочный кабель Acoustic Revive Line 1.0X-TripleC-FM ( acoustic revive line 1 0x triplec fm )",
-      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-1-0x-triplec-fm",
-      "cat": "Кабели",
-      "price": 52920,
-      "descLen": 1107,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-1-0x-triplec-fm/",
-      "priority": -1048
-    },
-    {
       "id": 264432,
       "name": "Сетевой кабель Furutech D.U.C.C. DPS-4.1 ( furutech d u c c dps 4 1 )",
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-d-u-c-c-dps-4-1",
@@ -3664,11 +3232,11 @@
       "cat": "Другое",
       "price": 52200,
       "descLen": 1090,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-30hg-hr-3p/",
       "priority": -1048
@@ -3728,11 +3296,11 @@
       "cat": "Другое",
       "price": 50400,
       "descLen": 1093,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-opt-30hg-sc-hr/",
       "priority": -1050
@@ -3752,38 +3320,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-c-1/",
       "priority": -1050
-    },
-    {
-      "id": 264438,
-      "name": "Цифровой кабель Furutech Alpha C-2 ( furutech alpha c 2 )",
-      "slug": "%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-c-2",
-      "cat": "Кабели",
-      "price": 50400,
-      "descLen": 1045,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-c-2/",
-      "priority": -1050
-    },
-    {
-      "id": 269641,
-      "name": "CD-проигрыватель Onkyo C-7030",
-      "slug": "d844a9a225b16256050cdf7e1238edf8",
-      "cat": "Источники",
-      "price": 49990,
-      "descLen": 3315,
-      "gallery": 3,
-      "specs": 12,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/d844a9a225b16256050cdf7e1238edf8/",
-      "priority": -1051
     },
     {
       "id": 264003,
@@ -4042,22 +3578,6 @@
       "priority": -1054
     },
     {
-      "id": 264416,
-      "name": "Кабель HDMI Furutech HDMI-N1 ( hdmi furutech hdmi n1 )",
-      "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-hdmi-furutech-hdmi-n1",
-      "cat": "Кабели",
-      "price": 45860,
-      "descLen": 1032,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-hdmi-furutech-hdmi-n1/",
-      "priority": -1055
-    },
-    {
       "id": 264545,
       "name": "Цифровой кабель SAEC  DIG 4000 ( saec dig 4000 )",
       "slug": "%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-dig-4000",
@@ -4112,11 +3632,11 @@
       "cat": "Другое",
       "price": 44906,
       "descLen": 1009,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-52m-ncf-r/",
       "priority": -1056
@@ -4135,22 +3655,6 @@
         "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/14a0a66c9b803891d65169aebe4c124c/",
-      "priority": -1056
-    },
-    {
-      "id": 263963,
-      "name": "Межблочный кабель Acoustic Revive Line 1.0R-TripleC-FM ( acoustic revive line 1 0r triplec fm )",
-      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-1-0r-triplec-fm",
-      "cat": "Кабели",
-      "price": 44625,
-      "descLen": 1183,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-1-0r-triplec-fm/",
       "priority": -1056
     },
     {
@@ -4200,22 +3704,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/9f6a66c2368c28142263f79ad2068a7f/",
       "priority": -1057
-    },
-    {
-      "id": 264120,
-      "name": "Аксессуар для розетки Audio Replas CPP-2SZ/S  (15mm) ( audio replas cpp 2sz s (15mm) )",
-      "slug": "%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80-%d0%b4%d0%bb%d1%8f-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d0%b8-audio-replas-cpp-2sz-s-15mm",
-      "cat": "Другое",
-      "price": 42600,
-      "descLen": 990,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%81%d0%b5%d1%81%d1%81%d1%83%d0%b0%d1%80-%d0%b4%d0%bb%d1%8f-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d0%b8-audio-replas-cpp-2sz-s-15mm/",
-      "priority": -1058
     },
     {
       "id": 264060,
@@ -4311,22 +3799,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-hdmi-furutech-hdmi-xv-1-3-ultra-hd/",
-      "priority": -1059
-    },
-    {
-      "id": 264074,
-      "name": "Платформа под шипы Audio Replas OPT-100HG/FLAT-PL HR ( audio replas opt 100hg flat pl hr )",
-      "slug": "%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-flat-pl-hr",
-      "cat": "Другое",
-      "price": 41000,
-      "descLen": 739,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-flat-pl-hr/",
       "priority": -1059
     },
     {
@@ -4608,11 +4080,11 @@
       "cat": "Другое",
       "price": 35700,
       "descLen": 802,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-r/",
       "priority": -1065
@@ -4672,11 +4144,11 @@
       "cat": "Другое",
       "price": 34927,
       "descLen": 1045,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-52m-r/",
       "priority": -1066
@@ -4711,22 +4183,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/1034d193da0fa00215c8683de020b34b/",
-      "priority": -1067
-    },
-    {
-      "id": 264140,
-      "name": "Коннектор сетевой Furutech FI-50 (R) ( furutech fi 50 (r) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-50-r",
-      "cat": "Другое",
-      "price": 33680,
-      "descLen": 971,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-50-r/",
       "priority": -1067
     },
     {
@@ -4816,11 +4272,11 @@
       "cat": "Акустика",
       "price": 31900,
       "descLen": 1060,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 15,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d1%80%d1%82%d0%b0%d1%82%d0%b8%d0%b2%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%bc%d0%b8%d0%bd%d0%b8%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d1%8b-paradigm-pw-300/",
       "priority": -1069
@@ -4832,11 +4288,11 @@
       "cat": "Акустика",
       "price": 31900,
       "descLen": 1059,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 15,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d1%80%d1%82%d0%b0%d1%82%d0%b8%d0%b2%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-%d0%bc%d0%b8%d0%bd%d0%b8%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d1%8b-paradigm-pw-300-2/",
       "priority": -1069
@@ -4906,22 +4362,6 @@
       "priority": -1070
     },
     {
-      "id": 264152,
-      "name": "Коннектор сетевой Furutech FI-50 (G) ( furutech fi 50 (g) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-50-g",
-      "cat": "Другое",
-      "price": 29938,
-      "descLen": 976,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-50-g/",
-      "priority": -1071
-    },
-    {
       "id": 264412,
       "name": "Кабель видео Furutech FVV-3215 ( furutech fvv 3215 )",
       "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-%d0%b2%d0%b8%d0%b4%d0%b5%d0%be-furutech-fvv-3215",
@@ -4952,22 +4392,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-1-hr-3p/",
       "priority": -1071
-    },
-    {
-      "id": 271263,
-      "name": "Кабель сетевой готовый Nordost Purple Flare FIG-8",
-      "slug": "502b35657ec25bf870ca794399ebde23",
-      "cat": "Кабели",
-      "price": 28990,
-      "descLen": 2421,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/502b35657ec25bf870ca794399ebde23/",
-      "priority": -1072
     },
     {
       "id": 272808,
@@ -5146,22 +4570,6 @@
       "priority": -1074
     },
     {
-      "id": 263967,
-      "name": "Межблочный кабель Acoustic Revive Line 1.0BNC-TripleC-FM ( acoustic revive line 1 0bnc triplec fm )",
-      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-1-0bnc-triplec-fm",
-      "cat": "Кабели",
-      "price": 26250,
-      "descLen": 1195,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-1-0bnc-triplec-fm/",
-      "priority": -1074
-    },
-    {
       "id": 264371,
       "name": "Межблочный кабель Furutech Alpha Line Plus ( furutech alpha line plus )",
       "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-line-plus",
@@ -5287,22 +4695,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/4e830724dfec816d16151a75d23efa37/",
-      "priority": -1075
-    },
-    {
-      "id": 264360,
-      "name": "Сетевой кабель Furutech G-314 Ag-15 Plus E ( furutech g 314 ag 15 plus e )",
-      "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-g-314-ag-15-plus-e",
-      "cat": "Кабели",
-      "price": 25200,
-      "descLen": 1018,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-g-314-ag-15-plus-e/",
       "priority": -1075
     },
     {
@@ -5450,22 +4842,6 @@
       "priority": -1078
     },
     {
-      "id": 270491,
-      "name": "Кабель miniJack-2RCA Van den Hul The Flexicon",
-      "slug": "35d02a6ebb8f50fdb7dbd4c36e8cbae1",
-      "cat": "Кабели",
-      "price": 21790,
-      "descLen": 2882,
-      "gallery": 1,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/35d02a6ebb8f50fdb7dbd4c36e8cbae1/",
-      "priority": -1079
-    },
-    {
       "id": 264150,
       "name": "Коннектор сетевой Furutech Fi-46M NCF (G) ( furutech fi 46m ncf (g) )",
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-46m-ncf-g",
@@ -5591,22 +4967,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-flow-08-filter/",
-      "priority": -1081
-    },
-    {
-      "id": 264306,
-      "name": "Спайд Furutech CF-201(R) ( furutech cf 201(r) )",
-      "slug": "%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-cf-201r",
-      "cat": "Другое",
-      "price": 19335,
-      "descLen": 965,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-cf-201r/",
       "priority": -1081
     },
     {
@@ -5752,22 +5112,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-line-2/",
       "priority": -1082
-    },
-    {
-      "id": 263986,
-      "name": "Акустический кабель Acoustic Revive SPC Triple C (1.8 x 1.4) ( acoustic revive spc triple c (1 8 x 1 4) )",
-      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-spc-triple-c-1-8-x-1-4",
-      "cat": "Кабели",
-      "price": 17600,
-      "descLen": 1149,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-spc-triple-c-1-8-x-1-4/",
-      "priority": -1083
     },
     {
       "id": 264099,
@@ -5978,22 +5322,6 @@
       "priority": -1085
     },
     {
-      "id": 264166,
-      "name": "Коннектор сетевой Furutech FI-28 (R) ( furutech fi 28 (r) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-28-r",
-      "cat": "Другое",
-      "price": 15593,
-      "descLen": 967,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-28-r/",
-      "priority": -1085
-    },
-    {
       "id": 264167,
       "name": "Сетевая вилка Furutech FI-28M(R) ( furutech fi 28m(r) )",
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-28mr",
@@ -6007,22 +5335,6 @@
         "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-28mr/",
-      "priority": -1085
-    },
-    {
-      "id": 264425,
-      "name": "Сетевой кабель Furutech Alpha 3 ( furutech alpha 3 )",
-      "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-3",
-      "cat": "Кабели",
-      "price": 15405,
-      "descLen": 952,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-3/",
       "priority": -1085
     },
     {
@@ -6064,11 +5376,11 @@
       "cat": "Другое",
       "price": 15000,
       "descLen": 1054,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-sg-4hr-3p/",
       "priority": -1085
@@ -6256,11 +5568,11 @@
       "cat": "Другое",
       "price": 12848,
       "descLen": 665,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-202r/",
       "priority": -1088
@@ -6298,51 +5610,19 @@
       "priority": -1088
     },
     {
-      "id": 264169,
-      "name": "Коннектор сетевой Furutech FI-28(G) ( furutech fi 28(g) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-28g",
-      "cat": "Другое",
-      "price": 12225,
-      "descLen": 947,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-28g/",
-      "priority": -1088
-    },
-    {
       "id": 264170,
       "name": "Коннектор сетевой Furutech FI-28M (G) ( furutech fi 28m (g) )",
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-28m-g",
       "cat": "Другое",
       "price": 12225,
       "descLen": 955,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-28m-g/",
-      "priority": -1088
-    },
-    {
-      "id": 264199,
-      "name": "Сетевой вкладыш Furutech FI-09 NCF (R ) ( furutech fi 09 ncf (r ) )",
-      "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%b2%d0%ba%d0%bb%d0%b0%d0%b4%d1%8b%d1%88-furutech-fi-09-ncf-r",
-      "cat": "Другое",
-      "price": 12225,
-      "descLen": 695,
       "gallery": 2,
       "specs": 3,
       "enriched": true,
       "reasons": [
         "gal:2"
       ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%b2%d0%ba%d0%bb%d0%b0%d0%b4%d1%8b%d1%88-furutech-fi-09-ncf-r/",
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-28m-g/",
       "priority": -1088
     },
     {
@@ -6410,22 +5690,6 @@
       "priority": -1089
     },
     {
-      "id": 264333,
-      "name": "Коннектор Furutech FT-H800 (R ) ( furutech ft h800 (r ) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-ft-h800-r",
-      "cat": "Другое",
-      "price": 11476,
-      "descLen": 712,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-ft-h800-r/",
-      "priority": -1089
-    },
-    {
       "id": 264044,
       "name": "Коннектор для наушников Acoustic Revive UltrasoneSony PLUG ( acoustic revive ultrasonesony plug )",
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-acoustic-revive-ultrasonesony-plug",
@@ -6455,22 +5719,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/39e2fbff691d3bd136617cbccd1197a1/",
-      "priority": -1089
-    },
-    {
-      "id": 264289,
-      "name": "Коннектор Furutech FP-126(R) ( furutech fp 126(r) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-126r",
-      "cat": "Другое",
-      "price": 11025,
-      "descLen": 945,
-      "gallery": 3,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-126r/",
       "priority": -1089
     },
     {
@@ -6544,29 +5792,13 @@
       "cat": "Другое",
       "price": 10353,
       "descLen": 998,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11m-n1-r/",
-      "priority": -1090
-    },
-    {
-      "id": 264175,
-      "name": "Коннектор сетевой Furutech FI-11 N1 ( R ) ( furutech fi 11 n1 ( r ) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-n1-r",
-      "cat": "Другое",
-      "price": 10229,
-      "descLen": 978,
       "gallery": 3,
       "specs": 3,
       "enriched": true,
       "reasons": [
         "gal:3"
       ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-n1-r/",
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11m-n1-r/",
       "priority": -1090
     },
     {
@@ -6631,38 +5863,6 @@
         "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-c15-ncfr/",
-      "priority": -1092
-    },
-    {
-      "id": 264178,
-      "name": "Коннектор сетевой Furutech FI-11 N1 (G) ( furutech fi 11 n1 (g) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-n1-g",
-      "cat": "Другое",
-      "price": 8108,
-      "descLen": 963,
-      "gallery": 3,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-n1-g/",
-      "priority": -1092
-    },
-    {
-      "id": 264179,
-      "name": "Коннектор сетевой Furutech FI-11 (Ag) ( furutech fi 11 (ag) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-ag",
-      "cat": "Другое",
-      "price": 8108,
-      "descLen": 1048,
-      "gallery": 3,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-ag/",
       "priority": -1092
     },
     {
@@ -6816,11 +6016,11 @@
       "cat": "Другое",
       "price": 6486,
       "descLen": 984,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-15m-plus-r/",
       "priority": -1094
@@ -6896,11 +6096,11 @@
       "cat": "Другое",
       "price": 5988,
       "descLen": 975,
-      "gallery": 1,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-11m-cu/",
       "priority": -1095
@@ -6912,11 +6112,11 @@
       "cat": "Другое",
       "price": 5988,
       "descLen": 1002,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-15m-plus-g/",
       "priority": -1095
@@ -7482,22 +6682,6 @@
       "priority": -1098
     },
     {
-      "id": 264290,
-      "name": "Коннектор Furutech FP-126(R) ( furutech fp 126(r) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-126r-2",
-      "cat": "Другое",
-      "price": 2730,
-      "descLen": 1019,
-      "gallery": 3,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-126r-2/",
-      "priority": -1098
-    },
-    {
       "id": 264330,
       "name": "Коннектор Furutech FT-608mF (R ) ( furutech ft 608mf (r ) )",
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-ft-608mf-r",
@@ -7511,22 +6695,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-ft-608mf-r/",
-      "priority": -1098
-    },
-    {
-      "id": 264336,
-      "name": "Переходник Furutech F 63 S (G) ( furutech f 63 s (g) )",
-      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-g",
-      "cat": "Другое",
-      "price": 2678,
-      "descLen": 804,
-      "gallery": 2,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-63-s-g/",
       "priority": -1098
     },
     {
@@ -7776,11 +6944,11 @@
       "cat": "Другое",
       "price": 0,
       "descLen": 994,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%89%d0%b0%d1%8e%d1%89%d0%b8%d0%b5-%d1%81%d1%82%d0%be%d0%b9%d0%ba%d0%b8-acoustic-revive-rwl-3/",
       "priority": -1100
@@ -7824,29 +6992,13 @@
       "cat": "Другое",
       "price": 0,
       "descLen": 1015,
-      "gallery": 2,
+      "gallery": 3,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11m-n1-g/",
-      "priority": -1100
-    },
-    {
-      "id": 264180,
-      "name": "Коннектор сетевой Furutech FI-11 (Cu) ( furutech fi 11 (cu) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-cu",
-      "cat": "Другое",
-      "price": 0,
-      "descLen": 960,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-cu/",
       "priority": -1100
     },
     {
@@ -7863,54 +7015,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0-%d0%bd%d0%b0-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d1%83-furutech-duplex-cover-plate-104-d/",
-      "priority": -1100
-    },
-    {
-      "id": 264332,
-      "name": "Коннектор Furutech CF-H800 (R ) ( furutech cf h800 (r ) )",
-      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-cf-h800-r",
-      "cat": "Другое",
-      "price": 0,
-      "descLen": 791,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-cf-h800-r/",
-      "priority": -1100
-    },
-    {
-      "id": 264337,
-      "name": "Переходник Furutech F 35 (R) ( furutech f 35 (r) )",
-      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-r",
-      "cat": "Другое",
-      "price": 0,
-      "descLen": 800,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-r/",
-      "priority": -1100
-    },
-    {
-      "id": 264338,
-      "name": "Переходник Furutech F 35 (G) ( furutech f 35 (g) )",
-      "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-g",
-      "cat": "Другое",
-      "price": 0,
-      "descLen": 802,
-      "gallery": 1,
-      "specs": 3,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-g/",
       "priority": -1100
     },
     {
@@ -7959,22 +7063,6 @@
         "gal:3"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-783m-r/",
-      "priority": -1100
-    },
-    {
-      "id": 264520,
-      "name": "Фоно кабель SAEC  SCX-R5000 ( saec scx r5000 )",
-      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-scx-r5000",
-      "cat": "Кабели",
-      "price": 0,
-      "descLen": 993,
-      "gallery": 2,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-scx-r5000/",
       "priority": -1100
     },
     {
