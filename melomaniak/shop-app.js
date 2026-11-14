@@ -433,6 +433,7 @@
   function scrubWooArtifacts(s) {
     return String(s || "")
       .replace(/@@@[^@]*@@@/g, "")
+      .replace(/@@@/g, "")
       .replace(/\s{2,}/g, " ")
       .trim();
   }
@@ -441,17 +442,46 @@
     return scrubWooArtifacts((el && el.textContent) || "").replace(/\s+/g, " ").trim();
   }
 
-  function isLoneStrongParagraph(p) {
-    if (!p || p.tagName !== "P") return false;
-    const kids = Array.from(p.childNodes).filter((n) => {
+  function significantKids(p) {
+    return Array.from((p && p.childNodes) || []).filter((n) => {
       if (n.nodeType === 3) return String(n.textContent || "").trim().length > 0;
       return n.nodeType === 1;
     });
+  }
+
+  function isLoneStrongParagraph(p) {
+    if (!p || p.tagName !== "P") return false;
+    const kids = significantKids(p);
     if (kids.length !== 1 || kids[0].nodeType !== 1) return false;
     const only = kids[0];
     if (!/^(STRONG|B)$/i.test(only.tagName)) return false;
     const t = plainTextOf(only);
     return t.length >= 8 && t.length <= 160;
+  }
+
+  /** Lone <em>/<i> title lines from Woo (e.g. ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ). */
+  function isLoneEmParagraph(p) {
+    if (!p || p.tagName !== "P") return false;
+    const kids = significantKids(p);
+    if (kids.length !== 1 || kids[0].nodeType !== 1) return false;
+    const only = kids[0];
+    if (!/^(EM|I)$/i.test(only.tagName)) return false;
+    const t = plainTextOf(only);
+    return t.length >= 8 && t.length <= 120;
+  }
+
+  function makeSubhead(text) {
+    const sub = document.createElement("p");
+    sub.className = "pdp-prose-sub";
+    sub.textContent = text;
+    return sub;
+  }
+
+  function makeProseP(nodes) {
+    const body = document.createElement("p");
+    body.className = "pdp-prose-p";
+    (nodes || []).forEach((n) => body.appendChild(n.cloneNode(true)));
+    return body;
   }
 
   /** Woo often uses <p><strong>Title</strong><br>body…</p> — split without inventing copy. */
@@ -496,15 +526,111 @@
       }
       bodyNodes.push(n);
     }
-    const sub = document.createElement("p");
-    sub.className = "pdp-prose-sub";
-    sub.textContent = title;
-    const body = document.createElement("p");
-    body.className = "pdp-prose-p";
-    bodyNodes.forEach((n) => body.appendChild(n.cloneNode(true)));
+    const body = makeProseP(bodyNodes);
     if (!plainTextOf(body)) return false;
-    p.replaceWith(sub, body);
+    p.replaceWith(makeSubhead(title), body);
     return true;
+  }
+
+  /**
+   * Mid-paragraph sourced breaks: …text<br><strong>Title</strong> rest…
+   * Splits into body + gold subhead + rest — titles only from source strong.
+   */
+  function splitMidBrStrongParagraph(p) {
+    if (!p || p.tagName !== "P") return false;
+    const kids = Array.from(p.childNodes);
+    let brIdx = -1;
+    let strongIdx = -1;
+    for (let i = 0; i < kids.length; i++) {
+      const n = kids[i];
+      if (n.nodeType === 1 && /^BR$/i.test(n.tagName)) {
+        let j = i + 1;
+        while (j < kids.length && kids[j].nodeType === 3 && !String(kids[j].textContent || "").trim()) j++;
+        if (j < kids.length && kids[j].nodeType === 1 && /^(STRONG|B)$/i.test(kids[j].tagName)) {
+          const title = plainTextOf(kids[j]);
+          // Model codes like «X-i1100» are short; still sourced titles.
+          if (title.length >= 4 && title.length <= 120) {
+            brIdx = i;
+            strongIdx = j;
+            break;
+          }
+        }
+      }
+    }
+    if (brIdx < 0 || strongIdx < 0) return false;
+    const before = kids.slice(0, brIdx);
+    const title = plainTextOf(kids[strongIdx]);
+    const after = kids.slice(strongIdx + 1);
+    const parts = [];
+    const beforeP = makeProseP(before);
+    if (plainTextOf(beforeP)) parts.push(beforeP);
+    parts.push(makeSubhead(title));
+    const afterP = makeProseP(after);
+    if (plainTextOf(afterP)) parts.push(afterP);
+    if (parts.length < 2) return false;
+    p.replaceWith(...parts);
+    return true;
+  }
+
+  /** Split only on sourced <br><br> (or BR + whitespace + BR) — never invent breaks. */
+  function splitParagraphOnDoubleBreaks(p) {
+    if (!p || p.tagName !== "P") return false;
+    const kids = Array.from(p.childNodes);
+    const chunks = [];
+    let cur = [];
+    let i = 0;
+    let splitOnce = false;
+    while (i < kids.length) {
+      const n = kids[i];
+      if (n.nodeType === 1 && /^BR$/i.test(n.tagName)) {
+        let j = i + 1;
+        while (j < kids.length && kids[j].nodeType === 3 && !String(kids[j].textContent || "").trim()) j++;
+        if (j < kids.length && kids[j].nodeType === 1 && /^BR$/i.test(kids[j].tagName)) {
+          if (cur.length) chunks.push(cur);
+          cur = [];
+          splitOnce = true;
+          i = j + 1;
+          continue;
+        }
+      }
+      cur.push(n);
+      i++;
+    }
+    if (!splitOnce) return false;
+    if (cur.length) chunks.push(cur);
+    const parts = chunks
+      .map((nodes) => makeProseP(nodes))
+      .filter((el) => plainTextOf(el));
+    if (parts.length < 2) return false;
+    p.replaceWith(...parts);
+    return true;
+  }
+
+  /** Group consecutive plain paragraphs into a full-width 2-col editorial flow. */
+  function wrapPlainProseFlows(root) {
+    const kids = Array.from(root.children);
+    let run = [];
+    function flush() {
+      if (!run.length) return;
+      const chars = run.reduce((n, el) => n + plainTextOf(el).length, 0);
+      const longEnough = chars >= 420 || run.some((el) => plainTextOf(el).length >= 360);
+      if (longEnough && run.length >= 1) {
+        const flow = document.createElement("div");
+        flow.className = "pdp-prose-flow";
+        run[0].parentNode.insertBefore(flow, run[0]);
+        run.forEach((el) => flow.appendChild(el));
+      }
+      run = [];
+    }
+    kids.forEach((el) => {
+      const isPlain =
+        el.tagName === "P" &&
+        el.classList.contains("pdp-prose-p") &&
+        !el.classList.contains("pdp-prose-sub");
+      if (isPlain) run.push(el);
+      else flush();
+    });
+    flush();
   }
 
   function chipLabelFromLi(li) {
@@ -574,6 +700,18 @@
       const block = n.closest("div,p") || n;
       block.remove();
     });
+    // @@@ store shells: remove chrome tags; unwrap DIV/SPAN so product copy survives.
+    wrap.querySelectorAll("[class*='@@@'], [id*='@@@']").forEach((n) => {
+      if (/^(H1|H2|H3|H4|P|UL|OL|LI|TABLE|THEAD|TBODY|TR|TH|TD)$/.test(n.tagName)) return;
+      if (/^(A|IMG|BUTTON|NAV|ASIDE|HEADER|FOOTER|FORM)$/.test(n.tagName)) {
+        n.remove();
+        return;
+      }
+      const parent = n.parentNode;
+      if (!parent) return;
+      while (n.firstChild) parent.insertBefore(n.firstChild, n);
+      parent.removeChild(n);
+    });
 
     function sanitizeNode(node) {
       if (node.nodeType === 3) {
@@ -631,15 +769,58 @@
     }
     Array.from(wrap.childNodes).forEach(sanitizeNode);
 
-    // Promote sourced strong leads to gold subheads.
-    Array.from(wrap.querySelectorAll("p")).forEach((p) => {
-      if (splitStrongLeadParagraph(p)) return;
-      if (!isLoneStrongParagraph(p)) return;
-      const sub = document.createElement("p");
-      sub.className = "pdp-prose-sub";
-      sub.textContent = plainTextOf(p);
-      p.replaceWith(sub);
-    });
+    // Drop leaked tracking / marketplace chrome (not product copy).
+    (function stripTrackingChrome() {
+      const junkRe =
+        /\b(yaCounter|yaParams|ym\s*\(|gtag\s*\(|GTM-|googletagmanager|mc\.yandex\.ru|dataLayer|_am_region_set|document\.scripts)\b/i;
+      const chromeExact =
+        /^(войти|москва|купить|теги|рекомендуем|бесплатная доставка|доставим послезавтра|услуга срочной доставки|записаться на прослушивание|в магазине на электрозаводской|отлично)$/i;
+      const chromeSoft =
+        /(?:\|\s*)?купить\s+в\s+магазине|аудиомания|в\s+наличии\s*\d|отзыв\w*\s*\d+\s*\/\s*5/i;
+      Array.from(wrap.querySelectorAll("p,title,h1,h2,h3,h4,a,strong")).forEach((el) => {
+        const t = plainTextOf(el);
+        if (!t) {
+          el.remove();
+          return;
+        }
+        if (
+          el.tagName === "TITLE" ||
+          junkRe.test(t) ||
+          /^var\s+\w+\s*=/.test(t) ||
+          chromeExact.test(t) ||
+          chromeSoft.test(t)
+        ) {
+          el.remove();
+        }
+      });
+      Array.from(wrap.querySelectorAll("p")).forEach((p) => {
+        if (!plainTextOf(p)) p.remove();
+      });
+      // Lone BRs left as top-level chrome
+      Array.from(wrap.childNodes).forEach((n) => {
+        if (n.nodeType === 1 && n.tagName === "BR") n.remove();
+      });
+    })();
+
+    // Source-only splits: double <br>, then mid <br><strong>, then lead <strong><br>.
+    (function applySourceBreaks() {
+      let guard = 0;
+      while (guard++ < 40) {
+        const p = Array.from(wrap.querySelectorAll("p")).find(splitParagraphOnDoubleBreaks);
+        if (!p) break;
+      }
+      guard = 0;
+      while (guard++ < 40) {
+        const hit = Array.from(wrap.querySelectorAll("p")).some(splitMidBrStrongParagraph);
+        if (!hit) break;
+      }
+      Array.from(wrap.querySelectorAll("p")).forEach((p) => {
+        if (splitStrongLeadParagraph(p)) return;
+        if (isLoneStrongParagraph(p) || isLoneEmParagraph(p)) {
+          p.replaceWith(makeSubhead(plainTextOf(p)));
+        }
+      });
+    })();
 
     // Pull-quote: only an opening short paragraph (sourced), never mid-article.
     (function promoteOpeningPullquote() {
@@ -656,6 +837,7 @@
         seenBody++;
         const t = plainTextOf(el);
         if (t.length < 24 || t.length > 180) return;
+        if (/\|\s*купить\b/i.test(t) || /аудиомания/i.test(t)) return;
         const q = document.createElement("blockquote");
         q.className = "pdp-pullquote";
         q.textContent = t;
@@ -664,11 +846,17 @@
       }
     })();
 
+    // Drop empty lists left after chrome unwraps.
+    Array.from(wrap.querySelectorAll("ul,ol")).forEach((list) => {
+      const items = Array.from(list.children).filter((c) => c.tagName === "LI" && plainTextOf(c));
+      if (!items.length) list.remove();
+    });
+
     // Feature chips from first feature <ul> — labels only from sourced li leads.
     let chipsHtml = "";
     const firstUl = wrap.querySelector("ul");
     if (firstUl) {
-      const items = Array.from(firstUl.children).filter((c) => c.tagName === "LI");
+      const items = Array.from(firstUl.children).filter((c) => c.tagName === "LI" && plainTextOf(c));
       firstUl.classList.add("pdp-feature-list");
       const labels = items.map(chipLabelFromLi).filter(Boolean).slice(0, 8);
       if (labels.length >= 3) {
@@ -678,7 +866,20 @@
       }
     }
 
-    wrap.querySelectorAll("p:not(.pdp-prose-sub)").forEach((p) => p.classList.add("pdp-prose-p"));
+    wrap.querySelectorAll("p:not(.pdp-prose-sub)").forEach((p) => {
+      p.classList.add("pdp-prose-p");
+      if (plainTextOf(p).length >= 360) p.classList.add("pdp-prose-p--long");
+    });
+
+    wrapPlainProseFlows(wrap);
+
+    // Drop-cap on first plain paragraph in the editorial body (sourced letter only).
+    const firstPlain =
+      wrap.querySelector(".pdp-prose-flow > .pdp-prose-p") ||
+      wrap.querySelector(".pdp-prose-p");
+    if (firstPlain && plainTextOf(firstPlain).length >= 80) {
+      firstPlain.classList.add("pdp-prose-p--drop");
+    }
 
     return { chipsHtml, bodyHtml: wrap.innerHTML };
   }
