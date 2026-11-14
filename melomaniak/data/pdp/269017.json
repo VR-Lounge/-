@@ -9,9 +9,9 @@
   "price": 669990,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/5a0558bec17781d5e97492d33bbd4106/",
-  "descriptionHtml": "<p>Emotiva RMC-1L — 16-канальный процессор той же платформы, что RMC-1: Dirac Live, HDMI 2.1 и 16 балансных выходов в конфигурации L-серии. В листинге — с DIRAC.</p>\n<ul><li>16 ch</li><li>Dirac Live</li><li>HDMI 2.1</li><li>XLR outs</li><li>Atmos</li></ul>\n<h2>Возможности</h2>\n<p>8× HDMI 2.1, S/PDIF, AES/EBU, USB, сеть. 16× XLR, Zone 2, наушники. Dirac Live / Atmos / DTS:X Pro по спецификации производителя.</p>",
+  "descriptionHtml": "<p>Emotiva RMC-1L + Dirac — облегчённая/L-версия 16-канального процессора RMC с Dirac Live. Та же идея раздельного AV-тракта: процессор отдельно, мощники Emotiva/иные — стойкой ниже.</p>\n<ul><li>16 каналов balanced XLR</li><li>Dirac Live</li><li>Линейка RMC-1L</li></ul>\n<aside><p><strong>RMC-1 vs 1L.</strong> Сверить отличия I/O и комплектации Dirac по паспорту экземпляра — не усредняем без HITL.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-процессор Emotiva RMC-1L + DIRAC — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>",
   "shortHtml": "<p>AV-процессор, Dolby TrueHD, DTS HD Master Audio, 4K, HDCP 2.2 в комплекте с DIRAC KIT. Габариты (ШхВхГ): 432 ? 146 ? 394 мм, масса: 10 кг.</p>",
-  "descriptionText": "Emotiva RMC-1L — 16-канальный процессор той же платформы, что RMC-1: Dirac Live, HDMI 2.1 и 16 балансных выходов в конфигурации L-серии. В листинге — с DIRAC.\n\n 16 ch\n Dirac Live\n HDMI 2.1\n XLR outs\n Atmos\n\n Возможности\n\n 8× HDMI 2.1, S/PDIF, AES/EBU, USB, сеть. 16× XLR, Zone 2, наушники. Dirac Live / Atmos / DTS:X Pro по спецификации производителя.",
+  "descriptionText": "Emotiva RMC-1L + Dirac — облегчённая/L-версия 16-канального процессора RMC с Dirac Live. Та же идея раздельного AV-тракта: процессор отдельно, мощники Emotiva/иные — стойкой ниже.\n\n 16 каналов balanced XLR\n Dirac Live\n Линейка RMC-1L\n\n RMC-1 vs 1L. Сверить отличия I/O и комплектации Dirac по паспорту экземпляра — не усредняем без HITL.\n\n Карточка салона\n\n AV-процессор Emotiva RMC-1L + DIRAC — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).\n\n HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.",
   "specs": [
     {
       "label": "Каналы",
@@ -125,9 +125,9 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://emotiva.com/products/rmc-1l-16-channel-dolby-atmos-dts-x-cinema-processor",
-    "https://emotiva.com/products/rmc-1l-cr8-8k-certified-refurbished"
+    "https://emotiva.com/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:57:48Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w3-2026-11"
 }

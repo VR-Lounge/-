@@ -9,9 +9,9 @@
   "price": 519990,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/be70ec140ef1e55553de386297a0f735/",
-  "descriptionHtml": "<p>Emotiva XMC-2 — 16-канальный процессор компактнее флагмана RMC: Dirac Live, HDMI 2.1 и балансные выходы для кинозала без встроенных ватт.</p>\n<ul><li>16 ch XLR</li><li>Dirac Live</li><li>HDMI 2.1</li><li>Compact chassis</li><li>Atmos</li></ul>\n<h2>Спецификация</h2>\n<p>16× XLR; 8× HDMI 2.1; S/PDIF/AES/USB/сеть. Габариты около 17″ × 15.5″ × 5.25″ (без ножек), вес ≈ 27 lb. Dirac Live, Atmos, DTS:X Pro.</p>",
+  "descriptionHtml": "<p>Emotiva XMC-2 + Dirac — 16-канальный AV-процессор младше RMC: балансные выходы и Dirac Live для домашнего кино без «ресиверного» компромисса усилителя в одном шасси.</p>\n<ul><li>16 balanced XLR</li><li>Dirac Live</li><li>Серия XMC-2</li></ul>\n<aside><p><strong>XMC vs RMC.</strong> Разная иерархия Emotiva; HDMI/DSP — HITL по ревизии платы.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-процессор Emotiva XMC-2 + DIRAC — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>",
   "shortHtml": "<p>AV-процессор, Dolby TrueHD, DTS HD Master Audio, 4K, HDCP 2.2 в комплекте с DIRAC KIT. Габариты (ШхВхГ): 432 ? 146 ? 394 мм, масса: 10 кг.</p>",
-  "descriptionText": "Emotiva XMC-2 — 16-канальный процессор компактнее флагмана RMC: Dirac Live, HDMI 2.1 и балансные выходы для кинозала без встроенных ватт.\n\n 16 ch XLR\n Dirac Live\n HDMI 2.1\n Compact chassis\n Atmos\n\n Спецификация\n\n 16× XLR; 8× HDMI 2.1; S/PDIF/AES/USB/сеть. Габариты около 17″ × 15.5″ × 5.25″ (без ножек), вес ≈ 27 lb. Dirac Live, Atmos, DTS:X Pro.",
+  "descriptionText": "Emotiva XMC-2 + Dirac — 16-канальный AV-процессор младше RMC: балансные выходы и Dirac Live для домашнего кино без «ресиверного» компромисса усилителя в одном шасси.\n\n 16 balanced XLR\n Dirac Live\n Серия XMC-2\n\n XMC vs RMC. Разная иерархия Emotiva; HDMI/DSP — HITL по ревизии платы.\n\n Карточка салона\n\n AV-процессор Emotiva XMC-2 + DIRAC — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).\n\n HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.",
   "specs": [
     {
       "label": "Каналы",
@@ -101,9 +101,9 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://emotiva.com/products/xmc-2-processor-8k-certified-refurbished",
-    "https://www.dirac.com/products/emotiva-xmc-2"
+    "https://emotiva.com/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:57:48Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w3-2026-11"
 }

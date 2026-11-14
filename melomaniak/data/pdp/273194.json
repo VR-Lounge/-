@@ -9,9 +9,9 @@
   "price": 459900,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/a71e48234f5945a4febf00a3d4587bf1/",
-  "descriptionHtml": "<p>Marantz AV8805A — AV-процессор 13.2 с HEOS и Audyssey MultEQ XT32: pre-outs RCA/XLR для серьёзного кинозала, где усиление — отдельная история.</p>\n<ul><li>13.2 processor</li><li>Audyssey XT32</li><li>HEOS</li><li>8K/4K HDMI</li><li>15.2 pre-outs</li></ul>\n<h2>Связь</h2>\n<p>8× HDMI IN / 3× OUT, eARC; Ethernet, Wi‑Fi, Bluetooth, AirPlay 2. Pre-outs 15.2 RCA и 15.2 XLR. Atmos, DTS:X Pro, IMAX Enhanced, Auro-3D.</p>\n<h2>Корпус</h2>\n<p>440 × 410 × 185 мм (с антеннами горизонтально), 13,7 кг; потребление 90 Вт.</p>",
+  "descriptionHtml": "<p>Marantz AV8805A — AV-процессор 13.2 для кинозала раздельного тракта. Пре/проц без усилителей в шасси — к внешним мощникам.</p>\n<ul><li>AV-процессор 13.2</li><li>Серия AV8805A</li></ul>\n<aside><p><strong>A-ревизия.</strong> HDMI/HDCP обновления относительно 8805; HITL по плате.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-процессор Marantz AV8805A — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>",
   "shortHtml": "",
-  "descriptionText": "Marantz AV8805A — AV-процессор 13.2 с HEOS и Audyssey MultEQ XT32: pre-outs RCA/XLR для серьёзного кинозала, где усиление — отдельная история.\n\n 13.2 processor\n Audyssey XT32\n HEOS\n 8K/4K HDMI\n 15.2 pre-outs\n\n Связь\n\n 8× HDMI IN / 3× OUT, eARC; Ethernet, Wi‑Fi, Bluetooth, AirPlay 2. Pre-outs 15.2 RCA и 15.2 XLR. Atmos, DTS:X Pro, IMAX Enhanced, Auro-3D.\n\n Корпус\n\n 440 × 410 × 185 мм (с антеннами горизонтально), 13,7 кг; потребление 90 Вт.",
+  "descriptionText": "Marantz AV8805A — AV-процессор 13.2 для кинозала раздельного тракта. Пре/проц без усилителей в шасси — к внешним мощникам.\n\n AV-процессор 13.2\n Серия AV8805A\n\n A-ревизия. HDMI/HDCP обновления относительно 8805; HITL по плате.\n\n Карточка салона\n\n AV-процессор Marantz AV8805A — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).\n\n HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.",
   "specs": [
     {
       "label": "Тип",
@@ -90,8 +90,9 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://www.marantz.com/en/product/av-processors-pre-amplifiers/av8805a/AV8805A.html"
+    "https://www.marantz.com/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:57:48Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w3-2026-11"
 }

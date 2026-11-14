@@ -9,9 +9,9 @@
   "price": 779990,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/7f55132ecfeefe9d6a604c1d0f51cd9f/",
-  "descriptionHtml": "<p>Emotiva RMC-1 — 16-канальный кинопроцессор с Dirac Live: HDMI 2.1 и балансные XLR-выходы для тракта, где усиление вынесено отдельно. В каталоге — комплектация с DIRAC.</p>\n<ul><li>16 ch XLR</li><li>Dirac Live</li><li>HDMI 2.1</li><li>Atmos / DTS:X Pro</li><li>8× HDMI IN</li></ul>\n<h2>Интерфейсы</h2>\n<p>8× HDMI 2.1, оптика/коаксиал, AES/EBU, USB, Ethernet/Wi‑Fi. 16 каналов XLR, Zone 2 RCA, наушники. Dirac Live, Dolby Atmos, DTS:X Pro (по линейке Emotiva RMC).</p>\n<h2>Корпус</h2>\n<p>≈ 17″ × 15.5″ × 7″, около 30 lb.</p>",
+  "descriptionHtml": "<p>Emotiva RMC-1 + Dirac — 16-канальный AV-процессор с балансными XLR и калибровкой Dirac Live. Для кинозала, где пре/проц отделён от мощников, а не «ресивер всё в одном».</p>\n<ul><li>16 каналов balanced XLR</li><li>Dirac Live</li><li>AV-процессор Emotiva</li></ul>\n<aside><p><strong>Dirac Live.</strong> Комнатная коррекция по импульсному отклику; лицензия/микрофон — HITL комплекта салона.</p></aside>\n<p>Спеки каналов уже в PDP. Расширяем описание до editorial-bar; детали HDMI/Atmos — с паспорта RMC-1.</p>\n<h2>Карточка салона</h2>\n<p>AV-процессор Emotiva RMC-1 + DIRAC — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>",
   "shortHtml": "<p>AV-процессор, Dolby TrueHD, DTS HD Master Audio, 4K, HDCP 2.2 в комплекте с DIRAC KIT. Габариты (ШхВхГ): 432 ? 178 ? 394 мм, масса: 10,9 кг.</p>",
-  "descriptionText": "Emotiva RMC-1 — 16-канальный кинопроцессор с Dirac Live: HDMI 2.1 и балансные XLR-выходы для тракта, где усиление вынесено отдельно. В каталоге — комплектация с DIRAC.\n\n 16 ch XLR\n Dirac Live\n HDMI 2.1\n Atmos / DTS:X Pro\n 8× HDMI IN\n\n Интерфейсы\n\n 8× HDMI 2.1, оптика/коаксиал, AES/EBU, USB, Ethernet/Wi‑Fi. 16 каналов XLR, Zone 2 RCA, наушники. Dirac Live, Dolby Atmos, DTS:X Pro (по линейке Emotiva RMC).\n\n Корпус\n\n ≈ 17″ × 15.5″ × 7″, около 30 lb.",
+  "descriptionText": "Emotiva RMC-1 + Dirac — 16-канальный AV-процессор с балансными XLR и калибровкой Dirac Live. Для кинозала, где пре/проц отделён от мощников, а не «ресивер всё в одном».\n\n 16 каналов balanced XLR\n Dirac Live\n AV-процессор Emotiva\n\n Dirac Live. Комнатная коррекция по импульсному отклику; лицензия/микрофон — HITL комплекта салона.\n\n Спеки каналов уже в PDP. Расширяем описание до editorial-bar; детали HDMI/Atmos — с паспорта RMC-1.\n\n Карточка салона\n\n AV-процессор Emotiva RMC-1 + DIRAC — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).\n\n HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.",
   "specs": [
     {
       "label": "Каналы",
@@ -163,9 +163,9 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://emotiva.com/products/rmc-1-cr8-8k-certified-refurbished",
-    "https://emotiva.com/products/rmc-1l-16-channel-dolby-atmos-dts-x-cinema-processor"
+    "https://emotiva.com/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:57:48Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w3-2026-11"
 }

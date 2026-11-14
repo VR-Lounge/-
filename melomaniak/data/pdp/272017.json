@@ -9,9 +9,9 @@
   "price": 215286,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/546746f818496f0604378be0f7ef3a73/",
-  "descriptionHtml": "<p>iFi audio Aurora — all-in-one система: PureEmotion, TrueBass, ART room tailoring и ESS Sabre. Bluetooth с aptX HD/LDAC и сетевые входы в одном корпусе 15 кг.</p>\n<ul><li>PureEmotion</li><li>ART room tailor</li><li>ESS Sabre</li><li>aptX HD / LDAC</li><li>15 кг</li></ul>\n<h2>Питание/корпус</h2>\n<p>Макс. 320 VA; 59 × 27 × 28 см, 15 кг. Ethernet/Wi‑Fi/optical/coax/USB/RCA/3,5 мм/microSD.</p>",
+  "descriptionHtml": "<p>iFi audio Aurora — беспроводная all-in-one система: стриминг и акустика в одном дизайне. Для комнаты без классической стойки.</p>\n<ul><li>All-in-one wireless</li><li>Серия Aurora</li></ul>\n<aside><p><strong>Aurora.</strong> Не пара полочников; HITL по версии прошивки и входам.</p></aside>\n<h2>Карточка салона</h2>\n<p>Беспроводная Hi-Fi-акустика iFi audio Aurora — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>",
   "shortHtml": "",
-  "descriptionText": "iFi audio Aurora — all-in-one система: PureEmotion, TrueBass, ART room tailoring и ESS Sabre. Bluetooth с aptX HD/LDAC и сетевые входы в одном корпусе 15 кг.\n\n PureEmotion\n ART room tailor\n ESS Sabre\n aptX HD / LDAC\n 15 кг\n\n Питание/корпус\n\n Макс. 320 VA; 59 × 27 × 28 см, 15 кг. Ethernet/Wi‑Fi/optical/coax/USB/RCA/3,5 мм/microSD.",
+  "descriptionText": "iFi audio Aurora — беспроводная all-in-one система: стриминг и акустика в одном дизайне. Для комнаты без классической стойки.\n\n All-in-one wireless\n Серия Aurora\n\n Aurora. Не пара полочников; HITL по версии прошивки и входам.\n\n Карточка салона\n\n Беспроводная Hi-Fi-акустика iFi audio Aurora — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).\n\n HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.",
   "specs": [
     {
       "label": "Тип",
@@ -106,8 +106,9 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://ifi-audio.com/products/aurora"
+    "https://ifi-audio.com/"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:57:48Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w3-2026-11"
 }

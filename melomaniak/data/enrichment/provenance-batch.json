@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-14T12:50:04Z",
-  "enrichedCount": 218,
+  "generatedAt": "2026-11-14T12:57:48Z",
+  "enrichedCount": 251,
   "products": {
     "264008": {
       "name": "USB кабель Acoustic Revive RUT-1 ( usb acoustic revive rut 1 )",
@@ -15,12 +15,13 @@
     "264045": {
       "name": "Разьём для наушников Acoustic Revive Headphone Plug for SHURE ( acoustic revive headphone plug for shure )",
       "sources": [
-        "https://acoustic-revive.com/"
+        "https://acousticrevive.jp/"
       ],
-      "specsCount": 2,
+      "specsCount": 4,
       "galleryCount": 1,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 1058,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "264046": {
       "name": "Фоно коннектор Acoustic Revive Phone Jack (Stereo) [RPJ-1ST] ( acoustic revive phone jack (stereo) [rpj 1st] )",
@@ -222,7 +223,8 @@
       "specsCount": 3,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 869,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "268750": {
       "name": "Предусилитель Emotiva PT-2",
@@ -309,32 +311,35 @@
     "268834": {
       "name": "Многоканальный усилитель мощности Emotiva A5",
       "sources": [
-        "https://emotiva.com/products/basx-a5-five-channel-power-amplifier-1"
+        "https://emotiva.com/"
       ],
       "specsCount": 5,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 773,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "268845": {
       "name": "Многоканальный усилитель мощности Emotiva A6",
       "sources": [
-        "https://emotiva.com/products/basx-a6-six-channel-power-amplifier"
+        "https://emotiva.com/"
       ],
       "specsCount": 3,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 773,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "268856": {
       "name": "Многоканальный усилитель мощности Emotiva A7",
       "sources": [
-        "https://emotiva.com/products/basx-a7-seven-channel-power-amplifier-1"
+        "https://emotiva.com/"
       ],
       "specsCount": 3,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 773,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "268867": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-3 Gen3",
@@ -419,12 +424,13 @@
     "268974": {
       "name": "Многоканальный усилитель мощности Emotiva A4",
       "sources": [
-        "https://emotiva.com/products/basx-a4-four-channel-power-amplifier"
+        "https://emotiva.com/"
       ],
       "specsCount": 5,
       "galleryCount": 9,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 773,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "268984": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-DR3",
@@ -439,55 +445,57 @@
     "268996": {
       "name": "AV-процессор Emotiva MC1",
       "sources": [
-        "https://emotiva.com/collections/all/products/basx-mc1-13-2-channel-dolby-atmos-dts-x-cinema-processor"
+        "https://emotiva.com/"
       ],
       "specsCount": 5,
       "galleryCount": 9,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 681,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269006": {
       "name": "AV-процессор Emotiva XMC-2 + DIRAC",
       "sources": [
-        "https://emotiva.com/products/xmc-2-processor-8k-certified-refurbished",
-        "https://www.dirac.com/products/emotiva-xmc-2"
+        "https://emotiva.com/"
       ],
       "specsCount": 5,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 705,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269017": {
       "name": "AV-процессор Emotiva RMC-1L + DIRAC",
       "sources": [
-        "https://emotiva.com/products/rmc-1l-16-channel-dolby-atmos-dts-x-cinema-processor",
-        "https://emotiva.com/products/rmc-1l-cr8-8k-certified-refurbished"
+        "https://emotiva.com/"
       ],
       "specsCount": 7,
       "galleryCount": 12,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 762,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269030": {
       "name": "AV-процессор Emotiva RMC-1 + DIRAC",
       "sources": [
-        "https://emotiva.com/products/rmc-1-cr8-8k-certified-refurbished",
-        "https://emotiva.com/products/rmc-1l-16-channel-dolby-atmos-dts-x-cinema-processor"
+        "https://emotiva.com/"
       ],
       "specsCount": 7,
       "galleryCount": 18,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 855,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269153": {
       "name": "Активный сабвуфер Klipsch R-101SW",
       "sources": [
-        "https://d2um2qdswy1tb0.cloudfront.net/spec-sheets/Reference-R-101SW-Spec-Sheet.pdf?v=1718394610"
+        "https://www.klipsch.com/"
       ],
       "specsCount": 6,
       "galleryCount": 13,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 635,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269167": {
       "name": "Активный сабвуфер Klipsch R-121SW",
@@ -502,22 +510,24 @@
     "269184": {
       "name": "Активный сабвуфер Klipsch RP 1200 SW",
       "sources": [
-        "https://assets.klipsch.com/product-specsheets/RP-1200SW_Spec-Sheet_v02-1.pdf"
+        "https://www.klipsch.com/"
       ],
       "specsCount": 6,
       "galleryCount": 17,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 734,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269327": {
       "name": "Активная полочная акустика Klipsch The Nines McLaren",
       "sources": [
-        "https://www.klipsch.com/uk/products/the-nines-powered-speakers-mclaren"
+        "https://www.klipsch.com/"
       ],
       "specsCount": 4,
       "galleryCount": 13,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 732,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269341": {
       "name": "Беспроводная Hi-Fi-акустика Klipsch The One Plus",
@@ -532,12 +542,13 @@
     "269350": {
       "name": "Беспроводная Hi-Fi-акустика Klipsch The Three Plus",
       "sources": [
-        "https://www.klipsch.com/products/the-three-plus"
+        "https://www.klipsch.com/"
       ],
       "specsCount": 4,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 655,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269673": {
       "name": "AV-ресивер Onkyo TX-NR6100",
@@ -586,12 +597,13 @@
     "269763": {
       "name": "Стереоусилитель мощности Parasound 2250 v2",
       "sources": [
-        "https://parasound.com/products/nc-2250"
+        "https://parasound.com/"
       ],
       "specsCount": 5,
       "galleryCount": 4,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 702,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269768": {
       "name": "Стереоусилитель мощности Parasound A21+",
@@ -623,7 +635,7 @@
       "galleryCount": 6,
       "photosAdded": 0,
       "descLen": 729,
-      "enrichedAt": "2026-11-14T12:50:04Z"
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269782": {
       "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
@@ -845,13 +857,13 @@
     "269881": {
       "name": "Беспроводная Hi-Fi-акустика Cambridge Audio Evo One",
       "sources": [
-        "https://www.cambridgeaudio.com/row/en/products/hi-fi/evo/evo-one",
-        "https://manuals.cambridgeaudio.com/en/evo-one/technical-specifications"
+        "https://www.cambridgeaudio.com/"
       ],
       "specsCount": 5,
       "galleryCount": 15,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 690,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "269995": {
       "name": "Сетевой проигрыватель Cambridge Audio AXN10",
@@ -866,12 +878,13 @@
     "270005": {
       "name": "Сетевой проигрыватель Cambridge Audio MXN10",
       "sources": [
-        "https://www.cambridgeaudio.com/usa/en/products/hi-fi/mx/mxn10"
+        "https://www.cambridgeaudio.com/"
       ],
       "specsCount": 6,
       "galleryCount": 11,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 697,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "270017": {
       "name": "Сетевой проигрыватель Cambridge Audio CXN100",
@@ -910,13 +923,13 @@
     "270156": {
       "name": "Фонокорректор MOON 110LP v2",
       "sources": [
-        "https://simaudio.com/wp-content/uploads/2018/03/110LP-v2_Manual_EN.pdf",
         "https://simaudio.com/"
       ],
       "specsCount": 8,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 729,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "270163": {
       "name": "Стереоусилитель MOON ACE All-in-One",
@@ -935,30 +948,33 @@
       "sources": [
         "https://simaudio.com/en/product/250i-v2-integrated-amplifier/"
       ],
-      "specsCount": 5,
+      "specsCount": 6,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 597,
+      "enrichedAt": "2026-11-14T12:57:32Z"
     },
     "270208": {
       "name": "Стереоусилитель Naim Nait 50",
       "sources": [
-        "https://www.naimaudio.com/products/nait-50"
+        "https://www.naimaudio.com/"
       ],
-      "specsCount": 7,
+      "specsCount": 3,
       "galleryCount": 4,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 888,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "270213": {
       "name": "Стереоусилитель Naim Nait XS 3",
       "sources": [
-        "https://www.naimaudio.com/products/nait-xs3"
+        "https://www.naimaudio.com/"
       ],
-      "specsCount": 6,
+      "specsCount": 3,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 758,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "270220": {
       "name": "Стереоусилитель Naim Supernait 3",
@@ -989,37 +1005,41 @@
       "specsCount": 6,
       "galleryCount": 16,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 920,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "270397": {
       "name": "Стереоусилитель мощности Quad 303",
       "sources": [
-        "https://quad-hifi.co.uk/products/quad-303"
+        "https://quad-hifi.co.uk/"
       ],
-      "specsCount": 6,
+      "specsCount": 3,
       "galleryCount": 13,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 908,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "270454": {
       "name": "Виниловый проигрыватель Transrotor Dark Star",
       "sources": [
-        "https://transrotor.de/en/produkte/dark-star"
+        "https://www.transrotor.de/"
       ],
       "specsCount": 3,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 739,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "270473": {
       "name": "Виниловый проигрыватель Transrotor ZET 3",
       "sources": [
-        "https://transrotor.de/en/produkte/zet3"
+        "https://www.transrotor.de/"
       ],
       "specsCount": 4,
       "galleryCount": 4,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 667,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "270493": {
       "name": "Кабель USB Van den Hul Ultimate",
@@ -1123,7 +1143,7 @@
       "galleryCount": 6,
       "photosAdded": 0,
       "descLen": 557,
-      "enrichedAt": "2026-11-14T12:50:04Z"
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "270878": {
       "name": "Стереоусилитель Hegel H600",
@@ -1144,7 +1164,8 @@
       "specsCount": 5,
       "galleryCount": 7,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 878,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "271191": {
       "name": "Распределитель питания Nordost QBase QB8 Mark II",
@@ -1201,12 +1222,13 @@
     "272017": {
       "name": "Беспроводная Hi-Fi-акустика iFi audio Aurora",
       "sources": [
-        "https://ifi-audio.com/products/aurora"
+        "https://ifi-audio.com/"
       ],
       "specsCount": 4,
       "galleryCount": 11,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 659,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "272045": {
       "name": "Внешний ЦАП iFi audio ZEN Blue V3",
@@ -1241,12 +1263,13 @@
     "272075": {
       "name": "Портативный усилитель для наушников iFi audio Go Bar Kensei",
       "sources": [
-        "https://ifi-audio.com/products/go-bar-kensei"
+        "https://ifi-audio.com/"
       ],
       "specsCount": 4,
       "galleryCount": 5,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 699,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "272121": {
       "name": "Сетевой фильтр iFi audio Power Station",
@@ -1286,22 +1309,24 @@
     "272205": {
       "name": "CD-проигрыватель Shanling SCD 1.3",
       "sources": [
-        "https://en.shanling.com/article/101258"
+        "https://www.shanling.com/"
       ],
       "specsCount": 5,
       "galleryCount": 7,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 661,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "272213": {
       "name": "CD-проигрыватель Shanling EC mini",
       "sources": [
-        "https://en.shanling.com/article/101266"
+        "https://www.shanling.com/"
       ],
       "specsCount": 3,
       "galleryCount": 9,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 758,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "272243": {
       "name": "Портативный Hi-Fi-плеер Shanling M5 Ultra",
@@ -1318,12 +1343,13 @@
     "272271": {
       "name": "Портативный Hi-Fi-плеер Shanling M9 Plus",
       "sources": [
-        "https://en.shanling.com/article/101271"
+        "https://www.shanling.com/"
       ],
       "specsCount": 5,
       "galleryCount": 14,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 715,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "272300": {
       "name": "Портативный усилитель для наушников Shanling H5",
@@ -1351,13 +1377,13 @@
     "272551": {
       "name": "Виниловый проигрыватель Clearaudio Concept MC/S",
       "sources": [
-        "https://www.clearaudio.de/en/concept-mc/",
-        "https://www.clearaudio.de/"
+        "https://clearaudio.de/"
       ],
       "specsCount": 3,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 687,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "272602": {
       "name": "Виниловый проигрыватель Clearaudio Reference Jubilee",
@@ -1413,12 +1439,13 @@
     "272864": {
       "name": "Полочная акустика B 607 S3",
       "sources": [
-        "https://www.bowerswilkins.com/en/product/loudspeakers/607-s3/FP43958P.html"
+        "https://www.bowerswilkins.com/"
       ],
       "specsCount": 8,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 684,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "272914": {
       "name": "Беспроводные наушники B PX7 S2e",
@@ -1435,42 +1462,46 @@
     "273082": {
       "name": "AV-ресивер Denon AVR-S670H",
       "sources": [
-        "https://www.denon.com/en-us/product/av-receivers/avr-s670h/300778.html"
+        "https://www.denon.com/"
       ],
       "specsCount": 5,
       "galleryCount": 13,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 650,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "273106": {
       "name": "AV-ресивер Denon AVR-X580BT",
       "sources": [
-        "https://www.denon.com/en/product/av-receivers/avr-x580bt/AVRX580BT.html"
+        "https://www.denon.com/"
       ],
       "specsCount": 5,
       "galleryCount": 4,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 665,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "273136": {
       "name": "AV-ресивер Denon AVR-X1800H",
       "sources": [
-        "https://www.denon.com/product/av-receivers/avr-x1800h/AVRX1800H.html"
+        "https://www.denon.com/"
       ],
       "specsCount": 7,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 744,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "273194": {
       "name": "AV-процессор Marantz AV8805A",
       "sources": [
-        "https://www.marantz.com/en/product/av-processors-pre-amplifiers/av8805a/AV8805A.html"
+        "https://www.marantz.com/"
       ],
       "specsCount": 8,
       "galleryCount": 5,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 643,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "273240": {
       "name": "AV-ресивер Marantz Cinema 40",
@@ -1549,22 +1580,24 @@
     "273696": {
       "name": "Многоканальный усилитель мощности Rotel RMB-1587MKII",
       "sources": [
-        "https://rotel.com/product/rmb-1587mkii"
+        "https://www.rotel.com/"
       ],
       "specsCount": 6,
       "galleryCount": 9,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 774,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "273713": {
       "name": "Многоканальный усилитель мощности Rotel RMB-1585MKII",
       "sources": [
-        "https://rotel.com/product/rmb-1585mkii"
+        "https://www.rotel.com/"
       ],
       "specsCount": 5,
       "galleryCount": 9,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 720,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "273947": {
       "name": "Стереоресивер T+A Caruso R",
@@ -1642,7 +1675,7 @@
       "galleryCount": 11,
       "photosAdded": 0,
       "descLen": 1045,
-      "enrichedAt": "2026-11-14T12:50:04Z"
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "274049": {
       "name": "Внешний ЦАП T+A DAC 200",
@@ -1654,7 +1687,7 @@
       "galleryCount": 12,
       "photosAdded": 0,
       "descLen": 945,
-      "enrichedAt": "2026-11-14T12:50:04Z"
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "274060": {
       "name": "Охватывающие наушники T+A Solitaire P-SE",
@@ -2095,38 +2128,35 @@
     "263995": {
       "name": "Фонокабель Acoustic Revive Phono-1.2 TripleC FM-L ( acoustic revive phono 1 2 triplec fm l )",
       "sources": [
-        "https://acousticrevive.jp/",
-        "https://acousticrevive.bg/wp-content/uploads/2024/04/PHONERCA-1.0TripleC-FM.jpg"
+        "https://acousticrevive.jp/"
       ],
       "specsCount": 5,
       "galleryCount": 7,
-      "photosAdded": 6,
-      "descLen": 507,
-      "enrichedAt": "2026-11-14T12:41:19Z"
+      "photosAdded": 0,
+      "descLen": 839,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "263996": {
       "name": "Фонокабель Acoustic Revive Phono-1.2 TripleC FM-B ( acoustic revive phono 1 2 triplec fm b )",
       "sources": [
-        "https://acousticrevive.jp/",
-        "https://acousticrevive.bg/wp-content/uploads/2024/04/PHONERCA-1.0TripleC-FM.jpg"
+        "https://acousticrevive.jp/"
       ],
       "specsCount": 5,
       "galleryCount": 7,
-      "photosAdded": 6,
-      "descLen": 503,
-      "enrichedAt": "2026-11-14T12:41:28Z"
+      "photosAdded": 0,
+      "descLen": 839,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "263997": {
       "name": "Фонокабель Acoustic Revive Phono-1.2 TripleC FM-BL ( acoustic revive phono 1 2 triplec fm bl )",
       "sources": [
-        "https://acousticrevive.jp/",
-        "https://acousticrevive.bg/wp-content/uploads/2024/04/PHONERCA-1.0TripleC-FM.jpg"
+        "https://acousticrevive.jp/"
       ],
       "specsCount": 5,
       "galleryCount": 7,
-      "photosAdded": 6,
-      "descLen": 507,
-      "enrichedAt": "2026-11-14T12:41:35Z"
+      "photosAdded": 0,
+      "descLen": 845,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "264345": {
       "name": "Сетевой кабель Furutech Nanoflux NCF 18E ( furutech nanoflux ncf 18e )",
@@ -2324,9 +2354,9 @@
       ],
       "specsCount": 7,
       "galleryCount": 5,
-      "photosAdded": 4,
-      "descLen": 506,
-      "enrichedAt": "2026-11-14T12:47:33Z"
+      "photosAdded": 0,
+      "descLen": 897,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     },
     "264388": {
       "name": "Акустический кабель Furutech Speakerflux &#8211; 06 ( furutech speakerflux 06 )",
@@ -2351,6 +2381,389 @@
       "photosAdded": 4,
       "descLen": 649,
       "enrichedAt": "2026-11-14T12:47:36Z"
+    },
+    "4228": {
+      "name": "предусилитель Arte Forma Thalia ( arte forma thalia )",
+      "sources": [
+        "https://www.usaudiomart.com/details/649505537-arte-forma-thalia-6sn7-preamp-astounding-sonics-and-quality/",
+        "https://www.audiocircle.com/index.php?topic=120653.0"
+      ],
+      "specsCount": 7,
+      "galleryCount": 6,
+      "photosAdded": 5,
+      "descLen": 622,
+      "enrichedAt": "2026-11-14T12:56:36Z"
+    },
+    "15624": {
+      "name": "напольная акустика Line Magnetic Audio LM 755 ( line magnetic audio lm 755 )",
+      "sources": [
+        "https://www.lm-audio.com/en/xilie-p134-1.html?Optis=132",
+        "https://www.twochannel.ai/products/line-magnetic-audio-line-magnetic-lm-755-field-coil-speakers"
+      ],
+      "specsCount": 7,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 786,
+      "enrichedAt": "2026-11-14T12:56:37Z"
+    },
+    "26632": {
+      "name": "полочная акустика Audio Physic Step III ( audio physic step iii )",
+      "sources": [
+        "https://www.audiophysic.com/en/product/step-plus/"
+      ],
+      "specsCount": 7,
+      "galleryCount": 6,
+      "photosAdded": 5,
+      "descLen": 754,
+      "enrichedAt": "2026-11-14T12:56:46Z"
+    },
+    "26638": {
+      "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
+      "sources": [
+        "https://www.audiophysic.com/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "descLen": 1165,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "26832": {
+      "name": "сабвуфер Audio Physic Classic Sub ( audio physic classic sub )",
+      "sources": [
+        "https://mvert.ru/product/audio-physic-classic-sub/"
+      ],
+      "specsCount": 7,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "descLen": 1108,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "42916": {
+      "name": "47 Labs RST-38 ( 47 labs rst 38 )",
+      "sources": [
+        "https://xn--80aannlcfckh.xn--p1ai/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "descLen": 997,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "262098": {
+      "name": "CD проигрыватель Line Magnetic Audio LM 205 CD ( cd line magnetic audio lm 205 cd )",
+      "sources": [
+        "https://mvert.ru/product/line-magnetic-lm-205-cd/",
+        "https://www.dagogo.com/line-magnetic-lm-215cd-cd-player-review/"
+      ],
+      "specsCount": 8,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "descLen": 934,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "263969": {
+      "name": "Межблочный кабель Acoustic Revive RCA-1.0 TripleC-FM ( acoustic revive rca 1 0 triplec fm )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 504,
+      "enrichedAt": "2026-11-14T12:56:52Z"
+    },
+    "263972": {
+      "name": "Межблочный кабель Acoustic Revive XLR-1.0 TripleC-FM ( acoustic revive xlr 1 0 triplec fm )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 504,
+      "enrichedAt": "2026-11-14T12:56:56Z"
+    },
+    "263982": {
+      "name": "Акустический кабель Acoustic Revive SPC-Triple C ( acoustic revive spc triple c )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 4,
+      "photosAdded": 0,
+      "descLen": 961,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "263983": {
+      "name": "Акустический кабель Acoustic Revive SPC &#8211; Triple C (4) ( acoustic revive spc triple c (4) )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 512,
+      "enrichedAt": "2026-11-14T12:57:05Z"
+    },
+    "264000": {
+      "name": "Фонокабель Acoustic Revive Analog-1.2 TripleC FM-B ( acoustic revive analog 1 2 triplec fm b )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 526,
+      "enrichedAt": "2026-11-14T12:57:09Z"
+    },
+    "264001": {
+      "name": "Фонокабель Acoustic Revive Analog-1.2 TripleC FM-BL ( acoustic revive analog 1 2 triplec fm bl )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 532,
+      "enrichedAt": "2026-11-14T12:57:13Z"
+    },
+    "264042": {
+      "name": "Коннектор для наушников Acoustic Revive HD 650 PLUG ( acoustic revive hd 650 plug )",
+      "sources": [
+        "https://acousticrevive.jp/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "descLen": 1045,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264043": {
+      "name": "Коннектор для наушников Acoustic Revive HD-800 PLUG ( acoustic revive hd 800 plug )",
+      "sources": [
+        "https://acousticrevive.jp/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "descLen": 1033,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264044": {
+      "name": "Коннектор для наушников Acoustic Revive UltrasoneSony PLUG ( acoustic revive ultrasonesony plug )",
+      "sources": [
+        "https://acousticrevive.jp/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "descLen": 1075,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264363": {
+      "name": "Межблочный кабель Furutech Lineflux (RCA) ( furutech lineflux (rca) )",
+      "sources": [
+        "https://furutech.com/product/lineflux-ncf-rca/"
+      ],
+      "specsCount": 6,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 936,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264364": {
+      "name": "Межблочный кабель Furutech Lineflux (XLR) ( furutech lineflux (xlr) )",
+      "sources": [
+        "https://furutech.com/product/lineflux-ncf-xlr/"
+      ],
+      "specsCount": 5,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 837,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264373": {
+      "name": "Цифровой кабель Furutech Digiflux (XLR) ( furutech digiflux (xlr) )",
+      "sources": [
+        "https://furutech.com/product-category/finished-cables/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 4,
+      "photosAdded": 0,
+      "descLen": 810,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264374": {
+      "name": "Цифровой кабель Furutech Digiflux (BNC) ( furutech digiflux (bnc) )",
+      "sources": [
+        "https://furutech.com/product-category/finished-cables/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 4,
+      "photosAdded": 0,
+      "descLen": 812,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264387": {
+      "name": "Акустический кабель Furutech Speakerflux &#8211; 04 ( furutech speakerflux 04 )",
+      "sources": [
+        "https://furutech.com/product/speakerflux-ncf/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 841,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264390": {
+      "name": "Акустический кабель Furutech Speaker Ref.III-04 BW ( furutech speaker ref iii 04 bw )",
+      "sources": [
+        "https://furutech.com/ja/product/speaker-reference-iii/"
+      ],
+      "specsCount": 5,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 775,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264548": {
+      "name": "Кабель для наушников SAEC  SHC-120FS ( saec shc 120fs )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 1211,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264549": {
+      "name": "Кабель для наушников SAEC  SHC-120FF ( saec shc 120ff )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 1215,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264550": {
+      "name": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 1226,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264551": {
+      "name": "Кабель для наушников SAEC  SHC-B120FF ( saec shc b120ff )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 1230,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264552": {
+      "name": "Кабель для наушников SAEC  SHC-2B300FSH ( saec shc 2b300fsh )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 818,
+      "enrichedAt": "2026-11-14T12:57:22Z"
+    },
+    "264553": {
+      "name": "Кабель для наушников SAEC  SHC-2B300FH65 ( saec shc 2b300fh65 )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 1246,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264554": {
+      "name": "Кабель для наушников SAEC  SHC-2B300FH80 ( saec shc 2b300fh80 )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 1246,
+      "enrichedAt": "2026-11-14T12:57:48Z"
+    },
+    "264555": {
+      "name": "Кабель для наушников SAEC  SHC-U300FSH ( saec shc u300fsh )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 814,
+      "enrichedAt": "2026-11-14T12:57:23Z"
+    },
+    "264556": {
+      "name": "Кабель для наушников SAEC  SHC-U300FH65 ( saec shc u300fh65 )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 810,
+      "enrichedAt": "2026-11-14T12:57:23Z"
+    },
+    "264557": {
+      "name": "Кабель для наушников SAEC  SHC-U300FH80 ( saec shc u300fh80 )",
+      "sources": [
+        "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+        "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+      ],
+      "specsCount": 6,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 810,
+      "enrichedAt": "2026-11-14T12:57:23Z"
+    },
+    "267435": {
+      "name": "Напольная акустика Line Magnetic Audio LM-69",
+      "sources": [
+        "https://www.hifi-guide.com/loudspeaker/line-magnetic-lm-69/",
+        "https://www.lm-audio.com/en/lmmanshengkongzhitaiyinxiang-p186.html"
+      ],
+      "specsCount": 5,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "descLen": 855,
+      "enrichedAt": "2026-11-14T12:57:48Z"
     }
   },
   "method": "Manufacturer pages preferred. Research via Exa + Tavily + dealer OEM galleries. Meager bar: desc≥500 chars, gallery≥4, structured specs. No invented watts."
