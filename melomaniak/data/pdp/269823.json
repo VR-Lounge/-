@@ -1,1 +1,43 @@
-{"id":269823,"slug":"d461d09d6941929aebd404acb865f291","name":"Сетевой фильтр Wireworld MATRIX2 Rack Mount Strip","cat":"Другое","cats":["Сетевые фильтры"],"price":20000,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/d461d09d6941929aebd404acb865f291/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_matrix2_rack_mount_strip1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_matrix2_rack_mount_strip1.jpg","alt":"wireworld_matrix2_rack_mount_strip1.jpg","local":"assets/from-live/products/e1e5416518_wireworld_matrix2_rack_mount_strip1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269823,
+  "slug": "d461d09d6941929aebd404acb865f291",
+  "name": "Сетевой фильтр Wireworld MATRIX2 Rack Mount Strip",
+  "cat": "Другое",
+  "cats": [
+    "Сетевые фильтры"
+  ],
+  "price": 20000,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/d461d09d6941929aebd404acb865f291/",
+  "descriptionHtml": "<p>Wireworld MATRIX2 Rack Mount Strip — рэковый сетевой блок/экстендер на технологиях Wireworld power (shielded strip).</p>\n<ul><li>Rack mount</li><li>Power strip</li><li>Wireworld</li><li>HITL outlets</li></ul>\n<h2>HITL</h2>\n<p>Число розеток и номинал уточнять по актуальной карточке MATRIX 2 на wireworldcable.com — линейка обновлялась.</p>",
+  "shortHtml": "",
+  "descriptionText": "Wireworld MATRIX2 Rack Mount Strip — рэковый сетевой блок/экстендер на технологиях Wireworld power (shielded strip).\n\n Rack mount\n Power strip\n Wireworld\n HITL outlets\n\n HITL\n\n Число розеток и номинал уточнять по актуальной карточке MATRIX 2 на wireworldcable.com — линейка обновлялась.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Rack-mount power strip / extender",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Бренд",
+      "value": "Wireworld Cable Technology",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_matrix2_rack_mount_strip1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_matrix2_rack_mount_strip1.jpg",
+      "alt": "wireworld_matrix2_rack_mount_strip1.jpg",
+      "local": "assets/from-live/products/e1e5416518_wireworld_matrix2_rack_mount_strip1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://wireworldcable.com/collections/power-cables"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

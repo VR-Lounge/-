@@ -1,1 +1,48 @@
-{"id":264078,"slug":"%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-pl-hr","name":"Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr )","cat":"Другое","cats":["Виброгасители"],"price":67500,"old":75000,"source":"https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-pl-hr/","descriptionHtml":"<p>платформа под шипы</p>","shortHtml":"","descriptionText":"платформа под шипы","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-opt-100hg-ss-hr.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-opt-100hg-ss-hr.jpg","alt":"audio-replas-opt-100hg-ss-hr","local":"assets/from-live/products/fb3fb44b06_audio-replas-opt-100hg-ss-hr.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 264078,
+  "slug": "%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-pl-hr",
+  "name": "Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr )",
+  "cat": "Другое",
+  "cats": [
+    "Виброгасители"
+  ],
+  "price": 67500,
+  "old": 75000,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-100hg-pl-hr/",
+  "descriptionHtml": "<p>Audio Replas OPT-100HG-PL HR — кварцевый изолятор HG HR серии OPT-100 (не flat). Высота базовой OPT-100HG SS HR ≈ 20 мм по каталогу производителя.</p>\n<ul><li>OPT-100HG</li><li>HG HR quartz</li><li>~20 mm class</li><li>Insulator</li></ul>\n<h2>Материал</h2>\n<p>Сверхчистый кварц HG HR; зеркальная обработка в SS HR вариантах.</p>",
+  "shortHtml": "",
+  "descriptionText": "Audio Replas OPT-100HG-PL HR — кварцевый изолятор HG HR серии OPT-100 (не flat). Высота базовой OPT-100HG SS HR ≈ 20 мм по каталогу производителя.\n\n OPT-100HG\n HG HR quartz\n ~20 mm class\n Insulator\n\n Материал\n\n Сверхчистый кварц HG HR; зеркальная обработка в SS HR вариантах.",
+  "specs": [
+    {
+      "label": "Материал",
+      "value": "HG HR quartz",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Тип",
+      "value": "Insulator / spike pad",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Серия",
+      "value": "OPT-100HG-PL HR",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-opt-100hg-ss-hr.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-opt-100hg-ss-hr.jpg",
+      "alt": "audio-replas-opt-100hg-ss-hr",
+      "local": "assets/from-live/products/fb3fb44b06_audio-replas-opt-100hg-ss-hr.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.audio-replas.com/insulator.html"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

@@ -1,1 +1,48 @@
-{"id":270588,"slug":"1bf642ba7fb4b02b997cf979f08ac060","name":"Фонокабель Van den Hul D-502 Hybrid RCA-RCA","cat":"Кабели","cats":["Кабель фоно"],"price":30590,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/1bf642ba7fb4b02b997cf979f08ac060/","descriptionHtml":"</table>","shortHtml":"<p>Кабель для тонарма с разъемами RCA – RCA. В фирменном гибридном материале проводника используются серебро и линейно-структурированные углеродные волокна. Дополнительная стальная центральная жила обеспечивает прочность и может служить заземляющим проводом. Наружное сечение кабеля 8.4 х 4.0 мм.</p>","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_d-502_hybrid_rca-rca1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_d-502_hybrid_rca-rca1.jpg","alt":"van_den_hul_d-502_hybrid_rca-rca1.jpg","local":"assets/from-live/products/96fce59273_van_den_hul_d-502_hybrid_rca-rca1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 270588,
+  "slug": "1bf642ba7fb4b02b997cf979f08ac060",
+  "name": "Фонокабель Van den Hul D-502 Hybrid RCA-RCA",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель фоно"
+  ],
+  "price": 30590,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/1bf642ba7fb4b02b997cf979f08ac060/",
+  "descriptionHtml": "<p>Van den Hul D-502 Hybrid — twin-версия D-501 Hybrid: два канала в одной оболочке для фоно RCA-RCA. Та же Hybrid/LSC философия линейки D-50x.</p>\n<ul><li>Twin of D-501</li><li>Phono RCA</li><li>Hybrid LSC</li><li>Hulliflex</li><li>HITL twin C</li></ul>\n<h2>HITL</h2>\n<p>Точные C/R для twin-конструкции уточнять по карточке VdH D-502; базовые материалы — как у D-501 Hybrid.</p>",
+  "shortHtml": "<p>Кабель для тонарма с разъемами RCA – RCA. В фирменном гибридном материале проводника используются серебро и линейно-структурированные углеродные волокна. Дополнительная стальная центральная жила обеспечивает прочность и может служить заземляющим проводом. Наружное сечение кабеля 8.4 х 4.0 мм.</p>",
+  "descriptionText": "Van den Hul D-502 Hybrid — twin-версия D-501 Hybrid: два канала в одной оболочке для фоно RCA-RCA. Та же Hybrid/LSC философия линейки D-50x.\n\n Twin of D-501\n Phono RCA\n Hybrid LSC\n Hulliflex\n HITL twin C\n\n HITL\n\n Точные C/R для twin-конструкции уточнять по карточке VdH D-502; базовые материалы — как у D-501 Hybrid.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Twin phono interconnect (D-502 Hybrid)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "База",
+      "value": "D-501 Hybrid platform",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Назначение",
+      "value": "Tonearm / phono RCA-RCA",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_d-502_hybrid_rca-rca1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_d-502_hybrid_rca-rca1.jpg",
+      "alt": "van_den_hul_d-502_hybrid_rca-rca1.jpg",
+      "local": "assets/from-live/products/96fce59273_van_den_hul_d-502_hybrid_rca-rca1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.vandenhul.com/product-category/cables/interconnect-cables/page/2"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

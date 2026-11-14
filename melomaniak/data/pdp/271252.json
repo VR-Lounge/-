@@ -1,1 +1,54 @@
-{"id":271252,"slug":"ae9a5c55c56455035eefed46287046cc","name":"Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA","cat":"Кабели","cats":["Кабель акустический"],"price":39990,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/ae9a5c55c56455035eefed46287046cc/","descriptionHtml":"</table>","shortHtml":"<p> Причина уценки: витринный экземпляр, отсутствует упаковка. </p>","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca1.jpg","alt":"nordost_cinema_flex_cf142_cl3p_rca1.jpg","local":"assets/from-live/products/0fcbc8a71a_nordost_cinema_flex_cf142_cl3p_rca1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca2.jpg","alt":"nordost_cinema_flex_cf142_cl3p_rca2.jpg","local":"assets/from-live/products/50f42a2e57_nordost_cinema_flex_cf142_cl3p_rca2.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 271252,
+  "slug": "ae9a5c55c56455035eefed46287046cc",
+  "name": "Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель акустический"
+  ],
+  "price": 39990,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/ae9a5c55c56455035eefed46287046cc/",
+  "descriptionHtml": "<p>Nordost Cinema Flex CF142 CL3P — сабвуферный RCA из инсталляционной линейки Cinema Flex (CL3/CL3P rated). Для длинных LFE-трасс в стенах/стойках.</p>\n<ul><li>Cinema Flex</li><li>CF142</li><li>CL3P</li><li>Sub RCA</li><li>HITL electrical</li></ul>\n<h2>HITL</h2>\n<p>Электрические пФ/м и AWG — по Nordost Cinema Flex datasheet; открытый SERP без полной таблицы — не выдумываем.</p>",
+  "shortHtml": "<p> Причина уценки: витринный экземпляр, отсутствует упаковка. </p>",
+  "descriptionText": "Nordost Cinema Flex CF142 CL3P — сабвуферный RCA из инсталляционной линейки Cinema Flex (CL3/CL3P rated). Для длинных LFE-трасс в стенах/стойках.\n\n Cinema Flex\n CF142\n CL3P\n Sub RCA\n HITL electrical\n\n HITL\n\n Электрические пФ/м и AWG — по Nordost Cinema Flex datasheet; открытый SERP без полной таблицы — не выдумываем.",
+  "specs": [
+    {
+      "label": "Линейка",
+      "value": "Nordost Cinema Flex",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Модель",
+      "value": "CF142 CL3P",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Тип",
+      "value": "Subwoofer / install RCA",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca1.jpg",
+      "alt": "nordost_cinema_flex_cf142_cl3p_rca1.jpg",
+      "local": "assets/from-live/products/0fcbc8a71a_nordost_cinema_flex_cf142_cl3p_rca1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca2.jpg",
+      "alt": "nordost_cinema_flex_cf142_cl3p_rca2.jpg",
+      "local": "assets/from-live/products/50f42a2e57_nordost_cinema_flex_cf142_cl3p_rca2.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.nordost.com/"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

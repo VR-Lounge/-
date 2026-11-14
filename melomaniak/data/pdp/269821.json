@@ -1,1 +1,48 @@
-{"id":269821,"slug":"8f40298b1d0606e80e037433568316b7","name":"Кабель оптический QED Performance 3 m","cat":"Кабели","cats":["Кабель цифровой"],"price":12400,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/8f40298b1d0606e80e037433568316b7/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_3m1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_3m1.jpg","alt":"qed_performance_3m1.jpg","local":"assets/from-live/products/ab2f23fa04_qed_performance_3m1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269821,
+  "slug": "8f40298b1d0606e80e037433568316b7",
+  "name": "Кабель оптический QED Performance 3 m",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель цифровой"
+  ],
+  "price": 12400,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/8f40298b1d0606e80e037433568316b7/",
+  "descriptionHtml": "<p>QED Performance Optical 3 m — Toslink оптика Performance, длина 3 м. Для ТВ/консоли→саундбар/DAC без электрической петли.</p>\n<ul><li>Toslink</li><li>3 m</li><li>Performance</li><li>Optical</li></ul>\n<h2>Применение</h2>\n<p>Цифровой S/PDIF optical; длина фиксирована 3 м в листинге.</p>",
+  "shortHtml": "",
+  "descriptionText": "QED Performance Optical 3 m — Toslink оптика Performance, длина 3 м. Для ТВ/консоли→саундбар/DAC без электрической петли.\n\n Toslink\n 3 m\n Performance\n Optical\n\n Применение\n\n Цифровой S/PDIF optical; длина фиксирована 3 м в листинге.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Optical Toslink",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Длина",
+      "value": "3 м",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Линейка",
+      "value": "QED Performance",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_3m1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_3m1.jpg",
+      "alt": "qed_performance_3m1.jpg",
+      "local": "assets/from-live/products/ab2f23fa04_qed_performance_3m1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.qed.co.uk/"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

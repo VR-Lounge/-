@@ -93,6 +93,8 @@ def apply_one(pid: str, payload: dict, provenance: dict) -> dict | None:
     if payload.get("specs"):
         # Prefer researched specs when empty or mark enriched overwrite
         d["specs"] = payload["specs"]
+    if payload.get("name") and not (d.get("name") or "").strip():
+        d["name"] = payload["name"]
     d["enriched"] = True
     d["sources"] = payload.get("sources") or []
     d["enrichedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")

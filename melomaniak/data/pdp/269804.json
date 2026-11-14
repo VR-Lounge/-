@@ -1,1 +1,53 @@
-{"id":269804,"slug":"96db92ee390f3cdcec679b0468f19a40","name":"Кабель акустический готовый QED XT25 Banana","cat":"Кабели","cats":["Кабель акустический"],"price":13900,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/96db92ee390f3cdcec679b0468f19a40/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_xt25_banana1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_xt25_banana1.jpg","alt":"qed_xt25_banana1.jpg","local":"assets/from-live/products/0e590a9abb_qed_xt25_banana1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269804,
+  "slug": "96db92ee390f3cdcec679b0468f19a40",
+  "name": "Кабель акустический готовый QED XT25 Banana",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель акустический"
+  ],
+  "price": 13900,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/96db92ee390f3cdcec679b0468f19a40/",
+  "descriptionHtml": "<p>QED Performance XT25 Banana — готовый акустический XT25 с X-Tube™ на 99,999% OFC. Entry X-Tube геометрия; lifetime guarantee QED.</p>\n<ul><li>XT25</li><li>X-Tube</li><li>99.999% OFC</li><li>Banana ends</li><li>Lifetime</li></ul>\n<h2>Технология</h2>\n<p>X-Tube снижает skin/proximity effect относительно сплошного проводника того же сечения (по QED Genesis research).</p>",
+  "shortHtml": "",
+  "descriptionText": "QED Performance XT25 Banana — готовый акустический XT25 с X-Tube™ на 99,999% OFC. Entry X-Tube геометрия; lifetime guarantee QED.\n\n XT25\n X-Tube\n 99.999% OFC\n Banana ends\n Lifetime\n\n Технология\n\n X-Tube снижает skin/proximity effect относительно сплошного проводника того же сечения (по QED Genesis research).",
+  "specs": [
+    {
+      "label": "Линейка",
+      "value": "QED Performance XT25",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Технология",
+      "value": "X-Tube™",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Материал",
+      "value": "99.999% OFC",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Терминация",
+      "value": "Banana (готовая пара)",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_xt25_banana1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_xt25_banana1.jpg",
+      "alt": "qed_xt25_banana1.jpg",
+      "local": "assets/from-live/products/0e590a9abb_qed_xt25_banana1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.qed.co.uk/performance-xt25.html"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

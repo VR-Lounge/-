@@ -1,1 +1,43 @@
-{"id":269819,"slug":"d4dc304763be58938e48553b70022d7d","name":"Кабель для сабвуфера QED Reference Subwoofer 40","cat":"Кабели","cats":["Кабель акустический"],"price":18300,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/d4dc304763be58938e48553b70022d7d/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_subwoofer_40-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_subwoofer_40-1.jpg","alt":"qed_reference_subwoofer_40-1.jpg","local":"assets/from-live/products/10471bae62_qed_reference_subwoofer_40-1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269819,
+  "slug": "d4dc304763be58938e48553b70022d7d",
+  "name": "Кабель для сабвуфера QED Reference Subwoofer 40",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель акустический"
+  ],
+  "price": 18300,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/d4dc304763be58938e48553b70022d7d/",
+  "descriptionHtml": "<p>QED Reference Subwoofer 40 — сабвуферный RCA уровня Reference 40 (Complementary Conductors / Analoc-семейство).</p>\n<ul><li>Reference 40 family</li><li>Subwoofer RCA</li><li>QED</li></ul>\n<h2>Назначение</h2>\n<p>Когда саб уже «играет», а кабель ещё бюджетный — апгрейд именно LFE-линка.</p>",
+  "shortHtml": "",
+  "descriptionText": "QED Reference Subwoofer 40 — сабвуферный RCA уровня Reference 40 (Complementary Conductors / Analoc-семейство).\n\n Reference 40 family\n Subwoofer RCA\n QED\n\n Назначение\n\n Когда саб уже «играет», а кабель ещё бюджетный — апгрейд именно LFE-линка.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Reference subwoofer RCA",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Линейка",
+      "value": "QED Reference Subwoofer 40",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_subwoofer_40-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_reference_subwoofer_40-1.jpg",
+      "alt": "qed_reference_subwoofer_40-1.jpg",
+      "local": "assets/from-live/products/10471bae62_qed_reference_subwoofer_40-1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.qed.co.uk/"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

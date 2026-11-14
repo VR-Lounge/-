@@ -1,1 +1,59 @@
-{"id":270554,"slug":"aa6bb98b1c90af3f3d7039aaac555527","name":"Кабель межблочный аналоговый RCA Van den Hul The Tide","cat":"Кабели","cats":["Кабель межблочный"],"price":23090,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/aa6bb98b1c90af3f3d7039aaac555527/","descriptionHtml":"</table>","shortHtml":"<p>Экранированный кабель с двумя центральными жилами (балансный). Предназначен для подключения домашних и автомобильных аудиосистем, а также для профессионального применения. Материал проводника: посеребренная медь, двойное экранирование, диаметр: 7 мм.</p>","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_1079070482-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_1079070482-1.jpg","alt":"van_den_hul_tide_1079070482-1.jpg","local":"assets/from-live/products/cc6751474c_van_den_hul_tide_1079070482-1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_4117230118-2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_4117230118-2.jpg","alt":"van_den_hul_tide_4117230118-2.jpg","local":"assets/from-live/products/054f1859fc_van_den_hul_tide_4117230118-2.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 270554,
+  "slug": "aa6bb98b1c90af3f3d7039aaac555527",
+  "name": "Кабель межблочный аналоговый RCA Van den Hul The Tide",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель межблочный"
+  ],
+  "price": 23090,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/aa6bb98b1c90af3f3d7039aaac555527/",
+  "descriptionHtml": "<p>Van den Hul The Tide Hybrid — гибкий double-shielded interconnect: silver-coated OFC 24 AWG, C=44 пФ/м, Ø 7,0 мм. RCA/XLR; entry-level LSC shield.</p>\n<ul><li>44 pF/m</li><li>24 AWG SPOFC</li><li>Double hybrid shield</li><li>Ø 7.0 mm</li><li>RCA/XLR</li></ul>\n<h2>Электрика</h2>\n<p>R проводника 0,085 Ω/м; экран 0,017 Ω/м. Orange-yellow Hulliflex.</p>",
+  "shortHtml": "<p>Экранированный кабель с двумя центральными жилами (балансный). Предназначен для подключения домашних и автомобильных аудиосистем, а также для профессионального применения. Материал проводника: посеребренная медь, двойное экранирование, диаметр: 7 мм.</p>",
+  "descriptionText": "Van den Hul The Tide Hybrid — гибкий double-shielded interconnect: silver-coated OFC 24 AWG, C=44 пФ/м, Ø 7,0 мм. RCA/XLR; entry-level LSC shield.\n\n 44 pF/m\n 24 AWG SPOFC\n Double hybrid shield\n Ø 7.0 mm\n RCA/XLR\n\n Электрика\n\n R проводника 0,085 Ω/м; экран 0,017 Ω/м. Orange-yellow Hulliflex.",
+  "specs": [
+    {
+      "label": "Ёмкость",
+      "value": "44 пФ/м",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Проводник",
+      "value": "Silver-plated OFC, 24 AWG / Ø 0,52 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Диаметр",
+      "value": "7,0 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Экранирование",
+      "value": "Double hybrid + LSC",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_1079070482-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_1079070482-1.jpg",
+      "alt": "van_den_hul_tide_1079070482-1.jpg",
+      "local": "assets/from-live/products/cc6751474c_van_den_hul_tide_1079070482-1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_4117230118-2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_4117230118-2.jpg",
+      "alt": "van_den_hul_tide_4117230118-2.jpg",
+      "local": "assets/from-live/products/054f1859fc_van_den_hul_tide_4117230118-2.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.vandenhul.com/product/the-tide-hybrid"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

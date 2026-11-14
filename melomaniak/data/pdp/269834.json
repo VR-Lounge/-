@@ -1,1 +1,49 @@
-{"id":269834,"slug":"eb821d3e41a0d30636c9bc37f7082a02","name":"Кабель оптический Wireworld Nova Toslink","cat":"Кабели","cats":["Кабель цифровой"],"price":7800,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/eb821d3e41a0d30636c9bc37f7082a02/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink1.jpg","alt":"wireworld_nova_toslink1.jpg","local":"assets/from-live/products/ab3bf244b3_wireworld_nova_toslink1.jpg"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink2.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink2.jpg","alt":"wireworld_nova_toslink2.jpg","local":"assets/from-live/products/1e895af3bf_wireworld_nova_toslink2.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269834,
+  "slug": "eb821d3e41a0d30636c9bc37f7082a02",
+  "name": "Кабель оптический Wireworld Nova Toslink",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель цифровой"
+  ],
+  "price": 7800,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/eb821d3e41a0d30636c9bc37f7082a02/",
+  "descriptionHtml": "<p>Wireworld Nova Toslink — оптический кабель Nova. Для optical S/PDIF без RF на линии.</p>\n<ul><li>Toslink</li><li>Nova</li><li>Optical</li><li>Wireworld</li></ul>\n<h2>Применение</h2>\n<p>ТВ / стример → DAC / soundbar.</p>",
+  "shortHtml": "",
+  "descriptionText": "Wireworld Nova Toslink — оптический кабель Nova. Для optical S/PDIF без RF на линии.\n\n Toslink\n Nova\n Optical\n Wireworld\n\n Применение\n\n ТВ / стример → DAC / soundbar.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Optical Toslink",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Линейка",
+      "value": "Wireworld Nova",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink1.jpg",
+      "alt": "wireworld_nova_toslink1.jpg",
+      "local": "assets/from-live/products/ab3bf244b3_wireworld_nova_toslink1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink2.jpg",
+      "alt": "wireworld_nova_toslink2.jpg",
+      "local": "assets/from-live/products/1e895af3bf_wireworld_nova_toslink2.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://wireworldcable.com/"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

@@ -1,1 +1,48 @@
-{"id":264008,"slug":"usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rut-1","name":"USB кабель Acoustic Revive RUT-1 ( usb acoustic revive rut 1 )","cat":"Кабели","cats":["USB кабель"],"price":27720,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rut-1/","descriptionHtml":"<p>USB Terminator</p>","shortHtml":"","descriptionText":"USB Terminator","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-USB-1.0SP-TripleC-500x356-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-USB-1.0SP-TripleC-500x356-1.jpg","alt":"Acoustic-Revive-USB-1.0SP-TripleC-500&#215;356","local":"assets/from-live/products/cfd886c3e0_Acoustic-Revive-USB-1.0SP-TripleC-500x356-1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 264008,
+  "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rut-1",
+  "name": "USB кабель Acoustic Revive RUT-1 ( usb acoustic revive rut 1 )",
+  "cat": "Кабели",
+  "cats": [
+    "USB кабель"
+  ],
+  "price": 27720,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rut-1/",
+  "descriptionHtml": "<p>Acoustic Revive RUT-1 — USB Type-A терминатор/фильтр для неиспользуемого порта: шумопоглощение на USB-шине. Размер ≈ 45 × 18 × 10 мм, 7 г (дилерские данные RUT-1).</p>\n<ul><li>USB terminator</li><li>Noise cut</li><li>≈45×18×10 mm</li><li>7 g</li><li>HITL RUT-1 vs 1K</li></ul>\n<h2>HITL</h2>\n<p>Линейка имеет RUT-1 / RUT-1K; сверьте маркировку на корпусе в салоне.</p>",
+  "shortHtml": "",
+  "descriptionText": "Acoustic Revive RUT-1 — USB Type-A терминатор/фильтр для неиспользуемого порта: шумопоглощение на USB-шине. Размер ≈ 45 × 18 × 10 мм, 7 г (дилерские данные RUT-1).\n\n USB terminator\n Noise cut\n ≈45×18×10 mm\n 7 g\n HITL RUT-1 vs 1K\n\n HITL\n\n Линейка имеет RUT-1 / RUT-1K; сверьте маркировку на корпусе в салоне.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "USB Type-A terminator / noise filter",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Габариты",
+      "value": "≈ 45 × 18 × 10 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Вес",
+      "value": "≈ 7 г",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-USB-1.0SP-TripleC-500x356-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-USB-1.0SP-TripleC-500x356-1.jpg",
+      "alt": "Acoustic-Revive-USB-1.0SP-TripleC-500&#215;356",
+      "local": "assets/from-live/products/cfd886c3e0_Acoustic-Revive-USB-1.0SP-TripleC-500x356-1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.thecableco.com/rut-1-usb-terminator.html"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

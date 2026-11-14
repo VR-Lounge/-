@@ -1,1 +1,43 @@
-{"id":269817,"slug":"003b64487f5a9e4bf093a02ab939d1be","name":"Кабель для сабвуфера QED Performance Subwoofer","cat":"Кабели","cats":["Кабель акустический"],"price":10100,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/003b64487f5a9e4bf093a02ab939d1be/","descriptionHtml":"</table>","shortHtml":"<p>Кабель для сабвуфера, проводник: бескислородная медь, двойное экранирование, сечение: 6.2 кв.мм, возможная длина 3, 6, 10 метров</p>","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_subwoofer_4304379365-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_subwoofer_4304379365-1.jpg","alt":"qed_performance_subwoofer_4304379365-1.jpg","local":"assets/from-live/products/c6856f6877_qed_performance_subwoofer_4304379365-1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269817,
+  "slug": "003b64487f5a9e4bf093a02ab939d1be",
+  "name": "Кабель для сабвуфера QED Performance Subwoofer",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель акустический"
+  ],
+  "price": 10100,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/003b64487f5a9e4bf093a02ab939d1be/",
+  "descriptionHtml": "<p>QED Performance Subwoofer — RCA сабвуферный кабель Performance с Complementary Conductor-идеями линейки QED analogue.</p>\n<ul><li>Subwoofer RCA</li><li>Performance</li><li>QED</li></ul>\n<h2>Назначение</h2>\n<p>LFE/line от ресивера к активному сабу.</p>",
+  "shortHtml": "<p>Кабель для сабвуфера, проводник: бескислородная медь, двойное экранирование, сечение: 6.2 кв.мм, возможная длина 3, 6, 10 метров</p>",
+  "descriptionText": "QED Performance Subwoofer — RCA сабвуферный кабель Performance с Complementary Conductor-идеями линейки QED analogue.\n\n Subwoofer RCA\n Performance\n QED\n\n Назначение\n\n LFE/line от ресивера к активному сабу.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Subwoofer RCA cable",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Линейка",
+      "value": "QED Performance",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_subwoofer_4304379365-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_subwoofer_4304379365-1.jpg",
+      "alt": "qed_performance_subwoofer_4304379365-1.jpg",
+      "local": "assets/from-live/products/c6856f6877_qed_performance_subwoofer_4304379365-1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.qed.co.uk/"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

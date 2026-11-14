@@ -1,1 +1,43 @@
-{"id":269837,"slug":"40a4cd115109eac9ac79df2c180c989c","name":"Кабель цифровой коаксиальный Wireworld Chroma 8 75-ohm","cat":"Кабели","cats":["Кабель цифровой"],"price":6700,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/40a4cd115109eac9ac79df2c180c989c/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_chroma_8_75-ohm1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_chroma_8_75-ohm1.jpg","alt":"wireworld_chroma_8_75-ohm1.jpg","local":"assets/from-live/products/78db93f106_wireworld_chroma_8_75-ohm1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269837,
+  "slug": "40a4cd115109eac9ac79df2c180c989c",
+  "name": "Кабель цифровой коаксиальный Wireworld Chroma 8 75-ohm",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель цифровой"
+  ],
+  "price": 6700,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/40a4cd115109eac9ac79df2c180c989c/",
+  "descriptionHtml": "<p>Wireworld Chroma 8 — цифровой коаксиал 75 Ω Series 8. Для SPDIF coax источник→ЦАП.</p>\n<ul><li>75 Ω</li><li>Series 8</li><li>Coaxial digital</li><li>Chroma</li></ul>\n<h2>Конструкция</h2>\n<p>75-ohm coaxial Series 8; разъёмы Wireworld digital.</p>",
+  "shortHtml": "",
+  "descriptionText": "Wireworld Chroma 8 — цифровой коаксиал 75 Ω Series 8. Для SPDIF coax источник→ЦАП.\n\n 75 Ω\n Series 8\n Coaxial digital\n Chroma\n\n Конструкция\n\n 75-ohm coaxial Series 8; разъёмы Wireworld digital.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "75-ohm coaxial digital",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Серия",
+      "value": "Wireworld Series 8 Chroma",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_chroma_8_75-ohm1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_chroma_8_75-ohm1.jpg",
+      "alt": "wireworld_chroma_8_75-ohm1.jpg",
+      "local": "assets/from-live/products/78db93f106_wireworld_chroma_8_75-ohm1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://wireworldcable.com/"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

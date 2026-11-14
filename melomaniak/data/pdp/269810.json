@@ -1,1 +1,43 @@
-{"id":269810,"slug":"839625a09ec99576b714a01f4ecc904e","name":"Кабель межблочный аналоговый RCA QED Performance","cat":"Кабели","cats":["Кабель межблочный"],"price":7000,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/839625a09ec99576b714a01f4ecc904e/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_4200407176-1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_4200407176-1.jpg","alt":"qed_performance_4200407176-1.jpg","local":"assets/from-live/products/c4b9191e7d_qed_performance_4200407176-1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269810,
+  "slug": "839625a09ec99576b714a01f4ecc904e",
+  "name": "Кабель межблочный аналоговый RCA QED Performance",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель межблочный"
+  ],
+  "price": 7000,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/839625a09ec99576b714a01f4ecc904e/",
+  "descriptionHtml": "<p>QED Performance Audio (RCA) — средний аналоговый interconnect линейки Performance. Для CD/стримера→усилитель без Reference 40.</p>\n<ul><li>Performance RCA</li><li>Analog IC</li><li>QED lifetime</li><li>HITL SKU</li></ul>\n<h2>HITL</h2>\n<p>Уточнить у салона точный sub-model (Audio / Audio 40 / Graphite) по этикетке — в листинге «Performance» без суффикса.</p>",
+  "shortHtml": "",
+  "descriptionText": "QED Performance Audio (RCA) — средний аналоговый interconnect линейки Performance. Для CD/стримера→усилитель без Reference 40.\n\n Performance RCA\n Analog IC\n QED lifetime\n HITL SKU\n\n HITL\n\n Уточнить у салона точный sub-model (Audio / Audio 40 / Graphite) по этикетке — в листинге «Performance» без суффикса.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Analog RCA interconnect",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Линейка",
+      "value": "QED Performance",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_4200407176-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_performance_4200407176-1.jpg",
+      "alt": "qed_performance_4200407176-1.jpg",
+      "local": "assets/from-live/products/c4b9191e7d_qed_performance_4200407176-1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.qed.co.uk/"
+  ],
+  "enrichedAt": "2026-11-14T11:40:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}
