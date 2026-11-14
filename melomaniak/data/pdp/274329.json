@@ -94,15 +94,78 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "local://9feb2f1489_aurender_a15_4tb5.jpg",
+      "thumb": "assets/enriched/274329/36c29c3120_live1.jpg",
+      "alt": "Сетевой проигрыватель Aurender A15 4Tb HDD",
+      "local": "assets/enriched/274329/36c29c3120_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 1566035
+    },
+    {
+      "src": "local://63a861f819_aurender_a15_4tb4.jpg",
+      "thumb": "assets/enriched/274329/bffd1c5e21_live2.jpg",
+      "alt": "Сетевой проигрыватель Aurender A15 4Tb HDD",
+      "local": "assets/enriched/274329/bffd1c5e21_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 535063
+    },
+    {
+      "src": "local://650adf2ca4_aurender_a15_4tb3.jpg",
+      "thumb": "assets/enriched/274329/0b5e749f16_live3.jpg",
+      "alt": "Сетевой проигрыватель Aurender A15 4Tb HDD",
+      "local": "assets/enriched/274329/0b5e749f16_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 438622
+    },
+    {
+      "src": "local://e9d11a3cd6_aurender_a15_2tb7.jpg",
+      "thumb": "assets/enriched/274329/428ae97899_live4.jpg",
+      "alt": "Сетевой проигрыватель Aurender A15 4Tb HDD",
+      "local": "assets/enriched/274329/428ae97899_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 72347
+    },
+    {
+      "src": "local://92588ed356_aurender_a15_4tb1.jpg",
+      "thumb": "assets/enriched/274329/e41387f0a2_live5.jpg",
+      "alt": "Сетевой проигрыватель Aurender A15 4Tb HDD",
+      "local": "assets/enriched/274329/e41387f0a2_live5.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 298123
+    },
+    {
+      "src": "local://49e7ebe180_aurender_a15_4tb2.jpg",
+      "thumb": "assets/enriched/274329/5af8f8e353_live6.jpg",
+      "alt": "Сетевой проигрыватель Aurender A15 4Tb HDD",
+      "local": "assets/enriched/274329/5af8f8e353_live6.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 401572
+    },
+    {
+      "src": "local://de86a782f2_aurender_a15_4tb6.jpg",
+      "thumb": "assets/enriched/274329/0b88e92469_live7.jpg",
+      "alt": "Сетевой проигрыватель Aurender A15 4Tb HDD",
+      "local": "assets/enriched/274329/0b88e92469_live7.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 1185491
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/94a473649b3f025f2e95014605bc1fad/"
   ],
-  "enrichedAt": "2026-11-14T13:47:06Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

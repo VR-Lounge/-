@@ -81,6 +81,42 @@
   ],
   "gallery": [
     {
+      "src": "local://1a8a352986_primare_r15_11705501852-2.jpg",
+      "thumb": "assets/enriched/271762/5321f0cd59_live1.jpg",
+      "alt": "Стереоусилитель мощности Primare A35.2",
+      "local": "assets/enriched/271762/5321f0cd59_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 42318
+    },
+    {
+      "src": "local://54922c6ad5_primare_a35-8_8745983-3.jpg",
+      "thumb": "assets/enriched/271762/5b67af6649_live2.jpg",
+      "alt": "Стереоусилитель мощности Primare A35.2",
+      "local": "assets/enriched/271762/5b67af6649_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 217611
+    },
+    {
+      "src": "local://1004fa9b4c_primare_a35-8_8744623-1.jpg",
+      "thumb": "assets/enriched/271762/0b2c9f70e8_live3.jpg",
+      "alt": "Стереоусилитель мощности Primare A35.2",
+      "local": "assets/enriched/271762/0b2c9f70e8_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 35377
+    },
+    {
+      "src": "local://30b9e5e65e_primare_a35-8_8745377-2.jpg",
+      "thumb": "assets/enriched/271762/b253406bfa_live4.jpg",
+      "alt": "Стереоусилитель мощности Primare A35.2",
+      "local": "assets/enriched/271762/b253406bfa_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 102011
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_a35-2_8789063-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_a35-2_8789063-1.jpg",
       "alt": "primare_a35-2_8789063-1.jpg",
@@ -105,8 +141,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/e7ca735829ea77a4690a870bd3f81ce8/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

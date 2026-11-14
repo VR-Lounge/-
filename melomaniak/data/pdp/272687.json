@@ -51,6 +51,42 @@
   ],
   "gallery": [
     {
+      "src": "local://46f89491f9_metronome_technologie_aqwo_2_2048419178-2.jpg",
+      "thumb": "assets/enriched/272687/5e934cb80c_live1.jpg",
+      "alt": "CD-транспорт Metronome Technologie t/AQWO SACD SP Transport",
+      "local": "assets/enriched/272687/5e934cb80c_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 65257
+    },
+    {
+      "src": "local://233a49efbf_metronome_technologie_aqwo_2_2048417565-1.jpg",
+      "thumb": "assets/enriched/272687/0db0b0fe82_live2.jpg",
+      "alt": "CD-транспорт Metronome Technologie t/AQWO SACD SP Transport",
+      "local": "assets/enriched/272687/0db0b0fe82_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 93039
+    },
+    {
+      "src": "local://35f0a9243d_metronome_technologie_caqwo_da_sp_converter_2056088421-2.jpg",
+      "thumb": "assets/enriched/272687/6aa348ff1c_live3.jpg",
+      "alt": "CD-транспорт Metronome Technologie t/AQWO SACD SP Transport",
+      "local": "assets/enriched/272687/6aa348ff1c_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 56643
+    },
+    {
+      "src": "local://acc86dd027_metronome_technologie_caqwo_da_sp_converter3.jpg",
+      "thumb": "assets/enriched/272687/6386b43f6e_live4.jpg",
+      "alt": "CD-транспорт Metronome Technologie t/AQWO SACD SP Transport",
+      "local": "assets/enriched/272687/6386b43f6e_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 30427
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_taqwo_sacd_sp_transport_2056918438-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_taqwo_sacd_sp_transport_2056918438-1.jpg",
       "alt": "metronome_technologie_taqwo_sacd_sp_transport_2056918438-1.jpg",
@@ -69,8 +105,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/a2d071da9f126505b1f7879c4254af33/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:27:25Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

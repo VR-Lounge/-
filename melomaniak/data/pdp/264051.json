@@ -31,6 +31,15 @@
   ],
   "gallery": [
     {
+      "src": "local://8e7e9fdfb0_acoustic-revive-spu-8-1.jpg",
+      "thumb": "assets/enriched/264051/f4d2e9ea00_live1.jpg",
+      "alt": "Медные платформы Acoustic Revive SPU4 ( acoustic revive spu4 )",
+      "local": "assets/enriched/264051/f4d2e9ea00_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 20225
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-SPU-8.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-SPU-8.jpg",
       "alt": "Acoustic-Revive-SPU-8",
@@ -43,8 +52,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b4%d0%bd%d1%8b%d0%b5-%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d1%8b-acoustic-revive-spu4/"
   ],
-  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

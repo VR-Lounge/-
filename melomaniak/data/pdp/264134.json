@@ -36,6 +36,15 @@
   ],
   "gallery": [
     {
+      "src": "local://8fa213ef4c_picture-1.jpg",
+      "thumb": "assets/enriched/264134/c00e60912a_live1.jpg",
+      "alt": "Поглотитель Audio Replas RAC-100 ( audio replas rac 100 )",
+      "local": "assets/enriched/264134/c00e60912a_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 92635
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/picture.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/picture-600x585.jpg",
       "alt": "picture",
@@ -49,8 +58,8 @@
     "https://www.audio-replas.com/",
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-rac-100/"
   ],
-  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

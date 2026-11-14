@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T13:52:41Z",
+  "generatedAt": "2026-11-14T14:54:05Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,19 +8,19 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 969,
-  "okCount": 918,
+  "meagerCount": 910,
+  "okCount": 977,
   "reasonTallies": {
-    "gal": 969
+    "gal": 910
   },
   "byCategory": {
-    "Другое": 380,
-    "Кабели": 231,
-    "Усилители": 154,
-    "Акустика": 123,
-    "Источники": 58,
-    "ЦАПы": 9,
-    "Ресиверы": 8,
+    "Другое": 378,
+    "Кабели": 214,
+    "Усилители": 131,
+    "Акустика": 117,
+    "Источники": 50,
+    "ЦАПы": 8,
+    "Ресиверы": 6,
     "Наушники": 4,
     "Спецпредложения": 1,
     "Видео": 1
@@ -77,32 +77,12 @@
       "enriched": true
     },
     {
-      "id": 273858,
-      "name": "Ламповый моноусилитель мощности T+A М 40 HV",
-      "cat": "Усилители",
-      "price": 3600000,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 273929,
-      "name": "Стереоусилитель T+A PA 3100 HV",
-      "cat": "Усилители",
-      "price": 2850000,
-      "reasons": [
-        "gal:2"
-      ],
-      "enriched": true
-    },
-    {
       "id": 273984,
       "name": "CD-проигрыватель T+A MP 3100 HV",
       "cat": "Источники",
       "price": 2475000,
       "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "enriched": true
     },
@@ -112,27 +92,7 @@
       "cat": "Источники",
       "price": 2165600,
       "reasons": [
-        "gal:2"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 273926,
-      "name": "Стереоусилитель T+A PA 2500 R",
-      "cat": "Усилители",
-      "price": 1378100,
-      "reasons": [
-        "gal:2"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 273923,
-      "name": "Стереоусилитель T+A PA 2000 R",
-      "cat": "Усилители",
-      "price": 1185000,
-      "reasons": [
-        "gal:2"
+        "gal:3"
       ],
       "enriched": true
     },
@@ -207,22 +167,62 @@
       "enriched": true
     },
     {
-      "id": 272695,
-      "name": "Внешний ЦАП Metronome Technologie c/AQWO D/A SP Converter",
-      "cat": "ЦАПы",
-      "price": 3790000,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
       "id": 272699,
       "name": "Сетевой проигрыватель Metronome Technologie DSC",
       "cat": "Источники",
       "price": 3710000,
       "reasons": [
         "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 274436,
+      "name": "Напольная акустика Davis Acoustics The Wall",
+      "cat": "Акустика",
+      "price": 3380990,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262061,
+      "name": "Напольная акустика Divini Audio Reference 18 ( divini audio reference 18 )",
+      "cat": "Акустика",
+      "price": 1140000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262055,
+      "name": "Напольная акустика Divini Audio Rasa ( divini audio rasa )",
+      "cat": "Акустика",
+      "price": 2960000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 274362,
+      "name": "Сетевой проигрыватель Aurender AP20 4TB HDD",
+      "cat": "Источники",
+      "price": 2910600,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262059,
+      "name": "Полочная акустика Divini Audio Reference 8 ( divini audio reference 8 )",
+      "cat": "Акустика",
+      "price": 690000,
+      "reasons": [
+        "gal:1"
       ],
       "enriched": true
     }

@@ -36,6 +36,15 @@
   ],
   "gallery": [
     {
+      "src": "local://77fd39fdd4_Furutech-FCC-3315-1.jpg",
+      "thumb": "assets/enriched/264441/d91c60dbf9_live1.jpg",
+      "alt": "Цифровой кабель Furutech FC-11 ( furutech fc 11 )",
+      "local": "assets/enriched/264441/d91c60dbf9_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 29485
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FC-11.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FC-11.jpg",
       "alt": "Furutech-FC-11",
@@ -49,8 +58,8 @@
     "https://furutech.com/",
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-fc-11/"
   ],
-  "enrichedAt": "2026-11-14T13:34:53Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

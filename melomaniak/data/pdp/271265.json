@@ -41,6 +41,15 @@
   ],
   "gallery": [
     {
+      "src": "local://63f0718ab4_nordost_red_dawn_16_amp1.jpg",
+      "thumb": "assets/enriched/271265/3096e2dca8_live2.jpg",
+      "alt": "Кабель сетевой готовый Nordost Red Dawn C15",
+      "local": "assets/enriched/271265/3096e2dca8_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 109665
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_red_dawn1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_red_dawn1.jpg",
       "alt": "nordost_red_dawn1.jpg",
@@ -65,8 +74,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/b8fd05148f146a5dc3dd2a6ef7fc5af6/"
   ],
-  "enrichedAt": "2026-11-14T13:36:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

@@ -81,6 +81,51 @@
   ],
   "gallery": [
     {
+      "src": "https://rotel.com/sites/default/files/product/rb1552mkII_silver_0.jpg",
+      "thumb": "https://rotel.com/sites/default/files/product/rb1552mkII_silver_0.jpg",
+      "alt": "Стереоусилитель мощности Rotel RB-1552 MkII",
+      "local": "assets/enriched/273684/28b6f168e8_1.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 52419
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/rb1552mkII_black_0.jpg",
+      "thumb": "https://rotel.com/sites/default/files/product/rb1552mkII_black_0.jpg",
+      "alt": "Стереоусилитель мощности Rotel RB-1552 MkII",
+      "local": "assets/enriched/273684/4e183a4e63_2.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 48363
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/rb1552mkII_back_0.jpg",
+      "thumb": "https://rotel.com/sites/default/files/product/rb1552mkII_back_0.jpg",
+      "alt": "Стереоусилитель мощности Rotel RB-1552 MkII",
+      "local": "assets/enriched/273684/a726953340_3.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 69310
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/rb1552mk2_guts.png",
+      "thumb": "https://rotel.com/sites/default/files/rb1552mk2_guts.png",
+      "alt": "Стереоусилитель мощности Rotel RB-1552 MkII",
+      "local": "assets/enriched/273684/b119bcf654_4.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 572665
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/rc1570_rb1552mk2_lifestyle_02_0.jpg",
+      "thumb": "https://rotel.com/sites/default/files/rc1570_rb1552mk2_lifestyle_02_0.jpg",
+      "alt": "Стереоусилитель мощности Rotel RB-1552 MkII",
+      "local": "assets/enriched/273684/79b8a23a6b_5.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 146800
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rb-1552_mkii_7451748860-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rb-1552_mkii_7451748860-1.jpg",
       "alt": "rotel_rb-1552_mkii_7451748860-1.jpg",
@@ -97,10 +142,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/dc5bf38a5416b52b51229d0763448f14/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/dc5bf38a5416b52b51229d0763448f14/",
+    "https://rotel.com/product/rb-1552-mkii"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:49:54Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

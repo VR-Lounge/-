@@ -36,6 +36,33 @@
   ],
   "gallery": [
     {
+      "src": "local://ad10f4620a_nordost_frey_2_5m1.jpg",
+      "thumb": "assets/enriched/271224/5ad6b75c87_live1.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Nordost Frey 2",
+      "local": "assets/enriched/271224/5ad6b75c87_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 86325
+    },
+    {
+      "src": "local://ae6aa83330_nordost_frey_2_3023359968-1.jpg",
+      "thumb": "assets/enriched/271224/9c0c8406b4_live2.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Nordost Frey 2",
+      "local": "assets/enriched/271224/9c0c8406b4_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 59089
+    },
+    {
+      "src": "local://1f80762e24_nordost_frey_2-1.jpg",
+      "thumb": "assets/enriched/271224/80d3415a75_live3.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Nordost Frey 2",
+      "local": "assets/enriched/271224/80d3415a75_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 132833
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_frey_2_2184020346-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_frey_2_2184020346-1.jpg",
       "alt": "nordost_frey_2_2184020346-1.jpg",
@@ -48,8 +75,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/0c265cef8ce8f301f9761ac881be239b/"
   ],
-  "enrichedAt": "2026-11-14T13:36:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:47:00Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

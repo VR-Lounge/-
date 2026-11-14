@@ -96,6 +96,78 @@
   ],
   "gallery": [
     {
+      "src": "https://www.audiolab.co.uk/cdn/shop/files/9000ABlack2048x2048jpg_1.jpg",
+      "thumb": "https://www.audiolab.co.uk/cdn/shop/files/9000ABlack2048x2048jpg_1.jpg",
+      "alt": "Стереоусилитель AudioLab 9000A",
+      "local": "assets/enriched/272765/f80f412c0e_1.jpg",
+      "enriched": true,
+      "attribution": "www.audiolab.co.uk",
+      "bytes": 90684
+    },
+    {
+      "src": "https://www.audiolab.co.uk/cdn/shop/files/9000ABlack2048x2048jpg_2.jpg",
+      "thumb": "https://www.audiolab.co.uk/cdn/shop/files/9000ABlack2048x2048jpg_2.jpg",
+      "alt": "Стереоусилитель AudioLab 9000A",
+      "local": "assets/enriched/272765/95cc4114a5_2.jpg",
+      "enriched": true,
+      "attribution": "www.audiolab.co.uk",
+      "bytes": 93912
+    },
+    {
+      "src": "https://www.audiolab.co.uk/cdn/shop/files/9000ABlack2048x2048jpg_3.jpg",
+      "thumb": "https://www.audiolab.co.uk/cdn/shop/files/9000ABlack2048x2048jpg_3.jpg",
+      "alt": "Стереоусилитель AudioLab 9000A",
+      "local": "assets/enriched/272765/5786c765fb_3.jpg",
+      "enriched": true,
+      "attribution": "www.audiolab.co.uk",
+      "bytes": 86956
+    },
+    {
+      "src": "https://www.audiolab.co.uk/cdn/shop/files/9000AStandardBlack_4.jpg",
+      "thumb": "https://www.audiolab.co.uk/cdn/shop/files/9000AStandardBlack_4.jpg",
+      "alt": "Стереоусилитель AudioLab 9000A",
+      "local": "assets/enriched/272765/67c45564ef_4.jpg",
+      "enriched": true,
+      "attribution": "www.audiolab.co.uk",
+      "bytes": 116308
+    },
+    {
+      "src": "https://www.audiolab.co.uk/cdn/shop/files/9000AWhite2048x2048jpg_1.jpg",
+      "thumb": "https://www.audiolab.co.uk/cdn/shop/files/9000AWhite2048x2048jpg_1.jpg",
+      "alt": "Стереоусилитель AudioLab 9000A",
+      "local": "assets/enriched/272765/efb9e88d2f_5.jpg",
+      "enriched": true,
+      "attribution": "www.audiolab.co.uk",
+      "bytes": 102047
+    },
+    {
+      "src": "https://www.audiolab.co.uk/cdn/shop/files/9000AWhite2048x2048jpg_2.jpg",
+      "thumb": "https://www.audiolab.co.uk/cdn/shop/files/9000AWhite2048x2048jpg_2.jpg",
+      "alt": "Стереоусилитель AudioLab 9000A",
+      "local": "assets/enriched/272765/fdedbfbf04_6.jpg",
+      "enriched": true,
+      "attribution": "www.audiolab.co.uk",
+      "bytes": 86593
+    },
+    {
+      "src": "https://www.audiolab.co.uk/cdn/shop/files/9000AWhite2048x2048jpg_3.jpg",
+      "thumb": "https://www.audiolab.co.uk/cdn/shop/files/9000AWhite2048x2048jpg_3.jpg",
+      "alt": "Стереоусилитель AudioLab 9000A",
+      "local": "assets/enriched/272765/d76626b4f7_7.jpg",
+      "enriched": true,
+      "attribution": "www.audiolab.co.uk",
+      "bytes": 82562
+    },
+    {
+      "src": "https://www.audiolab.co.uk/cdn/shop/files/9000AStandardSilver_4.jpg",
+      "thumb": "https://www.audiolab.co.uk/cdn/shop/files/9000AStandardSilver_4.jpg",
+      "alt": "Стереоусилитель AudioLab 9000A",
+      "local": "assets/enriched/272765/d667ef773f_8.jpg",
+      "enriched": true,
+      "attribution": "www.audiolab.co.uk",
+      "bytes": 149638
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/audiolab_9000a1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/audiolab_9000a1.jpg",
       "alt": "audiolab_9000a1.jpg",
@@ -106,22 +178,16 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/audiolab_9000a2.jpg",
       "alt": "audiolab_9000a2.jpg",
       "local": "assets/from-live/products/f909b14cd9_audiolab_9000a2.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/audiolab_9000a3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/audiolab_9000a3.jpg",
-      "alt": "audiolab_9000a3.jpg",
-      "local": "assets/from-live/products/100234f9ab_audiolab_9000a3.jpg"
     }
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/207a256bd276882390cc4a65dc7c867d/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/207a256bd276882390cc4a65dc7c867d/",
+    "https://www.audiolab.co.uk/9000a/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:48:49Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

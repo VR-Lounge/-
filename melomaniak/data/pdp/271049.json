@@ -104,15 +104,43 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "local://5b1c6ea687_monitor_audio_silver_300_7g6.jpg",
+      "thumb": "assets/enriched/271049/eaa121c612_live1.jpg",
+      "alt": "Напольная акустика Monitor Audio Silver 300 7G",
+      "local": "assets/enriched/271049/eaa121c612_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 95432
+    },
+    {
+      "src": "local://2f2ffde505_monitor_audio_silver_300_7g5.jpg",
+      "thumb": "assets/enriched/271049/64a9382196_live2.jpg",
+      "alt": "Напольная акустика Monitor Audio Silver 300 7G",
+      "local": "assets/enriched/271049/64a9382196_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 291215
+    },
+    {
+      "src": "local://18585f7a54_monitor_audio_silver_300_7g4.jpg",
+      "thumb": "assets/enriched/271049/e30eee8788_live3.jpg",
+      "alt": "Напольная акустика Monitor Audio Silver 300 7G",
+      "local": "assets/enriched/271049/e30eee8788_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 272525
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/c0ca491e3b103b46a7ef8f2b4fa1b7d6/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "enrichedAt": "2026-11-14T14:26:34Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

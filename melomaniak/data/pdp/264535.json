@@ -26,6 +26,24 @@
   ],
   "gallery": [
     {
+      "src": "local://04ebd2f0ad_SAEC-AC-3003-001.png",
+      "thumb": "assets/enriched/264535/48b24d0d1c_live1.png",
+      "alt": "Сетевой кабель SAEC  AC-6000 ( saec ac 6000 )",
+      "local": "assets/enriched/264535/48b24d0d1c_live1.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 32355
+    },
+    {
+      "src": "local://4036b3a4b4_SAEC-AC-7000-e1614248178412.jpg",
+      "thumb": "assets/enriched/264535/87652f5c86_live2.jpg",
+      "alt": "Сетевой кабель SAEC  AC-6000 ( saec ac 6000 )",
+      "local": "assets/enriched/264535/87652f5c86_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 28964
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-AC-6000.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-AC-6000-600x600.jpg",
       "alt": "SAEC-AC-6000",
@@ -38,8 +56,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-ac-6000/"
   ],
-  "enrichedAt": "2026-11-14T13:35:21Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

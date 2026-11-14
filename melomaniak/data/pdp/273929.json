@@ -116,6 +116,78 @@
   ],
   "gallery": [
     {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/pa3100_slider_vollverstaerker.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/pa3100_slider_vollverstaerker.jpg",
+      "alt": "Стереоусилитель T+A PA 3100 HV",
+      "local": "assets/enriched/273929/6186378fd8_1.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 241542
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/pa3100_teaser_vollverstaerker.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/pa3100_teaser_vollverstaerker.jpg",
+      "alt": "Стереоусилитель T+A PA 3100 HV",
+      "local": "assets/enriched/273929/e8d8061aa3_2.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 174537
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/pa_3100_schaltung_cards_600_700-1.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/pa_3100_schaltung_cards_600_700-1.jpg",
+      "alt": "Стереоусилитель T+A PA 3100 HV",
+      "local": "assets/enriched/273929/757b3e53a4_3.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 309029
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/pa_3100_front_cards_600_700.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/pa_3100_front_cards_600_700.jpg",
+      "alt": "Стереоусилитель T+A PA 3100 HV",
+      "local": "assets/enriched/273929/acd789f93b_4.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 260405
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/pa3100_slider_rueck.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/pa3100_slider_rueck.jpg",
+      "alt": "Стереоусилитель T+A PA 3100 HV",
+      "local": "assets/enriched/273929/8ec8875aed_5.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 399668
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/pa3100_slider_vollverstaerker-1440x720.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/pa3100_slider_vollverstaerker-1440x720.jpg",
+      "alt": "Стереоусилитель T+A PA 3100 HV",
+      "local": "assets/enriched/273929/cabdd0e8ff_6.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 50787
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/pa3100_slider_vollverstaerker-1000x500.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/pa3100_slider_vollverstaerker-1000x500.jpg",
+      "alt": "Стереоусилитель T+A PA 3100 HV",
+      "local": "assets/enriched/273929/b339cabed1_7.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 32811
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/pa3100_teaser_vollverstaerker-1000x667.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/pa3100_teaser_vollverstaerker-1000x667.jpg",
+      "alt": "Стереоусилитель T+A PA 3100 HV",
+      "local": "assets/enriched/273929/8aea32fb5b_8.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 49031
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/pa_3100_hv1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/pa_3100_hv1.jpg",
       "alt": "pa_3100_hv1.jpg",
@@ -133,10 +205,10 @@
   "enriched": true,
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/18cb63241a1e4639a5dfa2f22e23a16a/",
-    "https://www.ta-hifi.de/"
+    "https://www.ta-hifi.de/",
+    "https://www.ta-hifi.de/en/audiosystems/hv-series/pa-3100-hv-integrated-amplifier/"
   ],
-  "enrichedAt": "2026-11-14T13:47:06Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:49:56Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

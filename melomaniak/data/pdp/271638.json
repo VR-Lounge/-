@@ -101,6 +101,33 @@
   ],
   "gallery": [
     {
+      "src": "local://eb17bc8993_tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_1.jpg",
+      "thumb": "assets/enriched/271638/fb3820ab83_live1.jpg",
+      "alt": "Акустика Dolby Atmos KEF Q50A",
+      "local": "assets/enriched/271638/fb3820ab83_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 118301
+    },
+    {
+      "src": "local://8c3822191c_tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_3.jpg",
+      "thumb": "assets/enriched/271638/34cf32297a_live2.jpg",
+      "alt": "Акустика Dolby Atmos KEF Q50A",
+      "local": "assets/enriched/271638/34cf32297a_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 179746
+    },
+    {
+      "src": "local://832e4bbd69_tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2.jpg",
+      "thumb": "assets/enriched/271638/f22c54cf97_live3.jpg",
+      "alt": "Акустика Dolby Atmos KEF Q50A",
+      "local": "assets/enriched/271638/f22c54cf97_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 85928
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_q50a_10780653278-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_q50a_10780653278-1.jpg",
       "alt": "kef_q50a_10780653278-1.jpg",
@@ -119,8 +146,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/878749eeee2ae5bbfbd00b199924a5a0/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:26:47Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

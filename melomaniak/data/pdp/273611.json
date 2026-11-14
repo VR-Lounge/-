@@ -91,6 +91,69 @@
   ],
   "gallery": [
     {
+      "src": "https://rotel.com/sites/default/files/product/A11MKII_silver.png",
+      "thumb": "https://rotel.com/sites/default/files/product/A11MKII_silver.png",
+      "alt": "Стереоусилитель Rotel A11 MKII",
+      "local": "assets/enriched/273611/6bc6ad8f79_1.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 152237
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/A11MKII_Black.png",
+      "thumb": "https://rotel.com/sites/default/files/product/A11MKII_Black.png",
+      "alt": "Стереоусилитель Rotel A11 MKII",
+      "local": "assets/enriched/273611/f9517945b7_2.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 137420
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/A11MKII_Back.png",
+      "thumb": "https://rotel.com/sites/default/files/product/A11MKII_Back.png",
+      "alt": "Стереоусилитель Rotel A11 MKII",
+      "local": "assets/enriched/273611/7d1de04c9d_3.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 156156
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/A11MKII_Internal.png",
+      "thumb": "https://rotel.com/sites/default/files/A11MKII_Internal.png",
+      "alt": "Стереоусилитель Rotel A11 MKII",
+      "local": "assets/enriched/273611/4200d3385c_4.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 644126
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/RotelParts-Specs-cdpreamp_0.png",
+      "thumb": "https://rotel.com/sites/default/files/RotelParts-Specs-cdpreamp_0.png",
+      "alt": "Стереоусилитель Rotel A11 MKII",
+      "local": "assets/enriched/273611/8636a14fb2_5.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 303561
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/A11MKII_Beauty_Silver.png",
+      "thumb": "https://rotel.com/sites/default/files/A11MKII_Beauty_Silver.png",
+      "alt": "Стереоусилитель Rotel A11 MKII",
+      "local": "assets/enriched/273611/451bc1ff05_6.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 203009
+    },
+    {
+      "src": "https://rotel.com/sites/all/themes/rotel/img/wechat-rotel.jpg",
+      "thumb": "https://rotel.com/sites/all/themes/rotel/img/wechat-rotel.jpg",
+      "alt": "Стереоусилитель Rotel A11 MKII",
+      "local": "assets/enriched/273611/8056dd7cfd_7.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 90707
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_a11_mkii1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_a11_mkii1.jpg",
       "alt": "rotel_a11_mkii1.jpg",
@@ -113,10 +176,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/68af5a98712600b19ca3426a70e4ff36/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/68af5a98712600b19ca3426a70e4ff36/",
+    "https://rotel.com/product/a11mkii"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:48:16Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

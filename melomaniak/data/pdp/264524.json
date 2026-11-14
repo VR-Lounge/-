@@ -36,6 +36,33 @@
   ],
   "gallery": [
     {
+      "src": "local://e417d67899_SAEC-SCX-5000R-R.png",
+      "thumb": "assets/enriched/264524/09e0e80fd5_live1.png",
+      "alt": "Фоно кабель SAEC  SCX-5000RR ( saec scx 5000rr )",
+      "local": "assets/enriched/264524/09e0e80fd5_live1.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 125263
+    },
+    {
+      "src": "local://5aae4a37b0_SAEC-SCX-5000D-R.png",
+      "thumb": "assets/enriched/264524/dee88dfb3c_live2.png",
+      "alt": "Фоно кабель SAEC  SCX-5000RR ( saec scx 5000rr )",
+      "local": "assets/enriched/264524/dee88dfb3c_live2.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 108849
+    },
+    {
+      "src": "local://34dc6f4593_SAEC-SCX-5000L.png",
+      "thumb": "assets/enriched/264524/e304acceab_live3.png",
+      "alt": "Фоно кабель SAEC  SCX-5000RR ( saec scx 5000rr )",
+      "local": "assets/enriched/264524/e304acceab_live3.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 112117
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SCX-5000.png",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SCX-5000.png",
       "alt": "SAEC-SCX-5000",
@@ -49,8 +76,7 @@
     "https://saec-com.co.jp/",
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-scx-5000rr/"
   ],
-  "enrichedAt": "2026-11-14T13:35:11Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

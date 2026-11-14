@@ -56,6 +56,51 @@
   ],
   "gallery": [
     {
+      "src": "local://0b97a525bc_pi8_4423135863-10.jpg",
+      "thumb": "assets/enriched/269774/4c4f08b445_live1.jpg",
+      "alt": "Многоканальный усилитель мощности Parasound A52+",
+      "local": "assets/enriched/269774/4c4f08b445_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 168941
+    },
+    {
+      "src": "local://a52121931d_emotiva_xpa-9_gen3-12.jpg",
+      "thumb": "assets/enriched/269774/6f385e4689_live2.jpg",
+      "alt": "Многоканальный усилитель мощности Parasound A52+",
+      "local": "assets/enriched/269774/6f385e4689_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 49467
+    },
+    {
+      "src": "local://0465971a28_emotiva_a5-2.jpg",
+      "thumb": "assets/enriched/269774/7d24b38bd9_live3.jpg",
+      "alt": "Многоканальный усилитель мощности Parasound A52+",
+      "local": "assets/enriched/269774/7d24b38bd9_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 73962
+    },
+    {
+      "src": "local://a528f7e909_magnat_monitor_reference_5a_8811807774-11.jpg",
+      "thumb": "assets/enriched/269774/4f4ee3cd36_live5.jpg",
+      "alt": "Многоканальный усилитель мощности Parasound A52+",
+      "local": "assets/enriched/269774/4f4ee3cd36_live5.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 129945
+    },
+    {
+      "src": "local://f5f046c54f_3514228250b331b7bba52bbe3b588dc8.jpg",
+      "thumb": "assets/enriched/269774/f75d1bd123_live6.jpg",
+      "alt": "Многоканальный усилитель мощности Parasound A52+",
+      "local": "assets/enriched/269774/f75d1bd123_live6.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 45699
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a52-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_a52-1.jpg",
       "alt": "parasound_a52-1.jpg",
@@ -81,8 +126,7 @@
     "https://parasound.com/products/halo-a52",
     "https://xn--80aannlcfckh.xn--p1ai/product/517a226d4c5f4afabfcd58166d140f65/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

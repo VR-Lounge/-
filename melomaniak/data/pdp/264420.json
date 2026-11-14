@@ -36,6 +36,33 @@
   ],
   "gallery": [
     {
+      "src": "local://eb52c05de7_Furutech_FP_110.jpg",
+      "thumb": "assets/enriched/264420/b627fbb18c_live1.jpg",
+      "alt": "Сетевой кабель Furutech FP-1 ( furutech fp 1 )",
+      "local": "assets/enriched/264420/b627fbb18c_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 26791
+    },
+    {
+      "src": "local://cbf769a715_Furutech-FP-126-R.jpg",
+      "thumb": "assets/enriched/264420/e9b00b1ab8_live2.jpg",
+      "alt": "Сетевой кабель Furutech FP-1 ( furutech fp 1 )",
+      "local": "assets/enriched/264420/e9b00b1ab8_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 15767
+    },
+    {
+      "src": "local://4721a186d2_Furutech-FP-160-G.jpg",
+      "thumb": "assets/enriched/264420/bb7cf0cb01_live3.jpg",
+      "alt": "Сетевой кабель Furutech FP-1 ( furutech fp 1 )",
+      "local": "assets/enriched/264420/bb7cf0cb01_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 15407
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-1-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-1-1.jpg",
       "alt": "Furutech-FP-1-1",
@@ -49,8 +76,7 @@
     "https://furutech.com/",
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-fp-1/"
   ],
-  "enrichedAt": "2026-11-14T13:34:53Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

@@ -26,6 +26,15 @@
   ],
   "gallery": [
     {
+      "src": "local://210b3cbee9_SPEC-RSA-M1-EX-rear.jpg",
+      "thumb": "assets/enriched/16798/8546e21d66_live1.jpg",
+      "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
+      "local": "assets/enriched/16798/8546e21d66_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 39159
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Spec_RSA_M1EX.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Spec_RSA_M1EX-600x600.jpg",
       "alt": "Spec RSA M1EX",
@@ -44,8 +53,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_spec_rsa_m1ex/"
   ],
-  "enrichedAt": "2026-11-14T13:45:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "enrichedAt": "2026-11-14T14:46:04Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

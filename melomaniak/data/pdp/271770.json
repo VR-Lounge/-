@@ -84,15 +84,79 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://primare.net/wp-content/uploads/2020/01/primare-cd15-prisma-cd-and-network-player-front-titanium.jpg",
+      "thumb": "https://primare.net/wp-content/uploads/2020/01/primare-cd15-prisma-cd-and-network-player-front-titanium.jpg",
+      "alt": "CD-проигрыватель Primare CD15 Prisma",
+      "local": "assets/enriched/271770/9edca3a799_2.jpg",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 136411
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2020/01/primare-cd15-prisma-cd-and-network-player-back.jpg",
+      "thumb": "https://primare.net/wp-content/uploads/2020/01/primare-cd15-prisma-cd-and-network-player-back.jpg",
+      "alt": "CD-проигрыватель Primare CD15 Prisma",
+      "local": "assets/enriched/271770/6657f503ea_3.jpg",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 202733
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2019/02/primare-cd15-prisma-cd-and-network-player-side-titanium-front-scaled-2-2115x1280.jpg",
+      "thumb": "https://primare.net/wp-content/uploads/2019/02/primare-cd15-prisma-cd-and-network-player-side-titanium-front-scaled-2-2115x1280.jpg",
+      "alt": "CD-проигрыватель Primare CD15 Prisma",
+      "local": "assets/enriched/271770/2b9832285e_4.jpg",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 81097
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2018/04/primare-cd15-prisma-cd-and-network-player-technology-inside-scaled-1.jpg",
+      "thumb": "https://primare.net/wp-content/uploads/2018/04/primare-cd15-prisma-cd-and-network-player-technology-inside-scaled-1.jpg",
+      "alt": "CD-проигрыватель Primare CD15 Prisma",
+      "local": "assets/enriched/271770/24fc10a758_5.jpg",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 338589
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2019/12/primare-cd15-prisma-cd-and-network-player-front-black.jpg",
+      "thumb": "https://primare.net/wp-content/uploads/2019/12/primare-cd15-prisma-cd-and-network-player-front-black.jpg",
+      "alt": "CD-проигрыватель Primare CD15 Prisma",
+      "local": "assets/enriched/271770/896aaa9710_6.jpg",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 25341
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2020/02/primare-system-building-cd15-i15-r15.jpg",
+      "thumb": "https://primare.net/wp-content/uploads/2020/02/primare-system-building-cd15-i15-r15.jpg",
+      "alt": "CD-проигрыватель Primare CD15 Prisma",
+      "local": "assets/enriched/271770/d435d39e62_7.jpg",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 87797
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2022/01/primare-cd15-prisma-cd-and-network-player-front-titanium-scaled.jpg",
+      "thumb": "https://primare.net/wp-content/uploads/2022/01/primare-cd15-prisma-cd-and-network-player-front-titanium-scaled.jpg",
+      "alt": "CD-проигрыватель Primare CD15 Prisma",
+      "local": "assets/enriched/271770/dc39ca8827_8.jpg",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 135865
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/5d0c90725fd9050a77f2640ef4d83d03/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/5d0c90725fd9050a77f2640ef4d83d03/",
+    "https://primare.net/product/cd15-prisma-cd-and-network-player/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:49:45Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

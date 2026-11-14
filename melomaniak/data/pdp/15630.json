@@ -41,6 +41,15 @@
   ],
   "gallery": [
     {
+      "src": "local://36f9784c86_tsentralnii_kanal_Audio_Physic_Celsius_III_.jpg",
+      "thumb": "assets/enriched/15630/bfea3f7781_live1.jpg",
+      "alt": "центральный канал Audio Physic Celsius ( audio physic celsius )",
+      "local": "assets/enriched/15630/bfea3f7781_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 27066
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsentralnii_kanal_Audio_Physic_Celsius.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsentralnii_kanal_Audio_Physic_Celsius-600x600.jpg",
       "alt": "Audio Physic Celsius",
@@ -53,8 +62,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/tsentralnii_kanal_Audio_Physic_Celsius/"
   ],
-  "enrichedAt": "2026-11-14T13:13:44Z",
+  "enrichedAt": "2026-11-14T14:04:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

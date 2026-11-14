@@ -171,13 +171,31 @@
   ],
   "gallery": [
     {
-      "src": "local://1fe631b153_on-wall-m-cache.png",
-      "thumb": "assets/enriched/261835/323efc4f0a_live1.png",
+      "src": "local://5d54434d7a_Rapallo_Anthem_MCS525Gen2_02-1.jpg",
+      "thumb": "assets/enriched/261835/cb2d6223e1_live1.jpg",
       "alt": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
-      "local": "assets/enriched/261835/323efc4f0a_live1.png",
+      "local": "assets/enriched/261835/cb2d6223e1_live1.jpg",
       "enriched": true,
       "attribution": "from-live",
-      "bytes": 186015
+      "bytes": 26575
+    },
+    {
+      "src": "local://9e99d99750_Rapallo_Anthem_MCS525Gen2_02-2.jpg",
+      "thumb": "assets/enriched/261835/af847c6a4f_live2.jpg",
+      "alt": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
+      "local": "assets/enriched/261835/af847c6a4f_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 17439
+    },
+    {
+      "src": "local://154f83bc89_Rapallo_Anthem_MCS525Gen2_02.jpg",
+      "thumb": "assets/enriched/261835/fab868fe9a_live3.jpg",
+      "alt": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
+      "local": "assets/enriched/261835/fab868fe9a_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 19768
     },
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/36ad57cd4f585f7609c60472c19c96f0.jpg",
@@ -192,8 +210,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-anthem-mca-525-gen-2/"
   ],
-  "enrichedAt": "2026-11-14T13:51:12Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:46:06Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

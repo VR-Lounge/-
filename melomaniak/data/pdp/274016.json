@@ -121,6 +121,15 @@
   ],
   "gallery": [
     {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/psd_3100_teaser_komponenten.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/psd_3100_teaser_komponenten.jpg",
+      "alt": "Сетевой проигрыватель T+A PSD 3100 HV",
+      "local": "assets/enriched/274016/67dfc70db6_1.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 104919
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/psd_3100_hv_174679554-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/psd_3100_hv_174679554-1.jpg",
       "alt": "psd_3100_hv_174679554-1.jpg",
@@ -140,8 +149,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/73c91c55045ede65a89c1da8e698283c/",
     "https://www.ta-hifi.de/"
   ],
-  "enrichedAt": "2026-11-14T13:47:06Z",
+  "enrichedAt": "2026-11-14T14:52:12Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

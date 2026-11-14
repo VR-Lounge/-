@@ -46,6 +46,15 @@
   ],
   "gallery": [
     {
+      "src": "local://332447778c_napolnaia_akystika_Lawrence_Audio_Violin_SE.jpg",
+      "thumb": "assets/enriched/15648/876b88e8a3_live1.jpg",
+      "alt": "напольная акустика Lawrence Audio Violin ( lawrence audio violin )",
+      "local": "assets/enriched/15648/876b88e8a3_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 37687
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Violin.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Violin-600x600.jpg",
       "alt": "Lawrence Audio Violin",
@@ -58,8 +67,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/napolnaya_akustika_Lawrence_Audio_Violin-171069/"
   ],
-  "enrichedAt": "2026-11-14T13:45:01Z",
+  "enrichedAt": "2026-11-14T14:04:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

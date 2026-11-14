@@ -31,6 +31,24 @@
   ],
   "gallery": [
     {
+      "src": "local://8730de835c_clear_655975_1-1-1.jpg",
+      "thumb": "assets/enriched/264163/e397af61e6_live1.jpg",
+      "alt": "Коннектор сетевой Furutech FI-33 ( G ) ( furutech fi 33 ( g ) )",
+      "local": "assets/enriched/264163/e397af61e6_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 110776
+    },
+    {
+      "src": "local://8730de835c_clear_655975_1-2-1.jpg",
+      "thumb": "assets/enriched/264163/a593aafe73_live2.jpg",
+      "alt": "Коннектор сетевой Furutech FI-33 ( G ) ( furutech fi 33 ( g ) )",
+      "local": "assets/enriched/264163/a593aafe73_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 110776
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/clear_655975_1-3.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/clear_655975_1-3-600x600.jpg",
       "alt": "clear_655975_1",
@@ -43,8 +61,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-33-g/"
   ],
-  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

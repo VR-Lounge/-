@@ -81,6 +81,51 @@
   ],
   "gallery": [
     {
+      "src": "https://rotel.com/sites/default/files/product/RMB1555_silver.jpg",
+      "thumb": "https://rotel.com/sites/default/files/product/RMB1555_silver.jpg",
+      "alt": "Многоканальный усилитель мощности Rotel RMB-1555",
+      "local": "assets/enriched/273689/99b654b19b_1.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 49663
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/rmb1555_black.jpg",
+      "thumb": "https://rotel.com/sites/default/files/product/rmb1555_black.jpg",
+      "alt": "Многоканальный усилитель мощности Rotel RMB-1555",
+      "local": "assets/enriched/273689/93b239832f_2.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 99633
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/rmb1555_back.jpg",
+      "thumb": "https://rotel.com/sites/default/files/product/rmb1555_back.jpg",
+      "alt": "Многоканальный усилитель мощности Rotel RMB-1555",
+      "local": "assets/enriched/273689/816b1cfd50_3.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 145446
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/rmb1555_guts.png",
+      "thumb": "https://rotel.com/sites/default/files/rmb1555_guts.png",
+      "alt": "Многоканальный усилитель мощности Rotel RMB-1555",
+      "local": "assets/enriched/273689/dd9d5d2950_4.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 880589
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/rmb1555_beauty_01.jpg",
+      "thumb": "https://rotel.com/sites/default/files/rmb1555_beauty_01.jpg",
+      "alt": "Многоканальный усилитель мощности Rotel RMB-1555",
+      "local": "assets/enriched/273689/2852723215_5.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 160824
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1555-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1555-1.jpg",
       "alt": "rotel_rmb-1555-1.jpg",
@@ -97,10 +142,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/0361376f9a5807474d7fb59324471e5e/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/0361376f9a5807474d7fb59324471e5e/",
+    "https://rotel.com/product/rmb-1555"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:48:54Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

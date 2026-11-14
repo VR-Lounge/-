@@ -111,6 +111,51 @@
   ],
   "gallery": [
     {
+      "src": "local://8c99348f10_aurender_n20_8tb_ssd_black3.jpg",
+      "thumb": "assets/enriched/274330/eed641cb2b_live1.jpg",
+      "alt": "Сетевой проигрыватель Aurender N20 4Tb HDD",
+      "local": "assets/enriched/274330/eed641cb2b_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 21448
+    },
+    {
+      "src": "local://86f54c9484_aurender_n20_8tb_ssd_black2.jpg",
+      "thumb": "assets/enriched/274330/d02393973f_live2.jpg",
+      "alt": "Сетевой проигрыватель Aurender N20 4Tb HDD",
+      "local": "assets/enriched/274330/d02393973f_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 19304
+    },
+    {
+      "src": "local://1d60639a27_aurender_n200_8tb_7473685436-2.jpg",
+      "thumb": "assets/enriched/274330/25a489af48_live3.jpg",
+      "alt": "Сетевой проигрыватель Aurender N20 4Tb HDD",
+      "local": "assets/enriched/274330/25a489af48_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 204998
+    },
+    {
+      "src": "local://6d691f493b_aurender_n20_8tb_ssd_black4.jpg",
+      "thumb": "assets/enriched/274330/ffd2b9b048_live4.jpg",
+      "alt": "Сетевой проигрыватель Aurender N20 4Tb HDD",
+      "local": "assets/enriched/274330/ffd2b9b048_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 43794
+    },
+    {
+      "src": "local://add1c79946_aurender_n200_8tb1.jpg",
+      "thumb": "assets/enriched/274330/533293e96e_live5.jpg",
+      "alt": "Сетевой проигрыватель Aurender N20 4Tb HDD",
+      "local": "assets/enriched/274330/533293e96e_live5.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 173258
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n20_4tb_4525201894-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n20_4tb_4525201894-1.jpg",
       "alt": "aurender_n20_4tb_4525201894-1.jpg",
@@ -135,8 +180,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/dfeea4503b821c5c720b9dc70109d4b1/"
   ],
-  "enrichedAt": "2026-11-14T13:47:06Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

@@ -86,6 +86,51 @@
   ],
   "gallery": [
     {
+      "src": "https://rotel.com/sites/default/files/product/rb1590_silver_0.jpg",
+      "thumb": "https://rotel.com/sites/default/files/product/rb1590_silver_0.jpg",
+      "alt": "Стереоусилитель мощности Rotel RB-1590",
+      "local": "assets/enriched/273687/fdfbfb90f6_1.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 76657
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/rb1590_black_0.jpg",
+      "thumb": "https://rotel.com/sites/default/files/product/rb1590_black_0.jpg",
+      "alt": "Стереоусилитель мощности Rotel RB-1590",
+      "local": "assets/enriched/273687/e9a72bb4ea_2.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 69226
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/rb1590_back_0.jpg",
+      "thumb": "https://rotel.com/sites/default/files/product/rb1590_back_0.jpg",
+      "alt": "Стереоусилитель мощности Rotel RB-1590",
+      "local": "assets/enriched/273687/70f4f596ea_3.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 92507
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/rb1590_guts.png",
+      "thumb": "https://rotel.com/sites/default/files/rb1590_guts.png",
+      "alt": "Стереоусилитель мощности Rotel RB-1590",
+      "local": "assets/enriched/273687/579f71b949_4.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 827478
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/rb1590_lifestyle_02.jpg",
+      "thumb": "https://rotel.com/sites/default/files/rb1590_lifestyle_02.jpg",
+      "alt": "Стереоусилитель мощности Rotel RB-1590",
+      "local": "assets/enriched/273687/a059b17d51_5.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 150426
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rb-1590_1268636621-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rb-1590_1268636621-1.jpg",
       "alt": "rotel_rb-1590_1268636621-1.jpg",
@@ -96,10 +141,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/9ac82985a1aed08ba29c340c3c905929/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/9ac82985a1aed08ba29c340c3c905929/",
+    "https://rotel.com/product/rb-1590"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:48:52Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

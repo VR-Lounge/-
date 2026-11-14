@@ -76,6 +76,42 @@
   ],
   "gallery": [
     {
+      "src": "local://e505e911f9_metronome_technologie_taqwo_sacd_sp_transport_2056919173-2.jpg",
+      "thumb": "assets/enriched/272695/75c3b95ddd_live1.jpg",
+      "alt": "Внешний ЦАП Metronome Technologie c/AQWO D/A SP Converter",
+      "local": "assets/enriched/272695/75c3b95ddd_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 65374
+    },
+    {
+      "src": "local://b07e03d278_metronome_technologie_taqwo_sacd_sp_transport_2056918438-1.jpg",
+      "thumb": "assets/enriched/272695/cde4320bcc_live2.jpg",
+      "alt": "Внешний ЦАП Metronome Technologie c/AQWO D/A SP Converter",
+      "local": "assets/enriched/272695/cde4320bcc_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 14006
+    },
+    {
+      "src": "local://46f89491f9_metronome_technologie_aqwo_2_2048419178-2.jpg",
+      "thumb": "assets/enriched/272695/5e934cb80c_live3.jpg",
+      "alt": "Внешний ЦАП Metronome Technologie c/AQWO D/A SP Converter",
+      "local": "assets/enriched/272695/5e934cb80c_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 65257
+    },
+    {
+      "src": "local://233a49efbf_metronome_technologie_aqwo_2_2048417565-1.jpg",
+      "thumb": "assets/enriched/272695/0db0b0fe82_live4.jpg",
+      "alt": "Внешний ЦАП Metronome Technologie c/AQWO D/A SP Converter",
+      "local": "assets/enriched/272695/0db0b0fe82_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 93039
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_caqwo_da_sp_converter_2056087815-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_caqwo_da_sp_converter_2056087815-1.jpg",
       "alt": "metronome_technologie_caqwo_da_sp_converter_2056087815-1.jpg",
@@ -100,8 +136,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/3a58d18319090a1a987b8f0aa07b515e/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:27:38Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

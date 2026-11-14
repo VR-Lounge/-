@@ -81,6 +81,33 @@
   ],
   "gallery": [
     {
+      "src": "local://9f2bfb8e67_primare_a35-2_8790430-3.jpg",
+      "thumb": "assets/enriched/271684/45a90c3423_live1.jpg",
+      "alt": "Многоканальный усилитель мощности Primare A35.8",
+      "local": "assets/enriched/271684/45a90c3423_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 213953
+    },
+    {
+      "src": "local://50876f3b8b_primare_a35-2_8789755-2.jpg",
+      "thumb": "assets/enriched/271684/7466d7d170_live2.jpg",
+      "alt": "Многоканальный усилитель мощности Primare A35.8",
+      "local": "assets/enriched/271684/7466d7d170_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 70771
+    },
+    {
+      "src": "local://1a8a352986_primare_r15_11705501852-2.jpg",
+      "thumb": "assets/enriched/271684/5321f0cd59_live3.jpg",
+      "alt": "Многоканальный усилитель мощности Primare A35.8",
+      "local": "assets/enriched/271684/5321f0cd59_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 42318
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_a35-8_8744623-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_a35-8_8744623-1.jpg",
       "alt": "primare_a35-8_8744623-1.jpg",
@@ -105,8 +132,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/b85997a1d5969559cd15eabdd1e06bed/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

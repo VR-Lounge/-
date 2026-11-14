@@ -51,6 +51,33 @@
   ],
   "gallery": [
     {
+      "src": "local://ae6aa83330_nordost_frey_2_3023359968-1.jpg",
+      "thumb": "assets/enriched/271210/9c0c8406b4_live1.jpg",
+      "alt": "Кабель акустический готовый Nordost Frey 2",
+      "local": "assets/enriched/271210/9c0c8406b4_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 59089
+    },
+    {
+      "src": "local://1f80762e24_nordost_frey_2-1.jpg",
+      "thumb": "assets/enriched/271210/80d3415a75_live2.jpg",
+      "alt": "Кабель акустический готовый Nordost Frey 2",
+      "local": "assets/enriched/271210/80d3415a75_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 132833
+    },
+    {
+      "src": "local://078a1f5dcc_nordost_frey_2_2184020346-1.jpg",
+      "thumb": "assets/enriched/271210/68d114aed6_live3.jpg",
+      "alt": "Кабель акустический готовый Nordost Frey 2",
+      "local": "assets/enriched/271210/68d114aed6_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 65740
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_frey_2_5m1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_frey_2_5m1.jpg",
       "alt": "nordost_frey_2_5m1.jpg",
@@ -63,8 +90,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/2d6b4906fbba877041368af3cf5025e1/"
   ],
-  "enrichedAt": "2026-11-14T13:36:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:47:00Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

@@ -71,6 +71,51 @@
   ],
   "gallery": [
     {
+      "src": "local://3a3e49d8c5_transrotor_max_nero1.jpg",
+      "thumb": "assets/enriched/270444/d47554b0e6_live1.jpg",
+      "alt": "Виниловый проигрыватель Transrotor Max",
+      "local": "assets/enriched/270444/d47554b0e6_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 78427
+    },
+    {
+      "src": "local://885266da6c_transrotor_max3.jpg",
+      "thumb": "assets/enriched/270444/1c70f0c431_live2.jpg",
+      "alt": "Виниловый проигрыватель Transrotor Max",
+      "local": "assets/enriched/270444/1c70f0c431_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 119261
+    },
+    {
+      "src": "local://885266da6c_transrotor_max_330-3.jpg",
+      "thumb": "assets/enriched/270444/513d931a76_live3.jpg",
+      "alt": "Виниловый проигрыватель Transrotor Max",
+      "local": "assets/enriched/270444/513d931a76_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 119261
+    },
+    {
+      "src": "local://c6a9d9b290_transrotor_max_nero_330-5.jpg",
+      "thumb": "assets/enriched/270444/5cce31ecc5_live4.jpg",
+      "alt": "Виниловый проигрыватель Transrotor Max",
+      "local": "assets/enriched/270444/5cce31ecc5_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 62419
+    },
+    {
+      "src": "local://39c6fa2824_transrotor_max_330-1.jpg",
+      "thumb": "assets/enriched/270444/b9548062d4_live5.jpg",
+      "alt": "Виниловый проигрыватель Transrotor Max",
+      "local": "assets/enriched/270444/b9548062d4_live5.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 30745
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/transrotor_max1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/transrotor_max1.jpg",
       "alt": "transrotor_max1.jpg"
@@ -92,8 +137,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/f33322260536abd35d119cde6ff617ad/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:24:52Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

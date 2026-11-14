@@ -81,6 +81,33 @@
   ],
   "gallery": [
     {
+      "src": "local://addefc4744_rotel_a10_3913084327-1.jpg",
+      "thumb": "assets/enriched/273607/11ffdeba6e_live1.jpg",
+      "alt": "Стереоусилитель Rotel A10 MKII",
+      "local": "assets/enriched/273607/11ffdeba6e_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 29425
+    },
+    {
+      "src": "local://fadd3c5a4e_rotel_a10-2.jpg",
+      "thumb": "assets/enriched/273607/8a961f4bef_live2.jpg",
+      "alt": "Стереоусилитель Rotel A10 MKII",
+      "local": "assets/enriched/273607/8a961f4bef_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 47622
+    },
+    {
+      "src": "local://5c2c2c1bd4_rotel_a10-3.jpg",
+      "thumb": "assets/enriched/273607/869350573d_live3.jpg",
+      "alt": "Стереоусилитель Rotel A10 MKII",
+      "local": "assets/enriched/273607/869350573d_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 146671
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_a10_mkii_1167048744-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_a10_mkii_1167048744-1.jpg",
       "alt": "rotel_a10_mkii_1167048744-1.jpg",
@@ -105,8 +132,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/f404c6eadf2f4a7d17f839b877855a47/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

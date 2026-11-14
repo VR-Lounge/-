@@ -41,6 +41,24 @@
   ],
   "gallery": [
     {
+      "src": "local://75d0194161_nordost_red_dawn_ls_1m1.jpg",
+      "thumb": "assets/enriched/271235/f5ebf5c78a_live1.jpg",
+      "alt": "Кабель межблочный аналоговый XLR Nordost Red Dawn LS",
+      "local": "assets/enriched/271235/f5ebf5c78a_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 66454
+    },
+    {
+      "src": "local://980ad83cc2_nordost_red_dawn_ls_2-5m1.jpg",
+      "thumb": "assets/enriched/271235/8ecb4f2b8e_live2.jpg",
+      "alt": "Кабель межблочный аналоговый XLR Nordost Red Dawn LS",
+      "local": "assets/enriched/271235/8ecb4f2b8e_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 75431
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_red_dawn_ls1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_red_dawn_ls1.jpg",
       "alt": "nordost_red_dawn_ls1.jpg",
@@ -65,8 +83,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/cd731f04a25f2998f284c5071f9608e4/"
   ],
-  "enrichedAt": "2026-11-14T13:36:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

@@ -36,6 +36,15 @@
   ],
   "gallery": [
     {
+      "src": "local://c7feec7eaa_Furutech-DSS-4.1-e1613567255999-500x445-1.jpg",
+      "thumb": "assets/enriched/264453/7817a5272d_live1.jpg",
+      "alt": "Акустический кабель Furutech DSS-4.1 ( furutech dss 4 1 )",
+      "local": "assets/enriched/264453/7817a5272d_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 28698
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-DSS-4.1-e1613567255999.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-DSS-4.1-e1613567255999-600x600.jpg",
       "alt": "Furutech-DSS-4.1-e1613567255999",
@@ -49,8 +58,8 @@
     "https://furutech.com/",
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-dss-4-1/"
   ],
-  "enrichedAt": "2026-11-14T13:34:53Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

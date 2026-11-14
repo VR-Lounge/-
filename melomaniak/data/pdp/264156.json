@@ -31,6 +31,24 @@
   ],
   "gallery": [
     {
+      "src": "local://775af2493f_FI-48-NCF-500x333-1-1.jpg",
+      "thumb": "assets/enriched/264156/b3c64921e6_live1.jpg",
+      "alt": "Коннектор сетевой Furutech FI-48 NCF(R ) ( furutech fi 48 ncf(r ) )",
+      "local": "assets/enriched/264156/b3c64921e6_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 15404
+    },
+    {
+      "src": "local://775af2493f_FI-48-NCF-500x333-2.jpg",
+      "thumb": "assets/enriched/264156/a96d36a9b0_live2.jpg",
+      "alt": "Коннектор сетевой Furutech FI-48 NCF(R ) ( furutech fi 48 ncf(r ) )",
+      "local": "assets/enriched/264156/a96d36a9b0_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 15404
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-48-NCF-500x333-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-48-NCF-500x333-1.jpg",
       "alt": "FI-48-NCF-500&#215;333",
@@ -43,8 +61,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-48-ncfr/"
   ],
-  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

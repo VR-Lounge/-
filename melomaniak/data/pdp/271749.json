@@ -89,15 +89,87 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "local://703b5f86f1_primare_i35_prisma7.jpg",
+      "thumb": "assets/enriched/271749/5d92936425_live1.jpg",
+      "alt": "Стереоусилитель Primare I35 DAC",
+      "local": "assets/enriched/271749/5d92936425_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 1077810
+    },
+    {
+      "src": "local://b1ee833224_primare_i35_prisma_11751030261-1.jpg",
+      "thumb": "assets/enriched/271749/e84f1a071e_live2.jpg",
+      "alt": "Стереоусилитель Primare I35 DAC",
+      "local": "assets/enriched/271749/e84f1a071e_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 70842
+    },
+    {
+      "src": "local://73ed44b136_primare_i35_9581655-3.jpg",
+      "thumb": "assets/enriched/271749/3d30e0a8ad_live3.jpg",
+      "alt": "Стереоусилитель Primare I35 DAC",
+      "local": "assets/enriched/271749/3d30e0a8ad_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 60156
+    },
+    {
+      "src": "local://a91c7deee9_primare_i35_prisma6.jpg",
+      "thumb": "assets/enriched/271749/1d9af963ff_live4.jpg",
+      "alt": "Стереоусилитель Primare I35 DAC",
+      "local": "assets/enriched/271749/1d9af963ff_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 54595
+    },
+    {
+      "src": "local://e964b0847d_primare_i35_prisma_11783877641-2.jpg",
+      "thumb": "assets/enriched/271749/33387af6ac_live5.jpg",
+      "alt": "Стереоусилитель Primare I35 DAC",
+      "local": "assets/enriched/271749/33387af6ac_live5.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 43958
+    },
+    {
+      "src": "local://5bcabb3bca_primare_i35_prisma_11783879855-3.jpg",
+      "thumb": "assets/enriched/271749/fca64a6704_live6.jpg",
+      "alt": "Стереоусилитель Primare I35 DAC",
+      "local": "assets/enriched/271749/fca64a6704_live6.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 57944
+    },
+    {
+      "src": "local://703b5f86f1_primare_i35-4.jpg",
+      "thumb": "assets/enriched/271749/4299fe372a_live7.jpg",
+      "alt": "Стереоусилитель Primare I35 DAC",
+      "local": "assets/enriched/271749/4299fe372a_live7.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 1077810
+    },
+    {
+      "src": "local://5a9bdccf3f_primare_i35_prisma4.jpg",
+      "thumb": "assets/enriched/271749/c729ff6e2c_live8.jpg",
+      "alt": "Стереоусилитель Primare I35 DAC",
+      "local": "assets/enriched/271749/c729ff6e2c_live8.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 129836
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/17a184f3193db2f79c4d87dc02396921/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

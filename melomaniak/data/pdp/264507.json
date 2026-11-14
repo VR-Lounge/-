@@ -31,6 +31,42 @@
   ],
   "gallery": [
     {
+      "src": "local://d8d31d6162_SAEC-SL-1980-1-1.jpg",
+      "thumb": "assets/enriched/264507/c67675b021_live1.jpg",
+      "alt": "Межблочный кабель SAEC  SL-1801 ( saec sl 1801 )",
+      "local": "assets/enriched/264507/c67675b021_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 149693
+    },
+    {
+      "src": "local://2d93438df1_SAEC-SL-6000.jpg",
+      "thumb": "assets/enriched/264507/327d234f9d_live2.jpg",
+      "alt": "Межблочный кабель SAEC  SL-1801 ( saec sl 1801 )",
+      "local": "assets/enriched/264507/327d234f9d_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 323398
+    },
+    {
+      "src": "local://9692747a6c_SAEC-SL-5000.jpg",
+      "thumb": "assets/enriched/264507/df0e70ae76_live3.jpg",
+      "alt": "Межблочный кабель SAEC  SL-1801 ( saec sl 1801 )",
+      "local": "assets/enriched/264507/df0e70ae76_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 111963
+    },
+    {
+      "src": "local://d8d31d6162_SAEC-SL-1980-1.jpg",
+      "thumb": "assets/enriched/264507/a780c076d9_live4.jpg",
+      "alt": "Межблочный кабель SAEC  SL-1801 ( saec sl 1801 )",
+      "local": "assets/enriched/264507/a780c076d9_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 149693
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SL-1801.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SL-1801-600x480.jpg",
       "alt": "SAEC-SL-1801",
@@ -43,8 +79,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sl-1801/"
   ],
-  "enrichedAt": "2026-11-14T13:34:53Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

@@ -171,6 +171,15 @@
   ],
   "gallery": [
     {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/mp3100_teaser_komponenten.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/mp3100_teaser_komponenten.jpg",
+      "alt": "CD-проигрыватель T+A MP 3100 HV",
+      "local": "assets/enriched/273984/e106ca0a74_1.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de",
+      "bytes": 47307
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mp_3100_hv1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mp_3100_hv1.jpg",
       "alt": "mp_3100_hv1.jpg",
@@ -190,8 +199,8 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/f1f19dbff3bcd6812382e4366bf0a804/",
     "https://www.ta-hifi.de/"
   ],
-  "enrichedAt": "2026-11-14T13:47:06Z",
+  "enrichedAt": "2026-11-14T14:52:11Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

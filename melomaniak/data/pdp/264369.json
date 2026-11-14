@@ -31,6 +31,24 @@
   ],
   "gallery": [
     {
+      "src": "local://5408c79f61_FURUTECH-ALPHA-LINE-2-500x500-1.jpg",
+      "thumb": "assets/enriched/264369/c9b677af19_live1.jpg",
+      "alt": "Межблочный кабель Furutech Alpha Line 1 ( furutech alpha line 1 )",
+      "local": "assets/enriched/264369/c9b677af19_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 24751
+    },
+    {
+      "src": "local://6f8311356b_FURUTECH-ALPHA-LINE-PLUS.jpg",
+      "thumb": "assets/enriched/264369/aa8482dfab_live2.jpg",
+      "alt": "Межблочный кабель Furutech Alpha Line 1 ( furutech alpha line 1 )",
+      "local": "assets/enriched/264369/aa8482dfab_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 20680
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-ALPHA-LINE-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-ALPHA-LINE-1.jpg",
       "alt": "FURUTECH-ALPHA-LINE-1",
@@ -43,8 +61,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-line-1/"
   ],
-  "enrichedAt": "2026-11-14T13:34:10Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

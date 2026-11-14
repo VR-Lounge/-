@@ -76,6 +76,51 @@
   ],
   "gallery": [
     {
+      "src": "local://87d595dad7_naim_supernait_3-1.jpg",
+      "thumb": "assets/enriched/270204/cc151e6c86_live1.jpg",
+      "alt": "Стереоусилитель Naim Nait 5 si",
+      "local": "assets/enriched/270204/cc151e6c86_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 63111
+    },
+    {
+      "src": "local://71d0a5c88d_naim_supernait_3-3.jpg",
+      "thumb": "assets/enriched/270204/bf8092e879_live2.jpg",
+      "alt": "Стереоусилитель Naim Nait 5 si",
+      "local": "assets/enriched/270204/bf8092e879_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 88147
+    },
+    {
+      "src": "local://31ee9c4adc_naim_supernait_3-4.jpg",
+      "thumb": "assets/enriched/270204/acfd8a5850_live3.jpg",
+      "alt": "Стереоусилитель Naim Nait 5 si",
+      "local": "assets/enriched/270204/acfd8a5850_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 16214
+    },
+    {
+      "src": "local://363ccea6b1_naim_supernait_3-2.jpg",
+      "thumb": "assets/enriched/270204/0cca1bd700_live4.jpg",
+      "alt": "Стереоусилитель Naim Nait 5 si",
+      "local": "assets/enriched/270204/0cca1bd700_live4.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 59386
+    },
+    {
+      "src": "local://a811609e24_naim_nait_50-1.jpg",
+      "thumb": "assets/enriched/270204/16e0fba004_live5.jpg",
+      "alt": "Стереоусилитель Naim Nait 5 si",
+      "local": "assets/enriched/270204/16e0fba004_live5.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 230698
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/naim_nait_5_si1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/naim_nait_5_si1.jpg",
       "alt": "naim_nait_5_si1.jpg",
@@ -100,8 +145,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/f1be6226f51df27382f65af7826615b0/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:24:52Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

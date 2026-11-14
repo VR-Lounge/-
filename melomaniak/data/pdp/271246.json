@@ -56,6 +56,33 @@
   ],
   "gallery": [
     {
+      "src": "local://7cac1afc6a_nordost_tyr_2_9042737710-1.jpg",
+      "thumb": "assets/enriched/271246/53f7c620b3_live1.jpg",
+      "alt": "Кабель межблочный аналоговый XLR Nordost Tyr 2",
+      "local": "assets/enriched/271246/53f7c620b3_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 39269
+    },
+    {
+      "src": "local://79b2746874_nordost_tyr_2_2184063783-1.jpg",
+      "thumb": "assets/enriched/271246/53499f4c9d_live2.jpg",
+      "alt": "Кабель межблочный аналоговый XLR Nordost Tyr 2",
+      "local": "assets/enriched/271246/53499f4c9d_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 58196
+    },
+    {
+      "src": "local://1473ca3c6d_nordost_tyr_2_5m1.jpg",
+      "thumb": "assets/enriched/271246/bd8c41f242_live3.jpg",
+      "alt": "Кабель межблочный аналоговый XLR Nordost Tyr 2",
+      "local": "assets/enriched/271246/bd8c41f242_live3.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 91899
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_tyr_2-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_tyr_2-1.jpg",
       "alt": "nordost_tyr_2-1.jpg",
@@ -68,8 +95,7 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/96a9f241f1c9ff7d20153eb4871764a3/"
   ],
-  "enrichedAt": "2026-11-14T13:36:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:07:37Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

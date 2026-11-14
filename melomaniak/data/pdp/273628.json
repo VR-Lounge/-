@@ -119,15 +119,79 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://rotel.com/sites/default/files/product/A14MKII%20SIL-FRONT.png",
+      "thumb": "https://rotel.com/sites/default/files/product/A14MKII%20SIL-FRONT.png",
+      "alt": "Стереоусилитель Rotel A14 MKII",
+      "local": "assets/enriched/273628/013f042ba0_2.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 146216
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/A14MKII%20BLK-FRONT.png",
+      "thumb": "https://rotel.com/sites/default/files/product/A14MKII%20BLK-FRONT.png",
+      "alt": "Стереоусилитель Rotel A14 MKII",
+      "local": "assets/enriched/273628/1a5e6a095f_3.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 111050
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/product/A14MKII%20SIL-BACK-aptx%20-%20No%20USB%20-%20030623.png",
+      "thumb": "https://rotel.com/sites/default/files/product/A14MKII%20SIL-BACK-aptx%20-%20No%20USB%20-%20030623.png",
+      "alt": "Стереоусилитель Rotel A14 MKII",
+      "local": "assets/enriched/273628/686274abc2_4.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 168559
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/A14MKII%20Internal.png",
+      "thumb": "https://rotel.com/sites/default/files/A14MKII%20Internal.png",
+      "alt": "Стереоусилитель Rotel A14 MKII",
+      "local": "assets/enriched/273628/2d9e898ebd_5.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 631566
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/RotelParts-Specs-cdpreamp_7.png",
+      "thumb": "https://rotel.com/sites/default/files/RotelParts-Specs-cdpreamp_7.png",
+      "alt": "Стереоусилитель Rotel A14 MKII",
+      "local": "assets/enriched/273628/d09137cdb2_6.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 303561
+    },
+    {
+      "src": "https://rotel.com/sites/default/files/A14MKII_Lifestyle.png",
+      "thumb": "https://rotel.com/sites/default/files/A14MKII_Lifestyle.png",
+      "alt": "Стереоусилитель Rotel A14 MKII",
+      "local": "assets/enriched/273628/86a6657440_7.png",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 399342
+    },
+    {
+      "src": "https://rotel.com/sites/all/themes/rotel/img/wechat-rotel.jpg",
+      "thumb": "https://rotel.com/sites/all/themes/rotel/img/wechat-rotel.jpg",
+      "alt": "Стереоусилитель Rotel A14 MKII",
+      "local": "assets/enriched/273628/8056dd7cfd_8.jpg",
+      "enriched": true,
+      "attribution": "rotel.com",
+      "bytes": 90707
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/94899fa3feec93b9c729a3975cf2e6f5/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/94899fa3feec93b9c729a3975cf2e6f5/",
+    "https://rotel.com/product/a14mkii"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:48:19Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

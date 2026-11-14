@@ -86,6 +86,51 @@
   ],
   "gallery": [
     {
+      "src": "https://primare.net/wp-content/uploads/2021/06/R15a-1024x341.png",
+      "thumb": "https://primare.net/wp-content/uploads/2021/06/R15a-1024x341.png",
+      "alt": "Фонокорректор Primare R15",
+      "local": "assets/enriched/271818/f0af41b9b4_1.png",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 83498
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2021/06/R15a-1536x511.png",
+      "thumb": "https://primare.net/wp-content/uploads/2021/06/R15a-1536x511.png",
+      "alt": "Фонокорректор Primare R15",
+      "local": "assets/enriched/271818/df8d79e514_2.png",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 153145
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2021/06/R15a.png",
+      "thumb": "https://primare.net/wp-content/uploads/2021/06/R15a.png",
+      "alt": "Фонокорректор Primare R15",
+      "local": "assets/enriched/271818/c61467ed65_3.png",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 139037
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2021/06/R15b-1024x931.png",
+      "thumb": "https://primare.net/wp-content/uploads/2021/06/R15b-1024x931.png",
+      "alt": "Фонокорректор Primare R15",
+      "local": "assets/enriched/271818/ad74a101a8_4.png",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 108977
+    },
+    {
+      "src": "https://primare.net/wp-content/uploads/2021/06/R15b.png",
+      "thumb": "https://primare.net/wp-content/uploads/2021/06/R15b.png",
+      "alt": "Фонокорректор Primare R15",
+      "local": "assets/enriched/271818/4a24e6caf4_5.png",
+      "enriched": true,
+      "attribution": "primare.net",
+      "bytes": 79792
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_r15_11705501131-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_r15_11705501131-1.jpg",
       "alt": "primare_r15_11705501131-1.jpg",
@@ -108,10 +153,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://xn--80aannlcfckh.xn--p1ai/product/c3d6cac735a4fa1abcd2b25aa760b38e/"
+    "https://xn--80aannlcfckh.xn--p1ai/product/c3d6cac735a4fa1abcd2b25aa760b38e/",
+    "https://primare.net/product/r15-phono-preamplifier/"
   ],
-  "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "enrichedAt": "2026-11-14T14:48:41Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11"
 }

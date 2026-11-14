@@ -36,6 +36,15 @@
   ],
   "gallery": [
     {
+      "src": "local://FP-308R-1_cadd1b3d17.jpg",
+      "thumb": "assets/enriched/264503/a6a1f3fc92_live1.jpg",
+      "alt": "Коннектор Furutech FP-308 (R ) ( furutech fp 308 (r ) )",
+      "local": "assets/enriched/264503/a6a1f3fc92_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 28154
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-308R.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-308R.jpg",
       "alt": "cof",
@@ -49,8 +58,8 @@
     "https://furutech.com/",
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-308-r/"
   ],
-  "enrichedAt": "2026-11-14T13:34:53Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

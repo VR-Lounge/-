@@ -26,6 +26,24 @@
   ],
   "gallery": [
     {
+      "src": "local://91b5414efc_pa_2000_r2.jpg",
+      "thumb": "assets/enriched/15966/d7c26c5beb_live1.jpg",
+      "alt": "предусилитель Musica hpa 200 ( musica hpa 200 )",
+      "local": "assets/enriched/15966/d7c26c5beb_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 60246
+    },
+    {
+      "src": "local://93e2c0dc1b_pa_2000_r_2675513511-1.jpg",
+      "thumb": "assets/enriched/15966/87ebaaa851_live2.jpg",
+      "alt": "предусилитель Musica hpa 200 ( musica hpa 200 )",
+      "local": "assets/enriched/15966/87ebaaa851_live2.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 50538
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Musica_hpa_200_.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Musica_hpa_200_-600x600.jpg",
       "alt": "Musica hpa 200",
@@ -38,8 +56,8 @@
   "sources": [
     "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Musica_hpa_200/"
   ],
-  "enrichedAt": "2026-11-14T13:45:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "enrichedAt": "2026-11-14T14:46:03Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }

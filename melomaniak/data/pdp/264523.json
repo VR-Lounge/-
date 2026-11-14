@@ -36,6 +36,15 @@
   ],
   "gallery": [
     {
+      "src": "local://5aae4a37b0_SAEC-SCX-5000D-R.png",
+      "thumb": "assets/enriched/264523/dee88dfb3c_live1.png",
+      "alt": "Фоно кабель SAEC  SCX-5000D-RL ( saec scx 5000d rl )",
+      "local": "assets/enriched/264523/dee88dfb3c_live1.png",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 108849
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/10357611-4ed1a315db4e9a826c93a357f5d2cbe5.jpeg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/10357611-4ed1a315db4e9a826c93a357f5d2cbe5.jpeg",
       "alt": "10357611-4ed1a315db4e9a826c93a357f5d2cbe5",
@@ -49,8 +58,8 @@
     "https://saec-com.co.jp/",
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-scx-5000d-rl/"
   ],
-  "enrichedAt": "2026-11-14T13:35:11Z",
+  "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w5-2026-11",
+  "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true
 }
