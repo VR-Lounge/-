@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T17:40:01Z",
+  "generatedAt": "2026-11-14T18:08:47Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,17 +8,17 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 847,
-  "okCount": 1040,
+  "meagerCount": 816,
+  "okCount": 1071,
   "reasonTallies": {
-    "gal": 847
+    "gal": 816
   },
   "byCategory": {
-    "Другое": 371,
+    "Другое": 358,
     "Кабели": 211,
-    "Усилители": 119,
-    "Акустика": 88,
-    "Источники": 39,
+    "Усилители": 114,
+    "Акустика": 78,
+    "Источники": 36,
     "ЦАПы": 8,
     "Ресиверы": 5,
     "Наушники": 4,
@@ -91,22 +91,6 @@
       "priority": 8915
     },
     {
-      "id": 262057,
-      "name": "Полочная акустика Divini Audio Reference 3 ( divini audio reference 3 )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-reference-3",
-      "cat": "Акустика",
-      "price": 3500000,
-      "descLen": 2311,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-reference-3/",
-      "priority": 4400
-    },
-    {
       "id": 274105,
       "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
       "slug": "e2b5c9e7b3cb30f1ab10dcda88f8f892",
@@ -137,38 +121,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/682eadb9dbf4e9454b04584b30b2d6f0/",
       "priority": 4102
-    },
-    {
-      "id": 262053,
-      "name": "Напольная акустика Divini Audio Illusion ( divini audio illusion )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-illusion",
-      "cat": "Акустика",
-      "price": 14000000,
-      "descLen": 3194,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-illusion/",
-      "priority": 3900
-    },
-    {
-      "id": 33408,
-      "name": "напольная акустика Lawrence Audio Drongo ( lawrence audio drongo )",
-      "slug": "napolnaya_akustika_Lawrence_Audio_Drongo-184927",
-      "cat": "Акустика",
-      "price": 4420000,
-      "descLen": 1138,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaya_akustika_Lawrence_Audio_Drongo-184927/",
-      "priority": 3320
     },
     {
       "id": 272699,
@@ -203,22 +155,6 @@
       "priority": 2040
     },
     {
-      "id": 262055,
-      "name": "Напольная акустика Divini Audio Rasa ( divini audio rasa )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-rasa",
-      "cat": "Акустика",
-      "price": 2960000,
-      "descLen": 5727,
-      "gallery": 1,
-      "specs": 1,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-rasa/",
-      "priority": 1860
-    },
-    {
       "id": 262059,
       "name": "Полочная акустика Divini Audio Reference 8 ( divini audio reference 8 )",
       "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-divini-audio-reference-8",
@@ -249,54 +185,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/3ddece0dbc5a88835f42288ede939ba3/",
       "priority": 1534
-    },
-    {
-      "id": 15622,
-      "name": "напольная акустика Lawrence Audio Double Bass ( lawrence audio double bass )",
-      "slug": "napolnaia_akystika_Lawrence_Audio_Double_Bass",
-      "cat": "Акустика",
-      "price": 2465000,
-      "descLen": 1272,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Lawrence_Audio_Double_Bass/",
-      "priority": 1365
-    },
-    {
-      "id": 262092,
-      "name": "Напольная акустика Lawrence Audio Penguin ( lawrence audio penguin )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-lawrence-audio-penguin",
-      "cat": "Акустика",
-      "price": 2456500,
-      "descLen": 1044,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-lawrence-audio-penguin/",
-      "priority": 1356
-    },
-    {
-      "id": 15594,
-      "name": "напольная акустика Audio Physic Caldera ( audio physic caldera )",
-      "slug": "napolnaia_akystika_Audio_Physic_Caldera",
-      "cat": "Акустика",
-      "price": 2362500,
-      "descLen": 1136,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Caldera/",
-      "priority": 1262
     },
     {
       "id": 269486,
@@ -379,22 +267,6 @@
       "priority": 918
     },
     {
-      "id": 15620,
-      "name": "напольная акустика Lawrence Audio Cello ( lawrence audio cello )",
-      "slug": "napolnaia_akystika_lawrence_audio_cello",
-      "cat": "Акустика",
-      "price": 2000000,
-      "descLen": 2336,
-      "gallery": 2,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_lawrence_audio_cello/",
-      "priority": 900
-    },
-    {
       "id": 15640,
       "name": "Центральный канал Audio Physic Reference Center ( audio physic reference center )",
       "slug": "polochnaia_akystika_audio_physic_reference_center",
@@ -409,54 +281,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/polochnaia_akystika_audio_physic_reference_center/",
       "priority": 900
-    },
-    {
-      "id": 272634,
-      "name": "Фонокорректор Clearaudio Absolute Phono",
-      "slug": "673ad79ae45147d37c1b1210aab3c51a",
-      "cat": "Усилители",
-      "price": 1971200,
-      "descLen": 3759,
-      "gallery": 3,
-      "specs": 16,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/673ad79ae45147d37c1b1210aab3c51a/",
-      "priority": 871
-    },
-    {
-      "id": 272838,
-      "name": "Сетевой проигрыватель AVM Audio MP 6.3",
-      "slug": "b5a94ffbf1af10f0efc3374861fbac7e",
-      "cat": "Источники",
-      "price": 1850000,
-      "descLen": 2996,
-      "gallery": 3,
-      "specs": 14,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/b5a94ffbf1af10f0efc3374861fbac7e/",
-      "priority": 750
-    },
-    {
-      "id": 262090,
-      "name": "Напольная акустика Lawrence Audio Dove ( lawrence audio dove )",
-      "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-lawrence-audio-dove",
-      "cat": "Акустика",
-      "price": 1700000,
-      "descLen": 869,
-      "gallery": 1,
-      "specs": 4,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-lawrence-audio-dove/",
-      "priority": 600
     },
     {
       "id": 272806,
@@ -523,22 +347,6 @@
       "priority": 390
     },
     {
-      "id": 25158,
-      "name": "усилитель мощности Anthem Statement P 5 BL ( anthem statement p 5 bl )",
-      "slug": "ysilitel_moshnosti_anthem_statement_p_5_bl",
-      "cat": "Усилители",
-      "price": 1461915,
-      "descLen": 2290,
-      "gallery": 2,
-      "specs": 2,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_anthem_statement_p_5_bl/",
-      "priority": 361
-    },
-    {
       "id": 26636,
       "name": "усилитель мощности Audio Physic AP MONO ( audio physic ap mono )",
       "slug": "ysilitel_moshnosti_audio_physic_ap_mono_",
@@ -587,22 +395,6 @@
       "priority": 0
     },
     {
-      "id": 15914,
-      "name": "усилитель мощности Leben CS 1000P ( leben cs 1000p )",
-      "slug": "ysilitel_moshnosti_Leben_CS_1000P",
-      "cat": "Усилители",
-      "price": 1080000,
-      "descLen": 3569,
-      "gallery": 2,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_Leben_CS_1000P/",
-      "priority": -20
-    },
-    {
       "id": 40225,
       "name": "центральный канал Paradigm Persona C Vanta High Gloss Black ( paradigm persona c vanta high gloss black )",
       "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-persona-c-vanta-high-gloss-black",
@@ -633,22 +425,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-persona-c-sonic-metallic-sliver/",
       "priority": -34
-    },
-    {
-      "id": 271022,
-      "name": "Стереоусилитель мощности Matrix Audio M MA-1 NS2",
-      "slug": "147d8d3d174633cd445cf1ffcfeeabb7",
-      "cat": "Усилители",
-      "price": 1049990,
-      "descLen": 2970,
-      "gallery": 0,
-      "specs": 14,
-      "enriched": true,
-      "reasons": [
-        "gal:0"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/147d8d3d174633cd445cf1ffcfeeabb7/",
-      "priority": -51
     },
     {
       "id": 273573,
@@ -713,38 +489,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Line_Magnetic_Audio_LM_512CA/",
       "priority": -110
-    },
-    {
-      "id": 270478,
-      "name": "Виниловый проигрыватель Transrotor Dark Star Silver Shadow",
-      "slug": "096ff8d5dd77265ea1d520b1f09361f7",
-      "cat": "Источники",
-      "price": 984900,
-      "descLen": 1895,
-      "gallery": 0,
-      "specs": 12,
-      "enriched": true,
-      "reasons": [
-        "gal:0"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/096ff8d5dd77265ea1d520b1f09361f7/",
-      "priority": -116
-    },
-    {
-      "id": 272562,
-      "name": "Виниловый проигрыватель Clearaudio Innovation Compact",
-      "slug": "f9c201c1ffcd7d224b0118b22ea7eabb",
-      "cat": "Источники",
-      "price": 983600,
-      "descLen": 2680,
-      "gallery": 1,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/f9c201c1ffcd7d224b0118b22ea7eabb/",
-      "priority": -117
     },
     {
       "id": 271212,
@@ -817,46 +561,14 @@
       "cat": "Усилители",
       "price": 901000,
       "descLen": 2520,
-      "gallery": 3,
+      "gallery": 1,
       "specs": 7,
       "enriched": true,
       "reasons": [
-        "gal:3"
+        "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-spec-rsa-m3-ex/",
       "priority": -199
-    },
-    {
-      "id": 16846,
-      "name": "усилитель мощности Triode TRX P3M ( triode trx p3m )",
-      "slug": "ysilitel_moshnosti_triode_trx_p3m",
-      "cat": "Усилители",
-      "price": 880000,
-      "descLen": 3895,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_triode_trx_p3m/",
-      "priority": -220
-    },
-    {
-      "id": 260690,
-      "name": "Полочная акустика Lawrence Audio Bulbul ( lawrence audio bulbul )",
-      "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-lawrence-audio-bulbul",
-      "cat": "Акустика",
-      "price": 841500,
-      "descLen": 801,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-lawrence-audio-bulbul/",
-      "priority": -259
     },
     {
       "id": 272804,
@@ -1289,22 +1001,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/150621ddf7355d13f6d541be2c8ea0a7/",
       "priority": -527
-    },
-    {
-      "id": 272015,
-      "name": "Сетевой фильтр Isol-8 The Grid",
-      "slug": "787e450e4f4cbe7fe2544233ad4b1ce1",
-      "cat": "Другое",
-      "price": 564000,
-      "descLen": 3327,
-      "gallery": 1,
-      "specs": 6,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/787e450e4f4cbe7fe2544233ad4b1ce1/",
-      "priority": -536
     },
     {
       "id": 261878,
@@ -1801,22 +1497,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/c0b341b5087f490da04904a5e47e180c/",
       "priority": -701
-    },
-    {
-      "id": 271990,
-      "name": "Сетевой фильтр Isol-8 SubStation Integra",
-      "slug": "5c0837da468cbcf8b294e4f1389ecd05",
-      "cat": "Другое",
-      "price": 395100,
-      "descLen": 3757,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/5c0837da468cbcf8b294e4f1389ecd05/",
-      "priority": -705
     },
     {
       "id": 15948,
@@ -2489,22 +2169,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-premier-800f-gloss-white-2/",
       "priority": -813
-    },
-    {
-      "id": 271980,
-      "name": "Сетевой фильтр Isol-8 MiniSub Chroma",
-      "slug": "16eef8229569eb7d0f7582ec28d9e047",
-      "cat": "Другое",
-      "price": 283600,
-      "descLen": 2943,
-      "gallery": 3,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:3"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/16eef8229569eb7d0f7582ec28d9e047/",
-      "priority": -817
     },
     {
       "id": 264533,
@@ -3627,22 +3291,6 @@
       "priority": -928
     },
     {
-      "id": 271974,
-      "name": "Сетевой фильтр Isol-8 Powerline Extreme",
-      "slug": "be4915d1136d4f608d69ad4c1eb48034",
-      "cat": "Другое",
-      "price": 170900,
-      "descLen": 791,
-      "gallery": 1,
-      "specs": 5,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/be4915d1136d4f608d69ad4c1eb48034/",
-      "priority": -930
-    },
-    {
       "id": 264090,
       "name": "Вибропоглатитель Audio Replas OPT-30HG-SC HR/4P ( audio replas opt 30hg sc hr 4p )",
       "slug": "%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-opt-30hg-sc-hr-4p",
@@ -3665,11 +3313,11 @@
       "cat": "Другое",
       "price": 169646,
       "descLen": 825,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-e-tp609e-ncf-europe/",
       "priority": -931
@@ -3737,22 +3385,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/b020c88ddeb9563e43b4ad9e622e9514/",
       "priority": -932
-    },
-    {
-      "id": 271971,
-      "name": "Сетевой фильтр Isol-8 Connect Controller",
-      "slug": "586e6af281c3ac2eaf43dc26e56c9efe",
-      "cat": "Другое",
-      "price": 166100,
-      "descLen": 2542,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/586e6af281c3ac2eaf43dc26e56c9efe/",
-      "priority": -934
     },
     {
       "id": 40265,
@@ -4187,22 +3819,6 @@
       "priority": -961
     },
     {
-      "id": 272007,
-      "name": "Сетевой фильтр Isol-8 Powerline Chroma",
-      "slug": "f753cb6d941b15784b3b2f84de8df75a",
-      "cat": "Другое",
-      "price": 136900,
-      "descLen": 3111,
-      "gallery": 2,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:2"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/f753cb6d941b15784b3b2f84de8df75a/",
-      "priority": -964
-    },
-    {
       "id": 15630,
       "name": "центральный канал Audio Physic Celsius ( audio physic celsius )",
       "slug": "tsentralnii_kanal_Audio_Physic_Celsius",
@@ -4249,22 +3865,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/cd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-205-cd/",
       "priority": -965
-    },
-    {
-      "id": 271969,
-      "name": "Сетевой фильтр Isol-8 Powerline Axis 5 way",
-      "slug": "61dd2b7e2094af08c5df2bdf39a28891",
-      "cat": "Другое",
-      "price": 132600,
-      "descLen": 4178,
-      "gallery": 1,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/61dd2b7e2094af08c5df2bdf39a28891/",
-      "priority": -968
     },
     {
       "id": 264089,
@@ -4329,38 +3929,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-acoustic-energy-ae-300/",
       "priority": -971
-    },
-    {
-      "id": 271965,
-      "name": "Сетевой фильтр Isol-8 Connect Slave IEC 2&#215;4",
-      "slug": "01dcf2770665d515ea992974c2b3a02d",
-      "cat": "Другое",
-      "price": 126000,
-      "descLen": 2537,
-      "gallery": 1,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/01dcf2770665d515ea992974c2b3a02d/",
-      "priority": -974
-    },
-    {
-      "id": 271967,
-      "name": "Сетевой фильтр Isol-8 Connect Slave Schuko 2&#215;2",
-      "slug": "54dd2a548bf121e8b4574b717531972a",
-      "cat": "Другое",
-      "price": 126000,
-      "descLen": 2552,
-      "gallery": 1,
-      "specs": 9,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/54dd2a548bf121e8b4574b717531972a/",
-      "priority": -974
     },
     {
       "id": 264025,
@@ -4571,38 +4139,6 @@
       "priority": -982
     },
     {
-      "id": 271963,
-      "name": "Сетевой фильтр Isol-8 Powerline Ultra 4 way",
-      "slug": "f4f2cae9efe7fed9d222d5d88992b4c6",
-      "cat": "Другое",
-      "price": 118500,
-      "descLen": 2397,
-      "gallery": 1,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/f4f2cae9efe7fed9d222d5d88992b4c6/",
-      "priority": -982
-    },
-    {
-      "id": 272005,
-      "name": "Сетевой фильтр Isol-8 Powerline 1080",
-      "slug": "ae999b6d84afe8b56f1a83012728bd2c",
-      "cat": "Другое",
-      "price": 118500,
-      "descLen": 1706,
-      "gallery": 1,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ae999b6d84afe8b56f1a83012728bd2c/",
-      "priority": -982
-    },
-    {
       "id": 272370,
       "name": "Стереоусилитель Bluesound POWERNODE N330",
       "slug": "cbbaa76fce21ecd80a051388c985fe93",
@@ -4809,22 +4345,6 @@
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-ref-si7000sz/",
       "priority": -989
-    },
-    {
-      "id": 271961,
-      "name": "Сетевой фильтр Isol-8 Powerline Plus 6 way",
-      "slug": "9f96998164e24c100b4f4e6459399dd5",
-      "cat": "Другое",
-      "price": 110400,
-      "descLen": 2227,
-      "gallery": 1,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/9f96998164e24c100b4f4e6459399dd5/",
-      "priority": -990
     },
     {
       "id": 271625,
@@ -6497,11 +6017,11 @@
       "cat": "Другое",
       "price": 59797,
       "descLen": 1067,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-e-tp60e-ncf-r/",
       "priority": -1041
@@ -6728,22 +6248,6 @@
         "gal:1"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-e-tp86-e-g/",
-      "priority": -1046
-    },
-    {
-      "id": 271959,
-      "name": "Сетевой фильтр Isol-8 VMC1080",
-      "slug": "44290aa34dcb44ccec6c9258cea45a07",
-      "cat": "Другое",
-      "price": 54800,
-      "descLen": 1610,
-      "gallery": 1,
-      "specs": 7,
-      "enriched": true,
-      "reasons": [
-        "gal:1"
-      ],
-      "source": "https://xn--80aannlcfckh.xn--p1ai/product/44290aa34dcb44ccec6c9258cea45a07/",
       "priority": -1046
     },
     {
@@ -8673,11 +8177,11 @@
       "cat": "Кабели",
       "price": 28990,
       "descLen": 2421,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 5,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/502b35657ec25bf870ca794399ebde23/",
       "priority": -1072
@@ -10817,11 +10321,11 @@
       "cat": "Другое",
       "price": 10710,
       "descLen": 1047,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-12l-r/",
       "priority": -1090
@@ -10961,11 +10465,11 @@
       "cat": "Другое",
       "price": 10229,
       "descLen": 978,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-n1-r/",
       "priority": -1090
@@ -11121,11 +10625,11 @@
       "cat": "Другое",
       "price": 9450,
       "descLen": 1044,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-12l-g/",
       "priority": -1091
@@ -11265,11 +10769,11 @@
       "cat": "Другое",
       "price": 8108,
       "descLen": 963,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-n1-g/",
       "priority": -1092
@@ -11281,11 +10785,11 @@
       "cat": "Другое",
       "price": 8108,
       "descLen": 1048,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-ag/",
       "priority": -1092
@@ -11665,11 +11169,11 @@
       "cat": "Другое",
       "price": 6486,
       "descLen": 989,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 3,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-15-plus-r/",
       "priority": -1094
@@ -11793,11 +11297,11 @@
       "cat": "Другое",
       "price": 5988,
       "descLen": 1007,
-      "gallery": 1,
+      "gallery": 2,
       "specs": 4,
       "enriched": true,
       "reasons": [
-        "gal:1"
+        "gal:2"
       ],
       "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-15-plus-g/",
       "priority": -1095

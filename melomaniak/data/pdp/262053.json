@@ -45,6 +45,51 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/divini-audio-illusion-e1626523516805-600x600.jpg",
       "alt": "divini-audio-illusion-e1626523516805",
       "local": "assets/from-live/products/a271f56e99_divini-audio-illusion-e1626523516805.jpg"
+    },
+    {
+      "src": "http://www.divini-audio.com/upload/productsen/1702252352120000002.jpg",
+      "thumb": "assets/enriched/262053/0f0c7f2aa3_w11.jpg",
+      "alt": "262053",
+      "local": "assets/enriched/262053/0f0c7f2aa3_w11.jpg",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 105466
+    },
+    {
+      "src": "http://www.divini-audio.com/upload/productsen/1702252352120000003.jpg",
+      "thumb": "assets/enriched/262053/9e749e17db_w11.jpg",
+      "alt": "262053",
+      "local": "assets/enriched/262053/9e749e17db_w11.jpg",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 319470
+    },
+    {
+      "src": "http://www.divini-audio.com/upload/productsen/1702252352120000004.jpg",
+      "thumb": "assets/enriched/262053/5183dcee77_w11.jpg",
+      "alt": "262053",
+      "local": "assets/enriched/262053/5183dcee77_w11.jpg",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 142492
+    },
+    {
+      "src": "http://www.divini-audio.com/upload/productsen/1702252352120000005.jpg",
+      "thumb": "assets/enriched/262053/af2c94359f_w11.jpg",
+      "alt": "262053",
+      "local": "assets/enriched/262053/af2c94359f_w11.jpg",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 128644
+    },
+    {
+      "src": "http://www.divini-audio.com/upload/productsen/1702252352120000006.jpg",
+      "thumb": "assets/enriched/262053/e3492f0e0c_w11.jpg",
+      "alt": "262053",
+      "local": "assets/enriched/262053/e3492f0e0c_w11.jpg",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 104575
     }
   ],
   "sku": "",
@@ -56,6 +101,6 @@
   ],
   "enrichedAt": "2026-11-14T13:45:44Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w11-2026-11",
   "galleryHitl": true
 }

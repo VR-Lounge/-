@@ -52,13 +52,52 @@
       "local": "assets/from-live/products/9e67ca4e57_ysilitel_moshnosti_Leben_CS_1000P.jpg"
     },
     {
-      "src": "from-live://9e67ca4e57_ysilitel_moshnosti_Leben_CS_1000P.jpg",
-      "thumb": "assets/enriched/15914/3c5a29adcd_w10live.jpg",
-      "alt": "15914",
-      "local": "assets/enriched/15914/3c5a29adcd_w10live.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 26983
+      "src": "https://jeffsplace.positive-feedback.com/wp-content/uploads/2012/04/CS-1000P-ANGLE.jpg",
+      "local": "assets/enriched/15914/6f559f49e0_w11leben.jpg",
+      "bytes": 225772,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://jeffsplace.positive-feedback.com/wp-content/uploads/2012/04/CS-1000P-FRONT.jpg",
+      "local": "assets/enriched/15914/fa650dc1a0_w11leben.jpg",
+      "bytes": 220042,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://jeffsplace.positive-feedback.com/wp-content/uploads/2012/04/Pentode-Triode-Selector.jpg",
+      "local": "assets/enriched/15914/7c7f2b1ba4_w11leben.jpg",
+      "bytes": 57368,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://jeffsplace.positive-feedback.com/wp-content/uploads/2012/04/BIAS-ADJUSTMENT.jpg",
+      "local": "assets/enriched/15914/25578a00e7_w11leben.jpg",
+      "bytes": 140614,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://www.fidelity-online.de/wp-content/uploads/2015/10/Leben_01-770x458.jpg",
+      "local": "assets/enriched/15914/7c0c1a70b7_w11leben.jpg",
+      "bytes": 54486,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://vinylsound.ca/cdn/shop/products/leben_cs_1000p_stereo_power_amplifier_front_4.jpg",
+      "local": "assets/enriched/15914/439c760e25_w11leben.jpg",
+      "bytes": 73254,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://vinylsound.ca/cdn/shop/products/leben_cs_1000p_back_2.jpg",
+      "local": "assets/enriched/15914/64dc93d56a_w11leben.jpg",
+      "bytes": 67786,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://donbetteraudio.com/cdn/shop/products/internal.18e67d334324045a31208e9bdc477a4f.DO1000880_1200x1200.jpg",
+      "local": "assets/enriched/15914/baabc8b08a_w11leben.jpg",
+      "bytes": 198390,
+      "wave": "meager-w11-2026-11"
     }
   ],
   "sku": "",
@@ -70,6 +109,6 @@
   ],
   "enrichedAt": "2026-11-14T13:45:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w10-2026-11",
+  "meagerWave": "meager-w11-2026-11",
   "galleryHitl": true
 }

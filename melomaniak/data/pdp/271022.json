@@ -84,7 +84,89 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://www.theaudiotailor.com.au/cdn/shop/articles/Matrix-Audio-MA-1-Power-Amplifier-australia.png?v=1770860108&amp;width=2048",
+      "thumb": "assets/enriched/271022/7935942d28_w11.png",
+      "alt": "271022",
+      "local": "assets/enriched/271022/7935942d28_w11.png",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 1742687
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/2109/2929/files/Matrix-Audio-MA-1-Power-Amplifier-australia-4.png?v=1756972611",
+      "thumb": "assets/enriched/271022/92d95e8f38_w11.png",
+      "alt": "271022",
+      "local": "assets/enriched/271022/92d95e8f38_w11.png",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 2587789
+    },
+    {
+      "src": "https://www.theaudiotailor.com.au/cdn/shop/files/Matrix-Audio-MA-1-Power-Amplifier-australia-2.png?v=1791447638&amp;width=2048",
+      "thumb": "assets/enriched/271022/48faa2b0af_w11.png",
+      "alt": "271022",
+      "local": "assets/enriched/271022/48faa2b0af_w11.png",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 4200274
+    },
+    {
+      "src": "https://www.theaudiotailor.com.au/cdn/shop/files/Matrix-Audio-MA-1-Power-Amplifier-australia-3.png?v=1791447642&amp;width=2048",
+      "thumb": "assets/enriched/271022/02c9cbcf9c_w11.png",
+      "alt": "271022",
+      "local": "assets/enriched/271022/02c9cbcf9c_w11.png",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 5880974
+    },
+    {
+      "src": "https://www.matrix-digi.com/storage/images/b6daa41ba35046b09d5d4b185fa334d8.png",
+      "thumb": "assets/enriched/271022/5500d37d01_w11.png",
+      "alt": "271022",
+      "local": "assets/enriched/271022/5500d37d01_w11.png",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 158655
+    },
+    {
+      "src": "https://www.matrix-digi.com/storage/images/3313711b57a9709058450c992197fa5b.jpg",
+      "thumb": "assets/enriched/271022/bd11a76b2b_w11.jpg",
+      "alt": "271022",
+      "local": "assets/enriched/271022/bd11a76b2b_w11.jpg",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 2985732
+    },
+    {
+      "src": "https://www.matrix-digi.com/storage/images/db7e94083099f27a3a563675ba799fe2.png",
+      "thumb": "assets/enriched/271022/2be7e55119_w11.png",
+      "alt": "271022",
+      "local": "assets/enriched/271022/2be7e55119_w11.png",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 4284614
+    },
+    {
+      "src": "https://www.matrix-digi.com/storage/images/19ec8201152aa25262dcf6e8bb0b8aa9.jpg",
+      "thumb": "assets/enriched/271022/c10d13daad_w11.jpg",
+      "alt": "271022",
+      "local": "assets/enriched/271022/c10d13daad_w11.jpg",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 2858694
+    },
+    {
+      "src": "https://www.matrix-digi.com/storage/images/0824ec0fffc7f3c80da0c0fbce0e29ba.png",
+      "thumb": "assets/enriched/271022/68c49f94ac_w11.png",
+      "alt": "271022",
+      "local": "assets/enriched/271022/68c49f94ac_w11.png",
+      "enriched": true,
+      "attribution": "deep",
+      "bytes": 4759398
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
@@ -93,6 +175,6 @@
   ],
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w11-2026-11",
   "galleryHitl": true
 }

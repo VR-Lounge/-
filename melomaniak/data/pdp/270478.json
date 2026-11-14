@@ -74,7 +74,71 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://www.fidelity-magazine.com/wp-content/uploads/2022/04/transrotor-dark-star-silver-shadow-01.jpg",
+      "thumb": "assets/enriched/270478/6afefe0f02_w11b.jpg",
+      "alt": "270478",
+      "local": "assets/enriched/270478/6afefe0f02_w11b.jpg",
+      "enriched": true,
+      "attribution": "deep-direct",
+      "bytes": 77859
+    },
+    {
+      "src": "https://www.fidelity-magazine.com/wp-content/uploads/2022/04/transrotor-dark-star-silver-shadow-02.jpg",
+      "thumb": "assets/enriched/270478/aaef14b552_w11b.jpg",
+      "alt": "270478",
+      "local": "assets/enriched/270478/aaef14b552_w11b.jpg",
+      "enriched": true,
+      "attribution": "deep-direct",
+      "bytes": 81808
+    },
+    {
+      "src": "https://www.fidelity-magazine.com/wp-content/uploads/2022/04/transrotor-dark-star-silver-shadow-03.jpg",
+      "thumb": "assets/enriched/270478/65fbfca769_w11b.jpg",
+      "alt": "270478",
+      "local": "assets/enriched/270478/65fbfca769_w11b.jpg",
+      "enriched": true,
+      "attribution": "deep-direct",
+      "bytes": 90253
+    },
+    {
+      "src": "https://www.fidelity-magazine.com/wp-content/uploads/2022/04/transrotor-dark-star-silver-shadow-04.jpg",
+      "thumb": "assets/enriched/270478/053362afd5_w11b.jpg",
+      "alt": "270478",
+      "local": "assets/enriched/270478/053362afd5_w11b.jpg",
+      "enriched": true,
+      "attribution": "deep-direct",
+      "bytes": 86358
+    },
+    {
+      "src": "https://www.fidelity-magazine.com/wp-content/uploads/2022/04/transrotor-dark-star-silver-shadow-05.jpg",
+      "thumb": "assets/enriched/270478/ed05a569af_w11b.jpg",
+      "alt": "270478",
+      "local": "assets/enriched/270478/ed05a569af_w11b.jpg",
+      "enriched": true,
+      "attribution": "deep-direct",
+      "bytes": 68855
+    },
+    {
+      "src": "https://www.fidelity-magazine.com/wp-content/uploads/2022/04/transrotor-dark-star-silver-shadow-99.jpg",
+      "thumb": "assets/enriched/270478/ff83b929cf_w11b.jpg",
+      "alt": "270478",
+      "local": "assets/enriched/270478/ff83b929cf_w11b.jpg",
+      "enriched": true,
+      "attribution": "deep-direct",
+      "bytes": 91300
+    },
+    {
+      "src": "https://transrotor-canada.com/wp-content/uploads/2021/02/Silver-Shadow-TRA-mittel.jpg",
+      "thumb": "assets/enriched/270478/0eb925557a_w11b.jpg",
+      "alt": "270478",
+      "local": "assets/enriched/270478/0eb925557a_w11b.jpg",
+      "enriched": true,
+      "attribution": "deep-direct",
+      "bytes": 58649
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
@@ -83,6 +147,6 @@
   ],
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w11-2026-11",
   "galleryHitl": true
 }

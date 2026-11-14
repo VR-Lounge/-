@@ -41,19 +41,40 @@
   ],
   "gallery": [
     {
-      "src": "https://www.audiophysic.com/wp-content/uploads/2018/09/classic_10-gal-1.jpg",
-      "thumb": "https://www.audiophysic.com/wp-content/uploads/2018/09/classic_10-gal-1.jpg",
-      "alt": "напольная акустика Audio Physic Caldera ( audio physic caldera )",
-      "local": "assets/enriched/15594/34aeba28e9_1.jpg",
-      "enriched": true,
-      "attribution": "www.audiophysic.com",
-      "bytes": 16410
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Audio_Physic_Caldera.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Audio_Physic_Caldera-600x600.jpg",
       "alt": "Audio Physic Caldera",
       "local": "assets/from-live/products/60c0807285_napolnaia_akystika_Audio_Physic_Caldera.jpg"
+    },
+    {
+      "src": "https://www.hifi-advice.com/blog/wp-content/uploads/2016/07/Audio_Physic_Caldera_750pix-IMG_3777.jpg",
+      "local": "assets/enriched/15594/a18e498c96_w11cald.jpg",
+      "bytes": 253387,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://www.hifi-advice.com/blog/wp-content/uploads/2016/07/Audio_Physic_Caldera_550pix-IMG_3762.jpg",
+      "local": "assets/enriched/15594/006e3ed0d5_w11cald.jpg",
+      "bytes": 157161,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://www.hifi-advice.com/blog/wp-content/uploads/2016/07/Audio_Physic_Caldera_550pix.jpg",
+      "local": "assets/enriched/15594/a6149d6000_w11cald.jpg",
+      "bytes": 162268,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://www.hifi-advice.com/blog/wp-content/uploads/2016/07/Audio_Physic_Caldera_550pix-IMG_3795.jpg",
+      "local": "assets/enriched/15594/70f60af9e8_w11cald.jpg",
+      "bytes": 155781,
+      "wave": "meager-w11-2026-11"
+    },
+    {
+      "src": "https://www.hifi-advice.com/blog/wp-content/uploads/2016/07/Audio_Physic_Caldera_550pix-IMG_3780.jpg",
+      "local": "assets/enriched/15594/0d4649f912_w11cald.jpg",
+      "bytes": 148592,
+      "wave": "meager-w11-2026-11"
     }
   ],
   "sku": "",
@@ -65,6 +86,6 @@
   ],
   "enrichedAt": "2026-11-14T13:49:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w6-2026-11",
+  "meagerWave": "meager-w11-2026-11",
   "galleryHitl": true
 }
