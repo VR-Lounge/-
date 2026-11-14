@@ -94,7 +94,48 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_1_.jpg",
+      "local": "assets/enriched/270627/c0221b5100_w13media.jpg",
+      "bytes": 51017,
+      "wave": "meager-w13-2026-11",
+      "w": 547,
+      "h": 950
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_5_.jpg",
+      "local": "assets/enriched/270627/5de9ff36da_w13media.jpg",
+      "bytes": 56531,
+      "wave": "meager-w13-2026-11",
+      "w": 768,
+      "h": 1333
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_5_-600x600.jpg",
+      "local": "assets/enriched/270627/78b0d8dac8_w13var.jpg",
+      "bytes": 19502,
+      "wave": "meager-w13-2026-11",
+      "w": 600,
+      "h": 600
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_7_.jpg",
+      "local": "assets/enriched/270627/b4afd22f30_w13media.jpg",
+      "bytes": 53633,
+      "wave": "meager-w13-2026-11",
+      "w": 768,
+      "h": 1333
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_7_-600x600.jpg",
+      "local": "assets/enriched/270627/ba9cd3986e_w13var.jpg",
+      "bytes": 16531,
+      "wave": "meager-w13-2026-11",
+      "w": 600,
+      "h": 600
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

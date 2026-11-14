@@ -74,7 +74,24 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "https://www.audiolab.co.uk/cdn/shop/files/7000CDTBlack2048x2048jpg_1.jpg",
+      "local": "assets/enriched/272712/9eab3f0720_w13oem.jpg",
+      "bytes": 56243,
+      "wave": "meager-w13-2026-11",
+      "w": 2048,
+      "h": 2048
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0749/7708/3672/files/9000CDT5.png",
+      "local": "assets/enriched/272712/2e4ac66006_w13oem.png",
+      "bytes": 1166832,
+      "wave": "meager-w13-2026-11",
+      "w": 2000,
+      "h": 2000
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

@@ -109,7 +109,72 @@
       "source": "table"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "http://www.psaudio.com/cdn/shop/products/P12-Silver-Front-2000-Edit-1.jpg",
+      "local": "assets/enriched/273586/17c0c31b21_w13oem.jpg",
+      "bytes": 77915,
+      "wave": "meager-w13-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://www.psaudio.com/cdn/shop/products/P12-Silver-Front-2000-Edit-1_grande.jpg",
+      "local": "assets/enriched/273586/ac1f2f189f_w13oem.jpg",
+      "bytes": 15318,
+      "wave": "meager-w13-2026-11",
+      "w": 600,
+      "h": 600
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0672/2283/1394/products/P12-Silver-Left-Side-2000-Edit-Edit.jpg",
+      "local": "assets/enriched/273586/1bec865a52_w13oem.jpg",
+      "bytes": 116583,
+      "wave": "meager-w13-2026-11",
+      "w": 2000,
+      "h": 637
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0672/2283/1394/products/P12-Black-Left-Side-2000-Edit.jpg",
+      "local": "assets/enriched/273586/cdbc9e8571_w13oem.jpg",
+      "bytes": 203930,
+      "wave": "meager-w13-2026-11",
+      "w": 2000,
+      "h": 701
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0672/2283/1394/products/P12-Black-Front-2000-Edit.jpg",
+      "local": "assets/enriched/273586/f3aae0fe45_w13oem.jpg",
+      "bytes": 183557,
+      "wave": "meager-w13-2026-11",
+      "w": 2000,
+      "h": 2000
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0672/2283/1394/products/P12-Silver-Rear.png",
+      "local": "assets/enriched/273586/4448ea6132_w13oem.png",
+      "bytes": 1133429,
+      "wave": "meager-w13-2026-11",
+      "w": 3000,
+      "h": 3000
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0672/2283/1394/products/P12-Silver-Right-Side-2000-Edit-Edit.jpg",
+      "local": "assets/enriched/273586/6fc896eb8e_w13oem.jpg",
+      "bytes": 136210,
+      "wave": "meager-w13-2026-11",
+      "w": 2000,
+      "h": 742
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/0672/2283/1394/products/DirectStream-P12-Black-Right-Side-2000-Edit.jpg",
+      "local": "assets/enriched/273586/a908392750_w13oem.jpg",
+      "bytes": 175965,
+      "wave": "meager-w13-2026-11",
+      "w": 2000,
+      "h": 861
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

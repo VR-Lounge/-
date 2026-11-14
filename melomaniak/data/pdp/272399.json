@@ -89,7 +89,16 @@
       "source": "list"
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "src": "http://www.bluesound.com/cdn/shop/files/2026BLSPOWERNODEEDGE.png",
+      "local": "assets/enriched/272399/ab037ace2b_w13oem.png",
+      "bytes": 907608,
+      "wave": "meager-w13-2026-11",
+      "w": 2000,
+      "h": 2000
+    }
+  ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,

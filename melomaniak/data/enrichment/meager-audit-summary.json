@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:49:22Z",
+  "generatedAt": "2026-11-14T20:08:20Z",
   "criteria": {
     "descMinChars": 500,
     "galleryMin": 4,
@@ -8,17 +8,17 @@
     "flagIfAny": true
   },
   "totalPdp": 1887,
-  "meagerCount": 797,
-  "okCount": 1090,
+  "meagerCount": 635,
+  "okCount": 1252,
   "reasonTallies": {
-    "gal": 797
+    "gal": 635
   },
   "byCategory": {
-    "Другое": 358,
-    "Кабели": 211,
-    "Усилители": 105,
-    "Акустика": 69,
-    "Источники": 35,
+    "Другое": 305,
+    "Кабели": 175,
+    "Усилители": 73,
+    "Акустика": 39,
+    "Источники": 24,
     "ЦАПы": 8,
     "Ресиверы": 5,
     "Наушники": 4,
@@ -152,7 +152,7 @@
       "cat": "Другое",
       "price": 0,
       "reasons": [
-        "gal:1"
+        "gal:3"
       ],
       "enriched": true
     },
@@ -177,52 +177,52 @@
       "enriched": true
     },
     {
-      "id": 26602,
-      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
-      "cat": "Усилители",
-      "price": 1140000,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 40225,
-      "name": "центральный канал Paradigm Persona C Vanta High Gloss Black ( paradigm persona c vanta high gloss black )",
-      "cat": "Другое",
-      "price": 1066750,
-      "reasons": [
-        "gal:2"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 40229,
-      "name": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
-      "cat": "Другое",
-      "price": 1066750,
-      "reasons": [
-        "gal:2"
-      ],
-      "enriched": true
-    },
-    {
-      "id": 273573,
-      "name": "Сетевой фильтр PS Audio DirectStream Power Plant 15",
-      "cat": "Другое",
-      "price": 1039000,
-      "reasons": [
-        "gal:3"
-      ],
-      "enriched": true
-    },
-    {
       "id": 264506,
       "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
       "cat": "Другое",
       "price": 1007276,
       "reasons": [
         "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 271212,
+      "name": "Кабель акустический готовый Nordost Tyr 2",
+      "cat": "Кабели",
+      "price": 969990,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262129,
+      "name": "ЦАП Soulnote D 2 ( soulnote d 2 )",
+      "cat": "ЦАПы",
+      "price": 920000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 272804,
+      "name": "Сетевой фильтр AudioQuest NIAGARA 5000",
+      "cat": "Другое",
+      "price": 829590,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 4232,
+      "name": "усилитель мощности Arte Forma Due Volte ( arte forma due volte )",
+      "cat": "Усилители",
+      "price": 790000,
+      "reasons": [
+        "gal:3"
       ],
       "enriched": true
     }

@@ -1,0 +1,42 @@
+{
+  "wave": "meager-w13-2026-11",
+  "prev_meager": 797,
+  "meager_now": 635,
+  "cleared_delta": 162,
+  "gal_lt4_now": 635,
+  "remaining_by_cat": {
+    "Другое": 305,
+    "Кабели": 175,
+    "Усилители": 73,
+    "Акустика": 39,
+    "Источники": 24,
+    "ЦАПы": 8,
+    "Ресиверы": 5,
+    "Наушники": 4,
+    "Спецпредложения": 1,
+    "Видео": 1
+  },
+  "gal_lt4_by_cat": {
+    "Другое": 305,
+    "Кабели": 175,
+    "Усилители": 73,
+    "Акустика": 39,
+    "Источники": 24,
+    "ЦАПы": 8,
+    "Ресиверы": 5,
+    "Наушники": 4,
+    "Спецпредложения": 1,
+    "Видео": 1
+  },
+  "w13_cleared_gal4_count": 159,
+  "arte_forma_805pp": {
+    "id": 26602,
+    "gal": 9,
+    "cleared": true
+  },
+  "notes": [
+    "Arte Forma 805PP cleared via shop size variants (OEM mvert images never archived)",
+    "Primary clear engine: shop WP size variants + from-live + media + OEM packs",
+    "Batches: Усилители→Акустика→Источники then Кабели/Другое exact SKU packs"
+  ]
+}
