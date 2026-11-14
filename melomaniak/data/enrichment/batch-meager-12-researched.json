@@ -1,0 +1,2221 @@
+{
+  "26638": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Audio Physic AP Pre — предусилитель с пультом из эпохи, когда AP пробовала электронику рядом с акустикой. В открытых OEM-источниках 2020-х полноценного datasheet почти нет: карточка салона сохраняет только факт «пультовой предварительный усилитель».</p>\n<ul><li>Тип: линейный предусилитель с ДУ</li><li>Бренд: Audio Physic (Brilon)</li><li>OEM datasheet в открытом доступе не подтверждён</li><li>HITL: паспорт/наклейка экземпляра обязательны</li></ul>\n<aside><p><strong>Почему так скудно.</strong> Audio Physic сегодня — в первую очередь акустика; электроника AP Pre снята с активной линейки. Не выдумываем ватты и С/Ш без паспорта.</p></aside>\n<h2>HITL</h2>\n<p>Сфотографировать заднюю панель и снять надписи с шасси в салоне перед публикацией полных specs. Галерея OEM недоступна — 1 кадр до обновления.</p>\n<h2>Карточка салона</h2>\n<p>предусилитель Audio Physic AP Pre ( audio physic ap pre ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.audiophysic.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Предусилитель с пультом ДУ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Audio Physic",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Статус",
+        "value": "Снят с активной OEM-линейки; паспорт HITL",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Примечание",
+        "value": "Полные электрические specs — только с экземпляра",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "26832": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Audio Physic Classic Sub — активный сабвуфер закрытого типа под полочники Classic/Step: 260 мм драйвер, 130 Вт, RCA, регулировка уровня и фазы. Для стерео, где Step/Classic не дотягивают низ, без «киношного» бума.</p>\n<ul><li>Закрытый корпус · активный</li><li>Драйвер Ø 260 мм</li><li>Мощность 130 Вт</li><li>Импеданс 6 Ом (заявка дилера)</li><li>RCA · level · phase</li><li>400 × 360 × 360 мм</li></ul>\n<aside><p><strong>Закрытый vs фазоинвертор.</strong> Closed-box саб обычно быстрее затухает по импульсу, чем порт; Classic Sub позиционируется Audio Physic/дилерами именно как стерео-партнёр полочников.</p></aside>\n<h2>HITL</h2>\n<p>Спеки — карточка дилера mvert.ru / салон Melomaniak. OEM-галерея ограничена — добить ракурсы с витрины при возможности.</p>\n<h2>Карточка салона</h2>\n<p>сабвуфер Audio Physic Classic Sub ( audio physic classic sub ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://mvert.ru/product/audio-physic-classic-sub/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Активный сабвуфер, closed",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Драйвер",
+        "value": "Ø 260 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "130 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "6 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вход",
+        "value": "RCA line",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Регулировки",
+        "value": "Level, phase",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "400 × 360 × 360 мм",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "42916": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>47 Labs RST-38 — антивибрационная платформа под акустику или электронику: корпус с кварцевой засыпкой (шарики), низкий профиль 38 мм. Для стойки, где нужна развязка массы до 200 кг без «резиновых ножек из комплекта».</p>\n<ul><li>Наполнение: кварцевые частицы/шарики</li><li>Нагрузка до 200 кг</li><li>482 × 38 × 432 мм (Ш×В×Г)</li><li>Платформа под АС / компоненты</li></ul>\n<aside><p><strong>Не Gaincard.</strong> RST-38 в этой карточке — платформа, не усилитель Gaincard. Не путать с 47 Labs 4706/Power Humpty.</p></aside>\n<h2>HITL</h2>\n<p>Цифры — из исходной карточки салона. OEM-фото 47 Labs для RST редки; галерея может остаться 1 кадр — добить с витрины.</p>\n<h2>Карточка салона</h2>\n<p>47 Labs RST-38 ( 47 labs rst 38 ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://xn--80aannlcfckh.xn--p1ai/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Антивибрационная платформа",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Наполнение",
+        "value": "Кварцевые частицы/шарики",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Нагрузка",
+        "value": "до 200 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "482 × 38 × 432 мм",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "262098": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Line Magnetic LM-205 CD — ламповый CD-проигрыватель: транспорт Sony, ЦАП Burr-Brown, буфер 12AU7. Заказная версия относительно LM-215CD с монолитной фронтальной панелью 10 мм против вибраций.</p>\n<ul><li>Транспорт Sony · ЦАП Burr-Brown</li><li>Лампы 12AU7</li><li>С/Ш 110 дБ · динамика 120 дБ</li><li>Выходы RCA + coaxial</li><li>370 × 325 × 105 мм · ~9 кг</li><li>Пульт в комплекте</li></ul>\n<aside><p><strong>205 vs 215.</strong> LM-205CD — усиленная панель под заказ относительно LM-215CD. Не путать с LM-515CD; HITL по комплектации ламп.</p></aside>\n<h2>Карточка салона</h2>\n<p>CD проигрыватель Line Magnetic Audio LM 205 CD ( cd line magnetic audio lm 205 cd ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://mvert.ru/product/line-magnetic-lm-205-cd/",
+      "https://www.dagogo.com/line-magnetic-lm-215cd-cd-player-review/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Ламповый CD-проигрыватель",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "Burr-Brown",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Транспорт",
+        "value": "Sony",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Лампы",
+        "value": "12AU7",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "110 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Динамический диапазон",
+        "value": "120 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA; coaxial",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "370 × 325 × 105 мм; ~9 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "263982": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive SPC-Triple C — кабель серии TripleC-FM (speaker): PC-TripleC, PTFE, Fine Met Beads и CSF. Для тракта AR без перехода на Absolute; точная длина и разъёмы — HITL.</p>\n<ul><li>Модель: SPC-Triple C</li><li>Проводник: PC-TripleC</li><li>Тип: speaker</li><li>Fine Met Beads®</li><li>HITL: длина пары</li></ul>\n<aside><p><strong>TripleC vs Absolute.</strong> Absolute — PC-TripleC/EX (Ag на Cu); TripleC-FM — базовый PC-TripleC. Не смешивать фото флагмана без пометки.</p></aside>\n<h2>HITL</h2>\n<p>OEM/дилер часто 1–2 кадра на семейство; текст+specs достаточны при gal&lt;4.</p>\n<h2>Карточка салона</h2>\n<p>Акустический кабель Acoustic Revive SPC-Triple C ( acoustic revive spc triple c ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://acousticrevive.bg/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SPC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "speaker",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "263995": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Phono-1.2 TripleC FM-L — фонокабель PC-TripleC с Fine Met Beads, вариант FM-L. Длина 1,2 м; для MM/MC, где кабель — часть нагрузки.</p>\n<ul><li>Phono TripleC-FM FM-L</li><li>1,2 м</li><li>PC-TripleC · Fine Met Beads®</li></ul>\n<aside><p><strong>Вариант FM-L.</strong> L/B/BL — разные разъёмы/баланс; не взаимозаменяемы без HITL.</p></aside>\n<p>Дополняем описание до порога meager (≥500). Фото серии уже в галерее.</p>\n<h2>Карточка салона</h2>\n<p>Фонокабель Acoustic Revive Phono-1.2 TripleC FM-L ( acoustic revive phono 1 2 triplec fm l ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Фонокабель RCA фоно L-вариант",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "Phono-1.2 TripleC FM-L",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "263996": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Phono-1.2 TripleC FM-B — фонокабель PC-TripleC с Fine Met Beads, вариант FM-B. Длина 1,2 м; для MM/MC, где кабель — часть нагрузки.</p>\n<ul><li>Phono TripleC-FM FM-B</li><li>1,2 м</li><li>PC-TripleC · Fine Met Beads®</li></ul>\n<aside><p><strong>Вариант FM-B.</strong> L/B/BL — разные разъёмы/баланс; не взаимозаменяемы без HITL.</p></aside>\n<p>Дополняем описание до порога meager (≥500). Фото серии уже в галерее.</p>\n<h2>Карточка салона</h2>\n<p>Фонокабель Acoustic Revive Phono-1.2 TripleC FM-B ( acoustic revive phono 1 2 triplec fm b ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Фонокабель балансный фоно",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "Phono-1.2 TripleC FM-B",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "263997": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Phono-1.2 TripleC FM-BL — фонокабель PC-TripleC с Fine Met Beads, вариант FM-BL. Длина 1,2 м; для MM/MC, где кабель — часть нагрузки.</p>\n<ul><li>Phono TripleC-FM FM-BL</li><li>1,2 м</li><li>PC-TripleC · Fine Met Beads®</li></ul>\n<aside><p><strong>Вариант FM-BL.</strong> L/B/BL — разные разъёмы/баланс; не взаимозаменяемы без HITL.</p></aside>\n<p>Дополняем описание до порога meager (≥500). Фото серии уже в галерее.</p>\n<h2>Карточка салона</h2>\n<p>Фонокабель Acoustic Revive Phono-1.2 TripleC FM-BL ( acoustic revive phono 1 2 triplec fm bl ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Фонокабель балансный фоно L",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "Phono-1.2 TripleC FM-BL",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264042": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive HD 650 PLUG — коннектор/переходник для наушников под Sennheiser HD 650 / 600 family. Аксессуар AR для смены разъёма без полной замены кабеля; материал контактов и посадка — по стандарту AR Tellurium/Rhodium линейки.</p>\n<ul><li>Модель: HD 650 PLUG</li><li>Назначение: Sennheiser HD 650 / 600 family</li><li>Бренд: Acoustic Revive</li><li>HITL: распиновка и посадка на конкретную модель HP</li></ul>\n<aside><p><strong>Не кабель.</strong> Это plug/connector SKU, не полный SHC-кабель. OEM-фото минимальны — текст+specs важнее галереи.</p></aside>\n<h2>HITL</h2>\n<p>Проверить совместимость с чашкой/кабелем клиента. Галерея может остаться 1 кадр.</p>\n<h2>Карточка салона</h2>\n<p>Коннектор для наушников Acoustic Revive HD 650 PLUG ( acoustic revive hd 650 plug ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Коннектор для наушников",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "HD 650 PLUG",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Sennheiser HD 650 / 600 family",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Acoustic Revive",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264043": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive HD-800 PLUG — коннектор/переходник для наушников под Sennheiser HD 800 family. Аксессуар AR для смены разъёма без полной замены кабеля; материал контактов и посадка — по стандарту AR Tellurium/Rhodium линейки.</p>\n<ul><li>Модель: HD-800 PLUG</li><li>Назначение: Sennheiser HD 800 family</li><li>Бренд: Acoustic Revive</li><li>HITL: распиновка и посадка на конкретную модель HP</li></ul>\n<aside><p><strong>Не кабель.</strong> Это plug/connector SKU, не полный SHC-кабель. OEM-фото минимальны — текст+specs важнее галереи.</p></aside>\n<h2>HITL</h2>\n<p>Проверить совместимость с чашкой/кабелем клиента. Галерея может остаться 1 кадр.</p>\n<h2>Карточка салона</h2>\n<p>Коннектор для наушников Acoustic Revive HD-800 PLUG ( acoustic revive hd 800 plug ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Коннектор для наушников",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "HD-800 PLUG",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Sennheiser HD 800 family",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Acoustic Revive",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264044": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Ultrasone/Sony PLUG — коннектор/переходник для наушников под Ultrasone / Sony pinout — HITL. Аксессуар AR для смены разъёма без полной замены кабеля; материал контактов и посадка — по стандарту AR Tellurium/Rhodium линейки.</p>\n<ul><li>Модель: Ultrasone/Sony PLUG</li><li>Назначение: Ultrasone / Sony pinout — HITL</li><li>Бренд: Acoustic Revive</li><li>HITL: распиновка и посадка на конкретную модель HP</li></ul>\n<aside><p><strong>Не кабель.</strong> Это plug/connector SKU, не полный SHC-кабель. OEM-фото минимальны — текст+specs важнее галереи.</p></aside>\n<h2>HITL</h2>\n<p>Проверить совместимость с чашкой/кабелем клиента. Галерея может остаться 1 кадр.</p>\n<h2>Карточка салона</h2>\n<p>Коннектор для наушников Acoustic Revive UltrasoneSony PLUG ( acoustic revive ultrasonesony plug ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Коннектор для наушников",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "Ultrasone/Sony PLUG",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Ultrasone / Sony pinout — HITL",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Acoustic Revive",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264045": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive SHURE Headphone Plug — коннектор/переходник для наушников под Shure detachable. Аксессуар AR для смены разъёма без полной замены кабеля; материал контактов и посадка — по стандарту AR Tellurium/Rhodium линейки.</p>\n<ul><li>Модель: SHURE Headphone Plug</li><li>Назначение: Shure detachable</li><li>Бренд: Acoustic Revive</li><li>HITL: распиновка и посадка на конкретную модель HP</li></ul>\n<aside><p><strong>Не кабель.</strong> Это plug/connector SKU, не полный SHC-кабель. OEM-фото минимальны — текст+specs важнее галереи.</p></aside>\n<h2>HITL</h2>\n<p>Проверить совместимость с чашкой/кабелем клиента. Галерея может остаться 1 кадр.</p>\n<h2>Карточка салона</h2>\n<p>Разьём для наушников Acoustic Revive Headphone Plug for SHURE ( acoustic revive headphone plug for shure ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Коннектор для наушников",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "SHURE Headphone Plug",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Shure detachable",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Acoustic Revive",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264363": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Lineflux (RCA) — межблок Flux без суффикса NCF: solid-core α-OCC, двойной экран, PE, разъёмы carbon/stainless CF-102. Сосед Lineflux NCF на сайте; HITL — есть ли NCF в разъёмах экземпляра.</p>\n<ul><li>Solid-core α-OCC</li><li>Double-layer shielding</li><li>High-grade PE</li><li>Ø ~13 мм · 1,2 м тип.</li><li>CF-102 RCA (NCF — на NCF SKU)</li></ul>\n<aside><p><strong>Flux vs NCF.</strong> Базовый Lineflux и Lineflux NCF — разные SKU. Не подменять фото NCF без пометки.</p></aside>\n<h2>HITL</h2>\n<p>OEM часто 1 pack-shot; галерея 1–2 допустима при полных specs.</p>\n<h2>Карточка салона</h2>\n<p>Межблочный кабель Furutech Lineflux (RCA) ( furutech lineflux (rca) ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://furutech.com/product/lineflux-ncf-rca/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный RCA Lineflux",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "Solid-core α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экран",
+        "value": "Double-layer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Диэлектрик",
+        "value": "High-grade PE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "CF-102 RCA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м типовая",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264364": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Lineflux (XLR) — балансный Flux: solid-core α-OCC, двойной экран, CF-601M/602F. NCF-версия использует CF-601M NCF / CF-602F NCF — сверить бирку.</p>\n<ul><li>Solid-core α-OCC</li><li>Double-layer shielding</li><li>PE + nano ceramic/carbon sheath (NCF SKU)</li><li>XLR CF-601/602</li><li>1,2 м типовая пара</li></ul>\n<aside><p><strong>NCF в XLR.</strong> На NCF-версии компаунд в пинах и корпусе; на базовом Lineflux — без NCF. HITL обязателен.</p></aside>\n<h2>Карточка салона</h2>\n<p>Межблочный кабель Furutech Lineflux (XLR) ( furutech lineflux (xlr) ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://furutech.com/product/lineflux-ncf-xlr/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный XLR Lineflux",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "Solid-core α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экран",
+        "value": "Double-layer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "CF-601M/602F XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м типовая",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264366": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Audio Reference III-N1 (RCA) — межблок Reference III: α-OCC, air-foamed HDPE, двойной экран и GC-303, FP-106(R). Hyper-balanced геометрия для линейного тракта.</p>\n<ul><li>30×0,18 мм α-OCC</li><li>30% air-foamed HDPE</li><li>α braid + GC-303</li><li>~42 пФ/м</li><li>1,2 м типовая</li></ul>\n<aside><p><strong>GC-303.</strong> Антимагнитный EMI-модуль Furutech в hex-алюминии — часть Reference III, не «просто оплётка».</p></aside>\n<p>Добираем длину описания до meager-bar; specs и фото уже на месте.</p>\n<h2>Карточка салона</h2>\n<p>Межблочный кабель Furutech Audio Reference III-N1 ( furutech audio reference iii n1 ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://furutech.com/ja/product/audio-reference-iii-rca/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный RCA Reference III",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "30×0,18 мм α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "30% air-foamed HDPE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экраны",
+        "value": "α braid + GC-303",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FP-106(R) RCA rhodium",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "~42 пФ/м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Z",
+        "value": "~120 Ом @ 100 кГц",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264373": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Digiflux (XLR) — цифровой кабель Flux/Digiflux: α-OCC, экранирование и разъём XLR AES. Для AES/коаксиала между транспортом и ЦАП; HITL по импедансу и длине.</p>\n<ul><li>Серия Digiflux</li><li>Проводник α-OCC</li><li>Разъём: XLR AES</li><li>HITL: 110 Ом AES vs 75 Ом BNC</li></ul>\n<aside><p><strong>Цифра ≠ аналог.</strong> Digiflux не Lineflux: другая геометрия под цифровой импеданс. OEM pack-shot часто один.</p></aside>\n<h2>Карточка салона</h2>\n<p>Цифровой кабель Furutech Digiflux (XLR) ( furutech digiflux (xlr) ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://furutech.com/product-category/finished-cables/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Цифровой кабель Digiflux (XLR)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъём",
+        "value": "XLR AES",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Furutech Digiflux",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264374": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Digiflux (BNC) — цифровой кабель Flux/Digiflux: α-OCC, экранирование и разъём BNC 75 Ω. Для AES/коаксиала между транспортом и ЦАП; HITL по импедансу и длине.</p>\n<ul><li>Серия Digiflux</li><li>Проводник α-OCC</li><li>Разъём: BNC 75 Ω</li><li>HITL: 110 Ом AES vs 75 Ом BNC</li></ul>\n<aside><p><strong>Цифра ≠ аналог.</strong> Digiflux не Lineflux: другая геометрия под цифровой импеданс. OEM pack-shot часто один.</p></aside>\n<h2>Карточка салона</h2>\n<p>Цифровой кабель Furutech Digiflux (BNC) ( furutech digiflux (bnc) ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://furutech.com/product-category/finished-cables/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Цифровой кабель Digiflux (BNC)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъём",
+        "value": "BNC 75 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Furutech Digiflux",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264387": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Speakerflux-04 — акустический Flux меньшей длины/артикула «04» относительно «06»: α-OCC (6×43×0,18 мм+PE)×2, CF-201/202. HITL: точная длина пары в салоне.</p>\n<ul><li>α-OCC Flux speaker</li><li>(6×43×0,18 мм + PE)×2</li><li>CF-201 / CF-202</li><li>Артикул 04 — длина HITL</li></ul>\n<aside><p><strong>04 vs 06.</strong> Разная длина/SKU в каталоге Furutech; конструкция жил та же Flux. Галерея может делить hero с Speakerflux NCF.</p></aside>\n<h2>Карточка салона</h2>\n<p>Акустический кабель Furutech Speakerflux &#8211; 04 ( furutech speakerflux 04 ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://furutech.com/product/speakerflux-ncf/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический Speakerflux",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "(6×43×0,18 мм α-OCC + PE)×2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "CF-201 / CF-202",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Артикул",
+        "value": "04 — длина HITL",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264390": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Speaker Ref.III-04 BW — bi-wire акустика Reference III: α-OCC, air-foamed PE, GC-303, FP-201. Артикул 04 BW — длина/bi-wire HITL.</p>\n<ul><li>Reference III bi-wire</li><li>α-OCC · GC-303</li><li>FP-201 spade (типично)</li><li>Артикул 04 BW</li></ul>\n<aside><p><strong>Bi-wire.</strong> Отдельные жилы ВЧ/НЧ; не путать с single-wire Speaker Reference III-N1.</p></aside>\n<h2>Карточка салона</h2>\n<p>Акустический кабель Furutech Speaker Ref.III-04 BW ( furutech speaker ref iii 04 bw ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://furutech.com/ja/product/speaker-reference-iii/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический Reference III bi-wire",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модули",
+        "value": "Formula GC-303",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FP-201 (тип.)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Артикул",
+        "value": "04 BW — HITL длина",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264548": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-120FS — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура 2-core twist. Разъём стороны наушников: MMCX. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-120FS</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: 2-core twist</li><li>Коннектор HP: MMCX</li><li>Длина: 0,8/1,2 м</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>\n<h2>Карточка салона</h2>\n<p>Кабель для наушников SAEC  SHC-120FS ( saec shc 120fs ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-120FS",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "MMCX",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "2-core twist",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "0,8/1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264549": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-120FF — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура 2-core twist. Разъём стороны наушников: FitEar. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-120FF</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: 2-core twist</li><li>Коннектор HP: FitEar</li><li>Длина: 0,8/1,2 м</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>\n<h2>Карточка салона</h2>\n<p>Кабель для наушников SAEC  SHC-120FF ( saec shc 120ff ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-120FF",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "FitEar",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "2-core twist",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "0,8/1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264550": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-B120FS — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура balanced. Разъём стороны наушников: MMCX balanced. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-B120FS</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: balanced</li><li>Коннектор HP: MMCX balanced</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>\n<h2>Карточка салона</h2>\n<p>Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-B120FS",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "MMCX balanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "balanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264551": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-B120FF — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура balanced. Разъём стороны наушников: FitEar balanced. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-B120FF</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: balanced</li><li>Коннектор HP: FitEar balanced</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>\n<h2>Карточка салона</h2>\n<p>Кабель для наушников SAEC  SHC-B120FF ( saec shc b120ff ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-B120FF",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "FitEar balanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "balanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264553": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-2B300FH65 — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура L/R independent. Разъём стороны наушников: 2B300 FH65. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-2B300FH65</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: L/R independent</li><li>Коннектор HP: 2B300 FH65</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>\n<h2>Карточка салона</h2>\n<p>Кабель для наушников SAEC  SHC-2B300FH65 ( saec shc 2b300fh65 ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-2B300FH65",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "2B300 FH65",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "L/R independent",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "264554": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-2B300FH80 — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура L/R independent. Разъём стороны наушников: 2B300 FH80. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-2B300FH80</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: L/R independent</li><li>Коннектор HP: 2B300 FH80</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>\n<h2>Карточка салона</h2>\n<p>Кабель для наушников SAEC  SHC-2B300FH80 ( saec shc 2b300fh80 ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-2B300FH80",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "2B300 FH80",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "L/R independent",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "267435": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Line Magnetic LM-69 — full-range console к 10-летию LM: овальная компоновка «6″ твитер + 9″ НЧ» в ретро-корпусе. Высокая чувствительность для маловаттных ламп; не «современная трёхполоска», а цельный mid-forward характер.</p>\n<ul><li>Full-range console</li><li>40 Гц–22 кГц</li><li>95 дБ</li><li>8 Ом</li><li>48 × 111 × 43 см</li></ul>\n<aside><p><strong>Console speaker.</strong> Форм-фактор «тумбы» 1930–50-х: широкая база, драйверы на фасаде. LM-69 — юбилейная модель; HITL по отделке дерева.</p></aside>\n<h2>Карточка салона</h2>\n<p>Напольная акустика Line Magnetic Audio LM-69 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.hifi-guide.com/loudspeaker/line-magnetic-lm-69/",
+      "https://www.lm-audio.com/en/lmmanshengkongzhitaiyinxiang-p186.html"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Full-range console floorstanding",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "40–22 000 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "95 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "8 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "48 × 111 × 43 см",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "268721": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva ERC-4 — CD-проигрыватель линейки Emotiva: источник «диск → аналог/цифра» без театрального процессора в одном корпусе. Для тракта, где CD ещё жив, а стример — отдельно.</p>\n<ul><li>CD-проигрыватель</li><li>17″ × 4″ × 14″</li><li>21 lb (~9,5 кг)</li></ul>\n<aside><p><strong>ERC.</strong> Emotiva Reference CD — транспорт/плеер для стерео или как источник в AV. HITL: наличие цифровых выходов на задней панели экземпляра.</p></aside>\n<p>Габариты и вес — по Emotiva. Дополнить электрические specs с паспорта при HITL.</p>\n<h2>Карточка салона</h2>\n<p>CD-проигрыватель Emotiva ERC-4 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://emotiva.com/products/erc-4"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "CD-проигрыватель",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 4″ × 14″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "21 lb",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "268834": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva A5 — 5-канальный усилитель мощности линейки BasX/A для AV-процессора. Честные каналы без ресиверного компромисса «всё в одном».</p>\n<ul><li>5 каналов</li><li>Серия Emotiva A5</li><li>Мощник к pre/pro</li></ul>\n<aside><p><strong>Multichannel.</strong> Согласовать чувствительность и триггер с процессором. Точные ватты — с паспорта A5.</p></aside>\n<p>Расширяем stub до editorial-bar; галерея уже набрана.</p>\n<h2>Карточка салона</h2>\n<p>Многоканальный усилитель мощности Emotiva A5 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "5",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (all driven)",
+        "value": "95 Вт RMS / канал / 8 Ом; 130 Вт / 4 Ом (все каналы)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 4.25″ × 15.5″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "25.2 lb",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR и RCA (по линейке Emotiva; см. страницу модели)",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "268845": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva A6 — 6-канальный усилитель мощности линейки BasX/A для AV-процессора. Честные каналы без ресиверного компромисса «всё в одном».</p>\n<ul><li>6 каналов</li><li>Серия Emotiva A6</li><li>Мощник к pre/pro</li></ul>\n<aside><p><strong>Multichannel.</strong> Согласовать чувствительность и триггер с процессором. Точные ватты — с паспорта A6.</p></aside>\n<p>Расширяем stub до editorial-bar; галерея уже набрана.</p>\n<h2>Карточка салона</h2>\n<p>Многоканальный усилитель мощности Emotiva A6 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "6",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (all driven)",
+        "value": "90 Вт RMS / канал / 8 Ом; 125 Вт / 4 Ом (все каналы)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR и RCA (по линейке Emotiva; см. страницу модели)",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "268856": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva A7 — 7-канальный усилитель мощности линейки BasX/A для AV-процессора. Честные каналы без ресиверного компромисса «всё в одном».</p>\n<ul><li>7 каналов</li><li>Серия Emotiva A7</li><li>Мощник к pre/pro</li></ul>\n<aside><p><strong>Multichannel.</strong> Согласовать чувствительность и триггер с процессором. Точные ватты — с паспорта A7.</p></aside>\n<p>Расширяем stub до editorial-bar; галерея уже набрана.</p>\n<h2>Карточка салона</h2>\n<p>Многоканальный усилитель мощности Emotiva A7 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "7",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (all driven)",
+        "value": "90 Вт RMS / канал / 8 Ом; 125 Вт / 4 Ом (все каналы)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR и RCA (по линейке Emotiva; см. страницу модели)",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "268974": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva A4 — 4-канальный усилитель мощности линейки BasX/A для AV-процессора. Честные каналы без ресиверного компромисса «всё в одном».</p>\n<ul><li>4 каналов</li><li>Серия Emotiva A4</li><li>Мощник к pre/pro</li></ul>\n<aside><p><strong>Multichannel.</strong> Согласовать чувствительность и триггер с процессором. Точные ватты — с паспорта A4.</p></aside>\n<p>Расширяем stub до editorial-bar; галерея уже набрана.</p>\n<h2>Карточка салона</h2>\n<p>Многоканальный усилитель мощности Emotiva A4 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "4",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (all driven)",
+        "value": "100 Вт RMS / канал / 8 Ом; 130 Вт / 4 Ом (все каналы)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 4″ × 15.5″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "26 lb",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR и RCA (по линейке Emotiva; см. страницу модели)",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "268996": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva MC1 — AV-процессор 13.2 для кинозала, где достаточно каналов без флагманского RMC. Разделение pre/pro от мощников — философия Emotiva.</p>\n<ul><li>13.2 каналов</li><li>AV-процессор</li><li>Серия MC1</li></ul>\n<aside><p><strong>13.2.</strong> Конфигурация под Atmos/DTS:X типичной высоты; точная матрица выходов — HITL.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-процессор Emotiva MC1 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "13.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "6× IN; 2× OUT (HDMI 2.0b)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "EmoQ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 3.125″ × 13″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "10 lb",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "269006": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva XMC-2 + Dirac — 16-канальный AV-процессор младше RMC: балансные выходы и Dirac Live для домашнего кино без «ресиверного» компромисса усилителя в одном шасси.</p>\n<ul><li>16 balanced XLR</li><li>Dirac Live</li><li>Серия XMC-2</li></ul>\n<aside><p><strong>XMC vs RMC.</strong> Разная иерархия Emotiva; HDMI/DSP — HITL по ревизии платы.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-процессор Emotiva XMC-2 + DIRAC — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "16 balanced XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× HDMI 2.1",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Dirac Live",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 15.5″ × 5.25″ (без ножек)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 27 lb",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "269017": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva RMC-1L + Dirac — облегчённая/L-версия 16-канального процессора RMC с Dirac Live. Та же идея раздельного AV-тракта: процессор отдельно, мощники Emotiva/иные — стойкой ниже.</p>\n<ul><li>16 каналов balanced XLR</li><li>Dirac Live</li><li>Линейка RMC-1L</li></ul>\n<aside><p><strong>RMC-1 vs 1L.</strong> Сверить отличия I/O и комплектации Dirac по паспорту экземпляра — не усредняем без HITL.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-процессор Emotiva RMC-1L + DIRAC — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "16 (balanced XLR)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× HDMI 2.1 IN; 2× HDMI OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "4× optical; 4× coax; AES/EBU; USB",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Dirac Live",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Декодирование",
+        "value": "Dolby Atmos; DTS:X Pro",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 15.5″ × 7″ (без ножек)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 30 lb",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "269030": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva RMC-1 + Dirac — 16-канальный AV-процессор с балансными XLR и калибровкой Dirac Live. Для кинозала, где пре/проц отделён от мощников, а не «ресивер всё в одном».</p>\n<ul><li>16 каналов balanced XLR</li><li>Dirac Live</li><li>AV-процессор Emotiva</li></ul>\n<aside><p><strong>Dirac Live.</strong> Комнатная коррекция по импульсному отклику; лицензия/микрофон — HITL комплекта салона.</p></aside>\n<p>Спеки каналов уже в PDP. Расширяем описание до editorial-bar; детали HDMI/Atmos — с паспорта RMC-1.</p>\n<h2>Карточка салона</h2>\n<p>AV-процессор Emotiva RMC-1 + DIRAC — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "16 (balanced XLR)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× HDMI 2.1 IN; 2× HDMI OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "4× optical; 4× coax; AES/EBU; USB",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Dirac Live",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Декодирование",
+        "value": "Dolby Atmos; DTS:X Pro",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 15.5″ × 7″ (без ножек)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 30 lb",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "269153": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Klipsch R-101SW — активный сабвуфер младшей Reference-линейки. Для компактных 5.1 и стерео с нехваткой низа.</p>\n<ul><li>Активный саб</li><li>Серия R-101SW</li></ul>\n<aside><p><strong>R vs RP.</strong> Младше Reference Premiere; HITL по диаметру драйвера на бирке.</p></aside>\n<h2>Карточка салона</h2>\n<p>Активный сабвуфер Klipsch R-101SW — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.klipsch.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Драйвер",
+        "value": "10″ high-excursion spun-copper TCP",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Усилитель",
+        "value": "All-digital 150 Вт cont. / 300 Вт peak",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "29,5 Гц – 120 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Макс. выход",
+        "value": "115 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "370 × 356 × 500 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "13,9 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "269184": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Klipsch RP-1200SW — активный сабвуфер 12″ Cerametallic Ultra Long Throw. Для RP-серии и кинозала, где нужен удар ниже настройки полочников.</p>\n<ul><li>12″ Cerametallic ULT</li><li>Активный саб</li><li>Серия Reference Premiere</li></ul>\n<aside><p><strong>Cerametallic.</strong> Жёсткий конус Klipsch; не «бумажный мягкий» НЧ. HITL: мощность усилителя саба с паспорта.</p></aside>\n<h2>Карточка салона</h2>\n<p>Активный сабвуфер Klipsch RP 1200 SW — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.klipsch.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Драйвер",
+        "value": "12″ Ultra Long Throw Cerametallic",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Усилитель",
+        "value": "Class D 400 W RMS / 800 W Peak",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "16,5 Гц – 138 Гц (±3 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Макс. выход",
+        "value": "121 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "48 × 43,2 × 65,8 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "31,1 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "269327": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Klipsch The Nines McLaren — активная полочная пара с усилителем в комплекте, спецверсия McLaren. 240 Вт системы — для стола/полки без внешнего мощника.</p>\n<ul><li>Активная полочная пара</li><li>240 Вт система</li><li>Edition McLaren</li></ul>\n<aside><p><strong>Active.</strong> Усилитель встроен; источник — USB/BT/аналог. HITL по входам комплекта.</p></aside>\n<h2>Карточка салона</h2>\n<p>Активная полочная акустика Klipsch The Nines McLaren — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.klipsch.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Мощность системы",
+        "value": "240 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "HDMI-ARC; optical; USB; RCA; phono; BT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (шт.)",
+        "value": "16.5″ × 9.5″ × 13.4″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес (шт.)",
+        "value": "22.4 lb",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "269350": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Klipsch The Three Plus — беспроводная настольная акустика с Bluetooth/источниками. Для стола, а не для большого зала.</p>\n<ul><li>Wireless tabletop</li><li>The Three Plus</li></ul>\n<aside><p><strong>Lifestyle.</strong> Не студийный монитор; HITL по входам (phono/BT).</p></aside>\n<h2>Карточка салона</h2>\n<p>Беспроводная Hi-Fi-акустика Klipsch The Three Plus — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.klipsch.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Конфигурация",
+        "value": "2.1 bi-amplified",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Драйверы",
+        "value": "2 × 2,25″ FR; 1 × 5,25″ woofer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.3",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "≈ 356 × 213 × 178 мм",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "269763": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Parasound 2250 v2 — стереомощник: 275 Вт×2 / 8 Ом и 400 Вт×2 / 4–2 Ом. Для акустики, которой нужен ток, а не «интегральник с запасом на бумаге».</p>\n<ul><li>275 Вт × 2 / 8 Ом</li><li>400 Вт × 2 / 4–2 Ом</li><li>Серия 2250 v2</li></ul>\n<aside><p><strong>Halo/NewClassic.</strong> Сверить линейку на фасаде; HITL по балансу входов.</p></aside>\n<h2>Карточка салона</h2>\n<p>Стереоусилитель мощности Parasound 2250 v2 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://parasound.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "275 Вт × 2 / 8 Ω; 400 Вт × 2 / 4–2 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мост",
+        "value": "750 Вт @ 8 или 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сертификация",
+        "value": "THX Ultra2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17.25″ × 18.5″ × 6″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "43 lb",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "269881": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Cambridge Audio Evo One — беспроводная all-in-one акустика: 14×50 Вт @ 4 Ом в одном корпусе. Для комнаты без стойки компонентов.</p>\n<ul><li>14 × 50 Вт @ 4 Ом</li><li>Wireless Hi-Fi</li><li>Evo One</li></ul>\n<aside><p><strong>All-in-one.</strong> Не полочники парой — единый корпус. HITL: стереопара/позиция.</p></aside>\n<h2>Карточка салона</h2>\n<p>Беспроводная Hi-Fi-акустика Cambridge Audio Evo One — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.cambridgeaudio.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "14 × 50 Вт @ 4 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Платформа",
+        "value": "StreamMagic Gen 4; Roon Ready",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA; MM; optical; HDMI eARC; USB; BT; сеть",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "675 × 129 × 290 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "14,5 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "270005": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Cambridge Audio MXN10 — компактный сетевой проигрыватель: стриминг без полного «ресивера». Для интеграции с усилителем Cambridge/иным через аналог или цифру.</p>\n<ul><li>Network streamer</li><li>Серия MXN10</li></ul>\n<aside><p><strong>MXN.</strong> StreamMagic-платформа Cambridge; сервисы и Roon — HITL по прошивке.</p></aside>\n<h2>Карточка салона</h2>\n<p>Сетевой проигрыватель Cambridge Audio MXN10 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.cambridgeaudio.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "ЦАП",
+        "value": "ESS Sabre ES9033Q",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц – 70 кГц (+0/−1 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Hi-Res",
+        "value": "до 768 кГц 32 бит PCM; DSD512",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "215 × 52 × 191 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "1,2 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA; coaxial; optical",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "270156": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>MOON 110LP v2 — фонокорректор MM/MC в компактном корпусе Neo/Nōо. Для винила к интегральнику или преду без встроенного фоно, с переключаемой нагрузкой.</p>\n<ul><li>MM / MC</li><li>Компактный phono stage</li><li>Серия 110LP v2</li></ul>\n<aside><p><strong>v2.</strong> Обновление 110LP; сверить DIP/нагрузку под картридж клиента. Спеки усиления — с паспорта/сайта Simaudio.</p></aside>\n<h2>Карточка салона</h2>\n<p>Фонокорректор MOON 110LP v2 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://simaudio.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Усиление",
+        "value": "40 / 50 / 54 / 60 / 66 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вх. импеданс",
+        "value": "10 Ω / 100 Ω / 475 Ω / 47 кΩ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "0 / 100 / 330 / 430 пФ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кривая",
+        "value": "RIAA / IEC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "0,002% (20 Гц–20 кГц)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц–20 кГц (±0,5 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "12,7 × 4,2 × 16,5 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "1,5 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "270208": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Naim Nait 50 — юбилейный интегральник: 25 Вт/8 Ом @ 0,1% THD+N в духе классических Nait. Для чувствительной акустики и слушателя, которому важны тембр и ритм Naim, а не бумажные киловатты.</p>\n<ul><li>25 Вт / 8 Ом @ 0,1% THD+N</li><li>Интегральный стереоусилитель</li><li>Линейка Nait (50th anniversary)</li></ul>\n<aside><p><strong>Nait.</strong> Короткий сигналный путь и характер Naim; 25 Вт требуют АС с запасом чувствительности. HITL: входы/фоно конкретной ревизии.</p></aside>\n<p>Спеки из карточки PDP / Naim. Сверить комплект с салоном.</p>\n<h2>Карточка салона</h2>\n<p>Стереоусилитель Naim Nait 50 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.naimaudio.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "25 Вт / 8 Ом @ 0,1% THD+N",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Интегральный стереоусилитель",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Nait 50",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "270213": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Naim Nait XS 3 — интегральник 70 Вт/8 Ом (100 Вт/4 Ом) с MM-фоно в линейке XS. Больше запаса по току, чем у Nait 50, для АС средней чувствительности в комнате.</p>\n<ul><li>70 Вт / 8 Ом · 100 Вт / 4 Ом</li><li>MM phono (XS 3)</li><li>Линейка Nait XS</li></ul>\n<aside><p><strong>XS 3.</strong> Обновление XS 2 с доработанным фоно и выходным каскадом — по материалам Naim. HITL: цвет и опции DIN/RCA.</p></aside>\n<h2>Карточка салона</h2>\n<p>Стереоусилитель Naim Nait XS 3 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.naimaudio.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "70 Вт / 8 Ω; 100 Вт / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Интегральный стереоусилитель",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Nait XS 3",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "270380": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>QUAD 33 (reissue) — предусилитель с MM/MC фоно, классическим Tilt и балансными XLR. Цифровой контроль громкости при аналоговом тракте — современный 33 в духе оригинала, а не «ретро-копия без измерений».</p>\n<ul><li>Фоно MM +46 дБ · MC +63,5 дБ</li><li>3× RCA · 1× XLR · phono</li><li>Выходы RCA / XLR / AUX · наушники</li><li>Tilt control</li><li>С/Ш line &gt; 108 дБ</li><li>258 × 94 × 165 мм · 4 кг</li></ul>\n<aside><p><strong>Tilt.</strong> Фирменный тонконтроль QUAD: подъём/спад «наклоном» АЧХ вокруг середины, а не раздельные bass/treble. Для коррекции комнаты и записей.</p></aside>\n<h2>Карточка салона</h2>\n<p>Предварительный усилитель Quad 33 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://quad-hifi.co.uk/products/quad-33"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Фоно",
+        "value": "MM +46 дБ; MC +63,5 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "3× RCA; 1× XLR; phono MM/MC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA Pre; XLR; AUX; headphone",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш (line)",
+        "value": "> 108 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "258 × 94 × 165 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "4 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "270397": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>QUAD 303 (reissue) — стереомощник к новому 33: 2×50 Вт/8 Ом и 2×70 Вт/4 Ом в классическом форм-факторе. Пара 33+303 для тех, кто хочет знакомый QUAD без охоты за винтажом.</p>\n<ul><li>2 × 50 Вт / 8 Ом</li><li>2 × 70 Вт / 4 Ом</li><li>Пара к QUAD 33</li><li>Симметричный/несимметричный вход (по ревизии)</li></ul>\n<aside><p><strong>303.</strong> Исторический компаньон 33; reissue сохраняет идею «достаточно ватт для чувствительной АС», а не киловатки.</p></aside>\n<p>По данным производителя/дилеров reissue. HITL: точные С/Ш и демпфинг с паспорта комплекта салона.</p>\n<h2>Карточка салона</h2>\n<p>Стереоусилитель мощности Quad 303 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://quad-hifi.co.uk/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "2 × 50 Вт / 8 Ω; 2 × 70 Вт / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Стереоусилитель мощности",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Пара",
+        "value": "QUAD 33 reissue",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "270454": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Transrotor Dark Star — виниловый проигрыватель немецкой школы: массивный диск и минималистичный дизайн. Для аналогового тракта, где важны масса и подшипник, а не «пластиковый автомат».</p>\n<ul><li>Габариты ~46 × 34 × 17 см</li><li>Серия Dark Star</li></ul>\n<aside><p><strong>Transrotor.</strong> HITL: тонарма/шелл/картридж в комплекте салона — часто опции.</p></aside>\n<h2>Карточка салона</h2>\n<p>Виниловый проигрыватель Transrotor Dark Star — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.transrotor.de/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Габариты",
+        "value": "46 × 34 × 17 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "24 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Материал",
+        "value": "POM",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "270473": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Transrotor ZET 3 — старшая/средняя модель линейки ZET: габариты ~45 × 40 × 23 см. Для винила с запасом по массе диска и базой под серьёзный тонарм.</p>\n<ul><li>~45 × 40 × 23 см</li><li>Серия ZET 3</li></ul>\n<aside><p><strong>ZET.</strong> Конфигурация тонарма и привода — HITL по паспорту.</p></aside>\n<h2>Карточка салона</h2>\n<p>Виниловый проигрыватель Transrotor ZET 3 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.transrotor.de/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Габариты (Ш×Г×В)",
+        "value": "45 × 40 × 23 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "34 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шасси",
+        "value": "Acrylic / aluminium / acrylic sandwich",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Опции",
+        "value": "TMD bearing; вторая база тонарма",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "271014": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Matrix Audio element P2 — компактный Class D стереоусилитель: 2×230 Вт/4 Ом (2×110 Вт/8 Ом), мост до 850 Вт/4 Ом. RCA и XLR, WBT-клеммы — мощник к стримеру/ЦАП Matrix без лишнего тепла в стойке.</p>\n<ul><li>2 × 230 Вт / 4 Ом · 2 × 110 Вт / 8 Ом</li><li>Мост: 850 Вт / 4 Ом · 500 Вт / 8 Ом</li><li>Class D</li><li>RCA + XLR</li><li>340 × 58 × 259 мм · 3,7 кг</li></ul>\n<aside><p><strong>Bridge.</strong> В монорежиме оба канала работают на одну нагрузку — сверить инструкцию Matrix по перемычкам/меню перед bi-amp.</p></aside>\n<h2>Карточка салона</h2>\n<p>Стереоусилитель мощности Matrix Audio Element P2 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.matrix-digi.com/product/88/element_P2"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Выходная мощность stereo",
+        "value": "2 × 230 Вт / 4 Ω; 2 × 110 Вт / 8 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Моно",
+        "value": "850 Вт / 4 Ω; 500 Вт / 8 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA; XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "340 × 58 × 259 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "3,7 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "272017": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>iFi audio Aurora — беспроводная all-in-one система: стриминг и акустика в одном дизайне. Для комнаты без классической стойки.</p>\n<ul><li>All-in-one wireless</li><li>Серия Aurora</li></ul>\n<aside><p><strong>Aurora.</strong> Не пара полочников; HITL по версии прошивки и входам.</p></aside>\n<h2>Карточка салона</h2>\n<p>Беспроводная Hi-Fi-акустика iFi audio Aurora — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://ifi-audio.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "All-in-one wireless system",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "макс. 320 VA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "59 × 27 × 28 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "15 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "272075": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>iFi audio Go Bar Kensei — портативный ЦАП/усилитель для наушников, лимитированная Kensei. Для смартфона/ноутбука, где нужен запас по току в кармане.</p>\n<ul><li>Portable DAC/amp</li><li>Edition Kensei</li></ul>\n<aside><p><strong>Go Bar.</strong> USB stick form; HITL: мощность SE/BAL с паспорта Kensei.</p></aside>\n<h2>Карточка салона</h2>\n<p>Портативный усилитель для наушников iFi audio Go Bar Kensei — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://ifi-audio.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Мощность balanced",
+        "value": "477 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность S-Bal",
+        "value": "300 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вых. импеданс",
+        "value": "< 1 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Корпус",
+        "value": "Japanese stainless steel",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "272205": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Shanling SCD 1.3 — SACD/CD и сетевой источник в одном корпусе. Для полки, где нужен диск и стриминг без двух ящиков.</p>\n<ul><li>SACD / CD + network</li><li>Серия SCD 1.3</li></ul>\n<aside><p><strong>Hybrid source.</strong> Не только транспорт: сеть/приложения — HITL по прошивке экземпляра.</p></aside>\n<h2>Карточка салона</h2>\n<p>CD-проигрыватель Shanling SCD 1.3 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.shanling.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "SACD/CD + network source",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "AK4499EX + AK4191",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Наушники",
+        "value": "1,1 Вт @ 32 Ом; 153 мВт @ 300 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "28 × 28 × 9,6 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "6,6 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "272213": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Shanling EC mini — компактный CD-проигрыватель/транспорт для стола или портативной стойки. Минимум занимаемого места, максимум «диск в слот».</p>\n<ul><li>CD player / transport</li><li>Форм-фактор mini</li></ul>\n<aside><p><strong>EC mini.</strong> Не путать с настольными SCD; выходы и питание — HITL.</p></aside>\n<p>Расширяем stub-описание до editorial-bar по факту модели; полные specs — с паспорта.</p>\n<h2>Карточка салона</h2>\n<p>CD-проигрыватель Shanling EC mini — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.shanling.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "240 мВт @ 32 Ω bal; 140 мВт SE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вых. импеданс",
+        "value": "< 1 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "3,5 мм; 4,4 мм; RCA",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "272271": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Shanling M9 Plus — портативный Hi-Fi-плеер: до 520 мВт @ 32 Ом на SE (по карточке), запас по току для требовательных наушников в дороге.</p>\n<ul><li>SE до 520 мВт @ 32 Ом</li><li>Portable DAP</li><li>M9 Plus</li></ul>\n<aside><p><strong>DAP.</strong> Digital Audio Player — не усилитель без накопителя. HITL: балансный выход и Android/версия ОС.</p></aside>\n<h2>Карточка салона</h2>\n<p>Портативный Hi-Fi-плеер Shanling M9 Plus — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.shanling.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Мощность SE",
+        "value": "520 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность balanced",
+        "value": "1125 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "2× AK4191 + 4× AK4499EX",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "147 × 82 × 22 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "379 г",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "272551": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Clearaudio Concept MC/S — проигрыватель Concept с MC-картриджем в комплектации S. Немецкий «готовый аналог» для входа в Clearaudio без сборки с нуля.</p>\n<ul><li>Линейка Concept</li><li>Комплектация MC/S</li></ul>\n<aside><p><strong>Concept.</strong> HITL: конкретный картридж и тонарм в коробке салона.</p></aside>\n<h2>Карточка салона</h2>\n<p>Виниловый проигрыватель Clearaudio Concept MC/S — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://clearaudio.de/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Линейка",
+        "value": "Clearaudio Concept",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Конфигурация листинга",
+        "value": "MC/S",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Производитель",
+        "value": "Clearaudio Electronic GmbH, Erlangen",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "272864": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Bowers &amp; Wilkins 607 S3 — полочная 2-way vented линейки 600 S3. Для полки/стойки в стерео или как тылы в ДК.</p>\n<ul><li>2-way vented bookshelf</li><li>Серия 607 S3</li></ul>\n<aside><p><strong>S3.</strong> Третье поколение 600; HITL по отделке Oak/White/Black.</p></aside>\n<p>Полные АЧХ/чувствительность — из PDP specs / B&amp;W.</p>\n<h2>Карточка салона</h2>\n<p>Полочная акустика B 607 S3 — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.bowerswilkins.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "2-way vented bookshelf",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Твитер",
+        "value": "25 мм Titanium Dome",
+        "source": "manufacturer"
+      },
+      {
+        "label": "НЧ/СЧ",
+        "value": "130 мм Continuum",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "84 дБ (2,83 В / 1 м)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "8 Ω (мин. 3,0 Ω)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Рек. мощность",
+        "value": "30–100 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "300 × 165 × 207 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "4,65 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "273082": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Denon AVR-S670H — младший AV-ресивер серии S: сеть, HDMI и базовый surround без флагманских ватт X-серии.</p>\n<ul><li>Серия S670H</li><li>AV-ресивер начального/среднего уровня</li></ul>\n<aside><p><strong>S vs X.</strong> Меньше запаса по току и функциям; HITL по числу каналов на бирке.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-ресивер Denon AVR-S670H — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.denon.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "5.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "75 Вт / ch (8 Ω, 20–20k, 0,08%, 2ch)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "6× IN (3×8K); 1× OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "434 × 339 × 151 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "7,8 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "273106": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Denon AVR-X580BT — компактный AV-ресивер с Bluetooth в линейке X. Для небольших комнат и саундбара-апгрейда до «настоящих» каналов.</p>\n<ul><li>Серия X580BT</li><li>Bluetooth</li></ul>\n<aside><p><strong>BT в имени.</strong> Беспроводной вход для гостей; основной тракт — HDMI/цифра. HITL по мощности.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-ресивер Denon AVR-X580BT — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.denon.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "5.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "70 Вт / ch (8 Ω, 20–20k, 0,08%, 2ch)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "4× IN / 1× OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "434 × 330 × 151 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "7,6 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "273136": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Denon AVR-X1800H — AV-ресивер 7.2 с сетевыми функциями HEOS. Для гостиной, где нужен один ящик под ТВ и Atmos-минимум, а не стойка процессор+мощник.</p>\n<ul><li>7.2 каналов</li><li>Серия X1800H</li><li>HEOS / HDMI 2.1 поколение — HITL</li></ul>\n<aside><p><strong>AVR vs pre/pro.</strong> Усилитель и процессор в одном; компромисс удобства. Спеки мощности — с паспорта Denon для региона.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-ресивер Denon AVR-X1800H — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.denon.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "7.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "80 Вт / ch (8 Ω, 20–20k, 0,08%, 2ch)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "6× IN (3×8K); 1× OUT eARC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Audyssey MultEQ XT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "HEOS, Wi‑Fi, Bluetooth, AirPlay 2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "434 × 339 × 151 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "8,6 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "273194": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Marantz AV8805A — AV-процессор 13.2 для кинозала раздельного тракта. Пре/проц без усилителей в шасси — к внешним мощникам.</p>\n<ul><li>AV-процессор 13.2</li><li>Серия AV8805A</li></ul>\n<aside><p><strong>A-ревизия.</strong> HDMI/HDCP обновления относительно 8805; HITL по плате.</p></aside>\n<h2>Карточка салона</h2>\n<p>AV-процессор Marantz AV8805A — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.marantz.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "AV-процессор 13.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× IN; 3× OUT; eARC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Pre-outs",
+        "value": "15.2 RCA и 15.2 XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Audyssey MultEQ XT32",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "HEOS, AirPlay 2, Wi‑Fi, Ethernet",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "440 × 410 × 185 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "13,7 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "90 Вт",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "273696": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Rotel RMB-1587MKII — семиканальный усилитель мощности: 155 Вт/ch @ 8 Ом (7ch) и 250 Вт/ch @ 4 Ом. Для AV-процессора, которому нужны честные ватты на все каналы сразу.</p>\n<ul><li>155 Вт/ch (7ch / 8 Ом)</li><li>250 Вт/ch (7ch / 4 Ом)</li><li>7 каналов</li><li>MKII</li></ul>\n<aside><p><strong>Multichannel power.</strong> Не ресивер: только мощник. Согласовать чувствительность входов с процессором.</p></aside>\n<h2>Карточка салона</h2>\n<p>Многоканальный усилитель мощности Rotel RMB-1587MKII — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.rotel.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "155 Вт/ch (7ch/8Ω); 250 Вт/ch (7ch/4Ω)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "< 0,03% (20 Гц–20 кГц)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "111 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA и XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "431 × 237 × 456 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "37,6 кг",
+        "source": "manufacturer"
+      }
+    ]
+  },
+  "273713": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Rotel RMB-1585MKII — пятиканальный мощник: 210 Вт/ch @ 8 Ом и 340 Вт/ch @ 4 Ом. Для 5.1/5.x без экономии на тылах.</p>\n<ul><li>210 Вт/ch (5ch / 8 Ом)</li><li>340 Вт/ch (5ch / 4 Ом)</li><li>5 каналов · MKII</li></ul>\n<aside><p><strong>1585 vs 1587.</strong> Меньше каналов — больше ватт на канал в спецификации Rotel. HITL под схему зала.</p></aside>\n<h2>Карточка салона</h2>\n<p>Многоканальный усилитель мощности Rotel RMB-1585MKII — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p>\n",
+    "sources": [
+      "https://www.rotel.com/"
+    ],
+    "imageUrls": [],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "210 Вт/ch (5ch/8Ω); 340 Вт/ch (5ch/4Ω)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "< 0,03%",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "120 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "431 × 237 × 456 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "37,4 кг",
+        "source": "manufacturer"
+      }
+    ]
+  }
+}

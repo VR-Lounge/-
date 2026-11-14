@@ -1,0 +1,679 @@
+{
+  "273961": {
+    "descriptionHtml": "<p>T+A P 3100 HV — предусилитель HV-серии: полностью дискретная симметричная схема, DC-связь без разделительных конденсаторов в тракте громкости и рабочие напряжения до ~100 В на каскадах — как у лампы по запасу линейности, но на транзисторах.</p>\n<ul><li>HV / High Voltage</li><li>DC-связь тракта</li><li>7× RCA + 4× XLR</li><li>Слот MM/MC</li><li>28 кг</li></ul>\n<h2>Тракт</h2>\n<p>АЧХ 0,5 Гц–300 кГц (+0/−3 дБ); С/Ш 108/112 дБ; THD и IM < 0,001%; разделение каналов > 108 дБ. Входы: 7× RCA (20 кОм) и 4× XLR (5 кОм). Выходы PRE RCA/XLR, recorder, наушники high-current 50 Ом. Слот под опциональный MM/MC фономодуль; вход 4 — surround pass-through.</p>\n<h2>Питание и корпус</h2>\n<p>Отдельные аналоговое и цифровое питание, два сетевых разъёма; резервуар 75 000 мкФ. Потребление 10 + 60 Вт; standby < 0,5 Вт. Габариты 17 × 46 × 46 см, вес 28 кг.</p>",
+    "specs": [
+      {
+        "label": "АЧХ",
+        "value": "0,5 Гц – 300 кГц (+0/−3 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "108 / 112 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD / IM",
+        "value": "< 0,001% / < 0,001%",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разделение каналов",
+        "value": "> 108 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы RCA",
+        "value": "7 × 250 мВ…9 В / 20 кОм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы XLR",
+        "value": "4 × 500 мВ…18 В / 5 кОм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "PRE out RCA",
+        "value": "ном. 1 В, макс. 9,5 В / 50 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "PRE out XLR",
+        "value": "ном. 1,45 В, макс. 19,6 В / 50 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Резервуар",
+        "value": "75 000 мкФ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (В×Ш×Г)",
+        "value": "17 × 46 × 46 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "28 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.ta-hifi.de/en/audiosystems/hv-series/p-3100-hv-pre-amplifier-2/",
+      "https://www.ta-hifi.de/wp-content/uploads/P_3100_HV_GB_web.pdf"
+    ]
+  },
+  "273974": {
+    "descriptionHtml": "<p>T+A A 200 — стереоусилитель мощности Series 200: 250 Вт на 4 Ом / 125 Вт на 8 Ом, HV на каскаде напряжения и выходной ступени на технологии PURIFI Eigentakt — запас по току без отказа от микродинамики.</p>\n<ul><li>250 Вт / 4 Ом</li><li>125 Вт / 8 Ом</li><li>PURIFI Eigentakt</li><li>HV voltage stage</li><li>RCA + XLR</li></ul>\n<h2>Измерения</h2>\n<p>АЧХ 1 Гц–60 кГц (+0/−3 дБ); С/Ш 113 дБ; THD/IM < 0,002%; разделение > 103 дБ; демпфинг-фактор > 800 (режим DF LO > 70). Входы RCA (800 мВ / 5,8 кОм) и XLR (1,6 В / 20 кОм).</p>\n<h2>Корпус</h2>\n<p>10 × 32 × 34 см, 5 кг. Потребление макс. 600 Вт; idle без сигнала 25 Вт; standby < 0,5 Вт. Связь E2-Link с остальной Series 200.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "250 Вт / 4 Ом; 125 Вт / 8 Ом (на канал)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "1 Гц – 60 кГц (+0/−3 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "113 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD / IM",
+        "value": "< 0,002% / < 0,002%",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Демпфинг-фактор",
+        "value": "> 800 / DF LO > 70",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA 800 мВ / 5,8 кОм; XLR 1,6 В / 20 кОм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (В×Ш×Г)",
+        "value": "10 × 32 × 34 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "5 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "макс. 600 Вт; idle 25 Вт; standby < 0,5 Вт",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.ta-hifi.de/en/audiosystems/series-200/a-200-power-amplifier",
+      "https://www.ta-hifi.de/wp-content/uploads/um_a200_de_en.pdf"
+    ],
+    "imageUrls": [
+      "https://www.ta-hifi.de/wp-content/uploads/a_200_slider_a_200_frontal-scaled.jpg",
+      "https://www.ta-hifi.de/wp-content/uploads/a_200_teaser_a_200.jpg"
+    ]
+  },
+  "273987": {
+    "descriptionHtml": "<p>T+A MP 3000 HV MK II — multi-source CD-плеер и PCM ЦАП HV-серии: стриминг, FM/DAB+, Bluetooth aptX и Roon Ready в массивном алюминиевом шасси с раздельными отсеками.</p>\n<ul><li>CD + стриминг + тюнер</li><li>Roon Ready</li><li>RCA + XLR</li><li>HV шасси</li><li>26 кг</li></ul>\n<h2>Интерфейсы</h2>\n<p>Аналоговые выходы RCA и XLR (50 Ом); цифровой coax S/PDIF. Входы AES/EBU, coax/BNC/optical S/PDIF, USB Device и USB Master; LAN 10/100 и WLAN. Тюнер FM и DAB/DAB+.</p>\n<h2>Конвертация</h2>\n<p>По материалам T+A: Doppel-Differential-Quadrupel-Converter и программируемый signal processor с фазолинейным Bessel-фильтром. Потребление 2×40 Вт; standby < 0,5 Вт. Габариты 17 × 46 × 46 см, вес 26 кг.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Multi Source CD Player / PCM DAC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Аналоговые выходы",
+        "value": "RCA и XLR, 50 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "AES/EBU; coax/BNC/optical; USB Device/Master",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "LAN 10/100; WLAN 802.11 b/g/n",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тюнер",
+        "value": "FM; DAB/DAB+",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "A2DP/AVRCP, aptX",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (В×Ш×Г)",
+        "value": "17 × 46 × 46 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "26 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "2 × 40 Вт; standby < 0,5 Вт",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.ta-hifi.de/support/hv-serie/support-mp-3000-hv-mkii/",
+      "https://www.ta-hifi.de/wp-content/uploads/MP_3000_HV_MK_II_4_Seiter_AD.pdf"
+    ]
+  },
+  "274001": {
+    "descriptionHtml": "<p>T+A MP 200 G3 — multi-source транспорт Series 200: стриминг-архитектура G3, CD и цифровые выходы для пары с DAC 200 — без лишнего «всё в одном», если ЦАП уже выбран отдельно.</p>\n<ul><li>Streaming Architecture G3</li><li>SYS-Link к Series 200</li><li>CD + сеть</li><li>aptX HD</li><li>4,4 кг</li></ul>\n<h2>Связь</h2>\n<p>Входы: 2× coax S/PDIF до 192 кГц, 1× TosLink до 96 кГц; выходы coax digital, SYS-LINK и USB-SYS. LAN, WLAN, 2× USB 2.0, Bluetooth aptX HD. Нативный DSD-стриминг до DSD256 (по производителю).</p>\n<h2>Корпус</h2>\n<p>10 × 32 × 34 см, 4,4 кг. Потребление макс. 25 Вт; ECO-standby < 0,5 Вт. Питание 200–240 В.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Multi Source Player / transport",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "2× coax до 192 кГц; 1× TosLink до 96 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "Coax digital; SYS-LINK; USB-SYS",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "LAN, WLAN, Bluetooth aptX HD",
+        "source": "manufacturer"
+      },
+      {
+        "label": "DSD streaming",
+        "value": "До DSD256 (заявление производителя)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (В×Ш×Г)",
+        "value": "10 × 32 × 34 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "4,4 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "макс. 25 Вт; ECO < 0,5 Вт",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.ta-hifi.de/en/audiosystems/series-200/mp-200-g3-multi-source-player/"
+    ]
+  },
+  "274303": {
+    "descriptionHtml": "<p>Aurender N200 — компактный сетевой транспорт с USB Audio и coax SPDIF, кэш-воспроизведением и двумя слотами под пользовательские накопители. Младше N20 по набору AES/BNC/optical, ближе по философии: чистый digital front-end к внешнему ЦАПу.</p>\n<ul><li>USB + coax SPDIF</li><li>2× слота хранения</li><li>240 ГБ NVMe cache</li><li>Roon Ready</li><li>CLM режим</li></ul>\n<h2>Аудио</h2>\n<p>Выделенный USB Audio выход и RCA coaxial SPDIF. TCXO word clock. Critical Listening Mode отключает дисплей и фоновые процессы. Roon Ready; опция MQA Core-Decoder.</p>\n<h2>Железо</h2>\n<p>Intel low-power quad-core, 8 ГБ RAM, системный/кэш SSD 240 ГБ NVMe, 2× 2,5″ слота хранения, double-isolated Gigabit LAN, UPS на суперконденсаторах. Дисплей 6,9″ IPS 1280×480. Потребление: play 15 Вт / peak 35 Вт / standby 5,1 Вт. Габариты 13″ × 14″ × 3,8″, вес 19,4 lb (~8,8 кг).</p><p><em>Конфигурация каталога: 4 ТБ SSD.</em></p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Сетевой транспорт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые выходы",
+        "value": "USB Audio; RCA coaxial SPDIF",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Хранение",
+        "value": "2× 2,5″ user-installable",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Системный SSD",
+        "value": "240 ГБ NVMe",
+        "source": "manufacturer"
+      },
+      {
+        "label": "CPU / RAM",
+        "value": "Intel LP quad-core / 8 ГБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Дисплей",
+        "value": "6,9″ IPS 1280×480",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "Double-isolated Gigabit LAN",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "Play 15 Вт; peak 35 Вт; standby 5,1 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "13″ × 14″ × 3,8″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "19,4 lb (~8,8 кг)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Накопитель (листинг)",
+        "value": "4 ТБ SSD",
+        "source": "catalog"
+      }
+    ],
+    "sources": [
+      "https://aurender.com/home/n200/"
+    ],
+    "imageUrls": [
+      "https://aurender.com/wp-content/uploads/2023/11/N200-2-scaled_1500x.webp"
+    ]
+  },
+  "274264": {
+    "descriptionHtml": "<p>Aurender N200 — компактный сетевой транспорт с USB Audio и coax SPDIF, кэш-воспроизведением и двумя слотами под пользовательские накопители. Младше N20 по набору AES/BNC/optical, ближе по философии: чистый digital front-end к внешнему ЦАПу.</p>\n<ul><li>USB + coax SPDIF</li><li>2× слота хранения</li><li>240 ГБ NVMe cache</li><li>Roon Ready</li><li>CLM режим</li></ul>\n<h2>Аудио</h2>\n<p>Выделенный USB Audio выход и RCA coaxial SPDIF. TCXO word clock. Critical Listening Mode отключает дисплей и фоновые процессы. Roon Ready; опция MQA Core-Decoder.</p>\n<h2>Железо</h2>\n<p>Intel low-power quad-core, 8 ГБ RAM, системный/кэш SSD 240 ГБ NVMe, 2× 2,5″ слота хранения, double-isolated Gigabit LAN, UPS на суперконденсаторах. Дисплей 6,9″ IPS 1280×480. Потребление: play 15 Вт / peak 35 Вт / standby 5,1 Вт. Габариты 13″ × 14″ × 3,8″, вес 19,4 lb (~8,8 кг).</p><p><em>Конфигурация каталога: 2 ТБ HDD.</em></p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Сетевой транспорт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые выходы",
+        "value": "USB Audio; RCA coaxial SPDIF",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Хранение",
+        "value": "2× 2,5″ user-installable",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Системный SSD",
+        "value": "240 ГБ NVMe",
+        "source": "manufacturer"
+      },
+      {
+        "label": "CPU / RAM",
+        "value": "Intel LP quad-core / 8 ГБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Дисплей",
+        "value": "6,9″ IPS 1280×480",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "Double-isolated Gigabit LAN",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "Play 15 Вт; peak 35 Вт; standby 5,1 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "13″ × 14″ × 3,8″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "19,4 lb (~8,8 кг)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Накопитель (листинг)",
+        "value": "2 ТБ HDD",
+        "source": "catalog"
+      }
+    ],
+    "sources": [
+      "https://aurender.com/home/n200/"
+    ],
+    "imageUrls": [
+      "https://aurender.com/wp-content/uploads/2023/11/N200-2-scaled_1500x.webp"
+    ]
+  },
+  "274252": {
+    "descriptionHtml": "<p>Aurender N150 — компактный сетевой транспорт с одним слотом хранения и выделенным USB Audio Class 2.0: для систем, где ЦАП уже выбран, а нужен стабильный кэш и Conductor без лишнего шасси.</p>\n<ul><li>USB Audio Class 2.0</li><li>1× слот хранения</li><li>240 ГБ NVMe</li><li>Conductor app</li><li>~5,3 кг</li></ul>\n<h2>Железо</h2>\n<p>Intel dual-core, системный/кэш SSD 240 ГБ NVMe, 1× 2,5″ слот HDD/SSD, double-isolated Gigabit LAN, UPS на суперконденсаторах, TCXO. Потребление: play 12 Вт / peak 32 Вт / standby 4,2 Вт. Питание CPU 50 Вт. Габариты 8,5″ × 13,9″ × 2,5″, вес 11,7 lb (~5,3 кг).</p><p><em>Конфигурация каталога: 4 ТБ SSD.</em></p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Сетевой транспорт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровой выход",
+        "value": "USB Audio Class 2.0",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Хранение",
+        "value": "1× 2,5″ user-installable",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Системный SSD",
+        "value": "240 ГБ NVMe",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "Double-isolated Gigabit LAN",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "Play 12 Вт; peak 32 Вт; standby 4,2 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "8,5″ × 13,9″ × 2,5″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "11,7 lb (~5,3 кг)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Накопитель (листинг)",
+        "value": "4 ТБ SSD",
+        "source": "catalog"
+      }
+    ],
+    "sources": [
+      "https://aurender.com/home/n150/"
+    ]
+  },
+  "269774": {
+    "descriptionHtml": "<p>Parasound Halo A52+ — пятиканальный усилитель John Curl в более компактном 3U-шасси: 180 Вт × 5 на 8 Ом для обновления AVR или полного 5.1 без «провала» на surround.</p>\n<ul><li>180 Вт × 5 / 8 Ом</li><li>255 Вт × 5 / 4 Ом</li><li>XLR + RCA</li><li>1,5 кВА</li><li>25 кг</li></ul>\n<h2>Мощность</h2>\n<p>Все 5 каналов: 180 Вт × 5 / 8 Ом и 255 Вт × 5 / 4 Ом. Два канала: 225 Вт × 2 / 8 Ом и 350 Вт × 2 / 4 Ом (20 Гц–20 кГц). Ток 45 А peak на канал. Трансформатор 1,5 кВА, 100 000 мкФ.</p>\n<h2>Интерфейсы</h2>\n<p>5× XLR и 5× RCA; 12 В trigger / audio-sense. С/Ш > 112 дБ A-weighted; демпфинг > 1100 @ 20 Гц. Вес нетто 55 lb (25 кг).</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность (5 ch)",
+        "value": "180 Вт × 5 / 8 Ω; 255 Вт × 5 / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (2 ch)",
+        "value": "225 Вт × 2 / 8 Ω; 350 Вт × 2 / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ток",
+        "value": "45 А peak на канал",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "> 112 дБ A-weighted",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Демпфинг-фактор",
+        "value": "> 1100 @ 20 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "5× XLR, 5× RCA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17.25″ × 5.875″ × 20″ (с ножками)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "55 lb (25 кг)",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://parasound.com/products/halo-a52"
+    ]
+  },
+  "269768": {
+    "descriptionHtml": "<p>Parasound Halo A21+ — стереоусилитель мощности: 300 Вт × 2 на 8 Ом, 500 Вт × 2 на 4 Ом и до 1000 Вт в мосте на 8 Ом. High-bias Class A/AB John Curl для фронтов кинозала или серьёзной стереопары.</p>\n<ul><li>300 Вт × 2 / 8 Ом</li><li>500 Вт × 2 / 4 Ом</li><li>Мост 1000 Вт</li><li>60 А peak</li><li>XLR + RCA</li></ul>\n<h2>Мощность и ток</h2>\n<p>Измерения при 0,1% THD, 20 Гц–20 кГц: 300 Вт × 2 / 8 Ом, 500 Вт × 2 / 4 Ом; мост 1000 Вт × 1 / 8 Ом. Пиковый ток 60 А на канал. Стабильность до провалов импеданса ~1,5 Ом.</p>\n<h2>Схема</h2>\n<p>Direct-coupled тракт, JFET вход, MOSFET драйвер, 1,3 кВА тороид, 108 000 мкФ. Входы XLR и RCA. Потребление: standby 1 Вт, idle 160 Вт, typical 300 Вт, max 1400 Вт. Вес ~60 lb.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность stereo",
+        "value": "300 Вт × 2 / 8 Ω; 500 Вт × 2 / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность bridge",
+        "value": "1000 Вт × 1 / 8 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ток",
+        "value": "60 А peak на канал",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Топология",
+        "value": "High-bias Class A/AB, direct-coupled",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR balanced, RCA unbalanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Трансформатор",
+        "value": "1,3 кВА toroid",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Фильтр",
+        "value": "108 000 мкФ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17.25″ × 5.5″ × 19″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "~60 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://parasound.com/products/a21"
+    ]
+  },
+  "270213": {
+    "descriptionHtml": "<p>Naim NAIT XS 3 — интегрированный усилитель с MM-фоно: 70 Вт на 8 Ом / 100 Вт на 4 Ом и фирменные DIN/RCA обвязки для живого тракта Naim без лишней демонстрации мощности.</p>\n<ul><li>70 Вт / 8 Ом</li><li>100 Вт / 4 Ом</li><li>MM phono</li><li>DIN Pre/Bi-amp</li><li>8,5 кг</li></ul>\n<h2>Коммутация</h2>\n<p>Линейные входы RCA/DIN; MM phono 47 кОм / 5 мВ; выход на наушники 6,35 мм; RCA Sub variable; DIN Pre/Bi-amp/fixed. Class A усилитель для наушников; Alps Blue Velvet громкость.</p>\n<h2>Корпус</h2>\n<p>432 × 70 × 301 мм, 8,5 кг.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "70 Вт / 8 Ω; 100 Вт / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Фоно",
+        "value": "MM 47 кΩ, 5 мВ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Линейный вход",
+        "value": "47 кΩ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Наушники",
+        "value": "6,35 мм, Class A",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (Ш×В×Г)",
+        "value": "432 × 70 × 301 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "8,5 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.naimaudio.com/products/nait-xs3"
+    ]
+  },
+  "273240": {
+    "descriptionHtml": "<p>Marantz Cinema 40 — AV-ресивер с упором на музыку и кино: HDAM, Audyssey MultEQ XT32 и запас по HDMI 8K. Для гостиной, где саундтрек и стерео должны звучать одним характером.</p>\n<ul><li>125 Вт / 8 Ом (2 ch)</li><li>7× HDMI 8K</li><li>11.4 pre-outs</li><li>Audyssey XT32</li><li>HEOS / AirPlay 2</li></ul>\n<h2>Мощность и каналы</h2>\n<p>125 Вт / канал (8 Ом, 20 Гц–20 кГц, 0,05% THD, 2 канала). 11.4 pre-outs; 4 независимых выхода на сабвуфер. Speaker terminals 4–16 Ом.</p>\n<h2>Видео и сеть</h2>\n<p>7× HDMI IN (все 8K), 3× HDMI OUT включая eARC. HEOS, AirPlay 2, Bluetooth, Ethernet/Wi‑Fi. Dolby Atmos, DTS:X, IMAX Enhanced, Auro-3D; возможность Dirac Live (апгрейд). Габариты 440 × 185 × 401 мм, 15,1 кг.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "125 Вт / 8 Ω (20 Гц–20 кГц, 0,05% THD, 2 ch)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "7× IN 8K; 3× OUT (вкл. eARC)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Pre-outs",
+        "value": "11.4; 4× subwoofer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Фоно",
+        "value": "MM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сетевые функции",
+        "value": "HEOS, AirPlay 2, Wi‑Fi, Ethernet, Bluetooth",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция комнаты",
+        "value": "Audyssey MultEQ XT32; Dirac Live (upgrade)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (Ш×В×Г)",
+        "value": "440 × 185 × 401 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "15,1 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.marantz.com/en/product/av-receivers/cinema-40/CINEMA40.html"
+    ]
+  },
+  "274060": {
+    "descriptionHtml": "<p>T+A Solitaire P-SE — охватывающие планарно-магнитостатические наушники с преобразователем TPM 2500: импеданс 45 Ом и кабели 6,35 мм / 4,4 мм Pentaconn / XLR-4 — для спокойного прослушивания с серьёзным усилителем для наушников.</p>\n<ul><li>TPM 2500</li><li>45 Ом</li><li>Planar-magnetostatic</li><li>4,4 мм / XLR-4</li><li>440 г</li></ul>\n<h2>Конструкция</h2>\n<p>Планарно-магнитостатический принцип, однорядный магнитный массив, доработанная Draft Control System. Вес 440 г без кабеля; кабель 3 м в комплекте конфигураций производителя.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Planar-magnetostatic, охватывающие",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Преобразователь",
+        "value": "TPM 2500",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "45 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "440 г (без кабеля)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Подключение",
+        "value": "6,35 мм; 4,4 мм Pentaconn; XLR-4",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель",
+        "value": "3 м",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.ta-hifi.de/en/headphones/solitaire-headphones/solitaire-p-se/"
+    ]
+  },
+  "273947": {
+    "descriptionHtml": "<p>T+A Caruso R — компактный стереоресивер/система Caruso Series: сенсор 7″, стриминг SC 100, CD, FM/DAB+ и 2 × 100 Вт номинала на 4 Ом — для комнаты, где не нужна стойка из пяти коробок.</p>\n<ul><li>2 × 100 Вт / 4 Ом</li><li>7″ touch</li><li>CD + DAB+</li><li>AirPlay 2</li><li>7,5 кг</li></ul>\n<h2>Усиление и связь</h2>\n<p>Номинал 2 × 100 Вт / 4 Ом и 2 × 50 Вт / 8 Ом; пик 2 × 150 / 2 × 75 Вт. Входы: 2× RCA AUX, USB, coax/TosLink, 2× LAN, WLAN, Bluetooth bidirectional; выходы PRE и саб; наушники 3,5 мм. AirPlay 2, Alexa, Gracenote.</p>\n<h2>Корпус</h2>\n<p>210 × 290 × 290 мм, 7,5 кг. Алюминиевый каркас T+A.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "2 × 100 Вт / 4 Ω; 2 × 50 Вт / 8 Ω (nominal)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Пиковая мощность",
+        "value": "2 × 150 Вт / 4 Ω; 2 × 75 Вт / 8 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Источники",
+        "value": "CD; FM/DAB+; Internet radio; streaming",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "2× RCA; USB; coax; TosLink; 2× LAN; WLAN; BT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "PRE RCA; sub; 3,5 мм headphones",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (В×Ш×Г)",
+        "value": "210 × 290 × 290 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "7,5 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.ta-hifi.de/en/audiosystems/caruso-series/caruso-r/"
+    ]
+  }
+}

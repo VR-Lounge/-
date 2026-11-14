@@ -1,0 +1,191 @@
+{
+  "263970": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive RCA-1.0 TripleC-FM (1,8×1,4) — межблок на PC-TripleC с овальным сечением 1,8×1,4 мм, тефлоном, шёлком, Fine Met Beads и CSF-оболочкой. Базовая «линейная» серия AR перед Absolute — для тракта, где нужен PC-TripleC без флагманского EX.</p>\n<ul><li>PC-TripleC · 1,8 × 1,4 мм</li><li>PTFE / тефлон</li><li>Fine Met Beads®</li><li>CSF carbon sleeve</li><li>RCA rhodium / tellurium copper</li><li>Длина 1,0 м (и др.)</li></ul>\n<aside><p><strong>PC-TripleC.</strong> Pure Copper Continuous Crystal Construction — кованая медь с непрерывной кристаллической структурой (FCM). Не путать с PC-TripleC/EX Absolute (Ag на Cu).</p></aside>\n<h2>Практика</h2>\n<p>По дилерским материалам Acoustic Revive: направленность, винтовые RCA. HITL: длина пары и отличие от LINE-1.0R-TripleC-FM в салоне.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный RCA TripleC-FM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC 1,8×1,4 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "PTFE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "RCA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,0 м типовая",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://av-corp.eu/product-eng-4918-Acoustic-Revive-RCA-1-0-triple-C-FM-1-8-x-1-4-mm.html",
+      "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/analog-cables/acoustic-revive-rca-1-0triplec-fm-single-core-line-cablerca-1-0m"
+    ],
+    "imageUrls": []
+  },
+  "263973": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive XLR-1.0 TripleC-FM — балансный межблок TripleC: PC-TripleC, 3-core shielded (по AR), тефлон, Fine Met Beads. Для симметричных входов преда/ЦАП без перехода на Absolute FM — та же философия проводника, другой уровень линейки.</p>\n<ul><li>PC-TripleC</li><li>3-core XLR geometry</li><li>PTFE + шёлк + CSF</li><li>Fine Met Beads®</li><li>XLR rhodium</li><li>Длина 1,0 м типовая</li></ul>\n<aside><p><strong>3-core.</strong> Acoustic Revive заявляет трёхжильный экран для XLR вместо типичных двух — для полностью балансной передачи и лучшего подавления синфазных наводок.</p></aside>\n<h2>HITL</h2>\n<p>Сверить длину и отличие от LINE-1.0X / Absolute XLR в наличии салона. Фото серии TripleC-FM — OEM/дилер без водяных знаков.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный XLR TripleC-FM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "3-core shielded",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "PTFE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "XLR",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/analog-cables/acoustic-revive-line-1-0x-triplec-fm-xlr-1-0-triple-c-know-how-at-a-lower-price-version-xlr-line-cable-balanced"
+    ],
+    "imageUrls": []
+  },
+  "263984": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive SPC-Triple C (2×4) — акустический кабель на PC-TripleC в конфигурации 2×4 по названию SKU. Для АС, где нужен фирменный проводник AR в акустическом сечении; точные мм² и наконечники — только с паспорта экземпляра.</p>\n<ul><li>PC-TripleC</li><li>Конфигурация 2×4 (по SKU)</li><li>Акустический кабель серии Triple C</li><li>HITL: сечение, длина, банан/лопатка</li></ul>\n<aside><p><strong>2×4.</strong> В названии SKU — сечение/число жил; без паспорта OEM не выдумываем мм². Сверить бирку и клеммы в салоне перед публикацией карточки.</p></aside>\n<h2>Источники</h2>\n<p>OEM Acoustic Revive по SPC часто минимален; опираемся на технологию PC-TripleC и дилерские упоминания серии. Галерея — дилерские ракурсы семейства без водяных знаков.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический кабель SPC Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Конфигурация",
+        "value": "2×4 (по SKU)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Примечание",
+        "value": "мм² и длина — HITL",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://www.positive-feedback.com/Issue77/acoustic_revive.htm"
+    ],
+    "imageUrls": []
+  },
+  "264365": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech Audio Reference III-N1 (XLR) — балансый межблок Reference III: α-OCC, air-foamed HDPE, двойной экран (α braid + GC-303) и FP-601M/602F(R) XLR. Для симметричных входов преда/ЦАП, где важны rhodium phosphor bronze контакты и антимагнитные модули GC-303.</p>\n<ul><li>30×0,18 мм α-OCC</li><li>Air-foamed HDPE 30%</li><li>α braid + GC-303</li><li>FP-601M/602F(R) XLR</li><li>~42 пФ/м</li><li>1,2 м типовая пара</li></ul>\n<aside><p><strong>N1 vs Flux.</strong> Reference III — GC-303 hex-модули; Lineflux NCF — solid-core OCC и NCF в разъёмах. Разные SKU и фото; не подменять без HITL.</p></aside>\n<h2>Практика</h2>\n<p>По Furutech: длина 1,2 м стандарт, кастом по запросу. Сверить N1-маркировку на бирке салона.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный XLR Reference III",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "30×0,18 мм α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "30% air-foamed HDPE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экраны",
+        "value": "α braid + GC-303",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FP-601M/602F(R) XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "~42 пФ/м",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/audio-reference-iii-xlr/",
+      "https://furutech.com/ja/product/audio-reference-iii-rca/"
+    ],
+    "imageUrls": []
+  },
+  "264388": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech Speakerflux — акустический кабель Flux: α-OCC (6×43×0,18 мм + PE cord)×2, high-grade PE, разъёмы CF-201/CF-202 (NCF Plus на Speakerflux NCF). Для тракта усилитель→АС, где нужен Flux, а не Nanoflux/Reference III.</p>\n<ul><li>α-OCC 6×43×0,18 мм × 2</li><li>PE изоляция Ø ~6 мм</li><li>PVC sheath ~15,2 мм · нейлон ~16 мм</li><li>CF-201 / CF-202 (NCF на NCF SKU)</li><li>Длина типовая 2,5 м</li></ul>\n<aside><p><strong>Speakerflux vs Nanoflux.</strong> Speakerflux — α-OCC Flux; Nanoflux — α Nano-Au-Ag OCC. Разные проводники; фото не взаимозаменяемы без пометки HITL. SKU «06» в каталоге — сверить длину.</p></aside>\n<h2>HITL</h2>\n<p>Уточнить банан/лопатка и отличие от Speakerflux NCF в наличии.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический кабель Speakerflux",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "(6×43×0,18 мм α-OCC + PE)×2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "High-grade PE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "CF-201 spade / CF-202 banana",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "2,5 м типовая",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/speakerflux-ncf/",
+      "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-English.pdf"
+    ],
+    "imageUrls": []
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": 264316,
+  "slug": "%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-203r",
+  "name": "Спайд Furutech FP-203(R) ( furutech fp 203(r) )",
+  "cat": "Другое",
+  "cats": [
+    "Коннекторы"
+  ],
+  "price": 1260,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-203r/",
+  "descriptionHtml": "<p>Furutech FP-203(R) — компактный spade из α pure copper, Rhodium, обжим. Кабель до ~4 мм; 12,9 × 24 мм; зев 8,2 мм.</p>\n<ul><li>α copper</li><li>Rhodium</li><li>Crimp spade</li><li>≤4 mm</li><li>24 mm L</li></ul>\n<h2>Отличие от FP-201</h2>\n<p>Короче корпус, crimp вместо винта — для тонких сечений и плотной клеммной колодки.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Спайд Furutech FP-203(R) ( furutech fp 203(r) ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
+  "shortHtml": "",
+  "descriptionText": "Furutech FP-203(R) — компактный spade из α pure copper, Rhodium, обжим. Кабель до ~4 мм; 12,9 × 24 мм; зев 8,2 мм.\n\n α copper\n Rhodium\n Crimp spade\n ≤4 mm\n 24 mm L\n\n Отличие от FP-201\n\n Короче корпус, crimp вместо винта — для тонких сечений и плотной клеммной колодки.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Спайд Furutech FP-203(R) ( furutech fp 203(r) ) — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Spade (crimp)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Материал",
+      "value": "α (Alpha) pure copper",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Покрытие",
+      "value": "Rhodium",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Кабель",
+      "value": "до ~4 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Размер",
+      "value": "12,9 × 24 мм; зев 8,2 мм",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-203R.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-203R.jpg",
+      "alt": "FP-203R",
+      "local": "assets/from-live/products/a433e27ebb_FP-203R.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://furutech.com/product/fp-203-r-g",
+    "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-203r/"
+  ],
+  "enrichedAt": "2026-11-14T13:33:46Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
+}

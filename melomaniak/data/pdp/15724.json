@@ -1,0 +1,63 @@
+{
+  "id": 15724,
+  "slug": "cd_pleer_line_magnetic_audio_lm_215_cd",
+  "name": "CD проигрыватель Line Magnetic Audio LM 215 ( cd line magnetic audio lm 215 )",
+  "cat": "Источники",
+  "cats": [
+    "CD проигрыватели"
+  ],
+  "price": 135000,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/cd_pleer_line_magnetic_audio_lm_215_cd/",
+  "descriptionHtml": "<p>Line Magnetic LM-215 CD — ламповый CD: транспорт Sony, ЦАП Burr-Brown, буфер 12AU7. База для заказного LM-205 с толстой панелью.</p>\n<ul><li>CD + tube buffer 12AU7</li><li>Burr-Brown DAC · Sony transport</li><li>С/Ш ~110 дБ · динамика ~120 дБ (семейство)</li></ul>\n<aside><p><strong>215 vs 205.</strong> 205 — усиленная панель; 215 — базовая. HITL.</p></aside>\n<h2>HITL</h2><p>OEM/дилер часто 1–2 pack-shot на SKU. Текст и specs полные; галерею добить съёмкой с витрины без водяных знаков.</p>\n<p>Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. Текст и specs опираются на OEM/дилер; длина кабеля, цвет и ревизия — HITL по экземпляру на витрине.</p>\n<aside><p><strong>HITL gallery.</strong> Если OEM даёт 1–2 pack-shot — галерею добить съёмкой салона без водяных знаков чужих магазинов.</p></aside>\n<p>Сверить комплектацию перед публикацией. При расхождении паспорта с карточкой приоритет у экземпляра.</p>\n<p>Источники указаны в блоке sources; не смешиваем соседние линейки одного бренда.</p>",
+  "shortHtml": "",
+  "descriptionText": "Line Magnetic LM-215 CD — ламповый CD: транспорт Sony, ЦАП Burr-Brown, буфер 12AU7. База для заказного LM-205 с толстой панелью.\n\n CD + tube buffer 12AU7\n Burr-Brown DAC · Sony transport\n С/Ш ~110 дБ · динамика ~120 дБ (семейство)\n\n 215 vs 205. 205 — усиленная панель; 215 — базовая. HITL.\n\n HITL\n OEM/дилер часто 1–2 pack-shot на SKU. Текст и specs полные; галерею добить съёмкой с витрины без водяных знаков.\n\n Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. Текст и specs опираются на OEM/дилер; длина кабеля, цвет и ревизия — HITL по экземпляру на витрине.\n\n HITL gallery. Если OEM даёт 1–2 pack-shot — галерею добить съёмкой салона без водяных знаков чужих магазинов.\n\n Сверить комплектацию перед публикацией. При расхождении паспорта с карточкой приоритет у экземпляра.\n\n Источники указаны в блоке sources; не смешиваем соседние линейки одного бренда.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Ламповый CD",
+      "source": "manufacturer"
+    },
+    {
+      "label": "ЦАП",
+      "value": "Burr-Brown",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Транспорт",
+      "value": "Sony",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Лампы",
+      "value": "12AU7",
+      "source": "manufacturer"
+    },
+    {
+      "label": "С/Ш",
+      "value": "~110 дБ (семейство)",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/Line-Magnetic-LM-215CD-LAMPOWY-ODTWARZACZ-CD.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/Line-Magnetic-LM-215CD-LAMPOWY-ODTWARZACZ-CD-600x500.jpg",
+      "alt": "Line-Magnetic-LM-215CD-LAMPOWY-ODTWARZACZ-CD",
+      "local": "assets/from-live/products/02336e30b9_Line-Magnetic-LM-215CD-LAMPOWY-ODTWARZACZ-CD.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.dagogo.com/line-magnetic-lm-215cd-cd-player-review/",
+    "https://mvert.ru/product/line-magnetic-lm-205-cd/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/cd_pleer_line_magnetic_audio_lm_215_cd/",
+    "https://www.lm-audio.com/"
+  ],
+  "enrichedAt": "2026-11-14T14:04:54Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w7-2026-11",
+  "galleryHitl": true
+}

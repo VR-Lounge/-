@@ -1,0 +1,1178 @@
+{
+  "26608": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Audionet PRE I G3 — стерео-предусилитель с шестью источниками, балансным трактом и обходным режимом для кино. Входной буфер на каскодированном dual-FET, электронная резистивная громкость с линеаризацией в реальном времени, оптическое разделение контроллера и аудиопути. Для тракта, где важны разрешение и управляемость, а не «тёплая краска».</p>\n<ul><li>Полоса 0–3 МГц (−3 дБ), DC</li><li>THD+N −110 дБ (20 Гц–20 кГц)</li><li>С/Ш 120 дБ @ 1 кГц</li><li>Выход Line/XLR 22 Ом; наушники 47 Ом</li><li>Опция EPS G2/EPX и фоноплата</li><li>6 кг · 430 × 70 × 310 мм</li></ul>\n<aside><p><strong>Audionet Link.</strong> Оптическая шина включения/управления между компонентами Audionet — не звуковой кабель, а служебная связь для синхронного старта тракта.</p></aside>\n<h2>Интеграция</h2>\n<p>По Audionet: RCA/XLR, монитор, запись, два выхода сабвуферов, триггер, bypass для AV. Входы переименуемы и подстраиваются по уровню. HITL: наличие EPS и phono board уточнять в салоне.</p>",
+    "specs": [
+      {
+        "label": "Полоса",
+        "value": "0–3 МГц (−3 дБ), DC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD+N",
+        "value": "−110 дБ, 20 Гц–20 кГц, Vin=4,5 Vrms",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "120 дБ @ 1 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входной импеданс",
+        "value": "Line 82 кОм; XLR 15 кОм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходное сопротивление",
+        "value": "Line/XLR 22 Ом; наушники 47 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "430 × 70 × 310 мм; 6 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://en.audionet.de/machines/pre-i-g3/",
+      "https://en.audionet.de/wp-content/uploads/data_sheet_audionet_pre_i_g3__en.pdf"
+    ],
+    "imageUrls": [
+      "https://en.audionet.de/wp-content/uploads/pre_i_g3_front_panel.jpg",
+      "https://en.audionet.de/wp-content/uploads/pre_i_g3_back.jpg",
+      "https://en.audionet.de/wp-content/uploads/pre_i_g3_hoerraum.jpg",
+      "https://en.audionet.de/wp-content/uploads/pre_i_g3_s_b.png",
+      "https://en.audionet.de/wp-content/uploads/audionet_amp_pre_i_g3_eps_g2__stereo_times_mw_2015.png",
+      "https://en.audionet.de/wp-content/uploads/pre_i_g3_bvoty_2009.jpg"
+    ]
+  },
+  "270163": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>MOON ACE — all-in-one: интегральник 50 Вт/8 Ом, MiND 2 стример, ЦАП, MM-фоно и выход на наушники. Один корпус вместо стойки «источник + пре + мощ» для клиента, которому важна простота без отказа от Roon Ready / Tidal / Qobuz-экосистемы MOON.</p>\n<ul><li>50 Вт/канал @ 8 Ом</li><li>PCM 16–32 бит / 44,1–384 кГц</li><li>DSD64/128/256</li><li>THD 0,02 % · С/Ш 100 дБ</li><li>АЧХ 10 Гц–80 кГц +0/−3 дБ</li><li>42,9 × 8,9 × 36,6 см · ~11 кг</li></ul>\n<aside><p><strong>MiND 2.</strong> Сетевой модуль MOON: локальная библиотека и стриминг-сервисы, управление приложением. Не отдельный «ящик», а часть ACE. Analog pass-through — для AV-процессора со своей громкостью.</p></aside>\n<h2>Коммутация</h2>\n<p>По datasheet Simaudio: USB, 2× S/PDIF, 2× TosLink, aptX Bluetooth, Wi‑Fi/Ethernet, 3 линейных входа (вкл. фронт 3,5 мм), MM-фоно, выход на АС и pre-out. HITL: цвет панели (black / silver / two-tone).</p>",
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "50 Вт/канал @ 8 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "10 Гц–80 кГц +0/−3 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "0,02 %",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "100 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "PCM",
+        "value": "16–32 бит / 44,1–384 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "DSD",
+        "value": "DSD64/128/256",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "42,9 × 8,9 × 36,6 см",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2018_MOON_ACE_EN.pdf",
+      "https://www.safeandsoundhq.com/products/simaudio-ace-all-in-one-music-player"
+    ],
+    "imageUrls": [
+      "https://www.safeandsoundhq.com/cdn/shop/files/ACE.png?v=1747395281",
+      "https://www.safeandsoundhq.com/cdn/shop/files/ACED.png?v=1747395284",
+      "https://www.safeandsoundhq.com/cdn/shop/files/ACEC.png?v=1747395284",
+      "https://www.audiovisionsf.com/cdn/shop/products/ACE_Black_1370x590_9313ebff-327b-4ce6-8dc8-3044fb481b89.png?v=1621038831",
+      "https://www.tonepublications.com/media/SIMAce-3.jpg",
+      "https://www.tonepublications.com/media/SIMAce-4.jpg",
+      "https://www.soundstagesimplifi.com/images/stories/equipment1/201706_simaudio_angle.jpg"
+    ]
+  },
+  "270152": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>MOON 280D MiND 2 — потоковый ЦАП с полностью балансным аналогом и модулем MiND 2. USB до DSD256 / PCM 32/384, AES, S/PDIF, TosLink, aptX — фиксированный выход 2,0 В для преда или интегральника. Для тракта, где стример и ЦАП — один блок, а громкость остаётся за предом.</p>\n<ul><li>THD 0,001 %</li><li>Джиттер 1 пс RMS</li><li>Динамика 120 дБ · С/Ш 118 дБ</li><li>Разделение 116 дБ</li><li>2 Гц–100 кГц +0/−3 дБ</li><li>42,9 × 8,6 × 33,3 см</li></ul>\n<aside><p><strong>Фиксированный выход.</strong> 280D не заменяет предусилитель с регулировкой громкости: 2,0 В fixed — в линию преда/интегральника. MiND 2 даёт сеть и сервисы без отдельного «ящика».</p></aside>\n<h2>Практика</h2>\n<p>По datasheet Simaudio: балансные и небалансные выходы. HITL: цвет (silver / two-tone) и наличие MiND 2 в конкретном экземпляре салона.</p>",
+    "specs": [
+      {
+        "label": "THD",
+        "value": "0,001 %",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Джиттер",
+        "value": "1 пс RMS",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выход",
+        "value": "2,0 В fixed",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Динамический диапазон",
+        "value": "120 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "118 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разделение",
+        "value": "116 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "2 Гц–100 кГц +0/−3 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "42,9 × 8,6 × 33,3 см",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2020_MOON_280D_EN.pdf"
+    ],
+    "imageUrls": [
+      "https://audiokauppa.fi/cdn/shop/products/280D_Silver_1370x590-1340x577.png?v=1659691046",
+      "https://audiokauppa.fi/cdn/shop/products/280D_2-Tone_1370x590-1340x577.png?v=1659691046",
+      "https://audiokauppa.fi/cdn/shop/products/280D_Inside_1370x590_MiND2-1340x577.png?v=1659691046",
+      "https://audiokauppa.fi/cdn/shop/products/280D_Backpanel_1370x590-1340x577.png?v=1659691046"
+    ]
+  },
+  "15886": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Air Tight ATM-2 — ламповый стереомощник: выход на 6550/KT88, ручной монтаж без плат, выходные трансформаторы Tamura и UL-связь. Японский «металл и лампа» для акустики, которой нужен характер push-pull, а не сухость транзистора. Производитель временно приостанавливал новые заказы на ревизию модели — HITL по наличию.</p>\n<ul><li>80 Вт + 80 Вт</li><li>Лампы: 6550/KT88 ×4; 12AX7A ×2; 12AU7A ×2; 12BH7A ×2</li><li>Входной импеданс 100 кОм</li><li>Селектор входов · bias adjuster</li><li>CD-direct вход</li><li>415 × 380 × 223 мм · 32 кг</li></ul>\n<aside><p><strong>UL-связь.</strong> Ultra-Linear — отвод экранирующей обмотки выходного трансформатора, компромисс между триодом и пентодом по искажениям и мощности. На ATM-2 заявлен cathode-follower direct-drive в UL. Не путать с ATM-2Plus (другая схема и 70 Вт).</p></aside>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "80 Вт + 80 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Лампы",
+        "value": "6550/KT88 ×4; 12AX7A ×2; 12AU7A ×2; 12BH7A ×2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входной импеданс",
+        "value": "100 кОм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "415 × 380 × 223 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "32 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.airtight-anm.com/components/atm2.html"
+    ],
+    "imageUrls": [
+      "https://www.airtight-anm.com/_src/24750/07-2.jpg",
+      "https://www.airtight-anm.com/_src/24778/13-2.jpg?v=1794201925853"
+    ]
+  },
+  "15882": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Air Tight ATC-3 — ламповый линейный предусилитель SRPP с усиленным буфером: ниже выходной импеданс, выше линейность и отстройка от наводок. Пара к мощникам Air Tight, а не «универсальный предимп со стримером». Опция Alps RK-501 для тома.</p>\n<ul><li>Лампы: 12AX7 ×1; 12AU7 ×2</li><li>Выход 2 В ном. / 15 В макс.</li><li>КНИ &lt; 0,01 %</li><li>Чувствительность 110 мВ (1 В выход)</li><li>С/Ш &lt; 90 дБ (IHF-A)</li><li>Рекомендуемая нагрузка &gt; 47 кОм</li><li>430 × 325 × 90 мм · 8 кг</li></ul>\n<aside><p><strong>SRPP.</strong> Shunt Regulated Push-Pull — ламповый каскад с активной нагрузкой, часто используемый в линейных предусилителях за запас по току и динамике.</p></aside>",
+    "specs": [
+      {
+        "label": "Лампы",
+        "value": "12AX7(ECC83) ×1; 12AU7(ECC82) ×2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходное напряжение",
+        "value": "2 В ном.; 15 В макс.",
+        "source": "manufacturer"
+      },
+      {
+        "label": "КНИ",
+        "value": "< 0,01 %",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "110 мВ (выход 1 В)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "< 90 дБ (IHF-A)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "430 × 325 × 90 мм; 8 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.airtight-anm.com/components/atc3.html",
+      "https://audiopathways.com/airtight/"
+    ],
+    "imageUrls": [
+      "https://www.airtight-anm.com/_src/24778/13-2.jpg?v=1794201925853",
+      "https://www.airtight-anm.com/_src/24750/07-2.jpg"
+    ]
+  },
+  "26664": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>SPEC GMP-8000EX — струнный виниловый проигрыватель: gunmetal-диск 40 см / 14 кг, момент инерции 3260 кг·см², 9-слотовый coreless DC-мотор maxon и магнитная разгрузка подшипника. Привод струной вместо эластичного ремня — другая механика передачи крутящего момента к тяжёлому диску.</p>\n<ul><li>String drive · 33⅓ / 45</li><li>Pitch ±15 %</li><li>Диск gunmetal 40 см / 14 кг</li><li>Момент инерции 3260 кг·см²</li><li>Шасси: ламинат финской берёзы ~90 мм</li><li>650 × 172 × 480 мм · 40 кг · 1 Вт</li></ul>\n<aside><p><strong>String drive.</strong> Струна передаёт окружную скорость диска с меньшей податливостью, чем классический резиновый ремень. SPEC комплектует нейлоновую и полиэстеровую струны; натяжение настраивается механизмом на моторной базе.</p></aside>\n<h2>Практика</h2>\n<p>По SPEC: фиксированная ось с наружным подшипником, магнитная разгрузка снижает осевую нагрузку &gt;30 %. Тонарм — база под 12″ (кастом). HITL: комплектация тонарма/шелла в салоне.</p>",
+    "specs": [
+      {
+        "label": "Привод",
+        "value": "String drive",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Скорости",
+        "value": "33⅓ и 45 об/мин",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Pitch",
+        "value": "±15 %",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Диск",
+        "value": "Gunmetal Ø40 см / 14 кг; инерция 3260 кг·см²",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "650 × 172 × 480 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "40 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "1 Вт",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://spec-corp.jp/audio/GMP-8000/index.html"
+    ],
+    "imageUrls": [
+      "https://spec-corp.jp/audio/GMP-8000/img/main.png"
+    ]
+  },
+  "26666": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>SPEC REQ-S1EX — двухблочный фонокорректор Real-Sound: отдельные усилитель и питание, разные ОУ на MM и MC, CR-эквалайзер с масляными Arizona и слюдяными конденсаторами. Для винилового тракта, где нагрузка картриджа и тишина питания важнее «одного красивого корпуса».</p>\n<ul><li>MC 60 дБ · MM 40 дБ</li><li>MC 20 / 200 Ом</li><li>MM 0 / 100 пФ</li><li>RCA 0,5 Vrms · XLR 1,0 Vrms</li><li>RIAA 10 Гц–50 кГц ±0,25 дБ</li><li>Усилитель 5 кг · БП 6 кг · 10 Вт</li></ul>\n<aside><p><strong>CR equalizer.</strong> Пассивная RIAA на R/C с минимумом активных элементов в петле коррекции — иной подход, чем активная обратная связь вокруг ОУ. SiC Schottky в питании — по SPEC.</p></aside>",
+    "specs": [
+      {
+        "label": "Усиление MC/MM",
+        "value": "60 дБ / 40 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Нагрузка MC",
+        "value": "20 / 200 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость MM",
+        "value": "0 / 100 пФ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выход RCA/XLR",
+        "value": "0,5 / 1,0 Vrms",
+        "source": "manufacturer"
+      },
+      {
+        "label": "RIAA",
+        "value": "10 Гц–50 кГц, ±0,25 дБ max",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса усилителя / БП",
+        "value": "5,0 кг / 6,0 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Питание",
+        "value": "220 В AC, 50/60 Гц; 10 Вт",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://spec-corp.jp/audio/RSQ-S1EX/index.html"
+    ],
+    "imageUrls": [
+      "https://spec-corp.jp/audio/RSQ-S1EX/img/banner_REQ-s1ex.jpg",
+      "https://spec-corp.jp/audio/GMP-8000/img/main.png"
+    ]
+  },
+  "267424": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Line Magnetic LM-602CA — ламповый линейный предусилитель серии 600 на 12AU7/ECC82 с выпрямителем RCA 22DE4. Три пары входов, спокойный «ламповый» контроль тракта без лишней цифры на фасаде. Для связки с мощниками LM, а не как «цифровой хаб».</p>\n<ul><li>Усиление 22 дБ</li><li>С/Ш 90 дБ</li><li>Выход 2 В</li><li>Rвх 100 кОм · Rвых 800 Ом</li><li>Лампы: ECC82 ×2; RCA 22DE4 ×2</li><li>Входы: 3 пары</li></ul>\n<aside><p><strong>HITL по габаритам.</strong> В разных карточках встречаются 430×370×115 мм и 430×340×125 мм / 20 кг — не усредняем; сверить паспорт экземпляра в салоне перед публикацией.</p></aside>\n<h2>Место в тракте</h2>\n<p>По материалам Line Magnetic / дилеров: линейный преамп без фоно. Согласовать чувствительность с LM-мощниками клиента.</p>",
+    "specs": [
+      {
+        "label": "Усиление",
+        "value": "22 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "90 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выход",
+        "value": "2 В",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Rвх / Rвых",
+        "value": "100 кОм / 800 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "3 пары",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Лампы",
+        "value": "ECC82 ×2; RCA 22DE4 ×2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "430 × 370 × 115 мм (также встречается 430 × 340 × 125 мм / 20 кг)",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.lm-audio.com/cn/lm-p209.html",
+      "https://xn--80aannlcfckh.xn--p1ai/product-brands/LINE_MAGNETIC_AUDIO/"
+    ],
+    "imageUrls": [
+      "https://www.lm-audio.com/uploads/admin/1/6a2a290cd611a.jpg",
+      "https://www.lm-audio.com/uploads/admin/1/62e71ddc9e49c.jpg",
+      "https://www.lm-audio.com/uploads/admin/1/62e71de8692ea.jpg",
+      "https://www.lm-audio.com/uploads/admin/1/6a2a291cc4f2b.jpg"
+    ]
+  },
+  "267430": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Line Magnetic LM-91A — мономощник single-ended 300B по мотивам WE91: 6 Вт RMS, выходы включая 600 Ом. Для высокочувствительных рупоров и камерного тракта, где ватты не заменяют характер триода. Стерео — только парой моноблоков.</p>\n<ul><li>6 Вт RMS (моно)</li><li>Single-ended 300B</li><li>Лампы: 310 ×2 / 300B ×1 / 5U4 ×1</li><li>4 / 8 / 16 / 600 Ом</li><li>20 Гц–20 кГц (1 Вт)</li><li>10,3 кг · 215 × 225 × 460 мм</li></ul>\n<aside><p><strong>SE vs PP.</strong> LM-91A — single-ended; LM-86A — push-pull на 14 Вт. Разная мощность и подача; не взаимозаменяемые «просто 300B». HITL: чувствительность АС клиента.</p></aside>",
+    "specs": [
+      {
+        "label": "Конфигурация",
+        "value": "Моно; 300B single-ended",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "6 Вт RMS",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц–20 кГц (1 Вт)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Rвх",
+        "value": "100 кОм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Rвых",
+        "value": "4 / 8 / 16 / 600 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Лампы",
+        "value": "310 ×2; 300B ×1; 5U4 ×1",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "215 × 225 × 460 мм; 10,3 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.lm-audio.com/en/lmadanduanshidanshengdaohoujig-p179.html"
+    ],
+    "imageUrls": [
+      "https://www.lm-audio.com/uploads/admin/1/61adb7ad98859.jpg",
+      "https://www.lm-audio.com/uploads/admin/1/61adb7b722ba3.jpg",
+      "https://www.lm-audio.com/uploads/admin/1/61adb7bd2ea31.jpg",
+      "https://www.lm-audio.com/uploads/admin/1/61adb92eb5263.jpg"
+    ]
+  },
+  "263974": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive XLR Absolute FM — балансная версия Absolute на PC-TripleC/EX: трёхжильная экранированная геометрия под XLR, тефлон, шёлк, Fine Met Beads и фирменные XLR с tellurium copper. Флагман межблока AR для симметричного тракта.</p>\n<ul><li>Серия Absolute FM · XLR</li><li>Проводник PC-TripleC/EX</li><li>3-core shielded (заявка AR)</li><li>PTFE + шёлк + CSF</li><li>Fine Met Beads®</li><li>XLR screw-fastened, tellurium copper</li></ul>\n<aside><p><strong>Почему 3 жилы.</strong> Acoustic Revive для XLR Absolute/TripleC заявляет трёхжильный экран вместо типичных двух — для полностью симметричной передачи. Сверять с паспортом конкретной длины в салоне.</p></aside>\n<h2>Конструкция</h2>\n<p>По материалам Acoustic Revive / AV-Corp: направленность, родий/алюминий/карбон на разъёмах. HITL: длина пары.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный XLR, Absolute FM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC/EX",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "3-core shielded (по AR)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция / буфер",
+        "value": "PTFE; натуральный шёлк",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "XLR, tellurium copper",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://av-corp.eu/product-eng-4922-Acoustic-Revive-XLR-Absolute-FM.html",
+      "https://acousticrevive.bg/wp-content/uploads/2024/09/XLR-Absolute-FM.jpg"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/09/XLR-Absolute-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/XLR-1.0tripleC-FM.jpg",
+      "https://avcorp.pl/data/gfx/pictures/large/2/2/4922_2.jpg",
+      "https://avcorp.pl/data/gfx/pictures/large/2/2/4922_5.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/01.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/04.jpg"
+    ]
+  },
+  "263994": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Phono-1.2 TripleC FM — фонокабель серии TripleC-FM: PC-TripleC, тефлон, Fine Met Beads и конструкция под RCA-фоно. Длина линейки 1,2 м; для MM/MC-тракта, где кабель от шелла до корректора — часть нагрузки и шума, а не «просто шнур».</p>\n<ul><li>Серия Phono TripleC-FM</li><li>Длина 1,2 м</li><li>Проводник PC-TripleC</li><li>Fine Met Beads®</li><li>Разъёмы RCA (фоно)</li></ul>\n<aside><p><strong>Фоно ≠ линейный.</strong> На шелл-кабеле критичны ёмкость и экранирование; Absolute/Line и Phono — разные SKU Acoustic Revive. HITL: разъём головки и вход фонокорректора клиента.</p></aside>\n<h2>Серия</h2>\n<p>Рядом в каталоге: FM-L, FM-B, FM-BL (балансные/L-варианты). Не смешивать фото Absolute с Phono без пометки HITL.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Фонокабель RCA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "Phono-1.2 TripleC FM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/PHONERCA-1.0TripleC-FM.jpg"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/PHONERCA-1.0TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/RCA-1.0tripleC-FM-scaled.jpg",
+      "https://eligoaudioculture.com/wp-content/uploads/2022/08/AREV_RCA_1.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/02.jpg"
+    ]
+  },
+  "264389": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech Speaker Reference III-N1 — акустический кабель топ-линейки Reference III: α-OCC, воздушный облучённый PE, модули Formula GC-303 и разъёмы FP-201(R) (лопатка) / FP-202(R) (банан). Для тракта, где кабель — часть Pure Transmission, а не комплектный шнур.</p>\n<ul><li>6×20 жил α-OCC · 0,18 мм · ~3,0 мм² (&gt;13 AWG)</li><li>Изоляция: air-foamed irradiated PE</li><li>Двойной PVC sheath · нейлоновая оплётка ~14,5 мм</li><li>GC-303 EMI-модули</li><li>Ёмкость ~50 пФ/м</li><li>Длины типовые 2 / 3 м (N1 SKU)</li></ul>\n<aside><p><strong>GC-303.</strong> Formula GC-303 — антимагнитный EMI-поглощающий компаунд Furutech в модулях вокруг кабеля. Не «экран из фольги», а отдельный поглотитель наводок в конструкции Reference III.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический кабель Reference III",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "6×20 α-OCC 0,18 мм; ~3,0 мм²",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "Air-foamed irradiated PE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экран / модули",
+        "value": "Formula GC-303",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FP-201(R) spade / FP-202(R) banana",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "~50 пФ/м @ 1 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "R проводника",
+        "value": "6,4 Ом/км max",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/ja/product/speaker-reference-iii/",
+      "https://furutech.com/product/speaker-reference-iii/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-N1-FP-201.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-SBW.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Audio-Ref.III-RCA-N1.jpg",
+      "https://furutech.com/wp-content/uploads/2025/07/Power-Ref.III-N1.jpg"
+    ]
+  },
+  "264351": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech Power Reference III-N1 — сетевой кабель Reference III: трёхжильный α-μ/OCC, двойной PVC, модуль GC-303 и разъёмы FI-25(R) / FI-25M(R) (или EU/UK/AU варианты). Рейтинг 10 А / 250 В или 15 А / 125 В — по региону.</p>\n<ul><li>49×0,32 мм α-μ · 3 жилы · Ø ~2,5 мм</li><li>Irradiated PE изоляция</li><li>Двойной PVC · нейлон ~16,5 мм</li><li>GC-303 EMI-модуль</li><li>R ≤ 5,2 Ом/км</li><li>Длина типовая 1,8 м</li></ul>\n<aside><p><strong>α-Process.</strong> Furutech α (Alpha) — криогенная и размагничивающая обработка проводника. На Reference III заявлена для OCC/μ-жил и металла разъёмов.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Сетевой кабель Power Reference III",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "49×0,32 мм α-μ × 3 жилы",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "Irradiated PE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модули",
+        "value": "Formula GC-303",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FI-25(R) IEC / FI-25M(R) (EU: FI-E35 и др.)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "R проводника",
+        "value": "5,2 Ом/км max",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Рейтинг",
+        "value": "10A 250V / 15A 125V",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/power-reference-iii-for-jp/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/07/Power-Ref.III-N1.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-N1-FP-201.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Audio-Ref.III-RCA-N1.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/2720_PowerFlux_NCF-18-Asia.jpg"
+    ]
+  },
+  "264366": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech Audio Reference III-N1 (RCA) — межблок Reference III: α-OCC, воздушный HDPE, двойной экран (оплётка α + GC-303) и FP-106(R) rhodium RCA. Hyper-balanced геометрия Furutech для линейного тракта.</p>\n<ul><li>30×0,18 мм α-OCC · Ø 1,14 мм</li><li>30% air-foamed HDPE</li><li>Shield-1 α braid 80%+</li><li>Shield-2 GC-303 в hex-алюминии</li><li>~42 пФ/м · ~120 Ом @ 100 кГц</li><li>Типовая длина 1,2 м</li></ul>\n<aside><p><strong>Hyper-balanced.</strong> Термин Furutech для геометрии Reference III: витая пара с хлопковым заполнителем и двойным экраном — не путать с XLR-симметрией.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный RCA Reference III",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "30×0,18 мм α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "30% air-foamed HDPE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экраны",
+        "value": "α braid + GC-303",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FP-106(R) RCA rhodium",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "~42 пФ/м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Z",
+        "value": "~120 Ом @ 100 кГц",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/ja/product/audio-reference-iii-rca/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/Audio-Ref.III-RCA-N1.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Audio-Ref.III-XLR-N1.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/1-analog-116_clip.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/LindFlux-NCF.jpg"
+    ]
+  },
+  "264365": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech Audio Reference III-N1 (XLR) — балансый межблок той же линейки: α-OCC, air-foamed HDPE, двойной экран и FP-601M/602F(R) XLR. Для симметричных входов преда/ЦАП, где важен GC-303 и rhodium phosphor bronze контакты.</p>\n<ul><li>30×0,18 мм α-OCC</li><li>Air-foamed HDPE 30%</li><li>α braid + GC-303</li><li>FP-601M/602F(R) XLR</li><li>~42 пФ/м</li><li>1,2 м типовая пара</li></ul>\n<aside><p><strong>N1 vs Flux.</strong> Reference III — GC-303 hex-модули; Lineflux NCF — solid-core OCC и NCF в разъёмах. Разные SKU, не подменять фото без HITL.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный XLR Reference III",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "30×0,18 мм α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "30% air-foamed HDPE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экраны",
+        "value": "α braid + GC-303",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FP-601M/602F(R) XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "~42 пФ/м",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/audio-reference-iii-xlr/",
+      "https://furutech.com/ja/product/audio-reference-iii-rca/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/Audio-Ref.III-XLR-N1.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Audio-Ref.III-RCA-N1.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/3144_Lineflux-XLR_NCF-3.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/LindFlux-NCF.jpg"
+    ]
+  },
+  "264346": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech Powerflux 18E — сетевой кабель Flux-серии на α-OCC (7×68×0,127 мм), полный α-экран и FI-50 NCF разъёмы в NCF-версиях. Сосед NCF-Powerflux на сайте Furutech; HITL: сверить, NCF это или базовый Powerflux 18E в салоне.</p>\n<ul><li>Проводник: 7 bundles × 68 × 0,127 мм α-OCC</li><li>Полный α conductor shield</li><li>Разъёмы: FI-50 серии (NCF в топ-SKU)</li><li>Длина типовая 1,8 м</li><li>Серия Flux / Powerflux</li></ul>\n<aside><p><strong>NCF в разъёмах.</strong> Nano Crystal² Formula в корпусе FI-50 NCF: антистатик и демпфирование. На «голом» Powerflux без NCF — другие разъёмы; не смешивать карточки.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Сетевой кабель Powerflux",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "7×68×0,127 мм α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экран",
+        "value": "α conductor braid",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FI-50 series (NCF на NCF SKU)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,8 м типовая",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/powerflux-ncf/",
+      "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-English.pdf"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/2720_PowerFlux_NCF-18-Asia.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/2721_PowerFlux_NCF-18-B.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Powerflux-C15-NCF-18-US.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/nanoflux-ncf.jpg"
+    ]
+  },
+  "264362": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech Lineflux NCF (RCA) — межблок Flux NCF: single-core α-OCC, двойной экран, PE-диэлектрик и CF-102 NCF RCA с карбоном/нержавейкой. Для линейного тракта, где NCF в разъёме — часть демпфирования, а не маркетинг на этикетке.</p>\n<ul><li>Solid-core α-OCC</li><li>Double-layer shielding</li><li>High-grade PE dielectric</li><li>Nano ceramic/carbon PVC sheath</li><li>Ø ~13 мм · 1,2 м пара</li><li>CF-102 NCF RCA</li></ul>\n<aside><p><strong>NCF.</strong> Nano Crystal² Formula: кристаллический компаунд Furutech — заявка на антистатик и преобразование тепловой энергии; в CF-102 впрыскивается в центрпин.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный RCA Lineflux NCF",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "Solid-core α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экран",
+        "value": "Double-layer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Диэлектрик",
+        "value": "High-grade PE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "CF-102 NCF RCA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Диаметр / длина",
+        "value": "~13 мм; 1,2 м",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/lineflux-ncf-rca/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/LindFlux-NCF.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/1-analog-116_clip.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/3144_Lineflux-XLR_NCF-3.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Audio-Ref.III-RCA-N1.jpg"
+    ]
+  },
+  "264388": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech Speakerflux — акустический кабель Flux: α-OCC (6×43×0,18 мм + PE cord)×2, high-grade PE, разъёмы CF-201/CF-202 (NCF Plus на Speakerflux NCF). Сосед NCF-версии на сайте; HITL: банан/лопатка и длина.</p>\n<ul><li>α-OCC 6×43×0,18 мм × 2</li><li>PE изоляция Ø ~6 мм</li><li>PVC sheath ~15,2 мм · нейлон ~16 мм</li><li>CF-201 / CF-202 (NCF на NCF SKU)</li><li>Длина типовая 2,5 м</li></ul>\n<aside><p><strong>Speakerflux vs Nanoflux.</strong> Speakerflux — α-OCC Flux; Nanoflux — α Nano-Au-Ag OCC. Разные проводники; фото не взаимозаменяемы без пометки.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический кабель Speakerflux",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "(6×43×0,18 мм α-OCC + PE)×2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "High-grade PE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "CF-201 spade / CF-202 banana",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "2,5 м типовая",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/speakerflux-ncf/",
+      "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-English.pdf"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/08/3403_Speakerflux_NCF.jpg",
+      "https://furutech.com/wp-content/uploads/2025/08/Nanoflux-NCF-Plus-Speaker.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-N1-FP-201.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-SBW.jpg"
+    ]
+  },
+  "263970": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive RCA-1.0 TripleC-FM (1,8×1,4) — межблок на PC-TripleC с овальным сечением 1,8×1,4 мм, тефлоном, шёлком, Fine Met Beads и CSF-оболочкой. Базовая «линейная» серия AR перед Absolute.</p>\n<ul><li>PC-TripleC · 1,8 × 1,4 мм</li><li>PTFE / тефлон</li><li>Fine Met Beads®</li><li>CSF carbon sleeve</li><li>RCA rhodium / tellurium copper</li><li>Длина 1,0 м (и др.)</li></ul>\n<aside><p><strong>PC-TripleC.</strong> Pure Copper Continuous Crystal Construction — кованая медь с непрерывной кристаллической структурой (FCM). Не путать с PC-TripleC/EX Absolute (Ag на Cu).</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный RCA TripleC-FM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC 1,8×1,4 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "PTFE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "RCA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,0 м типовая",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://av-corp.eu/product-eng-4918-Acoustic-Revive-RCA-1-0-triple-C-FM-1-8-x-1-4-mm.html",
+      "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/analog-cables/acoustic-revive-rca-1-0triplec-fm-single-core-line-cablerca-1-0m"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0X-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/RCA-1.0tripleC-FM-scaled.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/XLR-1.0tripleC-FM.jpg",
+      "https://eligoaudioculture.com/wp-content/uploads/2022/08/AREV_RCA_1.jpg",
+      "https://eligoaudioculture.com/wp-content/uploads/2022/08/AREV_LINE_1.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/01.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/02.jpg"
+    ]
+  },
+  "263973": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive XLR-1.0 TripleC-FM — балансный межблок TripleC: PC-TripleC, 3-core shielded (по AR), тефлон, Fine Met Beads. Для симметричных входов без перехода на Absolute.</p>\n<ul><li>PC-TripleC</li><li>3-core XLR geometry</li><li>PTFE + шёлк + CSF</li><li>Fine Met Beads®</li><li>XLR rhodium</li></ul>\n<aside><p><strong>3-core.</strong> Acoustic Revive заявляет трёхжильный экран для XLR вместо типичных двух — для полностью балансной передачи.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный XLR TripleC-FM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "3-core shielded",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "PTFE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "XLR",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/analog-cables/acoustic-revive-line-1-0x-triplec-fm-xlr-1-0-triple-c-know-how-at-a-lower-price-version-xlr-line-cable-balanced"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0X-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/RCA-1.0tripleC-FM-scaled.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/XLR-1.0tripleC-FM.jpg",
+      "https://eligoaudioculture.com/wp-content/uploads/2022/08/AREV_RCA_1.jpg",
+      "https://eligoaudioculture.com/wp-content/uploads/2022/08/AREV_LINE_1.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/01.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/02.jpg"
+    ]
+  },
+  "263981": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive SPC-REFERENCE II Triple C — акустический кабель Reference II на PC-TripleC. Для АС, где нужен фирменный проводник AR в акустическом сечении, а не межблочный Absolute.</p>\n<ul><li>Серия SPC-REFERENCE II</li><li>Проводник PC-TripleC</li><li>Акустический кабель</li><li>HITL: сечение и длина пары в салоне</li></ul>\n<aside><p><strong>SPC vs Absolute.</strong> SPC — speaker; Absolute FM — линейный/XLR. Не подставлять фото межблока как акустику без HITL.</p></aside>\n<h2>Источники</h2>\n<p>OEM-страницы Acoustic Revive по SPC часто минимальны; опираемся на дилерские карточки Reference II TripleC и общую технологию PC-TripleC. Уточнить паспорт экземпляра.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический кабель SPC-REFERENCE II",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Reference II Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Примечание",
+        "value": "Сечение/длина — HITL по экземпляру",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.playstereo.com/en/cavi-di-potenza/2895-acoustic-revive-spc-reference-ii-triplec-sp-cable-cut-sales.html",
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/03.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/04.jpg",
+      "https://eligoaudioculture.com/wp-content/uploads/2022/08/AREV_LINE_1.jpg"
+    ]
+  },
+  "263984": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive SPC-Triple C (2×4) — акустический кабель на PC-TripleC в конфигурации 2×4. Для bi-wire/многожильной разводки; HITL: точная геометрия и наконечники экземпляра.</p>\n<ul><li>PC-TripleC</li><li>Конфигурация 2×4 (по названию SKU)</li><li>Акустический кабель</li><li>Серия Triple C</li></ul>\n<aside><p><strong>2×4.</strong> В названии SKU — сечение/число жил; без паспорта OEM не выдумываем мм². Сверить бирку в салоне.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический кабель SPC Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Конфигурация",
+        "value": "2×4 (по SKU)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Примечание",
+        "value": "мм² и длина — HITL",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://www.positive-feedback.com/Issue77/acoustic_revive.htm"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/01.jpg",
+      "https://highfidelity.pl/foto_testy/1712/acoustic_r/03.jpg",
+      "https://eligoaudioculture.com/wp-content/uploads/2022/08/AREV_LINE_1.jpg"
+    ]
+  },
+  "33442": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Advance Paris (Advance Acoustic) DX-1 — ЦАП/предимп: AK4490, XMOS USB, PCM до 24/192 (USB) и DSD64/128/256. Небольшой корпус для рабочего стола или стойки, где нужен отдельный ЦАП с регулируемым уровнем, а не «ещё один стример».</p>\n<ul><li>ЦАП: Asahi Kasei AK4490</li><li>PCM transceiver: AK4118</li><li>USB: XMOS XU208-256</li><li>PCM 24/192 · USB до 32/768 (по QS)</li><li>DSD 2,8 / 5,6 / 11,2 МГц</li><li>Выход 2 В RCA / 4 В XLR</li><li>THD &lt; 0,005 % · С/Ш &gt; 110 дБ</li><li>133 × 230 × 325 мм · 6,1 кг</li></ul>\n<aside><p><strong>AK4490.</strong> ЦАП-чип Asahi Kasei в DX-1 — по quick-start Advance Paris. Опция Bluetooth AptX — модуль X-FTB01.</p></aside>",
+    "specs": [
+      {
+        "label": "ЦАП",
+        "value": "Asahi Kasei AK4490",
+        "source": "manufacturer"
+      },
+      {
+        "label": "USB",
+        "value": "XMOS XU208-256",
+        "source": "manufacturer"
+      },
+      {
+        "label": "PCM",
+        "value": "24 бит / 192 кГц; USB до 32 бит / 768 кГц (QS)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "DSD",
+        "value": "2,8 / 5,6 / 11,2 МГц (DSD64/128/256)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выход",
+        "value": "RCA 2 В; XLR 4 В",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "< 0,005 %",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш / разделение",
+        "value": "> 110 дБ / > 110 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц–45 кГц (±3 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "133 × 230 × 325 мм; 6,1 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.advanceparis.com/en/product/dx-1",
+      "https://www.advance-paris.de/wp-content/uploads/2019/11/DX1-QuickStart-Int-1.pdf"
+    ],
+    "imageUrls": [
+      "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK.png",
+      "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-WT.png",
+      "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-768x768.png",
+      "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-600x600.png"
+    ]
+  },
+  "264258": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Furutech ADL Cruise — портативный усилитель для наушников с USB ЦАП: корпус carbon/mirror, выход 3,5 мм, line-in и mini-USB. Для 12–600 Ом в дороге; батарея до ~80 ч по заявлению ADL.</p>\n<ul><li>ЦАП: WM8716 24/192</li><li>USB: TE7022L 24/96</li><li>Выход: до 110 мВт @ 32 Ом (1% THD)</li><li>THD 0,02 % (line @ 1 кГц)</li><li>С/Ш: 100 дБ line / 96 дБ USB</li><li>Разделение 60 дБ @ 1 кГц</li><li>АКБ 3,7 В 940 мА·ч · до ~80 ч</li></ul>\n<aside><p><strong>ADL.</strong> Alpha Design Labs — портативное подразделение Furutech. Cruise — не настольный мощник; запас по току для высокоомных наушников ограничен (23 мВт @ 300 Ом).</p></aside>",
+    "specs": [
+      {
+        "label": "ЦАП",
+        "value": "WM8716 192 кГц/24 бит",
+        "source": "manufacturer"
+      },
+      {
+        "label": "USB chip",
+        "value": "TE7022L 96 кГц/24 бит",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выход max (1% THD)",
+        "value": "110 мВт @ 32 Ом; 23 мВт @ 300 Ом; 16 мВт @ 600 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "0,02 % (line @ 1 кГц)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "100 дБ line / 96 дБ USB (A)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разделение",
+        "value": "60 дБ @ 1 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Питание",
+        "value": "Li-ion 3,7 В 940 мА·ч; до ~80 ч",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "3,5 мм out; 3,5 мм line in; mini-USB",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.adl-av.com/products/headphone_amplifiers/cruise",
+      "https://www.futureshop.co.uk/adl-cruise-portable-headphone-amplifier"
+    ],
+    "imageUrls": [
+      "https://images.theabsolutesound.com/wp-content/uploads/2020/11/adl_cruise_hi_rez_1.jpg",
+      "https://www.lpgear.com/Merchant2/graphics/00000001/ADL-Cruise-md.jpg",
+      "https://www.audiophonics.fr/35374/furutech-adl-cruise-amplifier-headphone-dac-24bit-96khz.jpg",
+      "https://www.adl-av.com/images/awards/cruise_awards.png"
+    ]
+  },
+  "260690": {
+    "meagerWave": "meager-w2-2026-11",
+    "descriptionHtml": "<p>Lawrence Audio Bulbul — двухполосная полочная акустика с керамикой Accuton: 1,2″ твитер и 7″ СЧ/НЧ в вентилируемом корпусе 25 мм MDF. Для комнаты, где важны тембр и атака керамики, а не «сабвуферный» эффект от порта.</p>\n<ul><li>2-way vented</li><li>35 Гц–40 кГц</li><li>91 дБ (2,83 В/1 м)</li><li>8 Ом (мин. 6,4 Ом)</li><li>Кроссовер 4-го порядка @ 2800 Гц</li><li>Рекомендуемая мощность 30–150 Вт</li><li>13 кг · 50 × 20 × 30 см</li></ul>\n<aside><p><strong>Accuton ceramic.</strong> Жёсткие керамические мембраны: быстрый отклик и иной спектр резонансов, чем у бумаги/пластика. Требуют аккуратного усиления и комнаты. OEM-галерея Lawrence ограничена — HITL: добить фото с салона.</p></aside>\n<h2>Источники</h2>\n<p>Спеки — страница Lawrence Audio Bulbul. Дополнительные ракурсы OEM часто недоступны через CDN; оставляем место под салонные кадры.</p>",
+    "specs": [
+      {
+        "label": "АЧХ",
+        "value": "35 Гц–40 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "91 дБ (2,83 В/1 м)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "8 Ом, мин. 6,4 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Рекомендуемая мощность",
+        "value": "30–150 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кроссовер",
+        "value": "4-й порядок, 2800 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "50 × 20 × 30 см; 13 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.lawrenceaudio.com/h/ServiceDetail?cont=256444&key=p2kbz"
+    ],
+    "imageUrls": []
+  }
+}

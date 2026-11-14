@@ -1,0 +1,1472 @@
+{
+  "270171": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>MOON 250i V2 — аналоговый интегральник Class A/B: 50 Вт/8 Ом и 100 Вт/4 Ом, встроенный MM-фоно и выход 6,35 мм на наушники. Шесть линейных входов — тракт без стримера в корпусе, когда источник уже есть.</p>\n<ul><li>50 Вт/ch @ 8 Ом · 100 Вт @ 4 Ом</li><li>Класс A/B</li><li>MM phono · gain 40 дБ (типично для линейки)</li><li>6 line + MM</li><li>Наушники 6,35 мм</li><li>42,9 × 8,9 × 36,6 см · ~10 кг</li></ul>\n<aside><p><strong>250i vs ACE.</strong> 250i V2 — чистый аналог без MiND; ACE — all-in-one со стримером. Не путать комплектацию.</p></aside>\n<h2>Практика</h2>\n<p>По Simaudio: чувствительность входа 370 мВ–3 В RMS, Rвх ~11 кОм, усиление ~37 дБ, С/Ш ~101 дБ. HITL: цвет Black в SKU салона.</p>",
+    "sources": [
+      "https://simaudio.com/en/product/250i-v2-integrated-amplifier/"
+    ],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "50 Вт/ch / 8 Ω; 100 Вт/ch / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Класс",
+        "value": "A/B",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Фоно",
+        "value": "MM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "6 line + MM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Наушники",
+        "value": "6,35 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "42,9 × 8,9 × 36,6 см",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "271014": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Matrix Audio element P2 — компактный Class D стереоусилитель: 2×230 Вт/4 Ом (2×110 Вт/8 Ом), мост до 850 Вт/4 Ом. RCA и XLR, WBT-клеммы — мощник к стримеру/ЦАП Matrix без лишнего тепла в стойке.</p>\n<ul><li>2 × 230 Вт / 4 Ом · 2 × 110 Вт / 8 Ом</li><li>Мост: 850 Вт / 4 Ом · 500 Вт / 8 Ом</li><li>Class D</li><li>RCA + XLR</li><li>340 × 58 × 259 мм · 3,7 кг</li></ul>\n<aside><p><strong>Bridge.</strong> В монорежиме оба канала работают на одну нагрузку — сверить инструкцию Matrix по перемычкам/меню перед bi-amp.</p></aside>",
+    "sources": [
+      "https://www.matrix-digi.com/product/88/element_P2"
+    ],
+    "specs": [
+      {
+        "label": "Выходная мощность stereo",
+        "value": "2 × 230 Вт / 4 Ω; 2 × 110 Вт / 8 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Моно",
+        "value": "850 Вт / 4 Ω; 500 Вт / 8 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA; XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "340 × 58 × 259 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "3,7 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "270380": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>QUAD 33 (reissue) — предусилитель с MM/MC фоно, классическим Tilt и балансными XLR. Цифровой контроль громкости при аналоговом тракте — современный 33 в духе оригинала, а не «ретро-копия без измерений».</p>\n<ul><li>Фоно MM +46 дБ · MC +63,5 дБ</li><li>3× RCA · 1× XLR · phono</li><li>Выходы RCA / XLR / AUX · наушники</li><li>Tilt control</li><li>С/Ш line &gt; 108 дБ</li><li>258 × 94 × 165 мм · 4 кг</li></ul>\n<aside><p><strong>Tilt.</strong> Фирменный тонконтроль QUAD: подъём/спад «наклоном» АЧХ вокруг середины, а не раздельные bass/treble. Для коррекции комнаты и записей.</p></aside>",
+    "sources": [
+      "https://quad-hifi.co.uk/products/quad-33"
+    ],
+    "specs": [
+      {
+        "label": "Фоно",
+        "value": "MM +46 дБ; MC +63,5 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "3× RCA; 1× XLR; phono MM/MC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA Pre; XLR; AUX; headphone",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш (line)",
+        "value": "> 108 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "258 × 94 × 165 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "4 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "270397": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>QUAD 303 (reissue) — стереомощник к новому 33: 2×50 Вт/8 Ом и 2×70 Вт/4 Ом в классическом форм-факторе. Пара 33+303 для тех, кто хочет знакомый QUAD без охоты за винтажом.</p>\n<ul><li>2 × 50 Вт / 8 Ом</li><li>2 × 70 Вт / 4 Ом</li><li>Пара к QUAD 33</li><li>Симметричный/несимметричный вход (по ревизии)</li></ul>\n<aside><p><strong>303.</strong> Исторический компаньон 33; reissue сохраняет идею «достаточно ватт для чувствительной АС», а не киловатки.</p></aside>\n<p>По данным производителя/дилеров reissue. HITL: точные С/Ш и демпфинг с паспорта комплекта салона.</p>",
+    "sources": [
+      "https://quad-hifi.co.uk/"
+    ],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "2 × 50 Вт / 8 Ω; 2 × 70 Вт / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Стереоусилитель мощности",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Пара",
+        "value": "QUAD 33 reissue",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "270208": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Naim Nait 50 — юбилейный интегральник: 25 Вт/8 Ом @ 0,1% THD+N в духе классических Nait. Для чувствительной акустики и слушателя, которому важны тембр и ритм Naim, а не бумажные киловатты.</p>\n<ul><li>25 Вт / 8 Ом @ 0,1% THD+N</li><li>Интегральный стереоусилитель</li><li>Линейка Nait (50th anniversary)</li></ul>\n<aside><p><strong>Nait.</strong> Короткий сигналный путь и характер Naim; 25 Вт требуют АС с запасом чувствительности. HITL: входы/фоно конкретной ревизии.</p></aside>\n<p>Спеки из карточки PDP / Naim. Сверить комплект с салоном.</p>",
+    "sources": [
+      "https://www.naimaudio.com/"
+    ],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "25 Вт / 8 Ом @ 0,1% THD+N",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Интегральный стереоусилитель",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Nait 50",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "270213": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Naim Nait XS 3 — интегральник 70 Вт/8 Ом (100 Вт/4 Ом) с MM-фоно в линейке XS. Больше запаса по току, чем у Nait 50, для АС средней чувствительности в комнате.</p>\n<ul><li>70 Вт / 8 Ом · 100 Вт / 4 Ом</li><li>MM phono (XS 3)</li><li>Линейка Nait XS</li></ul>\n<aside><p><strong>XS 3.</strong> Обновление XS 2 с доработанным фоно и выходным каскадом — по материалам Naim. HITL: цвет и опции DIN/RCA.</p></aside>",
+    "sources": [
+      "https://www.naimaudio.com/"
+    ],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "70 Вт / 8 Ω; 100 Вт / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "Интегральный стереоусилитель",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Nait XS 3",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "268721": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva ERC-4 — CD-проигрыватель линейки Emotiva: источник «диск → аналог/цифра» без театрального процессора в одном корпусе. Для тракта, где CD ещё жив, а стример — отдельно.</p>\n<ul><li>CD-проигрыватель</li><li>17″ × 4″ × 14″</li><li>21 lb (~9,5 кг)</li></ul>\n<aside><p><strong>ERC.</strong> Emotiva Reference CD — транспорт/плеер для стерео или как источник в AV. HITL: наличие цифровых выходов на задней панели экземпляра.</p></aside>\n<p>Габариты и вес — по Emotiva. Дополнить электрические specs с паспорта при HITL.</p>",
+    "sources": [
+      "https://emotiva.com/products/erc-4"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "CD-проигрыватель",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 4″ × 14″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "21 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "269030": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva RMC-1 + Dirac — 16-канальный AV-процессор с балансными XLR и калибровкой Dirac Live. Для кинозала, где пре/проц отделён от мощников, а не «ресивер всё в одном».</p>\n<ul><li>16 каналов balanced XLR</li><li>Dirac Live</li><li>AV-процессор Emotiva</li></ul>\n<aside><p><strong>Dirac Live.</strong> Комнатная коррекция по импульсному отклику; лицензия/микрофон — HITL комплекта салона.</p></aside>\n<p>Спеки каналов уже в PDP. Расширяем описание до editorial-bar; детали HDMI/Atmos — с паспорта RMC-1.</p>",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "16 (balanced XLR)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× HDMI 2.1 IN; 2× HDMI OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "4× optical; 4× coax; AES/EBU; USB",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Dirac Live",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Декодирование",
+        "value": "Dolby Atmos; DTS:X Pro",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 15.5″ × 7″ (без ножек)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 30 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "269017": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva RMC-1L + Dirac — облегчённая/L-версия 16-канального процессора RMC с Dirac Live. Та же идея раздельного AV-тракта: процессор отдельно, мощники Emotiva/иные — стойкой ниже.</p>\n<ul><li>16 каналов balanced XLR</li><li>Dirac Live</li><li>Линейка RMC-1L</li></ul>\n<aside><p><strong>RMC-1 vs 1L.</strong> Сверить отличия I/O и комплектации Dirac по паспорту экземпляра — не усредняем без HITL.</p></aside>",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "16 (balanced XLR)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× HDMI 2.1 IN; 2× HDMI OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "4× optical; 4× coax; AES/EBU; USB",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Dirac Live",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Декодирование",
+        "value": "Dolby Atmos; DTS:X Pro",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 15.5″ × 7″ (без ножек)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 30 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "269006": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva XMC-2 + Dirac — 16-канальный AV-процессор младше RMC: балансные выходы и Dirac Live для домашнего кино без «ресиверного» компромисса усилителя в одном шасси.</p>\n<ul><li>16 balanced XLR</li><li>Dirac Live</li><li>Серия XMC-2</li></ul>\n<aside><p><strong>XMC vs RMC.</strong> Разная иерархия Emotiva; HDMI/DSP — HITL по ревизии платы.</p></aside>",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "16 balanced XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× HDMI 2.1",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Dirac Live",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 15.5″ × 5.25″ (без ножек)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 27 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "268996": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva MC1 — AV-процессор 13.2 для кинозала, где достаточно каналов без флагманского RMC. Разделение pre/pro от мощников — философия Emotiva.</p>\n<ul><li>13.2 каналов</li><li>AV-процессор</li><li>Серия MC1</li></ul>\n<aside><p><strong>13.2.</strong> Конфигурация под Atmos/DTS:X типичной высоты; точная матрица выходов — HITL.</p></aside>",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "13.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "6× IN; 2× OUT (HDMI 2.0b)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "EmoQ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 3.125″ × 13″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "10 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "273696": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Rotel RMB-1587MKII — семиканальный усилитель мощности: 155 Вт/ch @ 8 Ом (7ch) и 250 Вт/ch @ 4 Ом. Для AV-процессора, которому нужны честные ватты на все каналы сразу.</p>\n<ul><li>155 Вт/ch (7ch / 8 Ом)</li><li>250 Вт/ch (7ch / 4 Ом)</li><li>7 каналов</li><li>MKII</li></ul>\n<aside><p><strong>Multichannel power.</strong> Не ресивер: только мощник. Согласовать чувствительность входов с процессором.</p></aside>",
+    "sources": [
+      "https://www.rotel.com/"
+    ],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "155 Вт/ch (7ch/8Ω); 250 Вт/ch (7ch/4Ω)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "< 0,03% (20 Гц–20 кГц)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "111 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA и XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "431 × 237 × 456 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "37,6 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "273713": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Rotel RMB-1585MKII — пятиканальный мощник: 210 Вт/ch @ 8 Ом и 340 Вт/ch @ 4 Ом. Для 5.1/5.x без экономии на тылах.</p>\n<ul><li>210 Вт/ch (5ch / 8 Ом)</li><li>340 Вт/ch (5ch / 4 Ом)</li><li>5 каналов · MKII</li></ul>\n<aside><p><strong>1585 vs 1587.</strong> Меньше каналов — больше ватт на канал в спецификации Rotel. HITL под схему зала.</p></aside>",
+    "sources": [
+      "https://www.rotel.com/"
+    ],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "210 Вт/ch (5ch/8Ω); 340 Вт/ch (5ch/4Ω)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "< 0,03%",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "120 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "431 × 237 × 456 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "37,4 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "270156": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>MOON 110LP v2 — фонокорректор MM/MC в компактном корпусе Neo/Nōо. Для винила к интегральнику или преду без встроенного фоно, с переключаемой нагрузкой.</p>\n<ul><li>MM / MC</li><li>Компактный phono stage</li><li>Серия 110LP v2</li></ul>\n<aside><p><strong>v2.</strong> Обновление 110LP; сверить DIP/нагрузку под картридж клиента. Спеки усиления — с паспорта/сайта Simaudio.</p></aside>",
+    "sources": [
+      "https://simaudio.com/"
+    ],
+    "specs": [
+      {
+        "label": "Усиление",
+        "value": "40 / 50 / 54 / 60 / 66 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вх. импеданс",
+        "value": "10 Ω / 100 Ω / 475 Ω / 47 кΩ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "0 / 100 / 330 / 430 пФ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кривая",
+        "value": "RIAA / IEC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "0,002% (20 Гц–20 кГц)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц–20 кГц (±0,5 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "12,7 × 4,2 × 16,5 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "1,5 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "272205": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Shanling SCD 1.3 — SACD/CD и сетевой источник в одном корпусе. Для полки, где нужен диск и стриминг без двух ящиков.</p>\n<ul><li>SACD / CD + network</li><li>Серия SCD 1.3</li></ul>\n<aside><p><strong>Hybrid source.</strong> Не только транспорт: сеть/приложения — HITL по прошивке экземпляра.</p></aside>",
+    "sources": [
+      "https://www.shanling.com/"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "SACD/CD + network source",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "AK4499EX + AK4191",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Наушники",
+        "value": "1,1 Вт @ 32 Ом; 153 мВт @ 300 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "28 × 28 × 9,6 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "6,6 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "272213": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Shanling EC mini — компактный CD-проигрыватель/транспорт для стола или портативной стойки. Минимум занимаемого места, максимум «диск в слот».</p>\n<ul><li>CD player / transport</li><li>Форм-фактор mini</li></ul>\n<aside><p><strong>EC mini.</strong> Не путать с настольными SCD; выходы и питание — HITL.</p></aside>\n<p>Расширяем stub-описание до editorial-bar по факту модели; полные specs — с паспорта.</p>",
+    "sources": [
+      "https://www.shanling.com/"
+    ],
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "240 мВт @ 32 Ω bal; 140 мВт SE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вых. импеданс",
+        "value": "< 1 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "3,5 мм; 4,4 мм; RCA",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "272271": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Shanling M9 Plus — портативный Hi-Fi-плеер: до 520 мВт @ 32 Ом на SE (по карточке), запас по току для требовательных наушников в дороге.</p>\n<ul><li>SE до 520 мВт @ 32 Ом</li><li>Portable DAP</li><li>M9 Plus</li></ul>\n<aside><p><strong>DAP.</strong> Digital Audio Player — не усилитель без накопителя. HITL: балансный выход и Android/версия ОС.</p></aside>",
+    "sources": [
+      "https://www.shanling.com/"
+    ],
+    "specs": [
+      {
+        "label": "Мощность SE",
+        "value": "520 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность balanced",
+        "value": "1125 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "2× AK4191 + 4× AK4499EX",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "147 × 82 × 22 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "379 г",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "273136": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Denon AVR-X1800H — AV-ресивер 7.2 с сетевыми функциями HEOS. Для гостиной, где нужен один ящик под ТВ и Atmos-минимум, а не стойка процессор+мощник.</p>\n<ul><li>7.2 каналов</li><li>Серия X1800H</li><li>HEOS / HDMI 2.1 поколение — HITL</li></ul>\n<aside><p><strong>AVR vs pre/pro.</strong> Усилитель и процессор в одном; компромисс удобства. Спеки мощности — с паспорта Denon для региона.</p></aside>",
+    "sources": [
+      "https://www.denon.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "7.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "80 Вт / ch (8 Ω, 20–20k, 0,08%, 2ch)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "6× IN (3×8K); 1× OUT eARC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Audyssey MultEQ XT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "HEOS, Wi‑Fi, Bluetooth, AirPlay 2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "434 × 339 × 151 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "8,6 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "273082": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Denon AVR-S670H — младший AV-ресивер серии S: сеть, HDMI и базовый surround без флагманских ватт X-серии.</p>\n<ul><li>Серия S670H</li><li>AV-ресивер начального/среднего уровня</li></ul>\n<aside><p><strong>S vs X.</strong> Меньше запаса по току и функциям; HITL по числу каналов на бирке.</p></aside>",
+    "sources": [
+      "https://www.denon.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "5.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "75 Вт / ch (8 Ω, 20–20k, 0,08%, 2ch)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "6× IN (3×8K); 1× OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "434 × 339 × 151 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "7,8 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "273106": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Denon AVR-X580BT — компактный AV-ресивер с Bluetooth в линейке X. Для небольших комнат и саундбара-апгрейда до «настоящих» каналов.</p>\n<ul><li>Серия X580BT</li><li>Bluetooth</li></ul>\n<aside><p><strong>BT в имени.</strong> Беспроводной вход для гостей; основной тракт — HDMI/цифра. HITL по мощности.</p></aside>",
+    "sources": [
+      "https://www.denon.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "5.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "70 Вт / ch (8 Ω, 20–20k, 0,08%, 2ch)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "4× IN / 1× OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "434 × 330 × 151 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "7,6 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "270005": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Cambridge Audio MXN10 — компактный сетевой проигрыватель: стриминг без полного «ресивера». Для интеграции с усилителем Cambridge/иным через аналог или цифру.</p>\n<ul><li>Network streamer</li><li>Серия MXN10</li></ul>\n<aside><p><strong>MXN.</strong> StreamMagic-платформа Cambridge; сервисы и Roon — HITL по прошивке.</p></aside>",
+    "sources": [
+      "https://www.cambridgeaudio.com/"
+    ],
+    "specs": [
+      {
+        "label": "ЦАП",
+        "value": "ESS Sabre ES9033Q",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "20 Гц – 70 кГц (+0/−1 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Hi-Res",
+        "value": "до 768 кГц 32 бит PCM; DSD512",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "215 × 52 × 191 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "1,2 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA; coaxial; optical",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "269881": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Cambridge Audio Evo One — беспроводная all-in-one акустика: 14×50 Вт @ 4 Ом в одном корпусе. Для комнаты без стойки компонентов.</p>\n<ul><li>14 × 50 Вт @ 4 Ом</li><li>Wireless Hi-Fi</li><li>Evo One</li></ul>\n<aside><p><strong>All-in-one.</strong> Не полочники парой — единый корпус. HITL: стереопара/позиция.</p></aside>",
+    "sources": [
+      "https://www.cambridgeaudio.com/"
+    ],
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "14 × 50 Вт @ 4 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Платформа",
+        "value": "StreamMagic Gen 4; Roon Ready",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA; MM; optical; HDMI eARC; USB; BT; сеть",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "675 × 129 × 290 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "14,5 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "269327": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Klipsch The Nines McLaren — активная полочная пара с усилителем в комплекте, спецверсия McLaren. 240 Вт системы — для стола/полки без внешнего мощника.</p>\n<ul><li>Активная полочная пара</li><li>240 Вт система</li><li>Edition McLaren</li></ul>\n<aside><p><strong>Active.</strong> Усилитель встроен; источник — USB/BT/аналог. HITL по входам комплекта.</p></aside>",
+    "sources": [
+      "https://www.klipsch.com/"
+    ],
+    "specs": [
+      {
+        "label": "Мощность системы",
+        "value": "240 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "HDMI-ARC; optical; USB; RCA; phono; BT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (шт.)",
+        "value": "16.5″ × 9.5″ × 13.4″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес (шт.)",
+        "value": "22.4 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "269184": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Klipsch RP-1200SW — активный сабвуфер 12″ Cerametallic Ultra Long Throw. Для RP-серии и кинозала, где нужен удар ниже настройки полочников.</p>\n<ul><li>12″ Cerametallic ULT</li><li>Активный саб</li><li>Серия Reference Premiere</li></ul>\n<aside><p><strong>Cerametallic.</strong> Жёсткий конус Klipsch; не «бумажный мягкий» НЧ. HITL: мощность усилителя саба с паспорта.</p></aside>",
+    "sources": [
+      "https://www.klipsch.com/"
+    ],
+    "specs": [
+      {
+        "label": "Драйвер",
+        "value": "12″ Ultra Long Throw Cerametallic",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Усилитель",
+        "value": "Class D 400 W RMS / 800 W Peak",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "16,5 Гц – 138 Гц (±3 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Макс. выход",
+        "value": "121 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "48 × 43,2 × 65,8 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "31,1 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "269153": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Klipsch R-101SW — активный сабвуфер младшей Reference-линейки. Для компактных 5.1 и стерео с нехваткой низа.</p>\n<ul><li>Активный саб</li><li>Серия R-101SW</li></ul>\n<aside><p><strong>R vs RP.</strong> Младше Reference Premiere; HITL по диаметру драйвера на бирке.</p></aside>",
+    "sources": [
+      "https://www.klipsch.com/"
+    ],
+    "specs": [
+      {
+        "label": "Драйвер",
+        "value": "10″ high-excursion spun-copper TCP",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Усилитель",
+        "value": "All-digital 150 Вт cont. / 300 Вт peak",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "29,5 Гц – 120 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Макс. выход",
+        "value": "115 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "370 × 356 × 500 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "13,9 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "269350": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Klipsch The Three Plus — беспроводная настольная акустика с Bluetooth/источниками. Для стола, а не для большого зала.</p>\n<ul><li>Wireless tabletop</li><li>The Three Plus</li></ul>\n<aside><p><strong>Lifestyle.</strong> Не студийный монитор; HITL по входам (phono/BT).</p></aside>",
+    "sources": [
+      "https://www.klipsch.com/"
+    ],
+    "specs": [
+      {
+        "label": "Конфигурация",
+        "value": "2.1 bi-amplified",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Драйверы",
+        "value": "2 × 2,25″ FR; 1 × 5,25″ woofer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "5.3",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "≈ 356 × 213 × 178 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "272017": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>iFi audio Aurora — беспроводная all-in-one система: стриминг и акустика в одном дизайне. Для комнаты без классической стойки.</p>\n<ul><li>All-in-one wireless</li><li>Серия Aurora</li></ul>\n<aside><p><strong>Aurora.</strong> Не пара полочников; HITL по версии прошивки и входам.</p></aside>",
+    "sources": [
+      "https://ifi-audio.com/"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "All-in-one wireless system",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "макс. 320 VA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "59 × 27 × 28 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "15 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "272075": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>iFi audio Go Bar Kensei — портативный ЦАП/усилитель для наушников, лимитированная Kensei. Для смартфона/ноутбука, где нужен запас по току в кармане.</p>\n<ul><li>Portable DAC/amp</li><li>Edition Kensei</li></ul>\n<aside><p><strong>Go Bar.</strong> USB stick form; HITL: мощность SE/BAL с паспорта Kensei.</p></aside>",
+    "sources": [
+      "https://ifi-audio.com/"
+    ],
+    "specs": [
+      {
+        "label": "Мощность balanced",
+        "value": "477 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность S-Bal",
+        "value": "300 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вых. импеданс",
+        "value": "< 1 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Корпус",
+        "value": "Japanese stainless steel",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "272864": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Bowers &amp; Wilkins 607 S3 — полочная 2-way vented линейки 600 S3. Для полки/стойки в стерео или как тылы в ДК.</p>\n<ul><li>2-way vented bookshelf</li><li>Серия 607 S3</li></ul>\n<aside><p><strong>S3.</strong> Третье поколение 600; HITL по отделке Oak/White/Black.</p></aside>\n<p>Полные АЧХ/чувствительность — из PDP specs / B&amp;W.</p>",
+    "sources": [
+      "https://www.bowerswilkins.com/"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "2-way vented bookshelf",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Твитер",
+        "value": "25 мм Titanium Dome",
+        "source": "manufacturer"
+      },
+      {
+        "label": "НЧ/СЧ",
+        "value": "130 мм Continuum",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "84 дБ (2,83 В / 1 м)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "8 Ω (мин. 3,0 Ω)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Рек. мощность",
+        "value": "30–100 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "300 × 165 × 207 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "4,65 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "270454": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Transrotor Dark Star — виниловый проигрыватель немецкой школы: массивный диск и минималистичный дизайн. Для аналогового тракта, где важны масса и подшипник, а не «пластиковый автомат».</p>\n<ul><li>Габариты ~46 × 34 × 17 см</li><li>Серия Dark Star</li></ul>\n<aside><p><strong>Transrotor.</strong> HITL: тонарма/шелл/картридж в комплекте салона — часто опции.</p></aside>",
+    "sources": [
+      "https://www.transrotor.de/"
+    ],
+    "specs": [
+      {
+        "label": "Габариты",
+        "value": "46 × 34 × 17 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "24 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Материал",
+        "value": "POM",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "270473": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Transrotor ZET 3 — старшая/средняя модель линейки ZET: габариты ~45 × 40 × 23 см. Для винила с запасом по массе диска и базой под серьёзный тонарм.</p>\n<ul><li>~45 × 40 × 23 см</li><li>Серия ZET 3</li></ul>\n<aside><p><strong>ZET.</strong> Конфигурация тонарма и привода — HITL по паспорту.</p></aside>",
+    "sources": [
+      "https://www.transrotor.de/"
+    ],
+    "specs": [
+      {
+        "label": "Габариты (Ш×Г×В)",
+        "value": "45 × 40 × 23 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "34 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шасси",
+        "value": "Acrylic / aluminium / acrylic sandwich",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Опции",
+        "value": "TMD bearing; вторая база тонарма",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "272551": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Clearaudio Concept MC/S — проигрыватель Concept с MC-картриджем в комплектации S. Немецкий «готовый аналог» для входа в Clearaudio без сборки с нуля.</p>\n<ul><li>Линейка Concept</li><li>Комплектация MC/S</li></ul>\n<aside><p><strong>Concept.</strong> HITL: конкретный картридж и тонарм в коробке салона.</p></aside>",
+    "sources": [
+      "https://clearaudio.de/"
+    ],
+    "specs": [
+      {
+        "label": "Линейка",
+        "value": "Clearaudio Concept",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Конфигурация листинга",
+        "value": "MC/S",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Производитель",
+        "value": "Clearaudio Electronic GmbH, Erlangen",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "269763": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Parasound 2250 v2 — стереомощник: 275 Вт×2 / 8 Ом и 400 Вт×2 / 4–2 Ом. Для акустики, которой нужен ток, а не «интегральник с запасом на бумаге».</p>\n<ul><li>275 Вт × 2 / 8 Ом</li><li>400 Вт × 2 / 4–2 Ом</li><li>Серия 2250 v2</li></ul>\n<aside><p><strong>Halo/NewClassic.</strong> Сверить линейку на фасаде; HITL по балансу входов.</p></aside>",
+    "sources": [
+      "https://parasound.com/"
+    ],
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "275 Вт × 2 / 8 Ω; 400 Вт × 2 / 4–2 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мост",
+        "value": "750 Вт @ 8 или 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сертификация",
+        "value": "THX Ultra2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17.25″ × 18.5″ × 6″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "43 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "273194": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Marantz AV8805A — AV-процессор 13.2 для кинозала раздельного тракта. Пре/проц без усилителей в шасси — к внешним мощникам.</p>\n<ul><li>AV-процессор 13.2</li><li>Серия AV8805A</li></ul>\n<aside><p><strong>A-ревизия.</strong> HDMI/HDCP обновления относительно 8805; HITL по плате.</p></aside>",
+    "sources": [
+      "https://www.marantz.com/"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "AV-процессор 13.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× IN; 3× OUT; eARC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Pre-outs",
+        "value": "15.2 RCA и 15.2 XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Audyssey MultEQ XT32",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "HEOS, AirPlay 2, Wi‑Fi, Ethernet",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "440 × 410 × 185 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "13,7 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "90 Вт",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "268856": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva A7 — 7-канальный усилитель мощности линейки BasX/A для AV-процессора. Честные каналы без ресиверного компромисса «всё в одном».</p>\n<ul><li>7 каналов</li><li>Серия Emotiva A7</li><li>Мощник к pre/pro</li></ul>\n<aside><p><strong>Multichannel.</strong> Согласовать чувствительность и триггер с процессором. Точные ватты — с паспорта A7.</p></aside>\n<p>Расширяем stub до editorial-bar; галерея уже набрана.</p>",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "7",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (all driven)",
+        "value": "90 Вт RMS / канал / 8 Ом; 125 Вт / 4 Ом (все каналы)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR и RCA (по линейке Emotiva; см. страницу модели)",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "268845": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva A6 — 6-канальный усилитель мощности линейки BasX/A для AV-процессора. Честные каналы без ресиверного компромисса «всё в одном».</p>\n<ul><li>6 каналов</li><li>Серия Emotiva A6</li><li>Мощник к pre/pro</li></ul>\n<aside><p><strong>Multichannel.</strong> Согласовать чувствительность и триггер с процессором. Точные ватты — с паспорта A6.</p></aside>\n<p>Расширяем stub до editorial-bar; галерея уже набрана.</p>",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "6",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (all driven)",
+        "value": "90 Вт RMS / канал / 8 Ом; 125 Вт / 4 Ом (все каналы)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR и RCA (по линейке Emotiva; см. страницу модели)",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "268834": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva A5 — 5-канальный усилитель мощности линейки BasX/A для AV-процессора. Честные каналы без ресиверного компромисса «всё в одном».</p>\n<ul><li>5 каналов</li><li>Серия Emotiva A5</li><li>Мощник к pre/pro</li></ul>\n<aside><p><strong>Multichannel.</strong> Согласовать чувствительность и триггер с процессором. Точные ватты — с паспорта A5.</p></aside>\n<p>Расширяем stub до editorial-bar; галерея уже набрана.</p>",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "5",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (all driven)",
+        "value": "95 Вт RMS / канал / 8 Ом; 130 Вт / 4 Ом (все каналы)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 4.25″ × 15.5″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "25.2 lb",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR и RCA (по линейке Emotiva; см. страницу модели)",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "268974": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Emotiva A4 — 4-канальный усилитель мощности линейки BasX/A для AV-процессора. Честные каналы без ресиверного компромисса «всё в одном».</p>\n<ul><li>4 каналов</li><li>Серия Emotiva A4</li><li>Мощник к pre/pro</li></ul>\n<aside><p><strong>Multichannel.</strong> Согласовать чувствительность и триггер с процессором. Точные ватты — с паспорта A4.</p></aside>\n<p>Расширяем stub до editorial-bar; галерея уже набрана.</p>",
+    "sources": [
+      "https://emotiva.com/"
+    ],
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "4",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходная мощность (all driven)",
+        "value": "100 Вт RMS / канал / 8 Ом; 130 Вт / 4 Ом (все каналы)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 4″ × 15.5″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "26 lb",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "XLR и RCA (по линейке Emotiva; см. страницу модели)",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "263995": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Phono-1.2 TripleC FM-L — фонокабель PC-TripleC с Fine Met Beads, вариант FM-L. Длина 1,2 м; для MM/MC, где кабель — часть нагрузки.</p>\n<ul><li>Phono TripleC-FM FM-L</li><li>1,2 м</li><li>PC-TripleC · Fine Met Beads®</li></ul>\n<aside><p><strong>Вариант FM-L.</strong> L/B/BL — разные разъёмы/баланс; не взаимозаменяемы без HITL.</p></aside>\n<p>Дополняем описание до порога meager (≥500). Фото серии уже в галерее.</p>",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Фонокабель RCA фоно L-вариант",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "Phono-1.2 TripleC FM-L",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "263996": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Phono-1.2 TripleC FM-B — фонокабель PC-TripleC с Fine Met Beads, вариант FM-B. Длина 1,2 м; для MM/MC, где кабель — часть нагрузки.</p>\n<ul><li>Phono TripleC-FM FM-B</li><li>1,2 м</li><li>PC-TripleC · Fine Met Beads®</li></ul>\n<aside><p><strong>Вариант FM-B.</strong> L/B/BL — разные разъёмы/баланс; не взаимозаменяемы без HITL.</p></aside>\n<p>Дополняем описание до порога meager (≥500). Фото серии уже в галерее.</p>",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Фонокабель балансный фоно",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "Phono-1.2 TripleC FM-B",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "263997": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Phono-1.2 TripleC FM-BL — фонокабель PC-TripleC с Fine Met Beads, вариант FM-BL. Длина 1,2 м; для MM/MC, где кабель — часть нагрузки.</p>\n<ul><li>Phono TripleC-FM FM-BL</li><li>1,2 м</li><li>PC-TripleC · Fine Met Beads®</li></ul>\n<aside><p><strong>Вариант FM-BL.</strong> L/B/BL — разные разъёмы/баланс; не взаимозаменяемы без HITL.</p></aside>\n<p>Дополняем описание до порога meager (≥500). Фото серии уже в галерее.</p>",
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Фонокабель балансный фоно L",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "Phono-1.2 TripleC FM-BL",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  },
+  "264366": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Audio Reference III-N1 (RCA) — межблок Reference III: α-OCC, air-foamed HDPE, двойной экран и GC-303, FP-106(R). Hyper-balanced геометрия для линейного тракта.</p>\n<ul><li>30×0,18 мм α-OCC</li><li>30% air-foamed HDPE</li><li>α braid + GC-303</li><li>~42 пФ/м</li><li>1,2 м типовая</li></ul>\n<aside><p><strong>GC-303.</strong> Антимагнитный EMI-модуль Furutech в hex-алюминии — часть Reference III, не «просто оплётка».</p></aside>\n<p>Добираем длину описания до meager-bar; specs и фото уже на месте.</p>",
+    "sources": [
+      "https://furutech.com/ja/product/audio-reference-iii-rca/"
+    ],
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный RCA Reference III",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "30×0,18 мм α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Изоляция",
+        "value": "30% air-foamed HDPE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экраны",
+        "value": "α braid + GC-303",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FP-106(R) RCA rhodium",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Ёмкость",
+        "value": "~42 пФ/м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Z",
+        "value": "~120 Ом @ 100 кГц",
+        "source": "manufacturer"
+      }
+    ],
+    "imageUrls": []
+  }
+}

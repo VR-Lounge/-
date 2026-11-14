@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-11-13T22:26:45Z",
+  "purpose": "Комплексные решения service cards",
+  "images": [
+    {
+      "dest": "svc-ht-tv.jpg",
+      "title": "Домашний кинотеатр на базе ТВ",
+      "license": "Pexels License (free commercial)",
+      "sourceUrl": "https://www.pexels.com/photo/4009402/",
+      "note": "Dark living room, wall TV + Hi-Fi speakers — on-theme for TV-based HT",
+      "localPath": "assets/services/svc-ht-tv.jpg",
+      "bytes": 171702
+    },
+    {
+      "dest": "svc-projector-120.jpg",
+      "title": "Проектор и экран до 120″",
+      "license": "From live melomaniak.рф crawl (site media)",
+      "sourceUrl": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/04/89ff143f-f0f9-4060-9b88-625e7ad9d528.jpg",
+      "note": "Private cinema room with ceiling projector + large screen — from-live brand asset",
+      "localPath": "assets/services/svc-projector-120.jpg",
+      "bytes": 200745
+    },
+    {
+      "dest": "svc-projector-150.jpg",
+      "title": "Проектор и экран 121–150″",
+      "license": "Pexels License (free commercial)",
+      "sourceUrl": "https://www.pexels.com/photo/home-theatre-projection-screen-and-equipment-13348768/",
+      "note": "Dedicated large projection screen + towers/subs — matches elite HT scale",
+      "localPath": "assets/services/svc-projector-150.jpg",
+      "bytes": 156916
+    }
+  ]
+}

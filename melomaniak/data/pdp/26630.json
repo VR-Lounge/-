@@ -1,0 +1,110 @@
+{
+  "id": 26630,
+  "slug": "fonokorrektor_AudioNet_PAM_G2_",
+  "name": "фонокорректор AudioNet PAM G2 ( audionet pam g2 )",
+  "cat": "Усилители",
+  "cats": [
+    "Фонокорректоры"
+  ],
+  "price": 612000,
+  "old": 720000,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/fonokorrektor_AudioNet_PAM_G2_/",
+  "descriptionHtml": "<p>Audionet PAM G2 — фонокорректор для одного или двух проигрывателей: усиление, сопротивление и ёмкость настраиваются на аппарате или с EPC. Dual-mono, dual-FET входы, активная двухступенчатая RIAA, класс A на выходе, без ОУ и конденсаторов в сигнальном пути.</p>\n<ul><li>Усиление 38/48/58/68 дБ @ 1 кГц</li><li>Rвх 100 Ом…69 кОм (переключаемо)</li><li>Cвх 100–420 пФ</li><li>АЧХ 40–30 кГц ±0,2 дБ</li><li>Субсоник 4-го порядка, 8 Гц</li><li>9 кг · 430 × 70 × 310 мм</li></ul>\n<aside><p><strong>EPC.</strong> External Phono Controller Audionet — пульт/блок для удалённой настройки нагрузки картриджа без «открытия крышки». Питание — внешний EPS G2/EPX (100 ВА, ~40 000 мкФ).</p></aside>\n<h2>Согласование</h2>\n<p>По datasheet: RCA и XLR. HITL: подобрать R/C под конкретный MM/MC клиента — это смысл PAM G2, а не «один пресет на всех».</p>",
+  "shortHtml": "",
+  "descriptionText": "Audionet PAM G2 — фонокорректор для одного или двух проигрывателей: усиление, сопротивление и ёмкость настраиваются на аппарате или с EPC. Dual-mono, dual-FET входы, активная двухступенчатая RIAA, класс A на выходе, без ОУ и конденсаторов в сигнальном пути.\n\n Усиление 38/48/58/68 дБ @ 1 кГц\n Rвх 100 Ом…69 кОм (переключаемо)\n Cвх 100–420 пФ\n АЧХ 40–30 кГц ±0,2 дБ\n Субсоник 4-го порядка, 8 Гц\n 9 кг · 430 × 70 × 310 мм\n\n EPC. External Phono Controller Audionet — пульт/блок для удалённой настройки нагрузки картриджа без «открытия крышки». Питание — внешний EPS G2/EPX (100 ВА, ~40 000 мкФ).\n\n Согласование\n\n По datasheet: RCA и XLR. HITL: подобрать R/C под конкретный MM/MC клиента — это смысл PAM G2, а не «один пресет на всех».",
+  "specs": [
+    {
+      "label": "Частотная характеристика",
+      "value": "40–30 000 Гц (±0,2 дБ); 18–80 000 Гц (±1,0 дБ)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Усиление",
+      "value": "38/48/58/68 дБ @ 1 кГц",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Входное сопротивление",
+      "value": "100/150/470 Ом; 1/23/47/69 кОм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Входная ёмкость",
+      "value": "100/200/320/420 пФ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Субсонический фильтр",
+      "value": "4-й порядок, fг=8 Гц",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Габариты / масса",
+      "value": "430 × 70 × 310 мм; 9 кг",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/pam_g2_front.jpg",
+      "thumb": "https://en.audionet.de/wp-content/uploads/pam_g2_front.jpg",
+      "alt": "фонокорректор AudioNet PAM G2 ( audionet pam g2 )",
+      "local": "assets/enriched/26630/d7634833f7_1.jpg",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 209591
+    },
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/pam_g2_back.jpg",
+      "thumb": "https://en.audionet.de/wp-content/uploads/pam_g2_back.jpg",
+      "alt": "фонокорректор AudioNet PAM G2 ( audionet pam g2 )",
+      "local": "assets/enriched/26630/635f1c08ce_2.jpg",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 291810
+    },
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/pam_g2_detail1.jpg",
+      "thumb": "https://en.audionet.de/wp-content/uploads/pam_g2_detail1.jpg",
+      "alt": "фонокорректор AudioNet PAM G2 ( audionet pam g2 )",
+      "local": "assets/enriched/26630/00e321d882_3.jpg",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 126772
+    },
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/pam_g2_detail2.jpg",
+      "thumb": "https://en.audionet.de/wp-content/uploads/pam_g2_detail2.jpg",
+      "alt": "фонокорректор AudioNet PAM G2 ( audionet pam g2 )",
+      "local": "assets/enriched/26630/7ffb64074f_4.jpg",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 161598
+    },
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/pam_g2_epc.jpg",
+      "thumb": "https://en.audionet.de/wp-content/uploads/pam_g2_epc.jpg",
+      "alt": "фонокорректор AudioNet PAM G2 ( audionet pam g2 )",
+      "local": "assets/enriched/26630/59b7fb8035_5.jpg",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 130875
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/fonokorrektor_AudioNet_PAM_G2_.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/fonokorrektor_AudioNet_PAM_G2_-600x600.jpg",
+      "alt": "AudioNet PAM G2",
+      "local": "assets/from-live/products/2f3bbcc5ef_fonokorrektor_AudioNet_PAM_G2_.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://en.audionet.de/machines/pam-g2/",
+    "https://en.audionet.de/wp-content/uploads/data_sheet_audionet_pam_g2__en.pdf"
+  ],
+  "enrichedAt": "2026-11-14T12:40:50Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w2-2026-11"
+}

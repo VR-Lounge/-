@@ -1,0 +1,194 @@
+{
+  "4322": {
+    "name": "наушники Precide ERGO AMT",
+    "descriptionHtml": "<p>Precide ERGO AMT — флагман швейцарской линейки ERGO: открытые «головные акустические панели» с полнодиапазонными излучателями <abbr title=\"Air Motion Transformer — складчатая мембрана доктора Оскара Хейла, разгоняющая воздух примерно в 5 раз быстрее, чем движется сама плёнка\">AMT</abbr> (Air Motion Transformer) по принципу Dr. Oskar Heil. Не обхватывают ухо и не давят на раковину — звук приходит к естественному уху, без «насоса» в слуховой проход.</p>\n<ul><li>Излучатель: Heil Air Motion Transformer (Precide)</li><li>Развёрнутая мембрана: 175 × 88 мм</li><li>Трансформация воздуха: 5∶1</li><li>Импеданс: ~3–3,5 Ом</li><li>Подключение: AMP 1 / AMP 2 или адаптер к выходам АС</li></ul>\n<aside><p><strong>Что значит AMT.</strong> Air Motion Transformer — складчатая плёнка с токовыми дорожками в постоянном магнитном поле: складки сжимаются и разжимаются, выталкивая воздух со скоростью примерно в пять раз выше хода самой мембраны. Отсюда быстрый импульсный отклик и низкие парциальные искажения относительно поршневых динамиков. Precide производит такие излучатели по теории доктора Оскара Хейла.</p></aside>\n<h2>Как устроены</h2>\n<p>По данным Precide, мембрана работает с коэффициентом трансформации 5∶1; в развёрнутом виде — 175 × 88 мм. Панели фиксированы под заданными углами, сзади — мягкая пенопластовая полоска за ухом, сверху — широкая опора оголовья: вес распределяется по темени, ушная раковина не деформируется, воздух циркулирует снизу — меньше перегрева при длинных сессиях.</p>\n<h2>Подключение и усилитель</h2>\n<p>Импеданс низкий (около 3–3,5 Ом): штатный путь — усилитель ERGO AMP 1 или Class A AMP 2 с разъёмом под AMT, либо адаптер Precide на выводы мощностного усилителя АС с переключателем «наушники / колонки». Кабель около 3 м, разъём 4-pin XLR (по карточке Precide shop). Без адаптера или усилителя карточка в каталоге салона — наушники как таковые; комплектацию уточняйте в брифе.</p>\n<h2>Характер звучания</h2>\n<p>Производитель подчёркивает быстрый отклик на импульсы, корректные фазовые отношения и отсутствие типичных парциальных искажений подвешенной трёхмерной мембраны. Редакция AVGuide описывает ERGO AMT как «Kopflautsprecher» — ближе к миниатюрной акустике у головы, чем к классическим охватывающим наушникам. Для салона: инструмент долгого слушания и разбора микродинамики, а не «басовый эффект в метро».</p>\n<h2>Технические данные</h2>\n<p>Сводная таблица Precide A+: полоса 20 Гц – 20 кГц, номинальный импеданс 3 Ом, давление 100 дБ на 1 кГц, потребляемая мощность 3 Вт, КНИ &lt; 0,2 %, масса 650 г. Карточка Precide shop дополнительно указывает импеданс 3,5 Ом, полосу 20–23 000 Гц и массу 595 г — расхождения фиксируем, не усредняем. Источники ниже; перед публикацией сверить комплект (AMP / адаптер) с наличием в салоне.</p>",
+    "specs": [
+      {
+        "label": "Тип излучателя",
+        "value": "Heil Air Motion Transformer (AMT), производство Precide",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Развёрнутая мембрана",
+        "value": "175 × 88 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Трансформация воздуха",
+        "value": "5∶1 (воздух быстрее хода мембраны ~в 5 раз)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Частотная характеристика",
+        "value": "20 Гц – 20 кГц (Precide A+); также 20–23 000 Гц (Precide shop)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Номинальный импеданс",
+        "value": "3 Ом (Precide A+); 3,5 Ом (Precide shop)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Уровень давления (1 кГц)",
+        "value": "100 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребляемая мощность",
+        "value": "3 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коэффициент гармоник",
+        "value": "< 0,2 %",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "650 г (Precide A+); 595 г (Precide shop)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Кабель / разъём",
+        "value": "≈ 3 м, 4-pin XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Подключение",
+        "value": "ERGO AMP 1 / AMP 2 или адаптер к выходам АС усилителя мощности",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Конструкция",
+        "value": "Открытые панели без контакта с ушной раковиной (open-ear / Kopflautsprecher)",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.precide.ch/precide_shop/en/ERGO-Headphones-65.html",
+      "https://precideaplus.ch/ergo-1-and-2/",
+      "https://en.homecinesolutions.fr/p/19008-ergo-amt",
+      "https://necessoire-hifi.com/produit/ergo-amt/",
+      "https://www.avguide.ch/testbericht/wunderwandler-test-kopfhoerer-ergo-amt",
+      "https://en.wikipedia.org/wiki/Air_Motion_Transformer"
+    ],
+    "imageUrls": [
+      "https://necessoire-hifi.com/wp-content/uploads/sites/2/2024/03/ERGO-AMT-Right.jpg",
+      "https://necessoire-hifi.com/wp-content/uploads/sites/2/2024/03/Ergo-AMT-amp-2.jpeg",
+      "https://necessoire-hifi.com/wp-content/uploads/sites/2/2024/03/Ergo-membrane.jpg",
+      "https://listening-sessions.com/wp-content/uploads/2026/02/Ergo-AMT.png",
+      "https://precideaplus.ch/wp-content/uploads/2023/10/image-14.png",
+      "https://www.avguide.ch/assets/testbericht/ergo_a_605.jpg",
+      "https://www.avguide.ch/assets/testbericht/ergoamt_605.JPG",
+      "https://cdn.head-fi.org/a/9589858.jpg"
+    ]
+  },
+  "4326": {
+    "name": "усилитель для наушников Precide ERGO AMP 2",
+    "descriptionHtml": "<p>Precide ERGO AMP 2 — выделенный усилитель для наушников ERGO AMT: Class A, рассчитанный именно на низкоомные панели AMT, а не на универсальный «джек на всё».</p>\n<ul><li>Режим: чистый класс A</li><li>Назначение: ERGO AMT (Heil AMT)</li><li>Входы: балансные и небалансные</li><li>Питание: выносной блок в комплекте</li><li>Связка: флагманские панели AMT салона</li></ul>\n<aside><p><strong>Зачем отдельный усилитель.</strong> ERGO AMT имеет импеданс порядка 3–3,5 Ом и не рассчитан на обычное гнездо 6,3 мм у интегральника. AMP 2 — усилитель Class A под эти панели; альтернатива — AMP 1 или адаптер к выходам АС. Без одного из этих путей наушники не раскрываются как задумано производителем.</p></aside>\n<h2>Роль в тракте</h2>\n<p>По материалам Precide A+, AMP 2 разрабатывался специально для ERGO AMT (в отличие от AMP 1, который также обслуживает динамические ERGO 1/2). В карточке салона: High End, чистый класс A, балансные и небалансные входы, внешний БП. Точные ватты и габариты AMP 2 на публичных страницах Precide A+ приведены для AMP 1 полнее — для AMP 2 опираемся на описание назначения и режим работы; численные параметры уточнять по паспорту/запросу в салон (HITL).</p>\n<h2>Практика салона</h2>\n<p>Связка AMT + AMP 2 — отдельный контур слушания: не «наушники к ресиверу», а личная сцена с характером миниатюрной акустики. Если в системе уже есть мощный усилитель АС, обсуждайте адаптер Precide; если нужен выделенный тракт — AMP 2.</p>",
+    "specs": [
+      {
+        "label": "Класс работы",
+        "value": "Чистый класс A",
+        "source": "dealer/salon card + manufacturer line"
+      },
+      {
+        "label": "Назначение",
+        "value": "Усилитель для ERGO AMT (Heil Air Motion Transformer)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "Балансные и небалансные",
+        "source": "salon Woo card"
+      },
+      {
+        "label": "Питание",
+        "value": "Выносной блок питания в комплекте",
+        "source": "salon Woo card"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Precide ERGO AMT; альтернативы линейки — AMP 1 / адаптер АС",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://precideaplus.ch/ergo-1-and-2/",
+      "https://precideaplus.ch/ergo-amp-1-en/",
+      "https://www.precide.ch/precide_shop/en/ERGO-Headphones-65.html",
+      "https://www.avguide.ch/testbericht/wunderwandler-test-kopfhoerer-ergo-amt"
+    ],
+    "imageUrls": [
+      "https://necessoire-hifi.com/wp-content/uploads/sites/2/2024/03/Ergo-AMT-amp-2.jpeg",
+      "https://precideaplus.ch/wp-content/uploads/2023/10/image-14.png",
+      "https://necessoire-hifi.com/wp-content/uploads/sites/2/2024/03/ERGO-AMT-Right.jpg",
+      "https://www.avguide.ch/assets/testbericht/ergo_a_605.jpg"
+    ]
+  },
+  "5766": {
+    "name": "наушники Precide Ergo Amt + Ergo Amp2",
+    "descriptionHtml": "<p>Комплект Precide ERGO AMT + ERGO AMP 2 — флагманские панели Heil <abbr title=\"Air Motion Transformer\">AMT</abbr> и выделенный усилитель Class A в одной позиции салона. Открытая конструкция без давления на ушную раковину плюс тракт, рассчитанный на низкий импеданс AMT.</p>\n<ul><li>Комплект: ERGO AMT + AMP 2</li><li>Излучатель: Heil Air Motion Transformer</li><li>Мембрана: 175 × 88 мм, трансформация 5∶1</li><li>Усилитель: Class A под AMT</li><li>Импеданс панелей: ~3–3,5 Ом</li></ul>\n<aside><p><strong>Что значит AMT.</strong> Складчатая мембрана Air Motion Transformer разгоняет воздух ~в 5 раз быстрее своего хода — быстрый импульс и иная природа искажений, чем у поршневых динамиков. Подробнее — в карточке отдельных ERGO AMT.</p></aside>\n<h2>Зачем комплект</h2>\n<p>Отдельные AMT без усилителя/адаптера в каталоге неполны: производитель прямо указывает, что адаптер или усилитель заказываются с наушниками. Позиция «AMT + Amp2» закрывает этот контур сразу — для клиента салона это готовая личная сцена, а не «коробка без питания».</p>\n<h2>Ключевые цифры панелей</h2>\n<p>По Precide A+: 20 Гц – 20 кГц, 3 Ом, 100 дБ @ 1 кГц, 3 Вт, КНИ &lt; 0,2 %, масса 650 г. Precide shop: 3,5 Ом, 20–23 кГц, 595 г. AMP 2 — Class A под AMT; точные электрические данные усилителя сверять по паспорту (HITL).</p>",
+    "specs": [
+      {
+        "label": "Состав комплекта",
+        "value": "Наушники ERGO AMT + усилитель ERGO AMP 2",
+        "source": "salon catalog"
+      },
+      {
+        "label": "Тип излучателя",
+        "value": "Heil Air Motion Transformer (AMT)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Развёрнутая мембрана",
+        "value": "175 × 88 мм; трансформация 5∶1",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Частотная характеристика (AMT)",
+        "value": "20 Гц – 20 кГц (Precide A+)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс (AMT)",
+        "value": "3 Ом (A+) / 3,5 Ом (shop)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Уровень давления (AMT, 1 кГц)",
+        "value": "100 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "КНИ (AMT)",
+        "value": "< 0,2 %",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса наушников",
+        "value": "650 г (A+) / 595 г (shop)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Усилитель",
+        "value": "ERGO AMP 2, чистый класс A, под ERGO AMT",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.precide.ch/precide_shop/en/ERGO-Headphones-65.html",
+      "https://precideaplus.ch/ergo-1-and-2/",
+      "https://necessoire-hifi.com/produit/ergo-amt/",
+      "https://www.avguide.ch/testbericht/wunderwandler-test-kopfhoerer-ergo-amt"
+    ],
+    "imageUrls": [
+      "https://necessoire-hifi.com/wp-content/uploads/sites/2/2024/03/Ergo-AMT-amp-2.jpeg",
+      "https://necessoire-hifi.com/wp-content/uploads/sites/2/2024/03/ERGO-AMT-Right.jpg",
+      "https://necessoire-hifi.com/wp-content/uploads/sites/2/2024/03/Ergo-membrane.jpg",
+      "https://listening-sessions.com/wp-content/uploads/2026/02/Ergo-AMT.png",
+      "https://www.avguide.ch/assets/testbericht/ergo_a_605.jpg",
+      "https://precideaplus.ch/wp-content/uploads/2023/10/image-14.png"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+[
+  {
+    "id": "xi1100",
+    "vp": "desk",
+    "chips": 8,
+    "chipW": "200",
+    "proseFs": "16px",
+    "cols": "2",
+    "flowW": 1288,
+    "wrapW": 1400,
+    "hScroll": false,
+    "heads": [
+      "X-i1100",
+      "ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ"
+    ],
+    "dirtyClass": false,
+    "storeTitle": false,
+    "file": "qa/pdp-final-xi1100-desk.png"
+  },
+  {
+    "id": "xi1100",
+    "vp": "m390",
+    "chips": 8,
+    "chipW": "300",
+    "proseFs": "16px",
+    "cols": "1",
+    "flowW": 358,
+    "wrapW": 390,
+    "hScroll": false,
+    "heads": [
+      "X-i1100",
+      "ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ"
+    ],
+    "dirtyClass": false,
+    "storeTitle": false,
+    "file": "qa/pdp-final-xi1100-m390.png"
+  },
+  {
+    "id": "xa600",
+    "vp": "desk",
+    "chips": 8,
+    "chipW": "200",
+    "proseFs": "16px",
+    "cols": "2",
+    "flowW": 1288,
+    "wrapW": 1400,
+    "hScroll": false,
+    "heads": [],
+    "dirtyClass": false,
+    "storeTitle": false,
+    "file": "qa/pdp-final-xa600-desk.png"
+  },
+  {
+    "id": "magnat",
+    "vp": "desk",
+    "chips": 4,
+    "chipW": "200",
+    "proseFs": "16px",
+    "cols": "2",
+    "flowW": 1288,
+    "wrapW": 1400,
+    "hScroll": false,
+    "heads": [
+      "О бренде",
+      "Описание стереоусилителя Magnat MA 700",
+      "Особенности стереоусилителя Magnat MA 700",
+      "Характеристики стереоусилителя Magnat MA 700"
+    ],
+    "dirtyClass": false,
+    "storeTitle": false,
+    "file": "qa/pdp-final-magnat-desk.png"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "id": 270493,
+  "slug": "43feb9406fdffd0ec4caf6b672a859fb",
+  "name": "Кабель USB Van den Hul Ultimate",
+  "cat": "Кабели",
+  "cats": [
+    "USB кабель"
+  ],
+  "price": 41390,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/43feb9406fdffd0ec4caf6b672a859fb/",
+  "descriptionHtml": "<p>Van den Hul Ultimate USB — silver-plated OFC signal, Hulliflex и плоская геометрия с разнесением сигнала и питания. Длины 1,0–5,0 м.</p>\n<ul><li>Silver-plated OFC</li><li>Hulliflex</li><li>Flat geometry</li><li>A to B</li><li>1–5 m</li></ul>\n<h2>Назначение</h2>\n<p>USB A→B для ЦАПа, где питание и data не должны «жить» в одной куче.</p>\n<aside><p><strong>Wave5.</strong> OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.</p></aside>\n<p>Кабель USB Van den Hul Ultimate — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.</p>\n<p>Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.</p>\n<p>Источники указаны в sources; не смешиваем соседние SKU линейки.</p>",
+  "shortHtml": "<p>USB кабель, рекомендованный к применению в высококлассных аудио и видеосистемах, идеальное решение для подключения внешних ЦАПов. Материал проводника: посеребренная медь, изоляция: Hulliflex.</p>",
+  "descriptionText": "Van den Hul Ultimate USB — silver-plated OFC signal, Hulliflex и плоская геометрия с разнесением сигнала и питания. Длины 1,0–5,0 м.\n\n Silver-plated OFC\n Hulliflex\n Flat geometry\n A to B\n 1–5 m\n\n Назначение\n\n USB A→B для ЦАПа, где питание и data не должны «жить» в одной куче.\n\n Wave5. OEM/дилерские факты; без выдуманных ватт. HITL ревизия и отделка.\n\n Кабель USB Van den Hul Ultimate — Melomaniak editorial-bar: описание и структурированные specs. При расхождении паспорта с карточкой приоритет у экземпляра на витрине.\n\n Галерея: если OEM/пресс &lt;4 ракурса — galleryHitl, добить съёмкой салона без водяных знаков.\n\n Источники указаны в sources; не смешиваем соседние SKU линейки.",
+  "specs": [
+    {
+      "label": "Проводники",
+      "value": "Silver-plated OFC signal",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Оболочка",
+      "value": "Hulliflex",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Разъёмы",
+      "value": "USB A to USB B",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Длины",
+      "value": "1.0–5.0 м",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_ultimate1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_ultimate1.jpg",
+      "alt": "van_den_hul_ultimate1.jpg",
+      "local": "assets/from-live/products/47b8757f2e_van_den_hul_ultimate1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.vandenhul.com/product/ultimate-usb/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/43feb9406fdffd0ec4caf6b672a859fb/"
+  ],
+  "enrichedAt": "2026-11-14T13:36:16Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true
+}

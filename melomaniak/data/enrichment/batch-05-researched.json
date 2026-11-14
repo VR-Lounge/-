@@ -1,0 +1,885 @@
+{
+  "270473": {
+    "descriptionHtml": "<p>Transrotor ZET 3 — виниловый проигрыватель с sandwich-шасси acrylic/aluminium/acrylic и опцией подшипника TMD. Немецкий конструкторский подход: масса и геометрия важнее декора.</p>\n<ul><li>Acrylic/aluminium sandwich</li><li>34 кг</li><li>45 × 40 × 23 см</li><li>TMD option</li><li>9″/12″ arm bases</li></ul>\n<h2>Конструкция</h2>\n<p>По данным transrotor.de: габариты 45 × 40 × 23 см, вес 34 кг. Поддержка баз тонармов 9″ или 12″; опциональный TMD bearing и вторая база тонарма.</p>",
+    "specs": [
+      {
+        "label": "Габариты (Ш×Г×В)",
+        "value": "45 × 40 × 23 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "34 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шасси",
+        "value": "Acrylic / aluminium / acrylic sandwich",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Опции",
+        "value": "TMD bearing; вторая база тонарма",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://transrotor.de/en/produkte/zet3"
+    ]
+  },
+  "269030": {
+    "descriptionHtml": "<p>Emotiva RMC-1 — 16-канальный кинопроцессор с Dirac Live: HDMI 2.1 и балансные XLR-выходы для тракта, где усиление вынесено отдельно. В каталоге — комплектация с DIRAC.</p>\n<ul><li>16 ch XLR</li><li>Dirac Live</li><li>HDMI 2.1</li><li>Atmos / DTS:X Pro</li><li>8× HDMI IN</li></ul>\n<h2>Интерфейсы</h2>\n<p>8× HDMI 2.1, оптика/коаксиал, AES/EBU, USB, Ethernet/Wi‑Fi. 16 каналов XLR, Zone 2 RCA, наушники. Dirac Live, Dolby Atmos, DTS:X Pro (по линейке Emotiva RMC).</p>\n<h2>Корпус</h2>\n<p>≈ 17″ × 15.5″ × 7″, около 30 lb.</p>",
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "16 (balanced XLR)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× HDMI 2.1 IN; 2× HDMI OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "4× optical; 4× coax; AES/EBU; USB",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Dirac Live",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Декодирование",
+        "value": "Dolby Atmos; DTS:X Pro",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 15.5″ × 7″ (без ножек)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 30 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://emotiva.com/products/rmc-1-cr8-8k-certified-refurbished",
+      "https://emotiva.com/products/rmc-1l-16-channel-dolby-atmos-dts-x-cinema-processor"
+    ]
+  },
+  "269017": {
+    "descriptionHtml": "<p>Emotiva RMC-1L — 16-канальный процессор той же платформы, что RMC-1: Dirac Live, HDMI 2.1 и 16 балансных выходов в конфигурации L-серии. В листинге — с DIRAC.</p>\n<ul><li>16 ch</li><li>Dirac Live</li><li>HDMI 2.1</li><li>XLR outs</li><li>Atmos</li></ul>\n<h2>Возможности</h2>\n<p>8× HDMI 2.1, S/PDIF, AES/EBU, USB, сеть. 16× XLR, Zone 2, наушники. Dirac Live / Atmos / DTS:X Pro по спецификации производителя.</p>",
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "16 (balanced XLR)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× HDMI 2.1 IN; 2× HDMI OUT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "4× optical; 4× coax; AES/EBU; USB",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Dirac Live",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Декодирование",
+        "value": "Dolby Atmos; DTS:X Pro",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 15.5″ × 7″ (без ножек)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 30 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://emotiva.com/products/rmc-1l-16-channel-dolby-atmos-dts-x-cinema-processor",
+      "https://emotiva.com/products/rmc-1l-cr8-8k-certified-refurbished"
+    ]
+  },
+  "269006": {
+    "descriptionHtml": "<p>Emotiva XMC-2 — 16-канальный процессор компактнее флагмана RMC: Dirac Live, HDMI 2.1 и балансные выходы для кинозала без встроенных ватт.</p>\n<ul><li>16 ch XLR</li><li>Dirac Live</li><li>HDMI 2.1</li><li>Compact chassis</li><li>Atmos</li></ul>\n<h2>Спецификация</h2>\n<p>16× XLR; 8× HDMI 2.1; S/PDIF/AES/USB/сеть. Габариты около 17″ × 15.5″ × 5.25″ (без ножек), вес ≈ 27 lb. Dirac Live, Atmos, DTS:X Pro.</p>",
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "16 balanced XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× HDMI 2.1",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Dirac Live",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 15.5″ × 5.25″ (без ножек)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 27 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://emotiva.com/products/xmc-2-processor-8k-certified-refurbished",
+      "https://www.dirac.com/products/emotiva-xmc-2"
+    ]
+  },
+  "270454": {
+    "descriptionHtml": "<p>Transrotor Dark Star — проигрыватель с конструкцией на POM (шасси, диск, груз). Немецкий минимализм массы и демпфирования; путь апгрейда до Dark Star Reference.</p>\n<ul><li>POM construction</li><li>24 кг</li><li>46 × 34 × 17 см</li><li>Upgrade path</li></ul>\n<h2>Размеры</h2>\n<p>По производителю: 46 × 34 × 17 см, вес 24 кг.</p>",
+    "specs": [
+      {
+        "label": "Габариты",
+        "value": "46 × 34 × 17 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "24 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Материал",
+        "value": "POM",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://transrotor.de/en/produkte/dark-star"
+    ]
+  },
+  "273194": {
+    "descriptionHtml": "<p>Marantz AV8805A — AV-процессор 13.2 с HEOS и Audyssey MultEQ XT32: pre-outs RCA/XLR для серьёзного кинозала, где усиление — отдельная история.</p>\n<ul><li>13.2 processor</li><li>Audyssey XT32</li><li>HEOS</li><li>8K/4K HDMI</li><li>15.2 pre-outs</li></ul>\n<h2>Связь</h2>\n<p>8× HDMI IN / 3× OUT, eARC; Ethernet, Wi‑Fi, Bluetooth, AirPlay 2. Pre-outs 15.2 RCA и 15.2 XLR. Atmos, DTS:X Pro, IMAX Enhanced, Auro-3D.</p>\n<h2>Корпус</h2>\n<p>440 × 410 × 185 мм (с антеннами горизонтально), 13,7 кг; потребление 90 Вт.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "AV-процессор 13.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "8× IN; 3× OUT; eARC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Pre-outs",
+        "value": "15.2 RCA и 15.2 XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "Audyssey MultEQ XT32",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "HEOS, AirPlay 2, Wi‑Fi, Ethernet",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "440 × 410 × 185 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "13,7 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "90 Вт",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.marantz.com/en/product/av-processors-pre-amplifiers/av8805a/AV8805A.html"
+    ]
+  },
+  "269782": {
+    "descriptionHtml": "<p>Parasound ZoneMaster ZM12 — 12 каналов / 6 зон: Zone 1 мощнее (120 Вт × 2 / 8 Ом), зоны 2–6 по 60 Вт × 10 / 8 Ом. Class AB вход + Class D силовые модули, стабильность до 2 Ом.</p>\n<ul><li>12 ch / 6 zones</li><li>120 W zone 1</li><li>2 Ω stable</li><li>A/B speaker outs</li><li>Triggers</li></ul>\n<h2>Мощность</h2>\n<p>Zone 1: 120 Вт × 2 @ 8 Ω; 150 Вт × 2 @ 4/2 Ω. Zones 2–6: 60 Вт × 10 @ 8 Ω; 100 Вт × 10 @ 4/2 Ω (RMS, all driven, 20 Гц–20 кГц).</p>\n<h2>Корпус</h2>\n<p>17.25″ × 14.5″ × 4.15″ (с ножками), 21 lb (9,5 кг).</p>",
+    "specs": [
+      {
+        "label": "Мощность Zone 1",
+        "value": "120 Вт × 2 / 8 Ω; 150 Вт × 2 / 4–2 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность Zones 2–6",
+        "value": "60 Вт × 10 / 8 Ω; 100 Вт × 10 / 4–2 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17.25″ × 14.5″ × 4.15″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "21 lb (9,5 кг)",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://parasound.com/products/zm12"
+    ]
+  },
+  "273696": {
+    "descriptionHtml": "<p>Rotel RMB-1587MKII — семиканальный Class AB: 155 Вт / канал / 8 Ом и 250 Вт / 4 Ом при всех каналах. Два тороида и slit-foil конденсаторы — запас тока для кинозала.</p>\n<ul><li>7 × 155 Вт / 8 Ом</li><li>7 × 250 Вт / 4 Ом</li><li>Dual toroid</li><li>Class AB</li><li>37,6 кг</li></ul>\n<h2>Измерения</h2>\n<p>Continuous: 155 W/ch (7ch/8Ω), 250 W/ch (7ch/4Ω), 335 W/ch (2ch/4Ω). THD <0,03%; АЧХ 10 Гц–100 кГц; С/Ш 111 дБ. Входы RCA/XLR.</p>\n<h2>Корпус</h2>\n<p>431 × 237 × 456 мм, 37,6 кг; потребление 1400 Вт.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "155 Вт/ch (7ch/8Ω); 250 Вт/ch (7ch/4Ω)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "< 0,03% (20 Гц–20 кГц)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "111 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA и XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "431 × 237 × 456 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "37,6 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://rotel.com/product/rmb-1587mkii"
+    ]
+  },
+  "273713": {
+    "descriptionHtml": "<p>Rotel RMB-1585MKII — пятиканальный Class AB: 210 Вт / 8 Ом и 340 Вт / 4 Ом all-channels-driven. Для фронтов и surround, где важна одинаковая подача тока.</p>\n<ul><li>5 × 210 Вт / 8 Ом</li><li>5 × 340 Вт / 4 Ом</li><li>Class AB</li><li>Dual toroid</li><li>37,4 кг</li></ul>\n<h2>Мощность</h2>\n<p>210 W/ch (5ch/8Ω), 340 W/ch (5ch/4Ω), 440 W/ch (2ch/4Ω). THD <0,03%; С/Ш 120 дБ. RCA/XLR, dual toroid.</p>\n<h2>Корпус</h2>\n<p>431 × 237 × 456 мм, 37,4 кг.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "210 Вт/ch (5ch/8Ω); 340 Вт/ch (5ch/4Ω)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "< 0,03%",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "120 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "431 × 237 × 456 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "37,4 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://rotel.com/product/rmb-1585mkii"
+    ]
+  },
+  "272271": {
+    "descriptionHtml": "<p>Shanling M9 Plus — портативный плеер на 2× AK4191 + 4× AK4499EX: балансный 4,4 мм и SE 3,5 мм, Wi‑Fi/BT и microSD до 2 ТБ. Для тех, кто слушает в дороге без компромисса «телефонного» ЦАПа.</p>\n<ul><li>Quad DAC AK4499EX</li><li>1125 мВт bal @ 32Ω</li><li>6″ display</li><li>Wi‑Fi / BT 5.0</li><li>379 г</li></ul>\n<h2>Выход</h2>\n<p>520 мВт @ 32 Ом SE; 1125 мВт @ 32 Ом balanced. Габариты 147 × 82 × 22 мм, 379 г. Snapdragon 665, Android 10, LDAC/LHDC/aptX HD.</p>",
+    "specs": [
+      {
+        "label": "Мощность SE",
+        "value": "520 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность balanced",
+        "value": "1125 мВт @ 32 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "2× AK4191 + 4× AK4499EX",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "147 × 82 × 22 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "379 г",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://en.shanling.com/article/101271"
+    ]
+  },
+  "270163": {
+    "descriptionHtml": "<p>MOON ACE — all-in-one: интегральный усилитель 50 Вт / 8 Ом, MiND 2 стриминг и MM-фоно в одном корпусе из Квебека. Для системы «источник + усиление» без лишних коробок.</p>\n<ul><li>50 Вт / 8 Ом</li><li>MiND 2</li><li>MM phono</li><li>DSD256</li><li>All-in-one</li></ul>\n<h2>Связь</h2>\n<p>8 цифровых входов (USB, 2×S/PDIF, 2×optical, BT), Wi‑Fi/Ethernet; 3 линейных + MM phono; наушники 6,35 мм. DSD до DSD256, PCM до 32/384.</p>\n<h2>Корпус</h2>\n<p>42,9 × 8,9 × 36,6 см.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "50 Вт / канал / 8 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Стриминг",
+        "value": "MiND 2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Фоно",
+        "value": "MM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифра",
+        "value": "PCM до 32/384; DSD64/128/256",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "42,9 × 8,9 × 36,6 см",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2018_MOON_ACE_EN.pdf"
+    ]
+  },
+  "270152": {
+    "descriptionHtml": "<p>MOON 280D MiND 2 — стриминговый ЦАП с балансной аналоговой секцией: AES/EBU, S/PDIF, TosLink, USB и MiND 2 по Wi‑Fi/Ethernet.</p>\n<ul><li>MiND 2</li><li>Balanced analog</li><li>DSD256</li><li>AES/EBU + USB</li><li>Network DAC</li></ul>\n<h2>Форматы</h2>\n<p>Native DSD64/128/256; PCM до 32 бит / 384 кГц. Габариты 42,9 × 8,6 × 33,3 см.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Streaming DAC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "AES/EBU; 2×S/PDIF; 2×TosLink; USB; BT aptX",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Форматы",
+        "value": "PCM до 32/384; DSD64/128/256",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "42,9 × 8,6 × 33,3 см",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2020_MOON_280D_EN.pdf"
+    ]
+  },
+  "270208": {
+    "descriptionHtml": "<p>Naim NAIT 50 — лимитированный интегральник (1973 шт.): 25 Вт / 8 Ом, дискретный MM-фоно и наушники 6,35 мм. Наследник NAIT 1 — характер тракта важнее гонки ватт.</p>\n<ul><li>25 Вт / 8 Ом</li><li>MM phono</li><li>1973 units</li><li>6,35 мм</li><li>4,5 кг</li></ul>\n<h2>Спецификация</h2>\n<p>25 Вт / 8 Ом @ 0,1% THD+N (пики до 225 Вт по описанию Naim). Входы: MM phono RCA + 2× DIN. Габариты 20,7 × 8,7 × 32,1 см, 4,5 кг. Limited edition.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "25 Вт / 8 Ом @ 0,1% THD+N",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Фоно",
+        "value": "MM, +40 дБ @ 1 кГц RIAA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "1× RCA MM; 2× DIN line",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Наушники",
+        "value": "6,35 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "20,7 × 8,7 × 32,1 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "4,5 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тираж",
+        "value": "1973 шт. (limited)",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.naimaudio.com/products/nait-50"
+    ]
+  },
+  "269763": {
+    "descriptionHtml": "<p>Parasound NewClassic 2250 v2 — стереоусилитель THX Ultra2: 275 Вт × 2 / 8 Ом, 400 Вт × 2 / 4–2 Ом, мост до 750 Вт. Class AB с запасом тока для «тяжёлой» акустики.</p>\n<ul><li>275 Вт × 2 / 8 Ом</li><li>THX Ultra2</li><li>Bridge 750 Вт</li><li>2 Ω stable</li><li>43 lb</li></ul>\n<h2>Мощность</h2>\n<p>275 W × 2 @ 8 Ω; 400 W × 2 @ 4 Ω или 2 Ω; 750 W bridged @ 8 или 4 Ω. Пиковый ток 45 А. RCA, A/B выходы, trigger/audio-sense.</p>\n<h2>Корпус</h2>\n<p>17.25″ × 18.5″ × 6″ с ножками, 43 lb.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "275 Вт × 2 / 8 Ω; 400 Вт × 2 / 4–2 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мост",
+        "value": "750 Вт @ 8 или 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сертификация",
+        "value": "THX Ultra2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17.25″ × 18.5″ × 6″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "43 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://parasound.com/products/nc-2250"
+    ]
+  },
+  "271191": {
+    "descriptionHtml": "<p>Nordost QBase QB8 Mark II — восьмирозеточный дистрибьютор питания со star-earth топологией: без активной фильтрации «в линию», с выделенным заземлением и отдельным предохранителем.</p>\n<ul><li>8 outlets</li><li>Star-earth</li><li>No inline filter</li><li>C14/C20</li><li>2,5 кг</li></ul>\n<h2>Конструкция</h2>\n<p>Вход C14 или C20; розетки US/EU/AU. Габариты 460 × 67 × 120 мм, вес 2,5 кг.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "AC distribution (passive star-earth)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Розетки",
+        "value": "8",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "460 × 67 × 120 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "2,5 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.nordost.com/downloads/multiLanguage/qbase%20mark%20II%20one%20sheet.pdf"
+    ]
+  },
+  "270171": {
+    "descriptionHtml": "<p>MOON 250i V2 — аналоговый интегральник: 50 Вт / 8 Ом и 100 Вт / 4 Ом, MM-фоно и наушники. Шесть линейных входов — простой тракт без цифрового шума в корпусе.</p>\n<ul><li>50 Вт / 8 Ом</li><li>100 Вт / 4 Ом</li><li>MM phono</li><li>6 line inputs</li><li>Headphone</li></ul>\n<h2>Корпус</h2>\n<p>42,9 × 8,9 × 36,6 см.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "50 Вт/ch / 8 Ω; 100 Вт/ch / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Фоно",
+        "value": "MM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "6 line + MM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Наушники",
+        "value": "6,35 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "42,9 × 8,9 × 36,6 см",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://simaudio.com/en/product/250i-v2-integrated-amplifier/"
+    ]
+  },
+  "269858": {
+    "descriptionHtml": "<p>BenQ TK700 — 4K UHD игровой проектор: 3200 ANSI лм, HDR, до 240 Гц. Для комнаты, где картинка должна успевать за динамикой саундтрека.</p>\n<ul><li>4K UHD</li><li>3200 ANSI lm</li><li>HDR</li><li>240 Hz</li><li>3,1 кг</li></ul>\n<h2>Оптика</h2>\n<p>3840×2160; 1,3× zoom; 2× HDMI 2.0b/HDCP 2.2; eARC; USB-A; RS232. 312 × 110 × 246 мм, 3,1 кг; типичное потребление 310 Вт @ 110 В.</p>",
+    "specs": [
+      {
+        "label": "Разрешение",
+        "value": "4K UHD 3840×2160",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Яркость",
+        "value": "3200 ANSI лм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "2× HDMI 2.0b / HDCP 2.2; eARC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "312 × 110 × 246 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "3,1 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.benq.com/en-us/projector/home-projectors/tk700/spec.html"
+    ]
+  },
+  "271014": {
+    "descriptionHtml": "<p>Matrix Audio element P2 — Class D стереоусилитель: 2 × 230 Вт / 4 Ом (2 × 110 Вт / 8 Ом), мост до 850 Вт / 4 Ом. Компактный корпус с RCA/XLR и WBT-клеммами.</p>\n<ul><li>2 × 230 Вт / 4 Ом</li><li>Bridgeable</li><li>RCA + XLR</li><li>Class D</li><li>3,7 кг</li></ul>\n<h2>Корпус</h2>\n<p>340 × 58 × 259 мм, 3,7 кг.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность stereo",
+        "value": "2 × 230 Вт / 4 Ω; 2 × 110 Вт / 8 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Моно",
+        "value": "850 Вт / 4 Ω; 500 Вт / 8 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA; XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "340 × 58 × 259 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "3,7 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.matrix-digi.com/product/88/element_P2"
+    ]
+  },
+  "269327": {
+    "descriptionHtml": "<p>Klipsch The Nines McLaren Edition — активная полочная пара: 240 Вт суммарно, HDMI-ARC, phono, aptX HD. Для стола или комнаты, где акустика сама несёт усиление.</p>\n<ul><li>240 W system</li><li>HDMI-ARC</li><li>Built-in phono</li><li>aptX HD</li><li>McLaren Edition</li></ul>\n<h2>Связь</h2>\n<p>HDMI-ARC, optical, USB, RCA, phono, Bluetooth, выход на саб. 16.5″ × 9.5″ × 13.4″, 22.4 lb на колонку; Dynamic Bass EQ; 24/192.</p>",
+    "specs": [
+      {
+        "label": "Мощность системы",
+        "value": "240 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "HDMI-ARC; optical; USB; RCA; phono; BT",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты (шт.)",
+        "value": "16.5″ × 9.5″ × 13.4″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес (шт.)",
+        "value": "22.4 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.klipsch.com/uk/products/the-nines-powered-speakers-mclaren"
+    ]
+  },
+  "272017": {
+    "descriptionHtml": "<p>iFi audio Aurora — all-in-one система: PureEmotion, TrueBass, ART room tailoring и ESS Sabre. Bluetooth с aptX HD/LDAC и сетевые входы в одном корпусе 15 кг.</p>\n<ul><li>PureEmotion</li><li>ART room tailor</li><li>ESS Sabre</li><li>aptX HD / LDAC</li><li>15 кг</li></ul>\n<h2>Питание/корпус</h2>\n<p>Макс. 320 VA; 59 × 27 × 28 см, 15 кг. Ethernet/Wi‑Fi/optical/coax/USB/RCA/3,5 мм/microSD.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "All-in-one wireless system",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "макс. 320 VA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "59 × 27 × 28 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "15 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://ifi-audio.com/products/aurora"
+    ]
+  },
+  "268996": {
+    "descriptionHtml": "<p>Emotiva BasX MC1 — 13.2-канальный процессор с EmoQ: HDMI 2.0b, Atmos/DTS:X и eARC без флагманской цены RMC.</p>\n<ul><li>13.2 ch</li><li>EmoQ</li><li>Atmos / DTS:X</li><li>eARC</li><li>10 lb</li></ul>\n<h2>Связь</h2>\n<p>6× HDMI IN / 2× OUT; BT; USB audio; 2× optical; 2× coax; 4× analog; RS-232. Габариты 17″ × 3.125″ × 13″, 10 lb.</p>",
+    "specs": [
+      {
+        "label": "Каналы",
+        "value": "13.2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "HDMI",
+        "value": "6× IN; 2× OUT (HDMI 2.0b)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коррекция",
+        "value": "EmoQ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17″ × 3.125″ × 13″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "10 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://emotiva.com/collections/all/products/basx-mc1-13-2-channel-dolby-atmos-dts-x-cinema-processor"
+    ]
+  },
+  "272205": {
+    "descriptionHtml": "<p>Shanling SCD 1.3 — SACD/CD и многофункциональный источник на AK4499EX + AK4191: сеть, BT, USB DAC и выходы RCA/XLR плюс наушники.</p>\n<ul><li>SACD/CD</li><li>AK4499EX</li><li>RCA + XLR</li><li>1.1 W @ 32Ω</li><li>6,6 кг</li></ul>\n<h2>Выход</h2>\n<p>Наушники до 1,1 Вт @ 32 Ом. 28 × 28 × 9,6 см, 6,6 кг. DLNA/AirPlay/LDAC/aptX HD.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "SACD/CD + network source",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "AK4499EX + AK4191",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Наушники",
+        "value": "1,1 Вт @ 32 Ом; 153 мВт @ 300 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "28 × 28 × 9,6 см",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "6,6 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://en.shanling.com/article/101258"
+    ]
+  },
+  "271974": {
+    "descriptionHtml": "<p>Isol-8 Powerline Extreme — сетевой кондиционер линейки Powerline: один high-current и четыре low/medium выхода, transmodal filtration и DC blocking (по материалам линейки Isol-8).</p>\n<ul><li>1× HC + 4× LC outlets</li><li>Transmodal filter</li><li>DC blocking</li><li>10 A IEC</li></ul>\n<h2>Конструкция</h2>\n<p>Вход 10 A IEC; габариты около 15.8″ × 3.3″ × 3.5″, вес ≈ 4 lb. HITL: уточнить ревизию и точную схему фильтрации по паспорту поставки.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Сетевой фильтр / conditioner",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "1 high-current + 4 low/medium",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вход",
+        "value": "10 A IEC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "≈ 15.8″ × 3.3″ × 3.5″",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "≈ 4 lb",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://isol-8.co.uk/",
+      "https://isol-8.kemela.com/isol-8-powerline-series/isol-8-powerline-extreme.html"
+    ]
+  },
+  "269881": {
+    "descriptionHtml": "<p>Cambridge Audio Evo One — беспроводная all-in-one система: 14 × 50 Вт @ 4 Ом, StreamMagic Gen 4 и Roon Ready. Одна колонна вместо стойки из пяти аппаратов.</p>\n<ul><li>14 × 50 Вт / 4 Ом</li><li>StreamMagic Gen4</li><li>Roon Ready</li><li>HDMI eARC</li><li>14,5 кг</li></ul>\n<h2>Связь</h2>\n<p>RCA, MM phono, optical, HDMI eARC, USB, BT 5.1, Ethernet/Wi‑Fi, AirPlay 2, Google Cast, Spotify/TIDAL/Qobuz/Deezer. 675 × 129 × 290 мм, 14,5 кг.</p>",
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "14 × 50 Вт @ 4 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Платформа",
+        "value": "StreamMagic Gen 4; Roon Ready",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA; MM; optical; HDMI eARC; USB; BT; сеть",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "675 × 129 × 290 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "14,5 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.cambridgeaudio.com/row/en/products/hi-fi/evo/evo-one",
+      "https://manuals.cambridgeaudio.com/en/evo-one/technical-specifications"
+    ]
+  },
+  "270397": {
+    "descriptionHtml": "<p>QUAD 303 (reissue) — стереоусилитель Class AB с «triples» выходным каскадом: 2 × 50 Вт / 8 Ом, 2 × 70 Вт / 4 Ом, мост 140/170 Вт. Современная линейность при классическом характере.</p>\n<ul><li>2 × 50 Вт / 8 Ом</li><li>Bridge 140 Вт</li><li>RCA + XLR</li><li>Triples stage</li><li>8,4 кг</li></ul>\n<h2>Интерфейсы</h2>\n<p>RCA и XLR входы; 12 V trigger. 120 × 176 × 325 мм, 8,4 кг; ток до 10 А; С/Ш > 108 дБ.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "2 × 50 Вт / 8 Ω; 2 × 70 Вт / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мост",
+        "value": "140 Вт / 8 Ω; 170 Вт / 4 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "< 0,002% (1 кГц)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "> 108 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "120 × 176 × 325 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "8,4 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://quad-hifi.co.uk/products/quad-303"
+    ]
+  },
+  "270380": {
+    "descriptionHtml": "<p>QUAD 33 (reissue) — предусилитель с MM/MC фоно, классическим Tilt и балансными XLR. Цифровой контроль громкости при полностью аналоговом тракте.</p>\n<ul><li>MM/MC phono</li><li>Tilt control</li><li>XLR I/O</li><li>Headphone amp</li><li>4 кг</li></ul>\n<h2>Коммутация</h2>\n<p>3× RCA, 1× XLR, phono MM/MC; выходы RCA/XLR/AUX, наушники, 2× trigger. Усиление phono +46 дБ MM / +63,5 дБ MC. 258 × 94 × 165 мм, 4 кг.</p>",
+    "specs": [
+      {
+        "label": "Фоно",
+        "value": "MM +46 дБ; MC +63,5 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "3× RCA; 1× XLR; phono MM/MC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA Pre; XLR; AUX; headphone",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш (line)",
+        "value": "> 108 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "258 × 94 × 165 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вес",
+        "value": "4 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://quad-hifi.co.uk/products/quad-33"
+    ]
+  }
+}

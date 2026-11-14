@@ -1,0 +1,230 @@
+{
+  "generatedAt": "2026-11-14T17:04:39Z",
+  "criteria": {
+    "descMinChars": 500,
+    "galleryMin": 4,
+    "stubHeuristics": true,
+    "requireSpecs": true,
+    "flagIfAny": true
+  },
+  "totalPdp": 1887,
+  "meagerCount": 870,
+  "okCount": 1017,
+  "reasonTallies": {
+    "gal": 870
+  },
+  "byCategory": {
+    "Другое": 371,
+    "Кабели": 211,
+    "Усилители": 124,
+    "Акустика": 99,
+    "Источники": 46,
+    "ЦАПы": 8,
+    "Ресиверы": 5,
+    "Наушники": 4,
+    "Спецпредложения": 1,
+    "Видео": 1
+  },
+  "top20": [
+    {
+      "id": 264551,
+      "name": "Кабель для наушников SAEC  SHC-B120FF ( saec shc b120ff )",
+      "cat": "Наушники",
+      "price": 30187,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 264550,
+      "name": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+      "cat": "Наушники",
+      "price": 24699,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 264549,
+      "name": "Кабель для наушников SAEC  SHC-120FF ( saec shc 120ff )",
+      "cat": "Наушники",
+      "price": 20582,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 264548,
+      "name": "Кабель для наушников SAEC  SHC-120FS ( saec shc 120fs )",
+      "cat": "Наушники",
+      "price": 15094,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 274022,
+      "name": "Сетевой проигрыватель T+A SDV 3100 HV",
+      "cat": "Источники",
+      "price": 4350000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 273984,
+      "name": "CD-проигрыватель T+A MP 3100 HV",
+      "cat": "Источники",
+      "price": 2475000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 274016,
+      "name": "Сетевой проигрыватель T+A PSD 3100 HV",
+      "cat": "Источники",
+      "price": 2165600,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262057,
+      "name": "Полочная акустика Divini Audio Reference 3 ( divini audio reference 3 )",
+      "cat": "Акустика",
+      "price": 3500000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 274105,
+      "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
+      "cat": "Другое",
+      "price": 234000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 274103,
+      "name": "Сетевой фильтр T+A Power Bar 2+3 Basic HD",
+      "cat": "Другое",
+      "price": 202500,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262053,
+      "name": "Напольная акустика Divini Audio Illusion ( divini audio illusion )",
+      "cat": "Акустика",
+      "price": 14000000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 33408,
+      "name": "напольная акустика Lawrence Audio Drongo ( lawrence audio drongo )",
+      "cat": "Акустика",
+      "price": 4420000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 16836,
+      "name": "усилитель мощности Triode TRX M845 ( triode trx m845 )",
+      "cat": "Усилители",
+      "price": 3800000,
+      "reasons": [
+        "gal:3"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 272699,
+      "name": "Сетевой проигрыватель Metronome Technologie DSC",
+      "cat": "Источники",
+      "price": 3710000,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262061,
+      "name": "Напольная акустика Divini Audio Reference 18 ( divini audio reference 18 )",
+      "cat": "Акустика",
+      "price": 1140000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262055,
+      "name": "Напольная акустика Divini Audio Rasa ( divini audio rasa )",
+      "cat": "Акустика",
+      "price": 2960000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 274362,
+      "name": "Сетевой проигрыватель Aurender AP20 4TB HDD",
+      "cat": "Источники",
+      "price": 2910600,
+      "reasons": [
+        "gal:2"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 262059,
+      "name": "Полочная акустика Divini Audio Reference 8 ( divini audio reference 8 )",
+      "cat": "Акустика",
+      "price": 690000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 270461,
+      "name": "Виниловый проигрыватель Transrotor Dark Star Reference",
+      "cat": "Источники",
+      "price": 634900,
+      "reasons": [
+        "gal:0"
+      ],
+      "enriched": true
+    },
+    {
+      "id": 15622,
+      "name": "напольная акустика Lawrence Audio Double Bass ( lawrence audio double bass )",
+      "cat": "Акустика",
+      "price": 2465000,
+      "reasons": [
+        "gal:1"
+      ],
+      "enriched": true
+    }
+  ]
+}

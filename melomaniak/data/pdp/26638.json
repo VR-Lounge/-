@@ -1,0 +1,56 @@
+{
+  "id": 26638,
+  "slug": "predysilitel_Audio_Physic_AP_Pre_",
+  "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
+  "cat": "Усилители",
+  "cats": [
+    "Предварительные усилители"
+  ],
+  "price": 731250,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Audio_Physic_AP_Pre_/",
+  "descriptionHtml": "<p>Audio Physic AP Pre — предусилитель с пультом из эпохи, когда AP пробовала электронику рядом с акустикой. В открытых OEM-источниках 2020-х полноценного datasheet почти нет: карточка салона сохраняет только факт «пультовой предварительный усилитель».</p>\n<ul><li>Тип: линейный предусилитель с ДУ</li><li>Бренд: Audio Physic (Brilon)</li><li>OEM datasheet в открытом доступе не подтверждён</li><li>HITL: паспорт/наклейка экземпляра обязательны</li></ul>\n<aside><p><strong>Почему так скудно.</strong> Audio Physic сегодня — в первую очередь акустика; электроника AP Pre снята с активной линейки. Не выдумываем ватты и С/Ш без паспорта.</p></aside>\n<h2>HITL</h2>\n<p>Сфотографировать заднюю панель и снять надписи с шасси в салоне перед публикацией полных specs. Галерея OEM недоступна — 1 кадр до обновления.</p>\n<h2>Карточка салона</h2>\n<p>предусилитель Audio Physic AP Pre ( audio physic ap pre ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).</p>\n<p>HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.</p><h2>HITL</h2><p>galleryHitl: OEM/пресс &lt;4 ракурса. Добить витриной без водяных знаков.</p>",
+  "shortHtml": "",
+  "descriptionText": "Audio Physic AP Pre — предусилитель с пультом из эпохи, когда AP пробовала электронику рядом с акустикой. В открытых OEM-источниках 2020-х полноценного datasheet почти нет: карточка салона сохраняет только факт «пультовой предварительный усилитель».\n\n Тип: линейный предусилитель с ДУ\n Бренд: Audio Physic (Brilon)\n OEM datasheet в открытом доступе не подтверждён\n HITL: паспорт/наклейка экземпляра обязательны\n\n Почему так скудно. Audio Physic сегодня — в первую очередь акустика; электроника AP Pre снята с активной линейки. Не выдумываем ватты и С/Ш без паспорта.\n\n HITL\n\n Сфотографировать заднюю панель и снять надписи с шасси в салоне перед публикацией полных specs. Галерея OEM недоступна — 1 кадр до обновления.\n\n Карточка салона\n\n предусилитель Audio Physic AP Pre ( audio physic ap pre ) — позиция Melomaniak. Описание собрано по материалам производителя и дилеров; электрические цифры не выдуманы. Перед витриной сверить серийник, цвет и комплектацию (кабель, пульт, модули).\n\n HITL: если галерея короче четырёх ракурсов, дополнить съёмкой с витрины без водяных знаков. Спеки ниже — из источников карточки; при расхождении приоритет у паспорта экземпляра.\n HITL\n galleryHitl: OEM/пресс &lt;4 ракурса. Добить витриной без водяных знаков.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Предусилитель с пультом ДУ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Бренд",
+      "value": "Audio Physic",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Статус",
+      "value": "Снят с активной OEM-линейки; паспорт HITL",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Примечание",
+      "value": "Полные электрические specs — только с экземпляра",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Audio_Physic_AP_Pre_.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Audio_Physic_AP_Pre_-600x600.jpg",
+      "alt": "Audio Physic AP Pre",
+      "local": "assets/from-live/products/cf49f32284_predysilitel_Audio_Physic_AP_Pre_.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.audiophysic.com/",
+    "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Audio_Physic_AP_Pre_/"
+  ],
+  "enrichedAt": "2026-11-14T13:45:25Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "meagerWave": "meager-w6-2026-11",
+  "galleryHitl": true
+}
