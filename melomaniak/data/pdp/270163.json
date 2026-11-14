@@ -9,28 +9,38 @@
   "price": 399900,
   "old": null,
   "source": "https://xn--80aannlcfckh.xn--p1ai/product/527a1baa544c5243ff11c905f318ce93/",
-  "descriptionHtml": "<p>MOON ACE — all-in-one: интегральный усилитель 50 Вт / 8 Ом, MiND 2 стриминг и MM-фоно в одном корпусе из Квебека. Для системы «источник + усиление» без лишних коробок.</p>\n<ul><li>50 Вт / 8 Ом</li><li>MiND 2</li><li>MM phono</li><li>DSD256</li><li>All-in-one</li></ul>\n<h2>Связь</h2>\n<p>8 цифровых входов (USB, 2×S/PDIF, 2×optical, BT), Wi‑Fi/Ethernet; 3 линейных + MM phono; наушники 6,35 мм. DSD до DSD256, PCM до 32/384.</p>\n<h2>Корпус</h2>\n<p>42,9 × 8,9 × 36,6 см.</p>",
+  "descriptionHtml": "<p>MOON ACE — all-in-one: интегральник 50 Вт/8 Ом, MiND 2 стример, ЦАП, MM-фоно и выход на наушники. Один корпус вместо стойки «источник + пре + мощ» для клиента, которому важна простота без отказа от Roon Ready / Tidal / Qobuz-экосистемы MOON.</p>\n<ul><li>50 Вт/канал @ 8 Ом</li><li>PCM 16–32 бит / 44,1–384 кГц</li><li>DSD64/128/256</li><li>THD 0,02 % · С/Ш 100 дБ</li><li>АЧХ 10 Гц–80 кГц +0/−3 дБ</li><li>42,9 × 8,9 × 36,6 см · ~11 кг</li></ul>\n<aside><p><strong>MiND 2.</strong> Сетевой модуль MOON: локальная библиотека и стриминг-сервисы, управление приложением. Не отдельный «ящик», а часть ACE. Analog pass-through — для AV-процессора со своей громкостью.</p></aside>\n<h2>Коммутация</h2>\n<p>По datasheet Simaudio: USB, 2× S/PDIF, 2× TosLink, aptX Bluetooth, Wi‑Fi/Ethernet, 3 линейных входа (вкл. фронт 3,5 мм), MM-фоно, выход на АС и pre-out. HITL: цвет панели (black / silver / two-tone).</p>",
   "shortHtml": "",
-  "descriptionText": "MOON ACE — all-in-one: интегральный усилитель 50 Вт / 8 Ом, MiND 2 стриминг и MM-фоно в одном корпусе из Квебека. Для системы «источник + усиление» без лишних коробок.\n\n 50 Вт / 8 Ом\n MiND 2\n MM phono\n DSD256\n All-in-one\n\n Связь\n\n 8 цифровых входов (USB, 2×S/PDIF, 2×optical, BT), Wi‑Fi/Ethernet; 3 линейных + MM phono; наушники 6,35 мм. DSD до DSD256, PCM до 32/384.\n\n Корпус\n\n 42,9 × 8,9 × 36,6 см.",
+  "descriptionText": "MOON ACE — all-in-one: интегральник 50 Вт/8 Ом, MiND 2 стример, ЦАП, MM-фоно и выход на наушники. Один корпус вместо стойки «источник + пре + мощ» для клиента, которому важна простота без отказа от Roon Ready / Tidal / Qobuz-экосистемы MOON.\n\n 50 Вт/канал @ 8 Ом\n PCM 16–32 бит / 44,1–384 кГц\n DSD64/128/256\n THD 0,02 % · С/Ш 100 дБ\n АЧХ 10 Гц–80 кГц +0/−3 дБ\n 42,9 × 8,9 × 36,6 см · ~11 кг\n\n MiND 2. Сетевой модуль MOON: локальная библиотека и стриминг-сервисы, управление приложением. Не отдельный «ящик», а часть ACE. Analog pass-through — для AV-процессора со своей громкостью.\n\n Коммутация\n\n По datasheet Simaudio: USB, 2× S/PDIF, 2× TosLink, aptX Bluetooth, Wi‑Fi/Ethernet, 3 линейных входа (вкл. фронт 3,5 мм), MM-фоно, выход на АС и pre-out. HITL: цвет панели (black / silver / two-tone).",
   "specs": [
     {
-      "label": "Выходная мощность",
-      "value": "50 Вт / канал / 8 Ом",
+      "label": "Мощность",
+      "value": "50 Вт/канал @ 8 Ом",
       "source": "manufacturer"
     },
     {
-      "label": "Стриминг",
-      "value": "MiND 2",
+      "label": "АЧХ",
+      "value": "10 Гц–80 кГц +0/−3 дБ",
       "source": "manufacturer"
     },
     {
-      "label": "Фоно",
-      "value": "MM",
+      "label": "THD",
+      "value": "0,02 %",
       "source": "manufacturer"
     },
     {
-      "label": "Цифра",
-      "value": "PCM до 32/384; DSD64/128/256",
+      "label": "С/Ш",
+      "value": "100 дБ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "PCM",
+      "value": "16–32 бит / 44,1–384 кГц",
+      "source": "manufacturer"
+    },
+    {
+      "label": "DSD",
+      "value": "DSD64/128/256",
       "source": "manufacturer"
     },
     {
@@ -40,6 +50,69 @@
     }
   ],
   "gallery": [
+    {
+      "src": "https://www.safeandsoundhq.com/cdn/shop/files/ACE.png?v=1747395281",
+      "thumb": "https://www.safeandsoundhq.com/cdn/shop/files/ACE.png?v=1747395281",
+      "alt": "Стереоусилитель MOON ACE All-in-One",
+      "local": "assets/enriched/270163/0a5ff78ea4_1.png",
+      "enriched": true,
+      "attribution": "www.safeandsoundhq.com",
+      "bytes": 409642
+    },
+    {
+      "src": "https://www.safeandsoundhq.com/cdn/shop/files/ACED.png?v=1747395284",
+      "thumb": "https://www.safeandsoundhq.com/cdn/shop/files/ACED.png?v=1747395284",
+      "alt": "Стереоусилитель MOON ACE All-in-One",
+      "local": "assets/enriched/270163/00530b8fd2_2.png",
+      "enriched": true,
+      "attribution": "www.safeandsoundhq.com",
+      "bytes": 214466
+    },
+    {
+      "src": "https://www.safeandsoundhq.com/cdn/shop/files/ACEC.png?v=1747395284",
+      "thumb": "https://www.safeandsoundhq.com/cdn/shop/files/ACEC.png?v=1747395284",
+      "alt": "Стереоусилитель MOON ACE All-in-One",
+      "local": "assets/enriched/270163/5e8a19fb43_3.png",
+      "enriched": true,
+      "attribution": "www.safeandsoundhq.com",
+      "bytes": 573185
+    },
+    {
+      "src": "https://www.audiovisionsf.com/cdn/shop/products/ACE_Black_1370x590_9313ebff-327b-4ce6-8dc8-3044fb481b89.png?v=1621038831",
+      "thumb": "https://www.audiovisionsf.com/cdn/shop/products/ACE_Black_1370x590_9313ebff-327b-4ce6-8dc8-3044fb481b89.png?v=1621038831",
+      "alt": "Стереоусилитель MOON ACE All-in-One",
+      "local": "assets/enriched/270163/5474140962_4.png",
+      "enriched": true,
+      "attribution": "www.audiovisionsf.com",
+      "bytes": 394727
+    },
+    {
+      "src": "https://www.tonepublications.com/media/SIMAce-3.jpg",
+      "thumb": "https://www.tonepublications.com/media/SIMAce-3.jpg",
+      "alt": "Стереоусилитель MOON ACE All-in-One",
+      "local": "assets/enriched/270163/f42b719ec3_5.jpg",
+      "enriched": true,
+      "attribution": "www.tonepublications.com",
+      "bytes": 159878
+    },
+    {
+      "src": "https://www.tonepublications.com/media/SIMAce-4.jpg",
+      "thumb": "https://www.tonepublications.com/media/SIMAce-4.jpg",
+      "alt": "Стереоусилитель MOON ACE All-in-One",
+      "local": "assets/enriched/270163/0179f2998e_6.jpg",
+      "enriched": true,
+      "attribution": "www.tonepublications.com",
+      "bytes": 298983
+    },
+    {
+      "src": "https://www.soundstagesimplifi.com/images/stories/equipment1/201706_simaudio_angle.jpg",
+      "thumb": "https://www.soundstagesimplifi.com/images/stories/equipment1/201706_simaudio_angle.jpg",
+      "alt": "Стереоусилитель MOON ACE All-in-One",
+      "local": "assets/enriched/270163/737ff25467_7.jpg",
+      "enriched": true,
+      "attribution": "www.soundstagesimplifi.com",
+      "bytes": 633231
+    },
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_ace_all-in-one_4045026459-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_ace_all-in-one_4045026459-1.jpg",
@@ -63,8 +136,10 @@
   "fetchedFrom": "wc/store/v1/products",
   "enriched": true,
   "sources": [
-    "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2018_MOON_ACE_EN.pdf"
+    "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2018_MOON_ACE_EN.pdf",
+    "https://www.safeandsoundhq.com/products/simaudio-ace-all-in-one-music-player"
   ],
-  "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichedAt": "2026-11-14T12:47:38Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w2-2026-11"
 }

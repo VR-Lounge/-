@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-14T12:28:52Z",
-  "enrichedCount": 182,
+  "generatedAt": "2026-11-14T12:50:04Z",
+  "enrichedCount": 218,
   "products": {
     "264008": {
       "name": "USB кабель Acoustic Revive RUT-1 ( usb acoustic revive rut 1 )",
@@ -623,7 +623,7 @@
       "galleryCount": 6,
       "photosAdded": 0,
       "descLen": 729,
-      "enrichedAt": "2026-11-14T12:28:52Z"
+      "enrichedAt": "2026-11-14T12:50:04Z"
     },
     "269782": {
       "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
@@ -901,10 +901,11 @@
       "sources": [
         "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2020_MOON_280D_EN.pdf"
       ],
-      "specsCount": 4,
-      "galleryCount": 3,
+      "specsCount": 8,
+      "galleryCount": 7,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "descLen": 716,
+      "enrichedAt": "2026-11-14T12:47:38Z"
     },
     "270156": {
       "name": "Фонокорректор MOON 110LP v2",
@@ -920,12 +921,14 @@
     "270163": {
       "name": "Стереоусилитель MOON ACE All-in-One",
       "sources": [
-        "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2018_MOON_ACE_EN.pdf"
+        "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2018_MOON_ACE_EN.pdf",
+        "https://www.safeandsoundhq.com/products/simaudio-ace-all-in-one-music-player"
       ],
-      "specsCount": 5,
-      "galleryCount": 3,
-      "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:40:04Z"
+      "specsCount": 7,
+      "galleryCount": 10,
+      "photosAdded": 7,
+      "descLen": 796,
+      "enrichedAt": "2026-11-14T12:47:38Z"
     },
     "270171": {
       "name": "Стереоусилитель MOON 250i V2 Black",
@@ -1120,7 +1123,7 @@
       "galleryCount": 6,
       "photosAdded": 0,
       "descLen": 557,
-      "enrichedAt": "2026-11-14T12:28:52Z"
+      "enrichedAt": "2026-11-14T12:50:04Z"
     },
     "270878": {
       "name": "Стереоусилитель Hegel H600",
@@ -1639,7 +1642,7 @@
       "galleryCount": 11,
       "photosAdded": 0,
       "descLen": 1045,
-      "enrichedAt": "2026-11-14T12:28:52Z"
+      "enrichedAt": "2026-11-14T12:50:04Z"
     },
     "274049": {
       "name": "Внешний ЦАП T+A DAC 200",
@@ -1651,7 +1654,7 @@
       "galleryCount": 12,
       "photosAdded": 0,
       "descLen": 945,
-      "enrichedAt": "2026-11-14T12:28:52Z"
+      "enrichedAt": "2026-11-14T12:50:04Z"
     },
     "274060": {
       "name": "Охватывающие наушники T+A Solitaire P-SE",
@@ -1925,6 +1928,429 @@
       "photosAdded": 6,
       "descLen": 1226,
       "enrichedAt": "2026-11-14T12:28:44Z"
+    },
+    "15882": {
+      "name": "предусилитель Air Tight ATC 3 ( air tight atc 3 )",
+      "sources": [
+        "https://www.airtight-anm.com/components/atc3.html",
+        "https://audiopathways.com/airtight/"
+      ],
+      "specsCount": 6,
+      "galleryCount": 9,
+      "photosAdded": 6,
+      "descLen": 582,
+      "enrichedAt": "2026-11-14T12:48:48Z"
+    },
+    "15886": {
+      "name": "усилитель мощности Air Tight ATM 2 ( air tight atm 2 )",
+      "sources": [
+        "https://www.airtight-anm.com/components/atm2.html"
+      ],
+      "specsCount": 5,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "descLen": 730,
+      "enrichedAt": "2026-11-14T12:48:55Z"
+    },
+    "26606": {
+      "name": "предусилитель AudioNet Pre G 2 ( audionet pre g 2 )",
+      "sources": [
+        "https://en.audionet.de/machines/pre-g2/",
+        "https://en.audionet.de/wp-content/uploads/data_sheet_audionet_pre_g2__en.pdf"
+      ],
+      "specsCount": 6,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 915,
+      "enrichedAt": "2026-11-14T12:40:35Z"
+    },
+    "26608": {
+      "name": "предусилитель AudioNet Pre I G 3 ( audionet pre i g 3 )",
+      "sources": [
+        "https://en.audionet.de/machines/pre-i-g3/",
+        "https://en.audionet.de/wp-content/uploads/data_sheet_audionet_pre_i_g3__en.pdf"
+      ],
+      "specsCount": 6,
+      "galleryCount": 7,
+      "photosAdded": 4,
+      "descLen": 866,
+      "enrichedAt": "2026-11-14T12:46:52Z"
+    },
+    "26618": {
+      "name": "усилитель мощности AudioNet AMP IV ( audionet amp iv )",
+      "sources": [
+        "https://en.audionet.de/machines/amp-iv/",
+        "https://en.audionet.de/wp-content/uploads/data_sheet_audionet_amp_iv__en.pdf"
+      ],
+      "specsCount": 8,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 770,
+      "enrichedAt": "2026-11-14T12:40:42Z"
+    },
+    "26620": {
+      "name": "усилитель мощности AudioNet AMP V ( audionet amp v )",
+      "sources": [
+        "https://en.audionet.de/machines/amp-v/"
+      ],
+      "specsCount": 6,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 686,
+      "enrichedAt": "2026-11-14T12:40:46Z"
+    },
+    "26630": {
+      "name": "фонокорректор AudioNet PAM G2 ( audionet pam g2 )",
+      "sources": [
+        "https://en.audionet.de/machines/pam-g2/",
+        "https://en.audionet.de/wp-content/uploads/data_sheet_audionet_pam_g2__en.pdf"
+      ],
+      "specsCount": 6,
+      "galleryCount": 6,
+      "photosAdded": 5,
+      "descLen": 731,
+      "enrichedAt": "2026-11-14T12:40:50Z"
+    },
+    "26664": {
+      "name": "виниловый проигрыватель Spec GMP-8000EX ( spec gmp 8000ex )",
+      "sources": [
+        "https://spec-corp.jp/audio/GMP-8000/index.html"
+      ],
+      "specsCount": 7,
+      "galleryCount": 7,
+      "photosAdded": 5,
+      "descLen": 863,
+      "enrichedAt": "2026-11-14T12:50:03Z"
+    },
+    "26666": {
+      "name": "фонокорректор Spec REQ-S1EX ( spec req s1ex )",
+      "sources": [
+        "https://spec-corp.jp/audio/RSQ-S1EX/index.html"
+      ],
+      "specsCount": 7,
+      "galleryCount": 10,
+      "photosAdded": 8,
+      "descLen": 585,
+      "enrichedAt": "2026-11-14T12:49:01Z"
+    },
+    "34454": {
+      "name": "напольная акустика Paradigm Persona 3F ( paradigm persona 3f )",
+      "sources": [
+        "https://www.paradigm.com/en/floorstanding/persona-3f"
+      ],
+      "specsCount": 6,
+      "galleryCount": 6,
+      "photosAdded": 4,
+      "descLen": 554,
+      "enrichedAt": "2026-11-14T12:41:00Z"
+    },
+    "260690": {
+      "name": "Полочная акустика Lawrence Audio Bulbul ( lawrence audio bulbul )",
+      "sources": [
+        "https://www.lawrenceaudio.com/h/ServiceDetail?cont=256444&key=p2kbz"
+      ],
+      "specsCount": 6,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "descLen": 739,
+      "enrichedAt": "2026-11-14T12:47:01Z"
+    },
+    "263971": {
+      "name": "Межблочный кабель Acoustic Revive RCA Absolute FM ( acoustic revive rca absolute fm )",
+      "sources": [
+        "https://av-corp.eu/product-eng-4922-Acoustic-Revive-XLR-Absolute-FM.html",
+        "https://highfidelity.pl/@main-805&lang=en",
+        "https://jeffsplace.positive-feedback.com/todays-fresh-catch-the-new-acoustic-revive-absolute-power-cords-absolute-rca-fm-interconnects-and-pc-triplec-ex-headshell-leads"
+      ],
+      "specsCount": 6,
+      "galleryCount": 6,
+      "photosAdded": 5,
+      "descLen": 763,
+      "enrichedAt": "2026-11-14T12:41:01Z"
+    },
+    "263974": {
+      "name": "Межблочный кабель Acoustic Revive XLR Absolute FM ( acoustic revive xlr absolute fm )",
+      "sources": [
+        "https://av-corp.eu/product-eng-4922-Acoustic-Revive-XLR-Absolute-FM.html",
+        "https://acousticrevive.bg/wp-content/uploads/2024/09/XLR-Absolute-FM.jpg"
+      ],
+      "specsCount": 6,
+      "galleryCount": 7,
+      "photosAdded": 2,
+      "descLen": 706,
+      "enrichedAt": "2026-11-14T12:47:16Z"
+    },
+    "263994": {
+      "name": "Фонокабель Acoustic Revive Phono-1.2 TripleC FM ( acoustic revive phono 1 2 triplec fm )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/wp-content/uploads/2024/04/PHONERCA-1.0TripleC-FM.jpg"
+      ],
+      "specsCount": 5,
+      "galleryCount": 10,
+      "photosAdded": 3,
+      "descLen": 640,
+      "enrichedAt": "2026-11-14T12:47:24Z"
+    },
+    "263995": {
+      "name": "Фонокабель Acoustic Revive Phono-1.2 TripleC FM-L ( acoustic revive phono 1 2 triplec fm l )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/wp-content/uploads/2024/04/PHONERCA-1.0TripleC-FM.jpg"
+      ],
+      "specsCount": 5,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 507,
+      "enrichedAt": "2026-11-14T12:41:19Z"
+    },
+    "263996": {
+      "name": "Фонокабель Acoustic Revive Phono-1.2 TripleC FM-B ( acoustic revive phono 1 2 triplec fm b )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/wp-content/uploads/2024/04/PHONERCA-1.0TripleC-FM.jpg"
+      ],
+      "specsCount": 5,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 503,
+      "enrichedAt": "2026-11-14T12:41:28Z"
+    },
+    "263997": {
+      "name": "Фонокабель Acoustic Revive Phono-1.2 TripleC FM-BL ( acoustic revive phono 1 2 triplec fm bl )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://acousticrevive.bg/wp-content/uploads/2024/04/PHONERCA-1.0TripleC-FM.jpg"
+      ],
+      "specsCount": 5,
+      "galleryCount": 7,
+      "photosAdded": 6,
+      "descLen": 507,
+      "enrichedAt": "2026-11-14T12:41:35Z"
+    },
+    "264345": {
+      "name": "Сетевой кабель Furutech Nanoflux NCF 18E ( furutech nanoflux ncf 18e )",
+      "sources": [
+        "https://furutech.com/product/nanoflux-ncf-power-cord",
+        "https://douglasconnection.com/product/furutech-nanoflux-ncf-power-cord"
+      ],
+      "specsCount": 6,
+      "galleryCount": 6,
+      "photosAdded": 5,
+      "descLen": 561,
+      "enrichedAt": "2026-11-14T12:41:43Z"
+    },
+    "264386": {
+      "name": "Акустический кабель Furutech Nanoflux Speaker Cable ( furutech nanoflux speaker cable )",
+      "sources": [
+        "https://furutech.com/product/nanoflux-ncf-plus",
+        "https://theaudiophileman.com/4601-2",
+        "https://www.thecableco.com/nanoflux-ncf-speaker-cable-pair.html"
+      ],
+      "specsCount": 5,
+      "galleryCount": 6,
+      "photosAdded": 5,
+      "descLen": 789,
+      "enrichedAt": "2026-11-14T12:41:44Z"
+    },
+    "267422": {
+      "name": "Интегральный усилитель Line Magnetic Audio LM-609iA",
+      "sources": [
+        "https://www.lm-audio.com/cn/lm-p208.html",
+        "https://mvert.ru/product/line-magnetic-lm-609ia/"
+      ],
+      "specsCount": 8,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 540,
+      "enrichedAt": "2026-11-14T12:41:46Z"
+    },
+    "267424": {
+      "name": "Предусилитель Line Magnetic Audio LM-602CA",
+      "sources": [
+        "https://www.lm-audio.com/cn/lm-p209.html",
+        "https://xn--80aannlcfckh.xn--p1ai/product-brands/LINE_MAGNETIC_AUDIO/"
+      ],
+      "specsCount": 7,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "descLen": 653,
+      "enrichedAt": "2026-11-14T12:47:38Z"
+    },
+    "267430": {
+      "name": "Усилитель мощности Line Magnetic Audio LM-91A",
+      "sources": [
+        "https://www.lm-audio.com/en/lmadanduanshidanshengdaohoujig-p179.html"
+      ],
+      "specsCount": 7,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "descLen": 530,
+      "enrichedAt": "2026-11-14T12:47:38Z"
+    },
+    "267433": {
+      "name": "Усилитель мощности Line Magnetic Audio LM-86A",
+      "sources": [
+        "https://www.lm-audio.com/en/lmatuiwanshidanshengdaohoujigo-p180.html",
+        "https://www.lm-audio.com/cn/lmatuiwanshidanshengdaohoujigo-p80.html"
+      ],
+      "specsCount": 7,
+      "galleryCount": 4,
+      "photosAdded": 3,
+      "descLen": 514,
+      "enrichedAt": "2026-11-14T12:42:08Z"
+    },
+    "33442": {
+      "name": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
+      "sources": [
+        "https://www.advanceparis.com/en/product/dx-1",
+        "https://www.advance-paris.de/wp-content/uploads/2019/11/DX1-QuickStart-Int-1.pdf"
+      ],
+      "specsCount": 9,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 560,
+      "enrichedAt": "2026-11-14T12:46:57Z"
+    },
+    "263970": {
+      "name": "Межблочный кабель Acoustic Revive RCA-1.0 TripleC-FM (1.8 х 1.4) ( acoustic revive rca 1 0 triplec fm (1 8 1 4) )",
+      "sources": [
+        "https://av-corp.eu/product-eng-4918-Acoustic-Revive-RCA-1-0-triple-C-FM-1-8-x-1-4-mm.html",
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/analog-cables/acoustic-revive-rca-1-0triplec-fm-single-core-line-cablerca-1-0m"
+      ],
+      "specsCount": 6,
+      "galleryCount": 9,
+      "photosAdded": 0,
+      "descLen": 694,
+      "enrichedAt": "2026-11-14T12:48:04Z"
+    },
+    "263973": {
+      "name": "Межблочный кабель Acoustic Revive XLR-1.0 TripleC-FM (1.8 x 1.4) ( acoustic revive xlr 1 0 triplec fm (1 8 x 1 4) )",
+      "sources": [
+        "https://acousticrevive.bg/shop/acoustic-revive/finished-cables/analog-cables/acoustic-revive-line-1-0x-triplec-fm-xlr-1-0-triple-c-know-how-at-a-lower-price-version-xlr-line-cable-balanced"
+      ],
+      "specsCount": 6,
+      "galleryCount": 9,
+      "photosAdded": 0,
+      "descLen": 634,
+      "enrichedAt": "2026-11-14T12:48:04Z"
+    },
+    "263981": {
+      "name": "Акустический кабель Acoustic Revive SPC-REFERENCE II Triple C ( acoustic revive spc reference ii triple c )",
+      "sources": [
+        "https://www.playstereo.com/en/cavi-di-potenza/2895-acoustic-revive-spc-reference-ii-triplec-sp-cable-cut-sales.html",
+        "https://acousticrevive.jp/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 582,
+      "enrichedAt": "2026-11-14T12:47:18Z"
+    },
+    "263984": {
+      "name": "Акустический кабель Acoustic Revive SPC- Triple C (2&#215;4) ( acoustic revive spc triple c (2&#215;4) )",
+      "sources": [
+        "https://acousticrevive.jp/",
+        "https://www.positive-feedback.com/Issue77/acoustic_revive.htm"
+      ],
+      "specsCount": 4,
+      "galleryCount": 5,
+      "photosAdded": 0,
+      "descLen": 661,
+      "enrichedAt": "2026-11-14T12:48:04Z"
+    },
+    "264258": {
+      "name": "Усилитель для наушников Furutech ADL Cruise ( furutech adl cruise )",
+      "sources": [
+        "https://www.adl-av.com/products/headphone_amplifiers/cruise",
+        "https://www.futureshop.co.uk/adl-cruise-portable-headphone-amplifier"
+      ],
+      "specsCount": 8,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 537,
+      "enrichedAt": "2026-11-14T12:47:26Z"
+    },
+    "264346": {
+      "name": "Сетевой кабель Furutech Powerflux 18E ( furutech powerflux 18e )",
+      "sources": [
+        "https://furutech.com/product/powerflux-ncf/",
+        "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-English.pdf"
+      ],
+      "specsCount": 5,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 538,
+      "enrichedAt": "2026-11-14T12:47:28Z"
+    },
+    "264351": {
+      "name": "Сетевой кабель Furutech Power Reference III-N1 ( furutech power reference iii n1 )",
+      "sources": [
+        "https://furutech.com/product/power-reference-iii-for-jp/"
+      ],
+      "specsCount": 7,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 513,
+      "enrichedAt": "2026-11-14T12:47:29Z"
+    },
+    "264362": {
+      "name": "Межблочный кабель Furutech Lineflux NCF  (RCA) ( furutech lineflux ncf (rca) )",
+      "sources": [
+        "https://furutech.com/product/lineflux-ncf-rca/"
+      ],
+      "specsCount": 6,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 524,
+      "enrichedAt": "2026-11-14T12:47:31Z"
+    },
+    "264365": {
+      "name": "Межблочный кабель Furutech Audio Reference III-N1 ( furutech audio reference iii n1 )",
+      "sources": [
+        "https://furutech.com/product/audio-reference-iii-xlr/",
+        "https://furutech.com/ja/product/audio-reference-iii-rca/"
+      ],
+      "specsCount": 6,
+      "galleryCount": 5,
+      "photosAdded": 0,
+      "descLen": 614,
+      "enrichedAt": "2026-11-14T12:48:04Z"
+    },
+    "264366": {
+      "name": "Межблочный кабель Furutech Audio Reference III-N1 ( furutech audio reference iii n1 )",
+      "sources": [
+        "https://furutech.com/ja/product/audio-reference-iii-rca/"
+      ],
+      "specsCount": 7,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 506,
+      "enrichedAt": "2026-11-14T12:47:33Z"
+    },
+    "264388": {
+      "name": "Акустический кабель Furutech Speakerflux &#8211; 06 ( furutech speakerflux 06 )",
+      "sources": [
+        "https://furutech.com/product/speakerflux-ncf/",
+        "https://furutech.com/wp-content/uploads/2025/08/FURUTECH-Catalog-2025-English.pdf"
+      ],
+      "specsCount": 5,
+      "galleryCount": 5,
+      "photosAdded": 0,
+      "descLen": 610,
+      "enrichedAt": "2026-11-14T12:48:04Z"
+    },
+    "264389": {
+      "name": "Акустический кабель Furutech Speaker Reference III-N1 (04) ( furutech speaker reference iii n1 (04) )",
+      "sources": [
+        "https://furutech.com/ja/product/speaker-reference-iii/",
+        "https://furutech.com/product/speaker-reference-iii/"
+      ],
+      "specsCount": 7,
+      "galleryCount": 5,
+      "photosAdded": 4,
+      "descLen": 649,
+      "enrichedAt": "2026-11-14T12:47:36Z"
     }
   },
   "method": "Manufacturer pages preferred. Research via Exa + Tavily + dealer OEM galleries. Meager bar: desc≥500 chars, gallery≥4, structured specs. No invented watts."

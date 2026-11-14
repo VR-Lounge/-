@@ -1,1 +1,111 @@
-{"id":267430,"slug":"%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-line-magnetic-audio-lm-91a","name":"Усилитель мощности Line Magnetic Audio LM-91A","cat":"Усилители","cats":["Усилители звука одноканальные"],"price":1180000,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-line-magnetic-audio-lm-91a/","descriptionHtml":"<p>Mono power amplifier. Single ended 300B output tube. Однотактный ламповый моно усилитель мощности, чистый триод класс А. Юбилейная версия легендарных усилителей Western Electric (USA). 2 x 8 Ватт на канал. Фантастической звучание!</p>","shortHtml":"","descriptionText":"Mono power amplifier. Single ended 300B output tube. Однотактный ламповый моно усилитель мощности, чистый триод класс А. Юбилейная версия легендарных усилителей Western Electric (USA). 2 x 8 Ватт на канал. Фантастической звучание!","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/snimok_19.1000x1000w.png","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/snimok_19.1000x1000w-600x448.png","alt":"snimok_19.1000x1000w","local":"assets/from-live/products/605bca4c3b_snimok_19.1000x1000w.png"},{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/snimok-2_3.1000x1000w.png","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/snimok-2_3.1000x1000w-600x442.png","alt":"snimok-2_3.1000x1000w","local":"assets/from-live/products/570035e545_snimok-2_3.1000x1000w.png"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 267430,
+  "slug": "%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-line-magnetic-audio-lm-91a",
+  "name": "Усилитель мощности Line Magnetic Audio LM-91A",
+  "cat": "Усилители",
+  "cats": [
+    "Усилители звука одноканальные"
+  ],
+  "price": 1180000,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-line-magnetic-audio-lm-91a/",
+  "descriptionHtml": "<p>Line Magnetic LM-91A — мономощник single-ended 300B по мотивам WE91: 6 Вт RMS, выходы включая 600 Ом. Для высокочувствительных рупоров и камерного тракта, где ватты не заменяют характер триода. Стерео — только парой моноблоков.</p>\n<ul><li>6 Вт RMS (моно)</li><li>Single-ended 300B</li><li>Лампы: 310 ×2 / 300B ×1 / 5U4 ×1</li><li>4 / 8 / 16 / 600 Ом</li><li>20 Гц–20 кГц (1 Вт)</li><li>10,3 кг · 215 × 225 × 460 мм</li></ul>\n<aside><p><strong>SE vs PP.</strong> LM-91A — single-ended; LM-86A — push-pull на 14 Вт. Разная мощность и подача; не взаимозаменяемые «просто 300B». HITL: чувствительность АС клиента.</p></aside>",
+  "shortHtml": "",
+  "descriptionText": "Line Magnetic LM-91A — мономощник single-ended 300B по мотивам WE91: 6 Вт RMS, выходы включая 600 Ом. Для высокочувствительных рупоров и камерного тракта, где ватты не заменяют характер триода. Стерео — только парой моноблоков.\n\n 6 Вт RMS (моно)\n Single-ended 300B\n Лампы: 310 ×2 / 300B ×1 / 5U4 ×1\n 4 / 8 / 16 / 600 Ом\n 20 Гц–20 кГц (1 Вт)\n 10,3 кг · 215 × 225 × 460 мм\n\n SE vs PP. LM-91A — single-ended; LM-86A — push-pull на 14 Вт. Разная мощность и подача; не взаимозаменяемые «просто 300B». HITL: чувствительность АС клиента.",
+  "specs": [
+    {
+      "label": "Конфигурация",
+      "value": "Моно; 300B single-ended",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Мощность",
+      "value": "6 Вт RMS",
+      "source": "manufacturer"
+    },
+    {
+      "label": "АЧХ",
+      "value": "20 Гц–20 кГц (1 Вт)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Rвх",
+      "value": "100 кОм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Rвых",
+      "value": "4 / 8 / 16 / 600 Ом",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Лампы",
+      "value": "310 ×2; 300B ×1; 5U4 ×1",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Габариты / масса",
+      "value": "215 × 225 × 460 мм; 10,3 кг",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://www.lm-audio.com/uploads/admin/1/61adb7ad98859.jpg",
+      "thumb": "https://www.lm-audio.com/uploads/admin/1/61adb7ad98859.jpg",
+      "alt": "Усилитель мощности Line Magnetic Audio LM-91A",
+      "local": "assets/enriched/267430/1d643b361f_1.jpg",
+      "enriched": true,
+      "attribution": "www.lm-audio.com",
+      "bytes": 224422
+    },
+    {
+      "src": "https://www.lm-audio.com/uploads/admin/1/61adb7b722ba3.jpg",
+      "thumb": "https://www.lm-audio.com/uploads/admin/1/61adb7b722ba3.jpg",
+      "alt": "Усилитель мощности Line Magnetic Audio LM-91A",
+      "local": "assets/enriched/267430/b5ad6c015f_2.jpg",
+      "enriched": true,
+      "attribution": "www.lm-audio.com",
+      "bytes": 253388
+    },
+    {
+      "src": "https://www.lm-audio.com/uploads/admin/1/61adb7bd2ea31.jpg",
+      "thumb": "https://www.lm-audio.com/uploads/admin/1/61adb7bd2ea31.jpg",
+      "alt": "Усилитель мощности Line Magnetic Audio LM-91A",
+      "local": "assets/enriched/267430/df2b9eba28_3.jpg",
+      "enriched": true,
+      "attribution": "www.lm-audio.com",
+      "bytes": 232759
+    },
+    {
+      "src": "https://www.lm-audio.com/uploads/admin/1/61adb92eb5263.jpg",
+      "thumb": "https://www.lm-audio.com/uploads/admin/1/61adb92eb5263.jpg",
+      "alt": "Усилитель мощности Line Magnetic Audio LM-91A",
+      "local": "assets/enriched/267430/01f4abfd0f_4.jpg",
+      "enriched": true,
+      "attribution": "www.lm-audio.com",
+      "bytes": 226960
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/snimok_19.1000x1000w.png",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/snimok_19.1000x1000w-600x448.png",
+      "alt": "snimok_19.1000x1000w",
+      "local": "assets/from-live/products/605bca4c3b_snimok_19.1000x1000w.png"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/snimok-2_3.1000x1000w.png",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/snimok-2_3.1000x1000w-600x442.png",
+      "alt": "snimok-2_3.1000x1000w",
+      "local": "assets/from-live/products/570035e545_snimok-2_3.1000x1000w.png"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.lm-audio.com/en/lmadanduanshidanshengdaohoujig-p179.html"
+  ],
+  "enrichedAt": "2026-11-14T12:47:38Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w2-2026-11"
+}

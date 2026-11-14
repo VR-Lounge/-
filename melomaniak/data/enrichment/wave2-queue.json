@@ -1,856 +1,1190 @@
-[
-  {
-    "id": 270473,
-    "name": "Виниловый проигрыватель Transrotor ZET 3",
-    "price": 962900,
-    "gal": 4,
-    "cat": "Источники"
-  },
-  {
-    "id": 269030,
-    "name": "AV-процессор Emotiva RMC-1 + DIRAC",
-    "price": 779990,
-    "gal": 18,
-    "cat": "Ресиверы"
-  },
-  {
-    "id": 269017,
-    "name": "AV-процессор Emotiva RMC-1L + DIRAC",
-    "price": 669990,
-    "gal": 12,
-    "cat": "Ресиверы"
-  },
-  {
-    "id": 270454,
-    "name": "Виниловый проигрыватель Transrotor Dark Star",
-    "price": 608900,
-    "gal": 6,
-    "cat": "Источники"
-  },
-  {
-    "id": 269006,
-    "name": "AV-процессор Emotiva XMC-2 + DIRAC",
-    "price": 519990,
-    "gal": 10,
-    "cat": "Ресиверы"
-  },
-  {
-    "id": 273194,
-    "name": "AV-процессор Marantz AV8805A",
-    "price": 459900,
-    "gal": 5,
-    "cat": "Ресиверы"
-  },
-  {
-    "id": 269782,
-    "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
-    "price": 449990,
-    "gal": 3,
-    "cat": "Усилители"
-  },
-  {
-    "id": 273696,
-    "name": "Многоканальный усилитель мощности Rotel RMB-1587MKII",
-    "price": 439990,
-    "gal": 9,
-    "cat": "Усилители"
-  },
-  {
-    "id": 273713,
-    "name": "Многоканальный усилитель мощности Rotel RMB-1585MKII",
-    "price": 399990,
-    "gal": 9,
-    "cat": "Усилители"
-  },
-  {
-    "id": 272271,
-    "name": "Портативный Hi-Fi-плеер Shanling M9 Plus",
-    "price": 399990,
-    "gal": 14,
-    "cat": "Источники"
-  },
-  {
-    "id": 270163,
-    "name": "Стереоусилитель MOON ACE All-in-One",
-    "price": 399900,
-    "gal": 3,
-    "cat": "Усилители"
-  },
-  {
-    "id": 272551,
-    "name": "Виниловый проигрыватель Clearaudio Concept MC/S",
-    "price": 388900,
-    "gal": 6,
-    "cat": "Источники"
-  },
-  {
-    "id": 270152,
-    "name": "Сетевой проигрыватель MOON 280D MiND 2",
-    "price": 375900,
-    "gal": 3,
-    "cat": "Источники"
-  },
-  {
-    "id": 270208,
-    "name": "Стереоусилитель Naim Nait 50",
-    "price": 299000,
-    "gal": 4,
-    "cat": "Усилители"
-  },
-  {
-    "id": 269763,
-    "name": "Стереоусилитель мощности Parasound 2250 v2",
-    "price": 259990,
-    "gal": 4,
-    "cat": "Усилители"
-  },
-  {
-    "id": 271191,
-    "name": "Распределитель питания Nordost QBase QB8 Mark II",
-    "price": 254990,
-    "gal": 3,
-    "cat": "Другое"
-  },
-  {
-    "id": 270171,
-    "name": "Стереоусилитель MOON 250i V2 Black",
-    "price": 249900,
-    "gal": 6,
-    "cat": "Усилители"
-  },
-  {
-    "id": 269858,
-    "name": "Проектор BenQ TK700",
-    "price": 233000,
-    "gal": 6,
-    "cat": "Видео"
-  },
-  {
-    "id": 271014,
-    "name": "Стереоусилитель мощности Matrix Audio Element P2",
-    "price": 219990,
-    "gal": 7,
-    "cat": "Усилители"
-  },
-  {
-    "id": 269327,
-    "name": "Активная полочная акустика Klipsch The Nines McLaren",
-    "price": 219990,
-    "gal": 13,
-    "cat": "Акустика"
-  },
-  {
-    "id": 272017,
-    "name": "Беспроводная Hi-Fi-акустика iFi audio Aurora",
-    "price": 215286,
-    "gal": 11,
-    "cat": "Акустика"
-  },
-  {
-    "id": 268996,
-    "name": "AV-процессор Emotiva MC1",
-    "price": 179990,
-    "gal": 9,
-    "cat": "Ресиверы"
-  },
-  {
-    "id": 272205,
-    "name": "CD-проигрыватель Shanling SCD 1.3",
-    "price": 179000,
-    "gal": 7,
-    "cat": "Источники"
-  },
-  {
-    "id": 271974,
-    "name": "Сетевой фильтр Isol-8 Powerline Extreme",
-    "price": 170900,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 269881,
-    "name": "Беспроводная Hi-Fi-акустика Cambridge Audio Evo One",
-    "price": 159990,
-    "gal": 15,
-    "cat": "Акустика"
-  },
-  {
-    "id": 270397,
-    "name": "Стереоусилитель мощности Quad 303",
-    "price": 149990,
-    "gal": 13,
-    "cat": "Усилители"
-  },
-  {
-    "id": 270380,
-    "name": "Предварительный усилитель Quad 33",
-    "price": 149990,
-    "gal": 16,
-    "cat": "Усилители"
-  },
-  {
-    "id": 269184,
-    "name": "Активный сабвуфер Klipsch RP 1200 SW",
-    "price": 144990,
-    "gal": 17,
-    "cat": "Акустика"
-  },
-  {
-    "id": 273393,
-    "name": "Полочная акустика Mission 700 with Stands",
-    "price": 144990,
-    "gal": 7,
-    "cat": "Акустика"
-  },
-  {
-    "id": 264102,
-    "name": "Стабилизатор Audio Replas OPS-1 HR ( audio replas ops 1 hr )",
-    "price": 140250,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 269743,
-    "name": "Предусилитель Parasound 200 Pre",
-    "price": 139990,
-    "gal": 4,
-    "cat": "Усилители"
-  },
-  {
-    "id": 270805,
-    "name": "Сетевой проигрыватель Arcam RADIA ST5",
-    "price": 139990,
-    "gal": 5,
-    "cat": "Источники"
-  },
-  {
-    "id": 268782,
-    "name": "Моноусилитель мощности Emotiva XPA-HC1",
-    "price": 139990,
-    "gal": 8,
-    "cat": "Усилители"
-  },
-  {
-    "id": 269753,
-    "name": "Стереоусилитель мощности Parasound 275 v2",
-    "price": 134990,
-    "gal": 4,
-    "cat": "Усилители"
-  },
-  {
-    "id": 273494,
-    "name": "Саундбар Polk Audio Magnifi Max AX SR",
-    "price": 119990,
-    "gal": 16,
-    "cat": "Другое"
-  },
-  {
-    "id": 272310,
-    "name": "Стационарный усилитель для наушников Shanling EH3",
-    "price": 119000,
-    "gal": 6,
-    "cat": "Усилители"
-  },
-  {
-    "id": 270017,
-    "name": "Сетевой проигрыватель Cambridge Audio CXN100",
-    "price": 118466,
-    "gal": 15,
-    "cat": "Источники"
-  },
-  {
-    "id": 270782,
-    "name": "CD-проигрыватель Arcam RADIA CD5",
-    "price": 114990,
-    "gal": 3,
-    "cat": "Источники"
-  },
-  {
-    "id": 272121,
-    "name": "Сетевой фильтр iFi audio Power Station",
-    "price": 107696,
-    "gal": 8,
-    "cat": "Другое"
-  },
-  {
-    "id": 270702,
-    "name": "Полочная акустика Wharfedale Super Denton",
-    "price": 106990,
-    "gal": 6,
-    "cat": "Акустика"
-  },
-  {
-    "id": 271269,
-    "name": "Кабель сетевой готовый Nordost Red Dawn 16 Amp C19",
-    "price": 104990,
-    "gal": 2,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264123,
-    "name": "Сетевые пластины Audio Replas SCB-4SZ ( audio replas scb 4sz )",
-    "price": 103700,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 268750,
-    "name": "Предусилитель Emotiva PT-2",
-    "price": 99990,
-    "gal": 9,
-    "cat": "Усилители"
-  },
-  {
-    "id": 269673,
-    "name": "AV-ресивер Onkyo TX-NR6100",
-    "price": 97990,
-    "gal": 7,
-    "cat": "Ресиверы"
-  },
-  {
-    "id": 273136,
-    "name": "AV-ресивер Denon AVR-X1800H",
-    "price": 89990,
-    "gal": 6,
-    "cat": "Ресиверы"
-  },
-  {
-    "id": 269739,
-    "name": "Предусилитель Parasound Zpre3",
-    "price": 89990,
-    "gal": 3,
-    "cat": "Усилители"
-  },
-  {
-    "id": 264122,
-    "name": "Сетевые пластины Audio Replas SCB-2SZ ( audio replas scb 2sz )",
-    "price": 86400,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 272864,
-    "name": "Полочная акустика B 607 S3",
-    "price": 82990,
-    "gal": 10,
-    "cat": "Акустика"
-  },
-  {
-    "id": 273082,
-    "name": "AV-ресивер Denon AVR-S670H",
-    "price": 79990,
-    "gal": 13,
-    "cat": "Ресиверы"
-  },
-  {
-    "id": 270156,
-    "name": "Фонокорректор MOON 110LP v2",
-    "price": 79900,
-    "gal": 6,
-    "cat": "Усилители"
-  },
-  {
-    "id": 272195,
-    "name": "Стереоусилитель Shanling CA80",
-    "price": 74990,
-    "gal": 9,
-    "cat": "Усилители"
-  },
-  {
-    "id": 272851,
-    "name": "Центральный громкоговоритель B HTM6 S3",
-    "price": 73990,
-    "gal": 6,
-    "cat": "Другое"
-  },
-  {
-    "id": 269167,
-    "name": "Активный сабвуфер Klipsch R-121SW",
-    "price": 69990,
-    "gal": 16,
-    "cat": "Акустика"
-  },
-  {
-    "id": 270334,
-    "name": "Центральный громкоговоритель Quad S-C2",
-    "price": 68990,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 270132,
-    "name": "",
-    "price": 67990,
-    "gal": 4,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264078,
-    "name": "Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr )",
-    "price": 67500,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 272075,
-    "name": "Портативный усилитель для наушников iFi audio Go Bar Kensei",
-    "price": 64554,
-    "gal": 5,
-    "cat": "Усилители"
-  },
-  {
-    "id": 272243,
-    "name": "Портативный Hi-Fi-плеер Shanling M5 Ultra",
-    "price": 59999,
-    "gal": 9,
-    "cat": "Источники"
-  },
-  {
-    "id": 273467,
-    "name": "Саундбар Polk Audio MagniFi Mini AX",
-    "price": 59990,
-    "gal": 26,
-    "cat": "Другое"
-  },
-  {
-    "id": 271431,
-    "name": "Стереоусилитель IOTAVX MA3",
-    "price": 59625,
-    "gal": 7,
-    "cat": "Усилители"
-  },
-  {
-    "id": 269153,
-    "name": "Активный сабвуфер Klipsch R-101SW",
-    "price": 57990,
-    "gal": 13,
-    "cat": "Акустика"
-  },
-  {
-    "id": 273106,
-    "name": "AV-ресивер Denon AVR-X580BT",
-    "price": 56900,
-    "gal": 4,
-    "cat": "Ресиверы"
-  },
-  {
-    "id": 269995,
-    "name": "Сетевой проигрыватель Cambridge Audio AXN10",
-    "price": 54990,
-    "gal": 9,
-    "cat": "Источники"
-  },
-  {
-    "id": 272213,
-    "name": "CD-проигрыватель Shanling EC mini",
-    "price": 54990,
-    "gal": 9,
-    "cat": "Источники"
-  },
-  {
-    "id": 270005,
-    "name": "Сетевой проигрыватель Cambridge Audio MXN10",
-    "price": 54990,
-    "gal": 11,
-    "cat": "Источники"
-  },
-  {
-    "id": 272914,
-    "name": "Беспроводные наушники B PX7 S2e",
-    "price": 53990,
-    "gal": 24,
-    "cat": "Наушники"
-  },
-  {
-    "id": 269350,
-    "name": "Беспроводная Hi-Fi-акустика Klipsch The Three Plus",
-    "price": 52990,
-    "gal": 10,
-    "cat": "Акустика"
-  },
-  {
-    "id": 272059,
-    "name": "Внешний ЦАП iFi audio ZEN One Studio",
-    "price": 50138,
-    "gal": 3,
-    "cat": "ЦАПы"
-  },
-  {
-    "id": 272300,
-    "name": "Портативный усилитель для наушников Shanling H5",
-    "price": 49990,
-    "gal": 9,
-    "cat": "Усилители"
-  },
-  {
-    "id": 268791,
-    "name": "Стереоусилитель мощности Emotiva A2m",
-    "price": 49990,
-    "gal": 9,
-    "cat": "Усилители"
-  },
-  {
-    "id": 274166,
-    "name": "Беспроводная Hi-Fi-акустика Loewe Klang mr1",
-    "price": 49900,
-    "gal": 6,
-    "cat": "Акустика"
-  },
-  {
-    "id": 272063,
-    "name": "Портативный усилитель для наушников iFi audio Go Bar",
-    "price": 49170,
-    "gal": 11,
-    "cat": "Усилители"
-  },
-  {
-    "id": 272812,
-    "name": "Кабель HDMI AudioQuest Forest Active PVC",
-    "price": 43490,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 272130,
-    "name": "Сетевой фильтр iFi audio iFi iPurifier LAN Pro",
-    "price": 43036,
-    "gal": 4,
-    "cat": "Другое"
-  },
-  {
-    "id": 272816,
-    "name": "Кабель межблочный аналоговый RCA AudioQuest Yosemite",
-    "price": 41990,
-    "gal": 5,
-    "cat": "Кабели"
-  },
-  {
-    "id": 272045,
-    "name": "Внешний ЦАП iFi audio ZEN Blue V3",
-    "price": 41658,
-    "gal": 13,
-    "cat": "ЦАПы"
-  },
-  {
-    "id": 270493,
-    "name": "Кабель USB Van den Hul Ultimate",
-    "price": 41390,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264074,
-    "name": "Платформа под шипы Audio Replas OPT-100HG/FLAT-PL HR ( audio replas opt 100hg flat pl hr )",
-    "price": 41000,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 269341,
-    "name": "Беспроводная Hi-Fi-акустика Klipsch The One Plus",
-    "price": 39990,
-    "gal": 8,
-    "cat": "Акустика"
-  },
-  {
-    "id": 273447,
-    "name": "Саундбар Polk Audio Signa S3",
-    "price": 39990,
-    "gal": 19,
-    "cat": "Другое"
-  },
-  {
-    "id": 271252,
-    "name": "Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA",
-    "price": 39990,
-    "gal": 2,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269853,
-    "name": "Кабель сетевой готовый Wireworld Electra 7",
-    "price": 33800,
-    "gal": 4,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264047,
-    "name": "Фоно коннектор Acoustic Revive Phone Jack (Monaural) [RPJ-1MN] ( acoustic revive phone jack (monaural) [rpj 1mn] )",
-    "price": 32300,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 264046,
-    "name": "Фоно коннектор Acoustic Revive Phone Jack (Stereo) [RPJ-1ST] ( acoustic revive phone jack (stereo) [rpj 1st] )",
-    "price": 31540,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 270588,
-    "name": "Фонокабель Van den Hul D-502 Hybrid RCA-RCA",
-    "price": 30590,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264008,
-    "name": "USB кабель Acoustic Revive RUT-1 ( usb acoustic revive rut 1 )",
-    "price": 27720,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269848,
-    "name": "Кабель сетевой готовый Wireworld Aurora 7",
-    "price": 26600,
-    "gal": 4,
-    "cat": "Кабели"
-  },
-  {
-    "id": 270583,
-    "name": "Фонокабель Van den Hul D-501 Hybrid RCA-RCA",
-    "price": 26290,
-    "gal": 4,
-    "cat": "Кабели"
-  },
-  {
-    "id": 272810,
-    "name": "Кабель HDMI AudioQuest Vodka 48 eARC Priority Braid",
-    "price": 25590,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269806,
-    "name": "Кабель акустический готовый QED XT40i Banana",
-    "price": 25300,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 270554,
-    "name": "Кабель межблочный аналоговый RCA Van den Hul The Tide",
-    "price": 23090,
-    "gal": 2,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269814,
-    "name": "Кабель межблочный аналоговый RCA QED Reference 40",
-    "price": 22000,
-    "gal": 2,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269825,
-    "name": "Кабель акустический готовый Wireworld Helicon 16/2 OFC",
-    "price": 21100,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269823,
-    "name": "Сетевой фильтр Wireworld MATRIX2 Rack Mount Strip",
-    "price": 20000,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 270525,
-    "name": "Кабель акустический готовый Van den Hul The Snowline Banana plus",
-    "price": 19490,
-    "gal": 4,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269819,
-    "name": "Кабель для сабвуфера QED Reference Subwoofer 40",
-    "price": 18300,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269844,
-    "name": "Кабель сетевой готовый Wireworld Stratus 7",
-    "price": 18300,
-    "gal": 3,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264419,
-    "name": "Цифровой кабель Furutech FD-4418 ( furutech fd 4418 )",
-    "price": 16827,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264045,
-    "name": "Разьём для наушников Acoustic Revive Headphone Plug for SHURE ( acoustic revive headphone plug for shure )",
-    "price": 15960,
-    "gal": 1,
-    "cat": "Усилители"
-  },
-  {
-    "id": 270520,
-    "name": "Кабель акустический готовый Van den Hul The Skyline Banana plus",
-    "price": 14890,
-    "gal": 4,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269804,
-    "name": "Кабель акустический готовый QED XT25 Banana",
-    "price": 13900,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264321,
-    "name": "Коннектор Furutech FP-202(R) ( furutech fp 202(r) )",
-    "price": 12848,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 269821,
-    "name": "Кабель оптический QED Performance 3 m",
-    "price": 12400,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269808,
-    "name": "Кабель акустический в нарезку QED Genesis Silver Spiral",
-    "price": 12132,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269839,
-    "name": "Кабель межблочный аналоговый RCA Wireworld Luna 8",
-    "price": 11600,
-    "gal": 4,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264322,
-    "name": "Коннектор Furutech FP-200B(R) ( furutech fp 200b(r) )",
-    "price": 11340,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 264320,
-    "name": "Коннектор Furutech FP-202(G) ( furutech fp 202(g) )",
-    "price": 11004,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 269817,
-    "name": "Кабель для сабвуфера QED Performance Subwoofer",
-    "price": 10100,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269812,
-    "name": "Кабель межблочный аналоговый RCA QED 40i Performance",
-    "price": 10000,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264323,
-    "name": "Коннектор Furutech FP-200B(G) ( furutech fp 200b(g) )",
-    "price": 9450,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 264317,
-    "name": "Спайд Furutech FP-201(G) ( furutech fp 201(g) )",
-    "price": 9009,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 269834,
-    "name": "Кабель оптический Wireworld Nova Toslink",
-    "price": 7800,
-    "gal": 2,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269830,
-    "name": "Кабель для сабвуфера Wireworld Luna 8 Mono",
-    "price": 7400,
-    "gal": 3,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269810,
-    "name": "Кабель межблочный аналоговый RCA QED Performance",
-    "price": 7000,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269837,
-    "name": "Кабель цифровой коаксиальный Wireworld Chroma 8 75-ohm",
-    "price": 6700,
-    "gal": 1,
-    "cat": "Кабели"
-  },
-  {
-    "id": 269827,
-    "name": "Кабель акустический в нарезку Wireworld Oasis 8",
-    "price": 5980,
-    "gal": 2,
-    "cat": "Кабели"
-  },
-  {
-    "id": 264055,
-    "name": "Абсорбер Acoustic Revive PSA-100 ( acoustic revive psa 100 )",
-    "price": 5800,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 264315,
-    "name": "Спайд Furutech FP-203(G) ( furutech fp 203(g) )",
-    "price": 4809,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 264318,
-    "name": "Спайд Furutech FP-201(R) ( furutech fp 201(r) )",
-    "price": 2310,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 264316,
-    "name": "Спайд Furutech FP-203(R) ( furutech fp 203(r) )",
-    "price": 1260,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 264558,
-    "name": "Разъём SAEC  MM-803 ( ъ saec mm 803 )",
-    "price": 0,
-    "gal": 1,
-    "cat": "Другое"
-  },
-  {
-    "id": 264559,
-    "name": "Разъём SAEC  MR-803 ( ъ saec mr 803 )",
-    "price": 0,
-    "gal": 1,
-    "cat": "Другое"
-  }
-]
+{
+  "updatedAt": "2026-11-14T12:50:23Z",
+  "meagerCount": 1329,
+  "wave": "meager-w2-2026-11",
+  "note": "After wave2 batches 05-09: Audionet/AirTight/LM/SPEC/MOON/Paradigm + Furutech Ref III/Flux + AR Absolute/TripleC",
+  "priorityStubsElectronics": [
+    {
+      "id": 26638,
+      "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
+      "slug": "predysilitel_Audio_Physic_AP_Pre_",
+      "cat": "Усилители",
+      "price": 731250,
+      "descLen": 42,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:42",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_Audio_Physic_AP_Pre_/",
+      "priority": 2131
+    },
+    {
+      "id": 262098,
+      "name": "CD проигрыватель Line Magnetic Audio LM 205 CD ( cd line magnetic audio lm 205 cd )",
+      "slug": "cd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-205-cd",
+      "cat": "Источники",
+      "price": 135000,
+      "descLen": 321,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:321",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/cd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-205-cd/",
+      "priority": 1535
+    },
+    {
+      "id": 264043,
+      "name": "Коннектор для наушников Acoustic Revive HD-800 PLUG ( acoustic revive hd 800 plug )",
+      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-acoustic-revive-hd-800-plug",
+      "cat": "Усилители",
+      "price": 36100,
+      "descLen": 62,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:62",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-acoustic-revive-hd-800-plug/",
+      "priority": 1436
+    },
+    {
+      "id": 264042,
+      "name": "Коннектор для наушников Acoustic Revive HD 650 PLUG ( acoustic revive hd 650 plug )",
+      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-acoustic-revive-hd-650-plug",
+      "cat": "Усилители",
+      "price": 22420,
+      "descLen": 62,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:62",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-acoustic-revive-hd-650-plug/",
+      "priority": 1422
+    },
+    {
+      "id": 264044,
+      "name": "Коннектор для наушников Acoustic Revive UltrasoneSony PLUG ( acoustic revive ultrasonesony plug )",
+      "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-acoustic-revive-ultrasonesony-plug",
+      "cat": "Усилители",
+      "price": 11400,
+      "descLen": 52,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:52",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-acoustic-revive-ultrasonesony-plug/",
+      "priority": 1411
+    },
+    {
+      "id": 42916,
+      "name": "47 Labs RST-38 ( 47 labs rst 38 )",
+      "slug": "47-labs-rst-38",
+      "cat": "Ресиверы",
+      "price": 0,
+      "descLen": 179,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:179",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/47-labs-rst-38/",
+      "priority": 1400
+    },
+    {
+      "id": 269017,
+      "name": "AV-процессор Emotiva RMC-1L + DIRAC",
+      "slug": "5a0558bec17781d5e97492d33bbd4106",
+      "cat": "Ресиверы",
+      "price": 669990,
+      "descLen": 341,
+      "gallery": 12,
+      "specs": 7,
+      "enriched": true,
+      "reasons": [
+        "desc:341"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/5a0558bec17781d5e97492d33bbd4106/",
+      "priority": -31
+    },
+    {
+      "id": 270454,
+      "name": "Виниловый проигрыватель Transrotor Dark Star",
+      "slug": "23cc1cc91eb9211d522e4b47ad1f835c",
+      "cat": "Источники",
+      "price": 608900,
+      "descLen": 266,
+      "gallery": 6,
+      "specs": 3,
+      "enriched": true,
+      "reasons": [
+        "desc:266"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/23cc1cc91eb9211d522e4b47ad1f835c/",
+      "priority": -92
+    },
+    {
+      "id": 269006,
+      "name": "AV-процессор Emotiva XMC-2 + DIRAC",
+      "slug": "be70ec140ef1e55553de386297a0f735",
+      "cat": "Ресиверы",
+      "price": 519990,
+      "descLen": 336,
+      "gallery": 10,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:336"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/be70ec140ef1e55553de386297a0f735/",
+      "priority": -181
+    },
+    {
+      "id": 264045,
+      "name": "Разьём для наушников Acoustic Revive Headphone Plug for SHURE ( acoustic revive headphone plug for shure )",
+      "slug": "%d1%80%d0%b0%d0%b7%d1%8c%d1%91%d0%bc-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-acoustic-revive-headphone-plug-for-shure",
+      "cat": "Усилители",
+      "price": 15960,
+      "descLen": 241,
+      "gallery": 1,
+      "specs": 2,
+      "enriched": true,
+      "reasons": [
+        "desc:241",
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%80%d0%b0%d0%b7%d1%8c%d1%91%d0%bc-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-acoustic-revive-headphone-plug-for-shure/",
+      "priority": -285
+    },
+    {
+      "id": 273713,
+      "name": "Многоканальный усилитель мощности Rotel RMB-1585MKII",
+      "slug": "7f0e39c3205d7c9eb2f213a88a6dc522",
+      "cat": "Усилители",
+      "price": 399990,
+      "descLen": 324,
+      "gallery": 9,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:324"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/7f0e39c3205d7c9eb2f213a88a6dc522/",
+      "priority": -301
+    },
+    {
+      "id": 270171,
+      "name": "Стереоусилитель MOON 250i V2 Black",
+      "slug": "267dabd83eccb9de4f4fa436cd0aeda4",
+      "cat": "Усилители",
+      "price": 249900,
+      "descLen": 246,
+      "gallery": 6,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:246"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/267dabd83eccb9de4f4fa436cd0aeda4/",
+      "priority": -451
+    },
+    {
+      "id": 271014,
+      "name": "Стереоусилитель мощности Matrix Audio Element P2",
+      "slug": "ceab01017f699f87af1f918b1a0e3a1c",
+      "cat": "Усилители",
+      "price": 219990,
+      "descLen": 244,
+      "gallery": 7,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:244"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ceab01017f699f87af1f918b1a0e3a1c/",
+      "priority": -481
+    },
+    {
+      "id": 268996,
+      "name": "AV-процессор Emotiva MC1",
+      "slug": "ad2def1ba86c52938c3404181115adde",
+      "cat": "Ресиверы",
+      "price": 179990,
+      "descLen": 263,
+      "gallery": 9,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:263"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ad2def1ba86c52938c3404181115adde/",
+      "priority": -521
+    },
+    {
+      "id": 272205,
+      "name": "CD-проигрыватель Shanling SCD 1.3",
+      "slug": "3fb1dbe8b233077e53d789a9effddd18",
+      "cat": "Источники",
+      "price": 179000,
+      "descLen": 262,
+      "gallery": 7,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:262"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/3fb1dbe8b233077e53d789a9effddd18/",
+      "priority": -521
+    },
+    {
+      "id": 270380,
+      "name": "Предварительный усилитель Quad 33",
+      "slug": "25ab39adfff7c39c2b13b0044fd610a8",
+      "cat": "Усилители",
+      "price": 149990,
+      "descLen": 343,
+      "gallery": 16,
+      "specs": 6,
+      "enriched": true,
+      "reasons": [
+        "desc:343"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/25ab39adfff7c39c2b13b0044fd610a8/",
+      "priority": -551
+    },
+    {
+      "id": 270397,
+      "name": "Стереоусилитель мощности Quad 303",
+      "slug": "980c5996030e187e5d7735694c09ec8a",
+      "cat": "Усилители",
+      "price": 149990,
+      "descLen": 339,
+      "gallery": 13,
+      "specs": 6,
+      "enriched": true,
+      "reasons": [
+        "desc:339"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/980c5996030e187e5d7735694c09ec8a/",
+      "priority": -551
+    },
+    {
+      "id": 268721,
+      "name": "CD-проигрыватель Emotiva ERC-4",
+      "slug": "ede1a34b338da33d2fea9f20c22c79c3",
+      "cat": "Источники",
+      "price": 119990,
+      "descLen": 228,
+      "gallery": 10,
+      "specs": 3,
+      "enriched": true,
+      "reasons": [
+        "desc:228"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/ede1a34b338da33d2fea9f20c22c79c3/",
+      "priority": -581
+    },
+    {
+      "id": 273136,
+      "name": "AV-ресивер Denon AVR-X1800H",
+      "slug": "64d2b16d246103e315e74f4e62b6926c",
+      "cat": "Ресиверы",
+      "price": 89990,
+      "descLen": 326,
+      "gallery": 6,
+      "specs": 7,
+      "enriched": true,
+      "reasons": [
+        "desc:326"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/64d2b16d246103e315e74f4e62b6926c/",
+      "priority": -611
+    },
+    {
+      "id": 273082,
+      "name": "AV-ресивер Denon AVR-S670H",
+      "slug": "cf424a3183a989b989ec29a27fb0f8f7",
+      "cat": "Ресиверы",
+      "price": 79990,
+      "descLen": 280,
+      "gallery": 13,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:280"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/cf424a3183a989b989ec29a27fb0f8f7/",
+      "priority": -621
+    },
+    {
+      "id": 270156,
+      "name": "Фонокорректор MOON 110LP v2",
+      "slug": "831995da25fa36c8731a90a82e01deb7",
+      "cat": "Усилители",
+      "price": 79900,
+      "descLen": 328,
+      "gallery": 6,
+      "specs": 8,
+      "enriched": true,
+      "reasons": [
+        "desc:328"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/831995da25fa36c8731a90a82e01deb7/",
+      "priority": -621
+    },
+    {
+      "id": 272075,
+      "name": "Портативный усилитель для наушников iFi audio Go Bar Kensei",
+      "slug": "c66c60c835206368b53cd9e853a65223",
+      "cat": "Усилители",
+      "price": 64554,
+      "descLen": 263,
+      "gallery": 5,
+      "specs": 4,
+      "enriched": true,
+      "reasons": [
+        "desc:263"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/c66c60c835206368b53cd9e853a65223/",
+      "priority": -636
+    },
+    {
+      "id": 273106,
+      "name": "AV-ресивер Denon AVR-X580BT",
+      "slug": "cee62231e0cba2ebf07f95ed84429c32",
+      "cat": "Ресиверы",
+      "price": 56900,
+      "descLen": 283,
+      "gallery": 4,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:283"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/cee62231e0cba2ebf07f95ed84429c32/",
+      "priority": -644
+    },
+    {
+      "id": 272213,
+      "name": "CD-проигрыватель Shanling EC mini",
+      "slug": "092e667a7ae966867fced882dce6e58f",
+      "cat": "Источники",
+      "price": 54990,
+      "descLen": 184,
+      "gallery": 9,
+      "specs": 3,
+      "enriched": true,
+      "reasons": [
+        "desc:184"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/092e667a7ae966867fced882dce6e58f/",
+      "priority": -646
+    },
+    {
+      "id": 268791,
+      "name": "Стереоусилитель мощности Emotiva A2m",
+      "slug": "d6a91515749843eb1d2419dc1a25cf15",
+      "cat": "Усилители",
+      "price": 49990,
+      "descLen": 316,
+      "gallery": 9,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:316"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/d6a91515749843eb1d2419dc1a25cf15/",
+      "priority": -651
+    },
+    {
+      "id": 272300,
+      "name": "Портативный усилитель для наушников Shanling H5",
+      "slug": "9e5b104654fdf51b3a35a2c41f57a203",
+      "cat": "Усилители",
+      "price": 49990,
+      "descLen": 309,
+      "gallery": 9,
+      "specs": 6,
+      "enriched": true,
+      "reasons": [
+        "desc:309"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/9e5b104654fdf51b3a35a2c41f57a203/",
+      "priority": -651
+    },
+    {
+      "id": 272063,
+      "name": "Портативный усилитель для наушников iFi audio Go Bar",
+      "slug": "87d30e367da6d0b66b5aa2cfccad1764",
+      "cat": "Усилители",
+      "price": 49170,
+      "descLen": 222,
+      "gallery": 11,
+      "specs": 5,
+      "enriched": true,
+      "reasons": [
+        "desc:222"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/87d30e367da6d0b66b5aa2cfccad1764/",
+      "priority": -651
+    },
+    {
+      "id": 272045,
+      "name": "Внешний ЦАП iFi audio ZEN Blue V3",
+      "slug": "a16f262f3a46cf224f1efdd0be3c14bc",
+      "cat": "ЦАПы",
+      "price": 41658,
+      "descLen": 299,
+      "gallery": 13,
+      "specs": 4,
+      "enriched": true,
+      "reasons": [
+        "desc:299"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/a16f262f3a46cf224f1efdd0be3c14bc/",
+      "priority": -659
+    }
+  ],
+  "priorityCables": [
+    {
+      "id": 269819,
+      "name": "Кабель для сабвуфера QED Reference Subwoofer 40",
+      "slug": "d4dc304763be58938e48553b70022d7d",
+      "cat": "Кабели",
+      "price": 18300,
+      "descLen": 235,
+      "gallery": 1,
+      "specs": 2,
+      "enriched": true,
+      "reasons": [
+        "desc:235",
+        "gal:1"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/d4dc304763be58938e48553b70022d7d/",
+      "priority": 1718
+    },
+    {
+      "id": 264533,
+      "name": "Акустический кабель SAEC  SP-1 Stratosphere ( saec sp 1 stratosphere )",
+      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sp-1-stratosphere",
+      "cat": "Кабели",
+      "price": 281053,
+      "descLen": 278,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:278",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sp-1-stratosphere/",
+      "priority": 1681
+    },
+    {
+      "id": 264112,
+      "name": "Акустический кабель Audio Replas SP-REF-RU9000SZ ( audio replas sp ref ru9000sz )",
+      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-sp-ref-ru9000sz",
+      "cat": "Кабели",
+      "price": 255850,
+      "descLen": 238,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:238",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-sp-ref-ru9000sz/",
+      "priority": 1655
+    },
+    {
+      "id": 264519,
+      "name": "Межблочный кабель SAEC  XR-1 Stratosphere ( saec xr 1 stratosphere )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-xr-1-stratosphere-new",
+      "cat": "Кабели",
+      "price": 244927,
+      "descLen": 197,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:197",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-xr-1-stratosphere-new/",
+      "priority": 1644
+    },
+    {
+      "id": 264108,
+      "name": "Сетевой кабель Audio Replas RPS-7000SZ ( audio replas rps 7000sz )",
+      "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-rps-7000sz",
+      "cat": "Кабели",
+      "price": 225000,
+      "descLen": 156,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:156",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-rps-7000sz/",
+      "priority": 1625
+    },
+    {
+      "id": 264513,
+      "name": "Межблочный кабель SAEC  SL-1 Stratosphere ( saec sl 1 stratosphere )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sl-1-stratosphere",
+      "cat": "Кабели",
+      "price": 215769,
+      "descLen": 218,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:218",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sl-1-stratosphere/",
+      "priority": 1615
+    },
+    {
+      "id": 263983,
+      "name": "Акустический кабель Acoustic Revive SPC &#8211; Triple C (4) ( acoustic revive spc triple c (4) )",
+      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-spc-triple-c-4",
+      "cat": "Кабели",
+      "price": 213503,
+      "descLen": 243,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:243",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-spc-triple-c-4/",
+      "priority": 1613
+    },
+    {
+      "id": 264387,
+      "name": "Акустический кабель Furutech Speakerflux &#8211; 04 ( furutech speakerflux 04 )",
+      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-speakerflux-04",
+      "cat": "Кабели",
+      "price": 196350,
+      "descLen": 98,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:98",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-speakerflux-04/",
+      "priority": 1596
+    },
+    {
+      "id": 264396,
+      "name": "Фоно кабель Furutech Silver Arrows II-R4 ( furutech silver arrows ii r4 )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-r4",
+      "cat": "Кабели",
+      "price": 195458,
+      "descLen": 258,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:258",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-r4/",
+      "priority": 1595
+    },
+    {
+      "id": 264394,
+      "name": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii",
+      "cat": "Кабели",
+      "price": 190995,
+      "descLen": 283,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:283",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii/",
+      "priority": 1590
+    },
+    {
+      "id": 264395,
+      "name": "Фоно кабель Furutech Silver Arrows II-L ( furutech silver arrows ii l )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-l",
+      "cat": "Кабели",
+      "price": 190995,
+      "descLen": 297,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:297",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-l/",
+      "priority": 1590
+    },
+    {
+      "id": 264364,
+      "name": "Межблочный кабель Furutech Lineflux (XLR) ( furutech lineflux (xlr) )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-lineflux-xlr",
+      "cat": "Кабели",
+      "price": 187425,
+      "descLen": 132,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:132",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-lineflux-xlr/",
+      "priority": 1587
+    },
+    {
+      "id": 264111,
+      "name": "Межблочный кабель Audio Replas REF-RU9000SZ BAL ( audio replas ref ru9000sz bal )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-ref-ru9000sz-bal",
+      "cat": "Кабели",
+      "price": 176800,
+      "descLen": 198,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:198",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-ref-ru9000sz-bal/",
+      "priority": 1576
+    },
+    {
+      "id": 263972,
+      "name": "Межблочный кабель Acoustic Revive XLR-1.0 TripleC-FM ( acoustic revive xlr 1 0 triplec fm )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-xlr-1-0-triplec-fm",
+      "cat": "Кабели",
+      "price": 176715,
+      "descLen": 187,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:187",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-xlr-1-0-triplec-fm/",
+      "priority": 1576
+    },
+    {
+      "id": 264110,
+      "name": "Межблочный кабель Audio Replas REF-RU9000SZ ( audio replas ref ru9000sz )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-ref-ru9000sz",
+      "cat": "Кабели",
+      "price": 174240,
+      "descLen": 176,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:176",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-ref-ru9000sz/",
+      "priority": 1574
+    },
+    {
+      "id": 264398,
+      "name": "Фоно кабель Furutech Silver Arrows-12 ( furutech silver arrows 12 )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-12",
+      "cat": "Кабели",
+      "price": 174038,
+      "descLen": 272,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:272",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-12/",
+      "priority": 1574
+    },
+    {
+      "id": 264390,
+      "name": "Акустический кабель Furutech Speaker Ref.III-04 BW ( furutech speaker ref iii 04 bw )",
+      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-speaker-ref-iii-04-bw",
+      "cat": "Кабели",
+      "price": 169575,
+      "descLen": 70,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:70",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-speaker-ref-iii-04-bw/",
+      "priority": 1569
+    },
+    {
+      "id": 263982,
+      "name": "Акустический кабель Acoustic Revive SPC-Triple C ( acoustic revive spc triple c )",
+      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-spc-triple-c",
+      "cat": "Кабели",
+      "price": 165053,
+      "descLen": 218,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:218",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-spc-triple-c/",
+      "priority": 1565
+    },
+    {
+      "id": 264363,
+      "name": "Межблочный кабель Furutech Lineflux (RCA) ( furutech lineflux (rca) )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-lineflux-rca",
+      "cat": "Кабели",
+      "price": 160650,
+      "descLen": 119,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:119",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-lineflux-rca/",
+      "priority": 1560
+    },
+    {
+      "id": 264542,
+      "name": "USB кабель SAEC  SUS-020 Stratosphere C &#8211; mini B OTG ( usb saec sus 020 stratosphere c mini b otg )",
+      "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere-c-mini-b-otg",
+      "cat": "Кабели",
+      "price": 156923,
+      "descLen": 124,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:124",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere-c-mini-b-otg/",
+      "priority": 1556
+    },
+    {
+      "id": 263969,
+      "name": "Межблочный кабель Acoustic Revive RCA-1.0 TripleC-FM ( acoustic revive rca 1 0 triplec fm )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rca-1-0-triplec-fm",
+      "cat": "Кабели",
+      "price": 153938,
+      "descLen": 182,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:182",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rca-1-0-triplec-fm/",
+      "priority": 1553
+    },
+    {
+      "id": 264374,
+      "name": "Цифровой кабель Furutech Digiflux (BNC) ( furutech digiflux (bnc) )",
+      "slug": "%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-digiflux-bnc",
+      "cat": "Кабели",
+      "price": 128931,
+      "descLen": 81,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:81",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-digiflux-bnc/",
+      "priority": 1528
+    },
+    {
+      "id": 264373,
+      "name": "Цифровой кабель Furutech Digiflux (XLR) ( furutech digiflux (xlr) )",
+      "slug": "%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-digiflux-xlr",
+      "cat": "Кабели",
+      "price": 116844,
+      "descLen": 73,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:73",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-digiflux-xlr/",
+      "priority": 1516
+    },
+    {
+      "id": 264000,
+      "name": "Фонокабель Acoustic Revive Analog-1.2 TripleC FM-B ( acoustic revive analog 1 2 triplec fm b )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-analog-1-2-triplec-fm-b",
+      "cat": "Кабели",
+      "price": 111112,
+      "descLen": 101,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:101",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-analog-1-2-triplec-fm-b/",
+      "priority": 1511
+    },
+    {
+      "id": 264001,
+      "name": "Фонокабель Acoustic Revive Analog-1.2 TripleC FM-BL ( acoustic revive analog 1 2 triplec fm bl )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-analog-1-2-triplec-fm-bl",
+      "cat": "Кабели",
+      "price": 111112,
+      "descLen": 110,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:110",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-analog-1-2-triplec-fm-bl/",
+      "priority": 1511
+    },
+    {
+      "id": 264005,
+      "name": "USB кабель Acoustic Revive USB-1.0SP-TripleC ( usb acoustic revive usb 1 0sp triplec )",
+      "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-usb-1-0sp-triplec",
+      "cat": "Кабели",
+      "price": 111112,
+      "descLen": 91,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:91",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-usb-1-0sp-triplec/",
+      "priority": 1511
+    },
+    {
+      "id": 264109,
+      "name": "Межблочный кабель Audio Replas REF-SI7000SZ ( audio replas ref si7000sz )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-ref-si7000sz",
+      "cat": "Кабели",
+      "price": 111000,
+      "descLen": 130,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:130",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-audio-replas-ref-si7000sz/",
+      "priority": 1511
+    },
+    {
+      "id": 263993,
+      "name": "Межблочный кабель Acoustic Revive RCA-1.5PA ( acoustic revive rca 1 5pa )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rca-1-5pa",
+      "cat": "Кабели",
+      "price": 109956,
+      "descLen": 131,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:131",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rca-1-5pa/",
+      "priority": 1509
+    },
+    {
+      "id": 264518,
+      "name": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-xr-6000",
+      "cat": "Кабели",
+      "price": 104969,
+      "descLen": 174,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:174",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-xr-6000/",
+      "priority": 1504
+    },
+    {
+      "id": 264400,
+      "name": "Фоно кабель Furutech AG-16-R4 ( furutech ag 16 r4 )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-16-r4",
+      "cat": "Кабели",
+      "price": 104757,
+      "descLen": 248,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:248",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-16-r4/",
+      "priority": 1504
+    },
+    {
+      "id": 264401,
+      "name": "Фоно кабель Furutech AG-16-XLR ( furutech ag 16 xlr )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-16-xlr",
+      "cat": "Кабели",
+      "price": 104757,
+      "descLen": 274,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:274",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-16-xlr/",
+      "priority": 1504
+    },
+    {
+      "id": 263976,
+      "name": "Межблочный кабель Acoustic Revive AES-1.0 TripleC-FM ( acoustic revive aes 1 0 triplec fm )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-aes-1-0-triplec-fm",
+      "cat": "Кабели",
+      "price": 103998,
+      "descLen": 183,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:183",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-aes-1-0-triplec-fm/",
+      "priority": 1503
+    },
+    {
+      "id": 264372,
+      "name": "Цифровой кабель Furutech Digiflux (RCA) ( furutech digiflux (rca) )",
+      "slug": "%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-digiflux-rca",
+      "cat": "Кабели",
+      "price": 102742,
+      "descLen": 73,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:73",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-digiflux-rca/",
+      "priority": 1502
+    },
+    {
+      "id": 264399,
+      "name": "Фоно кабель Furutech AG-16 ( furutech ag 16 )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-16",
+      "cat": "Кабели",
+      "price": 102742,
+      "descLen": 274,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:274",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-16/",
+      "priority": 1502
+    },
+    {
+      "id": 264532,
+      "name": "Акустический кабель SAEC  SP-10 Stratosphere ( saec sp 10 stratosphere )",
+      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sp-10-stratosphere",
+      "cat": "Кабели",
+      "price": 100728,
+      "descLen": 162,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:162",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sp-10-stratosphere/",
+      "priority": 1500
+    },
+    {
+      "id": 264444,
+      "name": "Акустический кабель Furutech FS-301 ( furutech fs 301 )",
+      "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-fs-301",
+      "cat": "Кабели",
+      "price": 97282,
+      "descLen": 87,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:87",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-fs-301/",
+      "priority": 1497
+    },
+    {
+      "id": 264376,
+      "name": "Цифровой кабель Furutech Digital Ref.III (XLR) ( furutech digital ref iii (xlr) )",
+      "slug": "%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-digital-ref-iii-xlr",
+      "cat": "Кабели",
+      "price": 96699,
+      "descLen": 65,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:65",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-digital-ref-iii-xlr/",
+      "priority": 1496
+    },
+    {
+      "id": 263975,
+      "name": "Межблочный кабель Acoustic Revive COX-1.0 TripleC-FM ( acoustic revive cox 1 0 triplec fm )",
+      "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-cox-1-0-triplec-fm",
+      "cat": "Кабели",
+      "price": 94049,
+      "descLen": 183,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:183",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-cox-1-0-triplec-fm/",
+      "priority": 1494
+    },
+    {
+      "id": 263998,
+      "name": "Фонокабель Acoustic Revive Analog-1.2 TripleC FM ( acoustic revive analog 1 2 triplec fm )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-analog-1-2-triplec-fm",
+      "cat": "Кабели",
+      "price": 92055,
+      "descLen": 101,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:101",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-analog-1-2-triplec-fm/",
+      "priority": 1492
+    },
+    {
+      "id": 263999,
+      "name": "Фонокабель Acoustic Revive Analog-1.2 TripleC FM-L ( acoustic revive analog 1 2 triplec fm l )",
+      "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-analog-1-2-triplec-fm-l",
+      "cat": "Кабели",
+      "price": 92055,
+      "descLen": 110,
+      "gallery": 1,
+      "specs": 0,
+      "enriched": false,
+      "reasons": [
+        "desc:110",
+        "gal:1",
+        "no_specs"
+      ],
+      "source": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-analog-1-2-triplec-fm-l/",
+      "priority": 1492
+    }
+  ]
+}

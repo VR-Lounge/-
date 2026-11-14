@@ -1,1 +1,92 @@
-{"id":26606,"slug":"predysilitel_AudioNet_Pre_G_2","name":"предусилитель AudioNet Pre G 2 ( audionet pre g 2 )","cat":"Усилители","cats":["Предварительные усилители"],"price":1540000,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_AudioNet_Pre_G_2/","descriptionHtml":"<p>2    <br />Reference class, Предварительный усилитель &#8211; двойной <br />моноблок класс А, 0 &#8211; 2 000 КГц, <br />  RCA + XLR входы и <br />выходы, включая АРС кабель и пульт ДУ Harmony 785. <br />Вес 20 кг.</p>","shortHtml":"","descriptionText":"2\nReference class, Предварительный усилитель – двойной\nмоноблок класс А, 0 – 2 000 КГц,\n RCA + XLR входы и\nвыходы, включая АРС кабель и пульт ДУ Harmony 785.\nВес 20 кг.","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_AudioNet_Pre_G_2_.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_AudioNet_Pre_G_2_-600x600.jpg","alt":"AudioNet Pre G 2","local":"assets/from-live/products/d21feb0b1d_predysilitel_AudioNet_Pre_G_2_.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 26606,
+  "slug": "predysilitel_AudioNet_Pre_G_2",
+  "name": "предусилитель AudioNet Pre G 2 ( audionet pre g 2 )",
+  "cat": "Усилители",
+  "cats": [
+    "Предварительные усилители"
+  ],
+  "price": 1540000,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/predysilitel_AudioNet_Pre_G_2/",
+  "descriptionHtml": "<p>Audionet PRE G2 — референсный предусилитель: полностью симметричная dual-mono архитектура, оптически разделённые цепи управления и аудиосигнала, электронная громкость на прецизионной резистивной матрице с линеаризацией в реальном времени. Для тракта, где важны разрешение и контроль, а не «тёплая краска».</p>\n<ul><li>Dual-mono · полностью DC-связь</li><li>С/Ш &gt; 120 дБ</li><li>Полоса до 2 МГц (−3 дБ)</li><li>Выходное сопротивление 22 Ом</li><li>2× тороид 100 ВА</li><li>15 кг · 430 × 140 × 420 мм</li></ul>\n<aside><p><strong>DC-связь.</strong> В сигнальном тракте нет разделительных конденсаторов: постоянная составляющая ведётся сквозь каскады. Это требует аккуратной схемотехники и защиты — Audionet заявляет именно такую архитектуру для PRE G2.</p></aside>\n<h2>Коммутация</h2>\n<p>По datasheet Audionet: RCA и XLR входы; выходы RCA, инвертирующий RCA, XLR и монитор; Audionet Link; фазоопределение сети. THD+N &lt; −102 дБ @ 20 кГц и &lt; −114 дБ @ 1 кГц. HITL: сверить цвет панели и опции с наличием салона.</p>",
+  "shortHtml": "",
+  "descriptionText": "Audionet PRE G2 — референсный предусилитель: полностью симметричная dual-mono архитектура, оптически разделённые цепи управления и аудиосигнала, электронная громкость на прецизионной резистивной матрице с линеаризацией в реальном времени. Для тракта, где важны разрешение и контроль, а не «тёплая краска».\n\n Dual-mono · полностью DC-связь\n С/Ш &gt; 120 дБ\n Полоса до 2 МГц (−3 дБ)\n Выходное сопротивление 22 Ом\n 2× тороид 100 ВА\n 15 кг · 430 × 140 × 420 мм\n\n DC-связь. В сигнальном тракте нет разделительных конденсаторов: постоянная составляющая ведётся сквозь каскады. Это требует аккуратной схемотехники и защиты — Audionet заявляет именно такую архитектуру для PRE G2.\n\n Коммутация\n\n По datasheet Audionet: RCA и XLR входы; выходы RCA, инвертирующий RCA, XLR и монитор; Audionet Link; фазоопределение сети. THD+N &lt; −102 дБ @ 20 кГц и &lt; −114 дБ @ 1 кГц. HITL: сверить цвет панели и опции с наличием салона.",
+  "specs": [
+    {
+      "label": "Частотная характеристика",
+      "value": "0–2 МГц (−3 дБ), DC; 2 Гц–2 МГц (−3 дБ), AC",
+      "source": "manufacturer"
+    },
+    {
+      "label": "С/Ш",
+      "value": "> 120 дБ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "THD+N",
+      "value": "< −102 дБ @ 20 кГц; < −114 дБ @ 1 кГц",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Выходное сопротивление",
+      "value": "22 Ом",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Габариты",
+      "value": "430 × 140 × 420 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Масса",
+      "value": "15 кг",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/machov_pre_g2_front_0380.png",
+      "thumb": "https://en.audionet.de/wp-content/uploads/machov_pre_g2_front_0380.png",
+      "alt": "предусилитель AudioNet Pre G 2 ( audionet pre g 2 )",
+      "local": "assets/enriched/26606/f6035488b5_1.png",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 29142
+    },
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/pre_g2_front.jpg",
+      "thumb": "https://en.audionet.de/wp-content/uploads/pre_g2_front.jpg",
+      "alt": "предусилитель AudioNet Pre G 2 ( audionet pre g 2 )",
+      "local": "assets/enriched/26606/af30b08e9e_2.jpg",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 75558
+    },
+    {
+      "src": "https://en.audionet.de/wp-content/uploads/pre_g2_back.jpg",
+      "thumb": "https://en.audionet.de/wp-content/uploads/pre_g2_back.jpg",
+      "alt": "предусилитель AudioNet Pre G 2 ( audionet pre g 2 )",
+      "local": "assets/enriched/26606/0f266cf722_3.jpg",
+      "enriched": true,
+      "attribution": "en.audionet.de",
+      "bytes": 112686
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_AudioNet_Pre_G_2_.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_AudioNet_Pre_G_2_-600x600.jpg",
+      "alt": "AudioNet Pre G 2",
+      "local": "assets/from-live/products/d21feb0b1d_predysilitel_AudioNet_Pre_G_2_.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://en.audionet.de/machines/pre-g2/",
+    "https://en.audionet.de/wp-content/uploads/data_sheet_audionet_pre_g2__en.pdf"
+  ],
+  "enrichedAt": "2026-11-14T12:40:35Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w2-2026-11"
+}

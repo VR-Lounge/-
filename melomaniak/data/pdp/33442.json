@@ -1,1 +1,116 @@
-{"id":33442,"slug":"acoustic_dx1","name":"ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )","cat":"ЦАПы","cats":["ЦАПы"],"price":85500,"old":95000,"source":"https://xn--80aannlcfckh.xn--p1ai/product/acoustic_dx1/","descriptionHtml":"<p>Acoustic DX1<br />\nЦАП АК4490 32 Bit/768 KHz, аналоговые, балансные и<br />\nнебалансные входы/выходы, цифровые входы,выходы (USB B, USB A, DSD Audio 2.8MHz…11.2MHz) XFTB-01 вход, 2 входа для наушников. Размеры (ШхВхГл): 230 мм х 105мм х 315 мм</p>","shortHtml":"","descriptionText":"Acoustic DX1\n\nЦАП АК4490 32 Bit/768 KHz, аналоговые, балансные и\n\nнебалансные входы/выходы, цифровые входы,выходы (USB B, USB A, DSD Audio 2.8MHz…11.2MHz) XFTB-01 вход, 2 входа для наушников. Размеры (ШхВхГл): 230 мм х 105мм х 315 мм","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/TSAP_Advance_Acoustic_DX1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/TSAP_Advance_Acoustic_DX1-600x600.jpg","alt":"Advance Acoustic DX1","local":"assets/from-live/brand/77678ed18e_TSAP_Advance_Acoustic_DX1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 33442,
+  "slug": "acoustic_dx1",
+  "name": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
+  "cat": "ЦАПы",
+  "cats": [
+    "ЦАПы"
+  ],
+  "price": 85500,
+  "old": 95000,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/acoustic_dx1/",
+  "descriptionHtml": "<p>Advance Paris (Advance Acoustic) DX-1 — ЦАП/предимп: AK4490, XMOS USB, PCM до 24/192 (USB) и DSD64/128/256. Небольшой корпус для рабочего стола или стойки, где нужен отдельный ЦАП с регулируемым уровнем, а не «ещё один стример».</p>\n<ul><li>ЦАП: Asahi Kasei AK4490</li><li>PCM transceiver: AK4118</li><li>USB: XMOS XU208-256</li><li>PCM 24/192 · USB до 32/768 (по QS)</li><li>DSD 2,8 / 5,6 / 11,2 МГц</li><li>Выход 2 В RCA / 4 В XLR</li><li>THD &lt; 0,005 % · С/Ш &gt; 110 дБ</li><li>133 × 230 × 325 мм · 6,1 кг</li></ul>\n<aside><p><strong>AK4490.</strong> ЦАП-чип Asahi Kasei в DX-1 — по quick-start Advance Paris. Опция Bluetooth AptX — модуль X-FTB01.</p></aside>",
+  "shortHtml": "",
+  "descriptionText": "Advance Paris (Advance Acoustic) DX-1 — ЦАП/предимп: AK4490, XMOS USB, PCM до 24/192 (USB) и DSD64/128/256. Небольшой корпус для рабочего стола или стойки, где нужен отдельный ЦАП с регулируемым уровнем, а не «ещё один стример».\n\n ЦАП: Asahi Kasei AK4490\n PCM transceiver: AK4118\n USB: XMOS XU208-256\n PCM 24/192 · USB до 32/768 (по QS)\n DSD 2,8 / 5,6 / 11,2 МГц\n Выход 2 В RCA / 4 В XLR\n THD &lt; 0,005 % · С/Ш &gt; 110 дБ\n 133 × 230 × 325 мм · 6,1 кг\n\n AK4490. ЦАП-чип Asahi Kasei в DX-1 — по quick-start Advance Paris. Опция Bluetooth AptX — модуль X-FTB01.",
+  "specs": [
+    {
+      "label": "ЦАП",
+      "value": "Asahi Kasei AK4490",
+      "source": "manufacturer"
+    },
+    {
+      "label": "USB",
+      "value": "XMOS XU208-256",
+      "source": "manufacturer"
+    },
+    {
+      "label": "PCM",
+      "value": "24 бит / 192 кГц; USB до 32 бит / 768 кГц (QS)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "DSD",
+      "value": "2,8 / 5,6 / 11,2 МГц (DSD64/128/256)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Выход",
+      "value": "RCA 2 В; XLR 4 В",
+      "source": "manufacturer"
+    },
+    {
+      "label": "THD",
+      "value": "< 0,005 %",
+      "source": "manufacturer"
+    },
+    {
+      "label": "С/Ш / разделение",
+      "value": "> 110 дБ / > 110 дБ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "АЧХ",
+      "value": "20 Гц–45 кГц (±3 дБ)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Габариты / масса",
+      "value": "133 × 230 × 325 мм; 6,1 кг",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK.png",
+      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK.png",
+      "alt": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
+      "local": "assets/enriched/33442/6c783c0b19_1.png",
+      "enriched": true,
+      "attribution": "www.advanceparis.com",
+      "bytes": 240366
+    },
+    {
+      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-WT.png",
+      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-WT.png",
+      "alt": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
+      "local": "assets/enriched/33442/16729e0c9b_2.png",
+      "enriched": true,
+      "attribution": "www.advanceparis.com",
+      "bytes": 271267
+    },
+    {
+      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-768x768.png",
+      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-768x768.png",
+      "alt": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
+      "local": "assets/enriched/33442/d901c83ae4_3.png",
+      "enriched": true,
+      "attribution": "www.advanceparis.com",
+      "bytes": 134932
+    },
+    {
+      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-600x600.png",
+      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-600x600.png",
+      "alt": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
+      "local": "assets/enriched/33442/fef91c2c67_4.png",
+      "enriched": true,
+      "attribution": "www.advanceparis.com",
+      "bytes": 83052
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/TSAP_Advance_Acoustic_DX1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/TSAP_Advance_Acoustic_DX1-600x600.jpg",
+      "alt": "Advance Acoustic DX1",
+      "local": "assets/from-live/brand/77678ed18e_TSAP_Advance_Acoustic_DX1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.advanceparis.com/en/product/dx-1",
+    "https://www.advance-paris.de/wp-content/uploads/2019/11/DX1-QuickStart-Int-1.pdf"
+  ],
+  "enrichedAt": "2026-11-14T12:46:57Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w2-2026-11"
+}
