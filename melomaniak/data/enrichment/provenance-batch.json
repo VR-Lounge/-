@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-14T11:22:42Z",
-  "enrichedCount": 44,
+  "generatedAt": "2026-11-14T11:32:11Z",
+  "enrichedCount": 101,
   "products": {
     "268721": {
       "name": "CD-проигрыватель Emotiva ERC-4",
@@ -10,7 +10,18 @@
       "specsCount": 3,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "268750": {
+      "name": "Предусилитель Emotiva PT-2",
+      "sources": [
+        "https://emotiva.com/products/basx-pt2-stereo-preamp-dac-tuner",
+        "https://cdn.shopify.com/s/files/1/2572/6926/files/BasX_PT2-TA2_User_Manual_v11_61_2.pdf?v=1661197847"
+      ],
+      "specsCount": 10,
+      "galleryCount": 9,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268760": {
       "name": "Моноусилитель мощности Emotiva A1",
@@ -20,7 +31,7 @@
       "specsCount": 5,
       "galleryCount": 9,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268770": {
       "name": "Моноусилитель мощности Emotiva XPA-DR1",
@@ -30,7 +41,28 @@
       "specsCount": 5,
       "galleryCount": 11,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "268782": {
+      "name": "Моноусилитель мощности Emotiva XPA-HC1",
+      "sources": [
+        "https://emotiva.com/products/hc-1",
+        "https://cdn.shopify.com/s/files/1/2572/6926/files/XPA_HC-1_User_Manual_v10.pdf?30550"
+      ],
+      "specsCount": 8,
+      "galleryCount": 8,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "268791": {
+      "name": "Стереоусилитель мощности Emotiva A2m",
+      "sources": [
+        "https://emotiva.com/products/basx-a2m-stereo-flex-amplifier"
+      ],
+      "specsCount": 5,
+      "galleryCount": 9,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268801": {
       "name": "Стереоусилитель мощности Emotiva XPA-2 Gen3",
@@ -40,7 +72,7 @@
       "specsCount": 5,
       "galleryCount": 9,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268811": {
       "name": "Стереоусилитель мощности Emotiva BasX A2",
@@ -50,7 +82,7 @@
       "specsCount": 5,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268822": {
       "name": "Стереоусилитель мощности Emotiva XPA-DR2",
@@ -60,7 +92,7 @@
       "specsCount": 5,
       "galleryCount": 11,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268834": {
       "name": "Многоканальный усилитель мощности Emotiva A5",
@@ -70,7 +102,7 @@
       "specsCount": 5,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268845": {
       "name": "Многоканальный усилитель мощности Emotiva A6",
@@ -80,7 +112,7 @@
       "specsCount": 3,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268856": {
       "name": "Многоканальный усилитель мощности Emotiva A7",
@@ -90,7 +122,7 @@
       "specsCount": 3,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268867": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-3 Gen3",
@@ -100,7 +132,7 @@
       "specsCount": 5,
       "galleryCount": 13,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268881": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-4 Gen3",
@@ -110,7 +142,7 @@
       "specsCount": 5,
       "galleryCount": 13,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268895": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-5 Gen3",
@@ -120,7 +152,7 @@
       "specsCount": 4,
       "galleryCount": 13,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268909": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-6 Gen3",
@@ -130,7 +162,7 @@
       "specsCount": 5,
       "galleryCount": 12,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268922": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-11 Gen3",
@@ -140,7 +172,7 @@
       "specsCount": 4,
       "galleryCount": 12,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268935": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-7 Gen3",
@@ -150,7 +182,7 @@
       "specsCount": 9,
       "galleryCount": 15,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268949": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-9 Gen3",
@@ -160,7 +192,7 @@
       "specsCount": 4,
       "galleryCount": 13,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268963": {
       "name": "Многоканальный усилитель мощности Emotiva A3",
@@ -170,7 +202,7 @@
       "specsCount": 3,
       "galleryCount": 10,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268974": {
       "name": "Многоканальный усилитель мощности Emotiva A4",
@@ -180,7 +212,7 @@
       "specsCount": 5,
       "galleryCount": 9,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "268984": {
       "name": "Многоканальный усилитель мощности Emotiva XPA-DR3",
@@ -190,7 +222,114 @@
       "specsCount": 4,
       "galleryCount": 11,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "268996": {
+      "name": "AV-процессор Emotiva MC1",
+      "sources": [
+        "https://emotiva.com/collections/all/products/basx-mc1-13-2-channel-dolby-atmos-dts-x-cinema-processor"
+      ],
+      "specsCount": 5,
+      "galleryCount": 9,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269006": {
+      "name": "AV-процессор Emotiva XMC-2 + DIRAC",
+      "sources": [
+        "https://emotiva.com/products/xmc-2-processor-8k-certified-refurbished",
+        "https://www.dirac.com/products/emotiva-xmc-2"
+      ],
+      "specsCount": 5,
+      "galleryCount": 10,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269017": {
+      "name": "AV-процессор Emotiva RMC-1L + DIRAC",
+      "sources": [
+        "https://emotiva.com/products/rmc-1l-16-channel-dolby-atmos-dts-x-cinema-processor",
+        "https://emotiva.com/products/rmc-1l-cr8-8k-certified-refurbished"
+      ],
+      "specsCount": 7,
+      "galleryCount": 12,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269030": {
+      "name": "AV-процессор Emotiva RMC-1 + DIRAC",
+      "sources": [
+        "https://emotiva.com/products/rmc-1-cr8-8k-certified-refurbished",
+        "https://emotiva.com/products/rmc-1l-16-channel-dolby-atmos-dts-x-cinema-processor"
+      ],
+      "specsCount": 7,
+      "galleryCount": 18,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269327": {
+      "name": "Активная полочная акустика Klipsch The Nines McLaren",
+      "sources": [
+        "https://www.klipsch.com/uk/products/the-nines-powered-speakers-mclaren"
+      ],
+      "specsCount": 4,
+      "galleryCount": 13,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269673": {
+      "name": "AV-ресивер Onkyo TX-NR6100",
+      "sources": [
+        "https://onkyo.com/receivers/tx-nr6100",
+        "https://assets.onkyo-av.com/spec-sheets/TX-NR6100_US_2022-11-02-210644_imld.pdf?v=1667423242"
+      ],
+      "specsCount": 6,
+      "galleryCount": 7,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269739": {
+      "name": "Предусилитель Parasound Zpre3",
+      "sources": [
+        "https://parasound.com/products/zc-zpre3"
+      ],
+      "specsCount": 7,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269743": {
+      "name": "Предусилитель Parasound 200 Pre",
+      "sources": [
+        "https://parasound.com/products/nc-200pre",
+        "https://cdn.shopify.com/s/files/1/0763/0864/4159/files/200_Pre-manual.pdf?v=1718769363",
+        "https://cdn.shopify.com/s/files/1/0763/0864/4159/files/200_Pre-info-sheet.pdf?v=1718769361"
+      ],
+      "specsCount": 9,
+      "galleryCount": 4,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269753": {
+      "name": "Стереоусилитель мощности Parasound 275 v2",
+      "sources": [
+        "https://parasound.com/products/nc-275",
+        "https://cdn.shopify.com/s/files/1/0763/0864/4159/files/275v2Manual.pdf?v=1718140038"
+      ],
+      "specsCount": 7,
+      "galleryCount": 4,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269763": {
+      "name": "Стереоусилитель мощности Parasound 2250 v2",
+      "sources": [
+        "https://parasound.com/products/nc-2250"
+      ],
+      "specsCount": 5,
+      "galleryCount": 4,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "269768": {
       "name": "Стереоусилитель мощности Parasound A21+",
@@ -200,7 +339,7 @@
       "specsCount": 9,
       "galleryCount": 5,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "269774": {
       "name": "Многоканальный усилитель мощности Parasound A52+",
@@ -210,7 +349,7 @@
       "specsCount": 8,
       "galleryCount": 3,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "269778": {
       "name": "Многоканальный усилитель мощности Parasound A51",
@@ -221,7 +360,101 @@
       "specsCount": 10,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269782": {
+      "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
+      "sources": [
+        "https://parasound.com/products/zm12"
+      ],
+      "specsCount": 4,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269806": {
+      "name": "Кабель акустический готовый QED XT40i Banana",
+      "sources": [
+        "https://www.qed.co.uk/xt40i-speaker-cable.html",
+        "https://support.qed.co.uk/portal/en/kb/articles/xt40i-q-why-s"
+      ],
+      "specsCount": 3,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269858": {
+      "name": "Проектор BenQ TK700",
+      "sources": [
+        "https://www.benq.com/en-us/projector/home-projectors/tk700/spec.html"
+      ],
+      "specsCount": 5,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "269881": {
+      "name": "Беспроводная Hi-Fi-акустика Cambridge Audio Evo One",
+      "sources": [
+        "https://www.cambridgeaudio.com/row/en/products/hi-fi/evo/evo-one",
+        "https://manuals.cambridgeaudio.com/en/evo-one/technical-specifications"
+      ],
+      "specsCount": 5,
+      "galleryCount": 15,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270017": {
+      "name": "Сетевой проигрыватель Cambridge Audio CXN100",
+      "sources": [
+        "https://www.cambridgeaudio.com/usa/en/products/hi-fi/cx/cxn100",
+        "https://www.cambridgeaudio.com/usa/en/faqs/cxn100-technical-specifications",
+        "https://www.cambridgeaudio.com/usa/en/manuals/cxn100-cxn100-se"
+      ],
+      "specsCount": 10,
+      "galleryCount": 15,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270152": {
+      "name": "Сетевой проигрыватель MOON 280D MiND 2",
+      "sources": [
+        "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2020_MOON_280D_EN.pdf"
+      ],
+      "specsCount": 4,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270163": {
+      "name": "Стереоусилитель MOON ACE All-in-One",
+      "sources": [
+        "https://simaudio.com/wp-content/uploads/2018/04/DataSheet2018_MOON_ACE_EN.pdf"
+      ],
+      "specsCount": 5,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270171": {
+      "name": "Стереоусилитель MOON 250i V2 Black",
+      "sources": [
+        "https://simaudio.com/en/product/250i-v2-integrated-amplifier/"
+      ],
+      "specsCount": 5,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270208": {
+      "name": "Стереоусилитель Naim Nait 50",
+      "sources": [
+        "https://www.naimaudio.com/products/nait-50"
+      ],
+      "specsCount": 7,
+      "galleryCount": 4,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "270213": {
       "name": "Стереоусилитель Naim Nait XS 3",
@@ -231,7 +464,7 @@
       "specsCount": 6,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "270220": {
       "name": "Стереоусилитель Naim Supernait 3",
@@ -241,7 +474,90 @@
       "specsCount": 7,
       "galleryCount": 4,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270380": {
+      "name": "Предварительный усилитель Quad 33",
+      "sources": [
+        "https://quad-hifi.co.uk/products/quad-33"
+      ],
+      "specsCount": 6,
+      "galleryCount": 16,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270397": {
+      "name": "Стереоусилитель мощности Quad 303",
+      "sources": [
+        "https://quad-hifi.co.uk/products/quad-303"
+      ],
+      "specsCount": 6,
+      "galleryCount": 13,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270454": {
+      "name": "Виниловый проигрыватель Transrotor Dark Star",
+      "sources": [
+        "https://transrotor.de/en/produkte/dark-star"
+      ],
+      "specsCount": 3,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270473": {
+      "name": "Виниловый проигрыватель Transrotor ZET 3",
+      "sources": [
+        "https://transrotor.de/en/produkte/zet3"
+      ],
+      "specsCount": 4,
+      "galleryCount": 4,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270493": {
+      "name": "Кабель USB Van den Hul Ultimate",
+      "sources": [
+        "https://www.vandenhul.com/product/ultimate-usb/"
+      ],
+      "specsCount": 4,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270702": {
+      "name": "Полочная акустика Wharfedale Super Denton",
+      "sources": [
+        "https://www.wharfedale.co.uk/products/super-denton",
+        "https://www.wharfedale.co.uk/cdn/shop/files/SUPER_DENTON_Manual_Online_240730_R11.pdf?v=638968791167403419"
+      ],
+      "specsCount": 11,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270782": {
+      "name": "CD-проигрыватель Arcam RADIA CD5",
+      "sources": [
+        "https://www.arcam.co.uk/product,radia,players,cd5.htm",
+        "https://www.arcam.co.uk/ugc/tor/CD5/English%20Owner's%20Manual/ARCAM%20CD5%20Owner's%20Manual%20EN%20V2.pdf"
+      ],
+      "specsCount": 7,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "270805": {
+      "name": "Сетевой проигрыватель Arcam RADIA ST5",
+      "sources": [
+        "https://www.arcam.co.uk/product,radia,streamers,st5.htm",
+        "https://www.arcam.co.uk/ugc/tor/ST5/ST5%20Specification%20Sheet/ARCAM_ST5_Spec_Sheet_V5.pdf"
+      ],
+      "specsCount": 7,
+      "galleryCount": 5,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "270853": {
       "name": "CD-проигрыватель Hegel Viking",
@@ -251,7 +567,7 @@
       "specsCount": 9,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "270878": {
       "name": "Стереоусилитель Hegel H600",
@@ -261,7 +577,144 @@
       "specsCount": 13,
       "galleryCount": 4,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "271014": {
+      "name": "Стереоусилитель мощности Matrix Audio Element P2",
+      "sources": [
+        "https://www.matrix-digi.com/product/88/element_P2"
+      ],
+      "specsCount": 5,
+      "galleryCount": 7,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "271191": {
+      "name": "Распределитель питания Nordost QBase QB8 Mark II",
+      "sources": [
+        "https://www.nordost.com/downloads/multiLanguage/qbase%20mark%20II%20one%20sheet.pdf"
+      ],
+      "specsCount": 4,
+      "galleryCount": 3,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "271269": {
+      "name": "Кабель сетевой готовый Nordost Red Dawn 16 Amp C19",
+      "sources": [
+        "https://www.nordost.com/leif/red-dawn/red-dawn-3-power-cord.php",
+        "https://nordost.com/downloads/multiLanguage/Leif%203%20Brochure_Web.pdf"
+      ],
+      "specsCount": 6,
+      "galleryCount": 2,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "271974": {
+      "name": "Сетевой фильтр Isol-8 Powerline Extreme",
+      "sources": [
+        "https://isol-8.co.uk/",
+        "https://isol-8.kemela.com/isol-8-powerline-series/isol-8-powerline-extreme.html"
+      ],
+      "specsCount": 5,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272017": {
+      "name": "Беспроводная Hi-Fi-акустика iFi audio Aurora",
+      "sources": [
+        "https://ifi-audio.com/products/aurora"
+      ],
+      "specsCount": 4,
+      "galleryCount": 11,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272045": {
+      "name": "Внешний ЦАП iFi audio ZEN Blue V3",
+      "sources": [
+        "https://ifi-audio.com/products/zen-blue-3"
+      ],
+      "specsCount": 4,
+      "galleryCount": 13,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272075": {
+      "name": "Портативный усилитель для наушников iFi audio Go Bar Kensei",
+      "sources": [
+        "https://ifi-audio.com/products/go-bar-kensei"
+      ],
+      "specsCount": 4,
+      "galleryCount": 5,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272121": {
+      "name": "Сетевой фильтр iFi audio Power Station",
+      "sources": [
+        "https://downloads.ifi-audio.com/products/powerstation",
+        "https://downloads.ifi-audio.com/wp-content/uploads/2019/07/Power-Station-Users-Manual-Ver1.1-1.pdf",
+        "https://downloads.ifi-audio.com/wp-content/uploads/2020/07/TECH-NOTE-iFI-PowerStation.pdf"
+      ],
+      "specsCount": 7,
+      "galleryCount": 8,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272205": {
+      "name": "CD-проигрыватель Shanling SCD 1.3",
+      "sources": [
+        "https://en.shanling.com/article/101258"
+      ],
+      "specsCount": 5,
+      "galleryCount": 7,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272213": {
+      "name": "CD-проигрыватель Shanling EC mini",
+      "sources": [
+        "https://en.shanling.com/article/101266"
+      ],
+      "specsCount": 3,
+      "galleryCount": 9,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272271": {
+      "name": "Портативный Hi-Fi-плеер Shanling M9 Plus",
+      "sources": [
+        "https://en.shanling.com/article/101271"
+      ],
+      "specsCount": 5,
+      "galleryCount": 14,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272310": {
+      "name": "Стационарный усилитель для наушников Shanling EH3",
+      "sources": [
+        "https://shanling.com/product/4686",
+        "https://en.shanling.com/article/101267",
+        "https://shanling.com/uploads/image/EH3.pdf"
+      ],
+      "specsCount": 6,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272551": {
+      "name": "Виниловый проигрыватель Clearaudio Concept MC/S",
+      "sources": [
+        "https://www.clearaudio.de/en/concept-mc/",
+        "https://www.clearaudio.de/"
+      ],
+      "specsCount": 3,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "272602": {
       "name": "Виниловый проигрыватель Clearaudio Reference Jubilee",
@@ -271,7 +724,107 @@
       "specsCount": 9,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272810": {
+      "name": "Кабель HDMI AudioQuest Vodka 48 eARC Priority Braid",
+      "sources": [
+        "https://www.audioquest.com/products/vodka-48-hdmi-cable"
+      ],
+      "specsCount": 3,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272812": {
+      "name": "Кабель HDMI AudioQuest Forest Active PVC",
+      "sources": [
+        "https://www.audioquest.com/products/forest-18-hdmi-cable"
+      ],
+      "specsCount": 3,
+      "galleryCount": 1,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272816": {
+      "name": "Кабель межблочный аналоговый RCA AudioQuest Yosemite",
+      "sources": [
+        "https://www.audioquest.com/products/yosemite-rca-interconnect-cable"
+      ],
+      "specsCount": 4,
+      "galleryCount": 5,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272851": {
+      "name": "Центральный громкоговоритель B HTM6 S3",
+      "sources": [
+        "https://www.bowerswilkins.com/en/product/loudspeakers/htm6-s3/FP43990P.html"
+      ],
+      "specsCount": 8,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272864": {
+      "name": "Полочная акустика B 607 S3",
+      "sources": [
+        "https://www.bowerswilkins.com/en/product/loudspeakers/607-s3/FP43958P.html"
+      ],
+      "specsCount": 8,
+      "galleryCount": 10,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "272914": {
+      "name": "Беспроводные наушники B PX7 S2e",
+      "sources": [
+        "https://www.bowerswilkins.com/zh-cn/product/over-ear-headphones/px7-s2e/FP44520P.html"
+      ],
+      "specsCount": 5,
+      "galleryCount": 24,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "273082": {
+      "name": "AV-ресивер Denon AVR-S670H",
+      "sources": [
+        "https://www.denon.com/en-us/product/av-receivers/avr-s670h/300778.html"
+      ],
+      "specsCount": 5,
+      "galleryCount": 13,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "273106": {
+      "name": "AV-ресивер Denon AVR-X580BT",
+      "sources": [
+        "https://www.denon.com/en/product/av-receivers/avr-x580bt/AVRX580BT.html"
+      ],
+      "specsCount": 5,
+      "galleryCount": 4,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "273136": {
+      "name": "AV-ресивер Denon AVR-X1800H",
+      "sources": [
+        "https://www.denon.com/product/av-receivers/avr-x1800h/AVRX1800H.html"
+      ],
+      "specsCount": 7,
+      "galleryCount": 6,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "273194": {
+      "name": "AV-процессор Marantz AV8805A",
+      "sources": [
+        "https://www.marantz.com/en/product/av-processors-pre-amplifiers/av8805a/AV8805A.html"
+      ],
+      "specsCount": 8,
+      "galleryCount": 5,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "273240": {
       "name": "AV-ресивер Marantz Cinema 40",
@@ -281,7 +834,28 @@
       "specsCount": 8,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "273393": {
+      "name": "Полочная акустика Mission 700 with Stands",
+      "sources": [
+        "https://www.mission.co.uk/700-2/"
+      ],
+      "specsCount": 12,
+      "galleryCount": 7,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "273494": {
+      "name": "Саундбар Polk Audio Magnifi Max AX SR",
+      "sources": [
+        "https://www.polkaudio.com/en-us/product/sound-bars/magnifi-max-ax-sr/300543.html",
+        "https://www.polkaudio.com/on/demandware.static/-/Library-Sites-polk_northamerica_shared/default/dwbfcc49db/downloads/magnifi-max-axsr-infosheet-en.pdf"
+      ],
+      "specsCount": 5,
+      "galleryCount": 16,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "273552": {
       "name": "Моноусилитель мощности PS Audio BHK Signature 600",
@@ -292,7 +866,7 @@
       "specsCount": 10,
       "galleryCount": 3,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "273565": {
       "name": "Внешний ЦАП PS Audio StellarGold DAC",
@@ -302,7 +876,27 @@
       "specsCount": 8,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "273696": {
+      "name": "Многоканальный усилитель мощности Rotel RMB-1587MKII",
+      "sources": [
+        "https://rotel.com/product/rmb-1587mkii"
+      ],
+      "specsCount": 6,
+      "galleryCount": 9,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
+    },
+    "273713": {
+      "name": "Многоканальный усилитель мощности Rotel RMB-1585MKII",
+      "sources": [
+        "https://rotel.com/product/rmb-1585mkii"
+      ],
+      "specsCount": 5,
+      "galleryCount": 9,
+      "photosAdded": 0,
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "273947": {
       "name": "Стереоресивер T+A Caruso R",
@@ -312,7 +906,7 @@
       "specsCount": 7,
       "galleryCount": 5,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "273961": {
       "name": "Предусилитель T+A P 3100 HV",
@@ -323,7 +917,7 @@
       "specsCount": 11,
       "galleryCount": 4,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "273974": {
       "name": "Стереоусилитель мощности T+A A 200",
@@ -334,7 +928,7 @@
       "specsCount": 9,
       "galleryCount": 11,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "273987": {
       "name": "CD-проигрыватель T+A MP 3000 HV MKII",
@@ -345,7 +939,7 @@
       "specsCount": 9,
       "galleryCount": 2,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274001": {
       "name": "Сетевой проигрыватель T+A MP 200",
@@ -355,7 +949,7 @@
       "specsCount": 8,
       "galleryCount": 8,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274010": {
       "name": "Сетевой проигрыватель T+A MP 2500 R G3",
@@ -366,7 +960,7 @@
       "specsCount": 12,
       "galleryCount": 5,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274038": {
       "name": "Внешний ЦАП T+A DAC 200 + HDMI Module",
@@ -377,7 +971,7 @@
       "specsCount": 14,
       "galleryCount": 11,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274049": {
       "name": "Внешний ЦАП T+A DAC 200",
@@ -388,7 +982,7 @@
       "specsCount": 13,
       "galleryCount": 12,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274060": {
       "name": "Охватывающие наушники T+A Solitaire P-SE",
@@ -398,7 +992,7 @@
       "specsCount": 6,
       "galleryCount": 7,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274252": {
       "name": "Сетевой проигрыватель Aurender N150 4Tb SSD",
@@ -408,7 +1002,7 @@
       "specsCount": 9,
       "galleryCount": 6,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274264": {
       "name": "Сетевой проигрыватель Aurender N200 2Tb HDD",
@@ -418,7 +1012,7 @@
       "specsCount": 11,
       "galleryCount": 4,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274303": {
       "name": "Сетевой проигрыватель Aurender N200 4Tb SSD",
@@ -428,7 +1022,7 @@
       "specsCount": 11,
       "galleryCount": 4,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274334": {
       "name": "Сетевой проигрыватель Aurender N20 4Tb SSD",
@@ -439,7 +1033,7 @@
       "specsCount": 14,
       "galleryCount": 5,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     },
     "274340": {
       "name": "Сетевой проигрыватель Aurender N20 8Tb SSD",
@@ -450,7 +1044,7 @@
       "specsCount": 14,
       "galleryCount": 5,
       "photosAdded": 0,
-      "enrichedAt": "2026-11-14T11:22:42Z"
+      "enrichedAt": "2026-11-14T11:32:11Z"
     }
   },
   "method": "Manufacturer pages preferred (Hegel, PS Audio, T+A, Aurender, Clearaudio, Parasound, Naim, Marantz, Emotiva). Research via Exa + Tavily. No invented watts."

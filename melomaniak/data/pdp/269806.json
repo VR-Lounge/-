@@ -1,1 +1,49 @@
-{"id":269806,"slug":"4e830724dfec816d16151a75d23efa37","name":"Кабель акустический готовый QED XT40i Banana","cat":"Кабели","cats":["Кабель акустический"],"price":25300,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/4e830724dfec816d16151a75d23efa37/","descriptionHtml":"</table>","shortHtml":"","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_xt40i_banana1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_xt40i_banana1.jpg","alt":"qed_xt40i_banana1.jpg","local":"assets/from-live/products/9e3e8211cc_qed_xt40i_banana1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 269806,
+  "slug": "4e830724dfec816d16151a75d23efa37",
+  "name": "Кабель акустический готовый QED XT40i Banana",
+  "cat": "Кабели",
+  "cats": [
+    "Кабель акустический"
+  ],
+  "price": 25300,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/4e830724dfec816d16151a75d23efa37/",
+  "descriptionHtml": "<p>QED Reference XT40i — акустический кабель ~4,0 мм² OFC с X-Tube и Air Gap dielectric. 99,999% OFC; сечение на верхней границе 12 AWG.</p>\n<ul><li>~4.0 mm² OFC</li><li>X-Tube</li><li>Air Gap</li><li>99.999% OFC</li><li>Lifetime guarantee</li></ul>\n<h2>Технологии</h2>\n<p>X-Tube выравнивает плотность тока; Air Gap снижает ёмкость и dissipation factor примерно вдвое относительно предшественника (по QED).</p>",
+  "shortHtml": "",
+  "descriptionText": "QED Reference XT40i — акустический кабель ~4,0 мм² OFC с X-Tube и Air Gap dielectric. 99,999% OFC; сечение на верхней границе 12 AWG.\n\n ~4.0 mm² OFC\n X-Tube\n Air Gap\n 99.999% OFC\n Lifetime guarantee\n\n Технологии\n\n X-Tube выравнивает плотность тока; Air Gap снижает ёмкость и dissipation factor примерно вдвое относительно предшественника (по QED).",
+  "specs": [
+    {
+      "label": "Сечение",
+      "value": "≈ 4,0 мм² (верх 12 AWG)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Материал",
+      "value": "99.999% oxygen-free copper",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Технологии",
+      "value": "X-Tube; Air Gap dielectric",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_xt40i_banana1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/qed_xt40i_banana1.jpg",
+      "alt": "qed_xt40i_banana1.jpg",
+      "local": "assets/from-live/products/9e3e8211cc_qed_xt40i_banana1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.qed.co.uk/xt40i-speaker-cable.html",
+    "https://support.qed.co.uk/portal/en/kb/articles/xt40i-q-why-s"
+  ],
+  "enrichedAt": "2026-11-14T11:32:11Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

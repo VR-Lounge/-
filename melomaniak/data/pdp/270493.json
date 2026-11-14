@@ -1,1 +1,53 @@
-{"id":270493,"slug":"43feb9406fdffd0ec4caf6b672a859fb","name":"Кабель USB Van den Hul Ultimate","cat":"Кабели","cats":["USB кабель"],"price":41390,"old":null,"source":"https://xn--80aannlcfckh.xn--p1ai/product/43feb9406fdffd0ec4caf6b672a859fb/","descriptionHtml":"</table>","shortHtml":"<p>USB кабель, рекомендованный к применению в высококлассных аудио и видеосистемах, идеальное решение для подключения внешних ЦАПов. Материал проводника: посеребренная медь, изоляция: Hulliflex.</p>","descriptionText":"","specs":[],"gallery":[{"src":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_ultimate1.jpg","thumb":"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_ultimate1.jpg","alt":"van_den_hul_ultimate1.jpg","local":"assets/from-live/products/47b8757f2e_van_den_hul_ultimate1.jpg"}],"sku":"","fetchedFrom":"wc/store/v1/products"}
+{
+  "id": 270493,
+  "slug": "43feb9406fdffd0ec4caf6b672a859fb",
+  "name": "Кабель USB Van den Hul Ultimate",
+  "cat": "Кабели",
+  "cats": [
+    "USB кабель"
+  ],
+  "price": 41390,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/43feb9406fdffd0ec4caf6b672a859fb/",
+  "descriptionHtml": "<p>Van den Hul Ultimate USB — silver-plated OFC signal, Hulliflex и плоская геометрия с разнесением сигнала и питания. Длины 1,0–5,0 м.</p>\n<ul><li>Silver-plated OFC</li><li>Hulliflex</li><li>Flat geometry</li><li>A to B</li><li>1–5 m</li></ul>\n<h2>Назначение</h2>\n<p>USB A→B для ЦАПа, где питание и data не должны «жить» в одной куче.</p>",
+  "shortHtml": "<p>USB кабель, рекомендованный к применению в высококлассных аудио и видеосистемах, идеальное решение для подключения внешних ЦАПов. Материал проводника: посеребренная медь, изоляция: Hulliflex.</p>",
+  "descriptionText": "Van den Hul Ultimate USB — silver-plated OFC signal, Hulliflex и плоская геометрия с разнесением сигнала и питания. Длины 1,0–5,0 м.\n\n Silver-plated OFC\n Hulliflex\n Flat geometry\n A to B\n 1–5 m\n\n Назначение\n\n USB A→B для ЦАПа, где питание и data не должны «жить» в одной куче.",
+  "specs": [
+    {
+      "label": "Проводники",
+      "value": "Silver-plated OFC signal",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Оболочка",
+      "value": "Hulliflex",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Разъёмы",
+      "value": "USB A to USB B",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Длины",
+      "value": "1.0–5.0 м",
+      "source": "manufacturer"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_ultimate1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_ultimate1.jpg",
+      "alt": "van_den_hul_ultimate1.jpg",
+      "local": "assets/from-live/products/47b8757f2e_van_den_hul_ultimate1.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.vandenhul.com/product/ultimate-usb/"
+  ],
+  "enrichedAt": "2026-11-14T11:32:11Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}
