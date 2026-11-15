@@ -46,36 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "local://a658e915e6_polochnaia_akystika_Audio_Physic_Step_25.jpg",
-      "thumb": "assets/enriched/15642/47d8b93371_live1.jpg",
+      "src": "local://15642_w89_00.jpg",
+      "thumb": "assets/enriched/15642/15642_w89_00.jpg",
       "alt": "полочная акустика Audio Physic Step ( audio physic step )",
-      "local": "assets/enriched/15642/47d8b93371_live1.jpg",
+      "local": "assets/enriched/15642/15642_w89_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 26851
+      "attribution": "wave89-oem",
+      "bytes": 35916
     },
     {
-      "src": "local://d0573ff6a1_polochnaia_akystika_Audio_Physic_Step_III.jpg",
-      "thumb": "assets/enriched/15642/c3e359552a_live2.jpg",
+      "src": "local://15642_w89_01.jpg",
+      "thumb": "assets/enriched/15642/15642_w89_01.jpg",
       "alt": "полочная акустика Audio Physic Step ( audio physic step )",
-      "local": "assets/enriched/15642/c3e359552a_live2.jpg",
+      "local": "assets/enriched/15642/15642_w89_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 37654
+      "attribution": "wave89-oem",
+      "bytes": 118169
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/polochnaia_akystika_Audio_Physic_Step.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/polochnaia_akystika_Audio_Physic_Step-600x600.jpg",
-      "alt": "Audio Physic Step",
-      "local": "assets/from-live/products/4031a4ce22_polochnaia_akystika_Audio_Physic_Step.jpg"
+      "src": "local://15642_w89_02.jpg",
+      "thumb": "assets/enriched/15642/15642_w89_02.jpg",
+      "alt": "полочная акустика Audio Physic Step ( audio physic step )",
+      "local": "assets/enriched/15642/15642_w89_02.jpg",
+      "enriched": true,
+      "attribution": "wave89-oem",
+      "bytes": 103273
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/polochnaia_akystika_Audio_Physic_Step-600x600.jpg",
-      "local": "assets/enriched/15642/a3b8ae81e6_w13var.jpg",
-      "bytes": 37451,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15642_w89_03.jpg",
+      "thumb": "assets/enriched/15642/15642_w89_03.jpg",
+      "alt": "полочная акустика Audio Physic Step ( audio physic step )",
+      "local": "assets/enriched/15642/15642_w89_03.jpg",
+      "enriched": true,
+      "attribution": "wave89-oem",
+      "bytes": 113012
     }
   ],
   "sku": "",
@@ -87,5 +91,9 @@
   "enrichedAt": "2026-11-14T14:04:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T20:11:50Z",
+  "galleryWave89": true
 }

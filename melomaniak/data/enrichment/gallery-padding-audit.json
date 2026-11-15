@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T20:04:13Z",
+  "generatedAt": "2026-11-15T20:15:02Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1336,
-    "padded": 179,
+    "true_multi_angle": 1342,
+    "padded": 173,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 70.8,
-    "padded": 9.49,
+    "true_multi_angle": 71.12,
+    "padded": 9.17,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 27.67,
-    "not_true_multi": 29.2
+    "padded_of_claimed_gal4plus": 27.34,
+    "not_true_multi": 28.88
   },
   "padReasonTallies": {
     "local-variant": 697,
-    "wN-variant-name": 509,
+    "wN-variant-name": 498,
     "cdn-size-thumb": 107,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 511,
+  "claimedButNotTrueMulti": 505,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -534,19 +534,6 @@
       "class": "single_real"
     },
     {
-      "id": 40263,
-      "name": "саундбар Paradigm D?cor 2S (75-89 дюймов) ( paradigm d?cor 2s (75 89 ) )",
-      "cat": "Другое",
-      "price": 172465,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 264090,
       "name": "Вибропоглатитель Audio Replas OPT-30HG-SC HR/4P ( audio replas opt 30hg sc hr 4p )",
       "cat": "Другое",
@@ -573,6 +560,19 @@
         "local-variant": 1
       },
       "class": "single_real"
+    },
+    {
+      "id": 264076,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-SS HR/3P ( audio replas opt 100hg ss hr 3p )",
+      "cat": "Другое",
+      "price": 168300,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "cdn-size-thumb": 2
+      },
+      "class": "padded"
     }
   ],
   "hitlTrueOneshot": [
@@ -13205,16 +13205,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-2s-75-89-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 172465,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264133,
@@ -13774,16 +13772,14 @@
       "slug": "polochnaia_akystika_audio_physic_step",
       "cat": "Акустика",
       "price": 155000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15934,
@@ -16215,16 +16211,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-2s-%d0%b4%d0%be-74-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 114665,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264530,
@@ -30875,16 +30869,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-1c-90-130-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 40264,
@@ -30892,16 +30884,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-2s-90-130-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 40267,
@@ -30909,16 +30899,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-2sc-90-130-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 42916,

@@ -1,0 +1,158 @@
+{
+  "at": "2026-11-15T20:15:02Z",
+  "wave": 89,
+  "counts": {
+    "true_multi_angle": 1342,
+    "padded": 173,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 6,
+  "cleared": [
+    {
+      "id": 15642,
+      "name": "полочная акустика Audio Physic Step ( audio physic step )",
+      "unique": 4,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/15642/15642_w89_00.jpg",
+        "assets/enriched/15642/15642_w89_01.jpg",
+        "assets/enriched/15642/15642_w89_02.jpg",
+        "assets/enriched/15642/15642_w89_03.jpg"
+      ]
+    },
+    {
+      "id": 40263,
+      "name": "саундбар Paradigm D?cor 2S (75-89 дюймов) ( paradigm d?cor 2s (75 89 ) )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/40263/40263_w89_00.jpg",
+        "assets/enriched/40263/40263_w89_01.jpg",
+        "assets/enriched/40263/40263_w89_02.jpg",
+        "assets/enriched/40263/40263_w89_03.jpg",
+        "assets/enriched/40263/40263_w89_04.jpg"
+      ]
+    },
+    {
+      "id": 40261,
+      "name": "саундбар Paradigm D?cor 2S (до 74 дюймов) ( paradigm d?cor 2s ( 74 ) )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/40261/40261_w89_00.jpg",
+        "assets/enriched/40261/40261_w89_01.jpg",
+        "assets/enriched/40261/40261_w89_02.jpg",
+        "assets/enriched/40261/40261_w89_03.jpg",
+        "assets/enriched/40261/40261_w89_04.jpg"
+      ]
+    },
+    {
+      "id": 40264,
+      "name": "саундбар Paradigm D?cor 2S (90-130 дюймов) ( paradigm d?cor 2s (90 130 ) )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/40264/40264_w89_00.jpg",
+        "assets/enriched/40264/40264_w89_01.jpg",
+        "assets/enriched/40264/40264_w89_02.jpg",
+        "assets/enriched/40264/40264_w89_03.jpg",
+        "assets/enriched/40264/40264_w89_04.jpg"
+      ]
+    },
+    {
+      "id": 40252,
+      "name": "саундбар Paradigm D?cor 1C (90-130 дюймов) ( paradigm d?cor 1c (90 130 ) )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/40252/40252_w89_00.jpg",
+        "assets/enriched/40252/40252_w89_01.jpg",
+        "assets/enriched/40252/40252_w89_02.jpg",
+        "assets/enriched/40252/40252_w89_03.jpg",
+        "assets/enriched/40252/40252_w89_04.jpg"
+      ]
+    },
+    {
+      "id": 40267,
+      "name": "саундбар Paradigm D?cor 2SC (90-130 дюймов) ( paradigm d?cor 2sc (90 130 ) )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/40267/40267_w89_00.jpg",
+        "assets/enriched/40267/40267_w89_01.jpg",
+        "assets/enriched/40267/40267_w89_02.jpg",
+        "assets/enriched/40267/40267_w89_03.jpg",
+        "assets/enriched/40267/40267_w89_04.jpg"
+      ]
+    }
+  ],
+  "remaining_top_padded": [
+    {
+      "id": 15742,
+      "price": 320000,
+      "uq": 3,
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 c"
+    },
+    {
+      "id": 262549,
+      "price": 320000,
+      "uq": 2,
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )"
+    },
+    {
+      "id": 16864,
+      "price": 280000,
+      "uq": 2,
+      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultimate audio mc "
+    },
+    {
+      "id": 16788,
+      "price": 270000,
+      "uq": 2,
+      "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )"
+    },
+    {
+      "id": 16852,
+      "price": 250000,
+      "uq": 2,
+      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audio mc 300 a"
+    },
+    {
+      "id": 16786,
+      "price": 244000,
+      "uq": 2,
+      "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )"
+    },
+    {
+      "id": 15858,
+      "price": 215000,
+      "uq": 2,
+      "name": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )"
+    },
+    {
+      "id": 264077,
+      "price": 212500,
+      "uq": 2,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-SS HR/4P ( audio replas opt 100"
+    },
+    {
+      "id": 16180,
+      "price": 200000,
+      "uq": 2,
+      "name": "CD проигрыватель Trigon Prince ( cd trigon prince )"
+    },
+    {
+      "id": 15864,
+      "price": 199000,
+      "uq": 2,
+      "name": "усилитель мощности 47 Labs 4706-50 ( 47 labs 4706 50 )"
+    }
+  ],
+  "notes": [
+    "Skipped Jadeitte 4230 / MTP-2 264126 (no new sources).",
+    "Audio Physic Step black: OEM schwarz-hochglanz front/3qtr + side + live pair.",
+    "Decor 2S (≤74 / 75–89 / 90–130): vertical-side heroes + platform details.",
+    "Decor 1C 90–130: Flickr 85–100 FRONT + 1C details; Decor 2SC 90–130: LCR pack.",
+    "Rejected/scarce: AE308 black ~2 angles; Imagine S gloss only 3; On-Wall dhash-stuck; Sitara/MC100 polluted."
+  ]
+}

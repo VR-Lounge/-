@@ -26,32 +26,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/befad5ffd133aa1871c9e0ed3448e81c.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/befad5ffd133aa1871c9e0ed3448e81c-600x600.jpg",
-      "alt": "befad5ffd133aa1871c9e0ed3448e81c",
-      "local": "assets/from-live/products/c780119d32_befad5ffd133aa1871c9e0ed3448e81c.jpg"
+      "src": "local://40267_w89_00.jpg",
+      "thumb": "assets/enriched/40267/40267_w89_00.jpg",
+      "alt": "саундбар Paradigm D?cor 2SC (90-130 дюймов) ( paradigm d?cor 2sc (90 130 ) )",
+      "local": "assets/enriched/40267/40267_w89_00.jpg",
+      "enriched": true,
+      "attribution": "wave89-oem",
+      "bytes": 30141
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/cb3bf9572c4d03548016c8a2dc63b443.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/cb3bf9572c4d03548016c8a2dc63b443-600x600.jpeg",
-      "alt": "cb3bf9572c4d03548016c8a2dc63b443",
-      "local": "assets/from-live/products/0f96c98ab3_cb3bf9572c4d03548016c8a2dc63b443.jpeg"
+      "src": "local://40267_w89_01.jpg",
+      "thumb": "assets/enriched/40267/40267_w89_01.jpg",
+      "alt": "саундбар Paradigm D?cor 2SC (90-130 дюймов) ( paradigm d?cor 2sc (90 130 ) )",
+      "local": "assets/enriched/40267/40267_w89_01.jpg",
+      "enriched": true,
+      "attribution": "wave89-oem",
+      "bytes": 33739
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/befad5ffd133aa1871c9e0ed3448e81c-300x300.jpg",
-      "local": "assets/enriched/40267/17b5a93c58_w13var.jpg",
-      "bytes": 19829,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://40267_w89_02.jpg",
+      "thumb": "assets/enriched/40267/40267_w89_02.jpg",
+      "alt": "саундбар Paradigm D?cor 2SC (90-130 дюймов) ( paradigm d?cor 2sc (90 130 ) )",
+      "local": "assets/enriched/40267/40267_w89_02.jpg",
+      "enriched": true,
+      "attribution": "wave89-oem",
+      "bytes": 22896
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/befad5ffd133aa1871c9e0ed3448e81c-600x600.jpg",
-      "local": "assets/enriched/40267/bb4c7626ab_w13var.jpg",
-      "bytes": 34566,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://40267_w89_03.jpg",
+      "thumb": "assets/enriched/40267/40267_w89_03.jpg",
+      "alt": "саундбар Paradigm D?cor 2SC (90-130 дюймов) ( paradigm d?cor 2sc (90 130 ) )",
+      "local": "assets/enriched/40267/40267_w89_03.jpg",
+      "enriched": true,
+      "attribution": "wave89-oem",
+      "bytes": 230970
+    },
+    {
+      "src": "local://40267_w89_04.jpg",
+      "thumb": "assets/enriched/40267/40267_w89_04.jpg",
+      "alt": "саундбар Paradigm D?cor 2SC (90-130 дюймов) ( paradigm d?cor 2sc (90 130 ) )",
+      "local": "assets/enriched/40267/40267_w89_04.jpg",
+      "enriched": true,
+      "attribution": "wave89-oem",
+      "bytes": 30108
     }
   ],
   "sku": "",
@@ -63,5 +80,9 @@
   "enrichedAt": "2026-11-14T13:19:30Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T20:11:50Z",
+  "galleryWave89": true
 }
