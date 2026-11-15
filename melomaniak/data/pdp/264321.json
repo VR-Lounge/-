@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-202R-e1551086422886.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-202R-e1551086422886.jpg",
-      "alt": "Furutech-FP-202R-e1551086422886",
-      "local": "assets/from-live/products/2388c2c727_Furutech-FP-202R-e1551086422886.jpg"
+      "src": "local://264321_w102_00.jpg",
+      "thumb": "assets/enriched/264321/264321_w102_00.jpg",
+      "alt": "Коннектор Furutech FP-202(R) ( furutech fp 202(r) )",
+      "local": "assets/enriched/264321/264321_w102_00.jpg",
+      "enriched": true,
+      "attribution": "wave102-oem",
+      "bytes": 137336
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/202g-500x520-1.jpg",
-      "local": "assets/enriched/264321/017ded86c0_w15sib.jpg",
-      "bytes": 41509,
-      "wave": "meager-w15-2026-11",
-      "w": 500,
-      "h": 520
+      "src": "local://264321_w102_01.jpg",
+      "thumb": "assets/enriched/264321/264321_w102_01.jpg",
+      "alt": "Коннектор Furutech FP-202(R) ( furutech fp 202(r) )",
+      "local": "assets/enriched/264321/264321_w102_01.jpg",
+      "enriched": true,
+      "attribution": "wave102-oem",
+      "bytes": 40213
     },
     {
-      "src": "local-variant://264321/w17sc95",
-      "local": "assets/enriched/264321/f00e48accf_w17sc95.jpg",
-      "bytes": 45632,
-      "wave": "meager-w17-2026-11",
-      "w": 475,
-      "h": 494
+      "src": "local://264321_w102_02.jpg",
+      "thumb": "assets/enriched/264321/264321_w102_02.jpg",
+      "alt": "Коннектор Furutech FP-202(R) ( furutech fp 202(r) )",
+      "local": "assets/enriched/264321/264321_w102_02.jpg",
+      "enriched": true,
+      "attribution": "wave102-oem",
+      "bytes": 109031
     },
     {
-      "src": "local-variant://264321/w17sc90",
-      "local": "assets/enriched/264321/45b786bdc5_w17sc90.jpg",
-      "bytes": 41386,
-      "wave": "meager-w17-2026-11",
-      "w": 450,
-      "h": 468
+      "src": "local://264321_w102_03.jpg",
+      "thumb": "assets/enriched/264321/264321_w102_03.jpg",
+      "alt": "Коннектор Furutech FP-202(R) ( furutech fp 202(r) )",
+      "local": "assets/enriched/264321/264321_w102_03.jpg",
+      "enriched": true,
+      "attribution": "wave102-oem",
+      "bytes": 79952
     }
   ],
   "sku": "",
@@ -77,5 +83,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:43:58Z",
+  "galleryWave102": true
 }

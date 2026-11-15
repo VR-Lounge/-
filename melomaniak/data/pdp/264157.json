@@ -31,37 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "local://18df187500_Furutech-FI-48.jpg",
-      "thumb": "assets/enriched/264157/b1b7bf4a63_live1.jpg",
+      "src": "local://264157_w102_00.jpg",
+      "thumb": "assets/enriched/264157/264157_w102_00.jpg",
       "alt": "Коннектор сетевой Furutech FI-48 NCF(Ag ) ( furutech fi 48 ncf(ag ) )",
-      "local": "assets/enriched/264157/b1b7bf4a63_live1.jpg",
+      "local": "assets/enriched/264157/264157_w102_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 12459
+      "attribution": "wave102-oem",
+      "bytes": 96313
     },
     {
-      "src": "local://775af2493f_FI-48-NCF-500x333-1-1.jpg",
-      "thumb": "assets/enriched/264157/b3c64921e6_live1.jpg",
+      "src": "local://264157_w102_01.jpg",
+      "thumb": "assets/enriched/264157/264157_w102_01.jpg",
       "alt": "Коннектор сетевой Furutech FI-48 NCF(Ag ) ( furutech fi 48 ncf(ag ) )",
-      "local": "assets/enriched/264157/b3c64921e6_live1.jpg",
+      "local": "assets/enriched/264157/264157_w102_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 15404
+      "attribution": "wave102-oem",
+      "bytes": 27145
     },
     {
-      "src": "local://775af2493f_FI-48-NCF-500x333-2.jpg",
-      "thumb": "assets/enriched/264157/a96d36a9b0_live2.jpg",
+      "src": "local://264157_w102_02.jpg",
+      "thumb": "assets/enriched/264157/264157_w102_02.jpg",
       "alt": "Коннектор сетевой Furutech FI-48 NCF(Ag ) ( furutech fi 48 ncf(ag ) )",
-      "local": "assets/enriched/264157/a96d36a9b0_live2.jpg",
+      "local": "assets/enriched/264157/264157_w102_02.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 15404
+      "attribution": "wave102-oem",
+      "bytes": 62705
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-48-NCF-500x333-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-48-NCF-500x333-1.jpg",
-      "alt": "FI-48-NCF-500&#215;333",
-      "local": "assets/from-live/products/775af2493f_FI-48-NCF-500x333-1.jpg"
+      "src": "local://264157_w102_03.jpg",
+      "thumb": "assets/enriched/264157/264157_w102_03.jpg",
+      "alt": "Коннектор сетевой Furutech FI-48 NCF(Ag ) ( furutech fi 48 ncf(ag ) )",
+      "local": "assets/enriched/264157/264157_w102_03.jpg",
+      "enriched": true,
+      "attribution": "wave102-oem",
+      "bytes": 57112
     }
   ],
   "sku": "",
@@ -73,5 +76,9 @@
   "enrichedAt": "2026-11-14T16:50:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:43:58Z",
+  "galleryWave102": true
 }
