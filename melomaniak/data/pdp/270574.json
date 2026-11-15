@@ -46,32 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_sea1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_sea1.jpg",
-      "alt": "van_den_hul_the_sea1.jpg",
-      "local": "assets/from-live/products/77b1814384_van_den_hul_the_sea1.jpg"
+      "src": "local://270574_w45_00.jpg",
+      "thumb": "assets/enriched/270574/270574_w45_00.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Sea",
+      "local": "assets/enriched/270574/270574_w45_00.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 49072
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_sea2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_sea2.jpg",
-      "alt": "van_den_hul_the_sea2.jpg",
-      "local": "assets/from-live/products/0af6f1994d_van_den_hul_the_sea2.jpg"
+      "src": "local://270574_w45_01.jpg",
+      "thumb": "assets/enriched/270574/270574_w45_01.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Sea",
+      "local": "assets/enriched/270574/270574_w45_01.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 40697
     },
     {
-      "src": "local-variant://270574/w17sc95",
-      "local": "assets/enriched/270574/f5f22ffb18_w17sc95.jpg",
-      "bytes": 30351,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://270574_w45_02.jpg",
+      "thumb": "assets/enriched/270574/270574_w45_02.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Sea",
+      "local": "assets/enriched/270574/270574_w45_02.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 68952
     },
     {
-      "src": "local-variant://270574/w17sc90",
-      "local": "assets/enriched/270574/c2444e1fcd_w17sc90.jpg",
-      "bytes": 28127,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
+      "src": "local://270574_w45_03.jpg",
+      "thumb": "assets/enriched/270574/270574_w45_03.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Sea",
+      "local": "assets/enriched/270574/270574_w45_03.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 87289
     }
   ],
   "sku": "",
@@ -83,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:54:10Z",
+  "galleryWave45": true
 }

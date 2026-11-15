@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T08:44:00Z",
+  "at": "2026-11-15T08:57:15Z",
   "counts": {
-    "true_multi_angle": 1211,
-    "padded": 301,
+    "true_multi_angle": 1215,
+    "padded": 297,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 64.18,
-    "padded": 15.95,
+    "true_multi_angle": 64.39,
+    "padded": 15.74,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 34.4,
-    "not_true_multi": 35.82
+    "padded_of_claimed_gal4plus": 34.18,
+    "not_true_multi": 35.61
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -50,7 +50,7 @@
     ]
   },
   "remaining": {
-    "padded": 301,
+    "padded": 297,
     "single_real": 375
   },
   "topHitlPadded": [
@@ -396,24 +396,24 @@
       }
     ]
   },
-  "wave": "wave44",
+  "wave": "wave45",
   "padded_to_true_multi": 4,
   "cleared": [
     {
-      "id": 272830,
-      "name": "AudioQuest Carbon USB"
+      "id": 270565,
+      "name": "Van den Hul 3T The Valley"
     },
     {
-      "id": 270561,
-      "name": "Van den Hul First Metal Screen"
+      "id": 270574,
+      "name": "Van den Hul 3T The Sea"
     },
     {
-      "id": 264251,
-      "name": "Furutech e-TP80E"
+      "id": 270571,
+      "name": "Van den Hul 3T The River"
     },
     {
-      "id": 270568,
-      "name": "Van den Hul The Orchid"
+      "id": 272797,
+      "name": "AudioQuest PowerQuest 505 EU Schuko"
     }
   ],
   "top_hitl_padded": [

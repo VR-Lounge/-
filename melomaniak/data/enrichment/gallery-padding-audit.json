@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T08:44:00Z",
+  "generatedAt": "2026-11-15T08:57:15Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1211,
-    "padded": 301,
+    "true_multi_angle": 1215,
+    "padded": 297,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 64.18,
-    "padded": 15.95,
+    "true_multi_angle": 64.39,
+    "padded": 15.74,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 34.4,
-    "not_true_multi": 35.82
+    "padded_of_claimed_gal4plus": 34.18,
+    "not_true_multi": 35.61
   },
   "padReasonTallies": {
-    "local-variant": 738,
+    "local-variant": 730,
     "wN-variant-name": 634,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 635,
+  "claimedButNotTrueMulti": 631,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -17581,16 +17581,14 @@
       "slug": "e93a6a9a9a46dc37cdad3206a0ff06a3",
       "cat": "Другое",
       "price": 97690,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 10094,
@@ -21754,16 +21752,14 @@
       "slug": "f92b7e6f0461d136894b9b69db5a64b6",
       "cat": "Кабели",
       "price": 54190,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270574,
@@ -21771,16 +21767,14 @@
       "slug": "648aef0bb265dcaea3a32c15219622eb",
       "cat": "Кабели",
       "price": 54190,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272914,
@@ -22897,16 +22891,14 @@
       "slug": "7578776290697c609427ab95d2e804c9",
       "cat": "Кабели",
       "price": 46290,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264405,

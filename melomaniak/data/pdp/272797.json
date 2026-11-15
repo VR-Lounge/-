@@ -71,36 +71,40 @@
   ],
   "gallery": [
     {
-      "src": "https://cdn11.bigcommerce.com/s-1xa2dhlu0a/images/stencil/1280x1280/products/148733/163385/AAQPQ505B.jpg",
-      "local": "assets/enriched/272797/7677c68451_w17cdn.jpg",
-      "bytes": 87153,
-      "wave": "meager-w17-2026-11",
-      "w": 1280,
-      "h": 1280
+      "src": "local://272797_w45_00.jpg",
+      "thumb": "assets/enriched/272797/272797_w45_00.jpg",
+      "alt": "Сетевой фильтр AudioQuest PowerQuest 505",
+      "local": "assets/enriched/272797/272797_w45_00.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 72640
     },
     {
-      "src": "https://www.audioquest.com/cdn/shop/files/audioquest-powerquest-505-pq505na-north-america-5012936.png",
-      "local": "assets/enriched/272797/b2f2aa33b5_w17cdn.png",
-      "bytes": 361461,
-      "wave": "meager-w17-2026-11",
-      "w": 1200,
-      "h": 1200
+      "src": "local://272797_w45_01.jpg",
+      "thumb": "assets/enriched/272797/272797_w45_01.jpg",
+      "alt": "Сетевой фильтр AudioQuest PowerQuest 505",
+      "local": "assets/enriched/272797/272797_w45_01.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 36614
     },
     {
-      "src": "local-variant://272797/w17hsc95",
-      "local": "assets/enriched/272797/c75e114460_w17hsc95.jpg",
-      "bytes": 88508,
-      "wave": "meager-w17-2026-11",
-      "w": 1140,
-      "h": 1140
+      "src": "local://272797_w45_02.jpg",
+      "thumb": "assets/enriched/272797/272797_w45_02.jpg",
+      "alt": "Сетевой фильтр AudioQuest PowerQuest 505",
+      "local": "assets/enriched/272797/272797_w45_02.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 43215
     },
     {
-      "src": "local-variant://272797/w17hsc90",
-      "local": "assets/enriched/272797/78e8c8956f_w17hsc90.jpg",
-      "bytes": 79184,
-      "wave": "meager-w17-2026-11",
-      "w": 1080,
-      "h": 1080
+      "src": "local://272797_w45_03.jpg",
+      "thumb": "assets/enriched/272797/272797_w45_03.jpg",
+      "alt": "Сетевой фильтр AudioQuest PowerQuest 505",
+      "local": "assets/enriched/272797/272797_w45_03.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 49501
     }
   ],
   "sku": "",
@@ -112,5 +116,9 @@
   "enrichedAt": "2026-11-14T13:36:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:54:10Z",
+  "galleryWave45": true
 }

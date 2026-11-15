@@ -51,32 +51,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_river1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_river1.jpg",
-      "alt": "van_den_hul_the_river1.jpg",
-      "local": "assets/from-live/products/d356bd9151_van_den_hul_the_river1.jpg"
+      "src": "local://270571_w45_00.jpg",
+      "thumb": "assets/enriched/270571/270571_w45_00.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The River",
+      "local": "assets/enriched/270571/270571_w45_00.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 33840
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_river_1-2m2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_river_1-2m2.jpg",
-      "alt": "van_den_hul_the_river_1-2m2.jpg",
-      "local": "assets/from-live/products/01a1ad3bf7_van_den_hul_the_river_1-2m2.jpg"
+      "src": "local://270571_w45_01.jpg",
+      "thumb": "assets/enriched/270571/270571_w45_01.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The River",
+      "local": "assets/enriched/270571/270571_w45_01.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 68649
     },
     {
-      "src": "local-variant://270571/w17sc95",
-      "local": "assets/enriched/270571/a9c63abb1c_w17sc95.jpg",
-      "bytes": 26177,
-      "wave": "meager-w17-2026-11",
-      "w": 522,
-      "h": 522
+      "src": "local://270571_w45_02.jpg",
+      "thumb": "assets/enriched/270571/270571_w45_02.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The River",
+      "local": "assets/enriched/270571/270571_w45_02.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 94368
     },
     {
-      "src": "local-variant://270571/w17sc90",
-      "local": "assets/enriched/270571/9564f7a396_w17sc90.jpg",
-      "bytes": 24470,
-      "wave": "meager-w17-2026-11",
-      "w": 495,
-      "h": 495
+      "src": "local://270571_w45_03.jpg",
+      "thumb": "assets/enriched/270571/270571_w45_03.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The River",
+      "local": "assets/enriched/270571/270571_w45_03.jpg",
+      "enriched": true,
+      "attribution": "wave45-oem",
+      "bytes": 67643
     }
   ],
   "sku": "",
@@ -88,5 +96,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:54:10Z",
+  "galleryWave45": true
 }
