@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:05:18Z",
+  "generatedAt": "2026-11-15T12:19:34Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,16 +15,16 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1251,
-    "padded": 261,
+    "true_multi_angle": 1253,
+    "padded": 259,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 66.3,
-    "padded": 13.83,
+    "true_multi_angle": 66.4,
+    "padded": 13.73,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.23,
-    "not_true_multi": 33.7
+    "padded_of_claimed_gal4plus": 32.12,
+    "not_true_multi": 33.6
   },
   "padReasonTallies": {
     "local-variant": 723,
@@ -33,7 +33,7 @@
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 595,
+  "claimedButNotTrueMulti": 593,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -13971,12 +13971,12 @@
       "price": 153000,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15614,
@@ -14609,13 +14609,13 @@
       "cat": "Акустика",
       "price": 139990,
       "galleryHitl": false,
-      "galleryLen": 7,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270805,
