@@ -26,6 +26,15 @@
   ],
   "gallery": [
     {
+      "src": "from-live://2d63f01605_Spec_RSA_M3EX_EAR_best-of-2016.jpg",
+      "thumb": "from-live://2d63f01605_Spec_RSA_M3EX_EAR_best-of-2016.jpg",
+      "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
+      "local": "assets/from-live/products/2d63f01605_Spec_RSA_M3EX_EAR_best-of-2016.jpg",
+      "bytes": 68608,
+      "from": "from-live-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/SPEC-RSA-M1-EX-rear.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/SPEC-RSA-M1-EX-rear.jpg",
       "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
@@ -35,6 +44,33 @@
       "bytes": 39159
     },
     {
+      "src": "from-live://4a51c5c037_integralnii_ysilitel_Spec_RSA-F1.jpg",
+      "thumb": "from-live://4a51c5c037_integralnii_ysilitel_Spec_RSA-F1.jpg",
+      "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
+      "local": "assets/from-live/products/4a51c5c037_integralnii_ysilitel_Spec_RSA-F1.jpg",
+      "bytes": 34801,
+      "from": "from-live-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "http://www.metex.ru/images/2013/12/spec-nastojashhee-budushhee-japonskoj-audio.jpg",
+      "thumb": "http://www.metex.ru/images/2013/12/spec-nastojashhee-budushhee-japonskoj-audio.jpg",
+      "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
+      "local": "assets/enriched/16798/5fb7c37736_w20.jpg",
+      "bytes": 26353,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "http://www.metex.ru/images/2013/12/spec-nastojashhee-budushhee-japonskoj-audio_2.jpg",
+      "thumb": "http://www.metex.ru/images/2013/12/spec-nastojashhee-budushhee-japonskoj-audio_2.jpg",
+      "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
+      "local": "assets/enriched/16798/0688dd79c9_w20.jpg",
+      "bytes": 22855,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Spec_RSA_M1EX.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Spec_RSA_M1EX.jpg",
       "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
@@ -42,6 +78,15 @@
       "bytes": 17515,
       "from": "oem-w19",
       "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "from-live://d01e955873_integralnii_ysilitel_Spec_RSA_V1_EX.jpg",
+      "thumb": "from-live://d01e955873_integralnii_ysilitel_Spec_RSA_V1_EX.jpg",
+      "alt": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
+      "local": "assets/from-live/products/d01e955873_integralnii_ysilitel_Spec_RSA_V1_EX.jpg",
+      "bytes": 15074,
+      "from": "from-live-w20",
+      "wave": "gallery-w20-2026-11"
     }
   ],
   "sku": "",
@@ -51,10 +96,11 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_spec_rsa_m1ex/"
   ],
   "enrichedAt": "2026-11-14T17:02:06Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:24:17Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:54:42Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryWave20": true
 }

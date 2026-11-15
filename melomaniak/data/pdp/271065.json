@@ -115,6 +115,15 @@
       "wave": "gallery-w19-2026-11"
     },
     {
+      "src": "https://web.archive.org/web/20200301im_/https://www.monitoraudio.com/site/assets/files/24954/ma_gold_300_lifestyle-1.jpg",
+      "thumb": "https://web.archive.org/web/20200301im_/https://www.monitoraudio.com/site/assets/files/24954/ma_gold_300_lifestyle-1.jpg",
+      "alt": "Напольная акустика Monitor Audio Gold 300 5G",
+      "local": "assets/enriched/271065/092fb79c29_w20.jpg",
+      "bytes": 475074,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_300_5g_11358707249-2.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_300_5g_11358707249-2.jpg",
       "alt": "Напольная акустика Monitor Audio Gold 300 5G",
@@ -122,13 +131,23 @@
       "bytes": 291637,
       "from": "oem-w19",
       "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "https://web.archive.org/web/20200301im_/https://www.monitoraudio.com/site/assets/files/26860/ma_gold_300_walnut_iso-1.jpg",
+      "thumb": "https://web.archive.org/web/20200301im_/https://www.monitoraudio.com/site/assets/files/26860/ma_gold_300_walnut_iso-1.jpg",
+      "alt": "Напольная акустика Monitor Audio Gold 300 5G",
+      "local": "assets/enriched/271065/61e5100da8_w20.jpg",
+      "bytes": 69564,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
     }
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
-  "galleryHitl": true,
-  "enrichmentNote": "HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
-  "galleryDepaddedAt": "2026-11-15T00:24:12Z",
+  "galleryHitl": false,
+  "enrichmentNote": "HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
+  "galleryDepaddedAt": "2026-11-15T00:53:26Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryWave20": true
 }

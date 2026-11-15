@@ -172,6 +172,24 @@
       "bytes": 169659,
       "from": "oem-w19",
       "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "https://futureaudiophile.com/wp-content/uploads/2023/03/TA-SB3100HV-DAC-Rear.jpg",
+      "thumb": "https://futureaudiophile.com/wp-content/uploads/2023/03/TA-SB3100HV-DAC-Rear.jpg",
+      "alt": "Сетевой проигрыватель T+A SD 3100 HV",
+      "local": "assets/enriched/274019/b9d04a89a1_w20.jpg",
+      "bytes": 71789,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "https://www.hifiverse.io/storage/media/2025/76/7611/cnv/67e8f8e6e1625-lg.webp",
+      "thumb": "https://www.hifiverse.io/storage/media/2025/76/7611/cnv/67e8f8e6e1625-lg.webp",
+      "alt": "Сетевой проигрыватель T+A SD 3100 HV",
+      "local": "assets/enriched/274019/c578baf5bc_w20.webp",
+      "bytes": 10298,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
     }
   ],
   "sku": "",
@@ -182,10 +200,11 @@
     "https://www.ta-hifi.de/"
   ],
   "enrichedAt": "2026-11-14T13:36:42Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:23:42Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:51:49Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryWave20": true
 }

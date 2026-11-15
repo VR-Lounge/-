@@ -129,12 +129,30 @@
       "h": 1200
     },
     {
+      "src": "https://www.paradigm.com/3019-large_default/founder-80f.jpg",
+      "thumb": "https://www.paradigm.com/3019-large_default/founder-80f.jpg",
+      "alt": "Напольная акустика PARADIGM Founder 80F Walnut ( paradigm founder 80f walnut )",
+      "local": "assets/enriched/261882/241189d669_w20b.jpg",
+      "bytes": 86439,
+      "from": "oem-w20b",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
       "src": "https://www.paradigm.com/2831-large_default/founder-80f.jpg",
       "local": "assets/enriched/261882/c1fe6c4cc7_w12p80.jpg",
       "bytes": 76217,
       "wave": "meager-w12-2026-11",
       "w": 1200,
       "h": 1200
+    },
+    {
+      "src": "https://www.paradigm.com/3001-large_default/founder-80f.jpg",
+      "thumb": "https://www.paradigm.com/3001-large_default/founder-80f.jpg",
+      "alt": "Напольная акустика PARADIGM Founder 80F Walnut ( paradigm founder 80f walnut )",
+      "local": "assets/enriched/261882/1ee7438766_w20b.jpg",
+      "bytes": 53651,
+      "from": "oem-w20b",
+      "wave": "gallery-w20-2026-11"
     }
   ],
   "sku": "",
@@ -146,8 +164,9 @@
   "enrichedAt": "2026-11-14T13:45:44Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:24:46Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:56:30Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryWave20": true
 }

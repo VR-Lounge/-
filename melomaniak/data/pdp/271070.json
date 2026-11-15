@@ -120,20 +120,29 @@
       "bytes": 301360
     },
     {
+      "src": "https://www.monitoraudio.com/site/assets/files/54556/ma_gold6g_500_iso_macassar-1.jpg",
+      "thumb": "https://www.monitoraudio.com/site/assets/files/54556/ma_gold6g_500_iso_macassar-1.jpg",
+      "alt": "Напольная акустика Monitor Audio Gold 500 6G",
+      "local": "assets/enriched/271070/c134e255d7_w20.jpg",
+      "bytes": 117219,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "https://www.monitoraudio.com/site/assets/files/54561/ma_gold6g_500_back_macassar-1.jpg",
+      "thumb": "https://www.monitoraudio.com/site/assets/files/54561/ma_gold6g_500_back_macassar-1.jpg",
+      "alt": "Напольная акустика Monitor Audio Gold 500 6G",
+      "local": "assets/enriched/271070/a6a297e786_w20.jpg",
+      "bytes": 70008,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g_4829953124-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g_4829953124-1.jpg",
       "alt": "Напольная акустика Monitor Audio Gold 500 6G",
       "local": "assets/enriched/271070/1f02326ff2_w19.jpg",
       "bytes": 19178,
-      "from": "oem-w19",
-      "wave": "gallery-w19-2026-11"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g4.jpg",
-      "alt": "Напольная акустика Monitor Audio Gold 500 6G",
-      "local": "assets/enriched/271070/2c9ef66082_w19.jpg",
-      "bytes": 16692,
       "from": "oem-w19",
       "wave": "gallery-w19-2026-11"
     }
@@ -146,11 +155,12 @@
     "https://www.monitoraudio.com/en/us/product-ranges/gold-series-6g/gold-500-6g/"
   ],
   "enrichedAt": "2026-11-14T15:05:41Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w8-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:29:32Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:53:15Z",
   "galleryWave18": true,
   "galleryWave19": true,
-  "galleryWave19b": true
+  "galleryWave19b": true,
+  "galleryWave20": true
 }

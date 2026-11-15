@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T00:33:09Z",
+  "at": "2026-11-15T01:03:22Z",
   "counts": {
-    "true_multi_angle": 1072,
-    "padded": 437,
+    "true_multi_angle": 1089,
+    "padded": 420,
     "single_real": 378
   },
   "pct": {
-    "true_multi_angle": 56.81,
-    "padded": 23.16,
+    "true_multi_angle": 57.71,
+    "padded": 22.26,
     "single_real": 20.03,
-    "padded_of_claimed_gal4plus": 40.41,
-    "not_true_multi": 43.19
+    "padded_of_claimed_gal4plus": 40.03,
+    "not_true_multi": 42.29
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -231,5 +231,78 @@
       "uniqueDistinct": 1,
       "galleryLen": 1
     }
-  ]
+  ],
+  "wave20": {
+    "padded_to_true_multi": 17,
+    "cleared": [
+      {
+        "id": 274019,
+        "name": "Сетевой проигрыватель T+A SD 3100 HV"
+      },
+      {
+        "id": 16832,
+        "name": "усилитель мощности Triode TRV P845SE ( triode trv p845se )"
+      },
+      {
+        "id": 261114,
+        "name": "предусилитель и усилитель мощности audio research sp20 + vs1"
+      },
+      {
+        "id": 262129,
+        "name": "ЦАП Soulnote D 2 ( soulnote d 2 )"
+      },
+      {
+        "id": 25156,
+        "name": "усилитель мощности Anthem Statement P 2 BL ( anthem statemen"
+      },
+      {
+        "id": 271070,
+        "name": "Напольная акустика Monitor Audio Gold 500 6G"
+      },
+      {
+        "id": 271065,
+        "name": "Напольная акустика Monitor Audio Gold 300 5G"
+      },
+      {
+        "id": 4318,
+        "name": "напольная акустика Lawrence Audio Violin SE ( lawrence audio"
+      },
+      {
+        "id": 16798,
+        "name": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )"
+      },
+      {
+        "id": 271034,
+        "name": "Напольная акустика Monitor Audio Gold 300 6G"
+      },
+      {
+        "id": 25160,
+        "name": "усилитель мощности Anthem Statement M 1 BL ( anthem statemen"
+      },
+      {
+        "id": 271060,
+        "name": "Напольная акустика Monitor Audio Gold 200 5G"
+      },
+      {
+        "id": 261878,
+        "name": "Напольная акустика PARADIGM Founder 80F Gloss Black ( paradi"
+      },
+      {
+        "id": 261882,
+        "name": "Напольная акустика PARADIGM Founder 80F Walnut ( paradigm fo"
+      },
+      {
+        "id": 261883,
+        "name": "Напольная акустика PARADIGM Founder 80F Midnight Cherry ( pa"
+      },
+      {
+        "id": 261884,
+        "name": "Напольная акустика PARADIGM Founder 80F Black Walnut ( parad"
+      },
+      {
+        "id": 34458,
+        "name": "интегральный усилитель Anthem STR Integrated Amplifier ( ant"
+      }
+    ]
+  }
 }

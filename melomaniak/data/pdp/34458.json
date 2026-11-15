@@ -26,6 +26,42 @@
   ],
   "gallery": [
     {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/112/745/STR-Integrated-Black-Back-3qtr__56405.1770156955.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/112/745/STR-Integrated-Black-Back-3qtr__56405.1770156955.png",
+      "alt": "интегральный усилитель Anthem STR Integrated Amplifier ( anthem str integrated amplifier )",
+      "local": "assets/enriched/34458/47dcaef973_w20c.png",
+      "bytes": 1461474,
+      "from": "oem-w20c",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/112/742/STR-Integrated-Black-Back__52330.1770156955.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/112/742/STR-Integrated-Black-Back__52330.1770156955.png",
+      "alt": "интегральный усилитель Anthem STR Integrated Amplifier ( anthem str integrated amplifier )",
+      "local": "assets/enriched/34458/1ee705f01c_w20c.png",
+      "bytes": 1411024,
+      "from": "oem-w20c",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/112/497/STR-Integrated-Black-Front-3qtr__69100.1762810105.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/112/497/STR-Integrated-Black-Front-3qtr__69100.1762810105.png",
+      "alt": "интегральный усилитель Anthem STR Integrated Amplifier ( anthem str integrated amplifier )",
+      "local": "assets/enriched/34458/47eaab1575_w20c.png",
+      "bytes": 954298,
+      "from": "oem-w20c",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/112/636/STR-Integrated-Silver-Front__93749.1763665635.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/112/636/STR-Integrated-Silver-Front__93749.1763665635.png",
+      "alt": "интегральный усилитель Anthem STR Integrated Amplifier ( anthem str integrated amplifier )",
+      "local": "assets/enriched/34458/ff2b8394f5_w20c.png",
+      "bytes": 944361,
+      "from": "oem-w20c",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/40c4f54b81664235fd9f7ad5f85862ba.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/40c4f54b81664235fd9f7ad5f85862ba.jpg",
       "alt": "интегральный усилитель Anthem STR Integrated Amplifier ( anthem str integrated amplifier )",
@@ -63,9 +99,10 @@
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:29:35Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:00:23Z",
   "galleryWave18": true,
   "galleryWave19": true,
-  "galleryWave19b": true
+  "galleryWave19b": true,
+  "galleryWave20": true
 }

@@ -45,6 +45,24 @@
       "wave": "gallery-w19-2026-11"
     },
     {
+      "src": "https://musmag.com/images/stories/virtuemart/product/177/650x700-63403_1.jpg",
+      "thumb": "https://musmag.com/images/stories/virtuemart/product/177/650x700-63403_1.jpg",
+      "alt": "усилитель мощности Triode TRV P845SE ( triode trv p845se )",
+      "local": "assets/enriched/16832/86a632183b_w20.jpg",
+      "bytes": 65006,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "https://musmag.com/images/stories/virtuemart/product/177/650x700-63403_2.jpg",
+      "thumb": "https://musmag.com/images/stories/virtuemart/product/177/650x700-63403_2.jpg",
+      "alt": "усилитель мощности Triode TRV P845SE ( triode trv p845se )",
+      "local": "assets/enriched/16832/209b537014_w20.jpg",
+      "bytes": 58565,
+      "from": "oem-w20",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
       "src": "from-live://330789e976_ysilitel_moshnosti_Triode_TRV_P845SE.jpg",
       "thumb": "assets/enriched/16832/810abc3c63_w10live.jpg",
       "alt": "16832",
@@ -62,10 +80,11 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_triode_trv_p845se/"
   ],
   "enrichedAt": "2026-11-14T13:45:24Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w10-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:23:49Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:52:53Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryWave20": true
 }

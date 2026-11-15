@@ -31,6 +31,33 @@
   ],
   "gallery": [
     {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/124/703/STATEMENT-M1-Product-Images-Website_0000_STATEMENT-M1---Back__39641.1770155892.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/124/703/STATEMENT-M1-Product-Images-Website_0000_STATEMENT-M1---Back__39641.1770155892.png",
+      "alt": "усилитель мощности Anthem Statement M 1 BL ( anthem statement m 1 bl )",
+      "local": "assets/enriched/25160/47031b1d0c_w20b.png",
+      "bytes": 714513,
+      "from": "oem-w20b",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/124/702/STATEMENT-M1-Product-Images-Website_0001_STATEMENT-M1---Back---3qtr__08275.1770155892.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/124/702/STATEMENT-M1-Product-Images-Website_0001_STATEMENT-M1---Back---3qtr__08275.1770155892.png",
+      "alt": "усилитель мощности Anthem Statement M 1 BL ( anthem statement m 1 bl )",
+      "local": "assets/enriched/25160/0a7180bf91_w20b.png",
+      "bytes": 693953,
+      "from": "oem-w20b",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/124/466/STATEMENT-M1-Product-Images-Website_0003_STATEMENT-M1---Front---3qtr__00342.1762808881.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/124/466/STATEMENT-M1-Product-Images-Website_0003_STATEMENT-M1---Front---3qtr__00342.1762808881.png",
+      "alt": "усилитель мощности Anthem Statement M 1 BL ( anthem statement m 1 bl )",
+      "local": "assets/enriched/25160/0667c6abb2_w20b.png",
+      "bytes": 557976,
+      "from": "oem-w20b",
+      "wave": "gallery-w20-2026-11"
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/02/1f23b2a75f315aa31ea4a48e7a68a029.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/02/1f23b2a75f315aa31ea4a48e7a68a029.jpg",
       "alt": "усилитель мощности Anthem Statement M 1 BL ( anthem statement m 1 bl )",
@@ -68,9 +95,10 @@
   "enrichedAt": "2026-11-14T13:45:24Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:29:39Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:56:09Z",
   "galleryWave18": true,
   "galleryWave19": true,
-  "galleryWave19b": true
+  "galleryWave19b": true,
+  "galleryWave20": true
 }
