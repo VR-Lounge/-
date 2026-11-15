@@ -1,0 +1,67 @@
+{
+  "wave": 68,
+  "at": "2026-11-15T14:40:00Z",
+  "counts": {
+    "true_multi_angle": 1286,
+    "padded": 226,
+    "single_real": 375
+  },
+  "cleared": [
+    {
+      "id": 264143,
+      "name": "Furutech FI-50M NCF(R)",
+      "price": 41164,
+      "notes": "OEM FI-50M NCF faceplate + PartsConneXion + CableCo + Douglas dual-angle; all 15A parallel-blade males with blue NCF; reject FI-52M misroutes (parallel-blade dealer photos labeled 52M) and marketing overlays"
+    },
+    {
+      "id": 272832,
+      "name": "AudioQuest Carbon USB-A/USB-C",
+      "price": 22990,
+      "notes": "live A-C + MusicDirect + AudioQuest OEM + HiFi Klubben; strip turntable/Music Hall pollution from prior gallery; reject USB-B/Cinnamon/Forest"
+    }
+  ],
+  "skipped_near": [
+    {
+      "id": 264147,
+      "name": "FI-52M NCF(R)",
+      "reason": "dealer OEM/pcx/doug photos are parallel-blade FI-50M misroutes; only true 20A T-blade found in AudioConcept marketing composite with overlays"
+    },
+    {
+      "id": 264184,
+      "name": "FI-15E(Cu)",
+      "reason": "finish ambiguous — open-shell contacts photograph gold-like; OEM fetch returned generic non-Furutech shells"
+    },
+    {
+      "id": 264335,
+      "name": "F-63-S(R)",
+      "reason": "only 3 dhash-unique angles (oem/adl/w15var)"
+    },
+    {
+      "id": 264408,
+      "name": "La Source 102",
+      "reason": "uniq=3; 101/103 OEM extras are wrong model length"
+    },
+    {
+      "id": 264396,
+      "name": "Silver Arrows II-R4",
+      "reason": "uniq=2; shared Doug media crosses II / II-L / II-R4 / XLR terminations"
+    },
+    {
+      "id": 271169,
+      "name": "Bronze Atmos 6G",
+      "reason": "uniq=3; no verified 4th finish-matched angle"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Jadeitte",
+      "class": "padded"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real"
+    }
+  ]
+}
