@@ -41,34 +41,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/Line-Magnetic-LM-215CD-LAMPOWY-ODTWARZACZ-CD.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/Line-Magnetic-LM-215CD-LAMPOWY-ODTWARZACZ-CD-600x500.jpg",
-      "alt": "Line-Magnetic-LM-215CD-LAMPOWY-ODTWARZACZ-CD",
-      "local": "assets/from-live/products/02336e30b9_Line-Magnetic-LM-215CD-LAMPOWY-ODTWARZACZ-CD.jpg"
+      "src": "local://15724_w95_00.jpg",
+      "thumb": "assets/enriched/15724/15724_w95_00.jpg",
+      "alt": "CD проигрыватель Line Magnetic Audio LM 215 ( cd line magnetic audio lm 215 )",
+      "local": "assets/enriched/15724/15724_w95_00.jpg",
+      "enriched": true,
+      "attribution": "wave95-oem",
+      "bytes": 142836
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_pleer_Line_Magnetic_Audio_LM_215_CD.jpg",
-      "local": "assets/enriched/15724/8ebf9be685_w13media.jpg",
-      "bytes": 25905,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15724_w95_01.jpg",
+      "thumb": "assets/enriched/15724/15724_w95_01.jpg",
+      "alt": "CD проигрыватель Line Magnetic Audio LM 215 ( cd line magnetic audio lm 215 )",
+      "local": "assets/enriched/15724/15724_w95_01.jpg",
+      "enriched": true,
+      "attribution": "wave95-oem",
+      "bytes": 1517007
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_pleer_Line_Magnetic_Audio_LM_215_CD-600x600.jpg",
-      "local": "assets/enriched/15724/422a00e41a_w13var.jpg",
-      "bytes": 23834,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15724_w95_02.jpg",
+      "thumb": "assets/enriched/15724/15724_w95_02.jpg",
+      "alt": "CD проигрыватель Line Magnetic Audio LM 215 ( cd line magnetic audio lm 215 )",
+      "local": "assets/enriched/15724/15724_w95_02.jpg",
+      "enriched": true,
+      "attribution": "wave95-oem",
+      "bytes": 1680127
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_pleer_Line_Magnetic_Audio_LM_215_CD-300x300.jpg",
-      "local": "assets/enriched/15724/b633a13c80_w17cdn.jpg",
-      "bytes": 7979,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://15724_w95_03.jpg",
+      "thumb": "assets/enriched/15724/15724_w95_03.jpg",
+      "alt": "CD проигрыватель Line Magnetic Audio LM 215 ( cd line magnetic audio lm 215 )",
+      "local": "assets/enriched/15724/15724_w95_03.jpg",
+      "enriched": true,
+      "attribution": "wave95-oem",
+      "bytes": 605859
     }
   ],
   "sku": "",
@@ -83,5 +89,9 @@
   "enrichedAt": "2026-11-14T14:04:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T21:43:59Z",
+  "galleryWave95": true
 }

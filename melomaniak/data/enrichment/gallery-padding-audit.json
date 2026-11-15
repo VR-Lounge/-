@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T21:34:59Z",
+  "generatedAt": "2026-11-15T21:46:59Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1355,
-    "padded": 164,
+    "true_multi_angle": 1358,
+    "padded": 161,
     "single_real": 368
   },
   "pct": {
-    "true_multi_angle": 71.81,
-    "padded": 8.69,
+    "true_multi_angle": 71.97,
+    "padded": 8.53,
     "single_real": 19.5,
-    "padded_of_claimed_gal4plus": 26.64,
-    "not_true_multi": 28.19
+    "padded_of_claimed_gal4plus": 26.48,
+    "not_true_multi": 28.03
   },
   "padReasonTallies": {
     "local-variant": 693,
-    "wN-variant-name": 487,
-    "cdn-size-thumb": 104,
+    "wN-variant-name": 481,
+    "cdn-size-thumb": 103,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 492,
+  "claimedButNotTrueMulti": 489,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -129,19 +129,6 @@
         "local-variant": 1
       },
       "class": "single_real"
-    },
-    {
-      "id": 16864,
-      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultimate audio mc 845 aase )",
-      "cat": "Усилители",
-      "price": 280000,
-      "galleryLen": 5,
-      "uniqueDistinct": 2,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "class": "padded"
     },
     {
       "id": 16788,
@@ -263,19 +250,6 @@
         "local-variant": 3
       },
       "class": "single_real"
-    },
-    {
-      "id": 16180,
-      "name": "CD проигрыватель Trigon Prince ( cd trigon prince )",
-      "cat": "Источники",
-      "price": 200000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
     },
     {
       "id": 15864,
@@ -568,6 +542,32 @@
       "padSlots": 2,
       "padReasons": {
         "wN-variant-name": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 41460,
+      "name": "Центральный канал Paradigm Premier 600C Gloss White ( paradigm premier 600c gloss white )",
+      "cat": "Другое",
+      "price": 143225,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 262100,
+      "name": "Интегральный усилитель Line Magnetic Audio LM 206 IA ( line magnetic audio lm 206 ia )",
+      "cat": "Усилители",
+      "price": 142800,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
       },
       "class": "single_real"
     }
@@ -9935,16 +9935,14 @@
       "slug": "ysilitel_moshnosti_ultimate_audio_mc_845_aase",
       "cat": "Усилители",
       "price": 280000,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 268770,
@@ -12041,16 +12039,14 @@
       "slug": "cd_proigrivatel_trigon_prince",
       "cat": "Источники",
       "price": 200000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 267748,
@@ -14814,17 +14810,14 @@
       "slug": "cd_pleer_line_magnetic_audio_lm_215_cd",
       "cat": "Источники",
       "price": 135000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 262098,
