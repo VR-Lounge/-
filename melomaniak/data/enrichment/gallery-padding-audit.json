@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T03:45:31Z",
+  "generatedAt": "2026-11-15T03:56:00Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1155,
-    "padded": 356,
-    "single_real": 376
+    "true_multi_angle": 1161,
+    "padded": 351,
+    "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 61.21,
-    "padded": 18.87,
-    "single_real": 19.93,
-    "padded_of_claimed_gal4plus": 37.43,
-    "not_true_multi": 38.79
+    "true_multi_angle": 61.53,
+    "padded": 18.6,
+    "single_real": 19.87,
+    "padded_of_claimed_gal4plus": 37.11,
+    "not_true_multi": 38.47
   },
   "padReasonTallies": {
-    "local-variant": 749,
-    "wN-variant-name": 661,
+    "local-variant": 748,
+    "wN-variant-name": 659,
     "cdn-size-thumb": 123,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 691,
+  "claimedButNotTrueMulti": 685,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -238,17 +238,6 @@
       "class": "padded"
     },
     {
-      "id": 270288,
-      "name": "Напольная акустика Quad Revela 2",
-      "cat": "Акустика",
-      "price": 277990,
-      "galleryLen": 7,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "single_real"
-    },
-    {
       "id": 16788,
       "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
       "cat": "Усилители",
@@ -433,19 +422,6 @@
       "class": "single_real"
     },
     {
-      "id": 274105,
-      "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
-      "cat": "Другое",
-      "price": 234000,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 265383,
       "name": "блок питания 47 Labs 4799 ( 47 labs 4799 )",
       "cat": "Другое",
@@ -557,6 +533,32 @@
       "padSlots": 2,
       "padReasons": {
         "cdn-size-thumb": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 261853,
+      "name": "Напольная акустика Paradigm Monitor SE 8000F Gloss White ( paradigm monitor se 8000f gloss white )",
+      "cat": "Акустика",
+      "price": 212415,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 1,
+      "padReasons": {
+        "wN-variant-name": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 270802,
+      "name": "Сетевой проигрыватель Arcam ST60",
+      "cat": "Источники",
+      "price": 209990,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "local-variant": 2
       },
       "class": "padded"
     }
@@ -1063,16 +1065,6 @@
       "galleryHitl": true
     },
     {
-      "id": 270288,
-      "name": "Напольная акустика Quad Revela 2",
-      "cat": "Акустика",
-      "price": 277990,
-      "galleryLen": 7,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": false
-    },
-    {
       "id": 15972,
       "name": "интегральный усилитель Musica int 1000 ( musica int 1000 )",
       "cat": "Усилители",
@@ -1361,9 +1353,19 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 262098,
+      "name": "CD проигрыватель Line Magnetic Audio LM 205 CD ( cd line magnetic audio lm 205 cd )",
+      "cat": "Источники",
+      "price": 135000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 376,
+  "hitlTrueOneshotCount": 375,
   "items": [
     {
       "id": 262053,
@@ -10034,13 +10036,13 @@
       "cat": "Акустика",
       "price": 277990,
       "galleryHitl": false,
-      "galleryLen": 7,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "single_real"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15600,
@@ -11149,16 +11151,14 @@
       "slug": "e2b5c9e7b3cb30f1ab10dcda88f8f892",
       "cat": "Другое",
       "price": 234000,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269858,
@@ -13699,13 +13699,13 @@
       "cat": "Другое",
       "price": 159990,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271289,
@@ -14714,16 +14714,14 @@
       "slug": "6485eaf210cf77366064d8b4adb326a5",
       "cat": "Усилители",
       "price": 139990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272906,
@@ -15087,13 +15085,13 @@
       "cat": "Усилители",
       "price": 133000,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273762,
@@ -15792,13 +15790,13 @@
       "cat": "Усилители",
       "price": 119990,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271658,

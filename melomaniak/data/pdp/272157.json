@@ -91,30 +91,28 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_c379-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_c379-1.jpg",
-      "alt": "nad_c379-1.jpg",
-      "local": "assets/from-live/products/fd4fe2b743_nad_c379-1.jpg"
+      "local": "assets/enriched/272157/272157_w30_00.jpg",
+      "src": "assets/enriched/272157/272157_w30_00.jpg",
+      "source": "oem-wave30",
+      "enrichedAt": "2026-11-15T03:52:13.294865+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_c379-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_c379-2.jpg",
-      "alt": "nad_c379-2.jpg",
-      "local": "assets/from-live/products/f1595639cd_nad_c379-2.jpg"
+      "local": "assets/enriched/272157/272157_w30_01.jpg",
+      "src": "assets/enriched/272157/272157_w30_01.jpg",
+      "source": "oem-wave30",
+      "enrichedAt": "2026-11-15T03:52:13.294865+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_c379-3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_c379-3.jpg",
-      "alt": "nad_c379-3.jpg",
-      "local": "assets/from-live/products/503bd7f3fd_nad_c379-3.jpg"
+      "local": "assets/enriched/272157/272157_w30_02.jpg",
+      "src": "assets/enriched/272157/272157_w30_02.jpg",
+      "source": "oem-wave30",
+      "enrichedAt": "2026-11-15T03:52:13.294865+00:00"
     },
     {
-      "src": "local-variant://272157/w17sc95",
-      "local": "assets/enriched/272157/1f55db812f_w17sc95.jpg",
-      "bytes": 187330,
-      "wave": "meager-w17-2026-11",
-      "w": 1568,
-      "h": 1568
+      "local": "assets/enriched/272157/272157_w30_03.jpg",
+      "src": "assets/enriched/272157/272157_w30_03.jpg",
+      "source": "oem-wave30",
+      "enrichedAt": "2026-11-15T03:52:13.294865+00:00"
     }
   ],
   "sku": "",
@@ -126,5 +124,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryPaddingCleared": true,
+  "galleryPaddingClearedAt": "2026-11-15T03:52:13.294865+00:00",
+  "galleryPaddingWave": 30,
+  "galleryPaddingNote": "NAD C379 from-live + verified MDC rear (reject C338/lifestyle)"
 }
