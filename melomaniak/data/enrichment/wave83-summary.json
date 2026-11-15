@@ -1,0 +1,37 @@
+{
+  "wave": 83,
+  "at": "2026-11-15T18:33:07Z",
+  "counts": {
+    "true_multi_angle": 1319,
+    "padded": 196,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 1,
+  "cleared": [
+    {
+      "id": 272712,
+      "name": "CD-транспорт AudioLab 7000CDT",
+      "unique": 5,
+      "price": 71990,
+      "notes": "Audiolab 7000CDT black: front+rear OEM + AudioTailor 3/4 + HomeCineSolutions×2; reject silver/group stacks/promos"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "no new sources"
+    },
+    {
+      "id": 264126,
+      "name": "Audio Replas MTP-2 RU mk2",
+      "class": "single_real",
+      "note": "no new sources"
+    }
+  ],
+  "remaining": {
+    "padded": 196,
+    "single_real": 372
+  }
+}

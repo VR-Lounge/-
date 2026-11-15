@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T18:18:15Z",
+  "generatedAt": "2026-11-15T18:32:59Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1318,
-    "padded": 197,
+    "true_multi_angle": 1319,
+    "padded": 196,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 69.85,
-    "padded": 10.44,
+    "true_multi_angle": 69.9,
+    "padded": 10.39,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 28.64,
-    "not_true_multi": 30.15
+    "padded_of_claimed_gal4plus": 28.59,
+    "not_true_multi": 30.1
   },
   "padReasonTallies": {
-    "local-variant": 706,
+    "local-variant": 704,
     "wN-variant-name": 533,
     "cdn-size-thumb": 110,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 529,
+  "claimedButNotTrueMulti": 528,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -19807,16 +19807,14 @@
       "slug": "26464b1f8f5916907b32c3d1804d3e67",
       "cat": "Источники",
       "price": 71990,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272724,
