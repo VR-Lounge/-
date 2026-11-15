@@ -41,40 +41,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-sub-w950-ae-mpic-0-1738608074.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-sub-w950-ae-mpic-0-1738608074-600x600.jpg",
-      "alt": "ae-sub-w950-ae-mpic-0-1738608074",
-      "local": "assets/from-live/products/9c64a1bc7f_ae-sub-w950-ae-mpic-0-1738608074.jpg"
+      "src": "local://274631_w43_00.jpg",
+      "thumb": "assets/enriched/274631/274631_w43_00.jpg",
+      "alt": "Сабвуфер Acoustic Energy AE Sub",
+      "local": "assets/enriched/274631/274631_w43_00.jpg",
+      "enriched": true,
+      "attribution": "wave43-oem",
+      "bytes": 32750
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-sub-w950-ae-mpic-0-1738608079.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-sub-w950-ae-mpic-0-1738608079-600x600.jpg",
-      "alt": "ae-sub-w950-ae-mpic-0-1738608079",
-      "local": "assets/from-live/products/4d988d96c7_ae-sub-w950-ae-mpic-0-1738608079.jpg"
+      "src": "local://274631_w43_01.jpg",
+      "thumb": "assets/enriched/274631/274631_w43_01.jpg",
+      "alt": "Сабвуфер Acoustic Energy AE Sub",
+      "local": "assets/enriched/274631/274631_w43_01.jpg",
+      "enriched": true,
+      "attribution": "wave43-oem",
+      "bytes": 23315
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-sub-w950-ae-mpic-0-1738608074-600x600.jpg",
-      "local": "assets/enriched/274631/76332572b0_w13var.jpg",
-      "bytes": 12039,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://274631_w43_02.jpg",
+      "thumb": "assets/enriched/274631/274631_w43_02.jpg",
+      "alt": "Сабвуфер Acoustic Energy AE Sub",
+      "local": "assets/enriched/274631/274631_w43_02.jpg",
+      "enriched": true,
+      "attribution": "wave43-oem",
+      "bytes": 398236
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/07/napolnaya-akustika-acoustic-energy-ae120-walnut-1000x1000-1.jpg",
-      "local": "assets/enriched/274631/38d2c15dbb_w14media.jpg",
-      "bytes": 54261,
-      "wave": "meager-w14-2026-11",
-      "w": 1000,
-      "h": 1000
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/07/napolnaya-akustika-acoustic-energy-ae120-walnut-1000x1000-1-300x300.jpg",
-      "local": "assets/enriched/274631/8a1006884f_w14var.jpg",
-      "bytes": 9121,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://274631_w43_03.jpg",
+      "thumb": "assets/enriched/274631/274631_w43_03.jpg",
+      "alt": "Сабвуфер Acoustic Energy AE Sub",
+      "local": "assets/enriched/274631/274631_w43_03.jpg",
+      "enriched": true,
+      "attribution": "wave43-oem",
+      "bytes": 746255
     }
   ],
   "sku": "",
@@ -86,5 +86,9 @@
   "enrichedAt": "2026-11-14T13:47:20Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:26:27Z",
+  "galleryWave43": true
 }

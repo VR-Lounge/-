@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T08:13:48Z",
+  "generatedAt": "2026-11-15T08:29:24Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1204,
-    "padded": 308,
+    "true_multi_angle": 1207,
+    "padded": 305,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 63.8,
-    "padded": 16.32,
+    "true_multi_angle": 63.96,
+    "padded": 16.16,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 34.78,
-    "not_true_multi": 36.2
+    "padded_of_claimed_gal4plus": 34.62,
+    "not_true_multi": 36.04
   },
   "padReasonTallies": {
     "local-variant": 741,
-    "wN-variant-name": 642,
+    "wN-variant-name": 637,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 642,
+  "claimedButNotTrueMulti": 639,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -15994,16 +15994,14 @@
       "slug": "%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-acoustic-energy-ae-sub",
       "cat": "Акустика",
       "price": 117500,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270606,
@@ -20608,16 +20606,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-power-guard-e48",
       "cat": "Кабели",
       "price": 63992,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270577,
@@ -23038,16 +23034,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-power-guard-e11",
       "cat": "Кабели",
       "price": 45031,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264069,

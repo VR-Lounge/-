@@ -36,42 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-POWER-GUARD-E48-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-POWER-GUARD-E48-500x500-1.jpg",
-      "alt": "FURUTECH-POWER-GUARD-E48-500&#215;500",
-      "local": "assets/from-live/products/fc2046fb1e_FURUTECH-POWER-GUARD-E48-500x500-1.jpg"
+      "src": "local://264353_w43_00.jpg",
+      "thumb": "assets/enriched/264353/264353_w43_00.jpg",
+      "alt": "Сетевой кабель Furutech Power Guard E48 ( furutech power guard e48 )",
+      "local": "assets/enriched/264353/264353_w43_00.jpg",
+      "enriched": true,
+      "attribution": "wave43-oem",
+      "bytes": 31669
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-POWER-GUARD-E48-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264353/d22612de09_w13var.jpg",
-      "bytes": 12726,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264353_w43_01.jpg",
+      "thumb": "assets/enriched/264353/264353_w43_01.jpg",
+      "alt": "Сетевой кабель Furutech Power Guard E48 ( furutech power guard e48 )",
+      "local": "assets/enriched/264353/264353_w43_01.jpg",
+      "enriched": true,
+      "attribution": "wave43-oem",
+      "bytes": 25136
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-E48-R.jpg",
-      "local": "assets/enriched/264353/45132fb924_w13media.jpg",
-      "bytes": 14263,
-      "wave": "meager-w13-2026-11",
-      "w": 250,
-      "h": 250
+      "src": "local://264353_w43_02.jpg",
+      "thumb": "assets/enriched/264353/264353_w43_02.jpg",
+      "alt": "Сетевой кабель Furutech Power Guard E48 ( furutech power guard e48 )",
+      "local": "assets/enriched/264353/264353_w43_02.jpg",
+      "enriched": true,
+      "attribution": "wave43-oem",
+      "bytes": 58899
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FI_E48_R_.jpg",
-      "local": "assets/enriched/264353/75400ee80b_w13media.jpg",
-      "bytes": 24464,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FI_E48_R_-300x300.jpg",
-      "local": "assets/enriched/264353/bf5d37e22f_w13var.jpg",
-      "bytes": 8923,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264353_w43_03.jpg",
+      "thumb": "assets/enriched/264353/264353_w43_03.jpg",
+      "alt": "Сетевой кабель Furutech Power Guard E48 ( furutech power guard e48 )",
+      "local": "assets/enriched/264353/264353_w43_03.jpg",
+      "enriched": true,
+      "attribution": "wave43-oem",
+      "bytes": 40867
     }
   ],
   "sku": "",
@@ -84,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:26:27Z",
+  "galleryWave43": true
 }
