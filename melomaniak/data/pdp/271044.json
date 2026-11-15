@@ -101,30 +101,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_bronze_500_6g_3255003726-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_bronze_500_6g_3255003726-1.jpg",
-      "alt": "monitor_audio_bronze_500_6g_3255003726-1.jpg",
-      "local": "assets/from-live/products/bd3bf4dd8b_monitor_audio_bronze_500_6g_3255003726-1.jpg"
+      "src": "local://271044_w75_00.jpg",
+      "thumb": "assets/enriched/271044/271044_w75_00.jpg",
+      "alt": "Напольная акустика Monitor Audio Bronze 500 6G",
+      "local": "assets/enriched/271044/271044_w75_00.jpg",
+      "enriched": true,
+      "attribution": "wave75-oem",
+      "bytes": 28528
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_bronze_500_6g_3255020750-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_bronze_500_6g_3255020750-2.jpg",
-      "alt": "monitor_audio_bronze_500_6g_3255020750-2.jpg",
-      "local": "assets/from-live/products/6704a3a4d0_monitor_audio_bronze_500_6g_3255020750-2.jpg"
+      "src": "local://271044_w75_01.jpg",
+      "thumb": "assets/enriched/271044/271044_w75_01.jpg",
+      "alt": "Напольная акустика Monitor Audio Bronze 500 6G",
+      "local": "assets/enriched/271044/271044_w75_01.jpg",
+      "enriched": true,
+      "attribution": "wave75-oem",
+      "bytes": 25837
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_bronze_500_6g_3255025083-4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_bronze_500_6g_3255025083-4.jpg",
-      "alt": "monitor_audio_bronze_500_6g_3255025083-4.jpg",
-      "local": "assets/from-live/products/b55c9db458_monitor_audio_bronze_500_6g_3255025083-4.jpg"
+      "src": "local://271044_w75_02.jpg",
+      "thumb": "assets/enriched/271044/271044_w75_02.jpg",
+      "alt": "Напольная акустика Monitor Audio Bronze 500 6G",
+      "local": "assets/enriched/271044/271044_w75_02.jpg",
+      "enriched": true,
+      "attribution": "wave75-oem",
+      "bytes": 38502
     },
     {
-      "src": "local-variant://271044/w17sc95",
-      "local": "assets/enriched/271044/9b93c2eb5e_w17sc95.jpg",
-      "bytes": 192322,
-      "wave": "meager-w17-2026-11",
-      "w": 1710,
-      "h": 1710
+      "src": "local://271044_w75_03.jpg",
+      "thumb": "assets/enriched/271044/271044_w75_03.jpg",
+      "alt": "Напольная акустика Monitor Audio Bronze 500 6G",
+      "local": "assets/enriched/271044/271044_w75_03.jpg",
+      "enriched": true,
+      "attribution": "wave75-oem",
+      "bytes": 41866
+    },
+    {
+      "src": "local://271044_w75_04.jpg",
+      "thumb": "assets/enriched/271044/271044_w75_04.jpg",
+      "alt": "Напольная акустика Monitor Audio Bronze 500 6G",
+      "local": "assets/enriched/271044/271044_w75_04.jpg",
+      "enriched": true,
+      "attribution": "wave75-oem",
+      "bytes": 44594
     }
   ],
   "sku": "",
@@ -136,5 +155,9 @@
   "enrichedAt": "2026-11-14T14:26:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T16:35:08Z",
+  "galleryWave75": true
 }

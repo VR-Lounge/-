@@ -117,34 +117,40 @@
   ],
   "gallery": [
     {
-      "src": "local://6bad5e5512c6bf1cc2f7a076fe1a8429_28aab4fbe7.jpg",
-      "thumb": "assets/enriched/266512/31c58f3920_live1.jpg",
+      "src": "local://266512_w75_00.jpg",
+      "thumb": "assets/enriched/266512/266512_w75_00.jpg",
       "alt": "Усилитель мощности ANTHEM PVA 5 Black ( anthem pva 5 black )",
-      "local": "assets/enriched/266512/31c58f3920_live1.jpg",
+      "local": "assets/enriched/266512/266512_w75_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 234170
+      "attribution": "wave75-oem",
+      "bytes": 61156
     },
     {
-      "src": "local://064c50f9765bd896a7f990bf585dadd5_0cbf0c008a.jpg",
-      "thumb": "assets/enriched/266512/bca32ad306_live2.jpg",
+      "src": "local://266512_w75_01.jpg",
+      "thumb": "assets/enriched/266512/266512_w75_01.jpg",
       "alt": "Усилитель мощности ANTHEM PVA 5 Black ( anthem pva 5 black )",
-      "local": "assets/enriched/266512/bca32ad306_live2.jpg",
+      "local": "assets/enriched/266512/266512_w75_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
+      "attribution": "wave75-oem",
+      "bytes": 85886
+    },
+    {
+      "src": "local://266512_w75_02.jpg",
+      "thumb": "assets/enriched/266512/266512_w75_02.jpg",
+      "alt": "Усилитель мощности ANTHEM PVA 5 Black ( anthem pva 5 black )",
+      "local": "assets/enriched/266512/266512_w75_02.jpg",
+      "enriched": true,
+      "attribution": "wave75-oem",
+      "bytes": 83627
+    },
+    {
+      "src": "local://266512_w75_03.jpg",
+      "thumb": "assets/enriched/266512/266512_w75_03.jpg",
+      "alt": "Усилитель мощности ANTHEM PVA 5 Black ( anthem pva 5 black )",
+      "local": "assets/enriched/266512/266512_w75_03.jpg",
+      "enriched": true,
+      "attribution": "wave75-oem",
       "bytes": 384138
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/6bad5e5512c6bf1cc2f7a076fe1a8429.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/6bad5e5512c6bf1cc2f7a076fe1a8429-600x600.jpg",
-      "alt": "6bad5e5512c6bf1cc2f7a076fe1a8429",
-      "local": "assets/from-live/products/28aab4fbe7_6bad5e5512c6bf1cc2f7a076fe1a8429.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/064c50f9765bd896a7f990bf585dadd5.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/064c50f9765bd896a7f990bf585dadd5-600x471.jpg",
-      "alt": "064c50f9765bd896a7f990bf585dadd5",
-      "local": "assets/from-live/products/0cbf0c008a_064c50f9765bd896a7f990bf585dadd5.jpg"
     }
   ],
   "sku": "",
@@ -155,5 +161,10 @@
   ],
   "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w5-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T16:35:08Z",
+  "galleryWave75": true
 }
