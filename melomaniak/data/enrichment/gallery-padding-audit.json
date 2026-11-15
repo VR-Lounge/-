@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T10:38:28Z",
+  "generatedAt": "2026-11-15T10:49:06Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1235,
-    "padded": 277,
+    "true_multi_angle": 1237,
+    "padded": 275,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 65.45,
-    "padded": 14.68,
+    "true_multi_angle": 65.55,
+    "padded": 14.57,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 33.1,
-    "not_true_multi": 34.55
+    "padded_of_claimed_gal4plus": 32.99,
+    "not_true_multi": 34.45
   },
   "padReasonTallies": {
     "local-variant": 723,
-    "wN-variant-name": 610,
+    "wN-variant-name": 608,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 611,
+  "claimedButNotTrueMulti": 609,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -263,32 +263,6 @@
       "padSlots": 2,
       "padReasons": {
         "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
-      "id": 261871,
-      "name": "Центральный канал PARADIGM Founder 70LCR Midnight Cherry ( paradigm founder 70lcr midnight cherry )",
-      "cat": "Другое",
-      "price": 252365,
-      "galleryLen": 8,
-      "uniqueDistinct": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "class": "padded"
-    },
-    {
-      "id": 261872,
-      "name": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( paradigm founder 70lcr black walnut )",
-      "cat": "Другое",
-      "price": 252365,
-      "galleryLen": 8,
-      "uniqueDistinct": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
       },
       "class": "padded"
     },
@@ -565,6 +539,32 @@
       "padSlots": 1,
       "padReasons": {
         "cdn-size-thumb": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 264027,
+      "name": "Поглотитель Acoustic Revive RAF-48 (SP2) ( acoustic revive raf 48 (sp2) )",
+      "cat": "Другое",
+      "price": 192423,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 262102,
+      "name": "Фонокорректор Line Magnetic Audio LP 33 Phono ( line magnetic audio lp 33 phono )",
+      "cat": "Усилители",
+      "price": 191250,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
       },
       "class": "padded"
     }
@@ -10590,16 +10590,14 @@
       "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-midnight-cherry",
       "cat": "Другое",
       "price": 252365,
-      "galleryHitl": true,
-      "galleryLen": 8,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 261872,
@@ -10607,16 +10605,14 @@
       "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-founder-70lcr-black-walnut",
       "cat": "Другое",
       "price": 252365,
-      "galleryHitl": true,
-      "galleryLen": 8,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 274501,

@@ -116,66 +116,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/20210303000520_2021-03-03_ParadigmFounder70LCR_2048x1200.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/20210303000520_2021-03-03_ParadigmFounder70LCR_2048x1200-600x600.jpg",
-      "alt": "20210303000520_2021-03-03_ParadigmFounder70LCR_(2048&#215;1200)",
-      "local": "assets/from-live/products/c63e70022a_20210303000520_2021-03-03_ParadigmFounder70LCR_2048x1200.jpg"
+      "src": "local://261872_w52_00.jpg",
+      "thumb": "assets/enriched/261872/261872_w52_00.jpg",
+      "alt": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( paradigm founder 70lcr black walnut )",
+      "local": "assets/enriched/261872/261872_w52_00.jpg",
+      "enriched": true,
+      "attribution": "wave52-oem",
+      "bytes": 60556
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/20210303000520_2021-03-03_ParadigmFounder70LCR_2048x1200-600x600.jpg",
-      "local": "assets/enriched/261872/a6fe2de547_w13var.jpg",
-      "bytes": 34357,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://261872_w52_01.jpg",
+      "thumb": "assets/enriched/261872/261872_w52_01.jpg",
+      "alt": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( paradigm founder 70lcr black walnut )",
+      "local": "assets/enriched/261872/261872_w52_01.jpg",
+      "enriched": true,
+      "attribution": "wave52-oem",
+      "bytes": 16990
     },
     {
-      "src": "https://www.paradigm.com/3590-large_default/founder-70lcr.jpg",
-      "local": "assets/enriched/261872/76ac3f5069_w16oem.png",
-      "bytes": 200859,
-      "wave": "meager-w16-2026-11",
-      "w": 1200,
-      "h": 1200
+      "src": "local://261872_w52_02.jpg",
+      "thumb": "assets/enriched/261872/261872_w52_02.jpg",
+      "alt": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( paradigm founder 70lcr black walnut )",
+      "local": "assets/enriched/261872/261872_w52_02.jpg",
+      "enriched": true,
+      "attribution": "wave52-oem",
+      "bytes": 57369
     },
     {
-      "src": "https://www.paradigm.com/3590-medium_default/founder-70lcr.jpg",
-      "local": "assets/enriched/261872/c079ce0757_w16oem.png",
-      "bytes": 9996,
-      "wave": "meager-w16-2026-11",
-      "w": 200,
-      "h": 200
+      "src": "local://261872_w52_03.jpg",
+      "thumb": "assets/enriched/261872/261872_w52_03.jpg",
+      "alt": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( paradigm founder 70lcr black walnut )",
+      "local": "assets/enriched/261872/261872_w52_03.jpg",
+      "enriched": true,
+      "attribution": "wave52-oem",
+      "bytes": 76220
     },
     {
-      "src": "https://www.paradigm.com/3591-medium_default/founder-70lcr.jpg",
-      "local": "assets/enriched/261872/9e41768a84_w16oem.png",
-      "bytes": 10022,
-      "wave": "meager-w16-2026-11",
-      "w": 200,
-      "h": 200
-    },
-    {
-      "src": "https://www.paradigm.com/3591-large_default/founder-70lcr.jpg",
-      "local": "assets/enriched/261872/e4b5a4ac24_w16oem.png",
-      "bytes": 199230,
-      "wave": "meager-w16-2026-11",
-      "w": 1200,
-      "h": 1200
-    },
-    {
-      "src": "https://www.paradigm.com/3589-medium_default/founder-70lcr.jpg",
-      "local": "assets/enriched/261872/b0ad449162_w16oem.png",
-      "bytes": 9972,
-      "wave": "meager-w16-2026-11",
-      "w": 200,
-      "h": 200
-    },
-    {
-      "src": "https://www.paradigm.com/3589-large_default/founder-70lcr.jpg",
-      "local": "assets/enriched/261872/de40504fc2_w16oem.png",
-      "bytes": 203806,
-      "wave": "meager-w16-2026-11",
-      "w": 1200,
-      "h": 1200
+      "src": "local://261872_w52_04.jpg",
+      "thumb": "assets/enriched/261872/261872_w52_04.jpg",
+      "alt": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( paradigm founder 70lcr black walnut )",
+      "local": "assets/enriched/261872/261872_w52_04.jpg",
+      "enriched": true,
+      "attribution": "wave52-oem",
+      "bytes": 70599
     }
   ],
   "sku": "",
@@ -187,5 +170,9 @@
   "enrichedAt": "2026-11-14T13:22:47Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T10:45:58Z",
+  "galleryWave52": true
 }

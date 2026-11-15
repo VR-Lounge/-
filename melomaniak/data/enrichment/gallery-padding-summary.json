@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T10:38:37Z",
+  "at": "2026-11-15T10:49:06Z",
   "counts": {
-    "true_multi_angle": 1235,
-    "padded": 277,
+    "true_multi_angle": 1237,
+    "padded": 275,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 65.45,
-    "padded": 14.68,
+    "true_multi_angle": 65.55,
+    "padded": 14.57,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 33.1,
-    "not_true_multi": 34.55
+    "padded_of_claimed_gal4plus": 32.99,
+    "not_true_multi": 34.45
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -50,19 +50,19 @@
     ]
   },
   "remaining": {
-    "padded": 277,
+    "padded": 275,
     "single_real": 375
   },
   "topHitlPadded": [
     {
-      "id": 4230,
-      "name": "предусилитель Arte Forma Jadeitte 101D ( arte forma jadeitte",
-      "price": 380000,
+      "id": 15742,
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate au",
+      "price": 320000,
       "class": "padded"
     },
     {
       "id": 262549,
-      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara",
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic sita",
       "price": 320000,
       "class": "padded"
     },
@@ -74,7 +74,7 @@
     },
     {
       "id": 16864,
-      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultimate",
+      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultima",
       "price": 280000,
       "class": "padded"
     },
@@ -86,37 +86,25 @@
     },
     {
       "id": 41436,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss Black ( parad",
+      "name": "Напольная акустика Paradigm Premier 700F Gloss Black ( par",
       "price": 269900,
       "class": "padded"
     },
     {
       "id": 41438,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss White ( parad",
+      "name": "Напольная акустика Paradigm Premier 700F Gloss White ( par",
       "price": 269900,
       "class": "padded"
     },
     {
-      "id": 261871,
-      "name": "Центральный канал PARADIGM Founder 70LCR Midnight Cherry ( p",
-      "price": 252365,
-      "class": "padded"
-    },
-    {
-      "id": 261872,
-      "name": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( para",
-      "price": 252365,
-      "class": "padded"
-    },
-    {
       "id": 16852,
-      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audi",
+      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate au",
       "price": 250000,
       "class": "padded"
     },
     {
       "id": 264519,
-      "name": "Межблочный кабель SAEC  XR-1 Stratosphere ( saec xr 1 strato",
+      "name": "Межблочный кабель SAEC  XR-1 Stratosphere ( saec xr 1 stra",
       "price": 244927,
       "class": "padded"
     },
@@ -124,6 +112,18 @@
       "id": 16786,
       "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
       "price": 244000,
+      "class": "padded"
+    },
+    {
+      "id": 16808,
+      "name": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "price": 220000,
+      "class": "padded"
+    },
+    {
+      "id": 44611,
+      "name": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 2",
+      "price": 220000,
       "class": "padded"
     }
   ],
@@ -323,36 +323,28 @@
       }
     ]
   },
-  "wave": "wave51",
-  "padded_to_true_multi": 4,
+  "wave": "wave52",
+  "padded_to_true_multi": 2,
   "cleared": [
     {
-      "id": 264154,
-      "name": "Коннектор сетевой Furutech FI-E48 NCF(Ag ) ( furutech fi e48 ncf(ag ) "
+      "id": 261871,
+      "name": "Центральный канал PARADIGM Founder 70LCR Midnight Cherry ( paradigm founder 70lcr midnight cherry )"
     },
     {
-      "id": 271030,
-      "name": "Сетевой проигрыватель Monitor Audio IMS-4"
-    },
-    {
-      "id": 261868,
-      "name": "Центральный канал PARADIGM Founder 70LCR Gloss Black ( paradigm founde"
-    },
-    {
-      "id": 261870,
-      "name": "Центральный канал PARADIGM Founder 70LCR Walnut ( paradigm founder 70l"
+      "id": 261872,
+      "name": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( paradigm founder 70lcr black walnut )"
     }
   ],
   "top_hitl_padded": [
     {
-      "id": 4230,
-      "name": "предусилитель Arte Forma Jadeitte 101D ( arte forma jadeitte",
-      "price": 380000,
+      "id": 15742,
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate au",
+      "price": 320000,
       "class": "padded"
     },
     {
       "id": 262549,
-      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara",
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic sita",
       "price": 320000,
       "class": "padded"
     },
@@ -364,7 +356,7 @@
     },
     {
       "id": 16864,
-      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultimate",
+      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultima",
       "price": 280000,
       "class": "padded"
     },
@@ -376,37 +368,25 @@
     },
     {
       "id": 41436,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss Black ( parad",
+      "name": "Напольная акустика Paradigm Premier 700F Gloss Black ( par",
       "price": 269900,
       "class": "padded"
     },
     {
       "id": 41438,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss White ( parad",
+      "name": "Напольная акустика Paradigm Premier 700F Gloss White ( par",
       "price": 269900,
       "class": "padded"
     },
     {
-      "id": 261871,
-      "name": "Центральный канал PARADIGM Founder 70LCR Midnight Cherry ( p",
-      "price": 252365,
-      "class": "padded"
-    },
-    {
-      "id": 261872,
-      "name": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( para",
-      "price": 252365,
-      "class": "padded"
-    },
-    {
       "id": 16852,
-      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audi",
+      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate au",
       "price": 250000,
       "class": "padded"
     },
     {
       "id": 264519,
-      "name": "Межблочный кабель SAEC  XR-1 Stratosphere ( saec xr 1 strato",
+      "name": "Межблочный кабель SAEC  XR-1 Stratosphere ( saec xr 1 stra",
       "price": 244927,
       "class": "padded"
     },
@@ -414,6 +394,18 @@
       "id": 16786,
       "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
       "price": 244000,
+      "class": "padded"
+    },
+    {
+      "id": 16808,
+      "name": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "price": 220000,
+      "class": "padded"
+    },
+    {
+      "id": 44611,
+      "name": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 2",
+      "price": 220000,
       "class": "padded"
     }
   ]
