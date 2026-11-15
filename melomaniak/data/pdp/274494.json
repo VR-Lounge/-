@@ -41,34 +41,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stentaure-c-mk2-par.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stentaure-c-mk2-par.png",
-      "alt": "stentaure-c-mk2-par",
-      "local": "assets/from-live/products/fbe13b924a_stentaure-c-mk2-par.png"
+      "src": "local://274494_w34_00.jpg",
+      "thumb": "assets/enriched/274494/274494_w34_00.jpg",
+      "alt": "Центральный канал Davis Acoustics Stentaure C MK2",
+      "local": "assets/enriched/274494/274494_w34_00.jpg",
+      "enriched": true,
+      "attribution": "wave34-oem",
+      "bytes": 24126
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stentaure-c-mk2-par-300x300.png",
-      "local": "assets/enriched/274494/3dee268c57_w13var.png",
-      "bytes": 42530,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://274494_w34_01.jpg",
+      "thumb": "assets/enriched/274494/274494_w34_01.jpg",
+      "alt": "Центральный канал Davis Acoustics Stentaure C MK2",
+      "local": "assets/enriched/274494/274494_w34_01.jpg",
+      "enriched": true,
+      "attribution": "wave34-oem",
+      "bytes": 29533
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/davis_acoustics_mani_mk2_walnut_01.webp",
-      "local": "assets/enriched/274494/79c9c8373c_w14media.jpg",
-      "bytes": 16578,
-      "wave": "meager-w14-2026-11",
-      "w": 594,
-      "h": 594
+      "src": "local://274494_w34_02.jpg",
+      "thumb": "assets/enriched/274494/274494_w34_02.jpg",
+      "alt": "Центральный канал Davis Acoustics Stentaure C MK2",
+      "local": "assets/enriched/274494/274494_w34_02.jpg",
+      "enriched": true,
+      "attribution": "wave34-oem",
+      "bytes": 171250
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/davis_acoustics_mani_mk2_walnut_04.webp",
-      "local": "assets/enriched/274494/178795cf33_w14media.jpg",
-      "bytes": 313112,
-      "wave": "meager-w14-2026-11",
-      "w": 1200,
-      "h": 1200
+      "src": "local://274494_w34_03.jpg",
+      "thumb": "assets/enriched/274494/274494_w34_03.jpg",
+      "alt": "Центральный канал Davis Acoustics Stentaure C MK2",
+      "local": "assets/enriched/274494/274494_w34_03.jpg",
+      "enriched": true,
+      "attribution": "wave34-oem",
+      "bytes": 164257
+    },
+    {
+      "src": "local://274494_w34_04.jpg",
+      "thumb": "assets/enriched/274494/274494_w34_04.jpg",
+      "alt": "Центральный канал Davis Acoustics Stentaure C MK2",
+      "local": "assets/enriched/274494/274494_w34_04.jpg",
+      "enriched": true,
+      "attribution": "wave34-oem",
+      "bytes": 125978
     }
   ],
   "sku": "",
@@ -80,5 +95,9 @@
   "enrichedAt": "2026-11-14T13:36:56Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T05:10:10Z",
+  "galleryWave34": true
 }

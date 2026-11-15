@@ -86,30 +86,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rel_t5x_6193427765-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rel_t5x_6193427765-1.jpg",
-      "alt": "rel_t5x_6193427765-1.jpg",
-      "local": "assets/from-live/products/8bc9ca14b1_rel_t5x_6193427765-1.jpg"
+      "src": "local://271303_w34_00.jpg",
+      "thumb": "assets/enriched/271303/271303_w34_00.jpg",
+      "alt": "Активный сабвуфер REL T5x",
+      "local": "assets/enriched/271303/271303_w34_00.jpg",
+      "enriched": true,
+      "attribution": "wave34-oem",
+      "bytes": 25942
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rel_t5x3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rel_t5x3.jpg",
-      "alt": "rel_t5x3.jpg",
-      "local": "assets/from-live/products/6264368662_rel_t5x3.jpg"
+      "src": "local://271303_w34_01.jpg",
+      "thumb": "assets/enriched/271303/271303_w34_01.jpg",
+      "alt": "Активный сабвуфер REL T5x",
+      "local": "assets/enriched/271303/271303_w34_01.jpg",
+      "enriched": true,
+      "attribution": "wave34-oem",
+      "bytes": 28521
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rel_t5x4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rel_t5x4.jpg",
-      "alt": "rel_t5x4.jpg",
-      "local": "assets/from-live/products/5b85b8b226_rel_t5x4.jpg"
+      "src": "local://271303_w34_02.jpg",
+      "thumb": "assets/enriched/271303/271303_w34_02.jpg",
+      "alt": "Активный сабвуфер REL T5x",
+      "local": "assets/enriched/271303/271303_w34_02.jpg",
+      "enriched": true,
+      "attribution": "wave34-oem",
+      "bytes": 67941
     },
     {
-      "src": "local-variant://271303/w17sc95",
-      "local": "assets/enriched/271303/1121f5b7a1_w17sc95.jpg",
-      "bytes": 91377,
-      "wave": "meager-w17-2026-11",
-      "w": 812,
-      "h": 812
+      "src": "local://271303_w34_03.jpg",
+      "thumb": "assets/enriched/271303/271303_w34_03.jpg",
+      "alt": "Активный сабвуфер REL T5x",
+      "local": "assets/enriched/271303/271303_w34_03.jpg",
+      "enriched": true,
+      "attribution": "wave34-oem",
+      "bytes": 112156
     }
   ],
   "sku": "",
@@ -121,5 +131,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T05:10:10Z",
+  "galleryWave34": true
 }
