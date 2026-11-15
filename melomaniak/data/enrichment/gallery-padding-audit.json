@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:33:40Z",
+  "generatedAt": "2026-11-15T22:47:16Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1364,
-    "padded": 157,
+    "true_multi_angle": 1367,
+    "padded": 154,
     "single_real": 366
   },
   "pct": {
-    "true_multi_angle": 72.28,
-    "padded": 8.32,
+    "true_multi_angle": 72.44,
+    "padded": 8.16,
     "single_real": 19.4,
-    "padded_of_claimed_gal4plus": 26.15,
-    "not_true_multi": 27.72
+    "padded_of_claimed_gal4plus": 25.99,
+    "not_true_multi": 27.56
   },
   "padReasonTallies": {
     "local-variant": 686,
-    "wN-variant-name": 478,
+    "wN-variant-name": 473,
     "cdn-size-thumb": 102,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 483,
+  "claimedButNotTrueMulti": 480,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -21330,16 +21330,14 @@
       "slug": "portativnaia_akystika_pw_600_white",
       "cat": "Акустика",
       "price": 56610,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272776,
@@ -24522,16 +24520,14 @@
       "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-la-source-101",
       "cat": "Другое",
       "price": 30811,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270588,
@@ -24965,16 +24961,14 @@
       "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-la-source-102",
       "cat": "Другое",
       "price": 27256,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264430,

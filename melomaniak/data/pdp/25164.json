@@ -46,32 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/portativnaia_akystika_PW_600_White.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/portativnaia_akystika_PW_600_White-600x600.jpg",
-      "alt": "PW 600 White",
-      "local": "assets/from-live/products/7eaa096df0_portativnaia_akystika_PW_600_White.jpg"
+      "src": "local://25164_w98_00.jpg",
+      "thumb": "assets/enriched/25164/25164_w98_00.jpg",
+      "alt": "портативная акустика Paradigm PW 600 White ( paradigm pw 600 white )",
+      "local": "assets/enriched/25164/25164_w98_00.jpg",
+      "enriched": true,
+      "attribution": "wave98-oem",
+      "bytes": 18825
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/11/pdm-pw_600_black-3_1_1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/11/pdm-pw_600_black-3_1_1-600x600.jpg",
-      "alt": "pdm-pw_600_black-3_1_1",
-      "local": "assets/from-live/products/512ebfb55c_pdm-pw_600_black-3_1_1.jpg"
+      "src": "local://25164_w98_01.jpg",
+      "thumb": "assets/enriched/25164/25164_w98_01.jpg",
+      "alt": "портативная акустика Paradigm PW 600 White ( paradigm pw 600 white )",
+      "local": "assets/enriched/25164/25164_w98_01.jpg",
+      "enriched": true,
+      "attribution": "wave98-oem",
+      "bytes": 181444
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/portativnaia_akystika_PW_600_White-600x600.jpg",
-      "local": "assets/enriched/25164/f0bc0b4c4e_w13var.jpg",
-      "bytes": 15531,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://25164_w98_02.jpg",
+      "thumb": "assets/enriched/25164/25164_w98_02.jpg",
+      "alt": "портативная акустика Paradigm PW 600 White ( paradigm pw 600 white )",
+      "local": "assets/enriched/25164/25164_w98_02.jpg",
+      "enriched": true,
+      "attribution": "wave98-oem",
+      "bytes": 108077
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/11/pdm-pw_600_black-3_1_1-600x600.jpg",
-      "local": "assets/enriched/25164/1e3ff8255d_w13var.jpg",
-      "bytes": 27049,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://25164_w98_03.jpg",
+      "thumb": "assets/enriched/25164/25164_w98_03.jpg",
+      "alt": "портативная акустика Paradigm PW 600 White ( paradigm pw 600 white )",
+      "local": "assets/enriched/25164/25164_w98_03.jpg",
+      "enriched": true,
+      "attribution": "wave98-oem",
+      "bytes": 23901
     }
   ],
   "sku": "",
@@ -83,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T22:44:11Z",
+  "galleryWave98": true
 }

@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-La-Source-101.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-La-Source-101.jpeg",
-      "alt": "Furutech-La-Source-101",
-      "local": "assets/from-live/products/00c05736db_Furutech-La-Source-101.jpeg"
+      "src": "local://264407_w98_00.jpg",
+      "thumb": "assets/enriched/264407/264407_w98_00.jpg",
+      "alt": "Переходник Furutech La Source 101 ( furutech la source 101 )",
+      "local": "assets/enriched/264407/264407_w98_00.jpg",
+      "enriched": true,
+      "attribution": "wave98-oem",
+      "bytes": 36939
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_La_Source_101.jpg",
-      "local": "assets/enriched/264407/77ac7c47a4_w14media.jpg",
-      "bytes": 41327,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264407_w98_01.jpg",
+      "thumb": "assets/enriched/264407/264407_w98_01.jpg",
+      "alt": "Переходник Furutech La Source 101 ( furutech la source 101 )",
+      "local": "assets/enriched/264407/264407_w98_01.jpg",
+      "enriched": true,
+      "attribution": "wave98-oem",
+      "bytes": 51440
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_La_Source_101-300x300.jpg",
-      "local": "assets/enriched/264407/e27cabe6c8_w14var.jpg",
-      "bytes": 12665,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264407_w98_02.jpg",
+      "thumb": "assets/enriched/264407/264407_w98_02.jpg",
+      "alt": "Переходник Furutech La Source 101 ( furutech la source 101 )",
+      "local": "assets/enriched/264407/264407_w98_02.jpg",
+      "enriched": true,
+      "attribution": "wave98-oem",
+      "bytes": 40287
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_La_Source_101-600x600.jpg",
-      "local": "assets/enriched/264407/77f727e667_w14var.jpg",
-      "bytes": 40741,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264407_w98_03.jpg",
+      "thumb": "assets/enriched/264407/264407_w98_03.jpg",
+      "alt": "Переходник Furutech La Source 101 ( furutech la source 101 )",
+      "local": "assets/enriched/264407/264407_w98_03.jpg",
+      "enriched": true,
+      "attribution": "wave98-oem",
+      "bytes": 48529
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:34:38Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T22:44:11Z",
+  "galleryWave98": true
 }
