@@ -1,0 +1,81 @@
+{
+  "wave": 72,
+  "at": "2026-11-15T15:30:38Z",
+  "counts": {
+    "true_multi_angle": 1295,
+    "padded": 219,
+    "single_real": 373
+  },
+  "cleared": [
+    {
+      "id": 41444,
+      "name": "Paradigm Premier 800F Espresso Grain",
+      "price": 287215.0,
+      "notes": "Espresso Grain only: OEM front 3/4 grille-off + rear + live pair + SoundStage terminal detail; reject gloss black/white, Persona, lifestyle rooms",
+      "unique": 4
+    },
+    {
+      "id": 264053,
+      "name": "Acoustic Revive RWL-3 Absolute",
+      "price": 208250.0,
+      "notes": "RWL-3 Absolute studio pack: OEM + BG Absolute + portfolio scaled + live; reject awards/diagrams/TF watermarked lifestyle/wrong press cables",
+      "unique": 4
+    },
+    {
+      "id": 263991,
+      "name": "Acoustic Revive LINE-1.0RS",
+      "price": 40000.0,
+      "notes": "LINE-1.0RS RCA: live coil + media coil/ends + Flickr box-labeled on-box/detail/inbox; reject FM OEM and lifestyle VPI/Metallica",
+      "unique": 6
+    }
+  ],
+  "skipped_near": [
+    {
+      "id": 15742,
+      "name": "MC100 CD",
+      "reason": "uniq=3; no clean 4th Ultimate Audio MC-100 (Myryad/Magnat noise)"
+    },
+    {
+      "id": 44611,
+      "name": "SDP-25",
+      "reason": "uniq=3; only 3 distinct after dedupe; SDP-55 pollution risk"
+    },
+    {
+      "id": 264102,
+      "name": "OPS-1 HR",
+      "reason": "uniq=3; award overlay + lifestyle; OEM pages 404"
+    },
+    {
+      "id": 264524,
+      "name": "SCX-5000RR",
+      "reason": "only 2 clean RR; watermarked/mis-termination extras"
+    },
+    {
+      "id": 264542,
+      "name": "SUS-020",
+      "reason": "shared wrong A–C media across sister SKUs"
+    },
+    {
+      "id": 15966,
+      "name": "hpa200",
+      "reason": "uniq=3; mvert 403"
+    },
+    {
+      "id": 262549,
+      "name": "Sitara",
+      "reason": "uniq=2; OEM product page 404"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Jadeitte",
+      "class": "padded"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T15:14:58Z",
+  "generatedAt": "2026-11-15T15:30:38Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1292,
-    "padded": 220,
-    "single_real": 375
+    "true_multi_angle": 1295,
+    "padded": 219,
+    "single_real": 373
   },
   "pct": {
-    "true_multi_angle": 68.47,
-    "padded": 11.66,
-    "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 30.01,
-    "not_true_multi": 31.53
+    "true_multi_angle": 68.63,
+    "padded": 11.61,
+    "single_real": 19.77,
+    "padded_of_claimed_gal4plus": 29.85,
+    "not_true_multi": 31.37
   },
   "padReasonTallies": {
-    "local-variant": 716,
-    "wN-variant-name": 554,
-    "cdn-size-thumb": 116,
+    "local-variant": 714,
+    "wN-variant-name": 551,
+    "cdn-size-thumb": 115,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 554,
+  "claimedButNotTrueMulti": 551,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -170,19 +170,6 @@
       "padReasons": {
         "wN-variant-name": 2,
         "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 41444,
-      "name": "Напольная акустика Paradigm Premier 800F Espresso Grain ( paradigm premier 800f espresso grain )",
-      "cat": "Акустика",
-      "price": 287215,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
       },
       "class": "single_real"
     },
@@ -411,20 +398,6 @@
       "class": "padded"
     },
     {
-      "id": 264053,
-      "name": "Вибропоглощающие стойки Acoustic Revive RWL-3 Absolute ( acoustic revive rwl 3 absolute )",
-      "cat": "Другое",
-      "price": 208250,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 2
-      },
-      "class": "single_real"
-    },
-    {
       "id": 264015,
       "name": "Размагничиватель Acoustic Revive RL-30 MK-III ( acoustic revive rl 30 mk iii )",
       "cat": "Другое",
@@ -566,6 +539,34 @@
       "padReasons": {
         "wN-variant-name": 1,
         "local-variant": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264026,
+      "name": "Поглотитель Acoustic Revive RAF-48 (SP1) ( acoustic revive raf 48 (sp1) )",
+      "cat": "Другое",
+      "price": 189281,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 15976,
+      "name": "интегральный усилитель Musica Iris 25 int ( musica iris 25 int )",
+      "cat": "Усилители",
+      "price": 187000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1,
+        "local-variant": 1
       },
       "class": "single_real"
     }
@@ -1052,16 +1053,6 @@
       "galleryHitl": true
     },
     {
-      "id": 41444,
-      "name": "Напольная акустика Paradigm Premier 800F Espresso Grain ( paradigm premier 800f espresso grain )",
-      "cat": "Акустика",
-      "price": 287215,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
       "id": 16158,
       "name": "интегральный усилитель 47 Labs 4717 Shigaraki ( 47 labs 4717 shigaraki )",
       "cat": "Усилители",
@@ -1116,16 +1107,6 @@
       "name": "предусилитель Soulnote sa1.0 ( soulnote sa1 0 )",
       "cat": "Усилители",
       "price": 220000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 264053,
-      "name": "Вибропоглощающие стойки Acoustic Revive RWL-3 Absolute ( acoustic revive rwl 3 absolute )",
-      "cat": "Другое",
-      "price": 208250,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1370,9 +1351,29 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264071,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/4P ( audio replas opt 100hg flat ss hr 4p )",
+      "cat": "Другое",
+      "price": 129200,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264025,
+      "name": "Поглотитель Acoustic Revive RAF-48 ( acoustic revive raf 48 )",
+      "cat": "Другое",
+      "price": 125664,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 375,
+  "hitlTrueOneshotCount": 373,
   "items": [
     {
       "id": 262053,
@@ -9776,16 +9777,14 @@
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-premier-800f-grain",
       "cat": "Акустика",
       "price": 287215,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 41447,
@@ -11972,17 +11971,14 @@
       "slug": "%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%89%d0%b0%d1%8e%d1%89%d0%b8%d0%b5-%d1%81%d1%82%d0%be%d0%b9%d0%ba%d0%b8-acoustic-revive-rwl-3-absolute",
       "cat": "Другое",
       "price": 208250,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271711,
@@ -23570,16 +23566,14 @@
       "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-1-0rs",
       "cat": "Кабели",
       "price": 40000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269149,

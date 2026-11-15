@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-RWL-3-1-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-RWL-3-1-500x500-1.jpg",
-      "alt": "ACOUSTIC-REVIVE-RWL-3-1-500&#215;500",
-      "local": "assets/from-live/products/5842069c45_ACOUSTIC-REVIVE-RWL-3-1-500x500-1.jpg"
+      "src": "local://264053_w72_00.jpg",
+      "thumb": "assets/enriched/264053/264053_w72_00.jpg",
+      "alt": "Вибропоглощающие стойки Acoustic Revive RWL-3 Absolute ( acoustic revive rwl 3 absolute )",
+      "local": "assets/enriched/264053/264053_w72_00.jpg",
+      "enriched": true,
+      "attribution": "wave72-oem",
+      "bytes": 427766
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-RWL-3-1-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264053/d15ff576a2_w17cdn.jpg",
-      "bytes": 6728,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264053_w72_01.jpg",
+      "thumb": "assets/enriched/264053/264053_w72_01.jpg",
+      "alt": "Вибропоглощающие стойки Acoustic Revive RWL-3 Absolute ( acoustic revive rwl 3 absolute )",
+      "local": "assets/enriched/264053/264053_w72_01.jpg",
+      "enriched": true,
+      "attribution": "wave72-oem",
+      "bytes": 49965
     },
     {
-      "src": "local-variant://264053/w17sc95",
-      "local": "assets/enriched/264053/ed5ebd6ced_w17sc95.jpg",
-      "bytes": 14162,
-      "wave": "meager-w17-2026-11",
-      "w": 475,
-      "h": 475
+      "src": "local://264053_w72_02.jpg",
+      "thumb": "assets/enriched/264053/264053_w72_02.jpg",
+      "alt": "Вибропоглощающие стойки Acoustic Revive RWL-3 Absolute ( acoustic revive rwl 3 absolute )",
+      "local": "assets/enriched/264053/264053_w72_02.jpg",
+      "enriched": true,
+      "attribution": "wave72-oem",
+      "bytes": 189127
     },
     {
-      "src": "local-variant://264053/w17sc90",
-      "local": "assets/enriched/264053/8cf4119ac7_w17sc90.jpg",
-      "bytes": 13434,
-      "wave": "meager-w17-2026-11",
-      "w": 450,
-      "h": 450
+      "src": "local://264053_w72_03.jpg",
+      "thumb": "assets/enriched/264053/264053_w72_03.jpg",
+      "alt": "Вибропоглощающие стойки Acoustic Revive RWL-3 Absolute ( acoustic revive rwl 3 absolute )",
+      "local": "assets/enriched/264053/264053_w72_03.jpg",
+      "enriched": true,
+      "attribution": "wave72-oem",
+      "bytes": 14164
     }
   ],
   "sku": "",
@@ -72,5 +78,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T15:27:41Z",
+  "galleryWave72": true
 }
