@@ -41,35 +41,49 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Line_Magnetic_LM_218ia_tube_amplifier_%2822931532793%29.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/68/Line_Magnetic_LM_218ia_tube_amplifier_%2822931532793%29.jpg",
+      "src": "local://260853_w50_00.jpg",
+      "thumb": "assets/enriched/260853/260853_w50_00.jpg",
       "alt": "цап Line Magnetic LM-32 DAC ( line magnetic lm 32 dac )",
-      "local": "assets/enriched/260853/6eae92802a_1.jpg",
+      "local": "assets/enriched/260853/260853_w50_00.jpg",
       "enriched": true,
-      "attribution": "upload.wikimedia.org",
-      "bytes": 2982068
+      "attribution": "wave50-oem",
+      "bytes": 58907
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/11/Line-Magnetic-LM-32DAC-front.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/11/Line-Magnetic-LM-32DAC-front.jpg",
-      "alt": "Line-Magnetic-LM-32DAC-front",
-      "local": "assets/from-live/brand/a405f74b83_Line-Magnetic-LM-32DAC-front.jpg"
+      "src": "local://260853_w50_01.jpg",
+      "thumb": "assets/enriched/260853/260853_w50_01.jpg",
+      "alt": "цап Line Magnetic LM-32 DAC ( line magnetic lm 32 dac )",
+      "local": "assets/enriched/260853/260853_w50_01.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 161012
     },
     {
-      "src": "local-variant://260853/w17sc95",
-      "local": "assets/enriched/260853/9fc1247835_w17sc95.jpg",
-      "bytes": 14115,
-      "wave": "meager-w17-2026-11",
-      "w": 529,
-      "h": 285
+      "src": "local://260853_w50_02.jpg",
+      "thumb": "assets/enriched/260853/260853_w50_02.jpg",
+      "alt": "цап Line Magnetic LM-32 DAC ( line magnetic lm 32 dac )",
+      "local": "assets/enriched/260853/260853_w50_02.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 84566
     },
     {
-      "src": "local-variant://260853/w17sc90",
-      "local": "assets/enriched/260853/7c612ea231_w17sc90.jpg",
-      "bytes": 12858,
-      "wave": "meager-w17-2026-11",
-      "w": 501,
-      "h": 270
+      "src": "local://260853_w50_03.jpg",
+      "thumb": "assets/enriched/260853/260853_w50_03.jpg",
+      "alt": "цап Line Magnetic LM-32 DAC ( line magnetic lm 32 dac )",
+      "local": "assets/enriched/260853/260853_w50_03.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 207029
+    },
+    {
+      "src": "local://260853_w50_04.jpg",
+      "thumb": "assets/enriched/260853/260853_w50_04.jpg",
+      "alt": "цап Line Magnetic LM-32 DAC ( line magnetic lm 32 dac )",
+      "local": "assets/enriched/260853/260853_w50_04.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 22549
     }
   ],
   "sku": "",
@@ -82,5 +96,9 @@
   "enrichedAt": "2026-11-14T14:06:20Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T10:14:40Z",
+  "galleryWave50": true
 }

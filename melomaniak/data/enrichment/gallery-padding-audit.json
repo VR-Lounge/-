@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T10:01:03Z",
+  "generatedAt": "2026-11-15T10:17:49Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1227,
-    "padded": 285,
+    "true_multi_angle": 1231,
+    "padded": 281,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 65.02,
-    "padded": 15.1,
+    "true_multi_angle": 65.24,
+    "padded": 14.89,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 33.53,
-    "not_true_multi": 34.98
+    "padded_of_claimed_gal4plus": 33.32,
+    "not_true_multi": 34.76
   },
   "padReasonTallies": {
-    "local-variant": 727,
-    "wN-variant-name": 615,
+    "local-variant": 723,
+    "wN-variant-name": 613,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 619,
+  "claimedButNotTrueMulti": 615,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -452,19 +452,6 @@
       "class": "padded"
     },
     {
-      "id": 260853,
-      "name": "цап Line Magnetic LM-32 DAC ( line magnetic lm 32 dac )",
-      "cat": "ЦАПы",
-      "price": 220000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 44611,
       "name": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 25 )",
       "cat": "Ресиверы",
@@ -526,19 +513,6 @@
       "class": "padded"
     },
     {
-      "id": 270802,
-      "name": "Сетевой проигрыватель Arcam ST60",
-      "cat": "Источники",
-      "price": 209990,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 264053,
       "name": "Вибропоглощающие стойки Acoustic Revive RWL-3 Absolute ( acoustic revive rwl 3 absolute )",
       "cat": "Другое",
@@ -564,6 +538,33 @@
         "local-variant": 3
       },
       "class": "single_real"
+    },
+    {
+      "id": 16180,
+      "name": "CD проигрыватель Trigon Prince ( cd trigon prince )",
+      "cat": "Источники",
+      "price": 200000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 15864,
+      "name": "усилитель мощности 47 Labs 4706-50 ( 47 labs 4706 50 )",
+      "cat": "Усилители",
+      "price": 199000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1
+      },
+      "class": "padded"
     }
   ],
   "hitlTrueOneshot": [
@@ -11537,16 +11538,14 @@
       "slug": "%d1%86%d0%b0%d0%bf-line-magnetic-lm-32-dac",
       "cat": "ЦАПы",
       "price": 220000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 261056,
@@ -11939,16 +11938,14 @@
       "slug": "9f466eedb57e6878c9d385d41a6ca212",
       "cat": "Источники",
       "price": 209990,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270975,
@@ -17872,14 +17869,14 @@
       "slug": "95c6e07a491fed7e69a2dc49ba785428",
       "cat": "Другое",
       "price": 94200,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264092,
@@ -22024,16 +22021,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-flow-28-filter",
       "cat": "Кабели",
       "price": 51406,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15984,

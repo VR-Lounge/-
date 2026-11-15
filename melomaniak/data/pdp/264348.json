@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-Flow-28-Filter.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-Flow-28-Filter.jpg",
-      "alt": "Furutech-Flow-28-Filter",
-      "local": "assets/from-live/products/7dfd281f7a_Furutech-Flow-28-Filter.jpg"
+      "src": "local://264348_w50_00.jpg",
+      "thumb": "assets/enriched/264348/264348_w50_00.jpg",
+      "alt": "Сетевой кабель Furutech Flow-28 Filter ( furutech flow 28 filter )",
+      "local": "assets/enriched/264348/264348_w50_00.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 12116
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_Flow_28_Filter.jpg",
-      "local": "assets/enriched/264348/0eb6b88382_w13media.jpg",
-      "bytes": 34265,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264348_w50_01.jpg",
+      "thumb": "assets/enriched/264348/264348_w50_01.jpg",
+      "alt": "Сетевой кабель Furutech Flow-28 Filter ( furutech flow 28 filter )",
+      "local": "assets/enriched/264348/264348_w50_01.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 37739
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_Flow_28_Filter-300x300.jpg",
-      "local": "assets/enriched/264348/be7424e435_w13var.jpg",
-      "bytes": 12694,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264348_w50_02.jpg",
+      "thumb": "assets/enriched/264348/264348_w50_02.jpg",
+      "alt": "Сетевой кабель Furutech Flow-28 Filter ( furutech flow 28 filter )",
+      "local": "assets/enriched/264348/264348_w50_02.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 20676
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_Flow_28_Filter-600x600.jpg",
-      "local": "assets/enriched/264348/aedd5d2221_w13var.jpg",
-      "bytes": 32916,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264348_w50_03.jpg",
+      "thumb": "assets/enriched/264348/264348_w50_03.jpg",
+      "alt": "Сетевой кабель Furutech Flow-28 Filter ( furutech flow 28 filter )",
+      "local": "assets/enriched/264348/264348_w50_03.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 27322
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T10:14:40Z",
+  "galleryWave50": true
 }

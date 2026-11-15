@@ -91,32 +91,58 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_st60_4260024458-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_st60_4260024458-1.jpg",
-      "alt": "arcam_st60_4260024458-1.jpg",
-      "local": "assets/from-live/products/cd4e41b30d_arcam_st60_4260024458-1.jpg"
+      "src": "local://270802_w50_00.jpg",
+      "thumb": "assets/enriched/270802/270802_w50_00.jpg",
+      "alt": "Сетевой проигрыватель Arcam ST60",
+      "local": "assets/enriched/270802/270802_w50_00.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 31476
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_st60_4260026717-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_st60_4260026717-2.jpg",
-      "alt": "arcam_st60_4260026717-2.jpg",
-      "local": "assets/from-live/products/7bfa11af42_arcam_st60_4260026717-2.jpg"
+      "src": "local://270802_w50_01.jpg",
+      "thumb": "assets/enriched/270802/270802_w50_01.jpg",
+      "alt": "Сетевой проигрыватель Arcam ST60",
+      "local": "assets/enriched/270802/270802_w50_01.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 297390
     },
     {
-      "src": "local-variant://270802/w17sc95",
-      "local": "assets/enriched/270802/b96b28cbcd_w17sc95.jpg",
-      "bytes": 199357,
-      "wave": "meager-w17-2026-11",
-      "w": 1710,
-      "h": 1710
+      "src": "local://270802_w50_02.jpg",
+      "thumb": "assets/enriched/270802/270802_w50_02.jpg",
+      "alt": "Сетевой проигрыватель Arcam ST60",
+      "local": "assets/enriched/270802/270802_w50_02.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 74306
     },
     {
-      "src": "local-variant://270802/w17sc90",
-      "local": "assets/enriched/270802/5a0e0ccbd2_w17sc90.jpg",
-      "bytes": 183523,
-      "wave": "meager-w17-2026-11",
-      "w": 1620,
-      "h": 1620
+      "src": "local://270802_w50_03.jpg",
+      "thumb": "assets/enriched/270802/270802_w50_03.jpg",
+      "alt": "Сетевой проигрыватель Arcam ST60",
+      "local": "assets/enriched/270802/270802_w50_03.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 2433890
+    },
+    {
+      "src": "local://270802_w50_04.jpg",
+      "thumb": "assets/enriched/270802/270802_w50_04.jpg",
+      "alt": "Сетевой проигрыватель Arcam ST60",
+      "local": "assets/enriched/270802/270802_w50_04.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 732542
+    },
+    {
+      "src": "local://270802_w50_05.jpg",
+      "thumb": "assets/enriched/270802/270802_w50_05.jpg",
+      "alt": "Сетевой проигрыватель Arcam ST60",
+      "local": "assets/enriched/270802/270802_w50_05.jpg",
+      "enriched": true,
+      "attribution": "wave50-oem",
+      "bytes": 572011
     }
   ],
   "sku": "",
@@ -128,5 +154,9 @@
   "enrichedAt": "2026-11-14T14:25:58Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T10:14:40Z",
+  "galleryWave50": true
 }
