@@ -36,34 +36,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech_e-tp80e.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech_e-tp80e.jpg",
-      "alt": "furutech_e-tp80e",
-      "local": "assets/from-live/products/6720e69498_furutech_e-tp80e.jpg"
+      "src": "local://264250_w82_00.jpg",
+      "thumb": "assets/enriched/264250/264250_w82_00.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES (Europe) ( furutech e tp80es (europe) )",
+      "local": "assets/enriched/264250/264250_w82_00.jpg",
+      "enriched": true,
+      "attribution": "wave82-oem",
+      "bytes": 140151
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/e-TP80ES-NCF-web.jpg",
-      "local": "assets/enriched/264250/6fa414c11c_w14media.jpg",
-      "bytes": 20606,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 255
+      "src": "local://264250_w82_01.jpg",
+      "thumb": "assets/enriched/264250/264250_w82_01.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES (Europe) ( furutech e tp80es (europe) )",
+      "local": "assets/enriched/264250/264250_w82_01.jpg",
+      "enriched": true,
+      "attribution": "wave82-oem",
+      "bytes": 72055
     },
     {
-      "src": "local-variant://264250/w17sc95",
-      "local": "assets/enriched/264250/8b0d3bb090_w17sc95.jpg",
-      "bytes": 12790,
-      "wave": "meager-w17-2026-11",
-      "w": 285,
-      "h": 242
+      "src": "local://264250_w82_02.jpg",
+      "thumb": "assets/enriched/264250/264250_w82_02.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES (Europe) ( furutech e tp80es (europe) )",
+      "local": "assets/enriched/264250/264250_w82_02.jpg",
+      "enriched": true,
+      "attribution": "wave82-oem",
+      "bytes": 81994
     },
     {
-      "src": "local-variant://264250/w17sc90",
-      "local": "assets/enriched/264250/76f747b229_w17sc90.jpg",
-      "bytes": 11698,
-      "wave": "meager-w17-2026-11",
-      "w": 270,
-      "h": 229
+      "src": "local://264250_w82_03.jpg",
+      "thumb": "assets/enriched/264250/264250_w82_03.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES (Europe) ( furutech e tp80es (europe) )",
+      "local": "assets/enriched/264250/264250_w82_03.jpg",
+      "enriched": true,
+      "attribution": "wave82-oem",
+      "bytes": 146806
+    },
+    {
+      "src": "local://264250_w82_04.jpg",
+      "thumb": "assets/enriched/264250/264250_w82_04.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES (Europe) ( furutech e tp80es (europe) )",
+      "local": "assets/enriched/264250/264250_w82_04.jpg",
+      "enriched": true,
+      "attribution": "wave82-oem",
+      "bytes": 51221
     }
   ],
   "sku": "",
@@ -76,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T18:15:10Z",
+  "galleryWave82": true
 }

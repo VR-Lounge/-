@@ -1,0 +1,44 @@
+{
+  "wave": 82,
+  "at": "2026-11-15T18:18:24Z",
+  "counts": {
+    "true_multi_angle": 1318,
+    "padded": 197,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 2,
+  "cleared": [
+    {
+      "id": 264250,
+      "name": "Сетевой фильтр Furutech e-TP80ES (Europe) ( furutech e tp80es (europe) )",
+      "unique": 5,
+      "price": 78624,
+      "notes": "e-TP80ES Europe non-NCF: Audiohum 24166–24169+24165; reject live e-TP609, media NCF, AH 24170/24171 NCF sockets"
+    },
+    {
+      "id": 264443,
+      "name": "Акустический кабель Furutech FS-303 ( furutech fs 303 )",
+      "unique": 6,
+      "price": 63315,
+      "notes": "FS-303 bulk pearl μ-OFC: live+media+OEM+AV Gallery+Krispy+PartsConnexion; reject FS-301"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "no new sources"
+    },
+    {
+      "id": 264126,
+      "name": "Audio Replas MTP-2 RU mk2",
+      "class": "single_real",
+      "note": "no new sources"
+    }
+  ],
+  "remaining": {
+    "padded": 197,
+    "single_real": 372
+  }
+}
