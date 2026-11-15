@@ -48,20 +48,14 @@
       "local": "assets/from-live/products/e5d5aeda24_Leben-RS-30eq-back-.jpg"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/fonokorrektor_Leben_RS_30EQ_-600x600.jpg",
-      "local": "assets/enriched/15842/7651efd4c4_w13var.jpg",
-      "bytes": 18477,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "assets/enriched/15842/15842_w27_00.jpg",
+      "local": "assets/enriched/15842/15842_w27_00.jpg",
+      "alt": "фонокорректор Leben RS 30EQ ( leben rs 30eq )"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/fonokorrektor_Leben_RS_30EQ_-300x300.jpg",
-      "local": "assets/enriched/15842/a8896cba66_w17cdn.jpg",
-      "bytes": 7424,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "assets/enriched/15842/15842_w27_01.jpg",
+      "local": "assets/enriched/15842/15842_w27_01.jpg",
+      "alt": "фонокорректор Leben RS 30EQ ( leben rs 30eq )"
     }
   ],
   "sku": "",
@@ -73,5 +67,9 @@
   "enrichedAt": "2026-11-14T17:02:05Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": {
+    "status": "cleared",
+    "wave": "w27",
+    "at": "2026-11-15T02:52:41.732415+00:00"
+  }
 }

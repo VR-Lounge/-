@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T02:48:14Z",
+  "generatedAt": "2026-11-15T03:03:39Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1138,
-    "padded": 373,
+    "true_multi_angle": 1145,
+    "padded": 366,
     "single_real": 376
   },
   "pct": {
-    "true_multi_angle": 60.31,
-    "padded": 19.77,
+    "true_multi_angle": 60.68,
+    "padded": 19.4,
     "single_real": 19.93,
-    "padded_of_claimed_gal4plus": 38.35,
-    "not_true_multi": 39.69
+    "padded_of_claimed_gal4plus": 37.97,
+    "not_true_multi": 39.32
   },
   "padReasonTallies": {
-    "local-variant": 754,
-    "wN-variant-name": 665,
-    "cdn-size-thumb": 124,
+    "local-variant": 752,
+    "wN-variant-name": 662,
+    "cdn-size-thumb": 123,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 708,
+  "claimedButNotTrueMulti": 701,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -103,20 +103,6 @@
         "local-variant": 1
       },
       "class": "single_real"
-    },
-    {
-      "id": 15842,
-      "name": "фонокорректор Leben RS 30EQ ( leben rs 30eq )",
-      "cat": "Усилители",
-      "price": 310000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "class": "padded"
     },
     {
       "id": 15924,
@@ -399,19 +385,6 @@
       "class": "padded"
     },
     {
-      "id": 274501,
-      "name": "Напольная акустика Davis Acoustics Model XL",
-      "cat": "Акустика",
-      "price": 250490,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 16852,
       "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audio mc 300 ase )",
       "cat": "Усилители",
@@ -555,6 +528,33 @@
         "local-variant": 2
       },
       "class": "single_real"
+    },
+    {
+      "id": 16808,
+      "name": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "cat": "Усилители",
+      "price": 220000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 260853,
+      "name": "цап Line Magnetic LM-32 DAC ( line magnetic lm 32 dac )",
+      "cat": "ЦАПы",
+      "price": 220000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "local-variant": 2
+      },
+      "class": "padded"
     }
   ],
   "hitlTrueOneshot": [
@@ -9177,15 +9177,12 @@
       "price": 310000,
       "galleryHitl": true,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15924,
@@ -10621,14 +10618,14 @@
       "price": 250490,
       "galleryHitl": true,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 1,
       "padReasons": {
-        "wN-variant-name": 2
+        "wN-variant-name": 1
       },
       "hasPadding": true,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 271976,
@@ -12804,12 +12801,12 @@
       "price": 184990,
       "galleryHitl": false,
       "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269698,
@@ -12897,13 +12894,13 @@
       "cat": "Другое",
       "price": 182090,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 274594,
@@ -13036,14 +13033,12 @@
       "price": 179990,
       "galleryHitl": true,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 274403,
@@ -13360,14 +13355,12 @@
       "price": 169646,
       "galleryHitl": true,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 268051,
@@ -13875,15 +13868,13 @@
       "cat": "Усилители",
       "price": 154990,
       "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271044,
