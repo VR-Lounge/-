@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T07:52:14Z",
+  "generatedAt": "2026-11-15T08:13:48Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1201,
-    "padded": 311,
+    "true_multi_angle": 1204,
+    "padded": 308,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 63.65,
-    "padded": 16.48,
+    "true_multi_angle": 63.8,
+    "padded": 16.32,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 34.94,
-    "not_true_multi": 36.35
+    "padded_of_claimed_gal4plus": 34.78,
+    "not_true_multi": 36.2
   },
   "padReasonTallies": {
     "local-variant": 741,
-    "wN-variant-name": 646,
+    "wN-variant-name": 642,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 645,
+  "claimedButNotTrueMulti": 642,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -424,19 +424,6 @@
       "class": "single_real"
     },
     {
-      "id": 265980,
-      "name": "Сетевой кабель Furutech Powerflux Alpha PS950-18E ( furutech powerflux alpha ps950 18e )",
-      "cat": "Кабели",
-      "price": 223125,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 16784,
       "name": "предусилитель Soulnote sa1.0 ( soulnote sa1 0 )",
       "cat": "Усилители",
@@ -562,6 +549,19 @@
       "padReasons": {
         "cdn-size-thumb": 1,
         "local-variant": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264015,
+      "name": "Размагничиватель Acoustic Revive RL-30 MK-III ( acoustic revive rl 30 mk iii )",
+      "cat": "Другое",
+      "price": 204000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
       },
       "class": "single_real"
     }
@@ -11471,16 +11471,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-powerflux-alpha-ps950-18e",
       "cat": "Кабели",
       "price": 223125,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272516,
@@ -22239,14 +22237,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-12",
       "cat": "Кабели",
       "price": 50126,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264404,
@@ -25600,16 +25598,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-cf-102r-ncf",
       "cat": "Другое",
       "price": 24948,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264515,

@@ -26,34 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/11/Furutech-Piezo-PowerFlux-Alpha-950E-set.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/11/Furutech-Piezo-PowerFlux-Alpha-950E-set.jpg",
-      "alt": "Furutech-Piezo-PowerFlux-Alpha-950E-set",
-      "local": "assets/from-live/products/b05a2f7aab_Furutech-Piezo-PowerFlux-Alpha-950E-set.jpg"
+      "src": "local://265980_w42_00.jpg",
+      "thumb": "assets/enriched/265980/265980_w42_00.jpg",
+      "alt": "Сетевой кабель Furutech Powerflux Alpha PS950-18E ( furutech powerflux alpha ps950 18e )",
+      "local": "assets/enriched/265980/265980_w42_00.jpg",
+      "enriched": true,
+      "attribution": "wave42-oem",
+      "bytes": 114995
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_PowerfluX_Alpha_PS950_18E.jpg",
-      "local": "assets/enriched/265980/3b4afa46dd_w13media.jpg",
-      "bytes": 31227,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://265980_w42_01.jpg",
+      "thumb": "assets/enriched/265980/265980_w42_01.jpg",
+      "alt": "Сетевой кабель Furutech Powerflux Alpha PS950-18E ( furutech powerflux alpha ps950 18e )",
+      "local": "assets/enriched/265980/265980_w42_01.jpg",
+      "enriched": true,
+      "attribution": "wave42-oem",
+      "bytes": 40604
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_PowerfluX_Alpha_PS950_18E-600x600.jpg",
-      "local": "assets/enriched/265980/bfbf467b01_w13var.jpg",
-      "bytes": 30353,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://265980_w42_02.jpg",
+      "thumb": "assets/enriched/265980/265980_w42_02.jpg",
+      "alt": "Сетевой кабель Furutech Powerflux Alpha PS950-18E ( furutech powerflux alpha ps950 18e )",
+      "local": "assets/enriched/265980/265980_w42_02.jpg",
+      "enriched": true,
+      "attribution": "wave42-oem",
+      "bytes": 22475
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_PowerfluX_Alpha_PS950_18E-300x300.jpg",
-      "local": "assets/enriched/265980/52b1d701e6_w13var.jpg",
-      "bytes": 11426,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://265980_w42_03.jpg",
+      "thumb": "assets/enriched/265980/265980_w42_03.jpg",
+      "alt": "Сетевой кабель Furutech Powerflux Alpha PS950-18E ( furutech powerflux alpha ps950 18e )",
+      "local": "assets/enriched/265980/265980_w42_03.jpg",
+      "enriched": true,
+      "attribution": "wave42-oem",
+      "bytes": 31227
     }
   ],
   "sku": "",
@@ -65,5 +71,9 @@
   "enrichedAt": "2026-11-14T13:35:27Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:10:45Z",
+  "galleryWave42": true
 }

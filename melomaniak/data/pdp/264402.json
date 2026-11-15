@@ -36,36 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "local://e9003df75e_FURUTECH-AG-12R-500x500-1-1.jpg",
-      "thumb": "assets/enriched/264402/df80c9f47b_live1.jpg",
+      "src": "local://264402_w42_00.jpg",
+      "thumb": "assets/enriched/264402/264402_w42_00.jpg",
       "alt": "Фоно кабель Furutech AG-12 ( furutech ag 12 )",
-      "local": "assets/enriched/264402/df80c9f47b_live1.jpg",
+      "local": "assets/enriched/264402/264402_w42_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
+      "attribution": "wave42-oem",
       "bytes": 42093
     },
     {
-      "src": "local://e9003df75e_FURUTECH-AG-12R-500x500-1.jpg",
-      "thumb": "assets/enriched/264402/43c7af1785_live2.jpg",
+      "src": "local://264402_w42_01.jpg",
+      "thumb": "assets/enriched/264402/264402_w42_01.jpg",
       "alt": "Фоно кабель Furutech AG-12 ( furutech ag 12 )",
-      "local": "assets/enriched/264402/43c7af1785_live2.jpg",
+      "local": "assets/enriched/264402/264402_w42_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 42093
-    },
-    {
-      "src": "local://0ee8ac0555_FURUTECH-AG-12L-500x500-1.jpg",
-      "thumb": "assets/enriched/264402/aa11a8c84a_live3.jpg",
-      "alt": "Фоно кабель Furutech AG-12 ( furutech ag 12 )",
-      "local": "assets/enriched/264402/aa11a8c84a_live3.jpg",
-      "enriched": true,
-      "attribution": "from-live",
+      "attribution": "wave42-oem",
       "bytes": 38363
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-AG-12R-500x500-1-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-AG-12R-500x500-1-1.jpg",
-      "alt": "FURUTECH-AG-12R-500&#215;500 (1)"
+      "src": "local://264402_w42_02.jpg",
+      "thumb": "assets/enriched/264402/264402_w42_02.jpg",
+      "alt": "Фоно кабель Furutech AG-12 ( furutech ag 12 )",
+      "local": "assets/enriched/264402/264402_w42_02.jpg",
+      "enriched": true,
+      "attribution": "wave42-oem",
+      "bytes": 170482
+    },
+    {
+      "src": "local://264402_w42_03.jpg",
+      "thumb": "assets/enriched/264402/264402_w42_03.jpg",
+      "alt": "Фоно кабель Furutech AG-12 ( furutech ag 12 )",
+      "local": "assets/enriched/264402/264402_w42_03.jpg",
+      "enriched": true,
+      "attribution": "wave42-oem",
+      "bytes": 136393
     }
   ],
   "sku": "",
@@ -77,5 +81,9 @@
   "enrichedAt": "2026-11-14T17:02:07Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:10:45Z",
+  "galleryWave42": true
 }
