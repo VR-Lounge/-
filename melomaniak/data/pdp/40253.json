@@ -25,34 +25,12 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/6bfbc2e88bdb5a4a46725f7039e5becc.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/6bfbc2e88bdb5a4a46725f7039e5becc-600x600.jpg",
-      "alt": "6bfbc2e88bdb5a4a46725f7039e5becc",
-      "local": "assets/from-live/products/55f5924b58_6bfbc2e88bdb5a4a46725f7039e5becc.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/cb3bf9572c4d03548016c8a2dc63b443.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/cb3bf9572c4d03548016c8a2dc63b443-600x600.jpeg",
-      "alt": "cb3bf9572c4d03548016c8a2dc63b443",
-      "local": "assets/from-live/products/0f96c98ab3_cb3bf9572c4d03548016c8a2dc63b443.jpeg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/6bfbc2e88bdb5a4a46725f7039e5becc-300x300.jpg",
-      "local": "assets/enriched/40253/504806f26f_w13var.jpg",
-      "bytes": 12057,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/6bfbc2e88bdb5a4a46725f7039e5becc-600x600.jpg",
-      "local": "assets/enriched/40253/1d80e5f586_w13var.jpg",
-      "bytes": 20895,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    }
+    "assets/enriched/40253/0f96c98ab3_w24.jpg",
+    "assets/enriched/40253/48f98f21fc_w24.jpg",
+    "assets/enriched/40253/55f5924b58_w24.jpg",
+    "assets/enriched/40253/61f9981dda_w24.jpg",
+    "assets/enriched/40253/9ebfb88bd9_w24.jpg",
+    "assets/enriched/40253/fa3d40270c_w24.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -63,5 +41,9 @@
   "enrichedAt": "2026-11-14T13:19:30Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T02:13:35Z",
+  "galleryWave24": true
 }

@@ -40,37 +40,11 @@
     }
   ],
   "gallery": [
-    {
-      "src": "local://e299aa3e62_ysilitel_moshnosti_Ultimate_Audio_MC300845_AB.jpg",
-      "thumb": "assets/enriched/16854/abd9e26622_live1.jpg",
-      "alt": "усилитель мощности Ultimate Audio MC 3008 ABSE ( ultimate audio mc 3008 abse )",
-      "local": "assets/enriched/16854/abd9e26622_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 32201
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Ultimate_Audio_MC_3008_ABSE.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Ultimate_Audio_MC_3008_ABSE-600x600.jpg",
-      "alt": "Ultimate Audio MC 3008 ABSE",
-      "local": "assets/from-live/products/dd197cefb7_ysilitel_moshnosti_Ultimate_Audio_MC_3008_ABSE.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Ultimate_Audio_MC_3008_ABSE-600x600.jpg",
-      "local": "assets/enriched/16854/7d9f6730be_w13var.jpg",
-      "bytes": 27869,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Ultimate_Audio_MC_3008_ABSE-300x300.jpg",
-      "local": "assets/enriched/16854/bc5e57cbfd_w13var.jpg",
-      "bytes": 10028,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
-    }
+    "assets/enriched/16854/9725cf11ea_w24.jpg",
+    "assets/enriched/16854/856b9db6b5_w24.jpg",
+    "assets/enriched/16854/22eb7472c0_w24.jpg",
+    "assets/enriched/16854/602063769c_w24.jpg",
+    "assets/enriched/16854/9005bb657a_w24.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -82,5 +56,9 @@
   "enrichedAt": "2026-11-14T13:51:09Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T02:11:55Z",
+  "galleryWave24": true
 }

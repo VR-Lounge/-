@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T01:55:39Z",
+  "generatedAt": "2026-11-15T02:20:56Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,39 +15,26 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1120,
-    "padded": 389,
-    "single_real": 378
+    "true_multi_angle": 1127,
+    "padded": 384,
+    "single_real": 376
   },
   "pct": {
-    "true_multi_angle": 59.35,
-    "padded": 20.61,
-    "single_real": 20.03,
-    "padded_of_claimed_gal4plus": 39.33,
-    "not_true_multi": 40.65
+    "true_multi_angle": 59.72,
+    "padded": 20.35,
+    "single_real": 19.93,
+    "padded_of_claimed_gal4plus": 38.95,
+    "not_true_multi": 40.28
   },
   "padReasonTallies": {
-    "local-variant": 762,
-    "wN-variant-name": 678,
-    "cdn-size-thumb": 125,
+    "local-variant": 757,
+    "wN-variant-name": 668,
+    "cdn-size-thumb": 124,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 726,
+  "claimedButNotTrueMulti": 719,
   "topPaddedByPrice": [
-    {
-      "id": 262116,
-      "name": "Интегральный усилитель Line Magnetic Audio LM 126 iA ( line magnetic audio lm 126 ia )",
-      "cat": "Усилители",
-      "price": 348500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "class": "single_real"
-    },
     {
       "id": 264126,
       "name": "Сетевой фильтр Audio Replas MTP-2 RU mk2 ( audio replas mtp 2 ru mk2 )",
@@ -62,46 +49,6 @@
       "class": "single_real"
     },
     {
-      "id": 16160,
-      "name": "CD транспорт 47 Labs 4713 Flatfish ( cd 47 labs 4713 flatfish )",
-      "cat": "Источники",
-      "price": 343612,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 2
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 16854,
-      "name": "усилитель мощности Ultimate Audio MC 3008 ABSE ( ultimate audio mc 3008 abse )",
-      "cat": "Усилители",
-      "price": 340000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
-      "id": 40256,
-      "name": "саундбар Paradigm D?cor 1S (90-130 дюймов) ( paradigm d?cor 1s (90 130 ) )",
-      "cat": "Другое",
-      "price": 339065,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 15982,
       "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )",
       "cat": "Усилители",
@@ -114,20 +61,6 @@
         "local-variant": 1
       },
       "class": "single_real"
-    },
-    {
-      "id": 264246,
-      "name": "Сетевой фильтр Furutech Daytona 303E ( furutech daytona 303e )",
-      "cat": "Другое",
-      "price": 324870,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "class": "padded"
     },
     {
       "id": 15720,
@@ -298,19 +231,6 @@
         "local-variant": 1
       },
       "class": "single_real"
-    },
-    {
-      "id": 40255,
-      "name": "саундбар Paradigm D?cor 1S (75-89 дюймов) ( paradigm d?cor 1s (75 89 ) )",
-      "cat": "Другое",
-      "price": 293165,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
     },
     {
       "id": 16728,
@@ -543,6 +463,80 @@
       "padSlots": 1,
       "padReasons": {
         "wN-variant-name": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 261872,
+      "name": "Центральный канал PARADIGM Founder 70LCR Black Walnut ( paradigm founder 70lcr black walnut )",
+      "cat": "Другое",
+      "price": 252365,
+      "galleryLen": 8,
+      "uniqueDistinct": 2,
+      "padSlots": 1,
+      "padReasons": {
+        "wN-variant-name": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 274501,
+      "name": "Напольная акустика Davis Acoustics Model XL",
+      "cat": "Акустика",
+      "price": 250490,
+      "galleryLen": 4,
+      "uniqueDistinct": 3,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 271976,
+      "name": "Сетевой фильтр Isol-8 MiniSub Wave",
+      "cat": "Другое",
+      "price": 250200,
+      "galleryLen": 4,
+      "uniqueDistinct": 3,
+      "padSlots": 0,
+      "padReasons": {},
+      "class": "padded"
+    },
+    {
+      "id": 16852,
+      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audio mc 300 ase )",
+      "cat": "Усилители",
+      "price": 250000,
+      "galleryLen": 5,
+      "uniqueDistinct": 2,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 3
+      },
+      "class": "padded"
+    },
+    {
+      "id": 271049,
+      "name": "Напольная акустика Monitor Audio Silver 300 7G",
+      "cat": "Акустика",
+      "price": 249990,
+      "galleryLen": 6,
+      "uniqueDistinct": 3,
+      "padSlots": 0,
+      "padReasons": {},
+      "class": "padded"
+    },
+    {
+      "id": 271560,
+      "name": "Центральный громкоговоритель KEF R6 Meta",
+      "cat": "Другое",
+      "price": 249990,
+      "galleryLen": 4,
+      "uniqueDistinct": 3,
+      "padSlots": 1,
+      "padReasons": {
+        "local-variant": 1
       },
       "class": "padded"
     }
@@ -939,30 +933,10 @@
       "galleryHitl": true
     },
     {
-      "id": 262116,
-      "name": "Интегральный усилитель Line Magnetic Audio LM 126 iA ( line magnetic audio lm 126 ia )",
-      "cat": "Усилители",
-      "price": 348500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 264126,
       "name": "Сетевой фильтр Audio Replas MTP-2 RU mk2 ( audio replas mtp 2 ru mk2 )",
       "cat": "Другое",
       "price": 348500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 16160,
-      "name": "CD транспорт 47 Labs 4713 Flatfish ( cd 47 labs 4713 flatfish )",
-      "cat": "Источники",
-      "price": 343612,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1347,9 +1321,29 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 26634,
+      "name": "центральный канал Audio Physic Celsius III ( audio physic celsius iii )",
+      "cat": "Другое",
+      "price": 140625,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 272906,
+      "name": "Беспроводная Hi-Fi-акустика B Formation Wedge",
+      "cat": "Акустика",
+      "price": 139990,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 378,
+  "hitlTrueOneshotCount": 376,
   "items": [
     {
       "id": 262053,
@@ -8556,16 +8550,14 @@
       "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-126-ia",
       "cat": "Усилители",
       "price": 348500,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264126,
@@ -8590,17 +8582,14 @@
       "slug": "cd_transport_47_labs_4713",
       "cat": "Источники",
       "price": 343612,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272571,
@@ -8623,16 +8612,14 @@
       "slug": "ysilitel_moshnosti_Ultimate_Audio_MC_3008_ABSE",
       "cat": "Усилители",
       "price": 340000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 262135,
@@ -8732,16 +8719,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-1s-90-130-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 339065,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 41442,
@@ -9015,17 +9000,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-daytona-303e",
       "cat": "Другое",
       "price": 324870,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 261112,
@@ -9572,16 +9554,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-1s-75-89-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 293165,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 33454,
@@ -11310,16 +11290,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-1s-%d0%b4%d0%be-74-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 229415,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271940,

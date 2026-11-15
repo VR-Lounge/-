@@ -45,36 +45,11 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/Line-Magnetic-Lm-125-IA.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/Line-Magnetic-Lm-125-IA-600x451.jpg",
-      "alt": "Line-Magnetic-Lm-125-IA",
-      "local": "assets/from-live/products/d813613944_Line-Magnetic-Lm-125-IA.jpg"
-    },
-    {
-      "src": "local-variant://262116/w17sc95",
-      "local": "assets/enriched/262116/6d88a7a028_w17sc95.jpg",
-      "bytes": 35163,
-      "wave": "meager-w17-2026-11",
-      "w": 665,
-      "h": 428
-    },
-    {
-      "src": "local-variant://262116/w17sc90",
-      "local": "assets/enriched/262116/71df274630_w17sc90.jpg",
-      "bytes": 32215,
-      "wave": "meager-w17-2026-11",
-      "w": 630,
-      "h": 405
-    },
-    {
-      "src": "local-variant://262116/w17sc85",
-      "local": "assets/enriched/262116/29c46db53b_w17sc85.jpg",
-      "bytes": 29575,
-      "wave": "meager-w17-2026-11",
-      "w": 595,
-      "h": 383
-    }
+    "assets/enriched/262116/486f8b6250_w24.jpg",
+    "assets/enriched/262116/c712f436a3_w24.jpg",
+    "assets/enriched/262116/6b5fe22113_w24.jpg",
+    "assets/enriched/262116/e1c7e90077_w24.jpg",
+    "assets/enriched/262116/118c25255c_w24.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -87,5 +62,9 @@
   "enrichedAt": "2026-11-14T14:07:17Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T02:08:47Z",
+  "galleryWave24": true
 }
