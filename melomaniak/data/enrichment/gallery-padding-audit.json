@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T01:32:54Z",
+  "generatedAt": "2026-11-15T01:55:39Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1111,
-    "padded": 398,
+    "true_multi_angle": 1120,
+    "padded": 389,
     "single_real": 378
   },
   "pct": {
-    "true_multi_angle": 58.88,
-    "padded": 21.09,
+    "true_multi_angle": 59.35,
+    "padded": 20.61,
     "single_real": 20.03,
-    "padded_of_claimed_gal4plus": 39.55,
-    "not_true_multi": 41.12
+    "padded_of_claimed_gal4plus": 39.33,
+    "not_true_multi": 40.65
   },
   "padReasonTallies": {
-    "local-variant": 763,
-    "wN-variant-name": 679,
+    "local-variant": 762,
+    "wN-variant-name": 678,
     "cdn-size-thumb": 125,
     "cdn-rotated": 6
   },
-  "claimedGal4Plus": 1838,
-  "claimedButNotTrueMulti": 727,
+  "claimedGal4Plus": 1846,
+  "claimedButNotTrueMulti": 726,
   "topPaddedByPrice": [
     {
       "id": 262116,
@@ -85,20 +85,6 @@
       "padSlots": 2,
       "padReasons": {
         "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
-      "id": 262135,
-      "name": "CD проигрыватель Soulnote C1 ( cd soulnote c1 )",
-      "cat": "Источники",
-      "price": 340000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 1
       },
       "class": "padded"
     },
@@ -537,6 +523,19 @@
     {
       "id": 261870,
       "name": "Центральный канал PARADIGM Founder 70LCR Walnut ( paradigm founder 70lcr walnut )",
+      "cat": "Другое",
+      "price": 252365,
+      "galleryLen": 8,
+      "uniqueDistinct": 2,
+      "padSlots": 1,
+      "padReasons": {
+        "wN-variant-name": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 261871,
+      "name": "Центральный канал PARADIGM Founder 70LCR Midnight Cherry ( paradigm founder 70lcr midnight cherry )",
       "cat": "Другое",
       "price": 252365,
       "galleryLen": 8,
@@ -7067,14 +7066,14 @@
       "slug": "%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-audio-research-ds450",
       "cat": "Усилители",
       "price": 450000,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 268909,
@@ -7142,14 +7141,14 @@
       "slug": "lampovyiy_fonokorrektor_triode_trv_eq3se-171197",
       "cat": "Усилители",
       "price": 440000,
-      "galleryHitl": true,
-      "galleryLen": 3,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 273696,
@@ -7474,14 +7473,14 @@
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-acoustic-energy-ae-509",
       "cat": "Акустика",
       "price": 414300,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 271023,
@@ -7567,14 +7566,14 @@
       "slug": "napolnaia_akystika_audio_physic_scorpio_ii",
       "cat": "Акустика",
       "price": 400000,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 42971,
@@ -8317,14 +8316,14 @@
       "slug": "%d1%86%d0%b0%d0%bf-soulnote-sd2-0",
       "cat": "ЦАПы",
       "price": 360000,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 4228,
@@ -8422,14 +8421,14 @@
       "slug": "integralnii_ysilitel_Trigon_Energy",
       "cat": "Усилители",
       "price": 350000,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 16814,
@@ -8452,14 +8451,14 @@
       "slug": "integralnii_ysilitel_triode_trv_88ser",
       "cat": "Усилители",
       "price": 350000,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 16824,
@@ -8497,14 +8496,14 @@
       "slug": "polochnaia_akystika_proac_tablette_anniversary_white",
       "cat": "Акустика",
       "price": 350000,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 268005,
@@ -8641,17 +8640,14 @@
       "slug": "cd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-soulnote-%d1%811-sh",
       "cat": "Источники",
       "price": 340000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270927,

@@ -36,24 +36,14 @@
     }
   ],
   "gallery": [
-    {
-      "src": "local://fdsgf_6eb91dd38b.jpg",
-      "thumb": "assets/enriched/42427/26ab161e1a_live1.jpg",
-      "alt": "Усилитель мощности Audio Research DS450 ( audio research ds450 )",
-      "local": "assets/enriched/42427/26ab161e1a_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 919612
-    },
-    {
-      "src": "local://684_DS450_3_b4f2b8f617.jpg",
-      "thumb": "assets/enriched/42427/382404ee96_live2.jpg",
-      "alt": "Усилитель мощности Audio Research DS450 ( audio research ds450 )",
-      "local": "assets/enriched/42427/382404ee96_live2.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 89694
-    }
+    "assets/enriched/42427/89b112d3e7_w23.png",
+    "assets/enriched/42427/6bce0250aa_w23.png",
+    "assets/enriched/42427/917a92c25b_w23.png",
+    "assets/enriched/42427/69410ca802_w23.png",
+    "assets/enriched/42427/629f8fc894_w23.jpg",
+    "assets/enriched/42427/850ee05edc_w23.jpg",
+    "assets/enriched/42427/b4f2b8f617_w23.jpg",
+    "assets/enriched/42427/dc97693a7d_w23.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -64,7 +54,10 @@
   "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:50:53Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave23": true
 }

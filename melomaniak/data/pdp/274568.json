@@ -55,24 +55,11 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://web.archive.org/web/20210601im_/https://www.acoustic-energy.co.uk/wp-content/uploads/AE509-Walnut.jpg",
-      "thumb": "https://web.archive.org/web/20210601im_/https://www.acoustic-energy.co.uk/wp-content/uploads/AE509-Walnut.jpg",
-      "alt": "Напольная акустика Acoustic Energy AE 509",
-      "local": "assets/enriched/274568/3942f829fd_w21.jpg",
-      "bytes": 617633,
-      "from": "oem-w21",
-      "wave": "gallery-w21-2026-11"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-509-w950-ae-mpic-0-1561806935.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-509-w950-ae-mpic-0-1561806935.jpg",
-      "alt": "Напольная акустика Acoustic Energy AE 509",
-      "local": "assets/enriched/274568/d80f03e3e3_w21.jpg",
-      "bytes": 55660,
-      "from": "oem-w21",
-      "wave": "gallery-w21-2026-11"
-    }
+    "assets/enriched/274568/8ab1c0c109_w23.jpg",
+    "assets/enriched/274568/ad25f80313_w23.webp",
+    "assets/enriched/274568/b5a08e664b_w23.webp",
+    "assets/enriched/274568/7951728750_w23.webp",
+    "assets/enriched/274568/053b6f00d9_w23.webp"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -83,8 +70,11 @@
   "enrichedAt": "2026-11-14T13:01:13Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt. HITL gallery: <4 distinct perceptual angles after w21 OEM hunt.",
   "meagerWave": "meager-w4-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T01:12:38Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:47:14Z",
   "galleryWave19": true,
-  "galleryWave21": true
+  "galleryWave21": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave23": true
 }

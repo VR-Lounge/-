@@ -30,34 +30,14 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/Soulnote-C-1-b.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/Soulnote-C-1-b-600x600.jpg",
-      "alt": "Soulnote-C-1-b",
-      "local": "assets/from-live/products/d456795186_Soulnote-C-1-b.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/Soulnote-C-1-rear.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/Soulnote-C-1-rear-600x246.jpg",
-      "alt": "Soulnote-C-1-rear",
-      "local": "assets/from-live/products/fa2131aa23_Soulnote-C-1-rear.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/Soulnote-C-1-b-600x600.jpg",
-      "local": "assets/enriched/262135/7f048c2edd_w13var.jpg",
-      "bytes": 18411,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "local-variant://262135/w17sc95",
-      "local": "assets/enriched/262135/e31e88c66a_w17sc95.jpg",
-      "bytes": 36253,
-      "wave": "meager-w17-2026-11",
-      "w": 931,
-      "h": 704
-    }
+    "assets/enriched/262135/8cddd8cb1e_w23.jpg",
+    "assets/enriched/262135/f20a277252_w23.jpg",
+    "assets/enriched/262135/129ff71fc4_w23.jpg",
+    "assets/enriched/262135/d456795186_w23.jpg",
+    "assets/enriched/262135/b6e9d680b0_w23.jpg",
+    "assets/enriched/262135/d2cca85e16_w23.jpg",
+    "assets/enriched/262135/041713a850_w23.jpg",
+    "assets/enriched/262135/fa2131aa23_w23.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -68,5 +48,9 @@
   "enrichedAt": "2026-11-14T13:46:21Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T01:45:26Z",
+  "galleryWave23": true
 }

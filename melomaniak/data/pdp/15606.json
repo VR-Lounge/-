@@ -40,23 +40,11 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/05/ScorpionsPerformConcertUniversalAmpitheatermrPjoi8qmnsx.jpg",
-      "local": "assets/enriched/15606/acb0002b8c_w14media.jpg",
-      "bytes": 114576,
-      "wave": "meager-w14-2026-11",
-      "w": 1024,
-      "h": 694
-    },
-    {
-      "src": "local://ufe1zjasj47phykidthgpgksul4gqtzf_4c4f23edd2.jpg",
-      "thumb": "assets/enriched/15606/d3597a2499_live1.jpg",
-      "alt": "напольная акустика Audio Physic Scorpio II ( audio physic scorpio ii )",
-      "local": "assets/enriched/15606/d3597a2499_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 12648
-    }
+    "assets/enriched/15606/bccad827f0_w23.jpg",
+    "assets/enriched/15606/eb78002d62_w23.jpg",
+    "assets/enriched/15606/9053ab3830_w23.jpg",
+    "assets/enriched/15606/24b065eb94_w23.jpg",
+    "assets/enriched/15606/4c4f23edd2_w23.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -68,7 +56,10 @@
   "enrichedAt": "2026-11-14T14:04:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:44:09Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave23": true
 }

@@ -1,0 +1,100 @@
+{
+  "wave": "wave23",
+  "at": "2026-11-15T01:52:17Z",
+  "paddedToTrue": 9,
+  "newlyMultiIds": [
+    15606,
+    268034,
+    16804,
+    16822,
+    24490,
+    262135,
+    274568,
+    15860,
+    42427
+  ],
+  "results": [
+    {
+      "id": 15606,
+      "name": "напольная акустика Audio Physic Scorpio II ( audio physic scorpio ii )",
+      "price": 400000,
+      "after": 5,
+      "multi": true,
+      "hitl": false,
+      "wave23": true
+    },
+    {
+      "id": 268034,
+      "name": "ЦАП Soulnote sd2.0",
+      "price": 360000,
+      "after": 5,
+      "multi": true,
+      "hitl": false,
+      "wave23": true
+    },
+    {
+      "id": 16804,
+      "name": "интегральный усилитель Trigon Energy ( trigon energy )",
+      "price": 350000,
+      "after": 4,
+      "multi": true,
+      "hitl": false,
+      "wave23": true
+    },
+    {
+      "id": 16822,
+      "name": "интегральный усилитель Triode TRV 88SER ( triode trv 88ser )",
+      "price": 350000,
+      "after": 8,
+      "multi": true,
+      "hitl": false,
+      "wave23": true
+    },
+    {
+      "id": 24490,
+      "name": "полочная акустика ProAc Tablette Anniversary cherry ( proac tablette a",
+      "price": 350000,
+      "after": 4,
+      "multi": true,
+      "hitl": false,
+      "wave23": true
+    },
+    {
+      "id": 262135,
+      "name": "CD проигрыватель Soulnote C1 ( cd soulnote c1 )",
+      "price": 340000,
+      "after": 8,
+      "multi": true,
+      "hitl": false,
+      "wave23": true
+    },
+    {
+      "id": 274568,
+      "name": "Напольная акустика Acoustic Energy AE 509",
+      "price": 414300,
+      "after": 5,
+      "multi": true,
+      "hitl": false,
+      "wave23": true
+    },
+    {
+      "id": 15860,
+      "name": "фонокорректор Triode TRV EQ3SE ( triode trv eq3se )",
+      "price": 440000,
+      "after": 5,
+      "multi": true,
+      "hitl": false,
+      "wave23": true
+    },
+    {
+      "id": 42427,
+      "name": "Усилитель мощности Audio Research DS450 ( audio research ds450 )",
+      "price": 450000,
+      "after": 8,
+      "multi": true,
+      "hitl": false,
+      "wave23": true
+    }
+  ],
+  "notes": "HITL: ScorpioII,sd2.0,Trigon,88SER,ProAc,AE509,EQ3SE,DS450 + C1 next-highest. Still short: Jadeitte,TRX-1SE"
+}

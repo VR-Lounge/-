@@ -191,24 +191,10 @@
     }
   ],
   "gallery": [
-    {
-      "src": "local://ccbf18d56ab1ad77fbe582508843be2d_59e196ca61.jpg",
-      "thumb": "assets/enriched/24490/dce829d7e4_live1.jpg",
-      "alt": "полочная акустика ProAc Tablette Anniversary cherry ( proac tablette anniversary cherry )",
-      "local": "assets/enriched/24490/dce829d7e4_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 494115
-    },
-    {
-      "src": "local://b927eb0eb40cb6af064433d91a828d82_981e7ccb28.jpg",
-      "thumb": "assets/enriched/24490/5f1b2cf299_live2.jpg",
-      "alt": "полочная акустика ProAc Tablette Anniversary cherry ( proac tablette anniversary cherry )",
-      "local": "assets/enriched/24490/5f1b2cf299_live2.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 119020
-    }
+    "assets/enriched/24490/59e196ca61_w23.jpg",
+    "assets/enriched/24490/18e5d20af2_w23.jpg",
+    "assets/enriched/24490/9482e34264_w23.jpg",
+    "assets/enriched/24490/981e7ccb28_w23.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -219,7 +205,10 @@
   "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:44:09Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave23": true
 }

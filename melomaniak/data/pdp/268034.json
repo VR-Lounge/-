@@ -65,20 +65,11 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/01/IMG_4108.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/01/IMG_4108-600x342.jpeg",
-      "alt": "IMG_4108",
-      "local": "assets/from-live/brand/ff01400c1a_IMG_4108.jpeg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsap_Soulnote_sd2-0_.jpg",
-      "local": "assets/enriched/268034/04254fb42a_w14media.jpg",
-      "bytes": 25649,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
-    }
+    "assets/enriched/268034/ff01400c1a_w23.jpeg",
+    "assets/enriched/268034/11c8b96c06_w23.jpg",
+    "assets/enriched/268034/daae3327b6_w23.jpg",
+    "assets/enriched/268034/de279a27b1_w23.jpg",
+    "assets/enriched/268034/69d115e421_w23.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -89,7 +80,10 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:44:09Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave23": true
 }
