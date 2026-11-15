@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-e-TP60E-R-Europe.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-e-TP60E-R-Europe.jpg",
-      "alt": "Furutech-e-TP60E-R-Europe",
-      "local": "assets/from-live/products/200541e6da_Furutech-e-TP60E-R-Europe.jpg"
+      "src": "local://264254_w47_00.jpg",
+      "thumb": "assets/enriched/264254/264254_w47_00.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP60E (G) (Europe) ( furutech e tp60e (g) (europe) )",
+      "local": "assets/enriched/264254/264254_w47_00.jpg",
+      "enriched": true,
+      "attribution": "wave47-oem",
+      "bytes": 21840
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_filtr_Furutech_e_TP60E_R.jpg",
-      "local": "assets/enriched/264254/097e8a6a4e_w14media.jpg",
-      "bytes": 28351,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264254_w47_01.jpg",
+      "thumb": "assets/enriched/264254/264254_w47_01.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP60E (G) (Europe) ( furutech e tp60e (g) (europe) )",
+      "local": "assets/enriched/264254/264254_w47_01.jpg",
+      "enriched": true,
+      "attribution": "wave47-oem",
+      "bytes": 115932
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_filtr_Furutech_e_TP60E_R-300x300.jpg",
-      "local": "assets/enriched/264254/d55b85fd45_w14var.jpg",
-      "bytes": 9433,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264254_w47_02.jpg",
+      "thumb": "assets/enriched/264254/264254_w47_02.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP60E (G) (Europe) ( furutech e tp60e (g) (europe) )",
+      "local": "assets/enriched/264254/264254_w47_02.jpg",
+      "enriched": true,
+      "attribution": "wave47-oem",
+      "bytes": 145228
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_filtr_Furutech_e_TP60E_R-600x600.jpg",
-      "local": "assets/enriched/264254/f06a08c781_w14var.jpg",
-      "bytes": 26916,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264254_w47_03.jpg",
+      "thumb": "assets/enriched/264254/264254_w47_03.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP60E (G) (Europe) ( furutech e tp60e (g) (europe) )",
+      "local": "assets/enriched/264254/264254_w47_03.jpg",
+      "enriched": true,
+      "attribution": "wave47-oem",
+      "bytes": 96645
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T09:21:34Z",
+  "galleryWave47": true
 }

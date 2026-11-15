@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-ABSOLUTE-POWER-15-PLUS-R-1-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-ABSOLUTE-POWER-15-PLUS-R-1-500x500-1.jpg",
-      "alt": "FURUTECH-ABSOLUTE-POWER-15-PLUS-R-1-500&#215;500",
-      "local": "assets/from-live/products/9ac177635c_FURUTECH-ABSOLUTE-POWER-15-PLUS-R-1-500x500-1.jpg"
+      "src": "local://264359_w47_00.jpg",
+      "thumb": "assets/enriched/264359/264359_w47_00.jpg",
+      "alt": "Сетевой кабель Furutech Absolute Power-15 Plus ® ( furutech absolute power 15 plus ® )",
+      "local": "assets/enriched/264359/264359_w47_00.jpg",
+      "enriched": true,
+      "attribution": "wave47-oem",
+      "bytes": 29871
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-ABSOLUTE-POWER-15-PLUS-R-1-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264359/c51331c0fb_w13var.jpg",
-      "bytes": 12043,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264359_w47_01.jpg",
+      "thumb": "assets/enriched/264359/264359_w47_01.jpg",
+      "alt": "Сетевой кабель Furutech Absolute Power-15 Plus ® ( furutech absolute power 15 plus ® )",
+      "local": "assets/enriched/264359/264359_w47_01.jpg",
+      "enriched": true,
+      "attribution": "wave47-oem",
+      "bytes": 51008
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konektor_Furutech_Absolute_Power_15_Plus_E.jpg",
-      "local": "assets/enriched/264359/916f7c81b6_w13media.jpg",
-      "bytes": 32629,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264359_w47_02.jpg",
+      "thumb": "assets/enriched/264359/264359_w47_02.jpg",
+      "alt": "Сетевой кабель Furutech Absolute Power-15 Plus ® ( furutech absolute power 15 plus ® )",
+      "local": "assets/enriched/264359/264359_w47_02.jpg",
+      "enriched": true,
+      "attribution": "wave47-oem",
+      "bytes": 77470
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konektor_Furutech_Absolute_Power_15_Plus_E-300x300.jpg",
-      "local": "assets/enriched/264359/d9293a9c5f_w13var.jpg",
-      "bytes": 12438,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264359_w47_03.jpg",
+      "thumb": "assets/enriched/264359/264359_w47_03.jpg",
+      "alt": "Сетевой кабель Furutech Absolute Power-15 Plus ® ( furutech absolute power 15 plus ® )",
+      "local": "assets/enriched/264359/264359_w47_03.jpg",
+      "enriched": true,
+      "attribution": "wave47-oem",
+      "bytes": 72622
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T09:21:34Z",
+  "galleryWave47": true
 }
