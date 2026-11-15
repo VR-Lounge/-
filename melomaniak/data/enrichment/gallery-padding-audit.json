@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T05:28:31Z",
+  "generatedAt": "2026-11-15T05:49:02Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,16 +15,16 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1182,
-    "padded": 330,
+    "true_multi_angle": 1185,
+    "padded": 327,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 62.64,
-    "padded": 17.49,
+    "true_multi_angle": 62.8,
+    "padded": 17.33,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 35.97,
-    "not_true_multi": 37.36
+    "padded_of_claimed_gal4plus": 35.81,
+    "not_true_multi": 37.2
   },
   "padReasonTallies": {
     "local-variant": 745,
@@ -33,7 +33,7 @@
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 664,
+  "claimedButNotTrueMulti": 661,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -12100,13 +12100,13 @@
       "cat": "Спецпредложения",
       "price": 200000,
       "galleryHitl": false,
-      "galleryLen": 6,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271795,
@@ -15201,14 +15201,14 @@
       "slug": "f996bcdcde931eb179ef9ee3b043826f",
       "cat": "Акустика",
       "price": 129990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271177,
@@ -19656,13 +19656,13 @@
       "cat": "Другое",
       "price": 74790,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264091,

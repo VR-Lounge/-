@@ -101,44 +101,49 @@
   ],
   "gallery": [
     {
-      "src": "https://www.monitoraudio.com/site/assets/files/102496/silver-7g-gloss.jpg",
-      "local": "assets/enriched/271101/dc03f0dabf_w17cdn.jpg",
-      "bytes": 92627,
-      "wave": "meager-w17-2026-11",
-      "w": 1600,
-      "h": 1600
+      "src": "local://271101_w36_00.jpg",
+      "thumb": "assets/enriched/271101/271101_w36_00.jpg",
+      "alt": "Полочная акустика Monitor Audio Silver 100 7G",
+      "local": "assets/enriched/271101/271101_w36_00.jpg",
+      "enriched": true,
+      "attribution": "wave36-oem",
+      "bytes": 87737
     },
     {
-      "src": "https://www.monitoraudio.com/site/assets/files/102497/silver-7g-oak.jpg",
-      "local": "assets/enriched/271101/03c5c9332d_w17cdn.jpg",
-      "bytes": 137167,
-      "wave": "meager-w17-2026-11",
-      "w": 1600,
-      "h": 1600
+      "src": "local://271101_w36_01.jpg",
+      "thumb": "assets/enriched/271101/271101_w36_01.jpg",
+      "alt": "Полочная акустика Monitor Audio Silver 100 7G",
+      "local": "assets/enriched/271101/271101_w36_01.jpg",
+      "enriched": true,
+      "attribution": "wave36-oem",
+      "bytes": 164161
     },
     {
-      "src": "https://www.monitoraudio.com/site/assets/files/102498/silver-7g-walnut.jpg",
-      "local": "assets/enriched/271101/1b1fcca29f_w17cdn.jpg",
-      "bytes": 116371,
-      "wave": "meager-w17-2026-11",
-      "w": 1600,
-      "h": 1600
+      "src": "local://271101_w36_02.jpg",
+      "thumb": "assets/enriched/271101/271101_w36_02.jpg",
+      "alt": "Полочная акустика Monitor Audio Silver 100 7G",
+      "local": "assets/enriched/271101/271101_w36_02.jpg",
+      "enriched": true,
+      "attribution": "wave36-oem",
+      "bytes": 223560
     },
     {
-      "src": "https://www.monitoraudio.com/site/assets/files/102499/silver-7g-ash.jpg",
-      "local": "assets/enriched/271101/62cf98430f_w17cdn.jpg",
-      "bytes": 138732,
-      "wave": "meager-w17-2026-11",
-      "w": 1600,
-      "h": 1600
+      "src": "local://271101_w36_03.jpg",
+      "thumb": "assets/enriched/271101/271101_w36_03.jpg",
+      "alt": "Полочная акустика Monitor Audio Silver 100 7G",
+      "local": "assets/enriched/271101/271101_w36_03.jpg",
+      "enriched": true,
+      "attribution": "wave36-oem",
+      "bytes": 84535
     },
     {
-      "src": "https://www.monitoraudio.com/site/assets/files/102513/silver-7g-white.jpg",
-      "local": "assets/enriched/271101/cc44cd71f7_w17cdn.jpg",
-      "bytes": 82157,
-      "wave": "meager-w17-2026-11",
-      "w": 1600,
-      "h": 1600
+      "src": "local://271101_w36_04.jpg",
+      "thumb": "assets/enriched/271101/271101_w36_04.jpg",
+      "alt": "Полочная акустика Monitor Audio Silver 100 7G",
+      "local": "assets/enriched/271101/271101_w36_04.jpg",
+      "enriched": true,
+      "attribution": "wave36-oem",
+      "bytes": 263060
     }
   ],
   "sku": "",
@@ -150,5 +155,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T05:45:19Z",
+  "galleryWave36": true
 }
