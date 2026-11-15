@@ -91,34 +91,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/3ae01d0b.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/3ae01d0b-600x600.jpg",
-      "alt": "3ae01d0b",
-      "local": "assets/from-live/products/71503a4fa7_3ae01d0b.jpg"
+      "src": "local://261845_w86_00.jpg",
+      "thumb": "assets/enriched/261845/261845_w86_00.jpg",
+      "alt": "Портативная акустика, минисистемы PARADIGM PW 300 Black ( paradigm pw 300 black )",
+      "local": "assets/enriched/261845/261845_w86_00.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 103157
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/3ae01d0b-600x600.jpg",
-      "local": "assets/enriched/261845/27de2d1681_w13var.jpg",
-      "bytes": 20221,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://261845_w86_01.jpg",
+      "thumb": "assets/enriched/261845/261845_w86_01.jpg",
+      "alt": "Портативная акустика, минисистемы PARADIGM PW 300 Black ( paradigm pw 300 black )",
+      "local": "assets/enriched/261845/261845_w86_01.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 61766
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/ebd333d8aef0728a693ee788cf18c6d7.jpg",
-      "local": "assets/enriched/261845/802043d623_w15sib.jpg",
-      "bytes": 36132,
-      "wave": "meager-w15-2026-11",
-      "w": 800,
-      "h": 485
+      "src": "local://261845_w86_02.jpg",
+      "thumb": "assets/enriched/261845/261845_w86_02.jpg",
+      "alt": "Портативная акустика, минисистемы PARADIGM PW 300 Black ( paradigm pw 300 black )",
+      "local": "assets/enriched/261845/261845_w86_02.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 319760
     },
     {
-      "src": "local-variant://261845/w17sc95",
-      "local": "assets/enriched/261845/ef1cc0cd9e_w17sc95.jpg",
-      "bytes": 25226,
-      "wave": "meager-w17-2026-11",
-      "w": 617,
-      "h": 665
+      "src": "local://261845_w86_03.jpg",
+      "thumb": "assets/enriched/261845/261845_w86_03.jpg",
+      "alt": "Портативная акустика, минисистемы PARADIGM PW 300 Black ( paradigm pw 300 black )",
+      "local": "assets/enriched/261845/261845_w86_03.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 339566
     }
   ],
   "sku": "",
@@ -130,5 +136,9 @@
   "enrichedAt": "2026-11-14T13:45:44Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T19:19:19Z",
+  "galleryWave86": true
 }

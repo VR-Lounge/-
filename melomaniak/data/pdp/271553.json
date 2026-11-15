@@ -111,32 +111,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_q250c1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_q250c1.jpg",
-      "alt": "kef_q250c1.jpg",
-      "local": "assets/from-live/products/1d6ca8b6fa_kef_q250c1.jpg"
+      "src": "local://271553_w86_00.jpg",
+      "thumb": "assets/enriched/271553/271553_w86_00.jpg",
+      "alt": "Центральный громкоговоритель KEF Q250c",
+      "local": "assets/enriched/271553/271553_w86_00.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 149224
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_q250c2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_q250c2.jpg",
-      "alt": "kef_q250c2.jpg",
-      "local": "assets/from-live/products/228f97cd9c_kef_q250c2.jpg"
+      "src": "local://271553_w86_01.jpg",
+      "thumb": "assets/enriched/271553/271553_w86_01.jpg",
+      "alt": "Центральный громкоговоритель KEF Q250c",
+      "local": "assets/enriched/271553/271553_w86_01.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 226421
     },
     {
-      "src": "local-variant://271553/w17sc95",
-      "local": "assets/enriched/271553/644899addb_w17sc95.jpg",
-      "bytes": 293509,
-      "wave": "meager-w17-2026-11",
-      "w": 1565,
-      "h": 1565
+      "src": "local://271553_w86_02.jpg",
+      "thumb": "assets/enriched/271553/271553_w86_02.jpg",
+      "alt": "Центральный громкоговоритель KEF Q250c",
+      "local": "assets/enriched/271553/271553_w86_02.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 47724
     },
     {
-      "src": "local-variant://271553/w17sc90",
-      "local": "assets/enriched/271553/1a0c067d52_w17sc90.jpg",
-      "bytes": 262168,
-      "wave": "meager-w17-2026-11",
-      "w": 1483,
-      "h": 1483
+      "src": "local://271553_w86_03.jpg",
+      "thumb": "assets/enriched/271553/271553_w86_03.jpg",
+      "alt": "Центральный громкоговоритель KEF Q250c",
+      "local": "assets/enriched/271553/271553_w86_03.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 43480
     }
   ],
   "sku": "",
@@ -148,5 +156,9 @@
   "enrichedAt": "2026-11-14T13:36:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T19:19:19Z",
+  "galleryWave86": true
 }

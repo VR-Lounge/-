@@ -121,43 +121,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/enceinte-bibliotheque-paradigm-surround-1-noir-mat_72106_9UOSEy9WyCw-1024x768.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/enceinte-bibliotheque-paradigm-surround-1-noir-mat_72106_9UOSEy9WyCw-1024x768.jpg",
+      "src": "local://261859_w86_00.jpg",
+      "thumb": "assets/enriched/261859/261859_w86_00.jpg",
       "alt": "Навесная акустика PARADIGM Surround 1 Black ( paradigm surround 1 black )",
-      "local": "assets/enriched/261859/04999d691d_1.jpg",
+      "local": "assets/enriched/261859/261859_w86_00.jpg",
       "enriched": true,
-      "attribution": "xn--80aannlcfckh.xn--p1ai",
-      "bytes": 65524
+      "attribution": "wave86-oem",
+      "bytes": 129518
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/enceinte-bibliotheque-paradigm-surround-1-noir-mat_72106_9UOSEy9WyCw.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/enceinte-bibliotheque-paradigm-surround-1-noir-mat_72106_9UOSEy9WyCw-600x600.jpg",
-      "alt": "enceinte-bibliotheque-paradigm-surround-1-noir-mat_72106_9UOSEy9WyCw",
-      "local": "assets/from-live/products/852557696b_enceinte-bibliotheque-paradigm-surround-1-noir-mat_72106_9UOSEy9WyCw.jpg"
+      "src": "local://261859_w86_01.jpg",
+      "thumb": "assets/enriched/261859/261859_w86_01.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 1 Black ( paradigm surround 1 black )",
+      "local": "assets/enriched/261859/261859_w86_01.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 169376
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/enceinte-bibliotheque-paradigm-surround-1-noir-mat_72106_9UOSEy9WyCw-600x600.jpg",
-      "local": "assets/enriched/261859/aa8a97f263_w13var.jpg",
-      "bytes": 43730,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://261859_w86_02.jpg",
+      "thumb": "assets/enriched/261859/261859_w86_02.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 1 Black ( paradigm surround 1 black )",
+      "local": "assets/enriched/261859/261859_w86_02.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 125316
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/nastennaia_akystika_Paradigm_Surround_1_s-7_Black.jpg",
-      "local": "assets/enriched/261859/1e5a7bdfda_w13media.jpg",
-      "bytes": 34270,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/nastennaia_akystika_Paradigm_Surround_1_s-7_Black-300x300.jpg",
-      "local": "assets/enriched/261859/b8018b9df5_w13var.jpg",
-      "bytes": 11477,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://261859_w86_03.jpg",
+      "thumb": "assets/enriched/261859/261859_w86_03.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 1 Black ( paradigm surround 1 black )",
+      "local": "assets/enriched/261859/261859_w86_03.jpg",
+      "enriched": true,
+      "attribution": "wave86-oem",
+      "bytes": 273286
     }
   ],
   "sku": "",
@@ -169,5 +166,9 @@
   "enrichedAt": "2026-11-14T17:02:07Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T19:19:19Z",
+  "galleryWave86": true
 }
