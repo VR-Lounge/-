@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T13:16:30Z",
+  "at": "2026-11-15T13:29:47Z",
   "counts": {
-    "true_multi_angle": 1269,
-    "padded": 243,
+    "true_multi_angle": 1271,
+    "padded": 241,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 67.25,
-    "padded": 12.88,
+    "true_multi_angle": 67.36,
+    "padded": 12.77,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 31.26,
-    "not_true_multi": 32.75
+    "padded_of_claimed_gal4plus": 31.15,
+    "not_true_multi": 32.64
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -50,7 +50,7 @@
     ]
   },
   "remaining": {
-    "padded": 243,
+    "padded": 241,
     "single_real": 375
   },
   "topHitlPadded": [
@@ -232,21 +232,16 @@
     ]
   },
   "wave": "wave52",
-  "padded_to_true_multi": 3,
+  "padded_to_true_multi": 2,
   "cleared": [
     {
-      "id": 270553,
-      "name": "Кабель межблочный аналоговый RCA Van den Hul Bay C5 Hybrid",
+      "id": 270491,
+      "name": "Кабель miniJack-2RCA Van den Hul The Flexicon",
       "unique": 4
     },
     {
-      "id": 264200,
-      "name": "Сетевой коннектор Furutech FI-8N (G) ( furutech fi 8n (g) )",
-      "unique": 4
-    },
-    {
-      "id": 264425,
-      "name": "Сетевой кабель Furutech Alpha 3 ( furutech alpha 3 )",
+      "id": 264210,
+      "name": "Сетевая вилка Furutech FI-E11 N1 (G) ( furutech fi e11 n1 (g) )",
       "unique": 4
     }
   ],
@@ -492,6 +487,21 @@
       {
         "id": 264425,
         "name": "Сетевой кабель Furutech Alpha 3 ( furutech alpha 3 )",
+        "unique": 4
+      }
+    ]
+  },
+  "wave63": {
+    "padded_to_true_multi": 2,
+    "cleared": [
+      {
+        "id": 270491,
+        "name": "Кабель miniJack-2RCA Van den Hul The Flexicon",
+        "unique": 4
+      },
+      {
+        "id": 264210,
+        "name": "Сетевая вилка Furutech FI-E11 N1 (G) ( furutech fi e11 n1 (g) )",
         "unique": 4
       }
     ]

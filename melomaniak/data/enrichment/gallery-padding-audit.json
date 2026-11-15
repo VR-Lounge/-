@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T13:16:30Z",
+  "generatedAt": "2026-11-15T13:29:47Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1269,
-    "padded": 243,
+    "true_multi_angle": 1271,
+    "padded": 241,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 67.25,
-    "padded": 12.88,
+    "true_multi_angle": 67.36,
+    "padded": 12.77,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 31.26,
-    "not_true_multi": 32.75
+    "padded_of_claimed_gal4plus": 31.15,
+    "not_true_multi": 32.64
   },
   "padReasonTallies": {
     "local-variant": 721,
-    "wN-variant-name": 571,
+    "wN-variant-name": 570,
     "cdn-size-thumb": 117,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 577,
+  "claimedButNotTrueMulti": 575,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -25782,14 +25782,14 @@
       "slug": "35d02a6ebb8f50fdb7dbd4c36e8cbae1",
       "cat": "Кабели",
       "price": 21790,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264283,
@@ -28138,16 +28138,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-e11-n1-g",
       "cat": "Другое",
       "price": 8108,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264491,

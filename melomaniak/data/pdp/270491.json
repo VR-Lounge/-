@@ -61,34 +61,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_flexicon1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_flexicon1.jpg",
-      "alt": "van_den_hul_the_flexicon1.jpg",
-      "local": "assets/from-live/products/0133a5dbbf_van_den_hul_the_flexicon1.jpg"
+      "src": "local://270491_w63_00.jpg",
+      "thumb": "assets/enriched/270491/270491_w63_00.jpg",
+      "alt": "Кабель miniJack-2RCA Van den Hul The Flexicon",
+      "local": "assets/enriched/270491/270491_w63_00.jpg",
+      "enriched": true,
+      "attribution": "wave63-oem",
+      "bytes": 92076
     },
     {
-      "src": "https://www.audioquest.com/cdn/shop/files/big-sur-35mm-mini-rca-bigsur06mr-06-m-1-ft-11-in-891057.png",
-      "local": "assets/enriched/270491/b1a5f722f5_w15sib.png",
-      "bytes": 359944,
-      "wave": "meager-w15-2026-11",
-      "w": 1500,
-      "h": 1500
+      "src": "local://270491_w63_01.jpg",
+      "thumb": "assets/enriched/270491/270491_w63_01.jpg",
+      "alt": "Кабель miniJack-2RCA Van den Hul The Flexicon",
+      "local": "assets/enriched/270491/270491_w63_01.jpg",
+      "enriched": true,
+      "attribution": "wave63-oem",
+      "bytes": 184920
     },
     {
-      "src": "https://www.audioquest.com/cdn/shop/files/big-sur-35mm-mini-rca-bigsur06mr-06-m-1-ft-11-in-891057_grande.png",
-      "local": "assets/enriched/270491/37e0110d5c_w15sib.png",
-      "bytes": 73808,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://270491_w63_02.jpg",
+      "thumb": "assets/enriched/270491/270491_w63_02.jpg",
+      "alt": "Кабель miniJack-2RCA Van den Hul The Flexicon",
+      "local": "assets/enriched/270491/270491_w63_02.jpg",
+      "enriched": true,
+      "attribution": "wave63-oem",
+      "bytes": 161617
     },
     {
-      "src": "https://cdn.shopify.com/s/files/1/0629/5886/2594/files/dragon-red-bg.jpg",
-      "local": "assets/enriched/270491/ce1703c932_w15sib.jpg",
-      "bytes": 57201,
-      "wave": "meager-w15-2026-11",
-      "w": 2244,
-      "h": 939
+      "src": "local://270491_w63_03.jpg",
+      "thumb": "assets/enriched/270491/270491_w63_03.jpg",
+      "alt": "Кабель miniJack-2RCA Van den Hul The Flexicon",
+      "local": "assets/enriched/270491/270491_w63_03.jpg",
+      "enriched": true,
+      "attribution": "wave63-oem",
+      "bytes": 154581
     }
   ],
   "sku": "",
@@ -100,5 +106,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T13:26:47Z",
+  "galleryWave63": true
 }
