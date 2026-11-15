@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T13:42:11Z",
+  "generatedAt": "2026-11-15T13:57:37Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1275,
-    "padded": 237,
+    "true_multi_angle": 1278,
+    "padded": 234,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 67.57,
-    "padded": 12.56,
+    "true_multi_angle": 67.73,
+    "padded": 12.4,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 30.93,
-    "not_true_multi": 32.43
+    "padded_of_claimed_gal4plus": 30.77,
+    "not_true_multi": 32.27
   },
   "padReasonTallies": {
-    "local-variant": 721,
-    "wN-variant-name": 565,
+    "local-variant": 720,
+    "wN-variant-name": 562,
     "cdn-size-thumb": 117,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 571,
+  "claimedButNotTrueMulti": 568,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -27713,16 +27713,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11m-n1-r",
       "cat": "Другое",
       "price": 10353,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264209,
@@ -30552,16 +30550,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fi-8n-r",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264225,
@@ -30618,16 +30614,14 @@
       "slug": "%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%bd%d0%b8%d0%ba-furutech-f-35-r",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264338,

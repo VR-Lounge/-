@@ -1,0 +1,22 @@
+{
+  "wave": 65,
+  "counts": {
+    "true_multi_angle": 1278,
+    "padded": 234,
+    "single_real": 375
+  },
+  "cleared": [
+    264337,
+    264203,
+    264176
+  ],
+  "clearedNames": {
+    "264337": "Furutech F-35(R)",
+    "264203": "Furutech FI-8N(R)",
+    "264176": "Furutech FI-11M-N1(R)"
+  },
+  "hitl": [
+    "Jadeitte 4230 (padded)",
+    "MTP-2 264126 (oneshot)"
+  ]
+}

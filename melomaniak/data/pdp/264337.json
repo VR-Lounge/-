@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/f35r-1-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/f35r-1-500x500-1.jpg",
-      "alt": "f35r-1-500&#215;500",
-      "local": "assets/from-live/products/ed8d946561_f35r-1-500x500-1.jpg"
+      "src": "local://264337_w65_00.jpg",
+      "thumb": "assets/enriched/264337/264337_w65_00.jpg",
+      "alt": "Переходник Furutech F 35 (R) ( furutech f 35 (r) )",
+      "local": "assets/enriched/264337/264337_w65_00.jpg",
+      "enriched": true,
+      "attribution": "wave65-oem",
+      "bytes": 50853
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-CF-35R.jpg",
-      "local": "assets/enriched/264337/e22db38a84_w15media.jpg",
-      "bytes": 18603,
-      "wave": "meager-w15-2026-11",
-      "w": 249,
-      "h": 250
+      "src": "local://264337_w65_01.jpg",
+      "thumb": "assets/enriched/264337/264337_w65_01.jpg",
+      "alt": "Переходник Furutech F 35 (R) ( furutech f 35 (r) )",
+      "local": "assets/enriched/264337/264337_w65_01.jpg",
+      "enriched": true,
+      "attribution": "wave65-oem",
+      "bytes": 283463
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_F35_G_.jpg",
-      "local": "assets/enriched/264337/7f5d95e760_w15media.jpg",
-      "bytes": 13792,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264337_w65_02.jpg",
+      "thumb": "assets/enriched/264337/264337_w65_02.jpg",
+      "alt": "Переходник Furutech F 35 (R) ( furutech f 35 (r) )",
+      "local": "assets/enriched/264337/264337_w65_02.jpg",
+      "enriched": true,
+      "attribution": "wave65-oem",
+      "bytes": 14895
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_F35_G_-600x600.jpg",
-      "local": "assets/enriched/264337/ea722d1681_w15var.jpg",
-      "bytes": 10922,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264337_w65_03.jpg",
+      "thumb": "assets/enriched/264337/264337_w65_03.jpg",
+      "alt": "Переходник Furutech F 35 (R) ( furutech f 35 (r) )",
+      "local": "assets/enriched/264337/264337_w65_03.jpg",
+      "enriched": true,
+      "attribution": "wave65-oem",
+      "bytes": 417158
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:41:45Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T13:54:31Z",
+  "galleryWave65": true
 }
