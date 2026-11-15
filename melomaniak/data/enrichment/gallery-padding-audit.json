@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:31:36Z",
+  "generatedAt": "2026-11-15T12:46:53Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1255,
-    "padded": 257,
+    "true_multi_angle": 1259,
+    "padded": 253,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 66.51,
-    "padded": 13.62,
+    "true_multi_angle": 66.72,
+    "padded": 13.41,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.02,
-    "not_true_multi": 33.49
+    "padded_of_claimed_gal4plus": 31.8,
+    "not_true_multi": 33.28
   },
   "padReasonTallies": {
-    "local-variant": 722,
-    "wN-variant-name": 585,
+    "local-variant": 721,
+    "wN-variant-name": 582,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 591,
+  "claimedButNotTrueMulti": 587,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -25125,16 +25125,14 @@
       "slug": "119dc666ebec46c79cb9515ca21f753d",
       "cat": "Кабели",
       "price": 27090,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 263964,
@@ -27290,16 +27288,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-28g",
       "cat": "Другое",
       "price": 12225,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264170,
@@ -27538,16 +27534,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-126r",
       "cat": "Другое",
       "price": 11025,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264320,
@@ -29645,16 +29639,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-126r-2",
       "cat": "Другое",
       "price": 2730,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264330,

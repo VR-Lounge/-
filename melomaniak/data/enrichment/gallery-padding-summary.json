@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T12:05:27Z",
+  "at": "2026-11-15T12:47:01Z",
   "counts": {
-    "true_multi_angle": 1251,
-    "padded": 261,
+    "true_multi_angle": 1259,
+    "padded": 253,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 66.3,
-    "padded": 13.83,
+    "true_multi_angle": 66.72,
+    "padded": 13.41,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.23,
-    "not_true_multi": 33.7
+    "padded_of_claimed_gal4plus": 31.8,
+    "not_true_multi": 33.28
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -50,7 +50,7 @@
     ]
   },
   "remaining": {
-    "padded": 263,
+    "padded": 253,
     "single_real": 375
   },
   "topHitlPadded": [
@@ -245,114 +245,44 @@
   ],
   "top_hitl_padded": [
     {
-      "id": 15982,
-      "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )",
-      "cat": "Усилители",
-      "price": 331500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 15720,
-      "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
-      "cat": "Источники",
-      "price": 320000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 15742,
-      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
-      "cat": "Источники",
-      "price": 320000,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "class": "padded"
+      "id": 4230,
+      "name": "предусилитель Arte Forma Jadeitte 101D ( arte forma jadeitte",
+      "price": 380000
     },
     {
       "id": 262549,
-      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )",
-      "cat": "Акустика",
-      "price": 320000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara",
+      "price": 320000
     },
     {
-      "id": 15738,
-      "name": "CD проигрыватель Triode TRV CD5SE ( cd triode trv cd5se )",
-      "cat": "Источники",
-      "price": 310000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "class": "single_real"
+      "id": 16810,
+      "name": "предусилитель Trigon TRV 100 ( trigon trv 100 )",
+      "price": 280000
     },
     {
-      "id": 15924,
-      "name": "предусилитель Leben RS 28CX ( leben rs 28cx )",
-      "cat": "Усилители",
-      "price": 310000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "class": "single_real"
+      "id": 16864,
+      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultimate",
+      "price": 280000
     },
     {
-      "id": 16812,
-      "name": "усилитель мощности Triode TRV 35SE ( triode trv 35se )",
-      "cat": "Усилители",
-      "price": 300000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "single_real"
+      "id": 16788,
+      "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
+      "price": 270000
     },
     {
-      "id": 15978,
-      "name": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
-      "cat": "Усилители",
-      "price": 297500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "single_real"
+      "id": 16852,
+      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audi",
+      "price": 250000
+    },
+    {
+      "id": 264519,
+      "name": "Межблочный кабель SAEC  XR-1 Stratosphere ( saec xr 1 strato",
+      "price": 244927
+    },
+    {
+      "id": 16786,
+      "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
+      "price": 244000
     }
   ],
   "wave53": {
@@ -479,5 +409,42 @@
         "unique": 4
       }
     ]
-  }
+  },
+  "wave60": {
+    "padded_to_true_multi": 4,
+    "cleared": [
+      {
+        "id": 270557,
+        "name": "Кабель межблочный аналоговый RCA Van den Hul D-102 III Hybri",
+        "unique": 4
+      },
+      {
+        "id": 264169,
+        "name": "Коннектор сетевой Furutech FI-28(G) ( furutech fi 28(g) )",
+        "unique": 4
+      },
+      {
+        "id": 264289,
+        "name": "Коннектор Furutech FP-126(R) ( furutech fp 126(r) )",
+        "unique": 4
+      },
+      {
+        "id": 264290,
+        "name": "Коннектор Furutech FP-126(R) ( furutech fp 126(r) )",
+        "unique": 4
+      }
+    ]
+  },
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded"
+    },
+    {
+      "id": 264126,
+      "name": "Furutech MTP-2",
+      "class": "single_real"
+    }
+  ]
 }
