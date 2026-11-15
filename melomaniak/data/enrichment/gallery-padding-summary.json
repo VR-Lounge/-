@@ -1,16 +1,15 @@
 {
-  "at": "2026-11-15T13:29:47Z",
+  "at": "2026-11-15T13:42:47Z",
   "counts": {
-    "true_multi_angle": 1271,
-    "padded": 241,
+    "true_multi_angle": 1275,
+    "padded": 237,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 67.36,
-    "padded": 12.77,
+    "true_multi_angle": 67.57,
+    "padded": 12.56,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 31.15,
-    "not_true_multi": 32.64
+    "not_true_multi": 32.43
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -231,19 +230,13 @@
       }
     ]
   },
-  "wave": "wave52",
-  "padded_to_true_multi": 2,
+  "wave": 64,
+  "padded_to_true_multi": 4,
   "cleared": [
-    {
-      "id": 270491,
-      "name": "Кабель miniJack-2RCA Van den Hul The Flexicon",
-      "unique": 4
-    },
-    {
-      "id": 264210,
-      "name": "Сетевая вилка Furutech FI-E11 N1 (G) ( furutech fi e11 n1 (g) )",
-      "unique": 4
-    }
+    264323,
+    264204,
+    264385,
+    264338
   ],
   "top_hitl_padded": [
     {
@@ -505,5 +498,24 @@
         "unique": 4
       }
     ]
+  },
+  "wave64": {
+    "counts": {
+      "true_multi_angle": 1275,
+      "padded": 237,
+      "single_real": 375
+    },
+    "cleared": [
+      264323,
+      264204,
+      264385,
+      264338
+    ],
+    "names": {
+      "264323": "Furutech FP-200B(G)",
+      "264204": "Furutech FI-8N NCF(R)",
+      "264385": "Furutech GT2 Pro mB",
+      "264338": "Furutech F-35(G)"
+    }
   }
 }
