@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T22:01:41Z",
+  "generatedAt": "2026-11-15T22:33:40Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1361,
-    "padded": 158,
-    "single_real": 368
+    "true_multi_angle": 1364,
+    "padded": 157,
+    "single_real": 366
   },
   "pct": {
-    "true_multi_angle": 72.13,
-    "padded": 8.37,
-    "single_real": 19.5,
-    "padded_of_claimed_gal4plus": 26.31,
-    "not_true_multi": 27.87
+    "true_multi_angle": 72.28,
+    "padded": 8.32,
+    "single_real": 19.4,
+    "padded_of_claimed_gal4plus": 26.15,
+    "not_true_multi": 27.72
   },
   "padReasonTallies": {
-    "local-variant": 693,
+    "local-variant": 686,
     "wN-variant-name": 478,
     "cdn-size-thumb": 102,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 486,
+  "claimedButNotTrueMulti": 483,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -480,32 +480,6 @@
       "class": "padded"
     },
     {
-      "id": 274427,
-      "name": "Напольная акустика Piega TMicro 6",
-      "cat": "Акустика",
-      "price": 150000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 269486,
-      "name": "Полочная акустика Magnat Signature 903",
-      "cat": "Акустика",
-      "price": 149990,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "class": "single_real"
-    },
-    {
       "id": 41455,
       "name": "Центральный канал Paradigm Premier 600C Gloss Black ( paradigm premier 600c gloss black )",
       "cat": "Другое",
@@ -562,6 +536,34 @@
       "name": "Фонокорректор Transrotor Phono III",
       "cat": "Усилители",
       "price": 141900,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 26634,
+      "name": "центральный канал Audio Physic Celsius III ( audio physic celsius iii )",
+      "cat": "Другое",
+      "price": 140625,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 272906,
+      "name": "Беспроводная Hi-Fi-акустика B Formation Wedge",
+      "cat": "Акустика",
+      "price": 139990,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1203,26 +1205,6 @@
       "galleryHitl": true
     },
     {
-      "id": 274427,
-      "name": "Напольная акустика Piega TMicro 6",
-      "cat": "Акустика",
-      "price": 150000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
-      "id": 269486,
-      "name": "Полочная акустика Magnat Signature 903",
-      "cat": "Акустика",
-      "price": 149990,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 41455,
       "name": "Центральный канал Paradigm Premier 600C Gloss Black ( paradigm premier 600c gloss black )",
       "cat": "Другое",
@@ -1371,9 +1353,29 @@
       "uniqueDistinct": 1,
       "padSlots": 2,
       "galleryHitl": true
+    },
+    {
+      "id": 272370,
+      "name": "Стереоусилитель Bluesound POWERNODE N330",
+      "cat": "Усилители",
+      "price": 117990,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 270349,
+      "name": "Стереоусилитель Quad Vena II Play",
+      "cat": "Усилители",
+      "price": 115290,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 368,
+  "hitlTrueOneshotCount": 366,
   "items": [
     {
       "id": 262053,
@@ -14001,16 +14003,14 @@
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-piega-tmicro-6",
       "cat": "Акустика",
       "price": 150000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269486,
@@ -14018,16 +14018,14 @@
       "slug": "9664d8ecead8e48453e26b3960d9ba71",
       "cat": "Акустика",
       "price": 149990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269681,
@@ -26337,16 +26335,14 @@
       "slug": "fe60dbc72e10ec4a744a905a84deab82",
       "cat": "Другое",
       "price": 16990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264498,

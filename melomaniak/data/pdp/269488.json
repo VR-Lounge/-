@@ -76,32 +76,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s12_c_11820078727-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s12_c_11820078727-1.jpg",
-      "alt": "magnat_monitor_s12_c_11820078727-1.jpg",
-      "local": "assets/from-live/products/aaead4a299_magnat_monitor_s12_c_11820078727-1.jpg"
+      "src": "local://269488_w97_00.jpg",
+      "thumb": "assets/enriched/269488/269488_w97_00.jpg",
+      "alt": "Центральный громкоговоритель Magnat Monitor S12 C",
+      "local": "assets/enriched/269488/269488_w97_00.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 103566
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s12_c_11820113324-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s12_c_11820113324-2.jpg",
-      "alt": "magnat_monitor_s12_c_11820113324-2.jpg",
-      "local": "assets/from-live/products/188b86597d_magnat_monitor_s12_c_11820113324-2.jpg"
+      "src": "local://269488_w97_01.jpg",
+      "thumb": "assets/enriched/269488/269488_w97_01.jpg",
+      "alt": "Центральный громкоговоритель Magnat Monitor S12 C",
+      "local": "assets/enriched/269488/269488_w97_01.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 36183
     },
     {
-      "src": "local-variant://269488/w17sc95",
-      "local": "assets/enriched/269488/ce3a24d257_w17sc95.jpg",
-      "bytes": 139061,
-      "wave": "meager-w17-2026-11",
-      "w": 1140,
-      "h": 1140
+      "src": "local://269488_w97_02.jpg",
+      "thumb": "assets/enriched/269488/269488_w97_02.jpg",
+      "alt": "Центральный громкоговоритель Magnat Monitor S12 C",
+      "local": "assets/enriched/269488/269488_w97_02.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 39531
     },
     {
-      "src": "local-variant://269488/w17sc90",
-      "local": "assets/enriched/269488/86c06df192_w17sc90.jpg",
-      "bytes": 126920,
-      "wave": "meager-w17-2026-11",
-      "w": 1080,
-      "h": 1080
+      "src": "local://269488_w97_03.jpg",
+      "thumb": "assets/enriched/269488/269488_w97_03.jpg",
+      "alt": "Центральный громкоговоритель Magnat Monitor S12 C",
+      "local": "assets/enriched/269488/269488_w97_03.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 112098
     }
   ],
   "sku": "",
@@ -113,5 +121,9 @@
   "enrichedAt": "2026-11-14T13:35:58Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T22:30:38Z",
+  "galleryWave97": true
 }

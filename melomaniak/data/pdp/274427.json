@@ -26,34 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/gughozkv5czk12rrtrmj25p13w7v0llr.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/gughozkv5czk12rrtrmj25p13w7v0llr-600x600.webp",
-      "alt": "gughozkv5czk12rrtrmj25p13w7v0llr",
-      "local": "assets/from-live/products/d464e64fdb_gughozkv5czk12rrtrmj25p13w7v0llr.webp"
+      "src": "local://274427_w97_00.jpg",
+      "thumb": "assets/enriched/274427/274427_w97_00.jpg",
+      "alt": "Напольная акустика Piega TMicro 6",
+      "local": "assets/enriched/274427/274427_w97_00.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 34844
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/gughozkv5czk12rrtrmj25p13w7v0llr-768x768.webp",
-      "local": "assets/enriched/274427/0393adc59b_w17cdn.jpg",
-      "bytes": 7006,
-      "wave": "meager-w17-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://274427_w97_01.jpg",
+      "thumb": "assets/enriched/274427/274427_w97_01.jpg",
+      "alt": "Напольная акустика Piega TMicro 6",
+      "local": "assets/enriched/274427/274427_w97_01.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 14399
     },
     {
-      "src": "local-variant://274427/w17sc95",
-      "local": "assets/enriched/274427/837977dae8_w17sc95.jpg",
-      "bytes": 24542,
-      "wave": "meager-w17-2026-11",
-      "w": 760,
-      "h": 760
+      "src": "local://274427_w97_02.jpg",
+      "thumb": "assets/enriched/274427/274427_w97_02.jpg",
+      "alt": "Напольная акустика Piega TMicro 6",
+      "local": "assets/enriched/274427/274427_w97_02.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 19563
     },
     {
-      "src": "local-variant://274427/w17sc90",
-      "local": "assets/enriched/274427/e91bf6efe1_w17sc90.jpg",
-      "bytes": 22499,
-      "wave": "meager-w17-2026-11",
-      "w": 720,
-      "h": 720
+      "src": "local://274427_w97_03.jpg",
+      "thumb": "assets/enriched/274427/274427_w97_03.jpg",
+      "alt": "Напольная акустика Piega TMicro 6",
+      "local": "assets/enriched/274427/274427_w97_03.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 20539
     }
   ],
   "sku": "",
@@ -65,5 +71,9 @@
   "enrichedAt": "2026-11-14T13:47:06Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T22:30:38Z",
+  "galleryWave97": true
 }

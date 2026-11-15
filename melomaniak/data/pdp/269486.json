@@ -101,34 +101,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_signature_903_8812743549-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_signature_903_8812743549-1.jpg",
-      "alt": "magnat_signature_903_8812743549-1.jpg",
-      "local": "assets/from-live/products/8764bf0dbf_magnat_signature_903_8812743549-1.jpg"
+      "src": "local://269486_w97_00.jpg",
+      "thumb": "assets/enriched/269486/269486_w97_00.jpg",
+      "alt": "Полочная акустика Magnat Signature 903",
+      "local": "assets/enriched/269486/269486_w97_00.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 103847
     },
     {
-      "src": "local-variant://269486/w17sc95",
-      "local": "assets/enriched/269486/2b65e00216_w17sc95.jpg",
-      "bytes": 96472,
-      "wave": "meager-w17-2026-11",
-      "w": 1149,
-      "h": 1149
+      "src": "local://269486_w97_01.jpg",
+      "thumb": "assets/enriched/269486/269486_w97_01.jpg",
+      "alt": "Полочная акустика Magnat Signature 903",
+      "local": "assets/enriched/269486/269486_w97_01.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 168357
     },
     {
-      "src": "local-variant://269486/w17sc90",
-      "local": "assets/enriched/269486/50b3c6f504_w17sc90.jpg",
-      "bytes": 88660,
-      "wave": "meager-w17-2026-11",
-      "w": 1089,
-      "h": 1089
+      "src": "local://269486_w97_02.jpg",
+      "thumb": "assets/enriched/269486/269486_w97_02.jpg",
+      "alt": "Полочная акустика Magnat Signature 903",
+      "local": "assets/enriched/269486/269486_w97_02.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 112442
     },
     {
-      "src": "local-variant://269486/w17sc85",
-      "local": "assets/enriched/269486/67590a2ce3_w17sc85.jpg",
-      "bytes": 80884,
-      "wave": "meager-w17-2026-11",
-      "w": 1028,
-      "h": 1028
+      "src": "local://269486_w97_03.jpg",
+      "thumb": "assets/enriched/269486/269486_w97_03.jpg",
+      "alt": "Полочная акустика Magnat Signature 903",
+      "local": "assets/enriched/269486/269486_w97_03.jpg",
+      "enriched": true,
+      "attribution": "wave97-oem",
+      "bytes": 81781
     }
   ],
   "sku": "",
@@ -140,5 +146,9 @@
   "enrichedAt": "2026-11-14T14:24:05Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T22:30:38Z",
+  "galleryWave97": true
 }
