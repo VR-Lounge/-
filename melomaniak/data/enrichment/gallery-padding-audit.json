@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T09:44:13Z",
+  "generatedAt": "2026-11-15T10:01:03Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1225,
-    "padded": 287,
+    "true_multi_angle": 1227,
+    "padded": 285,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 64.92,
-    "padded": 15.21,
+    "true_multi_angle": 65.02,
+    "padded": 15.1,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 33.64,
-    "not_true_multi": 35.08
+    "padded_of_claimed_gal4plus": 33.53,
+    "not_true_multi": 34.98
   },
   "padReasonTallies": {
-    "local-variant": 728,
-    "wN-variant-name": 617,
+    "local-variant": 727,
+    "wN-variant-name": 615,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 621,
+  "claimedButNotTrueMulti": 619,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -12477,16 +12477,14 @@
       "slug": "481de67c2704ec778e901c5ced40ad4b",
       "cat": "Усилители",
       "price": 190400,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 274556,
@@ -13367,16 +13365,14 @@
       "slug": "furutech-e-tp609e-ncf-europe",
       "cat": "Другое",
       "price": 169646,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264390,
