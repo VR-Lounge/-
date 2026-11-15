@@ -51,35 +51,49 @@
   ],
   "gallery": [
     {
-      "src": "local://b7d8fde291_FURUTECH-SILVER-ARROWS-12-1-500x500-1.jpg",
-      "thumb": "assets/enriched/264394/f87f3ff031_live1.jpg",
+      "src": "local://264394_w79_00.jpg",
+      "thumb": "assets/enriched/264394/264394_w79_00.jpg",
       "alt": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
-      "local": "assets/enriched/264394/f87f3ff031_live1.jpg",
+      "local": "assets/enriched/264394/264394_w79_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
+      "attribution": "wave79-oem",
+      "bytes": 131314
+    },
+    {
+      "src": "local://264394_w79_01.jpg",
+      "thumb": "assets/enriched/264394/264394_w79_01.jpg",
+      "alt": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
+      "local": "assets/enriched/264394/264394_w79_01.jpg",
+      "enriched": true,
+      "attribution": "wave79-oem",
+      "bytes": 88828
+    },
+    {
+      "src": "local://264394_w79_02.jpg",
+      "thumb": "assets/enriched/264394/264394_w79_02.jpg",
+      "alt": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
+      "local": "assets/enriched/264394/264394_w79_02.jpg",
+      "enriched": true,
+      "attribution": "wave79-oem",
       "bytes": 23532
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/media_30072018192225.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/media_30072018192225-600x600.jpg",
-      "alt": "media_30072018192225",
-      "local": "assets/from-live/products/6627958eba_media_30072018192225.jpg"
+      "src": "local://264394_w79_03.jpg",
+      "thumb": "assets/enriched/264394/264394_w79_03.jpg",
+      "alt": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
+      "local": "assets/enriched/264394/264394_w79_03.jpg",
+      "enriched": true,
+      "attribution": "wave79-oem",
+      "bytes": 13051
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/media_30072018192225-300x300.jpg",
-      "local": "assets/enriched/264394/494daa177c_w13var.jpg",
-      "bytes": 16641,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/media_30072018192225-600x600.jpg",
-      "local": "assets/enriched/264394/296a35cf95_w13var.jpg",
-      "bytes": 47792,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264394_w79_04.jpg",
+      "thumb": "assets/enriched/264394/264394_w79_04.jpg",
+      "alt": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
+      "local": "assets/enriched/264394/264394_w79_04.jpg",
+      "enriched": true,
+      "attribution": "wave79-oem",
+      "bytes": 147519
     }
   ],
   "sku": "",
@@ -93,5 +107,9 @@
   "enrichedAt": "2026-11-14T14:47:00Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T17:38:14Z",
+  "galleryWave79": true
 }

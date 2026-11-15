@@ -1,0 +1,37 @@
+{
+  "wave": 79,
+  "at": "2026-11-15T17:41:12Z",
+  "counts": {
+    "true_multi_angle": 1311,
+    "padded": 204,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 1,
+  "cleared": [
+    {
+      "id": 264394,
+      "name": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
+      "unique": 5,
+      "price": 190995,
+      "notes": "Silver Arrows II straight DIN→RCA: OEM+AI+live+Douglas+NL; reject L/R4/XLR/Ag-12/V1-T"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "no new sources"
+    },
+    {
+      "id": 264126,
+      "name": "Furutech MTP-2",
+      "class": "single_real",
+      "note": "no new sources"
+    }
+  ],
+  "remaining": {
+    "padded": 204,
+    "single_real": 372
+  }
+}
