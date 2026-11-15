@@ -51,32 +51,46 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_dd35_1649733268-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_dd35_1649733268-1.jpg",
-      "alt": "primare_dd35_1649733268-1.jpg",
-      "local": "assets/from-live/products/ece64813b7_primare_dd35_1649733268-1.jpg"
+      "local": "assets/enriched/271795/271795_w29_00.jpg",
+      "src": "assets/enriched/271795/271795_w29_00.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_dd35_1649728651-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/primare_dd35_1649728651-2.jpg",
-      "alt": "primare_dd35_1649728651-2.jpg",
-      "local": "assets/from-live/products/be5b8c70ec_primare_dd35_1649728651-2.jpg"
+      "local": "assets/enriched/271795/271795_w29_01.jpg",
+      "src": "assets/enriched/271795/271795_w29_01.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     },
     {
-      "src": "local-variant://271795/w17sc95",
-      "local": "assets/enriched/271795/7b2bc033ce_w17sc95.jpg",
-      "bytes": 85454,
-      "wave": "meager-w17-2026-11",
-      "w": 1574,
-      "h": 1574
+      "local": "assets/enriched/271795/271795_w29_02.jpg",
+      "src": "assets/enriched/271795/271795_w29_02.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     },
     {
-      "src": "local-variant://271795/w17sc90",
-      "local": "assets/enriched/271795/e0dcef5110_w17sc90.jpg",
-      "bytes": 78572,
-      "wave": "meager-w17-2026-11",
-      "w": 1491,
-      "h": 1491
+      "local": "assets/enriched/271795/271795_w29_03.jpg",
+      "src": "assets/enriched/271795/271795_w29_03.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
+    },
+    {
+      "local": "assets/enriched/271795/271795_w29_04.jpg",
+      "src": "assets/enriched/271795/271795_w29_04.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
+    },
+    {
+      "local": "assets/enriched/271795/271795_w29_05.jpg",
+      "src": "assets/enriched/271795/271795_w29_05.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
+    },
+    {
+      "local": "assets/enriched/271795/271795_w29_06.jpg",
+      "src": "assets/enriched/271795/271795_w29_06.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     }
   ],
   "sku": "",
@@ -88,5 +102,9 @@
   "enrichedAt": "2026-11-14T14:26:47Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryPaddingCleared": true,
+  "galleryPaddingClearedAt": "2026-11-15T03:40:28.414115+00:00",
+  "galleryPaddingWave": 29,
+  "galleryPaddingNote": "Primare DD35 OEM: front/back/inside/pack (CD35 sides rejected)"
 }

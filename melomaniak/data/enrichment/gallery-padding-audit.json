@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T03:27:37Z",
+  "generatedAt": "2026-11-15T03:45:31Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1149,
-    "padded": 362,
+    "true_multi_angle": 1155,
+    "padded": 356,
     "single_real": 376
   },
   "pct": {
-    "true_multi_angle": 60.89,
-    "padded": 19.18,
+    "true_multi_angle": 61.21,
+    "padded": 18.87,
     "single_real": 19.93,
-    "padded_of_claimed_gal4plus": 37.76,
-    "not_true_multi": 39.11
+    "padded_of_claimed_gal4plus": 37.43,
+    "not_true_multi": 38.79
   },
   "padReasonTallies": {
-    "local-variant": 751,
+    "local-variant": 749,
     "wN-variant-name": 661,
     "cdn-size-thumb": 123,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 697,
+  "claimedButNotTrueMulti": 691,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -118,17 +118,6 @@
         "local-variant": 1
       },
       "class": "single_real"
-    },
-    {
-      "id": 262436,
-      "name": "Напольная акустика Advance Acoustic EL 210 ( advance acoustic el 210 )",
-      "cat": "Акустика",
-      "price": 300300,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
     },
     {
       "id": 16812,
@@ -274,17 +263,6 @@
       "class": "padded"
     },
     {
-      "id": 270644,
-      "name": "Напольная акустика Wharfedale Aura 3",
-      "cat": "Акустика",
-      "price": 269990,
-      "galleryLen": 7,
-      "uniqueDistinct": 2,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
-    },
-    {
       "id": 41440,
       "name": "Напольная акустика Paradigm Premier 700F Espresso Grain ( paradigm premier 700f espresso grain )",
       "cat": "Акустика",
@@ -319,17 +297,6 @@
       "padReasons": {
         "wN-variant-name": 2
       },
-      "class": "padded"
-    },
-    {
-      "id": 271150,
-      "name": "Центральный громкоговоритель Monitor Audio Gold C250 6G",
-      "cat": "Другое",
-      "price": 254990,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 0,
-      "padReasons": {},
       "class": "padded"
     },
     {
@@ -466,17 +433,6 @@
       "class": "single_real"
     },
     {
-      "id": 270074,
-      "name": "Напольная акустика DALI Oberon 9",
-      "cat": "Акустика",
-      "price": 234350,
-      "galleryLen": 8,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
-    },
-    {
       "id": 274105,
       "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
       "cat": "Другое",
@@ -553,6 +509,54 @@
       "padSlots": 2,
       "padReasons": {
         "local-variant": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 44611,
+      "name": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 25 )",
+      "cat": "Ресиверы",
+      "price": 220000,
+      "galleryLen": 6,
+      "uniqueDistinct": 3,
+      "padSlots": 0,
+      "padReasons": {},
+      "class": "padded"
+    },
+    {
+      "id": 40251,
+      "name": "саундбар Paradigm D?cor 1C (75-89 дюймов) ( paradigm d?cor 1c (75 89 ) )",
+      "cat": "Другое",
+      "price": 218365,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 15858,
+      "name": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )",
+      "cat": "Усилители",
+      "price": 215000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 0,
+      "padReasons": {},
+      "class": "padded"
+    },
+    {
+      "id": 264077,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-SS HR/4P ( audio replas opt 100hg ss hr 4p )",
+      "cat": "Другое",
+      "price": 212500,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "cdn-size-thumb": 2
       },
       "class": "padded"
     }
@@ -9270,13 +9274,13 @@
       "cat": "Акустика",
       "price": 300300,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 16812,
@@ -10108,13 +10112,13 @@
       "cat": "Акустика",
       "price": 269990,
       "galleryHitl": false,
-      "galleryLen": 7,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271671,
@@ -10488,14 +10492,14 @@
       "slug": "762779f170a39d5ff470e6e6a98ec5ec",
       "cat": "Другое",
       "price": 254990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271191,
@@ -11131,13 +11135,13 @@
       "cat": "Акустика",
       "price": 234350,
       "galleryHitl": false,
-      "galleryLen": 8,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 274105,
@@ -12112,16 +12116,14 @@
       "slug": "7445d5be6437c03da7376947929ba6fe",
       "cat": "Источники",
       "price": 200000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272174,
@@ -15422,13 +15424,13 @@
       "cat": "Акустика",
       "price": 127754,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264351,

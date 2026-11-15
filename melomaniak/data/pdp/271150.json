@@ -101,31 +101,28 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_c250_6g_4830049537-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_c250_6g_4830049537-1.jpg",
-      "alt": "monitor_audio_gold_c250_6g_4830049537-1.jpg",
-      "local": "assets/from-live/products/442f8307aa_monitor_audio_gold_c250_6g_4830049537-1.jpg"
+      "local": "assets/enriched/271150/271150_w29_00.jpg",
+      "src": "assets/enriched/271150/271150_w29_00.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_c250_6g_4830050231-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_c250_6g_4830050231-2.jpg",
-      "alt": "monitor_audio_gold_c250_6g_4830050231-2.jpg",
-      "local": "assets/from-live/products/a85d00e4c0_monitor_audio_gold_c250_6g_4830050231-2.jpg"
+      "local": "assets/enriched/271150/271150_w29_01.jpg",
+      "src": "assets/enriched/271150/271150_w29_01.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_c250_6g4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_c250_6g4.jpg",
-      "alt": "monitor_audio_gold_c250_6g4.jpg",
-      "local": "assets/from-live/products/2f55ad28e9_monitor_audio_gold_c250_6g4.jpg"
+      "local": "assets/enriched/271150/271150_w29_02.jpg",
+      "src": "assets/enriched/271150/271150_w29_02.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_c250_5g_11352095222-1.jpg",
-      "thumb": "assets/enriched/271150/837f5e5a20_w91.jpg",
-      "alt": "Центральный громкоговоритель Monitor Audio Gold C250 6G",
-      "local": "assets/enriched/271150/837f5e5a20_w91.jpg",
-      "enriched": true,
-      "attribution": "woo-media-exact",
-      "bytes": 244487
+      "local": "assets/enriched/271150/271150_w29_03.jpg",
+      "src": "assets/enriched/271150/271150_w29_03.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     }
   ],
   "sku": "",
@@ -137,5 +134,9 @@
   "enrichedAt": "2026-11-14T13:36:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryPaddingCleared": true,
+  "galleryPaddingClearedAt": "2026-11-15T03:40:28.414115+00:00",
+  "galleryPaddingWave": 29,
+  "galleryPaddingNote": "Gold C250 white studio OEM angles (drivers+grille)"
 }

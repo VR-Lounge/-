@@ -61,28 +61,34 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/06/img_4950.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/06/img_4950-600x600.jpeg",
-      "alt": "img_4950",
-      "local": "assets/from-live/products/32c4eade69_img_4950.jpeg"
+      "local": "assets/enriched/262436/262436_w29_00.jpg",
+      "src": "assets/enriched/262436/262436_w29_00.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/06/img_4948.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/06/img_4948-500x600.jpeg",
-      "alt": "img_4948",
-      "local": "assets/from-live/products/bed3fe00cb_img_4948.jpeg"
+      "local": "assets/enriched/262436/262436_w29_01.jpg",
+      "src": "assets/enriched/262436/262436_w29_01.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/06/img_4949.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/06/img_4949-521x600.jpeg",
-      "alt": "img_4949",
-      "local": "assets/from-live/products/69a3087024_img_4949.jpeg"
+      "local": "assets/enriched/262436/262436_w29_02.jpg",
+      "src": "assets/enriched/262436/262436_w29_02.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/01/1000x1000-29374_1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/01/1000x1000-29374_1-600x600.jpg",
-      "alt": "1000&#215;1000-29374_1",
-      "local": "assets/from-live/products/f0b0f96087_1000x1000-29374_1.jpg"
+      "local": "assets/enriched/262436/262436_w29_03.jpg",
+      "src": "assets/enriched/262436/262436_w29_03.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
+    },
+    {
+      "local": "assets/enriched/262436/262436_w29_04.jpg",
+      "src": "assets/enriched/262436/262436_w29_04.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:40:28.414115+00:00"
     }
   ],
   "sku": "",
@@ -93,5 +99,10 @@
   ],
   "enrichedAt": "2026-11-14T13:01:13Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w4-2026-11",
+  "galleryHitl": false,
+  "galleryPaddingCleared": true,
+  "galleryPaddingClearedAt": "2026-11-15T03:40:28.414115+00:00",
+  "galleryPaddingWave": 29,
+  "galleryPaddingNote": "Advance Acoustic EL210 bases + mokandmartensen OEM pair angles"
 }

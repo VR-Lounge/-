@@ -101,34 +101,40 @@
   ],
   "gallery": [
     {
-      "src": "local://2c25db8f62_dali_oberon_7_c_sound_hub_compact2.jpg",
-      "thumb": "assets/enriched/270090/a9a7a41ed0_live1.jpg",
-      "alt": "Напольная акустика DALI Oberon 7",
-      "local": "assets/enriched/270090/a9a7a41ed0_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 181229
+      "local": "assets/enriched/270090/270090_w29_00.jpg",
+      "src": "assets/enriched/270090/270090_w29_00.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:41:56.801085+00:00"
     },
     {
-      "src": "local://9e429a58d3_dali_oberon_7_c_sound_hub_compact1.jpg",
-      "thumb": "assets/enriched/270090/e1d97f5627_live2.jpg",
-      "alt": "Напольная акустика DALI Oberon 7",
-      "local": "assets/enriched/270090/e1d97f5627_live2.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 113970
+      "local": "assets/enriched/270090/270090_w29_01.jpg",
+      "src": "assets/enriched/270090/270090_w29_01.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:41:56.801085+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dali_oberon_7_10341359722-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dali_oberon_7_10341359722-1.jpg",
-      "alt": "dali_oberon_7_10341359722-1.jpg",
-      "local": "assets/from-live/products/9bc2784656_dali_oberon_7_10341359722-1.jpg"
+      "local": "assets/enriched/270090/270090_w29_02.jpg",
+      "src": "assets/enriched/270090/270090_w29_02.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:41:56.801085+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dali_oberon_7_10341415286-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dali_oberon_7_10341415286-2.jpg",
-      "alt": "dali_oberon_7_10341415286-2.jpg",
-      "local": "assets/from-live/products/cf741cf08f_dali_oberon_7_10341415286-2.jpg"
+      "local": "assets/enriched/270090/270090_w29_03.jpg",
+      "src": "assets/enriched/270090/270090_w29_03.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:41:56.801085+00:00"
+    },
+    {
+      "local": "assets/enriched/270090/270090_w29_04.jpg",
+      "src": "assets/enriched/270090/270090_w29_04.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:41:56.801085+00:00"
+    },
+    {
+      "local": "assets/enriched/270090/270090_w29_05.jpg",
+      "src": "assets/enriched/270090/270090_w29_05.jpg",
+      "source": "oem-wave29",
+      "enrichedAt": "2026-11-15T03:41:56.801085+00:00"
     }
   ],
   "sku": "",
@@ -139,5 +145,10 @@
   ],
   "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w5-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": false,
+  "galleryPaddingCleared": true,
+  "galleryPaddingClearedAt": "2026-11-15T03:41:56.801085+00:00",
+  "galleryPaddingWave": 29,
+  "galleryPaddingNote": "DALI Oberon 7 OEM + verified studio angles"
 }
