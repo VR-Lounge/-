@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:19:34Z",
+  "generatedAt": "2026-11-15T12:31:36Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1253,
-    "padded": 259,
+    "true_multi_angle": 1255,
+    "padded": 257,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 66.4,
-    "padded": 13.73,
+    "true_multi_angle": 66.51,
+    "padded": 13.62,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.12,
-    "not_true_multi": 33.6
+    "padded_of_claimed_gal4plus": 32.02,
+    "not_true_multi": 33.49
   },
   "padReasonTallies": {
-    "local-variant": 723,
-    "wN-variant-name": 587,
+    "local-variant": 722,
+    "wN-variant-name": 585,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 593,
+  "claimedButNotTrueMulti": 591,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -26148,16 +26148,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-cf-102r",
       "cat": "Другое",
       "price": 19085,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264050,
@@ -27476,16 +27474,14 @@
       "slug": "39e2fbff691d3bd136617cbccd1197a1",
       "cat": "Кабели",
       "price": 11390,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264322,

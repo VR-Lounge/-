@@ -31,42 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-CF-102-R.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-CF-102-R.jpg",
-      "alt": "Furutech-CF-102-R",
-      "local": "assets/from-live/products/050c8bc1a8_Furutech-CF-102-R.jpg"
+      "src": "local://264274_w59_00.jpg",
+      "thumb": "assets/enriched/264274/264274_w59_00.jpg",
+      "alt": "Коннектор Furutech CF-102(R) ( furutech cf 102(r) )",
+      "local": "assets/enriched/264274/264274_w59_00.jpg",
+      "enriched": true,
+      "attribution": "wave59-oem",
+      "bytes": 12911
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-CF-102-NCF-R-set.png",
-      "local": "assets/enriched/264274/bc8cc3b877_w14media.png",
-      "bytes": 113998,
-      "wave": "meager-w14-2026-11",
-      "w": 477,
-      "h": 477
+      "src": "local://264274_w59_01.jpg",
+      "thumb": "assets/enriched/264274/264274_w59_01.jpg",
+      "alt": "Коннектор Furutech CF-102(R) ( furutech cf 102(r) )",
+      "local": "assets/enriched/264274/264274_w59_01.jpg",
+      "enriched": true,
+      "attribution": "wave59-oem",
+      "bytes": 207993
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-CF-102-NCF-R-set-300x300.png",
-      "local": "assets/enriched/264274/93295f5a7f_w14var.png",
-      "bytes": 45266,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264274_w59_02.jpg",
+      "thumb": "assets/enriched/264274/264274_w59_02.jpg",
+      "alt": "Коннектор Furutech CF-102(R) ( furutech cf 102(r) )",
+      "local": "assets/enriched/264274/264274_w59_02.jpg",
+      "enriched": true,
+      "attribution": "wave59-oem",
+      "bytes": 41639
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_CF_102_R_.jpg",
-      "local": "assets/enriched/264274/345dd0f949_w14media.jpg",
-      "bytes": 26212,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_CF_102_R_-300x300.jpg",
-      "local": "assets/enriched/264274/55cf82b29e_w14var.jpg",
-      "bytes": 8614,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264274_w59_03.jpg",
+      "thumb": "assets/enriched/264274/264274_w59_03.jpg",
+      "alt": "Коннектор Furutech CF-102(R) ( furutech cf 102(r) )",
+      "local": "assets/enriched/264274/264274_w59_03.jpg",
+      "enriched": true,
+      "attribution": "wave59-oem",
+      "bytes": 19741
     }
   ],
   "sku": "",
@@ -78,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T12:28:28Z",
+  "galleryWave59": true
 }

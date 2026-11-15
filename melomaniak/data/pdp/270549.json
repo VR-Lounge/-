@@ -71,30 +71,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_name_2996235978-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_name_2996235978-1.jpg",
-      "alt": "van_den_hul_the_name_2996235978-1.jpg",
-      "local": "assets/from-live/products/acd9ae7e74_van_den_hul_the_name_2996235978-1.jpg"
+      "src": "local://270549_w59_00.jpg",
+      "thumb": "assets/enriched/270549/270549_w59_00.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Name",
+      "local": "assets/enriched/270549/270549_w59_00.jpg",
+      "enriched": true,
+      "attribution": "wave59-oem",
+      "bytes": 37642
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_name2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_name2.jpg",
-      "alt": "van_den_hul_the_name2.jpg",
-      "local": "assets/from-live/products/4ffac65a06_van_den_hul_the_name2.jpg"
+      "src": "local://270549_w59_01.jpg",
+      "thumb": "assets/enriched/270549/270549_w59_01.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Name",
+      "local": "assets/enriched/270549/270549_w59_01.jpg",
+      "enriched": true,
+      "attribution": "wave59-oem",
+      "bytes": 31534
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_name3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_name3.jpg",
-      "alt": "van_den_hul_the_name3.jpg",
-      "local": "assets/from-live/products/23be3478a2_van_den_hul_the_name3.jpg"
+      "src": "local://270549_w59_02.jpg",
+      "thumb": "assets/enriched/270549/270549_w59_02.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Name",
+      "local": "assets/enriched/270549/270549_w59_02.jpg",
+      "enriched": true,
+      "attribution": "wave59-oem",
+      "bytes": 236144
     },
     {
-      "src": "local-variant://270549/w17sc95",
-      "local": "assets/enriched/270549/e05c654f3c_w17sc95.jpg",
-      "bytes": 56942,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://270549_w59_03.jpg",
+      "thumb": "assets/enriched/270549/270549_w59_03.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Name",
+      "local": "assets/enriched/270549/270549_w59_03.jpg",
+      "enriched": true,
+      "attribution": "wave59-oem",
+      "bytes": 32362
     }
   ],
   "sku": "",
@@ -106,5 +116,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T12:28:28Z",
+  "galleryWave59": true
 }
