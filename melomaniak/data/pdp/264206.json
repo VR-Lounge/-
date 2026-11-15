@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-E38G-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-E38G-2.jpg",
-      "alt": "FI-E38G",
-      "local": "assets/from-live/products/33cdac52d8_FI-E38G-2.jpg"
+      "src": "local://264206_w101_00.jpg",
+      "thumb": "assets/enriched/264206/264206_w101_00.jpg",
+      "alt": "Сетевой коннектор Furutech FI-E38(G) ( furutech fi e38(g) )",
+      "local": "assets/enriched/264206/264206_w101_00.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 101361
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-E38-R.-1.jpg",
-      "local": "assets/enriched/264206/483695b53b_w14media.jpg",
-      "bytes": 18509,
-      "wave": "meager-w14-2026-11",
-      "w": 377,
-      "h": 250
+      "src": "local://264206_w101_01.jpg",
+      "thumb": "assets/enriched/264206/264206_w101_01.jpg",
+      "alt": "Сетевой коннектор Furutech FI-E38(G) ( furutech fi e38(g) )",
+      "local": "assets/enriched/264206/264206_w101_01.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 60288
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FI_E38_G_.jpg",
-      "local": "assets/enriched/264206/894cf32cfa_w14media.jpg",
-      "bytes": 30982,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264206_w101_02.jpg",
+      "thumb": "assets/enriched/264206/264206_w101_02.jpg",
+      "alt": "Сетевой коннектор Furutech FI-E38(G) ( furutech fi e38(g) )",
+      "local": "assets/enriched/264206/264206_w101_02.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 70416
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FI_E38_G_-300x300.jpg",
-      "local": "assets/enriched/264206/7f0746d475_w14var.jpg",
-      "bytes": 9718,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264206_w101_03.jpg",
+      "thumb": "assets/enriched/264206/264206_w101_03.jpg",
+      "alt": "Сетевой коннектор Furutech FI-E38(G) ( furutech fi e38(g) )",
+      "local": "assets/enriched/264206/264206_w101_03.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 55663
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:35:12Z",
+  "galleryWave101": true
 }

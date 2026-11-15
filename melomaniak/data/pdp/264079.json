@@ -31,33 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-sg4-hr.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-sg4-hr.png",
-      "alt": "audio-replas-sg4-hr"
+      "src": "local://264079_w101_00.jpg",
+      "thumb": "assets/enriched/264079/264079_w101_00.jpg",
+      "alt": "Кварцевые диски Audio Replas SG-4HR/3P ( audio replas sg 4hr 3p )",
+      "local": "assets/enriched/264079/264079_w101_00.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 11132
     },
     {
-      "src": "local://1cd8738ffc_audio-replas-sg4-hr.png",
-      "local": "assets/enriched/264079/4173bb3c1d_w15sib.png",
-      "bytes": 235077,
-      "wave": "meager-w15-2026-11",
-      "w": 380,
-      "h": 250
+      "src": "local://264079_w101_01.jpg",
+      "thumb": "assets/enriched/264079/264079_w101_01.jpg",
+      "alt": "Кварцевые диски Audio Replas SG-4HR/3P ( audio replas sg 4hr 3p )",
+      "local": "assets/enriched/264079/264079_w101_01.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 7209
     },
     {
-      "src": "local-variant://264079/w17sc95",
-      "local": "assets/enriched/264079/ef46604aa8_w17sc95.jpg",
-      "bytes": 34340,
-      "wave": "meager-w17-2026-11",
-      "w": 361,
-      "h": 237
+      "src": "local://264079_w101_02.jpg",
+      "thumb": "assets/enriched/264079/264079_w101_02.jpg",
+      "alt": "Кварцевые диски Audio Replas SG-4HR/3P ( audio replas sg 4hr 3p )",
+      "local": "assets/enriched/264079/264079_w101_02.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 7278
     },
     {
-      "src": "local-variant://264079/w17sc90",
-      "local": "assets/enriched/264079/6e50587aa9_w17sc90.jpg",
-      "bytes": 31888,
-      "wave": "meager-w17-2026-11",
-      "w": 342,
-      "h": 225
+      "src": "local://264079_w101_03.jpg",
+      "thumb": "assets/enriched/264079/264079_w101_03.jpg",
+      "alt": "Кварцевые диски Audio Replas SG-4HR/3P ( audio replas sg 4hr 3p )",
+      "local": "assets/enriched/264079/264079_w101_03.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 8775
     }
   ],
   "sku": "",
@@ -69,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:35:12Z",
+  "galleryWave101": true
 }

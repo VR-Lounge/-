@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-M28R.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-M28R.jpg",
-      "alt": "FI-M28R",
-      "local": "assets/from-live/products/db1387e6c5_FI-M28R.jpg"
+      "src": "local://264167_w101_00.jpg",
+      "thumb": "assets/enriched/264167/264167_w101_00.jpg",
+      "alt": "Сетевая вилка Furutech FI-28M(R) ( furutech fi 28m(r) )",
+      "local": "assets/enriched/264167/264167_w101_00.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 132761
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-fi-28m-g-500x393-1.jpg",
-      "local": "assets/enriched/264167/35b2e72a70_w14media.jpg",
-      "bytes": 22032,
-      "wave": "meager-w14-2026-11",
-      "w": 500,
-      "h": 393
+      "src": "local://264167_w101_01.jpg",
+      "thumb": "assets/enriched/264167/264167_w101_01.jpg",
+      "alt": "Сетевая вилка Furutech FI-28M(R) ( furutech fi 28m(r) )",
+      "local": "assets/enriched/264167/264167_w101_01.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 20212
     },
     {
-      "src": "local-variant://264167/w17sc95",
-      "local": "assets/enriched/264167/70d28ff011_w17sc95.jpg",
-      "bytes": 13524,
-      "wave": "meager-w17-2026-11",
-      "w": 237,
-      "h": 237
+      "src": "local://264167_w101_02.jpg",
+      "thumb": "assets/enriched/264167/264167_w101_02.jpg",
+      "alt": "Сетевая вилка Furutech FI-28M(R) ( furutech fi 28m(r) )",
+      "local": "assets/enriched/264167/264167_w101_02.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 62945
     },
     {
-      "src": "local-variant://264167/w17sc90",
-      "local": "assets/enriched/264167/b6734e139f_w17sc90.jpg",
-      "bytes": 12448,
-      "wave": "meager-w17-2026-11",
-      "w": 225,
-      "h": 225
+      "src": "local://264167_w101_03.jpg",
+      "thumb": "assets/enriched/264167/264167_w101_03.jpg",
+      "alt": "Сетевая вилка Furutech FI-28M(R) ( furutech fi 28m(r) )",
+      "local": "assets/enriched/264167/264167_w101_03.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 96297
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:35:12Z",
+  "galleryWave101": true
 }

@@ -31,32 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-12LR-инет.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-12LR-инет.jpg",
-      "alt": "Furutech-FI-12LR-инет",
-      "local": "assets/from-live/products/8202cf3f3a_Furutech-FI-12LR-инет.jpg"
+      "src": "local://264172_w101_00.jpg",
+      "thumb": "assets/enriched/264172/264172_w101_00.jpg",
+      "alt": "Коннектор сетевой Furutech FI-12L (R ) ( furutech fi 12l (r ) )",
+      "local": "assets/enriched/264172/264172_w101_00.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 44247
     },
     {
-      "src": "from-live://28b4c65eea_Furutech_Fi-12L_G_Fi-_E12L_G_package-rotated.jpg",
-      "local": "assets/enriched/264172/252dc9c72f_w11live.jpg",
-      "bytes": 18313,
-      "wave": "meager-w11-2026-11"
+      "src": "local://264172_w101_01.jpg",
+      "thumb": "assets/enriched/264172/264172_w101_01.jpg",
+      "alt": "Коннектор сетевой Furutech FI-12L (R ) ( furutech fi 12l (r ) )",
+      "local": "assets/enriched/264172/264172_w101_01.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 41762
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konnektor_Furutech_FI_12L_R_.jpg",
-      "local": "assets/enriched/264172/4c36f86ff1_w14media.jpg",
-      "bytes": 32245,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264172_w101_02.jpg",
+      "thumb": "assets/enriched/264172/264172_w101_02.jpg",
+      "alt": "Коннектор сетевой Furutech FI-12L (R ) ( furutech fi 12l (r ) )",
+      "local": "assets/enriched/264172/264172_w101_02.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 44257
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konnektor_Furutech_FI_12L_R_-300x300.jpg",
-      "local": "assets/enriched/264172/088d60ac36_w14var.jpg",
-      "bytes": 10303,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264172_w101_03.jpg",
+      "thumb": "assets/enriched/264172/264172_w101_03.jpg",
+      "alt": "Коннектор сетевой Furutech FI-12L (R ) ( furutech fi 12l (r ) )",
+      "local": "assets/enriched/264172/264172_w101_03.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 33893
     }
   ],
   "sku": "",
@@ -68,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:35:12Z",
+  "galleryWave101": true
 }

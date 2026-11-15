@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-fi-28m-g-500x393-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-fi-28m-g-500x393-1.jpg",
-      "alt": "furutech-fi-28m-g-500&#215;393",
-      "local": "assets/from-live/products/348ea7ce2f_furutech-fi-28m-g-500x393-1.jpg"
+      "src": "local://264170_w101_00.jpg",
+      "thumb": "assets/enriched/264170/264170_w101_00.jpg",
+      "alt": "Коннектор сетевой Furutech FI-28M (G) ( furutech fi 28m (g) )",
+      "local": "assets/enriched/264170/264170_w101_00.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 134179
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-M28R.jpg",
-      "local": "assets/enriched/264170/697665fef7_w15sib.jpg",
-      "bytes": 22384,
-      "wave": "meager-w15-2026-11",
-      "w": 250,
-      "h": 250
+      "src": "local://264170_w101_01.jpg",
+      "thumb": "assets/enriched/264170/264170_w101_01.jpg",
+      "alt": "Коннектор сетевой Furutech FI-28M (G) ( furutech fi 28m (g) )",
+      "local": "assets/enriched/264170/264170_w101_01.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 55838
     },
     {
-      "src": "local-variant://264170/w17sc95",
-      "local": "assets/enriched/264170/70d28ff011_w17sc95.jpg",
-      "bytes": 13524,
-      "wave": "meager-w17-2026-11",
-      "w": 237,
-      "h": 237
+      "src": "local://264170_w101_02.jpg",
+      "thumb": "assets/enriched/264170/264170_w101_02.jpg",
+      "alt": "Коннектор сетевой Furutech FI-28M (G) ( furutech fi 28m (g) )",
+      "local": "assets/enriched/264170/264170_w101_02.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 90507
     },
     {
-      "src": "local-variant://264170/w17sc90",
-      "local": "assets/enriched/264170/b6734e139f_w17sc90.jpg",
-      "bytes": 12448,
-      "wave": "meager-w17-2026-11",
-      "w": 225,
-      "h": 225
+      "src": "local://264170_w101_03.jpg",
+      "thumb": "assets/enriched/264170/264170_w101_03.jpg",
+      "alt": "Коннектор сетевой Furutech FI-28M (G) ( furutech fi 28m (g) )",
+      "local": "assets/enriched/264170/264170_w101_03.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 87116
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:35:12Z",
+  "galleryWave101": true
 }

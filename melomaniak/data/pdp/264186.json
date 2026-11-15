@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-15M-Plus-R-500x363-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-15M-Plus-R-500x363-1.jpg",
-      "alt": "Furutech-FI-15M-Plus-R-500&#215;363",
-      "local": "assets/from-live/products/14c9434dfc_Furutech-FI-15M-Plus-R-500x363-1.jpg"
+      "src": "local://264186_w101_00.jpg",
+      "thumb": "assets/enriched/264186/264186_w101_00.jpg",
+      "alt": "Сетевая вилка Furutech FI-15M Plus (G) ( furutech fi 15m plus (g) )",
+      "local": "assets/enriched/264186/264186_w101_00.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 97929
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-15M-Plus-R.jpg",
-      "local": "assets/enriched/264186/55d10cbbed_w14media.jpg",
-      "bytes": 147227,
-      "wave": "meager-w14-2026-11",
-      "w": 800,
-      "h": 581
+      "src": "local://264186_w101_01.jpg",
+      "thumb": "assets/enriched/264186/264186_w101_01.jpg",
+      "alt": "Сетевая вилка Furutech FI-15M Plus (G) ( furutech fi 15m plus (g) )",
+      "local": "assets/enriched/264186/264186_w101_01.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 48690
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-15МECu-220x250-1.jpg",
-      "local": "assets/enriched/264186/134c90dab9_w15sib.jpg",
-      "bytes": 15625,
-      "wave": "meager-w15-2026-11",
-      "w": 220,
-      "h": 250
+      "src": "local://264186_w101_02.jpg",
+      "thumb": "assets/enriched/264186/264186_w101_02.jpg",
+      "alt": "Сетевая вилка Furutech FI-15M Plus (G) ( furutech fi 15m plus (g) )",
+      "local": "assets/enriched/264186/264186_w101_02.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 71310
     },
     {
-      "src": "local-variant://264186/w17sc95",
-      "local": "assets/enriched/264186/84b59ecf00_w17sc95.jpg",
-      "bytes": 48835,
-      "wave": "meager-w17-2026-11",
-      "w": 760,
-      "h": 551
+      "src": "local://264186_w101_03.jpg",
+      "thumb": "assets/enriched/264186/264186_w101_03.jpg",
+      "alt": "Сетевая вилка Furutech FI-15M Plus (G) ( furutech fi 15m plus (g) )",
+      "local": "assets/enriched/264186/264186_w101_03.jpg",
+      "enriched": true,
+      "attribution": "wave101-oem",
+      "bytes": 64812
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:35:12Z",
+  "galleryWave101": true
 }
