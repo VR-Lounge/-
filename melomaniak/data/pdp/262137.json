@@ -36,10 +36,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/20400.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/20400-600x600.jpg",
-      "alt": "20400",
-      "local": "assets/from-live/brand/ba35e03806_20400.jpg"
+      "src": "local://262137_w73_00.jpg",
+      "thumb": "assets/enriched/262137/262137_w73_00.jpg",
+      "alt": "ЦАП Soulnote D 1N  ( soulnote d 1n  )",
+      "local": "assets/enriched/262137/262137_w73_00.jpg",
+      "enriched": true,
+      "attribution": "wave73-oem",
+      "bytes": 60691
+    },
+    {
+      "src": "local://262137_w73_01.jpg",
+      "thumb": "assets/enriched/262137/262137_w73_01.jpg",
+      "alt": "ЦАП Soulnote D 1N  ( soulnote d 1n  )",
+      "local": "assets/enriched/262137/262137_w73_01.jpg",
+      "enriched": true,
+      "attribution": "wave73-oem",
+      "bytes": 46969
+    },
+    {
+      "src": "local://262137_w73_02.jpg",
+      "thumb": "assets/enriched/262137/262137_w73_02.jpg",
+      "alt": "ЦАП Soulnote D 1N  ( soulnote d 1n  )",
+      "local": "assets/enriched/262137/262137_w73_02.jpg",
+      "enriched": true,
+      "attribution": "wave73-oem",
+      "bytes": 50580
+    },
+    {
+      "src": "local://262137_w73_03.jpg",
+      "thumb": "assets/enriched/262137/262137_w73_03.jpg",
+      "alt": "ЦАП Soulnote D 1N  ( soulnote d 1n  )",
+      "local": "assets/enriched/262137/262137_w73_03.jpg",
+      "enriched": true,
+      "attribution": "wave73-oem",
+      "bytes": 137129
+    },
+    {
+      "src": "local://262137_w73_04.jpg",
+      "thumb": "assets/enriched/262137/262137_w73_04.jpg",
+      "alt": "ЦАП Soulnote D 1N  ( soulnote d 1n  )",
+      "local": "assets/enriched/262137/262137_w73_04.jpg",
+      "enriched": true,
+      "attribution": "wave73-oem",
+      "bytes": 60947
     }
   ],
   "sku": "",
@@ -51,8 +90,11 @@
   "enrichedAt": "2026-11-14T13:46:21Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:24:24Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T15:40:59Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave73": true
 }
