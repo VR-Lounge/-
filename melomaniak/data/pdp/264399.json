@@ -46,35 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "local://70a941696a_FURUTECH-AG-16-1-500x375-1.jpg",
-      "thumb": "assets/enriched/264399/c2959d4d77_live1.jpg",
+      "src": "local://264399_w78_00.jpg",
+      "thumb": "assets/enriched/264399/264399_w78_00.jpg",
       "alt": "Фоно кабель Furutech AG-16 ( furutech ag 16 )",
-      "local": "assets/enriched/264399/c2959d4d77_live1.jpg",
+      "local": "assets/enriched/264399/264399_w78_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
+      "attribution": "wave78-oem",
+      "bytes": 103961
+    },
+    {
+      "src": "local://264399_w78_01.jpg",
+      "thumb": "assets/enriched/264399/264399_w78_01.jpg",
+      "alt": "Фоно кабель Furutech AG-16 ( furutech ag 16 )",
+      "local": "assets/enriched/264399/264399_w78_01.jpg",
+      "enriched": true,
+      "attribution": "wave78-oem",
+      "bytes": 21812
+    },
+    {
+      "src": "local://264399_w78_02.jpg",
+      "thumb": "assets/enriched/264399/264399_w78_02.jpg",
+      "alt": "Фоно кабель Furutech AG-16 ( furutech ag 16 )",
+      "local": "assets/enriched/264399/264399_w78_02.jpg",
+      "enriched": true,
+      "attribution": "wave78-oem",
       "bytes": 23482
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-AG-16-1-500x375-1-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-AG-16-1-500x375-1-1.jpg",
-      "alt": "FURUTECH-AG-16-1-500&#215;375 (1)",
-      "local": "assets/from-live/products/70a941696a_FURUTECH-AG-16-1-500x375-1-1.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-Ag-16-XLR-rotated-1.jpg",
-      "local": "assets/enriched/264399/6626154183_w13media.jpg",
-      "bytes": 37710,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 398
-    },
-    {
-      "src": "local-variant://264399/w17sc95",
-      "local": "assets/enriched/264399/fad46782b4_w17sc95.jpg",
-      "bytes": 40843,
-      "wave": "meager-w17-2026-11",
-      "w": 285,
-      "h": 378
+      "src": "local://264399_w78_03.jpg",
+      "thumb": "assets/enriched/264399/264399_w78_03.jpg",
+      "alt": "Фоно кабель Furutech AG-16 ( furutech ag 16 )",
+      "local": "assets/enriched/264399/264399_w78_03.jpg",
+      "enriched": true,
+      "attribution": "wave78-oem",
+      "bytes": 37710
     }
   ],
   "sku": "",
@@ -87,5 +92,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T17:18:11Z",
+  "galleryWave78": true
 }

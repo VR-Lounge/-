@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:07:48Z",
+  "generatedAt": "2026-11-15T17:21:50Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1308,
-    "padded": 207,
+    "true_multi_angle": 1310,
+    "padded": 205,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 69.32,
-    "padded": 10.97,
+    "true_multi_angle": 69.42,
+    "padded": 10.86,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 29.18,
-    "not_true_multi": 30.68
+    "padded_of_claimed_gal4plus": 29.07,
+    "not_true_multi": 30.58
   },
   "padReasonTallies": {
-    "local-variant": 711,
-    "wN-variant-name": 541,
+    "local-variant": 710,
+    "wN-variant-name": 539,
     "cdn-size-thumb": 113,
-    "cdn-rotated": 6
+    "cdn-rotated": 5
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 539,
+  "claimedButNotTrueMulti": 537,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -186,19 +186,6 @@
         "local-variant": 1
       },
       "class": "single_real"
-    },
-    {
-      "id": 16810,
-      "name": "предусилитель Trigon TRV 100 ( trigon trv 100 )",
-      "cat": "Усилители",
-      "price": 280000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
     },
     {
       "id": 16864,
@@ -565,6 +552,19 @@
       "name": "саундбар Paradigm Decor 2SC (75-89 дюймов) ( paradigm decor 2sc (75 89 ) )",
       "cat": "Другое",
       "price": 183515,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 15940,
+      "name": "интегральный усилитель Line Magnetic Audio LM 217 IA ( line magnetic audio lm 217 ia )",
+      "cat": "Усилители",
+      "price": 182750,
       "galleryLen": 4,
       "uniqueDistinct": 2,
       "padSlots": 2,
@@ -9935,16 +9935,14 @@
       "slug": "predysilitel_trigon_trv_100",
       "cat": "Усилители",
       "price": 280000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 16864,
@@ -17038,17 +17036,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-16",
       "cat": "Кабели",
       "price": 102742,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "cdn-rotated": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264070,
