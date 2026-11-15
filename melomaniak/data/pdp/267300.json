@@ -41,28 +41,67 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5271.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5271-600x600.jpg",
-      "alt": "5271",
-      "local": "assets/from-live/products/6123484001_5271.jpg"
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5280.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5280.jpg",
+      "alt": "Напольная акустика Monitor Audio Platinum 200 3G",
+      "local": "assets/enriched/267300/ce3becaf1f_w18.jpg",
+      "bytes": 366339,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5270.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5270-600x600.jpg",
-      "alt": "5270",
-      "local": "assets/from-live/products/e30bbd6a72_5270.jpg"
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5279.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5279.jpg",
+      "alt": "Напольная акустика Monitor Audio Platinum 200 3G",
+      "local": "assets/enriched/267300/0b9e989517_w18.jpg",
+      "bytes": 250899,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5271.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5271.jpg",
+      "alt": "Напольная акустика Monitor Audio Platinum 200 3G",
+      "local": "assets/enriched/267300/592bc0a974_w18.jpg",
+      "bytes": 239377,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5269.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5269.jpg",
+      "alt": "Напольная акустика Monitor Audio Platinum 200 3G",
+      "local": "assets/enriched/267300/6621bbef92_w18.jpg",
+      "bytes": 150469,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5268.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5268.jpg",
+      "alt": "Напольная акустика Monitor Audio Platinum 200 3G",
+      "local": "assets/enriched/267300/8754a2cc2f_w18.jpg",
+      "bytes": 148220,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     },
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5272.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5272-600x600.jpg",
-      "alt": "5272",
-      "local": "assets/from-live/products/41dae6e880_5272.jpg"
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5272.jpg",
+      "alt": "Напольная акустика Monitor Audio Platinum 200 3G",
+      "local": "assets/enriched/267300/d94d762d10_w18.jpg",
+      "bytes": 145923,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     },
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5273.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5273-600x600.jpg",
-      "alt": "5273",
-      "local": "assets/from-live/products/c4fc9f15fb_5273.jpg"
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/03/5273.jpg",
+      "alt": "Напольная акустика Monitor Audio Platinum 200 3G",
+      "local": "assets/enriched/267300/de956ed1ff_w18.jpg",
+      "bytes": 141872,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     }
   ],
   "sku": "",
@@ -73,5 +112,8 @@
   ],
   "enrichedAt": "2026-11-14T13:01:13Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w4-2026-11",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:00:16Z",
+  "galleryWave18": true
 }

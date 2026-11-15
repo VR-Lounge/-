@@ -46,27 +46,6 @@
   ],
   "gallery": [
     {
-      "src": "https://www.acoustic-energy.co.uk/wp-content/uploads/Corinium-Silver-Lifestyle-scaled.jpg",
-      "thumb": "https://www.acoustic-energy.co.uk/wp-content/uploads/Corinium-Silver-Lifestyle-scaled.jpg",
-      "alt": "Напольная акустика Acoustic Energy Corinium",
-      "local": "assets/enriched/274552/8599675839_1.jpg",
-      "enriched": true,
-      "attribution": "www.acoustic-energy.co.uk",
-      "bytes": 718063
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-corinium-w950-ae-mpic-0-1699033044.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-corinium-w950-ae-mpic-0-1699033044-600x600.jpg",
-      "alt": "ae-corinium-w950-ae-mpic-0-1699033044",
-      "local": "assets/from-live/products/85820d11c6_ae-corinium-w950-ae-mpic-0-1699033044.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-corinium-w400-ae-mpic-0-1698653142.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-corinium-w400-ae-mpic-0-1698653142.jpg",
-      "alt": "ae-corinium-w400-ae-mpic-0-1698653142",
-      "local": "assets/from-live/products/074a819dd7_ae-corinium-w400-ae-mpic-0-1698653142.jpg"
-    },
-    {
       "src": "https://www.acoustic-energy.co.uk/wp-content/uploads/Corinium-Silver-Lifestyle.jpg",
       "thumb": "assets/enriched/274552/2a162b2e90_w10b.jpg",
       "alt": "274552",
@@ -74,6 +53,24 @@
       "enriched": true,
       "attribution": "oem-cdn",
       "bytes": 22386152
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-corinium-w950-ae-mpic-0-1699033044.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-corinium-w950-ae-mpic-0-1699033044.jpg",
+      "alt": "Напольная акустика Acoustic Energy Corinium",
+      "local": "assets/enriched/274552/03376f0442_w18.jpg",
+      "bytes": 173696,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-corinium-w400-ae-mpic-0-1698653142.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-corinium-w400-ae-mpic-0-1698653142.jpg",
+      "alt": "Напольная акустика Acoustic Energy Corinium",
+      "local": "assets/enriched/274552/cd372d0636_w18.jpg",
+      "bytes": 60731,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     }
   ],
   "sku": "",
@@ -85,7 +82,9 @@
     "https://www.acoustic-energy.co.uk/products/corinium/"
   ],
   "enrichedAt": "2026-11-14T14:57:31Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w10-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:00:26Z",
+  "galleryWave18": true
 }

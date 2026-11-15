@@ -41,12 +41,6 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Air_Tight_ATM-1S.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Air_Tight_ATM-1S-600x600.jpg",
-      "alt": "Air Tight ATM-1S",
-      "local": "assets/from-live/products/6f774df6d4_ysilitel_moshnosti_Air_Tight_ATM-1S.jpg"
-    },
-    {
       "src": "from-live://6f774df6d4_ysilitel_moshnosti_Air_Tight_ATM-1S.jpg",
       "thumb": "assets/enriched/26594/d70f0461aa_w10live.jpg",
       "alt": "26594",
@@ -64,8 +58,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_air_tight_atm-1s/"
   ],
   "enrichedAt": "2026-11-14T13:45:25Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
+  "galleryDepaddedAt": "2026-11-15T00:00:37Z",
+  "galleryWave18": true
 }

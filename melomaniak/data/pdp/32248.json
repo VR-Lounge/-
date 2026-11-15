@@ -147,10 +147,13 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/portativnaia_akystika_MCINTOSH_RS100.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/portativnaia_akystika_MCINTOSH_RS100-600x600.jpg",
-      "alt": "MCINTOSH RS100",
-      "local": "assets/from-live/products/37ac44b3e8_portativnaia_akystika_MCINTOSH_RS100.jpg"
+      "src": "from-live://c9c5ec1267_sim-audio-moon-760a-rs-1000x500-1.jpg",
+      "thumb": "assets/enriched/32248/70d4342b27_w10live.jpg",
+      "alt": "32248",
+      "local": "assets/enriched/32248/70d4342b27_w10live.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 56833
     },
     {
       "src": "from-live://37ac44b3e8_portativnaia_akystika_MCINTOSH_RS100.jpg",
@@ -160,15 +163,6 @@
       "enriched": true,
       "attribution": "from-live",
       "bytes": 43853
-    },
-    {
-      "src": "from-live://c9c5ec1267_sim-audio-moon-760a-rs-1000x500-1.jpg",
-      "thumb": "assets/enriched/32248/70d4342b27_w10live.jpg",
-      "alt": "32248",
-      "local": "assets/enriched/32248/70d4342b27_w10live.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 56833
     }
   ],
   "sku": "",
@@ -178,8 +172,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d0%be%d1%80%d1%82%d0%b0%d1%82%d0%b8%d0%b2%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-mcintosh-rs100/"
   ],
   "enrichedAt": "2026-11-14T13:45:25Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
+  "galleryDepaddedAt": "2026-11-15T00:00:54Z",
+  "galleryWave18": true
 }

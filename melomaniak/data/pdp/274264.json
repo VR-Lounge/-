@@ -71,18 +71,6 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n200_8tb_7473491143-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n200_8tb_7473491143-1.jpg",
-      "alt": "aurender_n200_8tb_7473491143-1.jpg",
-      "local": "assets/from-live/products/b38e493070_aurender_n200_8tb_7473491143-1.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n200_8tb2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n200_8tb2.jpg",
-      "alt": "aurender_n200_8tb2.jpg",
-      "local": "assets/from-live/products/d4faca4357_aurender_n200_8tb2.jpg"
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n200_8tb3.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n200_8tb3.jpg",
       "alt": "aurender_n200_8tb3.jpg",
@@ -93,6 +81,30 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n200_8tb4.jpg",
       "alt": "aurender_n200_8tb4.jpg",
       "local": "assets/from-live/products/c4300f22bc_aurender_n200_8tb4.jpg"
+    },
+    {
+      "src": "from-live://448a3bda5a_aurender_n200_8tb_7473532217-4.jpg",
+      "thumb": "from-live://448a3bda5a_aurender_n200_8tb_7473532217-4.jpg",
+      "alt": "Сетевой проигрыватель Aurender N200 2Tb HDD",
+      "local": "assets/from-live/products/448a3bda5a_aurender_n200_8tb_7473532217-4.jpg",
+      "bytes": 264981,
+      "from": "from-live-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n200_8tb2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/aurender_n200_8tb2.jpg",
+      "alt": "aurender_n200_8tb2.jpg",
+      "local": "assets/from-live/products/d4faca4357_aurender_n200_8tb2.jpg"
+    },
+    {
+      "src": "from-live://1d60639a27_aurender_n200_8tb_7473685436-2.jpg",
+      "thumb": "from-live://1d60639a27_aurender_n200_8tb_7473685436-2.jpg",
+      "alt": "Сетевой проигрыватель Aurender N200 2Tb HDD",
+      "local": "assets/from-live/products/1d60639a27_aurender_n200_8tb_7473685436-2.jpg",
+      "bytes": 204998,
+      "from": "from-live-w18",
+      "wave": "gallery-w18-2026-11"
     }
   ],
   "sku": "",
@@ -102,5 +114,8 @@
     "https://aurender.com/home/n200/"
   ],
   "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:00:37Z",
+  "galleryWave18": true
 }

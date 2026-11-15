@@ -126,12 +126,6 @@
       "local": "assets/from-live/products/06b146e24f_monitor_audio_gold_500_6g_4829953124-1.jpg"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g_4829953764-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g_4829953764-2.jpg",
-      "alt": "monitor_audio_gold_500_6g_4829953764-2.jpg",
-      "local": "assets/from-live/products/9e634ef462_monitor_audio_gold_500_6g_4829953764-2.jpg"
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g4.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/monitor_audio_gold_500_6g4.jpg",
       "alt": "monitor_audio_gold_500_6g4.jpg",
@@ -146,6 +140,9 @@
     "https://www.monitoraudio.com/en/us/product-ranges/gold-series-6g/gold-500-6g/"
   ],
   "enrichedAt": "2026-11-14T15:05:41Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w8-2026-11"
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
+  "meagerWave": "meager-w8-2026-11",
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:00:37Z",
+  "galleryWave18": true
 }

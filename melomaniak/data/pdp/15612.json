@@ -26,37 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "local://c4d4ec8554_napolnaia_akystika_Audio_Physic_Virgo_V.jpg",
-      "thumb": "assets/enriched/15612/62cbcd0080_live3.jpg",
-      "alt": "напольная акустика Audio Physic Virgo 25 plus ( audio physic virgo 25 plus )",
-      "local": "assets/enriched/15612/62cbcd0080_live3.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 25381
-    },
-    {
-      "src": "local://4510fce62d_napolnaia_akystika_Audio_Physic_Virgo_25.jpg",
-      "thumb": "assets/enriched/15612/08f5148f80_live1.jpg",
-      "alt": "напольная акустика Audio Physic Virgo 25 plus ( audio physic virgo 25 plus )",
-      "local": "assets/enriched/15612/08f5148f80_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 36222
-    },
-    {
-      "src": "local://napolnaia_akystika_Audio_Physic_Virgo_25_4510fce62d.jpg",
-      "thumb": "assets/enriched/15612/9d82bb6563_live2.jpg",
-      "alt": "напольная акустика Audio Physic Virgo 25 plus ( audio physic virgo 25 plus )",
-      "local": "assets/enriched/15612/9d82bb6563_live2.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 36222
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Audio_Physic_Virgo_25_plus.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Audio_Physic_Virgo_25_plus-600x600.jpg",
+      "src": "https://audio.com.pl/i/images/3/4/3/dz03NTA=_src_22343-max_virgo_plus_fot.jpg",
+      "thumb": "https://audio.com.pl/i/images/3/4/3/dz03NTA=_src_22343-max_virgo_plus_fot.jpg",
       "alt": "Audio Physic Virgo 25 plus",
-      "local": "assets/from-live/products/40a242e2a5_napolnaia_akystika_Audio_Physic_Virgo_25_plus.jpg"
+      "local": "assets/enriched/15612/934bb1e287_w18.jpg",
+      "bytes": 246201,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://audio.com.pl/i/images/3/4/4/dz03NTA=_src_22344-max_virgo_plus_fot.jpg",
+      "thumb": "https://audio.com.pl/i/images/3/4/4/dz03NTA=_src_22344-max_virgo_plus_fot.jpg",
+      "alt": "Audio Physic Virgo 25 plus",
+      "local": "assets/enriched/15612/5040bad17f_w18.jpg",
+      "bytes": 102236,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://audio.com.pl/i/images/3/4/2/dz03NTA=_src_22342-max_virgo_plus_fot_.jpg",
+      "thumb": "https://audio.com.pl/i/images/3/4/2/dz03NTA=_src_22342-max_virgo_plus_fot_.jpg",
+      "alt": "Audio Physic Virgo 25 plus",
+      "local": "assets/enriched/15612/3ce4f64288_w18.jpg",
+      "bytes": 71216,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "from-live://virgo25plus",
+      "thumb": "from-live://virgo25plus",
+      "alt": "Audio Physic Virgo 25 plus",
+      "local": "assets/from-live/products/40a242e2a5_napolnaia_akystika_Audio_Physic_Virgo_25_plus.jpg",
+      "bytes": 47188,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     }
   ],
   "sku": "",
@@ -67,6 +70,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/napolnaia_akystika_Audio_Physic_Virgo_25_plus/"
   ],
   "enrichedAt": "2026-11-14T13:52:16Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w6-2026-11"
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
+  "meagerWave": "meager-w6-2026-11",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:00:16Z",
+  "galleryWave18": true
 }

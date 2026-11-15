@@ -86,33 +86,6 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_pa720-3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_pa720-3.jpg",
-      "alt": "arcam_pa720-3.jpg",
-      "local": "assets/from-live/products/c573b8f09f_arcam_pa720-3.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_pa720_10392255257-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_pa720_10392255257-1.jpg",
-      "alt": "arcam_pa720_10392255257-1.jpg",
-      "local": "assets/from-live/products/46a2a8f919_arcam_pa720_10392255257-1.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_pa720_10392263454-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_pa720_10392263454-2.jpg",
-      "alt": "arcam_pa720_10392263454-2.jpg",
-      "local": "assets/from-live/products/e17bbf48bf_arcam_pa720_10392263454-2.jpg"
-    },
-    {
-      "src": "from-live://46a2a8f919_arcam_pa720_10392255257-1.jpg",
-      "thumb": "assets/enriched/270778/73db4cc913_w10live.jpg",
-      "alt": "270778",
-      "local": "assets/enriched/270778/73db4cc913_w10live.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 122241
-    },
-    {
       "src": "from-live://e17bbf48bf_arcam_pa720_10392263454-2.jpg",
       "thumb": "assets/enriched/270778/23c63fe6eb_w10live.jpg",
       "alt": "270778",
@@ -138,7 +111,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/fd771fd0b59e5d936aab264662a12a0b/"
   ],
   "enrichedAt": "2026-11-14T14:25:27Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w10-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:00:54Z",
+  "galleryWave18": true
 }

@@ -2,16 +2,17 @@
 """Audit PDP galleries for padded / near-identical images vs true multi-angle.
 
 Detects:
-  - path patterns: local-variant://, w17sc/r/sq/cdn/dsc/fsc/hsc/redl, w13var/w14var,
-    CDN -scaled / -rotated / -NxN size suffixes
-  - exact local path / basename duplicates
-  - average-hash (ahash) near-duplicates (Hamming ≤ 6 on 8×8)
-  - dimension+filesize heuristics when pixels unavailable
+  - path patterns: local-variant://, w17sc/r/sq/…, CDN -scaled/-rotated/-NxN
+  - exact SHA-256 duplicates
+  - difference-hash (dhash) near-duplicates — preferred over ahash for studio
+    product shots on white (ahash alone collapses distinct angles)
+  - stem / Kirby content-id for resolution copies
 
 Writes data/enrichment/gallery-padding-audit.json
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from collections import Counter
@@ -24,10 +25,11 @@ ROOT = Path(__file__).resolve().parents[2]
 PDP = ROOT / "data" / "pdp"
 OUT = ROOT / "data" / "enrichment" / "gallery-padding-audit.json"
 
-AHASH_SIZE = 8
-# Tight: only near-identical / re-encode / mild crop. Distinct product angles often
-# sit at Hamming 2–5 on plain studio backgrounds — do not collapse those.
-AHASH_HAMMING_MAX = 1
+HASH_SIZE = 8
+# dhash ≤5 ≈ mild crop / re-encode / same angle different finish size.
+# Distinct ESL/amp angles typically sit at dH ≥8 even when ahash==0.
+DHASH_HAMMING_MAX = 5
+AHASH_HAMMING_MAX = 1  # only with dhash also close
 MULTI_MIN = 4
 
 # Synthetic scale/rotate/square pads only — NOT w17cdn (OEM/CDN downloads may be real angles).
@@ -50,12 +52,18 @@ STEM_NORM_RE = re.compile(
 )
 
 
-def ahash_bits(path: Path) -> int | None:
+def _pixels(path: Path, size: tuple[int, int]) -> list[int] | None:
     try:
         with Image.open(path) as im:
-            im = im.convert("L").resize((AHASH_SIZE, AHASH_SIZE), Image.Resampling.BILINEAR)
-            pixels = list(im.getdata())
+            im = im.convert("L").resize(size, Image.Resampling.BILINEAR)
+            return list(im.getdata())
     except Exception:
+        return None
+
+
+def ahash_bits(path: Path) -> int | None:
+    pixels = _pixels(path, (HASH_SIZE, HASH_SIZE))
+    if not pixels:
         return None
     avg = sum(pixels) / len(pixels)
     bits = 0
@@ -65,8 +73,45 @@ def ahash_bits(path: Path) -> int | None:
     return bits
 
 
+def dhash_bits(path: Path) -> int | None:
+    """Horizontal difference hash — better for product angles on plain BG."""
+    pixels = _pixels(path, (HASH_SIZE + 1, HASH_SIZE))
+    if not pixels:
+        return None
+    bits = 0
+    for row in range(HASH_SIZE):
+        for col in range(HASH_SIZE):
+            left = pixels[row * (HASH_SIZE + 1) + col]
+            right = pixels[row * (HASH_SIZE + 1) + col + 1]
+            if left > right:
+                bits |= 1 << (row * HASH_SIZE + col)
+    return bits
+
+
+def file_sha(path: Path) -> str | None:
+    try:
+        return hashlib.sha256(path.read_bytes()).hexdigest()
+    except Exception:
+        return None
+
+
 def hamming(a: int, b: int) -> int:
     return (a ^ b).bit_count()
+
+
+def near_duplicate(ei: dict, ej: dict) -> bool:
+    if ei.get("sha") and ej.get("sha") and ei["sha"] == ej["sha"]:
+        return True
+    if ei.get("content_id") and ei["content_id"] == ej.get("content_id"):
+        return True
+    dh_i, dh_j = ei.get("dhash"), ej.get("dhash")
+    if dh_i is not None and dh_j is not None:
+        # dhash alone — ahash on white-BG studio shots collapses distinct angles
+        return hamming(dh_i, dh_j) <= DHASH_HAMMING_MAX
+    # No pixels: fall back to identical stem only when one is an explicit pad
+    if ei.get("stem") and ei["stem"] == ej.get("stem"):
+        return bool(ei.get("pad_reason") or ej.get("pad_reason"))
+    return False
 
 
 def item_paths(item) -> tuple[str, str, Path | None]:
@@ -83,14 +128,19 @@ def item_paths(item) -> tuple[str, str, Path | None]:
 
 
 def basename_stem(src: str, local: str) -> str:
-    # Prefer remote filename for stem identity (local often has random hash prefix).
-    remote = Path((src or "").split("?")[0]).name
-    name = remote if remote and not remote.startswith("local") else Path((local or src).split("?")[0]).name
+    # Prefer remote path; include PrestaShop id folder so /2397-…/persona-3f ≠ /2398-…/persona-3f
+    remote_path = (src or "").split("?")[0]
+    local_path = (local or "").split("?")[0]
+    use = remote_path if remote_path and not remote_path.startswith("local") else local_path
+    parts = Path(use).parts
+    name = Path(use).name
     stem = Path(name).stem
+    # PrestaShop: …/2397-large_default/persona-3f.jpg
+    if len(parts) >= 2 and re.match(r"^\d+-large", parts[-2] or "", re.I):
+        stem = f"{parts[-2].split('-')[0]}_{stem}"
     stem = STEM_NORM_RE.sub("", stem)
     stem = re.sub(r"-(?:1280x|2048x|1600x\d+|950x\d+-crop(?:-q\d+)?)$", "", stem, flags=re.I)
     stem = re.sub(r"^[0-9a-f]{8,12}_", "", stem, flags=re.I)
-    # Drop synthetic pad suffixes so w17sc95 shares stem with parent only via ahash
     stem = re.sub(r"_w17(?:sc\d*|r\d*|sq|dsc\d*|fsc\d*|hsc\d*|redl|dsh)$", "", stem, flags=re.I)
     stem = re.sub(r"_w1[3-6]var$", "", stem, flags=re.I)
     return stem.lower()
@@ -131,7 +181,7 @@ def is_pad_marker(src: str, local: str, item: dict | None) -> str | None:
 
 
 def cluster_unique(entries: list[dict]) -> list[list[int]]:
-    """Greedy cluster by ahash / stem / filesize proximity. Returns clusters of indices."""
+    """Cluster near-duplicates via SHA/dhash/content-id/stem. Returns clusters of indices."""
     n = len(entries)
     parent = list(range(n))
 
@@ -149,18 +199,20 @@ def cluster_unique(entries: list[dict]) -> list[list[int]]:
     for i in range(n):
         for j in range(i + 1, n):
             ei, ej = entries[i], entries[j]
-            if ei.get("content_id") and ei["content_id"] == ej.get("content_id"):
+            # Stem match only for resolution variants of same file, not generic product slugs
+            if (
+                ei["stem"]
+                and ei["stem"] == ej["stem"]
+                and (
+                    ei.get("pad_reason")
+                    or ej.get("pad_reason")
+                    or (ei.get("sha") and ei["sha"] == ej.get("sha"))
+                )
+            ):
                 union(i, j)
                 continue
-            if ei["stem"] and ei["stem"] == ej["stem"]:
+            if near_duplicate(ei, ej):
                 union(i, j)
-                continue
-            if ei["ahash"] is not None and ej["ahash"] is not None:
-                if hamming(ei["ahash"], ej["ahash"]) <= AHASH_HAMMING_MAX:
-                    union(i, j)
-                    continue
-            # Do NOT union two unrelated pads via similar filesize/aspect — that
-            # transitively collapses distinct OEM angles (e.g. Transrotor 1280x copies).
 
     clusters: dict[int, list[int]] = {}
     for i in range(n):
@@ -180,6 +232,8 @@ def analyze_gallery(gallery: list) -> dict:
             pad_slots += 1
             pad_reasons[reason] += 1
         ah = ahash_bits(path) if path else None
+        dh = dhash_bits(path) if path else None
+        sha = file_sha(path) if path else None
         wh = None
         nbytes = None
         if path and path.exists():
@@ -201,6 +255,8 @@ def analyze_gallery(gallery: list) -> dict:
                 "stem": basename_stem(src, local),
                 "content_id": content_id_from_url(src),
                 "ahash": ah,
+                "dhash": dh,
+                "sha": sha,
                 "bytes": nbytes,
                 "wh": wh,
                 "pad_reason": reason,
@@ -242,6 +298,7 @@ def analyze_gallery(gallery: list) -> dict:
                 "src": e["src"][:160],
                 "pad": e["pad_reason"],
                 "ahash": format(e["ahash"], "016x") if e["ahash"] is not None else None,
+                "dhash": format(e["dhash"], "016x") if e["dhash"] is not None else None,
                 "bytes": e["bytes"],
                 "wh": list(e["wh"]) if e["wh"] else None,
             }
@@ -326,14 +383,15 @@ def main() -> None:
         "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "criteria": {
             "multiMin": MULTI_MIN,
-            "ahashSize": AHASH_SIZE,
+            "hashSize": HASH_SIZE,
+            "dhashHammingMax": DHASH_HAMMING_MAX,
             "ahashHammingMax": AHASH_HAMMING_MAX,
             "padPatterns": [
                 "local-variant://",
-                "w17sc/r/sq/cdn/dsc/fsc/hsc/redl",
+                "w17sc/r/sq/dsc/fsc/hsc/redl",
                 "w13var/w14var",
                 "CDN -scaled / -rotated / -NxN≤600",
-                "ahash near-dup + stem normalize",
+                "dhash near-dup (primary) + SHA + content-id",
             ],
         },
         "totalPdp": total,

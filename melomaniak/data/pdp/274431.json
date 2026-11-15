@@ -61,28 +61,76 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stellar-noir-par.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stellar-noir-par.png",
-      "alt": "stellar-noir-par",
-      "local": "assets/from-live/products/774d619132_stellar-noir-par.png"
+      "src": "https://davis-acoustics.com/wp-content/uploads/2022/05/10-site.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2022/05/10-site.jpg",
+      "alt": "Напольная акустика Davis Acoustics Stellar",
+      "local": "assets/enriched/274431/611ffe8349_w18.jpg",
+      "bytes": 548246,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stellar-noir-site-1.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stellar-noir-site-1.png",
-      "alt": "stellar-noir-site-1",
-      "local": "assets/from-live/products/9502f295ff_stellar-noir-site-1.png"
+      "src": "https://davis-acoustics.com/wp-content/uploads/2022/05/11-site.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2022/05/11-site.jpg",
+      "alt": "Напольная акустика Davis Acoustics Stellar",
+      "local": "assets/enriched/274431/77a74213c8_w18.jpg",
+      "bytes": 261496,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     },
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stellar-color.png",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stellar-color.png",
-      "alt": "stellar-color",
-      "local": "assets/from-live/products/78acc863f0_stellar-color.png"
+      "alt": "Напольная акустика Davis Acoustics Stellar",
+      "local": "assets/enriched/274431/55cfc30252_w18.png",
+      "bytes": 186912,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stellar-noir-par.png",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/stellar-noir-par.png",
+      "alt": "Напольная акустика Davis Acoustics Stellar",
+      "local": "assets/enriched/274431/aec42f845d_w18.png",
+      "bytes": 172044,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     },
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/15-site.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/15-site-600x600.jpg",
-      "alt": "15-site",
-      "local": "assets/from-live/products/4bc21328a0_15-site.jpg"
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/15-site.jpg",
+      "alt": "Напольная акустика Davis Acoustics Stellar",
+      "local": "assets/enriched/274431/b475ec6e1f_w18.jpg",
+      "bytes": 128625,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2022/05/13-site.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2022/05/13-site.jpg",
+      "alt": "Напольная акустика Davis Acoustics Stellar",
+      "local": "assets/enriched/274431/c2f8fb4bee_w18.jpg",
+      "bytes": 100431,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2022/05/2-site.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2022/05/2-site.jpg",
+      "alt": "Напольная акустика Davis Acoustics Stellar",
+      "local": "assets/enriched/274431/bd3bc9408b_w18.jpg",
+      "bytes": 85281,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://davis-acoustics.com/wp-content/uploads/2022/05/Davis-Acoustic_035-moins-lourds-1200x1799.jpg",
+      "thumb": "https://davis-acoustics.com/wp-content/uploads/2022/05/Davis-Acoustic_035-moins-lourds-1200x1799.jpg",
+      "alt": "Напольная акустика Davis Acoustics Stellar",
+      "local": "assets/enriched/274431/d29a28921b_w18.jpg",
+      "bytes": 66012,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     }
   ],
   "sku": "",
@@ -93,5 +141,8 @@
   ],
   "enrichedAt": "2026-11-14T13:01:13Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w4-2026-11",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-14T23:59:50Z",
+  "galleryWave18": true
 }

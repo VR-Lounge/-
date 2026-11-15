@@ -36,12 +36,6 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Triode_TRV_P845SE.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Triode_TRV_P845SE-600x600.jpg",
-      "alt": "Triode TRV P845SE",
-      "local": "assets/from-live/products/330789e976_ysilitel_moshnosti_Triode_TRV_P845SE.jpg"
-    },
-    {
       "src": "from-live://330789e976_ysilitel_moshnosti_Triode_TRV_P845SE.jpg",
       "thumb": "assets/enriched/16832/810abc3c63_w10live.jpg",
       "alt": "16832",
@@ -49,14 +43,6 @@
       "enriched": true,
       "attribution": "from-live",
       "bytes": 33060
-    },
-    {
-      "src": "https://im.nazarov-gallery.ru/pic/700/700/upload/iblock/b83/b835210f4d6794658ab13db66995e2d2.jpg",
-      "local": "assets/enriched/16832/6c5366b919_w12p845d.jpg",
-      "bytes": 20226,
-      "wave": "meager-w12-2026-11",
-      "w": 700,
-      "h": 452
     },
     {
       "src": "https://im.nazarov-gallery.ru/pic/1200/1200/upload/iblock/b83/b835210f4d6794658ab13db66995e2d2.jpg",
@@ -75,7 +61,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_triode_trv_p845se/"
   ],
   "enrichedAt": "2026-11-14T13:45:24Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w10-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:00:16Z",
+  "galleryWave18": true
 }

@@ -46,33 +46,6 @@
   ],
   "gallery": [
     {
-      "src": "https://www.paradigm.com/2397-large_default/persona-3f.jpg",
-      "thumb": "https://www.paradigm.com/2397-large_default/persona-3f.jpg",
-      "alt": "напольная акустика Paradigm Persona 3F ( paradigm persona 3f )",
-      "local": "assets/enriched/34454/5c9b21b300_1.jpg",
-      "enriched": true,
-      "attribution": "www.paradigm.com",
-      "bytes": 305329
-    },
-    {
-      "src": "https://www.paradigm.com/2398-large_default/persona-3f.jpg",
-      "thumb": "https://www.paradigm.com/2398-large_default/persona-3f.jpg",
-      "alt": "напольная акустика Paradigm Persona 3F ( paradigm persona 3f )",
-      "local": "assets/enriched/34454/30d5972fd7_2.jpg",
-      "enriched": true,
-      "attribution": "www.paradigm.com",
-      "bytes": 350115
-    },
-    {
-      "src": "https://www.paradigm.com/2399-large_default/persona-3f.jpg",
-      "thumb": "https://www.paradigm.com/2399-large_default/persona-3f.jpg",
-      "alt": "напольная акустика Paradigm Persona 3F ( paradigm persona 3f )",
-      "local": "assets/enriched/34454/714b6e11ae_3.jpg",
-      "enriched": true,
-      "attribution": "www.paradigm.com",
-      "bytes": 291216
-    },
-    {
       "src": "https://www.paradigm.com/2400-large_default/persona-3f.jpg",
       "thumb": "https://www.paradigm.com/2400-large_default/persona-3f.jpg",
       "alt": "напольная акустика Paradigm Persona 3F ( paradigm persona 3f )",
@@ -82,16 +55,31 @@
       "bytes": 352106
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/PHOTO-2022-05-04-14-45-30.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/PHOTO-2022-05-04-14-45-30-504x600.jpg",
-      "alt": "PHOTO-2022-05-04-14-45-30",
-      "local": "assets/from-live/products/428d784142_PHOTO-2022-05-04-14-45-30.jpg"
+      "src": "https://www.paradigm.com/2401-large_default/persona-3f.jpg",
+      "thumb": "https://www.paradigm.com/2401-large_default/persona-3f.jpg",
+      "alt": "напольная акустика Paradigm Persona 3F ( paradigm persona 3f )",
+      "local": "assets/enriched/34454/b6a66c5d3b_w18.jpg",
+      "bytes": 313146,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/Paradigm_Persona_3F_Vanta_High_Gloss_Black__b3Qk5Hk1Sy8T.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/Paradigm_Persona_3F_Vanta_High_Gloss_Black__b3Qk5Hk1Sy8T-600x600.jpg",
-      "alt": "Paradigm_Persona_3F_Vanta_High_Gloss_Black__b3Qk5Hk1Sy8T",
-      "local": "assets/from-live/products/347560c367_Paradigm_Persona_3F_Vanta_High_Gloss_Black__b3Qk5Hk1Sy8T.jpg"
+      "src": "https://www.paradigm.com/2391-large_default/persona-3f.jpg",
+      "thumb": "https://www.paradigm.com/2391-large_default/persona-3f.jpg",
+      "alt": "напольная акустика Paradigm Persona 3F ( paradigm persona 3f )",
+      "local": "assets/enriched/34454/f4f17e95fa_w18.jpg",
+      "bytes": 280478,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/PHOTO-2022-05-04-14-45-30.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/PHOTO-2022-05-04-14-45-30.jpg",
+      "alt": "напольная акустика Paradigm Persona 3F ( paradigm persona 3f )",
+      "local": "assets/enriched/34454/5fd2455aef_w18.jpg",
+      "bytes": 30250,
+      "from": "oem-w18",
+      "wave": "gallery-w18-2026-11"
     }
   ],
   "sku": "",
@@ -102,5 +90,8 @@
   ],
   "enrichedAt": "2026-11-14T12:41:00Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w2-2026-11"
+  "meagerWave": "meager-w2-2026-11",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:00:03Z",
+  "galleryWave18": true
 }
