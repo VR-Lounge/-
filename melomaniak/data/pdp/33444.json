@@ -26,31 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/01/b1bd43da143899324a4d35e802e513d5-600x600.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/01/b1bd43da143899324a4d35e802e513d5-600x600.jpeg",
+      "src": "local://33444_w31_00.jpg",
+      "thumb": "assets/enriched/33444/33444_w31_00.jpg",
       "alt": "предусилитель Advance Paris PX1 ( advance paris px1 )",
-      "local": "assets/enriched/33444/7a68c92d5b_4.jpg",
+      "local": "assets/enriched/33444/33444_w31_00.jpg",
       "enriched": true,
-      "attribution": "xn--80aannlcfckh.xn--p1ai",
+      "attribution": "wave31-oem",
       "bytes": 27133
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/01/b1bd43da143899324a4d35e802e513d5.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/01/b1bd43da143899324a4d35e802e513d5-600x600.jpeg",
-      "alt": "b1bd43da143899324a4d35e802e513d5",
-      "local": "assets/from-live/products/487f1b7aba_b1bd43da143899324a4d35e802e513d5.jpeg"
+      "src": "local://33444_w31_01.jpg",
+      "thumb": "assets/enriched/33444/33444_w31_01.jpg",
+      "alt": "предусилитель Advance Paris PX1 ( advance paris px1 )",
+      "local": "assets/enriched/33444/33444_w31_01.jpg",
+      "enriched": true,
+      "attribution": "wave31-oem",
+      "bytes": 154337
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/01/f8b392012995cf8cabf9c7d20023575d.jpeg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/01/f8b392012995cf8cabf9c7d20023575d-600x600.jpeg",
-      "alt": "f8b392012995cf8cabf9c7d20023575d",
-      "local": "assets/from-live/products/1f6f3078c5_f8b392012995cf8cabf9c7d20023575d.jpeg"
+      "src": "local://33444_w31_02.jpg",
+      "thumb": "assets/enriched/33444/33444_w31_02.jpg",
+      "alt": "предусилитель Advance Paris PX1 ( advance paris px1 )",
+      "local": "assets/enriched/33444/33444_w31_02.jpg",
+      "enriched": true,
+      "attribution": "wave31-oem",
+      "bytes": 452032
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/TSAP_Advance_Acoustic_PX1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/TSAP_Advance_Acoustic_PX1-600x600.jpg",
-      "alt": "Advance Acoustic PX1",
-      "local": "assets/from-live/products/41e795fb2e_TSAP_Advance_Acoustic_PX1.jpg"
+      "src": "local://33444_w31_03.jpg",
+      "thumb": "assets/enriched/33444/33444_w31_03.jpg",
+      "alt": "предусилитель Advance Paris PX1 ( advance paris px1 )",
+      "local": "assets/enriched/33444/33444_w31_03.jpg",
+      "enriched": true,
+      "attribution": "wave31-oem",
+      "bytes": 53527
     }
   ],
   "sku": "",
@@ -61,5 +70,10 @@
   ],
   "enrichedAt": "2026-11-14T14:06:07Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11"
+  "meagerWave": "meager-w7-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T04:09:00Z",
+  "galleryWave31": true
 }

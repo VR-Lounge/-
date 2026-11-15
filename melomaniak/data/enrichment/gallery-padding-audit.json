@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T03:56:00Z",
+  "generatedAt": "2026-11-15T04:13:02Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1161,
-    "padded": 351,
+    "true_multi_angle": 1166,
+    "padded": 346,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 61.53,
-    "padded": 18.6,
+    "true_multi_angle": 61.79,
+    "padded": 18.34,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 37.11,
-    "not_true_multi": 38.47
+    "padded_of_claimed_gal4plus": 36.84,
+    "not_true_multi": 38.21
   },
   "padReasonTallies": {
     "local-variant": 748,
-    "wN-variant-name": 659,
-    "cdn-size-thumb": 123,
+    "wN-variant-name": 655,
+    "cdn-size-thumb": 122,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 685,
+  "claimedButNotTrueMulti": 680,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -12067,16 +12067,14 @@
       "slug": "682eadb9dbf4e9454b04584b30b2d6f0",
       "cat": "Другое",
       "price": 202500,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 16180,
@@ -12748,16 +12746,14 @@
       "slug": "advance-paris-playstream-a7",
       "cat": "Усилители",
       "price": 186000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15644,
@@ -13944,16 +13940,14 @@
       "slug": "advance-paris-playstream-a5",
       "cat": "Усилители",
       "price": 154000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 263969,
@@ -14259,12 +14253,12 @@
       "price": 145000,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269184,
@@ -15569,14 +15563,12 @@
       "price": 125000,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 33446,

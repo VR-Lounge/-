@@ -46,32 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/12/playstream-a7_front.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/12/playstream-a7_front-600x352.png",
-      "alt": "playstream-a7_front",
-      "local": "assets/from-live/products/e7df137375_playstream-a7_front.png"
+      "src": "local://261062_w31_00.jpg",
+      "thumb": "assets/enriched/261062/261062_w31_00.jpg",
+      "alt": "Advance Paris Playstream A7 ( advance paris playstream a7 )",
+      "local": "assets/enriched/261062/261062_w31_00.jpg",
+      "enriched": true,
+      "attribution": "wave31-oem",
+      "bytes": 71469
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/12/playstream-a7_rear.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/12/playstream-a7_rear-600x300.png",
-      "alt": "playstream-a7_rear",
-      "local": "assets/from-live/products/412e3d2f1c_playstream-a7_rear.png"
+      "src": "local://261062_w31_01.jpg",
+      "thumb": "assets/enriched/261062/261062_w31_01.jpg",
+      "alt": "Advance Paris Playstream A7 ( advance paris playstream a7 )",
+      "local": "assets/enriched/261062/261062_w31_01.jpg",
+      "enriched": true,
+      "attribution": "wave31-oem",
+      "bytes": 103416
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/Advance-Paris-Playstream-A1-HDMI.jpg",
-      "local": "assets/enriched/261062/fcc6380fae_w14media.jpg",
-      "bytes": 52552,
-      "wave": "meager-w14-2026-11",
-      "w": 990,
-      "h": 660
+      "src": "local://261062_w31_02.jpg",
+      "thumb": "assets/enriched/261062/261062_w31_02.jpg",
+      "alt": "Advance Paris Playstream A7 ( advance paris playstream a7 )",
+      "local": "assets/enriched/261062/261062_w31_02.jpg",
+      "enriched": true,
+      "attribution": "wave31-oem",
+      "bytes": 311232
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/Advance-Paris-Playstream-A1-HDMI-600x600.jpg",
-      "local": "assets/enriched/261062/efba123d02_w14var.jpg",
-      "bytes": 14490,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://261062_w31_03.jpg",
+      "thumb": "assets/enriched/261062/261062_w31_03.jpg",
+      "alt": "Advance Paris Playstream A7 ( advance paris playstream a7 )",
+      "local": "assets/enriched/261062/261062_w31_03.jpg",
+      "enriched": true,
+      "attribution": "wave31-oem",
+      "bytes": 295078
     }
   ],
   "sku": "",
@@ -83,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:45:26Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T04:09:00Z",
+  "galleryWave31": true
 }
