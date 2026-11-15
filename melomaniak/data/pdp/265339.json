@@ -41,34 +41,40 @@
   ],
   "gallery": [
     {
-      "src": "local://7c8ef9c293_cd-proigryvatel-soulnote-s-3-black-1000x1000-1.jpg",
-      "thumb": "assets/enriched/265339/a4b943cd36_live1.jpg",
+      "src": "local://265339_w71_00.jpg",
+      "thumb": "assets/enriched/265339/265339_w71_00.jpg",
       "alt": "SAСD проигрыватель Soulnote S-3 Ver.2 ( sa d soulnote s 3  ver 2 )",
-      "local": "assets/enriched/265339/a4b943cd36_live1.jpg",
+      "local": "assets/enriched/265339/265339_w71_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 42091
+      "attribution": "wave71-oem",
+      "bytes": 71492
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/03/cd-proigryvatel-soulnote-s-3-black-1000x1000-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2024/03/cd-proigryvatel-soulnote-s-3-black-1000x1000-1.jpg",
+      "src": "local://265339_w71_01.jpg",
+      "thumb": "assets/enriched/265339/265339_w71_01.jpg",
       "alt": "SAСD проигрыватель Soulnote S-3 Ver.2 ( sa d soulnote s 3  ver 2 )",
-      "local": "assets/enriched/265339/89efb93dfb_1.jpg",
+      "local": "assets/enriched/265339/265339_w71_01.jpg",
       "enriched": true,
-      "attribution": "xn--80aannlcfckh.xn--p1ai",
-      "bytes": 42091
+      "attribution": "wave71-oem",
+      "bytes": 192133
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/07/soul_note_s-3_super_audio_cd_player.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/07/soul_note_s-3_super_audio_cd_player-600x600.jpg",
-      "alt": "soul_note_s-3_super_audio_cd_player",
-      "local": "assets/from-live/products/f48cb347d4_soul_note_s-3_super_audio_cd_player.jpg"
+      "src": "local://265339_w71_02.jpg",
+      "thumb": "assets/enriched/265339/265339_w71_02.jpg",
+      "alt": "SAСD проигрыватель Soulnote S-3 Ver.2 ( sa d soulnote s 3  ver 2 )",
+      "local": "assets/enriched/265339/265339_w71_02.jpg",
+      "enriched": true,
+      "attribution": "wave71-oem",
+      "bytes": 84910
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/07/soul_note_s-3_super_audio_cd_player-3-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/07/soul_note_s-3_super_audio_cd_player-3-1-600x600.jpg",
-      "alt": "soul_note_s-3_super_audio_cd_player-3",
-      "local": "assets/from-live/products/72e382f3fc_soul_note_s-3_super_audio_cd_player-3-1.jpg"
+      "src": "local://265339_w71_03.jpg",
+      "thumb": "assets/enriched/265339/265339_w71_03.jpg",
+      "alt": "SAСD проигрыватель Soulnote S-3 Ver.2 ( sa d soulnote s 3  ver 2 )",
+      "local": "assets/enriched/265339/265339_w71_03.jpg",
+      "enriched": true,
+      "attribution": "wave71-oem",
+      "bytes": 21910
     }
   ],
   "sku": "",
@@ -80,5 +86,9 @@
   "enrichedAt": "2026-11-14T17:02:07Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T15:12:02Z",
+  "galleryWave71": true
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T15:05:33Z",
+  "generatedAt": "2026-11-15T15:14:58Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1290,
-    "padded": 222,
+    "true_multi_angle": 1292,
+    "padded": 220,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 68.36,
-    "padded": 11.76,
+    "true_multi_angle": 68.47,
+    "padded": 11.66,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 30.12,
-    "not_true_multi": 31.64
+    "padded_of_claimed_gal4plus": 30.01,
+    "not_true_multi": 31.53
   },
   "padReasonTallies": {
     "local-variant": 716,
     "wN-variant-name": 554,
-    "cdn-size-thumb": 117,
+    "cdn-size-thumb": 116,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 556,
+  "claimedButNotTrueMulti": 554,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -23101,16 +23101,14 @@
       "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-line-1-0r-triplec-fm",
       "cat": "Кабели",
       "price": 44625,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264254,
@@ -30788,14 +30786,14 @@
       "slug": "sasd-%d0%bf%d1%80%d0%be%d0%b8%d0%b3%d1%80%d1%8b%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c-soulnote-s-3-se-ver-2",
       "cat": "Источники",
       "price": 0,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 265479,
