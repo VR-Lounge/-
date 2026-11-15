@@ -36,42 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/audioquest_carbon_7231407035-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/audioquest_carbon_7231407035-1.jpg",
-      "alt": "audioquest_carbon_7231407035-1.jpg",
-      "local": "assets/from-live/products/890b4029af_audioquest_carbon_7231407035-1.jpg"
+      "src": "local://272830_w44_00.jpg",
+      "thumb": "assets/enriched/272830/272830_w44_00.jpg",
+      "alt": "Кабель USB AudioQuest Carbon",
+      "local": "assets/enriched/272830/272830_w44_00.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 176386
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/Main_pro_ject_debut_carbon_evo_01.jpg",
-      "local": "assets/enriched/272830/bc77b01d07_w13media.jpg",
-      "bytes": 40457,
-      "wave": "meager-w13-2026-11",
-      "w": 1200,
-      "h": 800
+      "src": "local://272830_w44_01.jpg",
+      "thumb": "assets/enriched/272830/272830_w44_01.jpg",
+      "alt": "Кабель USB AudioQuest Carbon",
+      "local": "assets/enriched/272830/272830_w44_01.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 59648
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/Main_pro_ject_debut_carbon_evo_01-600x600.jpg",
-      "local": "assets/enriched/272830/c80a9d7970_w13var.jpg",
-      "bytes": 21362,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://272830_w44_02.jpg",
+      "thumb": "assets/enriched/272830/272830_w44_02.jpg",
+      "alt": "Кабель USB AudioQuest Carbon",
+      "local": "assets/enriched/272830/272830_w44_02.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 44439
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/Music_Hall_MMF_5_3_SE_Turntable_Rosenut_Carbon_Angle-43hr.jpg",
-      "local": "assets/enriched/272830/4e45546ea3_w13media.jpg",
-      "bytes": 93901,
-      "wave": "meager-w13-2026-11",
-      "w": 1600,
-      "h": 1067
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/03/Music_Hall_MMF_5_3_SE_Turntable_Rosenut_Carbon_Angle-43hr-300x300.jpg",
-      "local": "assets/enriched/272830/b13a40bb8b_w13var.jpg",
-      "bytes": 8839,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://272830_w44_03.jpg",
+      "thumb": "assets/enriched/272830/272830_w44_03.jpg",
+      "alt": "Кабель USB AudioQuest Carbon",
+      "local": "assets/enriched/272830/272830_w44_03.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 216346
     }
   ],
   "sku": "",
@@ -83,5 +81,9 @@
   "enrichedAt": "2026-11-14T13:36:27Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:40:51Z",
+  "galleryWave44": true
 }

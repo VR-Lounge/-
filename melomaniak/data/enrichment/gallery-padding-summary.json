@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T01:32:54Z",
+  "at": "2026-11-15T08:44:00Z",
   "counts": {
-    "true_multi_angle": 1111,
-    "padded": 398,
-    "single_real": 378
+    "true_multi_angle": 1211,
+    "padded": 301,
+    "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 58.88,
-    "padded": 21.09,
-    "single_real": 20.03,
-    "padded_of_claimed_gal4plus": 39.55,
-    "not_true_multi": 41.12
+    "true_multi_angle": 64.18,
+    "padded": 15.95,
+    "single_real": 19.87,
+    "padded_of_claimed_gal4plus": 34.4,
+    "not_true_multi": 35.82
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -50,186 +50,216 @@
     ]
   },
   "remaining": {
-    "padded": 437,
-    "single_real": 378
+    "padded": 301,
+    "single_real": 375
   },
   "topHitlPadded": [
     {
-      "id": 274019,
-      "name": "Сетевой проигрыватель T+A SD 3100 HV",
-      "price": 4050000,
-      "uniqueDistinct": 2,
-      "galleryLen": 2
+      "id": 15982,
+      "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )",
+      "price": 331500,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
     },
     {
-      "id": 16832,
-      "name": "усилитель мощности Triode TRV P845SE ( triode trv p845se )",
-      "price": 1000000,
-      "uniqueDistinct": 2,
-      "galleryLen": 2
+      "id": 15720,
+      "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
+      "price": 320000,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
     },
     {
-      "id": 261114,
-      "name": "предусилитель и усилитель мощности audio research sp20 + vs115 ( audio research sp20 plus vs115 )",
-      "price": 1000000,
-      "uniqueDistinct": 2,
-      "galleryLen": 2
-    },
-    {
-      "id": 262129,
-      "name": "ЦАП Soulnote D 2 ( soulnote d 2 )",
-      "price": 920000,
-      "uniqueDistinct": 2,
-      "galleryLen": 2
-    },
-    {
-      "id": 25156,
-      "name": "усилитель мощности Anthem Statement P 2 BL ( anthem statement p 2 bl )",
-      "price": 797215,
-      "uniqueDistinct": 2,
-      "galleryLen": 2
-    },
-    {
-      "id": 271070,
-      "name": "Напольная акустика Monitor Audio Gold 500 6G",
-      "price": 794990,
+      "id": 15742,
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
+      "price": 320000,
       "uniqueDistinct": 3,
-      "galleryLen": 3
+      "galleryLen": 4
     },
     {
-      "id": 271065,
-      "name": "Напольная акустика Monitor Audio Gold 300 5G",
-      "price": 759990,
+      "id": 262549,
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )",
+      "price": 320000,
       "uniqueDistinct": 2,
-      "galleryLen": 2
+      "galleryLen": 4
     },
     {
-      "id": 4318,
-      "name": "напольная акустика Lawrence Audio Violin SE ( lawrence audio violin se )",
-      "price": 748000,
+      "id": 15738,
+      "name": "CD проигрыватель Triode TRV CD5SE ( cd triode trv cd5se )",
+      "price": 310000,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
+    },
+    {
+      "id": 15924,
+      "name": "предусилитель Leben RS 28CX ( leben rs 28cx )",
+      "price": 310000,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
+    },
+    {
+      "id": 16812,
+      "name": "усилитель мощности Triode TRV 35SE ( triode trv 35se )",
+      "price": 300000,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
+    },
+    {
+      "id": 271030,
+      "name": "Сетевой проигрыватель Monitor Audio IMS-4",
+      "price": 299990,
       "uniqueDistinct": 2,
-      "galleryLen": 2
+      "galleryLen": 10
     },
     {
-      "id": 16798,
-      "name": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
-      "price": 720000,
+      "id": 15978,
+      "name": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
+      "price": 297500,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
+    },
+    {
+      "id": 16860,
+      "name": "интегральный усилитель Ultimate Audio MC 34 AB ( ultimate audio mc 34 ab )",
+      "price": 296000,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
+    },
+    {
+      "id": 16728,
+      "name": "Интегральный усилитель Musica Raicho ( musica raicho )",
+      "price": 290000,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
+    },
+    {
+      "id": 41444,
+      "name": "Напольная акустика Paradigm Premier 800F Espresso Grain ( paradigm premier 800f espresso grain )",
+      "price": 287215,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
+    },
+    {
+      "id": 16158,
+      "name": "интегральный усилитель 47 Labs 4717 Shigaraki ( 47 labs 4717 shigaraki )",
+      "price": 280000,
+      "uniqueDistinct": 1,
+      "galleryLen": 4
+    },
+    {
+      "id": 16810,
+      "name": "предусилитель Trigon TRV 100 ( trigon trv 100 )",
+      "price": 280000,
       "uniqueDistinct": 2,
-      "galleryLen": 2
+      "galleryLen": 4
     },
     {
-      "id": 34699,
-      "name": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic scorpio 25 )",
-      "price": 695000,
+      "id": 16864,
+      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultimate audio mc 845 aase )",
+      "price": 280000,
       "uniqueDistinct": 2,
-      "galleryLen": 2
-    },
-    {
-      "id": 34458,
-      "name": "интегральный усилитель Anthem STR Integrated Amplifier ( anthem str integrated amplifier )",
-      "price": 647920,
-      "uniqueDistinct": 3,
-      "galleryLen": 3
-    },
-    {
-      "id": 272560,
-      "name": "Виниловый проигрыватель Clearaudio Emotion SE Package II",
-      "price": 624900,
-      "uniqueDistinct": 2,
-      "galleryLen": 2
-    },
-    {
-      "id": 271034,
-      "name": "Напольная акустика Monitor Audio Gold 300 6G",
-      "price": 599990,
-      "uniqueDistinct": 2,
-      "galleryLen": 2
-    },
-    {
-      "id": 274575,
-      "name": "Напольная акустика Acoustic Energy AE 520",
-      "price": 590500,
-      "uniqueDistinct": 2,
-      "galleryLen": 2
-    },
-    {
-      "id": 25160,
-      "name": "усилитель мощности Anthem Statement M 1 BL ( anthem statement m 1 bl )",
-      "price": 569415,
-      "uniqueDistinct": 3,
-      "galleryLen": 3
+      "galleryLen": 5
     }
   ],
   "topHitlOneshot": [
     {
       "id": 26602,
       "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
+      "cat": "Усилители",
       "price": 1140000,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     },
     {
       "id": 15610,
       "name": "напольная акустика Audio Physic Virgo 25 ( audio physic virgo 25 )",
+      "cat": "Акустика",
       "price": 1090000,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     },
     {
       "id": 264506,
       "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
+      "cat": "Другое",
       "price": 1007276,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     },
     {
       "id": 16222,
       "name": "напольная акустика Audio Physic Virgo V ( audio physic virgo v )",
+      "cat": "Акустика",
       "price": 990000,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     },
     {
       "id": 4232,
       "name": "усилитель мощности Arte Forma Due Volte ( arte forma due volte )",
+      "cat": "Усилители",
       "price": 790000,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     },
     {
       "id": 15910,
       "name": "предусилитель Herron Audio VTSP 3 ( herron audio vtsp 3 )",
+      "cat": "Усилители",
       "price": 780000,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     },
     {
       "id": 26594,
       "name": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "cat": "Усилители",
       "price": 780000,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     },
     {
       "id": 264124,
       "name": "Сетевой фильтр Audio Replas TRIANGLE POWER 6 SIG ( audio replas triangle power 6 sig )",
+      "cat": "Другое",
       "price": 749777,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     },
     {
       "id": 261818,
       "name": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
+      "cat": "Ресиверы",
       "price": 743665,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     },
     {
       "id": 26638,
       "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
+      "cat": "Усилители",
       "price": 731250,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "galleryLen": 1
+      "padSlots": 0,
+      "galleryHitl": true
     }
   ],
   "wave20": {
@@ -366,48 +396,24 @@
       }
     ]
   },
-  "wave": "wave22",
-  "padded_to_true_multi": 8,
+  "wave": "wave44",
+  "padded_to_true_multi": 4,
   "cleared": [
     {
-      "id": 32248,
-      "name": "Активная акустика MCINTOSH RS100 ( mcintosh rs100 )",
-      "price": 500000
+      "id": 272830,
+      "name": "AudioQuest Carbon USB"
     },
     {
-      "id": 24768,
-      "name": "AV процессор Anthem Statement D2v 3D ( av anthem statement d",
-      "price": 479000
+      "id": 270561,
+      "name": "Van den Hul First Metal Screen"
     },
     {
-      "id": 269782,
-      "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
-      "price": 449990
+      "id": 264251,
+      "name": "Furutech e-TP80E"
     },
     {
-      "id": 270148,
-      "name": "CD-проигрыватель MOON 260D Black",
-      "price": 429900
-    },
-    {
-      "id": 15916,
-      "name": "интегральный усилитель Leben CS 300 F ( leben cs 300 f )",
-      "price": 420000
-    },
-    {
-      "id": 26626,
-      "name": "интегральный усилитель AudioNet SAM v.2.0 ( audionet sam v 2",
-      "price": 420000
-    },
-    {
-      "id": 262133,
-      "name": "Интегральный усилитель Soulnote A 1  ( soulnote a 1  )",
-      "price": 420000
-    },
-    {
-      "id": 270973,
-      "name": "Сетевой проигрыватель Matrix Audio Element M2",
-      "price": 399990
+      "id": 270568,
+      "name": "Van den Hul The Orchid"
     }
   ],
   "top_hitl_padded": [

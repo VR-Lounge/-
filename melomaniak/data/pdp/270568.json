@@ -71,32 +71,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_orchid_1m.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_orchid_1m.jpg",
-      "alt": "van_den_hul_orchid_1m.jpg",
-      "local": "assets/from-live/products/94b77a7a93_van_den_hul_orchid_1m.jpg"
+      "src": "local://270568_w44_00.jpg",
+      "thumb": "assets/enriched/270568/270568_w44_00.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul Orchid",
+      "local": "assets/enriched/270568/270568_w44_00.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 30356
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_orchid2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_orchid2.jpg",
-      "alt": "van_den_hul_orchid2.jpg",
-      "local": "assets/from-live/products/eebe33363d_van_den_hul_orchid2.jpg"
+      "src": "local://270568_w44_01.jpg",
+      "thumb": "assets/enriched/270568/270568_w44_01.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul Orchid",
+      "local": "assets/enriched/270568/270568_w44_01.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 192620
     },
     {
-      "src": "local-variant://270568/w17sc95",
-      "local": "assets/enriched/270568/6c672eaee2_w17sc95.jpg",
-      "bytes": 45206,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://270568_w44_02.jpg",
+      "thumb": "assets/enriched/270568/270568_w44_02.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul Orchid",
+      "local": "assets/enriched/270568/270568_w44_02.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 202087
     },
     {
-      "src": "local-variant://270568/w17sc90",
-      "local": "assets/enriched/270568/2ee82b66ee_w17sc90.jpg",
-      "bytes": 41828,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
+      "src": "local://270568_w44_03.jpg",
+      "thumb": "assets/enriched/270568/270568_w44_03.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul Orchid",
+      "local": "assets/enriched/270568/270568_w44_03.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 22775
     }
   ],
   "sku": "",
@@ -108,5 +116,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:40:51Z",
+  "galleryWave44": true
 }

@@ -106,30 +106,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_first_metal_screen1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_first_metal_screen1.jpg",
-      "alt": "van_den_hul_first_metal_screen1.jpg",
-      "local": "assets/from-live/products/d4e9660ba6_van_den_hul_first_metal_screen1.jpg"
+      "src": "local://270561_w44_00.jpg",
+      "thumb": "assets/enriched/270561/270561_w44_00.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul First Metal Screen",
+      "local": "assets/enriched/270561/270561_w44_00.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 39172
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_first_metal_screen2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_first_metal_screen2.jpg",
-      "alt": "van_den_hul_first_metal_screen2.jpg",
-      "local": "assets/from-live/products/95a75c9bf9_van_den_hul_first_metal_screen2.jpg"
+      "src": "local://270561_w44_01.jpg",
+      "thumb": "assets/enriched/270561/270561_w44_01.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul First Metal Screen",
+      "local": "assets/enriched/270561/270561_w44_01.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 218689
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_first_metal_screen3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_first_metal_screen3.jpg",
-      "alt": "van_den_hul_first_metal_screen3.jpg",
-      "local": "assets/from-live/products/002ad14125_van_den_hul_first_metal_screen3.jpg"
+      "src": "local://270561_w44_02.jpg",
+      "thumb": "assets/enriched/270561/270561_w44_02.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul First Metal Screen",
+      "local": "assets/enriched/270561/270561_w44_02.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 362548
     },
     {
-      "src": "local-variant://270561/w17sc95",
-      "local": "assets/enriched/270561/2d6eb6fbff_w17sc95.jpg",
-      "bytes": 40127,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://270561_w44_03.jpg",
+      "thumb": "assets/enriched/270561/270561_w44_03.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul First Metal Screen",
+      "local": "assets/enriched/270561/270561_w44_03.jpg",
+      "enriched": true,
+      "attribution": "wave44-oem",
+      "bytes": 251002
     }
   ],
   "sku": "",
@@ -141,5 +151,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T08:40:51Z",
+  "galleryWave44": true
 }
