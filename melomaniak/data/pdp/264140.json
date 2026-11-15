@@ -31,33 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-50R-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-50R-1.jpg",
-      "alt": "FI-50R (1)"
+      "src": "local://264140_w100_00.jpg",
+      "thumb": "assets/enriched/264140/264140_w100_00.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50 (R) ( furutech fi 50 (r) )",
+      "local": "assets/enriched/264140/264140_w100_00.jpg",
+      "enriched": true,
+      "attribution": "wave100-oem",
+      "bytes": 127343
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konnektor_Furutech_FI_50_R_.jpg",
-      "local": "assets/enriched/264140/e6b580cb20_w15media.jpg",
-      "bytes": 45764,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264140_w100_01.jpg",
+      "thumb": "assets/enriched/264140/264140_w100_01.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50 (R) ( furutech fi 50 (r) )",
+      "local": "assets/enriched/264140/264140_w100_01.jpg",
+      "enriched": true,
+      "attribution": "wave100-oem",
+      "bytes": 117106
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konnektor_Furutech_FI_50_R_-300x300.jpg",
-      "local": "assets/enriched/264140/4d1356cb05_w15var.jpg",
-      "bytes": 15437,
-      "wave": "meager-w15-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264140_w100_02.jpg",
+      "thumb": "assets/enriched/264140/264140_w100_02.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50 (R) ( furutech fi 50 (r) )",
+      "local": "assets/enriched/264140/264140_w100_02.jpg",
+      "enriched": true,
+      "attribution": "wave100-oem",
+      "bytes": 39277
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konnektor_Furutech_FI_50_R_-600x600.jpg",
-      "local": "assets/enriched/264140/ab5ea4ccc3_w15var.jpg",
-      "bytes": 44979,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264140_w100_03.jpg",
+      "thumb": "assets/enriched/264140/264140_w100_03.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50 (R) ( furutech fi 50 (r) )",
+      "local": "assets/enriched/264140/264140_w100_03.jpg",
+      "enriched": true,
+      "attribution": "wave100-oem",
+      "bytes": 61944
     }
   ],
   "sku": "",
@@ -69,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:15:53Z",
+  "galleryWave100": true
 }
