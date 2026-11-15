@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T10:49:06Z",
+  "generatedAt": "2026-11-15T11:11:54Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1237,
-    "padded": 275,
+    "true_multi_angle": 1240,
+    "padded": 272,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 65.55,
-    "padded": 14.57,
+    "true_multi_angle": 65.71,
+    "padded": 14.41,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.99,
-    "not_true_multi": 34.45
+    "padded_of_claimed_gal4plus": 32.83,
+    "not_true_multi": 34.29
   },
   "padReasonTallies": {
     "local-variant": 723,
-    "wN-variant-name": 608,
+    "wN-variant-name": 604,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 609,
+  "claimedButNotTrueMulti": 606,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -243,19 +243,6 @@
     {
       "id": 41436,
       "name": "Напольная акустика Paradigm Premier 700F Gloss Black ( paradigm premier 700f gloss black )",
-      "cat": "Акустика",
-      "price": 269900,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
-      "id": 41438,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss White ( paradigm premier 700f gloss white )",
       "cat": "Акустика",
       "price": 269900,
       "galleryLen": 4,
@@ -560,6 +547,19 @@
       "name": "Фонокорректор Line Magnetic Audio LP 33 Phono ( line magnetic audio lp 33 phono )",
       "cat": "Усилители",
       "price": 191250,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 264394,
+      "name": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
+      "cat": "Кабели",
+      "price": 190995,
       "galleryLen": 4,
       "uniqueDistinct": 2,
       "padSlots": 2,
@@ -10181,16 +10181,14 @@
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-premier-700f-gloss-white",
       "cat": "Акустика",
       "price": 269900,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272730,
@@ -26087,16 +26085,14 @@
       "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-gt2-pro-b",
       "cat": "Кабели",
       "price": 19553,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270525,
@@ -26717,16 +26713,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-28-r",
       "cat": "Другое",
       "price": 15593,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264167,

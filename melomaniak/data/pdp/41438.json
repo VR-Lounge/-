@@ -61,32 +61,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/d0bc2ae766483109665b4a504e28a30c.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/d0bc2ae766483109665b4a504e28a30c-600x600.jpg",
-      "alt": "d0bc2ae766483109665b4a504e28a30c",
-      "local": "assets/from-live/products/fe8bc62c5f_d0bc2ae766483109665b4a504e28a30c.jpg"
+      "src": "local://41438_w53_00.jpg",
+      "thumb": "assets/enriched/41438/41438_w53_00.jpg",
+      "alt": "Напольная акустика Paradigm Premier 700F Gloss White ( paradigm premier 700f gloss white )",
+      "local": "assets/enriched/41438/41438_w53_00.jpg",
+      "enriched": true,
+      "attribution": "wave53-oem",
+      "bytes": 93215
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/076d5fde5a895434bd4b40067e94c79b.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/076d5fde5a895434bd4b40067e94c79b-600x600.jpg",
-      "alt": "076d5fde5a895434bd4b40067e94c79b",
-      "local": "assets/from-live/products/a8286fd7b8_076d5fde5a895434bd4b40067e94c79b.jpg"
+      "src": "local://41438_w53_01.jpg",
+      "thumb": "assets/enriched/41438/41438_w53_01.jpg",
+      "alt": "Напольная акустика Paradigm Premier 700F Gloss White ( paradigm premier 700f gloss white )",
+      "local": "assets/enriched/41438/41438_w53_01.jpg",
+      "enriched": true,
+      "attribution": "wave53-oem",
+      "bytes": 83796
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/d0bc2ae766483109665b4a504e28a30c-600x600.jpg",
-      "local": "assets/enriched/41438/78a1eda106_w13var.jpg",
-      "bytes": 18121,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://41438_w53_02.jpg",
+      "thumb": "assets/enriched/41438/41438_w53_02.jpg",
+      "alt": "Напольная акустика Paradigm Premier 700F Gloss White ( paradigm premier 700f gloss white )",
+      "local": "assets/enriched/41438/41438_w53_02.jpg",
+      "enriched": true,
+      "attribution": "wave53-oem",
+      "bytes": 60312
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/d0bc2ae766483109665b4a504e28a30c-768x768.jpg",
-      "local": "assets/enriched/41438/6fab6c177a_w13var.jpg",
-      "bytes": 26613,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://41438_w53_03.jpg",
+      "thumb": "assets/enriched/41438/41438_w53_03.jpg",
+      "alt": "Напольная акустика Paradigm Premier 700F Gloss White ( paradigm premier 700f gloss white )",
+      "local": "assets/enriched/41438/41438_w53_03.jpg",
+      "enriched": true,
+      "attribution": "wave53-oem",
+      "bytes": 24656
     }
   ],
   "sku": "",
@@ -98,5 +106,9 @@
   "enrichedAt": "2026-11-14T13:45:26Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T11:08:53Z",
+  "galleryWave53": true
 }

@@ -31,34 +31,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-28R-инет.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-28R-инет.jpg",
-      "alt": "Furutech-FI-28R-инет",
-      "local": "assets/from-live/products/014834629e_Furutech-FI-28R-инет.jpg"
+      "src": "local://264166_w53_00.jpg",
+      "thumb": "assets/enriched/264166/264166_w53_00.jpg",
+      "alt": "Коннектор сетевой Furutech FI-28 (R) ( furutech fi 28 (r) )",
+      "local": "assets/enriched/264166/264166_w53_00.jpg",
+      "enriched": true,
+      "attribution": "wave53-oem",
+      "bytes": 126318
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-fi-28m-g-500x393-1.jpg",
-      "local": "assets/enriched/264166/35b2e72a70_w14media.jpg",
-      "bytes": 22032,
-      "wave": "meager-w14-2026-11",
-      "w": 500,
-      "h": 393
+      "src": "local://264166_w53_01.jpg",
+      "thumb": "assets/enriched/264166/264166_w53_01.jpg",
+      "alt": "Коннектор сетевой Furutech FI-28 (R) ( furutech fi 28 (r) )",
+      "local": "assets/enriched/264166/264166_w53_01.jpg",
+      "enriched": true,
+      "attribution": "wave53-oem",
+      "bytes": 124547
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konnektor_Furutech_FI_28_R_.jpg",
-      "local": "assets/enriched/264166/f65a566276_w15media.jpg",
-      "bytes": 20762,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264166_w53_02.jpg",
+      "thumb": "assets/enriched/264166/264166_w53_02.jpg",
+      "alt": "Коннектор сетевой Furutech FI-28 (R) ( furutech fi 28 (r) )",
+      "local": "assets/enriched/264166/264166_w53_02.jpg",
+      "enriched": true,
+      "attribution": "wave53-oem",
+      "bytes": 52006
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konnektor_Furutech_FI_28_R_-600x600.jpg",
-      "local": "assets/enriched/264166/4237eedb7c_w15var.jpg",
-      "bytes": 18543,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264166_w53_03.jpg",
+      "thumb": "assets/enriched/264166/264166_w53_03.jpg",
+      "alt": "Коннектор сетевой Furutech FI-28 (R) ( furutech fi 28 (r) )",
+      "local": "assets/enriched/264166/264166_w53_03.jpg",
+      "enriched": true,
+      "attribution": "wave53-oem",
+      "bytes": 47442
+    },
+    {
+      "src": "local://264166_w53_04.jpg",
+      "thumb": "assets/enriched/264166/264166_w53_04.jpg",
+      "alt": "Коннектор сетевой Furutech FI-28 (R) ( furutech fi 28 (r) )",
+      "local": "assets/enriched/264166/264166_w53_04.jpg",
+      "enriched": true,
+      "attribution": "wave53-oem",
+      "bytes": 57363
     }
   ],
   "sku": "",
@@ -70,5 +85,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T11:08:53Z",
+  "galleryWave53": true
 }

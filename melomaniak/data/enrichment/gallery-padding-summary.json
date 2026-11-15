@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T10:49:06Z",
+  "at": "2026-11-15T11:11:54Z",
   "counts": {
-    "true_multi_angle": 1237,
-    "padded": 275,
+    "true_multi_angle": 1240,
+    "padded": 272,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 65.55,
-    "padded": 14.57,
+    "true_multi_angle": 65.71,
+    "padded": 14.41,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.99,
-    "not_true_multi": 34.45
+    "padded_of_claimed_gal4plus": 32.83,
+    "not_true_multi": 34.29
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -50,143 +50,51 @@
     ]
   },
   "remaining": {
-    "padded": 275,
+    "padded": 272,
     "single_real": 375
   },
   "topHitlPadded": [
     {
+      "id": 15982,
+      "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )"
+    },
+    {
+      "id": 15720,
+      "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )"
+    },
+    {
       "id": 15742,
-      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate au",
-      "price": 320000,
-      "class": "padded"
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )"
     },
     {
       "id": 262549,
-      "name": "Напольная акустика Audio Physic Sitara ( audio physic sita",
-      "price": 320000,
-      "class": "padded"
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )"
     },
     {
-      "id": 16810,
-      "name": "предусилитель Trigon TRV 100 ( trigon trv 100 )",
-      "price": 280000,
-      "class": "padded"
-    },
-    {
-      "id": 16864,
-      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultima",
-      "price": 280000,
-      "class": "padded"
-    },
-    {
-      "id": 16788,
-      "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
-      "price": 270000,
-      "class": "padded"
-    },
-    {
-      "id": 41436,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss Black ( par",
-      "price": 269900,
-      "class": "padded"
-    },
-    {
-      "id": 41438,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss White ( par",
-      "price": 269900,
-      "class": "padded"
-    },
-    {
-      "id": 16852,
-      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate au",
-      "price": 250000,
-      "class": "padded"
-    },
-    {
-      "id": 264519,
-      "name": "Межблочный кабель SAEC  XR-1 Stratosphere ( saec xr 1 stra",
-      "price": 244927,
-      "class": "padded"
-    },
-    {
-      "id": 16786,
-      "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
-      "price": 244000,
-      "class": "padded"
-    },
-    {
-      "id": 16808,
-      "name": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
-      "price": 220000,
-      "class": "padded"
-    },
-    {
-      "id": 44611,
-      "name": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 2",
-      "price": 220000,
-      "class": "padded"
+      "id": 15738,
+      "name": "CD проигрыватель Triode TRV CD5SE ( cd triode trv cd5se )"
     }
   ],
   "topHitlOneshot": [
     {
       "id": 26602,
-      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
-      "price": 1140000,
-      "class": "single_real"
+      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )"
     },
     {
       "id": 15610,
-      "name": "напольная акустика Audio Physic Virgo 25 ( audio physic virg",
-      "price": 1090000,
-      "class": "single_real"
+      "name": "напольная акустика Audio Physic Virgo 25 ( audio physic virgo 25 )"
     },
     {
       "id": 264506,
-      "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
-      "price": 1007276,
-      "class": "single_real"
+      "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )"
     },
     {
       "id": 16222,
-      "name": "напольная акустика Audio Physic Virgo V ( audio physic virgo",
-      "price": 990000,
-      "class": "single_real"
+      "name": "напольная акустика Audio Physic Virgo V ( audio physic virgo v )"
     },
     {
       "id": 4232,
-      "name": "усилитель мощности Arte Forma Due Volte ( arte forma due vol",
-      "price": 790000,
-      "class": "single_real"
-    },
-    {
-      "id": 15910,
-      "name": "предусилитель Herron Audio VTSP 3 ( herron audio vtsp 3 )",
-      "price": 780000,
-      "class": "single_real"
-    },
-    {
-      "id": 26594,
-      "name": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
-      "price": 780000,
-      "class": "single_real"
-    },
-    {
-      "id": 264124,
-      "name": "Сетевой фильтр Audio Replas TRIANGLE POWER 6 SIG ( audio rep",
-      "price": 749777,
-      "class": "single_real"
-    },
-    {
-      "id": 261818,
-      "name": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
-      "price": 743665,
-      "class": "single_real"
-    },
-    {
-      "id": 26638,
-      "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
-      "price": 731250,
-      "class": "single_real"
+      "name": "усилитель мощности Arte Forma Due Volte ( arte forma due volte )"
     }
   ],
   "wave20": {
@@ -324,7 +232,7 @@
     ]
   },
   "wave": "wave52",
-  "padded_to_true_multi": 2,
+  "padded_to_true_multi": 5,
   "cleared": [
     {
       "id": 261871,
@@ -337,76 +245,134 @@
   ],
   "top_hitl_padded": [
     {
-      "id": 15742,
-      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate au",
+      "id": 15982,
+      "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )",
+      "cat": "Усилители",
+      "price": 331500,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 15720,
+      "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
+      "cat": "Источники",
       "price": 320000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 15742,
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
+      "cat": "Источники",
+      "price": 320000,
+      "galleryLen": 4,
+      "uniqueDistinct": 3,
+      "padSlots": 1,
+      "padReasons": {
+        "cdn-size-thumb": 1
+      },
       "class": "padded"
     },
     {
       "id": 262549,
-      "name": "Напольная акустика Audio Physic Sitara ( audio physic sita",
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )",
+      "cat": "Акустика",
       "price": 320000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
       "class": "padded"
     },
     {
-      "id": 16810,
-      "name": "предусилитель Trigon TRV 100 ( trigon trv 100 )",
-      "price": 280000,
-      "class": "padded"
+      "id": 15738,
+      "name": "CD проигрыватель Triode TRV CD5SE ( cd triode trv cd5se )",
+      "cat": "Источники",
+      "price": 310000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1,
+        "local-variant": 1
+      },
+      "class": "single_real"
     },
     {
-      "id": 16864,
-      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultima",
-      "price": 280000,
-      "class": "padded"
+      "id": 15924,
+      "name": "предусилитель Leben RS 28CX ( leben rs 28cx )",
+      "cat": "Усилители",
+      "price": 310000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1,
+        "local-variant": 1
+      },
+      "class": "single_real"
     },
     {
-      "id": 16788,
-      "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
-      "price": 270000,
-      "class": "padded"
+      "id": 16812,
+      "name": "усилитель мощности Triode TRV 35SE ( triode trv 35se )",
+      "cat": "Усилители",
+      "price": 300000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "single_real"
     },
     {
-      "id": 41436,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss Black ( par",
-      "price": 269900,
-      "class": "padded"
-    },
-    {
-      "id": 41438,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss White ( par",
-      "price": 269900,
-      "class": "padded"
-    },
-    {
-      "id": 16852,
-      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate au",
-      "price": 250000,
-      "class": "padded"
-    },
-    {
-      "id": 264519,
-      "name": "Межблочный кабель SAEC  XR-1 Stratosphere ( saec xr 1 stra",
-      "price": 244927,
-      "class": "padded"
-    },
-    {
-      "id": 16786,
-      "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
-      "price": 244000,
-      "class": "padded"
-    },
-    {
-      "id": 16808,
-      "name": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
-      "price": 220000,
-      "class": "padded"
-    },
-    {
-      "id": 44611,
-      "name": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 2",
-      "price": 220000,
-      "class": "padded"
+      "id": 15978,
+      "name": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
+      "cat": "Усилители",
+      "price": 297500,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "single_real"
     }
-  ]
+  ],
+  "wave53": {
+    "padded_to_true_multi": 3,
+    "cleared": [
+      {
+        "id": 41438,
+        "name": "Paradigm Premier 700F Gloss White",
+        "unique": 4
+      },
+      {
+        "id": 264384,
+        "name": "Furutech GT2 Pro-B",
+        "unique": 4
+      },
+      {
+        "id": 264166,
+        "name": "Furutech FI-28(R)",
+        "unique": 5
+      }
+    ]
+  }
 }
