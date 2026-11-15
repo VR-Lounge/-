@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T06:58:29Z",
+  "generatedAt": "2026-11-15T07:23:37Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,16 +15,16 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1197,
-    "padded": 315,
+    "true_multi_angle": 1199,
+    "padded": 313,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 63.43,
-    "padded": 16.69,
+    "true_multi_angle": 63.54,
+    "padded": 16.59,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 35.16,
-    "not_true_multi": 36.57
+    "padded_of_claimed_gal4plus": 35.05,
+    "not_true_multi": 36.46
   },
   "padReasonTallies": {
     "local-variant": 742,
@@ -33,7 +33,7 @@
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 649,
+  "claimedButNotTrueMulti": 647,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -249,17 +249,6 @@
         "wN-variant-name": 1,
         "cdn-size-thumb": 1
       },
-      "class": "padded"
-    },
-    {
-      "id": 41440,
-      "name": "Напольная акустика Paradigm Premier 700F Espresso Grain ( paradigm premier 700f espresso grain )",
-      "cat": "Акустика",
-      "price": 269990,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
       "class": "padded"
     },
     {
@@ -561,6 +550,20 @@
         "local-variant": 2
       },
       "class": "padded"
+    },
+    {
+      "id": 264053,
+      "name": "Вибропоглощающие стойки Acoustic Revive RWL-3 Absolute ( acoustic revive rwl 3 absolute )",
+      "cat": "Другое",
+      "price": 208250,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "cdn-size-thumb": 1,
+        "local-variant": 2
+      },
+      "class": "single_real"
     }
   ],
   "hitlTrueOneshot": [
@@ -10143,14 +10146,14 @@
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-premier-700f-espresso-grain",
       "cat": "Акустика",
       "price": 269990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 41436,
@@ -18544,12 +18547,12 @@
       "price": 86711,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264021,

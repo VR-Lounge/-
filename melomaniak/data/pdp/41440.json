@@ -61,33 +61,40 @@
   ],
   "gallery": [
     {
-      "src": "local://24ad4029a4_106c9b1752ba26b637cbfc5d74ceab09-1.jpg",
-      "thumb": "assets/enriched/41440/5963484099_live1.jpg",
+      "src": "local://41440_w40_00.jpg",
+      "thumb": "assets/enriched/41440/41440_w40_00.jpg",
       "alt": "Напольная акустика Paradigm Premier 700F Espresso Grain ( paradigm premier 700f espresso grain )",
-      "local": "assets/enriched/41440/5963484099_live1.jpg",
+      "local": "assets/enriched/41440/41440_w40_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
+      "attribution": "wave40-oem",
       "bytes": 45288
     },
     {
-      "src": "local://24ad4029a4_106c9b1752ba26b637cbfc5d74ceab09.jpg",
-      "thumb": "assets/enriched/41440/3899fef1c7_live2.jpg",
+      "src": "local://41440_w40_01.jpg",
+      "thumb": "assets/enriched/41440/41440_w40_01.jpg",
       "alt": "Напольная акустика Paradigm Premier 700F Espresso Grain ( paradigm premier 700f espresso grain )",
-      "local": "assets/enriched/41440/3899fef1c7_live2.jpg",
+      "local": "assets/enriched/41440/41440_w40_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 45288
+      "attribution": "wave40-oem",
+      "bytes": 40170
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/106c9b1752ba26b637cbfc5d74ceab09.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/106c9b1752ba26b637cbfc5d74ceab09-600x600.jpg",
-      "alt": "106c9b1752ba26b637cbfc5d74ceab09"
+      "src": "local://41440_w40_02.jpg",
+      "thumb": "assets/enriched/41440/41440_w40_02.jpg",
+      "alt": "Напольная акустика Paradigm Premier 700F Espresso Grain ( paradigm premier 700f espresso grain )",
+      "local": "assets/enriched/41440/41440_w40_02.jpg",
+      "enriched": true,
+      "attribution": "wave40-oem",
+      "bytes": 21770
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/076d5fde5a895434bd4b40067e94c79b.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/076d5fde5a895434bd4b40067e94c79b-600x600.jpg",
-      "alt": "076d5fde5a895434bd4b40067e94c79b",
-      "local": "assets/from-live/products/a8286fd7b8_076d5fde5a895434bd4b40067e94c79b.jpg"
+      "src": "local://41440_w40_03.jpg",
+      "thumb": "assets/enriched/41440/41440_w40_03.jpg",
+      "alt": "Напольная акустика Paradigm Premier 700F Espresso Grain ( paradigm premier 700f espresso grain )",
+      "local": "assets/enriched/41440/41440_w40_03.jpg",
+      "enriched": true,
+      "attribution": "wave40-oem",
+      "bytes": 18937
     }
   ],
   "sku": "",
@@ -99,5 +106,9 @@
   "enrichedAt": "2026-11-14T16:50:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T07:20:36Z",
+  "galleryWave40": true
 }

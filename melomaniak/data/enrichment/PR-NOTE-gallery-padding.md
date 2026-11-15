@@ -1,3 +1,32 @@
+# PR note — gallery padding audit (Wave 40)
+
+Uniqueness = SHA / Kirby content-id / **dhash≤5**. No scale/rotate inventing.
+
+## Counts (1887 PDP) — after Wave 40
+
+| class | n | % |
+|-------|---|---|
+| true multi-angle (≥4 distinct) | **1199** | 63.5% |
+| padded (2–3 unique / fillers) | **313** | 16.6% |
+| single-real (true 1-shot) | **375** | 19.9% |
+
+Wave 40 this pass: **2 padded → true multi**.
+
+## Cleared → true multi
+
+- Paradigm Premier 700F Espresso Grain (41440) — live pair + rear + Flickr grille 3q + Crutchfield grille
+- KEF Q750 black (271451) — ListenUp black pair + Crutchfield black 3q ×2 + KEF black pair
+
+## HITL still blocked (skip unless new sources)
+
+- Arte Forma Jadeitte 4230 (padded)
+- Audio Replas MTP-2 264126 (oneshot)
+
+---
+
+
+## Prior waves
+
 # PR note — gallery padding audit (Wave 19)
 
 Uniqueness = SHA / Kirby content-id / **dhash≤5**. No scale/rotate inventing.
