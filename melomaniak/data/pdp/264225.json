@@ -36,37 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "local://e68c398045_Furutech-Outlet-cover-102D.jpg",
-      "thumb": "assets/enriched/264225/d822f59072_live1.jpg",
+      "src": "local://264225_w90_00.jpg",
+      "thumb": "assets/enriched/264225/264225_w90_00.jpg",
       "alt": "Накладка на розетку Furutech Outlet Cover plate 102-D ( furutech outlet cover plate 102 d )",
-      "local": "assets/enriched/264225/d822f59072_live1.jpg",
+      "local": "assets/enriched/264225/264225_w90_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 12559
+      "attribution": "wave90-oem",
+      "bytes": 8109
     },
     {
-      "src": "local://d9daafd623_Накладка-на-розетку-Furutech-GTX-Wall-Plate-1.jpg",
-      "thumb": "assets/enriched/264225/72061d0e8b_live1.jpg",
+      "src": "local://264225_w90_01.jpg",
+      "thumb": "assets/enriched/264225/264225_w90_01.jpg",
       "alt": "Накладка на розетку Furutech Outlet Cover plate 102-D ( furutech outlet cover plate 102 d )",
-      "local": "assets/enriched/264225/72061d0e8b_live1.jpg",
+      "local": "assets/enriched/264225/264225_w90_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 81321
+      "attribution": "wave90-oem",
+      "bytes": 144534
     },
     {
-      "src": "local://2a7ed4aa91_Накладка-на-розетку-Furutech-Duplex-cover-plate-104-D-1.jpg",
-      "thumb": "assets/enriched/264225/b510e19d96_live2.jpg",
+      "src": "local://264225_w90_02.jpg",
+      "thumb": "assets/enriched/264225/264225_w90_02.jpg",
       "alt": "Накладка на розетку Furutech Outlet Cover plate 102-D ( furutech outlet cover plate 102 d )",
-      "local": "assets/enriched/264225/b510e19d96_live2.jpg",
+      "local": "assets/enriched/264225/264225_w90_02.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 45777
+      "attribution": "wave90-oem",
+      "bytes": 30586
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Накладка-на-розетку-Furutech-Outlet-Cover-plate-102-D.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Накладка-на-розетку-Furutech-Outlet-Cover-plate-102-D.jpg",
-      "alt": "Накладка на розетку Furutech Outlet Cover plate 102-D",
-      "local": "assets/from-live/products/e68c398045_Накладка-на-розетку-Furutech-Outlet-Cover-plate-102-D.jpg"
+      "src": "local://264225_w90_03.jpg",
+      "thumb": "assets/enriched/264225/264225_w90_03.jpg",
+      "alt": "Накладка на розетку Furutech Outlet Cover plate 102-D ( furutech outlet cover plate 102 d )",
+      "local": "assets/enriched/264225/264225_w90_03.jpg",
+      "enriched": true,
+      "attribution": "wave90-oem",
+      "bytes": 42085
     }
   ],
   "sku": "",
@@ -78,5 +81,9 @@
   "enrichedAt": "2026-11-14T16:50:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T20:31:40Z",
+  "galleryWave90": true
 }

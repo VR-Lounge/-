@@ -1,0 +1,128 @@
+{
+  "at": "2026-11-15T20:34:51Z",
+  "wave": 90,
+  "counts": {
+    "true_multi_angle": 1344,
+    "padded": 171,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 2,
+  "cleared": [
+    {
+      "id": 266928,
+      "name": "CD-транспорт Leak CDT ( cd leak cdt )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/266928/266928_w90_00.jpg",
+        "assets/enriched/266928/266928_w90_01.jpg",
+        "assets/enriched/266928/266928_w90_02.jpg",
+        "assets/enriched/266928/266928_w90_03.jpg",
+        "assets/enriched/266928/266928_w90_04.jpg"
+      ]
+    },
+    {
+      "id": 264225,
+      "name": "Накладка на розетку Furutech Outlet Cover plate 102-D ( furutech outlet cover plate 102 d )",
+      "unique": 4,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/264225/264225_w90_00.jpg",
+        "assets/enriched/264225/264225_w90_01.jpg",
+        "assets/enriched/264225/264225_w90_02.jpg",
+        "assets/enriched/264225/264225_w90_03.jpg"
+      ]
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "reason": "no new sources — skip per brief"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real",
+      "reason": "no new sources — skip per brief"
+    }
+  ],
+  "top_hitl_padded": [
+    {
+      "id": 15982,
+      "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )",
+      "cat": "Усилители",
+      "price": 331500,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 15720,
+      "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
+      "cat": "Источники",
+      "price": 320000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 15742,
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
+      "cat": "Источники",
+      "price": 320000,
+      "galleryLen": 4,
+      "uniqueDistinct": 3,
+      "padSlots": 1,
+      "padReasons": {
+        "cdn-size-thumb": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 262549,
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )",
+      "cat": "Акустика",
+      "price": 320000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 15738,
+      "name": "CD проигрыватель Triode TRV CD5SE ( cd triode trv cd5se )",
+      "cat": "Источники",
+      "price": 310000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    }
+  ],
+  "notes": [
+    "Leak CDT 266928: OEM Standard Silver front/3qL/3qR/rear + live USB-cover front; rejected walnut gallery pollution.",
+    "Furutech 102-D 264225: stainless duplex empty front + OEM with outlets + audiohobby front/3q; rejected carbon 104 / GTX frame pollution.",
+    "104-D held: only 3 carbon-only unique without GTX Wall Plate assembly crops.",
+    "Skipped Jadeitte 4230 / MTP-2 264126 (no new sources)."
+  ]
+}
