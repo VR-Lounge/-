@@ -1,0 +1,48 @@
+{
+  "wave": 77,
+  "at": "2026-11-15T17:07:53Z",
+  "counts": {
+    "true_multi_angle": 1308,
+    "padded": 207,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 3,
+  "cleared": [
+    {
+      "id": 16808,
+      "name": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "unique": 7,
+      "price": 220000
+    },
+    {
+      "id": 273171,
+      "name": "Студийный монитор Dynaudio BM5 mkIII",
+      "unique": 4,
+      "price": 89000
+    },
+    {
+      "id": 33440,
+      "name": "интегральный усилитель Advance Acoustic AX1 ( advance acoustic ax1 )",
+      "unique": 5,
+      "price": 95000
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "no new sources"
+    },
+    {
+      "id": 264126,
+      "name": "Furutech MTP-2",
+      "class": "single_real",
+      "note": "no new sources"
+    }
+  ],
+  "remaining": {
+    "padded": 207,
+    "single_real": 372
+  }
+}

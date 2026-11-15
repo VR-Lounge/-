@@ -41,32 +41,67 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Trigon_Tre_50_M.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Trigon_Tre_50_M-600x600.jpg",
-      "alt": "Trigon Tre 50 M",
-      "local": "assets/from-live/products/01efd9bb9a_ysilitel_moshnosti_Trigon_Tre_50_M.jpg"
+      "src": "local://16808_w77_00.jpg",
+      "thumb": "assets/enriched/16808/16808_w77_00.jpg",
+      "alt": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "local": "assets/enriched/16808/16808_w77_00.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 159607
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/01/TRIGON-Tre-50M-rear.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/01/TRIGON-Tre-50M-rear-600x420.png",
-      "alt": "TRIGON-Tre-50M-rear",
-      "local": "assets/from-live/products/c28250ca9f_TRIGON-Tre-50M-rear.png"
+      "src": "local://16808_w77_01.jpg",
+      "thumb": "assets/enriched/16808/16808_w77_01.jpg",
+      "alt": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "local": "assets/enriched/16808/16808_w77_01.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 86302
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Trigon_Tre_50_M-600x600.jpg",
-      "local": "assets/enriched/16808/6e9f643851_w13var.jpg",
-      "bytes": 16897,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://16808_w77_02.jpg",
+      "thumb": "assets/enriched/16808/16808_w77_02.jpg",
+      "alt": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "local": "assets/enriched/16808/16808_w77_02.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 134071
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Trigon_Tre_50_M-300x300.jpg",
-      "local": "assets/enriched/16808/7f0657c06f_w17cdn.jpg",
-      "bytes": 6475,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://16808_w77_03.jpg",
+      "thumb": "assets/enriched/16808/16808_w77_03.jpg",
+      "alt": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "local": "assets/enriched/16808/16808_w77_03.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 274649
+    },
+    {
+      "src": "local://16808_w77_04.jpg",
+      "thumb": "assets/enriched/16808/16808_w77_04.jpg",
+      "alt": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "local": "assets/enriched/16808/16808_w77_04.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 195959
+    },
+    {
+      "src": "local://16808_w77_05.jpg",
+      "thumb": "assets/enriched/16808/16808_w77_05.jpg",
+      "alt": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "local": "assets/enriched/16808/16808_w77_05.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 217904
+    },
+    {
+      "src": "local://16808_w77_06.jpg",
+      "thumb": "assets/enriched/16808/16808_w77_06.jpg",
+      "alt": "усилитель мощности Trigon Tre 50 M ( trigon tre 50 m )",
+      "local": "assets/enriched/16808/16808_w77_06.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 37414
     }
   ],
   "sku": "",
@@ -78,5 +113,9 @@
   "enrichedAt": "2026-11-14T17:02:06Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T17:04:44Z",
+  "galleryWave77": true
 }

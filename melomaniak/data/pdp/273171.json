@@ -86,32 +86,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dynaudio-bm5-mkiii1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dynaudio-bm5-mkiii1.jpg",
-      "alt": "dynaudio-bm5-mkiii1.jpg",
-      "local": "assets/from-live/products/a2006e2d52_dynaudio-bm5-mkiii1.jpg"
+      "src": "local://273171_w77_00.jpg",
+      "thumb": "assets/enriched/273171/273171_w77_00.jpg",
+      "alt": "Студийный монитор Dynaudio BM5 mkIII",
+      "local": "assets/enriched/273171/273171_w77_00.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 557969
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dynaudio_bm5_mkiii3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dynaudio_bm5_mkiii3.jpg",
-      "alt": "dynaudio_bm5_mkiii3.jpg",
-      "local": "assets/from-live/products/48884e43f6_dynaudio_bm5_mkiii3.jpg"
+      "src": "local://273171_w77_01.jpg",
+      "thumb": "assets/enriched/273171/273171_w77_01.jpg",
+      "alt": "Студийный монитор Dynaudio BM5 mkIII",
+      "local": "assets/enriched/273171/273171_w77_01.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 641382
     },
     {
-      "src": "local-variant://273171/w17sc95",
-      "local": "assets/enriched/273171/f846dae790_w17sc95.jpg",
-      "bytes": 166699,
-      "wave": "meager-w17-2026-11",
-      "w": 1121,
-      "h": 1121
+      "src": "local://273171_w77_02.jpg",
+      "thumb": "assets/enriched/273171/273171_w77_02.jpg",
+      "alt": "Студийный монитор Dynaudio BM5 mkIII",
+      "local": "assets/enriched/273171/273171_w77_02.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 601626
     },
     {
-      "src": "local-variant://273171/w17sc90",
-      "local": "assets/enriched/273171/e95f3fda89_w17sc90.jpg",
-      "bytes": 147350,
-      "wave": "meager-w17-2026-11",
-      "w": 1062,
-      "h": 1062
+      "src": "local://273171_w77_03.jpg",
+      "thumb": "assets/enriched/273171/273171_w77_03.jpg",
+      "alt": "Студийный монитор Dynaudio BM5 mkIII",
+      "local": "assets/enriched/273171/273171_w77_03.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 625479
     }
   ],
   "sku": "",
@@ -123,5 +131,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T17:04:44Z",
+  "galleryWave77": true
 }

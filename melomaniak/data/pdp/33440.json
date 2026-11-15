@@ -21,35 +21,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_pleer_Advance_Acoustic_AX1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_pleer_Advance_Acoustic_AX1-600x600.jpg",
-      "alt": "Advance Acoustic AX1",
-      "local": "assets/from-live/products/41ed541b62_CD_pleer_Advance_Acoustic_AX1.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/01/Advance-Acoustic-AX1.png",
-      "thumb": "assets/enriched/33440/e063768ebb_w10.png",
-      "alt": "33440",
-      "local": "assets/enriched/33440/e063768ebb_w10.png",
+      "src": "local://33440_w77_00.jpg",
+      "thumb": "assets/enriched/33440/33440_w77_00.jpg",
+      "alt": "интегральный усилитель Advance Acoustic AX1 ( advance acoustic ax1 )",
+      "local": "assets/enriched/33440/33440_w77_00.jpg",
       "enriched": true,
-      "attribution": "woo-media-exact",
-      "bytes": 123018
+      "attribution": "wave77-oem",
+      "bytes": 17160
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_pleer_Advance_Acoustic_AX1-600x600.jpg",
-      "local": "assets/enriched/33440/c7d1ce67c8_w13var.jpg",
-      "bytes": 17992,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://33440_w77_01.jpg",
+      "thumb": "assets/enriched/33440/33440_w77_01.jpg",
+      "alt": "интегральный усилитель Advance Acoustic AX1 ( advance acoustic ax1 )",
+      "local": "assets/enriched/33440/33440_w77_01.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 69028
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_pleer_Advance_Acoustic_AX1-300x300.jpg",
-      "local": "assets/enriched/33440/e548fa110b_w17cdn.jpg",
-      "bytes": 6142,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://33440_w77_02.jpg",
+      "thumb": "assets/enriched/33440/33440_w77_02.jpg",
+      "alt": "интегральный усилитель Advance Acoustic AX1 ( advance acoustic ax1 )",
+      "local": "assets/enriched/33440/33440_w77_02.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 30842
+    },
+    {
+      "src": "local://33440_w77_03.jpg",
+      "thumb": "assets/enriched/33440/33440_w77_03.jpg",
+      "alt": "интегральный усилитель Advance Acoustic AX1 ( advance acoustic ax1 )",
+      "local": "assets/enriched/33440/33440_w77_03.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 39710
+    },
+    {
+      "src": "local://33440_w77_04.jpg",
+      "thumb": "assets/enriched/33440/33440_w77_04.jpg",
+      "alt": "интегральный усилитель Advance Acoustic AX1 ( advance acoustic ax1 )",
+      "local": "assets/enriched/33440/33440_w77_04.jpg",
+      "enriched": true,
+      "attribution": "wave77-oem",
+      "bytes": 77894
     }
   ],
   "sku": "",
@@ -61,5 +75,9 @@
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w10-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T17:04:44Z",
+  "galleryWave77": true
 }
