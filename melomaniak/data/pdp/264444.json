@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-fs-301-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-fs-301-500x500-1.jpg",
-      "alt": "furutech-fs-301-500&#215;500",
-      "local": "assets/from-live/products/4af0d4796f_furutech-fs-301-500x500-1.jpg"
+      "src": "local://264444_w81_00.jpg",
+      "thumb": "assets/enriched/264444/264444_w81_00.jpg",
+      "alt": "Акустический кабель Furutech FS-301 ( furutech fs 301 )",
+      "local": "assets/enriched/264444/264444_w81_00.jpg",
+      "enriched": true,
+      "attribution": "wave81-oem",
+      "bytes": 41979
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-fs-301-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264444/6e2e7c576d_w13var.jpg",
-      "bytes": 18011,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264444_w81_01.jpg",
+      "thumb": "assets/enriched/264444/264444_w81_01.jpg",
+      "alt": "Акустический кабель Furutech FS-301 ( furutech fs 301 )",
+      "local": "assets/enriched/264444/264444_w81_01.jpg",
+      "enriched": true,
+      "attribution": "wave81-oem",
+      "bytes": 41246
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_FS_301.jpg",
-      "local": "assets/enriched/264444/630212c492_w13media.jpg",
-      "bytes": 41246,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264444_w81_02.jpg",
+      "thumb": "assets/enriched/264444/264444_w81_02.jpg",
+      "alt": "Акустический кабель Furutech FS-301 ( furutech fs 301 )",
+      "local": "assets/enriched/264444/264444_w81_02.jpg",
+      "enriched": true,
+      "attribution": "wave81-oem",
+      "bytes": 40107
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_FS_301-300x300.jpg",
-      "local": "assets/enriched/264444/ed7260c9df_w13var.jpg",
-      "bytes": 15542,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264444_w81_03.jpg",
+      "thumb": "assets/enriched/264444/264444_w81_03.jpg",
+      "alt": "Акустический кабель Furutech FS-301 ( furutech fs 301 )",
+      "local": "assets/enriched/264444/264444_w81_03.jpg",
+      "enriched": true,
+      "attribution": "wave81-oem",
+      "bytes": 374158
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T18:00:25Z",
+  "galleryWave81": true
 }

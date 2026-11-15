@@ -51,35 +51,58 @@
   ],
   "gallery": [
     {
-      "src": "local://b7d8fde291_FURUTECH-SILVER-ARROWS-12-1-500x500-1.jpg",
-      "thumb": "assets/enriched/264397/f87f3ff031_live1.jpg",
+      "src": "local://264397_w81_00.jpg",
+      "thumb": "assets/enriched/264397/264397_w81_00.jpg",
       "alt": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
-      "local": "assets/enriched/264397/f87f3ff031_live1.jpg",
+      "local": "assets/enriched/264397/264397_w81_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 23532
+      "attribution": "wave81-oem",
+      "bytes": 82485
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/621e68b705a48a8a2d08edb7df866527.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/621e68b705a48a8a2d08edb7df866527.jpg",
-      "alt": "621e68b705a48a8a2d08edb7df866527",
-      "local": "assets/from-live/products/b06f1164c2_621e68b705a48a8a2d08edb7df866527.jpg"
+      "src": "local://264397_w81_01.jpg",
+      "thumb": "assets/enriched/264397/264397_w81_01.jpg",
+      "alt": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
+      "local": "assets/enriched/264397/264397_w81_01.jpg",
+      "enriched": true,
+      "attribution": "wave81-oem",
+      "bytes": 242499
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-SILVER-ARROWS-12-1-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264397/dadff637c4_w15sib.jpg",
-      "bytes": 11300,
-      "wave": "meager-w15-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264397_w81_02.jpg",
+      "thumb": "assets/enriched/264397/264397_w81_02.jpg",
+      "alt": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
+      "local": "assets/enriched/264397/264397_w81_02.jpg",
+      "enriched": true,
+      "attribution": "wave81-oem",
+      "bytes": 59223
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/mezhblochnii_kabel_Furutech_Silver_Arrows_12.jpg",
-      "local": "assets/enriched/264397/ad6f27af97_w15sib.jpg",
-      "bytes": 29986,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264397_w81_03.jpg",
+      "thumb": "assets/enriched/264397/264397_w81_03.jpg",
+      "alt": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
+      "local": "assets/enriched/264397/264397_w81_03.jpg",
+      "enriched": true,
+      "attribution": "wave81-oem",
+      "bytes": 71915
+    },
+    {
+      "src": "local://264397_w81_04.jpg",
+      "thumb": "assets/enriched/264397/264397_w81_04.jpg",
+      "alt": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
+      "local": "assets/enriched/264397/264397_w81_04.jpg",
+      "enriched": true,
+      "attribution": "wave81-oem",
+      "bytes": 88628
+    },
+    {
+      "src": "local://264397_w81_05.jpg",
+      "thumb": "assets/enriched/264397/264397_w81_05.jpg",
+      "alt": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
+      "local": "assets/enriched/264397/264397_w81_05.jpg",
+      "enriched": true,
+      "attribution": "wave81-oem",
+      "bytes": 273996
     }
   ],
   "sku": "",
@@ -93,5 +116,9 @@
   "enrichedAt": "2026-11-14T14:47:00Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T18:00:25Z",
+  "galleryWave81": true
 }

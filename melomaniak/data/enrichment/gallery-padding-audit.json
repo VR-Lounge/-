@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:54:04Z",
+  "generatedAt": "2026-11-15T18:03:29Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1314,
-    "padded": 201,
+    "true_multi_angle": 1316,
+    "padded": 199,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 69.63,
-    "padded": 10.65,
+    "true_multi_angle": 69.74,
+    "padded": 10.55,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 28.86,
-    "not_true_multi": 30.37
+    "padded_of_claimed_gal4plus": 28.75,
+    "not_true_multi": 30.26
   },
   "padReasonTallies": {
     "local-variant": 708,
-    "wN-variant-name": 537,
-    "cdn-size-thumb": 111,
+    "wN-variant-name": 535,
+    "cdn-size-thumb": 110,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 533,
+  "claimedButNotTrueMulti": 531,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -400,19 +400,6 @@
       "class": "single_real"
     },
     {
-      "id": 264397,
-      "name": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
-      "cat": "Кабели",
-      "price": 195458,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "class": "padded"
-    },
-    {
       "id": 264027,
       "name": "Поглотитель Acoustic Revive RAF-48 (SP2) ( acoustic revive raf 48 (sp2) )",
       "cat": "Другое",
@@ -571,6 +558,19 @@
         "wN-variant-name": 2
       },
       "class": "single_real"
+    },
+    {
+      "id": 40263,
+      "name": "саундбар Paradigm D?cor 2S (75-89 дюймов) ( paradigm d?cor 2s (75 89 ) )",
+      "cat": "Другое",
+      "price": 172465,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "padded"
     }
   ],
   "hitlTrueOneshot": [
@@ -12247,16 +12247,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-xlr",
       "cat": "Кабели",
       "price": 195458,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15874,
@@ -17576,16 +17574,14 @@
       "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-fs-301",
       "cat": "Кабели",
       "price": 97282,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15974,
