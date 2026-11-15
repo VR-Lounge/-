@@ -51,6 +51,24 @@
   ],
   "gallery": [
     {
+      "src": "https://www.acoustic-energy.co.uk/wp-content/uploads/2020/08/520-Web-Banner-Walnut-Front.jpg",
+      "thumb": "https://www.acoustic-energy.co.uk/wp-content/uploads/2020/08/520-Web-Banner-Walnut-Front.jpg",
+      "alt": "Напольная акустика Acoustic Energy AE 520",
+      "local": "assets/enriched/274575/b1b0abfac6_w21.jpg",
+      "bytes": 473900,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://cdn.shopify.com/s/files/1/2197/6387/files/AE520-Walnut_800x_4c415351-2e85-4c29-a525-760de1408a83.jpg",
+      "thumb": "https://cdn.shopify.com/s/files/1/2197/6387/files/AE520-Walnut_800x_4c415351-2e85-4c29-a525-760de1408a83.jpg",
+      "alt": "Напольная акустика Acoustic Energy AE 520",
+      "local": "assets/enriched/274575/d723388dae_w21.jpg",
+      "bytes": 102940,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-520-new-w950-ae-mpic-0-1597953329.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-520-new-w950-ae-mpic-0-1597953329.jpg",
       "alt": "Напольная акустика Acoustic Energy AE 520",
@@ -60,13 +78,13 @@
       "wave": "gallery-w19-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-520-new-w950-ae-mpic-0-1597953317.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-520-new-w950-ae-mpic-0-1597953317.jpg",
+      "src": "https://cdn.shopify.com/s/files/1/2197/6387/files/AE520-White_800x_430a7356-09f2-4b7c-8687-4704b6e45295.jpg",
+      "thumb": "https://cdn.shopify.com/s/files/1/2197/6387/files/AE520-White_800x_430a7356-09f2-4b7c-8687-4704b6e45295.jpg",
       "alt": "Напольная акустика Acoustic Energy AE 520",
-      "local": "assets/enriched/274575/81bdb911b0_w19.jpg",
-      "bytes": 46490,
-      "from": "oem-w19",
-      "wave": "gallery-w19-2026-11"
+      "local": "assets/enriched/274575/79b70bb689_w21.jpg",
+      "bytes": 59246,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
     }
   ],
   "sku": "",
@@ -76,11 +94,12 @@
     "https://xn--80aannlcfckh.xn--p1ai/"
   ],
   "enrichedAt": "2026-11-14T13:01:13Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w4-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:56:51Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:11:05Z",
   "galleryWave18": true,
   "galleryWave19": true,
-  "galleryWave20": true
+  "galleryWave20": true,
+  "galleryWave21": true
 }

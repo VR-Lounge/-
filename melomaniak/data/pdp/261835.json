@@ -171,6 +171,42 @@
   ],
   "gallery": [
     {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/123/704/MCA-525-Gen2-BACK-3qtr__17157.1770155932.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/123/704/MCA-525-Gen2-BACK-3qtr__17157.1770155932.png",
+      "alt": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
+      "local": "assets/enriched/261835/7a892c3b07_w21.png",
+      "bytes": 1456767,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/123/705/MCA-525-Gen2-BACK__66669.1770155932.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/123/705/MCA-525-Gen2-BACK__66669.1770155932.png",
+      "alt": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
+      "local": "assets/enriched/261835/3c9a52dc41_w21.png",
+      "bytes": 1378809,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/123/639/MCA-525-Gen-2_-_FRONT-3qtr__36824.1765835573.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/123/639/MCA-525-Gen-2_-_FRONT-3qtr__36824.1765835573.png",
+      "alt": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
+      "local": "assets/enriched/261835/61a3e08743_w21.png",
+      "bytes": 1150941,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/123/640/MCA-525-Gen-2_-_FRONT__70418.1765835573.png",
+      "thumb": "https://cdn11.bigcommerce.com/s-1jr7uauyna/images/stencil/2048w/products/123/640/MCA-525-Gen-2_-_FRONT__70418.1765835573.png",
+      "alt": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
+      "local": "assets/enriched/261835/07c8cde671_w21.png",
+      "bytes": 1144110,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
       "src": "local://5d54434d7a_Rapallo_Anthem_MCS525Gen2_02-1.jpg",
       "thumb": "assets/enriched/261835/cb2d6223e1_live1.jpg",
       "alt": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
@@ -205,9 +241,10 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-anthem-mca-525-gen-2/"
   ],
   "enrichedAt": "2026-11-14T14:46:06Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:11:17Z",
+  "galleryWave19": true,
+  "galleryWave21": true
 }

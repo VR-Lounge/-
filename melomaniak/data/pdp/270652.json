@@ -101,28 +101,65 @@
   ],
   "gallery": [
     {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/AURA_4_Black_Lifestyle-2_1.jpg",
+      "thumb": "https://www.wharfedale.co.uk/cdn/shop/files/AURA_4_Black_Lifestyle-2_1.jpg",
+      "alt": "Напольная акустика Wharfedale Aura 4",
+      "local": "assets/enriched/270652/0fe7df46a3_w21.jpg",
+      "bytes": 318415,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/20231130122914_2023-11-11_WharfedaleAura4_Lifestyle03.jpg",
+      "thumb": "https://www.wharfedale.co.uk/cdn/shop/files/20231130122914_2023-11-11_WharfedaleAura4_Lifestyle03.jpg",
+      "alt": "Напольная акустика Wharfedale Aura 4",
+      "local": "assets/enriched/270652/5d05ad9cd2_w21.jpg",
+      "bytes": 208810,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/AURA4_Standard_Walnut_1.jpg",
+      "thumb": "https://www.wharfedale.co.uk/cdn/shop/files/AURA4_Standard_Walnut_1.jpg",
+      "alt": "Напольная акустика Wharfedale Aura 4",
+      "local": "assets/enriched/270652/11fe9e7fa5_w21.jpg",
+      "bytes": 140406,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wharfedale_aura_4_1226911419-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wharfedale_aura_4_1226911419-1.jpg",
-      "alt": "wharfedale_aura_4_1226911419-1.jpg",
-      "local": "assets/from-live/products/3e881069f9_wharfedale_aura_4_1226911419-1.jpg"
+      "alt": "Напольная акустика Wharfedale Aura 4",
+      "local": "assets/enriched/270652/bbe732d8d9_w21.jpg",
+      "bytes": 119664,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
     },
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wharfedale_aura_4_1226911975-2.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wharfedale_aura_4_1226911975-2.jpg",
-      "alt": "wharfedale_aura_4_1226911975-2.jpg",
-      "local": "assets/from-live/products/6b226bac2d_wharfedale_aura_4_1226911975-2.jpg"
+      "alt": "Напольная акустика Wharfedale Aura 4",
+      "local": "assets/enriched/270652/526ae71ba7_w21.jpg",
+      "bytes": 92249,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wharfedale_aura_4-8.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wharfedale_aura_4-8.jpg",
-      "alt": "wharfedale_aura_4-8.jpg",
-      "local": "assets/from-live/products/952a8f2dad_wharfedale_aura_4-8.jpg"
+      "src": "https://www.wharfedale.co.uk/cdn/shop/files/AURA_4_Cabinet.jpg",
+      "thumb": "https://www.wharfedale.co.uk/cdn/shop/files/AURA_4_Cabinet.jpg",
+      "alt": "Напольная акустика Wharfedale Aura 4",
+      "local": "assets/enriched/270652/955a8cec9c_w21.jpg",
+      "bytes": 70765,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
     }
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
-  "galleryHitl": true,
-  "enrichmentNote": "HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "enrichmentNote": "",
+  "galleryDepaddedAt": "2026-11-15T01:11:47Z",
+  "galleryWave19": true,
+  "galleryWave21": true
 }

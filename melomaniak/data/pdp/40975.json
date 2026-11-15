@@ -37,6 +37,15 @@
   ],
   "gallery": [
     {
+      "src": "from-live://8f132bcf12_sp20vs115-1.jpg",
+      "thumb": "from-live://8f132bcf12_sp20vs115-1.jpg",
+      "alt": "Усилитель мощности Audio Research VS115 ( audio research vs115 )",
+      "local": "assets/from-live/products/8f132bcf12_sp20vs115-1.jpg",
+      "bytes": 1478055,
+      "from": "from-live-w21b",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
       "src": "local://8c3c82b93bbce69d66f561536c490f49_ba4c673370.jpg",
       "thumb": "assets/enriched/40975/351fa332ab_live2.jpg",
       "alt": "Усилитель мощности Audio Research VS115 ( audio research vs115 )",
@@ -44,6 +53,24 @@
       "enriched": true,
       "attribution": "from-live",
       "bytes": 264235
+    },
+    {
+      "src": "https://www.soundstageglobal.com/images/igallery/resized/1801-1900/IMG_1449-1806-1200-800-90-wm-right_bottom-100-ssnwatermark2png.jpg",
+      "thumb": "https://www.soundstageglobal.com/images/igallery/resized/1801-1900/IMG_1449-1806-1200-800-90-wm-right_bottom-100-ssnwatermark2png.jpg",
+      "alt": "Усилитель мощности Audio Research VS115 ( audio research vs115 )",
+      "local": "assets/enriched/40975/bfa47d8376_w21b.jpg",
+      "bytes": 127455,
+      "from": "oem-w21b",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://www.soundstageglobal.com/images/igallery/resized/1801-1900/IMG_1447-1805-1200-800-90-wm-right_bottom-100-ssnwatermark2png.jpg",
+      "thumb": "https://www.soundstageglobal.com/images/igallery/resized/1801-1900/IMG_1447-1805-1200-800-90-wm-right_bottom-100-ssnwatermark2png.jpg",
+      "alt": "Усилитель мощности Audio Research VS115 ( audio research vs115 )",
+      "local": "assets/enriched/40975/42361e933f_w21b.jpg",
+      "bytes": 118995,
+      "from": "oem-w21b",
+      "wave": "gallery-w21-2026-11"
     },
     {
       "src": "local://audio-research-vs115_big_611465e06c.jpg",
@@ -64,7 +91,8 @@
   "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:12:44Z",
+  "galleryWave19": true,
+  "galleryWave21": true
 }

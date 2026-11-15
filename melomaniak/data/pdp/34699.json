@@ -132,6 +132,42 @@
       "enriched": true,
       "attribution": "from-live",
       "bytes": 33980
+    },
+    {
+      "src": "https://coolstuff.com.ua/image/data/old_product/15054/15054.jpg",
+      "thumb": "https://coolstuff.com.ua/image/data/old_product/15054/15054.jpg",
+      "alt": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic scorpio 25 )",
+      "local": "assets/enriched/34699/91d9a9682a_w21.jpg",
+      "bytes": 30074,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://coolstuff.com.ua/image/data/old_product/15058/15058.jpg",
+      "thumb": "https://coolstuff.com.ua/image/data/old_product/15058/15058.jpg",
+      "alt": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic scorpio 25 )",
+      "local": "assets/enriched/34699/cde45a734f_w21.jpg",
+      "bytes": 14336,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://coolstuff.com.ua/image/data/old_product/15055/15055.jpg",
+      "thumb": "https://coolstuff.com.ua/image/data/old_product/15055/15055.jpg",
+      "alt": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic scorpio 25 )",
+      "local": "assets/enriched/34699/c4a620e17b_w21.jpg",
+      "bytes": 13640,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://coolstuff.com.ua/image/data/old_product/15056/15056.jpg",
+      "thumb": "https://coolstuff.com.ua/image/data/old_product/15056/15056.jpg",
+      "alt": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic scorpio 25 )",
+      "local": "assets/enriched/34699/c1d0f6f811_w21.jpg",
+      "bytes": 13517,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
     }
   ],
   "sku": "",
@@ -141,10 +177,11 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-aydio-physic-scorpio-25/"
   ],
   "enrichedAt": "2026-11-14T14:06:10Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:24:24Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:10:50Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryWave21": true
 }

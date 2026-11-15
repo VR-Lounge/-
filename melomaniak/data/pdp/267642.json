@@ -91,6 +91,42 @@
   ],
   "gallery": [
     {
+      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-X_i1100-5.png",
+      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-X_i1100-5.png",
+      "alt": "Интегральный усилитель Advance Paris X-i1100",
+      "local": "assets/enriched/267642/eeaef8f65b_w21.png",
+      "bytes": 710737,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-X_i1100-2.png",
+      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-X_i1100-2.png",
+      "alt": "Интегральный усилитель Advance Paris X-i1100",
+      "local": "assets/enriched/267642/54bd5af069_w21.png",
+      "bytes": 586000,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-X_i1100-4.png",
+      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-X_i1100-4.png",
+      "alt": "Интегральный усилитель Advance Paris X-i1100",
+      "local": "assets/enriched/267642/e84a779d59_w21.png",
+      "bytes": 381561,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
+      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-X_i1100-1.png",
+      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-X_i1100-1.png",
+      "alt": "Интегральный усилитель Advance Paris X-i1100",
+      "local": "assets/enriched/267642/356e79c888_w21.png",
+      "bytes": 381226,
+      "from": "oem-w21",
+      "wave": "gallery-w21-2026-11"
+    },
+    {
       "src": "local://Advance-Paris-X-i1100-rear_7ea2c26a2f.png",
       "thumb": "assets/enriched/267642/9007a85794_live2.png",
       "alt": "Интегральный усилитель Advance Paris X-i1100",
@@ -116,9 +152,10 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-advance-paris-x-i1100/"
   ],
   "enrichedAt": "2026-11-14T13:38:10Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:11:31Z",
+  "galleryWave19": true,
+  "galleryWave21": true
 }

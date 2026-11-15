@@ -1,0 +1,48 @@
+{
+  "newly": [
+    15918,
+    40975
+  ],
+  "results": [
+    {
+      "id": 274568,
+      "after": 2,
+      "multi": false,
+      "prev": "padded",
+      "price": 414300,
+      "name": "Напольная акустика Acoustic Energy AE 50"
+    },
+    {
+      "id": 15918,
+      "after": 8,
+      "multi": true,
+      "prev": "padded",
+      "price": 450000,
+      "name": "интегральный усилитель Leben CS 300X S ("
+    },
+    {
+      "id": 15916,
+      "after": 3,
+      "multi": false,
+      "prev": "padded",
+      "price": 420000,
+      "name": "интегральный усилитель Leben CS 300 F ( "
+    },
+    {
+      "id": 269782,
+      "after": 3,
+      "multi": false,
+      "prev": "padded",
+      "price": 449990,
+      "name": "Многоканальный усилитель мощности Paraso"
+    },
+    {
+      "id": 40975,
+      "after": 5,
+      "multi": true,
+      "prev": "padded",
+      "price": 450000,
+      "name": "Усилитель мощности Audio Research VS115 "
+    }
+  ]
+}

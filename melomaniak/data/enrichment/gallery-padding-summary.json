@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T01:03:22Z",
+  "at": "2026-11-15T01:22:14Z",
   "counts": {
-    "true_multi_angle": 1089,
-    "padded": 420,
+    "true_multi_angle": 1103,
+    "padded": 406,
     "single_real": 378
   },
   "pct": {
-    "true_multi_angle": 57.71,
-    "padded": 22.26,
+    "true_multi_angle": 58.45,
+    "padded": 21.52,
     "single_real": 20.03,
-    "padded_of_claimed_gal4plus": 40.03,
-    "not_true_multi": 42.29
+    "padded_of_claimed_gal4plus": 39.73,
+    "not_true_multi": 41.55
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -304,5 +304,247 @@
         "name": "интегральный усилитель Anthem STR Integrated Amplifier ( ant"
       }
     ]
-  }
+  },
+  "wave21": {
+    "padded_to_true_multi": 14,
+    "cleared": [
+      {
+        "id": 34699,
+        "name": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic sc"
+      },
+      {
+        "id": 272560,
+        "name": "Виниловый проигрыватель Clearaudio Emotion SE Package II"
+      },
+      {
+        "id": 274575,
+        "name": "Напольная акустика Acoustic Energy AE 520"
+      },
+      {
+        "id": 270778,
+        "name": "Многоканальный усилитель мощности Arcam PA720"
+      },
+      {
+        "id": 272558,
+        "name": "Виниловый проигрыватель Clearaudio Emotion SE Package I"
+      },
+      {
+        "id": 261835,
+        "name": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen"
+      },
+      {
+        "id": 267642,
+        "name": "Интегральный усилитель Advance Paris X-i1100"
+      },
+      {
+        "id": 261873,
+        "name": "Центральный канал PARADIGM Founder 90C Gloss Black ( paradig"
+      },
+      {
+        "id": 261875,
+        "name": "Центральный канал PARADIGM Founder 90C Walnut ( paradigm fou"
+      },
+      {
+        "id": 261876,
+        "name": "Центральный канал PARADIGM Founder 90C Midnight Cherry ( par"
+      },
+      {
+        "id": 261877,
+        "name": "Центральный канал PARADIGM Founder 90C Black Walnut ( paradi"
+      },
+      {
+        "id": 270652,
+        "name": "Напольная акустика Wharfedale Aura 4"
+      },
+      {
+        "id": 15918,
+        "name": "интегральный усилитель Leben CS 300X S ( leben cs 300x s )"
+      },
+      {
+        "id": 40975,
+        "name": "Усилитель мощности Audio Research VS115 ( audio research vs1"
+      }
+    ]
+  },
+  "wave": "wave21",
+  "padded_to_true_multi": 14,
+  "cleared": [
+    {
+      "id": 34699,
+      "name": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic scorpio 25 )",
+      "price": 695000
+    },
+    {
+      "id": 272560,
+      "name": "Виниловый проигрыватель Clearaudio Emotion SE Package II",
+      "price": 624900
+    },
+    {
+      "id": 274575,
+      "name": "Напольная акустика Acoustic Energy AE 520",
+      "price": 590500
+    },
+    {
+      "id": 270778,
+      "name": "Многоканальный усилитель мощности Arcam PA720",
+      "price": 529990
+    },
+    {
+      "id": 272558,
+      "name": "Виниловый проигрыватель Clearaudio Emotion SE Package I",
+      "price": 499900
+    },
+    {
+      "id": 261835,
+      "name": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
+      "price": 494925
+    },
+    {
+      "id": 267642,
+      "name": "Интегральный усилитель Advance Paris X-i1100",
+      "price": 381098
+    },
+    {
+      "id": 261873,
+      "name": "Центральный канал PARADIGM Founder 90C Gloss Black ( paradigm founder ",
+      "price": 367115
+    },
+    {
+      "id": 261875,
+      "name": "Центральный канал PARADIGM Founder 90C Walnut ( paradigm founder 90c w",
+      "price": 367115
+    },
+    {
+      "id": 261876,
+      "name": "Центральный канал PARADIGM Founder 90C Midnight Cherry ( paradigm foun",
+      "price": 367115
+    },
+    {
+      "id": 261877,
+      "name": "Центральный канал PARADIGM Founder 90C Black Walnut ( paradigm founder",
+      "price": 367115
+    },
+    {
+      "id": 270652,
+      "name": "Напольная акустика Wharfedale Aura 4",
+      "price": 359990
+    },
+    {
+      "id": 15918,
+      "name": "интегральный усилитель Leben CS 300X S ( leben cs 300x s )",
+      "price": 450000
+    },
+    {
+      "id": 40975,
+      "name": "Усилитель мощности Audio Research VS115 ( audio research vs115 )",
+      "price": 450000
+    }
+  ],
+  "top_hitl_padded": [
+    {
+      "id": 32248,
+      "price": 500000,
+      "hitl": true,
+      "name": "Активная акустика MCINTOSH RS100 ( mcintosh rs100 )",
+      "u": null
+    },
+    {
+      "id": 24768,
+      "price": 479000,
+      "hitl": true,
+      "name": "AV процессор Anthem Statement D2v 3D ( av anthem statement d",
+      "u": null
+    },
+    {
+      "id": 42427,
+      "price": 450000,
+      "hitl": true,
+      "name": "Усилитель мощности Audio Research DS450 ( audio research ds4",
+      "u": null
+    },
+    {
+      "id": 269782,
+      "price": 449990,
+      "hitl": true,
+      "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
+      "u": null
+    },
+    {
+      "id": 15860,
+      "price": 440000,
+      "hitl": true,
+      "name": "фонокорректор Triode TRV EQ3SE ( triode trv eq3se )",
+      "u": null
+    },
+    {
+      "id": 270148,
+      "price": 429900,
+      "hitl": true,
+      "name": "CD-проигрыватель MOON 260D Black",
+      "u": null
+    },
+    {
+      "id": 15916,
+      "price": 420000,
+      "hitl": true,
+      "name": "интегральный усилитель Leben CS 300 F ( leben cs 300 f )",
+      "u": null
+    },
+    {
+      "id": 26626,
+      "price": 420000,
+      "hitl": true,
+      "name": "интегральный усилитель AudioNet SAM v.2.0 ( audionet sam v 2",
+      "u": null
+    },
+    {
+      "id": 262133,
+      "price": 420000,
+      "hitl": true,
+      "name": "Интегральный усилитель Soulnote A 1  ( soulnote a 1  )",
+      "u": null
+    },
+    {
+      "id": 274568,
+      "price": 414300,
+      "hitl": true,
+      "name": "Напольная акустика Acoustic Energy AE 509",
+      "u": null
+    },
+    {
+      "id": 15606,
+      "price": 400000,
+      "hitl": true,
+      "name": "напольная акустика Audio Physic Scorpio II ( audio physic sc",
+      "u": null
+    },
+    {
+      "id": 270973,
+      "price": 399990,
+      "hitl": true,
+      "name": "Сетевой проигрыватель Matrix Audio Element M2",
+      "u": null
+    },
+    {
+      "id": 4230,
+      "price": 380000,
+      "hitl": true,
+      "name": "предусилитель Arte Forma Jadeitte 101D ( arte forma jadeitte",
+      "u": null
+    },
+    {
+      "id": 268034,
+      "price": 360000,
+      "hitl": true,
+      "name": "ЦАП Soulnote sd2.0",
+      "u": null
+    },
+    {
+      "id": 267868,
+      "price": 355300,
+      "hitl": true,
+      "name": "Предусилитель TRIODE TRX – 1SE",
+      "u": null
+    }
+  ]
 }
