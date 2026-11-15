@@ -51,34 +51,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/Advance-Paris-Playstream-A1-HDMI.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/Advance-Paris-Playstream-A1-HDMI-600x600.jpg",
-      "alt": "Advance-Paris-Playstream-A1-HDMI",
-      "local": "assets/from-live/products/912c5ff5c6_Advance-Paris-Playstream-A1-HDMI.jpg"
+      "src": "local://263227_w32_00.jpg",
+      "thumb": "assets/enriched/263227/263227_w32_00.jpg",
+      "alt": "интегральный усилитель Advance Paris PlayStream A1 ( advance paris playstream a1 )",
+      "local": "assets/enriched/263227/263227_w32_00.jpg",
+      "enriched": true,
+      "attribution": "wave32-oem",
+      "bytes": 40812
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/Advance-Paris-Playstream-A1-HDMI-600x600.jpg",
-      "local": "assets/enriched/263227/efba123d02_w13var.jpg",
-      "bytes": 14490,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://263227_w32_01.jpg",
+      "thumb": "assets/enriched/263227/263227_w32_01.jpg",
+      "alt": "интегральный усилитель Advance Paris PlayStream A1 ( advance paris playstream a1 )",
+      "local": "assets/enriched/263227/263227_w32_01.jpg",
+      "enriched": true,
+      "attribution": "wave32-oem",
+      "bytes": 64770
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/12/playstream-a7_rear.png",
-      "local": "assets/enriched/263227/4f93350e06_w14media.png",
-      "bytes": 571059,
-      "wave": "meager-w14-2026-11",
-      "w": 1000,
-      "h": 300
+      "src": "local://263227_w32_02.jpg",
+      "thumb": "assets/enriched/263227/263227_w32_02.jpg",
+      "alt": "интегральный усилитель Advance Paris PlayStream A1 ( advance paris playstream a1 )",
+      "local": "assets/enriched/263227/263227_w32_02.jpg",
+      "enriched": true,
+      "attribution": "wave32-oem",
+      "bytes": 59954
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/12/playstream-a7_front.png",
-      "local": "assets/enriched/263227/145793bed9_w14media.png",
-      "bytes": 549376,
-      "wave": "meager-w14-2026-11",
-      "w": 1000,
-      "h": 352
+      "src": "local://263227_w32_03.jpg",
+      "thumb": "assets/enriched/263227/263227_w32_03.jpg",
+      "alt": "интегральный усилитель Advance Paris PlayStream A1 ( advance paris playstream a1 )",
+      "local": "assets/enriched/263227/263227_w32_03.jpg",
+      "enriched": true,
+      "attribution": "wave32-oem",
+      "bytes": 52552
     }
   ],
   "sku": "",
@@ -90,5 +96,9 @@
   "enrichedAt": "2026-11-14T13:46:29Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T04:34:04Z",
+  "galleryWave32": true
 }

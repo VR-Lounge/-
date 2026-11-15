@@ -51,28 +51,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_275_v2-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_275_v2-1.jpg",
-      "alt": "parasound_275_v2-1.jpg",
-      "local": "assets/from-live/products/9b40186a6b_parasound_275_v2-1.jpg"
+      "src": "local://269753_w32_00.jpg",
+      "thumb": "assets/enriched/269753/269753_w32_00.jpg",
+      "alt": "Стереоусилитель мощности Parasound 275 v2",
+      "local": "assets/enriched/269753/269753_w32_00.jpg",
+      "enriched": true,
+      "attribution": "wave32-oem",
+      "bytes": 80784
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_275_v2-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_275_v2-2.jpg",
-      "alt": "parasound_275_v2-2.jpg",
-      "local": "assets/from-live/products/39189f486a_parasound_275_v2-2.jpg"
+      "src": "local://269753_w32_01.jpg",
+      "thumb": "assets/enriched/269753/269753_w32_01.jpg",
+      "alt": "Стереоусилитель мощности Parasound 275 v2",
+      "local": "assets/enriched/269753/269753_w32_01.jpg",
+      "enriched": true,
+      "attribution": "wave32-oem",
+      "bytes": 112439
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_275_v2-3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_275_v2-3.jpg",
-      "alt": "parasound_275_v2-3.jpg",
-      "local": "assets/from-live/products/92c9ea61b9_parasound_275_v2-3.jpg"
+      "src": "local://269753_w32_02.jpg",
+      "thumb": "assets/enriched/269753/269753_w32_02.jpg",
+      "alt": "Стереоусилитель мощности Parasound 275 v2",
+      "local": "assets/enriched/269753/269753_w32_02.jpg",
+      "enriched": true,
+      "attribution": "wave32-oem",
+      "bytes": 179040
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_275_v2-4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/parasound_275_v2-4.jpg",
-      "alt": "parasound_275_v2-4.jpg",
-      "local": "assets/from-live/products/e2a98ff730_parasound_275_v2-4.jpg"
+      "src": "local://269753_w32_03.jpg",
+      "thumb": "assets/enriched/269753/269753_w32_03.jpg",
+      "alt": "Стереоусилитель мощности Parasound 275 v2",
+      "local": "assets/enriched/269753/269753_w32_03.jpg",
+      "enriched": true,
+      "attribution": "wave32-oem",
+      "bytes": 117216
     }
   ],
   "sku": "",
@@ -83,5 +95,10 @@
     "https://cdn.shopify.com/s/files/1/0763/0864/4159/files/275v2Manual.pdf?v=1718140038"
   ],
   "enrichedAt": "2026-11-14T11:40:04Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T04:34:04Z",
+  "galleryWave32": true
 }
