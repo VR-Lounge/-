@@ -1,0 +1,57 @@
+{
+  "wave": 93,
+  "at": "2026-11-15T21:18:00Z",
+  "counts": {
+    "true_multi_angle": 1351,
+    "padded": 164,
+    "single_real": 372
+  },
+  "cleared": [
+    {
+      "id": 15718,
+      "name": "47 Labs 4715 Shigaraki DAC",
+      "note": "6 unique: front 3q/box/close + 2 rears (4715 plates) + studio B&W; watermarks cropped; reject Arare/cables/accessories"
+    },
+    {
+      "id": 274594,
+      "name": "Acoustic Energy AE308 (piano gloss black)",
+      "note": "4 unique: OEM front 3q + alt 3q + 2 underside/rear; black finish only"
+    },
+    {
+      "id": 16786,
+      "name": "Soulnote sa2.0 power amp",
+      "note": "5 unique: studio front + sa 2.0 rear + 3q + top + underside; reject silver faceplate / sa 2.0B-only / SA300 wireless"
+    }
+  ],
+  "near_miss": [
+    {
+      "id": 16788,
+      "name": "Soulnote sa3.0",
+      "reason": "Melomaniak Balance/Line studio only; ebay Source 1-6 is different faceplate; gallery polluted with Wireless SA300"
+    },
+    {
+      "id": 264077,
+      "name": "OPT-100HG-SS",
+      "reason": "mostly same-composition disc group shots / FLAT variants"
+    },
+    {
+      "id": 264408,
+      "name": "La Source 102/103",
+      "reason": "SKU mixing / insufficient distinct length-conductor angles"
+    }
+  ],
+  "hitl": {
+    "skip_unless_new_sources": [
+      {
+        "id": 4230,
+        "name": "Jadeitte",
+        "class": "padded"
+      },
+      {
+        "id": 264126,
+        "name": "MTP-2",
+        "class": "oneshot"
+      }
+    ]
+  }
+}

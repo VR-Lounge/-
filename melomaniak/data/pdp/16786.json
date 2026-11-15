@@ -46,32 +46,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Soulnote_sa2-0.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Soulnote_sa2-0-600x600.jpg",
-      "alt": "Soulnote sa2.0",
-      "local": "assets/from-live/products/adaee5b51e_ysilitel_moshnosti_Soulnote_sa2-0.jpg"
+      "src": "local://16786_w93_00.jpg",
+      "thumb": "assets/enriched/16786/16786_w93_00.jpg",
+      "alt": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
+      "local": "assets/enriched/16786/16786_w93_00.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 20967
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/12/soulnote-sa-20-rear.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/12/soulnote-sa-20-rear-600x342.jpg",
-      "alt": "soulnote-sa-20-rear",
-      "local": "assets/from-live/products/1d8ae9e11a_soulnote-sa-20-rear.jpg"
+      "src": "local://16786_w93_01.jpg",
+      "thumb": "assets/enriched/16786/16786_w93_01.jpg",
+      "alt": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
+      "local": "assets/enriched/16786/16786_w93_01.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 41169
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Soulnote_sa2-0-600x600.jpg",
-      "local": "assets/enriched/16786/17b26f26a3_w13var.jpg",
-      "bytes": 18687,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://16786_w93_02.jpg",
+      "thumb": "assets/enriched/16786/16786_w93_02.jpg",
+      "alt": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
+      "local": "assets/enriched/16786/16786_w93_02.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 157627
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Soulnote_sa2-0-300x300.jpg",
-      "local": "assets/enriched/16786/27742cea26_w17cdn.jpg",
-      "bytes": 6349,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://16786_w93_03.jpg",
+      "thumb": "assets/enriched/16786/16786_w93_03.jpg",
+      "alt": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
+      "local": "assets/enriched/16786/16786_w93_03.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 198101
+    },
+    {
+      "src": "local://16786_w93_04.jpg",
+      "thumb": "assets/enriched/16786/16786_w93_04.jpg",
+      "alt": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
+      "local": "assets/enriched/16786/16786_w93_04.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 185341
     }
   ],
   "sku": "",
@@ -83,5 +100,9 @@
   "enrichedAt": "2026-11-14T17:02:06Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T21:14:57Z",
+  "galleryWave93": true
 }

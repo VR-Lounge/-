@@ -21,34 +21,58 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsap_47_Labs_4715_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsap_47_Labs_4715_-600x600.jpg",
-      "alt": "47 Labs 4715",
-      "local": "assets/from-live/brand/fc8d1429e2_tsap_47_Labs_4715_.jpg"
+      "src": "local://15718_w93_00.jpg",
+      "thumb": "assets/enriched/15718/15718_w93_00.jpg",
+      "alt": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )",
+      "local": "assets/enriched/15718/15718_w93_00.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 132087
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsap_47_Labs_4715_-300x300.jpg",
-      "local": "assets/enriched/15718/f11d378e09_w14var.jpg",
-      "bytes": 10657,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://15718_w93_01.jpg",
+      "thumb": "assets/enriched/15718/15718_w93_01.jpg",
+      "alt": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )",
+      "local": "assets/enriched/15718/15718_w93_01.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 157410
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsap_47_Labs_4715_-600x600.jpg",
-      "local": "assets/enriched/15718/546cb7669f_w14var.jpg",
-      "bytes": 34465,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15718_w93_02.jpg",
+      "thumb": "assets/enriched/15718/15718_w93_02.jpg",
+      "alt": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )",
+      "local": "assets/enriched/15718/15718_w93_02.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 160326
     },
     {
-      "src": "https://www.47labs.co.jp/img/4752.jpg",
-      "local": "assets/enriched/15718/6cd2d49d60_w16oem.jpg",
-      "bytes": 135919,
-      "wave": "meager-w16-2026-11",
-      "w": 680,
-      "h": 400
+      "src": "local://15718_w93_03.jpg",
+      "thumb": "assets/enriched/15718/15718_w93_03.jpg",
+      "alt": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )",
+      "local": "assets/enriched/15718/15718_w93_03.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 97453
+    },
+    {
+      "src": "local://15718_w93_04.jpg",
+      "thumb": "assets/enriched/15718/15718_w93_04.jpg",
+      "alt": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )",
+      "local": "assets/enriched/15718/15718_w93_04.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 179025
+    },
+    {
+      "src": "local://15718_w93_05.jpg",
+      "thumb": "assets/enriched/15718/15718_w93_05.jpg",
+      "alt": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )",
+      "local": "assets/enriched/15718/15718_w93_05.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 162133
     }
   ],
   "sku": "",
@@ -60,5 +84,9 @@
   "enrichedAt": "2026-11-14T13:45:01Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T21:14:57Z",
+  "galleryWave93": true
 }

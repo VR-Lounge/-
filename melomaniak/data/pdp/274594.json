@@ -46,28 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-308-w950-ae-mpic-0-1561806547.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-308-w950-ae-mpic-0-1561806547-600x600.jpg",
-      "alt": "ae-308-w950-ae-mpic-0-1561806547",
-      "local": "assets/from-live/products/96d6ac794e_ae-308-w950-ae-mpic-0-1561806547.jpg"
+      "src": "local://274594_w93_00.jpg",
+      "thumb": "assets/enriched/274594/274594_w93_00.jpg",
+      "alt": "Сабвуфер Acoustic Energy AE 308",
+      "local": "assets/enriched/274594/274594_w93_00.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 35165
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-308-w950-ae-mpic-0-1561806531.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-308-w950-ae-mpic-0-1561806531-600x600.jpg",
-      "alt": "ae-308-w950-ae-mpic-0-1561806531",
-      "local": "assets/from-live/products/5d5d36c066_ae-308-w950-ae-mpic-0-1561806531.jpg"
+      "src": "local://274594_w93_01.jpg",
+      "thumb": "assets/enriched/274594/274594_w93_01.jpg",
+      "alt": "Сабвуфер Acoustic Energy AE 308",
+      "local": "assets/enriched/274594/274594_w93_01.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 20068
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-308-w950-ae-mpic-0-1561806541.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-308-w950-ae-mpic-0-1561806541-600x600.jpg",
-      "alt": "ae-308-w950-ae-mpic-0-1561806541",
-      "local": "assets/from-live/products/ba55da11c8_ae-308-w950-ae-mpic-0-1561806541.jpg"
+      "src": "local://274594_w93_02.jpg",
+      "thumb": "assets/enriched/274594/274594_w93_02.jpg",
+      "alt": "Сабвуфер Acoustic Energy AE 308",
+      "local": "assets/enriched/274594/274594_w93_02.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 52050
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-308-w950-ae-mpic-0-1686222622.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-308-w950-ae-mpic-0-1686222622-600x600.jpg",
-      "alt": "ae-308-w950-ae-mpic-0-1686222622",
-      "local": "assets/from-live/products/77c9d3192f_ae-308-w950-ae-mpic-0-1686222622.jpg"
+      "src": "local://274594_w93_03.jpg",
+      "thumb": "assets/enriched/274594/274594_w93_03.jpg",
+      "alt": "Сабвуфер Acoustic Energy AE 308",
+      "local": "assets/enriched/274594/274594_w93_03.jpg",
+      "enriched": true,
+      "attribution": "wave93-oem",
+      "bytes": 35990
     }
   ],
   "sku": "",
@@ -78,5 +90,10 @@
   ],
   "enrichedAt": "2026-11-14T13:01:13Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w4-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T21:14:57Z",
+  "galleryWave93": true
 }

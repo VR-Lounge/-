@@ -1,9 +1,9 @@
 {
   "at": "2026-11-15T13:42:47Z",
   "counts": {
-    "true_multi_angle": 1275,
-    "padded": 237,
-    "single_real": 375
+    "true_multi_angle": 1351,
+    "padded": 164,
+    "single_real": 372
   },
   "pct": {
     "true_multi_angle": 67.57,
@@ -49,8 +49,8 @@
     ]
   },
   "remaining": {
-    "padded": 241,
-    "single_real": 375
+    "padded": 164,
+    "oneshot": 372
   },
   "topHitlPadded": [
     {
@@ -230,7 +230,7 @@
       }
     ]
   },
-  "wave": 64,
+  "wave": 93,
   "padded_to_true_multi": 4,
   "cleared": [
     264323,
@@ -517,5 +517,13 @@
       "264385": "Furutech GT2 Pro mB",
       "264338": "Furutech F-35(G)"
     }
+  },
+  "wave93": {
+    "cleared": [
+      15718,
+      274594,
+      16786
+    ],
+    "at": "2026-11-15T21:18:00Z"
   }
 }

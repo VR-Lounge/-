@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T21:07:46Z",
+  "generatedAt": "2026-11-15T21:18:05Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1348,
-    "padded": 167,
+    "true_multi_angle": 1351,
+    "padded": 164,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 71.44,
-    "padded": 8.85,
+    "true_multi_angle": 71.6,
+    "padded": 8.69,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 27.02,
-    "not_true_multi": 28.56
+    "padded_of_claimed_gal4plus": 26.85,
+    "not_true_multi": 28.4
   },
   "padReasonTallies": {
     "local-variant": 696,
-    "wN-variant-name": 496,
-    "cdn-size-thumb": 107,
+    "wN-variant-name": 493,
+    "cdn-size-thumb": 106,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 499,
+  "claimedButNotTrueMulti": 496,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -256,20 +256,6 @@
       "class": "single_real"
     },
     {
-      "id": 16786,
-      "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
-      "cat": "Усилители",
-      "price": 244000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "class": "padded"
-    },
-    {
       "id": 265386,
       "name": "блок питания 47 Labs 4700-50 ( 47 labs 4700 50 )",
       "cat": "Другое",
@@ -389,19 +375,6 @@
       "class": "single_real"
     },
     {
-      "id": 15718,
-      "name": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )",
-      "cat": "ЦАПы",
-      "price": 190000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 16790,
       "name": "интегральный усилитель Soulnote sa300 ( soulnote sa300 )",
       "cat": "Усилители",
@@ -470,17 +443,6 @@
         "local-variant": 1
       },
       "class": "single_real"
-    },
-    {
-      "id": 274594,
-      "name": "Сабвуфер Acoustic Energy AE 308",
-      "cat": "Акустика",
-      "price": 181300,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
     },
     {
       "id": 15822,
@@ -572,6 +534,44 @@
       "price": 156923,
       "galleryLen": 4,
       "uniqueDistinct": 3,
+      "padSlots": 0,
+      "padReasons": {},
+      "class": "padded"
+    },
+    {
+      "id": 260693,
+      "name": "Интегральный усилитель Line Magnetic LM-201 IA ( line magnetic lm 201 ia )",
+      "cat": "Усилители",
+      "price": 155000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 16806,
+      "name": "предусилитель Trigon SnowWhite ( trigon snowwhite )",
+      "cat": "Усилители",
+      "price": 153000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "local-variant": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 262459,
+      "name": "Напольная акустикам Audio Physic Yara ( audio physic yara )",
+      "cat": "Акустика",
+      "price": 150000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
       "padSlots": 0,
       "padReasons": {},
       "class": "padded"
@@ -10992,17 +10992,14 @@
       "slug": "ysilitel_moshnosti_soulnote_sa2-0",
       "cat": "Усилители",
       "price": 244000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 263970,
@@ -12506,16 +12503,14 @@
       "slug": "tsap_47_Labs_4715",
       "cat": "ЦАПы",
       "price": 190000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 16790,
@@ -12872,12 +12867,12 @@
       "price": 181300,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15822,
