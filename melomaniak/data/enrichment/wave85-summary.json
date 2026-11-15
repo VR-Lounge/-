@@ -1,0 +1,119 @@
+{
+  "at": "2026-11-15T19:08:49Z",
+  "wave": 85,
+  "counts": {
+    "true_multi_angle": 1325,
+    "padded": 190,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 3,
+  "cleared": [
+    {
+      "id": 270749,
+      "name": "Центральный громкоговоритель Wharfedale EVO 4.CS",
+      "unique": 4,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/270749/270749_w85_00.jpg",
+        "assets/enriched/270749/270749_w85_01.jpg",
+        "assets/enriched/270749/270749_w85_02.jpg",
+        "assets/enriched/270749/270749_w85_03.jpg"
+      ]
+    },
+    {
+      "id": 25162,
+      "name": "портативная акустика Paradigm PW 600 Black ( paradigm pw 600 black )",
+      "unique": 4,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/25162/25162_w85_00.jpg",
+        "assets/enriched/25162/25162_w85_01.jpg",
+        "assets/enriched/25162/25162_w85_02.jpg",
+        "assets/enriched/25162/25162_w85_03.jpg"
+      ]
+    },
+    {
+      "id": 270122,
+      "name": "Центральный громкоговоритель DALI Oberon Vokal",
+      "unique": 4,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/270122/270122_w85_00.jpg",
+        "assets/enriched/270122/270122_w85_01.jpg",
+        "assets/enriched/270122/270122_w85_02.jpg",
+        "assets/enriched/270122/270122_w85_03.jpg"
+      ]
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "skip unless new sources"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real",
+      "note": "skip unless new sources"
+    }
+  ],
+  "top_remaining_padded": [
+    {
+      "id": 4230,
+      "price": 380000,
+      "uq": 2,
+      "name": "предусилитель Arte Forma Jadeitte 101D ( arte forma jad"
+    },
+    {
+      "id": 15742,
+      "price": 320000,
+      "uq": 3,
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate"
+    },
+    {
+      "id": 262549,
+      "price": 320000,
+      "uq": 2,
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic s"
+    },
+    {
+      "id": 16864,
+      "price": 280000,
+      "uq": 2,
+      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ult"
+    },
+    {
+      "id": 16788,
+      "price": 270000,
+      "uq": 2,
+      "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )"
+    },
+    {
+      "id": 16852,
+      "price": 250000,
+      "uq": 2,
+      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate"
+    },
+    {
+      "id": 16786,
+      "price": 244000,
+      "uq": 2,
+      "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )"
+    },
+    {
+      "id": 40251,
+      "price": 218365,
+      "uq": 2,
+      "name": "саундбар Paradigm D?cor 1C (75-89 дюймов) ( paradigm d?"
+    }
+  ],
+  "notes": [
+    "Skipped Jadeitte 4230 / MTP-2 264126 (no new sources).",
+    "EVO 4.CS cleared with black OEM pack (Melomaniak gallery is black wood-grain).",
+    "PW 600 Black cleared; White still short (OEM mostly black + one white + group shot).",
+    "Oberon Vokal white cleared with live+OEM white rear.",
+    "On-Wall white still uq=3 (OEM angles dhash-collide; lifestyle rejected)."
+  ]
+}

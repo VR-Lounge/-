@@ -101,32 +101,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dali_oberon_vokal_10782486522-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dali_oberon_vokal_10782486522-1.jpg",
-      "alt": "dali_oberon_vokal_10782486522-1.jpg",
-      "local": "assets/from-live/products/89c2b0ddc1_dali_oberon_vokal_10782486522-1.jpg"
+      "src": "local://270122_w85_00.jpg",
+      "thumb": "assets/enriched/270122/270122_w85_00.jpg",
+      "alt": "Центральный громкоговоритель DALI Oberon Vokal",
+      "local": "assets/enriched/270122/270122_w85_00.jpg",
+      "enriched": true,
+      "attribution": "wave85-oem",
+      "bytes": 26354
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dali_oberon_vokal_10782488970-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dali_oberon_vokal_10782488970-2.jpg",
-      "alt": "dali_oberon_vokal_10782488970-2.jpg",
-      "local": "assets/from-live/products/f43e751be9_dali_oberon_vokal_10782488970-2.jpg"
+      "src": "local://270122_w85_01.jpg",
+      "thumb": "assets/enriched/270122/270122_w85_01.jpg",
+      "alt": "Центральный громкоговоритель DALI Oberon Vokal",
+      "local": "assets/enriched/270122/270122_w85_01.jpg",
+      "enriched": true,
+      "attribution": "wave85-oem",
+      "bytes": 36110
     },
     {
-      "src": "local-variant://270122/w17sc95",
-      "local": "assets/enriched/270122/5031bff43e_w17sc95.jpg",
-      "bytes": 26777,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://270122_w85_02.jpg",
+      "thumb": "assets/enriched/270122/270122_w85_02.jpg",
+      "alt": "Центральный громкоговоритель DALI Oberon Vokal",
+      "local": "assets/enriched/270122/270122_w85_02.jpg",
+      "enriched": true,
+      "attribution": "wave85-oem",
+      "bytes": 351814
     },
     {
-      "src": "local-variant://270122/w17sc90",
-      "local": "assets/enriched/270122/4150199674_w17sc90.jpg",
-      "bytes": 24168,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
+      "src": "local://270122_w85_03.jpg",
+      "thumb": "assets/enriched/270122/270122_w85_03.jpg",
+      "alt": "Центральный громкоговоритель DALI Oberon Vokal",
+      "local": "assets/enriched/270122/270122_w85_03.jpg",
+      "enriched": true,
+      "attribution": "wave85-oem",
+      "bytes": 180922
     }
   ],
   "sku": "",
@@ -138,5 +146,9 @@
   "enrichedAt": "2026-11-14T13:36:06Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T19:05:44Z",
+  "galleryWave85": true
 }

@@ -106,36 +106,40 @@
   ],
   "gallery": [
     {
-      "src": "https://www.wharfedale.co.uk/cdn/shop/files/EVO4.CSStandardBlack_1.jpg",
-      "local": "assets/enriched/270749/39b3ca00d8_w17cdn.jpg",
-      "bytes": 71068,
-      "wave": "meager-w17-2026-11",
-      "w": 1200,
-      "h": 1367
+      "src": "local://270749_w85_00.jpg",
+      "thumb": "assets/enriched/270749/270749_w85_00.jpg",
+      "alt": "Центральный громкоговоритель Wharfedale EVO 4.CS",
+      "local": "assets/enriched/270749/270749_w85_00.jpg",
+      "enriched": true,
+      "attribution": "wave85-oem",
+      "bytes": 76805
     },
     {
-      "src": "https://www.wharfedale.co.uk/cdn/shop/files/EVO4.CSStandardBlack_2.jpg",
-      "local": "assets/enriched/270749/a5f071b07c_w17cdn.jpg",
-      "bytes": 58267,
-      "wave": "meager-w17-2026-11",
-      "w": 1200,
-      "h": 1367
+      "src": "local://270749_w85_01.jpg",
+      "thumb": "assets/enriched/270749/270749_w85_01.jpg",
+      "alt": "Центральный громкоговоритель Wharfedale EVO 4.CS",
+      "local": "assets/enriched/270749/270749_w85_01.jpg",
+      "enriched": true,
+      "attribution": "wave85-oem",
+      "bytes": 93624
     },
     {
-      "src": "https://www.wharfedale.co.uk/cdn/shop/files/EVO4.CSStandardBlack_3.jpg",
-      "local": "assets/enriched/270749/2a7329b4e8_w17cdn.jpg",
-      "bytes": 35954,
-      "wave": "meager-w17-2026-11",
-      "w": 1200,
-      "h": 1367
+      "src": "local://270749_w85_02.jpg",
+      "thumb": "assets/enriched/270749/270749_w85_02.jpg",
+      "alt": "Центральный громкоговоритель Wharfedale EVO 4.CS",
+      "local": "assets/enriched/270749/270749_w85_02.jpg",
+      "enriched": true,
+      "attribution": "wave85-oem",
+      "bytes": 93694
     },
     {
-      "src": "local-variant://270749/w17hsc95",
-      "local": "assets/enriched/270749/1d64900ef9_w17hsc95.jpg",
-      "bytes": 83507,
-      "wave": "meager-w17-2026-11",
-      "w": 1140,
-      "h": 1298
+      "src": "local://270749_w85_03.jpg",
+      "thumb": "assets/enriched/270749/270749_w85_03.jpg",
+      "alt": "Центральный громкоговоритель Wharfedale EVO 4.CS",
+      "local": "assets/enriched/270749/270749_w85_03.jpg",
+      "enriched": true,
+      "attribution": "wave85-oem",
+      "bytes": 87583
     }
   ],
   "sku": "",
@@ -147,5 +151,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T19:05:44Z",
+  "galleryWave85": true
 }

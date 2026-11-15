@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T18:50:26Z",
+  "generatedAt": "2026-11-15T19:08:48Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1322,
-    "padded": 193,
+    "true_multi_angle": 1325,
+    "padded": 190,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 70.06,
-    "padded": 10.23,
+    "true_multi_angle": 70.22,
+    "padded": 10.07,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 28.42,
-    "not_true_multi": 29.94
+    "padded_of_claimed_gal4plus": 28.26,
+    "not_true_multi": 29.78
   },
   "padReasonTallies": {
-    "local-variant": 704,
-    "wN-variant-name": 526,
+    "local-variant": 701,
+    "wN-variant-name": 524,
     "cdn-size-thumb": 110,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 525,
+  "claimedButNotTrueMulti": 522,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -21365,16 +21365,14 @@
       "slug": "portativnaia_akystika_pw_600_black",
       "cat": "Акустика",
       "price": 56610,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 25164,
@@ -23036,16 +23034,14 @@
       "slug": "14a0a66c9b803891d65169aebe4c124c",
       "cat": "Другое",
       "price": 44810,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 263963,
@@ -24034,16 +24030,14 @@
       "slug": "84e7c8ed4599ee16ee6a6646f3e5dd23",
       "cat": "Другое",
       "price": 35990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264335,
