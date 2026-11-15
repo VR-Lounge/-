@@ -36,16 +36,49 @@
   ],
   "gallery": [
     {
+      "src": "https://www.paradigm.com/2423-large_default/persona-c.jpg",
+      "thumb": "https://www.paradigm.com/2423-large_default/persona-c.jpg",
+      "alt": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
+      "local": "assets/enriched/40229/cc1b39d809_w19.jpg",
+      "bytes": 345887,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "https://www.paradigm.com/2419-large_default/persona-c.jpg",
+      "thumb": "https://www.paradigm.com/2419-large_default/persona-c.jpg",
+      "alt": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
+      "local": "assets/enriched/40229/2f65690539_w19.jpg",
+      "bytes": 340910,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
+    },
+    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/Persona_C_Silver.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/Persona_C_Silver-600x600.jpg",
-      "alt": "Persona_C_Silver",
-      "local": "assets/from-live/hero/f14959bcc5_Persona_C_Silver.jpg"
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/Persona_C_Silver.jpg",
+      "alt": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
+      "local": "assets/enriched/40229/586f57fa0c_w19.jpg",
+      "bytes": 44810,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "from-live://4ccd8c566b_Persona_C_Black_Front.jpg",
+      "thumb": "from-live://4ccd8c566b_Persona_C_Black_Front.jpg",
+      "alt": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
+      "local": "assets/from-live/products/4ccd8c566b_Persona_C_Black_Front.jpg",
+      "bytes": 33238,
+      "from": "from-live-w19",
+      "wave": "gallery-w19-2026-11"
     },
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/paradigm_persona_c_4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/paradigm_persona_c_4-600x600.jpg",
-      "alt": "paradigm_persona_c_4",
-      "local": "assets/from-live/hero/07d3acf990_paradigm_persona_c_4.jpg"
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/paradigm_persona_c_4.jpg",
+      "alt": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
+      "local": "assets/enriched/40229/6c65d1f42a_w19.jpg",
+      "bytes": 21067,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
     }
   ],
   "sku": "",
@@ -58,7 +91,8 @@
   "enrichedAt": "2026-11-14T13:19:18Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:00:16Z",
-  "galleryWave18": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:23:42Z",
+  "galleryWave18": true,
+  "galleryWave19": true
 }

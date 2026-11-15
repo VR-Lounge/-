@@ -30,30 +30,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/LP_proigrivatel_Amazon_2_-600x600.jpg",
       "alt": "Amazon 2",
       "local": "assets/from-live/products/6d3bac3dfc_LP_proigrivatel_Amazon_2_.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/LP_proigrivatel_Amazon_2_-600x600.jpg",
-      "local": "assets/enriched/16572/a0a58ceb09_w13var.jpg",
-      "bytes": 21636,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/LP_proigrivatel_Amazon_2_-300x300.jpg",
-      "local": "assets/enriched/16572/d41b341a66_w17cdn.jpg",
-      "bytes": 7841,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
-    },
-    {
-      "src": "local-variant://16572/w17sc95",
-      "local": "assets/enriched/16572/0a49b6ef71_w17sc95.jpg",
-      "bytes": 27301,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
     }
   ],
   "sku": "",
@@ -64,7 +40,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/LP_proigrivatel_Amazon_2/"
   ],
   "enrichedAt": "2026-11-14T13:45:22Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
+  "galleryWave19": true
 }

@@ -78,22 +78,6 @@
       "wave": "meager-w14-2026-11",
       "w": 600,
       "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsap_Soulnote_sd2-0_-600x600.jpg",
-      "local": "assets/enriched/268034/922b3f2534_w14var.jpg",
-      "bytes": 22907,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsap_Soulnote_sd2-0_-300x300.jpg",
-      "local": "assets/enriched/268034/76a6ce299f_w17cdn.jpg",
-      "bytes": 7792,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
     }
   ],
   "sku": "",
@@ -103,7 +87,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%86%d0%b0%d0%bf-soulnote-sd2-0/"
   ],
   "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
+  "galleryWave19": true
 }

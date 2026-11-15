@@ -1,24 +1,57 @@
 {
-  "at": "2026-11-15T00:09:52Z",
+  "at": "2026-11-15T00:33:09Z",
   "counts": {
-    "true_multi_angle": 1064,
-    "padded": 446,
-    "single_real": 377
+    "true_multi_angle": 1072,
+    "padded": 437,
+    "single_real": 378
   },
   "pct": {
-    "true_multi_angle": 56.39,
-    "padded": 23.64,
-    "single_real": 19.98,
-    "padded_of_claimed_gal4plus": 41.67,
-    "not_true_multi": 43.61
+    "true_multi_angle": 56.81,
+    "padded": 23.16,
+    "single_real": 20.03,
+    "padded_of_claimed_gal4plus": 40.41,
+    "not_true_multi": 43.19
   },
-  "wave18": {
-    "padded_to_true_multi": 10,
-    "note": "Davis Stellar, KEF Ref 3 Meta, Persona 3F, MA Platinum 200 3G, Aurender N200 x2, Loewe bild i.77, Elysian 4, Tempo 25, Virgo 25 plus"
+  "wave19": {
+    "padded_to_true_multi": 8,
+    "cleared": [
+      {
+        "id": 40225,
+        "name": "центральный канал Paradigm Persona C Vanta High Gloss Black "
+      },
+      {
+        "id": 40229,
+        "name": "центральный канал Paradigm Persona C Sonic Metallic Sliver ("
+      },
+      {
+        "id": 274552,
+        "name": "Напольная акустика Acoustic Energy Corinium"
+      },
+      {
+        "id": 266938,
+        "name": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )"
+      },
+      {
+        "id": 266932,
+        "name": "Сабвуфер Paradigm XR 11 ( paradigm xr 11 )"
+      },
+      {
+        "id": 267422,
+        "name": "Интегральный усилитель Line Magnetic Audio LM-609iA"
+      },
+      {
+        "id": 273537,
+        "name": "Моноусилитель мощности PS Audio Stellar M1200"
+      },
+      {
+        "id": 274398,
+        "name": "CD проигрыватель CANOR AUDIO CD 1.10"
+      }
+    ]
   },
   "remaining": {
-    "padded": 446,
-    "single_real": 377
+    "padded": 437,
+    "single_real": 378
   },
   "topHitlPadded": [
     {
@@ -26,160 +59,105 @@
       "name": "Сетевой проигрыватель T+A SD 3100 HV",
       "price": 4050000,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
-    },
-    {
-      "id": 40225,
-      "name": "центральный канал Paradigm Persona C Vanta High Gloss Black ( paradigm persona c vanta high gloss black )",
-      "price": 1066750,
-      "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
-    },
-    {
-      "id": 40229,
-      "name": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
-      "price": 1066750,
-      "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 16832,
       "name": "усилитель мощности Triode TRV P845SE ( triode trv p845se )",
       "price": 1000000,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 261114,
       "name": "предусилитель и усилитель мощности audio research sp20 + vs115 ( audio research sp20 plus vs115 )",
       "price": 1000000,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
-    },
-    {
-      "id": 274552,
-      "name": "Напольная акустика Acoustic Energy Corinium",
-      "price": 949200,
-      "uniqueDistinct": 3,
-      "galleryLen": 3,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 262129,
       "name": "ЦАП Soulnote D 2 ( soulnote d 2 )",
       "price": 920000,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
-    },
-    {
-      "id": 273537,
-      "name": "Моноусилитель мощности PS Audio Stellar M1200",
-      "price": 909000,
-      "uniqueDistinct": 3,
-      "galleryLen": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 266938,
-      "name": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
-      "price": 803165,
-      "uniqueDistinct": 3,
-      "galleryLen": 3,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 25156,
       "name": "усилитель мощности Anthem Statement P 2 BL ( anthem statement p 2 bl )",
       "price": 797215,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 271070,
       "name": "Напольная акустика Monitor Audio Gold 500 6G",
       "price": 794990,
       "uniqueDistinct": 3,
-      "galleryLen": 3,
-      "galleryHitl": true
+      "galleryLen": 3
     },
     {
       "id": 271065,
       "name": "Напольная акустика Monitor Audio Gold 300 5G",
       "price": 759990,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 4318,
       "name": "напольная акустика Lawrence Audio Violin SE ( lawrence audio violin se )",
       "price": 748000,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 16798,
       "name": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
       "price": 720000,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 34699,
       "name": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic scorpio 25 )",
       "price": 695000,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 34458,
       "name": "интегральный усилитель Anthem STR Integrated Amplifier ( anthem str integrated amplifier )",
       "price": 647920,
       "uniqueDistinct": 3,
-      "galleryLen": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 266932,
-      "name": "Сабвуфер Paradigm XR 11 ( paradigm xr 11 )",
-      "price": 637415,
-      "uniqueDistinct": 3,
-      "galleryLen": 3,
-      "galleryHitl": true
+      "galleryLen": 3
     },
     {
       "id": 272560,
       "name": "Виниловый проигрыватель Clearaudio Emotion SE Package II",
       "price": 624900,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 271034,
       "name": "Напольная акустика Monitor Audio Gold 300 6G",
       "price": 599990,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
     },
     {
       "id": 274575,
       "name": "Напольная акустика Acoustic Energy AE 520",
       "price": 590500,
       "uniqueDistinct": 2,
-      "galleryLen": 2,
-      "galleryHitl": true
+      "galleryLen": 2
+    },
+    {
+      "id": 25160,
+      "name": "усилитель мощности Anthem Statement M 1 BL ( anthem statement m 1 bl )",
+      "price": 569415,
+      "uniqueDistinct": 3,
+      "galleryLen": 3
     }
   ],
   "topHitlOneshot": [
@@ -188,120 +166,70 @@
       "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
       "price": 1140000,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     },
     {
       "id": 15610,
       "name": "напольная акустика Audio Physic Virgo 25 ( audio physic virgo 25 )",
       "price": 1090000,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     },
     {
       "id": 264506,
       "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
       "price": 1007276,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     },
     {
       "id": 16222,
       "name": "напольная акустика Audio Physic Virgo V ( audio physic virgo v )",
       "price": 990000,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     },
     {
       "id": 4232,
       "name": "усилитель мощности Arte Forma Due Volte ( arte forma due volte )",
       "price": 790000,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     },
     {
       "id": 15910,
       "name": "предусилитель Herron Audio VTSP 3 ( herron audio vtsp 3 )",
       "price": 780000,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     },
     {
       "id": 26594,
       "name": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
       "price": 780000,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     },
     {
       "id": 264124,
       "name": "Сетевой фильтр Audio Replas TRIANGLE POWER 6 SIG ( audio replas triangle power 6 sig )",
       "price": 749777,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     },
     {
       "id": 261818,
       "name": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
       "price": 743665,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     },
     {
       "id": 26638,
       "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
       "price": 731250,
       "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
-    },
-    {
-      "id": 15890,
-      "name": "интегральный усилитель Air Tight ATM 4 ( air tight atm 4 )",
-      "price": 680000,
-      "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
-    },
-    {
-      "id": 262137,
-      "name": "ЦАП Soulnote D 1N  ( soulnote d 1n  )",
-      "price": 650000,
-      "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
-    },
-    {
-      "id": 262119,
-      "name": "Предусилитель Line Magnetic Audio LM 133 ( line magnetic audio lm 133 )",
-      "price": 640000,
-      "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
-    },
-    {
-      "id": 15908,
-      "name": "предусилитель Herron Audio VTSP 2 ( herron audio vtsp 2 )",
-      "price": 620000,
-      "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
-    },
-    {
-      "id": 16800,
-      "name": "интегральный усилитель Spec RSA V1 EX ( spec rsa v1 ex )",
-      "price": 595845,
-      "uniqueDistinct": 1,
-      "galleryLen": 1,
-      "galleryHitl": true
+      "galleryLen": 1
     }
   ]
 }

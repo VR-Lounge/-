@@ -25,30 +25,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/clear_665205_1-600x600.jpg",
       "alt": "clear_665205_1",
       "local": "assets/from-live/products/51b7a7f225_clear_665205_1.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/clear_665205_1-600x600.jpg",
-      "local": "assets/enriched/262608/c267e45c66_w13var.jpg",
-      "bytes": 41514,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/clear_665205_1-768x768.jpg",
-      "local": "assets/enriched/262608/a79c4de06e_w13var.jpg",
-      "bytes": 62210,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/clear_665205_1-300x300.jpg",
-      "local": "assets/enriched/262608/641e0d7c9b_w13var.jpg",
-      "bytes": 13799,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
     }
   ],
   "sku": "",
@@ -58,7 +34,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-fezz-audio-mira-ceti-300b/"
   ],
   "enrichedAt": "2026-11-14T13:46:21Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
+  "galleryWave19": true
 }

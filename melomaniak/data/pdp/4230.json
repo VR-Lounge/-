@@ -36,12 +36,6 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D-600x600.jpg",
-      "alt": "Arte Forma Jadeitte 101D",
-      "local": "assets/from-live/products/ebd498f406_predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D.jpg"
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Arte_forma_Jadeitte_101D_SE.jpg",
       "local": "assets/enriched/4230/410bd47257_w12media.jpg",
       "bytes": 47696,
@@ -50,20 +44,10 @@
       "h": 600
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D-600x600.jpg",
-      "local": "assets/enriched/4230/e26fcecff6_w13var.jpg",
-      "bytes": 36059,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D-300x300.jpg",
-      "local": "assets/enriched/4230/9e32b3add4_w13var.jpg",
-      "bytes": 10933,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D-600x600.jpg",
+      "alt": "Arte Forma Jadeitte 101D",
+      "local": "assets/from-live/products/ebd498f406_predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D.jpg"
     }
   ],
   "sku": "",
@@ -74,7 +58,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/predvaritelnii_ysilitel_Arte_Forma_Jadeitte_101D/"
   ],
   "enrichedAt": "2026-11-14T13:44:50Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
+  "galleryWave19": true
 }

@@ -95,13 +95,13 @@
       "bytes": 792838
     },
     {
-      "src": "from-live://c573b8f09f_arcam_pa720-3.jpg",
-      "thumb": "assets/enriched/270778/84254ebc2e_w10live.jpg",
-      "alt": "270778",
-      "local": "assets/enriched/270778/84254ebc2e_w10live.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 133905
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_pa720-3.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/arcam_pa720-3.jpg",
+      "alt": "Многоканальный усилитель мощности Arcam PA720",
+      "local": "assets/enriched/270778/55e422cf9a_w19.jpg",
+      "bytes": 133905,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
     }
   ],
   "sku": "",
@@ -111,9 +111,10 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/fd771fd0b59e5d936aab264662a12a0b/"
   ],
   "enrichedAt": "2026-11-14T14:25:27Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w10-2026-11",
   "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:00:54Z",
-  "galleryWave18": true
+  "galleryDepaddedAt": "2026-11-15T00:25:06Z",
+  "galleryWave18": true,
+  "galleryWave19": true
 }

@@ -1,37 +1,28 @@
-# PR note — gallery padding audit (Wave 18 continue)
+# PR note — gallery padding audit (Wave 19)
 
-Alexander: Wave 17 «meager 0» partly via unique-hash scale/rotate + CDN `-scaled` / `-NxN` — **not** true multi-angle. Uniqueness = SHA / Kirby content-id / **dhash≤5** (ahash alone collapses white-BG studio angles).
+Uniqueness = SHA / Kirby content-id / **dhash≤5**. No scale/rotate inventing.
 
-## Counts (1887 PDP) — after Wave 18
+## Counts (1887 PDP) — after Wave 19
 
 | class | n | % |
 |-------|---|---|
-| true multi-angle (≥4 distinct) | **1064** | 56.3% |
-| padded (2–3 unique / fillers) | **446** | 23.6% |
-| single-real (true 1-shot) | **377** | 20.0% |
+| true multi-angle (≥4 distinct) | **1072** | 56.8% |
+| padded (2–3 unique / fillers) | **437** | 23.2% |
+| single-real (true 1-shot) | **378** | 20.0% |
 
-Wave 18 this pass: **10 padded → true multi**. Remaining padded **446**, oneshot **377**.
+Wave 19 this pass: **8 padded → true multi**.
 
-Artifacts: `gallery-padding-audit.json`, `gallery-padding-summary.json`, `wave18-promote.json`.
+## Cleared → true multi
 
-## Wave 18 → true multi (exact OEM / from-live / press)
-
-- Davis Acoustics Stellar — OEM davis-acoustics.com gallery (8 angles)
-- KEF Reference 3 Meta — KEF CDN + Salsify press
-- Paradigm Persona 3F — OEM + rear iso `2391` + from-live
-- Monitor Audio Platinum 200 3G — OEM front/rear/iso + from-live 5268–5280
-- Aurender N200 8Tb + 2Tb — from-live multi-angle rebuild
-- Wharfedale Elysian 4 — from-live distinct cluster
-- Audio Physic Tempo 25 — dedupe → 4
-- Loewe bild i.77 — dedupe → 4
-- Audio Physic Virgo 25 plus — strip wrong Virgo V/25 frames; audio.com.pl press → 4
-
-Also: Quad ESL 2912 already true multi after dhash-only metric (prior pass).
+- Paradigm Persona C Vanta + Sonic Silver — OEM 2417–2424
+- Acoustic Energy Corinium — OEM gallery (corinium.co.uk)
+- Paradigm XR 13 + XR 11 — OEM PrestaShop packs
+- Line Magnetic LM-845iA Premium (267422) — dedupe
+- PS Audio Stellar M1200 — OEM Shopify front/rear/L/R
+- CANOR CD 1.10 — OEM canor-audio.com gallery (18 angles)
 
 ## Still HITL (top $)
 
-**Padded:** T+A SD 3100 HV (u=2), Persona C ×2, Triode TRV-P845SE (u=2), ARC SP20+VS115 (u=2), AE Corinium (u=3), Soulnote D-2, PS Audio Stellar M1200, Paradigm XR 13, MA Gold 500/300 5G, Founder 80F (OEM only 2 perceptual angles / finish variants)…
+**Padded:** T+A SD 3100 HV · Triode TRV-P845SE · ARC SP20+VS115 · Soulnote D-2 · Anthem Statement P2 · MA Gold 500/300/200 · Lawrence Violin SE · Spec RSA M1EX · Scorpio 25 · Anthem STR (u=3) · Founder 80F · Arcam PA720…
 
-**Oneshot:** Arte 805PP, Virgo 25 / Virgo V (wrong-model stripped), SAEC WE-4700, Herron VTSP 3, Air Tight ATM-1S, ANTHEM AVM 70…
-
-No inventing scale/rotate. Founder 80F PrestaShop 2831–2861 collapse to 2 dhash clusters.
+**Oneshot:** Arte 805PP · Virgo 25/V · SAEC WE-4700 · Herron VTSP · Air Tight ATM-1S · ANTHEM AVM 70…

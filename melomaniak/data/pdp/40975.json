@@ -37,15 +37,6 @@
   ],
   "gallery": [
     {
-      "src": "local://audio-research-vs115_big_611465e06c.jpg",
-      "thumb": "assets/enriched/40975/1998ce41eb_live1.jpg",
-      "alt": "Усилитель мощности Audio Research VS115 ( audio research vs115 )",
-      "local": "assets/enriched/40975/1998ce41eb_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 18618
-    },
-    {
       "src": "local://8c3c82b93bbce69d66f561536c490f49_ba4c673370.jpg",
       "thumb": "assets/enriched/40975/351fa332ab_live2.jpg",
       "alt": "Усилитель мощности Audio Research VS115 ( audio research vs115 )",
@@ -55,16 +46,13 @@
       "bytes": 264235
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/09/audio-research-vs115_big.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/09/audio-research-vs115_big.jpg",
-      "alt": "audio-research-vs115_big",
-      "local": "assets/from-live/products/611465e06c_audio-research-vs115_big.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/8c3c82b93bbce69d66f561536c490f49.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/8c3c82b93bbce69d66f561536c490f49-600x600.jpg",
-      "alt": "8c3c82b93bbce69d66f561536c490f49",
-      "local": "assets/from-live/products/ba4c673370_8c3c82b93bbce69d66f561536c490f49.jpg"
+      "src": "local://audio-research-vs115_big_611465e06c.jpg",
+      "thumb": "assets/enriched/40975/1998ce41eb_live1.jpg",
+      "alt": "Усилитель мощности Audio Research VS115 ( audio research vs115 )",
+      "local": "assets/enriched/40975/1998ce41eb_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 18618
     }
   ],
   "sku": "",
@@ -74,6 +62,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-audio-research-vs115/"
   ],
   "enrichedAt": "2026-11-14T13:38:10Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w5-2026-11"
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
+  "galleryWave19": true
 }

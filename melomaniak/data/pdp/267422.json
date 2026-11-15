@@ -56,22 +56,13 @@
   ],
   "gallery": [
     {
-      "src": "https://www.lm-audio.com/uploads/admin/1/63b514c595424.jpg",
-      "thumb": "https://www.lm-audio.com/uploads/admin/1/63b514c595424.jpg",
+      "src": "https://www.lm-audio.com/uploads/admin/1/6a2a4909e33a8.jpg",
+      "thumb": "https://www.lm-audio.com/uploads/admin/1/6a2a4909e33a8.jpg",
       "alt": "Интегральный усилитель Line Magnetic Audio LM-609iA",
-      "local": "assets/enriched/267422/919d6cd540_1.jpg",
+      "local": "assets/enriched/267422/159e560c2a_4.jpg",
       "enriched": true,
       "attribution": "www.lm-audio.com",
-      "bytes": 51915
-    },
-    {
-      "src": "https://www.lm-audio.com/uploads/admin/1/63b514cdb2292.jpg",
-      "thumb": "https://www.lm-audio.com/uploads/admin/1/63b514cdb2292.jpg",
-      "alt": "Интегральный усилитель Line Magnetic Audio LM-609iA",
-      "local": "assets/enriched/267422/6e36d8ae2f_2.jpg",
-      "enriched": true,
-      "attribution": "www.lm-audio.com",
-      "bytes": 60490
+      "bytes": 5328059
     },
     {
       "src": "https://www.lm-audio.com/uploads/admin/1/63b514d3077ee.jpg",
@@ -83,19 +74,19 @@
       "bytes": 157026
     },
     {
-      "src": "https://www.lm-audio.com/uploads/admin/1/6a2a4909e33a8.jpg",
-      "thumb": "https://www.lm-audio.com/uploads/admin/1/6a2a4909e33a8.jpg",
-      "alt": "Интегральный усилитель Line Magnetic Audio LM-609iA",
-      "local": "assets/enriched/267422/159e560c2a_4.jpg",
-      "enriched": true,
-      "attribution": "www.lm-audio.com",
-      "bytes": 5328059
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/221031141833_856.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/06/221031141833_856-600x600.jpg",
       "alt": "221031141833_856",
       "local": "assets/from-live/products/37d42aaefb_221031141833_856.jpg"
+    },
+    {
+      "src": "https://www.lm-audio.com/uploads/admin/1/63b514cdb2292.jpg",
+      "thumb": "https://www.lm-audio.com/uploads/admin/1/63b514cdb2292.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM-609iA",
+      "local": "assets/enriched/267422/6e36d8ae2f_2.jpg",
+      "enriched": true,
+      "attribution": "www.lm-audio.com",
+      "bytes": 60490
     }
   ],
   "sku": "",
@@ -107,5 +98,8 @@
   ],
   "enrichedAt": "2026-11-14T12:41:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w2-2026-11"
+  "meagerWave": "meager-w2-2026-11",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
+  "galleryWave19": true
 }

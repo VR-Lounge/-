@@ -101,37 +101,83 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/xr-13-5.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/xr-13-5.png",
+      "src": "https://www.paradigm.com/3429-large_default/xr-13.jpg",
+      "thumb": "https://www.paradigm.com/3429-large_default/xr-13.jpg",
       "alt": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
-      "local": "assets/enriched/266938/06ce060923_w18.png",
-      "bytes": 1033584,
-      "from": "oem-w18",
-      "wave": "gallery-w18-2026-11"
+      "local": "assets/enriched/266938/e6e6c2f4a5_w19.jpg",
+      "bytes": 1695060,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/xr-13-1.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/xr-13-1.png",
+      "src": "https://www.paradigm.com/3427-large_default/xr-13.jpg",
+      "thumb": "https://www.paradigm.com/3427-large_default/xr-13.jpg",
       "alt": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
-      "local": "assets/enriched/266938/b8d8f2290c_w18.png",
+      "local": "assets/enriched/266938/e180d55408_w19.jpg",
+      "bytes": 1041175,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "https://www.paradigm.com/3439-large_default/xr-13.jpg",
+      "thumb": "https://www.paradigm.com/3439-large_default/xr-13.jpg",
+      "alt": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
+      "local": "assets/enriched/266938/231c3dafde_w19.jpg",
+      "bytes": 920196,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "https://www.paradigm.com/3433-large_default/xr-13.jpg",
+      "thumb": "https://www.paradigm.com/3433-large_default/xr-13.jpg",
+      "alt": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
+      "local": "assets/enriched/266938/00ed81d788_w19.jpg",
+      "bytes": 723386,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "https://www.paradigm.com/3436-large_default/xr-13.jpg",
+      "thumb": "https://www.paradigm.com/3436-large_default/xr-13.jpg",
+      "alt": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
+      "local": "assets/enriched/266938/959b90e9a5_w19.jpg",
       "bytes": 643002,
-      "from": "oem-w18",
-      "wave": "gallery-w18-2026-11"
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/xr-13.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/xr-13.png",
+      "src": "https://www.paradigm.com/3576-large_default/xr-13.jpg",
+      "thumb": "https://www.paradigm.com/3576-large_default/xr-13.jpg",
       "alt": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
-      "local": "assets/enriched/266938/059b53d5ee_w18.png",
-      "bytes": 284890,
-      "from": "oem-w18",
-      "wave": "gallery-w18-2026-11"
+      "local": "assets/enriched/266938/8d1cdb6428_w19.jpg",
+      "bytes": 638296,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "https://www.paradigm.com/3425-large_default/xr-13.jpg",
+      "thumb": "https://www.paradigm.com/3425-large_default/xr-13.jpg",
+      "alt": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
+      "local": "assets/enriched/266938/704cb688e2_w19.jpg",
+      "bytes": 599377,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
+    },
+    {
+      "src": "https://www.paradigm.com/3574-large_default/xr-13.jpg",
+      "thumb": "https://www.paradigm.com/3574-large_default/xr-13.jpg",
+      "alt": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
+      "local": "assets/enriched/266938/07a23ab51f_w19.jpg",
+      "bytes": 548114,
+      "from": "oem-w19",
+      "wave": "gallery-w19-2026-11"
     }
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
-  "galleryHitl": true,
+  "galleryHitl": false,
   "enrichmentNote": "HITL gallery: <4 distinct perceptual angles after w18 OEM hunt.",
-  "galleryDepaddedAt": "2026-11-15T00:00:37Z",
-  "galleryWave18": true
+  "galleryDepaddedAt": "2026-11-15T00:24:03Z",
+  "galleryWave18": true,
+  "galleryWave19": true
 }

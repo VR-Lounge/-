@@ -1,0 +1,976 @@
+{
+  "at": "2026-11-15T00:25:16Z",
+  "tried": 96,
+  "nowMulti": 6,
+  "newlyMultiIds": [
+    40225,
+    40229,
+    274552,
+    266938,
+    266932,
+    267422
+  ],
+  "paddedToTrue": 6,
+  "results": [
+    {
+      "id": 274019,
+      "name": "Сетевой проигрыватель T+A SD 3100 HV",
+      "price": 4050000,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 26602,
+      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
+      "price": 1140000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 15610,
+      "name": "напольная акустика Audio Physic Virgo 25 ( audio physic virgo 25 )",
+      "price": 1090000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 40225,
+      "name": "центральный канал Paradigm Persona C Vanta High Gloss Black ( paradigm persona c vanta high gloss black )",
+      "price": 1066750,
+      "before": 5,
+      "after": 5,
+      "multi": true,
+      "hitl": false,
+      "prevClass": "padded"
+    },
+    {
+      "id": 40229,
+      "name": "центральный канал Paradigm Persona C Sonic Metallic Sliver ( paradigm persona c sonic metallic sliver )",
+      "price": 1066750,
+      "before": 5,
+      "after": 5,
+      "multi": true,
+      "hitl": false,
+      "prevClass": "padded"
+    },
+    {
+      "id": 264506,
+      "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
+      "price": 1007276,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 16832,
+      "name": "усилитель мощности Triode TRV P845SE ( triode trv p845se )",
+      "price": 1000000,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261114,
+      "name": "предусилитель и усилитель мощности audio research sp20 + vs115 ( audio research sp20 plus vs115 )",
+      "price": 1000000,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 16222,
+      "name": "напольная акустика Audio Physic Virgo V ( audio physic virgo v )",
+      "price": 990000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 274552,
+      "name": "Напольная акустика Acoustic Energy Corinium",
+      "price": 949200,
+      "before": 8,
+      "after": 8,
+      "multi": true,
+      "hitl": false,
+      "prevClass": "padded"
+    },
+    {
+      "id": 262129,
+      "name": "ЦАП Soulnote D 2 ( soulnote d 2 )",
+      "price": 920000,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 273537,
+      "name": "Моноусилитель мощности PS Audio Stellar M1200",
+      "price": 909000,
+      "before": 3,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 266938,
+      "name": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )",
+      "price": 803165,
+      "before": 8,
+      "after": 8,
+      "multi": true,
+      "hitl": false,
+      "prevClass": "padded"
+    },
+    {
+      "id": 25156,
+      "name": "усилитель мощности Anthem Statement P 2 BL ( anthem statement p 2 bl )",
+      "price": 797215,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 271070,
+      "name": "Напольная акустика Monitor Audio Gold 500 6G",
+      "price": 794990,
+      "before": 3,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 4232,
+      "name": "усилитель мощности Arte Forma Due Volte ( arte forma due volte )",
+      "price": 790000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 15910,
+      "name": "предусилитель Herron Audio VTSP 3 ( herron audio vtsp 3 )",
+      "price": 780000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 26594,
+      "name": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "price": 780000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 271065,
+      "name": "Напольная акустика Monitor Audio Gold 300 5G",
+      "price": 759990,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 264124,
+      "name": "Сетевой фильтр Audio Replas TRIANGLE POWER 6 SIG ( audio replas triangle power 6 sig )",
+      "price": 749777,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 4318,
+      "name": "напольная акустика Lawrence Audio Violin SE ( lawrence audio violin se )",
+      "price": 748000,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261818,
+      "name": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
+      "price": 743665,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 26638,
+      "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
+      "price": 731250,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 16798,
+      "name": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )",
+      "price": 720000,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 34699,
+      "name": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic scorpio 25 )",
+      "price": 695000,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15890,
+      "name": "интегральный усилитель Air Tight ATM 4 ( air tight atm 4 )",
+      "price": 680000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 262137,
+      "name": "ЦАП Soulnote D 1N  ( soulnote d 1n  )",
+      "price": 650000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 34458,
+      "name": "интегральный усилитель Anthem STR Integrated Amplifier ( anthem str integrated amplifier )",
+      "price": 647920,
+      "before": 3,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 262119,
+      "name": "Предусилитель Line Magnetic Audio LM 133 ( line magnetic audio lm 133 )",
+      "price": 640000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 266932,
+      "name": "Сабвуфер Paradigm XR 11 ( paradigm xr 11 )",
+      "price": 637415,
+      "before": 8,
+      "after": 8,
+      "multi": true,
+      "hitl": false,
+      "prevClass": "padded"
+    },
+    {
+      "id": 272560,
+      "name": "Виниловый проигрыватель Clearaudio Emotion SE Package II",
+      "price": 624900,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15908,
+      "name": "предусилитель Herron Audio VTSP 2 ( herron audio vtsp 2 )",
+      "price": 620000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 271034,
+      "name": "Напольная акустика Monitor Audio Gold 300 6G",
+      "price": 599990,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 16800,
+      "name": "интегральный усилитель Spec RSA V1 EX ( spec rsa v1 ex )",
+      "price": 595845,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 274575,
+      "name": "Напольная акустика Acoustic Energy AE 520",
+      "price": 590500,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15602,
+      "name": "напольная акустика Audio Physic Minos ( audio physic minos )",
+      "price": 585000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 15646,
+      "name": "напольная акустика Lawrence Audio Mandolin ( lawrence audio mandolin )",
+      "price": 580000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 270483,
+      "name": "Фонокорректор Transrotor Phono 8.2 MC",
+      "price": 573900,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 25160,
+      "name": "усилитель мощности Anthem Statement M 1 BL ( anthem statement m 1 bl )",
+      "price": 569415,
+      "before": 3,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261878,
+      "name": "Напольная акустика PARADIGM Founder 80F Gloss Black ( paradigm founder 80f gloss black )",
+      "price": 550715,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261882,
+      "name": "Напольная акустика PARADIGM Founder 80F Walnut ( paradigm founder 80f walnut )",
+      "price": 550715,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261883,
+      "name": "Напольная акустика PARADIGM Founder 80F Midnight Cherry ( paradigm founder 80f midnight cherry )",
+      "price": 550715,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261884,
+      "name": "Напольная акустика PARADIGM Founder 80F Black Walnut ( paradigm founder 80f black walnut )",
+      "price": 550715,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 262108,
+      "name": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
+      "price": 550000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 26598,
+      "name": "фонокорректор Amazon Audio B-Lab ( amazon audio b lab )",
+      "price": 540000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 271060,
+      "name": "Напольная акустика Monitor Audio Gold 200 5G",
+      "price": 539990,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 270778,
+      "name": "Многоканальный усилитель мощности Arcam PA720",
+      "price": 529990,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 264125,
+      "name": "Сетевой фильтр Audio Replas MQP-2 SIG mk2 ( audio replas mqp 2 sig mk2 )",
+      "price": 527000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 16570,
+      "name": "виниловый проигрыватель Amazon 1 ( amazon 1 )",
+      "price": 520000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 14804,
+      "name": "проектор Epson EH LS10000 ( epson eh ls10000 )",
+      "price": 501143,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 274398,
+      "name": "CD проигрыватель CANOR AUDIO CD 1.10",
+      "price": 501000,
+      "before": 3,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 32248,
+      "name": "Активная акустика MCINTOSH RS100 ( mcintosh rs100 )",
+      "price": 500000,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 272558,
+      "name": "Виниловый проигрыватель Clearaudio Emotion SE Package I",
+      "price": 499900,
+      "before": 3,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261835,
+      "name": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen 2 )",
+      "price": 494925,
+      "before": 4,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 16874,
+      "name": "интегральный усилитель Ultimate Audio Spirit EU 150 ( ultimate audio spirit eu 150 )",
+      "price": 480000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 262139,
+      "name": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
+      "price": 480000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 24768,
+      "name": "AV процессор Anthem Statement D2v 3D ( av anthem statement d2v 3d )",
+      "price": 479000,
+      "before": 3,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 40975,
+      "name": "Усилитель мощности Audio Research VS115 ( audio research vs115 )",
+      "price": 450000,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15918,
+      "name": "интегральный усилитель Leben CS 300X S ( leben cs 300x s )",
+      "price": 450000,
+      "before": 3,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 16156,
+      "name": "цифро аналоговый преобразователь 47 Labs 4705 Gemini ( 47 labs 4705 gemini )",
+      "price": 450000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 42427,
+      "name": "Усилитель мощности Audio Research DS450 ( audio research ds450 )",
+      "price": 450000,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 269782,
+      "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
+      "price": 449990,
+      "before": 3,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15860,
+      "name": "фонокорректор Triode TRV EQ3SE ( triode trv eq3se )",
+      "price": 440000,
+      "before": 3,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15904,
+      "name": "предусилитель Herron Audio HL 1 ( herron audio hl 1 )",
+      "price": 430000,
+      "before": 1,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 270148,
+      "name": "CD-проигрыватель MOON 260D Black",
+      "price": 429900,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 26626,
+      "name": "интегральный усилитель AudioNet SAM v.2.0 ( audionet sam v 2 0 )",
+      "price": 420000,
+      "before": 4,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15916,
+      "name": "интегральный усилитель Leben CS 300 F ( leben cs 300 f )",
+      "price": 420000,
+      "before": 2,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 16838,
+      "name": "усилитель мощности Triode TRX P6L ( triode trx p6l )",
+      "price": 420000,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 16872,
+      "name": "интегральный усилитель Ultimate Audio Spirit EU 120 AB ( ultimate audio spirit eu 120 ab )",
+      "price": 420000,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 262133,
+      "name": "Интегральный усилитель Soulnote A 1  ( soulnote a 1  )",
+      "price": 420000,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 271226,
+      "name": "Кабель межблочный аналоговый RCA Nordost Tyr 2",
+      "price": 414990,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 274568,
+      "name": "Напольная акустика Acoustic Energy AE 509",
+      "price": 414300,
+      "before": 6,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 264101,
+      "name": "Кварцевый слипмат Audio Replas TS-OPT300 HR ( audio replas ts opt300 hr )",
+      "price": 408000,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 15606,
+      "name": "напольная акустика Audio Physic Scorpio II ( audio physic scorpio ii )",
+      "price": 400000,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 270973,
+      "name": "Сетевой проигрыватель Matrix Audio Element M2",
+      "price": 399990,
+      "before": 4,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15948,
+      "name": "интегральный усилитель Line Magnetic Audio LM 501 IA ( line magnetic audio lm 501 ia )",
+      "price": 395000,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 267642,
+      "name": "Интегральный усилитель Advance Paris X-i1100",
+      "price": 381098,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 4230,
+      "name": "предусилитель Arte Forma Jadeitte 101D ( arte forma jadeitte 101d )",
+      "price": 380000,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 267422,
+      "name": "Интегральный усилитель Line Magnetic Audio LM-609iA",
+      "price": 380000,
+      "before": 5,
+      "after": 4,
+      "multi": true,
+      "hitl": false,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15638,
+      "name": "центральный канал Audio Physic Orea ( audio physic orea )",
+      "price": 380000,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 15932,
+      "name": "интегральный усилитель Line Magnetic Audio LM 210 IA ( line magnetic audio lm 210 ia )",
+      "price": 374000,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 261873,
+      "name": "Центральный канал PARADIGM Founder 90C Gloss Black ( paradigm founder 90c gloss black )",
+      "price": 367115,
+      "before": 8,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261875,
+      "name": "Центральный канал PARADIGM Founder 90C Walnut ( paradigm founder 90c walnut )",
+      "price": 367115,
+      "before": 8,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261876,
+      "name": "Центральный канал PARADIGM Founder 90C Midnight Cherry ( paradigm founder 90c midnight cherry )",
+      "price": 367115,
+      "before": 8,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 261877,
+      "name": "Центральный канал PARADIGM Founder 90C Black Walnut ( paradigm founder 90c black walnut )",
+      "price": 367115,
+      "before": 8,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 262608,
+      "name": "Интегральный усилитель Fezz Audio Mira Ceti 300b ( fezz audio mira ceti 300b )",
+      "price": 365500,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 16572,
+      "name": "виниловый проигрыватель Amazon 2 ( amazon 2 )",
+      "price": 360000,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 268034,
+      "name": "ЦАП Soulnote sd2.0",
+      "price": 360000,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 270652,
+      "name": "Напольная акустика Wharfedale Aura 4",
+      "price": 359990,
+      "before": 8,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 267868,
+      "name": "Предусилитель TRIODE TRX – 1SE",
+      "price": 355300,
+      "before": 4,
+      "after": 3,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 15604,
+      "name": "Сабвуфер  Audio Physic RHEA II ( audio physic rhea ii )",
+      "price": 350000,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 15716,
+      "name": "цифро аналоговый преобразователь 47 Labs 4705 ( 47 labs 4705 )",
+      "price": 350000,
+      "before": 4,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 16804,
+      "name": "интегральный усилитель Trigon Energy ( trigon energy )",
+      "price": 350000,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 24490,
+      "name": "полочная акустика ProAc Tablette Anniversary cherry ( proac tablette anniversary cherry )",
+      "price": 350000,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    },
+    {
+      "id": 16814,
+      "name": "предусилитель Triode TRV 4SE ( triode trv 4se )",
+      "price": 350000,
+      "before": 5,
+      "after": 1,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "single_real"
+    },
+    {
+      "id": 16822,
+      "name": "интегральный усилитель Triode TRV 88SER ( triode trv 88ser )",
+      "price": 350000,
+      "before": 4,
+      "after": 2,
+      "multi": false,
+      "hitl": true,
+      "prevClass": "padded"
+    }
+  ]
+}

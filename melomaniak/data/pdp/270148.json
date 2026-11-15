@@ -86,16 +86,16 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black_4044835544-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black_4044835544-1.jpg",
-      "alt": "moon_260d_black_4044835544-1.jpg",
-      "local": "assets/from-live/products/a58c189db6_moon_260d_black_4044835544-1.jpg"
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black3.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black3.jpg",
       "alt": "moon_260d_black3.jpg",
       "local": "assets/from-live/products/599ed62cbd_moon_260d_black3.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black_4044835544-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black_4044835544-1.jpg",
+      "alt": "moon_260d_black_4044835544-1.jpg",
+      "local": "assets/from-live/products/a58c189db6_moon_260d_black_4044835544-1.jpg"
     }
   ],
   "sku": "",
@@ -106,8 +106,9 @@
     "https://simaudio.com/en/products/moon-260d/"
   ],
   "enrichedAt": "2026-11-14T17:02:09Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: true 1-shot / <4 OEM angles after depad — salon shoot needed.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: true 1-shot / <4 OEM angles after depad — salon shoot needed. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w9-2026-11",
   "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-14T23:38:27Z"
+  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
+  "galleryWave19": true
 }

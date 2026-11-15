@@ -111,12 +111,12 @@
   ],
   "gallery": [
     {
-      "src": "http://graveaudio.com/cdn/shop/files/Element-M2-01_1200x1200.jpg",
-      "local": "assets/enriched/270973/c710677a65_w12mx.jpg",
-      "bytes": 34678,
+      "src": "https://apos.audio/cdn/shop/products/apos-audio-matrix-audio-dac-digital-to-analog-converter-matrix-element-m2-mqa-dac-amp-music-streamer-37095419642092_1600x1171.png",
+      "local": "assets/enriched/270973/db26bbd6fa_w12mx.jpg",
+      "bytes": 727312,
       "wave": "meager-w12-2026-11",
-      "w": 1000,
-      "h": 1167
+      "w": 1600,
+      "h": 1171
     },
     {
       "src": "http://graveaudio.com/cdn/shop/files/element-M2-02_1200x1200.jpg",
@@ -133,14 +133,6 @@
       "wave": "meager-w12-2026-11",
       "w": 1000,
       "h": 1167
-    },
-    {
-      "src": "https://apos.audio/cdn/shop/products/apos-audio-matrix-audio-dac-digital-to-analog-converter-matrix-element-m2-mqa-dac-amp-music-streamer-37095419642092_1600x1171.png",
-      "local": "assets/enriched/270973/db26bbd6fa_w12mx.jpg",
-      "bytes": 727312,
-      "wave": "meager-w12-2026-11",
-      "w": 1600,
-      "h": 1171
     }
   ],
   "sku": "",
@@ -150,7 +142,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/c0b341b5087f490da04904a5e47e180c/"
   ],
   "enrichedAt": "2026-11-14T13:47:03Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
+  "galleryWave19": true
 }

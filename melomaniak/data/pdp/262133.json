@@ -26,12 +26,6 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/c12a7de0e40bcc0883e6d04cfff42f5b.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/c12a7de0e40bcc0883e6d04cfff42f5b-600x572.jpg",
-      "alt": "c12a7de0e40bcc0883e6d04cfff42f5b",
-      "local": "assets/from-live/products/5118efe380_c12a7de0e40bcc0883e6d04cfff42f5b.jpg"
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/soulnote_a1.jpg",
       "local": "assets/enriched/262133/a750bf0c55_w13media.jpg",
       "bytes": 86114,
@@ -40,20 +34,10 @@
       "h": 600
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/soulnote_a1-600x600.jpg",
-      "local": "assets/enriched/262133/597056b3db_w13var.jpg",
-      "bytes": 47616,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "local-variant://262133/w17sc95",
-      "local": "assets/enriched/262133/3be424fd70_w17sc95.jpg",
-      "bytes": 63672,
-      "wave": "meager-w17-2026-11",
-      "w": 760,
-      "h": 570
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/c12a7de0e40bcc0883e6d04cfff42f5b.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/c12a7de0e40bcc0883e6d04cfff42f5b-600x572.jpg",
+      "alt": "c12a7de0e40bcc0883e6d04cfff42f5b",
+      "local": "assets/from-live/products/5118efe380_c12a7de0e40bcc0883e6d04cfff42f5b.jpg"
     }
   ],
   "sku": "",
@@ -63,7 +47,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-soulnote-a-1-sh/"
   ],
   "enrichedAt": "2026-11-14T13:46:21Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
+  "galleryWave19": true
 }

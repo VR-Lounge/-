@@ -45,30 +45,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Line_Magnetic_Audio_LM_210_IA-600x600.jpg",
       "alt": "Line Magnetic Audio LM 210 IA",
       "local": "assets/from-live/products/dc85ea31f8_integralnii_ysilitel_Line_Magnetic_Audio_LM_210_IA.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Line_Magnetic_Audio_LM_210_IA-600x600.jpg",
-      "local": "assets/enriched/15932/94c905c9ff_w13var.jpg",
-      "bytes": 27287,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Line_Magnetic_Audio_LM_210_IA-300x300.jpg",
-      "local": "assets/enriched/15932/c7ca68c503_w13var.jpg",
-      "bytes": 9356,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
-    },
-    {
-      "src": "local-variant://15932/w17sc95",
-      "local": "assets/enriched/15932/24ffea7034_w17sc95.jpg",
-      "bytes": 33209,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
     }
   ],
   "sku": "",
@@ -80,7 +56,9 @@
     "https://www.lm-audio.com/"
   ],
   "enrichedAt": "2026-11-14T14:05:10Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
+  "galleryWave19": true
 }

@@ -50,24 +50,16 @@
       "bytes": 88783
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_AudioNet_SAM_v-2-0_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_AudioNet_SAM_v-2-0_-600x600.jpg",
-      "alt": "AudioNet SAM v.2.0",
-      "local": "assets/from-live/products/05d9517578_integralnii_ysilitel_AudioNet_SAM_v-2-0_.jpg"
-    },
-    {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/08/Audionet-SAM-v2-back-500x300-1.jpg",
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/08/Audionet-SAM-v2-back-500x300-1.jpg",
       "alt": "Audionet-SAM-v2-back-500&#215;300",
       "local": "assets/from-live/products/2210ed7c3e_Audionet-SAM-v2-back-500x300-1.jpg"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_AudioNet_SAM_v-2-0_-600x600.jpg",
-      "local": "assets/enriched/26626/d25eecc617_w13var.jpg",
-      "bytes": 17609,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_AudioNet_SAM_v-2-0_.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_AudioNet_SAM_v-2-0_-600x600.jpg",
+      "alt": "AudioNet SAM v.2.0",
+      "local": "assets/from-live/products/05d9517578_integralnii_ysilitel_AudioNet_SAM_v-2-0_.jpg"
     }
   ],
   "sku": "",
@@ -79,7 +71,9 @@
     "https://audionet.de/en/products/sam/"
   ],
   "enrichedAt": "2026-11-14T17:02:07Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
+  "galleryWave19": true
 }

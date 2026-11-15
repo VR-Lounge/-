@@ -26,13 +26,10 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Triode_TRX_1SE_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Triode_TRX_1SE_.jpg",
-      "alt": "Предусилитель TRIODE TRX – 1SE",
-      "local": "assets/enriched/267868/e33ca57db5_1.jpg",
-      "enriched": true,
-      "attribution": "xn--80aannlcfckh.xn--p1ai",
-      "bytes": 24074
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/TRIODE-TRX-1SE-rear.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/TRIODE-TRX-1SE-rear.jpg",
+      "alt": "TRIODE-TRX-1SE-rear",
+      "local": "assets/from-live/products/3ee30d4097_TRIODE-TRX-1SE-rear.jpg"
     },
     {
       "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/TRIODE-TRX-1SE-1.jpg",
@@ -41,18 +38,13 @@
       "local": "assets/from-live/products/2246688777_TRIODE-TRX-1SE-1.jpg"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/TRIODE-TRX-1SE-rear.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/TRIODE-TRX-1SE-rear.jpg",
-      "alt": "TRIODE-TRX-1SE-rear",
-      "local": "assets/from-live/products/3ee30d4097_TRIODE-TRX-1SE-rear.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Triode_TRX_1SE_-600x600.jpg",
-      "local": "assets/enriched/267868/83c56b3f13_w13var.jpg",
-      "bytes": 22461,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Triode_TRX_1SE_.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Triode_TRX_1SE_.jpg",
+      "alt": "Предусилитель TRIODE TRX – 1SE",
+      "local": "assets/enriched/267868/e33ca57db5_1.jpg",
+      "enriched": true,
+      "attribution": "xn--80aannlcfckh.xn--p1ai",
+      "bytes": 24074
     }
   ],
   "sku": "",
@@ -63,7 +55,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-triode-trx-1se/"
   ],
   "enrichedAt": "2026-11-14T17:02:08Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
+  "galleryWave19": true
 }

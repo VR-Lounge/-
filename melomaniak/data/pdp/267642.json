@@ -91,15 +91,6 @@
   ],
   "gallery": [
     {
-      "src": "local://Advance-Paris-Xi1100-Front-small_b1b4aa3c7c.jpg",
-      "thumb": "assets/enriched/267642/57c316aa61_live1.jpg",
-      "alt": "Интегральный усилитель Advance Paris X-i1100",
-      "local": "assets/enriched/267642/57c316aa61_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 47605
-    },
-    {
       "src": "local://Advance-Paris-X-i1100-rear_7ea2c26a2f.png",
       "thumb": "assets/enriched/267642/9007a85794_live2.png",
       "alt": "Интегральный усилитель Advance Paris X-i1100",
@@ -109,16 +100,13 @@
       "bytes": 369555
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/07/Advance-Paris-Xi1100-Front-small.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/07/Advance-Paris-Xi1100-Front-small-600x422.jpg",
-      "alt": "Advance-Paris-Xi1100-Front-small",
-      "local": "assets/from-live/products/b1b4aa3c7c_Advance-Paris-Xi1100-Front-small.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/07/Advance-Paris-X-i1100-rear.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/07/Advance-Paris-X-i1100-rear-600x300.png",
-      "alt": "Advance-Paris-X-i1100-rear",
-      "local": "assets/from-live/products/7ea2c26a2f_Advance-Paris-X-i1100-rear.png"
+      "src": "local://Advance-Paris-Xi1100-Front-small_b1b4aa3c7c.jpg",
+      "thumb": "assets/enriched/267642/57c316aa61_live1.jpg",
+      "alt": "Интегральный усилитель Advance Paris X-i1100",
+      "local": "assets/enriched/267642/57c316aa61_live1.jpg",
+      "enriched": true,
+      "attribution": "from-live",
+      "bytes": 47605
     }
   ],
   "sku": "",
@@ -128,6 +116,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-advance-paris-x-i1100/"
   ],
   "enrichedAt": "2026-11-14T13:38:10Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w5-2026-11"
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": true,
+  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
+  "galleryWave19": true
 }

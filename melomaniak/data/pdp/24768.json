@@ -27,6 +27,12 @@
   ],
   "gallery": [
     {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/anthem_d2v_3d_4.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/anthem_d2v_3d_4-600x600.jpg",
+      "alt": "anthem_d2v_3d_4",
+      "local": "assets/from-live/products/82cfa6a8ae_anthem_d2v_3d_4.jpg"
+    },
+    {
       "src": "local://AV_protsessor_Anthem_Statement_D2v_3D_ea482768a7.jpg",
       "thumb": "assets/enriched/24768/2eae261e2e_live1.jpg",
       "alt": "AV процессор Anthem Statement D2v 3D ( av anthem statement d2v 3d )",
@@ -34,18 +40,6 @@
       "enriched": true,
       "attribution": "from-live",
       "bytes": 30618
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/AV_protsessor_Anthem_Statement_D2v_3D.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/AV_protsessor_Anthem_Statement_D2v_3D-600x600.jpg",
-      "alt": "Anthem Statement D2v 3D",
-      "local": "assets/from-live/products/ea482768a7_AV_protsessor_Anthem_Statement_D2v_3D.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/anthem_d2v_3d_4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/anthem_d2v_3d_4-600x600.jpg",
-      "alt": "anthem_d2v_3d_4",
-      "local": "assets/from-live/products/82cfa6a8ae_anthem_d2v_3d_4.jpg"
     }
   ],
   "sku": "",
@@ -56,8 +50,9 @@
     "https://xn--80aannlcfckh.xn--p1ai/product/av_protsessor_anthem_statement_d2v_3d-178924/"
   ],
   "enrichedAt": "2026-11-14T14:22:42Z",
-  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed.",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w7-2026-11",
   "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-14T23:40:26Z"
+  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
+  "galleryWave19": true
 }
