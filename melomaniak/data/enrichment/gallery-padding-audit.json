@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T19:47:34Z",
+  "generatedAt": "2026-11-15T20:04:13Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1331,
-    "padded": 184,
+    "true_multi_angle": 1336,
+    "padded": 179,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 70.54,
-    "padded": 9.75,
+    "true_multi_angle": 70.8,
+    "padded": 9.49,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 27.94,
-    "not_true_multi": 29.46
+    "padded_of_claimed_gal4plus": 27.67,
+    "not_true_multi": 29.2
   },
   "padReasonTallies": {
     "local-variant": 697,
-    "wN-variant-name": 519,
+    "wN-variant-name": 509,
     "cdn-size-thumb": 107,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 516,
+  "claimedButNotTrueMulti": 511,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -310,19 +310,6 @@
       "class": "single_real"
     },
     {
-      "id": 40251,
-      "name": "саундбар Paradigm D?cor 1C (75-89 дюймов) ( paradigm d?cor 1c (75 89 ) )",
-      "cat": "Другое",
-      "price": 218365,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 15858,
       "name": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )",
       "cat": "Усилители",
@@ -496,19 +483,6 @@
       "class": "single_real"
     },
     {
-      "id": 40266,
-      "name": "саундбар Paradigm Decor 2SC (75-89 дюймов) ( paradigm decor 2sc (75 89 ) )",
-      "cat": "Другое",
-      "price": 183515,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 15940,
       "name": "интегральный усилитель Line Magnetic Audio LM 217 IA ( line magnetic audio lm 217 ia )",
       "cat": "Усилители",
@@ -571,6 +545,34 @@
         "wN-variant-name": 2
       },
       "class": "padded"
+    },
+    {
+      "id": 264090,
+      "name": "Вибропоглатитель Audio Replas OPT-30HG-SC HR/4P ( audio replas opt 30hg sc hr 4p )",
+      "cat": "Другое",
+      "price": 170000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "cdn-size-thumb": 1,
+        "local-variant": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 15636,
+      "name": "центральный канал Audio Physic High End Center ( audio physic high end center )",
+      "cat": "Другое",
+      "price": 168750,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
+      },
+      "class": "single_real"
     }
   ],
   "hitlTrueOneshot": [
@@ -11688,16 +11690,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-1c-75-89-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 218365,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272765,
@@ -12808,16 +12808,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-2sc-75-89-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 183515,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270269,
@@ -13517,16 +13515,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-2sc-%d0%b4%d0%be-74-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 160565,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15970,
@@ -14149,16 +14145,14 @@
       "slug": "%d1%81%d0%b0%d1%83%d0%bd%d0%b4%d0%b1%d0%b0%d1%80-paradigm-decor-1c-%d0%b4%d0%be-74-%d0%b4%d1%8e%d0%b9%d0%bc%d0%be%d0%b2",
       "cat": "Другое",
       "price": 149515,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 268009,
@@ -23174,16 +23168,14 @@
       "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b3%d0%b0%d0%bb-acoustic-energy-ae-107-2",
       "cat": "Другое",
       "price": 43300,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272130,
