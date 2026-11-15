@@ -121,34 +121,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/vstraivaemaya-akusticheskaya-sistema-paradigm-p80-r1-1000x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/vstraivaemaya-akusticheskaya-sistema-paradigm-p80-r1-1000x500-1-600x500.jpg",
-      "alt": "vstraivaemaya-akusticheskaya-sistema-paradigm-p80-r1-1000&#215;500",
-      "local": "assets/from-live/products/4ed5c835a9_vstraivaemaya-akusticheskaya-sistema-paradigm-p80-r1-1000x500-1.jpg"
+      "src": "local://266398_w87_00.jpg",
+      "thumb": "assets/enriched/266398/266398_w87_00.jpg",
+      "alt": "Встраиваемая акустика PARADIGM P80-R ( paradigm p80 r )",
+      "local": "assets/enriched/266398/266398_w87_00.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 152887
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Paradigm_CI_Pro_P80-IW.jpg",
-      "local": "assets/enriched/266398/624d4f662d_w13media.jpg",
-      "bytes": 77487,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://266398_w87_01.jpg",
+      "thumb": "assets/enriched/266398/266398_w87_01.jpg",
+      "alt": "Встраиваемая акустика PARADIGM P80-R ( paradigm p80 r )",
+      "local": "assets/enriched/266398/266398_w87_01.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 351845
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Paradigm_CI_Pro_P80-IW-600x600.jpg",
-      "local": "assets/enriched/266398/304f9c7da0_w13var.jpg",
-      "bytes": 18520,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://266398_w87_02.jpg",
+      "thumb": "assets/enriched/266398/266398_w87_02.jpg",
+      "alt": "Встраиваемая акустика PARADIGM P80-R ( paradigm p80 r )",
+      "local": "assets/enriched/266398/266398_w87_02.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 187247
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Paradigm_CI_Pro_P80-IW-300x300.jpg",
-      "local": "assets/enriched/266398/6f0ea071c4_w17cdn.jpg",
-      "bytes": 6804,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://266398_w87_03.jpg",
+      "thumb": "assets/enriched/266398/266398_w87_03.jpg",
+      "alt": "Встраиваемая акустика PARADIGM P80-R ( paradigm p80 r )",
+      "local": "assets/enriched/266398/266398_w87_03.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 141933
+    },
+    {
+      "src": "local://266398_w87_04.jpg",
+      "thumb": "assets/enriched/266398/266398_w87_04.jpg",
+      "alt": "Встраиваемая акустика PARADIGM P80-R ( paradigm p80 r )",
+      "local": "assets/enriched/266398/266398_w87_04.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 112232
     }
   ],
   "sku": "",
@@ -160,5 +175,9 @@
   "enrichedAt": "2026-11-14T13:46:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T19:44:28Z",
+  "galleryWave87": true
 }

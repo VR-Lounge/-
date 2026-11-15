@@ -91,34 +91,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/ebd333d8aef0728a693ee788cf18c6d7.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/ebd333d8aef0728a693ee788cf18c6d7-600x485.jpg",
-      "alt": "ebd333d8aef0728a693ee788cf18c6d7",
-      "local": "assets/from-live/products/f8e2a2ae3f_ebd333d8aef0728a693ee788cf18c6d7.jpg"
+      "src": "local://261847_w87_00.jpg",
+      "thumb": "assets/enriched/261847/261847_w87_00.jpg",
+      "alt": "Портативная акустика, минисистемы PARADIGM PW 300 White ( paradigm pw 300 white )",
+      "local": "assets/enriched/261847/261847_w87_00.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 113026
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/3ae01d0b.jpg",
-      "local": "assets/enriched/261847/3ae01d0b45_w15sib.jpg",
-      "bytes": 103157,
-      "wave": "meager-w15-2026-11",
-      "w": 650,
-      "h": 700
+      "src": "local://261847_w87_01.jpg",
+      "thumb": "assets/enriched/261847/261847_w87_01.jpg",
+      "alt": "Портативная акустика, минисистемы PARADIGM PW 300 White ( paradigm pw 300 white )",
+      "local": "assets/enriched/261847/261847_w87_01.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 92155
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/3ae01d0b-600x600.jpg",
-      "local": "assets/enriched/261847/27de2d1681_w15sib.jpg",
-      "bytes": 20221,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://261847_w87_02.jpg",
+      "thumb": "assets/enriched/261847/261847_w87_02.jpg",
+      "alt": "Портативная акустика, минисистемы PARADIGM PW 300 White ( paradigm pw 300 white )",
+      "local": "assets/enriched/261847/261847_w87_02.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 302086
     },
     {
-      "src": "local-variant://261847/w17sc95",
-      "local": "assets/enriched/261847/ef1cc0cd9e_w17sc95.jpg",
-      "bytes": 25226,
-      "wave": "meager-w17-2026-11",
-      "w": 617,
-      "h": 665
+      "src": "local://261847_w87_03.jpg",
+      "thumb": "assets/enriched/261847/261847_w87_03.jpg",
+      "alt": "Портативная акустика, минисистемы PARADIGM PW 300 White ( paradigm pw 300 white )",
+      "local": "assets/enriched/261847/261847_w87_03.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 207515
+    },
+    {
+      "src": "local://261847_w87_04.jpg",
+      "thumb": "assets/enriched/261847/261847_w87_04.jpg",
+      "alt": "Портативная акустика, минисистемы PARADIGM PW 300 White ( paradigm pw 300 white )",
+      "local": "assets/enriched/261847/261847_w87_04.jpg",
+      "enriched": true,
+      "attribution": "wave87-oem",
+      "bytes": 51816
     }
   ],
   "sku": "",
@@ -130,5 +145,9 @@
   "enrichedAt": "2026-11-14T13:45:44Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T19:44:28Z",
+  "galleryWave87": true
 }
