@@ -1,0 +1,24 @@
+{
+  "wave": 64,
+  "counts": {
+    "true_multi_angle": 1275,
+    "padded": 237,
+    "single_real": 375
+  },
+  "cleared": [
+    264323,
+    264204,
+    264385,
+    264338
+  ],
+  "clearedNames": {
+    "264323": "Furutech FP-200B(G)",
+    "264204": "Furutech FI-8N NCF(R)",
+    "264385": "Furutech GT2 Pro mB",
+    "264338": "Furutech F-35(G)"
+  },
+  "hitl": [
+    "Jadeitte 4230 (padded)",
+    "MTP-2 264126 (oneshot)"
+  ]
+}

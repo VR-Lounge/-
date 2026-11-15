@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-GT-2Pro-B-small.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-GT-2Pro-B-small.jpg",
-      "alt": "Furutech-GT-2Pro-B-small",
-      "local": "assets/from-live/products/bf451ca5d3_Furutech-GT-2Pro-B-small.jpg"
+      "src": "local://264385_w64_00.jpg",
+      "thumb": "assets/enriched/264385/264385_w64_00.jpg",
+      "alt": "USB кабель Furutech GT2 Pro &#8211; mB ( usb furutech gt2 pro mb )",
+      "local": "assets/enriched/264385/264385_w64_00.jpg",
+      "enriched": true,
+      "attribution": "wave64-oem",
+      "bytes": 86057
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-GT2-USB_A-Mini-B-small.jpg",
-      "local": "assets/enriched/264385/eceb64a362_w14media.jpg",
-      "bytes": 58526,
-      "wave": "meager-w14-2026-11",
-      "w": 250,
-      "h": 250
+      "src": "local://264385_w64_01.jpg",
+      "thumb": "assets/enriched/264385/264385_w64_01.jpg",
+      "alt": "USB кабель Furutech GT2 Pro &#8211; mB ( usb furutech gt2 pro mb )",
+      "local": "assets/enriched/264385/264385_w64_01.jpg",
+      "enriched": true,
+      "attribution": "wave64-oem",
+      "bytes": 11093
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/USB_kabel_Furutech_GT2_B_.jpg",
-      "local": "assets/enriched/264385/a39cade4f2_w14media.jpg",
-      "bytes": 35530,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264385_w64_02.jpg",
+      "thumb": "assets/enriched/264385/264385_w64_02.jpg",
+      "alt": "USB кабель Furutech GT2 Pro &#8211; mB ( usb furutech gt2 pro mb )",
+      "local": "assets/enriched/264385/264385_w64_02.jpg",
+      "enriched": true,
+      "attribution": "wave64-oem",
+      "bytes": 17674
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/USB_kabel_Furutech_GT2_B_-300x300.jpg",
-      "local": "assets/enriched/264385/9f01d80ae6_w14var.jpg",
-      "bytes": 12664,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264385_w64_03.jpg",
+      "thumb": "assets/enriched/264385/264385_w64_03.jpg",
+      "alt": "USB кабель Furutech GT2 Pro &#8211; mB ( usb furutech gt2 pro mb )",
+      "local": "assets/enriched/264385/264385_w64_03.jpg",
+      "enriched": true,
+      "attribution": "wave64-oem",
+      "bytes": 16507
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:34:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T13:38:53Z",
+  "galleryWave64": true
 }
