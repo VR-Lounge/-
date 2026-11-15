@@ -61,36 +61,40 @@
   ],
   "gallery": [
     {
-      "src": "https://www.vandenhul.com/wp-content/uploads/2026/04/024_-_Van_den_Hul_-_Bay_C5_Hybrid1-scaled.jpg",
-      "local": "assets/enriched/270553/e815f9fa2d_w17cdn.jpg",
-      "bytes": 193187,
-      "wave": "meager-w17-2026-11",
-      "w": 2560,
-      "h": 1707
+      "src": "local://270553_w62_00.jpg",
+      "thumb": "assets/enriched/270553/270553_w62_00.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul Bay C5 Hybrid",
+      "local": "assets/enriched/270553/270553_w62_00.jpg",
+      "enriched": true,
+      "attribution": "wave62-oem",
+      "bytes": 193187
     },
     {
-      "src": "https://www.vandenhul.com/wp-content/uploads/2026/04/024_-_Van_den_Hul_-_Bay_C5_Hybrid1-600x400.jpg",
-      "local": "assets/enriched/270553/268547459b_w17cdn.jpg",
-      "bytes": 20979,
-      "wave": "meager-w17-2026-11",
-      "w": 600,
-      "h": 400
+      "src": "local://270553_w62_01.jpg",
+      "thumb": "assets/enriched/270553/270553_w62_01.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul Bay C5 Hybrid",
+      "local": "assets/enriched/270553/270553_w62_01.jpg",
+      "enriched": true,
+      "attribution": "wave62-oem",
+      "bytes": 229124
     },
     {
-      "src": "https://www.vandenhul.com/wp-content/uploads/2026/04/025_-_Van_den_Hul_-_Bay_C5_Hybrid1-600x400.jpg",
-      "local": "assets/enriched/270553/e8e58c90f4_w17cdn.jpg",
-      "bytes": 22415,
-      "wave": "meager-w17-2026-11",
-      "w": 600,
-      "h": 400
+      "src": "local://270553_w62_02.jpg",
+      "thumb": "assets/enriched/270553/270553_w62_02.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul Bay C5 Hybrid",
+      "local": "assets/enriched/270553/270553_w62_02.jpg",
+      "enriched": true,
+      "attribution": "wave62-oem",
+      "bytes": 339490
     },
     {
-      "src": "https://www.vandenhul.com/wp-content/uploads/2026/04/026_-_Van_den_Hul_-_Bay_C5_Hybrid1-600x400.jpg",
-      "local": "assets/enriched/270553/59e8921038_w17cdn.jpg",
-      "bytes": 30915,
-      "wave": "meager-w17-2026-11",
-      "w": 600,
-      "h": 400
+      "src": "local://270553_w62_03.jpg",
+      "thumb": "assets/enriched/270553/270553_w62_03.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul Bay C5 Hybrid",
+      "local": "assets/enriched/270553/270553_w62_03.jpg",
+      "enriched": true,
+      "attribution": "wave62-oem",
+      "bytes": 163290
     }
   ],
   "sku": "",
@@ -102,5 +106,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T13:13:28Z",
+  "galleryWave62": true
 }

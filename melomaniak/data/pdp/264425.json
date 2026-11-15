@@ -36,42 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-FP-ALPHA-3-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-FP-ALPHA-3-500x500-1.jpg",
-      "alt": "FURUTECH-FP-ALPHA-3-500&#215;500",
-      "local": "assets/from-live/products/a4c04d3b6a_FURUTECH-FP-ALPHA-3-500x500-1.jpg"
+      "src": "local://264425_w62_00.jpg",
+      "thumb": "assets/enriched/264425/264425_w62_00.jpg",
+      "alt": "Сетевой кабель Furutech Alpha 3 ( furutech alpha 3 )",
+      "local": "assets/enriched/264425/264425_w62_00.jpg",
+      "enriched": true,
+      "attribution": "wave62-oem",
+      "bytes": 103665
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_Alpha_3_.jpg",
-      "local": "assets/enriched/264425/7796751f9a_w14media.jpg",
-      "bytes": 19579,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264425_w62_01.jpg",
+      "thumb": "assets/enriched/264425/264425_w62_01.jpg",
+      "alt": "Сетевой кабель Furutech Alpha 3 ( furutech alpha 3 )",
+      "local": "assets/enriched/264425/264425_w62_01.jpg",
+      "enriched": true,
+      "attribution": "wave62-oem",
+      "bytes": 203819
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_Alpha_3_-600x600.jpg",
-      "local": "assets/enriched/264425/aba613657a_w14var.jpg",
-      "bytes": 17768,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264425_w62_02.jpg",
+      "thumb": "assets/enriched/264425/264425_w62_02.jpg",
+      "alt": "Сетевой кабель Furutech Alpha 3 ( furutech alpha 3 )",
+      "local": "assets/enriched/264425/264425_w62_02.jpg",
+      "enriched": true,
+      "attribution": "wave62-oem",
+      "bytes": 106404
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Attitude_Alpha_3000.jpg",
-      "local": "assets/enriched/264425/db738ed756_w15media.jpg",
-      "bytes": 28235,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Attitude_Alpha_3000-600x600.jpg",
-      "local": "assets/enriched/264425/9a507a9d77_w15var.jpg",
-      "bytes": 26778,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264425_w62_03.jpg",
+      "thumb": "assets/enriched/264425/264425_w62_03.jpg",
+      "alt": "Сетевой кабель Furutech Alpha 3 ( furutech alpha 3 )",
+      "local": "assets/enriched/264425/264425_w62_03.jpg",
+      "enriched": true,
+      "attribution": "wave62-oem",
+      "bytes": 147558
     }
   ],
   "sku": "",
@@ -84,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T13:13:28Z",
+  "galleryWave62": true
 }
