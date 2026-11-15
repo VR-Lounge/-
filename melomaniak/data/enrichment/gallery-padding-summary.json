@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T11:49:29Z",
+  "at": "2026-11-15T12:05:27Z",
   "counts": {
-    "true_multi_angle": 1249,
-    "padded": 263,
+    "true_multi_angle": 1251,
+    "padded": 261,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 66.19,
-    "padded": 13.94,
+    "true_multi_angle": 66.3,
+    "padded": 13.83,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.34,
-    "not_true_multi": 33.81
+    "padded_of_claimed_gal4plus": 32.23,
+    "not_true_multi": 33.7
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -431,6 +431,21 @@
       {
         "id": 41453,
         "name": "Paradigm Premier 500C Espresso Grain",
+        "unique": 4
+      }
+    ]
+  },
+  "wave57": {
+    "padded_to_true_multi": 2,
+    "cleared": [
+      {
+        "id": 270628,
+        "name": "Wharfedale Evo 4.3 Black",
+        "unique": 4
+      },
+      {
+        "id": 269641,
+        "name": "Onkyo C-7030 Black",
         "unique": 4
       }
     ]
