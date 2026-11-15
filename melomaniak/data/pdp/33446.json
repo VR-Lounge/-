@@ -41,42 +41,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Advance_Acoustic_BX1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Advance_Acoustic_BX1-600x600.jpg",
-      "alt": "Advance Acoustic BX1",
-      "local": "assets/from-live/products/c2b8c5e1f7_ysilitel_moshnosti_Advance_Acoustic_BX1.jpg"
+      "src": "local://33446_w37_00.jpg",
+      "thumb": "assets/enriched/33446/33446_w37_00.jpg",
+      "alt": "усилитель мощности Advance Acoustic BX1 ( advance acoustic bx1 )",
+      "local": "assets/enriched/33446/33446_w37_00.jpg",
+      "enriched": true,
+      "attribution": "wave37-oem",
+      "bytes": 158833
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Advance_Acoustic_BX1-600x600.jpg",
-      "local": "assets/enriched/33446/1ed0001f5e_w13var.jpg",
-      "bytes": 26008,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://33446_w37_01.jpg",
+      "thumb": "assets/enriched/33446/33446_w37_01.jpg",
+      "alt": "усилитель мощности Advance Acoustic BX1 ( advance acoustic bx1 )",
+      "local": "assets/enriched/33446/33446_w37_01.jpg",
+      "enriched": true,
+      "attribution": "wave37-oem",
+      "bytes": 157628
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Advance_Acoustic_BX1-300x300.jpg",
-      "local": "assets/enriched/33446/0d768a2782_w13var.jpg",
-      "bytes": 8233,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://33446_w37_02.jpg",
+      "thumb": "assets/enriched/33446/33446_w37_02.jpg",
+      "alt": "усилитель мощности Advance Acoustic BX1 ( advance acoustic bx1 )",
+      "local": "assets/enriched/33446/33446_w37_02.jpg",
+      "enriched": true,
+      "attribution": "wave37-oem",
+      "bytes": 49648
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/08/advance-acoustic-smart-bx1.png",
-      "local": "assets/enriched/33446/ea0964d4af_w13media.png",
-      "bytes": 1554584,
-      "wave": "meager-w13-2026-11",
-      "w": 1200,
-      "h": 900
+      "src": "local://33446_w37_03.jpg",
+      "thumb": "assets/enriched/33446/33446_w37_03.jpg",
+      "alt": "усилитель мощности Advance Acoustic BX1 ( advance acoustic bx1 )",
+      "local": "assets/enriched/33446/33446_w37_03.jpg",
+      "enriched": true,
+      "attribution": "wave37-oem",
+      "bytes": 70191
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/08/advance-acoustic-smart-bx1-600x600.png",
-      "local": "assets/enriched/33446/052bf7ca2b_w13var.png",
-      "bytes": 604588,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://33446_w37_04.jpg",
+      "thumb": "assets/enriched/33446/33446_w37_04.jpg",
+      "alt": "усилитель мощности Advance Acoustic BX1 ( advance acoustic bx1 )",
+      "local": "assets/enriched/33446/33446_w37_04.jpg",
+      "enriched": true,
+      "attribution": "wave37-oem",
+      "bytes": 123783
     }
   ],
   "sku": "",
@@ -88,5 +95,9 @@
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T06:04:45Z",
+  "galleryWave37": true
 }

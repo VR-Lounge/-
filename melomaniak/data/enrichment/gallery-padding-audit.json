@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T05:49:02Z",
+  "generatedAt": "2026-11-15T06:07:53Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1185,
-    "padded": 327,
+    "true_multi_angle": 1189,
+    "padded": 323,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 62.8,
-    "padded": 17.33,
+    "true_multi_angle": 63.01,
+    "padded": 17.12,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 35.81,
-    "not_true_multi": 37.2
+    "padded_of_claimed_gal4plus": 35.59,
+    "not_true_multi": 36.99
   },
   "padReasonTallies": {
     "local-variant": 745,
-    "wN-variant-name": 650,
-    "cdn-size-thumb": 122,
+    "wN-variant-name": 647,
+    "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 661,
+  "claimedButNotTrueMulti": 657,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -15576,16 +15576,14 @@
       "slug": "%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-advance-acoustic-bx1",
       "cat": "Усилители",
       "price": 125000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 5,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 265481,
@@ -17283,13 +17281,13 @@
       "cat": "Ресиверы",
       "price": 99990,
       "galleryHitl": false,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270750,
@@ -18254,13 +18252,13 @@
       "cat": "Источники",
       "price": 89990,
       "galleryHitl": false,
-      "galleryLen": 7,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271284,
@@ -18645,15 +18643,13 @@
       "cat": "ЦАПы",
       "price": 85500,
       "galleryHitl": false,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273783,

@@ -61,46 +61,40 @@
   ],
   "gallery": [
     {
-      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK.png",
-      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK.png",
+      "src": "local://33442_w37_00.jpg",
+      "thumb": "assets/enriched/33442/33442_w37_00.jpg",
       "alt": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
-      "local": "assets/enriched/33442/6c783c0b19_1.png",
+      "local": "assets/enriched/33442/33442_w37_00.jpg",
       "enriched": true,
-      "attribution": "www.advanceparis.com",
-      "bytes": 240366
+      "attribution": "wave37-oem",
+      "bytes": 44497
     },
     {
-      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-WT.png",
-      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-WT.png",
+      "src": "local://33442_w37_01.jpg",
+      "thumb": "assets/enriched/33442/33442_w37_01.jpg",
       "alt": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
-      "local": "assets/enriched/33442/16729e0c9b_2.png",
+      "local": "assets/enriched/33442/33442_w37_01.jpg",
       "enriched": true,
-      "attribution": "www.advanceparis.com",
-      "bytes": 271267
+      "attribution": "wave37-oem",
+      "bytes": 171853
     },
     {
-      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-768x768.png",
-      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-768x768.png",
+      "src": "local://33442_w37_02.jpg",
+      "thumb": "assets/enriched/33442/33442_w37_02.jpg",
       "alt": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
-      "local": "assets/enriched/33442/d901c83ae4_3.png",
+      "local": "assets/enriched/33442/33442_w37_02.jpg",
       "enriched": true,
-      "attribution": "www.advanceparis.com",
-      "bytes": 134932
+      "attribution": "wave37-oem",
+      "bytes": 129582
     },
     {
-      "src": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-600x600.png",
-      "thumb": "https://www.advanceparis.com/wp-content/uploads/2022/05/ADP-A-1000x1000-DX_1-BK-600x600.png",
+      "src": "local://33442_w37_03.jpg",
+      "thumb": "assets/enriched/33442/33442_w37_03.jpg",
       "alt": "ЦАП Advance Acoustic DX1 ( advance acoustic dx1 )",
-      "local": "assets/enriched/33442/fef91c2c67_4.png",
+      "local": "assets/enriched/33442/33442_w37_03.jpg",
       "enriched": true,
-      "attribution": "www.advanceparis.com",
-      "bytes": 83052
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/TSAP_Advance_Acoustic_DX1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/TSAP_Advance_Acoustic_DX1-600x600.jpg",
-      "alt": "Advance Acoustic DX1",
-      "local": "assets/from-live/brand/77678ed18e_TSAP_Advance_Acoustic_DX1.jpg"
+      "attribution": "wave37-oem",
+      "bytes": 232388
     }
   ],
   "sku": "",
@@ -112,5 +106,10 @@
   ],
   "enrichedAt": "2026-11-14T12:46:57Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w2-2026-11"
+  "meagerWave": "meager-w2-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T06:04:45Z",
+  "galleryWave37": true
 }
