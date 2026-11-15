@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T13:57:37Z",
+  "generatedAt": "2026-11-15T14:07:41Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1278,
-    "padded": 234,
+    "true_multi_angle": 1281,
+    "padded": 231,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 67.73,
-    "padded": 12.4,
+    "true_multi_angle": 67.89,
+    "padded": 12.24,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 30.77,
-    "not_true_multi": 32.27
+    "padded_of_claimed_gal4plus": 30.61,
+    "not_true_multi": 32.11
   },
   "padReasonTallies": {
-    "local-variant": 720,
-    "wN-variant-name": 562,
+    "local-variant": 718,
+    "wN-variant-name": 561,
     "cdn-size-thumb": 117,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 568,
+  "claimedButNotTrueMulti": 565,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -28634,16 +28634,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-11m-cu",
       "cat": "Другое",
       "price": 5988,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264186,
@@ -30516,16 +30514,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11m-n1-g",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264180,
@@ -30533,16 +30529,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-11-cu",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264203,
