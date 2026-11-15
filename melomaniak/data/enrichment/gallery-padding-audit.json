@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T06:07:53Z",
+  "generatedAt": "2026-11-15T06:29:22Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1189,
-    "padded": 323,
+    "true_multi_angle": 1193,
+    "padded": 319,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 63.01,
-    "padded": 17.12,
+    "true_multi_angle": 63.22,
+    "padded": 16.91,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 35.59,
-    "not_true_multi": 36.99
+    "padded_of_claimed_gal4plus": 35.37,
+    "not_true_multi": 36.78
   },
   "padReasonTallies": {
-    "local-variant": 745,
+    "local-variant": 743,
     "wN-variant-name": 647,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 657,
+  "claimedButNotTrueMulti": 653,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -16637,12 +16637,12 @@
       "price": 109600,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264041,
@@ -18159,16 +18159,14 @@
       "slug": "2cd3e0d67a5a4d34df621a819a1c3294",
       "cat": "Акустика",
       "price": 89990,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269564,
@@ -19045,13 +19043,13 @@
       "cat": "Акустика",
       "price": 79990,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269611,
@@ -22895,16 +22893,14 @@
       "slug": "257fc8446bfea118b23ded3b7c363305",
       "cat": "Источники",
       "price": 46800,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270571,

@@ -86,30 +86,76 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s70_11844202951-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s70_11844202951-1.jpg",
-      "alt": "magnat_monitor_s70_11844202951-1.jpg",
-      "local": "assets/from-live/products/999a7a9ce4_magnat_monitor_s70_11844202951-1.jpg"
+      "src": "local://269455_w38_00.jpg",
+      "thumb": "assets/enriched/269455/269455_w38_00.jpg",
+      "alt": "Напольная акустика Magnat Monitor S70",
+      "local": "assets/enriched/269455/269455_w38_00.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 152952
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s70_11844206721-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s70_11844206721-2.jpg",
-      "alt": "magnat_monitor_s70_11844206721-2.jpg",
-      "local": "assets/from-live/products/82080a8207_magnat_monitor_s70_11844206721-2.jpg"
+      "src": "local://269455_w38_01.jpg",
+      "thumb": "assets/enriched/269455/269455_w38_01.jpg",
+      "alt": "Напольная акустика Magnat Monitor S70",
+      "local": "assets/enriched/269455/269455_w38_01.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 65503
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s70_11844207721-3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/magnat_monitor_s70_11844207721-3.jpg",
-      "alt": "magnat_monitor_s70_11844207721-3.jpg",
-      "local": "assets/from-live/products/bc7c691828_magnat_monitor_s70_11844207721-3.jpg"
+      "src": "local://269455_w38_02.jpg",
+      "thumb": "assets/enriched/269455/269455_w38_02.jpg",
+      "alt": "Напольная акустика Magnat Monitor S70",
+      "local": "assets/enriched/269455/269455_w38_02.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 70663
     },
     {
-      "src": "local-variant://269455/w17sc95",
-      "local": "assets/enriched/269455/bfaa9845e0_w17sc95.jpg",
-      "bytes": 207444,
-      "wave": "meager-w17-2026-11",
-      "w": 1140,
-      "h": 1140
+      "src": "local://269455_w38_03.jpg",
+      "thumb": "assets/enriched/269455/269455_w38_03.jpg",
+      "alt": "Напольная акустика Magnat Monitor S70",
+      "local": "assets/enriched/269455/269455_w38_03.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 217682
+    },
+    {
+      "src": "local://269455_w38_04.jpg",
+      "thumb": "assets/enriched/269455/269455_w38_04.jpg",
+      "alt": "Напольная акустика Magnat Monitor S70",
+      "local": "assets/enriched/269455/269455_w38_04.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 13438
+    },
+    {
+      "src": "local://269455_w38_05.jpg",
+      "thumb": "assets/enriched/269455/269455_w38_05.jpg",
+      "alt": "Напольная акустика Magnat Monitor S70",
+      "local": "assets/enriched/269455/269455_w38_05.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 9917
+    },
+    {
+      "src": "local://269455_w38_06.jpg",
+      "thumb": "assets/enriched/269455/269455_w38_06.jpg",
+      "alt": "Напольная акустика Magnat Monitor S70",
+      "local": "assets/enriched/269455/269455_w38_06.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 39676
+    },
+    {
+      "src": "local://269455_w38_07.jpg",
+      "thumb": "assets/enriched/269455/269455_w38_07.jpg",
+      "alt": "Напольная акустика Magnat Monitor S70",
+      "local": "assets/enriched/269455/269455_w38_07.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 30956
     }
   ],
   "sku": "",
@@ -121,5 +167,9 @@
   "enrichedAt": "2026-11-14T14:23:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T06:26:09Z",
+  "galleryWave38": true
 }

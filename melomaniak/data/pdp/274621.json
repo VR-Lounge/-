@@ -61,28 +61,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-109-178-w950-ae-mpic-0-1650453638.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-109-178-w950-ae-mpic-0-1650453638-600x600.jpg",
-      "alt": "ae-109-178-w950-ae-mpic-0-1650453638",
-      "local": "assets/from-live/products/0a2ce48bae_ae-109-178-w950-ae-mpic-0-1650453638.jpg"
+      "src": "local://274621_w38_00.jpg",
+      "thumb": "assets/enriched/274621/274621_w38_00.jpg",
+      "alt": "Напольная акустика Acoustic Energy AE 109-2",
+      "local": "assets/enriched/274621/274621_w38_00.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 59707
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-109-178-w950-ae-mpic-0-1650453643.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-109-178-w950-ae-mpic-0-1650453643-600x600.jpg",
-      "alt": "ae-109-178-w950-ae-mpic-0-1650453643",
-      "local": "assets/from-live/products/b5f4f0569d_ae-109-178-w950-ae-mpic-0-1650453643.jpg"
+      "src": "local://274621_w38_01.jpg",
+      "thumb": "assets/enriched/274621/274621_w38_01.jpg",
+      "alt": "Напольная акустика Acoustic Energy AE 109-2",
+      "local": "assets/enriched/274621/274621_w38_01.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 63319
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-109-178-w950-ae-mpic-0-1650453648.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-109-178-w950-ae-mpic-0-1650453648-600x600.jpg",
-      "alt": "ae-109-178-w950-ae-mpic-0-1650453648",
-      "local": "assets/from-live/products/e912af4aa6_ae-109-178-w950-ae-mpic-0-1650453648.jpg"
+      "src": "local://274621_w38_02.jpg",
+      "thumb": "assets/enriched/274621/274621_w38_02.jpg",
+      "alt": "Напольная акустика Acoustic Energy AE 109-2",
+      "local": "assets/enriched/274621/274621_w38_02.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 110214
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-109-178-w950-ae-mpic-0-1650453653.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-109-178-w950-ae-mpic-0-1650453653-600x600.jpg",
-      "alt": "ae-109-178-w950-ae-mpic-0-1650453653",
-      "local": "assets/from-live/products/4c2fddf044_ae-109-178-w950-ae-mpic-0-1650453653.jpg"
+      "src": "local://274621_w38_03.jpg",
+      "thumb": "assets/enriched/274621/274621_w38_03.jpg",
+      "alt": "Напольная акустика Acoustic Energy AE 109-2",
+      "local": "assets/enriched/274621/274621_w38_03.jpg",
+      "enriched": true,
+      "attribution": "wave38-oem",
+      "bytes": 122515
     }
   ],
   "sku": "",
@@ -93,5 +105,10 @@
   ],
   "enrichedAt": "2026-11-14T13:01:13Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w4-2026-11"
+  "meagerWave": "meager-w4-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T06:26:09Z",
+  "galleryWave38": true
 }
