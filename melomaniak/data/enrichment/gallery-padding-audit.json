@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T21:01:22Z",
+  "generatedAt": "2026-11-15T21:07:46Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1346,
-    "padded": 169,
+    "true_multi_angle": 1348,
+    "padded": 167,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 71.33,
-    "padded": 8.96,
+    "true_multi_angle": 71.44,
+    "padded": 8.85,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 27.13,
-    "not_true_multi": 28.67
+    "padded_of_claimed_gal4plus": 27.02,
+    "not_true_multi": 28.56
   },
   "padReasonTallies": {
     "local-variant": 696,
-    "wN-variant-name": 498,
+    "wN-variant-name": 496,
     "cdn-size-thumb": 107,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 501,
+  "claimedButNotTrueMulti": 499,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -310,17 +310,6 @@
       "class": "single_real"
     },
     {
-      "id": 15858,
-      "name": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )",
-      "cat": "Усилители",
-      "price": 215000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
-    },
-    {
       "id": 264077,
       "name": "Кварцевые диски Audio Replas OPT-100HG-SS HR/4P ( audio replas opt 100hg ss hr 4p )",
       "cat": "Другое",
@@ -483,19 +472,6 @@
       "class": "single_real"
     },
     {
-      "id": 15940,
-      "name": "интегральный усилитель Line Magnetic Audio LM 217 IA ( line magnetic audio lm 217 ia )",
-      "cat": "Усилители",
-      "price": 182750,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 274594,
       "name": "Сабвуфер Acoustic Energy AE 308",
       "cat": "Акустика",
@@ -572,6 +548,32 @@
       "padReasons": {
         "cdn-size-thumb": 2
       },
+      "class": "padded"
+    },
+    {
+      "id": 15970,
+      "name": "интегральный усилитель Musica Int 60 ( musica int 60 )",
+      "cat": "Усилители",
+      "price": 160000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264542,
+      "name": "USB кабель SAEC  SUS-020 Stratosphere C &#8211; mini B OTG ( usb saec sus 020 stratosphere c mini b otg )",
+      "cat": "Кабели",
+      "price": 156923,
+      "galleryLen": 4,
+      "uniqueDistinct": 3,
+      "padSlots": 0,
+      "padReasons": {},
       "class": "padded"
     }
   ],
@@ -11753,13 +11755,13 @@
       "cat": "Усилители",
       "price": 215000,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270411,
@@ -12838,16 +12840,14 @@
       "slug": "integralnii_ysilitel_Line_Magnetic_Audio_LM_217_IA",
       "cat": "Усилители",
       "price": 182750,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272786,

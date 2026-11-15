@@ -46,35 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Line_Magnetic_LM_218ia_tube_amplifier_%2823450172172%29.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Line_Magnetic_LM_218ia_tube_amplifier_%2823450172172%29.jpg",
+      "src": "local://15940_w92_00.jpg",
+      "thumb": "assets/enriched/15940/15940_w92_00.jpg",
       "alt": "интегральный усилитель Line Magnetic Audio LM 217 IA ( line magnetic audio lm 217 ia )",
-      "local": "assets/enriched/15940/1fe6f8058b_1.jpg",
+      "local": "assets/enriched/15940/15940_w92_00.jpg",
       "enriched": true,
-      "attribution": "upload.wikimedia.org",
-      "bytes": 2420451
+      "attribution": "wave92-oem",
+      "bytes": 38492
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Line_Magnetic_Audio_LM_217_IA.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Line_Magnetic_Audio_LM_217_IA-600x600.jpg",
-      "alt": "Line Magnetic Audio LM 217 IA",
-      "local": "assets/from-live/products/81bfc0a501_integralnii_ysilitel_Line_Magnetic_Audio_LM_217_IA.jpg"
+      "src": "local://15940_w92_01.jpg",
+      "thumb": "assets/enriched/15940/15940_w92_01.jpg",
+      "alt": "интегральный усилитель Line Magnetic Audio LM 217 IA ( line magnetic audio lm 217 ia )",
+      "local": "assets/enriched/15940/15940_w92_01.jpg",
+      "enriched": true,
+      "attribution": "wave92-oem",
+      "bytes": 450254
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Line_Magnetic_Audio_LM_217_IA-600x600.jpg",
-      "local": "assets/enriched/15940/994be799e3_w13var.jpg",
-      "bytes": 27369,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15940_w92_02.jpg",
+      "thumb": "assets/enriched/15940/15940_w92_02.jpg",
+      "alt": "интегральный усилитель Line Magnetic Audio LM 217 IA ( line magnetic audio lm 217 ia )",
+      "local": "assets/enriched/15940/15940_w92_02.jpg",
+      "enriched": true,
+      "attribution": "wave92-oem",
+      "bytes": 356706
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Line_Magnetic_Audio_LM_217_IA-300x300.jpg",
-      "local": "assets/enriched/15940/9e9ae52518_w13var.jpg",
-      "bytes": 10276,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://15940_w92_03.jpg",
+      "thumb": "assets/enriched/15940/15940_w92_03.jpg",
+      "alt": "интегральный усилитель Line Magnetic Audio LM 217 IA ( line magnetic audio lm 217 ia )",
+      "local": "assets/enriched/15940/15940_w92_03.jpg",
+      "enriched": true,
+      "attribution": "wave92-oem",
+      "bytes": 286061
     }
   ],
   "sku": "",
@@ -87,5 +92,9 @@
   "enrichedAt": "2026-11-14T14:05:20Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T21:04:46Z",
+  "galleryWave92": true
 }

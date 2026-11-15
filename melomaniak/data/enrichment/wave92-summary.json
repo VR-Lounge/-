@@ -1,0 +1,65 @@
+{
+  "wave": 92,
+  "at": "2026-11-15T21:07:51Z",
+  "counts": {
+    "true_multi_angle": 1348,
+    "padded": 167,
+    "single_real": 372
+  },
+  "cleared": [
+    {
+      "id": 15858,
+      "name": "Triode TR-MC1SE",
+      "note": "5 unique: studio/front/side/rear/underside"
+    },
+    {
+      "id": 15940,
+      "name": "Line Magnetic LM-217IA",
+      "note": "4 unique; reject LM-211IA"
+    }
+  ],
+  "promote": {
+    "at": "2026-11-15T21:04:46Z",
+    "results": [
+      {
+        "id": 15858,
+        "before": 4,
+        "after": 5,
+        "unique": 5,
+        "files": [
+          "assets/enriched/15858/15858_w92_00.jpg",
+          "assets/enriched/15858/15858_w92_01.jpg",
+          "assets/enriched/15858/15858_w92_02.jpg",
+          "assets/enriched/15858/15858_w92_03.jpg",
+          "assets/enriched/15858/15858_w92_04.jpg"
+        ]
+      },
+      {
+        "id": 15940,
+        "before": 4,
+        "after": 4,
+        "unique": 4,
+        "files": [
+          "assets/enriched/15940/15940_w92_00.jpg",
+          "assets/enriched/15940/15940_w92_01.jpg",
+          "assets/enriched/15940/15940_w92_02.jpg",
+          "assets/enriched/15940/15940_w92_03.jpg"
+        ]
+      }
+    ]
+  },
+  "hitl": {
+    "skip_unless_new_sources": [
+      {
+        "id": 4230,
+        "name": "Jadeitte",
+        "class": "padded"
+      },
+      {
+        "id": 264126,
+        "name": "MTP-2",
+        "class": "oneshot"
+      }
+    ]
+  }
+}

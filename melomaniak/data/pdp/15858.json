@@ -27,34 +27,49 @@
   ],
   "gallery": [
     {
-      "src": "local://povyishayuschiy_transformator_Triode_TR_MC1SE-171196_3907898554.jpg",
-      "thumb": "assets/enriched/15858/9db6e08bb9_live1.jpg",
+      "src": "local://15858_w92_00.jpg",
+      "thumb": "assets/enriched/15858/15858_w92_00.jpg",
       "alt": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )",
-      "local": "assets/enriched/15858/9db6e08bb9_live1.jpg",
+      "local": "assets/enriched/15858/15858_w92_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 29356
+      "attribution": "wave92-oem",
+      "bytes": 38055
     },
     {
-      "src": "local://triode-corporation-tr-mc1se-hifi-sonstiges-10106_ee73ca0fee.jpg",
-      "thumb": "assets/enriched/15858/2365a1515a_live2.jpg",
+      "src": "local://15858_w92_01.jpg",
+      "thumb": "assets/enriched/15858/15858_w92_01.jpg",
       "alt": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )",
-      "local": "assets/enriched/15858/2365a1515a_live2.jpg",
+      "local": "assets/enriched/15858/15858_w92_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 70153
+      "attribution": "wave92-oem",
+      "bytes": 127194
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/povyishayuschiy_transformator_Triode_TR_MC1SE-171196.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/povyishayuschiy_transformator_Triode_TR_MC1SE-171196-600x600.jpg",
-      "alt": "Triode TR MC1SE",
-      "local": "assets/from-live/products/3907898554_povyishayuschiy_transformator_Triode_TR_MC1SE-171196.jpg"
+      "src": "local://15858_w92_02.jpg",
+      "thumb": "assets/enriched/15858/15858_w92_02.jpg",
+      "alt": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )",
+      "local": "assets/enriched/15858/15858_w92_02.jpg",
+      "enriched": true,
+      "attribution": "wave92-oem",
+      "bytes": 92664
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/triode-corporation-tr-mc1se-hifi-sonstiges-10106.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/triode-corporation-tr-mc1se-hifi-sonstiges-10106-600x520.jpg",
-      "alt": "triode-corporation-tr-mc1se-hifi-sonstiges-10106",
-      "local": "assets/from-live/products/ee73ca0fee_triode-corporation-tr-mc1se-hifi-sonstiges-10106.jpg"
+      "src": "local://15858_w92_03.jpg",
+      "thumb": "assets/enriched/15858/15858_w92_03.jpg",
+      "alt": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )",
+      "local": "assets/enriched/15858/15858_w92_03.jpg",
+      "enriched": true,
+      "attribution": "wave92-oem",
+      "bytes": 152710
+    },
+    {
+      "src": "local://15858_w92_04.jpg",
+      "thumb": "assets/enriched/15858/15858_w92_04.jpg",
+      "alt": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )",
+      "local": "assets/enriched/15858/15858_w92_04.jpg",
+      "enriched": true,
+      "attribution": "wave92-oem",
+      "bytes": 77076
     }
   ],
   "sku": "",
@@ -65,5 +80,10 @@
   ],
   "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w5-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T21:04:46Z",
+  "galleryWave92": true
 }
