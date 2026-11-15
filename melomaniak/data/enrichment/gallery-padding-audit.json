@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T11:11:54Z",
+  "generatedAt": "2026-11-15T11:23:17Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1240,
-    "padded": 272,
+    "true_multi_angle": 1242,
+    "padded": 270,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 65.71,
-    "padded": 14.41,
+    "true_multi_angle": 65.82,
+    "padded": 14.31,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.83,
-    "not_true_multi": 34.29
+    "padded_of_claimed_gal4plus": 32.72,
+    "not_true_multi": 34.18
   },
   "padReasonTallies": {
     "local-variant": 723,
-    "wN-variant-name": 604,
+    "wN-variant-name": 600,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 606,
+  "claimedButNotTrueMulti": 604,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -237,19 +237,6 @@
       "padReasons": {
         "wN-variant-name": 1,
         "cdn-size-thumb": 1
-      },
-      "class": "padded"
-    },
-    {
-      "id": 41436,
-      "name": "Напольная акустика Paradigm Premier 700F Gloss Black ( paradigm premier 700f gloss black )",
-      "cat": "Акустика",
-      "price": 269900,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
       },
       "class": "padded"
     },
@@ -543,10 +530,10 @@
       "class": "single_real"
     },
     {
-      "id": 262102,
-      "name": "Фонокорректор Line Magnetic Audio LP 33 Phono ( line magnetic audio lp 33 phono )",
-      "cat": "Усилители",
-      "price": 191250,
+      "id": 264394,
+      "name": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
+      "cat": "Кабели",
+      "price": 190995,
       "galleryLen": 4,
       "uniqueDistinct": 2,
       "padSlots": 2,
@@ -556,10 +543,23 @@
       "class": "padded"
     },
     {
-      "id": 264394,
-      "name": "Фоно кабель Furutech Silver Arrows II ( furutech silver arrows ii )",
+      "id": 264395,
+      "name": "Фоно кабель Furutech Silver Arrows II-L ( furutech silver arrows ii l )",
       "cat": "Кабели",
       "price": 190995,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 1,
+      "padReasons": {
+        "cdn-size-thumb": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 15718,
+      "name": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )",
+      "cat": "ЦАПы",
+      "price": 190000,
       "galleryLen": 4,
       "uniqueDistinct": 2,
       "padSlots": 2,
@@ -10164,16 +10164,14 @@
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-premier-700f-gloss-black",
       "cat": "Акустика",
       "price": 269900,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 41438,
@@ -12400,16 +12398,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-line-magnetic-audio-lp-33-phono",
       "cat": "Усилители",
       "price": 191250,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 267998,
