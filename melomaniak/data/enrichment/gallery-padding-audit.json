@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T14:40:00Z",
+  "generatedAt": "2026-11-15T14:53:23Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1286,
-    "padded": 226,
+    "true_multi_angle": 1288,
+    "padded": 224,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 68.15,
-    "padded": 11.98,
+    "true_multi_angle": 68.26,
+    "padded": 11.87,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 30.34,
-    "not_true_multi": 31.85
+    "padded_of_claimed_gal4plus": 30.23,
+    "not_true_multi": 31.74
   },
   "padReasonTallies": {
-    "local-variant": 718,
+    "local-variant": 716,
     "wN-variant-name": 555,
     "cdn-size-thumb": 117,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 560,
+  "claimedButNotTrueMulti": 558,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -16263,16 +16263,14 @@
       "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-spc-850",
       "cat": "Кабели",
       "price": 114511,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273615,
@@ -20485,16 +20483,14 @@
       "slug": "ac33331d8829ce349859f1090c534d03",
       "cat": "Акустика",
       "price": 64990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272964,

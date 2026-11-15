@@ -101,39 +101,40 @@
   ],
   "gallery": [
     {
-      "src": "local://eb17bc8993_tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_1.jpg",
-      "thumb": "assets/enriched/271169/fb3820ab83_live1.jpg",
+      "src": "local://271169_w69_00.jpg",
+      "thumb": "assets/enriched/271169/271169_w69_00.jpg",
       "alt": "Акустика Dolby Atmos Monitor Audio Bronze Atmos 6G",
-      "local": "assets/enriched/271169/fb3820ab83_live1.jpg",
+      "local": "assets/enriched/271169/271169_w69_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 118301
+      "attribution": "wave69-oem",
+      "bytes": 57022
     },
     {
-      "src": "local://8c3822191c_tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_3.jpg",
-      "thumb": "assets/enriched/271169/34cf32297a_live2.jpg",
+      "src": "local://271169_w69_01.jpg",
+      "thumb": "assets/enriched/271169/271169_w69_01.jpg",
       "alt": "Акустика Dolby Atmos Monitor Audio Bronze Atmos 6G",
-      "local": "assets/enriched/271169/34cf32297a_live2.jpg",
+      "local": "assets/enriched/271169/271169_w69_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 179746
+      "attribution": "wave69-oem",
+      "bytes": 95806
     },
     {
-      "src": "local://832e4bbd69_tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2.jpg",
-      "thumb": "assets/enriched/271169/f22c54cf97_live3.jpg",
+      "src": "local://271169_w69_02.jpg",
+      "thumb": "assets/enriched/271169/271169_w69_02.jpg",
       "alt": "Акустика Dolby Atmos Monitor Audio Bronze Atmos 6G",
-      "local": "assets/enriched/271169/f22c54cf97_live3.jpg",
+      "local": "assets/enriched/271169/271169_w69_02.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 85928
+      "attribution": "wave69-oem",
+      "bytes": 105502
     },
     {
-      "src": "local-variant://271169/w17sc95",
-      "local": "assets/enriched/271169/017a25fdab_w17sc95.jpg",
-      "bytes": 236255,
-      "wave": "meager-w17-2026-11",
-      "w": 1377,
-      "h": 855
+      "src": "local://271169_w69_03.jpg",
+      "thumb": "assets/enriched/271169/271169_w69_03.jpg",
+      "alt": "Акустика Dolby Atmos Monitor Audio Bronze Atmos 6G",
+      "local": "assets/enriched/271169/271169_w69_03.jpg",
+      "enriched": true,
+      "attribution": "wave69-oem",
+      "bytes": 27247
     }
   ],
   "sku": "",
@@ -145,5 +146,9 @@
   "enrichedAt": "2026-11-14T14:26:47Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T14:50:13Z",
+  "galleryWave69": true
 }
