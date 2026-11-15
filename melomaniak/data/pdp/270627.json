@@ -96,44 +96,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_1_.jpg",
-      "local": "assets/enriched/270627/c0221b5100_w13media.jpg",
-      "bytes": 51017,
-      "wave": "meager-w13-2026-11",
-      "w": 547,
-      "h": 950
+      "src": "local://270627_w84_00.jpg",
+      "thumb": "assets/enriched/270627/270627_w84_00.jpg",
+      "alt": "Напольная акустика Wharfedale Diamond 12.4",
+      "local": "assets/enriched/270627/270627_w84_00.jpg",
+      "enriched": true,
+      "attribution": "wave84-oem",
+      "bytes": 171181
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_5_.jpg",
-      "local": "assets/enriched/270627/5de9ff36da_w13media.jpg",
-      "bytes": 56531,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 1333
+      "src": "local://270627_w84_01.jpg",
+      "thumb": "assets/enriched/270627/270627_w84_01.jpg",
+      "alt": "Напольная акустика Wharfedale Diamond 12.4",
+      "local": "assets/enriched/270627/270627_w84_01.jpg",
+      "enriched": true,
+      "attribution": "wave84-oem",
+      "bytes": 171146
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_5_-600x600.jpg",
-      "local": "assets/enriched/270627/78b0d8dac8_w13var.jpg",
-      "bytes": 19502,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://270627_w84_02.jpg",
+      "thumb": "assets/enriched/270627/270627_w84_02.jpg",
+      "alt": "Напольная акустика Wharfedale Diamond 12.4",
+      "local": "assets/enriched/270627/270627_w84_02.jpg",
+      "enriched": true,
+      "attribution": "wave84-oem",
+      "bytes": 219906
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_7_.jpg",
-      "local": "assets/enriched/270627/b4afd22f30_w13media.jpg",
-      "bytes": 53633,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 1333
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/Diamond-12.4-Standard-Black-_7_-600x600.jpg",
-      "local": "assets/enriched/270627/ba9cd3986e_w13var.jpg",
-      "bytes": 16531,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://270627_w84_03.jpg",
+      "thumb": "assets/enriched/270627/270627_w84_03.jpg",
+      "alt": "Напольная акустика Wharfedale Diamond 12.4",
+      "local": "assets/enriched/270627/270627_w84_03.jpg",
+      "enriched": true,
+      "attribution": "wave84-oem",
+      "bytes": 364462
     }
   ],
   "sku": "",
@@ -145,5 +141,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T18:47:25Z",
+  "galleryWave84": true
 }

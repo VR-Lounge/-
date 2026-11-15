@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T18:32:59Z",
+  "generatedAt": "2026-11-15T18:50:26Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1319,
-    "padded": 196,
+    "true_multi_angle": 1322,
+    "padded": 193,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 69.9,
-    "padded": 10.39,
+    "true_multi_angle": 70.06,
+    "padded": 10.23,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 28.59,
-    "not_true_multi": 30.1
+    "padded_of_claimed_gal4plus": 28.42,
+    "not_true_multi": 29.94
   },
   "padReasonTallies": {
     "local-variant": 704,
-    "wN-variant-name": 533,
+    "wN-variant-name": 526,
     "cdn-size-thumb": 110,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 528,
+  "claimedButNotTrueMulti": 525,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -19305,16 +19305,14 @@
       "slug": "portativnaia_akystika_pw_800_white",
       "cat": "Акустика",
       "price": 76410,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270680,
@@ -20349,16 +20347,14 @@
       "slug": "3ddf9e7bd4e25ba0659a73cc53ab52cd",
       "cat": "Акустика",
       "price": 65990,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272190,
@@ -29682,16 +29678,14 @@
       "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-fs-502",
       "cat": "Кабели",
       "price": 2252,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 5,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264531,

@@ -36,42 +36,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-6068_1.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-6068_1-600x600.webp",
-      "alt": "1000&#215;1000-6068_1",
-      "local": "assets/from-live/products/ea55d261dd_1000x1000-6068_1.webp"
+      "src": "local://264445_w84_00.jpg",
+      "thumb": "assets/enriched/264445/264445_w84_00.jpg",
+      "alt": "Акустический кабель Furutech FS-502 ( furutech fs 502 )",
+      "local": "assets/enriched/264445/264445_w84_00.jpg",
+      "enriched": true,
+      "attribution": "wave84-oem",
+      "bytes": 106521
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-6068_1-600x600.webp",
-      "local": "assets/enriched/264445/433292187b_w13var.jpg",
-      "bytes": 16990,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264445_w84_01.jpg",
+      "thumb": "assets/enriched/264445/264445_w84_01.jpg",
+      "alt": "Акустический кабель Furutech FS-502 ( furutech fs 502 )",
+      "local": "assets/enriched/264445/264445_w84_01.jpg",
+      "enriched": true,
+      "attribution": "wave84-oem",
+      "bytes": 32857
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-6068_1-768x768.webp",
-      "local": "assets/enriched/264445/1555aadd60_w13var.jpg",
-      "bytes": 22966,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264445_w84_02.jpg",
+      "thumb": "assets/enriched/264445/264445_w84_02.jpg",
+      "alt": "Акустический кабель Furutech FS-502 ( furutech fs 502 )",
+      "local": "assets/enriched/264445/264445_w84_02.jpg",
+      "enriched": true,
+      "attribution": "wave84-oem",
+      "bytes": 32815
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_FS_502.jpg",
-      "local": "assets/enriched/264445/8f9678c501_w14media.jpg",
-      "bytes": 32857,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264445_w84_03.jpg",
+      "thumb": "assets/enriched/264445/264445_w84_03.jpg",
+      "alt": "Акустический кабель Furutech FS-502 ( furutech fs 502 )",
+      "local": "assets/enriched/264445/264445_w84_03.jpg",
+      "enriched": true,
+      "attribution": "wave84-oem",
+      "bytes": 113411
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_FS_502-600x600.jpg",
-      "local": "assets/enriched/264445/c669741503_w14var.jpg",
-      "bytes": 31579,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264445_w84_04.jpg",
+      "thumb": "assets/enriched/264445/264445_w84_04.jpg",
+      "alt": "Акустический кабель Furutech FS-502 ( furutech fs 502 )",
+      "local": "assets/enriched/264445/264445_w84_04.jpg",
+      "enriched": true,
+      "attribution": "wave84-oem",
+      "bytes": 315310
     }
   ],
   "sku": "",
@@ -84,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T18:47:25Z",
+  "galleryWave84": true
 }
