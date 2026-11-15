@@ -46,30 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_rock_5579440236-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_rock_5579440236-1.jpg",
-      "alt": "van_den_hul_the_rock_5579440236-1.jpg",
-      "local": "assets/from-live/hero/16c513c9c5_van_den_hul_the_rock_5579440236-1.jpg"
+      "src": "local://270577_w41_00.jpg",
+      "thumb": "assets/enriched/270577/270577_w41_00.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Rock",
+      "local": "assets/enriched/270577/270577_w41_00.jpg",
+      "enriched": true,
+      "attribution": "wave41-oem",
+      "bytes": 379527
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_rock_5577946570-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_rock_5577946570-2.jpg",
-      "alt": "van_den_hul_the_rock_5577946570-2.jpg",
-      "local": "assets/from-live/hero/01a55b3274_van_den_hul_the_rock_5577946570-2.jpg"
+      "src": "local://270577_w41_01.jpg",
+      "thumb": "assets/enriched/270577/270577_w41_01.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Rock",
+      "local": "assets/enriched/270577/270577_w41_01.jpg",
+      "enriched": true,
+      "attribution": "wave41-oem",
+      "bytes": 276834
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_rock3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_rock3.jpg",
-      "alt": "van_den_hul_the_rock3.jpg",
-      "local": "assets/from-live/hero/77f00577af_van_den_hul_the_rock3.jpg"
+      "src": "local://270577_w41_02.jpg",
+      "thumb": "assets/enriched/270577/270577_w41_02.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Rock",
+      "local": "assets/enriched/270577/270577_w41_02.jpg",
+      "enriched": true,
+      "attribution": "wave41-oem",
+      "bytes": 42369
     },
     {
-      "src": "local-variant://270577/w17sc95",
-      "local": "assets/enriched/270577/c5d0b2d628_w17sc95.jpg",
-      "bytes": 185720,
-      "wave": "meager-w17-2026-11",
-      "w": 1710,
-      "h": 1710
+      "src": "local://270577_w41_03.jpg",
+      "thumb": "assets/enriched/270577/270577_w41_03.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Rock",
+      "local": "assets/enriched/270577/270577_w41_03.jpg",
+      "enriched": true,
+      "attribution": "wave41-oem",
+      "bytes": 89034
     }
   ],
   "sku": "",
@@ -81,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T07:49:05Z",
+  "galleryWave41": true
 }

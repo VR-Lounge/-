@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T07:23:37Z",
+  "generatedAt": "2026-11-15T07:52:14Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1199,
-    "padded": 313,
+    "true_multi_angle": 1201,
+    "padded": 311,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 63.54,
-    "padded": 16.59,
+    "true_multi_angle": 63.65,
+    "padded": 16.48,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 35.05,
-    "not_true_multi": 36.46
+    "padded_of_claimed_gal4plus": 34.94,
+    "not_true_multi": 36.35
   },
   "padReasonTallies": {
-    "local-variant": 742,
-    "wN-variant-name": 647,
+    "local-variant": 741,
+    "wN-variant-name": 646,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 647,
+  "claimedButNotTrueMulti": 645,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -16683,16 +16683,14 @@
       "slug": "abba0dfb70cb1202e2eb9fc1b37e20ce",
       "cat": "Кабели",
       "price": 108790,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270581,
@@ -20629,16 +20627,14 @@
       "slug": "d06dd400db445c0d541474097591e529",
       "cat": "Кабели",
       "price": 63990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264443,
