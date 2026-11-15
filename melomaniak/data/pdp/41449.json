@@ -26,32 +26,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/7c5d2017cd6b6c4e1410c7259254f1fb.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/7c5d2017cd6b6c4e1410c7259254f1fb-600x600.jpg",
-      "alt": "7c5d2017cd6b6c4e1410c7259254f1fb",
-      "local": "assets/from-live/products/d22b20b246_7c5d2017cd6b6c4e1410c7259254f1fb.jpg"
+      "src": "local://41449_w55_00.jpg",
+      "thumb": "assets/enriched/41449/41449_w55_00.jpg",
+      "alt": "Центральный канал Paradigm Premier 500C Gloss Black ( paradigm premier 500c gloss black )",
+      "local": "assets/enriched/41449/41449_w55_00.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 80757
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/a67b5562d1b6c9e2ba56dd96abac737d.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/a67b5562d1b6c9e2ba56dd96abac737d-600x600.jpg",
-      "alt": "a67b5562d1b6c9e2ba56dd96abac737d",
-      "local": "assets/from-live/products/7adff722bf_a67b5562d1b6c9e2ba56dd96abac737d.jpg"
+      "src": "local://41449_w55_01.jpg",
+      "thumb": "assets/enriched/41449/41449_w55_01.jpg",
+      "alt": "Центральный канал Paradigm Premier 500C Gloss Black ( paradigm premier 500c gloss black )",
+      "local": "assets/enriched/41449/41449_w55_01.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 77260
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/a67b5562d1b6c9e2ba56dd96abac737d-600x600.jpg",
-      "local": "assets/enriched/41449/fd152c9857_w13var.jpg",
-      "bytes": 12512,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://41449_w55_02.jpg",
+      "thumb": "assets/enriched/41449/41449_w55_02.jpg",
+      "alt": "Центральный канал Paradigm Premier 500C Gloss Black ( paradigm premier 500c gloss black )",
+      "local": "assets/enriched/41449/41449_w55_02.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 101124
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/7c5d2017cd6b6c4e1410c7259254f1fb-768x768.jpg",
-      "local": "assets/enriched/41449/e478cb8a5a_w13var.jpg",
-      "bytes": 27176,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://41449_w55_03.jpg",
+      "thumb": "assets/enriched/41449/41449_w55_03.jpg",
+      "alt": "Центральный канал Paradigm Premier 500C Gloss Black ( paradigm premier 500c gloss black )",
+      "local": "assets/enriched/41449/41449_w55_03.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 75948
+    },
+    {
+      "src": "local://41449_w55_04.jpg",
+      "thumb": "assets/enriched/41449/41449_w55_04.jpg",
+      "alt": "Центральный канал Paradigm Premier 500C Gloss Black ( paradigm premier 500c gloss black )",
+      "local": "assets/enriched/41449/41449_w55_04.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 59027
     }
   ],
   "sku": "",
@@ -63,5 +80,9 @@
   "enrichedAt": "2026-11-14T13:19:52Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T11:34:37Z",
+  "galleryWave55": true
 }

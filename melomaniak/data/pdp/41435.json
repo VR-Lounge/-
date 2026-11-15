@@ -61,32 +61,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/medium_premier-200b-front-3qtr.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/medium_premier-200b-front-3qtr-600x379.jpg",
-      "alt": "medium_premier-200b-front-3qtr",
-      "local": "assets/from-live/products/4281a385b9_medium_premier-200b-front-3qtr.jpg"
+      "src": "local://41435_w55_00.jpg",
+      "thumb": "assets/enriched/41435/41435_w55_00.jpg",
+      "alt": "полочная акустика Paradigm Premier 200B Espresso Grain ( paradigm premier 200b espresso grain )",
+      "local": "assets/enriched/41435/41435_w55_00.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 181184
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/Premier200B_E5.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/Premier200B_E5-600x600.jpg",
-      "alt": "Premier200B_E5",
-      "local": "assets/from-live/products/5fc60786aa_Premier200B_E5.jpg"
+      "src": "local://41435_w55_01.jpg",
+      "thumb": "assets/enriched/41435/41435_w55_01.jpg",
+      "alt": "полочная акустика Paradigm Premier 200B Espresso Grain ( paradigm premier 200b espresso grain )",
+      "local": "assets/enriched/41435/41435_w55_01.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 130369
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/Premier200B_E5-600x600.jpg",
-      "local": "assets/enriched/41435/466619b14b_w13var.jpg",
-      "bytes": 12534,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://41435_w55_02.jpg",
+      "thumb": "assets/enriched/41435/41435_w55_02.jpg",
+      "alt": "полочная акустика Paradigm Premier 200B Espresso Grain ( paradigm premier 200b espresso grain )",
+      "local": "assets/enriched/41435/41435_w55_02.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 62082
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/Premier200B_E5-768x768.jpg",
-      "local": "assets/enriched/41435/a58f59921f_w13var.jpg",
-      "bytes": 18080,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://41435_w55_03.jpg",
+      "thumb": "assets/enriched/41435/41435_w55_03.jpg",
+      "alt": "полочная акустика Paradigm Premier 200B Espresso Grain ( paradigm premier 200b espresso grain )",
+      "local": "assets/enriched/41435/41435_w55_03.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 17503
     }
   ],
   "sku": "",
@@ -98,5 +106,9 @@
   "enrichedAt": "2026-11-14T14:23:05Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T11:34:37Z",
+  "galleryWave55": true
 }

@@ -61,32 +61,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/preview_premier-200b-black-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/preview_premier-200b-black-2.jpg",
-      "alt": "preview_premier-200b-black-2",
-      "local": "assets/from-live/products/82b3af25ad_preview_premier-200b-black-2.jpg"
+      "src": "local://41431_w55_00.jpg",
+      "thumb": "assets/enriched/41431/41431_w55_00.jpg",
+      "alt": "полочная акустика Paradigm Premier 200B Gloss Black ( paradigm premier 200b gloss black )",
+      "local": "assets/enriched/41431/41431_w55_00.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 126603
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/Premier200B_E5.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/Premier200B_E5-600x600.jpg",
-      "alt": "Premier200B_E5",
-      "local": "assets/from-live/products/5fc60786aa_Premier200B_E5.jpg"
+      "src": "local://41431_w55_01.jpg",
+      "thumb": "assets/enriched/41431/41431_w55_01.jpg",
+      "alt": "полочная акустика Paradigm Premier 200B Gloss Black ( paradigm premier 200b gloss black )",
+      "local": "assets/enriched/41431/41431_w55_01.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 274520
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/medium_premier-200b-front-3qtr.jpg",
-      "local": "assets/enriched/41431/2986070494_w13media.jpg",
-      "bytes": 22281,
-      "wave": "meager-w13-2026-11",
-      "w": 680,
-      "h": 379
+      "src": "local://41431_w55_02.jpg",
+      "thumb": "assets/enriched/41431/41431_w55_02.jpg",
+      "alt": "полочная акустика Paradigm Premier 200B Gloss Black ( paradigm premier 200b gloss black )",
+      "local": "assets/enriched/41431/41431_w55_02.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 61716
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/Premier200B_E5-600x600.jpg",
-      "local": "assets/enriched/41431/466619b14b_w13var.jpg",
-      "bytes": 12534,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://41431_w55_03.jpg",
+      "thumb": "assets/enriched/41431/41431_w55_03.jpg",
+      "alt": "полочная акустика Paradigm Premier 200B Gloss Black ( paradigm premier 200b gloss black )",
+      "local": "assets/enriched/41431/41431_w55_03.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 18662
+    },
+    {
+      "src": "local://41431_w55_04.jpg",
+      "thumb": "assets/enriched/41431/41431_w55_04.jpg",
+      "alt": "полочная акустика Paradigm Premier 200B Gloss Black ( paradigm premier 200b gloss black )",
+      "local": "assets/enriched/41431/41431_w55_04.jpg",
+      "enriched": true,
+      "attribution": "wave55-oem",
+      "bytes": 27248
     }
   ],
   "sku": "",
@@ -98,5 +115,9 @@
   "enrichedAt": "2026-11-14T14:22:42Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T11:34:37Z",
+  "galleryWave55": true
 }

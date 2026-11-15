@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T11:23:17Z",
+  "at": "2026-11-15T11:37:51Z",
   "counts": {
-    "true_multi_angle": 1242,
-    "padded": 270,
+    "true_multi_angle": 1247,
+    "padded": 265,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 65.82,
-    "padded": 14.31,
+    "true_multi_angle": 66.08,
+    "padded": 14.04,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.72,
-    "not_true_multi": 34.18
+    "padded_of_claimed_gal4plus": 32.45,
+    "not_true_multi": 33.92
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -50,7 +50,7 @@
     ]
   },
   "remaining": {
-    "padded": 270,
+    "padded": 265,
     "single_real": 375
   },
   "topHitlPadded": [
@@ -386,6 +386,36 @@
       {
         "id": 262102,
         "name": "Line Magnetic LP-33 Phono",
+        "unique": 5
+      }
+    ]
+  },
+  "wave55": {
+    "padded_to_true_multi": 5,
+    "cleared": [
+      {
+        "id": 41449,
+        "name": "Paradigm Premier 500C Gloss Black",
+        "unique": 5
+      },
+      {
+        "id": 41451,
+        "name": "Paradigm Premier 500C Gloss White",
+        "unique": 5
+      },
+      {
+        "id": 41435,
+        "name": "Paradigm Premier 200B Espresso Grain",
+        "unique": 4
+      },
+      {
+        "id": 41433,
+        "name": "Paradigm Premier 200B Gloss White",
+        "unique": 4
+      },
+      {
+        "id": 41431,
+        "name": "Paradigm Premier 200B Gloss Black",
         "unique": 5
       }
     ]
