@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-opt-30hg-hr.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-opt-30hg-hr.jpg",
-      "alt": "audio-replas-opt-30hg-hr",
-      "local": "assets/from-live/products/8673d65a22_audio-replas-opt-30hg-hr.jpg"
+      "src": "local://264090_w100b_00.jpg",
+      "thumb": "assets/enriched/264090/264090_w100b_00.jpg",
+      "alt": "Вибропоглатитель Audio Replas OPT-30HG-SC HR/4P ( audio replas opt 30hg sc hr 4p )",
+      "local": "assets/enriched/264090/264090_w100b_00.jpg",
+      "enriched": true,
+      "attribution": "wave100b-oem",
+      "bytes": 100129
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/9.webp",
-      "local": "assets/enriched/264090/9bdc3209c9_w15sib.jpg",
-      "bytes": 30326,
-      "wave": "meager-w15-2026-11",
-      "w": 500,
-      "h": 500
+      "src": "local://264090_w100b_01.jpg",
+      "thumb": "assets/enriched/264090/264090_w100b_01.jpg",
+      "alt": "Вибропоглатитель Audio Replas OPT-30HG-SC HR/4P ( audio replas opt 30hg sc hr 4p )",
+      "local": "assets/enriched/264090/264090_w100b_01.jpg",
+      "enriched": true,
+      "attribution": "wave100b-oem",
+      "bytes": 41312
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/9-300x300.webp",
-      "local": "assets/enriched/264090/e6a2b66264_w15sib.jpg",
-      "bytes": 10794,
-      "wave": "meager-w15-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264090_w100b_02.jpg",
+      "thumb": "assets/enriched/264090/264090_w100b_02.jpg",
+      "alt": "Вибропоглатитель Audio Replas OPT-30HG-SC HR/4P ( audio replas opt 30hg sc hr 4p )",
+      "local": "assets/enriched/264090/264090_w100b_02.jpg",
+      "enriched": true,
+      "attribution": "wave100b-oem",
+      "bytes": 44321
     },
     {
-      "src": "local-variant://264090/w17sc95",
-      "local": "assets/enriched/264090/7bc89d8f3c_w17sc95.jpg",
-      "bytes": 29864,
-      "wave": "meager-w17-2026-11",
-      "w": 361,
-      "h": 237
+      "src": "local://264090_w100b_03.jpg",
+      "thumb": "assets/enriched/264090/264090_w100b_03.jpg",
+      "alt": "Вибропоглатитель Audio Replas OPT-30HG-SC HR/4P ( audio replas opt 30hg sc hr 4p )",
+      "local": "assets/enriched/264090/264090_w100b_03.jpg",
+      "enriched": true,
+      "attribution": "wave100b-oem",
+      "bytes": 24148
     }
   ],
   "sku": "",
@@ -72,5 +78,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:25:38Z",
+  "galleryWave100b": true
 }

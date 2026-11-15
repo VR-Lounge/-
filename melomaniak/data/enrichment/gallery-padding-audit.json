@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T23:18:55Z",
+  "generatedAt": "2026-11-15T23:28:41Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1379,
-    "padded": 142,
+    "true_multi_angle": 1387,
+    "padded": 134,
     "single_real": 366
   },
   "pct": {
-    "true_multi_angle": 73.08,
-    "padded": 7.53,
+    "true_multi_angle": 73.5,
+    "padded": 7.1,
     "single_real": 19.4,
-    "padded_of_claimed_gal4plus": 25.34,
-    "not_true_multi": 26.92
+    "padded_of_claimed_gal4plus": 24.91,
+    "not_true_multi": 26.5
   },
   "padReasonTallies": {
-    "local-variant": 682,
-    "wN-variant-name": 467,
-    "cdn-size-thumb": 94,
+    "local-variant": 673,
+    "wN-variant-name": 465,
+    "cdn-size-thumb": 89,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 468,
+  "claimedButNotTrueMulti": 460,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -362,20 +362,6 @@
       "class": "single_real"
     },
     {
-      "id": 264090,
-      "name": "Вибропоглатитель Audio Replas OPT-30HG-SC HR/4P ( audio replas opt 30hg sc hr 4p )",
-      "cat": "Другое",
-      "price": 170000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "class": "padded"
-    },
-    {
       "id": 15636,
       "name": "центральный канал Audio Physic High End Center ( audio physic high end center )",
       "cat": "Другое",
@@ -570,6 +556,19 @@
       "padSlots": 3,
       "padReasons": {
         "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264071,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/4P ( audio replas opt 100hg flat ss hr 4p )",
+      "cat": "Другое",
+      "price": 129200,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 3
       },
       "class": "single_real"
     }
@@ -13220,17 +13219,14 @@
       "slug": "%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-opt-30hg-sc-hr-4p",
       "cat": "Другое",
       "price": 170000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 266512,
@@ -15058,17 +15054,14 @@
       "slug": "%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-opt-30hg-sc-hr-3p",
       "cat": "Другое",
       "price": 131750,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270302,
@@ -17910,17 +17903,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-30hg-20hr-4p",
       "cat": "Другое",
       "price": 91800,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270423,
@@ -19217,17 +19207,14 @@
       "slug": "%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-30hg-pl-hr-4p",
       "cat": "Другое",
       "price": 76500,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 25166,
@@ -19601,17 +19588,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-30hg-20hr-3p",
       "cat": "Другое",
       "price": 73800,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264106,
@@ -20641,17 +20625,14 @@
       "slug": "%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d0%b0-%d0%bf%d0%be%d0%b4-%d1%88%d0%b8%d0%bf%d1%8b-audio-replas-opt-30hg-pl-hr-3p",
       "cat": "Другое",
       "price": 61200,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269912,
@@ -21992,17 +21973,14 @@
       "slug": "%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-opt-30hg-sc-hr",
       "cat": "Другое",
       "price": 50400,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264437,
@@ -24144,16 +24122,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%b0%d1%8f-%d0%b2%d0%b8%d0%bb%d0%ba%d0%b0-furutech-fi-52m-r",
       "cat": "Другое",
       "price": 34927,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 274173,

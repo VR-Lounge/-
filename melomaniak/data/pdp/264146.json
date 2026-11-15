@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-52M.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-52M.jpg",
-      "alt": "FI-52M",
-      "local": "assets/from-live/products/0d46acdef4_FI-52M.jpg"
+      "src": "local://264146_w100b_00.jpg",
+      "thumb": "assets/enriched/264146/264146_w100b_00.jpg",
+      "alt": "Сетевая вилка Furutech FI-52M ( R ) ( furutech fi 52m ( r ) )",
+      "local": "assets/enriched/264146/264146_w100b_00.jpg",
+      "enriched": true,
+      "attribution": "wave100b-oem",
+      "bytes": 214444
     },
     {
-      "src": "local://0fafdcec11_FI-52_NCF-305x205-1-1.jpg",
-      "local": "assets/enriched/264146/14dc8a0cbf_w15sib.jpg",
-      "bytes": 12600,
-      "wave": "meager-w15-2026-11",
-      "w": 305,
-      "h": 205
+      "src": "local://264146_w100b_01.jpg",
+      "thumb": "assets/enriched/264146/264146_w100b_01.jpg",
+      "alt": "Сетевая вилка Furutech FI-52M ( R ) ( furutech fi 52m ( r ) )",
+      "local": "assets/enriched/264146/264146_w100b_01.jpg",
+      "enriched": true,
+      "attribution": "wave100b-oem",
+      "bytes": 186316
     },
     {
-      "src": "local-variant://264146/w17sc95",
-      "local": "assets/enriched/264146/545593eaa5_w17sc95.jpg",
-      "bytes": 29727,
-      "wave": "meager-w17-2026-11",
-      "w": 311,
-      "h": 237
+      "src": "local://264146_w100b_02.jpg",
+      "thumb": "assets/enriched/264146/264146_w100b_02.jpg",
+      "alt": "Сетевая вилка Furutech FI-52M ( R ) ( furutech fi 52m ( r ) )",
+      "local": "assets/enriched/264146/264146_w100b_02.jpg",
+      "enriched": true,
+      "attribution": "wave100b-oem",
+      "bytes": 84201
     },
     {
-      "src": "local-variant://264146/w17sc90",
-      "local": "assets/enriched/264146/a5aec768d9_w17sc90.jpg",
-      "bytes": 26879,
-      "wave": "meager-w17-2026-11",
-      "w": 295,
-      "h": 225
+      "src": "local://264146_w100b_03.jpg",
+      "thumb": "assets/enriched/264146/264146_w100b_03.jpg",
+      "alt": "Сетевая вилка Furutech FI-52M ( R ) ( furutech fi 52m ( r ) )",
+      "local": "assets/enriched/264146/264146_w100b_03.jpg",
+      "enriched": true,
+      "attribution": "wave100b-oem",
+      "bytes": 84155
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:25:38Z",
+  "galleryWave100b": true
 }
