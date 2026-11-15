@@ -26,34 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_47_Labs_4706_50.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_47_Labs_4706_50-600x600.jpg",
-      "alt": "47 Labs 4706 50",
-      "local": "assets/from-live/products/e9e7e68965_ysilitel_moshnosti_47_Labs_4706_50.jpg"
+      "src": "local://15864_w96_00.jpg",
+      "thumb": "assets/enriched/15864/15864_w96_00.jpg",
+      "alt": "усилитель мощности 47 Labs 4706-50 ( 47 labs 4706 50 )",
+      "local": "assets/enriched/15864/15864_w96_00.jpg",
+      "enriched": true,
+      "attribution": "wave96-oem",
+      "bytes": 21602
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_47_Labs_4706_50-600x600.jpg",
-      "local": "assets/enriched/15864/08f709d9cf_w13var.jpg",
-      "bytes": 19802,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15864_w96_01.jpg",
+      "thumb": "assets/enriched/15864/15864_w96_01.jpg",
+      "alt": "усилитель мощности 47 Labs 4706-50 ( 47 labs 4706 50 )",
+      "local": "assets/enriched/15864/15864_w96_01.jpg",
+      "enriched": true,
+      "attribution": "wave96-oem",
+      "bytes": 636912
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_47_Labs_4706C.jpg",
-      "local": "assets/enriched/15864/6654e378c5_w15sib.jpg",
-      "bytes": 45465,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15864_w96_02.jpg",
+      "thumb": "assets/enriched/15864/15864_w96_02.jpg",
+      "alt": "усилитель мощности 47 Labs 4706-50 ( 47 labs 4706 50 )",
+      "local": "assets/enriched/15864/15864_w96_02.jpg",
+      "enriched": true,
+      "attribution": "wave96-oem",
+      "bytes": 665591
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_47_Labs_4706C-600x600.jpg",
-      "local": "assets/enriched/15864/09235b3dad_w15sib.jpg",
-      "bytes": 45450,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15864_w96_03.jpg",
+      "thumb": "assets/enriched/15864/15864_w96_03.jpg",
+      "alt": "усилитель мощности 47 Labs 4706-50 ( 47 labs 4706 50 )",
+      "local": "assets/enriched/15864/15864_w96_03.jpg",
+      "enriched": true,
+      "attribution": "wave96-oem",
+      "bytes": 638944
     }
   ],
   "sku": "",
@@ -65,5 +71,9 @@
   "enrichedAt": "2026-11-14T13:45:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T21:58:35Z",
+  "galleryWave96": true
 }

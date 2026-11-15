@@ -46,32 +46,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/portativnaia_akystika_PW_800_Black.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/portativnaia_akystika_PW_800_Black-600x600.jpg",
-      "alt": "PW 800 Black",
-      "local": "assets/from-live/products/f99120dfb2_portativnaia_akystika_PW_800_Black.jpg"
+      "src": "local://25166_w96_00.jpg",
+      "thumb": "assets/enriched/25166/25166_w96_00.jpg",
+      "alt": "портативная акустика Paradigm PW 800 Black ( paradigm pw 800 black )",
+      "local": "assets/enriched/25166/25166_w96_00.jpg",
+      "enriched": true,
+      "attribution": "wave96-oem",
+      "bytes": 39641
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/01/38902_4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/01/38902_4-600x600.jpg",
-      "alt": "38902_4",
-      "local": "assets/from-live/products/28f6a293b0_38902_4.jpg"
+      "src": "local://25166_w96_01.jpg",
+      "thumb": "assets/enriched/25166/25166_w96_01.jpg",
+      "alt": "портативная акустика Paradigm PW 800 Black ( paradigm pw 800 black )",
+      "local": "assets/enriched/25166/25166_w96_01.jpg",
+      "enriched": true,
+      "attribution": "wave96-oem",
+      "bytes": 50938
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2020/01/38902_4-600x600.jpg",
-      "local": "assets/enriched/25166/e1522a723a_w13var.jpg",
-      "bytes": 36327,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://25166_w96_02.jpg",
+      "thumb": "assets/enriched/25166/25166_w96_02.jpg",
+      "alt": "портативная акустика Paradigm PW 800 Black ( paradigm pw 800 black )",
+      "local": "assets/enriched/25166/25166_w96_02.jpg",
+      "enriched": true,
+      "attribution": "wave96-oem",
+      "bytes": 217187
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/portativnaia_akystika_PW_800_Black-600x600.jpg",
-      "local": "assets/enriched/25166/c986c7611f_w13var.jpg",
-      "bytes": 36664,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://25166_w96_03.jpg",
+      "thumb": "assets/enriched/25166/25166_w96_03.jpg",
+      "alt": "портативная акустика Paradigm PW 800 Black ( paradigm pw 800 black )",
+      "local": "assets/enriched/25166/25166_w96_03.jpg",
+      "enriched": true,
+      "attribution": "wave96-oem",
+      "bytes": 132656
+    },
+    {
+      "src": "local://25166_w96_04.jpg",
+      "thumb": "assets/enriched/25166/25166_w96_04.jpg",
+      "alt": "портативная акустика Paradigm PW 800 Black ( paradigm pw 800 black )",
+      "local": "assets/enriched/25166/25166_w96_04.jpg",
+      "enriched": true,
+      "attribution": "wave96-oem",
+      "bytes": 39181
     }
   ],
   "sku": "",
@@ -83,5 +100,9 @@
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T21:58:35Z",
+  "galleryWave96": true
 }
