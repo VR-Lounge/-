@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Flux-50-NCF-Filter.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Flux-50-NCF-Filter.png",
-      "alt": "Flux-50-NCF-Filter",
-      "local": "assets/from-live/products/1f4ac6d81c_Flux-50-NCF-Filter.png"
+      "src": "local://264347_w46_00.jpg",
+      "thumb": "assets/enriched/264347/264347_w46_00.jpg",
+      "alt": "Сетевой кабель Furutech Flux-50 NCF Filter ( furutech flux 50 ncf filter )",
+      "local": "assets/enriched/264347/264347_w46_00.jpg",
+      "enriched": true,
+      "attribution": "wave46-oem",
+      "bytes": 33509
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/Setevoi_Filt_Furutech_FluX_50_Filter.jpg",
-      "local": "assets/enriched/264347/7a2a380549_w13media.jpg",
-      "bytes": 33509,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264347_w46_01.jpg",
+      "thumb": "assets/enriched/264347/264347_w46_01.jpg",
+      "alt": "Сетевой кабель Furutech Flux-50 NCF Filter ( furutech flux 50 ncf filter )",
+      "local": "assets/enriched/264347/264347_w46_01.jpg",
+      "enriched": true,
+      "attribution": "wave46-oem",
+      "bytes": 146548
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/Setevoi_Filt_Furutech_FluX_50_Filter-300x300.jpg",
-      "local": "assets/enriched/264347/fd0ab5379a_w13var.jpg",
-      "bytes": 11901,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264347_w46_02.jpg",
+      "thumb": "assets/enriched/264347/264347_w46_02.jpg",
+      "alt": "Сетевой кабель Furutech Flux-50 NCF Filter ( furutech flux 50 ncf filter )",
+      "local": "assets/enriched/264347/264347_w46_02.jpg",
+      "enriched": true,
+      "attribution": "wave46-oem",
+      "bytes": 119057
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/Setevoi_Filt_Furutech_FluX_50_Filter-600x600.jpg",
-      "local": "assets/enriched/264347/6984f234e1_w13var.jpg",
-      "bytes": 32484,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264347_w46_03.jpg",
+      "thumb": "assets/enriched/264347/264347_w46_03.jpg",
+      "alt": "Сетевой кабель Furutech Flux-50 NCF Filter ( furutech flux 50 ncf filter )",
+      "local": "assets/enriched/264347/264347_w46_03.jpg",
+      "enriched": true,
+      "attribution": "wave46-oem",
+      "bytes": 274225
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T09:11:37Z",
+  "galleryWave46": true
 }
