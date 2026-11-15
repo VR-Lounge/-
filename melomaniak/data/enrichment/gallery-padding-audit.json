@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T11:37:51Z",
+  "generatedAt": "2026-11-15T11:49:29Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1247,
-    "padded": 265,
+    "true_multi_angle": 1249,
+    "padded": 263,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 66.08,
-    "padded": 14.04,
+    "true_multi_angle": 66.19,
+    "padded": 13.94,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.45,
-    "not_true_multi": 33.92
+    "padded_of_claimed_gal4plus": 32.34,
+    "not_true_multi": 33.81
   },
   "padReasonTallies": {
     "local-variant": 723,
-    "wN-variant-name": 591,
+    "wN-variant-name": 588,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 599,
+  "claimedButNotTrueMulti": 597,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -411,19 +411,6 @@
       "class": "padded"
     },
     {
-      "id": 261853,
-      "name": "Напольная акустика Paradigm Monitor SE 8000F Gloss White ( paradigm monitor se 8000f gloss white )",
-      "cat": "Акустика",
-      "price": 212415,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "class": "padded"
-    },
-    {
       "id": 264053,
       "name": "Вибропоглощающие стойки Acoustic Revive RWL-3 Absolute ( acoustic revive rwl 3 absolute )",
       "cat": "Другое",
@@ -567,6 +554,20 @@
         "wN-variant-name": 2
       },
       "class": "padded"
+    },
+    {
+      "id": 16790,
+      "name": "интегральный усилитель Soulnote sa300 ( soulnote sa300 )",
+      "cat": "Усилители",
+      "price": 190000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "local-variant": 2
+      },
+      "class": "single_real"
     }
   ],
   "hitlTrueOneshot": [
@@ -11881,16 +11882,14 @@
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-monitor-se-8000f-gloss-white",
       "cat": "Акустика",
       "price": 212415,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270350,
@@ -16371,16 +16370,14 @@
       "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-premier-500c-espresso-grain",
       "cat": "Другое",
       "price": 113475,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264118,

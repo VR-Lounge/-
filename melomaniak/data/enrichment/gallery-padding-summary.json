@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T11:37:51Z",
+  "at": "2026-11-15T11:49:29Z",
   "counts": {
-    "true_multi_angle": 1247,
-    "padded": 265,
+    "true_multi_angle": 1249,
+    "padded": 263,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 66.08,
-    "padded": 14.04,
+    "true_multi_angle": 66.19,
+    "padded": 13.94,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 32.45,
-    "not_true_multi": 33.92
+    "padded_of_claimed_gal4plus": 32.34,
+    "not_true_multi": 33.81
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -50,7 +50,7 @@
     ]
   },
   "remaining": {
-    "padded": 265,
+    "padded": 263,
     "single_real": 375
   },
   "topHitlPadded": [
@@ -417,6 +417,21 @@
         "id": 41431,
         "name": "Paradigm Premier 200B Gloss Black",
         "unique": 5
+      }
+    ]
+  },
+  "wave56": {
+    "padded_to_true_multi": 2,
+    "cleared": [
+      {
+        "id": 261853,
+        "name": "Paradigm Monitor SE 8000F Gloss White",
+        "unique": 4
+      },
+      {
+        "id": 41453,
+        "name": "Paradigm Premier 500C Espresso Grain",
+        "unique": 4
       }
     ]
   }
