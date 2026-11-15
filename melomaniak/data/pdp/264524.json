@@ -36,37 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "local://e417d67899_SAEC-SCX-5000R-R.png",
-      "thumb": "assets/enriched/264524/09e0e80fd5_live1.png",
+      "src": "local://264524_w91_00.jpg",
+      "thumb": "assets/enriched/264524/264524_w91_00.jpg",
       "alt": "Фоно кабель SAEC  SCX-5000RR ( saec scx 5000rr )",
-      "local": "assets/enriched/264524/09e0e80fd5_live1.png",
+      "local": "assets/enriched/264524/264524_w91_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 125263
+      "attribution": "wave91-oem",
+      "bytes": 50963
     },
     {
-      "src": "local://5aae4a37b0_SAEC-SCX-5000D-R.png",
-      "thumb": "assets/enriched/264524/dee88dfb3c_live2.png",
+      "src": "local://264524_w91_01.jpg",
+      "thumb": "assets/enriched/264524/264524_w91_01.jpg",
       "alt": "Фоно кабель SAEC  SCX-5000RR ( saec scx 5000rr )",
-      "local": "assets/enriched/264524/dee88dfb3c_live2.png",
+      "local": "assets/enriched/264524/264524_w91_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 108849
+      "attribution": "wave91-oem",
+      "bytes": 56907
     },
     {
-      "src": "local://34dc6f4593_SAEC-SCX-5000L.png",
-      "thumb": "assets/enriched/264524/e304acceab_live3.png",
+      "src": "local://264524_w91_02.jpg",
+      "thumb": "assets/enriched/264524/264524_w91_02.jpg",
       "alt": "Фоно кабель SAEC  SCX-5000RR ( saec scx 5000rr )",
-      "local": "assets/enriched/264524/e304acceab_live3.png",
+      "local": "assets/enriched/264524/264524_w91_02.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 112117
+      "attribution": "wave91-oem",
+      "bytes": 34717
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SCX-5000.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SCX-5000.png",
-      "alt": "SAEC-SCX-5000",
-      "local": "assets/from-live/products/493deb8201_SAEC-SCX-5000.png"
+      "src": "local://264524_w91_03.jpg",
+      "thumb": "assets/enriched/264524/264524_w91_03.jpg",
+      "alt": "Фоно кабель SAEC  SCX-5000RR ( saec scx 5000rr )",
+      "local": "assets/enriched/264524/264524_w91_03.jpg",
+      "enriched": true,
+      "attribution": "wave91-oem",
+      "bytes": 28390
     }
   ],
   "sku": "",
@@ -78,5 +81,10 @@
   ],
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11"
+  "meagerWave": "meager-w7-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T20:58:15Z",
+  "galleryWave91": true
 }

@@ -1,0 +1,71 @@
+{
+  "wave": 91,
+  "at": "2026-11-15T21:01:28Z",
+  "counts": {
+    "true_multi_angle": 1346,
+    "padded": 169,
+    "single_real": 372
+  },
+  "cleared": [
+    {
+      "id": 264524,
+      "name": "SAEC SCX-5000RR",
+      "note": "RCA-RCA only; 4 unique OEM/dealer angles"
+    },
+    {
+      "id": 264226,
+      "name": "Furutech 104-D carbon",
+      "note": "carbon duplex only; strip stainless/GTX pollution"
+    }
+  ],
+  "promote": {
+    "at": "2026-11-15T20:58:15Z",
+    "results": [
+      {
+        "id": 264524,
+        "before": 4,
+        "after": 4,
+        "unique": 4,
+        "files": [
+          "assets/enriched/264524/264524_w91_00.jpg",
+          "assets/enriched/264524/264524_w91_01.jpg",
+          "assets/enriched/264524/264524_w91_02.jpg",
+          "assets/enriched/264524/264524_w91_03.jpg"
+        ]
+      },
+      {
+        "id": 264226,
+        "before": 4,
+        "after": 4,
+        "unique": 4,
+        "files": [
+          "assets/enriched/264226/264226_w91_00.jpg",
+          "assets/enriched/264226/264226_w91_01.jpg",
+          "assets/enriched/264226/264226_w91_02.jpg",
+          "assets/enriched/264226/264226_w91_03.jpg"
+        ]
+      }
+    ]
+  },
+  "hitl": {
+    "skip_unless_new_sources": [
+      {
+        "id": 4230,
+        "name": "Jadeitte",
+        "class": "padded"
+      },
+      {
+        "id": 264126,
+        "name": "MTP-2",
+        "class": "single_real/oneshot"
+      }
+    ]
+  },
+  "held": [
+    "AE308 black 274594 (~3 honest; need true 4th full angle)",
+    "Imagine S gloss 36357 (no gloss rear)",
+    "MC100/Sitara/Soulnote/hpa/SUS polluted or scarce",
+    "La Source 102/103 stuck ~3 same-SKU angles",
+    "OPT-30HG-SC wrong SKU family / uq=3"
+  ]
+}

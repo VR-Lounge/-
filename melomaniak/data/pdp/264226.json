@@ -36,36 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "local://e68c398045_Накладка-на-розетку-Furutech-Outlet-Cover-plate-102-D.jpg",
-      "thumb": "assets/enriched/264226/61f370474e_live1.jpg",
+      "src": "local://264226_w91_00.jpg",
+      "thumb": "assets/enriched/264226/264226_w91_00.jpg",
       "alt": "Накладка на розетку Furutech Duplex cover plate 104-D ( furutech duplex cover plate 104 d )",
-      "local": "assets/enriched/264226/61f370474e_live1.jpg",
+      "local": "assets/enriched/264226/264226_w91_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 12559
+      "attribution": "wave91-oem",
+      "bytes": 25990
     },
     {
-      "src": "local://d9daafd623_Накладка-на-розетку-Furutech-GTX-Wall-Plate-1.jpg",
-      "thumb": "assets/enriched/264226/72061d0e8b_live2.jpg",
+      "src": "local://264226_w91_01.jpg",
+      "thumb": "assets/enriched/264226/264226_w91_01.jpg",
       "alt": "Накладка на розетку Furutech Duplex cover plate 104-D ( furutech duplex cover plate 104 d )",
-      "local": "assets/enriched/264226/72061d0e8b_live2.jpg",
+      "local": "assets/enriched/264226/264226_w91_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 81321
+      "attribution": "wave91-oem",
+      "bytes": 21083
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Накладка-на-розетку-Furutech-Duplex-cover-plate-104-D-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Накладка-на-розетку-Furutech-Duplex-cover-plate-104-D-1.jpg",
-      "alt": "Накладка на розетку Furutech Duplex cover plate 104-D",
-      "local": "assets/from-live/products/2a7ed4aa91_Накладка-на-розетку-Furutech-Duplex-cover-plate-104-D-1.jpg"
+      "src": "local://264226_w91_02.jpg",
+      "thumb": "assets/enriched/264226/264226_w91_02.jpg",
+      "alt": "Накладка на розетку Furutech Duplex cover plate 104-D ( furutech duplex cover plate 104 d )",
+      "local": "assets/enriched/264226/264226_w91_02.jpg",
+      "enriched": true,
+      "attribution": "wave91-oem",
+      "bytes": 68336
     },
     {
-      "src": "local-variant://264226/w17sc95",
-      "local": "assets/enriched/264226/2e87e8a308_w17sc95.jpg",
-      "bytes": 24869,
-      "wave": "meager-w17-2026-11",
-      "w": 498,
-      "h": 330
+      "src": "local://264226_w91_03.jpg",
+      "thumb": "assets/enriched/264226/264226_w91_03.jpg",
+      "alt": "Накладка на розетку Furutech Duplex cover plate 104-D ( furutech duplex cover plate 104 d )",
+      "local": "assets/enriched/264226/264226_w91_03.jpg",
+      "enriched": true,
+      "attribution": "wave91-oem",
+      "bytes": 195423
     }
   ],
   "sku": "",
@@ -78,5 +82,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T20:58:15Z",
+  "galleryWave91": true
 }

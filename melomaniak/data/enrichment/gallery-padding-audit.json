@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T20:34:43Z",
+  "generatedAt": "2026-11-15T21:01:22Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1344,
-    "padded": 171,
+    "true_multi_angle": 1346,
+    "padded": 169,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 71.22,
-    "padded": 9.06,
+    "true_multi_angle": 71.33,
+    "padded": 8.96,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 27.23,
-    "not_true_multi": 28.78
+    "padded_of_claimed_gal4plus": 27.13,
+    "not_true_multi": 28.67
   },
   "padReasonTallies": {
-    "local-variant": 697,
+    "local-variant": 696,
     "wN-variant-name": 498,
     "cdn-size-thumb": 107,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 503,
+  "claimedButNotTrueMulti": 501,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -20807,12 +20807,12 @@
       "price": 60624,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272243,
@@ -30476,16 +30476,14 @@
       "slug": "%d0%bd%d0%b0%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0-%d0%bd%d0%b0-%d1%80%d0%be%d0%b7%d0%b5%d1%82%d0%ba%d1%83-furutech-duplex-cover-plate-104-d",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264332,
