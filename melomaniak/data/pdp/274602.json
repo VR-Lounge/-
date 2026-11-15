@@ -40,36 +40,12 @@
     }
   ],
   "gallery": [
-    {
-      "src": "local://a8d5ab42dd_ae-320-new-w950-ae-mpic-0-1634288262.jpg",
-      "thumb": "assets/enriched/274602/c33d2189a8_live1.jpg",
-      "alt": "Напольная акустика Acoustic Energy AE 320",
-      "local": "assets/enriched/274602/c33d2189a8_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 81105
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-320-new-w950-ae-mpic-0-1634288262-768x768.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-320-new-w950-ae-mpic-0-1634288262-768x768.jpg",
-      "alt": "Напольная акустика Acoustic Energy AE 320",
-      "local": "assets/enriched/274602/5116270a6c_2.jpg",
-      "enriched": true,
-      "attribution": "xn--80aannlcfckh.xn--p1ai",
-      "bytes": 33721
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-320-new-w950-ae-mpic-0-1634288258.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-320-new-w950-ae-mpic-0-1634288258-600x600.jpg",
-      "alt": "ae-320-new-w950-ae-mpic-0-1634288258",
-      "local": "assets/from-live/products/b28dc9fea9_ae-320-new-w950-ae-mpic-0-1634288258.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-320-new-w950-ae-mpic-0-1634288267.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/04/ae-320-new-w950-ae-mpic-0-1634288267-600x600.jpg",
-      "alt": "ae-320-new-w950-ae-mpic-0-1634288267",
-      "local": "assets/from-live/products/d2f672c0c4_ae-320-new-w950-ae-mpic-0-1634288267.jpg"
-    }
+    "assets/enriched/274602/7ed40f1d49_w25.jpg",
+    "assets/enriched/274602/e30d43629e_w25.jpg",
+    "assets/enriched/274602/bf9ed95e8c_w25.jpg",
+    "assets/enriched/274602/63818551bc_w25.jpg",
+    "assets/enriched/274602/b28dc9fea9_w25.jpg",
+    "assets/enriched/274602/d2f672c0c4_w25.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -79,5 +55,10 @@
   ],
   "enrichedAt": "2026-11-14T15:10:04Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w8-2026-11"
+  "meagerWave": "meager-w8-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T02:26:21Z",
+  "galleryWave25": true
 }

@@ -25,27 +25,11 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/TRIODE-TRX-1SE-rear.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/TRIODE-TRX-1SE-rear.jpg",
-      "alt": "TRIODE-TRX-1SE-rear",
-      "local": "assets/from-live/products/3ee30d4097_TRIODE-TRX-1SE-rear.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/TRIODE-TRX-1SE-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/TRIODE-TRX-1SE-1.jpg",
-      "alt": "TRIODE-TRX-1SE-1",
-      "local": "assets/from-live/products/2246688777_TRIODE-TRX-1SE-1.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Triode_TRX_1SE_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Triode_TRX_1SE_.jpg",
-      "alt": "Предусилитель TRIODE TRX – 1SE",
-      "local": "assets/enriched/267868/e33ca57db5_1.jpg",
-      "enriched": true,
-      "attribution": "xn--80aannlcfckh.xn--p1ai",
-      "bytes": 24074
-    }
+    "assets/enriched/267868/58d513a4d6_w25.jpg",
+    "assets/enriched/267868/475f69c50f_w25.jpg",
+    "assets/enriched/267868/3ee30d4097_w25.jpg",
+    "assets/enriched/267868/2246688777_w25.jpg",
+    "assets/enriched/267868/c4fae10395_w25.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -57,7 +41,10 @@
   "enrichedAt": "2026-11-14T17:02:08Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T02:23:48Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave25": true
 }

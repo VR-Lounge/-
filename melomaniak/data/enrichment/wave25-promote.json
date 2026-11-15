@@ -1,0 +1,89 @@
+{
+  "wave": "wave25",
+  "at": "2026-11-15T02:34:59Z",
+  "paddedToTrue": 7,
+  "newlyMultiIds": [
+    267868,
+    262106,
+    274602,
+    273523,
+    271124,
+    271744,
+    16820
+  ],
+  "results": [
+    {
+      "id": 267868,
+      "name": "Предусилитель TRIODE TRX – 1SE",
+      "price": 355300,
+      "after": 5,
+      "multi": true,
+      "hitlCleared": true
+    },
+    {
+      "id": 262106,
+      "name": "Интегральный усилитель Line Magnetic Audio LM 88iA ( line magnetic audio lm 88ia",
+      "price": 305000,
+      "after": 4,
+      "multi": true,
+      "hitlCleared": false
+    },
+    {
+      "id": 274602,
+      "name": "Напольная акустика Acoustic Energy AE 320",
+      "price": 287500,
+      "after": 6,
+      "multi": true,
+      "hitlCleared": false
+    },
+    {
+      "id": 273523,
+      "name": "Сетевой проигрыватель PS Audio DirectStream AirLens",
+      "price": 286000,
+      "after": 7,
+      "multi": true,
+      "hitlCleared": false
+    },
+    {
+      "id": 271124,
+      "name": "Полочная акустика Monitor Audio Studio 89",
+      "price": 279990,
+      "after": 6,
+      "multi": true,
+      "hitlCleared": false
+    },
+    {
+      "id": 271744,
+      "name": "Стереоусилитель Primare I35",
+      "price": 264000,
+      "after": 6,
+      "multi": true,
+      "hitlCleared": false
+    },
+    {
+      "id": 16820,
+      "name": "интегральный усилитель Triode TRV 88SE ( triode trv 88se )",
+      "price": 300000,
+      "after": 6,
+      "multi": true,
+      "hitlCleared": true
+    }
+  ],
+  "stillHitlPriority": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "note": "u=2; OEM scarce; Melody 101D rejected"
+    },
+    {
+      "id": 264126,
+      "name": "Audio Replas MTP-2 RU mk2",
+      "note": "u=1; only one chassis angle; pads stripped not possible without new OEM"
+    }
+  ],
+  "skippedWrongModel": [
+    "Triode product_visual_* = Ruby not TRV-88SE",
+    "EL210 OEM candidates looked like AE320 / wrong listing contamination",
+    "Paradigm Premier rear white ≠ Espresso Grain 41440"
+  ]
+}

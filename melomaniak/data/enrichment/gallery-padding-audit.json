@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T02:20:56Z",
+  "generatedAt": "2026-11-15T02:38:18Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1127,
-    "padded": 384,
+    "true_multi_angle": 1134,
+    "padded": 377,
     "single_real": 376
   },
   "pct": {
-    "true_multi_angle": 59.72,
-    "padded": 20.35,
+    "true_multi_angle": 60.1,
+    "padded": 19.98,
     "single_real": 19.93,
-    "padded_of_claimed_gal4plus": 38.95,
-    "not_true_multi": 40.28
+    "padded_of_claimed_gal4plus": 38.6,
+    "not_true_multi": 39.9
   },
   "padReasonTallies": {
-    "local-variant": 757,
+    "local-variant": 755,
     "wN-variant-name": 668,
     "cdn-size-thumb": 124,
     "cdn-rotated": 6
   },
-  "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 719,
+  "claimedGal4Plus": 1847,
+  "claimedButNotTrueMulti": 713,
   "topPaddedByPrice": [
     {
       "id": 264126,
@@ -147,19 +147,6 @@
       "class": "single_real"
     },
     {
-      "id": 262106,
-      "name": "Интегральный усилитель Line Magnetic Audio LM 88iA ( line magnetic audio lm 88ia )",
-      "cat": "Усилители",
-      "price": 305000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "class": "padded"
-    },
-    {
       "id": 262436,
       "name": "Напольная акустика Advance Acoustic EL 210 ( advance acoustic el 210 )",
       "cat": "Акустика",
@@ -182,17 +169,6 @@
         "wN-variant-name": 2
       },
       "class": "single_real"
-    },
-    {
-      "id": 16820,
-      "name": "интегральный усилитель Triode TRV 88SE ( triode trv 88se )",
-      "cat": "Усилители",
-      "price": 300000,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
     },
     {
       "id": 271030,
@@ -247,17 +223,6 @@
       "class": "single_real"
     },
     {
-      "id": 274602,
-      "name": "Напольная акустика Acoustic Energy AE 320",
-      "cat": "Акустика",
-      "price": 287500,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
-    },
-    {
       "id": 41444,
       "name": "Напольная акустика Paradigm Premier 800F Espresso Grain ( paradigm premier 800f espresso grain )",
       "cat": "Акустика",
@@ -269,17 +234,6 @@
         "wN-variant-name": 2
       },
       "class": "single_real"
-    },
-    {
-      "id": 273523,
-      "name": "Сетевой проигрыватель PS Audio DirectStream AirLens",
-      "cat": "Источники",
-      "price": 286000,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
     },
     {
       "id": 16158,
@@ -319,17 +273,6 @@
       "padReasons": {
         "wN-variant-name": 3
       },
-      "class": "padded"
-    },
-    {
-      "id": 271124,
-      "name": "Полочная акустика Monitor Audio Studio 89",
-      "cat": "Акустика",
-      "price": 279990,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
       "class": "padded"
     },
     {
@@ -403,17 +346,6 @@
       "padReasons": {
         "wN-variant-name": 2
       },
-      "class": "padded"
-    },
-    {
-      "id": 271744,
-      "name": "Стереоусилитель Primare I35",
-      "cat": "Усилители",
-      "price": 264000,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
       "class": "padded"
     },
     {
@@ -539,6 +471,85 @@
         "local-variant": 1
       },
       "class": "padded"
+    },
+    {
+      "id": 270083,
+      "name": "Напольная акустика DALI Opticon 6 MK2",
+      "cat": "Акустика",
+      "price": 248390,
+      "galleryLen": 6,
+      "uniqueDistinct": 3,
+      "padSlots": 0,
+      "padReasons": {},
+      "class": "padded"
+    },
+    {
+      "id": 15972,
+      "name": "интегральный усилитель Musica int 1000 ( musica int 1000 )",
+      "cat": "Усилители",
+      "price": 246500,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "local-variant": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 16862,
+      "name": "интегральный усилитель Ultimate Audio MC 368 BSE ( ultimate audio mc 368 bse )",
+      "cat": "Усилители",
+      "price": 245000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264519,
+      "name": "Межблочный кабель SAEC  XR-1 Stratosphere ( saec xr 1 stratosphere )",
+      "cat": "Кабели",
+      "price": 244927,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 1,
+      "padReasons": {
+        "wN-variant-name": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 16786,
+      "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )",
+      "cat": "Усилители",
+      "price": 244000,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 265386,
+      "name": "блок питания 47 Labs 4700-50 ( 47 labs 4700 50 )",
+      "cat": "Другое",
+      "price": 235000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
     }
   ],
   "hitlTrueOneshot": [
@@ -8355,14 +8366,14 @@
       "slug": "%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-triode-trx-1se",
       "cat": "Усилители",
       "price": 355300,
-      "galleryHitl": true,
-      "galleryLen": 3,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 262681,
@@ -9213,16 +9224,14 @@
       "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-88ia",
       "cat": "Усилители",
       "price": 305000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271050,
@@ -9292,14 +9301,14 @@
       "slug": "integralnii_ysilitel_triode_trv_88se",
       "cat": "Усилители",
       "price": 300000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271750,
@@ -9695,13 +9704,13 @@
       "cat": "Акустика",
       "price": 287500,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 10274,
@@ -9789,13 +9798,13 @@
       "cat": "Источники",
       "price": 286000,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271980,
@@ -9976,13 +9985,13 @@
       "cat": "Акустика",
       "price": 279990,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273159,
@@ -10255,13 +10264,13 @@
       "cat": "Усилители",
       "price": 264000,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273753,

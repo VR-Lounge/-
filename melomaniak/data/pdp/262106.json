@@ -60,37 +60,10 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Line_Magnetic_LM-216IA_tube_amplifier._KT88_%2820960610909%29.jpg",
-      "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Line_Magnetic_LM-216IA_tube_amplifier._KT88_%2820960610909%29.jpg",
-      "alt": "Интегральный усилитель Line Magnetic Audio LM 88iA ( line magnetic audio lm 88ia )",
-      "local": "assets/enriched/262106/9e4a9745ef_1.jpg",
-      "enriched": true,
-      "attribution": "upload.wikimedia.org",
-      "bytes": 2588510
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/Wzmacniacz-lampowy-Line-Magnetic-Audio-LM-88IA.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/Wzmacniacz-lampowy-Line-Magnetic-Audio-LM-88IA.jpg",
-      "alt": "Wzmacniacz-lampowy-Line-Magnetic-Audio-LM-88IA",
-      "local": "assets/from-live/products/fa09446726_Wzmacniacz-lampowy-Line-Magnetic-Audio-LM-88IA.jpg"
-    },
-    {
-      "src": "local-variant://262106/w17sc95",
-      "local": "assets/enriched/262106/1b93fe16a8_w17sc95.jpg",
-      "bytes": 36148,
-      "wave": "meager-w17-2026-11",
-      "w": 496,
-      "h": 337
-    },
-    {
-      "src": "local-variant://262106/w17sc90",
-      "local": "assets/enriched/262106/d5c66d415f_w17sc90.jpg",
-      "bytes": 32796,
-      "wave": "meager-w17-2026-11",
-      "w": 470,
-      "h": 319
-    }
+    "assets/enriched/262106/fa09446726_w25.jpg",
+    "assets/enriched/262106/84233fb0a4_w25.jpg",
+    "assets/enriched/262106/ea38447f1b_w25.jpg",
+    "assets/enriched/262106/8f2e72e320_w25.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -102,5 +75,9 @@
   "enrichedAt": "2026-11-14T14:06:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T02:26:21Z",
+  "galleryWave25": true
 }
