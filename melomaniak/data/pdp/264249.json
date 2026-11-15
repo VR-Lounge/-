@@ -36,34 +36,76 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/e-TP80ES-NCF-web.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/e-TP80ES-NCF-web.jpg",
-      "alt": "e-TP80ES-NCF-web",
-      "local": "assets/from-live/products/e1f7603903_e-TP80ES-NCF-web.jpg"
+      "src": "local://264249_w48_00.jpg",
+      "thumb": "assets/enriched/264249/264249_w48_00.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES NCF (Europe) ( furutech e tp80es ncf (europe) )",
+      "local": "assets/enriched/264249/264249_w48_00.jpg",
+      "enriched": true,
+      "attribution": "wave48-oem",
+      "bytes": 21492
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech_e-tp80e.jpg",
-      "local": "assets/enriched/264249/601063c61c_w15sib.jpg",
-      "bytes": 17239,
-      "wave": "meager-w15-2026-11",
-      "w": 250,
-      "h": 250
+      "src": "local://264249_w48_01.jpg",
+      "thumb": "assets/enriched/264249/264249_w48_01.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES NCF (Europe) ( furutech e tp80es ncf (europe) )",
+      "local": "assets/enriched/264249/264249_w48_01.jpg",
+      "enriched": true,
+      "attribution": "wave48-oem",
+      "bytes": 46267
     },
     {
-      "src": "local-variant://264249/w17sc95",
-      "local": "assets/enriched/264249/8b0d3bb090_w17sc95.jpg",
-      "bytes": 12790,
-      "wave": "meager-w17-2026-11",
-      "w": 285,
-      "h": 242
+      "src": "local://264249_w48_02.jpg",
+      "thumb": "assets/enriched/264249/264249_w48_02.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES NCF (Europe) ( furutech e tp80es ncf (europe) )",
+      "local": "assets/enriched/264249/264249_w48_02.jpg",
+      "enriched": true,
+      "attribution": "wave48-oem",
+      "bytes": 55053
     },
     {
-      "src": "local-variant://264249/w17sc90",
-      "local": "assets/enriched/264249/76f747b229_w17sc90.jpg",
-      "bytes": 11698,
-      "wave": "meager-w17-2026-11",
-      "w": 270,
-      "h": 229
+      "src": "local://264249_w48_03.jpg",
+      "thumb": "assets/enriched/264249/264249_w48_03.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES NCF (Europe) ( furutech e tp80es ncf (europe) )",
+      "local": "assets/enriched/264249/264249_w48_03.jpg",
+      "enriched": true,
+      "attribution": "wave48-oem",
+      "bytes": 100481
+    },
+    {
+      "src": "local://264249_w48_04.jpg",
+      "thumb": "assets/enriched/264249/264249_w48_04.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES NCF (Europe) ( furutech e tp80es ncf (europe) )",
+      "local": "assets/enriched/264249/264249_w48_04.jpg",
+      "enriched": true,
+      "attribution": "wave48-oem",
+      "bytes": 98253
+    },
+    {
+      "src": "local://264249_w48_05.jpg",
+      "thumb": "assets/enriched/264249/264249_w48_05.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES NCF (Europe) ( furutech e tp80es ncf (europe) )",
+      "local": "assets/enriched/264249/264249_w48_05.jpg",
+      "enriched": true,
+      "attribution": "wave48-oem",
+      "bytes": 50423
+    },
+    {
+      "src": "local://264249_w48_06.jpg",
+      "thumb": "assets/enriched/264249/264249_w48_06.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES NCF (Europe) ( furutech e tp80es ncf (europe) )",
+      "local": "assets/enriched/264249/264249_w48_06.jpg",
+      "enriched": true,
+      "attribution": "wave48-oem",
+      "bytes": 105321
+    },
+    {
+      "src": "local://264249_w48_07.jpg",
+      "thumb": "assets/enriched/264249/264249_w48_07.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP80ES NCF (Europe) ( furutech e tp80es ncf (europe) )",
+      "local": "assets/enriched/264249/264249_w48_07.jpg",
+      "enriched": true,
+      "attribution": "wave48-oem",
+      "bytes": 57722
     }
   ],
   "sku": "",
@@ -76,5 +118,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T09:41:16Z",
+  "galleryWave48": true
 }
