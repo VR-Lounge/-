@@ -26,32 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_proigrivatel_Soulnote_sc1-0_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_proigrivatel_Soulnote_sc1-0_-600x600.jpg",
-      "alt": "CD-SASoulnote sc1.0",
-      "local": "assets/from-live/products/0b89b862c0_CD_proigrivatel_Soulnote_sc1-0_.jpg"
+      "src": "local://15730_w99_00.jpg",
+      "thumb": "assets/enriched/15730/15730_w99_00.jpg",
+      "alt": "CD проигрыватель Soulnote sc1.0 ( cd soulnote sc1 0 )",
+      "local": "assets/enriched/15730/15730_w99_00.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 23682
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/e21167b6ac826c541d3e5185b92ed979.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/e21167b6ac826c541d3e5185b92ed979-600x525.jpg",
-      "alt": "e21167b6ac826c541d3e5185b92ed979",
-      "local": "assets/from-live/products/b090cb0df0_e21167b6ac826c541d3e5185b92ed979.jpg"
+      "src": "local://15730_w99_01.jpg",
+      "thumb": "assets/enriched/15730/15730_w99_01.jpg",
+      "alt": "CD проигрыватель Soulnote sc1.0 ( cd soulnote sc1 0 )",
+      "local": "assets/enriched/15730/15730_w99_01.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 146129
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_proigrivatel_Soulnote_sc1-0_-600x600.jpg",
-      "local": "assets/enriched/15730/6222e9ea3e_w13var.jpg",
-      "bytes": 21208,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15730_w99_02.jpg",
+      "thumb": "assets/enriched/15730/15730_w99_02.jpg",
+      "alt": "CD проигрыватель Soulnote sc1.0 ( cd soulnote sc1 0 )",
+      "local": "assets/enriched/15730/15730_w99_02.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 47071
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_dsc1.jpg",
-      "local": "assets/enriched/15730/388f640d30_w13media.jpg",
-      "bytes": 52436,
-      "wave": "meager-w13-2026-11",
-      "w": 1111,
-      "h": 1111
+      "src": "local://15730_w99_03.jpg",
+      "thumb": "assets/enriched/15730/15730_w99_03.jpg",
+      "alt": "CD проигрыватель Soulnote sc1.0 ( cd soulnote sc1 0 )",
+      "local": "assets/enriched/15730/15730_w99_03.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 41671
     }
   ],
   "sku": "",
@@ -63,5 +71,9 @@
   "enrichedAt": "2026-11-14T13:45:01Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:05:37Z",
+  "galleryWave99": true
 }

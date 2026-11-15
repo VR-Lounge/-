@@ -62,33 +62,40 @@
   ],
   "gallery": [
     {
-      "src": "local://kzv7lljb72_437ea16745.jpg",
-      "thumb": "assets/enriched/36357/72ef5e5e88_live1.jpg",
+      "src": "local://36357_w99_00.jpg",
+      "thumb": "assets/enriched/36357/36357_w99_00.jpg",
       "alt": "полочная акустика PSB Imagine S gloss black ( psb imagine s gloss black )",
-      "local": "assets/enriched/36357/72ef5e5e88_live1.jpg",
+      "local": "assets/enriched/36357/36357_w99_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 51729
+      "attribution": "wave99-oem",
+      "bytes": 33605
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/08/desktop.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/08/desktop-800x800-600x600.jpg",
-      "alt": "desktop-800&#215;800",
-      "local": "assets/from-live/products/508182193d_desktop-800x800.jpg"
+      "src": "local://36357_w99_01.jpg",
+      "thumb": "assets/enriched/36357/36357_w99_01.jpg",
+      "alt": "полочная акустика PSB Imagine S gloss black ( psb imagine s gloss black )",
+      "local": "assets/enriched/36357/36357_w99_01.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 39263
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/08/kzv7lljb72.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/08/kzv7lljb72-600x600.jpg",
-      "alt": "kzv7lljb72",
-      "local": "assets/from-live/products/437ea16745_kzv7lljb72.jpg"
+      "src": "local://36357_w99_02.jpg",
+      "thumb": "assets/enriched/36357/36357_w99_02.jpg",
+      "alt": "полочная акустика PSB Imagine S gloss black ( psb imagine s gloss black )",
+      "local": "assets/enriched/36357/36357_w99_02.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 23569
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/08/kzv7lljb72-600x600.jpg",
-      "local": "assets/enriched/36357/53231d3319_w13var.jpg",
-      "bytes": 23504,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://36357_w99_03.jpg",
+      "thumb": "assets/enriched/36357/36357_w99_03.jpg",
+      "alt": "полочная акустика PSB Imagine S gloss black ( psb imagine s gloss black )",
+      "local": "assets/enriched/36357/36357_w99_03.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 21047
     }
   ],
   "sku": "",
@@ -100,5 +107,9 @@
   "enrichedAt": "2026-11-14T14:06:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:05:37Z",
+  "galleryWave99": true
 }

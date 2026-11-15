@@ -31,35 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "local://0fafdcec11_FI-52_NCF-305x205-1-1.jpg",
-      "thumb": "assets/enriched/264147/2f8351ce1c_live1.jpg",
+      "src": "local://264147_w99_00.jpg",
+      "thumb": "assets/enriched/264147/264147_w99_00.jpg",
       "alt": "Сетевая вилка Furutech FI-52M NCF( R ) ( furutech fi 52m ncf( r ) )",
-      "local": "assets/enriched/264147/2f8351ce1c_live1.jpg",
+      "local": "assets/enriched/264147/264147_w99_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 12600
+      "attribution": "wave99-oem",
+      "bytes": 79443
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-52_NCF-305x205-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-52_NCF-305x205-1.jpg",
-      "alt": "FI-52_NCF-305&#215;205-1",
-      "local": "assets/from-live/products/0fafdcec11_FI-52_NCF-305x205-1.jpg"
+      "src": "local://264147_w99_01.jpg",
+      "thumb": "assets/enriched/264147/264147_w99_01.jpg",
+      "alt": "Сетевая вилка Furutech FI-52M NCF( R ) ( furutech fi 52m ncf( r ) )",
+      "local": "assets/enriched/264147/264147_w99_01.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 164226
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-52M.jpg",
-      "local": "assets/enriched/264147/2315a120ff_w15sib.jpg",
-      "bytes": 59196,
-      "wave": "meager-w15-2026-11",
-      "w": 328,
-      "h": 250
+      "src": "local://264147_w99_02.jpg",
+      "thumb": "assets/enriched/264147/264147_w99_02.jpg",
+      "alt": "Сетевая вилка Furutech FI-52M NCF( R ) ( furutech fi 52m ncf( r ) )",
+      "local": "assets/enriched/264147/264147_w99_02.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 231113
     },
     {
-      "src": "local-variant://264147/w17sc95",
-      "local": "assets/enriched/264147/545593eaa5_w17sc95.jpg",
-      "bytes": 29727,
-      "wave": "meager-w17-2026-11",
-      "w": 311,
-      "h": 237
+      "src": "local://264147_w99_03.jpg",
+      "thumb": "assets/enriched/264147/264147_w99_03.jpg",
+      "alt": "Сетевая вилка Furutech FI-52M NCF( R ) ( furutech fi 52m ncf( r ) )",
+      "local": "assets/enriched/264147/264147_w99_03.jpg",
+      "enriched": true,
+      "attribution": "wave99-oem",
+      "bytes": 73549
     }
   ],
   "sku": "",
@@ -71,5 +76,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T23:05:37Z",
+  "galleryWave99": true
 }
