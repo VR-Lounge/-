@@ -94,12 +94,16 @@
       "local": "assets/from-live/products/1b5e272681_kef_kasa500-3.jpg"
     },
     {
-      "src": "local-variant://271439/w17sc95",
-      "local": "assets/enriched/271439/2a4373aa49_w17sc95.jpg",
-      "bytes": 52361,
-      "wave": "meager-w17-2026-11",
-      "w": 1520,
-      "h": 1520
+      "local": "assets/enriched/271439/271439_w28_00.jpg",
+      "src": "assets/enriched/271439/271439_w28_00.jpg",
+      "source": "oem-wave28",
+      "enrichedAt": "2026-11-15T03:14:30.643871+00:00"
+    },
+    {
+      "local": "assets/enriched/271439/271439_w28_01.jpg",
+      "src": "assets/enriched/271439/271439_w28_01.jpg",
+      "source": "oem-wave28",
+      "enrichedAt": "2026-11-15T03:14:30.650485+00:00"
     }
   ],
   "sku": "",
@@ -111,5 +115,8 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryPaddingCleared": true,
+  "galleryPaddingClearedAt": "2026-11-15T03:14:30.678909+00:00",
+  "galleryPaddingWave": 28
 }

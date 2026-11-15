@@ -100,14 +100,6 @@
       "h": 1500
     },
     {
-      "src": "https://www.audioquest.com/cdn/shop/files/niagara-7000-power-conditioner-niagara7000usa-390285_grande.png",
-      "local": "assets/enriched/272806/7494510f38_w16oem.png",
-      "bytes": 76089,
-      "wave": "meager-w16-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
       "src": "https://cdn.shopify.com/s/files/1/0629/5886/2594/files/niagara-7000-power-conditioner-niagara7000usa-696363.png?v=1719517504",
       "local": "assets/enriched/272806/f23958ec51_w16oem.png",
       "bytes": 557684,
@@ -133,5 +125,9 @@
   "enrichedAt": "2026-11-14T13:36:27Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryPaddingCleared": true,
+  "galleryPaddingClearedAt": "2026-11-15T03:24:15.110133+00:00",
+  "galleryPaddingWave": 28,
+  "galleryPaddingNote": "strip unique>=4"
 }

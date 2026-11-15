@@ -64,34 +64,16 @@
       "local": "assets/from-live/products/d0695012e4_rotel_rmb-1587mkii3.jpg"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399699110-4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399699110-4.jpg",
-      "alt": "rotel_rmb-1587mkii_1399699110-4.jpg"
+      "local": "assets/enriched/273696/273696_w28_00.jpg",
+      "src": "assets/enriched/273696/273696_w28_00.jpg",
+      "source": "oem-wave28",
+      "enrichedAt": "2026-11-15T03:22:06.010359+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399699821-5.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399699821-5.jpg",
-      "alt": "rotel_rmb-1587mkii_1399699821-5.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399701124-6.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399701124-6.jpg",
-      "alt": "rotel_rmb-1587mkii_1399701124-6.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399701853-7.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399701853-7.jpg",
-      "alt": "rotel_rmb-1587mkii_1399701853-7.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399702569-8.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399702569-8.jpg",
-      "alt": "rotel_rmb-1587mkii_1399702569-8.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399703348-9.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/rotel_rmb-1587mkii_1399703348-9.jpg",
-      "alt": "rotel_rmb-1587mkii_1399703348-9.jpg"
+      "local": "assets/enriched/273696/273696_w28_01.jpg",
+      "src": "assets/enriched/273696/273696_w28_01.jpg",
+      "source": "oem-wave28",
+      "enrichedAt": "2026-11-15T03:22:06.010359+00:00"
     }
   ],
   "sku": "",
@@ -102,5 +84,9 @@
   ],
   "enrichedAt": "2026-11-14T12:57:48Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w3-2026-11"
+  "meagerWave": "meager-w3-2026-11",
+  "galleryPaddingCleared": true,
+  "galleryPaddingClearedAt": "2026-11-15T03:22:06.010359+00:00",
+  "galleryPaddingWave": 28,
+  "galleryPaddingNote": "Rotel RMB-1587MKII SafeAndSound OEM fronts"
 }

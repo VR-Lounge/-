@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T03:03:39Z",
+  "generatedAt": "2026-11-15T03:27:37Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1145,
-    "padded": 366,
+    "true_multi_angle": 1149,
+    "padded": 362,
     "single_real": 376
   },
   "pct": {
-    "true_multi_angle": 60.68,
-    "padded": 19.4,
+    "true_multi_angle": 60.89,
+    "padded": 19.18,
     "single_real": 19.93,
-    "padded_of_claimed_gal4plus": 37.97,
-    "not_true_multi": 39.32
+    "padded_of_claimed_gal4plus": 37.76,
+    "not_true_multi": 39.11
   },
   "padReasonTallies": {
-    "local-variant": 752,
-    "wN-variant-name": 662,
+    "local-variant": 751,
+    "wN-variant-name": 661,
     "cdn-size-thumb": 123,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 701,
+  "claimedButNotTrueMulti": 697,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -1683,12 +1683,12 @@
       "cat": "Акустика",
       "price": 2999990,
       "galleryHitl": false,
-      "galleryLen": 15,
-      "uniqueDistinct": 13,
-      "clusterCount": 13,
+      "galleryLen": 9,
+      "uniqueDistinct": 9,
+      "clusterCount": 9,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
+      "hasPadding": false,
       "class": "true_multi_angle"
     },
     {
@@ -2298,12 +2298,12 @@
       "cat": "Другое",
       "price": 1683990,
       "galleryHitl": true,
-      "galleryLen": 5,
+      "galleryLen": 4,
       "uniqueDistinct": 4,
       "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
+      "hasPadding": false,
       "class": "true_multi_angle"
     },
     {
@@ -2538,12 +2538,12 @@
       "cat": "Источники",
       "price": 1419990,
       "galleryHitl": false,
-      "galleryLen": 8,
+      "galleryLen": 6,
       "uniqueDistinct": 6,
       "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
+      "hasPadding": false,
       "class": "true_multi_angle"
     },
     {
@@ -2658,12 +2658,12 @@
       "cat": "Акустика",
       "price": 1346100,
       "galleryHitl": false,
-      "galleryLen": 5,
+      "galleryLen": 4,
       "uniqueDistinct": 4,
       "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
+      "hasPadding": false,
       "class": "true_multi_angle"
     },
     {
@@ -3063,9 +3063,9 @@
       "cat": "Источники",
       "price": 1159990,
       "galleryHitl": false,
-      "galleryLen": 9,
-      "uniqueDistinct": 9,
-      "clusterCount": 9,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
@@ -7167,9 +7167,9 @@
       "cat": "Усилители",
       "price": 439990,
       "galleryHitl": false,
-      "galleryLen": 9,
-      "uniqueDistinct": 9,
-      "clusterCount": 9,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
@@ -12495,12 +12495,12 @@
       "price": 190100,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15596,
@@ -13787,15 +13787,13 @@
       "cat": "Акустика",
       "price": 159000,
       "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264542,
@@ -14700,15 +14698,13 @@
       "cat": "Усилители",
       "price": 139990,
       "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272157,
@@ -17310,13 +17306,13 @@
       "cat": "Другое",
       "price": 99990,
       "galleryHitl": false,
-      "galleryLen": 7,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270970,

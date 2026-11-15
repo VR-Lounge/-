@@ -75,28 +75,10 @@
       "bytes": 350002
     },
     {
-      "src": "local://c49a740409_metronome_technologie_le_player_4-4.jpg",
-      "thumb": "assets/enriched/272673/de9da33cc1_live2.jpg",
-      "alt": "CD-проигрыватель Metronome Technologie LE Player 4+",
-      "local": "assets/enriched/272673/de9da33cc1_live2.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 350002
-    },
-    {
       "src": "local://fdc1ba3b5e_metronome_technologie_le_player_4_streaming_option_2056530541-2.jpg",
       "thumb": "assets/enriched/272673/eae277c067_live3.jpg",
       "alt": "CD-проигрыватель Metronome Technologie LE Player 4+",
       "local": "assets/enriched/272673/eae277c067_live3.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 108680
-    },
-    {
-      "src": "local://fdc1ba3b5e_metronome_technologie_le_player_4_streaming_option_2056720474-2.jpg",
-      "thumb": "assets/enriched/272673/fffda6611b_live4.jpg",
-      "alt": "CD-проигрыватель Metronome Technologie LE Player 4+",
-      "local": "assets/enriched/272673/fffda6611b_live4.jpg",
       "enriched": true,
       "attribution": "from-live",
       "bytes": 108680
@@ -111,19 +93,22 @@
       "bytes": 81232
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_le_player_4_2056633551-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_le_player_4_2056633551-1.jpg",
-      "alt": "metronome_technologie_le_player_4_2056633551-1.jpg"
+      "local": "assets/enriched/272673/272673_w28_00.jpg",
+      "src": "assets/enriched/272673/272673_w28_00.jpg",
+      "source": "oem-wave28",
+      "enrichedAt": "2026-11-15T03:22:06.010359+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_le_player_4_2056634220-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_le_player_4_2056634220-2.jpg",
-      "alt": "metronome_technologie_le_player_4_2056634220-2.jpg"
+      "local": "assets/enriched/272673/272673_w28_01.jpg",
+      "src": "assets/enriched/272673/272673_w28_01.jpg",
+      "source": "oem-wave28",
+      "enrichedAt": "2026-11-15T03:22:06.010359+00:00"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_le_player_4_2056635441-4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/metronome_technologie_le_player_4_2056635441-4.jpg",
-      "alt": "metronome_technologie_le_player_4_2056635441-4.jpg"
+      "local": "assets/enriched/272673/272673_w28_02.jpg",
+      "src": "assets/enriched/272673/272673_w28_02.jpg",
+      "source": "oem-wave28",
+      "enrichedAt": "2026-11-15T03:22:06.010359+00:00"
     }
   ],
   "sku": "",
@@ -134,5 +119,9 @@
   ],
   "enrichedAt": "2026-11-14T14:27:12Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11"
+  "meagerWave": "meager-w7-2026-11",
+  "galleryPaddingCleared": true,
+  "galleryPaddingClearedAt": "2026-11-15T03:22:06.010359+00:00",
+  "galleryPaddingWave": 28,
+  "galleryPaddingNote": "Metronome LE Player OEM studio angles"
 }
