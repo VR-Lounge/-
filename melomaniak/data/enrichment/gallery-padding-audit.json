@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T15:44:18Z",
+  "generatedAt": "2026-11-15T16:11:14Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1298,
-    "padded": 217,
+    "true_multi_angle": 1300,
+    "padded": 215,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 68.79,
-    "padded": 11.5,
+    "true_multi_angle": 68.89,
+    "padded": 11.39,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 29.72,
-    "not_true_multi": 31.21
+    "padded_of_claimed_gal4plus": 29.62,
+    "not_true_multi": 31.11
   },
   "padReasonTallies": {
     "local-variant": 714,
-    "wN-variant-name": 549,
+    "wN-variant-name": 548,
     "cdn-size-thumb": 115,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 549,
+  "claimedButNotTrueMulti": 547,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -337,17 +337,6 @@
       "class": "padded"
     },
     {
-      "id": 44611,
-      "name": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 25 )",
-      "cat": "Ресиверы",
-      "price": 220000,
-      "galleryLen": 6,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
-    },
-    {
       "id": 40251,
       "name": "саундбар Paradigm D?cor 1C (75-89 дюймов) ( paradigm d?cor 1c (75 89 ) )",
       "cat": "Другое",
@@ -561,6 +550,20 @@
       "id": 15644,
       "name": "полочная акустика Audio Physic Step 25 ( audio physic step 25 )",
       "cat": "Акустика",
+      "price": 185000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 15866,
+      "name": "усилитель мощности 47 Labs 4706C ( 47 labs 4706c )",
+      "cat": "Усилители",
       "price": 185000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
@@ -11573,13 +11576,13 @@
       "cat": "Ресиверы",
       "price": 220000,
       "galleryHitl": false,
-      "galleryLen": 6,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269327,
@@ -29125,16 +29128,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-furutech-fi-15ecu",
       "cat": "Другое",
       "price": 4410,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264185,

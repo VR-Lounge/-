@@ -27,49 +27,49 @@
   ],
   "gallery": [
     {
-      "src": "local://jbl_sdp_25_2_589405caaa.jpg",
-      "thumb": "assets/enriched/44611/ca5935c5ae_live1.jpg",
+      "src": "local://44611_w74_00.jpg",
+      "thumb": "assets/enriched/44611/44611_w74_00.jpg",
       "alt": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 25 )",
-      "local": "assets/enriched/44611/ca5935c5ae_live1.jpg",
+      "local": "assets/enriched/44611/44611_w74_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
+      "attribution": "wave74-oem",
       "bytes": 25690
     },
     {
-      "src": "local://30_dop3_big_73d2929cc9.jpg",
-      "thumb": "assets/enriched/44611/a5abc898fa_live2.jpg",
+      "src": "local://44611_w74_01.jpg",
+      "thumb": "assets/enriched/44611/44611_w74_01.jpg",
       "alt": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 25 )",
-      "local": "assets/enriched/44611/a5abc898fa_live2.jpg",
+      "local": "assets/enriched/44611/44611_w74_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
+      "attribution": "wave74-oem",
       "bytes": 63678
     },
     {
-      "src": "local://JBL_SDP25_cd_335d756b5f.jpg",
-      "thumb": "assets/enriched/44611/7f9cde3d59_live3.jpg",
+      "src": "local://44611_w74_02.jpg",
+      "thumb": "assets/enriched/44611/44611_w74_02.jpg",
       "alt": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 25 )",
-      "local": "assets/enriched/44611/7f9cde3d59_live3.jpg",
+      "local": "assets/enriched/44611/44611_w74_02.jpg",
       "enriched": true,
-      "attribution": "from-live",
+      "attribution": "wave74-oem",
       "bytes": 56817
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/09/jbl_sdp_25_2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/09/jbl_sdp_25_2-600x600.jpg",
-      "alt": "jbl_sdp_25_2",
-      "local": "assets/from-live/products/589405caaa_jbl_sdp_25_2.jpg"
+      "src": "local://44611_w74_03.jpg",
+      "thumb": "assets/enriched/44611/44611_w74_03.jpg",
+      "alt": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 25 )",
+      "local": "assets/enriched/44611/44611_w74_03.jpg",
+      "enriched": true,
+      "attribution": "wave74-oem",
+      "bytes": 478570
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/09/30_dop3_big.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/09/30_dop3_big-600x600.jpg",
-      "alt": "30_dop3_big",
-      "local": "assets/from-live/products/73d2929cc9_30_dop3_big.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/09/JBL_SDP25_cd.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/09/JBL_SDP25_cd-600x480.jpg",
-      "alt": "JBL_SDP25_cd",
-      "local": "assets/from-live/products/335d756b5f_JBL_SDP25_cd.jpg"
+      "src": "local://44611_w74_04.jpg",
+      "thumb": "assets/enriched/44611/44611_w74_04.jpg",
+      "alt": "AV процессор JBL Synthesis SDP-25 ( av jbl synthesis sdp 25 )",
+      "local": "assets/enriched/44611/44611_w74_04.jpg",
+      "enriched": true,
+      "attribution": "wave74-oem",
+      "bytes": 56950
     }
   ],
   "sku": "",
@@ -80,5 +80,10 @@
   ],
   "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w5-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T16:07:41Z",
+  "galleryWave74": true
 }

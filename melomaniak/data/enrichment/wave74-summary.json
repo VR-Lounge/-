@@ -1,0 +1,66 @@
+{
+  "wave": 74,
+  "at": "2026-11-15T16:15:00Z",
+  "counts": {
+    "true_multi_angle": 1300,
+    "padded": 215,
+    "single_real": 372
+  },
+  "cleared": [
+    {
+      "id": 44611,
+      "name": "AV процессор JBL Synthesis SDP-25",
+      "price": 220000,
+      "notes": "SDP-25 only: live front 3/4 + rear + alt front 3/4 + eBay front-on + MusicDirect front-left; reject SDP-55/USA, AVM70 twin, box-only",
+      "unique": 5
+    },
+    {
+      "id": 264184,
+      "name": "Коннектор сетевой Furutech FI-15E(Cu)",
+      "price": 4410,
+      "notes": "FI-15E(Cu) IEC female only: OEM open+closed + HiFiCollective front 3/4 + PartsConnexion white-bg + Analogue Seduction; strip FI-15ME(Cu) male live and shared/Isoclean pads; not Plus/NCF",
+      "unique": 4
+    }
+  ],
+  "skipped_near": [
+    {
+      "id": 15742,
+      "name": "MC100 CD",
+      "reason": "uniq=3; gallery polluted (JMF wrong); still short one clean Ultimate Audio MC-100 angle"
+    },
+    {
+      "id": 264524,
+      "name": "SCX-5000RR",
+      "reason": "only 2 clean RR (live OEM + Alex); DIN/XLR/otai/phile composites/Cardas pollution; panel crops too small"
+    },
+    {
+      "id": 274594,
+      "name": "AE308",
+      "reason": "black uniq≈3; walnut Dream machines listing rejected; news banner too small for 4th"
+    },
+    {
+      "id": 264225,
+      "name": "Cover plate 102-D",
+      "reason": "gallery cross-contaminated with 104-D carbon + black mounting frame; stainless angles short of 4"
+    },
+    {
+      "id": 264226,
+      "name": "Cover plate 104-D",
+      "reason": "carbon uniq≈2 after stripping shared wrong-model pads"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "reason": "skip unless new sources"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real",
+      "reason": "skip unless new sources"
+    }
+  ]
+}

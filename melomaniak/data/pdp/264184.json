@@ -36,35 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "local://3f0e91462c_Furutech-FI-15МECu-220x250-1.jpg",
-      "thumb": "assets/enriched/264184/4800712085_live1.jpg",
+      "src": "local://264184_w74_00.jpg",
+      "thumb": "assets/enriched/264184/264184_w74_00.jpg",
       "alt": "Коннектор сетевой Furutech FI-15E(Cu) ( furutech fi 15e(cu) )",
-      "local": "assets/enriched/264184/4800712085_live1.jpg",
+      "local": "assets/enriched/264184/264184_w74_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 15625
+      "attribution": "wave74-oem",
+      "bytes": 80373
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-15E-Cu-инет.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FI-15E-Cu-инет.jpg",
-      "alt": "Furutech-FI-15E-Cu-инет",
-      "local": "assets/from-live/products/fe2c3bc373_Furutech-FI-15E-Cu-инет.jpg"
+      "src": "local://264184_w74_01.jpg",
+      "thumb": "assets/enriched/264184/264184_w74_01.jpg",
+      "alt": "Коннектор сетевой Furutech FI-15E(Cu) ( furutech fi 15e(cu) )",
+      "local": "assets/enriched/264184/264184_w74_01.jpg",
+      "enriched": true,
+      "attribution": "wave74-oem",
+      "bytes": 204759
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konnektor_Furutech_FI_15E_G_.jpg",
-      "local": "assets/enriched/264184/7add39481f_w14media.jpg",
-      "bytes": 34420,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264184_w74_02.jpg",
+      "thumb": "assets/enriched/264184/264184_w74_02.jpg",
+      "alt": "Коннектор сетевой Furutech FI-15E(Cu) ( furutech fi 15e(cu) )",
+      "local": "assets/enriched/264184/264184_w74_02.jpg",
+      "enriched": true,
+      "attribution": "wave74-oem",
+      "bytes": 65452
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/konnektor_Furutech_FI_15E_G_-300x300.jpg",
-      "local": "assets/enriched/264184/57e57e7366_w14var.jpg",
-      "bytes": 11764,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264184_w74_03.jpg",
+      "thumb": "assets/enriched/264184/264184_w74_03.jpg",
+      "alt": "Коннектор сетевой Furutech FI-15E(Cu) ( furutech fi 15e(cu) )",
+      "local": "assets/enriched/264184/264184_w74_03.jpg",
+      "enriched": true,
+      "attribution": "wave74-oem",
+      "bytes": 59815
     }
   ],
   "sku": "",
@@ -77,5 +82,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T16:07:41Z",
+  "galleryWave74": true
 }
