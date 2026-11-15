@@ -66,30 +66,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/klipsch_r-8sw1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/klipsch_r-8sw1.jpg",
-      "alt": "klipsch_r-8sw1.jpg",
-      "local": "assets/from-live/products/653efea150_klipsch_r-8sw1.jpg"
+      "src": "local://269149_w39_00.jpg",
+      "thumb": "assets/enriched/269149/269149_w39_00.jpg",
+      "alt": "Активный сабвуфер Klipsch R-8SW",
+      "local": "assets/enriched/269149/269149_w39_00.jpg",
+      "enriched": true,
+      "attribution": "wave39-oem",
+      "bytes": 498211
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/klipsch_r-8sw2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/klipsch_r-8sw2.jpg",
-      "alt": "klipsch_r-8sw2.jpg",
-      "local": "assets/from-live/products/94b099665c_klipsch_r-8sw2.jpg"
+      "src": "local://269149_w39_01.jpg",
+      "thumb": "assets/enriched/269149/269149_w39_01.jpg",
+      "alt": "Активный сабвуфер Klipsch R-8SW",
+      "local": "assets/enriched/269149/269149_w39_01.jpg",
+      "enriched": true,
+      "attribution": "wave39-oem",
+      "bytes": 654812
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/klipsch_r-8sw3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/klipsch_r-8sw3.jpg",
-      "alt": "klipsch_r-8sw3.jpg",
-      "local": "assets/from-live/products/8ccfb161ef_klipsch_r-8sw3.jpg"
+      "src": "local://269149_w39_02.jpg",
+      "thumb": "assets/enriched/269149/269149_w39_02.jpg",
+      "alt": "Активный сабвуфер Klipsch R-8SW",
+      "local": "assets/enriched/269149/269149_w39_02.jpg",
+      "enriched": true,
+      "attribution": "wave39-oem",
+      "bytes": 627165
     },
     {
-      "src": "local-variant://269149/w17sc95",
-      "local": "assets/enriched/269149/3258c4401d_w17sc95.jpg",
-      "bytes": 369140,
-      "wave": "meager-w17-2026-11",
-      "w": 1710,
-      "h": 1710
+      "src": "local://269149_w39_03.jpg",
+      "thumb": "assets/enriched/269149/269149_w39_03.jpg",
+      "alt": "Активный сабвуфер Klipsch R-8SW",
+      "local": "assets/enriched/269149/269149_w39_03.jpg",
+      "enriched": true,
+      "attribution": "wave39-oem",
+      "bytes": 126840
+    },
+    {
+      "src": "local://269149_w39_04.jpg",
+      "thumb": "assets/enriched/269149/269149_w39_04.jpg",
+      "alt": "Активный сабвуфер Klipsch R-8SW",
+      "local": "assets/enriched/269149/269149_w39_04.jpg",
+      "enriched": true,
+      "attribution": "wave39-oem",
+      "bytes": 141753
     }
   ],
   "sku": "",
@@ -101,5 +120,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T06:54:07Z",
+  "galleryWave39": true
 }

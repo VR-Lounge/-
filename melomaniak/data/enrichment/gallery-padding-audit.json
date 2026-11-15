@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T06:29:22Z",
+  "generatedAt": "2026-11-15T06:58:29Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1193,
-    "padded": 319,
+    "true_multi_angle": 1197,
+    "padded": 315,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 63.22,
-    "padded": 16.91,
+    "true_multi_angle": 63.43,
+    "padded": 16.69,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 35.37,
-    "not_true_multi": 36.78
+    "padded_of_claimed_gal4plus": 35.16,
+    "not_true_multi": 36.57
   },
   "padReasonTallies": {
-    "local-variant": 743,
+    "local-variant": 742,
     "wN-variant-name": 647,
     "cdn-size-thumb": 121,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 653,
+  "claimedButNotTrueMulti": 649,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -15172,13 +15172,13 @@
       "cat": "Акустика",
       "price": 130990,
       "galleryHitl": false,
-      "galleryLen": 7,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272400,
@@ -15825,13 +15825,13 @@
       "cat": "Акустика",
       "price": 119890,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272310,
@@ -20837,12 +20837,12 @@
       "price": 60890,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 261861,
@@ -23666,16 +23666,14 @@
       "slug": "12e394c0d2762f3143008c36c5489c6d",
       "cat": "Акустика",
       "price": 39990,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269341,
