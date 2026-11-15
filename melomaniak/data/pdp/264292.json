@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-126.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-126.jpg",
-      "alt": "FP-126",
-      "local": "assets/from-live/products/206ada14de_FP-126.jpg"
+      "src": "local://264292_w61_00.jpg",
+      "thumb": "assets/enriched/264292/264292_w61_00.jpg",
+      "alt": "Коннектор Furutech FP-126(G) ( furutech fp 126(g) )",
+      "local": "assets/enriched/264292/264292_w61_00.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 8966
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-126-R.jpg",
-      "local": "assets/enriched/264292/d9664a9d80_w14media.jpg",
-      "bytes": 15767,
-      "wave": "meager-w14-2026-11",
-      "w": 250,
-      "h": 250
+      "src": "local://264292_w61_01.jpg",
+      "thumb": "assets/enriched/264292/264292_w61_01.jpg",
+      "alt": "Коннектор Furutech FP-126(G) ( furutech fp 126(g) )",
+      "local": "assets/enriched/264292/264292_w61_01.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 226657
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_126_G_.jpg",
-      "local": "assets/enriched/264292/d96cb71bdc_w14media.jpg",
-      "bytes": 20258,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264292_w61_02.jpg",
+      "thumb": "assets/enriched/264292/264292_w61_02.jpg",
+      "alt": "Коннектор Furutech FP-126(G) ( furutech fp 126(g) )",
+      "local": "assets/enriched/264292/264292_w61_02.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 28533
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_126_G_-600x600.jpg",
-      "local": "assets/enriched/264292/ee44a384a1_w14var.jpg",
-      "bytes": 18306,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264292_w61_03.jpg",
+      "thumb": "assets/enriched/264292/264292_w61_03.jpg",
+      "alt": "Коннектор Furutech FP-126(G) ( furutech fp 126(g) )",
+      "local": "assets/enriched/264292/264292_w61_03.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 48817
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T12:53:33Z",
+  "galleryWave61": true
 }

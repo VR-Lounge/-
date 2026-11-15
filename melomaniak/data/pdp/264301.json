@@ -36,35 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "local://c954550cd1_FURUTECH-FP-314-AG-II-3-500x500-1.jpg",
-      "thumb": "assets/enriched/264301/6b52dc4bf1_live1.jpg",
+      "src": "local://264301_w61_00.jpg",
+      "thumb": "assets/enriched/264301/264301_w61_00.jpg",
       "alt": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
-      "local": "assets/enriched/264301/6b52dc4bf1_live1.jpg",
+      "local": "assets/enriched/264301/264301_w61_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 17526
+      "attribution": "wave61-oem",
+      "bytes": 25110
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech_FP-3-117.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech_FP-3-117.jpg",
-      "alt": "Furutech_FP-3-117",
-      "local": "assets/from-live/products/2da4efc254_Furutech_FP-3-117.jpg"
+      "src": "local://264301_w61_01.jpg",
+      "thumb": "assets/enriched/264301/264301_w61_01.jpg",
+      "alt": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
+      "local": "assets/enriched/264301/264301_w61_01.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 36034
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_3_117_R_.jpg",
-      "local": "assets/enriched/264301/835dd2e75e_w16media.jpg",
-      "bytes": 27008,
-      "wave": "meager-w16-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264301_w61_02.jpg",
+      "thumb": "assets/enriched/264301/264301_w61_02.jpg",
+      "alt": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
+      "local": "assets/enriched/264301/264301_w61_02.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 167062
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_3_117_R_-300x300.jpg",
-      "local": "assets/enriched/264301/5ff9b163ca_w16var.jpg",
-      "bytes": 9551,
-      "wave": "meager-w16-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264301_w61_03.jpg",
+      "thumb": "assets/enriched/264301/264301_w61_03.jpg",
+      "alt": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
+      "local": "assets/enriched/264301/264301_w61_03.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 34827
     }
   ],
   "sku": "",
@@ -77,5 +82,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T12:53:33Z",
+  "galleryWave61": true
 }

@@ -1,16 +1,16 @@
 {
-  "at": "2026-11-15T12:47:01Z",
+  "at": "2026-11-15T12:56:33Z",
   "counts": {
-    "true_multi_angle": 1259,
-    "padded": 253,
+    "true_multi_angle": 1266,
+    "padded": 246,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 66.72,
-    "padded": 13.41,
+    "true_multi_angle": 67.09,
+    "padded": 13.04,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 31.8,
-    "not_true_multi": 33.28
+    "padded_of_claimed_gal4plus": 31.42,
+    "not_true_multi": 32.91
   },
   "wave19": {
     "padded_to_true_multi": 8,
@@ -50,7 +50,7 @@
     ]
   },
   "remaining": {
-    "padded": 253,
+    "padded": 246,
     "single_real": 375
   },
   "topHitlPadded": [
@@ -446,5 +446,45 @@
       "name": "Furutech MTP-2",
       "class": "single_real"
     }
-  ]
+  ],
+  "wave61": {
+    "padded_to_true_multi": 7,
+    "cleared": [
+      {
+        "id": 264291,
+        "name": "Коннектор Furutech FP-126(G) ( furutech fp 126(g) )",
+        "unique": 4
+      },
+      {
+        "id": 264292,
+        "name": "Коннектор Furutech FP-126(G) ( furutech fp 126(g) )",
+        "unique": 4
+      },
+      {
+        "id": 264318,
+        "name": "Спайд Furutech FP-201(R) ( furutech fp 201(r) )",
+        "unique": 4
+      },
+      {
+        "id": 264317,
+        "name": "Спайд Furutech FP-201(G) ( furutech fp 201(g) )",
+        "unique": 4
+      },
+      {
+        "id": 264301,
+        "name": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
+        "unique": 4
+      },
+      {
+        "id": 264302,
+        "name": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
+        "unique": 4
+      },
+      {
+        "id": 264322,
+        "name": "Коннектор Furutech FP-200B(R) ( furutech fp 200b(r) )",
+        "unique": 4
+      }
+    ]
+  }
 }

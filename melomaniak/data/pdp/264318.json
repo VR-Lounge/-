@@ -41,34 +41,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-201R.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-201R.jpg",
-      "alt": "FP-201R",
-      "local": "assets/from-live/products/497a592fdf_FP-201R.jpg"
+      "src": "local://264318_w61_00.jpg",
+      "thumb": "assets/enriched/264318/264318_w61_00.jpg",
+      "alt": "Спайд Furutech FP-201(R) ( furutech fp 201(r) )",
+      "local": "assets/enriched/264318/264318_w61_00.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 15231
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-201-G.jpg",
-      "local": "assets/enriched/264318/798fcb232c_w14media.jpg",
-      "bytes": 11775,
-      "wave": "meager-w14-2026-11",
-      "w": 250,
-      "h": 250
+      "src": "local://264318_w61_01.jpg",
+      "thumb": "assets/enriched/264318/264318_w61_01.jpg",
+      "alt": "Спайд Furutech FP-201(R) ( furutech fp 201(r) )",
+      "local": "assets/enriched/264318/264318_w61_01.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 54570
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_201_G_.jpg",
-      "local": "assets/enriched/264318/3acb10654c_w14media.jpg",
-      "bytes": 27904,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264318_w61_02.jpg",
+      "thumb": "assets/enriched/264318/264318_w61_02.jpg",
+      "alt": "Спайд Furutech FP-201(R) ( furutech fp 201(r) )",
+      "local": "assets/enriched/264318/264318_w61_02.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 33871
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_201_G_-300x300.jpg",
-      "local": "assets/enriched/264318/40644b7517_w14var.jpg",
-      "bytes": 11162,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264318_w61_03.jpg",
+      "thumb": "assets/enriched/264318/264318_w61_03.jpg",
+      "alt": "Спайд Furutech FP-201(R) ( furutech fp 201(r) )",
+      "local": "assets/enriched/264318/264318_w61_03.jpg",
+      "enriched": true,
+      "attribution": "wave61-oem",
+      "bytes": 47335
     }
   ],
   "sku": "",
@@ -81,5 +87,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T12:53:33Z",
+  "galleryWave61": true
 }
