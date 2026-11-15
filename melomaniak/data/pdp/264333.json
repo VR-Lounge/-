@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FT-H800-R-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FT-H800-R-1.jpg",
-      "alt": "Furutech-FT-H800-R-1",
-      "local": "assets/from-live/products/a5c703af54_Furutech-FT-H800-R-1.jpg"
+      "src": "local://264333_w67_00.jpg",
+      "thumb": "assets/enriched/264333/264333_w67_00.jpg",
+      "alt": "Коннектор Furutech FT-H800 (R ) ( furutech ft h800 (r ) )",
+      "local": "assets/enriched/264333/264333_w67_00.jpg",
+      "enriched": true,
+      "attribution": "wave67-oem",
+      "bytes": 5851
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-CF-H800-R.jpg",
-      "local": "assets/enriched/264333/dacb22e9a0_w14media.jpg",
-      "bytes": 10696,
-      "wave": "meager-w14-2026-11",
-      "w": 250,
-      "h": 250
+      "src": "local://264333_w67_01.jpg",
+      "thumb": "assets/enriched/264333/264333_w67_01.jpg",
+      "alt": "Коннектор Furutech FT-H800 (R ) ( furutech ft h800 (r ) )",
+      "local": "assets/enriched/264333/264333_w67_01.jpg",
+      "enriched": true,
+      "attribution": "wave67-oem",
+      "bytes": 21493
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_CF_H800_R_.jpg",
-      "local": "assets/enriched/264333/4c6398ad0b_w15media.jpg",
-      "bytes": 21825,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264333_w67_02.jpg",
+      "thumb": "assets/enriched/264333/264333_w67_02.jpg",
+      "alt": "Коннектор Furutech FT-H800 (R ) ( furutech ft h800 (r ) )",
+      "local": "assets/enriched/264333/264333_w67_02.jpg",
+      "enriched": true,
+      "attribution": "wave67-oem",
+      "bytes": 23029
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_CF_H800_R_-600x600.jpg",
-      "local": "assets/enriched/264333/024b59dbc3_w15var.jpg",
-      "bytes": 20366,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264333_w67_03.jpg",
+      "thumb": "assets/enriched/264333/264333_w67_03.jpg",
+      "alt": "Коннектор Furutech FT-H800 (R ) ( furutech ft h800 (r ) )",
+      "local": "assets/enriched/264333/264333_w67_03.jpg",
+      "enriched": true,
+      "attribution": "wave67-oem",
+      "bytes": 85485
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T14:19:03Z",
+  "galleryWave67": true
 }
