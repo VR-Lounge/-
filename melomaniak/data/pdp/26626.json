@@ -40,27 +40,13 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://en.audionet.de/wp-content/uploads/sam-20-se.png",
-      "thumb": "https://en.audionet.de/wp-content/uploads/sam-20-se.png",
-      "alt": "интегральный усилитель AudioNet SAM v.2.0 ( audionet sam v 2 0 )",
-      "local": "assets/enriched/26626/560e7d1cb3_1.png",
-      "enriched": true,
-      "attribution": "en.audionet.de",
-      "bytes": 88783
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/08/Audionet-SAM-v2-back-500x300-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/08/Audionet-SAM-v2-back-500x300-1.jpg",
-      "alt": "Audionet-SAM-v2-back-500&#215;300",
-      "local": "assets/from-live/products/2210ed7c3e_Audionet-SAM-v2-back-500x300-1.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_AudioNet_SAM_v-2-0_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_AudioNet_SAM_v-2-0_-600x600.jpg",
-      "alt": "AudioNet SAM v.2.0",
-      "local": "assets/from-live/products/05d9517578_integralnii_ysilitel_AudioNet_SAM_v-2-0_.jpg"
-    }
+    "assets/enriched/26626/bde8bab21a_w22.png",
+    "assets/enriched/26626/98fe6411b8_w22.png",
+    "assets/enriched/26626/34a58b5dd6_w22.jpg",
+    "assets/enriched/26626/d47dc84af3_w22.jpg",
+    "assets/enriched/26626/2210ed7c3e_w22.jpg",
+    "assets/enriched/26626/05d9517578_w22.jpg",
+    "assets/enriched/26626/07fa7e565e_w22.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -73,7 +59,10 @@
   "enrichedAt": "2026-11-14T17:02:07Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:27:55Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave22": true
 }

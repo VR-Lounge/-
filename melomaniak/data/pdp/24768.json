@@ -26,21 +26,13 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/anthem_d2v_3d_4.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/07/anthem_d2v_3d_4-600x600.jpg",
-      "alt": "anthem_d2v_3d_4",
-      "local": "assets/from-live/products/82cfa6a8ae_anthem_d2v_3d_4.jpg"
-    },
-    {
-      "src": "local://AV_protsessor_Anthem_Statement_D2v_3D_ea482768a7.jpg",
-      "thumb": "assets/enriched/24768/2eae261e2e_live1.jpg",
-      "alt": "AV процессор Anthem Statement D2v 3D ( av anthem statement d2v 3d )",
-      "local": "assets/enriched/24768/2eae261e2e_live1.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 30618
-    }
+    "assets/enriched/24768/82cfa6a8ae_w22.jpg",
+    "assets/enriched/24768/cabb197825_w22.jpg",
+    "assets/enriched/24768/57a430b3a8_w22.jpg",
+    "assets/enriched/24768/99ab70fbe1_w22.jpg",
+    "assets/enriched/24768/97f4bdb4a3_w22.jpg",
+    "assets/enriched/24768/5daf7ad05c_w22.jpg",
+    "assets/enriched/24768/ea482768a7_w22.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -52,7 +44,10 @@
   "enrichedAt": "2026-11-14T14:22:42Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:27:55Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave22": true
 }

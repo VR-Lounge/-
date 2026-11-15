@@ -1,0 +1,226 @@
+{
+  "wave": "wave22",
+  "at": "2026-11-15T01:27:55Z",
+  "paddedToTrue": 8,
+  "newlyMultiIds": [
+    32248,
+    24768,
+    269782,
+    270148,
+    15916,
+    26626,
+    262133,
+    270973
+  ],
+  "results": [
+    {
+      "id": 32248,
+      "name": "Активная акустика MCINTOSH RS100 ( mcintosh rs100 )",
+      "price": 500000,
+      "before": 2,
+      "after": 7,
+      "multi": true,
+      "hitl": false,
+      "files": [
+        "905766da61_w22.jpg",
+        "227711e439_w22.jpg",
+        "6b021149d9_w22.jpg",
+        "30a7324bc8_w22.jpg",
+        "ae251fb08c_w22.jpg",
+        "a422607bde_w22.jpg",
+        "067de99fd0_w22.jpg"
+      ]
+    },
+    {
+      "id": 24768,
+      "name": "AV процессор Anthem Statement D2v 3D ( av anthem statement d2v 3d )",
+      "price": 479000,
+      "before": 2,
+      "after": 7,
+      "multi": true,
+      "hitl": false,
+      "files": [
+        "82cfa6a8ae_w22.jpg",
+        "cabb197825_w22.jpg",
+        "57a430b3a8_w22.jpg",
+        "99ab70fbe1_w22.jpg",
+        "97f4bdb4a3_w22.jpg",
+        "5daf7ad05c_w22.jpg",
+        "ea482768a7_w22.jpg"
+      ]
+    },
+    {
+      "id": 269782,
+      "name": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
+      "price": 449990,
+      "before": 3,
+      "after": 8,
+      "multi": true,
+      "hitl": false,
+      "files": [
+        "12141ff021_w22.jpg",
+        "4cdc6368ee_w22.jpg",
+        "16d3a26c32_w22.jpg",
+        "56baf6700d_w22.jpg",
+        "6fd46e213e_w22.jpg",
+        "cf215651be_w22.jpg",
+        "1a9796a18a_w22.jpg",
+        "b342dc5c84_w22.jpg"
+      ]
+    },
+    {
+      "id": 270148,
+      "name": "CD-проигрыватель MOON 260D Black",
+      "price": 429900,
+      "before": 2,
+      "after": 6,
+      "multi": true,
+      "hitl": false,
+      "files": [
+        "4627e0e135_w22.jpg",
+        "abc9a92d8d_w22.jpg",
+        "e8c1f76bfe_w22.jpg",
+        "42793ad5c7_w22.jpg",
+        "599ed62cbd_w22.jpg",
+        "a58c189db6_w22.jpg"
+      ]
+    },
+    {
+      "id": 15916,
+      "name": "интегральный усилитель Leben CS 300 F ( leben cs 300 f )",
+      "price": 420000,
+      "before": 3,
+      "after": 5,
+      "multi": true,
+      "hitl": false,
+      "files": [
+        "e6acccd447_w22.jpg",
+        "b7c1d5a8ee_w22.jpg",
+        "bd784e39b5_w22.jpg",
+        "1585bb25ce_w22.jpg",
+        "842c3cf402_w22.jpg"
+      ]
+    },
+    {
+      "id": 26626,
+      "name": "интегральный усилитель AudioNet SAM v.2.0 ( audionet sam v 2 0 )",
+      "price": 420000,
+      "before": 3,
+      "after": 7,
+      "multi": true,
+      "hitl": false,
+      "files": [
+        "bde8bab21a_w22.png",
+        "98fe6411b8_w22.png",
+        "34a58b5dd6_w22.jpg",
+        "d47dc84af3_w22.jpg",
+        "2210ed7c3e_w22.jpg",
+        "05d9517578_w22.jpg",
+        "07fa7e565e_w22.jpg"
+      ]
+    },
+    {
+      "id": 262133,
+      "name": "Интегральный усилитель Soulnote A 1  ( soulnote a 1  )",
+      "price": 420000,
+      "before": 2,
+      "after": 6,
+      "multi": true,
+      "hitl": false,
+      "files": [
+        "5e756e4a5b_w22.jpg",
+        "c0f498a2fc_w22.jpg",
+        "e6759df0f4_w22.jpg",
+        "59255b7454_w22.jpg",
+        "5118efe380_w22.jpg",
+        "073361c4c0_w22.jpg"
+      ]
+    },
+    {
+      "id": 270973,
+      "after": 11,
+      "multi": true,
+      "name": "Matrix Element M2",
+      "price": 399990
+    }
+  ],
+  "finalAuditCounts": {
+    "true_multi_angle": 1111,
+    "padded": 398,
+    "single_real": 378
+  },
+  "topHitl": [
+    {
+      "id": 42427,
+      "price": 450000,
+      "hitl": true,
+      "name": "Усилитель мощности Audio Research DS450 ( audio researc"
+    },
+    {
+      "id": 15860,
+      "price": 440000,
+      "hitl": true,
+      "name": "фонокорректор Triode TRV EQ3SE ( triode trv eq3se )"
+    },
+    {
+      "id": 274568,
+      "price": 414300,
+      "hitl": true,
+      "name": "Напольная акустика Acoustic Energy AE 509"
+    },
+    {
+      "id": 15606,
+      "price": 400000,
+      "hitl": true,
+      "name": "напольная акустика Audio Physic Scorpio II ( audio phys"
+    },
+    {
+      "id": 4230,
+      "price": 380000,
+      "hitl": true,
+      "name": "предусилитель Arte Forma Jadeitte 101D ( arte forma jad"
+    },
+    {
+      "id": 268034,
+      "price": 360000,
+      "hitl": true,
+      "name": "ЦАП Soulnote sd2.0"
+    },
+    {
+      "id": 267868,
+      "price": 355300,
+      "hitl": true,
+      "name": "Предусилитель TRIODE TRX – 1SE"
+    },
+    {
+      "id": 16804,
+      "price": 350000,
+      "hitl": true,
+      "name": "интегральный усилитель Trigon Energy ( trigon energy )"
+    },
+    {
+      "id": 16822,
+      "price": 350000,
+      "hitl": true,
+      "name": "интегральный усилитель Triode TRV 88SER ( triode trv 88"
+    },
+    {
+      "id": 24490,
+      "price": 350000,
+      "hitl": true,
+      "name": "полочная акустика ProAc Tablette Anniversary cherry ( p"
+    },
+    {
+      "id": 16854,
+      "price": 340000,
+      "hitl": true,
+      "name": "усилитель мощности Ultimate Audio MC 3008 ABSE ( ultima"
+    },
+    {
+      "id": 262135,
+      "price": 340000,
+      "hitl": true,
+      "name": "CD проигрыватель Soulnote C1 ( cd soulnote c1 )"
+    }
+  ]
+}

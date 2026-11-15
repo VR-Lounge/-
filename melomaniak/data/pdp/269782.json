@@ -35,35 +35,14 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712274707-0474P107J0CGS4GU1ALS/zm12-interior.jpg",
-      "thumb": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712274707-0474P107J0CGS4GU1ALS/zm12-interior.jpg",
-      "alt": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
-      "local": "assets/enriched/269782/07f10c05c4_depad.jpg",
-      "bytes": 585697,
-      "from": "oem-depad",
-      "wave": "gallery-depad-2026-11",
-      "attribution": "cloneyaudio/parasound-press"
-    },
-    {
-      "src": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712275875-D9T13TC48N8PKQX248IN/zm12-rear_black.jpg",
-      "thumb": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712275875-D9T13TC48N8PKQX248IN/zm12-rear_black.jpg",
-      "alt": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
-      "local": "assets/enriched/269782/66491dc6df_depad.jpg",
-      "bytes": 333128,
-      "from": "oem-depad",
-      "wave": "gallery-depad-2026-11",
-      "attribution": "cloneyaudio/parasound-press"
-    },
-    {
-      "src": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712274165-M1GT9Q6TXHZO326JGQOU/zm12-angle.jpg",
-      "thumb": "https://images.squarespace-cdn.com/content/v1/5e9ae6aefbbac82692909731/1603712274165-M1GT9Q6TXHZO326JGQOU/zm12-angle.jpg",
-      "alt": "Многоканальный усилитель мощности Parasound ZoneMaster 12",
-      "local": "assets/enriched/269782/721ec20dbb_w21.jpg",
-      "bytes": 274171,
-      "from": "oem-w21",
-      "wave": "gallery-w21-2026-11"
-    }
+    "assets/enriched/269782/12141ff021_w22.jpg",
+    "assets/enriched/269782/4cdc6368ee_w22.jpg",
+    "assets/enriched/269782/16d3a26c32_w22.jpg",
+    "assets/enriched/269782/56baf6700d_w22.jpg",
+    "assets/enriched/269782/6fd46e213e_w22.jpg",
+    "assets/enriched/269782/cf215651be_w22.jpg",
+    "assets/enriched/269782/1a9796a18a_w22.jpg",
+    "assets/enriched/269782/b342dc5c84_w22.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -75,8 +54,11 @@
   "enrichedAt": "2026-11-14T14:24:40Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: true 1-shot / <4 OEM angles after depad — salon shoot needed. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt. HITL gallery: <4 distinct perceptual angles after w21 OEM hunt.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T01:12:43Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:27:55Z",
   "galleryWave19": true,
-  "galleryWave21": true
+  "galleryWave21": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave22": true
 }

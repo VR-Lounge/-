@@ -110,30 +110,14 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://apos.audio/cdn/shop/products/apos-audio-matrix-audio-dac-digital-to-analog-converter-matrix-element-m2-mqa-dac-amp-music-streamer-37095419642092_1600x1171.png",
-      "local": "assets/enriched/270973/db26bbd6fa_w12mx.jpg",
-      "bytes": 727312,
-      "wave": "meager-w12-2026-11",
-      "w": 1600,
-      "h": 1171
-    },
-    {
-      "src": "http://graveaudio.com/cdn/shop/files/element-M2-02_1200x1200.jpg",
-      "local": "assets/enriched/270973/c0cab622b2_w12mx.jpg",
-      "bytes": 43679,
-      "wave": "meager-w12-2026-11",
-      "w": 1000,
-      "h": 1167
-    },
-    {
-      "src": "http://graveaudio.com/cdn/shop/files/element-M2-03_1200x1200.jpg",
-      "local": "assets/enriched/270973/18c328fac2_w12mx.jpg",
-      "bytes": 22655,
-      "wave": "meager-w12-2026-11",
-      "w": 1000,
-      "h": 1167
-    }
+    "assets/enriched/270973/55d72f8e2e_w22.jpg",
+    "assets/enriched/270973/b98bc8da67_w22.jpg",
+    "assets/enriched/270973/b16a274c60_w22.jpg",
+    "assets/enriched/270973/851af4a2ca_w22.jpg",
+    "assets/enriched/270973/0bd0c9a5f6_w22.jpg",
+    "assets/enriched/270973/73f4b7b923_w22.jpg",
+    "assets/enriched/270973/67d97f1616_w22.jpg",
+    "assets/enriched/270973/d16b10367d_w22.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -144,7 +128,10 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:29:48Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave22": true
 }

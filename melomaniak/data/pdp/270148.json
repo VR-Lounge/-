@@ -85,18 +85,12 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black3.jpg",
-      "alt": "moon_260d_black3.jpg",
-      "local": "assets/from-live/products/599ed62cbd_moon_260d_black3.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black_4044835544-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/moon_260d_black_4044835544-1.jpg",
-      "alt": "moon_260d_black_4044835544-1.jpg",
-      "local": "assets/from-live/products/a58c189db6_moon_260d_black_4044835544-1.jpg"
-    }
+    "assets/enriched/270148/4627e0e135_w22.jpg",
+    "assets/enriched/270148/abc9a92d8d_w22.jpg",
+    "assets/enriched/270148/e8c1f76bfe_w22.jpg",
+    "assets/enriched/270148/42793ad5c7_w22.jpg",
+    "assets/enriched/270148/599ed62cbd_w22.jpg",
+    "assets/enriched/270148/a58c189db6_w22.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -108,7 +102,10 @@
   "enrichedAt": "2026-11-14T17:02:09Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: true 1-shot / <4 OEM angles after depad — salon shoot needed. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:27:55Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave22": true
 }

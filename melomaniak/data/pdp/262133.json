@@ -25,20 +25,12 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/soulnote_a1.jpg",
-      "local": "assets/enriched/262133/a750bf0c55_w13media.jpg",
-      "bytes": 86114,
-      "wave": "meager-w13-2026-11",
-      "w": 800,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/c12a7de0e40bcc0883e6d04cfff42f5b.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/c12a7de0e40bcc0883e6d04cfff42f5b-600x572.jpg",
-      "alt": "c12a7de0e40bcc0883e6d04cfff42f5b",
-      "local": "assets/from-live/products/5118efe380_c12a7de0e40bcc0883e6d04cfff42f5b.jpg"
-    }
+    "assets/enriched/262133/5e756e4a5b_w22.jpg",
+    "assets/enriched/262133/c0f498a2fc_w22.jpg",
+    "assets/enriched/262133/e6759df0f4_w22.jpg",
+    "assets/enriched/262133/59255b7454_w22.jpg",
+    "assets/enriched/262133/5118efe380_w22.jpg",
+    "assets/enriched/262133/073361c4c0_w22.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -49,7 +41,10 @@
   "enrichedAt": "2026-11-14T13:46:21Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:27:55Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave22": true
 }

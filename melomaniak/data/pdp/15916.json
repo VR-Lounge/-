@@ -25,22 +25,11 @@
     }
   ],
   "gallery": [
-    {
-      "src": "https://www.lebenhifi.com/products/products-img/cs300fx_5_m.jpg",
-      "alt": "Leben CS-300F front",
-      "local": "assets/enriched/15916/3f23fb9570_w13var.jpg"
-    },
-    {
-      "src": "https://www.lebenhifi.com/products/products-img/cs300fx_6_m.jpg",
-      "alt": "Leben CS-300F angle",
-      "wave": "wave21b"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Leben_CS_300_F.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Leben_CS_300_F-600x600.jpg",
-      "alt": "Leben CS 300 F",
-      "local": "assets/from-live/products/63f1a1ae73_integralnii_ysilitel_Leben_CS_300_F.jpg"
-    }
+    "assets/enriched/15916/e6acccd447_w22.jpg",
+    "assets/enriched/15916/b7c1d5a8ee_w22.jpg",
+    "assets/enriched/15916/bd784e39b5_w22.jpg",
+    "assets/enriched/15916/1585bb25ce_w22.jpg",
+    "assets/enriched/15916/842c3cf402_w22.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -52,8 +41,11 @@
   "enrichedAt": "2026-11-14T17:02:05Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T01:12:42Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:27:55Z",
   "galleryWave19": true,
-  "galleryWave21": true
+  "galleryWave21": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave22": true
 }

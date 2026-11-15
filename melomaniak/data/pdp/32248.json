@@ -146,24 +146,13 @@
     }
   ],
   "gallery": [
-    {
-      "src": "from-live://c9c5ec1267_sim-audio-moon-760a-rs-1000x500-1.jpg",
-      "thumb": "assets/enriched/32248/70d4342b27_w10live.jpg",
-      "alt": "32248",
-      "local": "assets/enriched/32248/70d4342b27_w10live.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 56833
-    },
-    {
-      "src": "from-live://37ac44b3e8_portativnaia_akystika_MCINTOSH_RS100.jpg",
-      "thumb": "assets/enriched/32248/2bad08b6af_w10live.jpg",
-      "alt": "32248",
-      "local": "assets/enriched/32248/2bad08b6af_w10live.jpg",
-      "enriched": true,
-      "attribution": "from-live",
-      "bytes": 43853
-    }
+    "assets/enriched/32248/905766da61_w22.jpg",
+    "assets/enriched/32248/227711e439_w22.jpg",
+    "assets/enriched/32248/6b021149d9_w22.jpg",
+    "assets/enriched/32248/30a7324bc8_w22.jpg",
+    "assets/enriched/32248/ae251fb08c_w22.jpg",
+    "assets/enriched/32248/a422607bde_w22.jpg",
+    "assets/enriched/32248/067de99fd0_w22.jpg"
   ],
   "sku": "",
   "fetchedFrom": "wc/store/v1/products",
@@ -174,8 +163,11 @@
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w10-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-15T01:27:55Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave22": true
 }

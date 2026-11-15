@@ -34,17 +34,27 @@ def main() -> None:
         p["hasSpecs"] = bool(specs)
         p["descLen"] = desc_len
         p["specCount"] = len(specs)
-        p["gallery"] = [
-            (g.get("local") or g.get("src"))
-            for g in gallery
-            if (g.get("local") or g.get("src"))
-        ]
+        def gallery_url(g):
+            if isinstance(g, str):
+                return g
+            if isinstance(g, dict):
+                return g.get("local") or g.get("src") or g.get("url") or ""
+            return ""
+
+        p["gallery"] = [u for g in gallery if (u := gallery_url(g))]
         # Prefer enriched local hero for listing thumb when present
         enriched_locals = [
             g.get("local")
             for g in gallery
-            if g.get("enriched") and g.get("local")
+            if isinstance(g, dict) and g.get("enriched") and g.get("local")
         ]
+        # Wave22+ often stores bare asset paths as strings
+        if not enriched_locals:
+            enriched_locals = [
+                u
+                for u in p["gallery"]
+                if isinstance(u, str) and u.startswith("assets/enriched/")
+            ]
         if enriched_locals:
             # keep curated display thumbs if already assets/display/
             thumb = p.get("thumb") or ""

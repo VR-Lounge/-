@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T01:22:14Z",
+  "generatedAt": "2026-11-15T01:32:54Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,39 +15,26 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1103,
-    "padded": 406,
+    "true_multi_angle": 1111,
+    "padded": 398,
     "single_real": 378
   },
   "pct": {
-    "true_multi_angle": 58.45,
-    "padded": 21.52,
+    "true_multi_angle": 58.88,
+    "padded": 21.09,
     "single_real": 20.03,
-    "padded_of_claimed_gal4plus": 39.73,
-    "not_true_multi": 41.55
+    "padded_of_claimed_gal4plus": 39.55,
+    "not_true_multi": 41.12
   },
   "padReasonTallies": {
     "local-variant": 763,
-    "wN-variant-name": 680,
+    "wN-variant-name": 679,
     "cdn-size-thumb": 125,
     "cdn-rotated": 6
   },
-  "claimedGal4Plus": 1830,
+  "claimedGal4Plus": 1838,
   "claimedButNotTrueMulti": 727,
   "topPaddedByPrice": [
-    {
-      "id": 15916,
-      "name": "интегральный усилитель Leben CS 300 F ( leben cs 300 f )",
-      "cat": "Усилители",
-      "price": 420000,
-      "galleryLen": 3,
-      "uniqueDistinct": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "class": "padded"
-    },
     {
       "id": 262116,
       "name": "Интегральный усилитель Line Magnetic Audio LM 126 iA ( line magnetic audio lm 126 ia )",
@@ -537,6 +524,19 @@
     {
       "id": 261868,
       "name": "Центральный канал PARADIGM Founder 70LCR Gloss Black ( paradigm founder 70lcr gloss black )",
+      "cat": "Другое",
+      "price": 252365,
+      "galleryLen": 8,
+      "uniqueDistinct": 2,
+      "padSlots": 1,
+      "padReasons": {
+        "wN-variant-name": 1
+      },
+      "class": "padded"
+    },
+    {
+      "id": 261870,
+      "name": "Центральный канал PARADIGM Founder 70LCR Walnut ( paradigm founder 70lcr walnut )",
       "cat": "Другое",
       "price": 252365,
       "galleryLen": 8,
@@ -6403,14 +6403,14 @@
       "slug": "%d0%bf%d0%be%d1%80%d1%82%d0%b0%d1%82%d0%b8%d0%b2%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-mcintosh-rs100",
       "cat": "Акустика",
       "price": 500000,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 268922,
@@ -6797,14 +6797,14 @@
       "slug": "av_protsessor_anthem_statement_d2v_3d-178924",
       "cat": "Ресиверы",
       "price": 479000,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 264127,
@@ -7097,14 +7097,14 @@
       "slug": "4bbe134b71ef958197d0dc3927dfd42e",
       "cat": "Усилители",
       "price": 449990,
-      "galleryHitl": true,
-      "galleryLen": 3,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 273653,
@@ -7294,14 +7294,14 @@
       "slug": "1c729d2f539ea95e960f453ba2d24acb",
       "cat": "Источники",
       "price": 429900,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 273942,
@@ -7354,16 +7354,14 @@
       "slug": "integralnii_ysilitel_Leben_CS_300_F",
       "cat": "Усилители",
       "price": 420000,
-      "galleryHitl": true,
-      "galleryLen": 3,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 16838,
@@ -7401,14 +7399,14 @@
       "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-soulnote-a-1-sh",
       "cat": "Усилители",
       "price": 420000,
-      "galleryHitl": true,
-      "galleryLen": 2,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 26626,
@@ -7416,14 +7414,14 @@
       "slug": "integralnii_ysilitel_audionet_sam_v-2-0_",
       "cat": "Усилители",
       "price": 420000,
-      "galleryHitl": true,
-      "galleryLen": 3,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 271490,
@@ -7629,14 +7627,14 @@
       "slug": "c0b341b5087f490da04904a5e47e180c",
       "cat": "Источники",
       "price": 399990,
-      "galleryHitl": true,
-      "galleryLen": 3,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "padded"
+      "class": "true_multi_angle"
     },
     {
       "id": 272183,
