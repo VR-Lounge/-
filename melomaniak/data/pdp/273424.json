@@ -91,30 +91,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-c2_mkii_10928046751-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-c2_mkii_10928046751-1.jpg",
-      "alt": "mission_lx-c2_mkii_10928046751-1.jpg",
-      "local": "assets/from-live/products/de38ea5d3d_mission_lx-c2_mkii_10928046751-1.jpg"
+      "src": "local://273424_w33_00.jpg",
+      "thumb": "assets/enriched/273424/273424_w33_00.jpg",
+      "alt": "Центральный громкоговоритель Mission LX-C2 MKII",
+      "local": "assets/enriched/273424/273424_w33_00.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 126840
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-c2_mkii_10928048579-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-c2_mkii_10928048579-2.jpg",
-      "alt": "mission_lx-c2_mkii_10928048579-2.jpg",
-      "local": "assets/from-live/products/0cfb9710a8_mission_lx-c2_mkii_10928048579-2.jpg"
+      "src": "local://273424_w33_01.jpg",
+      "thumb": "assets/enriched/273424/273424_w33_01.jpg",
+      "alt": "Центральный громкоговоритель Mission LX-C2 MKII",
+      "local": "assets/enriched/273424/273424_w33_01.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 80071
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-c2_mkii_10928077833-3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-c2_mkii_10928077833-3.jpg",
-      "alt": "mission_lx-c2_mkii_10928077833-3.jpg",
-      "local": "assets/from-live/products/2f486625ca_mission_lx-c2_mkii_10928077833-3.jpg"
+      "src": "local://273424_w33_02.jpg",
+      "thumb": "assets/enriched/273424/273424_w33_02.jpg",
+      "alt": "Центральный громкоговоритель Mission LX-C2 MKII",
+      "local": "assets/enriched/273424/273424_w33_02.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 126660
     },
     {
-      "src": "local-variant://273424/w17sc95",
-      "local": "assets/enriched/273424/d3d05bd783_w17sc95.jpg",
-      "bytes": 169460,
-      "wave": "meager-w17-2026-11",
-      "w": 1240,
-      "h": 1240
+      "src": "local://273424_w33_03.jpg",
+      "thumb": "assets/enriched/273424/273424_w33_03.jpg",
+      "alt": "Центральный громкоговоритель Mission LX-C2 MKII",
+      "local": "assets/enriched/273424/273424_w33_03.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 2760698
+    },
+    {
+      "src": "local://273424_w33_04.jpg",
+      "thumb": "assets/enriched/273424/273424_w33_04.jpg",
+      "alt": "Центральный громкоговоритель Mission LX-C2 MKII",
+      "local": "assets/enriched/273424/273424_w33_04.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 2763068
     }
   ],
   "sku": "",
@@ -126,5 +145,9 @@
   "enrichedAt": "2026-11-14T13:36:27Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T04:51:38Z",
+  "galleryWave33": true
 }

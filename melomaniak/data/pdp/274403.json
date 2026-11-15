@@ -71,40 +71,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2-1024x636.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2-1024x636.jpg",
+      "src": "local://274403_w33_00.jpg",
+      "thumb": "assets/enriched/274403/274403_w33_00.jpg",
       "alt": "AV-ресивер Tone Winner AT-2000",
-      "local": "assets/enriched/274403/3b518932fe_1.jpg",
+      "local": "assets/enriched/274403/274403_w33_00.jpg",
       "enriched": true,
-      "attribution": "xn--80aannlcfckh.xn--p1ai",
+      "attribution": "wave33-oem",
+      "bytes": 118301
+    },
+    {
+      "src": "local://274403_w33_01.jpg",
+      "thumb": "assets/enriched/274403/274403_w33_01.jpg",
+      "alt": "AV-ресивер Tone Winner AT-2000",
+      "local": "assets/enriched/274403/274403_w33_01.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 179746
+    },
+    {
+      "src": "local://274403_w33_02.jpg",
+      "thumb": "assets/enriched/274403/274403_w33_02.jpg",
+      "alt": "AV-ресивер Tone Winner AT-2000",
+      "local": "assets/enriched/274403/274403_w33_02.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
       "bytes": 46727
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2-768x477.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2-768x477.jpg",
+      "src": "local://274403_w33_03.jpg",
+      "thumb": "assets/enriched/274403/274403_w33_03.jpg",
       "alt": "AV-ресивер Tone Winner AT-2000",
-      "local": "assets/enriched/274403/d4db7297b8_2.jpg",
+      "local": "assets/enriched/274403/274403_w33_03.jpg",
       "enriched": true,
-      "attribution": "xn--80aannlcfckh.xn--p1ai",
-      "bytes": 28217
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2-600x600.jpg",
-      "alt": "tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2",
-      "local": "assets/from-live/products/832e4bbd69_tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_2.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_3-600x600.jpg",
-      "alt": "tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_3",
-      "local": "assets/from-live/products/8c3822191c_tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_3.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/03/tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_1-600x600.jpg",
-      "alt": "tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_1",
-      "local": "assets/from-live/products/eb17bc8993_tonewinner-at-2000-724-dolby-atmos-dts-x-av-resiver_id17_1.jpg"
+      "attribution": "wave33-oem",
+      "bytes": 61845
     }
   ],
   "sku": "",
@@ -115,5 +115,10 @@
   ],
   "enrichedAt": "2026-11-14T14:46:14Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w7-2026-11"
+  "meagerWave": "meager-w7-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T04:51:38Z",
+  "galleryWave33": true
 }

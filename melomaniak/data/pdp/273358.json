@@ -91,30 +91,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-5_mkii_10921302726-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-5_mkii_10921302726-1.jpg",
-      "alt": "mission_lx-5_mkii_10921302726-1.jpg",
-      "local": "assets/from-live/products/2e00f29ddc_mission_lx-5_mkii_10921302726-1.jpg"
+      "src": "local://273358_w33_00.jpg",
+      "thumb": "assets/enriched/273358/273358_w33_00.jpg",
+      "alt": "Напольная акустика Mission LX-5 MKII",
+      "local": "assets/enriched/273358/273358_w33_00.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 113846
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-5_mkii_10921304322-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-5_mkii_10921304322-2.jpg",
-      "alt": "mission_lx-5_mkii_10921304322-2.jpg",
-      "local": "assets/from-live/products/339cc1ae66_mission_lx-5_mkii_10921304322-2.jpg"
+      "src": "local://273358_w33_01.jpg",
+      "thumb": "assets/enriched/273358/273358_w33_01.jpg",
+      "alt": "Напольная акустика Mission LX-5 MKII",
+      "local": "assets/enriched/273358/273358_w33_01.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 88637
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-5_mkii_10921336536-3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/mission_lx-5_mkii_10921336536-3.jpg",
-      "alt": "mission_lx-5_mkii_10921336536-3.jpg",
-      "local": "assets/from-live/products/841df055ac_mission_lx-5_mkii_10921336536-3.jpg"
+      "src": "local://273358_w33_02.jpg",
+      "thumb": "assets/enriched/273358/273358_w33_02.jpg",
+      "alt": "Напольная акустика Mission LX-5 MKII",
+      "local": "assets/enriched/273358/273358_w33_02.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 10053
     },
     {
-      "src": "local-variant://273358/w17sc95",
-      "local": "assets/enriched/273358/1c2fc23169_w17sc95.jpg",
-      "bytes": 162505,
-      "wave": "meager-w17-2026-11",
-      "w": 1193,
-      "h": 1193
+      "src": "local://273358_w33_03.jpg",
+      "thumb": "assets/enriched/273358/273358_w33_03.jpg",
+      "alt": "Напольная акустика Mission LX-5 MKII",
+      "local": "assets/enriched/273358/273358_w33_03.jpg",
+      "enriched": true,
+      "attribution": "wave33-oem",
+      "bytes": 2098725
     }
   ],
   "sku": "",
@@ -126,5 +136,9 @@
   "enrichedAt": "2026-11-14T17:02:12Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T04:51:38Z",
+  "galleryWave33": true
 }

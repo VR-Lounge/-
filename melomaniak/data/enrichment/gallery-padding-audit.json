@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T04:37:12Z",
+  "generatedAt": "2026-11-15T04:55:05Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1170,
-    "padded": 342,
+    "true_multi_angle": 1175,
+    "padded": 337,
     "single_real": 375
   },
   "pct": {
-    "true_multi_angle": 62.0,
-    "padded": 18.12,
+    "true_multi_angle": 62.27,
+    "padded": 17.86,
     "single_real": 19.87,
-    "padded_of_claimed_gal4plus": 36.62,
-    "not_true_multi": 38.0
+    "padded_of_claimed_gal4plus": 36.35,
+    "not_true_multi": 37.73
   },
   "padReasonTallies": {
-    "local-variant": 748,
-    "wN-variant-name": 654,
+    "local-variant": 746,
+    "wN-variant-name": 652,
     "cdn-size-thumb": 122,
     "cdn-rotated": 6
   },
   "claimedGal4Plus": 1846,
-  "claimedButNotTrueMulti": 676,
+  "claimedButNotTrueMulti": 671,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -13045,13 +13045,13 @@
       "cat": "Ресиверы",
       "price": 179990,
       "galleryHitl": false,
-      "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272205,
@@ -17637,12 +17637,12 @@
       "price": 97490,
       "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264444,
@@ -18678,16 +18678,14 @@
       "slug": "%d0%bd%d0%b0%d1%81%d1%82%d0%b5%d0%bd%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-atmosphere-mk2",
       "cat": "Акустика",
       "price": 85390,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 268733,
@@ -18947,16 +18945,14 @@
       "slug": "8a5a2c23d5e964fec6d3453adb18f9b9",
       "cat": "Акустика",
       "price": 81590,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269656,
@@ -24038,16 +24034,14 @@
       "slug": "b19f48745a7f0ec9429c4a61ec21697e",
       "cat": "Другое",
       "price": 36890,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271553,
