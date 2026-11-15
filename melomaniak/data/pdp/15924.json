@@ -71,34 +71,58 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Leben_RS_28CX_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Leben_RS_28CX_-600x600.jpg",
-      "alt": "Leben RS 28CX",
-      "local": "assets/from-live/products/a5b2283a33_predysilitel_Leben_RS_28CX_.jpg"
+      "src": "local://15924_w94_00.jpg",
+      "thumb": "assets/enriched/15924/15924_w94_00.jpg",
+      "alt": "предусилитель Leben RS 28CX ( leben rs 28cx )",
+      "local": "assets/enriched/15924/15924_w94_00.jpg",
+      "enriched": true,
+      "attribution": "wave94-oem",
+      "bytes": 38153
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Leben_RS_28CX_-600x600.jpg",
-      "local": "assets/enriched/15924/fad4d99426_w13var.jpg",
-      "bytes": 20621,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15924_w94_01.jpg",
+      "thumb": "assets/enriched/15924/15924_w94_01.jpg",
+      "alt": "предусилитель Leben RS 28CX ( leben rs 28cx )",
+      "local": "assets/enriched/15924/15924_w94_01.jpg",
+      "enriched": true,
+      "attribution": "wave94-oem",
+      "bytes": 78819
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Leben_RS_28CX_-300x300.jpg",
-      "local": "assets/enriched/15924/fabd03bc30_w17cdn.jpg",
-      "bytes": 6320,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://15924_w94_02.jpg",
+      "thumb": "assets/enriched/15924/15924_w94_02.jpg",
+      "alt": "предусилитель Leben RS 28CX ( leben rs 28cx )",
+      "local": "assets/enriched/15924/15924_w94_02.jpg",
+      "enriched": true,
+      "attribution": "wave94-oem",
+      "bytes": 378659
     },
     {
-      "src": "local-variant://15924/w17sc95",
-      "local": "assets/enriched/15924/4a1231b765_w17sc95.jpg",
-      "bytes": 24161,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://15924_w94_03.jpg",
+      "thumb": "assets/enriched/15924/15924_w94_03.jpg",
+      "alt": "предусилитель Leben RS 28CX ( leben rs 28cx )",
+      "local": "assets/enriched/15924/15924_w94_03.jpg",
+      "enriched": true,
+      "attribution": "wave94-oem",
+      "bytes": 281574
+    },
+    {
+      "src": "local://15924_w94_04.jpg",
+      "thumb": "assets/enriched/15924/15924_w94_04.jpg",
+      "alt": "предусилитель Leben RS 28CX ( leben rs 28cx )",
+      "local": "assets/enriched/15924/15924_w94_04.jpg",
+      "enriched": true,
+      "attribution": "wave94-oem",
+      "bytes": 29909
+    },
+    {
+      "src": "local://15924_w94_05.jpg",
+      "thumb": "assets/enriched/15924/15924_w94_05.jpg",
+      "alt": "предусилитель Leben RS 28CX ( leben rs 28cx )",
+      "local": "assets/enriched/15924/15924_w94_05.jpg",
+      "enriched": true,
+      "attribution": "wave94-oem",
+      "bytes": 75015
     }
   ],
   "sku": "",
@@ -110,5 +134,9 @@
   "enrichedAt": "2026-11-14T13:45:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-15T21:31:57Z",
+  "galleryWave94": true
 }

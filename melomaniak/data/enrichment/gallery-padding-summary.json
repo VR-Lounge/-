@@ -1,50 +1,51 @@
 {
   "at": "2026-11-15T13:42:47Z",
   "counts": {
-    "true_multi_angle": 1351,
+    "true_multi_angle": 1355,
     "padded": 164,
-    "single_real": 372
+    "single_real": 368
   },
   "pct": {
-    "true_multi_angle": 67.57,
-    "padded": 12.56,
-    "single_real": 19.87,
-    "not_true_multi": 32.43
+    "true_multi_angle": 71.81,
+    "padded": 8.69,
+    "single_real": 19.5,
+    "padded_of_claimed_gal4plus": 26.64,
+    "not_true_multi": 28.19
   },
   "wave19": {
     "padded_to_true_multi": 8,
     "cleared": [
       {
         "id": 40225,
-        "name": "центральный канал Paradigm Persona C Vanta High Gloss Black "
+        "name": "\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b Paradigm Persona C Vanta High Gloss Black "
       },
       {
         "id": 40229,
-        "name": "центральный канал Paradigm Persona C Sonic Metallic Sliver ("
+        "name": "\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b Paradigm Persona C Sonic Metallic Sliver ("
       },
       {
         "id": 274552,
-        "name": "Напольная акустика Acoustic Energy Corinium"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Acoustic Energy Corinium"
       },
       {
         "id": 266938,
-        "name": "Сабвуфер Paradigm XR 13 ( paradigm xr 13 )"
+        "name": "\u0421\u0430\u0431\u0432\u0443\u0444\u0435\u0440 Paradigm XR 13 ( paradigm xr 13 )"
       },
       {
         "id": 266932,
-        "name": "Сабвуфер Paradigm XR 11 ( paradigm xr 11 )"
+        "name": "\u0421\u0430\u0431\u0432\u0443\u0444\u0435\u0440 Paradigm XR 11 ( paradigm xr 11 )"
       },
       {
         "id": 267422,
-        "name": "Интегральный усилитель Line Magnetic Audio LM-609iA"
+        "name": "\u0418\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Line Magnetic Audio LM-609iA"
       },
       {
         "id": 273537,
-        "name": "Моноусилитель мощности PS Audio Stellar M1200"
+        "name": "\u041c\u043e\u043d\u043e\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 PS Audio Stellar M1200"
       },
       {
         "id": 274398,
-        "name": "CD проигрыватель CANOR AUDIO CD 1.10"
+        "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c CANOR AUDIO CD 1.10"
       }
     ]
   },
@@ -55,45 +56,45 @@
   "topHitlPadded": [
     {
       "id": 15982,
-      "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )"
+      "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Musica pow 1000 ( musica pow 1000 )"
     },
     {
       "id": 15720,
-      "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )"
+      "name": "CD \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442 47 Labs 4716 ( cd 47 labs 4716 )"
     },
     {
       "id": 15742,
-      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )"
+      "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )"
     },
     {
       "id": 262549,
-      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )"
+      "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Audio Physic Sitara ( audio physic sitara )"
     },
     {
       "id": 15738,
-      "name": "CD проигрыватель Triode TRV CD5SE ( cd triode trv cd5se )"
+      "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Triode TRV CD5SE ( cd triode trv cd5se )"
     }
   ],
   "topHitlOneshot": [
     {
       "id": 26602,
-      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )"
+      "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Arte forma 805PP ( arte forma 805pp )"
     },
     {
       "id": 15610,
-      "name": "напольная акустика Audio Physic Virgo 25 ( audio physic virgo 25 )"
+      "name": "\u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Audio Physic Virgo 25 ( audio physic virgo 25 )"
     },
     {
       "id": 264506,
-      "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )"
+      "name": "\u0422\u043e\u043d\u0430\u0440\u043c SAEC  WE-4700 ( saec we 4700 )"
     },
     {
       "id": 16222,
-      "name": "напольная акустика Audio Physic Virgo V ( audio physic virgo v )"
+      "name": "\u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Audio Physic Virgo V ( audio physic virgo v )"
     },
     {
       "id": 4232,
-      "name": "усилитель мощности Arte Forma Due Volte ( arte forma due volte )"
+      "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Arte Forma Due Volte ( arte forma due volte )"
     }
   ],
   "wave20": {
@@ -101,71 +102,71 @@
     "cleared": [
       {
         "id": 274019,
-        "name": "Сетевой проигрыватель T+A SD 3100 HV"
+        "name": "\u0421\u0435\u0442\u0435\u0432\u043e\u0439 \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c T+A SD 3100 HV"
       },
       {
         "id": 16832,
-        "name": "усилитель мощности Triode TRV P845SE ( triode trv p845se )"
+        "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Triode TRV P845SE ( triode trv p845se )"
       },
       {
         "id": 261114,
-        "name": "предусилитель и усилитель мощности audio research sp20 + vs1"
+        "name": "\u043f\u0440\u0435\u0434\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u0438 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 audio research sp20 + vs1"
       },
       {
         "id": 262129,
-        "name": "ЦАП Soulnote D 2 ( soulnote d 2 )"
+        "name": "\u0426\u0410\u041f Soulnote D 2 ( soulnote d 2 )"
       },
       {
         "id": 25156,
-        "name": "усилитель мощности Anthem Statement P 2 BL ( anthem statemen"
+        "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Anthem Statement P 2 BL ( anthem statemen"
       },
       {
         "id": 271070,
-        "name": "Напольная акустика Monitor Audio Gold 500 6G"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Monitor Audio Gold 500 6G"
       },
       {
         "id": 271065,
-        "name": "Напольная акустика Monitor Audio Gold 300 5G"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Monitor Audio Gold 300 5G"
       },
       {
         "id": 4318,
-        "name": "напольная акустика Lawrence Audio Violin SE ( lawrence audio"
+        "name": "\u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Lawrence Audio Violin SE ( lawrence audio"
       },
       {
         "id": 16798,
-        "name": "интегральный усилитель Spec RSA M1EX ( spec rsa m1ex )"
+        "name": "\u0438\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Spec RSA M1EX ( spec rsa m1ex )"
       },
       {
         "id": 271034,
-        "name": "Напольная акустика Monitor Audio Gold 300 6G"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Monitor Audio Gold 300 6G"
       },
       {
         "id": 25160,
-        "name": "усилитель мощности Anthem Statement M 1 BL ( anthem statemen"
+        "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Anthem Statement M 1 BL ( anthem statemen"
       },
       {
         "id": 271060,
-        "name": "Напольная акустика Monitor Audio Gold 200 5G"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Monitor Audio Gold 200 5G"
       },
       {
         "id": 261878,
-        "name": "Напольная акустика PARADIGM Founder 80F Gloss Black ( paradi"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 PARADIGM Founder 80F Gloss Black ( paradi"
       },
       {
         "id": 261882,
-        "name": "Напольная акустика PARADIGM Founder 80F Walnut ( paradigm fo"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 PARADIGM Founder 80F Walnut ( paradigm fo"
       },
       {
         "id": 261883,
-        "name": "Напольная акустика PARADIGM Founder 80F Midnight Cherry ( pa"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 PARADIGM Founder 80F Midnight Cherry ( pa"
       },
       {
         "id": 261884,
-        "name": "Напольная акустика PARADIGM Founder 80F Black Walnut ( parad"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 PARADIGM Founder 80F Black Walnut ( parad"
       },
       {
         "id": 34458,
-        "name": "интегральный усилитель Anthem STR Integrated Amplifier ( ant"
+        "name": "\u0438\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Anthem STR Integrated Amplifier ( ant"
       }
     ]
   },
@@ -174,59 +175,59 @@
     "cleared": [
       {
         "id": 34699,
-        "name": "напольная акустика Aydio Physic Scorpio 25 ( aydio physic sc"
+        "name": "\u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Aydio Physic Scorpio 25 ( aydio physic sc"
       },
       {
         "id": 272560,
-        "name": "Виниловый проигрыватель Clearaudio Emotion SE Package II"
+        "name": "\u0412\u0438\u043d\u0438\u043b\u043e\u0432\u044b\u0439 \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Clearaudio Emotion SE Package II"
       },
       {
         "id": 274575,
-        "name": "Напольная акустика Acoustic Energy AE 520"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Acoustic Energy AE 520"
       },
       {
         "id": 270778,
-        "name": "Многоканальный усилитель мощности Arcam PA720"
+        "name": "\u041c\u043d\u043e\u0433\u043e\u043a\u0430\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Arcam PA720"
       },
       {
         "id": 272558,
-        "name": "Виниловый проигрыватель Clearaudio Emotion SE Package I"
+        "name": "\u0412\u0438\u043d\u0438\u043b\u043e\u0432\u044b\u0439 \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Clearaudio Emotion SE Package I"
       },
       {
         "id": 261835,
-        "name": "Усилитель мощности Anthem MCA 525 Gen 2 ( anthem mca 525 gen"
+        "name": "\u0423\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Anthem MCA 525 Gen 2 ( anthem mca 525 gen"
       },
       {
         "id": 267642,
-        "name": "Интегральный усилитель Advance Paris X-i1100"
+        "name": "\u0418\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Advance Paris X-i1100"
       },
       {
         "id": 261873,
-        "name": "Центральный канал PARADIGM Founder 90C Gloss Black ( paradig"
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b PARADIGM Founder 90C Gloss Black ( paradig"
       },
       {
         "id": 261875,
-        "name": "Центральный канал PARADIGM Founder 90C Walnut ( paradigm fou"
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b PARADIGM Founder 90C Walnut ( paradigm fou"
       },
       {
         "id": 261876,
-        "name": "Центральный канал PARADIGM Founder 90C Midnight Cherry ( par"
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b PARADIGM Founder 90C Midnight Cherry ( par"
       },
       {
         "id": 261877,
-        "name": "Центральный канал PARADIGM Founder 90C Black Walnut ( paradi"
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b PARADIGM Founder 90C Black Walnut ( paradi"
       },
       {
         "id": 270652,
-        "name": "Напольная акустика Wharfedale Aura 4"
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Wharfedale Aura 4"
       },
       {
         "id": 15918,
-        "name": "интегральный усилитель Leben CS 300X S ( leben cs 300x s )"
+        "name": "\u0438\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Leben CS 300X S ( leben cs 300x s )"
       },
       {
         "id": 40975,
-        "name": "Усилитель мощности Audio Research VS115 ( audio research vs1"
+        "name": "\u0423\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Audio Research VS115 ( audio research vs1"
       }
     ]
   },
@@ -241,23 +242,23 @@
   "top_hitl_padded": [
     {
       "id": 15982,
-      "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )"
+      "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Musica pow 1000 ( musica pow 1000 )"
     },
     {
       "id": 15720,
-      "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )"
+      "name": "CD \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442 47 Labs 4716 ( cd 47 labs 4716 )"
     },
     {
       "id": 15742,
-      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )"
+      "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )"
     },
     {
       "id": 262549,
-      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )"
+      "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Audio Physic Sitara ( audio physic sitara )"
     },
     {
       "id": 15738,
-      "name": "CD проигрыватель Triode TRV CD5SE ( cd triode trv cd5se )"
+      "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Triode TRV CD5SE ( cd triode trv cd5se )"
     }
   ],
   "wave53": {
@@ -390,22 +391,22 @@
     "cleared": [
       {
         "id": 270557,
-        "name": "Кабель межблочный аналоговый RCA Van den Hul D-102 III Hybri",
+        "name": "\u041a\u0430\u0431\u0435\u043b\u044c \u043c\u0435\u0436\u0431\u043b\u043e\u0447\u043d\u044b\u0439 \u0430\u043d\u0430\u043b\u043e\u0433\u043e\u0432\u044b\u0439 RCA Van den Hul D-102 III Hybri",
         "unique": 4
       },
       {
         "id": 264169,
-        "name": "Коннектор сетевой Furutech FI-28(G) ( furutech fi 28(g) )",
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 \u0441\u0435\u0442\u0435\u0432\u043e\u0439 Furutech FI-28(G) ( furutech fi 28(g) )",
         "unique": 4
       },
       {
         "id": 264289,
-        "name": "Коннектор Furutech FP-126(R) ( furutech fp 126(r) )",
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-126(R) ( furutech fp 126(r) )",
         "unique": 4
       },
       {
         "id": 264290,
-        "name": "Коннектор Furutech FP-126(R) ( furutech fp 126(r) )",
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-126(R) ( furutech fp 126(r) )",
         "unique": 4
       }
     ]
@@ -429,37 +430,37 @@
     "cleared": [
       {
         "id": 264291,
-        "name": "Коннектор Furutech FP-126(G) ( furutech fp 126(g) )",
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-126(G) ( furutech fp 126(g) )",
         "unique": 4
       },
       {
         "id": 264292,
-        "name": "Коннектор Furutech FP-126(G) ( furutech fp 126(g) )",
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-126(G) ( furutech fp 126(g) )",
         "unique": 4
       },
       {
         "id": 264318,
-        "name": "Спайд Furutech FP-201(R) ( furutech fp 201(r) )",
+        "name": "\u0421\u043f\u0430\u0439\u0434 Furutech FP-201(R) ( furutech fp 201(r) )",
         "unique": 4
       },
       {
         "id": 264317,
-        "name": "Спайд Furutech FP-201(G) ( furutech fp 201(g) )",
+        "name": "\u0421\u043f\u0430\u0439\u0434 Furutech FP-201(G) ( furutech fp 201(g) )",
         "unique": 4
       },
       {
         "id": 264301,
-        "name": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
         "unique": 4
       },
       {
         "id": 264302,
-        "name": "Коннектор Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
         "unique": 4
       },
       {
         "id": 264322,
-        "name": "Коннектор Furutech FP-200B(R) ( furutech fp 200b(r) )",
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-200B(R) ( furutech fp 200b(r) )",
         "unique": 4
       }
     ]
@@ -469,17 +470,17 @@
     "cleared": [
       {
         "id": 270553,
-        "name": "Кабель межблочный аналоговый RCA Van den Hul Bay C5 Hybrid",
+        "name": "\u041a\u0430\u0431\u0435\u043b\u044c \u043c\u0435\u0436\u0431\u043b\u043e\u0447\u043d\u044b\u0439 \u0430\u043d\u0430\u043b\u043e\u0433\u043e\u0432\u044b\u0439 RCA Van den Hul Bay C5 Hybrid",
         "unique": 4
       },
       {
         "id": 264200,
-        "name": "Сетевой коннектор Furutech FI-8N (G) ( furutech fi 8n (g) )",
+        "name": "\u0421\u0435\u0442\u0435\u0432\u043e\u0439 \u043a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FI-8N (G) ( furutech fi 8n (g) )",
         "unique": 4
       },
       {
         "id": 264425,
-        "name": "Сетевой кабель Furutech Alpha 3 ( furutech alpha 3 )",
+        "name": "\u0421\u0435\u0442\u0435\u0432\u043e\u0439 \u043a\u0430\u0431\u0435\u043b\u044c Furutech Alpha 3 ( furutech alpha 3 )",
         "unique": 4
       }
     ]
@@ -489,12 +490,12 @@
     "cleared": [
       {
         "id": 270491,
-        "name": "Кабель miniJack-2RCA Van den Hul The Flexicon",
+        "name": "\u041a\u0430\u0431\u0435\u043b\u044c miniJack-2RCA Van den Hul The Flexicon",
         "unique": 4
       },
       {
         "id": 264210,
-        "name": "Сетевая вилка Furutech FI-E11 N1 (G) ( furutech fi e11 n1 (g) )",
+        "name": "\u0421\u0435\u0442\u0435\u0432\u0430\u044f \u0432\u0438\u043b\u043a\u0430 Furutech FI-E11 N1 (G) ( furutech fi e11 n1 (g) )",
         "unique": 4
       }
     ]
@@ -525,5 +526,6 @@
       16786
     ],
     "at": "2026-11-15T21:18:00Z"
-  }
+  },
+  "generatedAt": "2026-11-15T21:34:59Z"
 }

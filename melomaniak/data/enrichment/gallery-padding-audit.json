@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T21:18:05Z",
+  "generatedAt": "2026-11-15T21:34:59Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1351,
+    "true_multi_angle": 1355,
     "padded": 164,
-    "single_real": 372
+    "single_real": 368
   },
   "pct": {
-    "true_multi_angle": 71.6,
+    "true_multi_angle": 71.81,
     "padded": 8.69,
-    "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 26.85,
-    "not_true_multi": 28.4
+    "single_real": 19.5,
+    "padded_of_claimed_gal4plus": 26.64,
+    "not_true_multi": 28.19
   },
   "padReasonTallies": {
-    "local-variant": 696,
-    "wN-variant-name": 493,
-    "cdn-size-thumb": 106,
+    "local-variant": 693,
+    "wN-variant-name": 487,
+    "cdn-size-thumb": 104,
     "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 496,
+  "claimedButNotTrueMulti": 492,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -90,49 +90,6 @@
       "class": "padded"
     },
     {
-      "id": 15738,
-      "name": "CD проигрыватель Triode TRV CD5SE ( cd triode trv cd5se )",
-      "cat": "Источники",
-      "price": 310000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 15924,
-      "name": "предусилитель Leben RS 28CX ( leben rs 28cx )",
-      "cat": "Усилители",
-      "price": 310000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 16812,
-      "name": "усилитель мощности Triode TRV 35SE ( triode trv 35se )",
-      "cat": "Усилители",
-      "price": 300000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "single_real"
-    },
-    {
       "id": 15978,
       "name": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
       "cat": "Усилители",
@@ -164,20 +121,6 @@
       "name": "Интегральный усилитель Musica Raicho ( musica raicho )",
       "cat": "Усилители",
       "price": 290000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 16158,
-      "name": "интегральный усилитель 47 Labs 4717 Shigaraki ( 47 labs 4717 shigaraki )",
-      "cat": "Усилители",
-      "price": 280000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -575,6 +518,58 @@
       "padSlots": 0,
       "padReasons": {},
       "class": "padded"
+    },
+    {
+      "id": 274427,
+      "name": "Напольная акустика Piega TMicro 6",
+      "cat": "Акустика",
+      "price": 150000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "padReasons": {
+        "local-variant": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 269486,
+      "name": "Полочная акустика Magnat Signature 903",
+      "cat": "Акустика",
+      "price": 149990,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 41455,
+      "name": "Центральный канал Paradigm Premier 600C Gloss Black ( paradigm premier 600c gloss black )",
+      "cat": "Другое",
+      "price": 143225,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 41457,
+      "name": "Центральный канал Paradigm Premier 600C Espresso Grain ( paradigm premier 600c espresso grain )",
+      "cat": "Другое",
+      "price": 143225,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "single_real"
     }
   ],
   "hitlTrueOneshot": [
@@ -989,36 +984,6 @@
       "galleryHitl": true
     },
     {
-      "id": 15738,
-      "name": "CD проигрыватель Triode TRV CD5SE ( cd triode trv cd5se )",
-      "cat": "Источники",
-      "price": 310000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 15924,
-      "name": "предусилитель Leben RS 28CX ( leben rs 28cx )",
-      "cat": "Усилители",
-      "price": 310000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 16812,
-      "name": "усилитель мощности Triode TRV 35SE ( triode trv 35se )",
-      "cat": "Усилители",
-      "price": 300000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
       "id": 15978,
       "name": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
       "cat": "Усилители",
@@ -1043,16 +1008,6 @@
       "name": "Интегральный усилитель Musica Raicho ( musica raicho )",
       "cat": "Усилители",
       "price": 290000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 16158,
-      "name": "интегральный усилитель 47 Labs 4717 Shigaraki ( 47 labs 4717 shigaraki )",
-      "cat": "Усилители",
-      "price": 280000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1377,9 +1332,49 @@
       "uniqueDistinct": 1,
       "padSlots": 2,
       "galleryHitl": true
+    },
+    {
+      "id": 262069,
+      "name": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
+      "cat": "Другое",
+      "price": 125000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 26668,
+      "name": "усилитель мощности Trigon Dwarf II ( trigon dwarf ii )",
+      "cat": "Усилители",
+      "price": 125000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 265481,
+      "name": "Центральный канал AUDIO PHYSIC Celsius 25 ( audio physic celsius 25 )",
+      "cat": "Другое",
+      "price": 124999,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264503,
+      "name": "Коннектор Furutech FP-308 (R ) ( furutech fp 308 (r ) )",
+      "cat": "Другое",
+      "price": 121509,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 372,
+  "hitlTrueOneshotCount": 368,
   "items": [
     {
       "id": 262053,
@@ -9176,18 +9171,14 @@
       "slug": "tsap_triode_trv_cd5se",
       "cat": "Источники",
       "price": 310000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15842,
@@ -9210,18 +9201,14 @@
       "slug": "predysilitel_Leben_RS_28CX",
       "cat": "Усилители",
       "price": 310000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271261,
@@ -9304,16 +9291,14 @@
       "slug": "ysilitel_moshnosti_Triode_TRV_35SE",
       "cat": "Усилители",
       "price": 300000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 16820,
@@ -9890,17 +9875,14 @@
       "slug": "Integralnii_ysilitel_47_Labs_4717_Shigaraki",
       "cat": "Усилители",
       "price": 280000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 16182,
