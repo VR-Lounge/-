@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:41:12Z",
+  "generatedAt": "2026-11-15T17:54:04Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1311,
-    "padded": 204,
+    "true_multi_angle": 1314,
+    "padded": 201,
     "single_real": 372
   },
   "pct": {
-    "true_multi_angle": 69.48,
-    "padded": 10.81,
+    "true_multi_angle": 69.63,
+    "padded": 10.65,
     "single_real": 19.71,
-    "padded_of_claimed_gal4plus": 29.02,
-    "not_true_multi": 30.52
+    "padded_of_claimed_gal4plus": 28.86,
+    "not_true_multi": 30.37
   },
   "padReasonTallies": {
-    "local-variant": 710,
+    "local-variant": 708,
     "wN-variant-name": 537,
-    "cdn-size-thumb": 113,
-    "cdn-rotated": 5
+    "cdn-size-thumb": 111,
+    "cdn-rotated": 4
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 536,
+  "claimedButNotTrueMulti": 533,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -400,19 +400,6 @@
       "class": "single_real"
     },
     {
-      "id": 264396,
-      "name": "Фоно кабель Furutech Silver Arrows II-R4 ( furutech silver arrows ii r4 )",
-      "cat": "Кабели",
-      "price": 195458,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "class": "padded"
-    },
-    {
       "id": 264397,
       "name": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
       "cat": "Кабели",
@@ -437,19 +424,6 @@
         "local-variant": 3
       },
       "class": "single_real"
-    },
-    {
-      "id": 264395,
-      "name": "Фоно кабель Furutech Silver Arrows II-L ( furutech silver arrows ii l )",
-      "cat": "Кабели",
-      "price": 190995,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "class": "padded"
     },
     {
       "id": 15718,
@@ -570,6 +544,33 @@
       "padSlots": 0,
       "padReasons": {},
       "class": "padded"
+    },
+    {
+      "id": 15822,
+      "name": "фонокорректор 47 Labs 4718 ( 47 labs 4718 )",
+      "cat": "Усилители",
+      "price": 180000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264398,
+      "name": "Фоно кабель Furutech Silver Arrows-12 ( furutech silver arrows 12 )",
+      "cat": "Кабели",
+      "price": 174038,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "single_real"
     }
   ],
   "hitlTrueOneshot": [
@@ -12231,16 +12232,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-r4",
       "cat": "Кабели",
       "price": 195458,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264397,
@@ -12432,16 +12431,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-silver-arrows-ii-l",
       "cat": "Кабели",
       "price": 190995,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272614,
@@ -16933,17 +16930,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ag-16-r4",
       "cat": "Кабели",
       "price": 104757,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 3,
-      "padReasons": {
-        "cdn-rotated": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264401,

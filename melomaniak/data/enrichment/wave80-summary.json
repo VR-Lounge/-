@@ -1,0 +1,58 @@
+{
+  "wave": 80,
+  "at": "2026-11-15T17:54:15Z",
+  "counts": {
+    "true_multi_angle": 1314,
+    "padded": 201,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 3,
+  "cleared": [
+    {
+      "id": 264396,
+      "name": "Фоно кабель Furutech Silver Arrows II-R4 ( furutech silver arrows ii r4 )",
+      "unique": 4,
+      "price": 195458,
+      "notes": "Silver Arrows II-R4 RCA→RCA: OEM+AI+Douglas+Audiohum 23968; reject DIN/L/XLR"
+    },
+    {
+      "id": 264400,
+      "name": "Фоно кабель Furutech AG-16-R4 ( furutech ag 16 r4 )",
+      "unique": 4,
+      "price": 104757,
+      "notes": "AG-16-R4 RCA→RCA purple (no Neo Damper): OEM+VH+NL+Audiohum 23964; reject SA/L/DIN"
+    },
+    {
+      "id": 264395,
+      "name": "Фоно кабель Furutech Silver Arrows II-L ( furutech silver arrows ii l )",
+      "unique": 5,
+      "price": 190995,
+      "notes": "Silver Arrows II-L angled DIN→RCA: OEM+Douglas+ExTools+StyleSound×2; reject straight-DIN live"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "no new sources"
+    },
+    {
+      "id": 264126,
+      "name": "Furutech MTP-2",
+      "class": "single_real",
+      "note": "no new sources"
+    }
+  ],
+  "remaining": {
+    "padded": 201,
+    "single_real": 372
+  },
+  "near_miss": [
+    {
+      "id": 264397,
+      "name": "Silver Arrows II-XLR",
+      "note": "uq=3 OEM+NL+AH; Maplatine gallery mostly DIN-RCA/watermarks"
+    }
+  ]
+}
