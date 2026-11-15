@@ -101,30 +101,44 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_r6_meta_191931845-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_r6_meta_191931845-1.jpg",
-      "alt": "kef_r6_meta_191931845-1.jpg",
-      "local": "assets/from-live/products/379064668b_kef_r6_meta_191931845-1.jpg"
+      "src": "assets/enriched/271560/379064668b_w26.jpg",
+      "local": "assets/enriched/271560/379064668b_w26.jpg",
+      "alt": "Центральный громкоговоритель KEF R6 Meta"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_r6_meta_191933041-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_r6_meta_191933041-2.jpg",
-      "alt": "kef_r6_meta_191933041-2.jpg",
-      "local": "assets/from-live/products/f2bfbce23c_kef_r6_meta_191933041-2.jpg"
+      "src": "assets/enriched/271560/f2bfbce23c_w26.jpg",
+      "local": "assets/enriched/271560/f2bfbce23c_w26.jpg",
+      "alt": "Центральный громкоговоритель KEF R6 Meta"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_r6_meta_191934131-3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/kef_r6_meta_191934131-3.jpg",
-      "alt": "kef_r6_meta_191934131-3.jpg",
-      "local": "assets/from-live/products/166d4633d4_kef_r6_meta_191934131-3.jpg"
+      "src": "assets/enriched/271560/166d4633d4_w26.jpg",
+      "local": "assets/enriched/271560/166d4633d4_w26.jpg",
+      "alt": "Центральный громкоговоритель KEF R6 Meta"
     },
     {
-      "src": "local-variant://271560/w17sc95",
-      "local": "assets/enriched/271560/97914eadb2_w17sc95.jpg",
-      "bytes": 65675,
-      "wave": "meager-w17-2026-11",
-      "w": 855,
-      "h": 855
+      "src": "assets/enriched/271560/de847d1ed0_w26.png",
+      "local": "assets/enriched/271560/de847d1ed0_w26.png",
+      "alt": "Центральный громкоговоритель KEF R6 Meta"
+    },
+    {
+      "src": "assets/enriched/271560/a43b2f9feb_w26.png",
+      "local": "assets/enriched/271560/a43b2f9feb_w26.png",
+      "alt": "Центральный громкоговоритель KEF R6 Meta"
+    },
+    {
+      "src": "assets/enriched/271560/60efb7cc81_w26.png",
+      "local": "assets/enriched/271560/60efb7cc81_w26.png",
+      "alt": "Центральный громкоговоритель KEF R6 Meta"
+    },
+    {
+      "src": "assets/enriched/271560/162baece93_w26.png",
+      "local": "assets/enriched/271560/162baece93_w26.png",
+      "alt": "Центральный громкоговоритель KEF R6 Meta"
+    },
+    {
+      "src": "assets/enriched/271560/f537035298_w26.png",
+      "local": "assets/enriched/271560/f537035298_w26.png",
+      "alt": "Центральный громкоговоритель KEF R6 Meta"
     }
   ],
   "sku": "",
@@ -136,5 +150,8 @@
   "enrichedAt": "2026-11-14T13:36:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryUpdatedAt": "2026-11-15T02:43:51Z",
+  "imagesUpdatedAt": "2026-11-15T02:43:51Z",
+  "image": "assets/enriched/271560/379064668b_w26.jpg"
 }

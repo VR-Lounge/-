@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T02:38:18Z",
+  "generatedAt": "2026-11-15T02:48:14Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,39 +15,26 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1134,
-    "padded": 377,
+    "true_multi_angle": 1138,
+    "padded": 373,
     "single_real": 376
   },
   "pct": {
-    "true_multi_angle": 60.1,
-    "padded": 19.98,
+    "true_multi_angle": 60.31,
+    "padded": 19.77,
     "single_real": 19.93,
-    "padded_of_claimed_gal4plus": 38.6,
-    "not_true_multi": 39.9
+    "padded_of_claimed_gal4plus": 38.35,
+    "not_true_multi": 39.69
   },
   "padReasonTallies": {
-    "local-variant": 755,
-    "wN-variant-name": 668,
+    "local-variant": 754,
+    "wN-variant-name": 665,
     "cdn-size-thumb": 124,
     "cdn-rotated": 6
   },
-  "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 713,
+  "claimedGal4Plus": 1846,
+  "claimedButNotTrueMulti": 708,
   "topPaddedByPrice": [
-    {
-      "id": 264126,
-      "name": "Сетевой фильтр Audio Replas MTP-2 RU mk2 ( audio replas mtp 2 ru mk2 )",
-      "cat": "Другое",
-      "price": 348500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "class": "single_real"
-    },
     {
       "id": 15982,
       "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )",
@@ -425,17 +412,6 @@
       "class": "padded"
     },
     {
-      "id": 271976,
-      "name": "Сетевой фильтр Isol-8 MiniSub Wave",
-      "cat": "Другое",
-      "price": 250200,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
-    },
-    {
       "id": 16852,
       "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audio mc 300 ase )",
       "cat": "Усилители",
@@ -446,41 +422,6 @@
       "padReasons": {
         "wN-variant-name": 3
       },
-      "class": "padded"
-    },
-    {
-      "id": 271049,
-      "name": "Напольная акустика Monitor Audio Silver 300 7G",
-      "cat": "Акустика",
-      "price": 249990,
-      "galleryLen": 6,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
-    },
-    {
-      "id": 271560,
-      "name": "Центральный громкоговоритель KEF R6 Meta",
-      "cat": "Другое",
-      "price": 249990,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "class": "padded"
-    },
-    {
-      "id": 270083,
-      "name": "Напольная акустика DALI Opticon 6 MK2",
-      "cat": "Акустика",
-      "price": 248390,
-      "galleryLen": 6,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
       "class": "padded"
     },
     {
@@ -548,6 +489,70 @@
       "padSlots": 3,
       "padReasons": {
         "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 270074,
+      "name": "Напольная акустика DALI Oberon 9",
+      "cat": "Акустика",
+      "price": 234350,
+      "galleryLen": 8,
+      "uniqueDistinct": 3,
+      "padSlots": 0,
+      "padReasons": {},
+      "class": "padded"
+    },
+    {
+      "id": 274105,
+      "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
+      "cat": "Другое",
+      "price": 234000,
+      "galleryLen": 5,
+      "uniqueDistinct": 3,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 265383,
+      "name": "блок питания 47 Labs 4799 ( 47 labs 4799 )",
+      "cat": "Другое",
+      "price": 225000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 265980,
+      "name": "Сетевой кабель Furutech Powerflux Alpha PS950-18E ( furutech powerflux alpha ps950 18e )",
+      "cat": "Кабели",
+      "price": 223125,
+      "galleryLen": 4,
+      "uniqueDistinct": 2,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "padded"
+    },
+    {
+      "id": 16784,
+      "name": "предусилитель Soulnote sa1.0 ( soulnote sa1 0 )",
+      "cat": "Усилители",
+      "price": 220000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "local-variant": 2
       },
       "class": "single_real"
     }
@@ -948,9 +953,9 @@
       "name": "Сетевой фильтр Audio Replas MTP-2 RU mk2 ( audio replas mtp 2 ru mk2 )",
       "cat": "Другое",
       "price": 348500,
-      "galleryLen": 4,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
-      "padSlots": 3,
+      "padSlots": 0,
       "galleryHitl": true
     },
     {
@@ -8577,14 +8582,12 @@
       "cat": "Другое",
       "price": 348500,
       "galleryHitl": true,
-      "galleryLen": 4,
+      "galleryLen": 1,
       "uniqueDistinct": 1,
       "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
       "class": "single_real"
     },
     {
@@ -10633,14 +10636,14 @@
       "slug": "6d54b209d08f8d47a5618f2203f9a9bc",
       "cat": "Другое",
       "price": 250200,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270043,
@@ -10740,14 +10743,14 @@
       "slug": "c0ca491e3b103b46a7ef8f2b4fa1b7d6",
       "cat": "Акустика",
       "price": 249990,
-      "galleryHitl": true,
-      "galleryLen": 6,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271560,
@@ -10755,16 +10758,14 @@
       "slug": "877e8462a1715ad7fe56779801931148",
       "cat": "Другое",
       "price": 249990,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273706,
@@ -10878,13 +10879,13 @@
       "cat": "Акустика",
       "price": 248390,
       "galleryHitl": false,
-      "galleryLen": 6,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15972,

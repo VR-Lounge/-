@@ -40,30 +40,6 @@
       "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66453_1-600x600.jpg",
       "alt": "1000&#215;1000-66453_1",
       "local": "assets/from-live/products/a9fabe9996_1000x1000-66453_1.jpg"
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66453_1-300x300.jpg",
-      "local": "assets/enriched/264126/1a13b25794_w13var.jpg",
-      "bytes": 18363,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66453_1-600x600.jpg",
-      "local": "assets/enriched/264126/67760e5c79_w13var.jpg",
-      "bytes": 63501,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66453_1-768x768.jpg",
-      "local": "assets/enriched/264126/54aa05920c_w13var.jpg",
-      "bytes": 94499,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
     }
   ],
   "sku": "",
@@ -78,5 +54,6 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": true,
+  "galleryUpdatedAt": "2026-11-15T02:44:54Z"
 }
