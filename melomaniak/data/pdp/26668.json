@@ -41,34 +41,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Trigon_Dwarf_II.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Trigon_Dwarf_II-600x600.jpg",
-      "alt": "Trigon Dwarf II",
-      "local": "assets/from-live/products/481099b231_ysilitel_moshnosti_Trigon_Dwarf_II.jpg"
+      "src": "local://26668_w123_00.jpg",
+      "thumb": "assets/enriched/26668/26668_w123_00.jpg",
+      "alt": "усилитель мощности Trigon Dwarf II ( trigon dwarf ii )",
+      "local": "assets/enriched/26668/26668_w123_00.jpg",
+      "enriched": true,
+      "attribution": "wave123-oem",
+      "bytes": 1469599
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Trigon_Dwarf_II-600x600.jpg",
-      "local": "assets/enriched/26668/3d3029acab_w13var.jpg",
-      "bytes": 13051,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://26668_w123_01.jpg",
+      "thumb": "assets/enriched/26668/26668_w123_01.jpg",
+      "alt": "усилитель мощности Trigon Dwarf II ( trigon dwarf ii )",
+      "local": "assets/enriched/26668/26668_w123_01.jpg",
+      "enriched": true,
+      "attribution": "wave123-oem",
+      "bytes": 230920
     },
     {
-      "src": "local-variant://26668/w17sc95",
-      "local": "assets/enriched/26668/82a57520a4_w17sc95.jpg",
-      "bytes": 15736,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://26668_w123_02.jpg",
+      "thumb": "assets/enriched/26668/26668_w123_02.jpg",
+      "alt": "усилитель мощности Trigon Dwarf II ( trigon dwarf ii )",
+      "local": "assets/enriched/26668/26668_w123_02.jpg",
+      "enriched": true,
+      "attribution": "wave123-oem",
+      "bytes": 15667
     },
     {
-      "src": "local-variant://26668/w17sc90",
-      "local": "assets/enriched/26668/c81f86659e_w17sc90.jpg",
-      "bytes": 14318,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
+      "src": "local://26668_w123_03.jpg",
+      "thumb": "assets/enriched/26668/26668_w123_03.jpg",
+      "alt": "усилитель мощности Trigon Dwarf II ( trigon dwarf ii )",
+      "local": "assets/enriched/26668/26668_w123_03.jpg",
+      "enriched": true,
+      "attribution": "wave123-oem",
+      "bytes": 361459
+    },
+    {
+      "src": "local://26668_w123_04.jpg",
+      "thumb": "assets/enriched/26668/26668_w123_04.jpg",
+      "alt": "усилитель мощности Trigon Dwarf II ( trigon dwarf ii )",
+      "local": "assets/enriched/26668/26668_w123_04.jpg",
+      "enriched": true,
+      "attribution": "wave123-oem",
+      "bytes": 285423
     }
   ],
   "sku": "",
@@ -81,5 +96,9 @@
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T15:53:20Z",
+  "galleryWave123": true
 }

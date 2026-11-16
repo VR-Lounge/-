@@ -26,32 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/de69c47fc2a96d3e778b1843ce7fd0cb.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/de69c47fc2a96d3e778b1843ce7fd0cb-600x600.jpg",
-      "alt": "de69c47fc2a96d3e778b1843ce7fd0cb",
-      "local": "assets/from-live/products/367646a83b_de69c47fc2a96d3e778b1843ce7fd0cb.jpg"
+      "src": "local://41455_w123_00.jpg",
+      "thumb": "assets/enriched/41455/41455_w123_00.jpg",
+      "alt": "Центральный канал Paradigm Premier 600C Gloss Black ( paradigm premier 600c gloss black )",
+      "local": "assets/enriched/41455/41455_w123_00.jpg",
+      "enriched": true,
+      "attribution": "wave123-oem",
+      "bytes": 114463
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/f251ac8ce7360b9bd0998c36a497c8e2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/f251ac8ce7360b9bd0998c36a497c8e2-600x600.jpg",
-      "alt": "f251ac8ce7360b9bd0998c36a497c8e2",
-      "local": "assets/from-live/products/29e640b95f_f251ac8ce7360b9bd0998c36a497c8e2.jpg"
+      "src": "local://41455_w123_01.jpg",
+      "thumb": "assets/enriched/41455/41455_w123_01.jpg",
+      "alt": "Центральный канал Paradigm Premier 600C Gloss Black ( paradigm premier 600c gloss black )",
+      "local": "assets/enriched/41455/41455_w123_01.jpg",
+      "enriched": true,
+      "attribution": "wave123-oem",
+      "bytes": 93549
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/de69c47fc2a96d3e778b1843ce7fd0cb-600x600.jpg",
-      "local": "assets/enriched/41455/f6f4b55778_w13var.jpg",
-      "bytes": 20970,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://41455_w123_02.jpg",
+      "thumb": "assets/enriched/41455/41455_w123_02.jpg",
+      "alt": "Центральный канал Paradigm Premier 600C Gloss Black ( paradigm premier 600c gloss black )",
+      "local": "assets/enriched/41455/41455_w123_02.jpg",
+      "enriched": true,
+      "attribution": "wave123-oem",
+      "bytes": 41165
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/f251ac8ce7360b9bd0998c36a497c8e2-600x600.jpg",
-      "local": "assets/enriched/41455/801db87da9_w13var.jpg",
-      "bytes": 13955,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://41455_w123_03.jpg",
+      "thumb": "assets/enriched/41455/41455_w123_03.jpg",
+      "alt": "Центральный канал Paradigm Premier 600C Gloss Black ( paradigm premier 600c gloss black )",
+      "local": "assets/enriched/41455/41455_w123_03.jpg",
+      "enriched": true,
+      "attribution": "wave123-oem",
+      "bytes": 102960
     }
   ],
   "sku": "",
@@ -63,5 +71,9 @@
   "enrichedAt": "2026-11-14T13:19:52Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T15:53:20Z",
+  "galleryWave123": true
 }
