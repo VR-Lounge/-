@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:07:52Z",
+  "generatedAt": "2026-11-16T13:30:03Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1528,
+    "true_multi_angle": 1531,
     "padded": 11,
-    "single_real": 348
+    "single_real": 345
   },
   "pct": {
-    "true_multi_angle": 80.98,
+    "true_multi_angle": 81.13,
     "padded": 0.58,
-    "single_real": 18.44,
-    "padded_of_claimed_gal4plus": 17.89,
-    "not_true_multi": 19.02
+    "single_real": 18.28,
+    "padded_of_claimed_gal4plus": 17.73,
+    "not_true_multi": 18.87
   },
   "padReasonTallies": {
-    "local-variant": 625,
-    "wN-variant-name": 308,
+    "local-variant": 619,
+    "wN-variant-name": 306,
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1861,
-  "claimedButNotTrueMulti": 333,
+  "claimedButNotTrueMulti": 330,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -496,19 +496,6 @@
       "class": "single_real"
     },
     {
-      "id": 40574,
-      "name": "Полочная акустика Acoustic Energy AE1 Active ( acoustic energy ae1 active )",
-      "cat": "Акустика",
-      "price": 125600,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "single_real"
-    },
-    {
       "id": 262069,
       "name": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
       "cat": "Другое",
@@ -564,15 +551,29 @@
       "class": "single_real"
     },
     {
-      "id": 270349,
-      "name": "Стереоусилитель Quad Vena II Play",
-      "cat": "Усилители",
-      "price": 115290,
+      "id": 264072,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-HR/4P ( audio replas opt 100hg flat hr 4p )",
+      "cat": "Другое",
+      "price": 114750,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
       "padReasons": {
-        "local-variant": 3
+        "wN-variant-name": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 16216,
+      "name": "центральный канал Audio Physic Center II Special edition ( audio physic center ii special edition )",
+      "cat": "Другое",
+      "price": 112500,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
       },
       "class": "single_real"
     }
@@ -1149,16 +1150,6 @@
       "galleryHitl": true
     },
     {
-      "id": 40574,
-      "name": "Полочная акустика Acoustic Energy AE1 Active ( acoustic energy ae1 active )",
-      "cat": "Акустика",
-      "price": 125600,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
       "id": 262069,
       "name": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
       "cat": "Другое",
@@ -1196,16 +1187,6 @@
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
-      "id": 270349,
-      "name": "Стереоусилитель Quad Vena II Play",
-      "cat": "Усилители",
-      "price": 115290,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
       "galleryHitl": true
     },
     {
@@ -1309,16 +1290,6 @@
       "galleryHitl": true
     },
     {
-      "id": 272349,
-      "name": "Активный сабвуфер Bluesound PULSE SUB PLUS",
-      "cat": "Акустика",
-      "price": 99990,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 15974,
       "name": "интегральный усилитель Musica int 200 ( musica int 200 )",
       "cat": "Усилители",
@@ -1377,9 +1348,39 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 15632,
+      "name": "центральный канал Audio Physic Classic Center ( audio physic classic center )",
+      "cat": "Другое",
+      "price": 90000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 267996,
+      "name": "MUSICA SPS 60",
+      "cat": "Усилители",
+      "price": 90000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264529,
+      "name": "Акустический кабель SAEC  SPC-650 ( saec spc 650 )",
+      "cat": "Кабели",
+      "price": 89813,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 348,
+  "hitlTrueOneshotCount": 345,
   "items": [
     {
       "id": 262053,
@@ -15379,16 +15380,14 @@
       "slug": "%d0%bf%d0%be%d0%bb%d0%be%d1%87%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-acoustic-energy-ae1-active",
       "cat": "Акустика",
       "price": 125600,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 262069,
@@ -15962,16 +15961,14 @@
       "slug": "8bd0769a4ceff6267c1a5ae18aae21ab",
       "cat": "Усилители",
       "price": 115290,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273747,
@@ -17208,16 +17205,14 @@
       "slug": "59afb567e390c598718aea691b7a364b",
       "cat": "Акустика",
       "price": 99990,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272748,

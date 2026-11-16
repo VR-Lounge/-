@@ -81,36 +81,58 @@
   ],
   "gallery": [
     {
-      "src": "http://www.bluesound.com/cdn/shop/files/BluesoundPULSESUB3-4Black-withShadow-2000x2000px.png",
-      "local": "assets/enriched/272349/e34d11c5a4_w14oem.png",
-      "bytes": 3506296,
-      "wave": "meager-w14-2026-11",
-      "w": 2000,
-      "h": 2000
+      "src": "local://272349_w115_00.jpg",
+      "thumb": "assets/enriched/272349/272349_w115_00.jpg",
+      "alt": "Активный сабвуфер Bluesound PULSE SUB PLUS",
+      "local": "assets/enriched/272349/272349_w115_00.jpg",
+      "enriched": true,
+      "attribution": "wave115-oem",
+      "bytes": 302857
     },
     {
-      "src": "local-variant://272349/w17sc95",
-      "local": "assets/enriched/272349/9d2493276c_w17sc95.jpg",
-      "bytes": 377365,
-      "wave": "meager-w17-2026-11",
-      "w": 1900,
-      "h": 1900
+      "src": "local://272349_w115_01.jpg",
+      "thumb": "assets/enriched/272349/272349_w115_01.jpg",
+      "alt": "Активный сабвуфер Bluesound PULSE SUB PLUS",
+      "local": "assets/enriched/272349/272349_w115_01.jpg",
+      "enriched": true,
+      "attribution": "wave115-oem",
+      "bytes": 146716
     },
     {
-      "src": "local-variant://272349/w17sc90",
-      "local": "assets/enriched/272349/e0ec090c06_w17sc90.jpg",
-      "bytes": 337533,
-      "wave": "meager-w17-2026-11",
-      "w": 1800,
-      "h": 1800
+      "src": "local://272349_w115_02.jpg",
+      "thumb": "assets/enriched/272349/272349_w115_02.jpg",
+      "alt": "Активный сабвуфер Bluesound PULSE SUB PLUS",
+      "local": "assets/enriched/272349/272349_w115_02.jpg",
+      "enriched": true,
+      "attribution": "wave115-oem",
+      "bytes": 135437
     },
     {
-      "src": "local-variant://272349/w17sc85",
-      "local": "assets/enriched/272349/b9c37ab9c3_w17sc85.jpg",
-      "bytes": 299532,
-      "wave": "meager-w17-2026-11",
-      "w": 1700,
-      "h": 1700
+      "src": "local://272349_w115_03.jpg",
+      "thumb": "assets/enriched/272349/272349_w115_03.jpg",
+      "alt": "Активный сабвуфер Bluesound PULSE SUB PLUS",
+      "local": "assets/enriched/272349/272349_w115_03.jpg",
+      "enriched": true,
+      "attribution": "wave115-oem",
+      "bytes": 160546
+    },
+    {
+      "src": "local://272349_w115_04.jpg",
+      "thumb": "assets/enriched/272349/272349_w115_04.jpg",
+      "alt": "Активный сабвуфер Bluesound PULSE SUB PLUS",
+      "local": "assets/enriched/272349/272349_w115_04.jpg",
+      "enriched": true,
+      "attribution": "wave115-oem",
+      "bytes": 102828
+    },
+    {
+      "src": "local://272349_w115_05.jpg",
+      "thumb": "assets/enriched/272349/272349_w115_05.jpg",
+      "alt": "Активный сабвуфер Bluesound PULSE SUB PLUS",
+      "local": "assets/enriched/272349/272349_w115_05.jpg",
+      "enriched": true,
+      "attribution": "wave115-oem",
+      "bytes": 165824
     }
   ],
   "sku": "",
@@ -122,5 +144,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T13:26:26Z",
+  "galleryWave115": true
 }

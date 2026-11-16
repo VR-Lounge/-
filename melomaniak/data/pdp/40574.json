@@ -107,35 +107,40 @@
   ],
   "gallery": [
     {
-      "src": "local://34a77cde95bb5a131b11548cac54bfe8_83c0afa8b7.jpg",
-      "thumb": "assets/enriched/40574/2e97c88a55_live1.jpg",
+      "src": "local://40574_w115_00.jpg",
+      "thumb": "assets/enriched/40574/40574_w115_00.jpg",
       "alt": "Полочная акустика Acoustic Energy AE1 Active ( acoustic energy ae1 active )",
-      "local": "assets/enriched/40574/2e97c88a55_live1.jpg",
+      "local": "assets/enriched/40574/40574_w115_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 46955
+      "attribution": "wave115-oem",
+      "bytes": 66091
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/08/34a77cde95bb5a131b11548cac54bfe8.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/08/34a77cde95bb5a131b11548cac54bfe8-600x600.jpg",
-      "alt": "34a77cde95bb5a131b11548cac54bfe8",
-      "local": "assets/from-live/products/83c0afa8b7_34a77cde95bb5a131b11548cac54bfe8.jpg"
+      "src": "local://40574_w115_01.jpg",
+      "thumb": "assets/enriched/40574/40574_w115_01.jpg",
+      "alt": "Полочная акустика Acoustic Energy AE1 Active ( acoustic energy ae1 active )",
+      "local": "assets/enriched/40574/40574_w115_01.jpg",
+      "enriched": true,
+      "attribution": "wave115-oem",
+      "bytes": 157329
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/08/34a77cde95bb5a131b11548cac54bfe8-600x600.jpg",
-      "local": "assets/enriched/40574/a50873f55b_w13var.jpg",
-      "bytes": 28492,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://40574_w115_02.jpg",
+      "thumb": "assets/enriched/40574/40574_w115_02.jpg",
+      "alt": "Полочная акустика Acoustic Energy AE1 Active ( acoustic energy ae1 active )",
+      "local": "assets/enriched/40574/40574_w115_02.jpg",
+      "enriched": true,
+      "attribution": "wave115-oem",
+      "bytes": 185748
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/08/34a77cde95bb5a131b11548cac54bfe8-768x768.jpg",
-      "local": "assets/enriched/40574/bd00d35a62_w13var.jpg",
-      "bytes": 42533,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://40574_w115_03.jpg",
+      "thumb": "assets/enriched/40574/40574_w115_03.jpg",
+      "alt": "Полочная акустика Acoustic Energy AE1 Active ( acoustic energy ae1 active )",
+      "local": "assets/enriched/40574/40574_w115_03.jpg",
+      "enriched": true,
+      "attribution": "wave115-oem",
+      "bytes": 707888
     }
   ],
   "sku": "",
@@ -147,5 +152,9 @@
   "enrichedAt": "2026-11-14T14:06:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T13:26:26Z",
+  "galleryWave115": true
 }
