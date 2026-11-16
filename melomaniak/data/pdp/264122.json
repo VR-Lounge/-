@@ -31,34 +31,54 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-129012_1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-129012_1-600x600.jpg",
-      "alt": "1000&#215;1000-129012_1",
-      "local": "assets/from-live/products/83cd8bbcd4_1000x1000-129012_1.jpg"
+      "src": "local://264122_w131_00.jpg",
+      "thumb": "assets/enriched/264122/264122_w131_00.jpg",
+      "alt": "Сетевые пластины Audio Replas SCB-2SZ ( audio replas scb 2sz )",
+      "local": "assets/enriched/264122/264122_w131_00.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 236653,
+      "wave": "w131-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-129012_1-768x768.jpg",
-      "local": "assets/enriched/264122/9cafbf8125_w13var.jpg",
-      "bytes": 24081,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264122_w131_01.jpg",
+      "thumb": "assets/enriched/264122/264122_w131_01.jpg",
+      "alt": "Сетевые пластины Audio Replas SCB-2SZ ( audio replas scb 2sz )",
+      "local": "assets/enriched/264122/264122_w131_01.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 67305,
+      "wave": "w131-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-129012_1-600x600.jpg",
-      "local": "assets/enriched/264122/7da46921be_w13var.jpg",
-      "bytes": 16688,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264122_w131_02.jpg",
+      "thumb": "assets/enriched/264122/264122_w131_02.jpg",
+      "alt": "Сетевые пластины Audio Replas SCB-2SZ ( audio replas scb 2sz )",
+      "local": "assets/enriched/264122/264122_w131_02.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 136822,
+      "wave": "w131-2026-11"
     },
     {
-      "src": "local-variant://264122/w17sc95",
-      "local": "assets/enriched/264122/3e72f0e7cb_w17sc95.jpg",
-      "bytes": 34598,
-      "wave": "meager-w17-2026-11",
-      "w": 950,
-      "h": 950
+      "src": "local://264122_w131_03.jpg",
+      "thumb": "assets/enriched/264122/264122_w131_03.jpg",
+      "alt": "Сетевые пластины Audio Replas SCB-2SZ ( audio replas scb 2sz )",
+      "local": "assets/enriched/264122/264122_w131_03.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 166676,
+      "wave": "w131-2026-11"
+    },
+    {
+      "src": "local://264122_w131_04.jpg",
+      "thumb": "assets/enriched/264122/264122_w131_04.jpg",
+      "alt": "Сетевые пластины Audio Replas SCB-2SZ ( audio replas scb 2sz )",
+      "local": "assets/enriched/264122/264122_w131_04.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 207686,
+      "wave": "w131-2026-11"
     }
   ],
   "sku": "",
@@ -71,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T18:36:37Z",
+  "galleryWave131": true
 }

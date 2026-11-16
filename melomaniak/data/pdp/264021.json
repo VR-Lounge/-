@@ -36,34 +36,84 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/acoustic-revive-riq-5010-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/acoustic-revive-riq-5010-500x500-1.jpg",
-      "alt": "acoustic-revive-riq-5010-500&#215;500",
-      "local": "assets/from-live/products/2d5d8931cf_acoustic-revive-riq-5010-500x500-1.jpg"
+      "src": "local://264021_w131_00.jpg",
+      "thumb": "assets/enriched/264021/264021_w131_00.jpg",
+      "alt": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
+      "local": "assets/enriched/264021/264021_w131_00.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 260988,
+      "wave": "w131-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/acoustic-revive-riq-5010-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264021/55007af378_w17cdn.jpg",
-      "bytes": 6544,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264021_w131_01.jpg",
+      "thumb": "assets/enriched/264021/264021_w131_01.jpg",
+      "alt": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
+      "local": "assets/enriched/264021/264021_w131_01.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 54709,
+      "wave": "w131-2026-11"
     },
     {
-      "src": "local-variant://264021/w17sc95",
-      "local": "assets/enriched/264021/8384ee2911_w17sc95.jpg",
-      "bytes": 14181,
-      "wave": "meager-w17-2026-11",
-      "w": 475,
-      "h": 475
+      "src": "local://264021_w131_02.jpg",
+      "thumb": "assets/enriched/264021/264021_w131_02.jpg",
+      "alt": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
+      "local": "assets/enriched/264021/264021_w131_02.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 139841,
+      "wave": "w131-2026-11"
     },
     {
-      "src": "local-variant://264021/w17sc90",
-      "local": "assets/enriched/264021/88eb981544_w17sc90.jpg",
-      "bytes": 13284,
-      "wave": "meager-w17-2026-11",
-      "w": 450,
-      "h": 450
+      "src": "local://264021_w131_03.jpg",
+      "thumb": "assets/enriched/264021/264021_w131_03.jpg",
+      "alt": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
+      "local": "assets/enriched/264021/264021_w131_03.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 139047,
+      "wave": "w131-2026-11"
+    },
+    {
+      "src": "local://264021_w131_04.jpg",
+      "thumb": "assets/enriched/264021/264021_w131_04.jpg",
+      "alt": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
+      "local": "assets/enriched/264021/264021_w131_04.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 152379,
+      "wave": "w131-2026-11"
+    },
+    {
+      "src": "local://264021_w131_05.jpg",
+      "thumb": "assets/enriched/264021/264021_w131_05.jpg",
+      "alt": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
+      "local": "assets/enriched/264021/264021_w131_05.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 129771,
+      "wave": "w131-2026-11"
+    },
+    {
+      "src": "local://264021_w131_06.jpg",
+      "thumb": "assets/enriched/264021/264021_w131_06.jpg",
+      "alt": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
+      "local": "assets/enriched/264021/264021_w131_06.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 19213,
+      "wave": "w131-2026-11"
+    },
+    {
+      "src": "local://264021_w131_07.jpg",
+      "thumb": "assets/enriched/264021/264021_w131_07.jpg",
+      "alt": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
+      "local": "assets/enriched/264021/264021_w131_07.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 32026,
+      "wave": "w131-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +126,9 @@
   "enrichedAt": "2026-11-14T13:31:42Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T18:36:37Z",
+  "galleryWave131": true
 }

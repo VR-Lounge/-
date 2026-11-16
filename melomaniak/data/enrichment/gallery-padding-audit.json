@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T18:25:40Z",
+  "generatedAt": "2026-11-16T18:39:46Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1567,
+    "true_multi_angle": 1574,
     "padded": 11,
-    "single_real": 309
+    "single_real": 302
   },
   "pct": {
-    "true_multi_angle": 83.04,
+    "true_multi_angle": 83.41,
     "padded": 0.58,
-    "single_real": 16.38,
-    "padded_of_claimed_gal4plus": 15.93,
-    "not_true_multi": 16.96
+    "single_real": 16.0,
+    "padded_of_claimed_gal4plus": 15.56,
+    "not_true_multi": 16.59
   },
   "padReasonTallies": {
-    "local-variant": 551,
-    "wN-variant-name": 284,
-    "cdn-size-thumb": 72,
+    "local-variant": 543,
+    "wN-variant-name": 272,
+    "cdn-size-thumb": 71,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 297,
+  "claimedButNotTrueMulti": 290,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -335,36 +335,10 @@
       "class": "single_real"
     },
     {
-      "id": 264071,
-      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/4P ( audio replas opt 100hg flat ss hr 4p )",
-      "cat": "Другое",
-      "price": 129200,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "class": "single_real"
-    },
-    {
       "id": 264025,
       "name": "Поглотитель Acoustic Revive RAF-48 ( acoustic revive raf 48 )",
       "cat": "Другое",
       "price": 125664,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 262069,
-      "name": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
-      "cat": "Другое",
-      "price": 125000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -398,19 +372,6 @@
       "padSlots": 2,
       "padReasons": {
         "local-variant": 2
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 264072,
-      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-HR/4P ( audio replas opt 100hg flat hr 4p )",
-      "cat": "Другое",
-      "price": 114750,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
       },
       "class": "single_real"
     },
@@ -453,19 +414,6 @@
       "padReasons": {
         "wN-variant-name": 2,
         "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 264070,
-      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/3P ( audio replas opt 100hg flat ss hr 3p )",
-      "cat": "Другое",
-      "price": 102000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
       },
       "class": "single_real"
     },
@@ -578,6 +526,61 @@
       "padReasons": {
         "wN-variant-name": 2
       },
+      "class": "single_real"
+    },
+    {
+      "id": 15980,
+      "name": "усилитель мощности Musica pow 60 ( musica pow 60 )",
+      "cat": "Усилители",
+      "price": 88000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 16726,
+      "name": "предусилитель Musica pre 60 ( musica pre 60 )",
+      "cat": "Усилители",
+      "price": 88000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264375,
+      "name": "Цифровой кабель Furutech Digital Ref.III (RCA) ( furutech digital ref iii (rca) )",
+      "cat": "Кабели",
+      "price": 87633,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "local-variant": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 274587,
+      "name": "Центральный канал Acoustic Energy AE 307",
+      "cat": "Другое",
+      "price": 87500,
+      "galleryLen": 6,
+      "uniqueDistinct": 1,
+      "padSlots": 0,
+      "padReasons": {},
       "class": "single_real"
     }
   ],
@@ -1003,30 +1006,10 @@
       "galleryHitl": true
     },
     {
-      "id": 264071,
-      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/4P ( audio replas opt 100hg flat ss hr 4p )",
-      "cat": "Другое",
-      "price": 129200,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 264025,
       "name": "Поглотитель Acoustic Revive RAF-48 ( acoustic revive raf 48 )",
       "cat": "Другое",
       "price": 125664,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 262069,
-      "name": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
-      "cat": "Другое",
-      "price": 125000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1050,16 +1033,6 @@
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
-      "id": 264072,
-      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-HR/4P ( audio replas opt 100hg flat hr 4p )",
-      "cat": "Другое",
-      "price": 114750,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
       "galleryHitl": true
     },
     {
@@ -1087,16 +1060,6 @@
       "name": "Сетевые пластины Audio Replas SCB-4SZ ( audio replas scb 4sz )",
       "cat": "Другое",
       "price": 103700,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 264070,
-      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/3P ( audio replas opt 100hg flat ss hr 3p )",
-      "cat": "Другое",
-      "price": 102000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1233,26 +1196,6 @@
       "galleryHitl": true
     },
     {
-      "id": 264021,
-      "name": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
-      "cat": "Другое",
-      "price": 86700,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 264122,
-      "name": "Сетевые пластины Audio Replas SCB-2SZ ( audio replas scb 2sz )",
-      "cat": "Другое",
-      "price": 86400,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 264368,
       "name": "Межблочный кабель Furutech Evolution Audio II (XLR) ( furutech evolution audio ii (xlr) )",
       "cat": "Кабели",
@@ -1343,16 +1286,6 @@
       "galleryHitl": true
     },
     {
-      "id": 264547,
-      "name": "Цифровой кабель SAEC  OPC &#8211; X11 ( saec opc x11 )",
-      "cat": "Кабели",
-      "price": 62869,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 264113,
       "name": "Сплиттеры Audio Replas BLS ( audio replas bls )",
       "cat": "Другое",
@@ -1381,9 +1314,79 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264540,
+      "name": "USB кабель SAEC  type A &#8211; mini B ( usb saec type a mini b )",
+      "cat": "Кабели",
+      "price": 56919,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264541,
+      "name": "USB кабель SAEC  type A &#8211; C ( usb saec type a c )",
+      "cat": "Кабели",
+      "price": 56919,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264121,
+      "name": "Аксессуар для розетки Audio Replas CPP-4SZ/S (15mm) ( audio replas cpp 4sz s (15mm) )",
+      "cat": "Другое",
+      "price": 56880,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 272814,
+      "name": "Кабель HDMI AudioQuest Cinnamon 48 PVC",
+      "cat": "Кабели",
+      "price": 54990,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264255,
+      "name": "Сетевой фильтр Furutech e-TP86 E (G) ( furutech e tp86 e (g) )",
+      "cat": "Другое",
+      "price": 54810,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264116,
+      "name": "Оптимизатор Audio Replas CPC-35SZ ( audio replas cpc 35sz )",
+      "cat": "Другое",
+      "price": 53820,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264095,
+      "name": "Вибропоглатитель Audio Replas RSI-M8 ( audio replas rsi m8 )",
+      "cat": "Другое",
+      "price": 53640,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 309,
+  "hitlTrueOneshotCount": 302,
   "items": [
     {
       "id": 262053,
@@ -15174,16 +15177,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-flat-ss-hr-4p",
       "cat": "Другое",
       "price": 129200,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 274581,
@@ -15373,16 +15374,14 @@
       "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-divini-audio-classical-lcr",
       "cat": "Другое",
       "price": 125000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 26668,
@@ -16060,16 +16059,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-flat-hr-4p",
       "cat": "Другое",
       "price": 114750,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 268012,
@@ -16926,16 +16923,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-flat-ss-hr-3p",
       "cat": "Другое",
       "price": 102000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271852,
@@ -18346,17 +18341,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-acoustic-revive-riq-5010",
       "cat": "Другое",
       "price": 86700,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264122,
@@ -18364,17 +18356,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d1%8b%d0%b5-%d0%bf%d0%bb%d0%b0%d1%81%d1%82%d0%b8%d0%bd%d1%8b-audio-replas-scb-2sz",
       "cat": "Другое",
       "price": 86400,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272114,
@@ -20403,17 +20392,14 @@
       "slug": "%d1%86%d0%b8%d1%84%d1%80%d0%be%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-opc-x11",
       "cat": "Кабели",
       "price": 62869,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272609,

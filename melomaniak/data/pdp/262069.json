@@ -36,34 +36,44 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/divini-audio-classical-lcr-e1626515334507.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/divini-audio-classical-lcr-e1626515334507-600x400.jpg",
-      "alt": "divini-audio-classical-lcr-e1626515334507",
-      "local": "assets/from-live/products/87a389bc5d_divini-audio-classical-lcr-e1626515334507.jpg"
+      "src": "local://262069_w131_00.jpg",
+      "thumb": "assets/enriched/262069/262069_w131_00.jpg",
+      "alt": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
+      "local": "assets/enriched/262069/262069_w131_00.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 479025,
+      "wave": "w131-2026-11"
     },
     {
-      "src": "local-variant://262069/w17sc95",
-      "local": "assets/enriched/262069/50fec80370_w17sc95.jpg",
-      "bytes": 40621,
-      "wave": "meager-w17-2026-11",
-      "w": 912,
-      "h": 380
+      "src": "local://262069_w131_01.jpg",
+      "thumb": "assets/enriched/262069/262069_w131_01.jpg",
+      "alt": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
+      "local": "assets/enriched/262069/262069_w131_01.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 551365,
+      "wave": "w131-2026-11"
     },
     {
-      "src": "local-variant://262069/w17sc90",
-      "local": "assets/enriched/262069/c16dfe0c6b_w17sc90.jpg",
-      "bytes": 37307,
-      "wave": "meager-w17-2026-11",
-      "w": 864,
-      "h": 360
+      "src": "local://262069_w131_02.jpg",
+      "thumb": "assets/enriched/262069/262069_w131_02.jpg",
+      "alt": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
+      "local": "assets/enriched/262069/262069_w131_02.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 688412,
+      "wave": "w131-2026-11"
     },
     {
-      "src": "local-variant://262069/w17sc85",
-      "local": "assets/enriched/262069/b80c1e7956_w17sc85.jpg",
-      "bytes": 34612,
-      "wave": "meager-w17-2026-11",
-      "w": 816,
-      "h": 340
+      "src": "local://262069_w131_03.jpg",
+      "thumb": "assets/enriched/262069/262069_w131_03.jpg",
+      "alt": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
+      "local": "assets/enriched/262069/262069_w131_03.jpg",
+      "enriched": true,
+      "attribution": "wave131-oem",
+      "bytes": 411606,
+      "wave": "w131-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +86,9 @@
   "enrichedAt": "2026-11-14T13:25:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T18:36:37Z",
+  "galleryWave131": true
 }
