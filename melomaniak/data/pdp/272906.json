@@ -131,36 +131,49 @@
   ],
   "gallery": [
     {
-      "src": "https://s3.ifanr.com/wp-content/uploads/2020/03/Formation-Wedge-27.jpg",
-      "local": "assets/enriched/272906/af3810730d_w17oem.jpg",
-      "bytes": 220505,
-      "wave": "meager-w17-2026-11",
-      "w": 3000,
-      "h": 1688
+      "src": "local://272906_w116_00.jpg",
+      "thumb": "assets/enriched/272906/272906_w116_00.jpg",
+      "alt": "Беспроводная Hi-Fi-акустика B Formation Wedge",
+      "local": "assets/enriched/272906/272906_w116_00.jpg",
+      "enriched": true,
+      "attribution": "wave116-oem",
+      "bytes": 28060
     },
     {
-      "src": "local-variant://272906/w17dsc95",
-      "local": "assets/enriched/272906/d5bd8c3d00_w17dsc95.jpg",
-      "bytes": 408475,
-      "wave": "meager-w17-2026-11",
-      "w": 2850,
-      "h": 1603
+      "src": "local://272906_w116_01.jpg",
+      "thumb": "assets/enriched/272906/272906_w116_01.jpg",
+      "alt": "Беспроводная Hi-Fi-акустика B Formation Wedge",
+      "local": "assets/enriched/272906/272906_w116_01.jpg",
+      "enriched": true,
+      "attribution": "wave116-oem",
+      "bytes": 110124
     },
     {
-      "src": "local-variant://272906/w17dsc90",
-      "local": "assets/enriched/272906/ef23becc91_w17dsc90.jpg",
-      "bytes": 374468,
-      "wave": "meager-w17-2026-11",
-      "w": 2700,
-      "h": 1519
+      "src": "local://272906_w116_02.jpg",
+      "thumb": "assets/enriched/272906/272906_w116_02.jpg",
+      "alt": "Беспроводная Hi-Fi-акустика B Formation Wedge",
+      "local": "assets/enriched/272906/272906_w116_02.jpg",
+      "enriched": true,
+      "attribution": "wave116-oem",
+      "bytes": 55503
     },
     {
-      "src": "local-variant://272906/w17dsc85",
-      "local": "assets/enriched/272906/fa62b4cdd5_w17dsc85.jpg",
-      "bytes": 343413,
-      "wave": "meager-w17-2026-11",
-      "w": 2550,
-      "h": 1434
+      "src": "local://272906_w116_03.jpg",
+      "thumb": "assets/enriched/272906/272906_w116_03.jpg",
+      "alt": "Беспроводная Hi-Fi-акустика B Formation Wedge",
+      "local": "assets/enriched/272906/272906_w116_03.jpg",
+      "enriched": true,
+      "attribution": "wave116-oem",
+      "bytes": 143295
+    },
+    {
+      "src": "local://272906_w116_04.jpg",
+      "thumb": "assets/enriched/272906/272906_w116_04.jpg",
+      "alt": "Беспроводная Hi-Fi-акустика B Formation Wedge",
+      "local": "assets/enriched/272906/272906_w116_04.jpg",
+      "enriched": true,
+      "attribution": "wave116-oem",
+      "bytes": 94236
     }
   ],
   "sku": "",
@@ -172,5 +185,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T13:46:46Z",
+  "galleryWave116": true
 }

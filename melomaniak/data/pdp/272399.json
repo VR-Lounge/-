@@ -91,36 +91,40 @@
   ],
   "gallery": [
     {
-      "src": "http://www.bluesound.com/cdn/shop/files/2026BLSPOWERNODEEDGE.png",
-      "local": "assets/enriched/272399/ab037ace2b_w13oem.png",
-      "bytes": 907608,
-      "wave": "meager-w13-2026-11",
-      "w": 2000,
-      "h": 2000
+      "src": "local://272399_w116_00.jpg",
+      "thumb": "assets/enriched/272399/272399_w116_00.jpg",
+      "alt": "Сетевой проигрыватель Bluesound PowerNode Edge N230",
+      "local": "assets/enriched/272399/272399_w116_00.jpg",
+      "enriched": true,
+      "attribution": "wave116-oem",
+      "bytes": 82873
     },
     {
-      "src": "local-variant://272399/w17sc95",
-      "local": "assets/enriched/272399/b7dd29e538_w17sc95.jpg",
-      "bytes": 88424,
-      "wave": "meager-w17-2026-11",
-      "w": 1900,
-      "h": 1900
+      "src": "local://272399_w116_01.jpg",
+      "thumb": "assets/enriched/272399/272399_w116_01.jpg",
+      "alt": "Сетевой проигрыватель Bluesound PowerNode Edge N230",
+      "local": "assets/enriched/272399/272399_w116_01.jpg",
+      "enriched": true,
+      "attribution": "wave116-oem",
+      "bytes": 116757
     },
     {
-      "src": "local-variant://272399/w17sc90",
-      "local": "assets/enriched/272399/eb4b33f412_w17sc90.jpg",
-      "bytes": 78569,
-      "wave": "meager-w17-2026-11",
-      "w": 1800,
-      "h": 1800
+      "src": "local://272399_w116_02.jpg",
+      "thumb": "assets/enriched/272399/272399_w116_02.jpg",
+      "alt": "Сетевой проигрыватель Bluesound PowerNode Edge N230",
+      "local": "assets/enriched/272399/272399_w116_02.jpg",
+      "enriched": true,
+      "attribution": "wave116-oem",
+      "bytes": 57899
     },
     {
-      "src": "local-variant://272399/w17sc85",
-      "local": "assets/enriched/272399/2209490bd3_w17sc85.jpg",
-      "bytes": 70867,
-      "wave": "meager-w17-2026-11",
-      "w": 1700,
-      "h": 1700
+      "src": "local://272399_w116_03.jpg",
+      "thumb": "assets/enriched/272399/272399_w116_03.jpg",
+      "alt": "Сетевой проигрыватель Bluesound PowerNode Edge N230",
+      "local": "assets/enriched/272399/272399_w116_03.jpg",
+      "enriched": true,
+      "attribution": "wave116-oem",
+      "bytes": 81854
     }
   ],
   "sku": "",
@@ -132,5 +136,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T13:46:46Z",
+  "galleryWave116": true
 }
