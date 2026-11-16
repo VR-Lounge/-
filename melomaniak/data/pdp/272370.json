@@ -141,36 +141,49 @@
   ],
   "gallery": [
     {
-      "src": "https://www.bluesound.com/cdn/shop/files/POWERNODE_BLK_Above_Front_-_Active_UI_-_with_Shadow_-_2000x2000_fcd7bd9c-f8f7-4c66-87c5-ba60164d0a0e.png",
-      "local": "assets/enriched/272370/e45c42afab_w14oem.png",
-      "bytes": 1366988,
-      "wave": "meager-w14-2026-11",
-      "w": 2000,
-      "h": 2000
+      "src": "local://272370_w114_00.jpg",
+      "thumb": "assets/enriched/272370/272370_w114_00.jpg",
+      "alt": "Стереоусилитель Bluesound POWERNODE N330",
+      "local": "assets/enriched/272370/272370_w114_00.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 101810
     },
     {
-      "src": "local-variant://272370/w17sc95",
-      "local": "assets/enriched/272370/7ee80f4d44_w17sc95.jpg",
-      "bytes": 104700,
-      "wave": "meager-w17-2026-11",
-      "w": 1900,
-      "h": 1900
+      "src": "local://272370_w114_01.jpg",
+      "thumb": "assets/enriched/272370/272370_w114_01.jpg",
+      "alt": "Стереоусилитель Bluesound POWERNODE N330",
+      "local": "assets/enriched/272370/272370_w114_01.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 128163
     },
     {
-      "src": "local-variant://272370/w17sc90",
-      "local": "assets/enriched/272370/45f6d082d9_w17sc90.jpg",
-      "bytes": 94917,
-      "wave": "meager-w17-2026-11",
-      "w": 1800,
-      "h": 1800
+      "src": "local://272370_w114_02.jpg",
+      "thumb": "assets/enriched/272370/272370_w114_02.jpg",
+      "alt": "Стереоусилитель Bluesound POWERNODE N330",
+      "local": "assets/enriched/272370/272370_w114_02.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 130505
     },
     {
-      "src": "local-variant://272370/w17sc85",
-      "local": "assets/enriched/272370/520011b854_w17sc85.jpg",
-      "bytes": 85973,
-      "wave": "meager-w17-2026-11",
-      "w": 1700,
-      "h": 1700
+      "src": "local://272370_w114_03.jpg",
+      "thumb": "assets/enriched/272370/272370_w114_03.jpg",
+      "alt": "Стереоусилитель Bluesound POWERNODE N330",
+      "local": "assets/enriched/272370/272370_w114_03.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 199978
+    },
+    {
+      "src": "local://272370_w114_04.jpg",
+      "thumb": "assets/enriched/272370/272370_w114_04.jpg",
+      "alt": "Стереоусилитель Bluesound POWERNODE N330",
+      "local": "assets/enriched/272370/272370_w114_04.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 147531
     }
   ],
   "sku": "",
@@ -182,5 +195,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T13:04:44Z",
+  "galleryWave114": true
 }

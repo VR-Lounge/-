@@ -102,35 +102,58 @@
   ],
   "gallery": [
     {
-      "src": "local://mcIntosh_mha_50_01_eb91c9591d.jpg",
-      "thumb": "assets/enriched/263216/88c02cdf95_live1.jpg",
+      "src": "local://263216_w114_00.jpg",
+      "thumb": "assets/enriched/263216/263216_w114_00.jpg",
       "alt": "Усилитель для наушников MCINTOSH MHA50 ( mcintosh mha50 )",
-      "local": "assets/enriched/263216/88c02cdf95_live1.jpg",
+      "local": "assets/enriched/263216/263216_w114_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 84058
+      "attribution": "wave114-oem",
+      "bytes": 111095
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/mcIntosh_mha_50_01.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/mcIntosh_mha_50_01-600x600.jpg",
-      "alt": "mcIntosh_mha_50_01",
-      "local": "assets/from-live/products/eb91c9591d_mcIntosh_mha_50_01.jpg"
+      "src": "local://263216_w114_01.jpg",
+      "thumb": "assets/enriched/263216/263216_w114_01.jpg",
+      "alt": "Усилитель для наушников MCINTOSH MHA50 ( mcintosh mha50 )",
+      "local": "assets/enriched/263216/263216_w114_01.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 118268
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/mcIntosh_mha_50_01-600x600.jpg",
-      "local": "assets/enriched/263216/5c858d7dfc_w13var.jpg",
-      "bytes": 16910,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://263216_w114_02.jpg",
+      "thumb": "assets/enriched/263216/263216_w114_02.jpg",
+      "alt": "Усилитель для наушников MCINTOSH MHA50 ( mcintosh mha50 )",
+      "local": "assets/enriched/263216/263216_w114_02.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 341487
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/mcIntosh_mha_50_01-768x768.jpg",
-      "local": "assets/enriched/263216/57230de9c4_w13var.jpg",
-      "bytes": 24260,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://263216_w114_03.jpg",
+      "thumb": "assets/enriched/263216/263216_w114_03.jpg",
+      "alt": "Усилитель для наушников MCINTOSH MHA50 ( mcintosh mha50 )",
+      "local": "assets/enriched/263216/263216_w114_03.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 73848
+    },
+    {
+      "src": "local://263216_w114_04.jpg",
+      "thumb": "assets/enriched/263216/263216_w114_04.jpg",
+      "alt": "Усилитель для наушников MCINTOSH MHA50 ( mcintosh mha50 )",
+      "local": "assets/enriched/263216/263216_w114_04.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 214489
+    },
+    {
+      "src": "local://263216_w114_05.jpg",
+      "thumb": "assets/enriched/263216/263216_w114_05.jpg",
+      "alt": "Усилитель для наушников MCINTOSH MHA50 ( mcintosh mha50 )",
+      "local": "assets/enriched/263216/263216_w114_05.jpg",
+      "enriched": true,
+      "attribution": "wave114-oem",
+      "bytes": 151935
     }
   ],
   "sku": "",
@@ -142,5 +165,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T13:04:44Z",
+  "galleryWave114": true
 }
