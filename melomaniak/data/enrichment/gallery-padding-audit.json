@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T15:56:30Z",
+  "generatedAt": "2026-11-16T16:20:47Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1552,
+    "true_multi_angle": 1554,
     "padded": 11,
-    "single_real": 324
+    "single_real": 322
   },
   "pct": {
-    "true_multi_angle": 82.25,
+    "true_multi_angle": 82.35,
     "padded": 0.58,
-    "single_real": 17.17,
-    "padded_of_claimed_gal4plus": 16.74,
-    "not_true_multi": 17.75
+    "single_real": 17.06,
+    "padded_of_claimed_gal4plus": 16.63,
+    "not_true_multi": 17.65
   },
   "padReasonTallies": {
-    "local-variant": 584,
-    "wN-variant-name": 293,
+    "local-variant": 579,
+    "wN-variant-name": 292,
     "cdn-size-thumb": 72,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 312,
+  "claimedButNotTrueMulti": 310,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -308,20 +308,6 @@
       "class": "single_real"
     },
     {
-      "id": 16806,
-      "name": "предусилитель Trigon SnowWhite ( trigon snowwhite )",
-      "cat": "Усилители",
-      "price": 153000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 2
-      },
-      "class": "single_real"
-    },
-    {
       "id": 41457,
       "name": "Центральный канал Paradigm Premier 600C Espresso Grain ( paradigm premier 600c espresso grain )",
       "cat": "Другое",
@@ -576,6 +562,20 @@
         "wN-variant-name": 1,
         "cdn-size-thumb": 1,
         "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264028,
+      "name": "Поглотитель Acoustic Revive TB-38 ( acoustic revive tb 38 )",
+      "cat": "Другое",
+      "price": 95931,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "cdn-size-thumb": 1,
+        "local-variant": 2
       },
       "class": "single_real"
     }
@@ -982,16 +982,6 @@
       "galleryHitl": true
     },
     {
-      "id": 16806,
-      "name": "предусилитель Trigon SnowWhite ( trigon snowwhite )",
-      "cat": "Усилители",
-      "price": 153000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 41457,
       "name": "Центральный канал Paradigm Premier 600C Espresso Grain ( paradigm premier 600c espresso grain )",
       "cat": "Другое",
@@ -1380,9 +1370,19 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264018,
+      "name": "Кондиционер Acoustic Revive RGC-24 TripleC FM ( acoustic revive rgc 24 triplec fm )",
+      "cat": "Другое",
+      "price": 79200,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 324,
+  "hitlTrueOneshotCount": 322,
   "items": [
     {
       "id": 262053,
@@ -13876,17 +13876,14 @@
       "slug": "predysilitel_Trigon_SnowWhite",
       "cat": "Усилители",
       "price": 153000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 274626,
@@ -19502,16 +19499,14 @@
       "slug": "3e38e994372c6fbc5f90657c26e0d3dd",
       "cat": "Акустика",
       "price": 73990,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272851,

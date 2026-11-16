@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Trigon_SnowWhite_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Trigon_SnowWhite_-600x600.jpg",
-      "alt": "Trigon SnowWhite",
-      "local": "assets/from-live/products/fa9e448e28_predysilitel_Trigon_SnowWhite_.jpg"
+      "src": "local://16806_w124_00.jpg",
+      "thumb": "assets/enriched/16806/16806_w124_00.jpg",
+      "alt": "предусилитель Trigon SnowWhite ( trigon snowwhite )",
+      "local": "assets/enriched/16806/16806_w124_00.jpg",
+      "enriched": true,
+      "attribution": "wave124-oem",
+      "bytes": 21992
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Trigon_SnowWhite_-600x600.jpg",
-      "local": "assets/enriched/16806/c9bbe0f9b1_w13var.jpg",
-      "bytes": 14672,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://16806_w124_01.jpg",
+      "thumb": "assets/enriched/16806/16806_w124_01.jpg",
+      "alt": "предусилитель Trigon SnowWhite ( trigon snowwhite )",
+      "local": "assets/enriched/16806/16806_w124_01.jpg",
+      "enriched": true,
+      "attribution": "wave124-oem",
+      "bytes": 164538
     },
     {
-      "src": "local-variant://16806/w17sc95",
-      "local": "assets/enriched/16806/e0c28d0e3e_w17sc95.jpg",
-      "bytes": 17322,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://16806_w124_02.jpg",
+      "thumb": "assets/enriched/16806/16806_w124_02.jpg",
+      "alt": "предусилитель Trigon SnowWhite ( trigon snowwhite )",
+      "local": "assets/enriched/16806/16806_w124_02.jpg",
+      "enriched": true,
+      "attribution": "wave124-oem",
+      "bytes": 172663
     },
     {
-      "src": "local-variant://16806/w17sc90",
-      "local": "assets/enriched/16806/9fb390d5fe_w17sc90.jpg",
-      "bytes": 16123,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
+      "src": "local://16806_w124_03.jpg",
+      "thumb": "assets/enriched/16806/16806_w124_03.jpg",
+      "alt": "предусилитель Trigon SnowWhite ( trigon snowwhite )",
+      "local": "assets/enriched/16806/16806_w124_03.jpg",
+      "enriched": true,
+      "attribution": "wave124-oem",
+      "bytes": 276613
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:45:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T16:17:42Z",
+  "galleryWave124": true
 }
