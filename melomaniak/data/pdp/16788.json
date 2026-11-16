@@ -36,34 +36,67 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Soulnote_sa3-0_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Soulnote_sa3-0_-600x600.jpg",
-      "alt": "Soulnote sa3.0",
-      "local": "assets/from-live/products/2fc73adf57_predysilitel_Soulnote_sa3-0_.jpg"
+      "src": "local://16788_w108b_00.jpg",
+      "thumb": "assets/enriched/16788/16788_w108b_00.jpg",
+      "alt": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
+      "local": "assets/enriched/16788/16788_w108b_00.jpg",
+      "enriched": true,
+      "attribution": "wave108b-oem",
+      "bytes": 298435
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Soulnote_sa3-0_-600x600.jpg",
-      "local": "assets/enriched/16788/d40e55b10f_w13var.jpg",
-      "bytes": 18535,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://16788_w108b_01.jpg",
+      "thumb": "assets/enriched/16788/16788_w108b_01.jpg",
+      "alt": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
+      "local": "assets/enriched/16788/16788_w108b_01.jpg",
+      "enriched": true,
+      "attribution": "wave108b-oem",
+      "bytes": 237467
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Soulnote_sa300.jpg",
-      "local": "assets/enriched/16788/9074227c9a_w15sib.jpg",
-      "bytes": 19384,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://16788_w108b_02.jpg",
+      "thumb": "assets/enriched/16788/16788_w108b_02.jpg",
+      "alt": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
+      "local": "assets/enriched/16788/16788_w108b_02.jpg",
+      "enriched": true,
+      "attribution": "wave108b-oem",
+      "bytes": 246800
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Soulnote_sa300-600x600.jpg",
-      "local": "assets/enriched/16788/a0949ad7c9_w15sib.jpg",
-      "bytes": 16322,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://16788_w108b_03.jpg",
+      "thumb": "assets/enriched/16788/16788_w108b_03.jpg",
+      "alt": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
+      "local": "assets/enriched/16788/16788_w108b_03.jpg",
+      "enriched": true,
+      "attribution": "wave108b-oem",
+      "bytes": 327163
+    },
+    {
+      "src": "local://16788_w108b_04.jpg",
+      "thumb": "assets/enriched/16788/16788_w108b_04.jpg",
+      "alt": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
+      "local": "assets/enriched/16788/16788_w108b_04.jpg",
+      "enriched": true,
+      "attribution": "wave108b-oem",
+      "bytes": 242701
+    },
+    {
+      "src": "local://16788_w108b_05.jpg",
+      "thumb": "assets/enriched/16788/16788_w108b_05.jpg",
+      "alt": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
+      "local": "assets/enriched/16788/16788_w108b_05.jpg",
+      "enriched": true,
+      "attribution": "wave108b-oem",
+      "bytes": 256860
+    },
+    {
+      "src": "local://16788_w108b_06.jpg",
+      "thumb": "assets/enriched/16788/16788_w108b_06.jpg",
+      "alt": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
+      "local": "assets/enriched/16788/16788_w108b_06.jpg",
+      "enriched": true,
+      "attribution": "wave108b-oem",
+      "bytes": 255185
     }
   ],
   "sku": "",
@@ -75,5 +108,9 @@
   "enrichedAt": "2026-11-14T13:45:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T01:10:55Z",
+  "galleryWave108b": true
 }

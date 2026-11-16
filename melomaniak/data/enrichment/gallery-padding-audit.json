@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T01:06:37Z",
+  "generatedAt": "2026-11-16T01:13:56Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1509,
-    "padded": 12,
+    "true_multi_angle": 1510,
+    "padded": 11,
     "single_real": 366
   },
   "pct": {
-    "true_multi_angle": 79.97,
-    "padded": 0.64,
+    "true_multi_angle": 80.02,
+    "padded": 0.58,
     "single_real": 19.4,
-    "padded_of_claimed_gal4plus": 18.3,
-    "not_true_multi": 20.03
+    "padded_of_claimed_gal4plus": 18.25,
+    "not_true_multi": 19.98
   },
   "padReasonTallies": {
     "local-variant": 629,
-    "wN-variant-name": 315,
-    "cdn-size-thumb": 74,
+    "wN-variant-name": 314,
+    "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 338,
+  "claimedButNotTrueMulti": 337,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -116,20 +116,6 @@
         "local-variant": 1
       },
       "class": "single_real"
-    },
-    {
-      "id": 16788,
-      "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )",
-      "cat": "Усилители",
-      "price": 270000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "class": "padded"
     },
     {
       "id": 16852,
@@ -573,6 +559,21 @@
       "padReasons": {
         "wN-variant-name": 1,
         "local-variant": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 265481,
+      "name": "Центральный канал AUDIO PHYSIC Celsius 25 ( audio physic celsius 25 )",
+      "cat": "Другое",
+      "price": 124999,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "cdn-size-thumb": 1,
+        "local-variant": 1
       },
       "class": "single_real"
     }
@@ -10073,17 +10074,14 @@
       "slug": "predysilitel_Soulnote_sa3-0",
       "cat": "Усилители",
       "price": 270000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 262065,
