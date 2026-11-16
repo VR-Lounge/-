@@ -36,34 +36,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-YTP-6r-500x334-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-YTP-6r-500x334-1.jpg",
-      "alt": "Acoustic-Revive-YTP-6r-500&#215;334",
-      "local": "assets/from-live/products/9bd93e3a62_Acoustic-Revive-YTP-6r-500x334-1.jpg"
+      "src": "local://264048_w129_00.jpg",
+      "thumb": "assets/enriched/264048/264048_w129_00.jpg",
+      "alt": "Сетевой фильтр Acoustic Revive YTP-6R ( acoustic revive ytp 6r )",
+      "local": "assets/enriched/264048/264048_w129_00.jpg",
+      "enriched": true,
+      "attribution": "wave129-oem",
+      "bytes": 48970
     },
     {
-      "src": "local-variant://264048/w17sc95",
-      "local": "assets/enriched/264048/b470a1fb16_w17sc95.jpg",
-      "bytes": 12182,
-      "wave": "meager-w17-2026-11",
-      "w": 475,
-      "h": 317
+      "src": "local://264048_w129_01.jpg",
+      "thumb": "assets/enriched/264048/264048_w129_01.jpg",
+      "alt": "Сетевой фильтр Acoustic Revive YTP-6R ( acoustic revive ytp 6r )",
+      "local": "assets/enriched/264048/264048_w129_01.jpg",
+      "enriched": true,
+      "attribution": "wave129-oem",
+      "bytes": 55086
     },
     {
-      "src": "local-variant://264048/w17sc90",
-      "local": "assets/enriched/264048/183696e3f0_w17sc90.jpg",
-      "bytes": 11324,
-      "wave": "meager-w17-2026-11",
-      "w": 450,
-      "h": 300
+      "src": "local://264048_w129_02.jpg",
+      "thumb": "assets/enriched/264048/264048_w129_02.jpg",
+      "alt": "Сетевой фильтр Acoustic Revive YTP-6R ( acoustic revive ytp 6r )",
+      "local": "assets/enriched/264048/264048_w129_02.jpg",
+      "enriched": true,
+      "attribution": "wave129-oem",
+      "bytes": 40107
     },
     {
-      "src": "local-variant://264048/w17sc85",
-      "local": "assets/enriched/264048/47c2aeff35_w17sc85.jpg",
-      "bytes": 10484,
-      "wave": "meager-w17-2026-11",
-      "w": 425,
-      "h": 283
+      "src": "local://264048_w129_03.jpg",
+      "thumb": "assets/enriched/264048/264048_w129_03.jpg",
+      "alt": "Сетевой фильтр Acoustic Revive YTP-6R ( acoustic revive ytp 6r )",
+      "local": "assets/enriched/264048/264048_w129_03.jpg",
+      "enriched": true,
+      "attribution": "wave129-oem",
+      "bytes": 71610
+    },
+    {
+      "src": "local://264048_w129_04.jpg",
+      "thumb": "assets/enriched/264048/264048_w129_04.jpg",
+      "alt": "Сетевой фильтр Acoustic Revive YTP-6R ( acoustic revive ytp 6r )",
+      "local": "assets/enriched/264048/264048_w129_04.jpg",
+      "enriched": true,
+      "attribution": "wave129-oem",
+      "bytes": 67690
     }
   ],
   "sku": "",
@@ -76,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T17:59:33Z",
+  "galleryWave129": true
 }
