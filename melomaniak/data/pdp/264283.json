@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/120r-1-scaled-e1580119562871-500x652-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/120r-1-scaled-e1580119562871-500x652-1-500x600.jpg",
-      "alt": "120r-1-scaled-e1580119562871-500&#215;652",
-      "local": "assets/from-live/products/5e422e9f3c_120r-1-scaled-e1580119562871-500x652-1.jpg"
+      "src": "local://264283_w103_00.jpg",
+      "thumb": "assets/enriched/264283/264283_w103_00.jpg",
+      "alt": "Коннектор Furutech FP-120 (R) ( furutech fp 120 (r) )",
+      "local": "assets/enriched/264283/264283_w103_00.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 53640
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_120F_R_.jpg",
-      "local": "assets/enriched/264283/862ce5de43_w14media.jpg",
-      "bytes": 31814,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264283_w103_01.jpg",
+      "thumb": "assets/enriched/264283/264283_w103_01.jpg",
+      "alt": "Коннектор Furutech FP-120 (R) ( furutech fp 120 (r) )",
+      "local": "assets/enriched/264283/264283_w103_01.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 30784
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_120F_R_-300x300.jpg",
-      "local": "assets/enriched/264283/0fc6c05469_w14var.jpg",
-      "bytes": 9599,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264283_w103_02.jpg",
+      "thumb": "assets/enriched/264283/264283_w103_02.jpg",
+      "alt": "Коннектор Furutech FP-120 (R) ( furutech fp 120 (r) )",
+      "local": "assets/enriched/264283/264283_w103_02.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 35681
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_120F_R_-600x600.jpg",
-      "local": "assets/enriched/264283/a198b59a0a_w14var.jpg",
-      "bytes": 29724,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264283_w103_03.jpg",
+      "thumb": "assets/enriched/264283/264283_w103_03.jpg",
+      "alt": "Коннектор Furutech FP-120 (R) ( furutech fp 120 (r) )",
+      "local": "assets/enriched/264283/264283_w103_03.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 33828
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:04:07Z",
+  "galleryWave103": true
 }

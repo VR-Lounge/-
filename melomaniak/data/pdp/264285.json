@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-101G.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-101G.jpg",
-      "alt": "FP-101G",
-      "local": "assets/from-live/products/0fee4604ec_FP-101G.jpg"
+      "src": "local://264285_w103_00.jpg",
+      "thumb": "assets/enriched/264285/264285_w103_00.jpg",
+      "alt": "Коннектор Furutech FP-101(G) ( furutech fp 101(g) )",
+      "local": "assets/enriched/264285/264285_w103_00.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 63965
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_101_G_.jpg",
-      "local": "assets/enriched/264285/e385794db0_w14media.jpg",
-      "bytes": 29885,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264285_w103_01.jpg",
+      "thumb": "assets/enriched/264285/264285_w103_01.jpg",
+      "alt": "Коннектор Furutech FP-101(G) ( furutech fp 101(g) )",
+      "local": "assets/enriched/264285/264285_w103_01.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 37138
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_101_G_-300x300.jpg",
-      "local": "assets/enriched/264285/0332ac26af_w14var.jpg",
-      "bytes": 10427,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264285_w103_02.jpg",
+      "thumb": "assets/enriched/264285/264285_w103_02.jpg",
+      "alt": "Коннектор Furutech FP-101(G) ( furutech fp 101(g) )",
+      "local": "assets/enriched/264285/264285_w103_02.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 42774
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_101_G_-600x600.jpg",
-      "local": "assets/enriched/264285/879de2cdc6_w14var.jpg",
-      "bytes": 28582,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264285_w103_03.jpg",
+      "thumb": "assets/enriched/264285/264285_w103_03.jpg",
+      "alt": "Коннектор Furutech FP-101(G) ( furutech fp 101(g) )",
+      "local": "assets/enriched/264285/264285_w103_03.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 40556
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:04:07Z",
+  "galleryWave103": true
 }

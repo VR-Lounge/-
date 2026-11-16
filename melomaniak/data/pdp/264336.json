@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/f63-g-1-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/f63-g-1-500x500-1.jpg",
-      "alt": "f63-g-1-500&#215;500",
-      "local": "assets/from-live/products/8935c664f1_f63-g-1-500x500-1.jpg"
+      "src": "local://264336_w103_00.jpg",
+      "thumb": "assets/enriched/264336/264336_w103_00.jpg",
+      "alt": "Переходник Furutech F 63 S (G) ( furutech f 63 s (g) )",
+      "local": "assets/enriched/264336/264336_w103_00.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 111010
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/f63-g-1-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264336/99499a1b9a_w13var.jpg",
-      "bytes": 8115,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264336_w103_01.jpg",
+      "thumb": "assets/enriched/264336/264336_w103_01.jpg",
+      "alt": "Переходник Furutech F 63 S (G) ( furutech f 63 s (g) )",
+      "local": "assets/enriched/264336/264336_w103_01.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 100721
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_F_63_G_.jpg",
-      "local": "assets/enriched/264336/037f8fb487_w15media.jpg",
-      "bytes": 22243,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264336_w103_02.jpg",
+      "thumb": "assets/enriched/264336/264336_w103_02.jpg",
+      "alt": "Переходник Furutech F 63 S (G) ( furutech f 63 s (g) )",
+      "local": "assets/enriched/264336/264336_w103_02.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 75805
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_F_63_G_-600x600.jpg",
-      "local": "assets/enriched/264336/196e7e36e8_w15var.jpg",
-      "bytes": 19598,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264336_w103_03.jpg",
+      "thumb": "assets/enriched/264336/264336_w103_03.jpg",
+      "alt": "Переходник Furutech F 63 S (G) ( furutech f 63 s (g) )",
+      "local": "assets/enriched/264336/264336_w103_03.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 26355
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:41:45Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:04:07Z",
+  "galleryWave103": true
 }

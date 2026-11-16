@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-Mono-63-G11.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-Mono-63-G11.jpg",
-      "alt": "FP-Mono-63-G11",
-      "local": "assets/from-live/products/9e362c474c_FP-Mono-63-G11.jpg"
+      "src": "local://264303_w103_00.jpg",
+      "thumb": "assets/enriched/264303/264303_w103_00.jpg",
+      "alt": "Коннектор Furutech FP-mono 63 (G) ( furutech fp mono 63 (g) )",
+      "local": "assets/enriched/264303/264303_w103_00.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 92752
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FP-Mono-63-L-G.jpg",
-      "local": "assets/enriched/264303/d3dbb08e7a_w17media.jpg",
-      "bytes": 6612,
-      "wave": "meager-w17-2026-11",
-      "w": 250,
-      "h": 250
+      "src": "local://264303_w103_01.jpg",
+      "thumb": "assets/enriched/264303/264303_w103_01.jpg",
+      "alt": "Коннектор Furutech FP-mono 63 (G) ( furutech fp mono 63 (g) )",
+      "local": "assets/enriched/264303/264303_w103_01.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 52822
     },
     {
-      "src": "local-variant://264303/w17dsc95",
-      "local": "assets/enriched/264303/f4acc54bf2_w17dsc95.jpg",
-      "bytes": 4420,
-      "wave": "meager-w17-2026-11",
-      "w": 237,
-      "h": 237
+      "src": "local://264303_w103_02.jpg",
+      "thumb": "assets/enriched/264303/264303_w103_02.jpg",
+      "alt": "Коннектор Furutech FP-mono 63 (G) ( furutech fp mono 63 (g) )",
+      "local": "assets/enriched/264303/264303_w103_02.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 52873
     },
     {
-      "src": "local-variant://264303/w17dsc90",
-      "local": "assets/enriched/264303/0fd14a4981_w17dsc90.jpg",
-      "bytes": 4368,
-      "wave": "meager-w17-2026-11",
-      "w": 225,
-      "h": 225
+      "src": "local://264303_w103_03.jpg",
+      "thumb": "assets/enriched/264303/264303_w103_03.jpg",
+      "alt": "Коннектор Furutech FP-mono 63 (G) ( furutech fp mono 63 (g) )",
+      "local": "assets/enriched/264303/264303_w103_03.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 17655
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:04:07Z",
+  "galleryWave103": true
 }

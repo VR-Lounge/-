@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-701M-G.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-701M-G.jpg",
-      "alt": "Furutech-FP-701M-G",
-      "local": "assets/from-live/products/ce504bc425_Furutech-FP-701M-G.jpg"
+      "src": "local://264271_w103_00.jpg",
+      "thumb": "assets/enriched/264271/264271_w103_00.jpg",
+      "alt": "Коннектор Furutech FP-701 M(G) ( furutech fp 701 m(g) )",
+      "local": "assets/enriched/264271/264271_w103_00.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 39969
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_701M_G_.jpg",
-      "local": "assets/enriched/264271/f70e30c641_w14media.jpg",
-      "bytes": 14654,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264271_w103_01.jpg",
+      "thumb": "assets/enriched/264271/264271_w103_01.jpg",
+      "alt": "Коннектор Furutech FP-701 M(G) ( furutech fp 701 m(g) )",
+      "local": "assets/enriched/264271/264271_w103_01.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 28573
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_701M_G_-600x600.jpg",
-      "local": "assets/enriched/264271/b8e5f8a556_w14var.jpg",
-      "bytes": 12138,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264271_w103_02.jpg",
+      "thumb": "assets/enriched/264271/264271_w103_02.jpg",
+      "alt": "Коннектор Furutech FP-701 M(G) ( furutech fp 701 m(g) )",
+      "local": "assets/enriched/264271/264271_w103_02.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 40581
     },
     {
-      "src": "local-variant://264271/w17sc95",
-      "local": "assets/enriched/264271/1ae1627f66_w17sc95.jpg",
-      "bytes": 13631,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://264271_w103_03.jpg",
+      "thumb": "assets/enriched/264271/264271_w103_03.jpg",
+      "alt": "Коннектор Furutech FP-701 M(G) ( furutech fp 701 m(g) )",
+      "local": "assets/enriched/264271/264271_w103_03.jpg",
+      "enriched": true,
+      "attribution": "wave103-oem",
+      "bytes": 16509
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:04:07Z",
+  "galleryWave103": true
 }
