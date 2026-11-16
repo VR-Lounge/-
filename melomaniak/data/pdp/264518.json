@@ -36,34 +36,67 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-XR-6000-e1614259006254.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-XR-6000-e1614259006254.jpg",
-      "alt": "SAEC-XR-6000-e1614259006254",
-      "local": "assets/from-live/products/7c2eaf0eaf_SAEC-XR-6000-e1614259006254.jpg"
+      "src": "local://264518_w128_00.jpg",
+      "thumb": "assets/enriched/264518/264518_w128_00.jpg",
+      "alt": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "local": "assets/enriched/264518/264518_w128_00.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 632576
     },
     {
-      "src": "local-variant://264518/w17sc95",
-      "local": "assets/enriched/264518/4def36ea11_w17sc95.jpg",
-      "bytes": 34707,
-      "wave": "meager-w17-2026-11",
-      "w": 399,
-      "h": 570
+      "src": "local://264518_w128_01.jpg",
+      "thumb": "assets/enriched/264518/264518_w128_01.jpg",
+      "alt": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "local": "assets/enriched/264518/264518_w128_01.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 635476
     },
     {
-      "src": "local-variant://264518/w17sc90",
-      "local": "assets/enriched/264518/9773fe21bb_w17sc90.jpg",
-      "bytes": 32118,
-      "wave": "meager-w17-2026-11",
-      "w": 378,
-      "h": 540
+      "src": "local://264518_w128_02.jpg",
+      "thumb": "assets/enriched/264518/264518_w128_02.jpg",
+      "alt": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "local": "assets/enriched/264518/264518_w128_02.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 456026
     },
     {
-      "src": "local-variant://264518/w17sc85",
-      "local": "assets/enriched/264518/40c90a7464_w17sc85.jpg",
-      "bytes": 29847,
-      "wave": "meager-w17-2026-11",
-      "w": 357,
-      "h": 510
+      "src": "local://264518_w128_03.jpg",
+      "thumb": "assets/enriched/264518/264518_w128_03.jpg",
+      "alt": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "local": "assets/enriched/264518/264518_w128_03.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 423432
+    },
+    {
+      "src": "local://264518_w128_04.jpg",
+      "thumb": "assets/enriched/264518/264518_w128_04.jpg",
+      "alt": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "local": "assets/enriched/264518/264518_w128_04.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 577668
+    },
+    {
+      "src": "local://264518_w128_05.jpg",
+      "thumb": "assets/enriched/264518/264518_w128_05.jpg",
+      "alt": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "local": "assets/enriched/264518/264518_w128_05.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 627381
+    },
+    {
+      "src": "local://264518_w128_06.jpg",
+      "thumb": "assets/enriched/264518/264518_w128_06.jpg",
+      "alt": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "local": "assets/enriched/264518/264518_w128_06.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 107759
     }
   ],
   "sku": "",
@@ -76,5 +109,9 @@
   "enrichedAt": "2026-11-14T13:35:11Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T17:45:01Z",
+  "galleryWave128": true
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T17:28:25Z",
+  "generatedAt": "2026-11-16T17:48:13Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,45 +15,31 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1561,
+    "true_multi_angle": 1563,
     "padded": 11,
-    "single_real": 315
+    "single_real": 313
   },
   "pct": {
-    "true_multi_angle": 82.72,
+    "true_multi_angle": 82.83,
     "padded": 0.58,
-    "single_real": 16.69,
-    "padded_of_claimed_gal4plus": 16.26,
-    "not_true_multi": 17.28
+    "single_real": 16.59,
+    "padded_of_claimed_gal4plus": 16.15,
+    "not_true_multi": 17.17
   },
   "padReasonTallies": {
-    "local-variant": 566,
-    "wN-variant-name": 287,
+    "local-variant": 562,
+    "wN-variant-name": 285,
     "cdn-size-thumb": 72,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 303,
+  "claimedButNotTrueMulti": 301,
   "topPaddedByPrice": [
     {
       "id": 15982,
       "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )",
       "cat": "Усилители",
       "price": 331500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 15720,
-      "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
-      "cat": "Источники",
-      "price": 320000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -443,19 +429,6 @@
       "class": "single_real"
     },
     {
-      "id": 264518,
-      "name": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
-      "cat": "Кабели",
-      "price": 104969,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "class": "single_real"
-    },
-    {
       "id": 264401,
       "name": "Фоно кабель Furutech AG-16-XLR ( furutech ag 16 xlr )",
       "cat": "Кабели",
@@ -578,6 +551,32 @@
         "wN-variant-name": 1,
         "cdn-size-thumb": 1,
         "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 267996,
+      "name": "MUSICA SPS 60",
+      "cat": "Усилители",
+      "price": 90000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264529,
+      "name": "Акустический кабель SAEC  SPC-650 ( saec spc 650 )",
+      "cat": "Кабели",
+      "price": 89813,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
       },
       "class": "single_real"
     }
@@ -808,16 +807,6 @@
       "name": "усилитель мощности Musica pow 1000 ( musica pow 1000 )",
       "cat": "Усилители",
       "price": 331500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 15720,
-      "name": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
-      "cat": "Источники",
-      "price": 320000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1078,16 +1067,6 @@
       "name": "центральный канал Audio Physic Center II Special edition ( audio physic center ii special edition )",
       "cat": "Другое",
       "price": 112500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 264518,
-      "name": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
-      "cat": "Кабели",
-      "price": 104969,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1382,9 +1361,29 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264068,
+      "name": "Кварцевые диски Audio Replas OPT-1 HR/8P ( audio replas opt 1 hr 8p )",
+      "cat": "Другое",
+      "price": 64800,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264525,
+      "name": "Фоно кабель SAEC  SCX-5000X-X ( saec scx 5000x x )",
+      "cat": "Кабели",
+      "price": 62869,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 315,
+  "hitlTrueOneshotCount": 313,
   "items": [
     {
       "id": 262053,
@@ -9099,17 +9098,14 @@
       "slug": "cd_transport_47_labs_4716",
       "cat": "Источники",
       "price": 320000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15742,
@@ -16789,16 +16785,14 @@
       "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-xr-6000",
       "cat": "Кабели",
       "price": 104969,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273143,

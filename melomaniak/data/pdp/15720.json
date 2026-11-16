@@ -21,34 +21,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_transport_47_Labs_4716_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_transport_47_Labs_4716_-600x600.jpg",
-      "alt": "47 Labs 4716",
-      "local": "assets/from-live/products/4ecd74735b_CD_transport_47_Labs_4716_.jpg"
+      "src": "local://15720_w128_00.jpg",
+      "thumb": "assets/enriched/15720/15720_w128_00.jpg",
+      "alt": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
+      "local": "assets/enriched/15720/15720_w128_00.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 78021
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_transport_47_Labs_4716_-300x300.jpg",
-      "local": "assets/enriched/15720/31add981cd_w13var.jpg",
-      "bytes": 11122,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://15720_w128_01.jpg",
+      "thumb": "assets/enriched/15720/15720_w128_01.jpg",
+      "alt": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
+      "local": "assets/enriched/15720/15720_w128_01.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 132783
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_transport_47_Labs_4716_-600x600.jpg",
-      "local": "assets/enriched/15720/2f62fc4a75_w13var.jpg",
-      "bytes": 29442,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15720_w128_02.jpg",
+      "thumb": "assets/enriched/15720/15720_w128_02.jpg",
+      "alt": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
+      "local": "assets/enriched/15720/15720_w128_02.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 88072
     },
     {
-      "src": "local-variant://15720/w17sc95",
-      "local": "assets/enriched/15720/8a6eb6c4e4_w17sc95.jpg",
-      "bytes": 35108,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://15720_w128_03.jpg",
+      "thumb": "assets/enriched/15720/15720_w128_03.jpg",
+      "alt": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
+      "local": "assets/enriched/15720/15720_w128_03.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 84355
+    },
+    {
+      "src": "local://15720_w128_04.jpg",
+      "thumb": "assets/enriched/15720/15720_w128_04.jpg",
+      "alt": "CD транспорт 47 Labs 4716 ( cd 47 labs 4716 )",
+      "local": "assets/enriched/15720/15720_w128_04.jpg",
+      "enriched": true,
+      "attribution": "wave128-oem",
+      "bytes": 108949
     }
   ],
   "sku": "",
@@ -60,5 +75,9 @@
   "enrichedAt": "2026-11-14T13:45:01Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T17:45:01Z",
+  "galleryWave128": true
 }
