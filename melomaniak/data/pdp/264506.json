@@ -36,10 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC_WE-4700_001.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC_WE-4700_001-540x600.jpg",
-      "alt": "SAEC_WE-4700_001",
-      "local": "assets/from-live/products/7aa7f9c94a_SAEC_WE-4700_001.jpg"
+      "src": "local://264506_w110_00.jpg",
+      "thumb": "assets/enriched/264506/264506_w110_00.jpg",
+      "alt": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
+      "local": "assets/enriched/264506/264506_w110_00.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 67480
+    },
+    {
+      "src": "local://264506_w110_01.jpg",
+      "thumb": "assets/enriched/264506/264506_w110_01.jpg",
+      "alt": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
+      "local": "assets/enriched/264506/264506_w110_01.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 26682
+    },
+    {
+      "src": "local://264506_w110_02.jpg",
+      "thumb": "assets/enriched/264506/264506_w110_02.jpg",
+      "alt": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
+      "local": "assets/enriched/264506/264506_w110_02.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 49513
+    },
+    {
+      "src": "local://264506_w110_03.jpg",
+      "thumb": "assets/enriched/264506/264506_w110_03.jpg",
+      "alt": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
+      "local": "assets/enriched/264506/264506_w110_03.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 61477
     }
   ],
   "sku": "",
@@ -52,8 +82,11 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: true 1-shot / <4 OEM angles after depad — salon shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:23:42Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T11:41:32Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave110": true
 }

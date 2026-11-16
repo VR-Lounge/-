@@ -21,10 +21,67 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/clear_665205_1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/clear_665205_1-600x600.jpg",
-      "alt": "clear_665205_1",
-      "local": "assets/from-live/products/51b7a7f225_clear_665205_1.jpg"
+      "src": "local://262608_w110_00.jpg",
+      "thumb": "assets/enriched/262608/262608_w110_00.jpg",
+      "alt": "Интегральный усилитель Fezz Audio Mira Ceti 300b ( fezz audio mira ceti 300b )",
+      "local": "assets/enriched/262608/262608_w110_00.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 107050
+    },
+    {
+      "src": "local://262608_w110_01.jpg",
+      "thumb": "assets/enriched/262608/262608_w110_01.jpg",
+      "alt": "Интегральный усилитель Fezz Audio Mira Ceti 300b ( fezz audio mira ceti 300b )",
+      "local": "assets/enriched/262608/262608_w110_01.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 61011
+    },
+    {
+      "src": "local://262608_w110_02.jpg",
+      "thumb": "assets/enriched/262608/262608_w110_02.jpg",
+      "alt": "Интегральный усилитель Fezz Audio Mira Ceti 300b ( fezz audio mira ceti 300b )",
+      "local": "assets/enriched/262608/262608_w110_02.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 66949
+    },
+    {
+      "src": "local://262608_w110_03.jpg",
+      "thumb": "assets/enriched/262608/262608_w110_03.jpg",
+      "alt": "Интегральный усилитель Fezz Audio Mira Ceti 300b ( fezz audio mira ceti 300b )",
+      "local": "assets/enriched/262608/262608_w110_03.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 63843
+    },
+    {
+      "src": "local://262608_w110_04.jpg",
+      "thumb": "assets/enriched/262608/262608_w110_04.jpg",
+      "alt": "Интегральный усилитель Fezz Audio Mira Ceti 300b ( fezz audio mira ceti 300b )",
+      "local": "assets/enriched/262608/262608_w110_04.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 72028
+    },
+    {
+      "src": "local://262608_w110_05.jpg",
+      "thumb": "assets/enriched/262608/262608_w110_05.jpg",
+      "alt": "Интегральный усилитель Fezz Audio Mira Ceti 300b ( fezz audio mira ceti 300b )",
+      "local": "assets/enriched/262608/262608_w110_05.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 78326
+    },
+    {
+      "src": "local://262608_w110_06.jpg",
+      "thumb": "assets/enriched/262608/262608_w110_06.jpg",
+      "alt": "Интегральный усилитель Fezz Audio Mira Ceti 300b ( fezz audio mira ceti 300b )",
+      "local": "assets/enriched/262608/262608_w110_06.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 75392
     }
   ],
   "sku": "",
@@ -36,7 +93,10 @@
   "enrichedAt": "2026-11-14T13:46:21Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T11:41:32Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave110": true
 }

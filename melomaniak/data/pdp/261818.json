@@ -186,13 +186,49 @@
   ],
   "gallery": [
     {
-      "src": "local://278d0f8705_a2cf39df88e12e594615f7f04398c7e1.jpg",
-      "thumb": "assets/enriched/261818/13cb8c11f4_live3.jpg",
+      "src": "local://261818_w110_00.jpg",
+      "thumb": "assets/enriched/261818/261818_w110_00.jpg",
       "alt": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
-      "local": "assets/enriched/261818/13cb8c11f4_live3.jpg",
+      "local": "assets/enriched/261818/261818_w110_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 91533
+      "attribution": "wave110-oem",
+      "bytes": 79481
+    },
+    {
+      "src": "local://261818_w110_01.jpg",
+      "thumb": "assets/enriched/261818/261818_w110_01.jpg",
+      "alt": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
+      "local": "assets/enriched/261818/261818_w110_01.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 174792
+    },
+    {
+      "src": "local://261818_w110_02.jpg",
+      "thumb": "assets/enriched/261818/261818_w110_02.jpg",
+      "alt": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
+      "local": "assets/enriched/261818/261818_w110_02.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 429730
+    },
+    {
+      "src": "local://261818_w110_03.jpg",
+      "thumb": "assets/enriched/261818/261818_w110_03.jpg",
+      "alt": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
+      "local": "assets/enriched/261818/261818_w110_03.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 76192
+    },
+    {
+      "src": "local://261818_w110_04.jpg",
+      "thumb": "assets/enriched/261818/261818_w110_04.jpg",
+      "alt": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
+      "local": "assets/enriched/261818/261818_w110_04.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 41013
     }
   ],
   "sku": "",
@@ -204,8 +240,11 @@
   "enrichedAt": "2026-11-14T16:50:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:24:12Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T11:41:32Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave110": true
 }

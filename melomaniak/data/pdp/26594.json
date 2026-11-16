@@ -41,13 +41,76 @@
   ],
   "gallery": [
     {
-      "src": "from-live://6f774df6d4_ysilitel_moshnosti_Air_Tight_ATM-1S.jpg",
-      "thumb": "assets/enriched/26594/d70f0461aa_w10live.jpg",
-      "alt": "26594",
-      "local": "assets/enriched/26594/d70f0461aa_w10live.jpg",
+      "src": "local://26594_w110_00.jpg",
+      "thumb": "assets/enriched/26594/26594_w110_00.jpg",
+      "alt": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "local": "assets/enriched/26594/26594_w110_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 36441
+      "attribution": "wave110-oem",
+      "bytes": 50077
+    },
+    {
+      "src": "local://26594_w110_01.jpg",
+      "thumb": "assets/enriched/26594/26594_w110_01.jpg",
+      "alt": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "local": "assets/enriched/26594/26594_w110_01.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 62620
+    },
+    {
+      "src": "local://26594_w110_02.jpg",
+      "thumb": "assets/enriched/26594/26594_w110_02.jpg",
+      "alt": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "local": "assets/enriched/26594/26594_w110_02.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 292845
+    },
+    {
+      "src": "local://26594_w110_03.jpg",
+      "thumb": "assets/enriched/26594/26594_w110_03.jpg",
+      "alt": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "local": "assets/enriched/26594/26594_w110_03.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 289409
+    },
+    {
+      "src": "local://26594_w110_04.jpg",
+      "thumb": "assets/enriched/26594/26594_w110_04.jpg",
+      "alt": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "local": "assets/enriched/26594/26594_w110_04.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 266205
+    },
+    {
+      "src": "local://26594_w110_05.jpg",
+      "thumb": "assets/enriched/26594/26594_w110_05.jpg",
+      "alt": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "local": "assets/enriched/26594/26594_w110_05.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 254791
+    },
+    {
+      "src": "local://26594_w110_06.jpg",
+      "thumb": "assets/enriched/26594/26594_w110_06.jpg",
+      "alt": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "local": "assets/enriched/26594/26594_w110_06.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 249783
+    },
+    {
+      "src": "local://26594_w110_07.jpg",
+      "thumb": "assets/enriched/26594/26594_w110_07.jpg",
+      "alt": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
+      "local": "assets/enriched/26594/26594_w110_07.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 225815
     }
   ],
   "sku": "",
@@ -60,8 +123,11 @@
   "enrichedAt": "2026-11-14T13:45:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w10-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:24:09Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T11:41:32Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave110": true
 }

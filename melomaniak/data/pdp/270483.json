@@ -56,10 +56,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/transrotor_phono_8-2_mc1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/transrotor_phono_8-2_mc1.jpg",
-      "alt": "transrotor_phono_8-2_mc1.jpg",
-      "local": "assets/from-live/products/c99730fea8_transrotor_phono_8-2_mc1.jpg"
+      "src": "local://270483_w110_00.jpg",
+      "thumb": "assets/enriched/270483/270483_w110_00.jpg",
+      "alt": "Фонокорректор Transrotor Phono 8.2 MC",
+      "local": "assets/enriched/270483/270483_w110_00.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 138492
+    },
+    {
+      "src": "local://270483_w110_01.jpg",
+      "thumb": "assets/enriched/270483/270483_w110_01.jpg",
+      "alt": "Фонокорректор Transrotor Phono 8.2 MC",
+      "local": "assets/enriched/270483/270483_w110_01.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 188288
+    },
+    {
+      "src": "local://270483_w110_02.jpg",
+      "thumb": "assets/enriched/270483/270483_w110_02.jpg",
+      "alt": "Фонокорректор Transrotor Phono 8.2 MC",
+      "local": "assets/enriched/270483/270483_w110_02.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 37109
+    },
+    {
+      "src": "local://270483_w110_03.jpg",
+      "thumb": "assets/enriched/270483/270483_w110_03.jpg",
+      "alt": "Фонокорректор Transrotor Phono 8.2 MC",
+      "local": "assets/enriched/270483/270483_w110_03.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 259690
+    },
+    {
+      "src": "local://270483_w110_04.jpg",
+      "thumb": "assets/enriched/270483/270483_w110_04.jpg",
+      "alt": "Фонокорректор Transrotor Phono 8.2 MC",
+      "local": "assets/enriched/270483/270483_w110_04.jpg",
+      "enriched": true,
+      "attribution": "wave110-oem",
+      "bytes": 82104
     }
   ],
   "sku": "",
@@ -71,8 +110,11 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: true 1-shot / <4 OEM angles after depad — salon shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:24:40Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T11:41:32Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave110": true
 }

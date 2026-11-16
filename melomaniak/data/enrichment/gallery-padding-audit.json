@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T01:21:00Z",
+  "generatedAt": "2026-11-16T11:45:08Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,16 +15,16 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1510,
+    "true_multi_angle": 1516,
     "padded": 11,
-    "single_real": 366
+    "single_real": 360
   },
   "pct": {
-    "true_multi_angle": 80.02,
+    "true_multi_angle": 80.34,
     "padded": 0.58,
-    "single_real": 19.4,
-    "padded_of_claimed_gal4plus": 18.25,
-    "not_true_multi": 19.98
+    "single_real": 19.08,
+    "padded_of_claimed_gal4plus": 18.19,
+    "not_true_multi": 19.66
   },
   "padReasonTallies": {
     "local-variant": 629,
@@ -32,7 +32,7 @@
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
-  "claimedGal4Plus": 1847,
+  "claimedGal4Plus": 1853,
   "claimedButNotTrueMulti": 337,
   "topPaddedByPrice": [
     {
@@ -600,16 +600,6 @@
       "galleryHitl": true
     },
     {
-      "id": 264506,
-      "name": "Тонарм SAEC  WE-4700 ( saec we 4700 )",
-      "cat": "Другое",
-      "price": 1007276,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
       "id": 16222,
       "name": "напольная акустика Audio Physic Virgo V ( audio physic virgo v )",
       "cat": "Акустика",
@@ -630,40 +620,10 @@
       "galleryHitl": true
     },
     {
-      "id": 15910,
-      "name": "предусилитель Herron Audio VTSP 3 ( herron audio vtsp 3 )",
-      "cat": "Усилители",
-      "price": 780000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 26594,
-      "name": "усилитель мощности Air Tight ATM-1S ( air tight atm 1s )",
-      "cat": "Усилители",
-      "price": 780000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
       "id": 264124,
       "name": "Сетевой фильтр Audio Replas TRIANGLE POWER 6 SIG ( audio replas triangle power 6 sig )",
       "cat": "Другое",
       "price": 749777,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 261818,
-      "name": "AV процессор ANTHEM AVM 70 Black ( av anthem avm 70 black )",
-      "cat": "Ресиверы",
-      "price": 743665,
       "galleryLen": 1,
       "uniqueDistinct": 1,
       "padSlots": 0,
@@ -734,16 +694,6 @@
       "name": "напольная акустика Lawrence Audio Mandolin ( lawrence audio mandolin )",
       "cat": "Акустика",
       "price": 580000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 270483,
-      "name": "Фонокорректор Transrotor Phono 8.2 MC",
-      "cat": "Усилители",
-      "price": 573900,
       "galleryLen": 1,
       "uniqueDistinct": 1,
       "padSlots": 0,
@@ -904,16 +854,6 @@
       "name": "интегральный усилитель Line Magnetic Audio LM 210 IA ( line magnetic audio lm 210 ia )",
       "cat": "Усилители",
       "price": 374000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 262608,
-      "name": "Интегральный усилитель Fezz Audio Mira Ceti 300b ( fezz audio mira ceti 300b )",
-      "cat": "Усилители",
-      "price": 365500,
       "galleryLen": 1,
       "uniqueDistinct": 1,
       "padSlots": 0,
@@ -1378,9 +1318,69 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264072,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-HR/4P ( audio replas opt 100hg flat hr 4p )",
+      "cat": "Другое",
+      "price": 114750,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 16216,
+      "name": "центральный канал Audio Physic Center II Special edition ( audio physic center ii special edition )",
+      "cat": "Другое",
+      "price": 112500,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 270581,
+      "name": "Кабель межблочный аналоговый RCA Van den Hul The Hill",
+      "cat": "Кабели",
+      "price": 108390,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 270479,
+      "name": "Фонокорректор Transrotor Phono Studio",
+      "cat": "Усилители",
+      "price": 107900,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264016,
+      "name": "Генератор ионов Acoustic Revive RIO-5 mk II ( acoustic revive rio 5 mk ii )",
+      "cat": "Другое",
+      "price": 105400,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264518,
+      "name": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "cat": "Кабели",
+      "price": 104969,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 366,
+  "hitlTrueOneshotCount": 360,
   "items": [
     {
       "id": 262053,
@@ -3593,14 +3593,14 @@
       "slug": "%d1%82%d0%be%d0%bd%d0%b0%d1%80%d0%bc-saec-we-4700",
       "cat": "Другое",
       "price": 1007276,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 16832,
@@ -4508,14 +4508,14 @@
       "slug": "predysilitel_Herron_Audio_VTSP_3",
       "cat": "Усилители",
       "price": 780000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 262127,
@@ -4538,14 +4538,14 @@
       "slug": "ysilitel_moshnosti_air_tight_atm-1s",
       "cat": "Усилители",
       "price": 780000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 26654,
@@ -4838,14 +4838,14 @@
       "slug": "av-%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81%d0%be%d1%80-anthem-avm-70-black",
       "cat": "Ресиверы",
       "price": 743665,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 274635,
@@ -5726,14 +5726,14 @@
       "slug": "150621ddf7355d13f6d541be2c8ea0a7",
       "cat": "Усилители",
       "price": 573900,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 261825,
@@ -8287,14 +8287,14 @@
       "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-fezz-audio-mira-ceti-300b",
       "cat": "Усилители",
       "price": 365500,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 273687,
