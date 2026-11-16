@@ -46,37 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
-      "thumb": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "src": "local://264557_w106_00.jpg",
+      "thumb": "assets/enriched/264557/264557_w106_00.jpg",
       "alt": "Кабель для наушников SAEC  SHC-U300FH80 ( saec shc u300fh80 )",
-      "local": "assets/enriched/264557/4875d96d4c_1.jpg",
+      "local": "assets/enriched/264557/264557_w106_00.jpg",
       "enriched": true,
-      "attribution": "cdn11.bigcommerce.com",
-      "bytes": 32186
+      "attribution": "wave106-oem",
+      "bytes": 20926
     },
     {
-      "src": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
-      "thumb": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
+      "src": "local://264557_w106_01.jpg",
+      "thumb": "assets/enriched/264557/264557_w106_01.jpg",
       "alt": "Кабель для наушников SAEC  SHC-U300FH80 ( saec shc u300fh80 )",
-      "local": "assets/enriched/264557/7f6e0e4d64_2.jpg",
+      "local": "assets/enriched/264557/264557_w106_01.jpg",
       "enriched": true,
-      "attribution": "cdn11.bigcommerce.com",
-      "bytes": 142064
+      "attribution": "wave106-oem",
+      "bytes": 15482
     },
     {
-      "src": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/15093/SAEC_SHC_U300FSH__59971__21453.1561716252.jpg?c=2",
-      "thumb": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/15093/SAEC_SHC_U300FSH__59971__21453.1561716252.jpg?c=2",
+      "src": "local://264557_w106_02.jpg",
+      "thumb": "assets/enriched/264557/264557_w106_02.jpg",
       "alt": "Кабель для наушников SAEC  SHC-U300FH80 ( saec shc u300fh80 )",
-      "local": "assets/enriched/264557/a31ff2926a_3.jpg",
+      "local": "assets/enriched/264557/264557_w106_02.jpg",
       "enriched": true,
-      "attribution": "cdn11.bigcommerce.com",
-      "bytes": 32186
+      "attribution": "wave106-oem",
+      "bytes": 9981
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SHC-SHC-U300FH80.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SHC-SHC-U300FH80.jpg",
-      "alt": "SAEC-SHC-SHC-U300FH80",
-      "local": "assets/from-live/products/8b8565a4aa_SAEC-SHC-SHC-U300FH80.jpg"
+      "src": "local://264557_w106_03.jpg",
+      "thumb": "assets/enriched/264557/264557_w106_03.jpg",
+      "alt": "Кабель для наушников SAEC  SHC-U300FH80 ( saec shc u300fh80 )",
+      "local": "assets/enriched/264557/264557_w106_03.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 14209
     }
   ],
   "sku": "",
@@ -88,5 +91,10 @@
   ],
   "enrichedAt": "2026-11-14T12:57:23Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w3-2026-11"
+  "meagerWave": "meager-w3-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:38:30Z",
+  "galleryWave106": true
 }

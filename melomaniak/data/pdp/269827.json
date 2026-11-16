@@ -36,32 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-1.jpg",
-      "alt": "wireworld_oasis_8-1.jpg",
-      "local": "assets/from-live/products/ef5479490a_wireworld_oasis_8-1.jpg"
+      "src": "local://269827_w106_00.jpg",
+      "thumb": "assets/enriched/269827/269827_w106_00.jpg",
+      "alt": "Кабель акустический в нарезку Wireworld Oasis 8",
+      "local": "assets/enriched/269827/269827_w106_00.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 63415
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_oasis_8-2.jpg",
-      "alt": "wireworld_oasis_8-2.jpg",
-      "local": "assets/from-live/products/4a05a953bd_wireworld_oasis_8-2.jpg"
+      "src": "local://269827_w106_01.jpg",
+      "thumb": "assets/enriched/269827/269827_w106_01.jpg",
+      "alt": "Кабель акустический в нарезку Wireworld Oasis 8",
+      "local": "assets/enriched/269827/269827_w106_01.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 51615
     },
     {
-      "src": "local-variant://269827/w17sc95",
-      "local": "assets/enriched/269827/b6fb809489_w17sc95.jpg",
-      "bytes": 54269,
-      "wave": "meager-w17-2026-11",
-      "w": 950,
-      "h": 950
+      "src": "local://269827_w106_02.jpg",
+      "thumb": "assets/enriched/269827/269827_w106_02.jpg",
+      "alt": "Кабель акустический в нарезку Wireworld Oasis 8",
+      "local": "assets/enriched/269827/269827_w106_02.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 38908
     },
     {
-      "src": "local-variant://269827/w17sc90",
-      "local": "assets/enriched/269827/9ae19eec2c_w17sc90.jpg",
-      "bytes": 50155,
-      "wave": "meager-w17-2026-11",
-      "w": 900,
-      "h": 900
+      "src": "local://269827_w106_03.jpg",
+      "thumb": "assets/enriched/269827/269827_w106_03.jpg",
+      "alt": "Кабель акустический в нарезку Wireworld Oasis 8",
+      "local": "assets/enriched/269827/269827_w106_03.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 45044
     }
   ],
   "sku": "",
@@ -75,5 +83,9 @@
   "enrichedAt": "2026-11-14T13:36:06Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:38:30Z",
+  "galleryWave106": true
 }

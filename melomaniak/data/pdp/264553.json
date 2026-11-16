@@ -46,37 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "local://55b60dae79_SAEC-SHC-2B300FSH.jpg",
-      "thumb": "assets/enriched/264553/3934fc98ae_live1.jpg",
+      "src": "local://264553_w106_00.jpg",
+      "thumb": "assets/enriched/264553/264553_w106_00.jpg",
       "alt": "Кабель для наушников SAEC  SHC-2B300FH65 ( saec shc 2b300fh65 )",
-      "local": "assets/enriched/264553/3934fc98ae_live1.jpg",
+      "local": "assets/enriched/264553/264553_w106_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 19204
+      "attribution": "wave106-oem",
+      "bytes": 16962
     },
     {
-      "src": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
-      "thumb": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "src": "local://264553_w106_01.jpg",
+      "thumb": "assets/enriched/264553/264553_w106_01.jpg",
       "alt": "Кабель для наушников SAEC  SHC-2B300FH65 ( saec shc 2b300fh65 )",
-      "local": "assets/enriched/264553/4875d96d4c_1.jpg",
+      "local": "assets/enriched/264553/264553_w106_01.jpg",
       "enriched": true,
-      "attribution": "cdn11.bigcommerce.com",
-      "bytes": 32186
+      "attribution": "wave106-oem",
+      "bytes": 40480
     },
     {
-      "src": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
-      "thumb": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
+      "src": "local://264553_w106_02.jpg",
+      "thumb": "assets/enriched/264553/264553_w106_02.jpg",
       "alt": "Кабель для наушников SAEC  SHC-2B300FH65 ( saec shc 2b300fh65 )",
-      "local": "assets/enriched/264553/7f6e0e4d64_2.jpg",
+      "local": "assets/enriched/264553/264553_w106_02.jpg",
       "enriched": true,
-      "attribution": "cdn11.bigcommerce.com",
-      "bytes": 142064
+      "attribution": "wave106-oem",
+      "bytes": 11416
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SHC-2B300FH65.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SHC-2B300FH65.jpg",
-      "alt": "SAEC-SHC-2B300FH65",
-      "local": "assets/from-live/products/40125c1a19_SAEC-SHC-2B300FH65.jpg"
+      "src": "local://264553_w106_03.jpg",
+      "thumb": "assets/enriched/264553/264553_w106_03.jpg",
+      "alt": "Кабель для наушников SAEC  SHC-2B300FH65 ( saec shc 2b300fh65 )",
+      "local": "assets/enriched/264553/264553_w106_03.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 9659
     }
   ],
   "sku": "",
@@ -89,5 +92,10 @@
   ],
   "enrichedAt": "2026-11-14T13:52:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w6-2026-11"
+  "meagerWave": "meager-w6-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:38:30Z",
+  "galleryWave106": true
 }

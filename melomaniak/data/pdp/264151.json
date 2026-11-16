@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-50__G_FI-50EG-1-e1579004582877.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-50__G_FI-50EG-1-e1579004582877.jpg",
-      "alt": "FI-50__G_FI-50EG-1-e1579004582877",
-      "local": "assets/from-live/products/e1bc3f4381_FI-50__G_FI-50EG-1-e1579004582877.jpg"
+      "src": "local://264151_w106_00.jpg",
+      "thumb": "assets/enriched/264151/264151_w106_00.jpg",
+      "alt": "Коннектор сетевой Furutech FI-E50 (G)  N1 ( furutech fi e50 (g) n1 )",
+      "local": "assets/enriched/264151/264151_w106_00.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 15058
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FI_E50_R_.jpg",
-      "local": "assets/enriched/264151/1263de9f78_w14media.jpg",
-      "bytes": 42759,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264151_w106_01.jpg",
+      "thumb": "assets/enriched/264151/264151_w106_01.jpg",
+      "alt": "Коннектор сетевой Furutech FI-E50 (G)  N1 ( furutech fi e50 (g) n1 )",
+      "local": "assets/enriched/264151/264151_w106_01.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 10722
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FI_E50_R_-300x300.jpg",
-      "local": "assets/enriched/264151/3aacf9beea_w14var.jpg",
-      "bytes": 15191,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264151_w106_02.jpg",
+      "thumb": "assets/enriched/264151/264151_w106_02.jpg",
+      "alt": "Коннектор сетевой Furutech FI-E50 (G)  N1 ( furutech fi e50 (g) n1 )",
+      "local": "assets/enriched/264151/264151_w106_02.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 10515
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FI_E50_R_-600x600.jpg",
-      "local": "assets/enriched/264151/f9172705eb_w14var.jpg",
-      "bytes": 42022,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264151_w106_03.jpg",
+      "thumb": "assets/enriched/264151/264151_w106_03.jpg",
+      "alt": "Коннектор сетевой Furutech FI-E50 (G)  N1 ( furutech fi e50 (g) n1 )",
+      "local": "assets/enriched/264151/264151_w106_03.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 10768
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:38:30Z",
+  "galleryWave106": true
 }

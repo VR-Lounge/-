@@ -26,32 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink1.jpg",
-      "alt": "wireworld_nova_toslink1.jpg",
-      "local": "assets/from-live/products/ab3bf244b3_wireworld_nova_toslink1.jpg"
+      "src": "local://269834_w106_00.jpg",
+      "thumb": "assets/enriched/269834/269834_w106_00.jpg",
+      "alt": "Кабель оптический Wireworld Nova Toslink",
+      "local": "assets/enriched/269834/269834_w106_00.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 23289
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/wireworld_nova_toslink2.jpg",
-      "alt": "wireworld_nova_toslink2.jpg",
-      "local": "assets/from-live/products/1e895af3bf_wireworld_nova_toslink2.jpg"
+      "src": "local://269834_w106_01.jpg",
+      "thumb": "assets/enriched/269834/269834_w106_01.jpg",
+      "alt": "Кабель оптический Wireworld Nova Toslink",
+      "local": "assets/enriched/269834/269834_w106_01.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 79784
     },
     {
-      "src": "local-variant://269834/w17sc95",
-      "local": "assets/enriched/269834/c9079c27e2_w17sc95.jpg",
-      "bytes": 74470,
-      "wave": "meager-w17-2026-11",
-      "w": 950,
-      "h": 950
+      "src": "local://269834_w106_02.jpg",
+      "thumb": "assets/enriched/269834/269834_w106_02.jpg",
+      "alt": "Кабель оптический Wireworld Nova Toslink",
+      "local": "assets/enriched/269834/269834_w106_02.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 15766
     },
     {
-      "src": "local-variant://269834/w17sc90",
-      "local": "assets/enriched/269834/a9aa7bfee1_w17sc90.jpg",
-      "bytes": 69000,
-      "wave": "meager-w17-2026-11",
-      "w": 900,
-      "h": 900
+      "src": "local://269834_w106_03.jpg",
+      "thumb": "assets/enriched/269834/269834_w106_03.jpg",
+      "alt": "Кабель оптический Wireworld Nova Toslink",
+      "local": "assets/enriched/269834/269834_w106_03.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 13481
     }
   ],
   "sku": "",
@@ -64,5 +72,9 @@
   "enrichedAt": "2026-11-14T13:36:06Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:38:30Z",
+  "galleryWave106": true
 }

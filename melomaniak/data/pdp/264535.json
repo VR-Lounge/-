@@ -26,36 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "local://04ebd2f0ad_SAEC-AC-3003-001.png",
-      "thumb": "assets/enriched/264535/48b24d0d1c_live1.png",
+      "src": "local://264535_w106_00.jpg",
+      "thumb": "assets/enriched/264535/264535_w106_00.jpg",
       "alt": "Сетевой кабель SAEC  AC-6000 ( saec ac 6000 )",
-      "local": "assets/enriched/264535/48b24d0d1c_live1.png",
+      "local": "assets/enriched/264535/264535_w106_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 32355
+      "attribution": "wave106-oem",
+      "bytes": 24560
     },
     {
-      "src": "local://4036b3a4b4_SAEC-AC-7000-e1614248178412.jpg",
-      "thumb": "assets/enriched/264535/87652f5c86_live2.jpg",
+      "src": "local://264535_w106_01.jpg",
+      "thumb": "assets/enriched/264535/264535_w106_01.jpg",
       "alt": "Сетевой кабель SAEC  AC-6000 ( saec ac 6000 )",
-      "local": "assets/enriched/264535/87652f5c86_live2.jpg",
+      "local": "assets/enriched/264535/264535_w106_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 28964
+      "attribution": "wave106-oem",
+      "bytes": 16924
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-AC-6000.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-AC-6000-600x600.jpg",
-      "alt": "SAEC-AC-6000",
-      "local": "assets/from-live/products/5495fd0660_SAEC-AC-6000.jpg"
+      "src": "local://264535_w106_02.jpg",
+      "thumb": "assets/enriched/264535/264535_w106_02.jpg",
+      "alt": "Сетевой кабель SAEC  AC-6000 ( saec ac 6000 )",
+      "local": "assets/enriched/264535/264535_w106_02.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 13699
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-AC-6000-600x600.jpg",
-      "local": "assets/enriched/264535/9aa21e81a7_w13var.jpg",
-      "bytes": 19801,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264535_w106_03.jpg",
+      "thumb": "assets/enriched/264535/264535_w106_03.jpg",
+      "alt": "Сетевой кабель SAEC  AC-6000 ( saec ac 6000 )",
+      "local": "assets/enriched/264535/264535_w106_03.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 22188
     }
   ],
   "sku": "",
@@ -67,5 +71,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:38:30Z",
+  "galleryWave106": true
 }

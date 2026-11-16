@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-602F-R.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-602F-R.jpg",
-      "alt": "Furutech-FP-602F-R",
-      "local": "assets/from-live/products/209277d999_Furutech-FP-602F-R.jpg"
+      "src": "local://264269_w106_00.jpg",
+      "thumb": "assets/enriched/264269/264269_w106_00.jpg",
+      "alt": "Коннектор Furutech FP-602 F(G) ( furutech fp 602 f(g) )",
+      "local": "assets/enriched/264269/264269_w106_00.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 36714
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_602_F_G_.jpg",
-      "local": "assets/enriched/264269/77d2c7a0b4_w14media.jpg",
-      "bytes": 29595,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264269_w106_01.jpg",
+      "thumb": "assets/enriched/264269/264269_w106_01.jpg",
+      "alt": "Коннектор Furutech FP-602 F(G) ( furutech fp 602 f(g) )",
+      "local": "assets/enriched/264269/264269_w106_01.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 51298
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_602_F_G_-300x300.jpg",
-      "local": "assets/enriched/264269/6aba639ceb_w14var.jpg",
-      "bytes": 10479,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264269_w106_02.jpg",
+      "thumb": "assets/enriched/264269/264269_w106_02.jpg",
+      "alt": "Коннектор Furutech FP-602 F(G) ( furutech fp 602 f(g) )",
+      "local": "assets/enriched/264269/264269_w106_02.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 22693
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_FP_602_F_G_-600x600.jpg",
-      "local": "assets/enriched/264269/4b283b867b_w14var.jpg",
-      "bytes": 28564,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264269_w106_03.jpg",
+      "thumb": "assets/enriched/264269/264269_w106_03.jpg",
+      "alt": "Коннектор Furutech FP-602 F(G) ( furutech fp 602 f(g) )",
+      "local": "assets/enriched/264269/264269_w106_03.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 25561
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:38:30Z",
+  "galleryWave106": true
 }

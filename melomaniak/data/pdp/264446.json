@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FS-SPC216-500x462-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FS-SPC216-500x462-1.jpg",
-      "alt": "Furutech-FS-SPC216-500&#215;462",
-      "local": "assets/from-live/products/9b9f7d91d5_Furutech-FS-SPC216-500x462-1.jpg"
+      "src": "local://264446_w106_00.jpg",
+      "thumb": "assets/enriched/264446/264446_w106_00.jpg",
+      "alt": "Акустический кабель Furutech FS-SPC 216 ( furutech fs spc 216 )",
+      "local": "assets/enriched/264446/264446_w106_00.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 69587
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_FS_SPC_216.jpg",
-      "local": "assets/enriched/264446/09e3b3325b_w14media.jpg",
-      "bytes": 24966,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264446_w106_01.jpg",
+      "thumb": "assets/enriched/264446/264446_w106_01.jpg",
+      "alt": "Акустический кабель Furutech FS-SPC 216 ( furutech fs spc 216 )",
+      "local": "assets/enriched/264446/264446_w106_01.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 32832
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_FS_SPC_216-300x300.jpg",
-      "local": "assets/enriched/264446/61b9778da7_w14var.jpg",
-      "bytes": 8096,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264446_w106_02.jpg",
+      "thumb": "assets/enriched/264446/264446_w106_02.jpg",
+      "alt": "Акустический кабель Furutech FS-SPC 216 ( furutech fs spc 216 )",
+      "local": "assets/enriched/264446/264446_w106_02.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 43658
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_FS_SPC_216-600x600.jpg",
-      "local": "assets/enriched/264446/ee7c0b0ced_w14var.jpg",
-      "bytes": 23333,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264446_w106_03.jpg",
+      "thumb": "assets/enriched/264446/264446_w106_03.jpg",
+      "alt": "Акустический кабель Furutech FS-SPC 216 ( furutech fs spc 216 )",
+      "local": "assets/enriched/264446/264446_w106_03.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 43047
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:38:30Z",
+  "galleryWave106": true
 }

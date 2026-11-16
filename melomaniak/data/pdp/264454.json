@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-681M-R.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-681M-R.jpg",
-      "alt": "Furutech-FP-681M-R",
-      "local": "assets/from-live/products/07dfac2a1d_Furutech-FP-681M-R.jpg"
+      "src": "local://264454_w106_00.jpg",
+      "thumb": "assets/enriched/264454/264454_w106_00.jpg",
+      "alt": "Коннектор Furutech FP-681M(G) ( furutech fp 681m(g) )",
+      "local": "assets/enriched/264454/264454_w106_00.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 74501
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_FP_681M_G-.jpg",
-      "local": "assets/enriched/264454/26113aab5b_w14media.jpg",
-      "bytes": 53981,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264454_w106_01.jpg",
+      "thumb": "assets/enriched/264454/264454_w106_01.jpg",
+      "alt": "Коннектор Furutech FP-681M(G) ( furutech fp 681m(g) )",
+      "local": "assets/enriched/264454/264454_w106_01.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 56215
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_FP_681M_G--300x300.jpg",
-      "local": "assets/enriched/264454/d9dbbf0d3c_w14var.jpg",
-      "bytes": 8822,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264454_w106_02.jpg",
+      "thumb": "assets/enriched/264454/264454_w106_02.jpg",
+      "alt": "Коннектор Furutech FP-681M(G) ( furutech fp 681m(g) )",
+      "local": "assets/enriched/264454/264454_w106_02.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 45987
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_FP_681M_G--600x600.jpg",
-      "local": "assets/enriched/264454/90c9588a94_w14var.jpg",
-      "bytes": 53379,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264454_w106_03.jpg",
+      "thumb": "assets/enriched/264454/264454_w106_03.jpg",
+      "alt": "Коннектор Furutech FP-681M(G) ( furutech fp 681m(g) )",
+      "local": "assets/enriched/264454/264454_w106_03.jpg",
+      "enriched": true,
+      "attribution": "wave106-oem",
+      "bytes": 60586
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:38:30Z",
+  "galleryWave106": true
 }
