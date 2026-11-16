@@ -36,34 +36,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/d4f48d87b1d9b826b72ac4e076a6c80b.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/d4f48d87b1d9b826b72ac4e076a6c80b-600x600.png",
-      "alt": "d4f48d87b1d9b826b72ac4e076a6c80b",
-      "local": "assets/from-live/products/25e09b74d8_d4f48d87b1d9b826b72ac4e076a6c80b.png"
+      "src": "local://264006_w127_00.jpg",
+      "thumb": "assets/enriched/264006/264006_w127_00.jpg",
+      "alt": "USB кабель Acoustic Revive USB-1.0PL-TripleC ( usb acoustic revive usb 1 0pl triplec )",
+      "local": "assets/enriched/264006/264006_w127_00.jpg",
+      "enriched": true,
+      "attribution": "wave127-oem",
+      "bytes": 306708
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/d4f48d87b1d9b826b72ac4e076a6c80b-600x600.png",
-      "local": "assets/enriched/264006/56a8a1e5df_w13var.png",
-      "bytes": 245168,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264006_w127_01.jpg",
+      "thumb": "assets/enriched/264006/264006_w127_01.jpg",
+      "alt": "USB кабель Acoustic Revive USB-1.0PL-TripleC ( usb acoustic revive usb 1 0pl triplec )",
+      "local": "assets/enriched/264006/264006_w127_01.jpg",
+      "enriched": true,
+      "attribution": "wave127-oem",
+      "bytes": 322180
     },
     {
-      "src": "local-variant://264006/w17sc95",
-      "local": "assets/enriched/264006/c661d6f9d8_w17sc95.jpg",
-      "bytes": 74011,
-      "wave": "meager-w17-2026-11",
-      "w": 950,
-      "h": 938
+      "src": "local://264006_w127_02.jpg",
+      "thumb": "assets/enriched/264006/264006_w127_02.jpg",
+      "alt": "USB кабель Acoustic Revive USB-1.0PL-TripleC ( usb acoustic revive usb 1 0pl triplec )",
+      "local": "assets/enriched/264006/264006_w127_02.jpg",
+      "enriched": true,
+      "attribution": "wave127-oem",
+      "bytes": 103606
     },
     {
-      "src": "local-variant://264006/w17sc90",
-      "local": "assets/enriched/264006/ddd156338e_w17sc90.jpg",
-      "bytes": 67069,
-      "wave": "meager-w17-2026-11",
-      "w": 900,
-      "h": 889
+      "src": "local://264006_w127_03.jpg",
+      "thumb": "assets/enriched/264006/264006_w127_03.jpg",
+      "alt": "USB кабель Acoustic Revive USB-1.0PL-TripleC ( usb acoustic revive usb 1 0pl triplec )",
+      "local": "assets/enriched/264006/264006_w127_03.jpg",
+      "enriched": true,
+      "attribution": "wave127-oem",
+      "bytes": 153702
+    },
+    {
+      "src": "local://264006_w127_04.jpg",
+      "thumb": "assets/enriched/264006/264006_w127_04.jpg",
+      "alt": "USB кабель Acoustic Revive USB-1.0PL-TripleC ( usb acoustic revive usb 1 0pl triplec )",
+      "local": "assets/enriched/264006/264006_w127_04.jpg",
+      "enriched": true,
+      "attribution": "wave127-oem",
+      "bytes": 200803
     }
   ],
   "sku": "",
@@ -76,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:30:04Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T17:25:08Z",
+  "galleryWave127": true
 }

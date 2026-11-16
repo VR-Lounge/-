@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-REM-8.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-REM-8.jpg",
-      "alt": "ACOUSTIC-REVIVE-REM-8",
-      "local": "assets/from-live/products/9ba070a406_ACOUSTIC-REVIVE-REM-8.jpg"
+      "src": "local://264019_w127_00.jpg",
+      "thumb": "assets/enriched/264019/264019_w127_00.jpg",
+      "alt": "Поглотитель Acoustic Revive REM-8 ( acoustic revive rem 8 )",
+      "local": "assets/enriched/264019/264019_w127_00.jpg",
+      "enriched": true,
+      "attribution": "wave127-oem",
+      "bytes": 371080
     },
     {
-      "src": "local-variant://264019/w17sc95",
-      "local": "assets/enriched/264019/b720a2feef_w17sc95.jpg",
-      "bytes": 12342,
-      "wave": "meager-w17-2026-11",
-      "w": 237,
-      "h": 237
+      "src": "local://264019_w127_01.jpg",
+      "thumb": "assets/enriched/264019/264019_w127_01.jpg",
+      "alt": "Поглотитель Acoustic Revive REM-8 ( acoustic revive rem 8 )",
+      "local": "assets/enriched/264019/264019_w127_01.jpg",
+      "enriched": true,
+      "attribution": "wave127-oem",
+      "bytes": 191516
     },
     {
-      "src": "local-variant://264019/w17sc90",
-      "local": "assets/enriched/264019/e7a507c757_w17sc90.jpg",
-      "bytes": 11512,
-      "wave": "meager-w17-2026-11",
-      "w": 225,
-      "h": 225
+      "src": "local://264019_w127_02.jpg",
+      "thumb": "assets/enriched/264019/264019_w127_02.jpg",
+      "alt": "Поглотитель Acoustic Revive REM-8 ( acoustic revive rem 8 )",
+      "local": "assets/enriched/264019/264019_w127_02.jpg",
+      "enriched": true,
+      "attribution": "wave127-oem",
+      "bytes": 432524
     },
     {
-      "src": "local-variant://264019/w17sc85",
-      "local": "assets/enriched/264019/4369885c75_w17sc85.jpg",
-      "bytes": 10568,
-      "wave": "meager-w17-2026-11",
-      "w": 212,
-      "h": 212
+      "src": "local://264019_w127_03.jpg",
+      "thumb": "assets/enriched/264019/264019_w127_03.jpg",
+      "alt": "Поглотитель Acoustic Revive REM-8 ( acoustic revive rem 8 )",
+      "local": "assets/enriched/264019/264019_w127_03.jpg",
+      "enriched": true,
+      "attribution": "wave127-oem",
+      "bytes": 365548
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:31:20Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T17:25:08Z",
+  "galleryWave127": true
 }

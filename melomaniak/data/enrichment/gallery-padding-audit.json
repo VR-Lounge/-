@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T17:13:19Z",
+  "generatedAt": "2026-11-16T17:28:25Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1559,
+    "true_multi_angle": 1561,
     "padded": 11,
-    "single_real": 317
+    "single_real": 315
   },
   "pct": {
-    "true_multi_angle": 82.62,
+    "true_multi_angle": 82.72,
     "padded": 0.58,
-    "single_real": 16.8,
-    "padded_of_claimed_gal4plus": 16.36,
-    "not_true_multi": 17.38
+    "single_real": 16.69,
+    "padded_of_claimed_gal4plus": 16.26,
+    "not_true_multi": 17.28
   },
   "padReasonTallies": {
-    "local-variant": 571,
-    "wN-variant-name": 288,
+    "local-variant": 566,
+    "wN-variant-name": 287,
     "cdn-size-thumb": 72,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 305,
+  "claimedButNotTrueMulti": 303,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -567,16 +567,17 @@
       "class": "single_real"
     },
     {
-      "id": 264006,
-      "name": "USB кабель Acoustic Revive USB-1.0PL-TripleC ( usb acoustic revive usb 1 0pl triplec )",
-      "cat": "Кабели",
-      "price": 92055,
+      "id": 15632,
+      "name": "центральный канал Audio Physic Classic Center ( audio physic classic center )",
+      "cat": "Другое",
+      "price": 90000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
       "padReasons": {
         "wN-variant-name": 1,
-        "local-variant": 2
+        "cdn-size-thumb": 1,
+        "local-variant": 1
       },
       "class": "single_real"
     }
@@ -1173,16 +1174,6 @@
       "galleryHitl": true
     },
     {
-      "id": 264006,
-      "name": "USB кабель Acoustic Revive USB-1.0PL-TripleC ( usb acoustic revive usb 1 0pl triplec )",
-      "cat": "Кабели",
-      "price": 92055,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 15632,
       "name": "центральный канал Audio Physic Classic Center ( audio physic classic center )",
       "cat": "Другое",
@@ -1381,9 +1372,19 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 272826,
+      "name": "Кабель цифровой коаксиальный AudioQuest Coffee",
+      "cat": "Кабели",
+      "price": 71990,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 317,
+  "hitlTrueOneshotCount": 315,
   "items": [
     {
       "id": 262053,
@@ -17833,17 +17834,14 @@
       "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-usb-1-0pl-triplec",
       "cat": "Кабели",
       "price": 92055,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264087,
@@ -20528,16 +20526,14 @@
       "slug": "%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-acoustic-revive-rem-8",
       "cat": "Другое",
       "price": 61200,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264084,
