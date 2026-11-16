@@ -31,34 +31,74 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-590640_1.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-590640_1-600x600.webp",
-      "alt": "1000&#215;1000-590640_1",
-      "local": "assets/from-live/products/b2c3710a2f_1000x1000-590640_1.webp"
+      "src": "local://264235_w133_00.jpg",
+      "thumb": "assets/enriched/264235/264235_w133_00.jpg",
+      "alt": "Подставка под кабель Furutech NCF Booster ( furutech ncf booster )",
+      "local": "assets/enriched/264235/264235_w133_00.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 43731,
+      "wave": "w133-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-590640_1-600x600.webp",
-      "local": "assets/enriched/264235/77e6b10350_w13var.jpg",
-      "bytes": 16370,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264235_w133_01.jpg",
+      "thumb": "assets/enriched/264235/264235_w133_01.jpg",
+      "alt": "Подставка под кабель Furutech NCF Booster ( furutech ncf booster )",
+      "local": "assets/enriched/264235/264235_w133_01.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 136407,
+      "wave": "w133-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-590640_1-768x768.webp",
-      "local": "assets/enriched/264235/b6f8ff8758_w13var.jpg",
-      "bytes": 21882,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264235_w133_02.jpg",
+      "thumb": "assets/enriched/264235/264235_w133_02.jpg",
+      "alt": "Подставка под кабель Furutech NCF Booster ( furutech ncf booster )",
+      "local": "assets/enriched/264235/264235_w133_02.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 137072,
+      "wave": "w133-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-590640_1-300x300.webp",
-      "local": "assets/enriched/264235/7c562b236d_w17cdn.jpg",
-      "bytes": 6536,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264235_w133_03.jpg",
+      "thumb": "assets/enriched/264235/264235_w133_03.jpg",
+      "alt": "Подставка под кабель Furutech NCF Booster ( furutech ncf booster )",
+      "local": "assets/enriched/264235/264235_w133_03.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 86661,
+      "wave": "w133-2026-11"
+    },
+    {
+      "src": "local://264235_w133_04.jpg",
+      "thumb": "assets/enriched/264235/264235_w133_04.jpg",
+      "alt": "Подставка под кабель Furutech NCF Booster ( furutech ncf booster )",
+      "local": "assets/enriched/264235/264235_w133_04.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 114254,
+      "wave": "w133-2026-11"
+    },
+    {
+      "src": "local://264235_w133_05.jpg",
+      "thumb": "assets/enriched/264235/264235_w133_05.jpg",
+      "alt": "Подставка под кабель Furutech NCF Booster ( furutech ncf booster )",
+      "local": "assets/enriched/264235/264235_w133_05.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 33411,
+      "wave": "w133-2026-11"
+    },
+    {
+      "src": "local://264235_w133_06.jpg",
+      "thumb": "assets/enriched/264235/264235_w133_06.jpg",
+      "alt": "Подставка под кабель Furutech NCF Booster ( furutech ncf booster )",
+      "local": "assets/enriched/264235/264235_w133_06.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 24648,
+      "wave": "w133-2026-11"
     }
   ],
   "sku": "",
@@ -70,5 +110,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:06:57Z",
+  "galleryWave133": true
 }

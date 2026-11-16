@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T18:53:12Z",
+  "generatedAt": "2026-11-16T19:10:05Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1581,
+    "true_multi_angle": 1586,
     "padded": 11,
-    "single_real": 295
+    "single_real": 290
   },
   "pct": {
-    "true_multi_angle": 83.78,
+    "true_multi_angle": 84.05,
     "padded": 0.58,
-    "single_real": 15.63,
-    "padded_of_claimed_gal4plus": 15.18,
-    "not_true_multi": 16.22
+    "single_real": 15.37,
+    "padded_of_claimed_gal4plus": 14.91,
+    "not_true_multi": 15.95
   },
   "padReasonTallies": {
-    "local-variant": 525,
-    "wN-variant-name": 269,
-    "cdn-size-thumb": 71,
+    "local-variant": 516,
+    "wN-variant-name": 265,
+    "cdn-size-thumb": 69,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 283,
+  "claimedButNotTrueMulti": 278,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -1386,7 +1386,7 @@
       "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 295,
+  "hitlTrueOneshotCount": 290,
   "items": [
     {
       "id": 262053,
@@ -21808,16 +21808,14 @@
       "slug": "8abf69f93b8976e0241a6e19d49226ac",
       "cat": "Кабели",
       "price": 51190,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264105,
@@ -22158,17 +22156,14 @@
       "slug": "%d0%b2%d0%b8%d0%b1%d1%80%d0%be%d0%bf%d0%be%d0%b3%d0%bb%d0%b0%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-rsi-m6",
       "cat": "Другое",
       "price": 49500,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264256,
@@ -22236,18 +22231,14 @@
       "slug": "%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-acoustic-revive-rhb-20",
       "cat": "Другое",
       "price": 48906,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264253,
@@ -22529,16 +22520,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-rts-30",
       "cat": "Кабели",
       "price": 46800,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271896,
@@ -22902,17 +22891,14 @@
       "slug": "%d0%bf%d0%be%d0%b4%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b0-%d0%bf%d0%be%d0%b4-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-ncf-booster",
       "cat": "Другое",
       "price": 43659,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272812,

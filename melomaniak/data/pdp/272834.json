@@ -46,34 +46,54 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/audioquest_coffee_7231330556-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/audioquest_coffee_7231330556-1.jpg",
-      "alt": "audioquest_coffee_7231330556-1.jpg",
-      "local": "assets/from-live/products/8c0b8028d8_audioquest_coffee_7231330556-1.jpg"
+      "src": "local://272834_w133_00.jpg",
+      "thumb": "assets/enriched/272834/272834_w133_00.jpg",
+      "alt": "Кабель USB AudioQuest Coffee",
+      "local": "assets/enriched/272834/272834_w133_00.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 240513,
+      "wave": "w133-2026-11"
     },
     {
-      "src": "local-variant://272834/w17sc95",
-      "local": "assets/enriched/272834/2edc6d0ef4_w17sc95.jpg",
-      "bytes": 176911,
-      "wave": "meager-w17-2026-11",
-      "w": 950,
-      "h": 950
+      "src": "local://272834_w133_01.jpg",
+      "thumb": "assets/enriched/272834/272834_w133_01.jpg",
+      "alt": "Кабель USB AudioQuest Coffee",
+      "local": "assets/enriched/272834/272834_w133_01.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 299481,
+      "wave": "w133-2026-11"
     },
     {
-      "src": "local-variant://272834/w17sc90",
-      "local": "assets/enriched/272834/37bfa8b90f_w17sc90.jpg",
-      "bytes": 161471,
-      "wave": "meager-w17-2026-11",
-      "w": 900,
-      "h": 900
+      "src": "local://272834_w133_02.jpg",
+      "thumb": "assets/enriched/272834/272834_w133_02.jpg",
+      "alt": "Кабель USB AudioQuest Coffee",
+      "local": "assets/enriched/272834/272834_w133_02.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 152843,
+      "wave": "w133-2026-11"
     },
     {
-      "src": "local-variant://272834/w17sc85",
-      "local": "assets/enriched/272834/a9c9801e18_w17sc85.jpg",
-      "bytes": 146164,
-      "wave": "meager-w17-2026-11",
-      "w": 850,
-      "h": 850
+      "src": "local://272834_w133_03.jpg",
+      "thumb": "assets/enriched/272834/272834_w133_03.jpg",
+      "alt": "Кабель USB AudioQuest Coffee",
+      "local": "assets/enriched/272834/272834_w133_03.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 258391,
+      "wave": "w133-2026-11"
+    },
+    {
+      "src": "local://272834_w133_04.jpg",
+      "thumb": "assets/enriched/272834/272834_w133_04.jpg",
+      "alt": "Кабель USB AudioQuest Coffee",
+      "local": "assets/enriched/272834/272834_w133_04.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 264669,
+      "wave": "w133-2026-11"
     }
   ],
   "sku": "",
@@ -85,5 +105,9 @@
   "enrichedAt": "2026-11-14T13:36:27Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:06:57Z",
+  "galleryWave133": true
 }

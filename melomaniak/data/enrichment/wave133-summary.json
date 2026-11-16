@@ -1,0 +1,125 @@
+{
+  "wave": 133,
+  "counts": {
+    "true_multi_angle": 1586,
+    "padded": 11,
+    "single_real": 290
+  },
+  "cleared": [
+    {
+      "id": 272834,
+      "name": "AudioQuest Coffee USB",
+      "price": 51190
+    },
+    {
+      "id": 264029,
+      "name": "Acoustic Revive RHB-20",
+      "price": 48906
+    },
+    {
+      "id": 264097,
+      "name": "Audio Replas RSI-M6",
+      "price": 49500
+    },
+    {
+      "id": 264002,
+      "name": "Acoustic Revive RTS-30",
+      "price": 46800
+    },
+    {
+      "id": 264235,
+      "name": "Furutech NCF Booster",
+      "price": 43659
+    }
+  ],
+  "skipped": {
+    "blocked_high_price": "Arte Forma / Audio Physic / Air Tight / Herron / B-Lab / MQP-2 / Nordost Tyr 2 / Gemini / TRX-P6L / TS-OPT300 / LM-501 / MTP-2 / Musica / sa1.0 / RL-30 / RHS-1 / RAF-48 / Ultimate Spirit/MC",
+    "soft_insufficient": [
+      "264092 SPL-3050 (<4 exteriors)",
+      "264115 CNS-9000SZ (rare/confused with 7000)",
+      "264104 RCS-25HR (<4 distinct product exteriors)",
+      "272826 Coffee coax (analog contamination risk)"
+    ]
+  },
+  "hitl_padded": 11,
+  "promote": {
+    "at": "2026-11-16T19:06:57Z",
+    "results": [
+      {
+        "id": 272834,
+        "before": 4,
+        "after": 5,
+        "unique": 5,
+        "files": [
+          "assets/enriched/272834/272834_w133_00.jpg",
+          "assets/enriched/272834/272834_w133_01.jpg",
+          "assets/enriched/272834/272834_w133_02.jpg",
+          "assets/enriched/272834/272834_w133_03.jpg",
+          "assets/enriched/272834/272834_w133_04.jpg"
+        ],
+        "name": "Кабель USB AudioQuest Coffee"
+      },
+      {
+        "id": 264029,
+        "before": 4,
+        "after": 6,
+        "unique": 6,
+        "files": [
+          "assets/enriched/264029/264029_w133_00.jpg",
+          "assets/enriched/264029/264029_w133_01.jpg",
+          "assets/enriched/264029/264029_w133_02.jpg",
+          "assets/enriched/264029/264029_w133_03.jpg",
+          "assets/enriched/264029/264029_w133_04.jpg",
+          "assets/enriched/264029/264029_w133_05.jpg"
+        ],
+        "name": "Поглотитель Acoustic Revive RHB-20 ( acoustic revive rhb 20 )"
+      },
+      {
+        "id": 264002,
+        "before": 4,
+        "after": 6,
+        "unique": 6,
+        "files": [
+          "assets/enriched/264002/264002_w133_00.jpg",
+          "assets/enriched/264002/264002_w133_01.jpg",
+          "assets/enriched/264002/264002_w133_02.jpg",
+          "assets/enriched/264002/264002_w133_03.jpg",
+          "assets/enriched/264002/264002_w133_04.jpg",
+          "assets/enriched/264002/264002_w133_05.jpg"
+        ],
+        "name": "Слипмат Acoustic Revive RTS-30 ( acoustic revive rts 30 )"
+      },
+      {
+        "id": 264235,
+        "before": 4,
+        "after": 7,
+        "unique": 7,
+        "files": [
+          "assets/enriched/264235/264235_w133_00.jpg",
+          "assets/enriched/264235/264235_w133_01.jpg",
+          "assets/enriched/264235/264235_w133_02.jpg",
+          "assets/enriched/264235/264235_w133_03.jpg",
+          "assets/enriched/264235/264235_w133_04.jpg",
+          "assets/enriched/264235/264235_w133_05.jpg",
+          "assets/enriched/264235/264235_w133_06.jpg"
+        ],
+        "name": "Подставка под кабель Furutech NCF Booster ( furutech ncf booster )"
+      },
+      {
+        "id": 264097,
+        "before": 4,
+        "after": 6,
+        "unique": 6,
+        "files": [
+          "assets/enriched/264097/264097_w133_00.jpg",
+          "assets/enriched/264097/264097_w133_01.jpg",
+          "assets/enriched/264097/264097_w133_02.jpg",
+          "assets/enriched/264097/264097_w133_03.jpg",
+          "assets/enriched/264097/264097_w133_04.jpg",
+          "assets/enriched/264097/264097_w133_05.jpg"
+        ],
+        "name": "Вибропоглатитель Audio Replas RSI-M6 ( audio replas rsi m6 )"
+      }
+    ]
+  }
+}

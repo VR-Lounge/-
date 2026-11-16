@@ -36,34 +36,64 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/i-img1200x900-1592813060ri0pas649.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/i-img1200x900-1592813060ri0pas649-600x600.jpg",
-      "alt": "i-img1200x900-1592813060ri0pas649",
-      "local": "assets/from-live/products/85aea38ae5_i-img1200x900-1592813060ri0pas649.jpg"
+      "src": "local://264097_w133_00.jpg",
+      "thumb": "assets/enriched/264097/264097_w133_00.jpg",
+      "alt": "Вибропоглатитель Audio Replas RSI-M6 ( audio replas rsi m6 )",
+      "local": "assets/enriched/264097/264097_w133_00.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 197652,
+      "wave": "w133-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/i-img1200x900-1592813060ri0pas649-600x600.jpg",
-      "local": "assets/enriched/264097/9c87019634_w13var.jpg",
-      "bytes": 56615,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264097_w133_01.jpg",
+      "thumb": "assets/enriched/264097/264097_w133_01.jpg",
+      "alt": "Вибропоглатитель Audio Replas RSI-M6 ( audio replas rsi m6 )",
+      "local": "assets/enriched/264097/264097_w133_01.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 207877,
+      "wave": "w133-2026-11"
     },
     {
-      "src": "local-variant://264097/w17sc95",
-      "local": "assets/enriched/264097/ffa3e8313c_w17sc95.jpg",
-      "bytes": 163126,
-      "wave": "meager-w17-2026-11",
-      "w": 1140,
-      "h": 855
+      "src": "local://264097_w133_02.jpg",
+      "thumb": "assets/enriched/264097/264097_w133_02.jpg",
+      "alt": "Вибропоглатитель Audio Replas RSI-M6 ( audio replas rsi m6 )",
+      "local": "assets/enriched/264097/264097_w133_02.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 70309,
+      "wave": "w133-2026-11"
     },
     {
-      "src": "local-variant://264097/w17sc90",
-      "local": "assets/enriched/264097/0d1a5909b7_w17sc90.jpg",
-      "bytes": 149908,
-      "wave": "meager-w17-2026-11",
-      "w": 1080,
-      "h": 810
+      "src": "local://264097_w133_03.jpg",
+      "thumb": "assets/enriched/264097/264097_w133_03.jpg",
+      "alt": "Вибропоглатитель Audio Replas RSI-M6 ( audio replas rsi m6 )",
+      "local": "assets/enriched/264097/264097_w133_03.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 103331,
+      "wave": "w133-2026-11"
+    },
+    {
+      "src": "local://264097_w133_04.jpg",
+      "thumb": "assets/enriched/264097/264097_w133_04.jpg",
+      "alt": "Вибропоглатитель Audio Replas RSI-M6 ( audio replas rsi m6 )",
+      "local": "assets/enriched/264097/264097_w133_04.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 74113,
+      "wave": "w133-2026-11"
+    },
+    {
+      "src": "local://264097_w133_05.jpg",
+      "thumb": "assets/enriched/264097/264097_w133_05.jpg",
+      "alt": "Вибропоглатитель Audio Replas RSI-M6 ( audio replas rsi m6 )",
+      "local": "assets/enriched/264097/264097_w133_05.jpg",
+      "enriched": true,
+      "attribution": "wave133-yahoo",
+      "bytes": 85792,
+      "wave": "w133-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +106,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:06:57Z",
+  "galleryWave133": true
 }
