@@ -36,34 +36,74 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-1s-hr.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-1s-hr.jpg",
-      "alt": "audio-replas-1s-hr",
-      "local": "assets/from-live/products/53330df37d_audio-replas-1s-hr.jpg"
+      "src": "local://264065_w132_00.jpg",
+      "thumb": "assets/enriched/264065/264065_w132_00.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-1S HR/8P ( audio replas opt 1s hr 8p )",
+      "local": "assets/enriched/264065/264065_w132_00.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 364085,
+      "wave": "w132-2026-11"
     },
     {
-      "src": "local-variant://264065/w17sc95",
-      "local": "assets/enriched/264065/02348c83ec_w17sc95.jpg",
-      "bytes": 35768,
-      "wave": "meager-w17-2026-11",
-      "w": 361,
-      "h": 237
+      "src": "local://264065_w132_01.jpg",
+      "thumb": "assets/enriched/264065/264065_w132_01.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-1S HR/8P ( audio replas opt 1s hr 8p )",
+      "local": "assets/enriched/264065/264065_w132_01.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 250535,
+      "wave": "w132-2026-11"
     },
     {
-      "src": "local-variant://264065/w17sc90",
-      "local": "assets/enriched/264065/4390410124_w17sc90.jpg",
-      "bytes": 32997,
-      "wave": "meager-w17-2026-11",
-      "w": 342,
-      "h": 225
+      "src": "local://264065_w132_02.jpg",
+      "thumb": "assets/enriched/264065/264065_w132_02.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-1S HR/8P ( audio replas opt 1s hr 8p )",
+      "local": "assets/enriched/264065/264065_w132_02.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 321810,
+      "wave": "w132-2026-11"
     },
     {
-      "src": "local-variant://264065/w17sc85",
-      "local": "assets/enriched/264065/31dd34ec2e_w17sc85.jpg",
-      "bytes": 30317,
-      "wave": "meager-w17-2026-11",
-      "w": 323,
-      "h": 212
+      "src": "local://264065_w132_03.jpg",
+      "thumb": "assets/enriched/264065/264065_w132_03.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-1S HR/8P ( audio replas opt 1s hr 8p )",
+      "local": "assets/enriched/264065/264065_w132_03.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 146520,
+      "wave": "w132-2026-11"
+    },
+    {
+      "src": "local://264065_w132_04.jpg",
+      "thumb": "assets/enriched/264065/264065_w132_04.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-1S HR/8P ( audio replas opt 1s hr 8p )",
+      "local": "assets/enriched/264065/264065_w132_04.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 172174,
+      "wave": "w132-2026-11"
+    },
+    {
+      "src": "local://264065_w132_05.jpg",
+      "thumb": "assets/enriched/264065/264065_w132_05.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-1S HR/8P ( audio replas opt 1s hr 8p )",
+      "local": "assets/enriched/264065/264065_w132_05.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 148267,
+      "wave": "w132-2026-11"
+    },
+    {
+      "src": "local://264065_w132_06.jpg",
+      "thumb": "assets/enriched/264065/264065_w132_06.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-1S HR/8P ( audio replas opt 1s hr 8p )",
+      "local": "assets/enriched/264065/264065_w132_06.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 53669,
+      "wave": "w132-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +116,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T18:49:58Z",
+  "galleryWave132": true
 }

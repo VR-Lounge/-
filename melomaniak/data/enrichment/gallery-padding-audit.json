@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T18:39:46Z",
+  "generatedAt": "2026-11-16T18:53:12Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1574,
+    "true_multi_angle": 1581,
     "padded": 11,
-    "single_real": 302
+    "single_real": 295
   },
   "pct": {
-    "true_multi_angle": 83.41,
+    "true_multi_angle": 83.78,
     "padded": 0.58,
-    "single_real": 16.0,
-    "padded_of_claimed_gal4plus": 15.56,
-    "not_true_multi": 16.59
+    "single_real": 15.63,
+    "padded_of_claimed_gal4plus": 15.18,
+    "not_true_multi": 16.22
   },
   "padReasonTallies": {
-    "local-variant": 543,
-    "wN-variant-name": 272,
+    "local-variant": 525,
+    "wN-variant-name": 269,
     "cdn-size-thumb": 71,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 290,
+  "claimedButNotTrueMulti": 283,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -1206,16 +1206,6 @@
       "galleryHitl": true
     },
     {
-      "id": 264114,
-      "name": "Поглотитель Audio Replas CNS- 7000SZ ( audio replas cns 7000sz )",
-      "cat": "Другое",
-      "price": 83160,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 263977,
       "name": "Межблочный кабель Acoustic Revive PC Triple C/EX ( acoustic revive pc triple c ex )",
       "cat": "Кабели",
@@ -1260,16 +1250,6 @@
       "name": "Кабель цифровой коаксиальный AudioQuest Coffee",
       "cat": "Кабели",
       "price": 71990,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 264068,
-      "name": "Кварцевые диски Audio Replas OPT-1 HR/8P ( audio replas opt 1 hr 8p )",
-      "cat": "Другое",
-      "price": 64800,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1384,9 +1364,29 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264432,
+      "name": "Сетевой кабель Furutech D.U.C.C. DPS-4.1 ( furutech d u c c dps 4 1 )",
+      "cat": "Кабели",
+      "price": 52920,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264262,
+      "name": "Снятие статики Furutech DeStat II ( furutech destat ii )",
+      "cat": "Другое",
+      "price": 51219,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 302,
+  "hitlTrueOneshotCount": 295,
   "items": [
     {
       "id": 262053,
@@ -18614,16 +18614,14 @@
       "slug": "%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-cns-7000sz",
       "cat": "Другое",
       "price": 83160,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271834,
@@ -20283,16 +20281,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-1-hr-8p",
       "cat": "Другое",
       "price": 64800,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270125,
@@ -22418,16 +22414,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-1s-hr-8p",
       "cat": "Другое",
       "price": 47700,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264377,
@@ -23604,16 +23598,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-1-hr-4p",
       "cat": "Другое",
       "price": 37000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273300,
@@ -24536,16 +24528,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-1-hr-3p",
       "cat": "Другое",
       "price": 29000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271263,
@@ -24615,16 +24605,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-1s-hr-4p",
       "cat": "Другое",
       "price": 28000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269491,
@@ -29851,16 +29839,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-1s-hr-3p",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264073,

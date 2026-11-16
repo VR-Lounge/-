@@ -36,34 +36,44 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66449_3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66449_3-600x600.jpg",
-      "alt": "1000&#215;1000-66449_3",
-      "local": "assets/from-live/products/31135ccb8b_1000x1000-66449_3.jpg"
+      "src": "local://264114_w132_00.jpg",
+      "thumb": "assets/enriched/264114/264114_w132_00.jpg",
+      "alt": "Поглотитель Audio Replas CNS- 7000SZ ( audio replas cns 7000sz )",
+      "local": "assets/enriched/264114/264114_w132_00.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 52990,
+      "wave": "w132-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66449_3-300x300.jpg",
-      "local": "assets/enriched/264114/a613316d00_w13var.jpg",
-      "bytes": 12686,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264114_w132_01.jpg",
+      "thumb": "assets/enriched/264114/264114_w132_01.jpg",
+      "alt": "Поглотитель Audio Replas CNS- 7000SZ ( audio replas cns 7000sz )",
+      "local": "assets/enriched/264114/264114_w132_01.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 67008,
+      "wave": "w132-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66449_3-600x600.jpg",
-      "local": "assets/enriched/264114/e9f19602b1_w13var.jpg",
-      "bytes": 33678,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264114_w132_02.jpg",
+      "thumb": "assets/enriched/264114/264114_w132_02.jpg",
+      "alt": "Поглотитель Audio Replas CNS- 7000SZ ( audio replas cns 7000sz )",
+      "local": "assets/enriched/264114/264114_w132_02.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 131952,
+      "wave": "w132-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66449_3-768x768.jpg",
-      "local": "assets/enriched/264114/8ed48af037_w13var.jpg",
-      "bytes": 46914,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264114_w132_03.jpg",
+      "thumb": "assets/enriched/264114/264114_w132_03.jpg",
+      "alt": "Поглотитель Audio Replas CNS- 7000SZ ( audio replas cns 7000sz )",
+      "local": "assets/enriched/264114/264114_w132_03.jpg",
+      "enriched": true,
+      "attribution": "wave132-oem",
+      "bytes": 85060,
+      "wave": "w132-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +86,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T18:49:58Z",
+  "galleryWave132": true
 }
