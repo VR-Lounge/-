@@ -21,10 +21,58 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/proektor_Epson_EH_LS10000_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/proektor_Epson_EH_LS10000_-600x600.jpg",
-      "alt": "Epson EH LS10000",
-      "local": "assets/from-live/products/5a1219d6d5_proektor_Epson_EH_LS10000_.jpg"
+      "src": "local://14804_w111_00.jpg",
+      "thumb": "assets/enriched/14804/14804_w111_00.jpg",
+      "alt": "проектор Epson EH LS10000 ( epson eh ls10000 )",
+      "local": "assets/enriched/14804/14804_w111_00.jpg",
+      "enriched": true,
+      "attribution": "wave111-oem",
+      "bytes": 29209
+    },
+    {
+      "src": "local://14804_w111_01.jpg",
+      "thumb": "assets/enriched/14804/14804_w111_01.jpg",
+      "alt": "проектор Epson EH LS10000 ( epson eh ls10000 )",
+      "local": "assets/enriched/14804/14804_w111_01.jpg",
+      "enriched": true,
+      "attribution": "wave111-oem",
+      "bytes": 36412
+    },
+    {
+      "src": "local://14804_w111_02.jpg",
+      "thumb": "assets/enriched/14804/14804_w111_02.jpg",
+      "alt": "проектор Epson EH LS10000 ( epson eh ls10000 )",
+      "local": "assets/enriched/14804/14804_w111_02.jpg",
+      "enriched": true,
+      "attribution": "wave111-oem",
+      "bytes": 25435
+    },
+    {
+      "src": "local://14804_w111_03.jpg",
+      "thumb": "assets/enriched/14804/14804_w111_03.jpg",
+      "alt": "проектор Epson EH LS10000 ( epson eh ls10000 )",
+      "local": "assets/enriched/14804/14804_w111_03.jpg",
+      "enriched": true,
+      "attribution": "wave111-oem",
+      "bytes": 27347
+    },
+    {
+      "src": "local://14804_w111_04.jpg",
+      "thumb": "assets/enriched/14804/14804_w111_04.jpg",
+      "alt": "проектор Epson EH LS10000 ( epson eh ls10000 )",
+      "local": "assets/enriched/14804/14804_w111_04.jpg",
+      "enriched": true,
+      "attribution": "wave111-oem",
+      "bytes": 28140
+    },
+    {
+      "src": "local://14804_w111_05.jpg",
+      "thumb": "assets/enriched/14804/14804_w111_05.jpg",
+      "alt": "проектор Epson EH LS10000 ( epson eh ls10000 )",
+      "local": "assets/enriched/14804/14804_w111_05.jpg",
+      "enriched": true,
+      "attribution": "wave111-oem",
+      "bytes": 31356
     }
   ],
   "sku": "",
@@ -36,8 +84,11 @@
   "enrichedAt": "2026-11-14T13:13:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:06Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T12:01:17Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave111": true
 }

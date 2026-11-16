@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T11:45:08Z",
+  "generatedAt": "2026-11-16T12:04:42Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,16 +15,16 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1516,
+    "true_multi_angle": 1519,
     "padded": 11,
-    "single_real": 360
+    "single_real": 357
   },
   "pct": {
-    "true_multi_angle": 80.34,
+    "true_multi_angle": 80.5,
     "padded": 0.58,
-    "single_real": 19.08,
-    "padded_of_claimed_gal4plus": 18.19,
-    "not_true_multi": 19.66
+    "single_real": 18.92,
+    "padded_of_claimed_gal4plus": 18.16,
+    "not_true_multi": 19.5
   },
   "padReasonTallies": {
     "local-variant": 629,
@@ -32,7 +32,7 @@
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
-  "claimedGal4Plus": 1853,
+  "claimedGal4Plus": 1856,
   "claimedButNotTrueMulti": 337,
   "topPaddedByPrice": [
     {
@@ -670,16 +670,6 @@
       "galleryHitl": true
     },
     {
-      "id": 16800,
-      "name": "интегральный усилитель Spec RSA V1 EX ( spec rsa v1 ex )",
-      "cat": "Усилители",
-      "price": 595845,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
       "id": 15602,
       "name": "напольная акустика Audio Physic Minos ( audio physic minos )",
       "cat": "Акустика",
@@ -734,16 +724,6 @@
       "name": "виниловый проигрыватель Amazon 1 ( amazon 1 )",
       "cat": "Источники",
       "price": 520000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 14804,
-      "name": "проектор Epson EH LS10000 ( epson eh ls10000 )",
-      "cat": "Видео",
-      "price": 501143,
       "galleryLen": 1,
       "uniqueDistinct": 1,
       "padSlots": 0,
@@ -844,16 +824,6 @@
       "name": "центральный канал Audio Physic Orea ( audio physic orea )",
       "cat": "Другое",
       "price": 380000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 15932,
-      "name": "интегральный усилитель Line Magnetic Audio LM 210 IA ( line magnetic audio lm 210 ia )",
-      "cat": "Усилители",
-      "price": 374000,
       "galleryLen": 1,
       "uniqueDistinct": 1,
       "padSlots": 0,
@@ -1378,9 +1348,39 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264401,
+      "name": "Фоно кабель Furutech AG-16-XLR ( furutech ag 16 xlr )",
+      "cat": "Кабели",
+      "price": 104757,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 4,
+      "galleryHitl": true
+    },
+    {
+      "id": 264123,
+      "name": "Сетевые пластины Audio Replas SCB-4SZ ( audio replas scb 4sz )",
+      "cat": "Другое",
+      "price": 103700,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264070,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/3P ( audio replas opt 100hg flat ss hr 3p )",
+      "cat": "Другое",
+      "price": 102000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 360,
+  "hitlTrueOneshotCount": 357,
   "items": [
     {
       "id": 262053,
@@ -5606,14 +5606,14 @@
       "slug": "integralnii_ysilitel_spec_rsa_v1_ex",
       "cat": "Усилители",
       "price": 595845,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 274454,
@@ -6403,14 +6403,14 @@
       "slug": "proektor_Epson_EH_LS10000",
       "cat": "Видео",
       "price": 501143,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 274398,
@@ -8152,14 +8152,14 @@
       "slug": "integralnii_ysilitel_Line_Magnetic_Audio_LM_210_IA",
       "cat": "Усилители",
       "price": 374000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 272010,
