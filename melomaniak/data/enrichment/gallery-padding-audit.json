@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T14:54:20Z",
+  "generatedAt": "2026-11-16T15:11:16Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1545,
+    "true_multi_angle": 1547,
     "padded": 11,
-    "single_real": 331
+    "single_real": 329
   },
   "pct": {
-    "true_multi_angle": 81.88,
+    "true_multi_angle": 81.98,
     "padded": 0.58,
-    "single_real": 17.54,
-    "padded_of_claimed_gal4plus": 17.11,
-    "not_true_multi": 18.12
+    "single_real": 17.44,
+    "padded_of_claimed_gal4plus": 17.01,
+    "not_true_multi": 18.02
   },
   "padReasonTallies": {
-    "local-variant": 593,
-    "wN-variant-name": 302,
+    "local-variant": 592,
+    "wN-variant-name": 298,
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 319,
+  "claimedButNotTrueMulti": 317,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -75,19 +75,6 @@
         "wN-variant-name": 2
       },
       "class": "padded"
-    },
-    {
-      "id": 15978,
-      "name": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
-      "cat": "Усилители",
-      "price": 297500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "single_real"
     },
     {
       "id": 16860,
@@ -269,20 +256,6 @@
       "id": 15644,
       "name": "полочная акустика Audio Physic Step 25 ( audio physic step 25 )",
       "cat": "Акустика",
-      "price": 185000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 15866,
-      "name": "усилитель мощности 47 Labs 4706C ( 47 labs 4706c )",
-      "cat": "Усилители",
       "price": 185000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
@@ -576,6 +549,33 @@
         "local-variant": 3
       },
       "class": "single_real"
+    },
+    {
+      "id": 264518,
+      "name": "Межблочный кабель SAEC  XR-6000 ( saec xr 6000 )",
+      "cat": "Кабели",
+      "price": 104969,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264401,
+      "name": "Фоно кабель Furutech AG-16-XLR ( furutech ag 16 xlr )",
+      "cat": "Кабели",
+      "price": 104757,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 4,
+      "padReasons": {
+        "cdn-rotated": 1,
+        "local-variant": 3
+      },
+      "class": "single_real"
     }
   ],
   "hitlTrueOneshot": [
@@ -820,16 +820,6 @@
       "galleryHitl": true
     },
     {
-      "id": 15978,
-      "name": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
-      "cat": "Усилители",
-      "price": 297500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
       "id": 16860,
       "name": "интегральный усилитель Ultimate Audio MC 34 AB ( ultimate audio mc 34 ab )",
       "cat": "Усилители",
@@ -953,16 +943,6 @@
       "id": 15644,
       "name": "полочная акустика Audio Physic Step 25 ( audio physic step 25 )",
       "cat": "Акустика",
-      "price": 185000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 15866,
-      "name": "усилитель мощности 47 Labs 4706C ( 47 labs 4706c )",
-      "cat": "Усилители",
       "price": 185000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
@@ -1378,9 +1358,29 @@
       "uniqueDistinct": 1,
       "padSlots": 0,
       "galleryHitl": false
+    },
+    {
+      "id": 264117,
+      "name": "Оптимизатор Audio Replas CPC-IEC43SZ ( audio replas cpc iec43sz )",
+      "cat": "Другое",
+      "price": 86760,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264021,
+      "name": "Кварцевые диски Acoustic Revive RIQ-5010 ( acoustic revive riq 5010 )",
+      "cat": "Другое",
+      "price": 86700,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 331,
+  "hitlTrueOneshotCount": 329,
   "items": [
     {
       "id": 262053,
@@ -3413,10 +3413,10 @@
       "slug": "ysilitel_moshnosti_Leben_CS_1000P",
       "cat": "Усилители",
       "price": 1080000,
-      "galleryHitl": true,
-      "galleryLen": 9,
-      "uniqueDistinct": 9,
-      "clusterCount": 9,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
@@ -9507,16 +9507,14 @@
       "slug": "ysilitel_moshnosti_Musica_IRIS_50_pow",
       "cat": "Усилители",
       "price": 297500,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 16860,
@@ -12713,17 +12711,14 @@
       "slug": "ysilitel_moshnosti_47_Labs_4706C",
       "cat": "Усилители",
       "price": 185000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269290,

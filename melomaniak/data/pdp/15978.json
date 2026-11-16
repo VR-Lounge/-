@@ -41,35 +41,49 @@
   ],
   "gallery": [
     {
-      "src": "local://ysilitel_moshnosti_Musica_IRIS_50_pow_ac44158215.jpg",
-      "thumb": "assets/enriched/15978/3ca71fb1b7_live1.jpg",
+      "src": "local://15978_w121_00.jpg",
+      "thumb": "assets/enriched/15978/15978_w121_00.jpg",
       "alt": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
-      "local": "assets/enriched/15978/3ca71fb1b7_live1.jpg",
+      "local": "assets/enriched/15978/15978_w121_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 30110
+      "attribution": "wave121-oem",
+      "bytes": 33583
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Musica_IRIS_50_pow.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Musica_IRIS_50_pow-600x600.jpg",
-      "alt": "Musica IRIS 50 pow",
-      "local": "assets/from-live/products/ac44158215_ysilitel_moshnosti_Musica_IRIS_50_pow.jpg"
+      "src": "local://15978_w121_01.jpg",
+      "thumb": "assets/enriched/15978/15978_w121_01.jpg",
+      "alt": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
+      "local": "assets/enriched/15978/15978_w121_01.jpg",
+      "enriched": true,
+      "attribution": "wave121-oem",
+      "bytes": 28172
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Musica_IRIS_50_pow-600x600.jpg",
-      "local": "assets/enriched/15978/04608759d5_w13var.jpg",
-      "bytes": 28738,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15978_w121_02.jpg",
+      "thumb": "assets/enriched/15978/15978_w121_02.jpg",
+      "alt": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
+      "local": "assets/enriched/15978/15978_w121_02.jpg",
+      "enriched": true,
+      "attribution": "wave121-oem",
+      "bytes": 150840
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/ysilitel_moshnosti_Musica_IRIS_50_pow-300x300.jpg",
-      "local": "assets/enriched/15978/ef8a97d7c8_w13var.jpg",
-      "bytes": 10088,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://15978_w121_03.jpg",
+      "thumb": "assets/enriched/15978/15978_w121_03.jpg",
+      "alt": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
+      "local": "assets/enriched/15978/15978_w121_03.jpg",
+      "enriched": true,
+      "attribution": "wave121-oem",
+      "bytes": 22448
+    },
+    {
+      "src": "local://15978_w121_04.jpg",
+      "thumb": "assets/enriched/15978/15978_w121_04.jpg",
+      "alt": "усилитель мощности Musica IRIS 50 pow ( musica iris 50 pow )",
+      "local": "assets/enriched/15978/15978_w121_04.jpg",
+      "enriched": true,
+      "attribution": "wave121-oem",
+      "bytes": 20799
     }
   ],
   "sku": "",
@@ -81,5 +95,9 @@
   "enrichedAt": "2026-11-14T14:05:59Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T15:08:11Z",
+  "galleryWave121": true
 }
