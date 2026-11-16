@@ -41,10 +41,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/LINE-MAGNETIC-AUDIO-AS-133.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/LINE-MAGNETIC-AUDIO-AS-133-600x533.jpg",
-      "alt": "LINE-MAGNETIC-AUDIO-AS-133",
-      "local": "assets/from-live/products/7b1f2c3abd_LINE-MAGNETIC-AUDIO-AS-133.jpg"
+      "src": "local://262119_w112_00.jpg",
+      "thumb": "assets/enriched/262119/262119_w112_00.jpg",
+      "alt": "Предусилитель Line Magnetic Audio LM 133 ( line magnetic audio lm 133 )",
+      "local": "assets/enriched/262119/262119_w112_00.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 67044
+    },
+    {
+      "src": "local://262119_w112_01.jpg",
+      "thumb": "assets/enriched/262119/262119_w112_01.jpg",
+      "alt": "Предусилитель Line Magnetic Audio LM 133 ( line magnetic audio lm 133 )",
+      "local": "assets/enriched/262119/262119_w112_01.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 56026
+    },
+    {
+      "src": "local://262119_w112_02.jpg",
+      "thumb": "assets/enriched/262119/262119_w112_02.jpg",
+      "alt": "Предусилитель Line Magnetic Audio LM 133 ( line magnetic audio lm 133 )",
+      "local": "assets/enriched/262119/262119_w112_02.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 55786
+    },
+    {
+      "src": "local://262119_w112_03.jpg",
+      "thumb": "assets/enriched/262119/262119_w112_03.jpg",
+      "alt": "Предусилитель Line Magnetic Audio LM 133 ( line magnetic audio lm 133 )",
+      "local": "assets/enriched/262119/262119_w112_03.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 66390
     }
   ],
   "sku": "",
@@ -58,8 +88,11 @@
   "enrichedAt": "2026-11-14T14:07:25Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:24:25Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T12:26:04Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave112": true
 }

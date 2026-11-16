@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T12:04:42Z",
+  "generatedAt": "2026-11-16T12:29:40Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,16 +15,16 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1519,
+    "true_multi_angle": 1523,
     "padded": 11,
-    "single_real": 357
+    "single_real": 353
   },
   "pct": {
-    "true_multi_angle": 80.5,
+    "true_multi_angle": 80.71,
     "padded": 0.58,
-    "single_real": 18.92,
-    "padded_of_claimed_gal4plus": 18.16,
-    "not_true_multi": 19.5
+    "single_real": 18.71,
+    "padded_of_claimed_gal4plus": 18.12,
+    "not_true_multi": 19.29
   },
   "padReasonTallies": {
     "local-variant": 629,
@@ -32,7 +32,7 @@
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
-  "claimedGal4Plus": 1856,
+  "claimedGal4Plus": 1860,
   "claimedButNotTrueMulti": 337,
   "topPaddedByPrice": [
     {
@@ -620,16 +620,6 @@
       "galleryHitl": true
     },
     {
-      "id": 264124,
-      "name": "Сетевой фильтр Audio Replas TRIANGLE POWER 6 SIG ( audio replas triangle power 6 sig )",
-      "cat": "Другое",
-      "price": 749777,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
       "id": 26638,
       "name": "предусилитель Audio Physic AP Pre ( audio physic ap pre )",
       "cat": "Усилители",
@@ -644,16 +634,6 @@
       "name": "интегральный усилитель Air Tight ATM 4 ( air tight atm 4 )",
       "cat": "Усилители",
       "price": 680000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 262119,
-      "name": "Предусилитель Line Magnetic Audio LM 133 ( line magnetic audio lm 133 )",
-      "cat": "Усилители",
-      "price": 640000,
       "galleryLen": 1,
       "uniqueDistinct": 1,
       "padSlots": 0,
@@ -732,16 +712,6 @@
     {
       "id": 16874,
       "name": "интегральный усилитель Ultimate Audio Spirit EU 150 ( ultimate audio spirit eu 150 )",
-      "cat": "Усилители",
-      "price": 480000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 262139,
-      "name": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
       "cat": "Усилители",
       "price": 480000,
       "galleryLen": 1,
@@ -853,16 +823,6 @@
       "id": 15716,
       "name": "цифро аналоговый преобразователь 47 Labs 4705 ( 47 labs 4705 )",
       "cat": "ЦАПы",
-      "price": 350000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 16814,
-      "name": "предусилитель Triode TRV 4SE ( triode trv 4se )",
-      "cat": "Усилители",
       "price": 350000,
       "galleryLen": 1,
       "uniqueDistinct": 1,
@@ -1378,9 +1338,49 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 15958,
+      "name": "предусилитель Musica att 200 ( musica att 200 )",
+      "cat": "Усилители",
+      "price": 101200,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 263216,
+      "name": "Усилитель для наушников MCINTOSH MHA50 ( mcintosh mha50 )",
+      "cat": "Усилители",
+      "price": 100000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "galleryHitl": true
+    },
+    {
+      "id": 272349,
+      "name": "Активный сабвуфер Bluesound PULSE SUB PLUS",
+      "cat": "Акустика",
+      "price": 99990,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 15974,
+      "name": "интегральный усилитель Musica int 200 ( musica int 200 )",
+      "cat": "Усилители",
+      "price": 96800,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 357,
+  "hitlTrueOneshotCount": 353,
   "items": [
     {
       "id": 262053,
@@ -4793,14 +4793,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-audio-replas-triangle-power-6-sig",
       "cat": "Другое",
       "price": 749777,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 274450,
@@ -5378,14 +5378,14 @@
       "slug": "%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-133",
       "cat": "Усилители",
       "price": 640000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 273279,
@@ -6737,14 +6737,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be%d0%ba%d0%be%d1%80%d1%80%d0%b5%d0%ba%d1%82%d0%be%d1%80-soulnote-e-1-sh",
       "cat": "Усилители",
       "price": 480000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 26608,
@@ -8467,14 +8467,14 @@
       "slug": "predysilitel_Triode_TRV_4SE",
       "cat": "Усилители",
       "price": 350000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 16822,

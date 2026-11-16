@@ -36,10 +36,76 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/8MWsd-jty_Q.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/8MWsd-jty_Q-600x337.jpg",
-      "alt": "8MWsd-jty_Q",
-      "local": "assets/from-live/products/fbcd9baa77_8MWsd-jty_Q.jpg"
+      "src": "local://262139_w112_00.jpg",
+      "thumb": "assets/enriched/262139/262139_w112_00.jpg",
+      "alt": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
+      "local": "assets/enriched/262139/262139_w112_00.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 38960
+    },
+    {
+      "src": "local://262139_w112_01.jpg",
+      "thumb": "assets/enriched/262139/262139_w112_01.jpg",
+      "alt": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
+      "local": "assets/enriched/262139/262139_w112_01.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 89975
+    },
+    {
+      "src": "local://262139_w112_02.jpg",
+      "thumb": "assets/enriched/262139/262139_w112_02.jpg",
+      "alt": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
+      "local": "assets/enriched/262139/262139_w112_02.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 165515
+    },
+    {
+      "src": "local://262139_w112_03.jpg",
+      "thumb": "assets/enriched/262139/262139_w112_03.jpg",
+      "alt": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
+      "local": "assets/enriched/262139/262139_w112_03.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 196675
+    },
+    {
+      "src": "local://262139_w112_04.jpg",
+      "thumb": "assets/enriched/262139/262139_w112_04.jpg",
+      "alt": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
+      "local": "assets/enriched/262139/262139_w112_04.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 162015
+    },
+    {
+      "src": "local://262139_w112_05.jpg",
+      "thumb": "assets/enriched/262139/262139_w112_05.jpg",
+      "alt": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
+      "local": "assets/enriched/262139/262139_w112_05.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 162503
+    },
+    {
+      "src": "local://262139_w112_06.jpg",
+      "thumb": "assets/enriched/262139/262139_w112_06.jpg",
+      "alt": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
+      "local": "assets/enriched/262139/262139_w112_06.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 265530
+    },
+    {
+      "src": "local://262139_w112_07.jpg",
+      "thumb": "assets/enriched/262139/262139_w112_07.jpg",
+      "alt": "Фонокорректор Soulnote E 1  ( soulnote e 1  )",
+      "local": "assets/enriched/262139/262139_w112_07.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 410729
     }
   ],
   "sku": "",
@@ -51,7 +117,10 @@
   "enrichedAt": "2026-11-14T13:46:21Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:15Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T12:16:46Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave112": true
 }

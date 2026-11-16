@@ -31,12 +31,76 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Triode_TRV_4SE_Limited.jpg",
-      "local": "assets/enriched/16814/44868ac186_w13media.jpg",
-      "bytes": 29880,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://16814_w112_00.jpg",
+      "thumb": "assets/enriched/16814/16814_w112_00.jpg",
+      "alt": "предусилитель Triode TRV 4SE ( triode trv 4se )",
+      "local": "assets/enriched/16814/16814_w112_00.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 40265
+    },
+    {
+      "src": "local://16814_w112_01.jpg",
+      "thumb": "assets/enriched/16814/16814_w112_01.jpg",
+      "alt": "предусилитель Triode TRV 4SE ( triode trv 4se )",
+      "local": "assets/enriched/16814/16814_w112_01.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 79787
+    },
+    {
+      "src": "local://16814_w112_02.jpg",
+      "thumb": "assets/enriched/16814/16814_w112_02.jpg",
+      "alt": "предусилитель Triode TRV 4SE ( triode trv 4se )",
+      "local": "assets/enriched/16814/16814_w112_02.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 79973
+    },
+    {
+      "src": "local://16814_w112_03.jpg",
+      "thumb": "assets/enriched/16814/16814_w112_03.jpg",
+      "alt": "предусилитель Triode TRV 4SE ( triode trv 4se )",
+      "local": "assets/enriched/16814/16814_w112_03.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 65897
+    },
+    {
+      "src": "local://16814_w112_04.jpg",
+      "thumb": "assets/enriched/16814/16814_w112_04.jpg",
+      "alt": "предусилитель Triode TRV 4SE ( triode trv 4se )",
+      "local": "assets/enriched/16814/16814_w112_04.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 108350
+    },
+    {
+      "src": "local://16814_w112_05.jpg",
+      "thumb": "assets/enriched/16814/16814_w112_05.jpg",
+      "alt": "предусилитель Triode TRV 4SE ( triode trv 4se )",
+      "local": "assets/enriched/16814/16814_w112_05.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 22055
+    },
+    {
+      "src": "local://16814_w112_06.jpg",
+      "thumb": "assets/enriched/16814/16814_w112_06.jpg",
+      "alt": "предусилитель Triode TRV 4SE ( triode trv 4se )",
+      "local": "assets/enriched/16814/16814_w112_06.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 91169
+    },
+    {
+      "src": "local://16814_w112_07.jpg",
+      "thumb": "assets/enriched/16814/16814_w112_07.jpg",
+      "alt": "предусилитель Triode TRV 4SE ( triode trv 4se )",
+      "local": "assets/enriched/16814/16814_w112_07.jpg",
+      "enriched": true,
+      "attribution": "wave112-oem",
+      "bytes": 95170
     }
   ],
   "sku": "",
@@ -48,7 +112,10 @@
   "enrichedAt": "2026-11-14T13:45:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T12:16:46Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave112": true
 }
