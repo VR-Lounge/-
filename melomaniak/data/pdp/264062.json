@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/e729a8c7839b60ad56497095b37a5a2b.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/e729a8c7839b60ad56497095b37a5a2b.png",
-      "alt": "e729a8c7839b60ad56497095b37a5a2b",
-      "local": "assets/from-live/products/d0a8a76069_e729a8c7839b60ad56497095b37a5a2b.png"
+      "src": "local://264062_w104_00.jpg",
+      "thumb": "assets/enriched/264062/264062_w104_00.jpg",
+      "alt": "Разьёмы Acoustic Revive RBC-1F ( acoustic revive rbc 1f )",
+      "local": "assets/enriched/264062/264062_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 343419
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/e729a8c7839b60ad56497095b37a5a2b-300x300.png",
-      "local": "assets/enriched/264062/1c8ea14507_w13var.png",
-      "bytes": 88316,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264062_w104_01.jpg",
+      "thumb": "assets/enriched/264062/264062_w104_01.jpg",
+      "alt": "Разьёмы Acoustic Revive RBC-1F ( acoustic revive rbc 1f )",
+      "local": "assets/enriched/264062/264062_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 425850
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Acoustic_Revive_RBC_1F_.jpg",
-      "local": "assets/enriched/264062/15157a84f7_w14media.jpg",
-      "bytes": 23436,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264062_w104_02.jpg",
+      "thumb": "assets/enriched/264062/264062_w104_02.jpg",
+      "alt": "Разьёмы Acoustic Revive RBC-1F ( acoustic revive rbc 1f )",
+      "local": "assets/enriched/264062/264062_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 389368
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Acoustic_Revive_RBC_1F_-300x300.jpg",
-      "local": "assets/enriched/264062/53eda42ce9_w14var.jpg",
-      "bytes": 9123,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264062_w104_03.jpg",
+      "thumb": "assets/enriched/264062/264062_w104_03.jpg",
+      "alt": "Разьёмы Acoustic Revive RBC-1F ( acoustic revive rbc 1f )",
+      "local": "assets/enriched/264062/264062_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 319736
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

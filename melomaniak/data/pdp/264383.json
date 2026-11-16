@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-GT2-USB_A-Mini-B-small.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-GT2-USB_A-Mini-B-small.jpg",
-      "alt": "Furutech-GT2-USB_A-Mini-B-small",
-      "local": "assets/from-live/products/b1c0a5f707_Furutech-GT2-USB_A-Mini-B-small.jpg"
+      "src": "local://264383_w104_00.jpg",
+      "thumb": "assets/enriched/264383/264383_w104_00.jpg",
+      "alt": "USB кабель Furutech GT2 &#8211; mB ( usb furutech gt2 mb )",
+      "local": "assets/enriched/264383/264383_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 48068
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/USB_kabel_Furutech_GT2_mB_.jpg",
-      "local": "assets/enriched/264383/98f8699f39_w14media.jpg",
-      "bytes": 32896,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264383_w104_01.jpg",
+      "thumb": "assets/enriched/264383/264383_w104_01.jpg",
+      "alt": "USB кабель Furutech GT2 &#8211; mB ( usb furutech gt2 mb )",
+      "local": "assets/enriched/264383/264383_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 37432
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/USB_kabel_Furutech_GT2_mB_-600x600.jpg",
-      "local": "assets/enriched/264383/905f65f36b_w14var.jpg",
-      "bytes": 32175,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264383_w104_02.jpg",
+      "thumb": "assets/enriched/264383/264383_w104_02.jpg",
+      "alt": "USB кабель Furutech GT2 &#8211; mB ( usb furutech gt2 mb )",
+      "local": "assets/enriched/264383/264383_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 36596
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/USB_kabel_Furutech_GT2_mB_-300x300.jpg",
-      "local": "assets/enriched/264383/3ec9de7ac2_w14var.jpg",
-      "bytes": 12874,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264383_w104_03.jpg",
+      "thumb": "assets/enriched/264383/264383_w104_03.jpg",
+      "alt": "USB кабель Furutech GT2 &#8211; mB ( usb furutech gt2 mb )",
+      "local": "assets/enriched/264383/264383_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 48570
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:34:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

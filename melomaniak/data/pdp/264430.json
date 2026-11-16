@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-Alpha-55N-mvert.ru_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-Alpha-55N-mvert.ru_.jpg",
-      "alt": "cof",
-      "local": "assets/from-live/products/ee8b6d5d64_Furutech-FP-Alpha-55N-mvert.ru_.jpg"
+      "src": "local://264430_w104_00.jpg",
+      "thumb": "assets/enriched/264430/264430_w104_00.jpg",
+      "alt": "Сетевой кабель Furutech FP-Alpha 55N ( furutech fp alpha 55n )",
+      "local": "assets/enriched/264430/264430_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 72046
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_FP_Alpha_55N.jpg",
-      "local": "assets/enriched/264430/a486250297_w13media.jpg",
-      "bytes": 31257,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264430_w104_01.jpg",
+      "thumb": "assets/enriched/264430/264430_w104_01.jpg",
+      "alt": "Сетевой кабель Furutech FP-Alpha 55N ( furutech fp alpha 55n )",
+      "local": "assets/enriched/264430/264430_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 46393
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_FP_Alpha_55N-300x300.jpg",
-      "local": "assets/enriched/264430/61bce9bd50_w13var.jpg",
-      "bytes": 10399,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264430_w104_02.jpg",
+      "thumb": "assets/enriched/264430/264430_w104_02.jpg",
+      "alt": "Сетевой кабель Furutech FP-Alpha 55N ( furutech fp alpha 55n )",
+      "local": "assets/enriched/264430/264430_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 59603
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_FP_Alpha_55N-600x600.jpg",
-      "local": "assets/enriched/264430/1883d5bdbf_w13var.jpg",
-      "bytes": 30450,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264430_w104_03.jpg",
+      "thumb": "assets/enriched/264430/264430_w104_03.jpg",
+      "alt": "Сетевой кабель Furutech FP-Alpha 55N ( furutech fp alpha 55n )",
+      "local": "assets/enriched/264430/264430_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 81750
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

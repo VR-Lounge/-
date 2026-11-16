@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Crimping-sleeve.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Crimping-sleeve.jpg",
-      "alt": "Crimping-sleeve",
-      "local": "assets/from-live/products/c62fbd42cd_Crimping-sleeve.jpg"
+      "src": "local://264491_w104_00.jpg",
+      "thumb": "assets/enriched/264491/264491_w104_00.jpg",
+      "alt": "Трубка обжимная Furutech GS-11 P (G) ( furutech gs 11 p (g) )",
+      "local": "assets/enriched/264491/264491_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 78791
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_GS_11P_G_.jpg",
-      "local": "assets/enriched/264491/c97bda8288_w14media.jpg",
-      "bytes": 23019,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264491_w104_01.jpg",
+      "thumb": "assets/enriched/264491/264491_w104_01.jpg",
+      "alt": "Трубка обжимная Furutech GS-11 P (G) ( furutech gs 11 p (g) )",
+      "local": "assets/enriched/264491/264491_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 56495
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_GS_11P_G_-300x300.jpg",
-      "local": "assets/enriched/264491/14f5771993_w14var.jpg",
-      "bytes": 8666,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264491_w104_02.jpg",
+      "thumb": "assets/enriched/264491/264491_w104_02.jpg",
+      "alt": "Трубка обжимная Furutech GS-11 P (G) ( furutech gs 11 p (g) )",
+      "local": "assets/enriched/264491/264491_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 60813
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Furutech_GS_11P_G_-600x600.jpg",
-      "local": "assets/enriched/264491/fe230ec09c_w14var.jpg",
-      "bytes": 21347,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264491_w104_03.jpg",
+      "thumb": "assets/enriched/264491/264491_w104_03.jpg",
+      "alt": "Трубка обжимная Furutech GS-11 P (G) ( furutech gs 11 p (g) )",
+      "local": "assets/enriched/264491/264491_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 58157
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

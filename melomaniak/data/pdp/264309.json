@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-209-10-R.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FP-209-10-R.jpg",
-      "alt": "Furutech-FP-209-10-R",
-      "local": "assets/from-live/products/b51b09a2bd_Furutech-FP-209-10-R.jpg"
+      "src": "local://264309_w104_00.jpg",
+      "thumb": "assets/enriched/264309/264309_w104_00.jpg",
+      "alt": "Спайд Furutech FP-209 &#8211; 10 (R ) ( furutech fp 209 10 (r ) )",
+      "local": "assets/enriched/264309/264309_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 35926
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_FP_209_10_R_.jpg",
-      "local": "assets/enriched/264309/429f90b443_w14media.jpg",
-      "bytes": 34555,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264309_w104_01.jpg",
+      "thumb": "assets/enriched/264309/264309_w104_01.jpg",
+      "alt": "Спайд Furutech FP-209 &#8211; 10 (R ) ( furutech fp 209 10 (r ) )",
+      "local": "assets/enriched/264309/264309_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 22794
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_FP_209_10_R_-600x600.jpg",
-      "local": "assets/enriched/264309/483856e5ba_w14var.jpg",
-      "bytes": 33390,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264309_w104_02.jpg",
+      "thumb": "assets/enriched/264309/264309_w104_02.jpg",
+      "alt": "Спайд Furutech FP-209 &#8211; 10 (R ) ( furutech fp 209 10 (r ) )",
+      "local": "assets/enriched/264309/264309_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 25847
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/perexodnik_Furutech_FP_209_10_R_-300x300.jpg",
-      "local": "assets/enriched/264309/cc9d7ab2ff_w14var.jpg",
-      "bytes": 13948,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264309_w104_03.jpg",
+      "thumb": "assets/enriched/264309/264309_w104_03.jpg",
+      "alt": "Спайд Furutech FP-209 &#8211; 10 (R ) ( furutech fp 209 10 (r ) )",
+      "local": "assets/enriched/264309/264309_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 15270
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

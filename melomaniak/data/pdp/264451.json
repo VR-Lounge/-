@@ -31,42 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1787_1.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1787_1-600x600.webp",
-      "alt": "1000&#215;1000-1787_1",
-      "local": "assets/from-live/products/447bee0d0c_1000x1000-1787_1.webp"
+      "src": "local://264451_w104_00.jpg",
+      "thumb": "assets/enriched/264451/264451_w104_00.jpg",
+      "alt": "Акустический кабель Furutech Alpha-S25 ( furutech alpha s25 )",
+      "local": "assets/enriched/264451/264451_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 73777
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1787_1-600x600.webp",
-      "local": "assets/enriched/264451/7e4ba510d0_w13var.jpg",
-      "bytes": 11234,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264451_w104_01.jpg",
+      "thumb": "assets/enriched/264451/264451_w104_01.jpg",
+      "alt": "Акустический кабель Furutech Alpha-S25 ( furutech alpha s25 )",
+      "local": "assets/enriched/264451/264451_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 60255
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1787_1-768x768.webp",
-      "local": "assets/enriched/264451/98cc2008af_w13var.jpg",
-      "bytes": 14970,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264451_w104_02.jpg",
+      "thumb": "assets/enriched/264451/264451_w104_02.jpg",
+      "alt": "Акустический кабель Furutech Alpha-S25 ( furutech alpha s25 )",
+      "local": "assets/enriched/264451/264451_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 50508
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_Alpha_S25.jpg",
-      "local": "assets/enriched/264451/4c369106b2_w14media.jpg",
-      "bytes": 38588,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_Alpha_S25-300x300.jpg",
-      "local": "assets/enriched/264451/5b5c7c6435_w14var.jpg",
-      "bytes": 14507,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264451_w104_03.jpg",
+      "thumb": "assets/enriched/264451/264451_w104_03.jpg",
+      "alt": "Акустический кабель Furutech Alpha-S25 ( furutech alpha s25 )",
+      "local": "assets/enriched/264451/264451_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 73624
     }
   ],
   "sku": "",
@@ -78,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T00:07:08Z",
+  "generatedAt": "2026-11-16T00:21:59Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1434,
-    "padded": 87,
+    "true_multi_angle": 1456,
+    "padded": 65,
     "single_real": 366
   },
   "pct": {
-    "true_multi_angle": 75.99,
-    "padded": 4.61,
+    "true_multi_angle": 77.16,
+    "padded": 3.44,
     "single_real": 19.4,
-    "padded_of_claimed_gal4plus": 22.36,
-    "not_true_multi": 24.01
+    "padded_of_claimed_gal4plus": 21.17,
+    "not_true_multi": 22.84
   },
   "padReasonTallies": {
-    "local-variant": 654,
-    "wN-variant-name": 407,
-    "cdn-size-thumb": 83,
+    "local-variant": 644,
+    "wN-variant-name": 374,
+    "cdn-size-thumb": 81,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 413,
+  "claimedButNotTrueMulti": 391,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -20252,16 +20252,14 @@
       "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-evolution-speaker-ii-04",
       "cat": "Кабели",
       "price": 66125,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270627,
@@ -20685,16 +20683,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-scx-5000l",
       "cat": "Кабели",
       "price": 60624,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264522,
@@ -20702,16 +20698,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-scx-5000d-r",
       "cat": "Кабели",
       "price": 60624,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264523,
@@ -20719,16 +20713,14 @@
       "slug": "%d1%84%d0%be%d0%bd%d0%be-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-scx-5000d-rl",
       "cat": "Кабели",
       "price": 60624,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264524,
@@ -21329,16 +21321,14 @@
       "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-spc-350",
       "cat": "Кабели",
       "price": 56133,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272996,
@@ -23128,17 +23118,14 @@
       "slug": "%d1%80%d0%b0%d0%b7%d1%8c%d1%91%d0%bc%d1%8b-acoustic-revive-rur-1",
       "cat": "Другое",
       "price": 42000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264104,
@@ -23339,17 +23326,14 @@
       "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-hdmi-furutech-hdmi-xv-1-3-ultra-hd",
       "cat": "Кабели",
       "price": 41121,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264074,
@@ -24926,16 +24910,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-fp-alpha-55n",
       "cat": "Кабели",
       "price": 27256,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270557,
@@ -24958,16 +24940,14 @@
       "slug": "%d0%bc%d0%b5%d0%b6%d0%b1%d0%bb%d0%be%d1%87%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-digital-1-0r-triplec-fm",
       "cat": "Кабели",
       "price": 27075,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269372,
@@ -25204,16 +25184,14 @@
       "slug": "%d1%80%d0%b0%d0%b7%d1%8c%d1%91%d0%bc%d1%8b-acoustic-revive-rbc-1m",
       "cat": "Другое",
       "price": 26000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264062,
@@ -25221,16 +25199,14 @@
       "slug": "%d1%80%d0%b0%d0%b7%d1%8c%d1%91%d0%bc%d1%8b-acoustic-revive-rbc-1f",
       "cat": "Другое",
       "price": 26000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272810,
@@ -25302,16 +25278,14 @@
       "slug": "%d0%b0%d0%b4%d0%b0%d0%bf%d1%82%d0%b5%d1%80-acoustic-revive-bwa-4",
       "cat": "Другое",
       "price": 25000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264157,
@@ -25964,16 +25938,14 @@
       "slug": "%d0%bc%d0%b5%d0%b4%d0%bd%d1%8b%d0%b5-%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d1%8b-acoustic-revive-spu8",
       "cat": "Другое",
       "price": 19000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264080,
@@ -26715,16 +26687,14 @@
       "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-s25",
       "cat": "Кабели",
       "price": 14576,
-      "galleryHitl": true,
-      "galleryLen": 5,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 4,
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264275,
@@ -26780,16 +26750,14 @@
       "slug": "%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-hdmi-furutech-hdmi-n1-4",
       "cat": "Кабели",
       "price": 13983,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269804,
@@ -26966,16 +26934,14 @@
       "slug": "%d0%ba%d0%be%d0%bd%d0%bd%d0%b5%d0%ba%d1%82%d0%be%d1%80-furutech-fp-602-fr",
       "cat": "Другое",
       "price": 12599,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264452,
@@ -27470,16 +27436,14 @@
       "slug": "%d0%bc%d0%b5%d0%b4%d0%bd%d1%8b%d0%b5-%d0%bf%d0%bb%d0%b0%d1%82%d1%84%d0%be%d1%80%d0%bc%d1%8b-acoustic-revive-spu4",
       "cat": "Другое",
       "price": 10400,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264176,
@@ -27602,16 +27566,14 @@
       "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-gt2-mb",
       "cat": "Кабели",
       "price": 10073,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264427,
@@ -27686,16 +27648,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-fp-3ts20",
       "cat": "Кабели",
       "price": 9480,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264171,
@@ -27909,16 +27869,14 @@
       "slug": "%d1%82%d1%80%d1%83%d0%b1%d0%ba%d0%b0-%d0%be%d0%b1%d0%b6%d0%b8%d0%bc%d0%bd%d0%b0%d1%8f-furutech-gs-11-p-g",
       "cat": "Другое",
       "price": 8108,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264492,
@@ -28859,16 +28817,14 @@
       "slug": "%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-furutech-alpha-s14",
       "cat": "Кабели",
       "price": 4740,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264454,
@@ -28995,16 +28951,14 @@
       "slug": "%d1%81%d0%bf%d0%b0%d0%b9%d0%b4-furutech-fp-209-10-r",
       "cat": "Другое",
       "price": 4366,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 263990,

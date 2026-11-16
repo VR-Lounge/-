@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-RUR-1-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-RUR-1-1.jpg",
-      "alt": "cof",
-      "local": "assets/from-live/products/eb559d1a91_ACOUSTIC-REVIVE-RUR-1-1.jpg"
+      "src": "local://264060_w104_00.jpg",
+      "thumb": "assets/enriched/264060/264060_w104_00.jpg",
+      "alt": "Разьёмы Acoustic Revive RUR-1 ( acoustic revive rur 1 )",
+      "local": "assets/enriched/264060/264060_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 617833
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Acoustic_Revive_RUR_1_.jpg",
-      "local": "assets/enriched/264060/c536387927_w14media.jpg",
-      "bytes": 18204,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264060_w104_01.jpg",
+      "thumb": "assets/enriched/264060/264060_w104_01.jpg",
+      "alt": "Разьёмы Acoustic Revive RUR-1 ( acoustic revive rur 1 )",
+      "local": "assets/enriched/264060/264060_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 408270
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Acoustic_Revive_RUR_1_-600x600.jpg",
-      "local": "assets/enriched/264060/2c5373be55_w14var.jpg",
-      "bytes": 16317,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264060_w104_02.jpg",
+      "thumb": "assets/enriched/264060/264060_w104_02.jpg",
+      "alt": "Разьёмы Acoustic Revive RUR-1 ( acoustic revive rur 1 )",
+      "local": "assets/enriched/264060/264060_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 427701
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razem_Acoustic_Revive_RUR_1_-300x300.jpg",
-      "local": "assets/enriched/264060/aba73a64c4_w17cdn.jpg",
-      "bytes": 6855,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264060_w104_03.jpg",
+      "thumb": "assets/enriched/264060/264060_w104_03.jpg",
+      "alt": "Разьёмы Acoustic Revive RUR-1 ( acoustic revive rur 1 )",
+      "local": "assets/enriched/264060/264060_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 379260
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

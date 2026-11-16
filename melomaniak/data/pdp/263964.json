@@ -36,33 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-DIGITAL-1.OR-tripleC-FM-1-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-DIGITAL-1.OR-tripleC-FM-1-1.jpg",
-      "alt": "Acoustic-Revive-DIGITAL-1.OR-tripleC-FM-1 (1)"
+      "src": "local://263964_w104_00.jpg",
+      "thumb": "assets/enriched/263964/263964_w104_00.jpg",
+      "alt": "Межблочный кабель Acoustic Revive Digital 1.0R-TripleC-FM ( acoustic revive digital 1 0r triplec fm )",
+      "local": "assets/enriched/263964/263964_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 537731
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-DIGITAL-1.OR-tripleC-FM-1.jpg",
-      "local": "assets/enriched/263964/ad81b8f3f5_w13media.jpg",
-      "bytes": 21295,
-      "wave": "meager-w13-2026-11",
-      "w": 309,
-      "h": 250
+      "src": "local://263964_w104_01.jpg",
+      "thumb": "assets/enriched/263964/263964_w104_01.jpg",
+      "alt": "Межблочный кабель Acoustic Revive Digital 1.0R-TripleC-FM ( acoustic revive digital 1 0r triplec fm )",
+      "local": "assets/enriched/263964/263964_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 292634
     },
     {
-      "src": "local-variant://263964/w17sc95",
-      "local": "assets/enriched/263964/ce9b25f696_w17sc95.jpg",
-      "bytes": 10630,
-      "wave": "meager-w17-2026-11",
-      "w": 293,
-      "h": 237
+      "src": "local://263964_w104_02.jpg",
+      "thumb": "assets/enriched/263964/263964_w104_02.jpg",
+      "alt": "Межблочный кабель Acoustic Revive Digital 1.0R-TripleC-FM ( acoustic revive digital 1 0r triplec fm )",
+      "local": "assets/enriched/263964/263964_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 368290
     },
     {
-      "src": "local-variant://263964/w17sc90",
-      "local": "assets/enriched/263964/5436895e3c_w17sc90.jpg",
-      "bytes": 9844,
-      "wave": "meager-w17-2026-11",
-      "w": 278,
-      "h": 225
+      "src": "local://263964_w104_03.jpg",
+      "thumb": "assets/enriched/263964/263964_w104_03.jpg",
+      "alt": "Межблочный кабель Acoustic Revive Digital 1.0R-TripleC-FM ( acoustic revive digital 1 0r triplec fm )",
+      "local": "assets/enriched/263964/263964_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 505874
     }
   ],
   "sku": "",
@@ -75,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:26:58Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

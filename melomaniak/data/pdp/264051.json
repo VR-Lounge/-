@@ -31,35 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "local://8e7e9fdfb0_acoustic-revive-spu-8-1.jpg",
-      "thumb": "assets/enriched/264051/f4d2e9ea00_live1.jpg",
+      "src": "local://264051_w104_00.jpg",
+      "thumb": "assets/enriched/264051/264051_w104_00.jpg",
       "alt": "Медные платформы Acoustic Revive SPU4 ( acoustic revive spu4 )",
-      "local": "assets/enriched/264051/f4d2e9ea00_live1.jpg",
+      "local": "assets/enriched/264051/264051_w104_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 20225
+      "attribution": "wave104-oem",
+      "bytes": 274311
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-SPU-8.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-SPU-8.jpg",
-      "alt": "Acoustic-Revive-SPU-8",
-      "local": "assets/from-live/products/542b644814_Acoustic-Revive-SPU-8.jpg"
+      "src": "local://264051_w104_01.jpg",
+      "thumb": "assets/enriched/264051/264051_w104_01.jpg",
+      "alt": "Медные платформы Acoustic Revive SPU4 ( acoustic revive spu4 )",
+      "local": "assets/enriched/264051/264051_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 181079
     },
     {
-      "src": "local-variant://264051/w17sc95",
-      "local": "assets/enriched/264051/1c5c75ada6_w17sc95.jpg",
-      "bytes": 12042,
-      "wave": "meager-w17-2026-11",
-      "w": 320,
-      "h": 237
+      "src": "local://264051_w104_02.jpg",
+      "thumb": "assets/enriched/264051/264051_w104_02.jpg",
+      "alt": "Медные платформы Acoustic Revive SPU4 ( acoustic revive spu4 )",
+      "local": "assets/enriched/264051/264051_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 189696
     },
     {
-      "src": "local-variant://264051/w17sc90",
-      "local": "assets/enriched/264051/d00e21cd66_w17sc90.jpg",
-      "bytes": 11265,
-      "wave": "meager-w17-2026-11",
-      "w": 303,
-      "h": 225
+      "src": "local://264051_w104_03.jpg",
+      "thumb": "assets/enriched/264051/264051_w104_03.jpg",
+      "alt": "Медные платформы Acoustic Revive SPU4 ( acoustic revive spu4 )",
+      "local": "assets/enriched/264051/264051_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 255655
     }
   ],
   "sku": "",
@@ -71,5 +76,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

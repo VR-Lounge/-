@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-2586_1.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-2586_1-600x600.webp",
-      "alt": "1000&#215;1000-2586_1",
-      "local": "assets/from-live/products/2e93834eab_1000x1000-2586_1.webp"
+      "src": "local://264423_w104_00.jpg",
+      "thumb": "assets/enriched/264423/264423_w104_00.jpg",
+      "alt": "Сетевой кабель Furutech FP-3TS20 ( furutech fp 3ts20 )",
+      "local": "assets/enriched/264423/264423_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 143445
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-2586_1-600x600.webp",
-      "local": "assets/enriched/264423/54e1f116f1_w13var.jpg",
-      "bytes": 9458,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264423_w104_01.jpg",
+      "thumb": "assets/enriched/264423/264423_w104_01.jpg",
+      "alt": "Сетевой кабель Furutech FP-3TS20 ( furutech fp 3ts20 )",
+      "local": "assets/enriched/264423/264423_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 102557
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-2586_1-768x768.webp",
-      "local": "assets/enriched/264423/30f9c45c24_w13var.jpg",
-      "bytes": 12824,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264423_w104_02.jpg",
+      "thumb": "assets/enriched/264423/264423_w104_02.jpg",
+      "alt": "Сетевой кабель Furutech FP-3TS20 ( furutech fp 3ts20 )",
+      "local": "assets/enriched/264423/264423_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 117583
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/silovoi_kabel_Furutech_FP_3TS20.jpg",
-      "local": "assets/enriched/264423/50f4ea3648_w14media.jpg",
-      "bytes": 21295,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264423_w104_03.jpg",
+      "thumb": "assets/enriched/264423/264423_w104_03.jpg",
+      "alt": "Сетевой кабель Furutech FP-3TS20 ( furutech fp 3ts20 )",
+      "local": "assets/enriched/264423/264423_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 191695
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

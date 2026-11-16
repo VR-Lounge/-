@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-evolution-speaker-ii-04-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-evolution-speaker-ii-04-500x500-1.jpg",
-      "alt": "furutech-evolution-speaker-ii-04-500&#215;500",
-      "local": "assets/from-live/products/f0269c6c67_furutech-evolution-speaker-ii-04-500x500-1.jpg"
+      "src": "local://264391_w104_00.jpg",
+      "thumb": "assets/enriched/264391/264391_w104_00.jpg",
+      "alt": "Акустический кабель Furutech Evolution Speaker II  &#8211; 04 ( furutech evolution speaker ii 04 )",
+      "local": "assets/enriched/264391/264391_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 43215
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-evolution-speaker-ii-04-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264391/45831e7602_w13var.jpg",
-      "bytes": 13162,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264391_w104_01.jpg",
+      "thumb": "assets/enriched/264391/264391_w104_01.jpg",
+      "alt": "Акустический кабель Furutech Evolution Speaker II  &#8211; 04 ( furutech evolution speaker ii 04 )",
+      "local": "assets/enriched/264391/264391_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 33168
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_Speaker_Ref-III_04_BW.jpg",
-      "local": "assets/enriched/264391/f20d309b25_w15media.jpg",
-      "bytes": 29890,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264391_w104_02.jpg",
+      "thumb": "assets/enriched/264391/264391_w104_02.jpg",
+      "alt": "Акустический кабель Furutech Evolution Speaker II  &#8211; 04 ( furutech evolution speaker ii 04 )",
+      "local": "assets/enriched/264391/264391_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 32832
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_Speaker_Ref-III_04_BW-300x300.jpg",
-      "local": "assets/enriched/264391/958bbda4ce_w15var.jpg",
-      "bytes": 11025,
-      "wave": "meager-w15-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264391_w104_03.jpg",
+      "thumb": "assets/enriched/264391/264391_w104_03.jpg",
+      "alt": "Акустический кабель Furutech Evolution Speaker II  &#8211; 04 ( furutech evolution speaker ii 04 )",
+      "local": "assets/enriched/264391/264391_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 43589
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:34:38Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }

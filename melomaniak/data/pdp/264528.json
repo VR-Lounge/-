@@ -36,34 +36,67 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/saec-spc-350-2-e1613657295422.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/saec-spc-350-2-e1613657295422-600x600.jpg",
-      "alt": "saec-spc-350-2-e1613657295422",
-      "local": "assets/from-live/products/9837087cbc_saec-spc-350-2-e1613657295422.jpg"
+      "src": "local://264528_w104_00.jpg",
+      "thumb": "assets/enriched/264528/264528_w104_00.jpg",
+      "alt": "Акустический кабель SAEC  SPC-350 ( saec spc 350 )",
+      "local": "assets/enriched/264528/264528_w104_00.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 10853
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/saec-spc-350-2-e1613657295422-600x600.jpg",
-      "local": "assets/enriched/264528/bf15d29e90_w13var.jpg",
-      "bytes": 12467,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264528_w104_01.jpg",
+      "thumb": "assets/enriched/264528/264528_w104_01.jpg",
+      "alt": "Акустический кабель SAEC  SPC-350 ( saec spc 350 )",
+      "local": "assets/enriched/264528/264528_w104_01.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 4070
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/mezhblochnii_kabel_Saec_SPC_350_.jpg",
-      "local": "assets/enriched/264528/41dccc3e65_w13media.jpg",
-      "bytes": 12992,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264528_w104_02.jpg",
+      "thumb": "assets/enriched/264528/264528_w104_02.jpg",
+      "alt": "Акустический кабель SAEC  SPC-350 ( saec spc 350 )",
+      "local": "assets/enriched/264528/264528_w104_02.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 6323
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/mezhblochnii_kabel_Saec_SPC_350_-600x600.jpg",
-      "local": "assets/enriched/264528/8564e8acb4_w13var.jpg",
-      "bytes": 10360,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264528_w104_03.jpg",
+      "thumb": "assets/enriched/264528/264528_w104_03.jpg",
+      "alt": "Акустический кабель SAEC  SPC-350 ( saec spc 350 )",
+      "local": "assets/enriched/264528/264528_w104_03.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 5103
+    },
+    {
+      "src": "local://264528_w104_04.jpg",
+      "thumb": "assets/enriched/264528/264528_w104_04.jpg",
+      "alt": "Акустический кабель SAEC  SPC-350 ( saec spc 350 )",
+      "local": "assets/enriched/264528/264528_w104_04.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 2784
+    },
+    {
+      "src": "local://264528_w104_05.jpg",
+      "thumb": "assets/enriched/264528/264528_w104_05.jpg",
+      "alt": "Акустический кабель SAEC  SPC-350 ( saec spc 350 )",
+      "local": "assets/enriched/264528/264528_w104_05.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 4522
+    },
+    {
+      "src": "local://264528_w104_06.jpg",
+      "thumb": "assets/enriched/264528/264528_w104_06.jpg",
+      "alt": "Акустический кабель SAEC  SPC-350 ( saec spc 350 )",
+      "local": "assets/enriched/264528/264528_w104_06.jpg",
+      "enriched": true,
+      "attribution": "wave104-oem",
+      "bytes": 5063
     }
   ],
   "sku": "",
@@ -76,5 +109,9 @@
   "enrichedAt": "2026-11-14T13:35:11Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:18:48Z",
+  "galleryWave104": true
 }
