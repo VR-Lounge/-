@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T12:29:40Z",
+  "generatedAt": "2026-11-16T12:41:17Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1523,
+    "true_multi_angle": 1525,
     "padded": 11,
-    "single_real": 353
+    "single_real": 351
   },
   "pct": {
-    "true_multi_angle": 80.71,
+    "true_multi_angle": 80.82,
     "padded": 0.58,
-    "single_real": 18.71,
-    "padded_of_claimed_gal4plus": 18.12,
-    "not_true_multi": 19.29
+    "single_real": 18.6,
+    "padded_of_claimed_gal4plus": 18.05,
+    "not_true_multi": 19.18
   },
   "padReasonTallies": {
-    "local-variant": 629,
-    "wN-variant-name": 314,
+    "local-variant": 628,
+    "wN-variant-name": 312,
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
-  "claimedGal4Plus": 1860,
-  "claimedButNotTrueMulti": 337,
+  "claimedGal4Plus": 1861,
+  "claimedButNotTrueMulti": 336,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -94,20 +94,6 @@
       "name": "интегральный усилитель Ultimate Audio MC 34 AB ( ultimate audio mc 34 ab )",
       "cat": "Усилители",
       "price": 296000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 16728,
-      "name": "Интегральный усилитель Musica Raicho ( musica raicho )",
-      "cat": "Усилители",
-      "price": 290000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -576,6 +562,19 @@
         "local-variant": 1
       },
       "class": "single_real"
+    },
+    {
+      "id": 264503,
+      "name": "Коннектор Furutech FP-308 (R ) ( furutech fp 308 (r ) )",
+      "cat": "Другое",
+      "price": 121509,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "padReasons": {
+        "local-variant": 2
+      },
+      "class": "single_real"
     }
   ],
   "hitlTrueOneshot": [
@@ -664,16 +663,6 @@
       "name": "напольная акустика Lawrence Audio Mandolin ( lawrence audio mandolin )",
       "cat": "Акустика",
       "price": 580000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 262108,
-      "name": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
-      "cat": "Усилители",
-      "price": 550000,
       "galleryLen": 1,
       "uniqueDistinct": 1,
       "padSlots": 0,
@@ -874,16 +863,6 @@
       "name": "интегральный усилитель Ultimate Audio MC 34 AB ( ultimate audio mc 34 ab )",
       "cat": "Усилители",
       "price": 296000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 16728,
-      "name": "Интегральный усилитель Musica Raicho ( musica raicho )",
-      "cat": "Усилители",
-      "price": 290000,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1378,9 +1357,29 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264028,
+      "name": "Поглотитель Acoustic Revive TB-38 ( acoustic revive tb 38 )",
+      "cat": "Другое",
+      "price": 95931,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264092,
+      "name": "Платформа Audio Replas SPL-3050/4P ( audio replas spl 3050 4p )",
+      "cat": "Другое",
+      "price": 94160,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 353,
+  "hitlTrueOneshotCount": 351,
   "items": [
     {
       "id": 262053,
@@ -5968,14 +5967,14 @@
       "slug": "%d0%b8%d0%bd%d1%82%d0%b5%d0%b3%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-line-magnetic-audio-lm-150ia",
       "cat": "Усилители",
       "price": 550000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 267424,
@@ -9602,17 +9601,14 @@
       "slug": "predysilitel_musica_raicho",
       "cat": "Усилители",
       "price": 290000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 2,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 268002,

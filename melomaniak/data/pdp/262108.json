@@ -21,10 +21,76 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/fe00c02a4792ea977dc195c136c36d2f.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/10/fe00c02a4792ea977dc195c136c36d2f-600x600.jpg",
-      "alt": "fe00c02a4792ea977dc195c136c36d2f",
-      "local": "assets/from-live/products/dabb34a5ab_fe00c02a4792ea977dc195c136c36d2f.jpg"
+      "src": "local://262108_w113_00.jpg",
+      "thumb": "assets/enriched/262108/262108_w113_00.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
+      "local": "assets/enriched/262108/262108_w113_00.jpg",
+      "enriched": true,
+      "attribution": "wave113-oem",
+      "bytes": 113775
+    },
+    {
+      "src": "local://262108_w113_01.jpg",
+      "thumb": "assets/enriched/262108/262108_w113_01.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
+      "local": "assets/enriched/262108/262108_w113_01.jpg",
+      "enriched": true,
+      "attribution": "wave113-oem",
+      "bytes": 345128
+    },
+    {
+      "src": "local://262108_w113_02.jpg",
+      "thumb": "assets/enriched/262108/262108_w113_02.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
+      "local": "assets/enriched/262108/262108_w113_02.jpg",
+      "enriched": true,
+      "attribution": "wave113-oem",
+      "bytes": 319507
+    },
+    {
+      "src": "local://262108_w113_03.jpg",
+      "thumb": "assets/enriched/262108/262108_w113_03.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
+      "local": "assets/enriched/262108/262108_w113_03.jpg",
+      "enriched": true,
+      "attribution": "wave113-oem",
+      "bytes": 68356
+    },
+    {
+      "src": "local://262108_w113_04.jpg",
+      "thumb": "assets/enriched/262108/262108_w113_04.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
+      "local": "assets/enriched/262108/262108_w113_04.jpg",
+      "enriched": true,
+      "attribution": "wave113-oem",
+      "bytes": 193015
+    },
+    {
+      "src": "local://262108_w113_05.jpg",
+      "thumb": "assets/enriched/262108/262108_w113_05.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
+      "local": "assets/enriched/262108/262108_w113_05.jpg",
+      "enriched": true,
+      "attribution": "wave113-oem",
+      "bytes": 181317
+    },
+    {
+      "src": "local://262108_w113_06.jpg",
+      "thumb": "assets/enriched/262108/262108_w113_06.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
+      "local": "assets/enriched/262108/262108_w113_06.jpg",
+      "enriched": true,
+      "attribution": "wave113-oem",
+      "bytes": 300340
+    },
+    {
+      "src": "local://262108_w113_07.jpg",
+      "thumb": "assets/enriched/262108/262108_w113_07.jpg",
+      "alt": "Интегральный усилитель Line Magnetic Audio LM 150iA ( line magnetic audio lm 150ia )",
+      "local": "assets/enriched/262108/262108_w113_07.jpg",
+      "enriched": true,
+      "attribution": "wave113-oem",
+      "bytes": 293633
     }
   ],
   "sku": "",
@@ -37,8 +103,11 @@
   "enrichedAt": "2026-11-14T14:07:06Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: pads stripped — true angles <4; salon/OEM shoot needed. HITL gallery: <4 distinct perceptual angles after w18 OEM hunt. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:24:46Z",
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T12:37:58Z",
   "galleryWave18": true,
-  "galleryWave19": true
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave113": true
 }
