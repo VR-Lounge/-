@@ -31,34 +31,74 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-RBN-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-RBN-1.jpg",
-      "alt": "Acoustic-Revive-RBN-1",
-      "local": "assets/from-live/products/58eac6af2b_Acoustic-Revive-RBN-1.jpg"
+      "src": "local://264059_w135_00.jpg",
+      "thumb": "assets/enriched/264059/264059_w135_00.jpg",
+      "alt": "Разьёмы Acoustic Revive RBN-1 ( acoustic revive rbn 1 )",
+      "local": "assets/enriched/264059/264059_w135_00.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 55343,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "local-variant://264059/w17dsc95",
-      "local": "assets/enriched/264059/0849358b51_w17dsc95.jpg",
-      "bytes": 3743,
-      "wave": "meager-w17-2026-11",
-      "w": 197,
-      "h": 120
+      "src": "local://264059_w135_01.jpg",
+      "thumb": "assets/enriched/264059/264059_w135_01.jpg",
+      "alt": "Разьёмы Acoustic Revive RBN-1 ( acoustic revive rbn 1 )",
+      "local": "assets/enriched/264059/264059_w135_01.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 46360,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "local-variant://264059/w17dsc90",
-      "local": "assets/enriched/264059/87fa599363_w17dsc90.jpg",
-      "bytes": 3596,
-      "wave": "meager-w17-2026-11",
-      "w": 187,
-      "h": 120
+      "src": "local://264059_w135_02.jpg",
+      "thumb": "assets/enriched/264059/264059_w135_02.jpg",
+      "alt": "Разьёмы Acoustic Revive RBN-1 ( acoustic revive rbn 1 )",
+      "local": "assets/enriched/264059/264059_w135_02.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 43801,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "local-variant://264059/w17dr1",
-      "local": "assets/enriched/264059/a3ba540a02_w17dr1.jpg",
-      "bytes": 4116,
-      "wave": "meager-w17-2026-11",
-      "w": 210,
-      "h": 116
+      "src": "local://264059_w135_03.jpg",
+      "thumb": "assets/enriched/264059/264059_w135_03.jpg",
+      "alt": "Разьёмы Acoustic Revive RBN-1 ( acoustic revive rbn 1 )",
+      "local": "assets/enriched/264059/264059_w135_03.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 142997,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264059_w135_04.jpg",
+      "thumb": "assets/enriched/264059/264059_w135_04.jpg",
+      "alt": "Разьёмы Acoustic Revive RBN-1 ( acoustic revive rbn 1 )",
+      "local": "assets/enriched/264059/264059_w135_04.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 211166,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264059_w135_05.jpg",
+      "thumb": "assets/enriched/264059/264059_w135_05.jpg",
+      "alt": "Разьёмы Acoustic Revive RBN-1 ( acoustic revive rbn 1 )",
+      "local": "assets/enriched/264059/264059_w135_05.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 160761,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264059_w135_06.jpg",
+      "thumb": "assets/enriched/264059/264059_w135_06.jpg",
+      "alt": "Разьёмы Acoustic Revive RBN-1 ( acoustic revive rbn 1 )",
+      "local": "assets/enriched/264059/264059_w135_06.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 236089,
+      "wave": "w135-2026-11"
     }
   ],
   "sku": "",
@@ -70,5 +110,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:33:42Z",
+  "galleryWave135": true
 }

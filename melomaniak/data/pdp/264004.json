@@ -36,34 +36,74 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-R-AU1-PL-500x358-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-R-AU1-PL-500x358-1.jpg",
-      "alt": "Acoustic-Revive-R-AU1-PL&#8211;500&#215;358",
-      "local": "assets/from-live/products/34c1c9a95c_Acoustic-Revive-R-AU1-PL-500x358-1.jpg"
+      "src": "local://264004_w135_00.jpg",
+      "thumb": "assets/enriched/264004/264004_w135_00.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-PL ( usb acoustic revive r au1 pl )",
+      "local": "assets/enriched/264004/264004_w135_00.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 116948,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "local-variant://264004/w17sc95",
-      "local": "assets/enriched/264004/72e0509d85_w17sc95.jpg",
-      "bytes": 16688,
-      "wave": "meager-w17-2026-11",
-      "w": 475,
-      "h": 340
+      "src": "local://264004_w135_01.jpg",
+      "thumb": "assets/enriched/264004/264004_w135_01.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-PL ( usb acoustic revive r au1 pl )",
+      "local": "assets/enriched/264004/264004_w135_01.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 148882,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "local-variant://264004/w17sc90",
-      "local": "assets/enriched/264004/b1801f3438_w17sc90.jpg",
-      "bytes": 15460,
-      "wave": "meager-w17-2026-11",
-      "w": 450,
-      "h": 322
+      "src": "local://264004_w135_02.jpg",
+      "thumb": "assets/enriched/264004/264004_w135_02.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-PL ( usb acoustic revive r au1 pl )",
+      "local": "assets/enriched/264004/264004_w135_02.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 189720,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "local-variant://264004/w17sc85",
-      "local": "assets/enriched/264004/642756962f_w17sc85.jpg",
-      "bytes": 14194,
-      "wave": "meager-w17-2026-11",
-      "w": 425,
-      "h": 304
+      "src": "local://264004_w135_03.jpg",
+      "thumb": "assets/enriched/264004/264004_w135_03.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-PL ( usb acoustic revive r au1 pl )",
+      "local": "assets/enriched/264004/264004_w135_03.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 133634,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264004_w135_04.jpg",
+      "thumb": "assets/enriched/264004/264004_w135_04.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-PL ( usb acoustic revive r au1 pl )",
+      "local": "assets/enriched/264004/264004_w135_04.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 72403,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264004_w135_05.jpg",
+      "thumb": "assets/enriched/264004/264004_w135_05.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-PL ( usb acoustic revive r au1 pl )",
+      "local": "assets/enriched/264004/264004_w135_05.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 57299,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264004_w135_06.jpg",
+      "thumb": "assets/enriched/264004/264004_w135_06.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-PL ( usb acoustic revive r au1 pl )",
+      "local": "assets/enriched/264004/264004_w135_06.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 46903,
+      "wave": "w135-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +116,9 @@
   "enrichedAt": "2026-11-14T13:29:52Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:33:42Z",
+  "galleryWave135": true
 }

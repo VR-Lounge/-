@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T19:16:43Z",
+  "generatedAt": "2026-11-16T19:36:52Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1588,
+    "true_multi_angle": 1595,
     "padded": 11,
-    "single_real": 288
+    "single_real": 281
   },
   "pct": {
-    "true_multi_angle": 84.15,
+    "true_multi_angle": 84.53,
     "padded": 0.58,
-    "single_real": 15.26,
-    "padded_of_claimed_gal4plus": 14.81,
-    "not_true_multi": 15.85
+    "single_real": 14.89,
+    "padded_of_claimed_gal4plus": 14.43,
+    "not_true_multi": 15.47
   },
   "padReasonTallies": {
-    "local-variant": 511,
-    "wN-variant-name": 264,
-    "cdn-size-thumb": 69,
+    "local-variant": 503,
+    "wN-variant-name": 252,
+    "cdn-size-thumb": 68,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 276,
+  "claimedButNotTrueMulti": 269,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -448,20 +448,6 @@
       "class": "single_real"
     },
     {
-      "id": 264028,
-      "name": "Поглотитель Acoustic Revive TB-38 ( acoustic revive tb 38 )",
-      "cat": "Другое",
-      "price": 95931,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 2
-      },
-      "class": "single_real"
-    },
-    {
       "id": 264092,
       "name": "Платформа Audio Replas SPL-3050/4P ( audio replas spl 3050 4p )",
       "cat": "Другое",
@@ -581,6 +567,19 @@
       "uniqueDistinct": 1,
       "padSlots": 0,
       "padReasons": {},
+      "class": "single_real"
+    },
+    {
+      "id": 264117,
+      "name": "Оптимизатор Audio Replas CPC-IEC43SZ ( audio replas cpc iec43sz )",
+      "cat": "Другое",
+      "price": 86760,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 3
+      },
       "class": "single_real"
     }
   ],
@@ -1086,16 +1085,6 @@
       "galleryHitl": true
     },
     {
-      "id": 264028,
-      "name": "Поглотитель Acoustic Revive TB-38 ( acoustic revive tb 38 )",
-      "cat": "Другое",
-      "price": 95931,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 264092,
       "name": "Платформа Audio Replas SPL-3050/4P ( audio replas spl 3050 4p )",
       "cat": "Другое",
@@ -1384,9 +1373,19 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264379,
+      "name": "Цифровой кабель Furutech Evolution Digital II (XLR) ( furutech evolution digital ii (xlr) )",
+      "cat": "Кабели",
+      "price": 51193,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 288,
+  "hitlTrueOneshotCount": 281,
   "items": [
     {
       "id": 262053,
@@ -17516,17 +17515,14 @@
       "slug": "%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-acoustic-revive-tb-38",
       "cat": "Другое",
       "price": 95931,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "cdn-size-thumb": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273323,
@@ -22454,16 +22450,14 @@
       "slug": "%d1%81%d0%bf%d1%80%d0%b0%d0%b9%d0%b4-furutech-jumperflux",
       "cat": "Другое",
       "price": 47401,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264393,
@@ -22471,16 +22465,14 @@
       "slug": "%d1%81%d0%bf%d1%80%d0%b0%d0%b9%d0%b4-furutech-jumperflux-2",
       "cat": "Другое",
       "price": 47401,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 274606,
@@ -22686,16 +22678,14 @@
       "slug": "%d0%ba%d0%b2%d0%b0%d1%80%d1%86%d0%b5%d0%b2%d1%8b%d0%b5-%d0%b4%d0%b8%d1%81%d0%ba%d0%b8-audio-replas-opt-100hg-flat-ss-hr-1p",
       "cat": "Другое",
       "price": 45000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269506,
@@ -23214,16 +23204,14 @@
       "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-r-au1-pl",
       "cat": "Кабели",
       "price": 40660,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269953,
@@ -23528,16 +23516,14 @@
       "slug": "%d1%80%d0%b0%d0%b7%d1%8c%d1%91%d0%bc%d1%8b-acoustic-revive-ryg-1",
       "cat": "Другое",
       "price": 38000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264059,
@@ -23545,16 +23531,14 @@
       "slug": "%d1%80%d0%b0%d0%b7%d1%8c%d1%91%d0%bc%d1%8b-acoustic-revive-rbn-1",
       "cat": "Другое",
       "price": 38000,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 269476,

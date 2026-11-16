@@ -1,0 +1,178 @@
+{
+  "wave": 135,
+  "counts": {
+    "true_multi_angle": 1595,
+    "padded": 11,
+    "single_real": 281
+  },
+  "cleared": [
+    {
+      "id": 264028,
+      "name": "Поглотитель Acoustic Revive TB-38 ( acoustic revive tb 38 )",
+      "price": 95931,
+      "unique": 5
+    },
+    {
+      "id": 264069,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/1P ( audio replas opt 100hg flat ss hr 1",
+      "price": 45000,
+      "unique": 6
+    },
+    {
+      "id": 264392,
+      "name": "Спрайд Furutech Jumperflux ( furutech jumperflux )",
+      "price": 47401,
+      "unique": 6
+    },
+    {
+      "id": 264393,
+      "name": "Спрайд Furutech Jumperflux ( furutech jumperflux )",
+      "price": 47401,
+      "unique": 6
+    },
+    {
+      "id": 264004,
+      "name": "USB кабель Acoustic Revive R-AU1-PL ( usb acoustic revive r au1 pl )",
+      "price": 40660,
+      "unique": 7
+    },
+    {
+      "id": 264059,
+      "name": "Разьёмы Acoustic Revive RBN-1 ( acoustic revive rbn 1 )",
+      "price": 38000,
+      "unique": 7
+    },
+    {
+      "id": 264058,
+      "name": "Разьёмы Acoustic Revive RYG-1 ( acoustic revive ryg 1 )",
+      "price": 38000,
+      "unique": 6
+    }
+  ],
+  "hitl_padded": 11,
+  "skipped": [
+    {
+      "id": 264404,
+      "reason": "AG-12 ≠ AG-12R"
+    },
+    {
+      "id": 264260,
+      "reason": "ASB-2 only 3 unique dhash"
+    },
+    {
+      "id": 264144,
+      "reason": "FI-52M ≠ FI-52NCF"
+    }
+  ],
+  "promote": {
+    "at": "2026-11-16T19:33:42Z",
+    "results": [
+      {
+        "id": 264028,
+        "before": 4,
+        "after": 5,
+        "unique": 5,
+        "files": [
+          "assets/enriched/264028/264028_w135_00.jpg",
+          "assets/enriched/264028/264028_w135_01.jpg",
+          "assets/enriched/264028/264028_w135_02.jpg",
+          "assets/enriched/264028/264028_w135_03.jpg",
+          "assets/enriched/264028/264028_w135_04.jpg"
+        ],
+        "name": "Поглотитель Acoustic Revive TB-38 ( acoustic revive tb 38 )"
+      },
+      {
+        "id": 264069,
+        "before": 4,
+        "after": 6,
+        "unique": 6,
+        "files": [
+          "assets/enriched/264069/264069_w135_00.jpg",
+          "assets/enriched/264069/264069_w135_01.jpg",
+          "assets/enriched/264069/264069_w135_02.jpg",
+          "assets/enriched/264069/264069_w135_03.jpg",
+          "assets/enriched/264069/264069_w135_04.jpg",
+          "assets/enriched/264069/264069_w135_05.jpg"
+        ],
+        "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/1P ( audio replas opt 100hg fl"
+      },
+      {
+        "id": 264392,
+        "before": 4,
+        "after": 6,
+        "unique": 6,
+        "files": [
+          "assets/enriched/264392/264392_w135_00.jpg",
+          "assets/enriched/264392/264392_w135_01.jpg",
+          "assets/enriched/264392/264392_w135_02.jpg",
+          "assets/enriched/264392/264392_w135_03.jpg",
+          "assets/enriched/264392/264392_w135_04.jpg",
+          "assets/enriched/264392/264392_w135_05.jpg"
+        ],
+        "name": "Спрайд Furutech Jumperflux ( furutech jumperflux )"
+      },
+      {
+        "id": 264393,
+        "before": 4,
+        "after": 6,
+        "unique": 6,
+        "files": [
+          "assets/enriched/264393/264393_w135_00.jpg",
+          "assets/enriched/264393/264393_w135_01.jpg",
+          "assets/enriched/264393/264393_w135_02.jpg",
+          "assets/enriched/264393/264393_w135_03.jpg",
+          "assets/enriched/264393/264393_w135_04.jpg",
+          "assets/enriched/264393/264393_w135_05.jpg"
+        ],
+        "name": "Спрайд Furutech Jumperflux ( furutech jumperflux )"
+      },
+      {
+        "id": 264004,
+        "before": 4,
+        "after": 7,
+        "unique": 7,
+        "files": [
+          "assets/enriched/264004/264004_w135_00.jpg",
+          "assets/enriched/264004/264004_w135_01.jpg",
+          "assets/enriched/264004/264004_w135_02.jpg",
+          "assets/enriched/264004/264004_w135_03.jpg",
+          "assets/enriched/264004/264004_w135_04.jpg",
+          "assets/enriched/264004/264004_w135_05.jpg",
+          "assets/enriched/264004/264004_w135_06.jpg"
+        ],
+        "name": "USB кабель Acoustic Revive R-AU1-PL ( usb acoustic revive r au1 pl )"
+      },
+      {
+        "id": 264059,
+        "before": 4,
+        "after": 7,
+        "unique": 7,
+        "files": [
+          "assets/enriched/264059/264059_w135_00.jpg",
+          "assets/enriched/264059/264059_w135_01.jpg",
+          "assets/enriched/264059/264059_w135_02.jpg",
+          "assets/enriched/264059/264059_w135_03.jpg",
+          "assets/enriched/264059/264059_w135_04.jpg",
+          "assets/enriched/264059/264059_w135_05.jpg",
+          "assets/enriched/264059/264059_w135_06.jpg"
+        ],
+        "name": "Разьёмы Acoustic Revive RBN-1 ( acoustic revive rbn 1 )"
+      },
+      {
+        "id": 264058,
+        "before": 4,
+        "after": 6,
+        "unique": 6,
+        "files": [
+          "assets/enriched/264058/264058_w135_00.jpg",
+          "assets/enriched/264058/264058_w135_01.jpg",
+          "assets/enriched/264058/264058_w135_02.jpg",
+          "assets/enriched/264058/264058_w135_03.jpg",
+          "assets/enriched/264058/264058_w135_04.jpg",
+          "assets/enriched/264058/264058_w135_05.jpg"
+        ],
+        "name": "Разьёмы Acoustic Revive RYG-1 ( acoustic revive ryg 1 )"
+      }
+    ]
+  }
+}

@@ -31,34 +31,64 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-52024_1.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-52024_1-600x600.webp",
-      "alt": "1000&#215;1000-52024_1",
-      "local": "assets/from-live/products/62dd219f3d_1000x1000-52024_1.webp"
+      "src": "local://264058_w135_00.jpg",
+      "thumb": "assets/enriched/264058/264058_w135_00.jpg",
+      "alt": "Разьёмы Acoustic Revive RYG-1 ( acoustic revive ryg 1 )",
+      "local": "assets/enriched/264058/264058_w135_00.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 204950,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-52024_1-300x300.webp",
-      "local": "assets/enriched/264058/1efe2ed892_w13var.jpg",
-      "bytes": 8064,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264058_w135_01.jpg",
+      "thumb": "assets/enriched/264058/264058_w135_01.jpg",
+      "alt": "Разьёмы Acoustic Revive RYG-1 ( acoustic revive ryg 1 )",
+      "local": "assets/enriched/264058/264058_w135_01.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 187225,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-52024_1-600x600.webp",
-      "local": "assets/enriched/264058/82d24a01a3_w13var.jpg",
-      "bytes": 18106,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264058_w135_02.jpg",
+      "thumb": "assets/enriched/264058/264058_w135_02.jpg",
+      "alt": "Разьёмы Acoustic Revive RYG-1 ( acoustic revive ryg 1 )",
+      "local": "assets/enriched/264058/264058_w135_02.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 145279,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-52024_1-768x768.webp",
-      "local": "assets/enriched/264058/d466eceb03_w13var.jpg",
-      "bytes": 23602,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264058_w135_03.jpg",
+      "thumb": "assets/enriched/264058/264058_w135_03.jpg",
+      "alt": "Разьёмы Acoustic Revive RYG-1 ( acoustic revive ryg 1 )",
+      "local": "assets/enriched/264058/264058_w135_03.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 227637,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264058_w135_04.jpg",
+      "thumb": "assets/enriched/264058/264058_w135_04.jpg",
+      "alt": "Разьёмы Acoustic Revive RYG-1 ( acoustic revive ryg 1 )",
+      "local": "assets/enriched/264058/264058_w135_04.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 175772,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264058_w135_05.jpg",
+      "thumb": "assets/enriched/264058/264058_w135_05.jpg",
+      "alt": "Разьёмы Acoustic Revive RYG-1 ( acoustic revive ryg 1 )",
+      "local": "assets/enriched/264058/264058_w135_05.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 119620,
+      "wave": "w135-2026-11"
     }
   ],
   "sku": "",
@@ -70,5 +100,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:33:42Z",
+  "galleryWave135": true
 }

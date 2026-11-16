@@ -36,34 +36,64 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-101685_1.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-101685_1-600x600.webp",
-      "alt": "1000&#215;1000-101685_1",
-      "local": "assets/from-live/products/5829266248_1000x1000-101685_1.webp"
+      "src": "local://264069_w135_00.jpg",
+      "thumb": "assets/enriched/264069/264069_w135_00.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/1P ( audio replas opt 100hg flat ss hr 1p )",
+      "local": "assets/enriched/264069/264069_w135_00.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 183662,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-101685_1-300x300.webp",
-      "local": "assets/enriched/264069/58ff841d5d_w13var.jpg",
-      "bytes": 16808,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264069_w135_01.jpg",
+      "thumb": "assets/enriched/264069/264069_w135_01.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/1P ( audio replas opt 100hg flat ss hr 1p )",
+      "local": "assets/enriched/264069/264069_w135_01.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 138016,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-101685_1-600x600.webp",
-      "local": "assets/enriched/264069/a50482688c_w13var.jpg",
-      "bytes": 37814,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264069_w135_02.jpg",
+      "thumb": "assets/enriched/264069/264069_w135_02.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/1P ( audio replas opt 100hg flat ss hr 1p )",
+      "local": "assets/enriched/264069/264069_w135_02.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 141281,
+      "wave": "w135-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-101685_1-768x768.webp",
-      "local": "assets/enriched/264069/fc09c6b0c4_w13var.jpg",
-      "bytes": 50014,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264069_w135_03.jpg",
+      "thumb": "assets/enriched/264069/264069_w135_03.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/1P ( audio replas opt 100hg flat ss hr 1p )",
+      "local": "assets/enriched/264069/264069_w135_03.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 147901,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264069_w135_04.jpg",
+      "thumb": "assets/enriched/264069/264069_w135_04.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/1P ( audio replas opt 100hg flat ss hr 1p )",
+      "local": "assets/enriched/264069/264069_w135_04.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 155101,
+      "wave": "w135-2026-11"
+    },
+    {
+      "src": "local://264069_w135_05.jpg",
+      "thumb": "assets/enriched/264069/264069_w135_05.jpg",
+      "alt": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/1P ( audio replas opt 100hg flat ss hr 1p )",
+      "local": "assets/enriched/264069/264069_w135_05.jpg",
+      "enriched": true,
+      "attribution": "wave135-yahoo",
+      "bytes": 197436,
+      "wave": "w135-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +106,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:33:42Z",
+  "galleryWave135": true
 }
