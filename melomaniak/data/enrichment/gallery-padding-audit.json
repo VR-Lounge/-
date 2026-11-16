@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T00:57:57Z",
+  "generatedAt": "2026-11-16T01:06:37Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1499,
-    "padded": 22,
+    "true_multi_angle": 1509,
+    "padded": 12,
     "single_real": 366
   },
   "pct": {
-    "true_multi_angle": 79.44,
-    "padded": 1.17,
+    "true_multi_angle": 79.97,
+    "padded": 0.64,
     "single_real": 19.4,
-    "padded_of_claimed_gal4plus": 18.84,
-    "not_true_multi": 20.56
+    "padded_of_claimed_gal4plus": 18.3,
+    "not_true_multi": 20.03
   },
   "padReasonTallies": {
-    "local-variant": 632,
-    "wN-variant-name": 323,
-    "cdn-size-thumb": 75,
+    "local-variant": 629,
+    "wN-variant-name": 315,
+    "cdn-size-thumb": 74,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1847,
-  "claimedButNotTrueMulti": 348,
+  "claimedButNotTrueMulti": 338,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -62,19 +62,6 @@
         "local-variant": 1
       },
       "class": "single_real"
-    },
-    {
-      "id": 15742,
-      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
-      "cat": "Источники",
-      "price": 320000,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "class": "padded"
     },
     {
       "id": 262549,
@@ -391,17 +378,6 @@
       "class": "single_real"
     },
     {
-      "id": 264542,
-      "name": "USB кабель SAEC  SUS-020 Stratosphere C &#8211; mini B OTG ( usb saec sus 020 stratosphere c mini b otg )",
-      "cat": "Кабели",
-      "price": 156923,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
-    },
-    {
       "id": 260693,
       "name": "Интегральный усилитель Line Magnetic LM-201 IA ( line magnetic lm 201 ia )",
       "cat": "Усилители",
@@ -427,17 +403,6 @@
         "local-variant": 2
       },
       "class": "single_real"
-    },
-    {
-      "id": 262459,
-      "name": "Напольная акустикам Audio Physic Yara ( audio physic yara )",
-      "cat": "Акустика",
-      "price": 150000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 0,
-      "padReasons": {},
-      "class": "padded"
     },
     {
       "id": 41455,
@@ -533,20 +498,6 @@
       "class": "single_real"
     },
     {
-      "id": 15630,
-      "name": "центральный канал Audio Physic Celsius ( audio physic celsius )",
-      "cat": "Другое",
-      "price": 135000,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 1
-      },
-      "class": "padded"
-    },
-    {
       "id": 262098,
       "name": "CD проигрыватель Line Magnetic Audio LM 205 CD ( cd line magnetic audio lm 205 cd )",
       "cat": "Источники",
@@ -569,6 +520,59 @@
       "padSlots": 3,
       "padReasons": {
         "wN-variant-name": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264025,
+      "name": "Поглотитель Acoustic Revive RAF-48 ( acoustic revive raf 48 )",
+      "cat": "Другое",
+      "price": 125664,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 40574,
+      "name": "Полочная акустика Acoustic Energy AE1 Active ( acoustic energy ae1 active )",
+      "cat": "Акустика",
+      "price": 125600,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 2,
+      "padReasons": {
+        "wN-variant-name": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 262069,
+      "name": "Центральный канал Divini Audio Classical LCR ( divini audio classical lcr )",
+      "cat": "Другое",
+      "price": 125000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 26668,
+      "name": "усилитель мощности Trigon Dwarf II ( trigon dwarf ii )",
+      "cat": "Усилители",
+      "price": 125000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 1,
+        "local-variant": 2
       },
       "class": "single_real"
     }
@@ -9109,15 +9113,13 @@
       "cat": "Источники",
       "price": 320000,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "cdn-size-thumb": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 262549,
@@ -13721,14 +13723,14 @@
       "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-saec-sus-020-stratosphere-c-mini-b-otg",
       "cat": "Кабели",
       "price": 156923,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15642,
@@ -13967,13 +13969,13 @@
       "cat": "Акустика",
       "price": 150000,
       "galleryHitl": false,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
       "padSlots": 0,
       "padReasons": {},
-      "hasPadding": true,
-      "class": "padded"
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271900,
@@ -14764,17 +14766,14 @@
       "slug": "tsentralnii_kanal_Audio_Physic_Celsius",
       "cat": "Другое",
       "price": 135000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15634,
@@ -15761,16 +15760,14 @@
       "slug": "predysilitel_Musica_hpa_200",
       "cat": "Усилители",
       "price": 118800,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270137,
@@ -21682,16 +21679,14 @@
       "slug": "ysilitel_moshnosti_musica_pow_30usb_v",
       "cat": "Усилители",
       "price": 53100,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 266928,
@@ -21851,16 +21846,14 @@
       "slug": "ysilitel_moshnosti_musica_pow_30usb",
       "cat": "Усилители",
       "price": 51300,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 1,
-      "padReasons": {
-        "wN-variant-name": 1
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264262,
@@ -29569,16 +29562,14 @@
       "slug": "napolnaya_akustika_Lawrence_Audio_Violin-171069",
       "cat": "Акустика",
       "price": 0,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15730,
@@ -29845,16 +29836,14 @@
       "slug": "%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-audio-physic-scorpio",
       "cat": "Акустика",
       "price": 0,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 5,
-      "uniqueDistinct": 3,
-      "clusterCount": 3,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 263057,
@@ -30000,16 +29989,14 @@
       "slug": "%d0%bf%d0%be%d0%b3%d0%bb%d0%be%d1%82%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-audio-replas-rac-100",
       "cat": "Другое",
       "price": 0,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 2,
-      "clusterCount": 2,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "padded"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264135,

@@ -31,31 +31,58 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_proigrivatel_Ultimate_Audio_MC_100_CD-600x600.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_proigrivatel_Ultimate_Audio_MC_100_CD-600x600.jpg",
+      "src": "local://15742_w108_00.jpg",
+      "thumb": "assets/enriched/15742/15742_w108_00.jpg",
       "alt": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
-      "local": "assets/enriched/15742/b3c239e610_1.jpg",
+      "local": "assets/enriched/15742/15742_w108_00.jpg",
       "enriched": true,
-      "attribution": "xn--80aannlcfckh.xn--p1ai",
-      "bytes": 17801
+      "attribution": "wave108-oem",
+      "bytes": 25709
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_proigrivatel_Ultimate_Audio_MC_100_CD.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/CD_proigrivatel_Ultimate_Audio_MC_100_CD-600x600.jpg",
-      "alt": "CD-SAUltimate Audio MC 100 CD",
-      "local": "assets/from-live/products/dd1f1affc7_CD_proigrivatel_Ultimate_Audio_MC_100_CD.jpg"
+      "src": "local://15742_w108_01.jpg",
+      "thumb": "assets/enriched/15742/15742_w108_01.jpg",
+      "alt": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
+      "local": "assets/enriched/15742/15742_w108_01.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 30571
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/f2nakunw7f1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/f2nakunw7f1-600x121.jpg",
-      "alt": "f2nakunw7f1",
-      "local": "assets/from-live/products/8bde9804ea_f2nakunw7f1.jpg"
+      "src": "local://15742_w108_02.jpg",
+      "thumb": "assets/enriched/15742/15742_w108_02.jpg",
+      "alt": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
+      "local": "assets/enriched/15742/15742_w108_02.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 17676
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/f2nakyudch1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2019/07/f2nakyudch1-600x424.jpg",
-      "alt": "f2nakyudch1",
-      "local": "assets/from-live/products/70de3589cb_f2nakyudch1.jpg"
+      "src": "local://15742_w108_03.jpg",
+      "thumb": "assets/enriched/15742/15742_w108_03.jpg",
+      "alt": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
+      "local": "assets/enriched/15742/15742_w108_03.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 15268
+    },
+    {
+      "src": "local://15742_w108_04.jpg",
+      "thumb": "assets/enriched/15742/15742_w108_04.jpg",
+      "alt": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
+      "local": "assets/enriched/15742/15742_w108_04.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 21077
+    },
+    {
+      "src": "local://15742_w108_05.jpg",
+      "thumb": "assets/enriched/15742/15742_w108_05.jpg",
+      "alt": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )",
+      "local": "assets/enriched/15742/15742_w108_05.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 12026
     }
   ],
   "sku": "",
@@ -66,5 +93,10 @@
   ],
   "enrichedAt": "2026-11-14T13:45:01Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w6-2026-11"
+  "meagerWave": "meager-w6-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T01:03:40Z",
+  "galleryWave108": true
 }

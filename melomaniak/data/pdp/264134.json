@@ -36,35 +36,49 @@
   ],
   "gallery": [
     {
-      "src": "local://8fa213ef4c_picture-1.jpg",
-      "thumb": "assets/enriched/264134/c00e60912a_live1.jpg",
+      "src": "local://264134_w108_00.jpg",
+      "thumb": "assets/enriched/264134/264134_w108_00.jpg",
       "alt": "Поглотитель Audio Replas RAC-100 ( audio replas rac 100 )",
-      "local": "assets/enriched/264134/c00e60912a_live1.jpg",
+      "local": "assets/enriched/264134/264134_w108_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 92635
+      "attribution": "wave108-oem",
+      "bytes": 262967
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/picture.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/picture-600x585.jpg",
-      "alt": "picture",
-      "local": "assets/from-live/products/da2eca9104_picture.jpg"
+      "src": "local://264134_w108_01.jpg",
+      "thumb": "assets/enriched/264134/264134_w108_01.jpg",
+      "alt": "Поглотитель Audio Replas RAC-100 ( audio replas rac 100 )",
+      "local": "assets/enriched/264134/264134_w108_01.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 155352
     },
     {
-      "src": "local-variant://264134/w17sc95",
-      "local": "assets/enriched/264134/76d0b7ce93_w17sc95.jpg",
-      "bytes": 198780,
-      "wave": "meager-w17-2026-11",
-      "w": 1140,
-      "h": 555
+      "src": "local://264134_w108_02.jpg",
+      "thumb": "assets/enriched/264134/264134_w108_02.jpg",
+      "alt": "Поглотитель Audio Replas RAC-100 ( audio replas rac 100 )",
+      "local": "assets/enriched/264134/264134_w108_02.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 139681
     },
     {
-      "src": "local-variant://264134/w17sc90",
-      "local": "assets/enriched/264134/598f7e3ce9_w17sc90.jpg",
-      "bytes": 180880,
-      "wave": "meager-w17-2026-11",
-      "w": 1080,
-      "h": 526
+      "src": "local://264134_w108_03.jpg",
+      "thumb": "assets/enriched/264134/264134_w108_03.jpg",
+      "alt": "Поглотитель Audio Replas RAC-100 ( audio replas rac 100 )",
+      "local": "assets/enriched/264134/264134_w108_03.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 161495
+    },
+    {
+      "src": "local://264134_w108_04.jpg",
+      "thumb": "assets/enriched/264134/264134_w108_04.jpg",
+      "alt": "Поглотитель Audio Replas RAC-100 ( audio replas rac 100 )",
+      "local": "assets/enriched/264134/264134_w108_04.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 140803
     }
   ],
   "sku": "",
@@ -77,5 +91,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T01:03:40Z",
+  "galleryWave108": true
 }

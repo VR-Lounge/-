@@ -36,35 +36,49 @@
   ],
   "gallery": [
     {
-      "src": "local://51275c039f_SAEC-stratosphere-sus-020_003-1.png",
-      "thumb": "assets/enriched/264542/cf3910b90b_live1.png",
+      "src": "local://264542_w108_00.jpg",
+      "thumb": "assets/enriched/264542/264542_w108_00.jpg",
       "alt": "USB кабель SAEC  SUS-020 Stratosphere C &#8211; mini B OTG ( usb saec sus 020 stratosphere c mini b otg )",
-      "local": "assets/enriched/264542/cf3910b90b_live1.png",
+      "local": "assets/enriched/264542/264542_w108_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 106640
+      "attribution": "wave108-oem",
+      "bytes": 33934
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-stratosphere-sus-020_003.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-stratosphere-sus-020_003.png",
-      "alt": "SAEC-stratosphere-sus-020_003",
-      "local": "assets/from-live/products/51275c039f_SAEC-stratosphere-sus-020_003.png"
+      "src": "local://264542_w108_01.jpg",
+      "thumb": "assets/enriched/264542/264542_w108_01.jpg",
+      "alt": "USB кабель SAEC  SUS-020 Stratosphere C &#8211; mini B OTG ( usb saec sus 020 stratosphere c mini b otg )",
+      "local": "assets/enriched/264542/264542_w108_01.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 8431
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-STRATOSPHERE-SL-1.jpg",
-      "local": "assets/enriched/264542/ba78a02717_w14media.jpg",
-      "bytes": 124770,
-      "wave": "meager-w14-2026-11",
-      "w": 640,
-      "h": 480
+      "src": "local://264542_w108_02.jpg",
+      "thumb": "assets/enriched/264542/264542_w108_02.jpg",
+      "alt": "USB кабель SAEC  SUS-020 Stratosphere C &#8211; mini B OTG ( usb saec sus 020 stratosphere c mini b otg )",
+      "local": "assets/enriched/264542/264542_w108_02.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 10740
     },
     {
-      "src": "local://eadf86be18_saec-xr-1000-2-1.jpg",
-      "local": "assets/enriched/264542/5c0057076e_w15sib.jpg",
-      "bytes": 166832,
-      "wave": "meager-w15-2026-11",
-      "w": 1280,
-      "h": 1219
+      "src": "local://264542_w108_03.jpg",
+      "thumb": "assets/enriched/264542/264542_w108_03.jpg",
+      "alt": "USB кабель SAEC  SUS-020 Stratosphere C &#8211; mini B OTG ( usb saec sus 020 stratosphere c mini b otg )",
+      "local": "assets/enriched/264542/264542_w108_03.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 27723
+    },
+    {
+      "src": "local://264542_w108_04.jpg",
+      "thumb": "assets/enriched/264542/264542_w108_04.jpg",
+      "alt": "USB кабель SAEC  SUS-020 Stratosphere C &#8211; mini B OTG ( usb saec sus 020 stratosphere c mini b otg )",
+      "local": "assets/enriched/264542/264542_w108_04.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 21759
     }
   ],
   "sku": "",
@@ -77,5 +91,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T01:03:40Z",
+  "galleryWave108": true
 }

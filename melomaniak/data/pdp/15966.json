@@ -26,36 +26,49 @@
   ],
   "gallery": [
     {
-      "src": "local://91b5414efc_pa_2000_r2.jpg",
-      "thumb": "assets/enriched/15966/d7c26c5beb_live1.jpg",
+      "src": "local://15966_w108_00.jpg",
+      "thumb": "assets/enriched/15966/15966_w108_00.jpg",
       "alt": "предусилитель Musica hpa 200 ( musica hpa 200 )",
-      "local": "assets/enriched/15966/d7c26c5beb_live1.jpg",
+      "local": "assets/enriched/15966/15966_w108_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 60246
+      "attribution": "wave108-oem",
+      "bytes": 31222
     },
     {
-      "src": "local://93e2c0dc1b_pa_2000_r_2675513511-1.jpg",
-      "thumb": "assets/enriched/15966/87ebaaa851_live2.jpg",
+      "src": "local://15966_w108_01.jpg",
+      "thumb": "assets/enriched/15966/15966_w108_01.jpg",
       "alt": "предусилитель Musica hpa 200 ( musica hpa 200 )",
-      "local": "assets/enriched/15966/87ebaaa851_live2.jpg",
+      "local": "assets/enriched/15966/15966_w108_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 50538
+      "attribution": "wave108-oem",
+      "bytes": 49847
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Musica_hpa_200_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Musica_hpa_200_-600x600.jpg",
-      "alt": "Musica hpa 200",
-      "local": "assets/from-live/products/388a2f146c_predysilitel_Musica_hpa_200_.jpg"
+      "src": "local://15966_w108_02.jpg",
+      "thumb": "assets/enriched/15966/15966_w108_02.jpg",
+      "alt": "предусилитель Musica hpa 200 ( musica hpa 200 )",
+      "local": "assets/enriched/15966/15966_w108_02.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 33417
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/predysilitel_Musica_hpa_200_-600x600.jpg",
-      "local": "assets/enriched/15966/b49b1ba122_w13var.jpg",
-      "bytes": 23148,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15966_w108_03.jpg",
+      "thumb": "assets/enriched/15966/15966_w108_03.jpg",
+      "alt": "предусилитель Musica hpa 200 ( musica hpa 200 )",
+      "local": "assets/enriched/15966/15966_w108_03.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 14151
+    },
+    {
+      "src": "local://15966_w108_04.jpg",
+      "thumb": "assets/enriched/15966/15966_w108_04.jpg",
+      "alt": "предусилитель Musica hpa 200 ( musica hpa 200 )",
+      "local": "assets/enriched/15966/15966_w108_04.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 25704
     }
   ],
   "sku": "",
@@ -67,5 +80,9 @@
   "enrichedAt": "2026-11-14T17:02:05Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T01:03:40Z",
+  "galleryWave108": true
 }

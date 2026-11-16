@@ -46,35 +46,58 @@
   ],
   "gallery": [
     {
-      "src": "local://332447778c_napolnaia_akystika_Lawrence_Audio_Violin_SE.jpg",
-      "thumb": "assets/enriched/15648/876b88e8a3_live1.jpg",
+      "src": "local://15648_w108_00.jpg",
+      "thumb": "assets/enriched/15648/15648_w108_00.jpg",
       "alt": "напольная акустика Lawrence Audio Violin ( lawrence audio violin )",
-      "local": "assets/enriched/15648/876b88e8a3_live1.jpg",
+      "local": "assets/enriched/15648/15648_w108_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 37687
+      "attribution": "wave108-oem",
+      "bytes": 199305
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Violin.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Violin-600x600.jpg",
-      "alt": "Lawrence Audio Violin",
-      "local": "assets/from-live/products/3e6d140ca9_napolnaia_akystika_Lawrence_Audio_Violin.jpg"
+      "src": "local://15648_w108_01.jpg",
+      "thumb": "assets/enriched/15648/15648_w108_01.jpg",
+      "alt": "напольная акустика Lawrence Audio Violin ( lawrence audio violin )",
+      "local": "assets/enriched/15648/15648_w108_01.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 51376
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Violin-600x600.jpg",
-      "local": "assets/enriched/15648/068eeeb35d_w13var.jpg",
-      "bytes": 38169,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15648_w108_02.jpg",
+      "thumb": "assets/enriched/15648/15648_w108_02.jpg",
+      "alt": "напольная акустика Lawrence Audio Violin ( lawrence audio violin )",
+      "local": "assets/enriched/15648/15648_w108_02.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 93794
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/napolnaia_akystika_Lawrence_Audio_Violin-300x300.jpg",
-      "local": "assets/enriched/15648/5a8e896da1_w13var.jpg",
-      "bytes": 12711,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://15648_w108_03.jpg",
+      "thumb": "assets/enriched/15648/15648_w108_03.jpg",
+      "alt": "напольная акустика Lawrence Audio Violin ( lawrence audio violin )",
+      "local": "assets/enriched/15648/15648_w108_03.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 92330
+    },
+    {
+      "src": "local://15648_w108_04.jpg",
+      "thumb": "assets/enriched/15648/15648_w108_04.jpg",
+      "alt": "напольная акустика Lawrence Audio Violin ( lawrence audio violin )",
+      "local": "assets/enriched/15648/15648_w108_04.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 172436
+    },
+    {
+      "src": "local://15648_w108_05.jpg",
+      "thumb": "assets/enriched/15648/15648_w108_05.jpg",
+      "alt": "напольная акустика Lawrence Audio Violin ( lawrence audio violin )",
+      "local": "assets/enriched/15648/15648_w108_05.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 138880
     }
   ],
   "sku": "",
@@ -86,5 +109,9 @@
   "enrichedAt": "2026-11-14T14:04:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T01:03:40Z",
+  "galleryWave108": true
 }

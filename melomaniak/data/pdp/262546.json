@@ -36,43 +36,49 @@
   ],
   "gallery": [
     {
-      "src": "local://7c0a6949f3_Audio_Physic_Scorpio_25-1.jpg",
-      "thumb": "assets/enriched/262546/4f80a99867_live1.jpg",
+      "src": "local://262546_w108_00.jpg",
+      "thumb": "assets/enriched/262546/262546_w108_00.jpg",
       "alt": "Напольная акустика Audio Physic Scorpio ( audio physic scorpio )",
-      "local": "assets/enriched/262546/4f80a99867_live1.jpg",
+      "local": "assets/enriched/262546/262546_w108_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 202077
+      "attribution": "wave108-oem",
+      "bytes": 31127
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/audio_physic_scorpio_25_1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/audio_physic_scorpio_25_1.jpg",
-      "alt": "audio_physic_scorpio_25_1",
-      "local": "assets/from-live/products/0ec21fa5ab_audio_physic_scorpio_25_1.jpg"
+      "src": "local://262546_w108_01.jpg",
+      "thumb": "assets/enriched/262546/262546_w108_01.jpg",
+      "alt": "Напольная акустика Audio Physic Scorpio ( audio physic scorpio )",
+      "local": "assets/enriched/262546/262546_w108_01.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 16329
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/02/audio_physic_scorpio_25_1-300x300.jpg",
-      "local": "assets/enriched/262546/a15867e2c8_w13var.jpg",
-      "bytes": 9707,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://262546_w108_02.jpg",
+      "thumb": "assets/enriched/262546/262546_w108_02.jpg",
+      "alt": "Напольная акустика Audio Physic Scorpio ( audio physic scorpio )",
+      "local": "assets/enriched/262546/262546_w108_02.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 342425
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/05/ScorpionsPerformConcertUniversalAmpitheatermrPjoi8qmnsx.jpg",
-      "local": "assets/enriched/262546/acb0002b8c_w14media.jpg",
-      "bytes": 114576,
-      "wave": "meager-w14-2026-11",
-      "w": 1024,
-      "h": 694
+      "src": "local://262546_w108_03.jpg",
+      "thumb": "assets/enriched/262546/262546_w108_03.jpg",
+      "alt": "Напольная акустика Audio Physic Scorpio ( audio physic scorpio )",
+      "local": "assets/enriched/262546/262546_w108_03.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 329501
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/05/ScorpionsPerformConcertUniversalAmpitheatermrPjoi8qmnsx-600x600.jpg",
-      "local": "assets/enriched/262546/6c9a1e6e4b_w14var.jpg",
-      "bytes": 48987,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://262546_w108_04.jpg",
+      "thumb": "assets/enriched/262546/262546_w108_04.jpg",
+      "alt": "Напольная акустика Audio Physic Scorpio ( audio physic scorpio )",
+      "local": "assets/enriched/262546/262546_w108_04.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 749486
     }
   ],
   "sku": "",
@@ -84,5 +90,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T01:03:40Z",
+  "galleryWave108": true
 }

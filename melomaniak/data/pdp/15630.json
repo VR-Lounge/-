@@ -41,35 +41,40 @@
   ],
   "gallery": [
     {
-      "src": "local://36f9784c86_tsentralnii_kanal_Audio_Physic_Celsius_III_.jpg",
-      "thumb": "assets/enriched/15630/bfea3f7781_live1.jpg",
+      "src": "local://15630_w108_00.jpg",
+      "thumb": "assets/enriched/15630/15630_w108_00.jpg",
       "alt": "центральный канал Audio Physic Celsius ( audio physic celsius )",
-      "local": "assets/enriched/15630/bfea3f7781_live1.jpg",
+      "local": "assets/enriched/15630/15630_w108_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 27066
+      "attribution": "wave108-oem",
+      "bytes": 16597
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsentralnii_kanal_Audio_Physic_Celsius.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsentralnii_kanal_Audio_Physic_Celsius-600x600.jpg",
-      "alt": "Audio Physic Celsius",
-      "local": "assets/from-live/products/542d142c2b_tsentralnii_kanal_Audio_Physic_Celsius.jpg"
+      "src": "local://15630_w108_01.jpg",
+      "thumb": "assets/enriched/15630/15630_w108_01.jpg",
+      "alt": "центральный канал Audio Physic Celsius ( audio physic celsius )",
+      "local": "assets/enriched/15630/15630_w108_01.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 19154
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/tsentralnii_kanal_Audio_Physic_Celsius-600x600.jpg",
-      "local": "assets/enriched/15630/3b204b660b_w13var.jpg",
-      "bytes": 12650,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15630_w108_02.jpg",
+      "thumb": "assets/enriched/15630/15630_w108_02.jpg",
+      "alt": "центральный канал Audio Physic Celsius ( audio physic celsius )",
+      "local": "assets/enriched/15630/15630_w108_02.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 27178
     },
     {
-      "src": "local-variant://15630/w17sc95",
-      "local": "assets/enriched/15630/3c2e5b029c_w17sc95.jpg",
-      "bytes": 30308,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://15630_w108_03.jpg",
+      "thumb": "assets/enriched/15630/15630_w108_03.jpg",
+      "alt": "центральный канал Audio Physic Celsius ( audio physic celsius )",
+      "local": "assets/enriched/15630/15630_w108_03.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 8540
     }
   ],
   "sku": "",
@@ -81,5 +86,9 @@
   "enrichedAt": "2026-11-14T14:04:54Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T01:03:40Z",
+  "galleryWave108": true
 }

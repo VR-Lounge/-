@@ -147,34 +147,49 @@
   ],
   "gallery": [
     {
-      "src": "local://69e84b170d177f6c1379cb49adf97766_25be3b0162.jpg",
-      "thumb": "assets/enriched/262459/6a0afd9f3e_live1.jpg",
+      "src": "local://262459_w108_00.jpg",
+      "thumb": "assets/enriched/262459/262459_w108_00.jpg",
       "alt": "Напольная акустикам Audio Physic Yara ( audio physic yara )",
-      "local": "assets/enriched/262459/6a0afd9f3e_live1.jpg",
+      "local": "assets/enriched/262459/262459_w108_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 181886
+      "attribution": "wave108-oem",
+      "bytes": 61250
     },
     {
-      "src": "local://audio_psychic_yara_close_up_091a8a69e1.jpg",
-      "thumb": "assets/enriched/262459/3fa1c4eb48_live2.jpg",
+      "src": "local://262459_w108_01.jpg",
+      "thumb": "assets/enriched/262459/262459_w108_01.jpg",
       "alt": "Напольная акустикам Audio Physic Yara ( audio physic yara )",
-      "local": "assets/enriched/262459/3fa1c4eb48_live2.jpg",
+      "local": "assets/enriched/262459/262459_w108_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 61256
+      "attribution": "wave108-oem",
+      "bytes": 23754
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/01/69e84b170d177f6c1379cb49adf97766.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/01/69e84b170d177f6c1379cb49adf97766-600x600.jpg",
-      "alt": "69e84b170d177f6c1379cb49adf97766",
-      "local": "assets/from-live/products/25be3b0162_69e84b170d177f6c1379cb49adf97766.jpg"
+      "src": "local://262459_w108_02.jpg",
+      "thumb": "assets/enriched/262459/262459_w108_02.jpg",
+      "alt": "Напольная акустикам Audio Physic Yara ( audio physic yara )",
+      "local": "assets/enriched/262459/262459_w108_02.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 28989
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/01/audio_psychic_yara_close_up.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/01/audio_psychic_yara_close_up-600x505.jpg",
-      "alt": "audio_psychic_yara_close_up",
-      "local": "assets/from-live/products/091a8a69e1_audio_psychic_yara_close_up.jpg"
+      "src": "local://262459_w108_03.jpg",
+      "thumb": "assets/enriched/262459/262459_w108_03.jpg",
+      "alt": "Напольная акустикам Audio Physic Yara ( audio physic yara )",
+      "local": "assets/enriched/262459/262459_w108_03.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 22335
+    },
+    {
+      "src": "local://262459_w108_04.jpg",
+      "thumb": "assets/enriched/262459/262459_w108_04.jpg",
+      "alt": "Напольная акустикам Audio Physic Yara ( audio physic yara )",
+      "local": "assets/enriched/262459/262459_w108_04.jpg",
+      "enriched": true,
+      "attribution": "wave108-oem",
+      "bytes": 71809
     }
   ],
   "sku": "",
@@ -185,5 +200,10 @@
   ],
   "enrichedAt": "2026-11-14T13:38:10Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
-  "meagerWave": "meager-w5-2026-11"
+  "meagerWave": "meager-w5-2026-11",
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T01:03:40Z",
+  "galleryWave108": true
 }
