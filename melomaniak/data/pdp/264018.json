@@ -36,34 +36,64 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-RGC-24-TRIPLEC-FM-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-RGC-24-TRIPLEC-FM-500x500-1.jpg",
-      "alt": "ACOUSTIC-REVIVE-RGC-24-TRIPLEC-FM-500&#215;500",
-      "local": "assets/from-live/products/d023434b27_ACOUSTIC-REVIVE-RGC-24-TRIPLEC-FM-500x500-1.jpg"
+      "src": "local://264018_w130_00.jpg",
+      "thumb": "assets/enriched/264018/264018_w130_00.jpg",
+      "alt": "Кондиционер Acoustic Revive RGC-24 TripleC FM ( acoustic revive rgc 24 triplec fm )",
+      "local": "assets/enriched/264018/264018_w130_00.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 721423,
+      "wave": "w130-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-RGC-24-TRIPLEC-FM-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264018/3fbb1b15c9_w13var.jpg",
-      "bytes": 8377,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264018_w130_01.jpg",
+      "thumb": "assets/enriched/264018/264018_w130_01.jpg",
+      "alt": "Кондиционер Acoustic Revive RGC-24 TripleC FM ( acoustic revive rgc 24 triplec fm )",
+      "local": "assets/enriched/264018/264018_w130_01.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 567532,
+      "wave": "w130-2026-11"
     },
     {
-      "src": "local-variant://264018/w17sc95",
-      "local": "assets/enriched/264018/370276d9a9_w17sc95.jpg",
-      "bytes": 19792,
-      "wave": "meager-w17-2026-11",
-      "w": 475,
-      "h": 475
+      "src": "local://264018_w130_02.jpg",
+      "thumb": "assets/enriched/264018/264018_w130_02.jpg",
+      "alt": "Кондиционер Acoustic Revive RGC-24 TripleC FM ( acoustic revive rgc 24 triplec fm )",
+      "local": "assets/enriched/264018/264018_w130_02.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 221682,
+      "wave": "w130-2026-11"
     },
     {
-      "src": "local-variant://264018/w17sc90",
-      "local": "assets/enriched/264018/314609114c_w17sc90.jpg",
-      "bytes": 18355,
-      "wave": "meager-w17-2026-11",
-      "w": 450,
-      "h": 450
+      "src": "local://264018_w130_03.jpg",
+      "thumb": "assets/enriched/264018/264018_w130_03.jpg",
+      "alt": "Кондиционер Acoustic Revive RGC-24 TripleC FM ( acoustic revive rgc 24 triplec fm )",
+      "local": "assets/enriched/264018/264018_w130_03.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 460596,
+      "wave": "w130-2026-11"
+    },
+    {
+      "src": "local://264018_w130_04.jpg",
+      "thumb": "assets/enriched/264018/264018_w130_04.jpg",
+      "alt": "Кондиционер Acoustic Revive RGC-24 TripleC FM ( acoustic revive rgc 24 triplec fm )",
+      "local": "assets/enriched/264018/264018_w130_04.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 211665,
+      "wave": "w130-2026-11"
+    },
+    {
+      "src": "local://264018_w130_05.jpg",
+      "thumb": "assets/enriched/264018/264018_w130_05.jpg",
+      "alt": "Кондиционер Acoustic Revive RGC-24 TripleC FM ( acoustic revive rgc 24 triplec fm )",
+      "local": "assets/enriched/264018/264018_w130_05.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 236221,
+      "wave": "w130-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +106,9 @@
   "enrichedAt": "2026-11-14T13:31:08Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T18:22:19Z",
+  "galleryWave130": true
 }

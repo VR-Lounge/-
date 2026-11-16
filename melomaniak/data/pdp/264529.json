@@ -26,34 +26,54 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/saec-spc-650-2-e1613740714338.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/saec-spc-650-2-e1613740714338.jpg",
-      "alt": "saec-spc-650-2-e1613740714338",
-      "local": "assets/from-live/products/304cbe78c9_saec-spc-650-2-e1613740714338.jpg"
+      "src": "local://264529_w130_00.jpg",
+      "thumb": "assets/enriched/264529/264529_w130_00.jpg",
+      "alt": "Акустический кабель SAEC  SPC-650 ( saec spc 650 )",
+      "local": "assets/enriched/264529/264529_w130_00.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 267917,
+      "wave": "w130-2026-11"
     },
     {
-      "src": "local-variant://264529/w17sc95",
-      "local": "assets/enriched/264529/886325a0da_w17sc95.jpg",
-      "bytes": 7673,
-      "wave": "meager-w17-2026-11",
-      "w": 553,
-      "h": 475
+      "src": "local://264529_w130_01.jpg",
+      "thumb": "assets/enriched/264529/264529_w130_01.jpg",
+      "alt": "Акустический кабель SAEC  SPC-650 ( saec spc 650 )",
+      "local": "assets/enriched/264529/264529_w130_01.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 275967,
+      "wave": "w130-2026-11"
     },
     {
-      "src": "local-variant://264529/w17sc90",
-      "local": "assets/enriched/264529/57d22dd284_w17sc90.jpg",
-      "bytes": 7044,
-      "wave": "meager-w17-2026-11",
-      "w": 524,
-      "h": 450
+      "src": "local://264529_w130_02.jpg",
+      "thumb": "assets/enriched/264529/264529_w130_02.jpg",
+      "alt": "Акустический кабель SAEC  SPC-650 ( saec spc 650 )",
+      "local": "assets/enriched/264529/264529_w130_02.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 177779,
+      "wave": "w130-2026-11"
     },
     {
-      "src": "local-variant://264529/w17sc85",
-      "local": "assets/enriched/264529/ac51c97ada_w17sc85.jpg",
-      "bytes": 6394,
-      "wave": "meager-w17-2026-11",
-      "w": 495,
-      "h": 425
+      "src": "local://264529_w130_03.jpg",
+      "thumb": "assets/enriched/264529/264529_w130_03.jpg",
+      "alt": "Акустический кабель SAEC  SPC-650 ( saec spc 650 )",
+      "local": "assets/enriched/264529/264529_w130_03.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 17481,
+      "wave": "w130-2026-11"
+    },
+    {
+      "src": "local://264529_w130_04.jpg",
+      "thumb": "assets/enriched/264529/264529_w130_04.jpg",
+      "alt": "Акустический кабель SAEC  SPC-650 ( saec spc 650 )",
+      "local": "assets/enriched/264529/264529_w130_04.jpg",
+      "enriched": true,
+      "attribution": "wave130-oem",
+      "bytes": 11742,
+      "wave": "w130-2026-11"
     }
   ],
   "sku": "",
@@ -65,5 +85,9 @@
   "enrichedAt": "2026-11-14T13:35:11Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T18:22:19Z",
+  "galleryWave130": true
 }
