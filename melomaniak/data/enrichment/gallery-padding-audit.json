@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:50:12Z",
+  "generatedAt": "2026-11-16T13:58:45Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1533,
+    "true_multi_angle": 1535,
     "padded": 11,
-    "single_real": 343
+    "single_real": 341
   },
   "pct": {
-    "true_multi_angle": 81.24,
+    "true_multi_angle": 81.35,
     "padded": 0.58,
-    "single_real": 18.18,
-    "padded_of_claimed_gal4plus": 17.62,
-    "not_true_multi": 18.76
+    "single_real": 18.07,
+    "padded_of_claimed_gal4plus": 17.52,
+    "not_true_multi": 18.65
   },
   "padReasonTallies": {
-    "local-variant": 613,
-    "wN-variant-name": 306,
+    "local-variant": 608,
+    "wN-variant-name": 305,
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1861,
-  "claimedButNotTrueMulti": 328,
+  "claimedButNotTrueMulti": 326,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -1380,7 +1380,7 @@
       "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 343,
+  "hitlTrueOneshotCount": 341,
   "items": [
     {
       "id": 262053,
@@ -18513,17 +18513,14 @@
       "slug": "a776f9b7f941c0deeb8e41913d686131",
       "cat": "Ресиверы",
       "price": 84990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 268834,
@@ -20066,16 +20063,14 @@
       "slug": "e09a3571eed6f76635cd8257418b955b",
       "cat": "Другое",
       "price": 68990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264119,
