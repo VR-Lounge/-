@@ -21,34 +21,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/acoustic-revive-rr-888-500x375-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/acoustic-revive-rr-888-500x375-1.jpg",
-      "alt": "acoustic-revive-rr-888-500&#215;375",
-      "local": "assets/from-live/products/2ee013df5a_acoustic-revive-rr-888-500x375-1.jpg"
+      "src": "local://264017_w126_00.jpg",
+      "thumb": "assets/enriched/264017/264017_w126_00.jpg",
+      "alt": "Поглотитель Acoustic Revive RR-888 ( acoustic revive rr 888 )",
+      "local": "assets/enriched/264017/264017_w126_00.jpg",
+      "enriched": true,
+      "attribution": "wave126-oem",
+      "bytes": 77136
     },
     {
-      "src": "local-variant://264017/w17sc95",
-      "local": "assets/enriched/264017/edcb4eadea_w17sc95.jpg",
-      "bytes": 16694,
-      "wave": "meager-w17-2026-11",
-      "w": 475,
-      "h": 356
+      "src": "local://264017_w126_01.jpg",
+      "thumb": "assets/enriched/264017/264017_w126_01.jpg",
+      "alt": "Поглотитель Acoustic Revive RR-888 ( acoustic revive rr 888 )",
+      "local": "assets/enriched/264017/264017_w126_01.jpg",
+      "enriched": true,
+      "attribution": "wave126-oem",
+      "bytes": 72745
     },
     {
-      "src": "local-variant://264017/w17sc90",
-      "local": "assets/enriched/264017/5a8c83e9c0_w17sc90.jpg",
-      "bytes": 15182,
-      "wave": "meager-w17-2026-11",
-      "w": 450,
-      "h": 337
+      "src": "local://264017_w126_02.jpg",
+      "thumb": "assets/enriched/264017/264017_w126_02.jpg",
+      "alt": "Поглотитель Acoustic Revive RR-888 ( acoustic revive rr 888 )",
+      "local": "assets/enriched/264017/264017_w126_02.jpg",
+      "enriched": true,
+      "attribution": "wave126-oem",
+      "bytes": 74103
     },
     {
-      "src": "local-variant://264017/w17sc85",
-      "local": "assets/enriched/264017/c826ab8dcd_w17sc85.jpg",
-      "bytes": 13760,
-      "wave": "meager-w17-2026-11",
-      "w": 425,
-      "h": 318
+      "src": "local://264017_w126_03.jpg",
+      "thumb": "assets/enriched/264017/264017_w126_03.jpg",
+      "alt": "Поглотитель Acoustic Revive RR-888 ( acoustic revive rr 888 )",
+      "local": "assets/enriched/264017/264017_w126_03.jpg",
+      "enriched": true,
+      "attribution": "wave126-oem",
+      "bytes": 74508
+    },
+    {
+      "src": "local://264017_w126_04.jpg",
+      "thumb": "assets/enriched/264017/264017_w126_04.jpg",
+      "alt": "Поглотитель Acoustic Revive RR-888 ( acoustic revive rr 888 )",
+      "local": "assets/enriched/264017/264017_w126_04.jpg",
+      "enriched": true,
+      "attribution": "wave126-oem",
+      "bytes": 15426
     }
   ],
   "sku": "",
@@ -60,5 +75,9 @@
   "enrichedAt": "2026-11-14T13:30:58Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T17:10:06Z",
+  "galleryWave126": true
 }
