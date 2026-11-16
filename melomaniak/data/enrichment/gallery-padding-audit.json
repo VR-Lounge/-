@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T14:38:38Z",
+  "generatedAt": "2026-11-16T14:54:20Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1541,
+    "true_multi_angle": 1545,
     "padded": 11,
-    "single_real": 335
+    "single_real": 331
   },
   "pct": {
-    "true_multi_angle": 81.66,
+    "true_multi_angle": 81.88,
     "padded": 0.58,
-    "single_real": 17.75,
-    "padded_of_claimed_gal4plus": 17.2,
-    "not_true_multi": 18.34
+    "single_real": 17.54,
+    "padded_of_claimed_gal4plus": 17.11,
+    "not_true_multi": 18.12
   },
   "padReasonTallies": {
-    "local-variant": 596,
+    "local-variant": 593,
     "wN-variant-name": 302,
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
-  "claimedGal4Plus": 1861,
-  "claimedButNotTrueMulti": 320,
+  "claimedGal4Plus": 1864,
+  "claimedButNotTrueMulti": 319,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -565,10 +565,10 @@
       "class": "single_real"
     },
     {
-      "id": 270479,
-      "name": "Фонокорректор Transrotor Phono Studio",
-      "cat": "Усилители",
-      "price": 107900,
+      "id": 264016,
+      "name": "Генератор ионов Acoustic Revive RIO-5 mk II ( acoustic revive rio 5 mk ii )",
+      "cat": "Другое",
+      "price": 105400,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -660,16 +660,6 @@
       "galleryHitl": true
     },
     {
-      "id": 15646,
-      "name": "напольная акустика Lawrence Audio Mandolin ( lawrence audio mandolin )",
-      "cat": "Акустика",
-      "price": 580000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
       "id": 26598,
       "name": "фонокорректор Amazon Audio B-Lab ( amazon audio b lab )",
       "cat": "Усилители",
@@ -684,16 +674,6 @@
       "name": "Сетевой фильтр Audio Replas MQP-2 SIG mk2 ( audio replas mqp 2 sig mk2 )",
       "cat": "Другое",
       "price": 527000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 16570,
-      "name": "виниловый проигрыватель Amazon 1 ( amazon 1 )",
-      "cat": "Источники",
-      "price": 520000,
       "galleryLen": 1,
       "uniqueDistinct": 1,
       "padSlots": 0,
@@ -784,16 +764,6 @@
       "name": "центральный канал Audio Physic Orea ( audio physic orea )",
       "cat": "Другое",
       "price": 380000,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "padSlots": 0,
-      "galleryHitl": true
-    },
-    {
-      "id": 16572,
-      "name": "виниловый проигрыватель Amazon 2 ( amazon 2 )",
-      "cat": "Источники",
-      "price": 360000,
       "galleryLen": 1,
       "uniqueDistinct": 1,
       "padSlots": 0,
@@ -1200,16 +1170,6 @@
       "galleryHitl": true
     },
     {
-      "id": 270479,
-      "name": "Фонокорректор Transrotor Phono Studio",
-      "cat": "Усилители",
-      "price": 107900,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 264016,
       "name": "Генератор ионов Acoustic Revive RIO-5 mk II ( acoustic revive rio 5 mk ii )",
       "cat": "Другое",
@@ -1378,9 +1338,49 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 15980,
+      "name": "усилитель мощности Musica pow 60 ( musica pow 60 )",
+      "cat": "Усилители",
+      "price": 88000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 16726,
+      "name": "предусилитель Musica pre 60 ( musica pre 60 )",
+      "cat": "Усилители",
+      "price": 88000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264375,
+      "name": "Цифровой кабель Furutech Digital Ref.III (RCA) ( furutech digital ref iii (rca) )",
+      "cat": "Кабели",
+      "price": 87633,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 274587,
+      "name": "Центральный канал Acoustic Energy AE 307",
+      "cat": "Другое",
+      "price": 87500,
+      "galleryLen": 6,
+      "uniqueDistinct": 1,
+      "padSlots": 0,
+      "galleryHitl": false
     }
   ],
-  "hitlTrueOneshotCount": 335,
+  "hitlTrueOneshotCount": 331,
   "items": [
     {
       "id": 262053,
@@ -5681,14 +5681,14 @@
       "slug": "napolnaia_akystika_Lawrence_Audio_Mandolin",
       "cat": "Акустика",
       "price": 580000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 8,
+      "uniqueDistinct": 8,
+      "clusterCount": 8,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 26620,
@@ -6268,14 +6268,14 @@
       "slug": "LP_proigrivatel_Amazon_1",
       "cat": "Источники",
       "price": 520000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 261841,
@@ -8332,14 +8332,14 @@
       "slug": "LP_proigrivatel_Amazon_2",
       "cat": "Источники",
       "price": 360000,
-      "galleryHitl": true,
-      "galleryLen": 1,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
       "padSlots": 0,
       "padReasons": {},
       "hasPadding": false,
-      "class": "single_real"
+      "class": "true_multi_angle"
     },
     {
       "id": 268034,
@@ -16583,16 +16583,14 @@
       "slug": "ef2203b1b570cc5b97c86934566168c7",
       "cat": "Усилители",
       "price": 107900,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 272121,

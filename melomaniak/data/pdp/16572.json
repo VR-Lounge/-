@@ -26,10 +26,58 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/LP_proigrivatel_Amazon_2_.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/LP_proigrivatel_Amazon_2_-600x600.jpg",
-      "alt": "Amazon 2",
-      "local": "assets/from-live/products/6d3bac3dfc_LP_proigrivatel_Amazon_2_.jpg"
+      "src": "local://16572_w120_00.jpg",
+      "thumb": "assets/enriched/16572/16572_w120_00.jpg",
+      "alt": "виниловый проигрыватель Amazon 2 ( amazon 2 )",
+      "local": "assets/enriched/16572/16572_w120_00.jpg",
+      "enriched": true,
+      "attribution": "wave120-oem",
+      "bytes": 19042
+    },
+    {
+      "src": "local://16572_w120_01.jpg",
+      "thumb": "assets/enriched/16572/16572_w120_01.jpg",
+      "alt": "виниловый проигрыватель Amazon 2 ( amazon 2 )",
+      "local": "assets/enriched/16572/16572_w120_01.jpg",
+      "enriched": true,
+      "attribution": "wave120-oem",
+      "bytes": 68703
+    },
+    {
+      "src": "local://16572_w120_02.jpg",
+      "thumb": "assets/enriched/16572/16572_w120_02.jpg",
+      "alt": "виниловый проигрыватель Amazon 2 ( amazon 2 )",
+      "local": "assets/enriched/16572/16572_w120_02.jpg",
+      "enriched": true,
+      "attribution": "wave120-oem",
+      "bytes": 7018
+    },
+    {
+      "src": "local://16572_w120_03.jpg",
+      "thumb": "assets/enriched/16572/16572_w120_03.jpg",
+      "alt": "виниловый проигрыватель Amazon 2 ( amazon 2 )",
+      "local": "assets/enriched/16572/16572_w120_03.jpg",
+      "enriched": true,
+      "attribution": "wave120-oem",
+      "bytes": 9452
+    },
+    {
+      "src": "local://16572_w120_04.jpg",
+      "thumb": "assets/enriched/16572/16572_w120_04.jpg",
+      "alt": "виниловый проигрыватель Amazon 2 ( amazon 2 )",
+      "local": "assets/enriched/16572/16572_w120_04.jpg",
+      "enriched": true,
+      "attribution": "wave120-oem",
+      "bytes": 41916
+    },
+    {
+      "src": "local://16572_w120_05.jpg",
+      "thumb": "assets/enriched/16572/16572_w120_05.jpg",
+      "alt": "виниловый проигрыватель Amazon 2 ( amazon 2 )",
+      "local": "assets/enriched/16572/16572_w120_05.jpg",
+      "enriched": true,
+      "attribution": "wave120-oem",
+      "bytes": 42300
     }
   ],
   "sku": "",
@@ -42,7 +90,10 @@
   "enrichedAt": "2026-11-14T13:45:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar. HITL gallery: <4 distinct perceptual angles after w19 OEM hunt.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true,
-  "galleryDepaddedAt": "2026-11-15T00:25:16Z",
-  "galleryWave19": true
+  "galleryHitl": false,
+  "galleryDepaddedAt": "2026-11-16T14:50:42Z",
+  "galleryWave19": true,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryWave120": true
 }
