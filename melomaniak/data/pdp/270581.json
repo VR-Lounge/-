@@ -46,34 +46,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_hill_2996417446-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_hill_2996417446-1.jpg",
-      "alt": "van_den_hul_the_hill_2996417446-1.jpg",
-      "local": "assets/from-live/products/fa86386867_van_den_hul_the_hill_2996417446-1.jpg"
+      "src": "local://270581_w122_00.jpg",
+      "thumb": "assets/enriched/270581/270581_w122_00.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Hill",
+      "local": "assets/enriched/270581/270581_w122_00.jpg",
+      "enriched": true,
+      "attribution": "wave122-oem",
+      "bytes": 131608
     },
     {
-      "src": "local-variant://270581/w17sc95",
-      "local": "assets/enriched/270581/faab5c847c_w17sc95.jpg",
-      "bytes": 36056,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://270581_w122_01.jpg",
+      "thumb": "assets/enriched/270581/270581_w122_01.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Hill",
+      "local": "assets/enriched/270581/270581_w122_01.jpg",
+      "enriched": true,
+      "attribution": "wave122-oem",
+      "bytes": 93594
     },
     {
-      "src": "local-variant://270581/w17sc90",
-      "local": "assets/enriched/270581/56ff866ea9_w17sc90.jpg",
-      "bytes": 33087,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
+      "src": "local://270581_w122_02.jpg",
+      "thumb": "assets/enriched/270581/270581_w122_02.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Hill",
+      "local": "assets/enriched/270581/270581_w122_02.jpg",
+      "enriched": true,
+      "attribution": "wave122-oem",
+      "bytes": 59390
     },
     {
-      "src": "local-variant://270581/w17sc85",
-      "local": "assets/enriched/270581/29d2d62caa_w17sc85.jpg",
-      "bytes": 30078,
-      "wave": "meager-w17-2026-11",
-      "w": 510,
-      "h": 510
+      "src": "local://270581_w122_03.jpg",
+      "thumb": "assets/enriched/270581/270581_w122_03.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Hill",
+      "local": "assets/enriched/270581/270581_w122_03.jpg",
+      "enriched": true,
+      "attribution": "wave122-oem",
+      "bytes": 72698
     }
   ],
   "sku": "",
@@ -85,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T15:34:26Z",
+  "galleryWave122": true
 }

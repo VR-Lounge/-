@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Musica_Int_60.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Musica_Int_60-600x600.jpg",
-      "alt": "Musica Int 60",
-      "local": "assets/from-live/products/734a2a86cd_integralnii_ysilitel_Musica_Int_60.jpg"
+      "src": "local://15970_w122_00.jpg",
+      "thumb": "assets/enriched/15970/15970_w122_00.jpg",
+      "alt": "интегральный усилитель Musica Int 60 ( musica int 60 )",
+      "local": "assets/enriched/15970/15970_w122_00.jpg",
+      "enriched": true,
+      "attribution": "wave122-oem",
+      "bytes": 16003
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Musica_Int_60-600x600.jpg",
-      "local": "assets/enriched/15970/0ff424a462_w13var.jpg",
-      "bytes": 16754,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://15970_w122_01.jpg",
+      "thumb": "assets/enriched/15970/15970_w122_01.jpg",
+      "alt": "интегральный усилитель Musica Int 60 ( musica int 60 )",
+      "local": "assets/enriched/15970/15970_w122_01.jpg",
+      "enriched": true,
+      "attribution": "wave122-oem",
+      "bytes": 16309
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/integralnii_ysilitel_Musica_Int_60-300x300.jpg",
-      "local": "assets/enriched/15970/29761f7b78_w17cdn.jpg",
-      "bytes": 6626,
-      "wave": "meager-w17-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://15970_w122_02.jpg",
+      "thumb": "assets/enriched/15970/15970_w122_02.jpg",
+      "alt": "интегральный усилитель Musica Int 60 ( musica int 60 )",
+      "local": "assets/enriched/15970/15970_w122_02.jpg",
+      "enriched": true,
+      "attribution": "wave122-oem",
+      "bytes": 15786
     },
     {
-      "src": "local-variant://15970/w17sc95",
-      "local": "assets/enriched/15970/d8e95ef48b_w17sc95.jpg",
-      "bytes": 20361,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://15970_w122_03.jpg",
+      "thumb": "assets/enriched/15970/15970_w122_03.jpg",
+      "alt": "интегральный усилитель Musica Int 60 ( musica int 60 )",
+      "local": "assets/enriched/15970/15970_w122_03.jpg",
+      "enriched": true,
+      "attribution": "wave122-oem",
+      "bytes": 104632
     }
   ],
   "sku": "",
@@ -70,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:45:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T15:34:26Z",
+  "galleryWave122": true
 }

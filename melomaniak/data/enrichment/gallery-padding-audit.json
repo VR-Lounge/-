@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T15:11:16Z",
+  "generatedAt": "2026-11-16T15:37:31Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1547,
+    "true_multi_angle": 1549,
     "padded": 11,
-    "single_real": 329
+    "single_real": 327
   },
   "pct": {
-    "true_multi_angle": 81.98,
+    "true_multi_angle": 82.09,
     "padded": 0.58,
-    "single_real": 17.44,
-    "padded_of_claimed_gal4plus": 17.01,
-    "not_true_multi": 18.02
+    "single_real": 17.33,
+    "padded_of_claimed_gal4plus": 16.9,
+    "not_true_multi": 17.91
   },
   "padReasonTallies": {
-    "local-variant": 592,
-    "wN-variant-name": 298,
-    "cdn-size-thumb": 73,
+    "local-variant": 588,
+    "wN-variant-name": 297,
+    "cdn-size-thumb": 72,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 317,
+  "claimedButNotTrueMulti": 315,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -295,21 +295,6 @@
       "class": "single_real"
     },
     {
-      "id": 15970,
-      "name": "интегральный усилитель Musica Int 60 ( musica int 60 )",
-      "cat": "Усилители",
-      "price": 160000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "class": "single_real"
-    },
-    {
       "id": 260693,
       "name": "Интегральный усилитель Line Magnetic LM-201 IA ( line magnetic lm 201 ia )",
       "cat": "Усилители",
@@ -525,19 +510,6 @@
       "class": "single_real"
     },
     {
-      "id": 270581,
-      "name": "Кабель межблочный аналоговый RCA Van den Hul The Hill",
-      "cat": "Кабели",
-      "price": 108390,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "class": "single_real"
-    },
-    {
       "id": 264016,
       "name": "Генератор ионов Acoustic Revive RIO-5 mk II ( acoustic revive rio 5 mk ii )",
       "cat": "Другое",
@@ -574,6 +546,33 @@
       "padReasons": {
         "cdn-rotated": 1,
         "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264123,
+      "name": "Сетевые пластины Audio Replas SCB-4SZ ( audio replas scb 4sz )",
+      "cat": "Другое",
+      "price": 103700,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 2,
+        "local-variant": 1
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264070,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-FLAT-SS HR/3P ( audio replas opt 100hg flat ss hr 3p )",
+      "cat": "Другое",
+      "price": 102000,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 3
       },
       "class": "single_real"
     }
@@ -970,16 +969,6 @@
       "galleryHitl": true
     },
     {
-      "id": 15970,
-      "name": "интегральный усилитель Musica Int 60 ( musica int 60 )",
-      "cat": "Усилители",
-      "price": 160000,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 260693,
       "name": "Интегральный усилитель Line Magnetic LM-201 IA ( line magnetic lm 201 ia )",
       "cat": "Усилители",
@@ -1134,16 +1123,6 @@
       "name": "центральный канал Audio Physic Center II Special edition ( audio physic center ii special edition )",
       "cat": "Другое",
       "price": 112500,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
-      "id": 270581,
-      "name": "Кабель межблочный аналоговый RCA Van den Hul The Hill",
-      "cat": "Кабели",
-      "price": 108390,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1378,9 +1357,29 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264122,
+      "name": "Сетевые пластины Audio Replas SCB-2SZ ( audio replas scb 2sz )",
+      "cat": "Другое",
+      "price": 86400,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264368,
+      "name": "Межблочный кабель Furutech Evolution Audio II (XLR) ( furutech evolution audio ii (xlr) )",
+      "cat": "Кабели",
+      "price": 83189,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 329,
+  "hitlTrueOneshotCount": 327,
   "items": [
     {
       "id": 262053,
@@ -13482,18 +13481,14 @@
       "slug": "integralnii_ysilitel_Musica_Int_60",
       "cat": "Усилители",
       "price": 160000,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "cdn-size-thumb": 1,
-        "local-variant": 1
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 26832,
@@ -16546,16 +16541,14 @@
       "slug": "1a7ff02255e5ca0db4e02bde76bd11e1",
       "cat": "Кабели",
       "price": 108390,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 273247,
