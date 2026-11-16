@@ -1,0 +1,55 @@
+{
+  "wave": 134,
+  "counts": {
+    "true_multi_angle": 1588,
+    "padded": 11,
+    "single_real": 288
+  },
+  "cleared": [
+    {
+      "id": 264405,
+      "name": "Furutech Monza LP Stabilizer",
+      "price": 46181
+    },
+    {
+      "id": 264003,
+      "name": "Acoustic Revive R-AU1-SP",
+      "price": 49590
+    }
+  ],
+  "hitl_padded": 11,
+  "promote": {
+    "at": "2026-11-16T19:13:36Z",
+    "results": [
+      {
+        "id": 264405,
+        "before": 4,
+        "after": 7,
+        "unique": 7,
+        "files": [
+          "assets/enriched/264405/264405_w134_00.jpg",
+          "assets/enriched/264405/264405_w134_01.jpg",
+          "assets/enriched/264405/264405_w134_02.jpg",
+          "assets/enriched/264405/264405_w134_03.jpg",
+          "assets/enriched/264405/264405_w134_04.jpg",
+          "assets/enriched/264405/264405_w134_05.jpg",
+          "assets/enriched/264405/264405_w134_06.jpg"
+        ],
+        "name": "Клэмп Furutech Monza LP Stabilizer ( furutech monza lp stabilizer )"
+      },
+      {
+        "id": 264003,
+        "before": 4,
+        "after": 4,
+        "unique": 4,
+        "files": [
+          "assets/enriched/264003/264003_w134_00.jpg",
+          "assets/enriched/264003/264003_w134_01.jpg",
+          "assets/enriched/264003/264003_w134_02.jpg",
+          "assets/enriched/264003/264003_w134_03.jpg"
+        ],
+        "name": "USB кабель Acoustic Revive R-AU1-SP ( usb acoustic revive r au1 sp )"
+      }
+    ]
+  }
+}

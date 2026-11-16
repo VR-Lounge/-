@@ -36,34 +36,74 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-monza-lp-stabilizer-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-monza-lp-stabilizer-500x500-1.jpg",
-      "alt": "furutech-monza-lp-stabilizer-500&#215;500",
-      "local": "assets/from-live/products/389716029b_furutech-monza-lp-stabilizer-500x500-1.jpg"
+      "src": "local://264405_w134_00.jpg",
+      "thumb": "assets/enriched/264405/264405_w134_00.jpg",
+      "alt": "Клэмп Furutech Monza LP Stabilizer ( furutech monza lp stabilizer )",
+      "local": "assets/enriched/264405/264405_w134_00.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 107008,
+      "wave": "w134-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-monza-lp-stabilizer-500x500-1-300x300.jpg",
-      "local": "assets/enriched/264405/a2c7e91028_w13var.jpg",
-      "bytes": 10283,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264405_w134_01.jpg",
+      "thumb": "assets/enriched/264405/264405_w134_01.jpg",
+      "alt": "Клэмп Furutech Monza LP Stabilizer ( furutech monza lp stabilizer )",
+      "local": "assets/enriched/264405/264405_w134_01.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 172291,
+      "wave": "w134-2026-11"
     },
     {
-      "src": "local-variant://264405/w17sc95",
-      "local": "assets/enriched/264405/57865f74c1_w17sc95.jpg",
-      "bytes": 28505,
-      "wave": "meager-w17-2026-11",
-      "w": 475,
-      "h": 475
+      "src": "local://264405_w134_02.jpg",
+      "thumb": "assets/enriched/264405/264405_w134_02.jpg",
+      "alt": "Клэмп Furutech Monza LP Stabilizer ( furutech monza lp stabilizer )",
+      "local": "assets/enriched/264405/264405_w134_02.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 136456,
+      "wave": "w134-2026-11"
     },
     {
-      "src": "local-variant://264405/w17sc90",
-      "local": "assets/enriched/264405/982fae96fb_w17sc90.jpg",
-      "bytes": 25918,
-      "wave": "meager-w17-2026-11",
-      "w": 450,
-      "h": 450
+      "src": "local://264405_w134_03.jpg",
+      "thumb": "assets/enriched/264405/264405_w134_03.jpg",
+      "alt": "Клэмп Furutech Monza LP Stabilizer ( furutech monza lp stabilizer )",
+      "local": "assets/enriched/264405/264405_w134_03.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 139822,
+      "wave": "w134-2026-11"
+    },
+    {
+      "src": "local://264405_w134_04.jpg",
+      "thumb": "assets/enriched/264405/264405_w134_04.jpg",
+      "alt": "Клэмп Furutech Monza LP Stabilizer ( furutech monza lp stabilizer )",
+      "local": "assets/enriched/264405/264405_w134_04.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 166337,
+      "wave": "w134-2026-11"
+    },
+    {
+      "src": "local://264405_w134_05.jpg",
+      "thumb": "assets/enriched/264405/264405_w134_05.jpg",
+      "alt": "Клэмп Furutech Monza LP Stabilizer ( furutech monza lp stabilizer )",
+      "local": "assets/enriched/264405/264405_w134_05.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 67323,
+      "wave": "w134-2026-11"
+    },
+    {
+      "src": "local://264405_w134_06.jpg",
+      "thumb": "assets/enriched/264405/264405_w134_06.jpg",
+      "alt": "Клэмп Furutech Monza LP Stabilizer ( furutech monza lp stabilizer )",
+      "local": "assets/enriched/264405/264405_w134_06.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 90274,
+      "wave": "w134-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +116,9 @@
   "enrichedAt": "2026-11-14T13:34:38Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:13:36Z",
+  "galleryWave133": true
 }

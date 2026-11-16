@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T19:10:05Z",
+  "generatedAt": "2026-11-16T19:16:43Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1586,
+    "true_multi_angle": 1588,
     "padded": 11,
-    "single_real": 290
+    "single_real": 288
   },
   "pct": {
-    "true_multi_angle": 84.05,
+    "true_multi_angle": 84.15,
     "padded": 0.58,
-    "single_real": 15.37,
-    "padded_of_claimed_gal4plus": 14.91,
-    "not_true_multi": 15.95
+    "single_real": 15.26,
+    "padded_of_claimed_gal4plus": 14.81,
+    "not_true_multi": 15.85
   },
   "padReasonTallies": {
-    "local-variant": 516,
-    "wN-variant-name": 265,
+    "local-variant": 511,
+    "wN-variant-name": 264,
     "cdn-size-thumb": 69,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 278,
+  "claimedButNotTrueMulti": 276,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -1386,7 +1386,7 @@
       "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 290,
+  "hitlTrueOneshotCount": 288,
   "items": [
     {
       "id": 262053,
@@ -22070,16 +22070,14 @@
       "slug": "usb-%d0%ba%d0%b0%d0%b1%d0%b5%d0%bb%d1%8c-acoustic-revive-r-au1-sp",
       "cat": "Кабели",
       "price": 49590,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 15964,
@@ -22565,17 +22563,14 @@
       "slug": "%d0%ba%d0%bb%d1%8d%d0%bc%d0%bf-furutech-monza-lp-stabilizer",
       "cat": "Другое",
       "price": 46181,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 1,
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 263992,

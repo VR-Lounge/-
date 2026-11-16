@@ -36,34 +36,44 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-R-AU1-SP-500x356-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-R-AU1-SP-500x356-1.jpg",
-      "alt": "Acoustic-Revive-R-AU1-SP-500&#215;356",
-      "local": "assets/from-live/products/cc123573ce_Acoustic-Revive-R-AU1-SP-500x356-1.jpg"
+      "src": "local://264003_w134_00.jpg",
+      "thumb": "assets/enriched/264003/264003_w134_00.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-SP ( usb acoustic revive r au1 sp )",
+      "local": "assets/enriched/264003/264003_w134_00.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 387540,
+      "wave": "w134-2026-11"
     },
     {
-      "src": "local-variant://264003/w17sc95",
-      "local": "assets/enriched/264003/907e7f48fd_w17sc95.jpg",
-      "bytes": 17284,
-      "wave": "meager-w17-2026-11",
-      "w": 475,
-      "h": 338
+      "src": "local://264003_w134_01.jpg",
+      "thumb": "assets/enriched/264003/264003_w134_01.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-SP ( usb acoustic revive r au1 sp )",
+      "local": "assets/enriched/264003/264003_w134_01.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 287619,
+      "wave": "w134-2026-11"
     },
     {
-      "src": "local-variant://264003/w17sc90",
-      "local": "assets/enriched/264003/a6c78cf7c4_w17sc90.jpg",
-      "bytes": 15840,
-      "wave": "meager-w17-2026-11",
-      "w": 450,
-      "h": 320
+      "src": "local://264003_w134_02.jpg",
+      "thumb": "assets/enriched/264003/264003_w134_02.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-SP ( usb acoustic revive r au1 sp )",
+      "local": "assets/enriched/264003/264003_w134_02.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 120104,
+      "wave": "w134-2026-11"
     },
     {
-      "src": "local-variant://264003/w17sc85",
-      "local": "assets/enriched/264003/63abe96cf4_w17sc85.jpg",
-      "bytes": 14637,
-      "wave": "meager-w17-2026-11",
-      "w": 425,
-      "h": 302
+      "src": "local://264003_w134_03.jpg",
+      "thumb": "assets/enriched/264003/264003_w134_03.jpg",
+      "alt": "USB кабель Acoustic Revive R-AU1-SP ( usb acoustic revive r au1 sp )",
+      "local": "assets/enriched/264003/264003_w134_03.jpg",
+      "enriched": true,
+      "attribution": "wave134-yahoo",
+      "bytes": 146918,
+      "wave": "w134-2026-11"
     }
   ],
   "sku": "",
@@ -76,5 +86,9 @@
   "enrichedAt": "2026-11-14T13:29:42Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:13:36Z",
+  "galleryWave133": true
 }
