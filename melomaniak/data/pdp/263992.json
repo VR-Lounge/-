@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-Line-1-0-XS-500x500-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-Line-1-0-XS-500x500-1.jpg",
-      "alt": "ACOUSTIC-REVIVE-Line-1-0-XS-500&#215;500",
-      "local": "assets/from-live/products/0ce6062dbf_ACOUSTIC-REVIVE-Line-1-0-XS-500x500-1.jpg"
+      "src": "local://263992_w105_00.jpg",
+      "thumb": "assets/enriched/263992/263992_w105_00.jpg",
+      "alt": "Межблочный кабель Acoustic Revive Line 1.0XS ( acoustic revive line 1 0xs )",
+      "local": "assets/enriched/263992/263992_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 444232
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/ACOUSTIC-REVIVE-Line-1-0-XS-500x500-1-300x300.jpg",
-      "local": "assets/enriched/263992/6ff0a522e9_w13var.jpg",
-      "bytes": 12597,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://263992_w105_01.jpg",
+      "thumb": "assets/enriched/263992/263992_w105_01.jpg",
+      "alt": "Межблочный кабель Acoustic Revive Line 1.0XS ( acoustic revive line 1 0xs )",
+      "local": "assets/enriched/263992/263992_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 321650
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/Akysticheskii_kabel_Acoustic_Revive_Line_1-0XS.jpg",
-      "local": "assets/enriched/263992/cd40f87924_w13media.jpg",
-      "bytes": 18797,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://263992_w105_02.jpg",
+      "thumb": "assets/enriched/263992/263992_w105_02.jpg",
+      "alt": "Межблочный кабель Acoustic Revive Line 1.0XS ( acoustic revive line 1 0xs )",
+      "local": "assets/enriched/263992/263992_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 358074
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/Akysticheskii_kabel_Acoustic_Revive_Line_1-0XS-600x600.jpg",
-      "local": "assets/enriched/263992/dbeb9cea57_w13var.jpg",
-      "bytes": 16982,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://263992_w105_03.jpg",
+      "thumb": "assets/enriched/263992/263992_w105_03.jpg",
+      "alt": "Межблочный кабель Acoustic Revive Line 1.0XS ( acoustic revive line 1 0xs )",
+      "local": "assets/enriched/263992/263992_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 377378
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:28:57Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

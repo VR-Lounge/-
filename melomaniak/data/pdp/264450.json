@@ -31,42 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1783_1.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1783_1-600x600.webp",
-      "alt": "1000&#215;1000-1783_1",
-      "local": "assets/from-live/products/89041b8194_1000x1000-1783_1.webp"
+      "src": "local://264450_w105_00.jpg",
+      "thumb": "assets/enriched/264450/264450_w105_00.jpg",
+      "alt": "Акустический кабель Furutech FS-15S ( furutech fs 15s )",
+      "local": "assets/enriched/264450/264450_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 32427
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1783_1-768x768.webp",
-      "local": "assets/enriched/264450/797a7fb7b4_w13var.jpg",
-      "bytes": 25110,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264450_w105_01.jpg",
+      "thumb": "assets/enriched/264450/264450_w105_01.jpg",
+      "alt": "Акустический кабель Furutech FS-15S ( furutech fs 15s )",
+      "local": "assets/enriched/264450/264450_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 25642
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1783_1-600x600.webp",
-      "local": "assets/enriched/264450/502d3497eb_w13var.jpg",
-      "bytes": 18670,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264450_w105_02.jpg",
+      "thumb": "assets/enriched/264450/264450_w105_02.jpg",
+      "alt": "Акустический кабель Furutech FS-15S ( furutech fs 15s )",
+      "local": "assets/enriched/264450/264450_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 23968
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_FS_15S.jpg",
-      "local": "assets/enriched/264450/bd08dfd89d_w14media.jpg",
-      "bytes": 30759,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_FS_15S-300x300.jpg",
-      "local": "assets/enriched/264450/59facbf50f_w14var.jpg",
-      "bytes": 9637,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264450_w105_03.jpg",
+      "thumb": "assets/enriched/264450/264450_w105_03.jpg",
+      "alt": "Акустический кабель Furutech FS-15S ( furutech fs 15s )",
+      "local": "assets/enriched/264450/264450_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 27931
     }
   ],
   "sku": "",
@@ -78,5 +76,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

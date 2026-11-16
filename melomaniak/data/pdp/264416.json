@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-hdmi-n1-1-e1613743342768.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-hdmi-n1-1-e1613743342768.jpg",
-      "alt": "furutech-hdmi-n1-1-e1613743342768",
-      "local": "assets/from-live/products/94da714bde_furutech-hdmi-n1-1-e1613743342768.jpg"
+      "src": "local://264416_w105_00.jpg",
+      "thumb": "assets/enriched/264416/264416_w105_00.jpg",
+      "alt": "Кабель HDMI Furutech HDMI-N1 ( hdmi furutech hdmi n1 )",
+      "local": "assets/enriched/264416/264416_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 22397
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-hdmi-n1-1-e1613743342768-300x300.jpg",
-      "local": "assets/enriched/264416/9f65900dc0_w13var.jpg",
-      "bytes": 10393,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264416_w105_01.jpg",
+      "thumb": "assets/enriched/264416/264416_w105_01.jpg",
+      "alt": "Кабель HDMI Furutech HDMI-N1 ( hdmi furutech hdmi n1 )",
+      "local": "assets/enriched/264416/264416_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 48393
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/HDMI_kabel_Furutech_HDMI_N1_4_.jpg",
-      "local": "assets/enriched/264416/5e96bd6034_w15sib.jpg",
-      "bytes": 35495,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264416_w105_02.jpg",
+      "thumb": "assets/enriched/264416/264416_w105_02.jpg",
+      "alt": "Кабель HDMI Furutech HDMI-N1 ( hdmi furutech hdmi n1 )",
+      "local": "assets/enriched/264416/264416_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 15828
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/HDMI_kabel_Furutech_HDMI_N1_4_-600x600.jpg",
-      "local": "assets/enriched/264416/3c1073a63f_w15sib.jpg",
-      "bytes": 34517,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264416_w105_03.jpg",
+      "thumb": "assets/enriched/264416/264416_w105_03.jpg",
+      "alt": "Кабель HDMI Furutech HDMI-N1 ( hdmi furutech hdmi n1 )",
+      "local": "assets/enriched/264416/264416_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 15736
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

@@ -36,42 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1781_2.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1781_2-600x600.webp",
-      "alt": "1000&#215;1000-1781_2",
-      "local": "assets/from-live/products/b37f0c4028_1000x1000-1781_2.webp"
+      "src": "local://264448_w105_00.jpg",
+      "thumb": "assets/enriched/264448/264448_w105_00.jpg",
+      "alt": "Акустический кабель Furutech U-2T ( furutech u 2t )",
+      "local": "assets/enriched/264448/264448_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 27011
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1781_2-600x600.webp",
-      "local": "assets/enriched/264448/28b8e3044d_w13var.jpg",
-      "bytes": 14210,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264448_w105_01.jpg",
+      "thumb": "assets/enriched/264448/264448_w105_01.jpg",
+      "alt": "Акустический кабель Furutech U-2T ( furutech u 2t )",
+      "local": "assets/enriched/264448/264448_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 21100
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-1781_2-768x768.webp",
-      "local": "assets/enriched/264448/589be9e632_w13var.jpg",
-      "bytes": 19918,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264448_w105_02.jpg",
+      "thumb": "assets/enriched/264448/264448_w105_02.jpg",
+      "alt": "Акустический кабель Furutech U-2T ( furutech u 2t )",
+      "local": "assets/enriched/264448/264448_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 20253
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_U_2T.jpg",
-      "local": "assets/enriched/264448/071a9f30dc_w14media.jpg",
-      "bytes": 26066,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/akysticheskii_kabel_Furutech_U_2T-300x300.jpg",
-      "local": "assets/enriched/264448/a44237e57e_w14var.jpg",
-      "bytes": 8859,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264448_w105_03.jpg",
+      "thumb": "assets/enriched/264448/264448_w105_03.jpg",
+      "alt": "Акустический кабель Furutech U-2T ( furutech u 2t )",
+      "local": "assets/enriched/264448/264448_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 21247
     }
   ],
   "sku": "",
@@ -84,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:34:53Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

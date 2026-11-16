@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66446_2.webp",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66446_2-600x600.webp",
-      "alt": "1000&#215;1000-66446_2",
-      "local": "assets/from-live/products/aade8896d9_1000x1000-66446_2.webp"
+      "src": "local://264118_w105_00.jpg",
+      "thumb": "assets/enriched/264118/264118_w105_00.jpg",
+      "alt": "Аксессуар для розетки Audio Replas CPP-2SZ/HG ( audio replas cpp 2sz hg )",
+      "local": "assets/enriched/264118/264118_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 32253
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66446_2-600x600.webp",
-      "local": "assets/enriched/264118/e4bc1f7344_w13var.jpg",
-      "bytes": 27618,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264118_w105_01.jpg",
+      "thumb": "assets/enriched/264118/264118_w105_01.jpg",
+      "alt": "Аксессуар для розетки Audio Replas CPP-2SZ/HG ( audio replas cpp 2sz hg )",
+      "local": "assets/enriched/264118/264118_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 31366
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-66446_2-768x768.webp",
-      "local": "assets/enriched/264118/974b081153_w13var.jpg",
-      "bytes": 39344,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264118_w105_02.jpg",
+      "thumb": "assets/enriched/264118/264118_w105_02.jpg",
+      "alt": "Аксессуар для розетки Audio Replas CPP-2SZ/HG ( audio replas cpp 2sz hg )",
+      "local": "assets/enriched/264118/264118_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 20692
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/cpp2sz4sz-3.jpg",
-      "local": "assets/enriched/264118/112af56301_w15sib.jpg",
-      "bytes": 51700,
-      "wave": "meager-w15-2026-11",
-      "w": 380,
-      "h": 250
+      "src": "local://264118_w105_03.jpg",
+      "thumb": "assets/enriched/264118/264118_w105_03.jpg",
+      "alt": "Аксессуар для розетки Audio Replas CPP-2SZ/HG ( audio replas cpp 2sz hg )",
+      "local": "assets/enriched/264118/264118_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 21803
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

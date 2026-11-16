@@ -31,32 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca1.jpg",
-      "alt": "nordost_cinema_flex_cf142_cl3p_rca1.jpg",
-      "local": "assets/from-live/products/0fcbc8a71a_nordost_cinema_flex_cf142_cl3p_rca1.jpg"
+      "src": "local://271252_w105_00.jpg",
+      "thumb": "assets/enriched/271252/271252_w105_00.jpg",
+      "alt": "Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA",
+      "local": "assets/enriched/271252/271252_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 543811
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_cinema_flex_cf142_cl3p_rca2.jpg",
-      "alt": "nordost_cinema_flex_cf142_cl3p_rca2.jpg",
-      "local": "assets/from-live/products/50f42a2e57_nordost_cinema_flex_cf142_cl3p_rca2.jpg"
+      "src": "local://271252_w105_01.jpg",
+      "thumb": "assets/enriched/271252/271252_w105_01.jpg",
+      "alt": "Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA",
+      "local": "assets/enriched/271252/271252_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 443124
     },
     {
-      "src": "local-variant://271252/w17sc95",
-      "local": "assets/enriched/271252/9850577e22_w17sc95.jpg",
-      "bytes": 381699,
-      "wave": "meager-w17-2026-11",
-      "w": 2280,
-      "h": 2280
+      "src": "local://271252_w105_02.jpg",
+      "thumb": "assets/enriched/271252/271252_w105_02.jpg",
+      "alt": "Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA",
+      "local": "assets/enriched/271252/271252_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 334250
     },
     {
-      "src": "local-variant://271252/w17sc90",
-      "local": "assets/enriched/271252/2e32a6284c_w17sc90.jpg",
-      "bytes": 349264,
-      "wave": "meager-w17-2026-11",
-      "w": 2160,
-      "h": 2160
+      "src": "local://271252_w105_03.jpg",
+      "thumb": "assets/enriched/271252/271252_w105_03.jpg",
+      "alt": "Кабель для сабвуфера Nordost Cinema Flex CF142 CL3P RCA",
+      "local": "assets/enriched/271252/271252_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 352651
     }
   ],
   "sku": "",
@@ -69,5 +77,9 @@
   "enrichedAt": "2026-11-14T13:36:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

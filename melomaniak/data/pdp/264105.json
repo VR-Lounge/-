@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/AUDIO-REPLAS-RPS-300SZ-1-500x333-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/AUDIO-REPLAS-RPS-300SZ-1-500x333-1.jpg",
-      "alt": "AUDIO-REPLAS-RPS-300SZ-1-500&#215;333",
-      "local": "assets/from-live/products/4b66149a8d_AUDIO-REPLAS-RPS-300SZ-1-500x333-1.jpg"
+      "src": "local://264105_w105_00.jpg",
+      "thumb": "assets/enriched/264105/264105_w105_00.jpg",
+      "alt": "Сетевой кабель Audio Replas RPS-300SZ 1.0m ( audio replas rps 300sz 1 0m )",
+      "local": "assets/enriched/264105/264105_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 89706
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Audio_Replas_RPS_300SZ_1-0m.jpg",
-      "local": "assets/enriched/264105/95b03d8353_w13media.jpg",
-      "bytes": 26343,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264105_w105_01.jpg",
+      "thumb": "assets/enriched/264105/264105_w105_01.jpg",
+      "alt": "Сетевой кабель Audio Replas RPS-300SZ 1.0m ( audio replas rps 300sz 1 0m )",
+      "local": "assets/enriched/264105/264105_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 35401
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Audio_Replas_RPS_300SZ_1-0m-300x300.jpg",
-      "local": "assets/enriched/264105/35abc837ae_w13var.jpg",
-      "bytes": 10331,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264105_w105_02.jpg",
+      "thumb": "assets/enriched/264105/264105_w105_02.jpg",
+      "alt": "Сетевой кабель Audio Replas RPS-300SZ 1.0m ( audio replas rps 300sz 1 0m )",
+      "local": "assets/enriched/264105/264105_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 58215
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Audio_Replas_RPS_300SZ_1-0m-600x600.jpg",
-      "local": "assets/enriched/264105/2dafdba945_w13var.jpg",
-      "bytes": 25280,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264105_w105_03.jpg",
+      "thumb": "assets/enriched/264105/264105_w105_03.jpg",
+      "alt": "Сетевой кабель Audio Replas RPS-300SZ 1.0m ( audio replas rps 300sz 1 0m )",
+      "local": "assets/enriched/264105/264105_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 60448
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Audio-Replas-DiSi-ALM500-Super-SZ-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Audio-Replas-DiSi-ALM500-Super-SZ-1.jpg",
-      "alt": "cof",
-      "local": "assets/from-live/products/daceec5ce5_Audio-Replas-DiSi-ALM500-Super-SZ-1.jpg"
+      "src": "local://264107_w105_00.jpg",
+      "thumb": "assets/enriched/264107/264107_w105_00.jpg",
+      "alt": "Цифровой кабель Audio Replas DiSi-ALM500 SuperSZ  1.0m ( audio replas disi alm500 supersz 1 0m )",
+      "local": "assets/enriched/264107/264107_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 45961
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/mezhblochnii_kabel_Audio_Replas_DiSi_ALM500_SuperSZ.jpg",
-      "local": "assets/enriched/264107/c01ca50595_w13media.jpg",
-      "bytes": 73148,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264107_w105_01.jpg",
+      "thumb": "assets/enriched/264107/264107_w105_01.jpg",
+      "alt": "Цифровой кабель Audio Replas DiSi-ALM500 SuperSZ  1.0m ( audio replas disi alm500 supersz 1 0m )",
+      "local": "assets/enriched/264107/264107_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 104638
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/mezhblochnii_kabel_Audio_Replas_DiSi_ALM500_SuperSZ-600x600.jpg",
-      "local": "assets/enriched/264107/493606536d_w13var.jpg",
-      "bytes": 73026,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264107_w105_02.jpg",
+      "thumb": "assets/enriched/264107/264107_w105_02.jpg",
+      "alt": "Цифровой кабель Audio Replas DiSi-ALM500 SuperSZ  1.0m ( audio replas disi alm500 supersz 1 0m )",
+      "local": "assets/enriched/264107/264107_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 30377
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/mezhblochnii_kabel_Audio_Replas_DiSi_ALM500_SuperSZ-300x300.jpg",
-      "local": "assets/enriched/264107/33f3cce2f9_w13var.jpg",
-      "bytes": 14602,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264107_w105_03.jpg",
+      "thumb": "assets/enriched/264107/264107_w105_03.jpg",
+      "alt": "Цифровой кабель Audio Replas DiSi-ALM500 SuperSZ  1.0m ( audio replas disi alm500 supersz 1 0m )",
+      "local": "assets/enriched/264107/264107_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 29099
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

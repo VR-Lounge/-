@@ -41,32 +41,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_white_lightning_2-0m1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_white_lightning_2-0m1.jpg",
-      "alt": "nordost_white_lightning_2-0m1.jpg",
-      "local": "assets/from-live/products/f6212b2a01_nordost_white_lightning_2-0m1.jpg"
+      "src": "local://271243_w105_00.jpg",
+      "thumb": "assets/enriched/271243/271243_w105_00.jpg",
+      "alt": "Кабель межблочный аналоговый XLR Nordost White Lightning",
+      "local": "assets/enriched/271243/271243_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 35518
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_white_lightning3.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nordost_white_lightning3.jpg",
-      "alt": "nordost_white_lightning3.jpg",
-      "local": "assets/from-live/products/0414c027aa_nordost_white_lightning3.jpg"
+      "src": "local://271243_w105_01.jpg",
+      "thumb": "assets/enriched/271243/271243_w105_01.jpg",
+      "alt": "Кабель межблочный аналоговый XLR Nordost White Lightning",
+      "local": "assets/enriched/271243/271243_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 38901
     },
     {
-      "src": "local-variant://271243/w17sc95",
-      "local": "assets/enriched/271243/5fc0c6f435_w17sc95.jpg",
-      "bytes": 28447,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://271243_w105_02.jpg",
+      "thumb": "assets/enriched/271243/271243_w105_02.jpg",
+      "alt": "Кабель межблочный аналоговый XLR Nordost White Lightning",
+      "local": "assets/enriched/271243/271243_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 22433
     },
     {
-      "src": "local-variant://271243/w17sc90",
-      "local": "assets/enriched/271243/be06764220_w17sc90.jpg",
-      "bytes": 26129,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
+      "src": "local://271243_w105_03.jpg",
+      "thumb": "assets/enriched/271243/271243_w105_03.jpg",
+      "alt": "Кабель межблочный аналоговый XLR Nordost White Lightning",
+      "local": "assets/enriched/271243/271243_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 25661
     }
   ],
   "sku": "",
@@ -78,5 +86,9 @@
   "enrichedAt": "2026-11-14T13:36:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

@@ -26,34 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-FCS-8.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Acoustic-Revive-FCS-8.jpg",
-      "alt": "Acoustic-Revive-FCS-8",
-      "local": "assets/from-live/products/f7a1d8827c_Acoustic-Revive-FCS-8.jpg"
+      "src": "local://264056_w105_00.jpg",
+      "thumb": "assets/enriched/264056/264056_w105_00.jpg",
+      "alt": "Размагничиватель Acoustic Revive FCS-8 ( acoustic revive fcs 8 )",
+      "local": "assets/enriched/264056/264056_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 49806
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razemi_Acoustic_Revive_FCS_8_.jpg",
-      "local": "assets/enriched/264056/9e415c0e47_w14media.jpg",
-      "bytes": 28260,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264056_w105_01.jpg",
+      "thumb": "assets/enriched/264056/264056_w105_01.jpg",
+      "alt": "Размагничиватель Acoustic Revive FCS-8 ( acoustic revive fcs 8 )",
+      "local": "assets/enriched/264056/264056_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 26932
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razemi_Acoustic_Revive_FCS_8_-300x300.jpg",
-      "local": "assets/enriched/264056/5ab1997b13_w14var.jpg",
-      "bytes": 10200,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264056_w105_02.jpg",
+      "thumb": "assets/enriched/264056/264056_w105_02.jpg",
+      "alt": "Размагничиватель Acoustic Revive FCS-8 ( acoustic revive fcs 8 )",
+      "local": "assets/enriched/264056/264056_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 34948
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/razemi_Acoustic_Revive_FCS_8_-600x600.jpg",
-      "local": "assets/enriched/264056/30b2840cb7_w14var.jpg",
-      "bytes": 26323,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264056_w105_03.jpg",
+      "thumb": "assets/enriched/264056/264056_w105_03.jpg",
+      "alt": "Размагничиватель Acoustic Revive FCS-8 ( acoustic revive fcs 8 )",
+      "local": "assets/enriched/264056/264056_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 33708
     }
   ],
   "sku": "",
@@ -65,5 +71,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

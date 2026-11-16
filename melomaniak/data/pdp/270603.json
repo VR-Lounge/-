@@ -71,32 +71,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_thames_hybrid_1-5m1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_thames_hybrid_1-5m1.jpg",
-      "alt": "van_den_hul_the_thames_hybrid_1-5m1.jpg",
-      "local": "assets/from-live/products/fcb059ac2a_van_den_hul_the_thames_hybrid_1-5m1.jpg"
+      "src": "local://270603_w105_00.jpg",
+      "thumb": "assets/enriched/270603/270603_w105_00.jpg",
+      "alt": "Фонокабель Van den Hul The Thames Hybrid",
+      "local": "assets/enriched/270603/270603_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 44322
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_thames_hybrid2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_the_thames_hybrid2.jpg",
-      "alt": "van_den_hul_the_thames_hybrid2.jpg",
-      "local": "assets/from-live/products/47aded2c7b_van_den_hul_the_thames_hybrid2.jpg"
+      "src": "local://270603_w105_01.jpg",
+      "thumb": "assets/enriched/270603/270603_w105_01.jpg",
+      "alt": "Фонокабель Van den Hul The Thames Hybrid",
+      "local": "assets/enriched/270603/270603_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 69647
     },
     {
-      "src": "local-variant://270603/w17sc95",
-      "local": "assets/enriched/270603/b8f8c80c19_w17sc95.jpg",
-      "bytes": 32858,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://270603_w105_02.jpg",
+      "thumb": "assets/enriched/270603/270603_w105_02.jpg",
+      "alt": "Фонокабель Van den Hul The Thames Hybrid",
+      "local": "assets/enriched/270603/270603_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 35619
     },
     {
-      "src": "local-variant://270603/w17sc90",
-      "local": "assets/enriched/270603/1ea9ca769e_w17sc90.jpg",
-      "bytes": 30289,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
+      "src": "local://270603_w105_03.jpg",
+      "thumb": "assets/enriched/270603/270603_w105_03.jpg",
+      "alt": "Фонокабель Van den Hul The Thames Hybrid",
+      "local": "assets/enriched/270603/270603_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 24498
     }
   ],
   "sku": "",
@@ -108,5 +116,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/8f83fc90225d3487d6f14f9a7bb74545.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/8f83fc90225d3487d6f14f9a7bb74545.jpg",
-      "alt": "8f83fc90225d3487d6f14f9a7bb74545",
-      "local": "assets/from-live/products/0773810e90_8f83fc90225d3487d6f14f9a7bb74545.jpg"
+      "src": "local://264361_w105_00.jpg",
+      "thumb": "assets/enriched/264361/264361_w105_00.jpg",
+      "alt": "Сетевой кабель Furutech G-320Ag-18-E ( furutech g 320ag 18 e )",
+      "local": "assets/enriched/264361/264361_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 69982
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_G_320Ag_18_E.jpg",
-      "local": "assets/enriched/264361/8f35af0d6b_w13media.jpg",
-      "bytes": 40058,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264361_w105_01.jpg",
+      "thumb": "assets/enriched/264361/264361_w105_01.jpg",
+      "alt": "Сетевой кабель Furutech G-320Ag-18-E ( furutech g 320ag 18 e )",
+      "local": "assets/enriched/264361/264361_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 49455
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/8f83fc90225d3487d6f14f9a7bb74545-300x300.jpg",
-      "local": "assets/enriched/264361/78495d5cd9_w13var.jpg",
-      "bytes": 12243,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264361_w105_02.jpg",
+      "thumb": "assets/enriched/264361/264361_w105_02.jpg",
+      "alt": "Сетевой кабель Furutech G-320Ag-18-E ( furutech g 320ag 18 e )",
+      "local": "assets/enriched/264361/264361_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 52552
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/setevoi_kabel_Furutech_G_320Ag_18_E-600x600.jpg",
-      "local": "assets/enriched/264361/cbe9d53638_w13var.jpg",
-      "bytes": 39840,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264361_w105_03.jpg",
+      "thumb": "assets/enriched/264361/264361_w105_03.jpg",
+      "alt": "Сетевой кабель Furutech G-320Ag-18-E ( furutech g 320ag 18 e )",
+      "local": "assets/enriched/264361/264361_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 54635
     }
   ],
   "sku": "",
@@ -76,5 +82,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

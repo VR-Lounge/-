@@ -31,34 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-opt-100hg-ss-hr.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-opt-100hg-ss-hr.jpg",
-      "alt": "audio-replas-opt-100hg-ss-hr",
-      "local": "assets/from-live/products/fb3fb44b06_audio-replas-opt-100hg-ss-hr.jpg"
+      "src": "local://264078_w105_00.jpg",
+      "thumb": "assets/enriched/264078/264078_w105_00.jpg",
+      "alt": "Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr )",
+      "local": "assets/enriched/264078/264078_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 29409
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-101685_1.webp",
-      "local": "assets/enriched/264078/36ea08850e_w15sib.jpg",
-      "bytes": 108154,
-      "wave": "meager-w15-2026-11",
-      "w": 1000,
-      "h": 1000
+      "src": "local://264078_w105_01.jpg",
+      "thumb": "assets/enriched/264078/264078_w105_01.jpg",
+      "alt": "Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr )",
+      "local": "assets/enriched/264078/264078_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 19238
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-101685_1-300x300.webp",
-      "local": "assets/enriched/264078/58ff841d5d_w15sib.jpg",
-      "bytes": 16808,
-      "wave": "meager-w15-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264078_w105_02.jpg",
+      "thumb": "assets/enriched/264078/264078_w105_02.jpg",
+      "alt": "Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr )",
+      "local": "assets/enriched/264078/264078_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 19942
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/1000x1000-101685_1-600x600.webp",
-      "local": "assets/enriched/264078/a50482688c_w15sib.jpg",
-      "bytes": 37814,
-      "wave": "meager-w15-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264078_w105_03.jpg",
+      "thumb": "assets/enriched/264078/264078_w105_03.jpg",
+      "alt": "Платформа под шипы Audio Replas OPT-100HG-PL HR ( audio replas opt 100hg pl hr )",
+      "local": "assets/enriched/264078/264078_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 15486
     }
   ],
   "sku": "",
@@ -71,5 +77,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

@@ -31,35 +31,40 @@
   ],
   "gallery": [
     {
-      "src": "local://Furutech-FD-4418-1_1e79d03614.jpg",
-      "thumb": "assets/enriched/264419/dd474430d2_live1.jpg",
+      "src": "local://264419_w105_00.jpg",
+      "thumb": "assets/enriched/264419/264419_w105_00.jpg",
       "alt": "Цифровой кабель Furutech FD-4418 ( furutech fd 4418 )",
-      "local": "assets/enriched/264419/dd474430d2_live1.jpg",
+      "local": "assets/enriched/264419/264419_w105_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 12673
+      "attribution": "wave105-oem",
+      "bytes": 44123
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FD-4418.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-FD-4418.jpg",
-      "alt": "Furutech-FD-4418",
-      "local": "assets/from-live/products/1e79d03614_Furutech-FD-4418.jpg"
+      "src": "local://264419_w105_01.jpg",
+      "thumb": "assets/enriched/264419/264419_w105_01.jpg",
+      "alt": "Цифровой кабель Furutech FD-4418 ( furutech fd 4418 )",
+      "local": "assets/enriched/264419/264419_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 33581
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/Lan_kabel_Furutech_FD_4418_.jpg",
-      "local": "assets/enriched/264419/218b6825ed_w14media.jpg",
-      "bytes": 32605,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264419_w105_02.jpg",
+      "thumb": "assets/enriched/264419/264419_w105_02.jpg",
+      "alt": "Цифровой кабель Furutech FD-4418 ( furutech fd 4418 )",
+      "local": "assets/enriched/264419/264419_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 33631
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/Lan_kabel_Furutech_FD_4418_-300x300.jpg",
-      "local": "assets/enriched/264419/ce22aa7206_w14var.jpg",
-      "bytes": 10455,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264419_w105_03.jpg",
+      "thumb": "assets/enriched/264419/264419_w105_03.jpg",
+      "alt": "Цифровой кабель Furutech FD-4418 ( furutech fd 4418 )",
+      "local": "assets/enriched/264419/264419_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 38859
     }
   ],
   "sku": "",
@@ -72,5 +77,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

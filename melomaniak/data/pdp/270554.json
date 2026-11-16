@@ -36,32 +36,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_1079070482-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_1079070482-1.jpg",
-      "alt": "van_den_hul_tide_1079070482-1.jpg",
-      "local": "assets/from-live/products/cc6751474c_van_den_hul_tide_1079070482-1.jpg"
+      "src": "local://270554_w105_00.jpg",
+      "thumb": "assets/enriched/270554/270554_w105_00.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Tide",
+      "local": "assets/enriched/270554/270554_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 251740
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_4117230118-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/van_den_hul_tide_4117230118-2.jpg",
-      "alt": "van_den_hul_tide_4117230118-2.jpg",
-      "local": "assets/from-live/products/054f1859fc_van_den_hul_tide_4117230118-2.jpg"
+      "src": "local://270554_w105_01.jpg",
+      "thumb": "assets/enriched/270554/270554_w105_01.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Tide",
+      "local": "assets/enriched/270554/270554_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 262519
     },
     {
-      "src": "local-variant://270554/w17sc95",
-      "local": "assets/enriched/270554/b78c3967c3_w17sc95.jpg",
-      "bytes": 103640,
-      "wave": "meager-w17-2026-11",
-      "w": 1140,
-      "h": 1140
+      "src": "local://270554_w105_02.jpg",
+      "thumb": "assets/enriched/270554/270554_w105_02.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Tide",
+      "local": "assets/enriched/270554/270554_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 141530
     },
     {
-      "src": "local-variant://270554/w17sc90",
-      "local": "assets/enriched/270554/d474eb9468_w17sc90.jpg",
-      "bytes": 95833,
-      "wave": "meager-w17-2026-11",
-      "w": 1080,
-      "h": 1080
+      "src": "local://270554_w105_03.jpg",
+      "thumb": "assets/enriched/270554/270554_w105_03.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Tide",
+      "local": "assets/enriched/270554/270554_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 193855
+    },
+    {
+      "src": "local://270554_w105_04.jpg",
+      "thumb": "assets/enriched/270554/270554_w105_04.jpg",
+      "alt": "Кабель межблочный аналоговый RCA Van den Hul The Tide",
+      "local": "assets/enriched/270554/270554_w105_04.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 201907
     }
   ],
   "sku": "",
@@ -74,5 +91,9 @@
   "enrichedAt": "2026-11-14T13:36:16Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }

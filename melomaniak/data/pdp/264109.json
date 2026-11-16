@@ -36,34 +36,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/AUDIO-REPLAS-REF-SI7000SZ-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/AUDIO-REPLAS-REF-SI7000SZ-1.jpg",
-      "alt": "AUDIO-REPLAS-REF-SI7000SZ-1",
-      "local": "assets/from-live/products/d5a587a445_AUDIO-REPLAS-REF-SI7000SZ-1.jpg"
+      "src": "local://264109_w105_00.jpg",
+      "thumb": "assets/enriched/264109/264109_w105_00.jpg",
+      "alt": "Межблочный кабель Audio Replas REF-SI7000SZ ( audio replas ref si7000sz )",
+      "local": "assets/enriched/264109/264109_w105_00.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 27342
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/mezhblochnii_kabel_Audio_Replas_REF_SI7000SZ.jpg",
-      "local": "assets/enriched/264109/6380b86fed_w13media.jpg",
-      "bytes": 40107,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264109_w105_01.jpg",
+      "thumb": "assets/enriched/264109/264109_w105_01.jpg",
+      "alt": "Межблочный кабель Audio Replas REF-SI7000SZ ( audio replas ref si7000sz )",
+      "local": "assets/enriched/264109/264109_w105_01.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 54679
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/mezhblochnii_kabel_Audio_Replas_REF_SI7000SZ-600x600.jpg",
-      "local": "assets/enriched/264109/8633a0982d_w13var.jpg",
-      "bytes": 39890,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264109_w105_02.jpg",
+      "thumb": "assets/enriched/264109/264109_w105_02.jpg",
+      "alt": "Межблочный кабель Audio Replas REF-SI7000SZ ( audio replas ref si7000sz )",
+      "local": "assets/enriched/264109/264109_w105_02.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 19225
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/mezhblochnii_kabel_Audio_Replas_REF_SI7000SZ-300x300.jpg",
-      "local": "assets/enriched/264109/42efd4a7cc_w13var.jpg",
-      "bytes": 14841,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264109_w105_03.jpg",
+      "thumb": "assets/enriched/264109/264109_w105_03.jpg",
+      "alt": "Межблочный кабель Audio Replas REF-SI7000SZ ( audio replas ref si7000sz )",
+      "local": "assets/enriched/264109/264109_w105_03.jpg",
+      "enriched": true,
+      "attribution": "wave105-oem",
+      "bytes": 19636
     }
   ],
   "sku": "",
@@ -78,5 +84,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:29:51Z",
+  "galleryWave105": true
 }
