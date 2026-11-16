@@ -1,0 +1,139 @@
+{
+  "wave": "meager-w12-2026-11",
+  "prev_meager": 816,
+  "meager_now": 797,
+  "cleared_delta": 19,
+  "cleared_from_wave11_hitl_stuck_count": 11,
+  "cleared_from_wave11_hitl_stuck": [
+    {
+      "id": 272699,
+      "name": "Сетевой проигрыватель Metronome Technologie DSC",
+      "gal": 21,
+      "price": 3710000,
+      "cat": "Источники"
+    },
+    {
+      "id": 16834,
+      "name": "усилитель мощности Triode TRX M300 ( triode trx m300 )",
+      "gal": 15,
+      "price": 1600000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 15588,
+      "name": "напольная акустика Amazon A.M.T. One ( amazon a m t one )",
+      "gal": 9,
+      "price": 1490000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 26636,
+      "name": "усилитель мощности Audio Physic AP MONO ( audio physic ap mono )",
+      "gal": 7,
+      "price": 1327500,
+      "cat": "Усилители"
+    },
+    {
+      "id": 262061,
+      "name": "Напольная акустика Divini Audio Reference 18 ( divini audio reference 18 )",
+      "gal": 7,
+      "price": 1140000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 15906,
+      "name": "усилитель мощности Herron Audio M1 ( herron audio m1 )",
+      "gal": 4,
+      "price": 1100000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 16832,
+      "name": "усилитель мощности Triode TRV P845SE ( triode trv p845se )",
+      "gal": 4,
+      "price": 1000000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 15952,
+      "name": "предусилитель Line Magnetic Audio LM 512CA ( line magnetic audio lm 512ca )",
+      "gal": 10,
+      "price": 990000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 4234,
+      "name": "усилитель мощности Arte Forma Theos ( arte forma theos )",
+      "gal": 7,
+      "price": 940000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 26592,
+      "name": "напольная акустика Advance Acoustic X-L 500 Evo ( advance acoustic x l 500 evo )",
+      "gal": 9,
+      "price": 901425,
+      "cat": "Акустика"
+    },
+    {
+      "id": 262141,
+      "name": "Интегральный усилитель Spec RSA M3 EX ( spec rsa m3 ex )",
+      "gal": 13,
+      "price": 901000,
+      "cat": "Усилители"
+    }
+  ],
+  "still_stuck_from_wave11_hitl_count": 1,
+  "still_stuck_from_wave11_hitl": [
+    {
+      "id": 26602,
+      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
+      "gal": 3,
+      "price": 1140000,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:3"
+      ]
+    }
+  ],
+  "remaining_by_category": {
+    "Другое": 358,
+    "Кабели": 211,
+    "Усилители": 105,
+    "Акустика": 69,
+    "Источники": 35,
+    "ЦАПы": 8,
+    "Ресиверы": 5,
+    "Наушники": 4,
+    "Спецпредложения": 1,
+    "Видео": 1
+  },
+  "audit_summary": {
+    "generatedAt": "2026-11-14T18:49:22Z",
+    "criteria": {
+      "descMinChars": 500,
+      "galleryMin": 4,
+      "stubHeuristics": true,
+      "requireSpecs": true,
+      "flagIfAny": true
+    },
+    "totalPdp": 1887,
+    "meagerCount": 797,
+    "okCount": 1090,
+    "reasonTallies": {
+      "gal": 797
+    },
+    "byCategory": {
+      "Другое": 358,
+      "Кабели": 211,
+      "Усилители": 105,
+      "Акустика": 69,
+      "Источники": 35,
+      "ЦАПы": 8,
+      "Ресиверы": 5,
+      "Наушники": 4,
+      "Спецпредложения": 1,
+      "Видео": 1
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "at": "2026-11-15T22:33:47Z",
+  "wave": 97,
+  "counts": {
+    "true_multi_angle": 1364,
+    "padded": 157,
+    "single_real": 366
+  },
+  "cleared": [
+    {
+      "id": 269488,
+      "name": "Magnat Monitor S12 C walnut",
+      "unique": 4
+    },
+    {
+      "id": 269486,
+      "name": "Magnat Signature 903 Piano White",
+      "unique": 4
+    },
+    {
+      "id": 274427,
+      "name": "Piega TMicro 6 silver",
+      "unique": 4
+    }
+  ],
+  "hitl": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "note": "skip unless new sources"
+    },
+    {
+      "id": 264126,
+      "name": "Audio Replas MTP-2 RU mk2",
+      "note": "skip unless new sources"
+    }
+  ],
+  "promote": {
+    "at": "2026-11-15T22:30:38Z",
+    "results": [
+      {
+        "id": 269488,
+        "before": 4,
+        "after": 4,
+        "unique": 4,
+        "files": [
+          "assets/enriched/269488/269488_w97_00.jpg",
+          "assets/enriched/269488/269488_w97_01.jpg",
+          "assets/enriched/269488/269488_w97_02.jpg",
+          "assets/enriched/269488/269488_w97_03.jpg"
+        ]
+      },
+      {
+        "id": 269486,
+        "before": 4,
+        "after": 4,
+        "unique": 4,
+        "files": [
+          "assets/enriched/269486/269486_w97_00.jpg",
+          "assets/enriched/269486/269486_w97_01.jpg",
+          "assets/enriched/269486/269486_w97_02.jpg",
+          "assets/enriched/269486/269486_w97_03.jpg"
+        ]
+      },
+      {
+        "id": 274427,
+        "before": 4,
+        "after": 4,
+        "unique": 4,
+        "files": [
+          "assets/enriched/274427/274427_w97_00.jpg",
+          "assets/enriched/274427/274427_w97_01.jpg",
+          "assets/enriched/274427/274427_w97_02.jpg",
+          "assets/enriched/274427/274427_w97_03.jpg"
+        ]
+      }
+    ]
+  }
+}

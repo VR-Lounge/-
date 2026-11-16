@@ -1,0 +1,1348 @@
+{
+  "26632": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Audio Physic Step III — полочная двухполоска линейки Reference: HHCT III + HHCM III, керамическая пена в корпусе, лёгкий наклон назад и WBT-терминал с виброразвязкой. Для комнаты, где напольники не влезают, а нужен «акустический луп» без гула от стен.</p>\n<ul><li>2-way · HHCT III 39 мм + HHCM III 150 мм</li><li>50 Гц–40 кГц</li><li>87 дБ · 8 Ом</li><li>Усилитель 10–120 Вт</li><li>320 × 175 × 250 мм · 7,5 кг</li><li>Магнитный гриль</li></ul>\n<aside><p><strong>HHCM / HHCT.</strong> Hyper Holographic Cone Midrange / Tweeter — фирменные шасси Audio Physic с механической развязкой корзины и подвеса, чтобы гасить микровибрации у источника. Не маркетинг «3D», а конструкция драйвера.</p></aside>\n<h2>HITL</h2>\n<p>В каталоге SKU «Step III»; актуальная OEM-страница — Step / Step Plus с указанными цифрами. Сверить отделку и поколение экземпляра в салоне.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "2-way bookshelf",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "50 Гц–40 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "87 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "8 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Рекомендуемая мощность",
+        "value": "10–120 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Драйверы",
+        "value": "HHCT III 39 мм; HHCM III 150 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "320 × 175 × 250 мм; 7,5 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.audiophysic.com/en/product/step-plus/"
+    ],
+    "imageUrls": [
+      "https://www.audiophysic.com/wp-content/uploads/2021/11/audiophysic-step35-prod-schwarz-hochglanz.jpg",
+      "https://www.audiophysic.com/wp-content/uploads/2021/11/audiophysic-step35-prod-weiss-hochglanz.jpg",
+      "https://www.audiophysic.com/wp-content/uploads/2021/11/audiophysic-step35-prod-ebony.jpg",
+      "https://www.audiophysic.com/wp-content/uploads/2021/11/audiophysic-step35-prod-walnuss.jpg",
+      "https://www.audiophysic.com/wp-content/uploads/2018/06/step-plus-scene-1-1-V3.jpg",
+      "https://www.audiophysic.com/wp-content/uploads/2020/05/hyper_holographic_cone_tweeter.png"
+    ]
+  },
+  "26832": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Audio Physic Classic Sub — активный сабвуфер закрытого типа под полочники Classic/Step: 260 мм драйвер, 130 Вт, RCA, регулировка уровня и фазы. Для стерео, где Step/Classic не дотягивают низ, без «киношного» бума.</p>\n<ul><li>Закрытый корпус · активный</li><li>Драйвер Ø 260 мм</li><li>Мощность 130 Вт</li><li>Импеданс 6 Ом (заявка дилера)</li><li>RCA · level · phase</li><li>400 × 360 × 360 мм</li></ul>\n<aside><p><strong>Закрытый vs фазоинвертор.</strong> Closed-box саб обычно быстрее затухает по импульсу, чем порт; Classic Sub позиционируется Audio Physic/дилерами именно как стерео-партнёр полочников.</p></aside>\n<h2>HITL</h2>\n<p>Спеки — карточка дилера mvert.ru / салон Melomaniak. OEM-галерея ограничена — добить ракурсы с витрины при возможности.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Активный сабвуфер, closed",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Драйвер",
+        "value": "Ø 260 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "130 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "6 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Вход",
+        "value": "RCA line",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Регулировки",
+        "value": "Level, phase",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "400 × 360 × 360 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://mvert.ru/product/audio-physic-classic-sub/"
+    ],
+    "imageUrls": []
+  },
+  "15624": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Line Magnetic LM-755 — напольная full-range акустика по мотивам Western Electric 755A: бумажный конус, высокая чувствительность и маловаттный характер. Для лампового тракта, где важны середина и присутствие, а не «сабвуферный» низ от порта.</p>\n<ul><li>Full-range · 8″ класс WE755</li><li>70 Гц–13 кГц</li><li>92 дБ @ 1 Вт/1 м</li><li>8 Ом · ~6 Вт handling</li><li>Резонанс ~68 Гц</li><li>~440 × 940 × 330 мм (вариант Field Coil / console — HITL)</li></ul>\n<aside><p><strong>WE755A.</strong> Классический широкополосник Western Electric; Line Magnetic выпускает рекреации (постоянный магнит / field coil). Не путать драйвер LM-755A с готовой парой LM-755 console — сверить SKU салона.</p></aside>\n<h2>HITL</h2>\n<p>В продаже встречаются field-coil и «SG Series» варианты с разными БП. Цифры 70 Гц–13 кГц / 92 дБ / 6 Вт — по дилерским/community OEM-сводкам; паспорт экземпляра обязателен.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Full-range floorstanding / console",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "70 Гц–13 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "92 дБ (1 Вт/1 м)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "8 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность",
+        "value": "~6 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Fs",
+        "value": "~68 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Примечание",
+        "value": "Field coil vs ceramic — HITL",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.lm-audio.com/en/xilie-p134-1.html?Optis=132",
+      "https://www.twochannel.ai/products/line-magnetic-audio-line-magnetic-lm-755-field-coil-speakers"
+    ],
+    "imageUrls": [
+      "https://www.lm-audio.com/uploads/admin/1/61adcbb3b9f26.png",
+      "https://www.lm-audio.com/uploads/admin/1/61adcdc7655d2.png",
+      "https://www.lm-audio.com/uploads/admin/1/61adcb8adebbb.png",
+      "https://www.lm-audio.com/uploads/admin/1/61adcb9791794.png"
+    ]
+  },
+  "267435": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Line Magnetic LM-69 — full-range console к 10-летию LM: овальная компоновка «6″ твитер + 9″ НЧ» в ретро-корпусе. Высокая чувствительность для маловаттных ламп; не «современная трёхполоска», а цельный mid-forward характер.</p>\n<ul><li>Full-range console</li><li>40 Гц–22 кГц</li><li>95 дБ</li><li>8 Ом</li><li>48 × 111 × 43 см</li></ul>\n<aside><p><strong>Console speaker.</strong> Форм-фактор «тумбы» 1930–50-х: широкая база, драйверы на фасаде. LM-69 — юбилейная модель; HITL по отделке дерева.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Full-range console floorstanding",
+        "source": "manufacturer"
+      },
+      {
+        "label": "АЧХ",
+        "value": "40–22 000 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "95 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "8 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "48 × 111 × 43 см",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.hifi-guide.com/loudspeaker/line-magnetic-lm-69/",
+      "https://www.lm-audio.com/en/lmmanshengkongzhitaiyinxiang-p186.html"
+    ],
+    "imageUrls": [
+      "https://www.lm-audio.com/uploads/admin/1/61adbade86496.jpg",
+      "https://www.lm-audio.com/uploads/admin/1/61adbae6d9a9f.jpg",
+      "https://www.lm-audio.com/uploads/admin/1/61adbaec03bf3.jpg",
+      "https://www.lm-audio.com/uploads/admin/1/61adc33580ccd.jpg"
+    ]
+  },
+  "262098": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Line Magnetic LM-205 CD — ламповый CD-проигрыватель: транспорт Sony, ЦАП Burr-Brown, буфер 12AU7. Заказная версия относительно LM-215CD с монолитной фронтальной панелью 10 мм против вибраций.</p>\n<ul><li>Транспорт Sony · ЦАП Burr-Brown</li><li>Лампы 12AU7</li><li>С/Ш 110 дБ · динамика 120 дБ</li><li>Выходы RCA + coaxial</li><li>370 × 325 × 105 мм · ~9 кг</li><li>Пульт в комплекте</li></ul>\n<aside><p><strong>205 vs 215.</strong> LM-205CD — усиленная панель под заказ относительно LM-215CD. Не путать с LM-515CD; HITL по комплектации ламп.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Ламповый CD-проигрыватель",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "Burr-Brown",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Транспорт",
+        "value": "Sony",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Лампы",
+        "value": "12AU7",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "110 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Динамический диапазон",
+        "value": "120 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA; coaxial",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "370 × 325 × 105 мм; ~9 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://mvert.ru/product/line-magnetic-lm-205-cd/",
+      "https://www.dagogo.com/line-magnetic-lm-215cd-cd-player-review/"
+    ],
+    "imageUrls": []
+  },
+  "4228": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Arte Forma Thalia — ламповый линейный предусилитель на квартете 6SN7: деревянный многослойный корпус, трансформаторы и лампы на верхней алюминиевой панели. Три RCA-входа, два RCA-выхода — для тракта без цифры на фасаде.</p>\n<ul><li>Лампы: 6SN7 ×4</li><li>Полоса 10 Гц–60 кГц</li><li>С/Ш 90 дБ</li><li>Rвх 100 кОм · усиление 10 дБ</li><li>Входы 3× RCA · выходы 2× RCA</li></ul>\n<aside><p><strong>6SN7.</strong> Двойной триод, классика линейных каскадов. Thalia — boutique Arte Forma; OEM-сайт скуден — цифры из карточки салона / объявлений с паспортом.</p></aside>\n<h2>HITL</h2>\n<p>Галерея OEM почти отсутствует; фото с US Audio Mart — без водяных знаков. Сверить лампы и опции (ступенчатый аттенюатор) в экземпляре.</p>",
+    "specs": [
+      {
+        "label": "Лампы",
+        "value": "6SN7 ×4",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Полоса",
+        "value": "10 Гц–60 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "С/Ш",
+        "value": "90 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Rвх",
+        "value": "100 кОм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Усиление",
+        "value": "10 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "3× RCA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "2× RCA",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.usaudiomart.com/details/649505537-arte-forma-thalia-6sn7-preamp-astounding-sonics-and-quality/",
+      "https://www.audiocircle.com/index.php?topic=120653.0"
+    ],
+    "imageUrls": [
+      "https://img.usaudiomart.com/uploads/large/2185625-fff9938d-arte-forma-thalia-6sn7-preamp-astounding-sonics-and-quality.jpg",
+      "https://img.usaudiomart.com/uploads/large/2185631-439acf72-arte-forma-thalia-6sn7-preamp-astounding-sonics-and-quality.jpg",
+      "https://img.usaudiomart.com/uploads/large/2185628-1ae4afb9-arte-forma-thalia-6sn7-preamp-astounding-sonics-and-quality.jpg",
+      "https://img.usaudiomart.com/uploads/large/2185632-2fbfe642-arte-forma-thalia-6sn7-preamp-astounding-sonics-and-quality.jpg",
+      "https://img.usaudiomart.com/uploads/large/2185629-1b73c445-arte-forma-thalia-6sn7-preamp-astounding-sonics-and-quality.jpg"
+    ]
+  },
+  "42916": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>47 Labs RST-38 — антивибрационная платформа под акустику или электронику: корпус с кварцевой засыпкой (шарики), низкий профиль 38 мм. Для стойки, где нужна развязка массы до 200 кг без «резиновых ножек из комплекта».</p>\n<ul><li>Наполнение: кварцевые частицы/шарики</li><li>Нагрузка до 200 кг</li><li>482 × 38 × 432 мм (Ш×В×Г)</li><li>Платформа под АС / компоненты</li></ul>\n<aside><p><strong>Не Gaincard.</strong> RST-38 в этой карточке — платформа, не усилитель Gaincard. Не путать с 47 Labs 4706/Power Humpty.</p></aside>\n<h2>HITL</h2>\n<p>Цифры — из исходной карточки салона. OEM-фото 47 Labs для RST редки; галерея может остаться 1 кадр — добить с витрины.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Антивибрационная платформа",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Наполнение",
+        "value": "Кварцевые частицы/шарики",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Нагрузка",
+        "value": "до 200 кг",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "482 × 38 × 432 мм",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://xn--80aannlcfckh.xn--p1ai/"
+    ],
+    "imageUrls": []
+  },
+  "26638": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Audio Physic AP Pre — предусилитель с пультом из эпохи, когда AP пробовала электронику рядом с акустикой. В открытых OEM-источниках 2020-х полноценного datasheet почти нет: карточка салона сохраняет только факт «пультовой предварительный усилитель».</p>\n<ul><li>Тип: линейный предусилитель с ДУ</li><li>Бренд: Audio Physic (Brilon)</li><li>OEM datasheet в открытом доступе не подтверждён</li><li>HITL: паспорт/наклейка экземпляра обязательны</li></ul>\n<aside><p><strong>Почему так скудно.</strong> Audio Physic сегодня — в первую очередь акустика; электроника AP Pre снята с активной линейки. Не выдумываем ватты и С/Ш без паспорта.</p></aside>\n<h2>HITL</h2>\n<p>Сфотографировать заднюю панель и снять надписи с шасси в салоне перед публикацией полных specs. Галерея OEM недоступна — 1 кадр до обновления.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Предусилитель с пультом ДУ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Audio Physic",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Статус",
+        "value": "Снят с активной OEM-линейки; паспорт HITL",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Примечание",
+        "value": "Полные электрические specs — только с экземпляра",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.audiophysic.com/"
+    ],
+    "imageUrls": []
+  },
+  "264548": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-120FS — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура 2-core twist. Разъём стороны наушников: MMCX. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-120FS</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: 2-core twist</li><li>Коннектор HP: MMCX</li><li>Длина: 0,8/1,2 м</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-120FS",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "MMCX",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "2-core twist",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "0,8/1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2"
+    ]
+  },
+  "264549": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-120FF — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура 2-core twist. Разъём стороны наушников: FitEar. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-120FF</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: 2-core twist</li><li>Коннектор HP: FitEar</li><li>Длина: 0,8/1,2 м</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-120FF",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "FitEar",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "2-core twist",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "0,8/1,2 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2"
+    ]
+  },
+  "264550": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-B120FS — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура balanced. Разъём стороны наушников: MMCX balanced. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-B120FS</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: balanced</li><li>Коннектор HP: MMCX balanced</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-B120FS",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "MMCX balanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "balanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2"
+    ]
+  },
+  "264551": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-B120FF — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура balanced. Разъём стороны наушников: FitEar balanced. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-B120FF</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: balanced</li><li>Коннектор HP: FitEar balanced</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-B120FF",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "FitEar balanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "balanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2"
+    ]
+  },
+  "264552": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-2B300FSH — сменный кабель для наушников/IEM: проводник PC-Triple C / PCOCC-A, фторопластовая изоляция в линейке SHC и структура L/R independent. Разъём стороны наушников: Shure / 2B300. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-2B300FSH</li><li>Проводник: PC-Triple C / PCOCC-A</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: L/R independent</li><li>Коннектор HP: Shure / 2B300</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-2B300FSH",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C / PCOCC-A",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "Shure / 2B300",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "L/R independent",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/15093/SAEC_SHC_U300FSH__59971__21453.1561716252.jpg?c=2"
+    ]
+  },
+  "264553": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-2B300FH65 — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура L/R independent. Разъём стороны наушников: 2B300 FH65. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-2B300FH65</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: L/R independent</li><li>Коннектор HP: 2B300 FH65</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-2B300FH65",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "2B300 FH65",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "L/R independent",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2"
+    ]
+  },
+  "264554": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-2B300FH80 — сменный кабель для наушников/IEM: проводник PC-Triple C, фторопластовая изоляция в линейке SHC и структура L/R independent. Разъём стороны наушников: 2B300 FH80. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-2B300FH80</li><li>Проводник: PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: L/R independent</li><li>Коннектор HP: 2B300 FH80</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-2B300FH80",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "2B300 FH80",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "L/R independent",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2"
+    ]
+  },
+  "264555": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-U300FSH — сменный кабель для наушников/IEM: проводник PCOCC-A (серия U300), фторопластовая изоляция в линейке SHC и структура L/R independent twist. Разъём стороны наушников: Shure. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-U300FSH</li><li>Проводник: PCOCC-A (серия U300)</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: L/R independent twist</li><li>Коннектор HP: Shure</li><li>Длина: 1,5/3,0 м тип.</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-U300FSH",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PCOCC-A (серия U300)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "Shure",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "L/R independent twist",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,5/3,0 м тип.",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/15093/SAEC_SHC_U300FSH__59971__21453.1561716252.jpg?c=2"
+    ]
+  },
+  "264556": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-U300FH65 — сменный кабель для наушников/IEM: проводник PCOCC-A / PC-Triple C, фторопластовая изоляция в линейке SHC и структура L/R independent. Разъём стороны наушников: U300 FH65. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-U300FH65</li><li>Проводник: PCOCC-A / PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: L/R independent</li><li>Коннектор HP: U300 FH65</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-U300FH65",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PCOCC-A / PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "U300 FH65",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "L/R independent",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/15093/SAEC_SHC_U300FSH__59971__21453.1561716252.jpg?c=2"
+    ]
+  },
+  "264557": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>SAEC SHC-U300FH80 — сменный кабель для наушников/IEM: проводник PCOCC-A / PC-Triple C, фторопластовая изоляция в линейке SHC и структура L/R independent. Разъём стороны наушников: U300 FH80. Для рекабла, где важны сепарация каналов и низкая ёмкость, а не «комплектный шнур».</p>\n<ul><li>Модель: SHC-U300FH80</li><li>Проводник: PCOCC-A / PC-Triple C</li><li>Изоляция: фторопласт (серия SHC-120 по OEM)</li><li>Структура: L/R independent</li><li>Коннектор HP: U300 FH80</li><li>Длина: HITL длина</li></ul>\n<aside><p><strong>PC-Triple C.</strong> Кованая медь Continuous Crystal (FCM): SAEC заявляет снижение границ зёрен вдоль проводника. На SHC-120 — 0,06 мм², Ø ~2×4 мм, олефиновый sheath.</p></aside>\n<h2>HITL</h2>\n<p>OEM-фото часто одно на семейство; галерея может остаться 1–2 кадра. Сверить штекер плеера (3,5 / 6,3 / XLR) и длину на бирке. Источник: saec-com.co.jp SHC-120 и дилерские карточки U300/2B300.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SHC-U300FH80",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PCOCC-A / PC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Коннектор наушников",
+        "value": "U300 FH80",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Структура",
+        "value": "L/R independent",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "HITL длина",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "SAEC SHC",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://saec-com.co.jp/product/shc-120fsshc-120ff",
+      "https://www.shoppinginjapan.net/saec-shc-u300fsh-3-0m-li-cable-for-shure"
+    ],
+    "imageUrls": [
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
+      "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/15093/SAEC_SHC_U300FSH__59971__21453.1561716252.jpg?c=2"
+    ]
+  },
+  "264042": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive HD 650 PLUG — коннектор/переходник для наушников под Sennheiser HD 650 / 600 family. Аксессуар AR для смены разъёма без полной замены кабеля; материал контактов и посадка — по стандарту AR Tellurium/Rhodium линейки.</p>\n<ul><li>Модель: HD 650 PLUG</li><li>Назначение: Sennheiser HD 650 / 600 family</li><li>Бренд: Acoustic Revive</li><li>HITL: распиновка и посадка на конкретную модель HP</li></ul>\n<aside><p><strong>Не кабель.</strong> Это plug/connector SKU, не полный SHC-кабель. OEM-фото минимальны — текст+specs важнее галереи.</p></aside>\n<h2>HITL</h2>\n<p>Проверить совместимость с чашкой/кабелем клиента. Галерея может остаться 1 кадр.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Коннектор для наушников",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "HD 650 PLUG",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Sennheiser HD 650 / 600 family",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Acoustic Revive",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": []
+  },
+  "264043": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive HD-800 PLUG — коннектор/переходник для наушников под Sennheiser HD 800 family. Аксессуар AR для смены разъёма без полной замены кабеля; материал контактов и посадка — по стандарту AR Tellurium/Rhodium линейки.</p>\n<ul><li>Модель: HD-800 PLUG</li><li>Назначение: Sennheiser HD 800 family</li><li>Бренд: Acoustic Revive</li><li>HITL: распиновка и посадка на конкретную модель HP</li></ul>\n<aside><p><strong>Не кабель.</strong> Это plug/connector SKU, не полный SHC-кабель. OEM-фото минимальны — текст+specs важнее галереи.</p></aside>\n<h2>HITL</h2>\n<p>Проверить совместимость с чашкой/кабелем клиента. Галерея может остаться 1 кадр.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Коннектор для наушников",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "HD-800 PLUG",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Sennheiser HD 800 family",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Acoustic Revive",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": []
+  },
+  "264044": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Ultrasone/Sony PLUG — коннектор/переходник для наушников под Ultrasone / Sony pinout — HITL. Аксессуар AR для смены разъёма без полной замены кабеля; материал контактов и посадка — по стандарту AR Tellurium/Rhodium линейки.</p>\n<ul><li>Модель: Ultrasone/Sony PLUG</li><li>Назначение: Ultrasone / Sony pinout — HITL</li><li>Бренд: Acoustic Revive</li><li>HITL: распиновка и посадка на конкретную модель HP</li></ul>\n<aside><p><strong>Не кабель.</strong> Это plug/connector SKU, не полный SHC-кабель. OEM-фото минимальны — текст+specs важнее галереи.</p></aside>\n<h2>HITL</h2>\n<p>Проверить совместимость с чашкой/кабелем клиента. Галерея может остаться 1 кадр.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Коннектор для наушников",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "Ultrasone/Sony PLUG",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Ultrasone / Sony pinout — HITL",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Acoustic Revive",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": []
+  },
+  "264045": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive SHURE Headphone Plug — коннектор/переходник для наушников под Shure detachable. Аксессуар AR для смены разъёма без полной замены кабеля; материал контактов и посадка — по стандарту AR Tellurium/Rhodium линейки.</p>\n<ul><li>Модель: SHURE Headphone Plug</li><li>Назначение: Shure detachable</li><li>Бренд: Acoustic Revive</li><li>HITL: распиновка и посадка на конкретную модель HP</li></ul>\n<aside><p><strong>Не кабель.</strong> Это plug/connector SKU, не полный SHC-кабель. OEM-фото минимальны — текст+specs важнее галереи.</p></aside>\n<h2>HITL</h2>\n<p>Проверить совместимость с чашкой/кабелем клиента. Галерея может остаться 1 кадр.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Коннектор для наушников",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модель",
+        "value": "SHURE Headphone Plug",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Совместимость",
+        "value": "Shure detachable",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Бренд",
+        "value": "Acoustic Revive",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/"
+    ],
+    "imageUrls": []
+  },
+  "264363": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Lineflux (RCA) — межблок Flux без суффикса NCF: solid-core α-OCC, двойной экран, PE, разъёмы carbon/stainless CF-102. Сосед Lineflux NCF на сайте; HITL — есть ли NCF в разъёмах экземпляра.</p>\n<ul><li>Solid-core α-OCC</li><li>Double-layer shielding</li><li>High-grade PE</li><li>Ø ~13 мм · 1,2 м тип.</li><li>CF-102 RCA (NCF — на NCF SKU)</li></ul>\n<aside><p><strong>Flux vs NCF.</strong> Базовый Lineflux и Lineflux NCF — разные SKU. Не подменять фото NCF без пометки.</p></aside>\n<h2>HITL</h2>\n<p>OEM часто 1 pack-shot; галерея 1–2 допустима при полных specs.</p>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный RCA Lineflux",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "Solid-core α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экран",
+        "value": "Double-layer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Диэлектрик",
+        "value": "High-grade PE",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "CF-102 RCA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м типовая",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/lineflux-ncf-rca/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/LindFlux-NCF.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/1-analog-116_clip.jpg"
+    ]
+  },
+  "264364": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Lineflux (XLR) — балансный Flux: solid-core α-OCC, двойной экран, CF-601M/602F. NCF-версия использует CF-601M NCF / CF-602F NCF — сверить бирку.</p>\n<ul><li>Solid-core α-OCC</li><li>Double-layer shielding</li><li>PE + nano ceramic/carbon sheath (NCF SKU)</li><li>XLR CF-601/602</li><li>1,2 м типовая пара</li></ul>\n<aside><p><strong>NCF в XLR.</strong> На NCF-версии компаунд в пинах и корпусе; на базовом Lineflux — без NCF. HITL обязателен.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Межблочный XLR Lineflux",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "Solid-core α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Экран",
+        "value": "Double-layer",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "CF-601M/602F XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Длина",
+        "value": "1,2 м типовая",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/lineflux-ncf-xlr/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/3144_Lineflux-XLR_NCF-3.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/LindFlux-NCF.jpg"
+    ]
+  },
+  "264387": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Speakerflux-04 — акустический Flux меньшей длины/артикула «04» относительно «06»: α-OCC (6×43×0,18 мм+PE)×2, CF-201/202. HITL: точная длина пары в салоне.</p>\n<ul><li>α-OCC Flux speaker</li><li>(6×43×0,18 мм + PE)×2</li><li>CF-201 / CF-202</li><li>Артикул 04 — длина HITL</li></ul>\n<aside><p><strong>04 vs 06.</strong> Разная длина/SKU в каталоге Furutech; конструкция жил та же Flux. Галерея может делить hero с Speakerflux NCF.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический Speakerflux",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "(6×43×0,18 мм α-OCC + PE)×2",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "CF-201 / CF-202",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Артикул",
+        "value": "04 — длина HITL",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product/speakerflux-ncf/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/08/3403_Speakerflux_NCF.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-N1-FP-201.jpg"
+    ]
+  },
+  "264390": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Speaker Ref.III-04 BW — bi-wire акустика Reference III: α-OCC, air-foamed PE, GC-303, FP-201. Артикул 04 BW — длина/bi-wire HITL.</p>\n<ul><li>Reference III bi-wire</li><li>α-OCC · GC-303</li><li>FP-201 spade (типично)</li><li>Артикул 04 BW</li></ul>\n<aside><p><strong>Bi-wire.</strong> Отдельные жилы ВЧ/НЧ; не путать с single-wire Speaker Reference III-N1.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Акустический Reference III bi-wire",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модули",
+        "value": "Formula GC-303",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъёмы",
+        "value": "FP-201 (тип.)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Артикул",
+        "value": "04 BW — HITL длина",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/ja/product/speaker-reference-iii/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-SBW.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Speaker-Ref.III-N1-FP-201.jpg"
+    ]
+  },
+  "264373": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Digiflux (XLR) — цифровой кабель Flux/Digiflux: α-OCC, экранирование и разъём XLR AES. Для AES/коаксиала между транспортом и ЦАП; HITL по импедансу и длине.</p>\n<ul><li>Серия Digiflux</li><li>Проводник α-OCC</li><li>Разъём: XLR AES</li><li>HITL: 110 Ом AES vs 75 Ом BNC</li></ul>\n<aside><p><strong>Цифра ≠ аналог.</strong> Digiflux не Lineflux: другая геометрия под цифровой импеданс. OEM pack-shot часто один.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Цифровой кабель Digiflux (XLR)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъём",
+        "value": "XLR AES",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Furutech Digiflux",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product-category/finished-cables/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/3149_Digiflux_NCFRCA.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/3150_Digiflux_NCFXLR.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Digi-Ref.III-N1.jpg"
+    ]
+  },
+  "264374": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Furutech Digiflux (BNC) — цифровой кабель Flux/Digiflux: α-OCC, экранирование и разъём BNC 75 Ω. Для AES/коаксиала между транспортом и ЦАП; HITL по импедансу и длине.</p>\n<ul><li>Серия Digiflux</li><li>Проводник α-OCC</li><li>Разъём: BNC 75 Ω</li><li>HITL: 110 Ом AES vs 75 Ом BNC</li></ul>\n<aside><p><strong>Цифра ≠ аналог.</strong> Digiflux не Lineflux: другая геометрия под цифровой импеданс. OEM pack-shot часто один.</p></aside>",
+    "specs": [
+      {
+        "label": "Тип",
+        "value": "Цифровой кабель Digiflux (BNC)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "α-OCC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Разъём",
+        "value": "BNC 75 Ω",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Серия",
+        "value": "Furutech Digiflux",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://furutech.com/product-category/finished-cables/"
+    ],
+    "imageUrls": [
+      "https://furutech.com/wp-content/uploads/2025/01/3149_Digiflux_NCFRCA.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/3150_Digiflux_NCFXLR.jpg",
+      "https://furutech.com/wp-content/uploads/2025/01/Digi-Ref.III-N1.jpg"
+    ]
+  },
+  "263969": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive RCA-1.0 TripleC-FM — кабель серии TripleC-FM (RCA line): PC-TripleC, PTFE, Fine Met Beads и CSF. Для тракта AR без перехода на Absolute; точная длина и разъёмы — HITL.</p>\n<ul><li>Модель: RCA-1.0 TripleC-FM</li><li>Проводник: PC-TripleC</li><li>Тип: RCA line</li><li>Fine Met Beads®</li><li>HITL: длина пары</li></ul>\n<aside><p><strong>TripleC vs Absolute.</strong> Absolute — PC-TripleC/EX (Ag на Cu); TripleC-FM — базовый PC-TripleC. Не смешивать фото флагмана без пометки.</p></aside>\n<h2>HITL</h2>\n<p>OEM/дилер часто 1–2 кадра на семейство; текст+specs достаточны при gal&lt;4.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "RCA-1.0 TripleC-FM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "RCA line",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://acousticrevive.bg/"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/RCA-1.0tripleC-FM-scaled.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/XLR-1.0tripleC-FM.jpg"
+    ]
+  },
+  "263972": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive XLR-1.0 TripleC-FM — кабель серии TripleC-FM (XLR line): PC-TripleC, PTFE, Fine Met Beads и CSF. Для тракта AR без перехода на Absolute; точная длина и разъёмы — HITL.</p>\n<ul><li>Модель: XLR-1.0 TripleC-FM</li><li>Проводник: PC-TripleC</li><li>Тип: XLR line</li><li>Fine Met Beads®</li><li>HITL: длина пары</li></ul>\n<aside><p><strong>TripleC vs Absolute.</strong> Absolute — PC-TripleC/EX (Ag на Cu); TripleC-FM — базовый PC-TripleC. Не смешивать фото флагмана без пометки.</p></aside>\n<h2>HITL</h2>\n<p>OEM/дилер часто 1–2 кадра на семейство; текст+specs достаточны при gal&lt;4.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "XLR-1.0 TripleC-FM",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "XLR line",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://acousticrevive.bg/"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/RCA-1.0tripleC-FM-scaled.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/XLR-1.0tripleC-FM.jpg"
+    ]
+  },
+  "263982": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive SPC-Triple C — кабель серии TripleC-FM (speaker): PC-TripleC, PTFE, Fine Met Beads и CSF. Для тракта AR без перехода на Absolute; точная длина и разъёмы — HITL.</p>\n<ul><li>Модель: SPC-Triple C</li><li>Проводник: PC-TripleC</li><li>Тип: speaker</li><li>Fine Met Beads®</li><li>HITL: длина пары</li></ul>\n<aside><p><strong>TripleC vs Absolute.</strong> Absolute — PC-TripleC/EX (Ag на Cu); TripleC-FM — базовый PC-TripleC. Не смешивать фото флагмана без пометки.</p></aside>\n<h2>HITL</h2>\n<p>OEM/дилер часто 1–2 кадра на семейство; текст+specs достаточны при gal&lt;4.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SPC-Triple C",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "speaker",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://acousticrevive.bg/"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/RCA-1.0tripleC-FM-scaled.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/XLR-1.0tripleC-FM.jpg"
+    ]
+  },
+  "263983": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive SPC-Triple C (4) — кабель серии TripleC-FM (speaker 4-core): PC-TripleC, PTFE, Fine Met Beads и CSF. Для тракта AR без перехода на Absolute; точная длина и разъёмы — HITL.</p>\n<ul><li>Модель: SPC-Triple C (4)</li><li>Проводник: PC-TripleC</li><li>Тип: speaker 4-core</li><li>Fine Met Beads®</li><li>HITL: длина пары</li></ul>\n<aside><p><strong>TripleC vs Absolute.</strong> Absolute — PC-TripleC/EX (Ag на Cu); TripleC-FM — базовый PC-TripleC. Не смешивать фото флагмана без пометки.</p></aside>\n<h2>HITL</h2>\n<p>OEM/дилер часто 1–2 кадра на семейство; текст+specs достаточны при gal&lt;4.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "SPC-Triple C (4)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "speaker 4-core",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://acousticrevive.bg/"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/RCA-1.0tripleC-FM-scaled.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/XLR-1.0tripleC-FM.jpg"
+    ]
+  },
+  "264000": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Analog-1.2 TripleC FM-B — кабель серии TripleC-FM (phono balanced): PC-TripleC, PTFE, Fine Met Beads и CSF. Для тракта AR без перехода на Absolute; точная длина и разъёмы — HITL.</p>\n<ul><li>Модель: Analog-1.2 TripleC FM-B</li><li>Проводник: PC-TripleC</li><li>Тип: phono balanced</li><li>Fine Met Beads®</li><li>HITL: длина пары</li></ul>\n<aside><p><strong>TripleC vs Absolute.</strong> Absolute — PC-TripleC/EX (Ag на Cu); TripleC-FM — базовый PC-TripleC. Не смешивать фото флагмана без пометки.</p></aside>\n<h2>HITL</h2>\n<p>OEM/дилер часто 1–2 кадра на семейство; текст+specs достаточны при gal&lt;4.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "Analog-1.2 TripleC FM-B",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "phono balanced",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://acousticrevive.bg/"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/RCA-1.0tripleC-FM-scaled.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/XLR-1.0tripleC-FM.jpg"
+    ]
+  },
+  "264001": {
+    "meagerWave": "meager-w3-2026-11",
+    "descriptionHtml": "<p>Acoustic Revive Analog-1.2 TripleC FM-BL — кабель серии TripleC-FM (phono balanced L): PC-TripleC, PTFE, Fine Met Beads и CSF. Для тракта AR без перехода на Absolute; точная длина и разъёмы — HITL.</p>\n<ul><li>Модель: Analog-1.2 TripleC FM-BL</li><li>Проводник: PC-TripleC</li><li>Тип: phono balanced L</li><li>Fine Met Beads®</li><li>HITL: длина пары</li></ul>\n<aside><p><strong>TripleC vs Absolute.</strong> Absolute — PC-TripleC/EX (Ag на Cu); TripleC-FM — базовый PC-TripleC. Не смешивать фото флагмана без пометки.</p></aside>\n<h2>HITL</h2>\n<p>OEM/дилер часто 1–2 кадра на семейство; текст+specs достаточны при gal&lt;4.</p>",
+    "specs": [
+      {
+        "label": "Модель",
+        "value": "Analog-1.2 TripleC FM-BL",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Проводник",
+        "value": "PC-TripleC",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тип",
+        "value": "phono balanced L",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Шумоподавление",
+        "value": "Fine Met Beads®",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://acousticrevive.jp/",
+      "https://acousticrevive.bg/"
+    ],
+    "imageUrls": [
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/RCA-1.0tripleC-FM-scaled.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/LINE-1.0R-TripleC-FM.jpg",
+      "https://acousticrevive.bg/wp-content/uploads/2024/04/XLR-1.0tripleC-FM.jpg"
+    ]
+  }
+}

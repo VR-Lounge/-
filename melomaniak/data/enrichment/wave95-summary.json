@@ -1,0 +1,100 @@
+{
+  "at": "2026-11-15T21:47:07Z",
+  "wave": 95,
+  "before": {
+    "multi": 1355,
+    "padded": 164,
+    "oneshot": 368
+  },
+  "after": {
+    "multi": 1358,
+    "padded": 161,
+    "oneshot": 368
+  },
+  "cleared": [
+    {
+      "id": 16864,
+      "name": "Ultimate Audio MC845-AASE",
+      "unique": 6
+    },
+    {
+      "id": 15724,
+      "name": "Line Magnetic LM-215CD",
+      "unique": 4
+    },
+    {
+      "id": 16180,
+      "name": "Trigon Prince (silver)",
+      "unique": 4
+    }
+  ],
+  "skipped": [
+    {
+      "id": 4230,
+      "reason": "Jadeitte — HITL, no new sources"
+    },
+    {
+      "id": 264126,
+      "reason": "MTP-2 — HITL, no new sources"
+    },
+    {
+      "id": 15742,
+      "reason": "MC100-CD stuck at 3 unique angles"
+    },
+    {
+      "id": 15864,
+      "reason": "4706-50 — eBay pack incomplete / model-label caution"
+    },
+    {
+      "id": 262549,
+      "reason": "Sitara — Sitara_25 finish mix risk"
+    }
+  ],
+  "hitl": [
+    4230,
+    264126
+  ],
+  "promote": {
+    "at": "2026-11-15T21:43:59Z",
+    "results": [
+      {
+        "id": 16864,
+        "before": 5,
+        "after": 6,
+        "unique": 6,
+        "files": [
+          "assets/enriched/16864/16864_w95_00.jpg",
+          "assets/enriched/16864/16864_w95_01.jpg",
+          "assets/enriched/16864/16864_w95_02.jpg",
+          "assets/enriched/16864/16864_w95_03.jpg",
+          "assets/enriched/16864/16864_w95_04.jpg",
+          "assets/enriched/16864/16864_w95_05.jpg"
+        ]
+      },
+      {
+        "id": 15724,
+        "before": 4,
+        "after": 4,
+        "unique": 4,
+        "files": [
+          "assets/enriched/15724/15724_w95_00.jpg",
+          "assets/enriched/15724/15724_w95_01.jpg",
+          "assets/enriched/15724/15724_w95_02.jpg",
+          "assets/enriched/15724/15724_w95_03.jpg"
+        ]
+      },
+      {
+        "id": 16180,
+        "before": 4,
+        "after": 4,
+        "unique": 4,
+        "files": [
+          "assets/enriched/16180/16180_w95_00.jpg",
+          "assets/enriched/16180/16180_w95_01.jpg",
+          "assets/enriched/16180/16180_w95_02.jpg",
+          "assets/enriched/16180/16180_w95_03.jpg"
+        ]
+      }
+    ]
+  }
+}

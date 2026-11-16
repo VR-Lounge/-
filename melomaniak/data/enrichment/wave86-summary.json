@@ -1,0 +1,119 @@
+{
+  "at": "2026-11-15T19:22:17Z",
+  "wave": 86,
+  "counts": {
+    "true_multi_angle": 1328,
+    "padded": 187,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 3,
+  "cleared": [
+    {
+      "id": 261859,
+      "name": "Навесная акустика PARADIGM Surround 1 Black ( paradigm surround 1 black )",
+      "unique": 4,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/261859/261859_w86_00.jpg",
+        "assets/enriched/261859/261859_w86_01.jpg",
+        "assets/enriched/261859/261859_w86_02.jpg",
+        "assets/enriched/261859/261859_w86_03.jpg"
+      ]
+    },
+    {
+      "id": 271553,
+      "name": "Центральный громкоговоритель KEF Q250c",
+      "unique": 4,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/271553/271553_w86_00.jpg",
+        "assets/enriched/271553/271553_w86_01.jpg",
+        "assets/enriched/271553/271553_w86_02.jpg",
+        "assets/enriched/271553/271553_w86_03.jpg"
+      ]
+    },
+    {
+      "id": 261845,
+      "name": "Портативная акустика, минисистемы PARADIGM PW 300 Black ( paradigm pw 300 black ",
+      "unique": 4,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/261845/261845_w86_00.jpg",
+        "assets/enriched/261845/261845_w86_01.jpg",
+        "assets/enriched/261845/261845_w86_02.jpg",
+        "assets/enriched/261845/261845_w86_03.jpg"
+      ]
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "skip unless new sources"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real",
+      "note": "skip unless new sources"
+    }
+  ],
+  "top_remaining_padded": [
+    {
+      "id": 4230,
+      "price": 380000,
+      "uq": 2,
+      "name": "предусилитель Arte Forma Jadeitte 101D ( arte forma jad"
+    },
+    {
+      "id": 15742,
+      "price": 320000,
+      "uq": 3,
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate"
+    },
+    {
+      "id": 262549,
+      "price": 320000,
+      "uq": 2,
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic s"
+    },
+    {
+      "id": 16864,
+      "price": 280000,
+      "uq": 2,
+      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ult"
+    },
+    {
+      "id": 16788,
+      "price": 270000,
+      "uq": 2,
+      "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )"
+    },
+    {
+      "id": 16852,
+      "price": 250000,
+      "uq": 2,
+      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate"
+    },
+    {
+      "id": 16786,
+      "price": 244000,
+      "uq": 2,
+      "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )"
+    },
+    {
+      "id": 40251,
+      "price": 218365,
+      "uq": 2,
+      "name": "саундбар Paradigm D?cor 1C (75-89 дюймов) ( paradigm d?"
+    }
+  ],
+  "notes": [
+    "Skipped Jadeitte 4230 / MTP-2 264126 (no new sources).",
+    "Rejected polluted high-uq galleries: MC100 (MCD-550), hpa200 (T+A/Melos), SUS-020 (wrong terminations).",
+    "Surround 1 Black cleared via Paradigm OEM multi-angle pack.",
+    "KEF Q250c satin black: live + vplak + Uni-Q detail (rejected lifestyle/walnut/white).",
+    "PW 300 Black: live PW300-labeled composite + OEM front/controls/logo (rejected white pollution + PW600 group)."
+  ]
+}

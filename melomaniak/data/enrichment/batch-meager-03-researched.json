@@ -1,0 +1,291 @@
+{
+  "4334": {
+    "meagerWave": "meager-flagships-2026-11",
+    "descriptionHtml": "<p>Precide Heil AMT Kithara — напольная акустика с модулем Heil <abbr title=\"Air Motion Transformer\">AMT</abbr> и 25-см басовиком, направленным вверх: фазовое согласование ВЧ/НЧ по задумке Precide, а не «башня с твитером на фасаде».</p>\n<ul><li>Heil A.M.T. модуль 650–23 000 Гц</li><li>Бас 25 см · 28–700 Гц</li><li>Суммарно 28–23 000 Гц ±5 дБ</li><li>Чувствительность 94 дБ (1 Вт/1 м)</li><li>Импеданс мин. 4 Ом</li><li>Масса ≈ 35 кг (+ плита ≈ 7 кг)</li></ul>\n<aside><p><strong>Что значит AMT здесь.</strong> Тот же принцип Air Motion Transformer доктора Оскара Хейла, что и в ERGO AMT: складчатая мембрана разгоняет воздух ~в 5 раз быстрее своего хода. В Kithara AMT отвечает за середину/верх; бас — отдельный динамик вверх, чтобы стыковать фазу.</p></aside>\n<h2>Отделка и установка</h2>\n<p>По Precide A+: шпон walnut / cherry / black / maple; напольная плита — опция под шипы или колёса. Для салона — слушать в комнате с запасом по току усилителя (мин. 4 Ом), а не гнаться за «ваттами на бумаге».</p>",
+    "specs": [
+      {
+        "label": "Рабочий диапазон",
+        "value": "28–23 000 Гц ±5 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Модуль A.M.T.",
+        "value": "650–23 000 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Басовый динамик",
+        "value": "25 см; 28–700 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "94 дБ, 1 Вт/1 м",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Импеданс",
+        "value": "минимум 4 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "≈ 35 кг; плита ≈ 7 кг (опция)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Отделка",
+        "value": "Walnut / cherry / black / maple",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://precideaplus.ch/kithara-en/"
+    ],
+    "imageUrls": [
+      "https://precideaplus.ch/wp-content/uploads/2023/01/Kithara_HT250dpi.jpg",
+      "https://precideaplus.ch/wp-content/uploads/2023/01/Kithara_m_boden250dpi-548x1024.jpg",
+      "https://precideaplus.ch/wp-content/uploads/2023/01/i_Kithara_boden250dpi.jpg"
+    ]
+  },
+  "273552": {
+    "meagerWave": "meager-flagships-2026-11",
+    "descriptionHtml": "<p>PS Audio BHK Signature 600 — моноблок Bascom H. King: ламповый вход, MOSFET-выход, полностью балансный тракт. Запас по току для тяжёлой акустики, а не «цифра на коробке».</p>\n<ul><li>≥ 600 Вт / 8 Ом</li><li>≥ 1000 Вт / 4 Ом</li><li>Лампа на входе + MOSFET</li><li>True balanced XLR</li><li>Усиление 26,0 / 30,5 дБ</li><li>49 кг</li></ul>\n<aside><p><strong>BHK.</strong> Bascom H. King — конструктор гибридных усилителей PS Audio Signature. Здесь гибрид не маркетинг: вакуумный входной каскад и мощный MOSFET-выход в балансной схеме.</p></aside>\n<h2>Питание и выводы</h2>\n<p>По PS Audio: трансформатор ~1,6 кВА, банк ~336 000 мкФ; RCA/XLR; две пары клемм; триггер 12 В. Нагрузка 2 Ом — на музыкальных транзиентах. HITL: статус производства/наличия уточнять (линейка снималась с нового выпуска).</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "≥ 600 Вт / 8 Ом; ≥ 1000 Вт / 4 Ом (1 кГц, 1% THD)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Усиление",
+        "value": "26,0 / 30,5 дБ ±0,5 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Частотная характеристика",
+        "value": "10 Гц–20 кГц ±0,1 дБ; 10 Гц–100 кГц +0,1/−3,0 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "RCA, XLR",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "17,1 × 11,2 × 14″ (глубина с разъёмами ~17,5″)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "49 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.psaudio.com/products/bhk-mono-600-power-amplifier",
+      "https://www.psaudio.com/pages/specifications-bhk-mono-600-power-amplifier"
+    ],
+    "imageUrls": [
+      "https://www.psaudio.com/cdn/shop/files/600-4.jpg?v=1758547855&width=3840",
+      "https://www.psaudio.com/cdn/shop/products/Silver-front.png?v=1758488912&width=3840",
+      "https://www.psaudio.com/cdn/shop/files/Silver-side-768x768.png?v=1674747314&width=3840",
+      "https://www.psaudio.com/cdn/shop/files/5BCADC71-768x576.png?v=1674747336&width=3840"
+    ]
+  },
+  "272602": {
+    "meagerWave": "meager-flagships-2026-11",
+    "descriptionHtml": "<p>Clearaudio Reference Jubilee — прецизионный проигрыватель: шасси дерево/алюминий, POM-диск 50 мм, магнитная CMB и развязанный 24 В двигатель с оптическим контролем скорости. Для винилового тракта, где важны скорость и тишина механики.</p>\n<ul><li>33⅓ / 45 / 78 об/мин</li><li>Детонация &lt; ±0,05 %</li><li>Диск POM 50 мм</li><li>CMB magnetic bearing</li><li>Двигатель 24 В DC, ironless</li><li>≈ 22 кг без тонарма</li></ul>\n<aside><p><strong>CMB.</strong> Clearaudio Magnetic Bearing — магнитная развязка/опора, снижающая механический шум подшипника. Не картридж и не тонарм: элемент механики диска.</p></aside>\n<h2>Управление</h2>\n<p>По Clearaudio: гибридный контроллер с 12-битным ЦАП опорного напряжения и аналоговым моторным трактом; автокалибровка. Габариты ≈ 495 × 343 × 180 мм. Тонарм/картридж — отдельно (HITL комплект).</p>",
+    "specs": [
+      {
+        "label": "Скорости",
+        "value": "33⅓, 45 и 78 об/мин",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Детонация",
+        "value": "< ±0,05 %",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Двигатель",
+        "value": "24 В DC, ironless core, ременной привод",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Диск",
+        "value": "50 мм POM, динамически сбалансирован",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "≈ 495 × 343 × 180 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "≈ 22 кг без тонарма и БП",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Потребление",
+        "value": "макс. 5,0 Вт; работа 2,1 Вт; выкл. 1,8 Вт",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.clearaudio.de/en/produkt-laufwerk-reference-jubilee/"
+    ],
+    "imageUrls": [
+      "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det6-20-10-NEW.jpg?resize=1976",
+      "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det3-20-10-NEW.jpg?resize=1976",
+      "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det7-20-10.jpg?resize=1934",
+      "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det5-20-10-NEW.jpg?resize=1976",
+      "https://media.canvayo.com/uploads/sites/d4fd7a65cf63ff4ae78c61cfd8aa64ef/2026/05/LW-Jubilee-Det1-20-10-NEW.jpg?resize=1976"
+    ]
+  },
+  "273961": {
+    "meagerWave": "meager-flagships-2026-11",
+    "descriptionHtml": "<p>T+A P 3100 HV — полностью дискретный симметричный предусилитель HV-серии: вход, громкость и выход без разделительных конденсаторов, раздельные аналоговый и цифровой БП с отдельными сетевыми вводами.</p>\n<ul><li>Симметричная дискретная схемотехника</li><li>DC-связь сигнального тракта</li><li>4 × XLR + 2 × RCA</li><li>С/Ш 108/112 дБ</li><li>THD &lt; 0,001 %</li><li>17 × 46 × 46 см · 28 кг</li></ul>\n<aside><p><strong>HV-серия.</strong> High Voltage — подход T+A к повышенным напряжениям питания аналоговых каскадов ради запаса по динамике и линейности. Не «высокий вольтаж сети», а архитектура усилительных узлов.</p></aside>\n<h2>Коммутация</h2>\n<p>По PDF T+A: Pre Out RCA до 9,5 В / XLR до 19,6 В; recorder; вход 4 с surround pass-through; опция MM/MC phono; пульт F 3001. Полоса 0,5 Гц–300 кГц (0/−3 дБ). Standby &lt; 0,5 Вт.</p>",
+    "specs": [
+      {
+        "label": "Частотная характеристика",
+        "value": "0,5 Гц–300 кГц (0/−3 дБ)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Отношение сигнал/шум",
+        "value": "108/112 дБ",
+        "source": "manufacturer"
+      },
+      {
+        "label": "THD",
+        "value": "< 0,001 %",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Входы",
+        "value": "4 × XLR, 2 × RCA; recorder; surround pass-through на вх. 4",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "Pre Out RCA макс. 9,5 В; XLR макс. 19,6 В",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "17 × 46 × 46 см; 28 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.ta-hifi.de/wp-content/uploads/P_3100_HV_GB_web.pdf",
+      "https://www.ta-hifi.de/en/audiosystems/hv-series/p-3100-hv-pre-amplifier-2/"
+    ],
+    "imageUrls": [
+      "https://www.ta-hifi.de/wp-content/uploads/p3100_slider_vorverstaerker.jpg",
+      "https://www.ta-hifi.de/wp-content/uploads/p3100_teaser_vorverstaerker.jpg",
+      "https://www.ta-hifi.de/wp-content/uploads/p_3100_platine_cards_600_700.jpg",
+      "https://www.ta-hifi.de/wp-content/uploads/p_3100_innen_cards_600_700.jpg",
+      "https://www.ta-hifi.de/wp-content/uploads/p3100_slider_rueck.jpg"
+    ]
+  },
+  "273987": {
+    "meagerWave": "meager-flagships-2026-11",
+    "descriptionHtml": "<p>T+A MP 3000 HV MKII — мульти-источник HV: CD-транспорт, стриминг, FM/DAB+, Bluetooth и PCM-ЦАП с Double Differential Quadruple Converter (4 ЦАП на канал). Центр цифрового тракта салона без «коробки со всем сразу» в плохом смысле — с разделением БП и экранированием отсеков.</p>\n<ul><li>CD / CD-R / CD-RW / CD Text</li><li>Streaming PCM до 192 кГц / 24 бит</li><li>LAN + WLAN</li><li>FM · DAB/DAB+ · Bluetooth aptX</li><li>ЦАП: 4× на канал</li><li>17 × 46 × 46 см · 26 кг</li></ul>\n<aside><p><strong>Quadruple Converter.</strong> У T+A — четыре ЦАП на канал в дифференциальной схеме для снижения шума и повышения линейности преобразования. Не маркетинговый «чип», а архитектура цифро-аналогового тракта HV.</p></aside>\n<h2>Сеть и управление</h2>\n<p>По материалам T+A: Tidal / Deezer / Qobuz / Airable / Roon Ready; MusicNavigator; FD 100. Аналоговые RCA/XLR и цифровой S/PDIF. HITL: сверить версию MKII и опции с наличием.</p>",
+    "specs": [
+      {
+        "label": "CD",
+        "value": "CD/DA, CD-R, CD-RW, CD Text",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Streaming",
+        "value": "PCM 32–192 кГц, 16/24 бит",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Сеть",
+        "value": "LAN 10/100; WLAN 802.11 b/g/n",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Тюнер",
+        "value": "FM 87,5–108 МГц; DAB/DAB+ 168–240 МГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "ЦАП",
+        "value": "Double Differential Quadruple Converter; 4 ЦАП/канал",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Выходы",
+        "value": "RCA и XLR; S/PDIF coaxial",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "17 × 46 × 46 см; 26 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.ta-hifi.de/wp-content/uploads/um_mp3000hv_mkii_en.pdf",
+      "https://www.ta-hifi.de/wp-content/uploads/MP_3000_HV_MK_II_4_Seiter_AD.pdf"
+    ],
+    "imageUrls": []
+  },
+  "270878": {
+    "meagerWave": "meager-flagships-2026-11",
+    "descriptionHtml": "<p>Hegel H600 — опорный интегральник: dual-mono, SoundEngine2 и bit-perfect ЦАП как центр тракта, а не «коробка с ваттами».</p>\n<ul><li>Dual-mono · SoundEngine2</li><li>2 × 303 Вт / 8 Ом</li><li>Демпфинг-фактор &gt; 4000</li><li>USB 32/384 · DSD256</li><li>Roon Ready / Cast / Connect</li><li>22 кг</li></ul>\n<aside><p><strong>SoundEngine2.</strong> Фирменная коррекция Hegel: отслеживание ошибок выходного каскада без классической глобальной ОС в привычном виде. Смысл — контроль акустики при заявленном демпфинг-факторе &gt; 4000.</p></aside>\n<h2>Цифра и аналог</h2>\n<p>По Hegel: 2 × 303 Вт / 8 Ом (1 кГц, 1% THD), мин. 2 Ом; АЧХ 5 Гц–100 кГц; 2×XLR + 2×RCA; цифровой набор BNC/RCA/оптика/USB/LAN. Стриминг: Spotify Connect, AirPlay, Google Cast, Roon Ready, Qobuz/Tidal Connect. Габариты 17,1 × 43 × 44,5 см.</p>",
+    "specs": [
+      {
+        "label": "Выходная мощность",
+        "value": "2 × 303 Вт / 8 Ом (1 кГц, 1% THD)",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Минимальная нагрузка",
+        "value": "2 Ом",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Демпфинг-фактор",
+        "value": "> 4000",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Частотная характеристика",
+        "value": "5 Гц – 100 кГц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Аналоговые входы",
+        "value": "2 × XLR, 2 × RCA",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Цифровые входы",
+        "value": "USB 32/384 DSD256; BNC/RCA; 3× оптика; LAN",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты / масса",
+        "value": "17,1 × 43 × 44,5 см; 22 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.hegel.com/en/products/integrated/h600"
+    ],
+    "imageUrls": [
+      "https://www.hegel.com/images/products/h600/H600.jpg",
+      "https://www.hegel.com/images/products/h600/H600Front.jpg",
+      "https://www.hegel.com/images/products/h600/H600Angle.jpg",
+      "https://www.hegel.com/images/products/h600/H600Back.jpg"
+    ]
+  }
+}

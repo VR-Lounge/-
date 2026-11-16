@@ -1,0 +1,958 @@
+[
+  {
+    "specs": [
+      {
+        "label": "Stereo rated output",
+        "value": "2 x 50 W at 8 ohms; 2 x 70 W at 4 ohms (THD <1%)"
+      },
+      {
+        "label": "Bridged output",
+        "value": "140 W at 8 ohms; 170 W at 4 ohms (THD <1%)"
+      },
+      {
+        "label": "Frequency response",
+        "value": "20 Hz–20 kHz (+/-0.3 dB)"
+      },
+      {
+        "label": "THD",
+        "value": "<0.002% at 1 kHz"
+      },
+      {
+        "label": "Inputs",
+        "value": "1 x line, 1 x XLR"
+      },
+      {
+        "label": "Dimensions",
+        "value": "120 x 176 x 325 mm (W x H x D)"
+      },
+      {
+        "label": "Net weight",
+        "value": "8.4 kg"
+      }
+    ],
+    "sources": [
+      "https://quad-hifi.co.uk/products/quad-303"
+    ],
+    "queryName": "Quad 303 power amplifier reissue",
+    "confidence": "high",
+    "summaryFacts": [
+      "Class AB stereo/bridge power amplifier using QUAD symmetrical triples output stage; modern reissue of the classic 303."
+    ],
+    "manufacturerUrl": "https://quad-hifi.co.uk/products/quad-303"
+  },
+  {
+    "specs": [
+      {
+        "label": "Inputs",
+        "value": "3 x RCA, 1 x balanced XLR pair, 1 x phono (MM/MC switchable)"
+      },
+      {
+        "label": "Outputs",
+        "value": "1 x RCA AUX, 1 x XLR, 1 x RCA pre-out, 1 x headphone, 2 x 12 V trigger out"
+      },
+      {
+        "label": "Gain",
+        "value": "0 dB line/XLR; +46 dB phono MM; +63.5 dB phono MC"
+      },
+      {
+        "label": "Frequency response",
+        "value": "20 Hz–20 kHz (+/-0.2 dB)"
+      },
+      {
+        "label": "THD",
+        "value": "<0.0005% line/XLR; <0.002% phono MM/MC at 1 kHz"
+      },
+      {
+        "label": "Dimensions",
+        "value": "258 x 94 x 165 mm (W x H x D)"
+      },
+      {
+        "label": "Net weight",
+        "value": "4 kg"
+      }
+    ],
+    "sources": [
+      "https://quad-hifi.co.uk/products/quad-33"
+    ],
+    "queryName": "Quad 33 preamplifier reissue",
+    "confidence": "high",
+    "summaryFacts": [
+      "Analogue preamplifier with digital microprocessor control, switchable MM/MC phono stage, balanced XLR connectivity, tone controls and headphone amplifier."
+    ],
+    "manufacturerUrl": "https://quad-hifi.co.uk/products/quad-33"
+  },
+  {
+    "specs": [],
+    "sources": [
+      "https://www.klipsch.com/products/rp-1200sw-subwoofer",
+      "https://d2um2qdswy1tb0.cloudfront.net/spec-sheets/RP-1200SW_Spec-Sheet_v02-1.pdf?v=1718394043",
+      "https://d2um2qdswy1tb0.cloudfront.net/product-manuals/Ref-Premiere-Subwoofers-Manual-v01_2023-03-01-155538_udgt.pdf?v=1677686140"
+    ],
+    "imageUrls": [
+      "https://klipsch.imgix.net/product-images/RP-1200SW-Carousel-9.png?domain=klipsch.imgix.net&crop=focalpoint&fit=crop&fm=webp&fp-x=0.5&fp-y=0.5&q=90&h=1000&w=1000"
+    ],
+    "queryName": "Klipsch RP-1200SW subwoofer",
+    "confidence": "high",
+    "summaryFacts": [
+      "12-inch Reference Premiere high-excursion subwoofer with front-firing Cerametallic woofer, high-efficiency Class D amplification, analogue preamp signal path and front-slot Aerofoil port.",
+      "Supports optional Klipsch WA-2 wireless connectivity; manufacturer states a five-year warranty."
+    ],
+    "manufacturerUrl": "https://www.klipsch.com/products/rp-1200sw-subwoofer"
+  },
+  {
+    "specs": [
+      {
+        "label": "Bass driver",
+        "value": "6.5 in (165 mm) mineral-loaded polypropylene cone"
+      },
+      {
+        "label": "Treble driver",
+        "value": "1.25 in (28 mm) soft dome"
+      },
+      {
+        "label": "Sensitivity",
+        "value": "86 dB (2.83 V @ 1 m)"
+      },
+      {
+        "label": "Recommended amplifier power",
+        "value": "25–150 W"
+      },
+      {
+        "label": "Nominal/minimum impedance",
+        "value": "8 ohms / 5.2 ohms"
+      },
+      {
+        "label": "Frequency response",
+        "value": "45 Hz–20 kHz (+/-3 dB)"
+      },
+      {
+        "label": "Bass extension",
+        "value": "38 Hz (-6 dB)"
+      },
+      {
+        "label": "Speaker dimensions",
+        "value": "510 x 260 x 292 mm including terminals (H x W x D)"
+      },
+      {
+        "label": "Speaker net weight",
+        "value": "12.8 kg each"
+      },
+      {
+        "label": "Stand construction",
+        "value": "High-carbon steel internally damped columns; high-carbon steel top plate; interlocked high-carbon steel tube base frame; hardened stainless-steel spikes"
+      },
+      {
+        "label": "Stand dimensions",
+        "value": "485 x 320 x 330 mm on spikes (H x W x D)"
+      },
+      {
+        "label": "Stand net weight",
+        "value": "6.5 kg each"
+      }
+    ],
+    "sources": [
+      "https://www.mission.co.uk/700-2/"
+    ],
+    "queryName": "Mission 700 with stands",
+    "confidence": "high",
+    "summaryFacts": [
+      "Two-way bass-reflex standmount loudspeaker with inverted driver geometry; the official page also specifies a dedicated Mission 700 stand with damped steel construction."
+    ],
+    "manufacturerUrl": "https://www.mission.co.uk/700-2/"
+  },
+  {
+    "specs": [],
+    "sources": [
+      "https://www.audio-replas.com"
+    ],
+    "queryName": "Audio Replas OPS-1 HR",
+    "confidence": "low",
+    "summaryFacts": [],
+    "manufacturerUrl": "https://www.audio-replas.com"
+  },
+  {
+    "specs": [
+      {
+        "label": "Frequency response",
+        "value": "20 Hz–20 kHz (+0/-0.05 dB); 10 Hz–80 kHz (+0/-3 dB)"
+      },
+      {
+        "label": "THD",
+        "value": "<0.03% (20 Hz–20 kHz)"
+      },
+      {
+        "label": "Phono gain/input impedance",
+        "value": "MM: 40 dB / 47 kOhm; MC: 50 dB / 100 ohm"
+      },
+      {
+        "label": "Line input impedance",
+        "value": "24 kOhm"
+      },
+      {
+        "label": "Output impedance",
+        "value": "470 ohms"
+      },
+      {
+        "label": "Bass-management high-pass",
+        "value": "Variable 20–140 Hz"
+      },
+      {
+        "label": "Dimensions",
+        "value": "17.25 in W x 2.5 in H x 14.25 in D (with feet)"
+      },
+      {
+        "label": "Net weight",
+        "value": "11 lb (5 kg)"
+      },
+      {
+        "label": "Power consumption",
+        "value": "10 W maximum; less than 0.5 W standby"
+      }
+    ],
+    "sources": [
+      "https://parasound.com/products/nc-200pre",
+      "https://cdn.shopify.com/s/files/1/0763/0864/4159/files/200_Pre-manual.pdf?v=1718769363",
+      "https://cdn.shopify.com/s/files/1/0763/0864/4159/files/200_Pre-info-sheet.pdf?v=1718769361"
+    ],
+    "queryName": "Parasound 200 Pre / NewClassic 200 Pre",
+    "confidence": "high",
+    "summaryFacts": [
+      "Compact two-channel analogue control preamplifier with Burr-Brown 192 kHz/24-bit DAC, USB/optical/coax digital inputs, MM/MC phono, analogue bass management, Home Theater Bypass and remote-controlled subwoofer functions."
+    ],
+    "manufacturerUrl": "https://parasound.com/products/nc-200pre"
+  },
+  {
+    "specs": [
+      {
+        "label": "Supported high-resolution media",
+        "value": "FLAC, WAV (LPCM), MQA, AAC, ALAC, AIFF, DSD up to 128"
+      },
+      {
+        "label": "Maximum PCM resolution",
+        "value": "24-bit/192 kHz"
+      },
+      {
+        "label": "Outputs",
+        "value": "Stereo RCA analogue; S/PDIF coaxial RCA; optical Toslink"
+      },
+      {
+        "label": "Frequency response",
+        "value": "20 Hz–20 kHz ±0.05 dB"
+      },
+      {
+        "label": "Power consumption",
+        "value": "12 W; eco standby <0.5 W"
+      },
+      {
+        "label": "Dimensions",
+        "value": "431 × 344 × 58 mm (W × D × H, including feet)"
+      },
+      {
+        "label": "Net weight",
+        "value": "3.58 kg"
+      }
+    ],
+    "sources": [
+      "https://www.arcam.co.uk/product,radia,streamers,st5.htm",
+      "https://www.arcam.co.uk/ugc/tor/ST5/ST5%20Specification%20Sheet/ARCAM_ST5_Spec_Sheet_V5.pdf"
+    ],
+    "queryName": "Arcam Radia ST5",
+    "confidence": "high",
+    "summaryFacts": [
+      "Network streamer/media player designed as a high-resolution upgrade and control-linked companion for Arcam Radia integrated amplifiers.",
+      "Supports Spotify Connect, Tidal Connect, Qobuz Connect, Apple AirPlay, Google Cast and Roon Ready; ESS ES9018 DAC; Wi-Fi or Ethernet network connection."
+    ],
+    "manufacturerUrl": "https://www.arcam.co.uk/product,radia,streamers,st5.htm"
+  },
+  {
+    "specs": [
+      {
+        "label": "Power output",
+        "value": "300 W RMS at 8 ohms; 600 W RMS at 4 ohms"
+      },
+      {
+        "label": "Rated bandwidth",
+        "value": "20 Hz–20 kHz"
+      },
+      {
+        "label": "Broadband frequency response",
+        "value": "5 Hz–80 kHz, +0/−2 dB"
+      },
+      {
+        "label": "THD + noise",
+        "value": "<0.015% at 100 W RMS, 1 kHz, 8 ohms"
+      },
+      {
+        "label": "Signal-to-noise ratio",
+        "value": ">120 dB ref. FTC rated power, unbalanced input (A-weighted)"
+      },
+      {
+        "label": "Minimum recommended load",
+        "value": "4 ohms"
+      },
+      {
+        "label": "Dimensions",
+        "value": "8-3/8 × 7-5/8 × 19 in (W × H × D, unboxed including feet/connectors)"
+      },
+      {
+        "label": "Unboxed weight",
+        "value": "21.5 lb"
+      }
+    ],
+    "sources": [
+      "https://emotiva.com/products/hc-1",
+      "https://cdn.shopify.com/s/files/1/2572/6926/files/XPA_HC-1_User_Manual_v10.pdf?30550"
+    ],
+    "queryName": "Emotiva XPA-HC1",
+    "confidence": "high",
+    "summaryFacts": [
+      "Single-channel high-current monoblock power amplifier using a discrete Class A/B stage, Optimized Class H power supply topology and high-efficiency SMPS.",
+      "Provides selectable balanced XLR and unbalanced RCA inputs, trigger input/output, gold-plated five-way binding posts and microprocessor-controlled protection."
+    ],
+    "manufacturerUrl": "https://emotiva.com/products/hc-1"
+  },
+  {
+    "specs": [
+      {
+        "label": "Power output, stereo",
+        "value": "90 W × 2 into 8 ohms; 150 W × 2 into 4 ohms or 2 ohms"
+      },
+      {
+        "label": "Power output, bridged mono",
+        "value": "200 W × 1 into 8 ohms or 4 ohms"
+      },
+      {
+        "label": "Frequency response",
+        "value": "20 Hz–50 kHz, +0/−3 dB"
+      },
+      {
+        "label": "Current capacity",
+        "value": "20 A peak per channel"
+      },
+      {
+        "label": "Signal-to-noise ratio",
+        "value": "110 dB at rated output, IHF A-weighted"
+      },
+      {
+        "label": "Dimensions",
+        "value": "17-1/4 in wide × 16 in deep with cables × 2-1/2 in high with feet; 1U panel height"
+      },
+      {
+        "label": "Net weight",
+        "value": "20 lb"
+      }
+    ],
+    "sources": [
+      "https://parasound.com/products/nc-275",
+      "https://cdn.shopify.com/s/files/1/0763/0864/4159/files/275v2Manual.pdf?v=1718140038"
+    ],
+    "queryName": "Parasound 275 v2",
+    "confidence": "high",
+    "summaryFacts": [
+      "Compact two-channel NewClassic stereo power amplifier with fully discrete Class AB circuitry and high-current toroidal transformer.",
+      "Supports 2-ohm operation with load selector, bridged mono operation, dual A/B speaker outputs, switchable high-pass filter and automatic turn-on by trigger or audio signal."
+    ],
+    "manufacturerUrl": "https://parasound.com/products/nc-275"
+  },
+  {
+    "specs": [
+      {
+        "label": "Sound format",
+        "value": "7.1.2 Dolby Atmos and DTS:X"
+      },
+      {
+        "label": "Drivers",
+        "value": "11-driver soundbar array"
+      },
+      {
+        "label": "Soundbar dimensions",
+        "value": "45 × 4.6 × 2.8 in (W × D × H)"
+      },
+      {
+        "label": "Connectivity",
+        "value": "3 HDMI-in, 1 HDMI eARC, optical in, USB-A for firmware updates, Wi-Fi 802.11 a/n/ac, Bluetooth 5.0"
+      },
+      {
+        "label": "Subwoofer",
+        "value": "10-inch down-firing wireless subwoofer"
+      }
+    ],
+    "sources": [
+      "https://www.polkaudio.com/en-us/product/sound-bars/magnifi-max-ax-sr/300543.html",
+      "https://www.polkaudio.com/on/demandware.static/-/Library-Sites-polk_northamerica_shared/default/dwbfcc49db/downloads/magnifi-max-axsr-infosheet-en.pdf"
+    ],
+    "imageUrls": [
+      "https://www.polkaudio.com/on/demandware.static/-/Sites-master-catalog-soundunited/default/dw23ebfd0a/polk/PDP_Images/Sound-Bars/Magnifi/Magnifi-Max-AX-SR-Black/Magnifi-Max-AX-SR_Image_Group.png"
+    ],
+    "queryName": "Polk MagniFi Max AX SR",
+    "confidence": "high",
+    "summaryFacts": [
+      "Flagship 7.1.2 Dolby Atmos/DTS:X soundbar system with SDA technology, wireless surrounds and a wireless 10-inch subwoofer.",
+      "Includes Wi-Fi/Bluetooth streaming, Google Chromecast, Apple AirPlay, Spotify Connect, VoiceAdjust, three 4K HDMI inputs, eARC and optical input."
+    ],
+    "manufacturerUrl": "https://www.polkaudio.com/en-us/product/sound-bars/magnifi-max-ax-sr/300543.html"
+  },
+  {
+    "specs": [
+      {
+        "label": "Maximum single-ended headphone output",
+        "value": "1900 mW at 32 ohms; 205 mW at 300 ohms"
+      },
+      {
+        "label": "Maximum balanced headphone output",
+        "value": "5300 mW at 32 ohms; 700 mW at 300 ohms"
+      },
+      {
+        "label": "Supported maximum PCM",
+        "value": "32-bit/768 kHz"
+      },
+      {
+        "label": "Supported maximum DSD",
+        "value": "DSD512"
+      },
+      {
+        "label": "Bluetooth codecs",
+        "value": "LDAC, aptX HD, aptX and AAC"
+      },
+      {
+        "label": "Headphone outputs",
+        "value": "3.5 mm, 6.35 mm, 4.4 mm and 4-pin XLR"
+      }
+    ],
+    "sources": [
+      "https://shanling.com/product/4686",
+      "https://en.shanling.com/article/101267",
+      "https://shanling.com/uploads/image/EH3.pdf"
+    ],
+    "queryName": "Shanling EH3",
+    "confidence": "high",
+    "summaryFacts": [
+      "Desktop DAC/headphone amplifier with ESS ES9039SPRO DAC, balanced amplifier based around four OPA1612 devices, FPGA/KDS oscillators and XMOS XU316 USB interface.",
+      "Provides Wi-Fi DLNA/AirPlay, Bluetooth, USB-drive playback, USB/optical/coaxial/I2S inputs, RCA/XLR outputs and four headphone output types."
+    ],
+    "manufacturerUrl": "https://shanling.com/product/4686"
+  },
+  {
+    "specs": [
+      {
+        "label": "DAC",
+        "value": "ESS ES9028Q2M"
+      },
+      {
+        "label": "Analogue outputs",
+        "value": "Balanced XLR and unbalanced RCA"
+      },
+      {
+        "label": "Digital inputs",
+        "value": "USB drive, Bluetooth 5.1, S/PDIF coaxial, TOSLINK optical; USB Type B audio input"
+      },
+      {
+        "label": "Maximum local/USB resolution",
+        "value": "PCM 32-bit/768 kHz; DSD512"
+      },
+      {
+        "label": "Frequency response",
+        "value": "20 Hz–20 kHz ±0.1 dB"
+      },
+      {
+        "label": "Signal-to-noise ratio",
+        "value": ">120 dBr (ref 1 W)"
+      },
+      {
+        "label": "Network",
+        "value": "Ethernet 10/100 Mbit; IEEE 802.11ac Wi-Fi, 2.4/5 GHz"
+      },
+      {
+        "label": "Power consumption",
+        "value": "30 W maximum; <0.5 W eco standby"
+      },
+      {
+        "label": "Dimensions",
+        "value": "430 × 80 × 325 mm (W × H × D)"
+      },
+      {
+        "label": "Weight",
+        "value": "3.55 kg"
+      }
+    ],
+    "sources": [
+      "https://www.cambridgeaudio.com/usa/en/products/hi-fi/cx/cxn100",
+      "https://www.cambridgeaudio.com/usa/en/faqs/cxn100-technical-specifications",
+      "https://www.cambridgeaudio.com/usa/en/manuals/cxn100-cxn100-se"
+    ],
+    "imageUrls": [
+      "https://www.cambridgeaudio.com/sites/default/files/media/images/1_CXN_100_3.png",
+      "https://www.cambridgeaudio.com/sites/default/files/media/images/2_CXN_100_0.png",
+      "https://www.cambridgeaudio.com/sites/default/files/media/images/3_CXN_100_0.png"
+    ],
+    "queryName": "Cambridge Audio CXN100",
+    "confidence": "high",
+    "summaryFacts": [
+      "Network music streamer with ESS ES9028Q2M DAC, Gen 4 StreamMagic platform, wired and wireless connectivity, and balanced/unbalanced analogue outputs.",
+      "Supports AirPlay 2, Chromecast built-in, Spotify Connect, TIDAL, Qobuz, Deezer, Roon Ready, Bluetooth 5.1, Internet Radio and MQA."
+    ],
+    "manufacturerUrl": "https://www.cambridgeaudio.com/usa/en/products/hi-fi/cx/cxn100"
+  },
+  {
+    "specs": [
+      {
+        "label": "Outputs",
+        "value": "1x stereo analogue RCA pair; 1x coaxial digital RCA; 1x optical digital Toslink"
+      },
+      {
+        "label": "Frequency response",
+        "value": "20 Hz–20 kHz ±0.05 dB"
+      },
+      {
+        "label": "Maximum analogue output",
+        "value": "2.1 Vrms"
+      },
+      {
+        "label": "Signal-to-noise ratio",
+        "value": "93 dB / 115 dB (A-weighted, 16-bit / 24-bit, 0 dBFS)"
+      },
+      {
+        "label": "Mains / power consumption",
+        "value": "AC 100–240 V, 50/60 Hz; 12 W"
+      },
+      {
+        "label": "Dimensions",
+        "value": "431 × 344 × 83 mm (W × D × H, including feet)"
+      },
+      {
+        "label": "Product weight",
+        "value": "6 kg"
+      }
+    ],
+    "sources": [
+      "https://www.arcam.co.uk/product,radia,players,cd5.htm",
+      "https://www.arcam.co.uk/ugc/tor/CD5/English%20Owner's%20Manual/ARCAM%20CD5%20Owner's%20Manual%20EN%20V2.pdf"
+    ],
+    "queryName": "Arcam Radia CD5",
+    "confidence": "high",
+    "summaryFacts": [
+      "CD player with CD, CD-R, CD-RW and USB mass-storage playback.",
+      "Supports WAV, FLAC, MP3, AAC and WMA; 16–24-bit data; WAV/FLAC up to 96 kHz per the product page."
+    ],
+    "manufacturerUrl": "https://www.arcam.co.uk/product,radia,players,cd5.htm"
+  },
+  {
+    "specs": [
+      {
+        "label": "Noise reduction",
+        "value": ">40 dB (>100×)"
+      },
+      {
+        "label": "Surge protection",
+        "value": "Maximum 30,000 A @ 1,000 V/10 μs"
+      },
+      {
+        "label": "Operating voltage",
+        "value": "90–265 V"
+      },
+      {
+        "label": "Dimensions",
+        "value": "478 × 96 × 76 mm (L × W × H)"
+      },
+      {
+        "label": "Weight",
+        "value": "1.98 kg"
+      },
+      {
+        "label": "Maximum load",
+        "value": "2,500 W / 10 A maximum (manual)"
+      },
+      {
+        "label": "Warranty period",
+        "value": "12 months"
+      }
+    ],
+    "sources": [
+      "https://downloads.ifi-audio.com/products/powerstation",
+      "https://downloads.ifi-audio.com/wp-content/uploads/2019/07/Power-Station-Users-Manual-Ver1.1-1.pdf",
+      "https://downloads.ifi-audio.com/wp-content/uploads/2020/07/TECH-NOTE-iFI-PowerStation.pdf"
+    ],
+    "queryName": "iFi Power Station",
+    "confidence": "high",
+    "summaryFacts": [
+      "Audiophile mains extension block using iFi Active Noise Cancellation II plus passive outlet filtering.",
+      "Includes polarity/earth diagnostics, supplementary grounding connection and over-voltage/short-circuit cut-off protection."
+    ],
+    "manufacturerUrl": "https://downloads.ifi-audio.com/products/powerstation"
+  },
+  {
+    "specs": [
+      {
+        "label": "Bass driver",
+        "value": "6.5 in (165 mm) black woven Kevlar cone"
+      },
+      {
+        "label": "Midrange driver",
+        "value": "2 in (50 mm) soft dome"
+      },
+      {
+        "label": "Treble driver",
+        "value": "1 in (25 mm) soft dome"
+      },
+      {
+        "label": "Sensitivity",
+        "value": "87 dB (2.83 V @ 1 m)"
+      },
+      {
+        "label": "Recommended amplifier power",
+        "value": "25–120 W"
+      },
+      {
+        "label": "Nominal / minimum impedance",
+        "value": "6 ohms (compatible 8 ohms) / 3.4 ohms"
+      },
+      {
+        "label": "Frequency response",
+        "value": "52 Hz–20 kHz (±3 dB)"
+      },
+      {
+        "label": "Bass extension",
+        "value": "40 Hz (-6 dB)"
+      },
+      {
+        "label": "Crossover frequencies",
+        "value": "940 Hz and 4.6 kHz"
+      },
+      {
+        "label": "Dimensions",
+        "value": "360 × 246 × (275 + 20) mm (H × W × D; depth includes terminals)"
+      },
+      {
+        "label": "Net weight",
+        "value": "9.2 kg per speaker"
+      }
+    ],
+    "sources": [
+      "https://www.wharfedale.co.uk/products/super-denton",
+      "https://www.wharfedale.co.uk/cdn/shop/files/SUPER_DENTON_Manual_Online_240730_R11.pdf?v=638968791167403419"
+    ],
+    "queryName": "Wharfedale Super Denton",
+    "confidence": "high",
+    "summaryFacts": [
+      "Heritage-series three-way vented-box/standmount loudspeaker supplied as matched mirror-imaged pairs.",
+      "Uses a woven Kevlar bass driver, soft-dome midrange and soft-dome treble."
+    ],
+    "manufacturerUrl": "https://www.wharfedale.co.uk/products/super-denton"
+  },
+  {
+    "specs": [
+      {
+        "label": "Conductors",
+        "value": "3 × 12 AWG, 168-strand 99.9999% OFC"
+      },
+      {
+        "label": "Insulation",
+        "value": "Fluorinated ethylene propylene (FEP)"
+      },
+      {
+        "label": "Capacitance",
+        "value": "8.5 pF/ft"
+      },
+      {
+        "label": "Inductance",
+        "value": "0.121 μH/ft"
+      },
+      {
+        "label": "DC resistance",
+        "value": "1.64 ohms per 1,000 ft"
+      },
+      {
+        "label": "Terminations",
+        "value": "US (NEMA), EU (Schuko), UK or AUS to IEC-C15 or IEC-C19"
+      }
+    ],
+    "sources": [
+      "https://www.nordost.com/leif/red-dawn/red-dawn-3-power-cord.php",
+      "https://nordost.com/downloads/multiLanguage/Leif%203%20Brochure_Web.pdf"
+    ],
+    "queryName": "Nordost Red Dawn power cable",
+    "confidence": "high",
+    "summaryFacts": [
+      "Entry-level Leif-family AC power cord using FEP insulation and Nordost Micro Mono-Filament construction."
+    ],
+    "manufacturerUrl": "https://www.nordost.com/leif/red-dawn/red-dawn-3-power-cord.php"
+  },
+  {
+    "specs": [],
+    "sources": [
+      "https://www.audio-replas.com/html_eng/top_page.htm",
+      "https://www.audio-replas.com/html_eng/plate.html"
+    ],
+    "queryName": "Audio Replas SCB-4SZ / SCB-2SZ",
+    "confidence": "low",
+    "summaryFacts": [
+      "The manufacturer site confirms Audio Replas high-end wall-socket plate/accessory products and Ultra SZ physical processing, but the retrieved official pages did not provide verifiable SCB-4SZ or SCB-2SZ model specifications."
+    ],
+    "manufacturerUrl": "https://www.audio-replas.com/html_eng/plate.html"
+  },
+  {
+    "specs": [
+      {
+        "label": "Analogue inputs",
+        "value": "4 stereo line-level pairs; 1 switchable MM/MC phono pair; Home Theater Bypass inputs"
+      },
+      {
+        "label": "Digital inputs",
+        "value": "1 coaxial S/PDIF, 2 optical Toslink, 1 USB DAC input; all up to 24-bit/192 kHz"
+      },
+      {
+        "label": "DAC",
+        "value": "Analog Devices AD1955, 24/192 kHz"
+      },
+      {
+        "label": "Bluetooth",
+        "value": "Bluetooth 5 with AptX, AptX HD and AAC; receiver up to 96 kHz"
+      },
+      {
+        "label": "FM tuner",
+        "value": "External antenna input; 15 station presets"
+      },
+      {
+        "label": "Main outputs",
+        "value": "Stereo line-level main outputs, configurable full-range or bass-managed; bass-managed high-pass cutoff configurable 40–200 Hz"
+      },
+      {
+        "label": "Subwoofer output",
+        "value": "Summed subwoofer output, configurable full-range or bass-managed; cutoff configurable 40–200 Hz"
+      },
+      {
+        "label": "Dimensions",
+        "value": "17 × 3-3/8 × 13-1/2 in (W × H × D, without feet/connectors); 17 × 4 × 13-1/2 in with feet"
+      },
+      {
+        "label": "Weight",
+        "value": "12 lb unboxed; 18 lb boxed"
+      },
+      {
+        "label": "Power supply",
+        "value": "Universal 100–240 VAC"
+      }
+    ],
+    "sources": [
+      "https://emotiva.com/products/basx-pt2-stereo-preamp-dac-tuner",
+      "https://cdn.shopify.com/s/files/1/2572/6926/files/BasX_PT2-TA2_User_Manual_v11_61_2.pdf?v=1661197847"
+    ],
+    "queryName": "Emotiva PT-2 preamp",
+    "confidence": "high",
+    "summaryFacts": [
+      "Stereo preamplifier combining FM tuner, analogue line inputs, MM/MC phono stage, DAC, USB, S/PDIF and Bluetooth.",
+      "Product page currently identifies the unit as temporarily unavailable/sold out."
+    ],
+    "manufacturerUrl": "https://emotiva.com/products/basx-pt2-stereo-preamp-dac-tuner"
+  },
+  {
+    "specs": [
+      {
+        "label": "Channels",
+        "value": "7.2-channel AV receiver"
+      },
+      {
+        "label": "Atmos/DTS:X",
+        "value": "5.2.2-channel Dolby Atmos and DTS:X playback"
+      },
+      {
+        "label": "HDMI video",
+        "value": "Inputs 1–3 and Main/Sub out support 8K/60 and 4K/120; inputs 4–6 support up to 4K/60"
+      },
+      {
+        "label": "Power output",
+        "value": "100 W/channel, 8 ohms, 20 Hz–20 kHz, 0.08% THD, 2 channels driven"
+      },
+      {
+        "label": "Dimensions",
+        "value": "17 1/8 × 6 13/16 × 14 15/16 in (435 × 173.5 × 379.5 mm)"
+      },
+      {
+        "label": "Weight",
+        "value": "21.7 lb (9.8 kg)"
+      }
+    ],
+    "sources": [
+      "https://onkyo.com/receivers/tx-nr6100",
+      "https://assets.onkyo-av.com/spec-sheets/TX-NR6100_US_2022-11-02-210644_imld.pdf?v=1667423242"
+    ],
+    "queryName": "Onkyo TX-NR6100",
+    "confidence": "high",
+    "summaryFacts": [
+      "7.2-channel AV receiver with THX certification, Dolby Atmos/DTS:X playback, HDMI 2.1 gaming features, built-in streaming services, Bluetooth, and Wi-Fi.",
+      "Official specifications list 100 W/channel at 8 ohms (20 Hz–20 kHz, 0.08% THD, two channels driven)."
+    ],
+    "manufacturerUrl": "https://onkyo.com/receivers/tx-nr6100"
+  },
+  {
+    "specs": [
+      {
+        "label": "Channels",
+        "value": "7.2"
+      },
+      {
+        "label": "Power output",
+        "value": "80 W/channel, 8 ohms, 20 Hz–20 kHz, 0.08% THD, 2-channel drive"
+      },
+      {
+        "label": "HDMI",
+        "value": "6 inputs / 1 output; 3 inputs support 8K"
+      },
+      {
+        "label": "Room correction",
+        "value": "Audyssey MultEQ XT"
+      },
+      {
+        "label": "Dimensions",
+        "value": "17.1 × 13.3 × 6.0 in (antenna horizontal)"
+      },
+      {
+        "label": "Weight",
+        "value": "19.0 lb"
+      }
+    ],
+    "sources": [
+      "https://www.denon.com/en-us/product/av-receivers/avr-x1800h/300773.html",
+      "https://www.denon.com/on/demandware.static/-/Library-Sites-denon_northamerica_shared/default/dwa73bdd6f/downloads/Denon_Infosheet_AVR-X1800H_443543.pdf",
+      "https://manuals.denon.com/AVRX1800H/NA/EN/pdf/AVRX1800H_NA_EN.pdf"
+    ],
+    "queryName": "Denon AVR-X1800H",
+    "confidence": "high",
+    "summaryFacts": [
+      "7.2-channel AV receiver with 80 W/channel output, Dolby Atmos/DTS:X, 8K HDMI, HEOS Built-in, Wi-Fi, Bluetooth, and Audyssey room correction."
+    ],
+    "manufacturerUrl": "https://www.denon.com/en-us/product/av-receivers/avr-x1800h/300773.html"
+  },
+  {
+    "specs": [
+      {
+        "label": "Frequency response",
+        "value": "10 Hz–40 kHz, +0/−0.5 dB"
+      },
+      {
+        "label": "THD",
+        "value": "<0.015% (20 Hz–20 kHz)"
+      },
+      {
+        "label": "Maximum output",
+        "value": "3.5 V"
+      },
+      {
+        "label": "Input impedance",
+        "value": "24 kΩ"
+      },
+      {
+        "label": "Output impedance",
+        "value": "470 Ω"
+      },
+      {
+        "label": "Dimensions",
+        "value": "8.5 × 10 × 2 in (220 × 254 × 51 mm) with feet"
+      },
+      {
+        "label": "Net weight",
+        "value": "4.0 lb (1.8 kg)"
+      }
+    ],
+    "sources": [
+      "https://parasound.com/products/zc-zpre3"
+    ],
+    "queryName": "Parasound Zpre3",
+    "confidence": "high",
+    "summaryFacts": [
+      "Compact stereo preamplifier with five analog inputs including front-panel Aux, variable and fixed outputs, dedicated subwoofer output, home-theater bypass, RS-232, 12 V trigger, and IR input."
+    ],
+    "manufacturerUrl": "https://parasound.com/products/zc-zpre3"
+  },
+  {
+    "specs": [
+      {
+        "label": "Frequency range (-6 dB)",
+        "value": "40 Hz–33 kHz"
+      },
+      {
+        "label": "Frequency response",
+        "value": "52 Hz–28 kHz ±3 dB"
+      },
+      {
+        "label": "Nominal impedance",
+        "value": "8 ohms (minimum 3.0 ohms)"
+      },
+      {
+        "label": "Sensitivity",
+        "value": "84 dB"
+      },
+      {
+        "label": "Recommended amplifier power",
+        "value": "30 W–100 W into 8 ohms"
+      },
+      {
+        "label": "Dimensions",
+        "value": "300 × 165 × 207 mm cabinet; 235 mm depth including grille and terminals"
+      },
+      {
+        "label": "Net weight",
+        "value": "4.65 kg"
+      }
+    ],
+    "sources": [
+      "https://www.bowerswilkins.com/en-us/product/loudspeakers/607-s3/300661.html"
+    ],
+    "queryName": "Bowers & Wilkins 607 S3",
+    "confidence": "high",
+    "summaryFacts": [
+      "Compact 2-way vented-box bookshelf speaker using a 25 mm Titanium Dome tweeter and 130 mm Continuum bass/midrange cone."
+    ],
+    "manufacturerUrl": "https://www.bowerswilkins.com/en-us/product/loudspeakers/607-s3/300661.html"
+  },
+  {
+    "specs": [
+      {
+        "label": "Channels",
+        "value": "5.2"
+      },
+      {
+        "label": "Power output",
+        "value": "75 W/channel, 8 ohms, 20 Hz–20 kHz, 0.08% THD, 2-channel drive"
+      },
+      {
+        "label": "HDMI",
+        "value": "6 inputs; 3 support 8K; 1 output"
+      },
+      {
+        "label": "Room correction",
+        "value": "Audyssey MultEQ"
+      },
+      {
+        "label": "Dimensions",
+        "value": "17.1 × 13.3 × 6.0 in (antenna horizontal)"
+      },
+      {
+        "label": "Weight",
+        "value": "17.2 lb"
+      }
+    ],
+    "sources": [
+      "https://www.denon.com/en-us/product/av-receivers/avr-s670h/300778.html",
+      "https://www.denon.com/on/demandware.static/-/Library-Sites-denon_northamerica_shared/default/dw0557307b/downloads/avr-s670h-infosheet-na-en.pdf"
+    ],
+    "queryName": "Denon AVR-S670H",
+    "confidence": "high",
+    "summaryFacts": [
+      "5.2-channel AV receiver with 75 W/channel output, 8K HDMI, Dolby TrueHD/DTS-HD, HEOS Built-in, Wi-Fi, Bluetooth, and Audyssey MultEQ room correction."
+    ],
+    "manufacturerUrl": "https://www.denon.com/en-us/product/av-receivers/avr-s670h/300778.html"
+  },
+  {
+    "specs": [],
+    "sources": [
+      "https://simaudio.com/"
+    ],
+    "queryName": "MOON 110LP v2 phono",
+    "confidence": "low",
+    "summaryFacts": [
+      "The OEM homepage identifies MOON by Simaudio as a Canadian high-end audio manufacturer and displays an image filename referring to 610LP, but no 110LP v2-specific product specifications or manual were retrieved in this run."
+    ],
+    "manufacturerUrl": "https://simaudio.com/"
+  }
+]

@@ -1,0 +1,96 @@
+{
+  "wave": "wave24",
+  "at": "2026-11-15T02:17:59Z",
+  "paddedToTrue": 7,
+  "newlyMultiIds": [
+    16160,
+    262116,
+    16854,
+    40256,
+    40255,
+    40253,
+    264246
+  ],
+  "results": [
+    {
+      "id": 16160,
+      "name": "CD транспорт 47 Labs 4713 Flatfish ( cd 47 labs 4713 flatfish )",
+      "price": 343612,
+      "after": 4,
+      "multi": true,
+      "hitl": false,
+      "galleryClass": "true_multi_angle"
+    },
+    {
+      "id": 262116,
+      "name": "Интегральный усилитель Line Magnetic Audio LM 126 iA ( line magnetic a",
+      "price": 348500,
+      "after": 5,
+      "multi": true,
+      "hitl": false,
+      "galleryClass": "true_multi_angle"
+    },
+    {
+      "id": 16854,
+      "name": "усилитель мощности Ultimate Audio MC 3008 ABSE ( ultimate audio mc 300",
+      "price": 340000,
+      "after": 5,
+      "multi": true,
+      "hitl": false,
+      "galleryClass": "true_multi_angle"
+    },
+    {
+      "id": 40256,
+      "name": "саундбар Paradigm D?cor 1S (90-130 дюймов) ( paradigm d?cor 1s (90 130",
+      "price": 339065,
+      "after": 6,
+      "multi": true,
+      "hitl": false,
+      "galleryClass": "true_multi_angle"
+    },
+    {
+      "id": 40255,
+      "name": "саундбар Paradigm D?cor 1S (75-89 дюймов) ( paradigm d?cor 1s (75 89 )",
+      "price": 293165,
+      "after": 6,
+      "multi": true,
+      "hitl": false,
+      "galleryClass": "true_multi_angle"
+    },
+    {
+      "id": 40253,
+      "name": "саундбар Paradigm D?cor 1S (до 74 дюймов) ( paradigm d?cor 1s ( 74 ) )",
+      "price": 229415,
+      "after": 6,
+      "multi": true,
+      "hitl": false,
+      "galleryClass": "true_multi_angle"
+    },
+    {
+      "id": 264246,
+      "name": "Сетевой фильтр Furutech Daytona 303E ( furutech daytona 303e )",
+      "price": 324870,
+      "after": 6,
+      "multi": true,
+      "hitl": false,
+      "galleryClass": "true_multi_angle"
+    }
+  ],
+  "stillHitl": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "note": "u=2 OEM scarce"
+    },
+    {
+      "id": 267868,
+      "name": "TRIODE TRX-1SE",
+      "note": "u=3 front/rear/studio; need 4th SE angle"
+    },
+    {
+      "id": 264126,
+      "name": "Audio Replas MTP-2 RU mk2",
+      "note": "u=1 single OEM chassis shot"
+    }
+  ]
+}

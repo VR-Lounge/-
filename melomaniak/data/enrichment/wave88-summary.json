@@ -1,0 +1,157 @@
+{
+  "at": "2026-11-15T20:04:23Z",
+  "wave": 88,
+  "counts": {
+    "true_multi_angle": 1336,
+    "padded": 179,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 5,
+  "cleared": [
+    {
+      "id": 40251,
+      "name": "саундбар Paradigm D?cor 1C (75-89 дюймов) ( paradigm d?cor 1c (75 89 ) )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/40251/40251_w88_00.jpg",
+        "assets/enriched/40251/40251_w88_01.jpg",
+        "assets/enriched/40251/40251_w88_02.jpg",
+        "assets/enriched/40251/40251_w88_03.jpg",
+        "assets/enriched/40251/40251_w88_04.jpg"
+      ]
+    },
+    {
+      "id": 40266,
+      "name": "саундбар Paradigm Decor 2SC (75-89 дюймов) ( paradigm decor 2sc (75 89 ) )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/40266/40266_w88_00.jpg",
+        "assets/enriched/40266/40266_w88_01.jpg",
+        "assets/enriched/40266/40266_w88_02.jpg",
+        "assets/enriched/40266/40266_w88_03.jpg",
+        "assets/enriched/40266/40266_w88_04.jpg"
+      ]
+    },
+    {
+      "id": 40249,
+      "name": "саундбар Paradigm D?cor 1C (до 74 дюймов) ( paradigm d?cor 1c ( 74 ) )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/40249/40249_w88_00.jpg",
+        "assets/enriched/40249/40249_w88_01.jpg",
+        "assets/enriched/40249/40249_w88_02.jpg",
+        "assets/enriched/40249/40249_w88_03.jpg",
+        "assets/enriched/40249/40249_w88_04.jpg"
+      ]
+    },
+    {
+      "id": 40265,
+      "name": "саундбар Paradigm Decor 2SC (до 74 дюймов) ( paradigm decor 2sc ( 74 ) )",
+      "unique": 5,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/40265/40265_w88_00.jpg",
+        "assets/enriched/40265/40265_w88_01.jpg",
+        "assets/enriched/40265/40265_w88_02.jpg",
+        "assets/enriched/40265/40265_w88_03.jpg",
+        "assets/enriched/40265/40265_w88_04.jpg"
+      ]
+    },
+    {
+      "id": 274613,
+      "name": "Центральный кагал Acoustic Energy AE 107-2",
+      "unique": 4,
+      "class": "true_multi_angle",
+      "files": [
+        "assets/enriched/274613/274613_w88_00.jpg",
+        "assets/enriched/274613/274613_w88_01.jpg",
+        "assets/enriched/274613/274613_w88_02.jpg",
+        "assets/enriched/274613/274613_w88_03.jpg"
+      ]
+    }
+  ],
+  "remaining_top_padded": [
+    {
+      "id": 15742,
+      "price": 320000,
+      "uq": 3,
+      "name": "CD проигрыватель Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 c"
+    },
+    {
+      "id": 262549,
+      "price": 320000,
+      "uq": 2,
+      "name": "Напольная акустика Audio Physic Sitara ( audio physic sitara )"
+    },
+    {
+      "id": 16864,
+      "price": 280000,
+      "uq": 2,
+      "name": "Интегральный усилитель Ultimate Audio MC 845 AASE ( ultimate audio mc "
+    },
+    {
+      "id": 16788,
+      "price": 270000,
+      "uq": 2,
+      "name": "предусилитель Soulnote sa3.0 ( soulnote sa3 0 )"
+    },
+    {
+      "id": 16852,
+      "price": 250000,
+      "uq": 2,
+      "name": "усилитель мощности Ultimate Audio MC 300 ASE ( ultimate audio mc 300 a"
+    },
+    {
+      "id": 16786,
+      "price": 244000,
+      "uq": 2,
+      "name": "усилитель мощности Soulnote sa2.0 ( soulnote sa2 0 )"
+    },
+    {
+      "id": 15858,
+      "price": 215000,
+      "uq": 2,
+      "name": "повышающий трансформатор Triode TR MC1SE ( triode tr mc1se )"
+    },
+    {
+      "id": 264077,
+      "price": 212500,
+      "uq": 2,
+      "name": "Кварцевые диски Audio Replas OPT-100HG-SS HR/4P ( audio replas opt 100"
+    },
+    {
+      "id": 16180,
+      "price": 200000,
+      "uq": 2,
+      "name": "CD проигрыватель Trigon Prince ( cd trigon prince )"
+    },
+    {
+      "id": 15864,
+      "price": 199000,
+      "uq": 2,
+      "name": "усилитель мощности 47 Labs 4706-50 ( 47 labs 4706 50 )"
+    },
+    {
+      "id": 15718,
+      "price": 190000,
+      "uq": 2,
+      "name": "цифро аналоговый преобразователь 47 Labs 4715 ( 47 labs 4715 )"
+    },
+    {
+      "id": 15940,
+      "price": 182750,
+      "uq": 2,
+      "name": "интегральный усилитель Line Magnetic Audio LM 217 IA ( line magnetic a"
+    }
+  ],
+  "notes": [
+    "Skipped Jadeitte 4230 / MTP-2 264126 (no new sources).",
+    "Decor 1C 75-89 + ≤74: Flickr size-band FRONT no-grille + 1C driver/terminal/mount/cable details.",
+    "Decor 2SC 75-89 + ≤74: LCR multi-array 3/4 + platform terminal/mount/cable/driver details.",
+    "AE107-2: black-only gallery 3/4 + OEM grille-on pack; rejected walnut/dual-finish/towers.",
+    "Rejected/scarce: AE308 black only ~2 unique angles; Imagine S gloss black only 2 crops; Sitara/MC100/On-Wall white dhash-stuck; Decor 2S lacks product-only side heroes."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "wave": 81,
+  "at": "2026-11-15T18:03:39Z",
+  "counts": {
+    "true_multi_angle": 1316,
+    "padded": 199,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 2,
+  "cleared": [
+    {
+      "id": 264397,
+      "name": "Фоно кабель Furutech Silver Arrows II &#8211; XLR ( furutech silver arrows ii xlr )",
+      "unique": 6,
+      "price": 195458,
+      "notes": "Silver Arrows II-XLR DIN→XLR: OEM+NL+Audiohum+PartsConnexion+Douglas×2; reject RCA/R4/L/Ag-12/watermarks"
+    },
+    {
+      "id": 264444,
+      "name": "Акустический кабель Furutech FS-301 ( furutech fs 301 )",
+      "unique": 4,
+      "price": 97282,
+      "notes": "FS-301 bulk pearl μ-OFC: live+media+OEM+AV Gallery; reject Audio Concept overlays/banana-finished"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "no new sources"
+    },
+    {
+      "id": 264126,
+      "name": "Furutech MTP-2",
+      "class": "single_real",
+      "note": "no new sources"
+    }
+  ],
+  "remaining": {
+    "padded": 199,
+    "single_real": 372
+  }
+}

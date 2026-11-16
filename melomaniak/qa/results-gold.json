@@ -1,0 +1,88 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "passed": [
+    {
+      "n": "title",
+      "d": ""
+    },
+    {
+      "n": "hero-brand",
+      "d": ""
+    },
+    {
+      "n": "hero-live-photo",
+      "d": "1600"
+    },
+    {
+      "n": "fonts-no-bebas",
+      "d": ""
+    },
+    {
+      "n": "catalog-filled",
+      "d": "24"
+    },
+    {
+      "n": "catalog-api-count",
+      "d": "1887"
+    },
+    {
+      "n": "card-images-ok",
+      "d": "8"
+    },
+    {
+      "n": "detail-img",
+      "d": "600"
+    },
+    {
+      "n": "detail-related",
+      "d": ""
+    },
+    {
+      "n": "filter-acoustic",
+      "d": "24"
+    },
+    {
+      "n": "favorites-toast",
+      "d": ""
+    },
+    {
+      "n": "search",
+      "d": ""
+    },
+    {
+      "n": "detail",
+      "d": ""
+    },
+    {
+      "n": "page-oplata",
+      "d": ""
+    },
+    {
+      "n": "page-dostavka",
+      "d": ""
+    },
+    {
+      "n": "page-ustanovka",
+      "d": ""
+    },
+    {
+      "n": "page-services",
+      "d": ""
+    },
+    {
+      "n": "brief",
+      "d": ""
+    },
+    {
+      "n": "mobile-menu",
+      "d": ""
+    }
+  ],
+  "failed": [],
+  "screenshots": [
+    "desktop-hero-gold.png",
+    "desktop-catalog-gold.png",
+    "mobile-hero-gold.png",
+    "mobile-catalog-gold.png"
+  ]
+}

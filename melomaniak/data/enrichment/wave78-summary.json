@@ -1,0 +1,44 @@
+{
+  "wave": 78,
+  "at": "2026-11-15T17:24:29Z",
+  "counts": {
+    "true_multi_angle": 1310,
+    "padded": 205,
+    "single_real": 372
+  },
+  "padded_to_true_multi": 2,
+  "cleared": [
+    {
+      "id": 16810,
+      "name": "предусилитель Trigon TRV 100 ( trigon trv 100 )",
+      "unique": 5,
+      "price": 280000,
+      "notes": "silver faceplate: OEM front+3d+rear + audio-markt rear angles; reject remote-on-top"
+    },
+    {
+      "id": 264399,
+      "name": "Фоно кабель Furutech AG-16 ( furutech ag 16 )",
+      "unique": 4,
+      "price": 102742,
+      "notes": "AG-16 DIN→RCA only: OEM 2066 + VH + Melomaniak studio + coil; reject L/R4/Walden V1-T"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "no new sources"
+    },
+    {
+      "id": 264126,
+      "name": "Furutech MTP-2",
+      "class": "single_real",
+      "note": "no new sources"
+    }
+  ],
+  "remaining": {
+    "padded": 205,
+    "single_real": 372
+  }
+}

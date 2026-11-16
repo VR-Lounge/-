@@ -1,0 +1,265 @@
+{
+  "26614": {
+    "meagerWave": "meager-w8-2026-11",
+    "descriptionHtml": "<p align=\"justify\">Референсный моноблок Audionet MAX собран в корпусе весом в 38 кг с толстыми алюминиевыми стенками и стальным шасси, благодаря чему обеспечивается защита внутренних элементов от внешних помех. На фасаде аппарата имеется 2-строчный вакуумно-флуоресцентный дисплей и кнопка питания/standby, совмещенная с функцией навигации/настройки меню.</p>\n<p align=\"justify\">Модель оснащена технологией ультралинейного усиления ULA для получения чистого звучания при любых режимах работы. Искажения сведены к минимуму. В цепях применяются элементы высокого класса, среди которых — японские электролитические конденсаторы с шелковым диэлектриком, слюдяные и сильноточные станиолевые конденсаторы. Для разводки используется кабель из сплава серебро/золото.</p>\n<p align=\"justify\">Сигнальные цепи Audionet MAX свободны от катушек, дросселей, разделительных конденсаторов и силовых реле, негативно влияющих на звучание, а пути прохождения сигнала максимально сокращены. Входной каскад представляет собой дифференциальный усилитель с двойным монолитным транзистором и позволяет оградить драйверную и выходную секции от влияния шумов источника сигнала. Искажения в выходных цепях минимизированы благодаря применению специального корректирующего контура. Входная и драйверная секции имеют отдельный источник питания с собственным тороидальным трансформатором (80 ВА).</p>\n<p align=\"justify\">На выходе установлены 8 мощных МОП-транзисторов с контролем тока смещения в реальном времени. Выходной каскад получает питание от двух массивных тороидальных трансформаторов мощностью по 1000 ВА, а четыре быстрых буферных конденсатора обеспечивают суммарную емкость в 156000 мкФ. В цепях моноблока используется связь по постоянному току.</p>\n<p align=\"justify\">Оконечник Audionet MAX выдает мощность в 400 Вт при 8 Ом и 700 Вт при 4 Ом. Защитой цепей усилителя занимается микропроцессор, который препятствует перегреву, перегрузке, появлению постоянной составляющей и др. Контур управления мощником имеет отдельный источник питания. На борту присутствует полезная функция для автоопределения фазы в розетке питающей сети.</p>\n<p align=\"justify\">Аппарат оснащен балансным XLR и линейным RCA входом. Для подсоединения акустических кабелей служат 4 терминала WBT, что позволяет обеспечить двухпроводное подключение. Имеются входной и выходной оптические разъемы для дистанционной активации компонентов по системной шине Audionet Link.</p>\n<p align=\"justify\">Моноблок Audionet MAX отлично справляется с любой нагрузкой, обеспечивая при этом точный тональный баланс, отличную микро- и макродинамику, превосходную музыкальность, прозрачность, чистоту и нейтральный характер звучания.</p>\n<hr class=\"separator\" />\n<h2>Особенности моноусилителя мощности Audionet MAX</h2>\n<ul class=\"features\">\n<li>Два тороидальных силовых трансформатора для питания выходного каскада</li>\n<li>Восемь MOSFET-транзисторов в выходной секции, высокий демпинг-фактор</li>\n<li>Отдельное питание для цепей управления и для входных/драйверных каскадов</li>\n</ul>\n<hr class=\"separator\" />\n<h2>Характеристики моноусилителя мощности Audionet MAX</h2>\n<table class=\"base-table\">\n<tbody>\n<tr>\n<td class=\"tech-name\">Мощность</td>\n<td class=\"tech-data\">400 Вт (8 Ом), 700 Вт (4 Ом), 1100 Вт (2 Ом)</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Входной импеданс</td>\n<td class=\"tech-data\">37 кОм (RCA), 3 кОм (XLR)</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Коэффициент демпфирования</td>\n<td class=\"tech-data\">1800 (10 кГц), 10000 (100 Гц)</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Диапазон частот</td>\n<td class=\"tech-data\">0–500000 Гц (- 3 дБ)</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Коэффициент гармоник</td>\n<td class=\"tech-data\">106 дБ (1 кГц, 25-700 Вт, 4 Ом)</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Коэффициент интермодуляционных искажений</td>\n<td class=\"tech-data\">110 дБ</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Отношение сигнал/шум</td>\n<td class=\"tech-data\">более 125 дБ</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Контроль функций устройства и защита с помощью микропроцессора</td>\n<td class=\"tech-data\">да</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Функция автоматического определения фазы в розетке</td>\n<td class=\"tech-data\">есть</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Функция автостарта</td>\n<td class=\"tech-data\">усилитель переходит в рабочий режим сразу при включении в сеть</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Функция автовключения Auto On при наличии сигнала</td>\n<td class=\"tech-data\">есть</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Функция/таймер для нагрева перед прослушиванием Warm Up Countdown</td>\n<td class=\"tech-data\">есть</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Входы</td>\n<td class=\"tech-data\">балансный XLR (Neutrik), линейный RCA</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Прочая коммутация</td>\n<td class=\"tech-data\">оптический вход и выход фирменной шины Audionet Link</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Выходы на АС</td>\n<td class=\"tech-data\">4 терминала WBT</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Блок питания</td>\n<td class=\"tech-data\">отдельное питание для контура управления, тороидальный трансформатор (80 ВА) для входного/драйверного каскадов; 2 тороидальных трансформатора по 1000 ВА для выходного каскада, суммарная емкость конденсаторов: 156000 мкФ</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Потребляемая мощность</td>\n<td class=\"tech-data\">макс.: 2000 Вт; в standby: менее 1 Вт</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Толщина лицевой алюминиевой панели</td>\n<td class=\"tech-data\">10 мм</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Толщина боковых алюминиевых панелей</td>\n<td class=\"tech-data\">4 мм</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Толщина верхней алюминиевой крышки</td>\n<td class=\"tech-data\">6 мм</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Толщина стального шасси</td>\n<td class=\"tech-data\">2 мм</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Габариты (ШхВхГ)</td>\n<td class=\"tech-data\">215х285х500 мм</td>\n</tr>\n<tr>\n<td class=\"tech-name\">Вес</td>\n<td class=\"tech-data\">38 кг</td>\n</tr>\n</tbody>\n</table>\n<p>Цена за пару!</p>\n<p>&nbsp;</p>\n<p><a href=\"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/08/Stereophile-2019-rc.promo_.jpg\"><img class=\"alignnone size-full wp-image-265396\" src=\"https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/08/Stereophile-2019-rc.promo_.jpg\" alt=\"\" width=\"142\" height=\"134\" /></a></p><h2>HITL</h2><p>galleryHitl: OEM/пресс &lt;4 ракурса. Добить витриной без водяных знаков.</p>",
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "400 Вт (8 Ом), 700 Вт (4 Ом), 1100 Вт (2 Ом)",
+        "source": "table"
+      },
+      {
+        "label": "Входной импеданс",
+        "value": "37 кОм (RCA), 3 кОм (XLR)",
+        "source": "table"
+      },
+      {
+        "label": "Коэффициент демпфирования",
+        "value": "1800 (10 кГц), 10000 (100 Гц)",
+        "source": "table"
+      },
+      {
+        "label": "Диапазон частот",
+        "value": "0–500000 Гц (- 3 дБ)",
+        "source": "table"
+      },
+      {
+        "label": "Коэффициент гармоник",
+        "value": "106 дБ (1 кГц, 25-700 Вт, 4 Ом)",
+        "source": "table"
+      },
+      {
+        "label": "Коэффициент интермодуляционных искажений",
+        "value": "110 дБ",
+        "source": "table"
+      },
+      {
+        "label": "Отношение сигнал/шум",
+        "value": "более 125 дБ",
+        "source": "table"
+      },
+      {
+        "label": "Контроль функций устройства и защита с помощью микропроцессора",
+        "value": "да",
+        "source": "table"
+      },
+      {
+        "label": "Функция автоматического определения фазы в розетке",
+        "value": "есть",
+        "source": "table"
+      },
+      {
+        "label": "Функция автостарта",
+        "value": "усилитель переходит в рабочий режим сразу при включении в сеть",
+        "source": "table"
+      },
+      {
+        "label": "Функция автовключения Auto On при наличии сигнала",
+        "value": "есть",
+        "source": "table"
+      },
+      {
+        "label": "Функция/таймер для нагрева перед прослушиванием Warm Up Countdown",
+        "value": "есть",
+        "source": "table"
+      },
+      {
+        "label": "Входы",
+        "value": "балансный XLR (Neutrik), линейный RCA",
+        "source": "table"
+      },
+      {
+        "label": "Прочая коммутация",
+        "value": "оптический вход и выход фирменной шины Audionet Link",
+        "source": "table"
+      },
+      {
+        "label": "Выходы на АС",
+        "value": "4 терминала WBT",
+        "source": "table"
+      },
+      {
+        "label": "Блок питания",
+        "value": "отдельное питание для контура управления, тороидальный трансформатор (80 ВА) для входного/драйверного каскадов; 2 тороидальных трансформатора по 1000 ВА для выходного каскада, суммарная емкость конденсаторов: 156000 мкФ",
+        "source": "table"
+      },
+      {
+        "label": "Потребляемая мощность",
+        "value": "макс.: 2000 Вт; в standby: менее 1 Вт",
+        "source": "table"
+      },
+      {
+        "label": "Толщина лицевой алюминиевой панели",
+        "value": "10 мм",
+        "source": "table"
+      },
+      {
+        "label": "Толщина боковых алюминиевых панелей",
+        "value": "4 мм",
+        "source": "table"
+      },
+      {
+        "label": "Толщина верхней алюминиевой крышки",
+        "value": "6 мм",
+        "source": "table"
+      },
+      {
+        "label": "Толщина стального шасси",
+        "value": "2 мм",
+        "source": "table"
+      },
+      {
+        "label": "Габариты (ШхВхГ)",
+        "value": "215х285х500 мм",
+        "source": "table"
+      },
+      {
+        "label": "Вес",
+        "value": "38 кг",
+        "source": "table"
+      },
+      {
+        "label": "Восемь MOSFET",
+        "value": "транзисторов в выходной секции, высокий демпинг-фактор",
+        "source": "list"
+      }
+    ],
+    "sources": [
+      "https://xn--80aannlcfckh.xn--p1ai/product/ysilitel_moshnosti_audionet_max/",
+      "https://audionet.de/en/products/max/"
+    ],
+    "imageUrls": [
+      "https://en.audionet.de/wp-content/uploads/max_s_b.png",
+      "https://audionet.de/wp-content/uploads/max_galerie_02.jpg",
+      "https://audionet.de/wp-content/uploads/max_galerie_03.jpg",
+      "https://audionet.de/wp-content/uploads/max_galerie_04.jpg",
+      "https://audionet.de/wp-content/uploads/max_galerie_05.jpg",
+      "https://audionet.de/wp-content/uploads/max_galerie_06.jpg",
+      "https://audionet.de/wp-content/uploads/max_mit_pre_g2.jpg",
+      "https://audionet.de/wp-content/uploads/max_galerie_01.jpg"
+    ],
+    "localLivePaths": []
+  },
+  "15902": {
+    "meagerWave": "meager-w8-2026-11",
+    "descriptionHtml": "<p><strong>Audionet SAM G2</strong> – интегральный стерео усилитель</p>\n<p>Компоненты <strong>Audionet</strong> не маркетинговые продукты, они аутентичны. Вдохновленный научными идеями и разработками, профессиональной инженерией и страстью достижения идеального звука.</p>\n<p>Это уникальные изделия, созданные для получения истинного музыкального наслаждения, имеют превосходную репутацию среди всех потребителей по всему миру. Каждый продукт среди всей линейки высококачественно изготовленных изделий индивидуально собран на собственной мануфактуре в г. Бохум трудом опытных и влюбленных в музыку специалистов.</p>\n<p>Новый SAM G2 сочетает в себе отличную производительность и неповторимые акустические свойства с исключительно компактными размерами. Аппарат такого качества редкость на рынке, что делает его идеально подходящим для домашнего использования и интонационно убедительного музыкального воспроизведения. SAM G2 мастер на все поставленные перед ним задачи, увлекает своих слушателей своим захватывающим духом подлинности. Его звучание характеризуется скоростью, целеустремленностью и честностью, в то же время, полный очарования, утонченности и аккуратностью к деталям. С его энтузиазмом, усилитель воспроизводит удивительно реалистичный звук.</p>\n<p><em>Технические характеристики <strong>Audionet SAM G2</strong>:</em></p>\n<p>– аналоговый интегральный усилитель</p>\n<p>– выходная мощность: 2 х 115 Вт (8 Ом), 2 x 210 Вт (4 Ом)</p>\n<p>– диапазон частот: 0 – 500000 Гц (-3 Дб)</p>\n<p>– демпинг фактор: 1000 (100 Гц)</p>\n<p>– гармонические искажения: к3 типа – 120 ДБ (25 Вт, на 4 Омах.)</p>\n<p>– соотношение сигнал / шум:&gt; 113 ДБ (10 В эфф.)</p>\n<p>– разделение по каналам:&gt; 93 ДБ (1 КГц)</p>\n<p>– емкость фильтрации: 96000 мкФ</p>\n<p>– входное сопротивление: 10 КОм, 150 пФ (RCA типа), 3 КОма 170 пФ (XLR типа.)</p>\n<p>– входы: 5 пар линейных входов RCA типа позолоченные, с тефлоной изоляцией, 1 пара XLR типа (симметричная) позолоченная, тефлоновая изоляция</p>\n<p>– выходы: 1 пара RCA типа – рекорд аут позолоченная с тефлоновой изоляцией, 1 пара RCA типа предварительный выход, позолоченные с тефлоновой изоляцией</p>\n<p>– 1 выход Audionet link для дистанционного управления</p>\n<p>– выходы на акустические системы: 1 пара WBT NextGen 4 мм клеммы, позолоченные</p>\n<p>– выходы на наушники: 6.3 мм, переключаемые электронно</p>\n<p>– питание: 220-240 В / 50-60 Гц</p>\n<p>– энергопотребление: &lt;1 Вт (выключенный режим), 700 Вт макс</p>\n<p>– размеры (Ширина х высота х глубина): 430 мм х 120 мм х 360 мм</p>\n<p>– вес: 14.5 кг</p>\n<p>– цена за шт</p>\n<p>Передняя панель: 10 мм серебро или черного цвета Дисплей: голубого или красного цвета.</p>\n<p>Опционально: Пульт ДУ Audionet Harmony 785, MM/MC фоно корректор</p>\n<aside><p><strong>Wave4.</strong> Specs извлечены из HTML карточки / OEM; HITL сверка паспорта. Галерею добить без водяных знаков.</p></aside>\n<p>Melomaniak editorial: без выдуманных ватт. При расхождении — приоритет у экземпляра на витрине.</p>",
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "115 Вт",
+        "source": "pdp-html"
+      },
+      {
+        "label": "Импеданс",
+        "value": "8 Ом",
+        "source": "pdp-html"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "3 Дб",
+        "source": "pdp-html"
+      },
+      {
+        "label": "Масса",
+        "value": "1 КГ",
+        "source": "pdp-html"
+      }
+    ],
+    "sources": [
+      "https://xn--80aannlcfckh.xn--p1ai/",
+      "https://xn--80aannlcfckh.xn--p1ai/product/integralnii_ysilitel_audionet_sam_g2/",
+      "https://audionet.de/en/products/sam-g2/"
+    ],
+    "imageUrls": [
+      "https://en.audionet.de/wp-content/uploads/sam_g2_s_b.png",
+      "https://audionet.de/wp-content/uploads/sam_g2_front.jpg",
+      "https://audionet.de/wp-content/uploads/sam_g2_back.jpg",
+      "https://audionet.de/wp-content/uploads/machov_sam_g2_front_0380.png",
+      "https://en.audionet.de/wp-content/uploads/sam_g2_b_b.png",
+      "https://en.audionet.de/wp-content/uploads/sam_g2_s_r.png",
+      "https://en.audionet.de/wp-content/uploads/sam_g2_b_r.png"
+    ],
+    "localLivePaths": []
+  },
+  "274490": {
+    "meagerWave": "meager-w8-2026-11",
+    "descriptionHtml": "<p><strong>Balthus 90</strong> — настоящее воплощение мощности и элегантности в мире Hi-Fi. Глянцевая фронтальная панель придаёт колонкам премиальный вид, а их фирменный звуковой почерк обеспечивает масштабность звуковой сцены. Крупная и мощная трехполосная акустическая система с двумя 21 см вуферами из целлюлозы и 13 см кевларовым среднечастотным динамиком. Впечатляющий низкий и плотный бас, который может заполнить вашу гостиную без сабвуфера. Акустика рассчитана на использование как в стереосистеме, так и в домашнем кинотеатре.</p>\n<p>Линейка представлена в двух благородных цветах: светлый дуб и темный орех.</p>\n<p>Рекомендуется использовать усилители от 100 до 200 Вт на канал. Модель для жилых помещений площадью от 25 до 50 м2.</p>\n<p>&nbsp;</p>\n<h2>Технические характеристики</h2>\n<div class=\"row mb-5\">\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Тип:</b></div>\n<div class=\"col-6 col-md-8 py-2\">Напольная акустика</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Акустическое оформление:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">Фронтальный фазоинвертор</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Динамик ВЧ:</b></div>\n<div class=\"col-6 col-md-8 py-2\">25 мм (Купольный, тканевый)</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Динамик СЧ:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">130 мм (Кевларовый)</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Динамик НЧ:</b></div>\n<div class=\"col-6 col-md-8 py-2\">2 х 210 мм (Целлюлозный)</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Количество полос:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">3</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Количество динамиков:</b></div>\n<div class=\"col-6 col-md-8 py-2\">4</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Мощность:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">100 &#8211; 200 Вт</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Чувствительность:</b></div>\n<div class=\"col-6 col-md-8 py-2\">93 дБ</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Частотный диапазон:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">30 &#8211; 20.000 Гц</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Импеданс:</b></div>\n<div class=\"col-6 col-md-8 py-2\">4 &#8211; 8 Ом</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Частота среза кроссовера:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">400 &#8211; 4000 Гц</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Размеры (мм) В х Ш х Г:</b></div>\n<div class=\"col-6 col-md-8 py-2\">1080 x 230 x 325</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Вес:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">48 кг (пара)</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Отделка:</b></div>\n<div class=\"col-6 col-md-8 py-2\">Light Oak, American Walnut</div>\n</div>\n</div>\n</div><h2>HITL</h2><p>galleryHitl: OEM/пресс &lt;4 ракурса. Добить витриной без водяных знаков.</p>",
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "200 Вт",
+        "source": "pdp-html"
+      },
+      {
+        "label": "Импеданс",
+        "value": "8 Ом",
+        "source": "pdp-html"
+      },
+      {
+        "label": "Чувствительность",
+        "value": "93 дБ",
+        "source": "pdp-html"
+      },
+      {
+        "label": "Габариты",
+        "value": "2 х 210 мм",
+        "source": "pdp-html"
+      },
+      {
+        "label": "Масса",
+        "value": "48 кг",
+        "source": "pdp-html"
+      }
+    ],
+    "sources": [
+      "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-davis-acoustics-balthus-90/",
+      "https://www.davis-acoustics.com/en/balthus-90/"
+    ],
+    "imageUrls": [
+      "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-03-scaled.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-04-scaled.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-05-scaled.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-06-scaled.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-07-scaled.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-noyer-1-scaled.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-noyer-4-scaled.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2020/10/Balthus-90-noyer-5-scaled.jpg"
+    ],
+    "localLivePaths": []
+  },
+  "274513": {
+    "meagerWave": "meager-w8-2026-11",
+    "descriptionHtml": "<p><strong>Basson 77</strong> — гром среди ясного неба!</p>\n<p>Большая полуроликовая подвеска обеспечивает большое движение воздуха и, таким образом, обеспечивает качественный сабвуфер.</p>\n<p>Для размещения рядом со стеной или под углом для еще большего уровня.</p>\n<p>Он мощный (максимум 600 Вт в классе D), оснащен универсальными настройками (частота среза, громкость, фаза) и при этом остается незаметным.<br />\n<strong>Davis Acoustics</strong> выбрала громкоговоритель спереди и два круглых фазоинвертора, направленных вперед, чтобы низкие частоты хорошо распределялись в комнате для прослушивания и чтобы их расположение мало влияло на конечный результат.</p>\n<p>Мы рекомендуем <strong>Basson 77</strong> для помещений от 15 до 30 м2.</p>\n<p>&nbsp;</p>\n<h2>Технические характеристики</h2>\n<div class=\"row mb-5\">\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Тип:</b></div>\n<div class=\"col-6 col-md-8 py-2\">Сабвуфер</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Акустическое оформление:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">Фронтальный фазоинвертор</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Динамик НЧ:</b></div>\n<div class=\"col-6 col-md-8 py-2\">250 мм (Целлюлозный)</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Количество динамиков:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">1</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Мощность:</b></div>\n<div class=\"col-6 col-md-8 py-2\">600 Вт</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Частотный диапазон:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">30 &#8211; 120 Гц</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Размеры (мм) В х Ш х Г:</b></div>\n<div class=\"col-6 col-md-8 py-2\">360 x 300 x 415</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2 bg-light\"><b>Вес:</b></div>\n<div class=\"col-6 col-md-8 py-2 bg-light\">15 кг (шт)</div>\n</div>\n</div>\n<div class=\"col-lg-12\">\n<div class=\"row\">\n<div class=\"col-6 col-md-4 py-2\"><b>Отделка:</b></div>\n<div class=\"col-6 col-md-8 py-2\">Black and dark grey</div>\n</div>\n</div>\n</div>",
+    "specs": [
+      {
+        "label": "Мощность",
+        "value": "600 Вт",
+        "source": "pdp-html"
+      },
+      {
+        "label": "Габариты",
+        "value": "360 x 300 x 415",
+        "source": "pdp-html"
+      },
+      {
+        "label": "Масса",
+        "value": "15 кг",
+        "source": "pdp-html"
+      }
+    ],
+    "sources": [
+      "https://xn--80aannlcfckh.xn--p1ai/product/%d1%81%d0%b0%d0%b1%d0%b2%d1%83%d1%84%d0%b5%d1%80-davis-acoustics-basson-77/",
+      "https://www.davis-acoustics.com/en/basson-77/"
+    ],
+    "imageUrls": [
+      "https://davis-acoustics.com/wp-content/uploads/2025/03/basson-777-cache.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2025/03/basson-777-vue-de-haut.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2025/03/basson-777.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2025/03/Basson777（2）-scaled.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2025/03/Arrière-basson-777.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2025/03/HP-basson-777.jpg",
+      "https://davis-acoustics.com/wp-content/uploads/2025/03/Basson777（2）-1200x795.jpg"
+    ],
+    "localLivePaths": []
+  }
+}

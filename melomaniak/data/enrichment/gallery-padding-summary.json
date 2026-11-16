@@ -1,0 +1,531 @@
+{
+  "at": "2026-11-15T13:42:47Z",
+  "counts": {
+    "true_multi_angle": 1355,
+    "padded": 164,
+    "single_real": 368
+  },
+  "pct": {
+    "true_multi_angle": 71.81,
+    "padded": 8.69,
+    "single_real": 19.5,
+    "padded_of_claimed_gal4plus": 26.64,
+    "not_true_multi": 28.19
+  },
+  "wave19": {
+    "padded_to_true_multi": 8,
+    "cleared": [
+      {
+        "id": 40225,
+        "name": "\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b Paradigm Persona C Vanta High Gloss Black "
+      },
+      {
+        "id": 40229,
+        "name": "\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b Paradigm Persona C Sonic Metallic Sliver ("
+      },
+      {
+        "id": 274552,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Acoustic Energy Corinium"
+      },
+      {
+        "id": 266938,
+        "name": "\u0421\u0430\u0431\u0432\u0443\u0444\u0435\u0440 Paradigm XR 13 ( paradigm xr 13 )"
+      },
+      {
+        "id": 266932,
+        "name": "\u0421\u0430\u0431\u0432\u0443\u0444\u0435\u0440 Paradigm XR 11 ( paradigm xr 11 )"
+      },
+      {
+        "id": 267422,
+        "name": "\u0418\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Line Magnetic Audio LM-609iA"
+      },
+      {
+        "id": 273537,
+        "name": "\u041c\u043e\u043d\u043e\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 PS Audio Stellar M1200"
+      },
+      {
+        "id": 274398,
+        "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c CANOR AUDIO CD 1.10"
+      }
+    ]
+  },
+  "remaining": {
+    "padded": 164,
+    "oneshot": 372
+  },
+  "topHitlPadded": [
+    {
+      "id": 15982,
+      "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Musica pow 1000 ( musica pow 1000 )"
+    },
+    {
+      "id": 15720,
+      "name": "CD \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442 47 Labs 4716 ( cd 47 labs 4716 )"
+    },
+    {
+      "id": 15742,
+      "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )"
+    },
+    {
+      "id": 262549,
+      "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Audio Physic Sitara ( audio physic sitara )"
+    },
+    {
+      "id": 15738,
+      "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Triode TRV CD5SE ( cd triode trv cd5se )"
+    }
+  ],
+  "topHitlOneshot": [
+    {
+      "id": 26602,
+      "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Arte forma 805PP ( arte forma 805pp )"
+    },
+    {
+      "id": 15610,
+      "name": "\u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Audio Physic Virgo 25 ( audio physic virgo 25 )"
+    },
+    {
+      "id": 264506,
+      "name": "\u0422\u043e\u043d\u0430\u0440\u043c SAEC  WE-4700 ( saec we 4700 )"
+    },
+    {
+      "id": 16222,
+      "name": "\u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Audio Physic Virgo V ( audio physic virgo v )"
+    },
+    {
+      "id": 4232,
+      "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Arte Forma Due Volte ( arte forma due volte )"
+    }
+  ],
+  "wave20": {
+    "padded_to_true_multi": 17,
+    "cleared": [
+      {
+        "id": 274019,
+        "name": "\u0421\u0435\u0442\u0435\u0432\u043e\u0439 \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c T+A SD 3100 HV"
+      },
+      {
+        "id": 16832,
+        "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Triode TRV P845SE ( triode trv p845se )"
+      },
+      {
+        "id": 261114,
+        "name": "\u043f\u0440\u0435\u0434\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u0438 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 audio research sp20 + vs1"
+      },
+      {
+        "id": 262129,
+        "name": "\u0426\u0410\u041f Soulnote D 2 ( soulnote d 2 )"
+      },
+      {
+        "id": 25156,
+        "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Anthem Statement P 2 BL ( anthem statemen"
+      },
+      {
+        "id": 271070,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Monitor Audio Gold 500 6G"
+      },
+      {
+        "id": 271065,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Monitor Audio Gold 300 5G"
+      },
+      {
+        "id": 4318,
+        "name": "\u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Lawrence Audio Violin SE ( lawrence audio"
+      },
+      {
+        "id": 16798,
+        "name": "\u0438\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Spec RSA M1EX ( spec rsa m1ex )"
+      },
+      {
+        "id": 271034,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Monitor Audio Gold 300 6G"
+      },
+      {
+        "id": 25160,
+        "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Anthem Statement M 1 BL ( anthem statemen"
+      },
+      {
+        "id": 271060,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Monitor Audio Gold 200 5G"
+      },
+      {
+        "id": 261878,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 PARADIGM Founder 80F Gloss Black ( paradi"
+      },
+      {
+        "id": 261882,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 PARADIGM Founder 80F Walnut ( paradigm fo"
+      },
+      {
+        "id": 261883,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 PARADIGM Founder 80F Midnight Cherry ( pa"
+      },
+      {
+        "id": 261884,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 PARADIGM Founder 80F Black Walnut ( parad"
+      },
+      {
+        "id": 34458,
+        "name": "\u0438\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Anthem STR Integrated Amplifier ( ant"
+      }
+    ]
+  },
+  "wave21": {
+    "padded_to_true_multi": 14,
+    "cleared": [
+      {
+        "id": 34699,
+        "name": "\u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Aydio Physic Scorpio 25 ( aydio physic sc"
+      },
+      {
+        "id": 272560,
+        "name": "\u0412\u0438\u043d\u0438\u043b\u043e\u0432\u044b\u0439 \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Clearaudio Emotion SE Package II"
+      },
+      {
+        "id": 274575,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Acoustic Energy AE 520"
+      },
+      {
+        "id": 270778,
+        "name": "\u041c\u043d\u043e\u0433\u043e\u043a\u0430\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Arcam PA720"
+      },
+      {
+        "id": 272558,
+        "name": "\u0412\u0438\u043d\u0438\u043b\u043e\u0432\u044b\u0439 \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Clearaudio Emotion SE Package I"
+      },
+      {
+        "id": 261835,
+        "name": "\u0423\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Anthem MCA 525 Gen 2 ( anthem mca 525 gen"
+      },
+      {
+        "id": 267642,
+        "name": "\u0418\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Advance Paris X-i1100"
+      },
+      {
+        "id": 261873,
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b PARADIGM Founder 90C Gloss Black ( paradig"
+      },
+      {
+        "id": 261875,
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b PARADIGM Founder 90C Walnut ( paradigm fou"
+      },
+      {
+        "id": 261876,
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b PARADIGM Founder 90C Midnight Cherry ( par"
+      },
+      {
+        "id": 261877,
+        "name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u043d\u0430\u043b PARADIGM Founder 90C Black Walnut ( paradi"
+      },
+      {
+        "id": 270652,
+        "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Wharfedale Aura 4"
+      },
+      {
+        "id": 15918,
+        "name": "\u0438\u043d\u0442\u0435\u0433\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c Leben CS 300X S ( leben cs 300x s )"
+      },
+      {
+        "id": 40975,
+        "name": "\u0423\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Audio Research VS115 ( audio research vs1"
+      }
+    ]
+  },
+  "wave": 93,
+  "padded_to_true_multi": 4,
+  "cleared": [
+    264323,
+    264204,
+    264385,
+    264338
+  ],
+  "top_hitl_padded": [
+    {
+      "id": 15982,
+      "name": "\u0443\u0441\u0438\u043b\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u0438 Musica pow 1000 ( musica pow 1000 )"
+    },
+    {
+      "id": 15720,
+      "name": "CD \u0442\u0440\u0430\u043d\u0441\u043f\u043e\u0440\u0442 47 Labs 4716 ( cd 47 labs 4716 )"
+    },
+    {
+      "id": 15742,
+      "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Ultimate Audio MC 100 CD ( cd ultimate audio mc 100 cd )"
+    },
+    {
+      "id": 262549,
+      "name": "\u041d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u0430\u043a\u0443\u0441\u0442\u0438\u043a\u0430 Audio Physic Sitara ( audio physic sitara )"
+    },
+    {
+      "id": 15738,
+      "name": "CD \u043f\u0440\u043e\u0438\u0433\u0440\u044b\u0432\u0430\u0442\u0435\u043b\u044c Triode TRV CD5SE ( cd triode trv cd5se )"
+    }
+  ],
+  "wave53": {
+    "padded_to_true_multi": 3,
+    "cleared": [
+      {
+        "id": 41438,
+        "name": "Paradigm Premier 700F Gloss White",
+        "unique": 4
+      },
+      {
+        "id": 264384,
+        "name": "Furutech GT2 Pro-B",
+        "unique": 4
+      },
+      {
+        "id": 264166,
+        "name": "Furutech FI-28(R)",
+        "unique": 5
+      }
+    ]
+  },
+  "wave54": {
+    "padded_to_true_multi": 2,
+    "cleared": [
+      {
+        "id": 41436,
+        "name": "Paradigm Premier 700F Gloss Black",
+        "unique": 5
+      },
+      {
+        "id": 262102,
+        "name": "Line Magnetic LP-33 Phono",
+        "unique": 5
+      }
+    ]
+  },
+  "wave55": {
+    "padded_to_true_multi": 5,
+    "cleared": [
+      {
+        "id": 41449,
+        "name": "Paradigm Premier 500C Gloss Black",
+        "unique": 5
+      },
+      {
+        "id": 41451,
+        "name": "Paradigm Premier 500C Gloss White",
+        "unique": 5
+      },
+      {
+        "id": 41435,
+        "name": "Paradigm Premier 200B Espresso Grain",
+        "unique": 4
+      },
+      {
+        "id": 41433,
+        "name": "Paradigm Premier 200B Gloss White",
+        "unique": 4
+      },
+      {
+        "id": 41431,
+        "name": "Paradigm Premier 200B Gloss Black",
+        "unique": 5
+      }
+    ]
+  },
+  "wave56": {
+    "padded_to_true_multi": 2,
+    "cleared": [
+      {
+        "id": 261853,
+        "name": "Paradigm Monitor SE 8000F Gloss White",
+        "unique": 4
+      },
+      {
+        "id": 41453,
+        "name": "Paradigm Premier 500C Espresso Grain",
+        "unique": 4
+      }
+    ]
+  },
+  "wave57": {
+    "padded_to_true_multi": 2,
+    "cleared": [
+      {
+        "id": 270628,
+        "name": "Wharfedale Evo 4.3 Black",
+        "unique": 4
+      },
+      {
+        "id": 269641,
+        "name": "Onkyo C-7030 Black",
+        "unique": 4
+      }
+    ]
+  },
+  "wave58": {
+    "padded_to_true_multi": 2,
+    "cleared": [
+      {
+        "id": 270636,
+        "name": "Wharfedale Evo 4.4 Walnut",
+        "unique": 4
+      },
+      {
+        "id": 274626,
+        "name": "Acoustic Energy AE120-2 Black",
+        "unique": 4
+      }
+    ]
+  },
+  "wave59": {
+    "padded_to_true_multi": 2,
+    "cleared": [
+      {
+        "id": 264274,
+        "name": "Furutech CF-102(R)",
+        "unique": 4
+      },
+      {
+        "id": 270549,
+        "name": "Van den Hul The Name RCA",
+        "unique": 4
+      }
+    ]
+  },
+  "wave60": {
+    "padded_to_true_multi": 4,
+    "cleared": [
+      {
+        "id": 270557,
+        "name": "\u041a\u0430\u0431\u0435\u043b\u044c \u043c\u0435\u0436\u0431\u043b\u043e\u0447\u043d\u044b\u0439 \u0430\u043d\u0430\u043b\u043e\u0433\u043e\u0432\u044b\u0439 RCA Van den Hul D-102 III Hybri",
+        "unique": 4
+      },
+      {
+        "id": 264169,
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 \u0441\u0435\u0442\u0435\u0432\u043e\u0439 Furutech FI-28(G) ( furutech fi 28(g) )",
+        "unique": 4
+      },
+      {
+        "id": 264289,
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-126(R) ( furutech fp 126(r) )",
+        "unique": 4
+      },
+      {
+        "id": 264290,
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-126(R) ( furutech fp 126(r) )",
+        "unique": 4
+      }
+    ]
+  },
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "note": "no new sources"
+    },
+    {
+      "id": 264126,
+      "name": "Furutech MTP-2",
+      "class": "single_real",
+      "note": "no new sources"
+    }
+  ],
+  "wave61": {
+    "padded_to_true_multi": 7,
+    "cleared": [
+      {
+        "id": 264291,
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-126(G) ( furutech fp 126(g) )",
+        "unique": 4
+      },
+      {
+        "id": 264292,
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-126(G) ( furutech fp 126(g) )",
+        "unique": 4
+      },
+      {
+        "id": 264318,
+        "name": "\u0421\u043f\u0430\u0439\u0434 Furutech FP-201(R) ( furutech fp 201(r) )",
+        "unique": 4
+      },
+      {
+        "id": 264317,
+        "name": "\u0421\u043f\u0430\u0439\u0434 Furutech FP-201(G) ( furutech fp 201(g) )",
+        "unique": 4
+      },
+      {
+        "id": 264301,
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
+        "unique": 4
+      },
+      {
+        "id": 264302,
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-3-117(R) ( furutech fp 3 117(r) )",
+        "unique": 4
+      },
+      {
+        "id": 264322,
+        "name": "\u041a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FP-200B(R) ( furutech fp 200b(r) )",
+        "unique": 4
+      }
+    ]
+  },
+  "wave62": {
+    "padded_to_true_multi": 3,
+    "cleared": [
+      {
+        "id": 270553,
+        "name": "\u041a\u0430\u0431\u0435\u043b\u044c \u043c\u0435\u0436\u0431\u043b\u043e\u0447\u043d\u044b\u0439 \u0430\u043d\u0430\u043b\u043e\u0433\u043e\u0432\u044b\u0439 RCA Van den Hul Bay C5 Hybrid",
+        "unique": 4
+      },
+      {
+        "id": 264200,
+        "name": "\u0421\u0435\u0442\u0435\u0432\u043e\u0439 \u043a\u043e\u043d\u043d\u0435\u043a\u0442\u043e\u0440 Furutech FI-8N (G) ( furutech fi 8n (g) )",
+        "unique": 4
+      },
+      {
+        "id": 264425,
+        "name": "\u0421\u0435\u0442\u0435\u0432\u043e\u0439 \u043a\u0430\u0431\u0435\u043b\u044c Furutech Alpha 3 ( furutech alpha 3 )",
+        "unique": 4
+      }
+    ]
+  },
+  "wave63": {
+    "padded_to_true_multi": 2,
+    "cleared": [
+      {
+        "id": 270491,
+        "name": "\u041a\u0430\u0431\u0435\u043b\u044c miniJack-2RCA Van den Hul The Flexicon",
+        "unique": 4
+      },
+      {
+        "id": 264210,
+        "name": "\u0421\u0435\u0442\u0435\u0432\u0430\u044f \u0432\u0438\u043b\u043a\u0430 Furutech FI-E11 N1 (G) ( furutech fi e11 n1 (g) )",
+        "unique": 4
+      }
+    ]
+  },
+  "wave64": {
+    "counts": {
+      "true_multi_angle": 1275,
+      "padded": 237,
+      "single_real": 375
+    },
+    "cleared": [
+      264323,
+      264204,
+      264385,
+      264338
+    ],
+    "names": {
+      "264323": "Furutech FP-200B(G)",
+      "264204": "Furutech FI-8N NCF(R)",
+      "264385": "Furutech GT2 Pro mB",
+      "264338": "Furutech F-35(G)"
+    }
+  },
+  "wave93": {
+    "cleared": [
+      15718,
+      274594,
+      16786
+    ],
+    "at": "2026-11-15T21:18:00Z"
+  },
+  "generatedAt": "2026-11-15T21:34:59Z"
+}

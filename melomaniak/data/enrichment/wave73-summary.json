@@ -1,0 +1,63 @@
+{
+  "wave": 73,
+  "at": "2026-11-15T15:44:18Z",
+  "counts": {
+    "true_multi_angle": 1298,
+    "padded": 217,
+    "single_real": 372
+  },
+  "cleared": [
+    {
+      "id": 262137,
+      "name": "ЦАП Soulnote D 1N",
+      "price": 650000,
+      "notes": "silver D-1N only: OEM front + live front + JP rear (MODEL NO. D-1N) + top internals + DAC board; reject black D-1, flute overlay, e-1 spike, lifestyle",
+      "unique": 5
+    },
+    {
+      "id": 264102,
+      "name": "Стабилизатор Audio Replas OPS-1 HR",
+      "price": 140250,
+      "notes": "OPS-1 HR quartz: dbd studio + fo2–5 in-use/studio + fid closeup; reject FIDELITY 2020 award live and scale pads; not OPS-1S",
+      "unique": 6
+    },
+    {
+      "id": 264519,
+      "name": "Межблочный кабель SAEC  XR-1 Stratosphere",
+      "price": 244927,
+      "notes": "XR-1 XLR only: OEM black-bg + phileweb white coil + phile XR-1 + SK-HK; strip XR-3000/XR-1000/SL-1 pads; reject overlays/diagrams/lifestyle",
+      "unique": 4
+    }
+  ],
+  "skipped_near": [
+    {
+      "id": 15742,
+      "name": "MC100 CD",
+      "reason": "uniq=3; still short one clean Ultimate Audio MC-100 angle"
+    },
+    {
+      "id": 44611,
+      "name": "SDP-25",
+      "reason": "uniq=3 after de-dup of scale pads; need 4th OEM angle"
+    },
+    {
+      "id": 262549,
+      "name": "Sitara",
+      "reason": "uniq=2; Sitara vs Sitara 25 risk; not enough distinct strict angles"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "class": "padded",
+      "reason": "skip unless new sources"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real",
+      "reason": "skip unless new sources"
+    }
+  ]
+}

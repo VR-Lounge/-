@@ -1,0 +1,109 @@
+{
+  "wave": 30,
+  "at": "2026-11-15T03:52:13.294865+00:00",
+  "paddedToTrue": 6,
+  "newlyMultiIds": [
+    270288,
+    272769,
+    270793,
+    271195,
+    272157,
+    274105
+  ],
+  "results": [
+    {
+      "id": 270288,
+      "multi": true,
+      "after": 4,
+      "name": "Напольная акустика Quad Revela 2",
+      "price": 277990,
+      "note": "Quad Revela 2 Hashstar black OEM front/grille/rear/details",
+      "files": [
+        "assets/enriched/270288/270288_w30_00.jpg",
+        "assets/enriched/270288/270288_w30_01.jpg",
+        "assets/enriched/270288/270288_w30_02.jpg",
+        "assets/enriched/270288/270288_w30_03.jpg"
+      ]
+    },
+    {
+      "id": 272769,
+      "multi": true,
+      "after": 7,
+      "name": "Стереоусилитель AudioLab 8300A",
+      "price": 133000,
+      "note": "Audiolab 8300A Hashstar black + rear + internal OEM",
+      "files": [
+        "assets/enriched/272769/272769_w30_00.jpg",
+        "assets/enriched/272769/272769_w30_01.jpg",
+        "assets/enriched/272769/272769_w30_02.jpg",
+        "assets/enriched/272769/272769_w30_03.jpg",
+        "assets/enriched/272769/272769_w30_04.jpg",
+        "assets/enriched/272769/272769_w30_05.jpg",
+        "assets/enriched/272769/272769_w30_06.jpg"
+      ]
+    },
+    {
+      "id": 270793,
+      "multi": true,
+      "after": 7,
+      "name": "Стереоусилитель Arcam RADIA A5",
+      "price": 119990,
+      "note": "Arcam RADIA A5 official front/3q/rear OEM",
+      "files": [
+        "assets/enriched/270793/270793_w30_00.jpg",
+        "assets/enriched/270793/270793_w30_01.jpg",
+        "assets/enriched/270793/270793_w30_02.jpg",
+        "assets/enriched/270793/270793_w30_03.jpg",
+        "assets/enriched/270793/270793_w30_04.jpg",
+        "assets/enriched/270793/270793_w30_05.jpg",
+        "assets/enriched/270793/270793_w30_06.jpg"
+      ]
+    },
+    {
+      "id": 271195,
+      "multi": true,
+      "after": 8,
+      "name": "Распределитель питания Nordost Quantum QBase QB4",
+      "price": 159990,
+      "note": "Nordost QBASE QB4 Mark III OEM EU/US/top/packaging",
+      "files": [
+        "assets/enriched/271195/271195_w30_00.jpg",
+        "assets/enriched/271195/271195_w30_01.jpg",
+        "assets/enriched/271195/271195_w30_02.jpg",
+        "assets/enriched/271195/271195_w30_03.jpg",
+        "assets/enriched/271195/271195_w30_04.jpg",
+        "assets/enriched/271195/271195_w30_05.jpg",
+        "assets/enriched/271195/271195_w30_06.jpg",
+        "assets/enriched/271195/271195_w30_07.jpg"
+      ]
+    },
+    {
+      "id": 272157,
+      "multi": true,
+      "after": 4,
+      "name": "Стереоусилитель NAD C379",
+      "price": 139990,
+      "note": "NAD C379 from-live + verified MDC rear (reject C338/lifestyle)",
+      "files": [
+        "assets/enriched/272157/272157_w30_00.jpg",
+        "assets/enriched/272157/272157_w30_01.jpg",
+        "assets/enriched/272157/272157_w30_02.jpg",
+        "assets/enriched/272157/272157_w30_03.jpg"
+      ]
+    },
+    {
+      "id": 274105,
+      "multi": true,
+      "after": 4,
+      "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
+      "price": 234000,
+      "note": "T+A Power Bar 2+5 HD OEM + detail (reject shared/wrong-brand pads)",
+      "files": [
+        "assets/enriched/274105/274105_w30_00.jpg",
+        "assets/enriched/274105/274105_w30_01.jpg",
+        "assets/enriched/274105/274105_w30_02.jpg",
+        "assets/enriched/274105/274105_w30_03.jpg"
+      ]
+    }
+  ]
+}

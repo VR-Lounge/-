@@ -1,0 +1,73 @@
+{
+  "wave": 76,
+  "at": "2026-11-15T16:51:30Z",
+  "counts": {
+    "true_multi_angle": 1305,
+    "padded": 210,
+    "single_real": 372
+  },
+  "cleared": [
+    {
+      "id": 274581,
+      "name": "Acoustic Energy AE300 piano black",
+      "price": 129200,
+      "notes": "black-only: OEM pair no-grille + slider alt + Doctorhead pair angles; reject walnut lifestyle and AE309 Melomaniak pollution"
+    },
+    {
+      "id": 271039,
+      "name": "Monitor Audio Bronze 200 6G black",
+      "price": 114990,
+      "notes": "black-only: Melomaniak pair + Crutchfield single 3/4 + feet + Richer Sounds rear (BRONZE 200 plate) + CF/HCS pair alts; reject lifestyle fireplace and Urban Grey/White frames"
+    },
+    {
+      "id": 33436,
+      "name": "Advance Acoustic Smart BX2 white",
+      "price": 125000,
+      "notes": "white-only: OEM white front + HCS front/rear + Melomaniak front + rear close/live; reject black-chassis fronts mixed with white rear"
+    }
+  ],
+  "skipped_near": [
+    {
+      "id": 15742,
+      "name": "MC100 CD",
+      "reason": "uniq=3; Cayin/Myryad/Magnat search noise; no clean 4th Ultimate Audio MC-100"
+    },
+    {
+      "id": 262549,
+      "name": "Sitara",
+      "reason": "finish/angle pack incomplete this wave; prioritize after AE300/Bronze200/BX2"
+    },
+    {
+      "id": 264542,
+      "name": "SUS-020 C\u2013mini-B",
+      "reason": "uniq=3; OEM set wrong terminations"
+    },
+    {
+      "id": 264396,
+      "name": "Silver Arrows II-R4",
+      "reason": "termination-specific; galleries polluted with Silver Arrows-12"
+    },
+    {
+      "id": 36357,
+      "name": "PSB Imagine S",
+      "reason": "surround not bookshelf naming; gloss black Crutchfield hunt incomplete"
+    },
+    {
+      "id": 264077,
+      "name": "OPT-100HG-SS",
+      "reason": "OEM opt100hgssweb shows C-rings not solid discs"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Jadeitte",
+      "class": "padded"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real"
+    }
+  ]
+}

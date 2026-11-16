@@ -1,0 +1,37 @@
+{
+  "16218": {
+    "meagerWave": "meager-w4-2026-11",
+    "descriptionHtml": "<p>Audio Physic Luna — активный сабвуфер Classic: down-firing ~250 мм, ~120 Вт, 30–150 Гц, 400×360×360 мм.</p>\n<ul><li>АЧХ 30–150 Гц</li><li>НЧ ~250 мм paper down-firing</li><li>~120 Вт</li><li>400 × 360 × 360 мм</li><li>~19–22 кг</li></ul>\n<aside><p><strong>Luna.</strong> Не архивные 90-е брошюры. HITL ревизия массы.</p></aside>\n<h2>HITL</h2><p>Добить ракурсы с витрины без водяных знаков при необходимости.</p>\n<p>Дополнение wave4 Melomaniak: editorial-bar без выдуманных ватт. HITL по ревизии и отделке экземпляра.</p>\n<aside><p><strong>HITL.</strong> Галерею добить витриной без водяных знаков при необходимости.</p></aside>\n<p>Сверить паспорт. При расхождении приоритет у экземпляра на витрине.</p>\n<p>Источники — OEM; не смешиваем соседние SKU линейки.</p>",
+    "specs": [
+      {
+        "label": "АЧХ",
+        "value": "30–150 Гц",
+        "source": "manufacturer"
+      },
+      {
+        "label": "НЧ",
+        "value": "~250 мм paper",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Мощность ус.",
+        "value": "~120 Вт",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Габариты",
+        "value": "400 × 360 × 360 мм",
+        "source": "manufacturer"
+      },
+      {
+        "label": "Масса",
+        "value": "~19–22 кг",
+        "source": "manufacturer"
+      }
+    ],
+    "sources": [
+      "https://www.audiophysic.com/en/product/luna-subwoofer/"
+    ],
+    "imageUrls": []
+  }
+}

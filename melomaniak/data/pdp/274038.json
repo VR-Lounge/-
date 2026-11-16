@@ -1,0 +1,157 @@
+{
+  "id": 274038,
+  "slug": "7e8f806ac09e6c31ff5f9fe8cf859a49",
+  "name": "Внешний ЦАП T+A DAC 200 + HDMI Module",
+  "cat": "ЦАПы",
+  "cats": [
+    "ЦАПы"
+  ],
+  "price": 991500,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/7e8f806ac09e6c31ff5f9fe8cf859a49/",
+  "descriptionHtml": "<p>T+A DAC 200 — ЦАП и аналоговый предусилитель Series 200: раздельные конвертеры PCM и DSD, релейная громкость и Class A-HV выходной каскад. Для тракта, где цифровой источник и аналоговая регулировка живут в одном корпусе без лишней суеты.</p>\n<ul><li>PCM + True 1-Bit DSD</li><li>До DSD1024 / PCM 768</li><li>Релейная громкость 1 дБ</li><li>Pentaconn 4,4 мм</li><li>Опция HDMI ARC</li></ul>\n<h2>Преобразование</h2>\n<p>PCM: Double-Differential-Quadruple Converter, четыре 32-bit ΣΔ на канал, до 705,6/768 kSps. DSD: True 1-Bit до DSD1024 (native bitstream). Апсемплинг с алгоритмами FIR short/long, Bezier/IIR, Bezier, NOS.</p>\n<h2>Интерфейсы</h2>\n<p>Цифровые входы: AES/EBU; 2× coax, 2× TosLink, BNC; 2× USB DAC (PCM до 768 kSps, DSD до 1024 при подходящем хосте). Опционально 2× HDMI IN + HDMI OUT с ARC. Аналоговый вход RCA. Выходы RCA/XLR variable и fixed; наушники 4,4 мм Pentaconn (Class A до 200 мА).</p>\n<h2>Измерения</h2>\n<p>АЧХ 0,1 Гц–200 кГц (+0/−3 дБ); С/Ш 110/114 дБ; THD/IM < 0,001%; разделение каналов > 108 дБ. Корпус 10 × 32 × 34 см, 6,2 кг.</p><p><em>В листинге — комплект с HDMI Module (2× HDMI IN, 1× HDMI OUT с ARC по спецификации производителя).</em></p>",
+  "shortHtml": "",
+  "descriptionText": "T+A DAC 200 — ЦАП и аналоговый предусилитель Series 200: раздельные конвертеры PCM и DSD, релейная громкость и Class A-HV выходной каскад. Для тракта, где цифровой источник и аналоговая регулировка живут в одном корпусе без лишней суеты.\n\n PCM + True 1-Bit DSD\n До DSD1024 / PCM 768\n Релейная громкость 1 дБ\n Pentaconn 4,4 мм\n Опция HDMI ARC\n\n Преобразование\n\n PCM: Double-Differential-Quadruple Converter, четыре 32-bit ΣΔ на канал, до 705,6/768 kSps. DSD: True 1-Bit до DSD1024 (native bitstream). Апсемплинг с алгоритмами FIR short/long, Bezier/IIR, Bezier, NOS.\n\n Интерфейсы\n\n Цифровые входы: AES/EBU; 2× coax, 2× TosLink, BNC; 2× USB DAC (PCM до 768 kSps, DSD до 1024 при подходящем хосте). Опционально 2× HDMI IN + HDMI OUT с ARC. Аналоговый вход RCA. Выходы RCA/XLR variable и fixed; наушники 4,4 мм Pentaconn (Class A до 200 мА).\n\n Измерения\n\n АЧХ 0,1 Гц–200 кГц (+0/−3 дБ); С/Ш 110/114 дБ; THD/IM 108 дБ. Корпус 10 × 32 × 34 см, 6,2 кг.\n В листинге — комплект с HDMI Module (2× HDMI IN, 1× HDMI OUT с ARC по спецификации производителя).",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "ЦАП / предусилитель",
+      "source": "manufacturer"
+    },
+    {
+      "label": "ЦАП PCM",
+      "value": "Double-Differential-Quadruple, 32-bit, 705.6/768 kSps",
+      "source": "manufacturer"
+    },
+    {
+      "label": "ЦАП DSD",
+      "value": "True 1-Bit до DSD1024",
+      "source": "manufacturer"
+    },
+    {
+      "label": "АЧХ",
+      "value": "0,1 Гц – 200 кГц (+0/−3 дБ)",
+      "source": "manufacturer"
+    },
+    {
+      "label": "С/Ш",
+      "value": "110 / 114 дБ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "THD / IM",
+      "value": "< 0,001% / < 0,001%",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Разделение каналов",
+      "value": "> 108 дБ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Цифровые входы",
+      "value": "AES/EBU; 2×coax; 2×TosLink; BNC; 2×USB; HDMI опционально",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Аналоговый вход",
+      "value": "RCA 250 мВ…4,5 В / 10 кОм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Выходы",
+      "value": "RCA/XLR variable + fixed; Pentaconn 4,4 мм",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Громкость",
+      "value": "Реле, шаг 1 дБ, −90…0 дБ",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Габариты (В×Ш×Г)",
+      "value": "10 × 32 × 34 см",
+      "source": "manufacturer"
+    },
+    {
+      "label": "Вес",
+      "value": "6,2 кг",
+      "source": "manufacturer"
+    },
+    {
+      "label": "HDMI",
+      "value": "Модуль в комплекте листинга: 2× IN, 1× OUT с ARC",
+      "source": "catalog"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module1.jpg",
+      "alt": "dac_200_hdmi_module1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module2.jpg",
+      "alt": "dac_200_hdmi_module2.jpg",
+      "local": "assets/from-live/products/dc48832b07_dac_200_hdmi_module2.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module3.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module3.jpg",
+      "alt": "dac_200_hdmi_module3.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module4.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module4.jpg",
+      "alt": "dac_200_hdmi_module4.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module5.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module5.jpg",
+      "alt": "dac_200_hdmi_module5.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module6.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module6.jpg",
+      "alt": "dac_200_hdmi_module6.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module7.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module7.jpg",
+      "alt": "dac_200_hdmi_module7.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module8.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module8.jpg",
+      "alt": "dac_200_hdmi_module8.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module9.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module9.jpg",
+      "alt": "dac_200_hdmi_module9.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module10.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/dac_200_hdmi_module10.jpg",
+      "alt": "dac_200_hdmi_module10.jpg"
+    },
+    {
+      "src": "https://www.ta-hifi.de/wp-content/uploads/dac_200_slider_dac_200_frontal-scaled.jpg",
+      "thumb": "https://www.ta-hifi.de/wp-content/uploads/dac_200_slider_dac_200_frontal-scaled.jpg",
+      "alt": "Внешний ЦАП T+A DAC 200 + HDMI Module",
+      "local": "assets/enriched/274038/c1e248e475_1.jpg",
+      "enriched": true,
+      "attribution": "www.ta-hifi.de"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://www.ta-hifi.de/en/audiosystems/series-200/dac-200-d-a-converter",
+    "https://www.ta-hifi.de/wp-content/uploads/Serie_200_GB.pdf"
+  ],
+  "enrichedAt": "2026-11-14T17:02:12Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией."
+}

@@ -1,0 +1,67 @@
+{
+  "wave": 94,
+  "at": "2026-11-15T21:35:00Z",
+  "counts": {
+    "true_multi_angle": 1355,
+    "padded": 164,
+    "single_real": 368
+  },
+  "cleared": [
+    {
+      "id": 16158,
+      "name": "47 Labs 4717 Shigaraki integrated",
+      "note": "8 unique: front/top/3q/rear + USAM alts + ear; rear plate model 4717; TMR WMs cropped; reject damage macros"
+    },
+    {
+      "id": 15924,
+      "name": "Leben RS-28CX preamp",
+      "note": "6 unique: studio front + rear + leather + purple + live + rear alt; crops break front↔rear dhash≤5; StereoNET WM cropped"
+    },
+    {
+      "id": 15738,
+      "name": "Triode TRV-CD5SE CD player",
+      "note": "6 unique: Musica.jp front/tube/appear/sides + rear MODEL TRV-CD5SE; reject remote composite / scratch macros"
+    },
+    {
+      "id": 16812,
+      "name": "Triode TRV-35SE integrated",
+      "note": "7 unique: Canuck front/alt/sides/rear/top + live 3q; red/silver TRV-35SE; reject rack group / pen-blemish; not TRV-35SER"
+    }
+  ],
+  "near_miss": [
+    {
+      "id": 15982,
+      "name": "Musica pow 1000",
+      "reason": "scarce distinct angles; POW-1000S is wrong SKU; metex hero 404"
+    },
+    {
+      "id": 15720,
+      "name": "47 Labs 4716",
+      "reason": "Canuck listing polluted (headphones/speakers/boxes); Melomaniak live has marketing overlay"
+    },
+    {
+      "id": 262549,
+      "name": "Audio Physic Sitara",
+      "reason": "gallery mixes Sitara_25 asset; skip Sitara 25/LE unless exact base Sitara angles"
+    },
+    {
+      "id": 16788,
+      "name": "Soulnote sa3.0",
+      "reason": "Balance/Line faceplate vs Source 1-6 / SA300 wireless mismatch"
+    }
+  ],
+  "hitl": {
+    "skip_unless_new_sources": [
+      {
+        "id": 4230,
+        "name": "Jadeitte",
+        "class": "padded"
+      },
+      {
+        "id": 264126,
+        "name": "MTP-2",
+        "class": "oneshot"
+      }
+    ]
+  }
+}

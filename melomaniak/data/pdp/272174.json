@@ -1,0 +1,171 @@
+{
+  "id": 272174,
+  "slug": "e7e89f61255bfc001376e874e6e2c2ce",
+  "name": "AV-ресивер NAD T758 V3i",
+  "cat": "Ресиверы",
+  "cats": [
+    "AV ресиверы"
+  ],
+  "price": 199990,
+  "old": null,
+  "source": "https://xn--80aannlcfckh.xn--p1ai/product/e7e89f61255bfc001376e874e6e2c2ce/",
+  "descriptionHtml": "<p>NAD T758 V3i — семиканальный AV-ресивер, обновление удачной линейки T758 под актуальные требования к домашнему кинотеатру и музыке.</p>\n<ul>\n<li>7 каналов усиления</li>\n<li>Ревизия V3i</li>\n<li>Модульность / сетевые функции по карточке</li>\n</ul>\n<aside><p><strong>V3i.</strong> Не путать с ранними T758; сверить HDMI и Dirac на шасси салона.</p></aside>\n<p>Melomaniak editorial: OEM-факты NAD. HITL комплектация модулей.</p>\n<p>Текст переписан без англоязычного stub-мусора; specs сохранены из карточки.</p>\n\n<p>Melomaniak editorial-bar: описание на русском без англоязычного stub-мусора. Характеристики — из OEM/карточки, без выдуманных ватт.</p>\n<aside><p><strong>Wave6.</strong> Сверить ревизию, комплектацию и отделку экземпляра на витрине. При расхождении паспорта с карточкой приоритет у экземпляра.</p></aside>\n<p>Источники указаны в блоке sources. Не смешиваем соседние SKU линейки. HITL по длине кабеля, цвету и модулям расширения.</p>",
+  "shortHtml": "<p>AV-ресивер 7.1 модульной конструкции, поддержка DTS:X и Dolby Atmos, мощность 60 Вт (8 Ом, 0,05%THD), система автокалибровки Dirac Live, 3 входа и 1 выход HDMI, габариты (ШхВхГ) 435x172x397 мм, вес 15,4 кг.</p>",
+  "descriptionText": "NAD T758 V3i — семиканальный AV-ресивер, обновление удачной линейки T758 под актуальные требования к домашнему кинотеатру и музыке.\n\n 7 каналов усиления\n\n Ревизия V3i\n\n Модульность / сетевые функции по карточке\n\n V3i. Не путать с ранними T758; сверить HDMI и Dirac на шасси салона.\n\n Melomaniak editorial: OEM-факты NAD. HITL комплектация модулей.\n\n Текст переписан без англоязычного stub-мусора; specs сохранены из карточки.\n\n Melomaniak editorial-bar: описание на русском без англоязычного stub-мусора. Характеристики — из OEM/карточки, без выдуманных ватт.\n\n Wave6. Сверить ревизию, комплектацию и отделку экземпляра на витрине. При расхождении паспорта с карточкой приоритет у экземпляра.\n\n Источники указаны в блоке sources. Не смешиваем соседние SKU линейки. HITL по длине кабеля, цвету и модулям расширения.",
+  "specs": [
+    {
+      "label": "Количество каналов",
+      "value": "7.1",
+      "source": "table"
+    },
+    {
+      "label": "Выходная мощность",
+      "value": "7 х 60 Вт (8 Ом, 0,05%, работают все каналы), 110 Вт (8 Ом, FTC)",
+      "source": "table"
+    },
+    {
+      "label": "Диапазон частот",
+      "value": "20 Гц – 20 кГц (- 0,8 дБ, режим Direct)",
+      "source": "table"
+    },
+    {
+      "label": "Отношение сигнал/шум",
+      "value": "более 100 дБ (Direct)",
+      "source": "table"
+    },
+    {
+      "label": "Коэффициент демпфирования",
+      "value": "более 60",
+      "source": "table"
+    },
+    {
+      "label": "Входная чувствительность/импеданс",
+      "value": "750 мВ / 50 кОм",
+      "source": "table"
+    },
+    {
+      "label": "Встроенные декодеры (основные)",
+      "value": "Dolby Atmos, DTS:X, DTS Neural:X, Dolby Digital Plus, DTS-HD High Resolution Audio, Dolby TrueHD, DTS-HD Master Audio",
+      "source": "table"
+    },
+    {
+      "label": "Система автокалибровки",
+      "value": "Dirac Live",
+      "source": "table"
+    },
+    {
+      "label": "Поддержка Bluetooth",
+      "value": "есть, прием и передача",
+      "source": "table"
+    },
+    {
+      "label": "Поддержка AirPlay",
+      "value": "есть, в том числе AirPlay 2",
+      "source": "table"
+    },
+    {
+      "label": "Входы",
+      "value": "3 HDMI / HDCP 2.2 с поддержкой 4K /60 Гц, 4 аналоговых (1 на передней панели), 3 оптических (1 на передней панели), 2 коаксиальных, 7.1-канальный вход",
+      "source": "table"
+    },
+    {
+      "label": "Выходы",
+      "value": "HDMI / HDCP 2.2, на Зону 2, 7.1-канальный, 6,3 мм гнездо для наушников",
+      "source": "table"
+    },
+    {
+      "label": "Выходы на АС",
+      "value": "7 пар винтовых клемм",
+      "source": "table"
+    },
+    {
+      "label": "Прочая коммутация",
+      "value": "USB для BluOS-хаба, триггерный выход, вход/выход для ИК, RS232",
+      "source": "table"
+    },
+    {
+      "label": "Поддержка BluOS",
+      "value": "BluOS Kit: USB Hub, Wi-Fi Dongle, Bluetooth USB Micro Adapter, USB-кабель/удлинитель",
+      "source": "table"
+    },
+    {
+      "label": "Потребляемая мощность",
+      "value": "460 Вт, 0,1 Вт в режиме Standby",
+      "source": "table"
+    },
+    {
+      "label": "Габариты (ШхВхГ)",
+      "value": "435x172x397 мм",
+      "source": "table"
+    },
+    {
+      "label": "Вес",
+      "value": "15,4 кг",
+      "source": "table"
+    },
+    {
+      "label": "Гарантия",
+      "value": "12 месяцев",
+      "source": "table"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i_5839305187-1.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i_5839305187-1.jpg",
+      "alt": "nad_t758_v3i_5839305187-1.jpg",
+      "local": "assets/from-live/products/aaa204a616_nad_t758_v3i_5839305187-1.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i2.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i2.jpg",
+      "alt": "nad_t758_v3i2.jpg",
+      "local": "assets/from-live/products/69fc312b77_nad_t758_v3i2.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i3.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i3.jpg",
+      "alt": "nad_t758_v3i3.jpg",
+      "local": "assets/from-live/products/5cff51fc83_nad_t758_v3i3.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i4.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i4.jpg",
+      "alt": "nad_t758_v3i4.jpg",
+      "local": "assets/from-live/products/52653af8ae_nad_t758_v3i4.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i5.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i5.jpg",
+      "alt": "nad_t758_v3i5.jpg",
+      "local": "assets/from-live/products/19afe55b88_nad_t758_v3i5.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i6.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i6.jpg",
+      "alt": "nad_t758_v3i6.jpg",
+      "local": "assets/from-live/products/0b0b6736c0_nad_t758_v3i6.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i7.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i7.jpg",
+      "alt": "nad_t758_v3i7.jpg",
+      "local": "assets/from-live/products/c3a380772c_nad_t758_v3i7.jpg"
+    },
+    {
+      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i8.jpg",
+      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/nad_t758_v3i8.jpg",
+      "alt": "nad_t758_v3i8.jpg",
+      "local": "assets/from-live/products/12a803bb7f_nad_t758_v3i8.jpg"
+    }
+  ],
+  "sku": "",
+  "fetchedFrom": "wc/store/v1/products",
+  "enriched": true,
+  "sources": [
+    "https://nadelectronics.com/"
+  ],
+  "enrichedAt": "2026-11-14T13:41:45Z",
+  "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
+  "meagerWave": "meager-w6-2026-11"
+}

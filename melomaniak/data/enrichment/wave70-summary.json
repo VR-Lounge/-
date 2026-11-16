@@ -1,0 +1,67 @@
+{
+  "wave": 70,
+  "at": "2026-11-15T15:05:44Z",
+  "counts": {
+    "true_multi_angle": 1290,
+    "padded": 222,
+    "single_real": 375
+  },
+  "cleared": [
+    {
+      "id": 271091,
+      "name": "Monitor Audio Bronze 50 6G white",
+      "price": 54990,
+      "notes": "white-only pack: otai pair + ASCII front pair + rear labeled BRONZE 50 + side; strip mixed walnut/urban-grey gallery; reject Bronze 100 terminals, lifestyle, B&W comparison"
+    },
+    {
+      "id": 264441,
+      "name": "Furutech FC-11",
+      "price": 0,
+      "notes": "4 FC-11 jacket-print construction angles (live labeled + coil + AV Gallery + Douglas); strip Furutech Component Video pollution from prior live1"
+    }
+  ],
+  "skipped_near": [
+    {
+      "id": 15742,
+      "name": "MC100 CD",
+      "reason": "uniq=3; no clean 4th Ultimate Audio MC-100 angle (Myryad/Magnat search noise)"
+    },
+    {
+      "id": 44611,
+      "name": "SDP-25",
+      "reason": "uniq=3; need clean SDP-25-only 4th without SDP-55 pollution"
+    },
+    {
+      "id": 264102,
+      "name": "OPS-1 HR",
+      "reason": "uniq=3; award overlay + lifestyle-on-vinyl extras; OPS-1S wrong model"
+    },
+    {
+      "id": 264524,
+      "name": "SCX-5000RR",
+      "reason": "only 2 clean RR (live1+maestro); mzu watermarked; OEM series DIN/XLR/composites; Furutech AG-12 polluted slot"
+    },
+    {
+      "id": 264408,
+      "name": "La Source 102",
+      "reason": "gallery pollution + length hard to verify vs 101; PDF extras lifestyle/hand"
+    },
+    {
+      "id": 264225,
+      "name": "Cover 102-D",
+      "reason": "gallery polluted with GTX plate + carbon 104/NCF; flat plate hard to get 4 distinct angles"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Jadeitte",
+      "class": "padded"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real"
+    }
+  ]
+}

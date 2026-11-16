@@ -1,0 +1,100 @@
+{
+  "wave": 136,
+  "counts": {
+    "true_multi_angle": 1598,
+    "padded": 11,
+    "single_real": 278
+  },
+  "cleared": [
+    {
+      "id": 263987,
+      "name": "Акустический кабель Acoustic Revive SPC Triple C (2.8 x 2.4) ( acoustic revive spc triple ",
+      "price": 58050,
+      "unique": 8
+    },
+    {
+      "id": 264141,
+      "name": "Коннектор сетевой Furutech FI-50NCF (R) ( furutech fi 50ncf (r) )",
+      "price": 41164,
+      "unique": 7
+    },
+    {
+      "id": 264406,
+      "name": "Клэмп Furutech Monaco LP Stabilizer ( furutech monaco lp stabilizer )",
+      "price": 36025,
+      "unique": 6
+    }
+  ],
+  "hitl_padded": 11,
+  "skipped": [
+    {
+      "id": 264525,
+      "reason": "SCX-5000X-X ≠ SCX-5000R-R/D-R"
+    },
+    {
+      "id": 264013,
+      "reason": "RLT-1 exact <4 (RLT-1K excluded)"
+    },
+    {
+      "id": 264142,
+      "reason": "FI-50M(R) non-NCF; only NCF packs found"
+    },
+    {
+      "id": 264115,
+      "reason": "CNS-9000SZ not found (CNS-7000 only)"
+    }
+  ],
+  "promote": {
+    "at": "2026-11-16T19:47:50Z",
+    "results": [
+      {
+        "id": 263987,
+        "before": 4,
+        "after": 8,
+        "unique": 8,
+        "files": [
+          "assets/enriched/263987/263987_w136_00.jpg",
+          "assets/enriched/263987/263987_w136_01.jpg",
+          "assets/enriched/263987/263987_w136_02.jpg",
+          "assets/enriched/263987/263987_w136_03.jpg",
+          "assets/enriched/263987/263987_w136_04.jpg",
+          "assets/enriched/263987/263987_w136_05.jpg",
+          "assets/enriched/263987/263987_w136_06.jpg",
+          "assets/enriched/263987/263987_w136_07.jpg"
+        ],
+        "name": "Акустический кабель Acoustic Revive SPC Triple C (2.8 x 2.4) ( acoustic revive s"
+      },
+      {
+        "id": 264141,
+        "before": 4,
+        "after": 7,
+        "unique": 7,
+        "files": [
+          "assets/enriched/264141/264141_w136_00.jpg",
+          "assets/enriched/264141/264141_w136_02.jpg",
+          "assets/enriched/264141/264141_w136_03.jpg",
+          "assets/enriched/264141/264141_w136_04.jpg",
+          "assets/enriched/264141/264141_w136_05.jpg",
+          "assets/enriched/264141/264141_w136_06.jpg",
+          "assets/enriched/264141/264141_w136_07.jpg"
+        ],
+        "name": "Коннектор сетевой Furutech FI-50NCF (R) ( furutech fi 50ncf (r) )"
+      },
+      {
+        "id": 264406,
+        "before": 4,
+        "after": 6,
+        "unique": 6,
+        "files": [
+          "assets/enriched/264406/264406_w136_00.jpg",
+          "assets/enriched/264406/264406_w136_01.jpg",
+          "assets/enriched/264406/264406_w136_02.jpg",
+          "assets/enriched/264406/264406_w136_03.jpg",
+          "assets/enriched/264406/264406_w136_04.jpg",
+          "assets/enriched/264406/264406_w136_05.jpg"
+        ],
+        "name": "Клэмп Furutech Monaco LP Stabilizer ( furutech monaco lp stabilizer )"
+      }
+    ]
+  }
+}

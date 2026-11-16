@@ -1,0 +1,500 @@
+{
+  "wave": "meager-w11-2026-11",
+  "prev_meager": 847,
+  "meager_now": 816,
+  "cleared_delta": 31,
+  "cleared_from_wave10_hitl_top30": [
+    {
+      "id": 262053,
+      "name": "Напольная акустика Divini Audio Illusion ( divini audio illusion )",
+      "gal": 6,
+      "price": 14000000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 33408,
+      "name": "напольная акустика Lawrence Audio Drongo ( lawrence audio drongo )",
+      "gal": 10,
+      "price": 4420000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 262057,
+      "name": "Полочная акустика Divini Audio Reference 3 ( divini audio reference 3 )",
+      "gal": 9,
+      "price": 3500000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 262055,
+      "name": "Напольная акустика Divini Audio Rasa ( divini audio rasa )",
+      "gal": 6,
+      "price": 2960000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 15622,
+      "name": "напольная акустика Lawrence Audio Double Bass ( lawrence audio double bass )",
+      "gal": 5,
+      "price": 2465000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 262092,
+      "name": "Напольная акустика Lawrence Audio Penguin ( lawrence audio penguin )",
+      "gal": 7,
+      "price": 2456500,
+      "cat": "Акустика"
+    },
+    {
+      "id": 15594,
+      "name": "напольная акустика Audio Physic Caldera ( audio physic caldera )",
+      "gal": 6,
+      "price": 2362500,
+      "cat": "Акустика"
+    },
+    {
+      "id": 15620,
+      "name": "напольная акустика Lawrence Audio Cello ( lawrence audio cello )",
+      "gal": 4,
+      "price": 2000000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 272634,
+      "name": "Фонокорректор Clearaudio Absolute Phono",
+      "gal": 8,
+      "price": 1971200,
+      "cat": "Усилители"
+    },
+    {
+      "id": 272838,
+      "name": "Сетевой проигрыватель AVM Audio MP 6.3",
+      "gal": 17,
+      "price": 1850000,
+      "cat": "Источники"
+    },
+    {
+      "id": 262090,
+      "name": "Напольная акустика Lawrence Audio Dove ( lawrence audio dove )",
+      "gal": 11,
+      "price": 1700000,
+      "cat": "Акустика"
+    },
+    {
+      "id": 25158,
+      "name": "усилитель мощности Anthem Statement P 5 BL ( anthem statement p 5 bl )",
+      "gal": 8,
+      "price": 1461915,
+      "cat": "Усилители"
+    },
+    {
+      "id": 15914,
+      "name": "усилитель мощности Leben CS 1000P ( leben cs 1000p )",
+      "gal": 9,
+      "price": 1080000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 271022,
+      "name": "Стереоусилитель мощности Matrix Audio M MA-1 NS2",
+      "gal": 9,
+      "price": 1049990,
+      "cat": "Усилители"
+    },
+    {
+      "id": 270478,
+      "name": "Виниловый проигрыватель Transrotor Dark Star Silver Shadow",
+      "gal": 7,
+      "price": 984900,
+      "cat": "Источники"
+    },
+    {
+      "id": 272562,
+      "name": "Виниловый проигрыватель Clearaudio Innovation Compact",
+      "gal": 9,
+      "price": 983600,
+      "cat": "Источники"
+    },
+    {
+      "id": 16846,
+      "name": "усилитель мощности Triode TRX P3M ( triode trx p3m )",
+      "gal": 6,
+      "price": 880000,
+      "cat": "Усилители"
+    },
+    {
+      "id": 260690,
+      "name": "Полочная акустика Lawrence Audio Bulbul ( lawrence audio bulbul )",
+      "gal": 8,
+      "price": 841500,
+      "cat": "Акустика"
+    }
+  ],
+  "cleared_from_top30_count": 18,
+  "still_stuck_from_top30_count": 12,
+  "still_stuck_from_top30": [
+    {
+      "id": 272699,
+      "name": "Сетевой проигрыватель Metronome Technologie DSC",
+      "gal": 2,
+      "price": 3710000,
+      "cat": "Источники",
+      "reasons": [
+        "gal:2"
+      ]
+    },
+    {
+      "id": 16834,
+      "name": "усилитель мощности Triode TRX M300 ( triode trx m300 )",
+      "gal": 3,
+      "price": 1600000,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:3"
+      ]
+    },
+    {
+      "id": 15588,
+      "name": "напольная акустика Amazon A.M.T. One ( amazon a m t one )",
+      "gal": 1,
+      "price": 1490000,
+      "cat": "Акустика",
+      "reasons": [
+        "gal:1"
+      ]
+    },
+    {
+      "id": 26636,
+      "name": "усилитель мощности Audio Physic AP MONO ( audio physic ap mono )",
+      "gal": 1,
+      "price": 1327500,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:1"
+      ]
+    },
+    {
+      "id": 262061,
+      "name": "Напольная акустика Divini Audio Reference 18 ( divini audio reference 18 )",
+      "gal": 1,
+      "price": 1140000,
+      "cat": "Акустика",
+      "reasons": [
+        "gal:1"
+      ]
+    },
+    {
+      "id": 26602,
+      "name": "усилитель мощности Arte forma 805PP ( arte forma 805pp )",
+      "gal": 2,
+      "price": 1140000,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:2"
+      ]
+    },
+    {
+      "id": 15906,
+      "name": "усилитель мощности Herron Audio M1 ( herron audio m1 )",
+      "gal": 1,
+      "price": 1100000,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:1"
+      ]
+    },
+    {
+      "id": 16832,
+      "name": "усилитель мощности Triode TRV P845SE ( triode trv p845se )",
+      "gal": 3,
+      "price": 1000000,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:3"
+      ]
+    },
+    {
+      "id": 15952,
+      "name": "предусилитель Line Magnetic Audio LM 512CA ( line magnetic audio lm 512ca )",
+      "gal": 2,
+      "price": 990000,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:2"
+      ]
+    },
+    {
+      "id": 4234,
+      "name": "усилитель мощности Arte Forma Theos ( arte forma theos )",
+      "gal": 1,
+      "price": 940000,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:1"
+      ]
+    },
+    {
+      "id": 26592,
+      "name": "напольная акустика Advance Acoustic X-L 500 Evo ( advance acoustic x l 500 evo )",
+      "gal": 1,
+      "price": 901425,
+      "cat": "Акустика",
+      "reasons": [
+        "gal:1"
+      ]
+    },
+    {
+      "id": 262141,
+      "name": "Интегральный усилитель Spec RSA M3 EX ( spec rsa m3 ex )",
+      "gal": 1,
+      "price": 901000,
+      "cat": "Усилители",
+      "reasons": [
+        "gal:1"
+      ]
+    }
+  ],
+  "remaining_by_category": {
+    "Другое": 358,
+    "Кабели": 211,
+    "Усилители": 114,
+    "Акустика": 78,
+    "Источники": 36,
+    "ЦАПы": 8,
+    "Ресиверы": 5,
+    "Наушники": 4,
+    "Спецпредложения": 1,
+    "Видео": 1
+  },
+  "audit_summary": {
+    "generatedAt": "2026-11-14T18:08:47Z",
+    "criteria": {
+      "descMinChars": 500,
+      "galleryMin": 4,
+      "stubHeuristics": true,
+      "requireSpecs": true,
+      "flagIfAny": true
+    },
+    "totalPdp": 1887,
+    "meagerCount": 816,
+    "okCount": 1071,
+    "reasonTallies": {
+      "gal": 816
+    },
+    "byCategory": {
+      "Другое": 358,
+      "Кабели": 211,
+      "Усилители": 114,
+      "Акустика": 78,
+      "Источники": 36,
+      "ЦАПы": 8,
+      "Ресиверы": 5,
+      "Наушники": 4,
+      "Спецпредложения": 1,
+      "Видео": 1
+    },
+    "top20": [
+      {
+        "id": 264551,
+        "name": "Кабель для наушников SAEC  SHC-B120FF ( saec shc b120ff )",
+        "cat": "Наушники",
+        "price": 30187,
+        "reasons": [
+          "gal:3"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 264550,
+        "name": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+        "cat": "Наушники",
+        "price": 24699,
+        "reasons": [
+          "gal:3"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 264549,
+        "name": "Кабель для наушников SAEC  SHC-120FF ( saec shc 120ff )",
+        "cat": "Наушники",
+        "price": 20582,
+        "reasons": [
+          "gal:3"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 264548,
+        "name": "Кабель для наушников SAEC  SHC-120FS ( saec shc 120fs )",
+        "cat": "Наушники",
+        "price": 15094,
+        "reasons": [
+          "gal:3"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 274105,
+        "name": "Сетевой фильтр T+A Power Bar 2+5 Basic HD",
+        "cat": "Другое",
+        "price": 234000,
+        "reasons": [
+          "gal:1"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 274103,
+        "name": "Сетевой фильтр T+A Power Bar 2+3 Basic HD",
+        "cat": "Другое",
+        "price": 202500,
+        "reasons": [
+          "gal:1"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 272699,
+        "name": "Сетевой проигрыватель Metronome Technologie DSC",
+        "cat": "Источники",
+        "price": 3710000,
+        "reasons": [
+          "gal:2"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 262061,
+        "name": "Напольная акустика Divini Audio Reference 18 ( divini audio reference 18 )",
+        "cat": "Акустика",
+        "price": 1140000,
+        "reasons": [
+          "gal:1"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 262059,
+        "name": "Полочная акустика Divini Audio Reference 8 ( divini audio reference 8 )",
+        "cat": "Акустика",
+        "price": 690000,
+        "reasons": [
+          "gal:1"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 270461,
+        "name": "Виниловый проигрыватель Transrotor Dark Star Reference",
+        "cat": "Источники",
+        "price": 634900,
+        "reasons": [
+          "gal:0"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 269486,
+        "name": "Полочная акустика Magnat Signature 903",
+        "cat": "Акустика",
+        "price": 149990,
+        "reasons": [
+          "gal:1"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 269517,
+        "name": "Активный сабвуфер Magnat Signature Sub 730 A",
+        "cat": "Акустика",
+        "price": 94990,
+        "reasons": [
+          "gal:2"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 269533,
+        "name": "Активный сабвуфер Magnat Signature Sub 530 A",
+        "cat": "Акустика",
+        "price": 84990,
+        "reasons": [
+          "gal:3"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 269814,
+        "name": "Кабель межблочный аналоговый RCA QED Reference 40",
+        "cat": "Кабели",
+        "price": 22000,
+        "reasons": [
+          "gal:2"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 269819,
+        "name": "Кабель для сабвуфера QED Reference Subwoofer 40",
+        "cat": "Кабели",
+        "price": 18300,
+        "reasons": [
+          "gal:1"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 15640,
+        "name": "Центральный канал Audio Physic Reference Center ( audio physic reference center )",
+        "cat": "Другое",
+        "price": 0,
+        "reasons": [
+          "gal:1"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 272806,
+        "name": "Сетевой фильтр AudioQuest NIAGARA 7000",
+        "cat": "Другое",
+        "price": 1683990,
+        "reasons": [
+          "gal:1"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 16834,
+        "name": "усилитель мощности Triode TRX M300 ( triode trx m300 )",
+        "cat": "Усилители",
+        "price": 1600000,
+        "reasons": [
+          "gal:3"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 33762,
+        "name": "SACD проигрыватель Esoteric K-01xs ( sacd esoteric k 01xs )",
+        "cat": "Спецпредложения",
+        "price": 1500000,
+        "reasons": [
+          "gal:3"
+        ],
+        "enriched": true
+      },
+      {
+        "id": 15588,
+        "name": "напольная акустика Amazon A.M.T. One ( amazon a m t one )",
+        "cat": "Акустика",
+        "price": 1490000,
+        "reasons": [
+          "gal:1"
+        ],
+        "enriched": true
+      }
+    ]
+  }
+}

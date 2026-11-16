@@ -1,0 +1,22 @@
+{
+  "wave": 66,
+  "counts": {
+    "true_multi_angle": 1281,
+    "padded": 231,
+    "single_real": 375
+  },
+  "cleared": [
+    264177,
+    264181,
+    264180
+  ],
+  "clearedNames": {
+    "264177": "Furutech FI-11M-N1(G)",
+    "264181": "Furutech FI-11M(Cu)",
+    "264180": "Furutech FI-11(Cu)"
+  },
+  "hitl": [
+    "Jadeitte 4230 (padded)",
+    "MTP-2 264126 (oneshot)"
+  ]
+}

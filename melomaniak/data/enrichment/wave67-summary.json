@@ -1,0 +1,63 @@
+{
+  "wave": 67,
+  "at": "2026-11-15T14:22:14Z",
+  "counts": {
+    "true_multi_angle": 1284,
+    "padded": 228,
+    "single_real": 375
+  },
+  "cleared": [
+    {
+      "id": 264211,
+      "name": "Furutech FI-E11(Cu)",
+      "price": 5988,
+      "notes": "OEM Cu-labeled + audiohum assembled/internal + eBay Cu Schuko; reject G/R/black-body gallery pads"
+    },
+    {
+      "id": 264333,
+      "name": "Furutech FT-H800(R)",
+      "price": 11476,
+      "notes": "live all-metal + OEM PDF photo + Audiophonics product + labeled packaging; strip CF shared media"
+    },
+    {
+      "id": 264332,
+      "name": "Furutech CF-H800(R)",
+      "price": 0,
+      "notes": "live CF + OEM PDF photo + Audiophonics CF angles; reject FT teardrop/all-metal shared media"
+    }
+  ],
+  "skipped_near": [
+    {
+      "id": 264184,
+      "name": "FI-15E(Cu)",
+      "reason": "finish ambiguous — open-shell contacts photograph gold-like across Cu-labeled dealer pages"
+    },
+    {
+      "id": 264335,
+      "name": "F-63-S(R)",
+      "reason": "only 2 dhash-unique angles (OEM/doug/live near-dupes)"
+    },
+    {
+      "id": 264250,
+      "name": "e-TP80ES",
+      "reason": "gallery polluted with NCF; E vs ES chassis labeling ambiguous"
+    },
+    {
+      "id": 264225,
+      "name": "Cover 102-D",
+      "reason": "gallery mixes carbon 104-D / frames / wrong duplex assemblies"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Jadeitte",
+      "class": "padded"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real"
+    }
+  ]
+}

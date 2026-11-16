@@ -1,0 +1,59 @@
+[
+  {
+    "product": "Advance Acoustic X-A220 + X-P700",
+    "page": "https://xn--80aannlcfckh.xn--p1ai/product/advance-acoustic-x-a220-x-p700/",
+    "image": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/09/advance-paris-x-a220-1.800x600w.png",
+    "local": "assets/product-1-xa220.png",
+    "review": "PASS: на фото видны X-P700 и два моноблока X-A220. Заменён ошибочный 600×600 crop (там читался X-A160).",
+    "extras": [
+      "assets/product-1-xp700.png",
+      "assets/product-1-rear.jpg"
+    ]
+  },
+  {
+    "product": "Advance Paris DX1 + PX1",
+    "page": "https://xn--80aannlcfckh.xn--p1ai/product/advance-paris-dx1-px1/",
+    "image": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/08/Dx1px1.jpg",
+    "local": "assets/product-2.jpg",
+    "review": "REVIEW: файл Dx1px1.jpg с карточки товара. На лицевых панелях читаются Smart DX1 и Smart BX1 — название листинга «DX1 + PX1». Сопоставление требует HITL у владельца; изображение взято с той же карточки WooCommerce.",
+    "extras": ["assets/product-2-dx1.jpg"]
+  },
+  {
+    "product": "ANTHEM PVA 5 Black",
+    "page": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%bc%d0%be%d1%89%d0%bd%d0%be%d1%81%d1%82%d0%b8-anthem-pva-5-black/",
+    "image": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2023/02/6bad5e5512c6bf1cc2f7a076fe1a8429-600x600.jpg",
+    "local": "assets/product-3.jpg",
+    "review": "PASS: Anthem PVA 5, чёрный корпус."
+  },
+  {
+    "product": "McIntosh MHA50",
+    "page": "https://xn--80aannlcfckh.xn--p1ai/product/%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8c-%d0%b4%d0%bb%d1%8f-%d0%bd%d0%b0%d1%83%d1%88%d0%bd%d0%b8%d0%ba%d0%be%d0%b2-mcintosh-mha50/",
+    "image": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/05/mcIntosh_mha_50_01.jpg",
+    "local": "assets/product-4.jpg",
+    "review": "PASS: McIntosh MHA50 Portable Decoding Amplifier."
+  },
+  {
+    "product": "PSB alpha PS1 & SubSeries 100",
+    "page": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%ba%d0%be%d0%bc%d0%bf%d0%bb%d0%b5%d0%ba%d1%82-2-1-psb-alpha-ps1-subseries-100-black/",
+    "image": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/04/2a5a14afee102791d73ffb70f82d5d34-600x600.jpg",
+    "local": "assets/product-5.jpg",
+    "review": "PASS: комплект 2.1 PSB (сателлиты + саб)."
+  },
+  {
+    "product": "Audio Physic Yara",
+    "page": "https://xn--80aannlcfckh.xn--p1ai/product/%d0%bd%d0%b0%d0%bf%d0%be%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0%d0%bc-audio-physic-yara/",
+    "image": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/01/audio_psychic_yara_close_up.jpg",
+    "local": "assets/product-6.jpg",
+    "review": "PASS: Audio Physic, детальные кадры (терминалы / драйвер / бейдж). Не общий фронт-портрет колонки."
+  },
+  {
+    "logo": "https://xn--80aannlcfckh.xn--p1ai/wp-content/themes/NEW2021/imgi/logo_max.gif",
+    "local": "assets/logo-max.gif",
+    "static": "assets/logo-static.png",
+    "note": "Оригинальный GIF — покадровая анимация винила. В прототипе: непрерывный CSS-spin + статичный знак."
+  },
+  {
+    "hero": null,
+    "note": "Hero-портрет / кадр Di’Anno с главной не извлечён автоматически. SVG-этюд + vinyl сохранены; не подставлялись стоки."
+  }
+]

@@ -5,3 +5,16 @@ firebase-service-account.json
 bot.log
 .DS_Store
 токен бота, ID группы.env
+
+melomaniak/qa/node_modules/
+melomaniak/qa/package-lock.json
+.superdesign/
+
+__pycache__/
+*.pyc
+melomaniak/qa/node_modules/
+*.mp4
+
+melomaniak/data/woo-store-products.json
+melomaniak/data/page-*.html
+melomaniak/__pycache__/

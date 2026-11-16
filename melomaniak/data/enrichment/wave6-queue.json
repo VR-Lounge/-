@@ -1,0 +1,33 @@
+{
+  "wave": "meager-w6-2026-11",
+  "generatedAt": "2026-11-14T13:52:41Z",
+  "startMeager": 1062,
+  "endMeager": 969,
+  "cleared": 93,
+  "okCount": 918,
+  "startGalleryHitl": 1057,
+  "endGalleryHitlAmongMeager": 969,
+  "galleryHitlCleared": 88,
+  "byCategory": {
+    "Другое": 380,
+    "Кабели": 231,
+    "Усилители": 154,
+    "Акустика": 123,
+    "Источники": 58,
+    "ЦАПы": 9,
+    "Ресиверы": 8,
+    "Наушники": 4,
+    "Спецпредложения": 1,
+    "Видео": 1
+  },
+  "reasonTallies": {
+    "gal": 969
+  },
+  "batches": [
+    "batch-meager-21-stubs.json",
+    "batch-meager-21b-pad.json",
+    "batch-meager-22-photos.json",
+    "batch-meager-23-photos.json",
+    "batch-meager-24-live.json"
+  ]
+}

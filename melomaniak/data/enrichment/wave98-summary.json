@@ -1,0 +1,44 @@
+{
+  "wave": 98,
+  "at": "2026-11-15T22:47:16Z",
+  "counts": {
+    "true_multi_angle": 1367,
+    "padded": 154,
+    "single_real": 366
+  },
+  "cleared": [
+    {
+      "id": 25164,
+      "name": "Paradigm PW 600 White",
+      "unique": 4
+    },
+    {
+      "id": 264408,
+      "name": "Furutech La Source 102",
+      "unique": 4
+    },
+    {
+      "id": 264407,
+      "name": "Furutech La Source 101",
+      "unique": 4
+    }
+  ],
+  "hitl": [
+    {
+      "id": 4230,
+      "name": "Arte Forma Jadeitte 101D",
+      "reason": "skip unless new sources"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "reason": "skip unless new sources"
+    }
+  ],
+  "deferred_near_clears": [
+    "264409 Furutech La Source 103 (ud=3, need +1 colored-insulation angle)",
+    "264542/264543 SAEC SUS-020 OTG (connector-strict; A-B shots wrong)",
+    "264077 OPT-100HG-SS (OEM award overlays; FLAT≠20mm SS)",
+    "15742 MC100 / 15730 sc1.0 / 15966 hpa200 (ud=3 stuck)"
+  ]
+}

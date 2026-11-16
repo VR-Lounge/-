@@ -1,0 +1,32 @@
+{
+  "wave": "meager-w5-2026-11",
+  "generatedAt": "2026-11-14T13:38:30Z",
+  "startMeager": 1221,
+  "endMeager": 1062,
+  "cleared": 159,
+  "okCount": 825,
+  "totalPdp": 1887,
+  "byCategory": {
+    "Другое": 380,
+    "Кабели": 231,
+    "Усилители": 182,
+    "Акустика": 173,
+    "Источники": 66,
+    "Ресиверы": 13,
+    "ЦАПы": 9,
+    "Наушники": 6,
+    "Спецпредложения": 1,
+    "Видео": 1
+  },
+  "reasonTallies": {
+    "gal": 1058,
+    "desc": 9
+  },
+  "galleryHitlAmongRemaining": 1057,
+  "batches": [
+    "batch-meager-19-researched.json",
+    "batch-meager-19b-rest.json",
+    "batch-meager-20-gallery.json"
+  ],
+  "notes": "Prio elec/spk/src stubs first; OEM+from-live gallery scrape; galleryHitl when <4 frames; cables/другое text+specs elite bar."
+}

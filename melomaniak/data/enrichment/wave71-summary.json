@@ -1,0 +1,79 @@
+{
+  "wave": 71,
+  "at": "2026-11-15T15:15:08Z",
+  "counts": {
+    "true_multi_angle": 1292,
+    "padded": 220,
+    "single_real": 375
+  },
+  "cleared": [
+    {
+      "id": 265339,
+      "name": "Soulnote S-3 Ver.2 silver",
+      "price": 0.0,
+      "notes": "silver-only pack: OEM 3/4 + front-on + rear (S-3H export label) + spike detail; strip black-finish live pollution",
+      "unique": 4
+    },
+    {
+      "id": 263963,
+      "name": "Acoustic Revive LINE-1.0R-TripleC-FM",
+      "price": 44625.0,
+      "notes": "LINE-1.0R-TripleC-FM RCA-only: OEM + playstereo + acousticrevive.bg + SF box-labeled + SF alt; strip RS/XS/XLR + Acrolink misroutes",
+      "unique": 5
+    }
+  ],
+  "skipped_near": [
+    {
+      "id": 15742,
+      "name": "MC100 CD",
+      "reason": "uniq=3; no clean 4th Ultimate Audio MC-100 angle (Myryad/Magnat search noise)"
+    },
+    {
+      "id": 44611,
+      "name": "SDP-25",
+      "reason": "uniq=3; dealer/OEM pages 403/410; need clean SDP-25-only 4th without SDP-55 pollution"
+    },
+    {
+      "id": 264102,
+      "name": "OPS-1 HR",
+      "reason": "uniq=3; award overlay + lifestyle extras; OPS-1S wrong model"
+    },
+    {
+      "id": 264524,
+      "name": "SCX-5000RR",
+      "reason": "only 2 clean RR (live1+maestro); mzu watermarked; DIN/XLR/composites polluted"
+    },
+    {
+      "id": 264542,
+      "name": "SUS-020 C-miniB",
+      "reason": "shares wrong A–C media ba78a02717 with sister SKU; termination mismatch"
+    },
+    {
+      "id": 15966,
+      "name": "hpa200",
+      "reason": "uniq=3; mvert 403; no clean 4th Musica HPA-200 angle"
+    },
+    {
+      "id": 264184,
+      "name": "FI-15E(Cu)",
+      "reason": "uniq=2 after OEM+live; Furutech site only single hero; variants are dups"
+    },
+    {
+      "id": 262549,
+      "name": "Sitara",
+      "reason": "uniq=2; Audio Physic product page 404; search only lifestyle event shots"
+    }
+  ],
+  "hitl_blocked": [
+    {
+      "id": 4230,
+      "name": "Jadeitte",
+      "class": "padded"
+    },
+    {
+      "id": 264126,
+      "name": "MTP-2",
+      "class": "single_real"
+    }
+  ]
+}

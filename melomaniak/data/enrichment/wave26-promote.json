@@ -1,0 +1,45 @@
+{
+  "wave": "wave26",
+  "at": "2026-11-15T02:45:18Z",
+  "paddedToTrue": 4,
+  "newlyMultiIds": [
+    271560,
+    271976,
+    271049,
+    270083
+  ],
+  "results": [
+    {
+      "id": 271560,
+      "name": "Центральный громкоговоритель KEF R6 Meta",
+      "price": 249990,
+      "after": 8,
+      "multi": true
+    },
+    {
+      "id": 271976,
+      "name": "Сетевой фильтр Isol-8 MiniSub Wave",
+      "price": 250200,
+      "after": 7,
+      "multi": true
+    },
+    {
+      "id": 271049,
+      "name": "Напольная акустика Monitor Audio Silver 300 7G",
+      "price": 249990,
+      "after": 5,
+      "multi": true
+    },
+    {
+      "id": 270083,
+      "name": "Напольная акустика DALI Opticon 6 MK2",
+      "price": 248390,
+      "after": 4,
+      "multi": true
+    }
+  ],
+  "hitlAttempted": {
+    "4230": "still u=2; Arte_forma-4 logo rejected; Jadeitte SE rear already in gallery",
+    "264126": "still u=1; stripped 3 w13var pads; no alternate OEM angle found"
+  }
+}
