@@ -71,32 +71,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/cambridge_audio_cxc_v2-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/cambridge_audio_cxc_v2-1.jpg",
-      "alt": "cambridge_audio_cxc_v2-1.jpg",
-      "local": "assets/from-live/products/ad2f16993f_cambridge_audio_cxc_v2-1.jpg"
+      "src": "local://269909_w118_00.jpg",
+      "thumb": "assets/enriched/269909/269909_w118_00.jpg",
+      "alt": "CD-транспорт Cambridge Audio CXC v2",
+      "local": "assets/enriched/269909/269909_w118_00.jpg",
+      "enriched": true,
+      "attribution": "wave118-oem",
+      "bytes": 106054
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/cambridge_audio_cxc_v2-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/cambridge_audio_cxc_v2-2.jpg",
-      "alt": "cambridge_audio_cxc_v2-2.jpg",
-      "local": "assets/from-live/products/9958a14ca9_cambridge_audio_cxc_v2-2.jpg"
+      "src": "local://269909_w118_01.jpg",
+      "thumb": "assets/enriched/269909/269909_w118_01.jpg",
+      "alt": "CD-транспорт Cambridge Audio CXC v2",
+      "local": "assets/enriched/269909/269909_w118_01.jpg",
+      "enriched": true,
+      "attribution": "wave118-oem",
+      "bytes": 101721
     },
     {
-      "src": "local-variant://269909/w17sc95",
-      "local": "assets/enriched/269909/743893173c_w17sc95.jpg",
-      "bytes": 95710,
-      "wave": "meager-w17-2026-11",
-      "w": 1710,
-      "h": 1710
+      "src": "local://269909_w118_02.jpg",
+      "thumb": "assets/enriched/269909/269909_w118_02.jpg",
+      "alt": "CD-транспорт Cambridge Audio CXC v2",
+      "local": "assets/enriched/269909/269909_w118_02.jpg",
+      "enriched": true,
+      "attribution": "wave118-oem",
+      "bytes": 159042
     },
     {
-      "src": "local-variant://269909/w17sc90",
-      "local": "assets/enriched/269909/bf8647370c_w17sc90.jpg",
-      "bytes": 88135,
-      "wave": "meager-w17-2026-11",
-      "w": 1620,
-      "h": 1620
+      "src": "local://269909_w118_03.jpg",
+      "thumb": "assets/enriched/269909/269909_w118_03.jpg",
+      "alt": "CD-транспорт Cambridge Audio CXC v2",
+      "local": "assets/enriched/269909/269909_w118_03.jpg",
+      "enriched": true,
+      "attribution": "wave118-oem",
+      "bytes": 44601
+    },
+    {
+      "src": "local://269909_w118_04.jpg",
+      "thumb": "assets/enriched/269909/269909_w118_04.jpg",
+      "alt": "CD-транспорт Cambridge Audio CXC v2",
+      "local": "assets/enriched/269909/269909_w118_04.jpg",
+      "enriched": true,
+      "attribution": "wave118-oem",
+      "bytes": 228932
     }
   ],
   "sku": "",
@@ -108,5 +125,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T14:21:02Z",
+  "galleryWave118": true
 }

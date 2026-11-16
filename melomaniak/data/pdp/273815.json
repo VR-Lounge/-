@@ -106,37 +106,40 @@
   ],
   "gallery": [
     {
-      "src": "https://teac.jp/images/products/_tmp/main_img/teac/tn-280bt-a3_main.jpg",
-      "thumb": "https://teac.jp/images/products/_tmp/main_img/teac/tn-280bt-a3_main.jpg",
+      "src": "local://273815_w118_00.jpg",
+      "thumb": "assets/enriched/273815/273815_w118_00.jpg",
       "alt": "Виниловый проигрыватель TEAC TN-280BT-A3",
-      "local": "assets/enriched/273815/84128e1f23_1.jpg",
+      "local": "assets/enriched/273815/273815_w118_00.jpg",
       "enriched": true,
-      "attribution": "teac.jp",
-      "bytes": 287678
+      "attribution": "wave118-oem",
+      "bytes": 234365
     },
     {
-      "src": "local-variant://273815/w17sc95",
-      "local": "assets/enriched/273815/7631688f3e_w17sc95.jpg",
-      "bytes": 132621,
-      "wave": "meager-w17-2026-11",
-      "w": 1520,
-      "h": 950
+      "src": "local://273815_w118_01.jpg",
+      "thumb": "assets/enriched/273815/273815_w118_01.jpg",
+      "alt": "Виниловый проигрыватель TEAC TN-280BT-A3",
+      "local": "assets/enriched/273815/273815_w118_01.jpg",
+      "enriched": true,
+      "attribution": "wave118-oem",
+      "bytes": 241080
     },
     {
-      "src": "local-variant://273815/w17sc90",
-      "local": "assets/enriched/273815/4a8cb254de_w17sc90.jpg",
-      "bytes": 119317,
-      "wave": "meager-w17-2026-11",
-      "w": 1440,
-      "h": 900
+      "src": "local://273815_w118_02.jpg",
+      "thumb": "assets/enriched/273815/273815_w118_02.jpg",
+      "alt": "Виниловый проигрыватель TEAC TN-280BT-A3",
+      "local": "assets/enriched/273815/273815_w118_02.jpg",
+      "enriched": true,
+      "attribution": "wave118-oem",
+      "bytes": 165390
     },
     {
-      "src": "local-variant://273815/w17sc85",
-      "local": "assets/enriched/273815/a535d433ec_w17sc85.jpg",
-      "bytes": 107246,
-      "wave": "meager-w17-2026-11",
-      "w": 1360,
-      "h": 850
+      "src": "local://273815_w118_03.jpg",
+      "thumb": "assets/enriched/273815/273815_w118_03.jpg",
+      "alt": "Виниловый проигрыватель TEAC TN-280BT-A3",
+      "local": "assets/enriched/273815/273815_w118_03.jpg",
+      "enriched": true,
+      "attribution": "wave118-oem",
+      "bytes": 117333
     }
   ],
   "sku": "",
@@ -149,5 +152,9 @@
   "enrichedAt": "2026-11-14T15:08:23Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w8-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T14:17:29Z",
+  "galleryWave118": true
 }

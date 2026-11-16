@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:58:45Z",
+  "generatedAt": "2026-11-16T14:24:22Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1535,
+    "true_multi_angle": 1537,
     "padded": 11,
-    "single_real": 341
+    "single_real": 339
   },
   "pct": {
-    "true_multi_angle": 81.35,
+    "true_multi_angle": 81.45,
     "padded": 0.58,
-    "single_real": 18.07,
-    "padded_of_claimed_gal4plus": 17.52,
-    "not_true_multi": 18.65
+    "single_real": 17.97,
+    "padded_of_claimed_gal4plus": 17.41,
+    "not_true_multi": 18.55
   },
   "padReasonTallies": {
-    "local-variant": 608,
+    "local-variant": 603,
     "wN-variant-name": 305,
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1861,
-  "claimedButNotTrueMulti": 326,
+  "claimedButNotTrueMulti": 324,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -1380,7 +1380,7 @@
       "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 341,
+  "hitlTrueOneshotCount": 339,
   "items": [
     {
       "id": 262053,
@@ -19806,16 +19806,14 @@
       "slug": "bbda39a91621fdb717190880bd6b9829",
       "cat": "Источники",
       "price": 70794,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 268744,
@@ -22299,16 +22297,14 @@
       "slug": "d15a92befc8b830d8911227c5d8f6409",
       "cat": "Источники",
       "price": 48990,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264029,
