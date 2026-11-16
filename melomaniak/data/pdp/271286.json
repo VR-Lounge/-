@@ -121,32 +121,49 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/powergrip_yg-2-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/powergrip_yg-2-1.jpg",
-      "alt": "powergrip_yg-2-1.jpg",
-      "local": "assets/from-live/products/ded260263f_powergrip_yg-2-1.jpg"
+      "src": "local://271286_w125_00.jpg",
+      "thumb": "assets/enriched/271286/271286_w125_00.jpg",
+      "alt": "Сетевой фильтр Powergrip YG-2",
+      "local": "assets/enriched/271286/271286_w125_00.jpg",
+      "enriched": true,
+      "attribution": "wave125-oem",
+      "bytes": 37904
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/powergrip_yg-2_6901301841-2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/powergrip_yg-2_6901301841-2.jpg",
-      "alt": "powergrip_yg-2_6901301841-2.jpg",
-      "local": "assets/from-live/products/7eb5a3fb29_powergrip_yg-2_6901301841-2.jpg"
+      "src": "local://271286_w125_01.jpg",
+      "thumb": "assets/enriched/271286/271286_w125_01.jpg",
+      "alt": "Сетевой фильтр Powergrip YG-2",
+      "local": "assets/enriched/271286/271286_w125_01.jpg",
+      "enriched": true,
+      "attribution": "wave125-oem",
+      "bytes": 69752
     },
     {
-      "src": "local-variant://271286/w17sc95",
-      "local": "assets/enriched/271286/46038deae8_w17sc95.jpg",
-      "bytes": 20700,
-      "wave": "meager-w17-2026-11",
-      "w": 570,
-      "h": 570
+      "src": "local://271286_w125_02.jpg",
+      "thumb": "assets/enriched/271286/271286_w125_02.jpg",
+      "alt": "Сетевой фильтр Powergrip YG-2",
+      "local": "assets/enriched/271286/271286_w125_02.jpg",
+      "enriched": true,
+      "attribution": "wave125-oem",
+      "bytes": 148279
     },
     {
-      "src": "local-variant://271286/w17sc90",
-      "local": "assets/enriched/271286/54355a6667_w17sc90.jpg",
-      "bytes": 19001,
-      "wave": "meager-w17-2026-11",
-      "w": 540,
-      "h": 540
+      "src": "local://271286_w125_03.jpg",
+      "thumb": "assets/enriched/271286/271286_w125_03.jpg",
+      "alt": "Сетевой фильтр Powergrip YG-2",
+      "local": "assets/enriched/271286/271286_w125_03.jpg",
+      "enriched": true,
+      "attribution": "wave125-oem",
+      "bytes": 222903
+    },
+    {
+      "src": "local://271286_w125_04.jpg",
+      "thumb": "assets/enriched/271286/271286_w125_04.jpg",
+      "alt": "Сетевой фильтр Powergrip YG-2",
+      "local": "assets/enriched/271286/271286_w125_04.jpg",
+      "enriched": true,
+      "attribution": "wave125-oem",
+      "bytes": 193666
     }
   ],
   "sku": "",
@@ -158,5 +175,9 @@
   "enrichedAt": "2026-11-14T13:36:22Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T16:31:27Z",
+  "galleryWave125": true
 }

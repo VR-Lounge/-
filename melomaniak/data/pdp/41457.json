@@ -26,32 +26,40 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/8abda3c0386d7c1371c31e2735064be2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/8abda3c0386d7c1371c31e2735064be2-600x600.jpg",
-      "alt": "8abda3c0386d7c1371c31e2735064be2",
-      "local": "assets/from-live/products/5119154767_8abda3c0386d7c1371c31e2735064be2.jpg"
+      "src": "local://41457_w125_00.jpg",
+      "thumb": "assets/enriched/41457/41457_w125_00.jpg",
+      "alt": "Центральный канал Paradigm Premier 600C Espresso Grain ( paradigm premier 600c espresso grain )",
+      "local": "assets/enriched/41457/41457_w125_00.jpg",
+      "enriched": true,
+      "attribution": "wave125-oem",
+      "bytes": 1760144
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/f251ac8ce7360b9bd0998c36a497c8e2.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/f251ac8ce7360b9bd0998c36a497c8e2-600x600.jpg",
-      "alt": "f251ac8ce7360b9bd0998c36a497c8e2",
-      "local": "assets/from-live/products/29e640b95f_f251ac8ce7360b9bd0998c36a497c8e2.jpg"
+      "src": "local://41457_w125_01.jpg",
+      "thumb": "assets/enriched/41457/41457_w125_01.jpg",
+      "alt": "Центральный канал Paradigm Premier 600C Espresso Grain ( paradigm premier 600c espresso grain )",
+      "local": "assets/enriched/41457/41457_w125_01.jpg",
+      "enriched": true,
+      "attribution": "wave125-oem",
+      "bytes": 967138
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/8abda3c0386d7c1371c31e2735064be2-768x768.jpg",
-      "local": "assets/enriched/41457/2282747264_w13var.jpg",
-      "bytes": 30324,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://41457_w125_03.jpg",
+      "thumb": "assets/enriched/41457/41457_w125_03.jpg",
+      "alt": "Центральный канал Paradigm Premier 600C Espresso Grain ( paradigm premier 600c espresso grain )",
+      "local": "assets/enriched/41457/41457_w125_03.jpg",
+      "enriched": true,
+      "attribution": "wave125-oem",
+      "bytes": 900078
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/10/f251ac8ce7360b9bd0998c36a497c8e2-600x600.jpg",
-      "local": "assets/enriched/41457/801db87da9_w13var.jpg",
-      "bytes": 13955,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://41457_w125_04.jpg",
+      "thumb": "assets/enriched/41457/41457_w125_04.jpg",
+      "alt": "Центральный канал Paradigm Premier 600C Espresso Grain ( paradigm premier 600c espresso grain )",
+      "local": "assets/enriched/41457/41457_w125_04.jpg",
+      "enriched": true,
+      "attribution": "wave125-oem",
+      "bytes": 81222
     }
   ],
   "sku": "",
@@ -63,5 +71,9 @@
   "enrichedAt": "2026-11-14T13:19:52Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T16:31:27Z",
+  "galleryWave125": true
 }

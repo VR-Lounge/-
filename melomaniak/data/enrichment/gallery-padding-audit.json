@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T16:20:47Z",
+  "generatedAt": "2026-11-16T16:34:46Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1554,
+    "true_multi_angle": 1557,
     "padded": 11,
-    "single_real": 322
+    "single_real": 319
   },
   "pct": {
-    "true_multi_angle": 82.35,
+    "true_multi_angle": 82.51,
     "padded": 0.58,
-    "single_real": 17.06,
-    "padded_of_claimed_gal4plus": 16.63,
-    "not_true_multi": 17.65
+    "single_real": 16.91,
+    "padded_of_claimed_gal4plus": 16.47,
+    "not_true_multi": 17.49
   },
   "padReasonTallies": {
-    "local-variant": 579,
-    "wN-variant-name": 292,
+    "local-variant": 577,
+    "wN-variant-name": 288,
     "cdn-size-thumb": 72,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1864,
-  "claimedButNotTrueMulti": 310,
+  "claimedButNotTrueMulti": 307,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -308,32 +308,6 @@
       "class": "single_real"
     },
     {
-      "id": 41457,
-      "name": "Центральный канал Paradigm Premier 600C Espresso Grain ( paradigm premier 600c espresso grain )",
-      "cat": "Другое",
-      "price": 143225,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "single_real"
-    },
-    {
-      "id": 41460,
-      "name": "Центральный канал Paradigm Premier 600C Gloss White ( paradigm premier 600c gloss white )",
-      "cat": "Другое",
-      "price": 143225,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "class": "single_real"
-    },
-    {
       "id": 262100,
       "name": "Интегральный усилитель Line Magnetic Audio LM 206 IA ( line magnetic audio lm 206 ia )",
       "cat": "Усилители",
@@ -576,6 +550,32 @@
       "padReasons": {
         "cdn-size-thumb": 1,
         "local-variant": 2
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264092,
+      "name": "Платформа Audio Replas SPL-3050/4P ( audio replas spl 3050 4p )",
+      "cat": "Другое",
+      "price": 94160,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 264115,
+      "name": "Поглотитель Audio Replas CNS- 9000SZ ( audio replas cns 9000sz )",
+      "cat": "Другое",
+      "price": 92400,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "wN-variant-name": 3
       },
       "class": "single_real"
     }
@@ -982,26 +982,6 @@
       "galleryHitl": true
     },
     {
-      "id": 41457,
-      "name": "Центральный канал Paradigm Premier 600C Espresso Grain ( paradigm premier 600c espresso grain )",
-      "cat": "Другое",
-      "price": 143225,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
-      "id": 41460,
-      "name": "Центральный канал Paradigm Premier 600C Gloss White ( paradigm premier 600c gloss white )",
-      "cat": "Другое",
-      "price": 143225,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
       "id": 262100,
       "name": "Интегральный усилитель Line Magnetic Audio LM 206 IA ( line magnetic audio lm 206 ia )",
       "cat": "Усилители",
@@ -1352,16 +1332,6 @@
       "galleryHitl": true
     },
     {
-      "id": 271286,
-      "name": "Сетевой фильтр Powergrip YG-2",
-      "cat": "Другое",
-      "price": 79990,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 2,
-      "galleryHitl": true
-    },
-    {
       "id": 264017,
       "name": "Поглотитель Acoustic Revive RR-888 ( acoustic revive rr 888 )",
       "cat": "Другое",
@@ -1380,9 +1350,39 @@
       "uniqueDistinct": 1,
       "padSlots": 3,
       "galleryHitl": true
+    },
+    {
+      "id": 264049,
+      "name": "Сетевой фильтр Acoustic Revive YTP-4R ( acoustic revive ytp 4r )",
+      "cat": "Другое",
+      "price": 77400,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 263977,
+      "name": "Межблочный кабель Acoustic Revive PC Triple C/EX ( acoustic revive pc triple c ex )",
+      "cat": "Кабели",
+      "price": 74844,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
+    },
+    {
+      "id": 264091,
+      "name": "Платформа Audio Replas SPL-3050/3P ( audio replas spl 3050 3p )",
+      "cat": "Другое",
+      "price": 74700,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 322,
+  "hitlTrueOneshotCount": 319,
   "items": [
     {
       "id": 262053,
@@ -14223,16 +14223,14 @@
       "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-premier-600c-grain",
       "cat": "Другое",
       "price": 143225,
-      "galleryHitl": true,
+      "galleryHitl": false,
       "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "uniqueDistinct": 4,
+      "clusterCount": 4,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 41460,
@@ -14240,16 +14238,14 @@
       "slug": "%d1%86%d0%b5%d0%bd%d1%82%d1%80%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%ba%d0%b0%d0%bd%d0%b0%d0%bb-paradigm-premier-600c-gloss-white-2",
       "cat": "Другое",
       "price": 143225,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "wN-variant-name": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 6,
+      "uniqueDistinct": 6,
+      "clusterCount": 6,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 270317,
@@ -18884,16 +18880,14 @@
       "slug": "5419a85596b1ae7356ef21e85f524896",
       "cat": "Другое",
       "price": 79990,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 271297,
