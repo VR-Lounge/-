@@ -31,36 +31,49 @@
   ],
   "gallery": [
     {
-      "src": "local://5408c79f61_FURUTECH-ALPHA-LINE-2-500x500-1.jpg",
-      "thumb": "assets/enriched/264369/c9b677af19_live1.jpg",
+      "src": "local://264369_w107_00.jpg",
+      "thumb": "assets/enriched/264369/264369_w107_00.jpg",
       "alt": "Межблочный кабель Furutech Alpha Line 1 ( furutech alpha line 1 )",
-      "local": "assets/enriched/264369/c9b677af19_live1.jpg",
+      "local": "assets/enriched/264369/264369_w107_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 24751
+      "attribution": "wave107-oem",
+      "bytes": 38455
     },
     {
-      "src": "local://6f8311356b_FURUTECH-ALPHA-LINE-PLUS.jpg",
-      "thumb": "assets/enriched/264369/aa8482dfab_live2.jpg",
+      "src": "local://264369_w107_01.jpg",
+      "thumb": "assets/enriched/264369/264369_w107_01.jpg",
       "alt": "Межблочный кабель Furutech Alpha Line 1 ( furutech alpha line 1 )",
-      "local": "assets/enriched/264369/aa8482dfab_live2.jpg",
+      "local": "assets/enriched/264369/264369_w107_01.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 20680
+      "attribution": "wave107-oem",
+      "bytes": 62598
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-ALPHA-LINE-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-ALPHA-LINE-1.jpg",
-      "alt": "FURUTECH-ALPHA-LINE-1",
-      "local": "assets/from-live/products/a5f6424c0e_FURUTECH-ALPHA-LINE-1.jpg"
+      "src": "local://264369_w107_02.jpg",
+      "thumb": "assets/enriched/264369/264369_w107_02.jpg",
+      "alt": "Межблочный кабель Furutech Alpha Line 1 ( furutech alpha line 1 )",
+      "local": "assets/enriched/264369/264369_w107_02.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 25747
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FURUTECH-ALPHA-LINE-1-300x300.jpg",
-      "local": "assets/enriched/264369/9c637c5034_w13var.jpg",
-      "bytes": 11752,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264369_w107_03.jpg",
+      "thumb": "assets/enriched/264369/264369_w107_03.jpg",
+      "alt": "Межблочный кабель Furutech Alpha Line 1 ( furutech alpha line 1 )",
+      "local": "assets/enriched/264369/264369_w107_03.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 24675
+    },
+    {
+      "src": "local://264369_w107_04.jpg",
+      "thumb": "assets/enriched/264369/264369_w107_04.jpg",
+      "alt": "Межблочный кабель Furutech Alpha Line 1 ( furutech alpha line 1 )",
+      "local": "assets/enriched/264369/264369_w107_04.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 34990
     }
   ],
   "sku": "",
@@ -72,5 +85,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:54:51Z",
+  "galleryWave107": true
 }

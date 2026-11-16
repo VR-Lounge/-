@@ -36,34 +36,58 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-ops-1s-hr-500x431-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/audio-replas-ops-1s-hr-500x431-1.jpg",
-      "alt": "audio-replas-ops-1s-hr-500&#215;431",
-      "local": "assets/from-live/products/7b07c793f8_audio-replas-ops-1s-hr-500x431-1.jpg"
+      "src": "local://264103_w107_00.jpg",
+      "thumb": "assets/enriched/264103/264103_w107_00.jpg",
+      "alt": "Стабилизатор Audio Replas OPS-1S  HR ( audio replas ops 1s hr )",
+      "local": "assets/enriched/264103/264103_w107_00.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 75856
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/prizhim_Audio_Replas_OPS_1S_HR_.jpg",
-      "local": "assets/enriched/264103/4c95fbf3b1_w14media.jpg",
-      "bytes": 54868,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264103_w107_01.jpg",
+      "thumb": "assets/enriched/264103/264103_w107_01.jpg",
+      "alt": "Стабилизатор Audio Replas OPS-1S  HR ( audio replas ops 1s hr )",
+      "local": "assets/enriched/264103/264103_w107_01.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 61887
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/prizhim_Audio_Replas_OPS_1S_HR_-300x300.jpg",
-      "local": "assets/enriched/264103/0da91d6336_w14var.jpg",
-      "bytes": 20434,
-      "wave": "meager-w14-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264103_w107_02.jpg",
+      "thumb": "assets/enriched/264103/264103_w107_02.jpg",
+      "alt": "Стабилизатор Audio Replas OPS-1S  HR ( audio replas ops 1s hr )",
+      "local": "assets/enriched/264103/264103_w107_02.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 138349
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2018/01/prizhim_Audio_Replas_OPS_1S_HR_-600x600.jpg",
-      "local": "assets/enriched/264103/a655a32e45_w14var.jpg",
-      "bytes": 55227,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264103_w107_03.jpg",
+      "thumb": "assets/enriched/264103/264103_w107_03.jpg",
+      "alt": "Стабилизатор Audio Replas OPS-1S  HR ( audio replas ops 1s hr )",
+      "local": "assets/enriched/264103/264103_w107_03.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 46379
+    },
+    {
+      "src": "local://264103_w107_04.jpg",
+      "thumb": "assets/enriched/264103/264103_w107_04.jpg",
+      "alt": "Стабилизатор Audio Replas OPS-1S  HR ( audio replas ops 1s hr )",
+      "local": "assets/enriched/264103/264103_w107_04.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 49847
+    },
+    {
+      "src": "local://264103_w107_05.jpg",
+      "thumb": "assets/enriched/264103/264103_w107_05.jpg",
+      "alt": "Стабилизатор Audio Replas OPS-1S  HR ( audio replas ops 1s hr )",
+      "local": "assets/enriched/264103/264103_w107_05.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 28131
     }
   ],
   "sku": "",
@@ -76,5 +100,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:54:51Z",
+  "galleryWave107": true
 }

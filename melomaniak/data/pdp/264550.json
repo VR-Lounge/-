@@ -46,36 +46,67 @@
   ],
   "gallery": [
     {
-      "src": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
-      "thumb": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/873/15092/SAEC_SHC_U300FSH__35303__53530.1663997296.jpg?c=2",
+      "src": "local://264550_w107_00.jpg",
+      "thumb": "assets/enriched/264550/264550_w107_00.jpg",
       "alt": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
-      "local": "assets/enriched/264550/4875d96d4c_1.jpg",
+      "local": "assets/enriched/264550/264550_w107_00.jpg",
       "enriched": true,
-      "attribution": "cdn11.bigcommerce.com",
-      "bytes": 32186
+      "attribution": "wave107-oem",
+      "bytes": 37064
     },
     {
-      "src": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
-      "thumb": "https://cdn11.bigcommerce.com/s-e31c8/images/stencil/1280x1280/products/874/22303/SAEC_SHC_U300FSH__59971__21453__84147.1739247599.jpg?c=2",
+      "src": "local://264550_w107_01.jpg",
+      "thumb": "assets/enriched/264550/264550_w107_01.jpg",
       "alt": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
-      "local": "assets/enriched/264550/7f6e0e4d64_2.jpg",
+      "local": "assets/enriched/264550/264550_w107_01.jpg",
       "enriched": true,
-      "attribution": "cdn11.bigcommerce.com",
-      "bytes": 154604
+      "attribution": "wave107-oem",
+      "bytes": 29708
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SHC-B120FS-scaled-e1614251537230.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SHC-B120FS-scaled-e1614251537230-600x600.jpg",
-      "alt": "SAEC-SHC-B120FS-scaled-e1614251537230",
-      "local": "assets/from-live/products/4b31b9b75b_SAEC-SHC-B120FS-scaled-e1614251537230.jpg"
+      "src": "local://264550_w107_02.jpg",
+      "thumb": "assets/enriched/264550/264550_w107_02.jpg",
+      "alt": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+      "local": "assets/enriched/264550/264550_w107_02.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 48305
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/SAEC-SHC-B120FS-scaled-e1614251537230-600x600.jpg",
-      "local": "assets/enriched/264550/394eb0b0b2_w14var.jpg",
-      "bytes": 21943,
-      "wave": "meager-w14-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264550_w107_03.jpg",
+      "thumb": "assets/enriched/264550/264550_w107_03.jpg",
+      "alt": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+      "local": "assets/enriched/264550/264550_w107_03.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 53509
+    },
+    {
+      "src": "local://264550_w107_04.jpg",
+      "thumb": "assets/enriched/264550/264550_w107_04.jpg",
+      "alt": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+      "local": "assets/enriched/264550/264550_w107_04.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 35314
+    },
+    {
+      "src": "local://264550_w107_05.jpg",
+      "thumb": "assets/enriched/264550/264550_w107_05.jpg",
+      "alt": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+      "local": "assets/enriched/264550/264550_w107_05.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 24379
+    },
+    {
+      "src": "local://264550_w107_06.jpg",
+      "thumb": "assets/enriched/264550/264550_w107_06.jpg",
+      "alt": "Кабель для наушников SAEC  SHC-B120FS ( saec shc b120fs )",
+      "local": "assets/enriched/264550/264550_w107_06.jpg",
+      "enriched": true,
+      "attribution": "wave107-oem",
+      "bytes": 46786
     }
   ],
   "sku": "",
@@ -89,5 +120,9 @@
   "enrichedAt": "2026-11-14T17:02:07Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией.",
   "meagerWave": "meager-w9-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T00:54:51Z",
+  "galleryWave107": true
 }
