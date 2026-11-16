@@ -31,35 +31,74 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-50-NCF-1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-50-NCF-1.jpg",
-      "alt": "FI-50-NCF (1)",
-      "local": "assets/enriched/264141/e51b2010dd_w17redl.jpg",
-      "bytes": 13980
-    },
-    {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/FI-50-NCF-1.jpg",
-      "local": "assets/enriched/264141/e51b2010dd_w17redl.jpg",
+      "src": "local://264141_w136_00.jpg",
+      "thumb": "assets/enriched/264141/264141_w136_00.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50NCF (R) ( furutech fi 50ncf (r) )",
+      "local": "assets/enriched/264141/264141_w136_00.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
       "bytes": 13980,
-      "wave": "meager-w17-2026-11",
-      "w": 250,
-      "h": 250
+      "wave": "w136-2026-11"
     },
     {
-      "src": "local-variant://264141/w17dsc95",
-      "local": "assets/enriched/264141/64cab48b34_w17dsc95.jpg",
-      "bytes": 9572,
-      "wave": "meager-w17-2026-11",
-      "w": 237,
-      "h": 237
+      "src": "local://264141_w136_02.jpg",
+      "thumb": "assets/enriched/264141/264141_w136_02.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50NCF (R) ( furutech fi 50ncf (r) )",
+      "local": "assets/enriched/264141/264141_w136_02.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 193669,
+      "wave": "w136-2026-11"
     },
     {
-      "src": "local-variant://264141/w17dsc90",
-      "local": "assets/enriched/264141/232f3332ea_w17dsc90.jpg",
-      "bytes": 8922,
-      "wave": "meager-w17-2026-11",
-      "w": 225,
-      "h": 225
+      "src": "local://264141_w136_03.jpg",
+      "thumb": "assets/enriched/264141/264141_w136_03.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50NCF (R) ( furutech fi 50ncf (r) )",
+      "local": "assets/enriched/264141/264141_w136_03.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 204314,
+      "wave": "w136-2026-11"
+    },
+    {
+      "src": "local://264141_w136_04.jpg",
+      "thumb": "assets/enriched/264141/264141_w136_04.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50NCF (R) ( furutech fi 50ncf (r) )",
+      "local": "assets/enriched/264141/264141_w136_04.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 667136,
+      "wave": "w136-2026-11"
+    },
+    {
+      "src": "local://264141_w136_05.jpg",
+      "thumb": "assets/enriched/264141/264141_w136_05.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50NCF (R) ( furutech fi 50ncf (r) )",
+      "local": "assets/enriched/264141/264141_w136_05.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 252190,
+      "wave": "w136-2026-11"
+    },
+    {
+      "src": "local://264141_w136_06.jpg",
+      "thumb": "assets/enriched/264141/264141_w136_06.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50NCF (R) ( furutech fi 50ncf (r) )",
+      "local": "assets/enriched/264141/264141_w136_06.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 85900,
+      "wave": "w136-2026-11"
+    },
+    {
+      "src": "local://264141_w136_07.jpg",
+      "thumb": "assets/enriched/264141/264141_w136_07.jpg",
+      "alt": "Коннектор сетевой Furutech FI-50NCF (R) ( furutech fi 50ncf (r) )",
+      "local": "assets/enriched/264141/264141_w136_07.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 88757,
+      "wave": "w136-2026-11"
     }
   ],
   "sku": "",
@@ -71,5 +110,9 @@
   "enrichedAt": "2026-11-14T13:33:46Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:47:50Z",
+  "galleryWave136": true
 }

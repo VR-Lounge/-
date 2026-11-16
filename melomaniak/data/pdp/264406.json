@@ -31,34 +31,64 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-monaco-lp-stabilizer.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-monaco-lp-stabilizer-600x600.jpg",
-      "alt": "furutech-monaco-lp-stabilizer",
-      "local": "assets/from-live/products/3f31b0a8e4_furutech-monaco-lp-stabilizer.jpg"
+      "src": "local://264406_w136_00.jpg",
+      "thumb": "assets/enriched/264406/264406_w136_00.jpg",
+      "alt": "Клэмп Furutech Monaco LP Stabilizer ( furutech monaco lp stabilizer )",
+      "local": "assets/enriched/264406/264406_w136_00.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 54537,
+      "wave": "w136-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-monaco-lp-stabilizer-300x300.jpg",
-      "local": "assets/enriched/264406/4b2b893aa8_w13var.jpg",
-      "bytes": 12316,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://264406_w136_01.jpg",
+      "thumb": "assets/enriched/264406/264406_w136_01.jpg",
+      "alt": "Клэмп Furutech Monaco LP Stabilizer ( furutech monaco lp stabilizer )",
+      "local": "assets/enriched/264406/264406_w136_01.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 163528,
+      "wave": "w136-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-monaco-lp-stabilizer-600x600.jpg",
-      "local": "assets/enriched/264406/6651611bb5_w13var.jpg",
-      "bytes": 33896,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://264406_w136_02.jpg",
+      "thumb": "assets/enriched/264406/264406_w136_02.jpg",
+      "alt": "Клэмп Furutech Monaco LP Stabilizer ( furutech monaco lp stabilizer )",
+      "local": "assets/enriched/264406/264406_w136_02.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 127504,
+      "wave": "w136-2026-11"
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/furutech-monaco-lp-stabilizer-768x768.jpg",
-      "local": "assets/enriched/264406/9fb3cdf727_w13var.jpg",
-      "bytes": 48468,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://264406_w136_03.jpg",
+      "thumb": "assets/enriched/264406/264406_w136_03.jpg",
+      "alt": "Клэмп Furutech Monaco LP Stabilizer ( furutech monaco lp stabilizer )",
+      "local": "assets/enriched/264406/264406_w136_03.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 220449,
+      "wave": "w136-2026-11"
+    },
+    {
+      "src": "local://264406_w136_04.jpg",
+      "thumb": "assets/enriched/264406/264406_w136_04.jpg",
+      "alt": "Клэмп Furutech Monaco LP Stabilizer ( furutech monaco lp stabilizer )",
+      "local": "assets/enriched/264406/264406_w136_04.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 142615,
+      "wave": "w136-2026-11"
+    },
+    {
+      "src": "local://264406_w136_05.jpg",
+      "thumb": "assets/enriched/264406/264406_w136_05.jpg",
+      "alt": "Клэмп Furutech Monaco LP Stabilizer ( furutech monaco lp stabilizer )",
+      "local": "assets/enriched/264406/264406_w136_05.jpg",
+      "enriched": true,
+      "attribution": "wave136-yahoo",
+      "bytes": 106312,
+      "wave": "w136-2026-11"
     }
   ],
   "sku": "",
@@ -70,5 +100,9 @@
   "enrichedAt": "2026-11-14T13:34:38Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w5-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T19:47:50Z",
+  "galleryWave136": true
 }
