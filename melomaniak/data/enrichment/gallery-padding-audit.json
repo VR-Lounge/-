@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T14:24:22Z",
+  "generatedAt": "2026-11-16T14:38:38Z",
   "criteria": {
     "multiMin": 4,
     "hashSize": 8,
@@ -15,25 +15,25 @@
   },
   "totalPdp": 1887,
   "counts": {
-    "true_multi_angle": 1537,
+    "true_multi_angle": 1541,
     "padded": 11,
-    "single_real": 339
+    "single_real": 335
   },
   "pct": {
-    "true_multi_angle": 81.45,
+    "true_multi_angle": 81.66,
     "padded": 0.58,
-    "single_real": 17.97,
-    "padded_of_claimed_gal4plus": 17.41,
-    "not_true_multi": 18.55
+    "single_real": 17.75,
+    "padded_of_claimed_gal4plus": 17.2,
+    "not_true_multi": 18.34
   },
   "padReasonTallies": {
-    "local-variant": 603,
-    "wN-variant-name": 305,
+    "local-variant": 596,
+    "wN-variant-name": 302,
     "cdn-size-thumb": 73,
     "cdn-rotated": 1
   },
   "claimedGal4Plus": 1861,
-  "claimedButNotTrueMulti": 324,
+  "claimedButNotTrueMulti": 320,
   "topPaddedByPrice": [
     {
       "id": 15982,
@@ -416,19 +416,6 @@
       "class": "single_real"
     },
     {
-      "id": 270481,
-      "name": "Фонокорректор Transrotor Phono III",
-      "cat": "Усилители",
-      "price": 141900,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "class": "single_real"
-    },
-    {
       "id": 26634,
       "name": "центральный канал Audio Physic Celsius III ( audio physic celsius iii )",
       "cat": "Другое",
@@ -569,6 +556,19 @@
       "name": "Кабель межблочный аналоговый RCA Van den Hul The Hill",
       "cat": "Кабели",
       "price": 108390,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "padReasons": {
+        "local-variant": 3
+      },
+      "class": "single_real"
+    },
+    {
+      "id": 270479,
+      "name": "Фонокорректор Transrotor Phono Studio",
+      "cat": "Усилители",
+      "price": 107900,
       "galleryLen": 4,
       "uniqueDistinct": 1,
       "padSlots": 3,
@@ -1090,16 +1090,6 @@
       "galleryHitl": true
     },
     {
-      "id": 270481,
-      "name": "Фонокорректор Transrotor Phono III",
-      "cat": "Усилители",
-      "price": 141900,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "padSlots": 3,
-      "galleryHitl": true
-    },
-    {
       "id": 26634,
       "name": "центральный канал Audio Physic Celsius III ( audio physic celsius iii )",
       "cat": "Другое",
@@ -1378,9 +1368,19 @@
       "uniqueDistinct": 1,
       "padSlots": 2,
       "galleryHitl": true
+    },
+    {
+      "id": 264048,
+      "name": "Сетевой фильтр Acoustic Revive YTP-6R ( acoustic revive ytp 6r )",
+      "cat": "Другое",
+      "price": 88200,
+      "galleryLen": 4,
+      "uniqueDistinct": 1,
+      "padSlots": 3,
+      "galleryHitl": true
     }
   ],
-  "hitlTrueOneshotCount": 339,
+  "hitlTrueOneshotCount": 335,
   "items": [
     {
       "id": 262053,
@@ -14361,16 +14361,14 @@
       "slug": "148f4ec1217fa4d17ad2f4e3fd7910f7",
       "cat": "Усилители",
       "price": 141900,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "local-variant": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264132,
@@ -20625,16 +20623,14 @@
       "slug": "%d0%bd%d0%b0%d0%b2%d0%b5%d1%81%d0%bd%d0%b0%d1%8f-%d0%b0%d0%ba%d1%83%d1%81%d1%82%d0%b8%d0%ba%d0%b0-paradigm-surround-3-black",
       "cat": "Акустика",
       "price": 60750,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 3,
-      "padReasons": {
-        "wN-variant-name": 3
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 7,
+      "uniqueDistinct": 7,
+      "clusterCount": 7,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264521,
@@ -22250,16 +22246,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-e-tp66-e-r",
       "cat": "Другое",
       "price": 49350,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264258,
@@ -22920,16 +22914,14 @@
       "slug": "%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9-%d1%84%d0%b8%d0%bb%d1%8c%d1%82%d1%80-furutech-e-tp66-e-g",
       "cat": "Другое",
       "price": 44100,
-      "galleryHitl": true,
-      "galleryLen": 4,
-      "uniqueDistinct": 1,
-      "clusterCount": 1,
-      "padSlots": 2,
-      "padReasons": {
-        "local-variant": 2
-      },
-      "hasPadding": true,
-      "class": "single_real"
+      "galleryHitl": false,
+      "galleryLen": 5,
+      "uniqueDistinct": 5,
+      "clusterCount": 5,
+      "padSlots": 0,
+      "padReasons": {},
+      "hasPadding": false,
+      "class": "true_multi_angle"
     },
     {
       "id": 264359,

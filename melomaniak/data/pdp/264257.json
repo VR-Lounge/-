@@ -31,35 +31,49 @@
   ],
   "gallery": [
     {
-      "src": "local://c17111b91e_Furutech-e-TP66E-инет-1.jpg",
-      "thumb": "assets/enriched/264257/e31cc8ac80_live1.jpg",
+      "src": "local://264257_w119_00.jpg",
+      "thumb": "assets/enriched/264257/264257_w119_00.jpg",
       "alt": "Сетевой фильтр Furutech e-TP66 E (G) ( furutech e tp66 e (g) )",
-      "local": "assets/enriched/264257/e31cc8ac80_live1.jpg",
+      "local": "assets/enriched/264257/264257_w119_00.jpg",
       "enriched": true,
-      "attribution": "from-live",
-      "bytes": 19567
+      "attribution": "wave119-oem",
+      "bytes": 50762
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-e-TP66E-инет.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2022/06/Furutech-e-TP66E-инет.jpg",
-      "alt": "Furutech-e-TP66E-инет",
-      "local": "assets/from-live/products/c17111b91e_Furutech-e-TP66E-инет.jpg"
+      "src": "local://264257_w119_01.jpg",
+      "thumb": "assets/enriched/264257/264257_w119_01.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP66 E (G) ( furutech e tp66 e (g) )",
+      "local": "assets/enriched/264257/264257_w119_01.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 49411
     },
     {
-      "src": "local-variant://264257/w17sc95",
-      "local": "assets/enriched/264257/1012ff5e92_w17sc95.jpg",
-      "bytes": 7014,
-      "wave": "meager-w17-2026-11",
-      "w": 237,
-      "h": 237
+      "src": "local://264257_w119_02.jpg",
+      "thumb": "assets/enriched/264257/264257_w119_02.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP66 E (G) ( furutech e tp66 e (g) )",
+      "local": "assets/enriched/264257/264257_w119_02.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 48605
     },
     {
-      "src": "local-variant://264257/w17sc90",
-      "local": "assets/enriched/264257/7b0aa61850_w17sc90.jpg",
-      "bytes": 6651,
-      "wave": "meager-w17-2026-11",
-      "w": 225,
-      "h": 225
+      "src": "local://264257_w119_03.jpg",
+      "thumb": "assets/enriched/264257/264257_w119_03.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP66 E (G) ( furutech e tp66 e (g) )",
+      "local": "assets/enriched/264257/264257_w119_03.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 53146
+    },
+    {
+      "src": "local://264257_w119_04.jpg",
+      "thumb": "assets/enriched/264257/264257_w119_04.jpg",
+      "alt": "Сетевой фильтр Furutech e-TP66 E (G) ( furutech e tp66 e (g) )",
+      "local": "assets/enriched/264257/264257_w119_04.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 48410
     }
   ],
   "sku": "",
@@ -71,5 +85,9 @@
   "enrichedAt": "2026-11-14T14:07:37Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w7-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T14:34:02Z",
+  "galleryWave119": true
 }

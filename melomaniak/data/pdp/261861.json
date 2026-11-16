@@ -121,34 +121,67 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/f182fea7d1f827129881116b76724ced.png",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/f182fea7d1f827129881116b76724ced-600x600.png",
-      "alt": "f182fea7d1f827129881116b76724ced",
-      "local": "assets/from-live/products/8a6ee598ff_f182fea7d1f827129881116b76724ced.png"
+      "src": "local://261861_w119_00.jpg",
+      "thumb": "assets/enriched/261861/261861_w119_00.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 3 Black ( paradigm surround 3 black )",
+      "local": "assets/enriched/261861/261861_w119_00.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 196767
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/f182fea7d1f827129881116b76724ced-300x300.png",
-      "local": "assets/enriched/261861/798a68bf9e_w13var.png",
-      "bytes": 49623,
-      "wave": "meager-w13-2026-11",
-      "w": 300,
-      "h": 300
+      "src": "local://261861_w119_01.jpg",
+      "thumb": "assets/enriched/261861/261861_w119_01.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 3 Black ( paradigm surround 3 black )",
+      "local": "assets/enriched/261861/261861_w119_01.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 153831
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/f182fea7d1f827129881116b76724ced-600x600.png",
-      "local": "assets/enriched/261861/8aea1617e6_w13var.png",
-      "bytes": 251022,
-      "wave": "meager-w13-2026-11",
-      "w": 600,
-      "h": 600
+      "src": "local://261861_w119_02.jpg",
+      "thumb": "assets/enriched/261861/261861_w119_02.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 3 Black ( paradigm surround 3 black )",
+      "local": "assets/enriched/261861/261861_w119_02.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 146326
     },
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2021/09/f182fea7d1f827129881116b76724ced-768x768.png",
-      "local": "assets/enriched/261861/8350177b82_w13var.png",
-      "bytes": 411562,
-      "wave": "meager-w13-2026-11",
-      "w": 768,
-      "h": 768
+      "src": "local://261861_w119_03.jpg",
+      "thumb": "assets/enriched/261861/261861_w119_03.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 3 Black ( paradigm surround 3 black )",
+      "local": "assets/enriched/261861/261861_w119_03.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 167882
+    },
+    {
+      "src": "local://261861_w119_04.jpg",
+      "thumb": "assets/enriched/261861/261861_w119_04.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 3 Black ( paradigm surround 3 black )",
+      "local": "assets/enriched/261861/261861_w119_04.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 199173
+    },
+    {
+      "src": "local://261861_w119_05.jpg",
+      "thumb": "assets/enriched/261861/261861_w119_05.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 3 Black ( paradigm surround 3 black )",
+      "local": "assets/enriched/261861/261861_w119_05.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 132328
+    },
+    {
+      "src": "local://261861_w119_06.jpg",
+      "thumb": "assets/enriched/261861/261861_w119_06.jpg",
+      "alt": "Навесная акустика PARADIGM Surround 3 Black ( paradigm surround 3 black )",
+      "local": "assets/enriched/261861/261861_w119_06.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 119133
     }
   ],
   "sku": "",
@@ -160,5 +193,9 @@
   "enrichedAt": "2026-11-14T13:45:44Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T14:34:02Z",
+  "galleryWave119": true
 }

@@ -61,34 +61,67 @@
   ],
   "gallery": [
     {
-      "src": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/transrotor_phono_iii1.jpg",
-      "thumb": "https://xn--80aannlcfckh.xn--p1ai/wp-content/uploads/2025/transrotor_phono_iii1.jpg",
-      "alt": "transrotor_phono_iii1.jpg",
-      "local": "assets/from-live/products/a7f726acd9_transrotor_phono_iii1.jpg"
+      "src": "local://270481_w119_00.jpg",
+      "thumb": "assets/enriched/270481/270481_w119_00.jpg",
+      "alt": "Фонокорректор Transrotor Phono III",
+      "local": "assets/enriched/270481/270481_w119_00.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 24079
     },
     {
-      "src": "local-variant://270481/w17sc95",
-      "local": "assets/enriched/270481/bc1d9dd0a2_w17sc95.jpg",
-      "bytes": 64592,
-      "wave": "meager-w17-2026-11",
-      "w": 829,
-      "h": 829
+      "src": "local://270481_w119_01.jpg",
+      "thumb": "assets/enriched/270481/270481_w119_01.jpg",
+      "alt": "Фонокорректор Transrotor Phono III",
+      "local": "assets/enriched/270481/270481_w119_01.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 278832
     },
     {
-      "src": "local-variant://270481/w17sc90",
-      "local": "assets/enriched/270481/deae60fd90_w17sc90.jpg",
-      "bytes": 59142,
-      "wave": "meager-w17-2026-11",
-      "w": 785,
-      "h": 785
+      "src": "local://270481_w119_02.jpg",
+      "thumb": "assets/enriched/270481/270481_w119_02.jpg",
+      "alt": "Фонокорректор Transrotor Phono III",
+      "local": "assets/enriched/270481/270481_w119_02.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 113737
     },
     {
-      "src": "local-variant://270481/w17sc85",
-      "local": "assets/enriched/270481/a6a417213a_w17sc85.jpg",
-      "bytes": 53799,
-      "wave": "meager-w17-2026-11",
-      "w": 742,
-      "h": 742
+      "src": "local://270481_w119_03.jpg",
+      "thumb": "assets/enriched/270481/270481_w119_03.jpg",
+      "alt": "Фонокорректор Transrotor Phono III",
+      "local": "assets/enriched/270481/270481_w119_03.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 39785
+    },
+    {
+      "src": "local://270481_w119_04.jpg",
+      "thumb": "assets/enriched/270481/270481_w119_04.jpg",
+      "alt": "Фонокорректор Transrotor Phono III",
+      "local": "assets/enriched/270481/270481_w119_04.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 145147
+    },
+    {
+      "src": "local://270481_w119_05.jpg",
+      "thumb": "assets/enriched/270481/270481_w119_05.jpg",
+      "alt": "Фонокорректор Transrotor Phono III",
+      "local": "assets/enriched/270481/270481_w119_05.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 115848
+    },
+    {
+      "src": "local://270481_w119_06.jpg",
+      "thumb": "assets/enriched/270481/270481_w119_06.jpg",
+      "alt": "Фонокорректор Transrotor Phono III",
+      "local": "assets/enriched/270481/270481_w119_06.jpg",
+      "enriched": true,
+      "attribution": "wave119-oem",
+      "bytes": 231418
     }
   ],
   "sku": "",
@@ -100,5 +133,9 @@
   "enrichedAt": "2026-11-14T13:47:03Z",
   "enrichmentNote": "HITL: описание и specs собраны с страниц производителя/официальных материалов; не выдуманные характеристики. Проверить тон и комплектность перед публикацией. HITL gallery: OEM/пресс дали <4 ракурса — добить съёмкой с витрины без водяных знаков; текст и specs уже elite-bar.",
   "meagerWave": "meager-w6-2026-11",
-  "galleryHitl": true
+  "galleryHitl": false,
+  "galleryClass": "true_multi_angle",
+  "galleryPadMarkers": [],
+  "galleryDepaddedAt": "2026-11-16T14:34:02Z",
+  "galleryWave119": true
 }
